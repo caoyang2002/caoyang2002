@@ -6,4 +6,5 @@
 </a>
 
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=perl,roff,digital,m4,css,glsl,html&exclude_repo=2024-ALCOVE-Hackathon-Shenzhen,Move-Exam)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide=perl,roff,digital,m4,css,glsl,astro,html,makefile&exclude_repo=2024-ALCOVE-Hackathon-Shenzhen,Move-Exam)
+
