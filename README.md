@@ -6,5 +6,5 @@
 </a>
 
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=caoyang2002&hide=perl,roff,digital command language,m4,css,glsl,astro,html,makefile,cmake&exclude_repo=2024-ALCOVE-Hackathon-Shenzhen,Move-Exam)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=caoyang2002&hide=perl,roff,digitalcommandlanguage,m4,css,glsl,astro,html,makefile,cmake&exclude_repo=2024-ALCOVE-Hackathon-Shenzhen,Move-Exam)
 
