@@ -379,31 +379,3 @@ jobs:
 ## 绑定域名
 
 vercel分配的域名在大部分地区是被阻断的，可以绑定自己的域名。操作方法可以参考：[GitHub - gaboolic/vercel-reverse-proxy](https://github.com/gaboolic/vercel-reverse-proxy)
-
-- **本文博主：** 春秋金经
-- **本文链接：** https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/
-- **版权声明：** 本博客所有文章除特别声明外，均采用 [BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。转载请注明出处！
-
-欢迎关注我的其它发布渠道
-
-[Telegram](https://t.me/chunqiu_channel)
-
-WeChat
-
-[ hexo](https://www.chunqiujinjing.com/tags/hexo/) [ blog](https://www.chunqiujinjing.com/tags/blog/) [ next](https://www.chunqiujinjing.com/tags/next/)
-
-[Share](https://www.addtoany.com/share#url=https%3A%2F%2Fwww.chunqiujinjing.com%2F2023%2F06%2F18%2Fhexo-hello-world%2F&title=使用 Hexo%2BGitHub%2BVercel 搭建个人免费博客的最佳实践 | 春秋金经)[Facebook](https://www.chunqiujinjing.com/#facebook)[Twitter](https://www.chunqiujinjing.com/#twitter)[Telegram](https://www.chunqiujinjing.com/#telegram)[WeChat](https://www.chunqiujinjing.com/#wechat)[Qzone](https://www.chunqiujinjing.com/#qzone)[Sina Weibo](https://www.chunqiujinjing.com/#sina_weibo)
-
-[ 海量实战项目源码免费送啦！！！](https://www.chunqiujinjing.com/2020/10/19/project-source-code/)
-
-[免费服务器、免费域名分享 ](https://www.chunqiujinjing.com/2023/07/28/free-vps-free-domain/)
-
-<iframe class="giscus-frame" title="Comments" scrolling="no" allow="clipboard-write" src="https://giscus.app/en/widget?origin=https%3A%2F%2Fwww.chunqiujinjing.com%2F2023%2F06%2F18%2Fhexo-hello-world%2F&amp;session=&amp;theme=preferred_color_scheme&amp;reactionsEnabled=1&amp;emitMetadata=1&amp;inputPosition=top&amp;repo=gaboolic%2Fgblog-comments&amp;repoId=R_kgDOJxmPkg&amp;category=General&amp;categoryId=DIC_kwDOJxmPks4CXXEY&amp;strict=0&amp;description=%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%E4%B9%8B%E5%89%8D%E6%98%AF%E5%9C%A8%E4%BA%91%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E9%83%A8%E7%BD%B2%E7%9A%84java%E6%9C%8D%E5%8A%A1%EF%BC%8C%E7%8E%B0%E5%9C%A8%E6%8A%8A%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E5%88%B0%E4%BA%86github%E6%89%98%E7%AE%A1%EF%BC%8C%E4%BD%BF%E7%94%A8Hexo%E4%BB%A5%E5%8F%8A%E4%B8%BB%E9%A2%98Theme+NexT%EF%BC%8C%E5%9C%A8%E6%BA%90%E7%A0%81%E4%BB%93%E5%BA%93%E9%80%9A%E8%BF%87hexo%E4%BC%9A%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81html%E6%96%87%E4%BB%B6%EF%BC%8C%E9%80%9A%E8%BF%87github+action%E9%83%A8%E7%BD%B2%E5%88%B0%E7%BD%91%E7%AB%99%E4%BB%93%E5%BA%93%E3%80%82%E7%BD%91%E7%AB%99%E4%BB%93%E5%BA%93%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%88%B0vercel+%E4%BD%9C%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%8A%8AHexo%E3%80%81NexT%E5%AE%98%E7%BD%91%E7%9A%84%E6%96%87%E6%A1%A3%E7%9C%8B%E4%BA%86%E4%B8%80%E4%B8%AA%E9%81%8D%E7%9A%84%E4%BA%BA%EF%BC%8C%E6%88%91%E6%83%B3%E6%88%91%E5%8F%AF%E4%BB%A5%E5%86%99%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0%E6%80%BB%E7%BB%93%E4%B8%80%E4%B8%8B%E3%80%82+%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A+++%E5%90%8D%E8%AF%8D+%E8%AF%B4%E6%98%8E+%E7%BD%91%E5%9D%80++++hexo+Hexo+%E6%98%AF%E4%B8%80%E4%B8%AA%E5%BF%AB&amp;backLink=https%3A%2F%2Fwww.chunqiujinjing.com%2F2023%2F06%2F18%2Fhexo-hello-world%2F&amp;term=2023%2F06%2F18%2Fhexo-hello-world%2F" loading="lazy" style="color-scheme: light dark; display: block; margin-left: auto; margin-right: auto; max-width: 100%; width: 828px; min-height: 150px; border: medium; height: 372px;"></iframe>
-
-© 2024 春秋金经
-
- 站点总字数： 56k  站点阅读时长 ≈ 3:22
-
- 19342  26184
-
-由 [Hexo](https://hexo.io/) & [NexT.Gemini](https://theme-next.js.org/) 强力驱动
