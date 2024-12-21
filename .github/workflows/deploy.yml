@@ -22,16 +22,18 @@ jobs:
           cache: "pnpm"
 
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: |
+          pnpm install --no-frozen-lockfile
+          pnpm add hexo-cli -g    # 全局安装 hexo-cli
 
-      # 添加构建步骤
       - name: Build
-        run: hexo generate
+        run: |
+          pnpm hexo generate      # 使用 pnpm 运行 hexo 命令
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 使用 deploy key
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
           full_commit_message: ${{ github.event.head_commit.message }}
