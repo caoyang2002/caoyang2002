@@ -116,7 +116,7 @@ giscus:
   enable: false
   repo: caoyang2002/caoyang2002
   repo_id: R_kgDONgnnzg
-  category: General
+  category: Announcements
   category_id: DIC_kwDONgnnzs4ClayH
   # Available values: pathname | url | title | og:title
   mapping: pathname
