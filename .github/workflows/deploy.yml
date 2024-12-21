@@ -22,7 +22,13 @@ jobs:
           cache: "pnpm"
 
       - name: Install Dependencies
-        run: pnpm install --no-frozen-lockfile # 修改这里
+        run: pnpm install --no-frozen-lockfile
+
+      # 添加权限修复步骤
+      - name: Fix permissions
+        run: |
+          sudo chown -R $USER:$USER .
+          sudo chmod -R 755 .
 
       - name: Deploy
         id: deploy
