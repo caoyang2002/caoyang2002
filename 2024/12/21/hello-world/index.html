@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha256-5eIC48iZUHmSlSUz9XtjRyK2mzQkHScZY1WdMaoz74E=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","darkmode":false,"version":"8.21.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false,"trigger":"auto"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用Hexo以及主题Theme NexT，在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到vercel 作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。 名词解释   名词 说明 网址    hexo Hexo 是一个快">
+<meta property="og:type" content="article">
+<meta property="og:title" content="使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践">
+<meta property="og:url" content="http://example.com/2024/12/21/hello-world/index.html">
+<meta property="og:site_name" content="caoyang2002">
+<meta property="og:description" content="我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用Hexo以及主题Theme NexT，在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到vercel 作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。 名词解释   名词 说明 网址    hexo Hexo 是一个快">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://github.com/D0n9X1n/hexo-tag-cloud/raw/master/img/example.png">
+<meta property="og:image" content="https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing.png">
+<meta property="og:image" content="https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing_source.png">
+<meta property="article:published_time" content="2024-12-21T14:34:25.314Z">
+<meta property="article:modified_time" content="2024-12-21T14:34:25.315Z">
+<meta property="article:author" content="Cyrus">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://github.com/D0n9X1n/hexo-tag-cloud/raw/master/img/example.png">
+
+
+<link rel="canonical" href="http://example.com/2024/12/21/hello-world/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2024/12/21/hello-world/","path":"2024/12/21/hello-world/","title":"使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践 | caoyang2002</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">caoyang2002</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu">
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+      <div class="search-header">
+        <span class="search-icon">
+          <i class="fa fa-search"></i>
+        </span>
+        <div class="search-input-container">
+          <input autocomplete="off" autocapitalize="off" maxlength="80"
+                placeholder="搜索..." spellcheck="false"
+                type="search" class="search-input">
+        </div>
+        <span class="popup-btn-close" role="button">
+          <i class="fa fa-times-circle"></i>
+        </span>
+      </div>
+      <div class="search-result-container">
+        <div class="search-result-icon">
+          <i class="fa fa-spinner fa-pulse fa-5x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%90%8D%E8%AF%8D%E8%A7%A3%E9%87%8A"><span class="nav-number">1.</span> <span class="nav-text">名词解释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BD%BF%E7%94%A8hexo"><span class="nav-number">2.</span> <span class="nav-text">安装并使用hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Hexo"><span class="nav-number">2.1.</span> <span class="nav-text">安装 Hexo</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#config-yml"><span class="nav-number">2.1.1.</span> <span class="nav-text">_config.yml</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#source"><span class="nav-number">2.1.2.</span> <span class="nav-text">source</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#themes"><span class="nav-number">2.1.3.</span> <span class="nav-text">themes</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%86%99%E6%96%87%E7%AB%A0"><span class="nav-number">2.2.</span> <span class="nav-text">写文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BF%90%E8%A1%8Chexo"><span class="nav-number">2.3.</span> <span class="nav-text">运行hexo</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85NexT%E4%B8%BB%E9%A2%98"><span class="nav-number">3.</span> <span class="nav-text">安装NexT主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8NexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6"><span class="nav-number">3.1.</span> <span class="nav-text">启用NexT主题配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98%E9%87%8D%E8%A6%81%E9%85%8D%E7%BD%AE"><span class="nav-number">3.2.</span> <span class="nav-text">Next主题重要配置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%90%9C%E7%B4%A2"><span class="nav-number">3.2.1.</span> <span class="nav-text">开启搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E8%AF%84%E8%AE%BA"><span class="nav-number">3.2.2.</span> <span class="nav-text">开启评论</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%88%86%E4%BA%AB"><span class="nav-number">3.2.3.</span> <span class="nav-text">开启文章底部分享</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%96%87%E7%AB%A0%E5%AD%97%E6%95%B0%E8%AE%A1%E6%95%B0"><span class="nav-number">3.2.4.</span> <span class="nav-text">开启文章字数计数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%A0%87%E7%AD%BE%E8%AF%8D%E4%BA%91"><span class="nav-number">3.2.5.</span> <span class="nav-text">标签词云</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A4%84%E7%90%86%E5%9B%BE%E7%89%87%E9%93%BE%E6%8E%A5"><span class="nav-number">3.2.6.</span> <span class="nav-text">处理图片链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#NexT%E5%85%B6%E4%BB%96%E6%8F%92%E4%BB%B6"><span class="nav-number">3.2.7.</span> <span class="nav-text">NexT其他插件</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E6%B5%81%E7%A8%8B"><span class="nav-number">4.</span> <span class="nav-text">部署流程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#github-actions"><span class="nav-number">4.1.</span> <span class="nav-text">github actions</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="nav-number">4.1.1.</span> <span class="nav-text">最佳实践</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0vercel"><span class="nav-number">4.2.</span> <span class="nav-text">部署到vercel</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D"><span class="nav-number">4.3.</span> <span class="nav-text">绑定域名</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Cyrus</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/12/21/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Cyrus">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="caoyang2002">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践 | caoyang2002">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-12-21 22:34:25" itemprop="dateCreated datePublished" datetime="2024-12-21T22:34:25+08:00">2024-12-21</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>2.8k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>10 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>以及主题<a target="_blank" rel="noopener" href="https://theme-next.js.org/">Theme NexT</a>，<br>在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到<a target="_blank" rel="noopener" href="https://vercel.com/">vercel</a></p>
+<p>作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。</p>
+<h1 id="名词解释"><a href="#名词解释" class="headerlink" title="名词解释"></a>名词解释</h1><table>
+<thead>
+<tr>
+<th>名词</th>
+<th>说明</th>
+<th>网址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>hexo</td>
+<td>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他标记语言）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</td>
+<td><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">https://hexo.io/zh-cn/docs/</a></td>
+</tr>
+<tr>
+<td>Next</td>
+<td>NexT是Hexo的高品质优雅主题</td>
+<td><a target="_blank" rel="noopener" href="https://theme-next.js.org/">https://theme-next.js.org/</a></td>
+</tr>
+<tr>
+<td>vercel</td>
+<td>Vercel 是一个面向开发人员的平台，它提供了更快地构建和部署 Web 应用程序所需的工具、工作流和基础架构，而无需进行其他配置。Vercel 开箱即用地支持流行的前端框架，其可扩展的安全基础架构遍布全球，可从用户附近的数据中心提供内容，以实现最佳速度。</td>
+<td><a target="_blank" rel="noopener" href="https://vercel.com/">https://vercel.com/</a></td>
+</tr>
+<tr>
+<td>github pages</td>
+<td>github官方的，直接用github仓库生成静态网站。但是速度比较慢，建议使用支持cdn的托管平台，例如vercel</td>
+<td><a target="_blank" rel="noopener" href="https://pages.github.com/">https://pages.github.com/</a></td>
+</tr>
+<tr>
+<td>github actions</td>
+<td>亦称为workflows。工作流是将运行一个或多个作业的可配置自动化过程。工作流由签入到存储库的 YAML 文件定义，并在存储库中的事件触发时运行，也可以手动触发或按定义的计划触发。工作流在存储库的 .github&#x2F;workflows 目录中定义，一个存储库可以有多个工作流，每个工作流可以执行一组不同的任务。例如，您可以有一个工作流来构建和测试拉取请求，另一个工作流在每次创建发布时部署应用程序，还有另一个工作流在每次有人打开新问题时添加标签。</td>
+<td><a target="_blank" rel="noopener" href="https://docs.github.com/en/actions/using-workflows/about-workflows">https://docs.github.com/en/actions/using-workflows/about-workflows</a></td>
+</tr>
+</tbody></table>
+<h1 id="安装并使用hexo"><a href="#安装并使用hexo" class="headerlink" title="安装并使用hexo"></a>安装并使用hexo</h1><p>首先安装<a target="_blank" rel="noopener" href="http://nodejs.org/">nodejs</a></p>
+<h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+
+
+<p>新建完成后，指定文件夹的目录如下：.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+
+<h3 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h3><p>网站的 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">配置</a> 信息，您可以在此配置大部分的参数。</p>
+<h3 id="source"><a href="#source" class="headerlink" title="source"></a>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 &#x2F; 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p>
+<h3 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h3><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/themes">主题</a> 文件夹。Hexo 会根据主题来生成静态页面。</p>
+<h2 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
+
+<p>hexo new会在<code>source/_posts</code>文件夹中创建一个名为<code>My-New-Post.md</code>的新文件，—和—之间是meta元信息，有标题、创建时间、标签等。在其后使用markdown语法写文章。</p>
+<p>更多信息介绍: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h2 id="运行hexo"><a href="#运行hexo" class="headerlink" title="运行hexo"></a>运行hexo</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+
+<p>hexo generate会通过源码生成静态Html文件，hexo server会在本地开启服务器，默认url是<code>http://localhost:4000/</code>.</p>
+<p>也可以简写为：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h1 id="安装NexT主题"><a href="#安装NexT主题" class="headerlink" title="安装NexT主题"></a>安装NexT主题</h1><p>打开终端，切换到 Hexo 站点根目录并安装 NexT 主题</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd hexo-site</span><br><span class="line">npm install hexo-theme-next</span><br></pre></td></tr></table></figure>
+
+<h2 id="启用NexT主题配置文件"><a href="#启用NexT主题配置文件" class="headerlink" title="启用NexT主题配置文件"></a>启用NexT主题配置文件</h2><p><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/getting-started/">NexT官方教程</a>中给出的2个方式都不是太好，有缺陷。官方教程是修改themes&#x2F;next&#x2F;_config.yml或者node_modules&#x2F;hexo-theme-next&#x2F;_config.yml，这种方式不利于将来升级NexT，最新的最佳实践是创建<code>_config.next.yml</code>文件，和<code>_config.yml</code>同级。这一点可以查看[hexo的官方文档](<a target="_blank" rel="noopener" href="https://hexo.io/docs/configuration.html#Using-an-Alternate-Config">Configuration | Hexo</a>), 从Hexo 5.0.0版本开始支持。</p>
+<p>创建完<code>_config.next.yml</code>文件后，把<code>_config.yml</code>中theme值改为next即可启用</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https://hexo.io/plugins/</span><br><span class="line">## Themes: https://hexo.io/themes/</span><br><span class="line">theme: next</span><br></pre></td></tr></table></figure>
+
+<h2 id="Next主题重要配置"><a href="#Next主题重要配置" class="headerlink" title="Next主题重要配置"></a>Next主题重要配置</h2><p>scheme 建议使用Gemini，NexT官方网站就是使用的Gemini</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">#scheme: Muse</span><br><span class="line">#scheme: Mist</span><br><span class="line">#scheme: Pisces</span><br><span class="line">scheme: Gemini</span><br></pre></td></tr></table></figure>
+
+<h3 id="开启搜索"><a href="#开启搜索" class="headerlink" title="开启搜索"></a>开启搜索</h3><p>安装[搜索插件](<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-generator-searchdb">GitHub - next-theme&#x2F;hexo-generator-searchdb: 🔍 Seach data generator plugin for Hexo.</a>)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-searchdb</span><br></pre></td></tr></table></figure>
+
+<p>Hexo config file <code>_config.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line"> path: search.xml</span><br><span class="line"> field: post</span><br><span class="line"> content: true</span><br><span class="line"> format: html</span><br></pre></td></tr></table></figure>
+
+<p>NexT config file <code>_config.next.yml</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># Local search</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-generator-searchdb</span><br><span class="line">local_search:</span><br><span class="line">  enable: true</span><br><span class="line">  # If auto, trigger search by changing input.</span><br><span class="line">  # If manual, trigger search by pressing enter key or search button.</span><br><span class="line">  trigger: auto</span><br><span class="line">  # Show top n results per article, show all results by setting to -1</span><br><span class="line">  top_n_per_article: 1</span><br><span class="line">  # Unescape html strings to the readable one.</span><br><span class="line">  unescape: false</span><br><span class="line">  # Preload the search data when the page loads.</span><br><span class="line">  preload: false</span><br></pre></td></tr></table></figure>
+
+<h3 id="开启评论"><a href="#开启评论" class="headerlink" title="开启评论"></a>开启评论</h3><p>hexo支持很多评论系统，例如disqus、disqusjs、changyan、livere、gitalk、utterances、isso等，我基本上都测试了一遍。changyan是国产的，有一些特色功能，例如支持评论先审后发；gittalk、utterances等是基于github issues的；giscus是基于github discussions的，支持楼中楼。</p>
+<table>
+<thead>
+<tr>
+<th>名称</th>
+<th>说明</th>
+<th>官网</th>
+<th>评价</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>disqus</td>
+<td>Disqus 是一种美国博客评论托管服务，适用于使用网络平台的网站和在线社区。</td>
+<td><a target="_blank" rel="noopener" href="https://disqus.com/">https://disqus.com</a></td>
+<td>官网不开代理打不开</td>
+</tr>
+<tr>
+<td>disqusjs</td>
+<td>基于Disqus，DisqusJS 提供一个纯前端的、不依赖后端服务器的 Disqus 评论基础模式。</td>
+<td><a target="_blank" rel="noopener" href="https://disqusjs.skk.moe/">https://disqusjs.skk.moe/</a></td>
+<td>同上，不能用</td>
+</tr>
+<tr>
+<td>changyan</td>
+<td>畅言云评，国内的</td>
+<td><a target="_blank" rel="noopener" href="https://changyan.kuaizhan.com/">https://changyan.kuaizhan.com</a></td>
+<td>可以用，支持先审后发。但是评论需要登录到畅言云评账号</td>
+</tr>
+<tr>
+<td>gitalk</td>
+<td>基于github issues</td>
+<td><a target="_blank" rel="noopener" href="https://gitalk.github.io/">https://gitalk.github.io/</a></td>
+<td>不推荐，需要的权限太高，配置也太复杂，我搞了一天也没有完全成功。作者也很久不维护了。评论时需要登录github</td>
+</tr>
+<tr>
+<td>utterances</td>
+<td>基于github issues，gitalk的完全替代者。</td>
+<td><a target="_blank" rel="noopener" href="https://utteranc.es/">https://utteranc.es/</a></td>
+<td>推荐，可以只给评论的存储仓库开权限，几分钟就成功了，配置简单。评论时需要登录github</td>
+</tr>
+<tr>
+<td>giscus</td>
+<td>基于github discussions，本项目深受 utterances 的启发。</td>
+<td><a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">https://giscus.app/zh-CN</a></td>
+<td>推荐，和utterances很像，没有授权问题，配置简单。基于discussions，支持楼中楼，评论时需要登录github。本博客使用的是giscus评论系统。</td>
+</tr>
+<tr>
+<td>valine</td>
+<td>基于LeanCloud</td>
+<td><a target="_blank" rel="noopener" href="https://valine.js.org/">https://valine.js.org/</a></td>
+<td>推荐，无需登录，支持匿名评论</td>
+</tr>
+</tbody></table>
+<p>如果要使用giscus，需要先在源代码项目安装[hexo giscus插件](<a target="_blank" rel="noopener" href="https://github.com/next-theme/hexo-next-giscus">GitHub - next-theme&#x2F;hexo-next-giscus: Giscus comment system for NexT</a>) :</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-next-giscus</span><br></pre></td></tr></table></figure>
+
+<p>其次创建一个自己名下用来存储的公开仓库，然后打开<a target="_blank" rel="noopener" href="https://giscus.app/zh-CN">giscus</a> 填写相关信息，即可自动生成giscus配置。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">giscus:</span><br><span class="line">  enable: true</span><br><span class="line">  repo:  #需要修改成自己的公开仓库</span><br><span class="line">  repo_id: 需要修改成自己的</span><br><span class="line">  category: General</span><br><span class="line">  category_id: 需要修改成自己的</span><br><span class="line">  # Available values: pathname | url | title | og:title</span><br><span class="line">  mapping: pathname</span><br><span class="line">  # Available values: 0 | 1</span><br><span class="line">  reactions_enabled: 1</span><br><span class="line">  # Available values: 0 | 1</span><br><span class="line">  emit_metadata: 1</span><br><span class="line">  # Available values: light | dark | dark_high_contrast | transparent_dark | preferred-color-scheme</span><br><span class="line">  theme: preferred_color_scheme</span><br><span class="line">  # Available values: en | zh-CN</span><br><span class="line">  lang: en</span><br><span class="line">  # Place the comment box above the comments</span><br><span class="line">  input_position: top</span><br><span class="line">  # Load the comments lazily</span><br><span class="line">  loading: lazy</span><br></pre></td></tr></table></figure>
+
+<p>其他的设置都比较简单，可以自行参考<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/">NexT官方文档</a>。</p>
+<h3 id="开启文章底部分享"><a href="#开启文章底部分享" class="headerlink" title="开启文章底部分享"></a>开启文章底部分享</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">_config.next.yml</span><br><span class="line">addtoany:</span><br><span class="line">  enable: true</span><br><span class="line">  buttons:</span><br><span class="line">    - facebook</span><br><span class="line">    - twitter</span><br><span class="line">    - telegram</span><br><span class="line">    - wechat</span><br><span class="line">    - qzone</span><br><span class="line">    - sina_weibo</span><br></pre></td></tr></table></figure>
+
+<h3 id="开启文章字数计数"><a href="#开启文章字数计数" class="headerlink" title="开启文章字数计数"></a>开启文章字数计数</h3><p>详见<a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/theme-settings/posts.html?highlight=hexo+word+counter">hexo+word+counter</a></p>
+<p>安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-word-counter</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.next.yml</code>配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Post wordcount display settings</span><br><span class="line"># Dependencies: https://github.com/next-theme/hexo-word-counter</span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: true</span><br><span class="line">  item_text_total: true</span><br></pre></td></tr></table></figure>
+
+<h3 id="标签词云"><a href="#标签词云" class="headerlink" title="标签词云"></a>标签词云</h3><p><img src="https://github.com/D0n9X1n/hexo-tag-cloud/raw/master/img/example.png" alt="TagCloud">标签词云的github地址为<a target="_blank" rel="noopener" href="https://github.com/D0n9X1n/hexo-tag-cloud">hexo-tag-cloud</a></p>
+<p>安装</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-cloud</span><br></pre></td></tr></table></figure>
+
+<p><code>_config.next.yml</code>配置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># hexo-tag-cloud</span><br><span class="line">tag_cloud:</span><br><span class="line">  textFont: Trebuchet MS, Helvetica</span><br><span class="line">  textColor: &#x27;#333&#x27;</span><br><span class="line">  textHeight: 25</span><br><span class="line">  outlineColor: &#x27;#E2E1D1&#x27;</span><br><span class="line">  maxSpeed: 0.1</span><br></pre></td></tr></table></figure>
+
+<h3 id="处理图片链接"><a href="#处理图片链接" class="headerlink" title="处理图片链接"></a>处理图片链接</h3><p>在使用MarkText等软件编辑md文件上传图片时，生成的路径和hexo路径不匹配。可以使用hexo-image-link插件解决。参考：<br><a target="_blank" rel="noopener" href="https://github.com/cocowool/hexo-image-link">https://github.com/cocowool/hexo-image-link</a></p>
+<h3 id="NexT其他插件"><a href="#NexT其他插件" class="headerlink" title="NexT其他插件"></a>NexT其他插件</h3><p>其他还有数学公式支持、基于LeanCloud的网站访客统计等功能，可参考官方教程</p>
+<p><a target="_blank" rel="noopener" href="https://theme-next.js.org/plugins">https://theme-next.js.org/plugins</a></p>
+<p><a target="_blank" rel="noopener" href="https://theme-next.js.org/docs/third-party-services/">https://theme-next.js.org/docs/third-party-services/</a></p>
+<h1 id="部署流程"><a href="#部署流程" class="headerlink" title="部署流程"></a>部署流程</h1><p><code>npm install -g hexo-cli</code> 再<code>hexo init</code>之后，会生成一个nodejs项目，hexo new会在source 文件夹中生成新的markdown文件。这个项目有_config.yml、package.json、.gitignore等文件，可以把这个项目称之为“源代码”项目。源代码项目是私有的。</p>
+<p>然后生成的html静态网站，应该搞一个单独的html项目，例如项目名叫<code>chunqiujinjing.github.io</code>。</p>
+<p>hexo new 新文章编辑好之后，就可以把“源代码”项目commit+push到git上面了。最后运行一下hexo g + hexo d可以部署到html项目中。</p>
+<p>其实html项目也可以是私有的，只不过想使用github pages必须命名为<code>chunqiujinjing.github.io</code>并且公有才行。其实就算随便取名字，设置为私有，也可以自己部署到任意地方。</p>
+<p>如果想做到commit+push源代码之后自动部署html项目，可以使用github actions。</p>
+<h2 id="github-actions"><a href="#github-actions" class="headerlink" title="github actions"></a>github actions</h2><p>在[hexo的github-pages文档](<a target="_blank" rel="noopener" href="https://hexo.io/docs/github-pages.html">GitHub Pages | Hexo</a>) 中有一个github actions的示例，但是其中配置的做法并不科学。它把源代码项目和html项目放到了一个仓库中，用不同的分支来区分，然后还部署到了github pages，github pages必须使用公开仓库。这就导致了网站的源代码和html代码都暴露了，你的所有配置将被一览无余：例如leancloud的appkey、giscus的id等等。</p>
+<p>最佳实践是源代码仓库设置为私有，通过hexo deploy（或者由github action自动化）部署到html仓库。html仓库如果使用github pages部署，必须设置为公开，但通过vercel或者其他托管网站部署则可以设置为私有。</p>
+<h3 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h3><p>1 修改源代码仓库：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">_config.yml</span><br><span class="line"># Deployment</span><br><span class="line">## Docs: https://hexo.io/docs/one-command-deployment</span><br><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:你的用户名/你的html仓库</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
+
+<p>2 添加<code>github actions</code></p>
+<p>可以参考<a target="_blank" rel="noopener" href="https://github.com/sma11black/hexo-action">hexo-action</a> 来设置。</p>
+<p>2.1 设置 <code>Deploy keys</code> 和 <code>Secrets</code></p>
+<p>2.1.1 运行<code>ssh-keygen -t rsa -C &quot;username@example.com&quot;</code> (替换为你的邮箱) ，会生成一个文件，里面有公钥和私钥。</p>
+<p>2.1.2 在 Github html存储库中：在 <code>Settings &gt; Deploy Keys</code> 添加公钥。</p>
+<p>2.1.3 在 hexo 源代码存储库中：在 <code>Settings &gt; Secrets</code> 菜单中添加私钥。</p>
+<p><img src="https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing.png" alt="img"><br><img src="https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing_source.png" alt="img"></p>
+<p>2.2 创建<code>github/workflows/deploy.yml</code> 文件，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">name: Deploy</span><br><span class="line"></span><br><span class="line">on: [push]</span><br><span class="line"></span><br><span class="line">jobs:</span><br><span class="line">  build:</span><br><span class="line">    runs-on: ubuntu-latest</span><br><span class="line">    name: A job to deploy blog.</span><br><span class="line">    steps:</span><br><span class="line">    - name: Checkout</span><br><span class="line">      uses: actions/checkout@v1</span><br><span class="line">      with:</span><br><span class="line">        submodules: true # Checkout private submodules(themes or something else).</span><br><span class="line"></span><br><span class="line">    # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)</span><br><span class="line">    - name: Cache node modules</span><br><span class="line">      uses: actions/cache@v1</span><br><span class="line">      id: cache</span><br><span class="line">      with:</span><br><span class="line">        path: node_modules</span><br><span class="line">        key: $&#123;&#123; runner.os &#125;&#125;-node-$&#123;&#123; hashFiles(&#x27;**/package-lock.json&#x27;) &#125;&#125;</span><br><span class="line">        restore-keys: |</span><br><span class="line">          $&#123;&#123; runner.os &#125;&#125;-node-</span><br><span class="line">    - name: Install Dependencies</span><br><span class="line">      if: steps.cache.outputs.cache-hit != &#x27;true&#x27;</span><br><span class="line">      run: npm ci</span><br><span class="line"></span><br><span class="line">    # Deploy hexo blog website.</span><br><span class="line">    - name: Deploy</span><br><span class="line">      id: deploy</span><br><span class="line">      uses: sma11black/hexo-action@v1.0.3</span><br><span class="line">      with:</span><br><span class="line">        deploy_key: $&#123;&#123; secrets.DEPLOY_KEY &#125;&#125;</span><br><span class="line">#        user_name: your github username  # (or delete this input setting to use bot account)</span><br><span class="line">#        user_email: your github useremail  # (or delete this input setting to use bot account)</span><br><span class="line">        commit_msg: $&#123;&#123; github.event.head_commit.message &#125;&#125;  # (or delete this input setting to use hexo default settings)</span><br><span class="line">    # Use the output from the `deploy` step(use for test action)</span><br><span class="line">    - name: Get the output</span><br><span class="line">      run: |</span><br><span class="line">        echo &quot;$&#123;&#123; steps.deploy.outputs.notify &#125;&#125;&quot;</span><br></pre></td></tr></table></figure>
+
+<p>这样设置完之后，在hexo源代码仓库，创建或者修改完文章，只需要git commit、git push，就会自动触发github actions，完成部署代码到html仓库。</p>
+<p>当然也可以不设置github actions，就需要自己手动<code>hexo generate</code> <code>hexo deploy</code>了。</p>
+<h2 id="部署到vercel"><a href="#部署到vercel" class="headerlink" title="部署到vercel"></a>部署到vercel</h2><p>打开<a target="_blank" rel="noopener" href="https://vercel.com/">vercel官网</a>，注册并登录，关联github账号，新建项目，选择html项目（注意不是源码项目）即可一键部署到vercel。</p>
+<h2 id="绑定域名"><a href="#绑定域名" class="headerlink" title="绑定域名"></a>绑定域名</h2><p>vercel分配的域名在大部分地区是被阻断的，可以绑定自己的域名。操作方法可以参考：<a target="_blank" rel="noopener" href="https://github.com/gaboolic/vercel-reverse-proxy">GitHub - gaboolic&#x2F;vercel-reverse-proxy</a></p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+
+        
+  <div class="social-like a2a_kit a2a_kit_size_32 a2a_default_style">
+    <a class="a2a_dd" target="_blank" rel="noopener" href="https://www.addtoany.com/share"></a>
+      <a class="a2a_button_facebook"></a>
+      <a class="a2a_button_twitter"></a>
+      <a class="a2a_button_telegram"></a>
+      <a class="a2a_button_wechat"></a>
+      <a class="a2a_button_qzone"></a>
+      <a class="a2a_button_sina_weibo"></a>
+  </div>
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Cyrus</span>
+  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>站点总字数：</span>
+    <span title="站点总字数">3k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>站点阅读时长 &asymp;</span>
+    <span title="站点阅读时长">10 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.1/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+
+
+
+  <script src="/js/third-party/addtoany.js"></script>
+
+  
+
+
+
+
+
+</body>
+</html>
