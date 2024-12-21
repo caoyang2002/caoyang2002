@@ -18,26 +18,21 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "16" # 改用更高版本的 Node.js
+          node-version: "16"
           cache: "pnpm"
 
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
 
-      # 修改 Hexo 目录权限
-      - name: Fix permissions
-        run: |
-          sudo mkdir -p /usr/local/lib/node_modules/hexo-cli/node_modules/hexo-util/
-          sudo chown -R $USER:$USER /usr/local/lib/node_modules
-          sudo chmod -R 777 /usr/local/lib/node_modules
+      # 添加构建步骤
+      - name: Build
+        run: hexo generate
 
       - name: Deploy
-        id: deploy
-        uses: peaceiris/actions-gh-pages@v3 # 使用替代的 action
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.DEPLOY }}
-          publish_dir: ./public # Hexo 生成的静态文件目录
-
-      - name: Get the output
-        run: |
-          echo "${{ steps.deploy.outputs.notify }}"
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }} # 使用 deploy key
+          publish_dir: ./public
+          commit_message: ${{ github.event.head_commit.message }}
+          full_commit_message: ${{ github.event.head_commit.message }}
+          allow_empty_commit: true
