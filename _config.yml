@@ -113,7 +113,7 @@ search:
   format: html
 
 giscus:
-  enable: false
+  enable: true
   repo: caoyang2002/caoyang2002
   repo_id: R_kgDONgnnzg
   category: Announcements
