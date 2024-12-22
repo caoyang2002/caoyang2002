@@ -1,20 +1,12 @@
-+++
-date = '2024-12-22T18:12:52+08:00'
-draft = true
-title = 'My First Post'
-+++
+---
+date : '2024-12-22T18:12:52+08:00'
+draft : false
+title : '从 Hexo 迁移至 Hugo'
+toc: true                # 是否显示目录
+autoCollapseToc: true    # 自动折叠目录
+---
 
 # 再见Hexo——从Hexo迁移至Hugo
-
-2022-08-10 
-
-[ course ](https://easonyang.com/categories/course/)
-
- 约 6436 字 预计阅读 13 分钟
-
-## 文章目录
-
-[为什么改用Hugo](https://easonyang.com/posts/hexo-to-hugo/#为什么改用hugo)[依赖管理问题](https://easonyang.com/posts/hexo-to-hugo/#依赖管理问题)[网页生成速度](https://easonyang.com/posts/hexo-to-hugo/#网页生成速度)[Hugo的特性](https://easonyang.com/posts/hexo-to-hugo/#hugo的特性)[快速上手](https://easonyang.com/posts/hexo-to-hugo/#快速上手)[写作习惯的变化](https://easonyang.com/posts/hexo-to-hugo/#写作习惯的变化)[主题自定义方式的变化](https://easonyang.com/posts/hexo-to-hugo/#主题自定义方式的变化)[向前兼容](https://easonyang.com/posts/hexo-to-hugo/#向前兼容)[永久链接格式兼容](https://easonyang.com/posts/hexo-to-hugo/#永久链接格式兼容)[归档页面路径链接的兼容](https://easonyang.com/posts/hexo-to-hugo/#归档页面路径链接的兼容)[友情链接和自我介绍](https://easonyang.com/posts/hexo-to-hugo/#友情链接和自我介绍)[标签和分类的中英文问题](https://easonyang.com/posts/hexo-to-hugo/#标签和分类的中英文问题)[支持Git与VPS部署](https://easonyang.com/posts/hexo-to-hugo/#支持git与vps部署)[兼容Hexo的RSS形式](https://easonyang.com/posts/hexo-to-hugo/#兼容hexo的rss形式)[even主题迁移](https://easonyang.com/posts/hexo-to-hugo/#even主题迁移)[自定义导航栏](https://easonyang.com/posts/hexo-to-hugo/#自定义导航栏)[支持umami访问统计](https://easonyang.com/posts/hexo-to-hugo/#支持umami访问统计)[自定义文章末尾页脚](https://easonyang.com/posts/hexo-to-hugo/#自定义文章末尾页脚)[utterances适配](https://easonyang.com/posts/hexo-to-hugo/#utterances适配)[补齐底部社交图标](https://easonyang.com/posts/hexo-to-hugo/#补齐底部社交图标)[支持总字数统计](https://easonyang.com/posts/hexo-to-hugo/#支持总字数统计)[总结](https://easonyang.com/posts/hexo-to-hugo/#总结)
 
 16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。
 
@@ -306,7 +298,7 @@ even 主题自带每篇文章的字数和预计阅读时间统计，但却没有
 
 <iframe class="giscus-frame giscus-frame--loading" title="Comments" scrolling="no" allow="clipboard-write" src="https://giscus.app/zh-CN/widget?origin=https%3A%2F%2Feasonyang.com%2Fposts%2Fhexo-to-hugo%2F&amp;session=&amp;theme=light&amp;reactionsEnabled=1&amp;emitMetadata=0&amp;inputPosition=top&amp;repo=MrEasonYang%2Feasonyang-blog-comments&amp;repoId=MDEwOlJlcG9zaXRvcnkzODI5MTk2Njg%3D&amp;category=Announcements&amp;categoryId=DIC_kwDOFtLj9M4CSzcb&amp;strict=0&amp;description=16+%E5%B9%B4%E7%9A%84%E6%97%B6%E5%80%99%EF%BC%8C%E5%8D%9A%E5%AE%A2%E4%BD%BF%E7%94%A8%E7%9A%84%E8%99%9A%E6%8B%9F%E4%B8%BB%E6%9C%BA%E9%9C%80%E8%A6%81%E5%81%9A%E8%BF%81%E7%A7%BB%EF%BC%8C%E5%BD%93%E6%97%B6%E6%89%80%E4%BD%BF%E7%94%A8%E7%9A%84+Typecho+%E6%98%AF%E4%B8%80%E4%B8%AA%E4%BE%9D%E8%B5%96%E4%BA%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84+PHP+%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%EF%BC%8C%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%87%BA%E8%BF%87%E7%A8%8B%E5%BE%88%E8%89%B0%E8%BE%9B%E3%80%82%E5%BD%BC%E6%97%B6+Gihub+Pages+%E6%AD%A3%E5%A4%A7%E7%81%AB%EF%BC%8C%E6%88%91%E4%B9%9F%E5%B0%B1%E8%B7%9F%E9%A3%8E%E8%BD%AC%E6%8A%95%E4%BA%86%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F+Hexo+%E3%80%82%E4%B8%83%E5%B9%B4%E8%BF%87%E5%8E%BB%E4%BA%86%EF%BC%8C%E5%8D%9A%E5%AE%A2%E8%BF%98%E5%9C%A8%EF%BC%8C%E4%BD%86%E6%8A%98%E8%85%BE+Hexo+%E7%9A%84%E4%BA%BA%E6%98%AF%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%B0%91%E4%BA%86%E3%80%82%E5%A6%82%E4%BB%8A%E6%88%91%E4%B9%9F%E8%A6%81%E5%92%8C+Hexo+%E8%AF%B4%E5%A3%B0%E5%86%8D%E8%A7%81%EF%BC%8C%E6%8B%A5%E6%8A%B1+Hugo+%E7%9A%84%E6%80%80%E6%8A%B1%E4%BA%86%E3%80%82%0A&amp;backLink=https%3A%2F%2Feasonyang.com%2Fposts%2Fhexo-to-hugo%2F&amp;term=%E5%86%8D%E8%A7%81Hexo%E2%80%94%E2%80%94%E4%BB%8EHexo%E8%BF%81%E7%A7%BB%E8%87%B3Hugo+-+Eason+Yang%27s+Blog" style="width: 760px; min-height: 150px; border: none; color-scheme: light dark; opacity: 0;"></iframe>
 
-   
+
 
 由 [Hugo](https://gohugo.io/) 强力驱动 | 主题 - [Even](https://github.com/olOwOlo/hugo-theme-even)
 
