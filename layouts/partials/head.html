@@ -1,0 +1,118 @@
+<head>
+    <!-- 基本字符集和兼容性设置 -->
+    <meta charset="utf-8" />
+    <!-- 设置字符编码为UTF-8 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- IE浏览器兼容性设置 -->
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- 移动设备视口设置，实现响应式布局 -->
+
+    <!-- 网站标题：如果不是首页，显示 "页面标题 - 网站标题"；如果是首页，只显示网站标题 -->
+    <title>{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ site.Title }}</title>
+
+    <!-- 主题颜色设置 -->
+    <meta name="theme-color" />
+
+    <!-- 作者信息设置：优先使用站点作者名称，否则使用参数名称或站点标题 -->
+    {{ $site_author := or site.Author.name site.Params.name site.Title }}
+
+    <!-- 根据页面类型设置不同的描述和作者信息 -->
+    {{ if eq .Kind "page" }}
+    <meta name="description" content="{{ .Summary }}" />
+    <!-- 使用页面摘要作为描述 -->
+    <meta name="author" content="{{ or .Params.author $site_author }}" />
+    <!-- 使用页面作者或默认作者 -->
+    {{ else }}
+    <!-- 非文章页面的描述和作者信息 -->
+    <meta
+        name="description"
+        content="{{ site.Params.description | default (print `A personal blog`) }}"
+    />
+    <!-- 使用站点描述或默认描述 -->
+    <meta name="author" content="{{ $site_author }}" />
+    <!-- 使用站点作者 -->
+    {{ end }}
+
+    <!-- CSS文件处理和加载 -->
+    {{ $main := resources.Get "main.css" }}
+    <!-- 获取主CSS文件 -->
+    {{ $custom := resources.Get "custom.css" }}
+    <!-- 获取自定义CSS文件 -->
+    {{ $css := slice $main $custom | resources.Concat "main.css" | minify }}
+    <!-- 合并并压缩CSS文件 -->
+    <link rel="preload stylesheet" as="style" href="{{ $css.Permalink }}" />
+    <!-- 预加载CSS -->
+
+    <!-- 主题切换图标设置 -->
+    {{ $dark_icon := "theme.png" }}
+    <!-- 默认使用PNG格式的主题图标 -->
+    {{ if site.Params.monoDarkIcon }}{{ $dark_icon = "theme.svg" }}{{ end }}
+    <!-- 如果启用单色图标，使用SVG格式 -->
+    <link rel="preload" as="image" href="{{ $dark_icon | absURL }}" />
+    <!-- 预加载主题图标 -->
+
+    <!-- 头像预加载 -->
+    {{ $avatar_url := $.Scratch.Get "avatar_url" }} {{ if $avatar_url }}
+    <link rel="preload" as="image" href="{{ $avatar_url }}" />
+    {{ end }}
+
+    <!-- 社交媒体图标预加载 -->
+    {{ range $.Scratch.Get "social_list" }}
+    <link rel="preload" as="image" href="{{ printf `%s.svg` . | absURL }}" />
+    {{ end }}
+
+    <!-- 代码高亮设置 -->
+    {{ if and .IsPage (not site.Params.disableHLJS) }}
+    <script
+        defer
+        src="{{ `highlight.min.js` | absURL }}"
+        onload="hljs.initHighlightingOnLoad();"
+    ></script>
+    {{ end }}
+
+    <!-- 数学公式支持 -->
+    {{ if or .Params.math site.Params.math }} {{ partial "math.html" . }} {{ end
+    }}
+
+    <!-- 网站图标设置 -->
+    <link
+        rel="icon"
+        href="{{ site.Params.favicon | default `favicon.ico` | absURL }}"
+    />
+    <!-- 设置苹果设备触摸图标 -->
+    <link
+        rel="apple-touch-icon"
+        href="{{ site.Params.appleTouchIcon | default `apple-touch-icon.png` | absURL }}"
+    />
+
+    <!-- Hugo生成器标识 -->
+    {{ hugo.Generator }}
+
+    <!-- 生产环境特定设置 -->
+    {{ if or hugo.IsProduction (eq site.Params.env "production") }} {{ template
+    "_internal/google_analytics.html" . }}
+    <!-- 添加Google Analytics -->
+    {{ template "_internal/schema.html" . }}
+    <!-- 添加Schema.org结构化数据 -->
+    {{ template "_internal/opengraph.html" . }}
+    <!-- 添加OpenGraph标签 -->
+    {{ template "_internal/twitter_cards.html" . }}
+    <!-- 添加Twitter Cards标签 -->
+
+    <!-- RSS订阅链接 -->
+    {{ range .AlternativeOutputFormats }}
+    <link
+        rel="{{ .Rel }}"
+        type="{{ .MediaType.Type }}"
+        href="{{ .Permalink }}"
+        title="{{ site.Title }}"
+    />
+    {{ end }}
+
+    <!-- 规范链接 -->
+    <link rel="canonical" href="{{ .Permalink }}" />
+    {{ end }}
+</head>
