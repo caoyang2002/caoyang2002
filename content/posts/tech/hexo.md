@@ -1,5 +1,7 @@
 ---
 title: 使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践
+date:  '2024-12-22T18:12:52+08:00'
+draft: false
 ---
 
 我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用[Hexo](https://hexo.io/)以及主题[Theme NexT](https://theme-next.js.org/)，
