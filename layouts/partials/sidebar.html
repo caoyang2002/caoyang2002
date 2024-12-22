@@ -1,0 +1,63 @@
+<aside class="w-64 shrink-0 lg:block px-4 py-6">
+    {{ if .IsHome }}
+    <!-- 主页显示个人信息 -->
+    <div class="not-prose mb-8">
+        {{ with $.Scratch.Get "avatar_url" }}
+        <div class="mb-4 flex justify-center">
+            <a href="{{ site.BaseURL }}">
+                <img
+                    src="{{ . }}"
+                    class="h-24 w-24 rounded-full border border-neutral-300 dark:border-neutral-700"
+                    alt="avatar"
+                />
+            </a>
+        </div>
+        {{ end }}
+
+        {{ with site.Author.name }}
+        <h2 class="mb-2 text-center text-lg font-bold">{{ . }}</h2>
+        {{ end }}
+
+        {{ with site.Params.bio }}
+        <p class="mb-4 text-center text-sm text-neutral-600 dark:text-neutral-400">
+            {{ . }}
+        </p>
+        {{ end }}
+
+        <!-- 社交链接 -->
+        {{ with $.Scratch.Get "social_list" }}
+        <div class="flex justify-center space-x-4">
+            {{ range . }}
+            <a href="{{ index site.Params . }}" target="_blank" rel="noopener noreferrer" class="hover:opacity-70">
+                <img src="/{{ . }}.svg" alt="{{ . }}" class="h-5 w-5 dark:invert">
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+    {{ else }}
+    <!-- 文章页显示目录 -->
+    {{ if and (ne .Params.toc false) (ne .TableOfContents "<nav id=\"TableOfContents\"></nav>") }}
+    <div class="not-prose sticky top-8">
+        <h3 class="mb-4 text-lg font-semibold">目录</h3>
+        <nav id="TableOfContents" class="toc">
+            {{ .TableOfContents }}
+        </nav>
+    </div>
+    {{ end }}
+    {{ end }}
+</aside>
+
+<style>
+.toc {
+    @apply text-sm;
+}
+
+.toc ul {
+    @apply list-none pl-4 my-2 space-y-2;
+}
+
+.toc a {
+    @apply text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-200 no-underline transition-colors duration-200;
+}
+</style>
