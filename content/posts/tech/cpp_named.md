@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 [codeif](https://codeif.xinke.org.cn)
 
 # 文件命名

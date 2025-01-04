@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 [OpenWRT下载地址](https://lidrive.vip/)
 # 下载
 ![版本](https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png)

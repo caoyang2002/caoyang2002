@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 > [原作者](https://quartz.jzhao.xyz)
 > [个人配置](https://www.chyraw.com)
 
