@@ -1,0 +1,552 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="zh-CN"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Hugo 主题创建方法及简单说明 - caoyang2002</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="参考：
+中文文档 https://hugo.opendocs.io/getting-started/quick-start/
+博客：
+
+https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+https://juejin.cn/post/7151253414427492382
+
+一个简单的 Hugo 主题
+创建一个空的网站模版
+hugo new site demo
+这会在当前目录创建一个名为 demo 的目录，然后初始化 hugo 的目录结构，
+创建一个空的主题模版
+cd demo
+hugo new theme hugo-zero
+得到输出信息：
+Creating theme at /hugo/demo/themes/hugo-zero
+一开始的目录结构如下图所示：
+hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）
+其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。" />
+  <meta name="author" content="Cyrus" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d0bdfd42ef81555f2c2372b61609c73d?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.0">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >caoyang2002</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >关于</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >联系</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href="https://instagram.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        instagram
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="http://localhost:1313/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Hugo 主题创建方法及简单说明</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>2025年1月3日</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><h1 id="参考">参考：</h1>
+<p>中文文档 <a href="https://hugo.opendocs.io/getting-started/quick-start/">https://hugo.opendocs.io/getting-started/quick-start/</a></p>
+<p>博客：</p>
+<ul>
+<li><a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary">https://blog.gujiakai.top/2023/03/hugo-theme-development-diary</a></li>
+<li><a href="https://juejin.cn/post/7151253414427492382">https://juejin.cn/post/7151253414427492382</a></li>
+</ul>
+<h1 id="一个简单的-hugo-主题">一个简单的 Hugo 主题</h1>
+<h2 id="创建一个空的网站模版">创建一个空的网站模版</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site demo
+</span></span></code></pre></div><p>这会在当前目录创建一个名为 <code>demo</code> 的目录，然后初始化 <code>hugo</code> 的目录结构，</p>
+<h2 id="创建一个空的主题模版">创建一个空的主题模版</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd demo
+</span></span><span style="display:flex;"><span>hugo new theme hugo-zero
+</span></span></code></pre></div><p>得到输出信息：</p>
+<pre tabindex="0"><code>Creating theme at /hugo/demo/themes/hugo-zero
+</code></pre><p>一开始的目录结构如下图所示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo-zero（hugo主题）
+</span></span><span style="display:flex;"><span>├── archetypes（hugo主题文章模板）
+</span></span><span style="display:flex;"><span>├── layouts（hugo主题布局文件）
+</span></span><span style="display:flex;"><span>├── static（hugo主题的静态文件）
+</span></span><span style="display:flex;"><span>├── LICENSE（hugo主题的许可证信息）
+</span></span><span style="display:flex;"><span>└── themes.toml（hugo主题的元数据信息）
+</span></span></code></pre></div><p>其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。</p>
+<p>layouts 文件夹的目录结构如下图所示：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>layouts
+</span></span><span style="display:flex;"><span>├── _default（默认页面布局文件夹）
+</span></span><span style="display:flex;"><span>│   ├── baseof.html（所有页面的基底模板）
+</span></span><span style="display:flex;"><span>│   ├── list.html（列表页面的模板文件）
+</span></span><span style="display:flex;"><span>│   └── single.html（单页面的模板文件）
+</span></span><span style="display:flex;"><span>├── partials（部分页面布局文件夹）
+</span></span><span style="display:flex;"><span>│   ├── head.html（网页头部）
+</span></span><span style="display:flex;"><span>│   ├── header.html（网页的主导航栏）
+</span></span><span style="display:flex;"><span>│   └── footer.html（网页的页脚信息）
+</span></span><span style="display:flex;"><span>├── 404.html（网站的404错误页面）
+</span></span><span style="display:flex;"><span>└── index.html（网站的主页）
+</span></span></code></pre></div><h2 id="在-configtoml-里添加一行">在 <code>config.toml</code> 里添加一行：</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-zero&#34;</span>
+</span></span></code></pre></div><p>这样就可以加载主题 <code>hugo-zero</code>了，运行看看有没有报错：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
+</span></span></code></pre></div><p>如果配置有问题会显示出错误信息，一切正常的话，能看到下面的输出：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>| EN
+</span></span><span style="display:flex;"><span>+------------------+----+
+</span></span><span style="display:flex;"><span>Pages            |  <span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>Paginator pages  |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Non-page files   |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Static files     |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Processed images |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Aliases          |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Sitemaps         |  <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>Cleaned          |  <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Total in <span style="color:#ae81ff">5</span> ms
+</span></span><span style="display:flex;"><span>Watching <span style="color:#66d9ef">for</span> changes in /tmp/demo/<span style="color:#f92672">{</span>archetypes,content,data,layouts,static,themes<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>Watching <span style="color:#66d9ef">for</span> config changes in /tmp/demo/config.toml
+</span></span><span style="display:flex;"><span>Environment: <span style="color:#e6db74">&#34;development&#34;</span>
+</span></span><span style="display:flex;"><span>Serving pages from memory
+</span></span><span style="display:flex;"><span>Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+</span></span><span style="display:flex;"><span>Web Server is available at http://localhost:1313/ <span style="color:#f92672">(</span>bind address 127.0.0.1<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Press Ctrl+C to stop
+</span></span></code></pre></div><p>用浏览器访问 http://localhost:1313/ 看到一个空页面，这个时候什么内容都还没有。</p>
+<p>index.html 是首页，single.html 是文章页面。
+baseof.html 所有页面的模版，每个页面都是基于这个页面进行扩展。
+css 目录用来放样式文件。
+head.html用来定义<head>部分的内容，加载 CSS 样式文件就在这里添加。
+footer.html一般用来展示版权信息。
+header.html显示在顶部，展示网站名称。</p>
+<h1 id="使用">使用</h1>
+<h2 id="创建网站">创建网站</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 创建 demo 网站</span>
+</span></span><span style="display:flex;"><span>hugo new site demo
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#  进入网站文件夹</span>
+</span></span><span style="display:flex;"><span>cd demo
+</span></span></code></pre></div><h2 id="添加主题">添加主题</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 初始化 git 仓库</span>
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加 git 子模块（主题）</span>
+</span></span><span style="display:flex;"><span>git submodule add https://github.com/caoyang2002/hugo-zero.git themes/hugo-zero
+</span></span></code></pre></div><h2 id="在-configtoml-里添加一行-1">在 <code>config.toml</code> 里添加一行：</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-zero&#34;</span>
+</span></span></code></pre></div><h1 id="创建文章">创建文章</h1>
+<p>创建 <code>post_name.md</code> 文章</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content/posts/post_name.md
+</span></span></code></pre></div><p>生成 <code>post_name.md</code> 文件并添加元信息</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>+++
+</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2025-01-03T11:11:07+08:00&#39;</span>
+</span></span><span style="display:flex;"><span>draft <span style="color:#f92672">=</span> true
+</span></span><span style="display:flex;"><span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Post_name&#39;</span>
+</span></span><span style="display:flex;"><span>+++
+</span></span></code></pre></div><h2 id="启动">启动</h2>
+<pre tabindex="0"><code class="language-bahs" data-lang="bahs"># 不包含草稿内容
+hugo server
+
+# 包含草稿内容
+hugo server -D
+</code></pre><p>访问 <code>http://localhost:1313/</code></p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  <nav
+    class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+  >
+    
+    <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"
+      ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>一些记录</span></a
+    >
+    
+    
+    <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href="http://localhost:1313/post/2025/01/post_name/"
+      ><span>Post_name</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+    >
+    
+  </nav>
+  
+  
+
+  
+  
+  <div class="mt-24" id="disqus_thread"></div>
+  <script>
+    const disqusShortname = 'caoyang2002.xyz';
+    const script = document.createElement('script');
+    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
+    script.setAttribute('data-timestamp', +new Date());
+    document.head.appendChild(script);
+  </script>
+  
+
+  
+  
+
+  
+
+
+  
+  <div class="giscus mt-24"></div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="caoyang2002/caoyang2002"
+    data-repo-id="R_kgDONgnnzg"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONgnnzs4ClayH"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+  ></script>
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2025
+    <a class="link" href="http://localhost:1313/">caoyang2002</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>
