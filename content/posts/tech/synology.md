@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 [原文链接](https://blog.csdn.net/christmans/article/details/129641264)
 
 # 查看 CPU 架构

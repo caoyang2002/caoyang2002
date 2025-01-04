@@ -2,7 +2,7 @@
 baseURL = 'https://caoyang2002.xyz/'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
-theme = "hugo-paper"
+theme = "hugo-focus"
 
 # 基础优化配置
 enableGitInfo = true

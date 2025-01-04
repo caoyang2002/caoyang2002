@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 # 一、什么是SimHash
 SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
 

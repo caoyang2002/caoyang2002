@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 # 如何生成 .dll文件
 生成dll文件同时会生成lib文件
 

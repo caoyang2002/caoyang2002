@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 > 我使用的是 Mac，所以以下都是 Mac 的说明
 # 一、前端（ts、react）
 

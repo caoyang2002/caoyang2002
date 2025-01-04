@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 mermaid可以在主流的markdown工具中使用
 下面是几个常用的图示类型
 #### 1.思维导图

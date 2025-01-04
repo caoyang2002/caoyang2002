@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 参考：
 
 1. [中州西鹿](https://www.gmail777.com/archives/69)

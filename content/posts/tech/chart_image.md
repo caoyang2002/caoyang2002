@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 ![beautiful.jpg](https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg)
 ![cool.jpg](https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg)
 

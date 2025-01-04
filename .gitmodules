@@ -1,0 +1,3 @@
+[submodule "themes/hugo-focus"]
+	path = themes/hugo-focus
+	url = git@github.com:caoyang2002/hugo-focus.git

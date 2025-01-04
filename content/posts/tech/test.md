@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 # 如何找资源
 {bs-accord style=common title=常用方法}
 > 下载

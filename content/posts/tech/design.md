@@ -1,3 +1,10 @@
++++
+date = '2024-12-29T09:31:37+08:00'
+draft = true
+title = 'Go'
+toc = true
++++
+
 ![样机](https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png)
 
 # 样机
