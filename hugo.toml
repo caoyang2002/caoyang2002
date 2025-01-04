@@ -119,5 +119,5 @@ email = 'info@example.org'
 phone = '+1 202-555-1212'
 
 # 主题模块导入
-[[module.imports]]
-path = "github.com/nanxiaobei/hugo-paper"
+# [[module.imports]]
+# path = "github.com/caoyang2002/hugo-focus"
