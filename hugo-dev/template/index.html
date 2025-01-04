@@ -1,0 +1,642 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+  class="not-ready lg:text-base"
+  style="--bg: #faf8f1"
+  lang="zh-CN"
+  dir="ltr"
+>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, shrink-to-fit=no"
+  />
+
+  
+  <title>Template - caoyang2002</title>
+
+  
+  <meta name="theme-color" />
+
+  
+  
+  
+  
+  <meta name="description" content="https://gohugo.io/templates/introduction/
+基础语法：
+例如，此 HTML 模板初始化$v1和$v2变量，然后在 HTML 段落中显示它们及其乘积。
+{{ $v1 := 6 }}
+{{ $v2 := 7 }}
+&lt;p&gt;The product of {{ $v1 }} and {{ $v2 }} is {{ mul $v1 $v2 }}.&lt;/p&gt;
+Content
+创建模板之前要理解的最重要的概念是上下文，即传递到每个模板的数据。数据可以是简单的值，或更常见的是对象和关联的方法。
+例如，单个页面的模板接收Page对象， Page对象提供返回值或执行操作的方法。
+在模板中，点 ( . ) 表示当前上下文。" />
+  <meta name="author" content="Cyrus" />
+  
+
+  
+  
+  
+  
+  
+  
+  <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://www.gravatar.com/avatar/d0bdfd42ef81555f2c2372b61609c73d?s=160&amp;d=identicon" />
+  
+  
+
+  
+  
+  <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+  
+  <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+  
+  
+
+  
+  
+  <script
+    defer
+    src="http://localhost:1313/highlight.min.js"
+    onload="hljs.initHighlightingOnLoad();"
+  ></script>
+  
+
+  
+  
+  
+  
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+  
+  
+  
+
+  
+  <link
+    rel="icon"
+    href="http://localhost:1313/favicon.ico"
+  />
+  <link
+    rel="apple-touch-icon"
+    href="http://localhost:1313/apple-touch-icon.png"
+  />
+
+  
+  <meta name="generator" content="Hugo 0.140.0">
+
+  
+  
+  
+</head>
+
+  <body class="text-black duration-200 ease-out dark:text-white">
+    <header class="mx-auto flex h-[4.5rem] max-w-[--w] px-8 lg:justify-center">
+  <div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center">
+    <a class="-translate-y-[1px] text-2xl font-medium" href="http://localhost:1313/"
+      >caoyang2002</a
+    >
+    <div
+      class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+      role="button"
+      aria-label="Dark"
+    ></div>
+  </div>
+
+  <div
+    class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+    role="button"
+    aria-label="Menu"
+  ></div>
+
+  
+
+  <script>
+    
+    const htmlClass = document.documentElement.classList;
+    setTimeout(() => {
+      htmlClass.remove('not-ready');
+    }, 10);
+
+    
+    const btnMenu = document.querySelector('.btn-menu');
+    btnMenu.addEventListener('click', () => {
+      htmlClass.toggle('open');
+    });
+
+    
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    const lightBg = '#faf8f1'.replace(/"/g, '');
+    const setDark = (isDark) => {
+      metaTheme.setAttribute('content', isDark ? '#000' : lightBg);
+      htmlClass[isDark ? 'add' : 'remove']('dark');
+      localStorage.setItem('dark', isDark);
+    };
+
+    
+    const darkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    if (htmlClass.contains('dark')) {
+      setDark(true);
+    } else {
+      const darkVal = localStorage.getItem('dark');
+      setDark(darkVal ? darkVal === 'true' : darkScheme.matches);
+    }
+
+    
+    darkScheme.addEventListener('change', (event) => {
+      setDark(event.matches);
+    });
+
+    
+    const btnDark = document.querySelector('.btn-dark');
+    btnDark.addEventListener('click', () => {
+      setDark(localStorage.getItem('dark') !== 'true');
+    });
+  </script>
+
+  <div
+    class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+  >
+    
+    
+    <nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse">
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/about/"
+        >关于</a
+      >
+      
+      <a
+        class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+        href="/contact/"
+        >联系</a
+      >
+      
+    </nav>
+    
+
+    
+    <nav
+      class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+    >
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./twitter.svg)"
+        href="https://twitter.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        twitter
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./github.svg)"
+        href="https://github.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        github
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./instagram.svg)"
+        href="https://instagram.com/caoyang2002"
+        target="_blank"
+        rel="me"
+      >
+        instagram
+      </a>
+      
+      <a
+        class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+        style="--url: url(./rss.svg)"
+        href="http://localhost:1313/index.xml"
+        target="_blank"
+        rel="alternate"
+      >
+        rss
+      </a>
+      
+    </nav>
+    
+  </div>
+</header>
+
+
+    <main
+      class="prose prose-neutral relative mx-auto min-h-[calc(100vh-9rem)] max-w-[--w] px-8 pb-16 pt-14 dark:prose-invert"
+    >
+      
+
+<article>
+  <header class="mb-14">
+    <h1 class="!my-0 pb-2.5">Template</h1>
+
+    
+    <div class="text-xs antialiased opacity-60">
+      
+      <time>2025年1月3日</time>
+      
+      
+      
+      
+    </div>
+    
+  </header>
+
+  <section><p><a href="https://gohugo.io/templates/introduction/">https://gohugo.io/templates/introduction/</a></p>
+<h1 id="基础语法">基础语法：</h1>
+<p>例如，此 HTML 模板初始化<code>$v1</code>和<code>$v2</code>变量，然后在 HTML 段落中显示它们及其乘积。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$v1</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">6</span> }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$v2</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">7</span> }}
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;<span style="color:#a6e22e">The</span> <span style="color:#a6e22e">product</span> <span style="color:#66d9ef">of</span> {{ <span style="color:#a6e22e">$v1</span> }} <span style="color:#a6e22e">and</span> {{ <span style="color:#a6e22e">$v2</span> }} <span style="color:#66d9ef">is</span> {{ <span style="color:#a6e22e">mul</span> <span style="color:#a6e22e">$v1</span> <span style="color:#a6e22e">$v2</span> }}.&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h1 id="content">Content</h1>
+<p>创建模板之前要理解的最重要的概念是<em>上下文</em>，即传递到每个模板的数据。数据可以是简单的值，或更常见的是<a href="https://gohugo.io/getting-started/glossary/#object">对象</a>和关联的<a href="https://gohugo.io/methods/">方法</a>。</p>
+<p>例如，单个页面的模板接收<code>Page</code>对象， <code>Page</code>对象提供返回值或执行操作的方法。</p>
+<p>在模板中，点 ( <code>.</code> ) 表示当前上下文。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span>&gt;{{ .<span style="color:#a6e22e">Title</span> }}&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span></code></pre></div><p>在上面的例子中，点代表<code>Page</code>对象，我们调用它的<a href="https://gohugo.io/methods/page/title/"><code>Title</code></a>方法来返回<a href="https://gohugo.io/content-management/front-matter/">前面</a>定义的标题。</p>
+<p>当前上下文可能会在模板内发生变化。例如，在模板的顶部，上下文可能是<code>Page</code>对象，但我们将上下文重新绑定到<a href="https://gohugo.io/functions/go-template/range/"><code>range</code></a>内或块<a href="https://gohugo.io/functions/go-template/with/"><code>with</code></a>的另一个值或对象。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span>&gt;{{ .<span style="color:#a6e22e">Title</span> }}&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">range</span> <span style="color:#a6e22e">slice</span> <span style="color:#e6db74">&#34;foo&#34;</span> <span style="color:#e6db74">&#34;bar&#34;</span> }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;{{ . }}&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#66d9ef">with</span> <span style="color:#e6db74">&#34;baz&#34;</span> }}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;{{ . }}&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
+</span></span></code></pre></div><p>在上面的示例中，当我们<code>range</code>值<a href="https://gohugo.io/getting-started/glossary/#slice">切片</a>时，上下文会发生变化。在第一次迭代中，上下文是“foo”，在第二次迭代中，上下文是“bar”。在<code>with</code>块内部，上下文是“baz”。 Hugo 将以上内容呈现为：</p>
+<p>在<code>range</code>内或<code>with</code>块中，您可以通过在点前添加美元符号 ( <code>$</code> ) 来访问传递到模板中的上下文：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span> with <span style="color:#e6db74">&#34;foo&#34;</span> <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;p&gt;<span style="color:#f92672">{{</span> $.Title <span style="color:#f92672">}}</span> - <span style="color:#f92672">{{</span> . <span style="color:#f92672">}}</span>&lt;/p&gt;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> end <span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>Hugo 将其呈现为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">p</span>&gt;My Page Title - foo&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span></code></pre></div><h2 id="action">Action</h2>
+<p>在上面的示例中，成对的左大括号和右大括号表示模板操作、模板内的数据评估或控制结构的开始和结束。</p>
+<p>模板操作可以包含文字值（ <a href="https://gohugo.io/getting-started/glossary/#boolean">boolean</a> 、 <a href="https://gohugo.io/getting-started/glossary/#string">string</a> 、 <a href="https://gohugo.io/getting-started/glossary/#integer">integer</a>和<a href="https://gohugo.io/getting-started/glossary/#float">float</a> ）、变量、函数和方法。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">{{</span> $convertToLower :<span style="color:#f92672">=</span> true <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> <span style="color:#66d9ef">if</span> $convertToLower <span style="color:#f92672">}}</span>
+</span></span><span style="display:flex;"><span>  &lt;h2&gt;<span style="color:#f92672">{{</span> strings.ToLower .Title <span style="color:#f92672">}}</span>&lt;/h2&gt;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">{{</span> end <span style="color:#f92672">}}</span>
+</span></span></code></pre></div><p>在上面的例子中：</p>
+<ul>
+<li><code>$convertToLower</code>是一个变量</li>
+<li><code>true</code>是一个布尔值</li>
+<li><code>strings.ToLower</code>是一个将所有字符转换为小写的函数</li>
+<li><code>Title</code>是<code>Page</code>对象上的一个方法</li>
+</ul>
+<p>Hugo 将以上内容呈现为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>    &lt;<span style="color:#f92672">h2</span>&gt;my page title&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>  
+</span></span></code></pre></div><h2 id="空白">空白</h2>
+<p>注意到前面示例中的空行和缩进了吗？尽管在通常缩小输出时与生产无关，但您可以通过使用带有连字符的模板操作分隔符来删除相邻的空格：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{<span style="color:#f92672">-</span> <span style="color:#a6e22e">$convertToLower</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">true</span> <span style="color:#f92672">-</span>}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#f92672">-</span> <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">$convertToLower</span> <span style="color:#f92672">-</span>}}
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">h2</span>&gt;{{ <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span> .<span style="color:#a6e22e">Title</span> }}&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span><span style="display:flex;"><span>{{<span style="color:#f92672">-</span> <span style="color:#a6e22e">end</span> <span style="color:#f92672">-</span>}}
+</span></span></code></pre></div><p>Hugo 将其呈现为：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">h2</span>&gt;my page title&lt;/<span style="color:#f92672">h2</span>&gt;
+</span></span></code></pre></div><p>空白包括空格、水平制表符、回车符和换行符。</p>
+<h2 id="pipes">Pipes</h2>
+<p>在模板操作中，您可以通过管道将值<a href="https://gohugo.io/getting-started/glossary/#pipeline">传递</a>给函数或方法。管道值成为函数或方法的最终参数。例如，这些是等效的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span> <span style="color:#e6db74">&#34;Hugo&#34;</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">hugo</span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#34;Hugo&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">hugo</span>
+</span></span></code></pre></div><p>您可以将一个函数或方法的结果通过管道传输到另一个函数或方法中。例如，这些是等效的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">TrimSuffix</span> <span style="color:#e6db74">&#34;o&#34;</span> (<span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span> <span style="color:#e6db74">&#34;Hugo&#34;</span>) }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">hug</span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#e6db74">&#34;Hugo&#34;</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">ToLower</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">strings</span>.<span style="color:#a6e22e">TrimSuffix</span> <span style="color:#e6db74">&#34;o&#34;</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">hug</span>
+</span></span></code></pre></div><p>这些也是等效的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">mul</span> <span style="color:#ae81ff">6</span> (<span style="color:#a6e22e">add</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">5</span>) }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#ae81ff">42</span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#ae81ff">5</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">add</span> <span style="color:#ae81ff">2</span> <span style="color:#f92672">|</span> <span style="color:#a6e22e">mul</span> <span style="color:#ae81ff">6</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#ae81ff">42</span>
+</span></span></code></pre></div><h2 id="分行">分行</h2>
+<p>您可以将模板操作拆分为两行或多行。例如，这些是等效的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">or</span> <span style="color:#a6e22e">$arg1</span> <span style="color:#a6e22e">$arg2</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$v</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">or</span> 
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">$arg1</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">$arg2</span>
+</span></span><span style="display:flex;"><span>}}
+</span></span></code></pre></div><p>您还可以将<a href="https://gohugo.io/getting-started/glossary/#string-literal-raw">原始字符串文字</a>拆分为两行或多行。例如，这些是等效的：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$msg</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">&#34;This is line one.\nThis is line two.&#34;</span> }}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$msg</span> <span style="color:#f92672">:=</span> <span style="color:#e6db74">`This is line one.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This is line two.`</span>
+</span></span><span style="display:flex;"><span>}}
+</span></span></code></pre></div><h2 id="变量">变量</h2>
+<p>变量是用户定义的<a href="https://gohugo.io/getting-started/glossary/#identifier">标识符，</a>前面带有美元符号 ( <code>$</code> )，表示任何数据类型的值，在模板操作中初始化或分配。例如， <code>$foo</code>和<code>$bar</code>是变量。</p>
+<p>变量可以包含<a href="https://gohugo.io/getting-started/glossary/#scalar">标量</a>、<a href="https://gohugo.io/getting-started/glossary/#slice">切片</a>、<a href="https://gohugo.io/getting-started/glossary/#map">映射</a>或<a href="https://gohugo.io/getting-started/glossary/#object">对象</a>。</p>
+<p>使用<code>:=</code>初始化变量，使用<code>=</code>为先前已初始化的变量赋值。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$total</span> <span style="color:#f92672">:=</span> <span style="color:#ae81ff">3</span> }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">range</span> <span style="color:#a6e22e">slice</span> <span style="color:#ae81ff">7</span> <span style="color:#ae81ff">11</span> <span style="color:#ae81ff">21</span> }}
+</span></span><span style="display:flex;"><span>  {{ <span style="color:#a6e22e">$total</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">add</span> <span style="color:#a6e22e">$total</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">end</span> }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$total</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#ae81ff">42</span>
+</span></span></code></pre></div><p>在<code>if</code> 、 <code>range</code>或<code>with</code>块内初始化的变量的作用域为该块。在这些块之外初始化的变量的范围仅限于模板。</p>
+<p>对于表示切片或映射的变量，使用<a href="https://gohugo.io/functions/collections/indexfunction/"><code>index</code></a>函数返回所需的值。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$slice</span> <span style="color:#f92672">:=</span> <span style="color:#66d9ef">slice</span> <span style="color:#e6db74">&#34;foo&#34;</span> <span style="color:#e6db74">&#34;bar&#34;</span> <span style="color:#e6db74">&#34;baz&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">index</span> <span style="color:#a6e22e">$slice</span> <span style="color:#a6e22e">2</span> <span style="color:#75715e">}}</span> → baz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$map</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">dict</span> <span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;foo&#34;</span> <span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;bar&#34;</span> <span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;baz&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#66d9ef">index</span> <span style="color:#a6e22e">$map</span> <span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#75715e">}}</span> → baz
+</span></span></code></pre></div><p>切片和数组是从零开始的；元素 0 是第一个元素。</p>
+<p>使用表示映射或对象的变量、<a href="https://gohugo.io/getting-started/glossary/#chain">链</a>标识符来返回所需的值或访问所需的方法。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$map</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">dict</span> <span style="color:#e6db74">&#34;a&#34;</span> <span style="color:#e6db74">&#34;foo&#34;</span> <span style="color:#e6db74">&#34;b&#34;</span> <span style="color:#e6db74">&#34;bar&#34;</span> <span style="color:#e6db74">&#34;c&#34;</span> <span style="color:#e6db74">&#34;baz&#34;</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$map</span><span style="color:#a6e22e">.c</span> <span style="color:#75715e">}}</span> → baz
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$homePage</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">.Site.Home</span> <span style="color:#75715e">}}</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">{{</span> <span style="color:#a6e22e">$homePage</span><span style="color:#a6e22e">.Title</span> <span style="color:#75715e">}}</span> → My Homepage
+</span></span></code></pre></div><p>如上所示，对象和方法名称都是大写的。尽管不是必需的，但为了避免混淆，我们建议以小写字母或下划线开头变量和映射键名称。</p>
+<h2 id="函数">函数</h2>
+<p>在模板操作中使用的函数采用一个或多个参数并返回一个值。与方法不同，函数不与对象关联。</p>
+<p>Go 的 <code>text/template</code> 和 <code>html/template</code> 包提供了一小组通用的函数、运算符和语句。有关详细信息，请参阅函数文档的<a href="https://gohugo.io/functions/go-template/">go-templates</a>部分。</p>
+<p>Hugo 提供了数百个按名称空间分类的自定义<a href="https://gohugo.io/functions/">函数</a>。例如， <code>strings</code>命名空间包括以下函数和其他函数：</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Function 功能</th>
+          <th style="text-align: left">Alias 别名</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><a href="https://gohugo.io/functions/strings/tolower/"><code>strings.ToLower</code></a></td>
+          <td style="text-align: left"><code>lower 小写</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://gohugo.io/functions/strings/toupper/"><code>strings.ToUpper</code></a></td>
+          <td style="text-align: left"><code>upper 大写</code></td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><a href="https://gohugo.io/functions/strings/replace/"><code>strings.Replace</code></a></td>
+          <td style="text-align: left"><code>replace 替换</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>如上所示，常用的函数都有一个别名。在模板中使用别名可以减少代码长度。</p>
+<p>调用函数时，用空格将参数与函数分隔开，参数之间也用空格分隔。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$total</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">add</span> <span style="color:#ae81ff">1</span> <span style="color:#ae81ff">2</span> <span style="color:#ae81ff">3</span> <span style="color:#ae81ff">4</span> }}
+</span></span></code></pre></div><h2 id="方法">方法</h2>
+<p>在模板操作中使用并与对象关联的方法采用零个或多个参数，并返回一个值或执行操作。</p>
+<p>最常访问的对象是 <a href="https://gohugo.io/methods/page/"><code>Page</code></a> 和 <a href="https://gohugo.io/methods/site/"><code>Site</code></a> 对象。这是每个对象可用的<a href="https://gohugo.io/methods/">方法</a>的一小部分样本。</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Object 目的</th>
+          <th style="text-align: left">Method 方法</th>
+          <th style="text-align: left">描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><code>Page</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/page/date/"><code>Date</code></a></td>
+          <td style="text-align: left">返回给定页面的日期。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Page</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/page/params/"><code>Params</code></a></td>
+          <td style="text-align: left">返回给定页面前面定义的自定义参数的映射。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Page</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/page/title/"><code>Title</code></a></td>
+          <td style="text-align: left">返回给定页面的标题。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Site</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/site/data/"><code>Data</code></a></td>
+          <td style="text-align: left">返回由数据目录中的文件组成的数据结构。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Site</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/site/params/"><code>Params</code></a></td>
+          <td style="text-align: left">返回站点配置中定义的自定义参数的映射。</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><code>Site</code></td>
+          <td style="text-align: left"><a href="https://gohugo.io/methods/site/title/"><code>Title</code></a></td>
+          <td style="text-align: left">返回站点配置中定义的标题。</td>
+      </tr>
+  </tbody>
+</table>
+<p>使用点 ( <code>.</code> ) 将方法链接到其对象，如下所示，请记住前导点代表<a href="https://gohugo.io/templates/introduction/#current-context">当前上下文</a>。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Site</span>.<span style="color:#a6e22e">Title</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">My</span> <span style="color:#a6e22e">Site</span> <span style="color:#a6e22e">Title</span>
+</span></span><span style="display:flex;"><span>{{ .<span style="color:#a6e22e">Page</span>.<span style="color:#a6e22e">Title</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">My</span> <span style="color:#a6e22e">Page</span> <span style="color:#a6e22e">Title</span>
+</span></span></code></pre></div><p>有些方法需要一个参数。用空格将参数与方法分隔开。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$page</span> <span style="color:#f92672">:=</span> .<span style="color:#a6e22e">Page</span>.<span style="color:#a6e22e">GetPage</span> <span style="color:#e6db74">&#34;/books/les-miserables&#34;</span> }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">$page</span>.<span style="color:#a6e22e">Title</span> }} <span style="color:#960050;background-color:#1e0010">→</span> <span style="color:#a6e22e">Les</span> <span style="color:#a6e22e">Misérables</span>
+</span></span></code></pre></div><h2 id="注释">注释</h2>
+<p>要尝试使用 HTML 注释分隔符来注释掉模板代码。</p>
+<p>Hugo 在渲染页面时去除 HTML 注释，但首先评估 HTML 注释分隔符内的任何模板代码。根据 HTML 注释分隔符中的模板代码，这可能会导致意外结果或构建失败。</p>
+<p>模板注释与模板操作类似。成对的左大括号和右大括号代表注释的开始和结束。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{<span style="color:#75715e">/* This is an inline comment. */</span>}}
+</span></span><span style="display:flex;"><span>{{<span style="color:#f92672">-</span> <span style="color:#75715e">/* This is an inline comment with adjacent whitespace removed. */</span> <span style="color:#f92672">-</span>}}
+</span></span></code></pre></div><p>注释中的代码不会被解析、执行或显示。注释可以是内联的，如上所示，也可以是块形式：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{<span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">This is a block comment.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span>}}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>{{<span style="color:#f92672">-</span> <span style="color:#75715e">/*
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">This is a block comment with
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">adjacent whitespace removed.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">*/</span> <span style="color:#f92672">-</span>}}
+</span></span></code></pre></div><p>您不得将一条评论嵌套在另一条评论中。</p>
+<p>要呈现 HTML 注释，请通过<a href="https://gohugo.io/functions/safe/html/"><code>safeHTML</code></a>模板函数传递一个字符串。例如：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>{{ &#34;<span style="color:#75715e">&lt;!-- I am an HTML comment. --&gt;</span>&#34; | safeHTML }}
+</span></span><span style="display:flex;"><span>{{ printf &#34;<span style="color:#75715e">&lt;!-- This is the %s site. --&gt;</span>&#34; .Site.Title | safeHTML }}
+</span></span></code></pre></div><h2 id="包含">包含</h2>
+<p>使用<a href="https://gohugo.io/functions/go-template/template/"><code>template</code></a>函数包含一个或多个 Hugo 的<a href="https://gohugo.io/templates/embedded/">嵌入模板</a>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">template</span> <span style="color:#e6db74">&#34;_internal/google_analytics.html&#34;</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">template</span> <span style="color:#e6db74">&#34;_internal/opengraph&#34;</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">template</span> <span style="color:#e6db74">&#34;_internal/pagination.html&#34;</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">template</span> <span style="color:#e6db74">&#34;_internal/schema.html&#34;</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">template</span> <span style="color:#e6db74">&#34;_internal/twitter_cards.html&#34;</span> . }}
+</span></span></code></pre></div><p>使用<a href="https://gohugo.io/functions/partials/include/"><code>partial</code></a>或<a href="https://gohugo.io/functions/partials/includecached/"><code>partialCached</code></a>函数来包含一个或多个<a href="https://gohugo.io/templates/partial/">部分模板</a>：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-tsx" data-lang="tsx"><span style="display:flex;"><span>{{ <span style="color:#a6e22e">partial</span> <span style="color:#e6db74">&#34;breadcrumbs.html&#34;</span> . }}
+</span></span><span style="display:flex;"><span>{{ <span style="color:#a6e22e">partialCached</span> <span style="color:#e6db74">&#34;css.html&#34;</span> . }}
+</span></span></code></pre></div><p>在 layouts/partials 目录中创建部分模板。</p>
+<p>在上面的示例中，请注意，我们将当前上下文（点）传递给每个模板。</p>
+</section>
+
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+  <div class="mt-24" id="disqus_thread"></div>
+  <script>
+    const disqusShortname = 'caoyang2002.xyz';
+    const script = document.createElement('script');
+    script.src = 'https://' + disqusShortname + '.disqus.com/embed.js';
+    script.setAttribute('data-timestamp', +new Date());
+    document.head.appendChild(script);
+  </script>
+  
+
+  
+  
+
+  
+
+
+  
+  <div class="giscus mt-24"></div>
+  <script
+    src="https://giscus.app/client.js"
+    data-repo="caoyang2002/caoyang2002"
+    data-repo-id="R_kgDONgnnzg"
+    data-category="Announcements"
+    data-category-id="DIC_kwDONgnnzs4ClayH"
+    data-mapping="pathname"
+    data-strict="1"
+    data-reactions-enabled="0"
+    data-emit-metadata="0"
+    data-input-position="top"
+    data-theme="light"
+    data-lang="zh-CN"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async
+  ></script>
+  
+</article>
+
+
+    </main>
+
+    <footer
+  class="mx-auto flex h-[4.5rem] max-w-[--w] items-center px-8 text-xs uppercase tracking-wider opacity-60"
+>
+  <div class="mr-auto">
+  
+    &copy; 2025
+    <a class="link" href="http://localhost:1313/">caoyang2002</a>
+  
+  </div>
+  <a class="link mx-6" href="https://gohugo.io/" rel="noopener" target="_blank"
+    >powered by hugo️️</a
+  >️
+  <a
+    class="link"
+    href="https://github.com/nanxiaobei/hugo-paper"
+    rel="noopener"
+    target="_blank"
+    >hugo-paper</a
+  >
+</footer>
+
+  </body>
+</html>
