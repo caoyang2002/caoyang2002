@@ -4,6 +4,13 @@ draft = true
 title = 'Hugo 主题创建方法及简单说明'
 +++
 
+# 参考：
+中文文档 https://hugo.opendocs.io/getting-started/quick-start/
+
+博客：
+- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+- https://juejin.cn/post/7151253414427492382
+
 # 一个简单的 Hugo 主题
 
 ## 创建一个空的网站模版
