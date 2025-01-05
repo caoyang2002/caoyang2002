@@ -45,6 +45,9 @@ deploy() {
 
   # Git 操作
   yellow "Git 提交中..."
+  cd themes/hugo-focus
+  git pull origin main
+  cd ../..
   git add .
   git commit -m "Deploy: $time" || true
   git push
