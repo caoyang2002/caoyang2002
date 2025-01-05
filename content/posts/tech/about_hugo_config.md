@@ -1,6 +1,6 @@
 +++
 date = '2024-12-22T18:12:52+08:00'
-draft = true
+draft = false
 title = 'hugo 配置'
 toc = true
 +++

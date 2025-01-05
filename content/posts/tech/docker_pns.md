@@ -1,6 +1,6 @@
 +++
 date = '2024-03-29T09:31:37+08:00'
-draft = true
+draft = false
 title = '搭建 NPS'
 toc = true
 +++

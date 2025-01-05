@@ -1,6 +1,6 @@
 +++
 date = '2024-11-09T09:31:37+08:00'
-draft = true
+draft = false
 title = 'shell mac 教程'
 toc = true
 +++

@@ -65,7 +65,7 @@
     />
 
     
-    <title>Hugo 主题创建方法及简单说明 - caoyang2002</title>
+    <title>C 语言推荐书籍 - caoyang2002</title>
 
     
     <meta name="theme-color" />
@@ -74,30 +74,42 @@
     
     
     
-    <meta name="description" content="参考：
-中文文档 https://hugo.opendocs.io/getting-started/quick-start/
-博客：
+    <meta name="description" content="C语言系列
 
-https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
-https://juejin.cn/post/7151253414427492382
+《C漏洞与缺陷》
+《C语言深度解剖》
+《C和指针》
+《明解C语言》
 
-一个简单的 Hugo 主题
-创建一个空的网站模版
-hugo new site demo
-这会在当前目录创建一个名为 demo 的目录，然后初始化 hugo 的目录结构，
-创建一个空的主题模版
-cd demo
-hugo new theme hugo-zero
-得到输出信息：
-Creating theme at /hugo/demo/themes/hugo-zero
-一开始的目录结构如下图所示：
-hugo-zero（hugo主题）
-├── archetypes（hugo主题文章模板）
-├── layouts（hugo主题布局文件）
-├── static（hugo主题的静态文件）
-├── LICENSE（hugo主题的许可证信息）
-└── themes.toml（hugo主题的元数据信息）
-其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。" />
+C&#43;&#43;系列
+
+《高质量的C/C&#43;&#43;编程》
+《程序员的自我修养》
+
+java系列
+
+《java编程思想》
+
+计算机系列
+
+深入理解计算机系统
+
+数据结构
+
+《大话数据结构》
+
+内存
+
+《地址的故事》
+
+编程
+
+《程序员编程故事》
+
+算法
+
+《剑指offer》
+" />
     <meta name="author" content="Cyrus" />
     
 
@@ -386,12 +398,12 @@ hugo-zero（hugo主题）
 <article class="text-left">
     
     <div class="mb-14 mt-8">
-        <h1 class="!my-0 pb-2.5">Hugo 主题创建方法及简单说明</h1>
+        <h1 class="!my-0 pb-2.5">C 语言推荐书籍</h1>
 
         
         <div class="text-xs antialiased opacity-60">
             
-            <time>2025年1月3日</time>
+            <time>2023年11月29日</time>
             
             
             
@@ -400,102 +412,42 @@ hugo-zero（hugo主题）
         
     </div>
 
-    <section><h1 id="参考">参考：</h1>
-<p>中文文档 <a href="https://hugo.opendocs.io/getting-started/quick-start/">https://hugo.opendocs.io/getting-started/quick-start/</a></p>
-<p>博客：</p>
-<ul>
-<li><a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary">https://blog.gujiakai.top/2023/03/hugo-theme-development-diary</a></li>
-<li><a href="https://juejin.cn/post/7151253414427492382">https://juejin.cn/post/7151253414427492382</a></li>
-</ul>
-<h1 id="一个简单的-hugo-主题">一个简单的 Hugo 主题</h1>
-<h2 id="创建一个空的网站模版">创建一个空的网站模版</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new site demo
-</span></span></code></pre></div><p>这会在当前目录创建一个名为 <code>demo</code> 的目录，然后初始化 <code>hugo</code> 的目录结构，</p>
-<h2 id="创建一个空的主题模版">创建一个空的主题模版</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cd demo
-</span></span><span style="display:flex;"><span>hugo new theme hugo-zero
-</span></span></code></pre></div><p>得到输出信息：</p>
-<pre tabindex="0"><code>Creating theme at /hugo/demo/themes/hugo-zero
-</code></pre><p>一开始的目录结构如下图所示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo-zero（hugo主题）
-</span></span><span style="display:flex;"><span>├── archetypes（hugo主题文章模板）
-</span></span><span style="display:flex;"><span>├── layouts（hugo主题布局文件）
-</span></span><span style="display:flex;"><span>├── static（hugo主题的静态文件）
-</span></span><span style="display:flex;"><span>├── LICENSE（hugo主题的许可证信息）
-</span></span><span style="display:flex;"><span>└── themes.toml（hugo主题的元数据信息）
-</span></span></code></pre></div><p>其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。</p>
-<p>layouts 文件夹的目录结构如下图所示：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>layouts
-</span></span><span style="display:flex;"><span>├── _default（默认页面布局文件夹）
-</span></span><span style="display:flex;"><span>│   ├── baseof.html（所有页面的基底模板）
-</span></span><span style="display:flex;"><span>│   ├── list.html（列表页面的模板文件）
-</span></span><span style="display:flex;"><span>│   └── single.html（单页面的模板文件）
-</span></span><span style="display:flex;"><span>├── partials（部分页面布局文件夹）
-</span></span><span style="display:flex;"><span>│   ├── head.html（网页头部）
-</span></span><span style="display:flex;"><span>│   ├── header.html（网页的主导航栏）
-</span></span><span style="display:flex;"><span>│   └── footer.html（网页的页脚信息）
-</span></span><span style="display:flex;"><span>├── 404.html（网站的404错误页面）
-</span></span><span style="display:flex;"><span>└── index.html（网站的主页）
-</span></span></code></pre></div><h2 id="在-configtoml-里添加一行">在 <code>config.toml</code> 里添加一行：</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-zero&#34;</span>
-</span></span></code></pre></div><p>这样就可以加载主题 <code>hugo-zero</code>了，运行看看有没有报错：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo server
-</span></span></code></pre></div><p>如果配置有问题会显示出错误信息，一切正常的话，能看到下面的输出：</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>| EN
-</span></span><span style="display:flex;"><span>+------------------+----+
-</span></span><span style="display:flex;"><span>Pages            |  <span style="color:#ae81ff">3</span>
-</span></span><span style="display:flex;"><span>Paginator pages  |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Non-page files   |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Static files     |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Processed images |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Aliases          |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>Sitemaps         |  <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>Cleaned          |  <span style="color:#ae81ff">0</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Total in <span style="color:#ae81ff">5</span> ms
-</span></span><span style="display:flex;"><span>Watching <span style="color:#66d9ef">for</span> changes in /tmp/demo/<span style="color:#f92672">{</span>archetypes,content,data,layouts,static,themes<span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>Watching <span style="color:#66d9ef">for</span> config changes in /tmp/demo/config.toml
-</span></span><span style="display:flex;"><span>Environment: <span style="color:#e6db74">&#34;development&#34;</span>
-</span></span><span style="display:flex;"><span>Serving pages from memory
-</span></span><span style="display:flex;"><span>Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
-</span></span><span style="display:flex;"><span>Web Server is available at http://localhost:1313/ <span style="color:#f92672">(</span>bind address 127.0.0.1<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>Press Ctrl+C to stop
-</span></span></code></pre></div><p>用浏览器访问 http://localhost:1313/ 看到一个空页面，这个时候什么内容都还没有。</p>
-<p>index.html 是首页，single.html 是文章页面。
-baseof.html 所有页面的模版，每个页面都是基于这个页面进行扩展。
-css 目录用来放样式文件。
-head.html用来定义<head>部分的内容，加载 CSS 样式文件就在这里添加。
-footer.html一般用来展示版权信息。
-header.html显示在顶部，展示网站名称。</p>
-<h1 id="使用">使用</h1>
-<h2 id="创建网站">创建网站</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 创建 demo 网站</span>
-</span></span><span style="display:flex;"><span>hugo new site demo
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#  进入网站文件夹</span>
-</span></span><span style="display:flex;"><span>cd demo
-</span></span></code></pre></div><h2 id="添加主题">添加主题</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 初始化 git 仓库</span>
-</span></span><span style="display:flex;"><span>git init
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># 添加 git 子模块（主题）</span>
-</span></span><span style="display:flex;"><span>git submodule add https://github.com/caoyang2002/hugo-zero.git themes/hugo-zero
-</span></span></code></pre></div><h2 id="在-configtoml-里添加一行-1">在 <code>config.toml</code> 里添加一行：</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-toml" data-lang="toml"><span style="display:flex;"><span><span style="color:#a6e22e">theme</span> = <span style="color:#e6db74">&#34;hugo-zero&#34;</span>
-</span></span></code></pre></div><h1 id="创建文章">创建文章</h1>
-<p>创建 <code>post_name.md</code> 文章</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new content/posts/post_name.md
-</span></span></code></pre></div><p>生成 <code>post_name.md</code> 文件并添加元信息</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>+++
-</span></span><span style="display:flex;"><span>date <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;2025-01-03T11:11:07+08:00&#39;</span>
-</span></span><span style="display:flex;"><span>draft <span style="color:#f92672">=</span> true
-</span></span><span style="display:flex;"><span>title <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Post_name&#39;</span>
-</span></span><span style="display:flex;"><span>+++
-</span></span></code></pre></div><h2 id="启动">启动</h2>
-<pre tabindex="0"><code class="language-bahs" data-lang="bahs"># 不包含草稿内容
-hugo server
-
-# 包含草稿内容
-hugo server -D
-</code></pre><p>访问 <code>http://localhost:1313/</code></p>
+    <section><h1 id="c语言系列">C语言系列</h1>
+<ol>
+<li>《C漏洞与缺陷》</li>
+<li>《C语言深度解剖》</li>
+<li>《C和指针》</li>
+<li>《明解C语言》</li>
+</ol>
+<h1 id="c系列">C++系列</h1>
+<ol>
+<li>《高质量的C/C++编程》</li>
+<li>《程序员的自我修养》</li>
+</ol>
+<h1 id="java系列">java系列</h1>
+<ol>
+<li>《java编程思想》</li>
+</ol>
+<h1 id="计算机系列">计算机系列</h1>
+<ol>
+<li>深入理解计算机系统</li>
+</ol>
+<h1 id="数据结构">数据结构</h1>
+<ol>
+<li>《大话数据结构》</li>
+</ol>
+<h1 id="内存">内存</h1>
+<ol>
+<li>《地址的故事》</li>
+</ol>
+<h1 id="编程">编程</h1>
+<ol>
+<li>《程序员编程故事》</li>
+</ol>
+<h1 id="算法">算法</h1>
+<ol>
+<li>《剑指offer》</li>
+</ol>
 </section>
 
     
@@ -509,16 +461,16 @@ hugo server -D
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/02/quartz-%E6%95%99%E7%A8%8B/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
-            ><span>一些记录</span></a
+            ><span>Quartz 教程</span></a
         >
         
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="http://localhost:1313/post/2024/12/go-%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/"
-            ><span>Go 最佳实践</span
+            href="http://localhost:1313/post/2023/11/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"
+            ><span>左耳朵耗子：技术领导力</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
         
@@ -581,26 +533,14 @@ hugo server -D
     <nav id="TableOfContents" class="toc">
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#参考">参考：</a></li>
-    <li><a href="#一个简单的-hugo-主题">一个简单的 Hugo 主题</a>
-      <ul>
-        <li><a href="#创建一个空的网站模版">创建一个空的网站模版</a></li>
-        <li><a href="#创建一个空的主题模版">创建一个空的主题模版</a></li>
-        <li><a href="#在-configtoml-里添加一行">在 <code>config.toml</code> 里添加一行：</a></li>
-      </ul>
-    </li>
-    <li><a href="#使用">使用</a>
-      <ul>
-        <li><a href="#创建网站">创建网站</a></li>
-        <li><a href="#添加主题">添加主题</a></li>
-        <li><a href="#在-configtoml-里添加一行-1">在 <code>config.toml</code> 里添加一行：</a></li>
-      </ul>
-    </li>
-    <li><a href="#创建文章">创建文章</a>
-      <ul>
-        <li><a href="#启动">启动</a></li>
-      </ul>
-    </li>
+    <li><a href="#c语言系列">C语言系列</a></li>
+    <li><a href="#c系列">C++系列</a></li>
+    <li><a href="#java系列">java系列</a></li>
+    <li><a href="#计算机系列">计算机系列</a></li>
+    <li><a href="#数据结构">数据结构</a></li>
+    <li><a href="#内存">内存</a></li>
+    <li><a href="#编程">编程</a></li>
+    <li><a href="#算法">算法</a></li>
   </ul>
 </nav>
     </nav>
