@@ -113,6 +113,8 @@ deploy() {
   green "Vercel 部署成功"
 
   # Git 操作
+  yellow "Git 更新子模块..."
+  git submodule update --init --recursive --remote
   yellow "Git 提交中..."
   git add .
   git commit -m "Deploy: $time" || true
