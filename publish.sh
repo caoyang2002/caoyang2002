@@ -21,6 +21,7 @@ export LANG=en_US.UTF-8
 # 颜色输出函数
 declare -r RED='\033[0;31m'
 declare -r GREEN='\033[0;32m'
+declare -r CYAN='\033[0;36m'
 declare -r YELLOW='\033[0;33m'
 declare -r NC='\033[0m' # No Color
 
@@ -35,10 +36,19 @@ log() {
   local level=$1
   local message=$2
   local timestamp
-  timestamp=$(date +'%Y-%m-%d %H:%M:%S')
-  echo "[${timestamp}] [${level}] ${message}" | tee -a "$LOG_FILE"
-}
+  local color
 
+  # 根据日志级别设置颜色
+  case "$level" in
+  "INFO") color="$CYAN" ;;
+  "ERROR") color="$RED" ;;
+  "WARN") color="$YELLOW" ;;
+  *) color="$NC" ;;
+  esac
+
+  timestamp=$(date +'%Y-%m-%d %H:%M:%S')
+  printf "${color}[${timestamp}] [${level}] ${message}${NC}\n" | tee -a "$LOG_FILE"
+}
 # 错误处理函数
 error_handler() {
   local line_no=$1
