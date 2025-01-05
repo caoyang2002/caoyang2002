@@ -56,7 +56,7 @@
 >
     
     
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -108,14 +108,14 @@ export interface FullPageLayout {
     
     
     
-    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
 
     
     
@@ -127,13 +127,13 @@ export interface FullPageLayout {
 
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
     
     
 
@@ -141,7 +141,7 @@ export interface FullPageLayout {
     
     <script
         defer
-        src="http://localhost:1313/highlight.min.js"
+        src="https://caoyang2002.xyz/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
     
@@ -192,17 +192,61 @@ export interface FullPageLayout {
     
     <link
         rel="icon"
-        href="http://localhost:1313/favicon.ico"
+        href="https://caoyang2002.xyz/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="http://localhost:1313/apple-touch-icon.png"
+        href="https://caoyang2002.xyz/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.0">
 
     
+    
+    
+    
+    
+    
+  <meta itemprop="name" content="Quartz 教程">
+  <meta itemprop="description" content="原作者 个人配置
+下载 git clone https://github.com/caoyang2002/quartz-obsidian-webside.git cd quartz-obsidian-webside npm i npx quartz build --serve 配置 布局 某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。 默认页面布局可以在 quartz.layout.ts 中找到。
+每个页面由多个不同的部分组成，这些部分包含 QuartzComponents。以下代码片段列出了您可以向其中添加组件的所有有效部分：
+quartz/cfg.ts
+export interface FullPageLayout { head: QuartzComponent // 单个组件 header: QuartzComponent[] // 水平布局 beforeBody: QuartzComponent[] // 垂直布局 pageBody: QuartzComponent // 单个组件 left: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 right: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 footer: QuartzComponent // 单个组件 } 这些对应于页面的以下部分：">
+  <meta itemprop="datePublished" content="2024-02-29T09:31:37+08:00">
+  <meta itemprop="dateModified" content="2025-01-05T10:56:18+08:00">
+  <meta itemprop="wordCount" content="9534">
+    
+    <meta property="og:url" content="https://caoyang2002.xyz/post/2024/02/quartz-%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="caoyang2002">
+  <meta property="og:title" content="Quartz 教程">
+  <meta property="og:description" content="原作者 个人配置
+下载 git clone https://github.com/caoyang2002/quartz-obsidian-webside.git cd quartz-obsidian-webside npm i npx quartz build --serve 配置 布局 某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。 默认页面布局可以在 quartz.layout.ts 中找到。
+每个页面由多个不同的部分组成，这些部分包含 QuartzComponents。以下代码片段列出了您可以向其中添加组件的所有有效部分：
+quartz/cfg.ts
+export interface FullPageLayout { head: QuartzComponent // 单个组件 header: QuartzComponent[] // 水平布局 beforeBody: QuartzComponent[] // 垂直布局 pageBody: QuartzComponent // 单个组件 left: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 right: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 footer: QuartzComponent // 单个组件 } 这些对应于页面的以下部分：">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-02-29T09:31:37+08:00">
+    <meta property="article:modified_time" content="2025-01-05T10:56:18+08:00">
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Quartz 教程">
+  <meta name="twitter:description" content="原作者 个人配置
+下载 git clone https://github.com/caoyang2002/quartz-obsidian-webside.git cd quartz-obsidian-webside npm i npx quartz build --serve 配置 布局 某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。 默认页面布局可以在 quartz.layout.ts 中找到。
+每个页面由多个不同的部分组成，这些部分包含 QuartzComponents。以下代码片段列出了您可以向其中添加组件的所有有效部分：
+quartz/cfg.ts
+export interface FullPageLayout { head: QuartzComponent // 单个组件 header: QuartzComponent[] // 水平布局 beforeBody: QuartzComponent[] // 垂直布局 pageBody: QuartzComponent // 单个组件 left: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 right: QuartzComponent[] // 桌面上垂直布局，在移动设备上水平布局 footer: QuartzComponent // 单个组件 } 这些对应于页面的以下部分：">
+
+    
+    
+
+    
+    <link rel="canonical" href="https://caoyang2002.xyz/post/2024/02/quartz-%E6%95%99%E7%A8%8B/" />
     
     
 </head>
@@ -216,7 +260,7 @@ export interface FullPageLayout {
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="http://localhost:1313/"
+            href="https://caoyang2002.xyz/"
             >caoyang2002</a
         >
         <div
@@ -346,7 +390,7 @@ export interface FullPageLayout {
             <a
                 class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
                 style="--url: url(./rss.svg)"
-                href="http://localhost:1313/index.xml"
+                href="https://caoyang2002.xyz/index.xml"
                 target="_blank"
                 rel="alternate"
             >
@@ -1068,7 +1112,7 @@ date: 表示笔记发布日期的字符串。通常使用 YYYY-MM-DD 格式。
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/03/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/"
+        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2024/03/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>小米路由器</span></a
         >
@@ -1076,8 +1120,8 @@ date: 表示笔记发布日期的字符串。通常使用 YYYY-MM-DD 格式。
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="http://localhost:1313/post/2023/11/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"
-            ><span>左耳朵耗子：技术领导力</span
+            href="https://caoyang2002.xyz/post/2023/11/c-%E8%AF%AD%E8%A8%80%E6%8E%A8%E8%8D%90%E4%B9%A6%E7%B1%8D/"
+            ><span>C 语言推荐书籍</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
         
@@ -1365,7 +1409,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <footer class="flex items-center text-xs uppercase">
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
         
     </div>
 

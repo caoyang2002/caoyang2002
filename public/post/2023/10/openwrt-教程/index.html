@@ -56,7 +56,7 @@
 >
     
     
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
@@ -93,14 +93,14 @@
     
     
     
-    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
 
     
     
@@ -112,13 +112,13 @@
 
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
     
     
 
@@ -126,7 +126,7 @@
     
     <script
         defer
-        src="http://localhost:1313/highlight.min.js"
+        src="https://caoyang2002.xyz/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
     
@@ -177,17 +177,58 @@
     
     <link
         rel="icon"
-        href="http://localhost:1313/favicon.ico"
+        href="https://caoyang2002.xyz/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="http://localhost:1313/apple-touch-icon.png"
+        href="https://caoyang2002.xyz/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.0">
 
     
+    
+    
+    
+    
+    
+  <meta itemprop="name" content="OpenWRT 教程">
+  <meta itemprop="description" content="OpenWRT下载地址
+下载 制作启动盘 将PE系统写入到U盘，window：rufus，macOS：balenaEtcher 将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）
+进入BIOS 将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12
+删除设备的磁盘分区 进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘">
+  <meta itemprop="datePublished" content="2023-10-29T09:31:37+08:00">
+  <meta itemprop="dateModified" content="2025-01-05T10:56:18+08:00">
+  <meta itemprop="wordCount" content="327">
+    
+    <meta property="og:url" content="https://caoyang2002.xyz/post/2023/10/openwrt-%E6%95%99%E7%A8%8B/">
+  <meta property="og:site_name" content="caoyang2002">
+  <meta property="og:title" content="OpenWRT 教程">
+  <meta property="og:description" content="OpenWRT下载地址
+下载 制作启动盘 将PE系统写入到U盘，window：rufus，macOS：balenaEtcher 将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）
+进入BIOS 将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12
+删除设备的磁盘分区 进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2023-10-29T09:31:37+08:00">
+    <meta property="article:modified_time" content="2025-01-05T10:56:18+08:00">
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="OpenWRT 教程">
+  <meta name="twitter:description" content="OpenWRT下载地址
+下载 制作启动盘 将PE系统写入到U盘，window：rufus，macOS：balenaEtcher 将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）
+进入BIOS 将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12
+删除设备的磁盘分区 进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘">
+
+    
+    
+
+    
+    <link rel="canonical" href="https://caoyang2002.xyz/post/2023/10/openwrt-%E6%95%99%E7%A8%8B/" />
     
     
 </head>
@@ -201,7 +242,7 @@
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="http://localhost:1313/"
+            href="https://caoyang2002.xyz/"
             >caoyang2002</a
         >
         <div
@@ -331,7 +372,7 @@
             <a
                 class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
                 style="--url: url(./rss.svg)"
-                href="http://localhost:1313/index.xml"
+                href="https://caoyang2002.xyz/index.xml"
                 target="_blank"
                 rel="alternate"
             >
@@ -416,7 +457,7 @@
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2023/11/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"
+        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2023/11/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E6%8A%80%E6%9C%AF%E9%A2%86%E5%AF%BC%E5%8A%9B/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>左耳朵耗子：技术领导力</span></a
         >
@@ -424,7 +465,7 @@
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="http://localhost:1313/post/2023/09/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E7%A8%8B%E5%BA%8F%E5%91%98/"
+            href="https://caoyang2002.xyz/post/2023/09/%E5%B7%A6%E8%80%B3%E6%9C%B5%E8%80%97%E5%AD%90%E7%A8%8B%E5%BA%8F%E5%91%98/"
             ><span>左耳朵耗子：程序员</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -667,7 +708,7 @@ document.addEventListener('DOMContentLoaded', () => {
         <footer class="flex items-center text-xs uppercase">
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
         
     </div>
 
