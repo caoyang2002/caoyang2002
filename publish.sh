@@ -1,140 +1,212 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+# 严格模式设置
+set -euo pipefail
+IFS=$'\n\t'
 
 # 版本和配置
-VERSION="1.0.0"
-HUGO_THEME_PATH="themes/hugo-focus"
-HUGO_THEME_BRANCH="main"
-HUGO_PUBLIC_DIR="public"
-HUGO_RESOURCE_DIR="resources"
+readonly VERSION="1.0.0"
+readonly HUGO_THEME_PATH="themes/hugo-focus"
+readonly HUGO_THEME_BRANCH="main"
+readonly HUGO_PUBLIC_DIR="public"
+readonly HUGO_RESOURCE_DIR="resources"
+readonly MAX_BACKUPS=5
+readonly MAX_LOGS=5
+readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+readonly LOG_FILE="${SCRIPT_DIR}/deploy-$(date +%Y-%m-%d).log"
 
-# 错误处理
-set -e
-trap 'echo "错误发生在第 $LINENO 行"; exit 1' ERR
-trap 'echo "收到中断信号，清理并退出..."; cleanup; exit 1' INT TERM
+# 导出 LANG 以确保正确的字符编码
+export LANG=en_US.UTF-8
 
 # 颜色输出函数
-green() { echo -e "\033[32m$1\033[0m"; }
-red() { echo -e "\033[31m$1\033[0m"; }
-yellow() { echo -e "\033[33m$1\033[0m"; }
+declare -r RED='\033[0;31m'
+declare -r GREEN='\033[0;32m'
+declare -r YELLOW='\033[0;33m'
+declare -r NC='\033[0m' # No Color
 
-# 日志函数
-log_file="deploy-$(date +%Y-%m-%d).log"
-log() {
-  echo "[$(date +'%Y-%m-%d %H:%M:%S')] $1" | tee -a "$log_file"
+print_colored() {
+  local color=$1
+  local message=$2
+  printf "${color}%s${NC}\n" "$message"
 }
 
-# 检查必需命令
-check_commands() {
-  for cmd in hugo vercel git; do
-    if ! command -v $cmd &>/dev/null; then
-      red "错误: 需要 $cmd 但未安装"
-      exit 1
+# 改进的日志函数
+log() {
+  local level=$1
+  local message=$2
+  local timestamp
+  timestamp=$(date +'%Y-%m-%d %H:%M:%S')
+  echo "[${timestamp}] [${level}] ${message}" | tee -a "$LOG_FILE"
+}
+
+# 错误处理函数
+error_handler() {
+  local line_no=$1
+  local error_code=$2
+  log "ERROR" "在第 ${line_no} 行发生错误 (错误码: ${error_code})"
+  cleanup
+  exit 1
+}
+
+# 设置错误处理
+trap 'error_handler ${LINENO} $?' ERR
+trap 'log "INFO" "收到中断信号，正在清理..."; cleanup; exit 1' INT TERM
+
+# 检查系统要求
+check_requirements() {
+  local missing_deps=()
+  local deps=("hugo" "vercel" "git")
+
+  for dep in "${deps[@]}"; do
+    if ! command -v "$dep" &>/dev/null; then
+      missing_deps+=("$dep")
     fi
   done
+
+  if [ ${#missing_deps[@]} -ne 0 ]; then
+    print_colored "$RED" "错误: 以下依赖未安装: ${missing_deps[*]}"
+    exit 1
+  fi
 }
 
-# 健康检查
+# 改进的健康检查
 health_check() {
-  yellow "执行健康检查..."
-  # 检查必要文件
-  if [ ! -f "hugo.toml" ] && [ ! -f "hugo.yaml" ] && [ ! -f "hugo.json" ]; then
-    red "错误: 未找到 Hugo 配置文件"
+  log "INFO" "执行健康检查..."
+
+  # 检查配置文件
+  local config_found=false
+  for config in "hugo.toml" "hugo.yaml" "hugo.json"; do
+    if [[ -f "$config" ]]; then
+      config_found=true
+      break
+    fi
+  done
+
+  if ! $config_found; then
+    log "ERROR" "未找到 Hugo 配置文件"
     exit 1
   fi
+
   # 检查主题目录
-  if [ ! -d "$HUGO_THEME_PATH" ]; then
-    red "错误: 主题目录不存在"
+  if [[ ! -d "$HUGO_THEME_PATH" ]]; then
+    log "ERROR" "主题目录不存在: $HUGO_THEME_PATH"
+    exit 1
+  fi
+
+  # 检查磁盘空间
+  local required_space=1048576 # 1GB in KB
+  local available_space
+  available_space=$(df -k . | tail -n 1 | awk '{print $4}')
+
+  if ((available_space < required_space)); then
+    log "ERROR" "磁盘空间不足"
     exit 1
   fi
 }
 
-# 备份函数
+# 改进的备份函数
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
-  yellow "创建备份..."
-  mkdir -p "$backup_dir"
-  cp -r content "$backup_dir/" 2>/dev/null || true
-  cp -r static "$backup_dir/" 2>/dev/null || true
-  cp config.* "$backup_dir/" 2>/dev/null || true
-  green "备份完成: $backup_dir"
-  log "创建备份: $backup_dir"
-}
+  local -a backup_items=("content" "static" "config.*")
 
-# 清理函数
-cleanup() {
-  yellow "清理旧的备份和日志..."
-  # 保留最近 5 个备份
-  if [ -d "backups" ]; then
-    ls -t backups/ | tail -n +6 | xargs -I {} rm -rf backups/{} 2>/dev/null || true
+  log "INFO" "开始创建备份..."
+
+  if ! mkdir -p "$backup_dir"; then
+    log "ERROR" "无法创建备份目录"
+    return 1
   fi
-  # 保留最近 5 个日志文件
-  ls -t *.log 2>/dev/null | tail -n +6 | xargs rm -f 2>/dev/null || true
+
+  for item in "${backup_items[@]}"; do
+    if ! cp -r $item "$backup_dir/" 2>/dev/null; then
+      log "WARN" "备份 $item 失败"
+    fi
+  done
+
+  print_colored "$GREEN" "备份完成: $backup_dir"
+  log "INFO" "备份完成: $backup_dir"
 }
 
-# 部署函数
+# 改进的清理函数
+cleanup() {
+  log "INFO" "开始清理..."
+
+  # 使用数组存储要清理的目录
+  local cleanup_dirs=("backups" "logs")
+
+  for dir in "${cleanup_dirs[@]}"; do
+    if [[ -d "$dir" ]]; then
+      find "$dir" -maxdepth 1 -type d -print0 |
+        sort -z -r |
+        tail -z -n +$((MAX_BACKUPS + 1)) |
+        xargs -0 rm -rf
+    fi
+  done
+
+  # 清理日志文件
+  find . -maxdepth 1 -name "deploy-*.log" -type f -print0 |
+    sort -z -r |
+    tail -z -n +$((MAX_LOGS + 1)) |
+    xargs -0 rm -f
+
+  log "INFO" "清理完成"
+}
+
+# 改进的部署函数
 deploy() {
-  time=$(date +%Y-%m-%d)
-  log "开始部署 - $time"
+  local deploy_time
+  deploy_time=$(date +%Y-%m-%d_%H%M%S)
 
-  # 健康检查
+  log "INFO" "开始部署 - $deploy_time"
+
+  # 运行前置检查
+  check_requirements
   health_check
-
-  # 创建备份
   backup
 
-  # 清理缓存和之前的构建
-  yellow "清理缓存..."
+  # 清理构建缓存
+  log "INFO" "清理缓存..."
   rm -rf "$HUGO_PUBLIC_DIR" "$HUGO_RESOURCE_DIR" .hugo_build.lock
 
   # 更新主题
-  yellow "更新主题..."
+  log "INFO" "更新主题..."
   (cd "$HUGO_THEME_PATH" && git pull origin "$HUGO_THEME_BRANCH") || {
-    red "主题更新失败"
-    log "主题更新失败"
-    exit 1
+    log "ERROR" "主题更新失败"
+    return 1
   }
 
   # Hugo 构建
-  yellow "Hugo 构建中..."
-  hugo --minify --gc || {
-    red "Hugo 构建失败"
-    log "构建失败"
-    exit 1
-  }
-  green "Hugo 构建成功"
+  log "INFO" "开始 Hugo 构建..."
+  if ! hugo --minify --gc; then
+    log "ERROR" "Hugo 构建失败"
+    return 1
+  fi
 
   # Vercel 部署
-  yellow "Vercel 部署中..."
-  vercel --prod || {
-    red "Vercel 部署失败"
-    log "部署失败"
-    exit 1
-  }
-  green "Vercel 部署成功"
+  log "INFO" "开始 Vercel 部署..."
+  if ! vercel --prod; then
+    log "ERROR" "Vercel 部署失败"
+    return 1
+  fi
 
   # Git 操作
-  yellow "Git 更新子模块..."
-  git submodule update --init --recursive --remote || red "子模块更新失败"
-  yellow "Git 提交中..."
+  log "INFO" "更新 Git 仓库..."
+  git submodule update --init --recursive --remote
   git add .
-  git commit -m "Deploy: $time" || true
-  git push || {
-    red "Git 推送失败"
-    log "推送失败"
-    exit 1
-  }
+  git commit -m "Deploy: $deploy_time" || true
+  if ! git push; then
+    log "ERROR" "Git 推送失败"
+    return 1
+  fi
 
-  # 清理旧文件
   cleanup
-
-  green "部署完成!"
-  log "部署成功"
+  print_colored "$GREEN" "部署完成!"
+  log "INFO" "部署成功完成"
 }
 
-# 开发服务器函数
+# 改进的开发服务器函数
 dev() {
-  green "启动开发服务器..."
-  hugo server -D --disableFastRender
+  log "INFO" "启动开发服务器..."
+  hugo server -D --disableFastRender --bind "0.0.0.0" --port 1313
 }
 
 # 显示帮助信息
@@ -151,6 +223,7 @@ Hugo 站点部署脚本 v${VERSION}
     -b, --backup   仅创建备份
     -c, --clean    清理旧的备份和日志
     -v, --version  显示版本信息
+    -t, --test     运行测试检查
 
 示例:
     $(basename "$0")          # 部署到生产环境
@@ -159,25 +232,33 @@ Hugo 站点部署脚本 v${VERSION}
 EOF
 }
 
-# 命令行参数处理
-case "$1" in
-"--dev" | "-d")
-  dev
-  ;;
-"--backup" | "-b")
-  backup
-  ;;
-"--clean" | "-c")
-  cleanup
-  ;;
-"--help" | "-h")
-  show_help
-  ;;
-"--version" | "-v")
-  echo "v${VERSION}"
-  ;;
-*)
-  check_commands
-  deploy
-  ;;
-esac
+# 主函数
+main() {
+  case "${1:-}" in
+  "--dev" | "-d")
+    dev
+    ;;
+  "--backup" | "-b")
+    backup
+    ;;
+  "--clean" | "-c")
+    cleanup
+    ;;
+  "--help" | "-h")
+    show_help
+    ;;
+  "--version" | "-v")
+    echo "v${VERSION}"
+    ;;
+  "--test" | "-t")
+    check_requirements
+    health_check
+    ;;
+  *)
+    deploy
+    ;;
+  esac
+}
+
+# 脚本入口
+main "$@"
