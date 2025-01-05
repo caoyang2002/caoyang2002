@@ -107,7 +107,7 @@ health_check() {
 # 改进的备份函数
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
-  local -a backup_items=("content" "static" "config.*")
+  local -a backup_items=("content" "static" "hugo.toml" "hugo.yaml" "hugo.json")
 
   log "INFO" "开始创建备份..."
 
