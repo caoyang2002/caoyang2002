@@ -107,7 +107,8 @@ health_check() {
 # 改进的备份函数
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
-  local -a backup_items=("content" "static" "hugo.toml" "hugo.yaml" "hugo.json")
+  local -a default_dirs=("content" "static")
+  local -a config_files=("hugo.toml" "hugo.yaml" "hugo.json")
 
   log "INFO" "开始创建备份..."
 
@@ -116,11 +117,33 @@ backup() {
     return 1
   fi
 
-  for item in "${backup_items[@]}"; do
-    if ! cp -r $item "$backup_dir/" 2>/dev/null; then
-      log "WARN" "备份 $item 失败"
+  # 备份默认目录
+  for dir in "${default_dirs[@]}"; do
+    if [[ -d "$dir" ]]; then
+      if cp -r "$dir" "$backup_dir/" 2>/dev/null; then
+        log "INFO" "成功备份 $dir"
+      else
+        log "WARN" "备份 $dir 失败"
+      fi
     fi
   done
+
+  # 备份存在的配置文件
+  local config_found=false
+  for config in "${config_files[@]}"; do
+    if [[ -f "$config" ]]; then
+      if cp "$config" "$backup_dir/" 2>/dev/null; then
+        log "INFO" "成功备份 $config"
+        config_found=true
+      else
+        log "WARN" "备份 $config 失败"
+      fi
+    fi
+  done
+
+  if ! $config_found; then
+    log "WARN" "未找到任何 Hugo 配置文件"
+  fi
 
   print_colored "$GREEN" "备份完成: $backup_dir"
   log "INFO" "备份完成: $backup_dir"
