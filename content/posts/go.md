@@ -1,7 +1,7 @@
 +++
 date = '2024-12-29T09:31:37+08:00'
 draft = true
-title = 'Go'
+title = 'Go 最佳实践'
 toc = true
 +++
 
@@ -216,12 +216,12 @@ type (
     CreateUserResponse struct {
         UserID uint64 `json:"user_id"`
     }
-    
+
     // DTO 用于服务层
     UserDTO struct {
         ID uint64
     }
-    
+
     // DO 用于数据库层
     UserDO struct {
         ID uint64 `gorm:"column:id"`
@@ -338,7 +338,7 @@ func (s *service) CreateUser(ctx context.Context, user *User) error {
         "action", "create_user",
     )
     logger.Info("creating user")
-    
+
     if err := s.repo.Create(user); err != nil {
         logger.Error("failed to create user", "error", err)
         return err
@@ -404,7 +404,7 @@ func (s *service) GetUser(id string) (*User, error) {
 func ProcessItems(items []Item) error {
     sem := make(chan struct{}, MaxConcurrent)
     errs := make(chan error, len(items))
-    
+
     for _, item := range items {
         sem <- struct{}{} // 获取信号量
         go func(item Item) {
@@ -414,7 +414,7 @@ func ProcessItems(items []Item) error {
             }
         }(item)
     }
-    
+
     // 等待所有 goroutine 完成
     return errors.Join(errs...)
 }
@@ -431,14 +431,14 @@ for _, item := range items {
 func main() {
     ctx, cancel := context.WithCancel(context.Background())
     defer cancel()
-    
+
     go func() {
         sigCh := make(chan os.Signal, 1)
         signal.Notify(sigCh, syscall.SIGINT, syscall.SIGTERM)
         <-sigCh
         cancel()
     }()
-    
+
     if err := server.Run(ctx); err != nil {
         log.Fatal(err)
     }
@@ -640,7 +640,7 @@ func SetupRoutes(r *gin.Engine) {
         users := v1.Group("/users")
         users.POST("/", handler.CreateUserV1)
     }
-    
+
     v2 := r.Group("/api/v2")
     {
         users := v2.Group("/users")
@@ -738,7 +738,7 @@ func (f *UserFactory) MakeUser(opts ...UserOption) *User {
         Username: f.faker.Internet().UserName(),
         Email:    f.faker.Internet().Email(),
     }
-    
+
     for _, opt := range opts {
         opt(user)
     }
@@ -780,12 +780,12 @@ func NewRateLimiter(rate int, interval time.Duration) *RateLimiter {
         tokens:         make(chan struct{}, rate),
         refillInterval: interval,
     }
-    
+
     // 初始填充令牌
     for i := 0; i < rate; i++ {
         rl.tokens <- struct{}{}
     }
-    
+
     // 定期补充令牌
     go rl.refill()
     return rl
@@ -929,7 +929,7 @@ func (cb *CircuitBreaker) Execute(fn func() error) error {
     if !cb.allowRequest() {
         return ErrCircuitOpen
     }
-    
+
     err := fn()
     cb.recordResult(err)
     return err
@@ -954,12 +954,12 @@ func (f *Fallback) Execute() (interface{}, error) {
     if err == nil {
         return result, nil
     }
-    
+
     // 尝试缓存
     if cached, err := f.Cache.Get(); err == nil {
         return cached, nil
     }
-    
+
     // 使用备用实现
     return f.Secondary()
 }
@@ -1015,7 +1015,7 @@ func (m *Metrics) RecordLatency(name string, duration time.Duration) {
     m.mu.RLock()
     histogram, exists := m.histograms[name]
     m.mu.RUnlock()
-    
+
     if exists {
         histogram.Observe(duration.Seconds())
     }
@@ -1106,13 +1106,13 @@ func (m *MultiLevelCache) Get(ctx context.Context, key string) (interface{}, err
     if val, err := m.l1.Get(ctx, key); err == nil {
         return val, nil
     }
-    
+
     // 查Redis缓存
     val, err := m.l2.Get(ctx, key)
     if err != nil {
         return nil, err
     }
-    
+
     // 回填本地缓存
     go m.l1.Set(ctx, key, val, time.Minute)
     return val, nil
@@ -1142,11 +1142,11 @@ func (db *Database) Master() *gorm.DB {
 func (db *Database) Slave() *gorm.DB {
     db.mu.RLock()
     defer db.mu.RUnlock()
-    
+
     if len(db.slaves) == 0 {
         return db.master
     }
-    
+
     // 轮询选择从库
     index := atomic.AddUint64(&db.index, 1)
     return db.slaves[index%uint64(len(db.slaves))]
@@ -1189,7 +1189,7 @@ func (k *KafkaQueue) Publish(ctx context.Context, topic string, msg interface{})
     if err != nil {
         return err
     }
-    
+
     _, _, err = k.producer.SendMessage(&sarama.ProducerMessage{
         Topic: topic,
         Value: sarama.ByteEncoder(data),
@@ -1316,13 +1316,13 @@ func (c *DynamicConfig) Watch() {
 func (c *DynamicConfig) reload() error {
     c.mu.Lock()
     defer c.mu.Unlock()
-    
+
     // 加载新配置
     newConfig, err := loadConfig()
     if err != nil {
         return err
     }
-    
+
     // 原子更新
     c.current.Store(newConfig)
     return nil
@@ -1444,7 +1444,7 @@ func (s *UserService) Create(ctx context.Context, user *User) error {
     if err := s.repo.Create(ctx, user); err != nil {
         return err
     }
-    
+
     // 发布领域事件
     event := &UserCreatedEvent{
         UserID:    user.ID,
@@ -1616,9 +1616,9 @@ func AuditMiddleware(logger *AuditLogger) gin.HandlerFunc {
     return func(c *gin.Context) {
         // 记录请求前的状态
         // ...
-        
+
         c.Next()
-        
+
         // 记录请求后的状态变化
         event := &AuditEvent{
             Action:    c.Request.Method,
@@ -1667,7 +1667,7 @@ func SetupRoutes(r *gin.Engine) {
     {
         v1.POST("/users", handler.CreateUserV1)
     }
-    
+
     v2 := r.Group("/api/v2")
     {
         v2.POST("/users", handler.CreateUserV2)
@@ -1714,7 +1714,7 @@ type CreateUserRequest struct {
 
 2. 《100 Go Mistakes and How to Avoid Them》 - Teiva Harsanyi
    - 详细介绍 Go 常见错误和避免方法
-   
+
 3. 《Concurrency in Go》 - Katherine Cox-Buday
    - Go 并发编程最佳实践
 
@@ -1876,7 +1876,7 @@ type CreateUserRequest struct {
   - 响应封装
   - 路由管理
   - API 文档 (Swagger)
-  
+
 - Service (业务) 层
   - 业务逻辑
   - 事务管理
@@ -2165,9 +2165,9 @@ mod caller {
 // 在实现方 crate 中实现特征
 mod service {
     use caller::ImageService;
-    
+
     struct MyImageService;
-    
+
     impl ImageService for MyImageService {
         fn upload(&self, image: Image) -> Result<(), Error> {
             // 实现
@@ -2219,7 +2219,7 @@ impl<R: Repository> ServiceBuilder<R> {
     pub fn new(repository: R) -> Self {
         Self { repository }
     }
-    
+
     pub fn build(self) -> Service<R> {
         Service {
             repository: self.repository,
@@ -2261,9 +2261,9 @@ pub mod api {
 // 内部实现保持私有
 mod internal {
     use super::api::Service;
-    
+
     pub(crate) struct ServiceImpl;
-    
+
     impl Service for ServiceImpl {
         // 实现
     }

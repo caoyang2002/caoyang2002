@@ -1,15 +1,9 @@
 +++
-date = '2024-12-29T09:31:37+08:00'
+date = '2024-12-22T18:12:52+08:00'
 draft = true
-title = 'Go'
+title = 'hugo 配置'
 toc = true
 +++
-
----
-title : 配置
-date : '2024-12-22T18:12:52+08:00'
-draft : false
----
 
 ```toml
 # 基础优化配置
