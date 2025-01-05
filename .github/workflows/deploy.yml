@@ -1,30 +1,76 @@
-name: Deploy
-on: [push]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    name: A job to deploy blog.
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          submodules: true # 获取 Hugo 主题 (true OR recursive)
-          fetch-depth: 0 # 获取所有历史记录和标签
+name: Deploy Hugo site
 
+# 触发条件
+on:
+  push:
+    branches:
+      - main  # 只在 main 分支推送时触发
+  workflow_dispatch:  # 允许手动触发部署
+
+# 环境变量
+env:
+  HUGO_VERSION: "latest"
+  TZ: Asia/Shanghai  # 设置时区
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Build and Deploy Hugo site
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4  # 更新到 v4
+        with:
+          submodules: recursive  # 递归获取所有子模块
+          fetch-depth: 0
+      
+      - name: Cache Hugo resources
+        uses: actions/cache@v3
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "latest"
-          extended: true # 如果你使用的主题需要 Hugo Extended 版本
-
-      - name: Build
-        run: hugo --minify
-
+          hugo-version: ${{ env.HUGO_VERSION }}
+          extended: true
+      
+      - name: Build site
+        run: |
+          echo "Using Hugo version: $(hugo version)"
+          hugo --minify --gc
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'  # 只在 main 分支部署
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_dir: ./public
           commit_message: ${{ github.event.head_commit.message }}
           full_commit_message: ${{ github.event.head_commit.message }}
           allow_empty_commit: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          cname: your-custom-domain.com  # 如果需要自定义域名，取消注释并修改
+      
+      - name: Notification
+        if: always()
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const { status, conclusion } = context.job
+            const time = new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })
+            const message = `
+            🚀 部署状态: ${conclusion}
+            ⏰ 完成时间: ${time}
+            📝 提交信息: ${context.payload.head_commit?.message || 'No commit message'}
+            `
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: message
+            })
