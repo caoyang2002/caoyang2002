@@ -1,6 +1,6 @@
 +++
 date = '2023-08-29T09:31:37+08:00'
-draft = true
+draft = false
 title = '群晖开发'
 toc = true
 +++

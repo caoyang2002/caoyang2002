@@ -1,6 +1,6 @@
 +++
 date = '2024-06-19T09:31:37+08:00'
-draft = true
+draft = false
 title = '删除错误提交到GitHub仓库中的文件'
 toc = true
 +++

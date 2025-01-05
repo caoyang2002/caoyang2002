@@ -1,6 +1,6 @@
 +++
 date = '2023-06-29T09:31:37+08:00'
-draft = true
+draft = false
 title = 'C 语言数学'
 toc = true
 +++

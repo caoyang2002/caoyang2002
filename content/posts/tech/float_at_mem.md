@@ -1,6 +1,6 @@
 +++
 date = '2023-07-29T09:31:37+08:00'
-draft = true
+draft = false
 title = '浮点数的存储'
 toc = true
 +++

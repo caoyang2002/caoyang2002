@@ -1,6 +1,6 @@
 +++
-date = '2024-03-29T09:31:37+08:00'
-draft = true
+date = '2024-03-23T09:31:37+08:00'
+draft = false
 title = '小米 4c 路由器刷机'
 toc = true
 +++

@@ -1,6 +1,6 @@
 +++
 date = '2023-10-29T09:31:37+08:00'
-draft = true
+draft = false
 title = 'OpenWRT 教程'
 toc = true
 +++

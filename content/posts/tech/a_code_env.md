@@ -1,6 +1,6 @@
 +++
 date = '2024-04-29T09:31:37+08:00'
-draft = true
+draft = false
 title = '创建一个远程编译环境'
 toc = true
 +++
