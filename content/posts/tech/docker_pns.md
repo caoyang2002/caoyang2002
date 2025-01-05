@@ -1,7 +1,7 @@
 +++
-date = '2024-12-29T09:31:37+08:00'
+date = '2024-03-29T09:31:37+08:00'
 draft = true
-title = 'Go'
+title = '搭建 NPS'
 toc = true
 +++
 

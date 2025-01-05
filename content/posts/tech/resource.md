@@ -1,12 +1,12 @@
 +++
 date = '2024-12-29T09:31:37+08:00'
 draft = true
-title = 'Go'
+title = '资源'
 toc = true
 +++
 
 # 如何找资源
-{bs-accord style=common title=常用方法}
+
 > 下载
 > [盘搜](https://www.pansou.vip/)
 
