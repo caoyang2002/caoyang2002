@@ -114,7 +114,7 @@ deploy() {
 
   # Git 操作
   yellow "Git 更新子模块..."
-  git submodule update --init --recursive --remote
+  git submodule update --init --recursive --remote || red "子模块更新失败"
   yellow "Git 提交中..."
   git add .
   git commit -m "Deploy: $time" || true
