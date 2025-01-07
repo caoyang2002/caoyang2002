@@ -170,7 +170,7 @@ cleanup() {
     if [[ -d "$dir" ]]; then
       find "$dir" -maxdepth 1 -type d -print0 |
         sort -z -r |
-        tail -z -n +$((MAX_BACKUPS + 1)) |
+        tail -n +$((MAX_BACKUPS + 1)) |
         xargs -0 rm -rf
     fi
   done
