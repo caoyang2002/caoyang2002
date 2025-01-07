@@ -178,7 +178,7 @@ cleanup() {
   # 清理日志文件
   find . -maxdepth 1 -name "deploy-*.log" -type f -print0 |
     sort -z -r |
-    tail -z -n +$((MAX_LOGS + 1)) |
+    tail -n +$((MAX_LOGS + 1)) |
     xargs -0 rm -f
 
   log "INFO" "清理完成"
