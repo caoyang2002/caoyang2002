@@ -167,12 +167,32 @@ cleanup() {
   local cleanup_dirs=("backups" "logs")
 
   for dir in "${cleanup_dirs[@]}"; do
-    if [[ -d "$dir" ]]; then
-      find "$dir" -maxdepth 1 -type d -print0 |
-        sort -z -r |
-        tail -n +$((MAX_BACKUPS + 1)) |
-        xargs -0 rm -rf
-    fi
+      if [[ ! -d "$dir" ]]; then
+          echo "Warning: Directory $dir does not exist"
+          continue
+      fi
+
+      echo "Cleaning up old backups in $dir..."
+
+      # 使用 stat 和 ls 来代替 find -printf
+      # 获取目录列表并按修改时间排序
+      cd "$dir" || continue
+
+      ls -t -d */ 2>/dev/null |  # 按时间排序并只列出目录
+      sed 's#/$##' |             # 移除末尾的斜杠
+      tail -n +$((MAX_BACKUPS + 1)) |
+      while IFS= read -r backup; do
+          echo "Removing old backup: $backup"
+          rm -rf "$backup"
+      done
+
+      cd - >/dev/null || exit
+
+      if [ $? -eq 0 ]; then
+          echo "Cleanup completed successfully for $dir"
+      else
+          echo "Error occurred while cleaning up $dir"
+      fi
   done
 
   # 清理日志文件
