@@ -168,11 +168,11 @@ cleanup() {
 
   for dir in "${cleanup_dirs[@]}"; do
       if [[ ! -d "$dir" ]]; then
-          echo "Warning: Directory $dir does not exist"
+           log "WARN" "目录不存在 $dir "
           continue
       fi
 
-      echo "Cleaning up old backups in $dir..."
+      echo " $dir..."
 
       # 使用 stat 和 ls 来代替 find -printf
       # 获取目录列表并按修改时间排序
@@ -182,16 +182,16 @@ cleanup() {
       sed 's#/$##' |             # 移除末尾的斜杠
       tail -n +$((MAX_BACKUPS + 1)) |
       while IFS= read -r backup; do
-          echo "Removing old backup: $backup"
+          log "INFO" "删除旧的备份: $backup"
           rm -rf "$backup"
       done
 
       cd - >/dev/null || exit
 
       if [ $? -eq 0 ]; then
-          echo "Cleanup completed successfully for $dir"
+          log "INFO" "清理成功 $dir"
       else
-          echo "Error occurred while cleaning up $dir"
+          log "ERROR" "清理失败 $dir"
       fi
   done
 
