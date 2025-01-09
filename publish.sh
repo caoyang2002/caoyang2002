@@ -13,7 +13,7 @@ readonly HUGO_RESOURCE_DIR="resources"
 readonly MAX_BACKUPS=5
 readonly MAX_LOGS=5
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly LOG_FILE="${SCRIPT_DIR}/deploy-$(date +%Y-%m-%d).log"
+readonly LOG_FILE="${SCRIPT_DIR}/logs/deploy-$(date +%Y-%m-%d).log"
 
 # 导出 LANG 以确保正确的字符编码
 export LANG=en_US.UTF-8
@@ -196,7 +196,7 @@ cleanup() {
   done
 
   # 清理日志文件
-  find . -maxdepth 1 -name "deploy-*.log" -type f -print0 |
+  find . -maxdepth 2 -name "deploy-*.log" -type f -print0 |
     sort -z -r |
     tail -n +$((MAX_LOGS + 1)) |
     xargs -0 rm -f
