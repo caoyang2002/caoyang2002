@@ -2,8 +2,16 @@
 title: "关于"
 description: "一个页面"
 date: "2019-02-28"
-aliases:  ["about-us", "about-hugo", "contact"]
+aliases:  ["contact", "link"]
 author: "caoyang"
 ---
 
-联系页面
+Github：caoyang2002
+
+twitter：caoyang2002
+
+即刻：simons 曹洋
+
+小红书：simons 曹洋
+
+抖音：simons 曹洋
