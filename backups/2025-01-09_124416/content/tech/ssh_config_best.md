@@ -6,11 +6,17 @@ toc = true
 +++
 
 
-# `.zshrc` 配置
-```toml
+# zsh 配置
 
-~ ⌚ 13:50:37
-$ cat .zshrc
+## 安装 oh my zsh
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+配置 `.zshrc`
+```bash
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 

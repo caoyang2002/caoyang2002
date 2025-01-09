@@ -163,31 +163,38 @@ backup() {
 cleanup() {
   log "INFO" "开始清理..."
 
-  # 使用数组存储要清理的目录
   local cleanup_dirs=("backups" "logs")
 
+  # 清理目录
   for dir in "${cleanup_dirs[@]}"; do
       if [[ ! -d "$dir" ]]; then
            log "WARN" "目录不存在 $dir "
           continue
       fi
+      log "INFO" "清理 $dir..."
+      pushd "$dir" > /dev/null || continue
 
-      echo " $dir..."
+      # 根据目录类型使用不同的清理逻辑
+      if [[ "$dir" == "backups" ]]; then
+          # backups 目录的清理逻辑
+          ls -t -d */ 2>/dev/null | sed 's#/$##' | tail -n +$((MAX_BACKUPS + 1)) | while read -r backup; do
+              if [[ -n "$backup" ]]; then
+                  log "INFO" "删除旧的备份: $backup"
+                  rm -rf "$backup"
+              fi
+          done
 
-      # 使用 stat 和 ls 来代替 find -printf
-      # 获取目录列表并按修改时间排序
-      cd "$dir" || continue
+      elif [[ "$dir" == "logs" ]]; then
+          # logs 目录的清理逻辑
+          find . -maxdepth 1 -name "deploy-*.log" -type f | sort -r | tail -n +$((MAX_LOGS + 1)) | while read -r file; do
+              if [[ -n "$file" ]]; then
+                  log "INFO" "准备删除日志文件: $file"
+                  rm -f "$file"
+              fi
+          done
+      fi
 
-      ls -t -d */ 2>/dev/null |  # 按时间排序并只列出目录
-      sed 's#/$##' |             # 移除末尾的斜杠
-      tail -n +$((MAX_BACKUPS + 1)) |
-      while IFS= read -r backup; do
-          log "INFO" "删除旧的备份: $backup"
-          rm -rf "$backup"
-      done
-
-      cd - >/dev/null || exit
-
+      popd > /dev/null || exit
       if [ $? -eq 0 ]; then
           log "INFO" "清理成功 $dir"
       else
@@ -195,14 +202,9 @@ cleanup() {
       fi
   done
 
-  # 清理日志文件
-  find . -maxdepth 2 -name "deploy-*.log" -type f -print0 |
-    sort -z -r |
-    tail -n +$((MAX_LOGS + 1)) |
-    xargs -0 rm -f
-
   log "INFO" "清理完成"
 }
+
 
 # 改进的部署函数
 deploy() {
