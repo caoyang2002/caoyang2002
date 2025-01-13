@@ -8,5 +8,6 @@ caoyang2002.github.io/caoyang2002
 
 
 基本命令
-`hugo new content/posts/tech/name.md`
-`
+```bash
+hugo new content/posts/tech/name.md`
+```
