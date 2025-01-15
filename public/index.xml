@@ -1,22 +1,89 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on caoyang2002</title><link>https://caoyang2002.xyz/</link><description>Recent content in Home on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 15 Jan 2025 12:12:44 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://caoyang2002.xyz/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/about/</guid><description>&lt;p>我是曹洋，感觉没有什么特别好介绍的，这个网站主要记录我的经验和见解，博客几乎脱落不了大杂烩的模型，我的博客也一样。我只能尽量让他规矩一些。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Home on caoyang2002</title><link>https://caoyang2002.xyz/</link><description>Recent content in Home on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 15 Jan 2025 13:22:26 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://caoyang2002.xyz/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/about/</guid><description>&lt;p>我是曹洋，感觉没有什么特别好介绍的，这个网站主要记录我的经验和见解，博客几乎脱落不了大杂烩的模型，我的博客也一样。我只能尽量让他规矩一些。&lt;/p>
 &lt;p>目前是 web3 的开发者，自己经常捣鼓一些小产品。&lt;/p>
 &lt;p>做过的事情比较多，算是一个“连续创业者”（笑）。&lt;/p>
-&lt;p>2023 年和大学 3 个室友（jq，xy，sf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，jq 做起了提拉米苏，xy 出国留学，sf 进了设计公司，毕业告别的前几天，我们小聚了一下，计划着我们每年过年都聚一次。&lt;/p></description></item><item><title>一些记录</title><link>https://caoyang2002.xyz/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.xyz/post/2025/01/rust-%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust-%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8/</guid><description>&lt;h1 id="引用看似简单实则暗藏玄机">引用，看似简单实则暗藏玄机&lt;/h1>
-&lt;p>在我们日常开发中，经常会遇到这样的问题：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 场景1：我想传递一个很大的数据结构
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">BigData&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> data: [&lt;span style="color:#66d9ef">u8&lt;/span>; &lt;span style="color:#ae81ff">1024&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#ae81ff">1024&lt;/span>] &lt;span style="color:#75715e">// 1MB 数据
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;p>2023 年和大学 3 个室友（jq，xy，sf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，jq 做起了提拉米苏，xy 出国留学，sf 进了设计公司，毕业告别的前几天，我们小聚了一下，计划着我们每年过年都聚一次。&lt;/p></description></item><item><title>一些记录</title><link>https://caoyang2002.xyz/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/%E4%B8%80%E4%BA%9B%E8%AE%B0%E5%BD%95/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.xyz/post/2025/01/%E7%AE%80%E8%BF%B0-rust-%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/%E7%AE%80%E8%BF%B0-rust-%E4%B8%AD%E7%9A%84%E9%97%AD%E5%8C%85/</guid><description>&lt;h1 id="为什么需要闭包">为什么需要闭包？&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 问题1：函数复用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 没有闭包时，需要传入所有参数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">add&lt;/span>(x: &lt;span style="color:#66d9ef">i32&lt;/span>, base: &lt;span style="color:#66d9ef">i32&lt;/span>) -&amp;gt; &lt;span style="color:#66d9ef">i32&lt;/span> { x &lt;span style="color:#f92672">+&lt;/span> base }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">process_data&lt;/span>(data: &lt;span style="color:#a6e22e">BigData&lt;/span>) { &lt;span style="color:#75715e">// 每次调用都要拷贝1MB？
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#75715e">// 处理数据
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 有了闭包，可以部分应用
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> base &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">5&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> add_five &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">|&lt;/span>x&lt;span style="color:#f92672">|&lt;/span> x &lt;span style="color:#f92672">+&lt;/span> base;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 场景2：多个地方需要读取同一个数据
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> data &lt;span style="color:#f92672">=&lt;/span> String::from(&lt;span style="color:#e6db74">&amp;#34;hello&amp;#34;&lt;/span>);
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> data2 &lt;span style="color:#f92672">=&lt;/span> data; &lt;span style="color:#75715e">// data 的所有权被移动了
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>println!(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, data); &lt;span style="color:#75715e">// 编译错误！
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这些问题归结为一个核心矛盾：&lt;strong>我们既想高效地共享数据，又要保证内存安全&lt;/strong>。&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/post/2025/01/%E6%B7%B1%E5%85%A5%E8%A7%A3%E9%87%8A-rust-%E4%B8%AD%E7%9A%84-result-%E5%92%8C-option-%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%A0%B8%E5%BF%83%E7%B1%BB%E5%9E%8B/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/%E6%B7%B1%E5%85%A5%E8%A7%A3%E9%87%8A-rust-%E4%B8%AD%E7%9A%84-result-%E5%92%8C-option-%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%A0%B8%E5%BF%83%E7%B1%BB%E5%9E%8B/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 问题2：函数式编程需求
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>vec![&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>].iter().map(&lt;span style="color:#f92672">|&lt;/span>x&lt;span style="color:#f92672">|&lt;/span> x &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>); &lt;span style="color:#75715e">// 更简洁
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>vec![&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>].iter().map(multiply); &lt;span style="color:#75715e">// 需要单独定义函数
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 问题3：上下文捕获
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 没有闭包时很难处理
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">Context&lt;/span> { value: &lt;span style="color:#66d9ef">i32&lt;/span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> ctx &lt;span style="color:#f92672">=&lt;/span> Context { value: &lt;span style="color:#ae81ff">42&lt;/span> };
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> use_context &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">||&lt;/span> println!(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, ctx.value);
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="闭包是什么">闭包是什么？&lt;/h1>
+&lt;ul>
+&lt;li>闭包是可以捕获其环境的匿名函数&lt;/li>
+&lt;li>它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li>
+&lt;li>闭包 = 函数 + 环境&lt;/li>
+&lt;/ul>
+&lt;h1 id="闭包的优势">闭包的优势&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 1. 简洁的语法
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> add &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">|&lt;/span>a, b&lt;span style="color:#f92672">|&lt;/span> a &lt;span style="color:#f92672">+&lt;/span> b; &lt;span style="color:#75715e">// vs fn add(a: i32, b: i32) -&amp;gt; i32
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 2. 灵活的环境捕获
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> multiplier &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> double &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">|&lt;/span>x&lt;span style="color:#f92672">|&lt;/span> x &lt;span style="color:#f92672">*&lt;/span> multiplier; &lt;span style="color:#75715e">// 捕获 multiplier
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 3. 支持函数式编程
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> numbers: Vec&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">i32&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">=&lt;/span> vec![&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>, &lt;span style="color:#ae81ff">4&lt;/span>, &lt;span style="color:#ae81ff">5&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> even_numbers: Vec&lt;span style="color:#f92672">&amp;lt;&lt;/span>&lt;span style="color:#66d9ef">i32&lt;/span>&lt;span style="color:#f92672">&amp;gt;&lt;/span> &lt;span style="color:#f92672">=&lt;/span> numbers
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .into_iter()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .filter(&lt;span style="color:#f92672">|&lt;/span>x&lt;span style="color:#f92672">|&lt;/span> x &lt;span style="color:#f92672">%&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> .collect();
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="理解闭包">理解闭包&lt;/h1>
+&lt;p>我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p></description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.xyz/post/2025/01/rust-%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust-%E4%B8%AD%E7%9A%84%E5%BC%95%E7%94%A8/</guid><description>&lt;h1 id="引用你的快递地址和包裹">引用：你的快递地址和包裹&lt;/h1>
+&lt;p>想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p>
+&lt;ol>
+&lt;li>你家的地址（引用）&lt;/li>
+&lt;li>花瓶本身（值）&lt;/li>
+&lt;/ol>
+&lt;h2 id="为什么我们需要引用">为什么我们需要引用？&lt;/h2>
+&lt;p>让我们看一个具体的问题：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">calculate_length&lt;/span>(s: String) -&amp;gt; &lt;span style="color:#66d9ef">usize&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> s.len()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> s &lt;span style="color:#f92672">=&lt;/span> String::from(&lt;span style="color:#e6db74">&amp;#34;hello&amp;#34;&lt;/span>);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> len &lt;span style="color:#f92672">=&lt;/span> calculate_length(s);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>println!(&lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">{}&lt;/span>&lt;span style="color:#e6db74">&amp;#34;&lt;/span>, s); &lt;span style="color:#75715e">// 编译错误！s 已经被转移了所有权
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p></description></item><item><title>rust 闭包</title><link>https://caoyang2002.xyz/post/2025/01/rust-%E9%97%AD%E5%8C%85/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust-%E9%97%AD%E5%8C%85/</guid><description>&lt;h2 id="从一个常见问题说起">从一个常见问题说起&lt;/h2>
+&lt;p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> numbers &lt;span style="color:#f92672">=&lt;/span> vec![&lt;span style="color:#ae81ff">1&lt;/span>, &lt;span style="color:#ae81ff">2&lt;/span>, &lt;span style="color:#ae81ff">3&lt;/span>, &lt;span style="color:#ae81ff">4&lt;/span>, &lt;span style="color:#ae81ff">5&lt;/span>];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 如何优雅地复用过滤逻辑？
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> even_numbers &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">???&lt;/span> &lt;span style="color:#75715e">// 这里怎么写
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> multiplied_numbers &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">???&lt;/span> &lt;span style="color:#75715e">// 这里怎么写
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="闭包的本质">闭包的本质&lt;/h2>
+&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p>
+&lt;ol>
+&lt;li>函数逻辑&lt;/li>
+&lt;li>捕获的环境变量&lt;/li>
+&lt;/ol>
+&lt;p>让我们通过反编译来看闭包的真实面目：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 表面上的闭包
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">let&lt;/span> multiplier &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#ae81ff">2&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">let&lt;/span> closure &lt;span style="color:#f92672">=&lt;/span> &lt;span style="color:#f92672">|&lt;/span>x&lt;span style="color:#f92672">|&lt;/span> x &lt;span style="color:#f92672">*&lt;/span> multiplier;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// 编译器实际生成的结构（简化版）
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>&lt;span style="color:#66d9ef">struct&lt;/span> &lt;span style="color:#a6e22e">Closure&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> multiplier: &lt;span style="color:#66d9ef">i32&lt;/span>,
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">impl&lt;/span> Closure {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">call&lt;/span>(&lt;span style="color:#f92672">&amp;amp;&lt;/span>self, x: &lt;span style="color:#66d9ef">i32&lt;/span>) -&amp;gt; &lt;span style="color:#66d9ef">i32&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> x &lt;span style="color:#f92672">*&lt;/span> self.multiplier
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="闭包的三种类型">闭包的三种类型&lt;/h2>
+&lt;p>通过具体案例来理解三种闭包 trait：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/post/2025/01/%E6%B7%B1%E5%85%A5%E8%A7%A3%E9%87%8A-rust-%E4%B8%AD%E7%9A%84-result-%E5%92%8C-option-%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%A0%B8%E5%BF%83%E7%B1%BB%E5%9E%8B/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/%E6%B7%B1%E5%85%A5%E8%A7%A3%E9%87%8A-rust-%E4%B8%AD%E7%9A%84-result-%E5%92%8C-option-%E8%BF%99%E4%B8%A4%E4%B8%AA%E6%A0%B8%E5%BF%83%E7%B1%BB%E5%9E%8B/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
 &lt;p>假设我们在写一个文件处理程序：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-rust" data-lang="rust">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fn&lt;/span> &lt;span style="color:#a6e22e">read_config_file&lt;/span>(path: &lt;span style="color:#66d9ef">&amp;amp;&lt;/span>&lt;span style="color:#66d9ef">str&lt;/span>) -&amp;gt; String {
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> std::fs::read_to_string(path) &lt;span style="color:#75715e">// 这里会返回什么？
