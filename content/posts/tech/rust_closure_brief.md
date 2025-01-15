@@ -1,11 +1,13 @@
 +++
-date = '2025-01-15T11:29:27+08:00'
-draft = true
-title = 'rust 闭包'
+date = '2025-01-15T13:22:26+08:00'
+draft = false
+title = '简述 Rust 中的闭包'
 toc = true
 +++
 
+
 # 为什么需要闭包？
+
 ```rust
 // 问题1：函数复用
 // 没有闭包时，需要传入所有参数
@@ -26,12 +28,12 @@ let ctx = Context { value: 42 };
 let use_context = || println!("{}", ctx.value);
 ```
 
-2. 闭包是什么？
+# 闭包是什么？
 - 闭包是可以捕获其环境的匿名函数
 - 它"封闭"了其定义时的环境，故称"闭包"
 - 闭包 = 函数 + 环境
 
-3. 闭包的优势：
+# 闭包的优势
 ```rust
 // 1. 简洁的语法
 let add = |a, b| a + b;  // vs fn add(a: i32, b: i32) -> i32
@@ -48,7 +50,75 @@ let even_numbers: Vec<i32> = numbers
     .collect();
 ```
 
-4. 如何使用闭包：
+# 理解闭包
+
+我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：
+
+## Python 风格理解：
+```python
+# Python 的 lambda
+lambda x: x + 1
+
+# Python 的闭包
+def outer(a):
+    # 捕获外部变量 a
+    def inner(x):
+        return x + a
+    return inner
+```
+
+```rust
+# 对应的 Rust 代码
+|x| x + 1
+
+let a = 1;
+let closure = |x| x + a;
+```
+
+## TypeScript 风格理解：
+
+```typescript
+// TypeScript 的箭头函数
+const add = (x: number) => x + 1;
+
+// 带类型标注的闭包
+const multiply: (x: number) => number = (x) => x * 2;
+
+// 对应的 Rust 代码
+let add = |x: i32| x + 1;
+let multiply: fn(i32) -> i32 = |x| x * 2;
+```
+
+## Rust 闭包的特殊之处：
+
+```rust
+// 1. Rust 闭包有三种类型
+// FnOnce - 获取所有权
+let owns = |x| takes_ownership(x);
+
+// FnMut - 可变借用
+let mut mutates = |x| mutates_value(x);
+
+// Fn - 不可变借用
+let reads = |x| reads_value(x);
+
+// 2. 闭包会自动推断捕获方式
+let mut val = 5;
+let mut closure = || {
+    val += 1;    // 自动推断需要可变借用
+    println!("{}", val);
+};
+```
+
+主要区别：
+1. Rust 的闭包更关注内存安全和所有权
+2. Python/TS 的闭包主要关注词法作用域
+3. Rust 的闭包语法更简洁（使用 `||` 而不是 `()=>`）
+4. Rust 的闭包有更严格的类型系统和借用规则
+
+人们常说："如果你理解 JavaScript/TypeScript 的箭头函数，就很容易理解 Rust 的闭包语法；如果你理解 Python 的 lambda 和闭包概念，就很容易理解 Rust 闭包的用途。"
+
+# 如何使用闭包
 
 ```rust
 // 1. 基本语法
@@ -67,7 +137,7 @@ let v = vec![1, 2, 3];
 v.iter().map(|x| x * 2).collect::<Vec<_>>();
 ```
 
-5. 最佳实践：
+# 最佳实践
 
 ```rust
 // 1. 选择合适的特征界定
@@ -122,7 +192,7 @@ let safe_divide = |x, y| {
 let square: fn(i32) -> i32 = |x| x * x;
 ```
 
-6. 常见用例：
+# 常见用例
 
 ```rust
 // 1. 回调函数
@@ -146,68 +216,3 @@ let config = Config::new()
 
 掌握闭包可以让代码更简洁、更灵活，同时提高代码的可维护性和重用性。但要注意在使用时遵循最佳实践，以确保代码的清晰性和性能。
 
-我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：
-
-1. Python 风格理解：
-```python
-# Python 的 lambda
-lambda x: x + 1
-
-# Python 的闭包
-def outer(a):
-    # 捕获外部变量 a
-    def inner(x):
-        return x + a
-    return inner
-```
-
-```rust
-# 对应的 Rust 代码
-|x| x + 1
-
-let a = 1;
-let closure = |x| x + a;
-```
-
-2. TypeScript 风格理解：
-
-```typescript
-// TypeScript 的箭头函数
-const add = (x: number) => x + 1;
-
-// 带类型标注的闭包
-const multiply: (x: number) => number = (x) => x * 2;
-
-// 对应的 Rust 代码
-let add = |x: i32| x + 1;
-let multiply: fn(i32) -> i32 = |x| x * 2;
-```
-
-3. Rust 闭包的特殊之处：
-
-```rust
-// 1. Rust 闭包有三种类型
-// FnOnce - 获取所有权
-let owns = |x| takes_ownership(x);
-
-// FnMut - 可变借用
-let mut mutates = |x| mutates_value(x);
-
-// Fn - 不可变借用
-let reads = |x| reads_value(x);
-
-// 2. 闭包会自动推断捕获方式
-let mut val = 5;
-let mut closure = || {
-    val += 1;    // 自动推断需要可变借用
-    println!("{}", val);
-};
-```
-
-主要区别：
-1. Rust 的闭包更关注内存安全和所有权
-2. Python/TS 的闭包主要关注词法作用域
-3. Rust 的闭包语法更简洁（使用 `||` 而不是 `()=>`）
-4. Rust 的闭包有更严格的类型系统和借用规则
-
-人们常说："如果你理解 JavaScript/TypeScript 的箭头函数，就很容易理解 Rust 的闭包语法；如果你理解 Python 的 lambda 和闭包概念，就很容易理解 Rust 闭包的用途。"
