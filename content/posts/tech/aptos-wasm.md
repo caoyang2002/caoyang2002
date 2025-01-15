@@ -188,6 +188,10 @@ impl Tool {
 // ...
 ```
 
+
+
+# 执行过程
+
 在 `move_tool/mod.rs` 中
 
 ```rust
@@ -343,6 +347,12 @@ impl CliCommand<&'static str> for TestPackage {
 
 ```
 
+在这里的实现中，实际上已经可以在代码  `move_cli::base::test::run_move_unit_tests()`  这里看到执行时的调用细节了，这里不过多赘述。
+
+
+
+# 类型定义
+
 在 `common/types.rs` 中找到类型定义：
 
 ```rust
@@ -455,17 +465,27 @@ pub async fn to_common_result<T: Serialize>(
 ...
 ```
 
+至此，`aptos move` 是如何完成执行的已经可以告一个段落了。
+
+现在考虑如何将 move 编译器如何打包为 wasm
+
+目前考虑的方向是将
 
 
 
 
 
 
-无论是那种二进制，其大小都高达 一百甚至几百 MB，对于 wasm 来说实在太大。
 
 
 
-## wasm 基础
+
+
+
+
+
+
+# wasm 基础
 
 回忆一下 wasm 的开发过程，先是使用 `extern crate wasm_bindgen;` 和 `use wasm_bindgen::prelude::*;` 导入了 `wasm_bindgen` 库，
 
@@ -484,3 +504,8 @@ extern "C" {
 目前已经了解了 wasm 的实现
 
 使用命令 `wasm-pack build --target web` 打包 wasm 并生成 ts 包装。
+
+
+
+## 在控制台输出
+
