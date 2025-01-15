@@ -1,11 +1,13 @@
 +++
 date = '2025-01-15T11:26:02+08:00'
-draft = true
+draft = false
 title = 'rust 中的 result 和 option'
 toc = true
 +++
 
-`unwrap()` 是 Rust 中处理 `Result` 和 `Option` 类型的一个方法。让我详细解释：
+# `unwrap`
+
+`unwrap()` 是 Rust 中处理 `Result` 和 `Option` 类型的一个方法。
 
 1. 基本概念：
 ```rust
@@ -40,6 +42,7 @@ let value = y.unwrap(); // 会 panic
 ```
 
 4. 更安全的替代方法：
+
 ```rust
 // 使用 match
 match result {
