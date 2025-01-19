@@ -60,7 +60,7 @@ fullContent = true
 
 # 文章配置
 [permalinks]
-posts = "/post/:year/:month/:slug/"
+posts = "/post/:year/:month/:filename/"
 
 # 图片配置
 [imaging]
@@ -75,7 +75,7 @@ disableLatLong = true
 # Markdown配置
 [markup.tableOfContents]
 endLevel = 4
-   startLevel = 1
+startLevel = 1
 ordered = false
 # startLevel = 2
 
@@ -86,7 +86,7 @@ unsafe = true
 [params]
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
-toc = true  # 全局启用目录
+toc = true                             # 全局启用目录
 
 # 社交媒体链接
 twitter = 'caoyang2002'
@@ -98,21 +98,21 @@ avatar = 'reggiesimons2cy@gmail.com'
 name = 'Cyrus'
 bio = '用光的艺术'
 
-disablePostNavigation = false             # 禁用文章导航
+disablePostNavigation = false # 禁用文章导航
 
- # 其他设置
-disableHLJS = false                       # 禁用 highlight.js 代码高亮
+# 其他设置
+disableHLJS = false # 禁用 highlight.js 代码高亮
 # disablePostNavigation = true             # 禁用文章导航
-monoDarkIcon = false                     # 使用单色暗模式图标
+monoDarkIcon = false # 使用单色暗模式图标
 # gravatarCdn = 'GRAVATAR_CDN_LINK'        # Gravatar CDN 链接，例如 'https://cdn.v2ex.com/gravatar/'
-math = true                              # 全局启用 KaTeX 数学公式排版
-localKatex = false                       # 使用本地 KaTeX js/css 而不是 CDN
+math = true        # 全局启用 KaTeX 数学公式排版
+localKatex = false # 使用本地 KaTeX js/css 而不是 CDN
 # graphCommentId = "YOUR_GRAPH_COMMENT_ID" # 使用 Graph Comment（Disqus 替代品）
-favicon = "favicon.ico"                  # 自定义网站图标
-appleTouchIcon = "apple-touch-icon.png"  # 自定义苹果设备触摸图标
+favicon = "favicon.ico"                 # 自定义网站图标
+appleTouchIcon = "apple-touch-icon.png" # 自定义苹果设备触摸图标
 
 # RTL 支持
-direction = "ltr"                        # 支持从右到左的语言排版
+direction = "ltr" # 支持从右到左的语言排版
 
 [params.contact]
 email = 'info@example.org'
