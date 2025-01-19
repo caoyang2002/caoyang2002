@@ -50,6 +50,12 @@ repoId = 'R_kgDONgnnzg'
 category = 'Announcements'
 categoryId = 'DIC_kwDONgnnzs4ClayH'
 mapping = 'pathname'
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+# theme = "preferred_color_scheme"
+crossorigin = "anonymous"
 theme = 'light'
 lang = 'zh-CN'
 
