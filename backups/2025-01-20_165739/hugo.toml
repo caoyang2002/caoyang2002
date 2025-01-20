@@ -17,16 +17,28 @@ pagination.pagerSize = 10
 
 # 导航菜单配置
 [[menu.main]]
+identifier = "/"
+name = "首页"
+url = "/"
+weight = 10
+
+[[menu.main]]
 identifier = "about"
 name = "关于"
 url = "/about/"
-weight = 10
+weight = 20
 
 [[menu.main]]
 identifier = "contact"
 name = "联系"
 url = "/contact/"
-weight = 10
+weight = 30
+
+[[menu.main]]
+identifier = "guestbook"
+name = "留言"
+url = "/guestbook/"
+weight = 40
 
 # 隐私相关配置
 [privacy.vimeo]
@@ -100,7 +112,7 @@ github = 'caoyang2002'
 instagram = 'caoyang2002'
 
 # 个人信息配置
-avatar = '/avatar/avatar.jpg'
+avatar = '/about/avatar.jpg'
 name = 'Cyrus'
 bio = '用光的艺术'
 
