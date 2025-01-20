@@ -25,13 +25,14 @@ declare -r CYAN='\033[0;36m'
 declare -r YELLOW='\033[0;33m'
 declare -r NC='\033[0m' # No Color
 
+# 彩色打印
 print_colored() {
   local color=$1
   local message=$2
   printf "${color}%s${NC}\n" "$message"
 }
 
-# 改进的日志函数
+# 日志输出
 log() {
   local level=$1
   local message=$2
@@ -49,7 +50,7 @@ log() {
   timestamp=$(date +'%Y-%m-%d %H:%M:%S')
   printf "${color}[${timestamp}] [${level}] ${message}${NC}\n" | tee -a "$LOG_FILE"
 }
-# 错误处理函数
+# 错误处理
 error_handler() {
   local line_no=$1
   local error_code=$2
@@ -79,7 +80,7 @@ check_requirements() {
   fi
 }
 
-# 改进的健康检查
+# 健康检查
 health_check() {
   log "INFO" "执行健康检查..."
 
@@ -114,7 +115,7 @@ health_check() {
   fi
 }
 
-# 改进的备份函数
+# 备份
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
   local -a default_dirs=("content" "static")
@@ -159,7 +160,7 @@ backup() {
   log "INFO" "备份完成: $backup_dir"
 }
 
-# 改进的清理函数
+# 清理日志和备份
 cleanup() {
   log "INFO" "开始清理..."
 
@@ -206,7 +207,7 @@ cleanup() {
 }
 
 
-# 改进的部署函数
+# 部署到 vervel
 deploy() {
   local deploy_time
   deploy_time=$(date +%Y-%m-%d_%H%M%S)
@@ -258,7 +259,7 @@ deploy() {
   log "INFO" "部署成功完成"
 }
 
-# 改进的开发服务器函数
+# 启动本地服务器
 dev() {
   log "INFO" "启动开发服务器..."
   hugo server -D --disableFastRender --bind "0.0.0.0" --port 1313
