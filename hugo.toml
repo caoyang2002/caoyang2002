@@ -97,8 +97,8 @@ startLevel = 1
 ordered = false
 # startLevel = 2
 
-[markup.goldmark.renderer]
-unsafe = true
+# [markup.goldmark.renderer]
+# unsafe = true
 
 # 主题参数配置
 [params]
@@ -149,3 +149,29 @@ home = ["HTML", "RSS", "JSON"]
 changefreq = "monthly"
 priority = 0.5
 filename = "sitemap.xml"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true     # 允许原始 HTML
+hardWraps = false # 控制换行行为
+
+[markup.goldmark.extensions]
+typographer = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+
+[markup.highlight]
+# 启用代码围栏功能
+codeFences = true
+# 启用语言猜测
+guessSyntax = true
+# 启用行号
+# lineNos = true
+lineNumbersInTable = true
+# 使用 classes 而不是内联样式
+# noClasses = false
+# # 选择高亮主题
+style = "monokai" # 代码高亮主题
