@@ -1,246 +1,1088 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>搭建 NPS - caoyang2002</title>
-<meta name=theme-color><meta name=description content='
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>Avatar setting: /avatar/avatar.jpg
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="zh-CN"
+    dir="ltr"
+>
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>搭建 NPS - caoyang2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="
 github
 
 
 官方文档
 
-{bs-font color="#000000"} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}
+{bs-font color=&quot;#000000&quot;} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}
 以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
-简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。'><meta name=author content="Cyrus"><link rel="preload stylesheet" as=style href=https://caoyang2002.xyz/main.min.css><link rel=preload as=image href=https://caoyang2002.xyz/theme.png><link rel=preload as=image href="https://www.gravatar.com/avatar/d0bdfd42ef81555f2c2372b61609c73d?s=160&amp;d=identicon"><link rel=preload as=image href=https://caoyang2002.xyz/twitter.svg><link rel=preload as=image href=https://caoyang2002.xyz/github.svg><link rel=preload as=image href=https://caoyang2002.xyz/instagram.svg><link rel=preload as=image href=https://caoyang2002.xyz/rss.svg><script defer src=https://caoyang2002.xyz/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.xyz/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.xyz/apple-touch-icon.png><meta name=generator content="Hugo 0.140.2"><meta itemprop=name content="搭建 NPS"><meta itemprop=description content='github
-官方文档
-{bs-font color="#000000"} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}
-以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。 简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。'><meta itemprop=datePublished content="2024-03-29T09:31:37+08:00"><meta itemprop=dateModified content="2025-01-05T10:56:18+08:00"><meta itemprop=wordCount content="2031"><meta property="og:url" content="https://caoyang2002.xyz/post/2024/03/docker_pns/"><meta property="og:site_name" content="caoyang2002"><meta property="og:title" content="搭建 NPS"><meta property="og:description" content='github
-官方文档
-{bs-font color="#000000"} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}
-以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。 简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。'><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-03-29T09:31:37+08:00"><meta property="article:modified_time" content="2025-01-05T10:56:18+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="搭建 NPS"><meta name=twitter:description content='github
-官方文档
-{bs-font color="#000000"} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}
-以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。 简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。'><link rel=canonical href=https://caoyang2002.xyz/post/2024/03/docker_pns/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.xyz/>caoyang2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a>
-<a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>联系</a></nav><nav class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"><a class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./twitter.svg) href=https://twitter.com/caoyang2002 target=_blank rel=me>twitter
-</a><a class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./github.svg) href=https://github.com/caoyang2002 target=_blank rel=me>github
-</a><a class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./instagram.svg) href=https://instagram.com/caoyang2002 target=_blank rel=me>instagram
-</a><a class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6" style=--url:url(./rss.svg) href=https://caoyang2002.xyz/index.xml target=_blank rel=alternate>rss</a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">搭建 NPS</h1><div class="text-xs antialiased opacity-60"><time>2024年3月29日</time></div></div><section><blockquote><p><a href=https://github.com/ehang-io/nps/tree/master>github</a></p></blockquote><blockquote><p><a href=https://ehang-io.github.io/nps/#/install>官方文档</a></p></blockquote><p>{bs-font color="#000000"} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}</p><p>以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
-简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。</p><h1 id=服务器-nps>服务器 nps</h1><p>需要公网服务器，我服务器的是腾讯云，用的 docker 管理</p><h2 id=1-如果没下载-docker>1. 如果没下载 Docker</h2><blockquote><p>下载docker，使用包管理器下载，<code>yum install -y docker</code></p></blockquote><h2 id=2-创建nps的配置文件夹>2. 创建nps的配置文件夹，</h2><p>可以自定义，我创建的命令是 <code>mkdir /opt/nps/conf</code></p><h2 id=3-拉取docker-image>3. 拉取docker image</h2><p><code>docker pull ffdfgdfg/nps</code>，可以使用<code>docker images</code>查看是否拉取成功</p><h2 id=4-在nps的github下载配置文件>4. 在nps的github下载配置文件</h2><p>GitHub 下载地址 <a href=https://github.com/ehang-io/nps/blob/master/conf/nps.conf>https://github.com/ehang-io/nps/blob/master/conf/nps.conf</a></p><p>也可以在 gitee 下载 <a href=https://gitee.com/mirrors/nps/tree/master/conf>https://gitee.com/mirrors/nps/tree/master/conf</a> 把配置文件放在之前创建的 <code>/opt/nps/conf</code></p><h2 id=5-修改配置文件也可以不改见8>5. 修改配置文件（也可以不改，见8）</h2><p>具体文件内容在文末，修改nps.conf中的端口号，在nps.conf中将https_just_proxy设置为true，并且打开https_proxy_port端口，然后nps将直接转发https请求到内网服务器上，由内网服务器进行https处理</p><h2 id=6-运行>6. 运行</h2><p><code>docker run -d -p 20000-20010:20000-20010 -v /opt/nps/conf:/conf --name=nps ffdfgdfg/nps</code> 解释：<code>-d</code>:后台运行容器，并返回容器ID；<code>-p</code>: 指定端口映射，格式为：主机(宿主)端口:容器端口; <code>20000-20010:20000-20010</code>: 主机(宿主)端口:(docker)容器端口; <code>-v</code>:绑定一个卷; <code>/opt/nps/conf:/conf</code>: (宿主)目录: docker目录 <code>-name=nps</code>: 为容器指定一个名称； <code>ffdfgdfg/nps</code>:镜像，【应该是这个意思】</p><p>如果报错，查看镜像是否存在 <code>docker iamge</code>; 查看运行状态 <code>docker ps -a</code> 删除容器 <code>docker rm 容器名或id</code> 停止运行<code>docker stop 容器名或id</code></p><p>使用默认配置 <code>docker run --net=host --name nps_server -d ffdfgdfg/nps</code> ，解释 <code>--net="bridge"</code>: 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；</p><p>通过公网ip访问：<code>你的公网ip</code>:<code>你设置的端口</code> 比如：8.8.8.8:20003, 默认端口<code>20003</code></p><blockquote><p>后续发现停止运行了, 可以使用 <code>docker start nps</code> 启动 nps 服务</p></blockquote><blockquote><p>面板上的客户端就是实体设备，客户端通过这里设置的秘钥访问nps
-面板上的隧道就是设备上的端口，只要你客户端配置好了，隧道就自动在线了。隧道的就是客户端 id + 客户端端口 + 服务器映射端口（给公网访问）</p></blockquote><h1 id=客户端-npc>客户端 npc</h1><h2 id=1-拉取docker-image>1. 拉取docker image</h2><p><code>docker pull ffdfgdfg/npc</code></p><h2 id=2-配置文件见文末>2. 配置文件见文末</h2><p>不推荐修改配置</p><h2 id=3-未修改配置文件启动>3. 未修改配置文件启动</h2><ol><li>在服务端打开面板</li><li>客户端 -> 新增（可以不用配置，改改备注就行）-> 新增；</li><li>点击新增条目左边的加号，获取客户端命令。类似于：./npc -server=8.8.8.8:20002 -vkey=fds4322we232w -type=tcp；<code>./nps</code>可以不用复制，命令其余部分复制下来，用于配置客户端docker</li><li>运行 <code>docker run -d --name npc --net=host ffdfgdfg/npc -server=ip地址:20002 -vkey=z8uhasdfsfdshx -type=tcp</code></li></ol><h2 id=6-配置文件启动>6. 配置文件启动</h2><p>没用过，不瞎解释。</p><ol><li>主要是修改启动<code>server_addr</code> 改为你自己的地址
-<code>docker run -d -p 18080-18090:8080-8090 -v /root/npc/conf:/conf --name=npc ffdfgdfg/npc</code></li></ol><h1 id=配置文件>配置文件</h1><h2 id=npsconf>nps.conf</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>appname <span style=color:#f92672>=</span> nps
-</span></span><span style=display:flex><span>runmode <span style=color:#f92672>=</span> dev
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>http_proxy_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>http_proxy_port<span style=color:#f92672>=</span><span style=color:#ae81ff>20000</span>  <span style=color:#960050;background-color:#1e0010>#</span> http访问
-</span></span><span style=display:flex><span>https_proxy_port<span style=color:#f92672>=</span><span style=color:#ae81ff>20001</span> <span style=color:#960050;background-color:#1e0010>#</span> https访问
-</span></span><span style=display:flex><span>https_just_proxy<span style=color:#f92672>=</span>true <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#960050;background-color:#1e0010>仅</span>https代理
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>https_default_cert_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.pem
-</span></span><span style=display:flex><span>https_default_key_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.key
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>bridge_type<span style=color:#f92672>=</span>tcp
-</span></span><span style=display:flex><span>bridge_port<span style=color:#f92672>=</span><span style=color:#ae81ff>20002</span>  <span style=color:#960050;background-color:#1e0010>#</span>
-</span></span><span style=display:flex><span>bridge_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>public_vkey<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>log_level<span style=color:#f92672>=</span><span style=color:#ae81ff>7</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>web_host<span style=color:#f92672>=</span>a.o.com
-</span></span><span style=display:flex><span>web_username<span style=color:#f92672>=</span>admin <span style=color:#960050;background-color:#1e0010>#用户名</span>
-</span></span><span style=display:flex><span>web_password<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>  <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#960050;background-color:#1e0010>密码</span>
-</span></span><span style=display:flex><span>web_port <span style=color:#f92672>=</span> <span style=color:#ae81ff>20003</span> <span style=color:#960050;background-color:#1e0010>#</span> <span style=color:#960050;background-color:#1e0010>记住这个端口，这是管理面板的端口</span>
-</span></span><span style=display:flex><span>web_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>web_base_url<span style=color:#f92672>=</span>
-</span></span><span style=display:flex><span>web_open_ssl<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>web_cert_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.pem
-</span></span><span style=display:flex><span>web_key_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.key
-</span></span><span style=display:flex><span>auth_crypt_key <span style=color:#f92672>=</span><span style=color:#ae81ff>1234567887654321</span>
-</span></span><span style=display:flex><span>allow_user_login<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_user_register<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_user_change_username<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_flow_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_rate_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_tunnel_num_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_local_proxy<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_connection_num_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_multi_ip<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>system_info_display<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>http_cache<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>http_cache_length<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>
-</span></span><span style=display:flex><span>http_add_origin_header<span style=color:#f92672>=</span>false
-</span></span></code></pre></div><p>配置文件（/etc/nps/conf/nps.conf）的含义：</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>名称</span>	<span style=color:#960050;background-color:#1e0010>含义</span>
-</span></span><span style=display:flex><span>web_port	web管理端口
-</span></span><span style=display:flex><span>web_password	web界面管理密码
-</span></span><span style=display:flex><span>web_username	web界面管理账号
-</span></span><span style=display:flex><span>web_base_url	web管理主路径,<span style=color:#960050;background-color:#1e0010>用于将</span>web管理置于代理子路径后面
-</span></span><span style=display:flex><span>bridge_port	<span style=color:#960050;background-color:#1e0010>服务端客户端通信端口</span>
-</span></span><span style=display:flex><span>https_proxy_port	<span style=color:#960050;background-color:#1e0010>域名代理</span>https代理监听端口
-</span></span><span style=display:flex><span>http_proxy_port	<span style=color:#960050;background-color:#1e0010>域名代理</span>http代理监听端口
-</span></span><span style=display:flex><span>auth_key	web api密钥
-</span></span><span style=display:flex><span>bridge_type	<span style=color:#960050;background-color:#1e0010>客户端与服务端连接方式</span>kcp或tcp
-</span></span><span style=display:flex><span>public_vkey	<span style=color:#960050;background-color:#1e0010>客户端以配置文件模式启动时的密钥，设置为空表示关闭客户端配置文件连接模式</span>
-</span></span><span style=display:flex><span>ip_limit	<span style=color:#960050;background-color:#1e0010>是否限制</span>ip访问<span style=color:#960050;background-color:#1e0010>，</span>true或false或忽略
-</span></span><span style=display:flex><span>flow_store_interval	<span style=color:#960050;background-color:#1e0010>服务端流量数据持久化间隔，单位分钟，忽略表示不持久化</span>
-</span></span><span style=display:flex><span>log_level	<span style=color:#960050;background-color:#1e0010>日志输出级别</span>
-</span></span><span style=display:flex><span>auth_crypt_key	<span style=color:#960050;background-color:#1e0010>获取服务端</span>authKey时的aes加密密钥<span style=color:#960050;background-color:#1e0010>，</span><span style=color:#ae81ff>16</span><span style=color:#960050;background-color:#1e0010>位</span>
-</span></span><span style=display:flex><span>p2p_ip	<span style=color:#960050;background-color:#1e0010>服务端</span>Ip<span style=color:#960050;background-color:#1e0010>，使用</span>p2p模式必填
-</span></span><span style=display:flex><span>p2p_port	p2p模式开启的udp端口
-</span></span><span style=display:flex><span>pprof_ip	debug pprof <span style=color:#960050;background-color:#1e0010>服务端</span>ip
-</span></span><span style=display:flex><span>pprof_port	debug pprof <span style=color:#960050;background-color:#1e0010>端口</span>
-</span></span><span style=display:flex><span>disconnect_timeout	<span style=color:#960050;background-color:#1e0010>客户端连接超时，单位</span> <span style=color:#ae81ff>5</span>s<span style=color:#960050;background-color:#1e0010>，默认值</span> <span style=color:#ae81ff>60</span><span style=color:#960050;background-color:#1e0010>，即</span> <span style=color:#ae81ff>300</span>s <span style=color:#f92672>=</span> <span style=color:#ae81ff>5</span>mins
-</span></span></code></pre></div><p>默认配置</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>appname <span style=color:#f92672>=</span> nps
-</span></span><span style=display:flex><span><span style=color:#75715e>#Boot mode(dev|pro)
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>runmode <span style=color:#f92672>=</span> dev
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#HTTP(S) proxy port, no startup if empty
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>http_proxy_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>http_proxy_port<span style=color:#f92672>=</span><span style=color:#ae81ff>80</span>
-</span></span><span style=display:flex><span>https_proxy_port<span style=color:#f92672>=</span><span style=color:#ae81ff>443</span>
-</span></span><span style=display:flex><span>https_just_proxy<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span><span style=color:#75715e>#default https certificate setting
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>https_default_cert_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.pem
-</span></span><span style=display:flex><span>https_default_key_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.key
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>##bridge
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>bridge_type<span style=color:#f92672>=</span>tcp
-</span></span><span style=display:flex><span>bridge_port<span style=color:#f92672>=</span><span style=color:#ae81ff>8024</span>
-</span></span><span style=display:flex><span>bridge_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e># Public password, which clients can use to connect to the server
-</span></span></span><span style=display:flex><span><span style=color:#75715e># After the connection, the server will be able to open relevant ports and parse related domain names according to its own configuration file.
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>public_vkey<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#Traffic data persistence interval(minute)
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#Ignorance means no persistence
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#flow_store_interval=1
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e># log level LevelEmergency-&gt;0  LevelAlert-&gt;1 LevelCritical-&gt;2 LevelError-&gt;3 LevelWarning-&gt;4 LevelNotice-&gt;5 LevelInformational-&gt;6 LevelDebug-&gt;7
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>log_level<span style=color:#f92672>=</span><span style=color:#ae81ff>7</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#log_path=nps.log
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#Whether to restrict IP access, true or false or ignore
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#ip_limit=true
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#p2p
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#p2p_ip=127.0.0.1
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#p2p_port=6000
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#web
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>web_host<span style=color:#f92672>=</span>a.o.com
-</span></span><span style=display:flex><span>web_username<span style=color:#f92672>=</span>admin
-</span></span><span style=display:flex><span>web_password<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>web_port <span style=color:#f92672>=</span> <span style=color:#ae81ff>8080</span>
-</span></span><span style=display:flex><span>web_ip<span style=color:#f92672>=</span><span style=color:#ae81ff>0.0.0.0</span>
-</span></span><span style=display:flex><span>web_base_url<span style=color:#f92672>=</span>
-</span></span><span style=display:flex><span>web_open_ssl<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>web_cert_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.pem
-</span></span><span style=display:flex><span>web_key_file<span style=color:#f92672>=</span>conf<span style=color:#f92672>/</span>server.key
-</span></span><span style=display:flex><span><span style=color:#75715e># if web under proxy use sub path. like http:</span><span style=color:#75715e>//host/nps need this.
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span><span style=color:#75715e>#web_base_url=/nps
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#Web API unauthenticated IP address(the len of auth_crypt_key must be 16)
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#Remove comments if needed
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#auth_key=test
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>auth_crypt_key <span style=color:#f92672>=</span><span style=color:#ae81ff>1234567812345678</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#allow_ports=9001-9009,10001,11000-12000
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#Web management multi-user login
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>allow_user_login<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_user_register<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_user_change_username<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#extension
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>allow_flow_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_rate_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_tunnel_num_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_local_proxy<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_connection_num_limit<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>allow_multi_ip<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>system_info_display<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#cache
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>http_cache<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>http_cache_length<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#get origin ip
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>http_add_origin_header<span style=color:#f92672>=</span>false
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#pprof debug options
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#pprof_ip=0.0.0.0
-</span></span></span><span style=display:flex><span><span style=color:#75715e>#pprof_port=9999
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#client disconnect timeout
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>disconnect_timeout<span style=color:#f92672>=</span><span style=color:#ae81ff>60</span>
-</span></span></code></pre></div><h2 id=npcconf>npc.conf</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>[common]
-</span></span><span style=display:flex><span>server_addr<span style=color:#f92672>=</span><span style=color:#ae81ff>1.1.1.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8024</span>
-</span></span><span style=display:flex><span>conn_type<span style=color:#f92672>=</span>tcp
-</span></span><span style=display:flex><span>vkey<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>username<span style=color:#f92672>=</span><span style=color:#ae81ff>111</span>
-</span></span><span style=display:flex><span>password<span style=color:#f92672>=</span><span style=color:#ae81ff>222</span>
-</span></span><span style=display:flex><span>compress<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span>crypt<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span>rate_limit<span style=color:#f92672>=</span><span style=color:#ae81ff>10000</span>
-</span></span><span style=display:flex><span>flow_limit<span style=color:#f92672>=</span><span style=color:#ae81ff>100</span>
-</span></span><span style=display:flex><span>remark<span style=color:#f92672>=</span>test
-</span></span><span style=display:flex><span>max_conn<span style=color:#f92672>=</span><span style=color:#ae81ff>10</span>
-</span></span><span style=display:flex><span><span style=color:#75715e>#pprof_addr=0.0.0.0:9999
-</span></span></span></code></pre></div><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>项</span>	<span style=color:#960050;background-color:#1e0010>含义</span>
-</span></span><span style=display:flex><span>server_addr	<span style=color:#960050;background-color:#1e0010>服务端</span>ip<span style=color:#f92672>/</span><span style=color:#960050;background-color:#1e0010>域名</span><span style=color:#f92672>:</span>port
-</span></span><span style=display:flex><span>conn_type	<span style=color:#960050;background-color:#1e0010>与服务端通信模式</span>(tcp或kcp)
-</span></span><span style=display:flex><span>vkey	<span style=color:#960050;background-color:#1e0010>服务端配置文件中的密钥</span>(<span style=color:#960050;background-color:#1e0010>非</span>web)
-</span></span><span style=display:flex><span>username	<span style=color:#a6e22e>socks5或http</span>(s)<span style=color:#960050;background-color:#1e0010>密码保护用户名</span>(<span style=color:#960050;background-color:#1e0010>可忽略</span>)
-</span></span><span style=display:flex><span>password	<span style=color:#a6e22e>socks5或http</span>(s)<span style=color:#960050;background-color:#1e0010>密码保护密码</span>(<span style=color:#960050;background-color:#1e0010>可忽略</span>)
-</span></span><span style=display:flex><span>compress	<span style=color:#960050;background-color:#1e0010>是否压缩传输</span>(true或false或忽略)
-</span></span><span style=display:flex><span>crypt	<span style=color:#960050;background-color:#1e0010>是否加密传输</span>(true或false或忽略)
-</span></span><span style=display:flex><span>rate_limit	<span style=color:#960050;background-color:#1e0010>速度限制，可忽略</span>
-</span></span><span style=display:flex><span>flow_limit	<span style=color:#960050;background-color:#1e0010>流量限制，可忽略</span>
-</span></span><span style=display:flex><span>remark	<span style=color:#960050;background-color:#1e0010>客户端备注，可忽略</span>
-</span></span><span style=display:flex><span>max_conn	<span style=color:#960050;background-color:#1e0010>最大连接数，可忽略</span>
-</span></span><span style=display:flex><span>pprof_addr	debug pprof ip:port
-</span></span></code></pre></div><p>通过域名访问</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>[common]
-</span></span><span style=display:flex><span>server_addr<span style=color:#f92672>=</span><span style=color:#960050;background-color:#1e0010>域名</span><span style=color:#f92672>:</span><span style=color:#ae81ff>20002</span>
-</span></span><span style=display:flex><span>conn_type<span style=color:#f92672>=</span>https
-</span></span><span style=display:flex><span>vkey<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>auto_reconnection<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span>max_conn<span style=color:#f92672>=</span><span style=color:#ae81ff>1000</span>
-</span></span><span style=display:flex><span>flow_limit<span style=color:#f92672>=</span><span style=color:#ae81ff>1000</span>
-</span></span><span style=display:flex><span>rate_limit<span style=color:#f92672>=</span><span style=color:#ae81ff>1000</span>
-</span></span><span style=display:flex><span>basic_username<span style=color:#f92672>=</span><span style=color:#ae81ff>11</span>
-</span></span><span style=display:flex><span>basic_password<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span>
-</span></span><span style=display:flex><span>web_username<span style=color:#f92672>=</span>user
-</span></span><span style=display:flex><span>web_password<span style=color:#f92672>=</span><span style=color:#ae81ff>1234</span>
-</span></span><span style=display:flex><span>crypt<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span>compress<span style=color:#f92672>=</span>true
-</span></span><span style=display:flex><span><span style=color:#75715e>#pprof_addr=0.0.0.0:9999
-</span></span></span><span style=display:flex><span><span style=color:#75715e></span>disconnect_timeout<span style=color:#f92672>=</span><span style=color:#ae81ff>60</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[health_check_test1]
-</span></span><span style=display:flex><span>health_check_timeout<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>health_check_max_failed<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span>
-</span></span><span style=display:flex><span>health_check_interval<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>health_http_url<span style=color:#f92672>=/</span>
-</span></span><span style=display:flex><span>health_check_type<span style=color:#f92672>=</span>http
-</span></span><span style=display:flex><span>health_check_target<span style=color:#f92672>=</span><span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8083</span>,<span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8082</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[health_check_test2]
-</span></span><span style=display:flex><span>health_check_timeout<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>health_check_max_failed<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span>
-</span></span><span style=display:flex><span>health_check_interval<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>
-</span></span><span style=display:flex><span>health_check_type<span style=color:#f92672>=</span>tcp
-</span></span><span style=display:flex><span>health_check_target<span style=color:#f92672>=</span><span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8083</span>,<span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8082</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>[web]
-</span></span><span style=display:flex><span>host<span style=color:#f92672>=</span><span style=color:#960050;background-color:#1e0010>域名</span>
-</span></span><span style=display:flex><span>target_addr<span style=color:#f92672>=</span><span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8080</span>
-</span></span></code></pre></div><p>说明</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-c data-lang=c><span style=display:flex><span>[common]
-</span></span><span style=display:flex><span>server_addr<span style=color:#f92672>=</span><span style=color:#ae81ff>1.1.1.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8024</span>
-</span></span><span style=display:flex><span>vkey<span style=color:#f92672>=</span><span style=color:#ae81ff>123</span>
-</span></span><span style=display:flex><span>[web1]
-</span></span><span style=display:flex><span>host<span style=color:#f92672>=</span>a.proxy.com
-</span></span><span style=display:flex><span>target_addr<span style=color:#f92672>=</span><span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8080</span>,<span style=color:#ae81ff>127.0.0.1</span><span style=color:#f92672>:</span><span style=color:#ae81ff>8082</span>
-</span></span><span style=display:flex><span>host_change<span style=color:#f92672>=</span>www.proxy.com
-</span></span><span style=display:flex><span>header_set_proxy<span style=color:#f92672>=</span>nps
-</span></span></code></pre></div></section><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://caoyang2002.xyz/post/2024/04/jwt/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>JWT 解析</span></a>
-<a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://caoyang2002.xyz/post/2024/03/xiaomi_4a/><span>小米 4a 路由器刷机</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-24 w-100rem" id=disqus_thread></div><script>const disqusShortname="caoyang2002.xyz",script=document.createElement("script");script.src="https://"+disqusShortname+".disqus.com/embed.js",script.setAttribute("data-timestamp",+new Date),document.head.appendChild(script)</script><div class="giscus mt-24"></div><script src=https://giscus.app/client.js data-repo=caoyang2002/caoyang2002 data-repo-id=R_kgDONgnnzg data-category=Announcements data-category-id=DIC_kwDONgnnzs4ClayH data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script></article></main><div class="hidden lg:block ml-8"><aside class="sticky w-64"><div class="not-prose sticky top-24 rounded-lg bg-white dark:bg-neutral-800 p-6 shadow-sm"><h3 class="mb-4 text-lg font-semibold bg-gradient-to-r from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 bg-clip-text text-transparent">目录</h3><nav id=TableOfContents class=toc><nav id=TableOfContents><ul><li><a href=#服务器-nps>服务器 nps</a><ul><li><a href=#1-如果没下载-docker>1. 如果没下载 Docker</a></li><li><a href=#2-创建nps的配置文件夹>2. 创建nps的配置文件夹，</a></li><li><a href=#3-拉取docker-image>3. 拉取docker image</a></li><li><a href=#4-在nps的github下载配置文件>4. 在nps的github下载配置文件</a></li><li><a href=#5-修改配置文件也可以不改见8>5. 修改配置文件（也可以不改，见8）</a></li><li><a href=#6-运行>6. 运行</a></li></ul></li><li><a href=#客户端-npc>客户端 npc</a><ul><li><a href=#1-拉取docker-image>1. 拉取docker image</a></li><li><a href=#2-配置文件见文末>2. 配置文件见文末</a></li><li><a href=#3-未修改配置文件启动>3. 未修改配置文件启动</a></li><li><a href=#6-配置文件启动>6. 配置文件启动</a></li></ul></li><li><a href=#配置文件>配置文件</a><ul><li><a href=#npsconf>nps.conf</a></li><li><a href=#npcconf>npc.conf</a></li></ul></li></ul></nav></nav></div></aside><style>aside{position:fixed;top:8rem;bottom:8rem;right:0;width:14rem;height:auto;overflow-y:auto;z-index:10}.toc-container{background:#fff;border-radius:.5rem;padding:.5rem;box-shadow:0 1px 3px rgb(0 0 0/.1)}@media(prefers-color-scheme:dark){.toc-container{background:#262626}}.toc{max-height:calc(100vh - 180px);overflow-y:auto;scrollbar-gutter:stable}.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-track{background:0 0}.toc::-webkit-scrollbar-thumb{background-color:#d1d1d1;border-radius:4px}.toc ul{list-style:none;padding-left:1rem}.toc li{margin:.5rem 0}.toc a{display:block;padding:.25rem .5rem;color:#4b5563;text-decoration:none;border-radius:.25rem;transition:all .2s}.toc a:hover{background-color:#f3f4f6;color:#111827}.toc a.active{background-color:#f3f4f6;color:#111827;font-weight:500}@media(max-width:768px){aside{display:none}}@media(prefers-color-scheme:dark){.toc a{color:#9ca3af}.toc a:hover,.toc a.active{background-color:#262626;color:#e5e7eb}.toc::-webkit-scrollbar-thumb{background-color:#404040}}h1,h2,h3,h4,h5,h6{scroll-margin-top:100px}</style><script>document.addEventListener("DOMContentLoaded",()=>{const e=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id"),n=document.querySelector(`.toc a[href="#${t}"]`);e.intersectionRatio>0&&(document.querySelectorAll(".toc a.active").forEach(e=>{e.classList.remove("active")}),n?.classList.add("active"))})},{rootMargin:"-20% 0px -80% 0px"});document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(t=>{e.observe(t)})});let touchStartX=0,touchEndX=0;document.addEventListener("touchstart",e=>{touchStartX=e.changedTouches[0].screenX},!1),document.addEventListener("touchend",e=>{touchEndX=e.changedTouches[0].screenX,handleSwipe()},!1);function handleSwipe(){const e=document.querySelector("aside"),t=touchEndX-touchStartX;Math.abs(t)>50&&(t<0?e?.classList.add("show"):e?.classList.remove("show"))}</script></div></div><footer class="flex items-center text-xs uppercase"><div class="mr-auto opacity-60">&copy; 2025
-<a class=link href=https://caoyang2002.xyz/>caoyang2002</a></div><div><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script>本站访问 <span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span> 次</div><a class="link mx-6 opacity-60" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
-<a class="link mx-6 opacity-60" href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a>
-<a class="link opacity-60" href=https://github.com/caoyang2002/hugo-focus rel=noopener target=_blank>hugo-focus</a></footer><style>footer{position:fixed;bottom:0;left:0;right:0;z-index:50;width:100%;padding:.5rem;padding-bottom:calc(.5rem + var(--safe-padding-bottom));padding-left:max(.5rem,var(--safe-padding-left));padding-right:max(.5rem,var(--safe-padding-right));display:flex;justify-content:center;align-items:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(12px);background:rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.3);box-shadow:0 -4px 20px rgba(0,0,0,5%)}.dark footer{background:rgba(0,0,0,.85);border-top-color:rgba(255,255,255,.1)}.footer-content{width:100%;max-width:var(--w);margin:0 auto;padding:0 1rem;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:1rem}.footer-element{padding:.75rem 1.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;border-radius:.5rem;background:rgba(255,255,255,.1);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:all .2s ease}.footer-element:hover{opacity:1;background:rgba(255,255,255,.2)}.dark .footer-element{background:rgba(255,255,255,5%)}.dark .footer-element:hover{background:rgba(255,255,255,.1)}@media(max-width:768px){footer{padding-top:.5rem;padding-bottom:calc(.5rem + env(safe-area-inset-bottom))}.footer-content{padding:0 .5rem;gap:.5rem}.footer-element{padding:.5rem 1rem;font-size:.75rem}}@media(min-width:768px){.footer-element{font-size:.875rem}}@media(min-width:1024px){.footer-content{padding:0 2rem;gap:2rem}.footer-element{padding:.75rem 2rem}}</style></body></html>
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。" />
+    <meta name="author" content="Cyrus" />
+    
+
+    
+    
+    
+    
+    
+    
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/avatar/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+    
+    
+
+    
+    
+    <script
+        defer
+        src="http://localhost:1313/highlight.min.js"
+        onload="hljs.initHighlightingOnLoad();"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="http://localhost:1313/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="http://localhost:1313/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        <header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+        
+        <nav
+            class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/about/"
+                >关于</a
+            >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/contact/"
+                >联系</a
+            >
+            
+        </nav>
+        
+
+        
+        <nav
+            class="mt-12 flex justify-center space-x-10 rtl:space-x-reverse dark:invert ltr:lg:ml-14 rtl:lg:mr-14 lg:mt-0 lg:items-center"
+        >
+            
+            <a
+                class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+                style="--url: url(./twitter.svg)"
+                href="https://twitter.com/caoyang2002"
+                target="_blank"
+                rel="me"
+            >
+                twitter
+            </a>
+            
+            <a
+                class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+                style="--url: url(./github.svg)"
+                href="https://github.com/caoyang2002"
+                target="_blank"
+                rel="me"
+            >
+                github
+            </a>
+            
+            <a
+                class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+                style="--url: url(./instagram.svg)"
+                href="https://instagram.com/caoyang2002"
+                target="_blank"
+                rel="me"
+            >
+                instagram
+            </a>
+            
+            <a
+                class="h-7 w-7 text-[0] [background:var(--url)_center_center/cover_no-repeat] lg:h-6 lg:w-6"
+                style="--url: url(./rss.svg)"
+                href="http://localhost:1313/index.xml"
+                target="_blank"
+                rel="alternate"
+            >
+                rss
+            </a>
+            
+        </nav>
+        
+    </div>
+</header>
+
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">搭建 NPS</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+            <time>2024年3月29日</time>
+            
+            
+            
+            
+        </div>
+        
+    </div>
+
+    <section><blockquote>
+<p><a href="https://github.com/ehang-io/nps/tree/master">github</a></p>
+</blockquote>
+<blockquote>
+<p><a href="https://ehang-io.github.io/nps/#/install">官方文档</a></p>
+</blockquote>
+<p>{bs-font color=&quot;#000000&quot;} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}</p>
+<p>以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。</p>
+<h1 id="服务器-nps">服务器 nps</h1>
+<p>需要公网服务器，我服务器的是腾讯云，用的 docker 管理</p>
+<h2 id="1-如果没下载-docker">1. 如果没下载 Docker</h2>
+<blockquote>
+<p>下载docker，使用包管理器下载，<code>yum install -y docker</code></p>
+</blockquote>
+<h2 id="2-创建nps的配置文件夹">2. 创建nps的配置文件夹，</h2>
+<p>可以自定义，我创建的命令是 <code>mkdir /opt/nps/conf</code></p>
+<h2 id="3-拉取docker-image">3. 拉取docker image</h2>
+<p><code>docker pull ffdfgdfg/nps</code>，可以使用<code>docker images</code>查看是否拉取成功</p>
+<h2 id="4-在nps的github下载配置文件">4. 在nps的github下载配置文件</h2>
+<p>GitHub 下载地址 <a href="https://github.com/ehang-io/nps/blob/master/conf/nps.conf">https://github.com/ehang-io/nps/blob/master/conf/nps.conf</a></p>
+<p>也可以在 gitee 下载 <a href="https://gitee.com/mirrors/nps/tree/master/conf">https://gitee.com/mirrors/nps/tree/master/conf</a> 把配置文件放在之前创建的 <code>/opt/nps/conf</code></p>
+<h2 id="5-修改配置文件也可以不改见8">5. 修改配置文件（也可以不改，见8）</h2>
+<p>具体文件内容在文末，修改nps.conf中的端口号，在nps.conf中将https_just_proxy设置为true，并且打开https_proxy_port端口，然后nps将直接转发https请求到内网服务器上，由内网服务器进行https处理</p>
+<h2 id="6-运行">6. 运行</h2>
+<p><code>docker run -d -p 20000-20010:20000-20010 -v /opt/nps/conf:/conf --name=nps ffdfgdfg/nps</code> 解释：<code>-d</code>:后台运行容器，并返回容器ID；<code>-p</code>: 指定端口映射，格式为：主机(宿主)端口:容器端口;  <code>20000-20010:20000-20010</code>: 主机(宿主)端口:(docker)容器端口; <code>-v</code>:绑定一个卷;  <code> /opt/nps/conf:/conf</code>: (宿主)目录: docker目录 <code>-name=nps</code>: 为容器指定一个名称； <code>ffdfgdfg/nps</code>:镜像，【应该是这个意思】</p>
+<p>如果报错，查看镜像是否存在 <code>docker iamge</code>; 查看运行状态 <code>docker ps -a</code> 删除容器 <code>docker rm 容器名或id</code> 停止运行<code>docker stop 容器名或id</code></p>
+<p>使用默认配置 <code>docker run --net=host --name nps_server -d ffdfgdfg/nps</code> ，解释 <code>--net=&quot;bridge&quot;</code>: 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；</p>
+<p>通过公网ip访问：<code>你的公网ip</code>:<code>你设置的端口</code> 比如：8.8.8.8:20003, 默认端口<code>20003</code></p>
+<blockquote>
+<p>后续发现停止运行了, 可以使用 <code>docker start nps</code> 启动 nps 服务</p>
+</blockquote>
+<blockquote>
+<p>面板上的客户端就是实体设备，客户端通过这里设置的秘钥访问nps
+面板上的隧道就是设备上的端口，只要你客户端配置好了，隧道就自动在线了。隧道的就是客户端 id + 客户端端口 + 服务器映射端口（给公网访问）</p>
+</blockquote>
+<h1 id="客户端-npc">客户端 npc</h1>
+<h2 id="1-拉取docker-image">1. 拉取docker image</h2>
+<p><code>docker pull ffdfgdfg/npc</code></p>
+<h2 id="2-配置文件见文末">2. 配置文件见文末</h2>
+<p>不推荐修改配置</p>
+<h2 id="3-未修改配置文件启动">3. 未修改配置文件启动</h2>
+<ol>
+<li>在服务端打开面板</li>
+<li>客户端 -&gt; 新增（可以不用配置，改改备注就行）-&gt; 新增；</li>
+<li>点击新增条目左边的加号，获取客户端命令。类似于：./npc -server=8.8.8.8:20002 -vkey=fds4322we232w -type=tcp；<code>./nps</code>可以不用复制，命令其余部分复制下来，用于配置客户端docker</li>
+<li>运行 <code>docker run -d --name npc --net=host ffdfgdfg/npc -server=ip地址:20002 -vkey=z8uhasdfsfdshx -type=tcp</code></li>
+</ol>
+<h2 id="6-配置文件启动">6. 配置文件启动</h2>
+<p>没用过，不瞎解释。</p>
+<ol>
+<li>主要是修改启动<code>server_addr</code> 改为你自己的地址
+<code>docker run -d -p 18080-18090:8080-8090 -v /root/npc/conf:/conf --name=npc ffdfgdfg/npc</code></li>
+</ol>
+<h1 id="配置文件">配置文件</h1>
+<h2 id="npsconf">nps.conf</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>appname <span style="color:#f92672">=</span> nps
+</span></span><span style="display:flex;"><span>runmode <span style="color:#f92672">=</span> dev
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>http_proxy_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>http_proxy_port<span style="color:#f92672">=</span><span style="color:#ae81ff">20000</span>  <span style="color:#960050;background-color:#1e0010">#</span> http访问
+</span></span><span style="display:flex;"><span>https_proxy_port<span style="color:#f92672">=</span><span style="color:#ae81ff">20001</span> <span style="color:#960050;background-color:#1e0010">#</span> https访问
+</span></span><span style="display:flex;"><span>https_just_proxy<span style="color:#f92672">=</span>true <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">仅</span>https代理
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>https_default_cert_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.pem
+</span></span><span style="display:flex;"><span>https_default_key_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.key
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>bridge_type<span style="color:#f92672">=</span>tcp
+</span></span><span style="display:flex;"><span>bridge_port<span style="color:#f92672">=</span><span style="color:#ae81ff">20002</span>  <span style="color:#960050;background-color:#1e0010">#</span>
+</span></span><span style="display:flex;"><span>bridge_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>public_vkey<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>log_level<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>web_host<span style="color:#f92672">=</span>a.o.com
+</span></span><span style="display:flex;"><span>web_username<span style="color:#f92672">=</span>admin <span style="color:#960050;background-color:#1e0010">#用户名</span>
+</span></span><span style="display:flex;"><span>web_password<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>  <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">密码</span>
+</span></span><span style="display:flex;"><span>web_port <span style="color:#f92672">=</span> <span style="color:#ae81ff">20003</span> <span style="color:#960050;background-color:#1e0010">#</span> <span style="color:#960050;background-color:#1e0010">记住这个端口，这是管理面板的端口</span>
+</span></span><span style="display:flex;"><span>web_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>web_base_url<span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>web_open_ssl<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>web_cert_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.pem
+</span></span><span style="display:flex;"><span>web_key_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.key
+</span></span><span style="display:flex;"><span>auth_crypt_key <span style="color:#f92672">=</span><span style="color:#ae81ff">1234567887654321</span>
+</span></span><span style="display:flex;"><span>allow_user_login<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_user_register<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_user_change_username<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_flow_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_rate_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_tunnel_num_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_local_proxy<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_connection_num_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_multi_ip<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>system_info_display<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>http_cache<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>http_cache_length<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>http_add_origin_header<span style="color:#f92672">=</span>false
+</span></span></code></pre></div><p>配置文件（/etc/nps/conf/nps.conf）的含义：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">名称</span>	<span style="color:#960050;background-color:#1e0010">含义</span>
+</span></span><span style="display:flex;"><span>web_port	web管理端口
+</span></span><span style="display:flex;"><span>web_password	web界面管理密码
+</span></span><span style="display:flex;"><span>web_username	web界面管理账号
+</span></span><span style="display:flex;"><span>web_base_url	web管理主路径,<span style="color:#960050;background-color:#1e0010">用于将</span>web管理置于代理子路径后面
+</span></span><span style="display:flex;"><span>bridge_port	<span style="color:#960050;background-color:#1e0010">服务端客户端通信端口</span>
+</span></span><span style="display:flex;"><span>https_proxy_port	<span style="color:#960050;background-color:#1e0010">域名代理</span>https代理监听端口
+</span></span><span style="display:flex;"><span>http_proxy_port	<span style="color:#960050;background-color:#1e0010">域名代理</span>http代理监听端口
+</span></span><span style="display:flex;"><span>auth_key	web api密钥
+</span></span><span style="display:flex;"><span>bridge_type	<span style="color:#960050;background-color:#1e0010">客户端与服务端连接方式</span>kcp或tcp
+</span></span><span style="display:flex;"><span>public_vkey	<span style="color:#960050;background-color:#1e0010">客户端以配置文件模式启动时的密钥，设置为空表示关闭客户端配置文件连接模式</span>
+</span></span><span style="display:flex;"><span>ip_limit	<span style="color:#960050;background-color:#1e0010">是否限制</span>ip访问<span style="color:#960050;background-color:#1e0010">，</span>true或false或忽略
+</span></span><span style="display:flex;"><span>flow_store_interval	<span style="color:#960050;background-color:#1e0010">服务端流量数据持久化间隔，单位分钟，忽略表示不持久化</span>
+</span></span><span style="display:flex;"><span>log_level	<span style="color:#960050;background-color:#1e0010">日志输出级别</span>
+</span></span><span style="display:flex;"><span>auth_crypt_key	<span style="color:#960050;background-color:#1e0010">获取服务端</span>authKey时的aes加密密钥<span style="color:#960050;background-color:#1e0010">，</span><span style="color:#ae81ff">16</span><span style="color:#960050;background-color:#1e0010">位</span>
+</span></span><span style="display:flex;"><span>p2p_ip	<span style="color:#960050;background-color:#1e0010">服务端</span>Ip<span style="color:#960050;background-color:#1e0010">，使用</span>p2p模式必填
+</span></span><span style="display:flex;"><span>p2p_port	p2p模式开启的udp端口
+</span></span><span style="display:flex;"><span>pprof_ip	debug pprof <span style="color:#960050;background-color:#1e0010">服务端</span>ip
+</span></span><span style="display:flex;"><span>pprof_port	debug pprof <span style="color:#960050;background-color:#1e0010">端口</span>
+</span></span><span style="display:flex;"><span>disconnect_timeout	<span style="color:#960050;background-color:#1e0010">客户端连接超时，单位</span> <span style="color:#ae81ff">5</span>s<span style="color:#960050;background-color:#1e0010">，默认值</span> <span style="color:#ae81ff">60</span><span style="color:#960050;background-color:#1e0010">，即</span> <span style="color:#ae81ff">300</span>s <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>mins
+</span></span></code></pre></div><p>默认配置</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>appname <span style="color:#f92672">=</span> nps
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Boot mode(dev|pro)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>runmode <span style="color:#f92672">=</span> dev
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#HTTP(S) proxy port, no startup if empty
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>http_proxy_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>http_proxy_port<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>
+</span></span><span style="display:flex;"><span>https_proxy_port<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
+</span></span><span style="display:flex;"><span>https_just_proxy<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#default https certificate setting
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>https_default_cert_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.pem
+</span></span><span style="display:flex;"><span>https_default_key_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.key
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">##bridge
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>bridge_type<span style="color:#f92672">=</span>tcp
+</span></span><span style="display:flex;"><span>bridge_port<span style="color:#f92672">=</span><span style="color:#ae81ff">8024</span>
+</span></span><span style="display:flex;"><span>bridge_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Public password, which clients can use to connect to the server
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"># After the connection, the server will be able to open relevant ports and parse related domain names according to its own configuration file.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>public_vkey<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Traffic data persistence interval(minute)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#Ignorance means no persistence
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#flow_store_interval=1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># log level LevelEmergency-&gt;0  LevelAlert-&gt;1 LevelCritical-&gt;2 LevelError-&gt;3 LevelWarning-&gt;4 LevelNotice-&gt;5 LevelInformational-&gt;6 LevelDebug-&gt;7
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>log_level<span style="color:#f92672">=</span><span style="color:#ae81ff">7</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#log_path=nps.log
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Whether to restrict IP access, true or false or ignore
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#ip_limit=true
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#p2p
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#p2p_ip=127.0.0.1
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#p2p_port=6000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#web
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>web_host<span style="color:#f92672">=</span>a.o.com
+</span></span><span style="display:flex;"><span>web_username<span style="color:#f92672">=</span>admin
+</span></span><span style="display:flex;"><span>web_password<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>web_port <span style="color:#f92672">=</span> <span style="color:#ae81ff">8080</span>
+</span></span><span style="display:flex;"><span>web_ip<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0.0.0</span>
+</span></span><span style="display:flex;"><span>web_base_url<span style="color:#f92672">=</span>
+</span></span><span style="display:flex;"><span>web_open_ssl<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>web_cert_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.pem
+</span></span><span style="display:flex;"><span>web_key_file<span style="color:#f92672">=</span>conf<span style="color:#f92672">/</span>server.key
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># if web under proxy use sub path. like http:</span><span style="color:#75715e">//host/nps need this.
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#75715e">#web_base_url=/nps
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Web API unauthenticated IP address(the len of auth_crypt_key must be 16)
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#Remove comments if needed
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#auth_key=test
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>auth_crypt_key <span style="color:#f92672">=</span><span style="color:#ae81ff">1234567812345678</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#allow_ports=9001-9009,10001,11000-12000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#Web management multi-user login
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>allow_user_login<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_user_register<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_user_change_username<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#extension
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>allow_flow_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_rate_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_tunnel_num_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_local_proxy<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_connection_num_limit<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>allow_multi_ip<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>system_info_display<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#cache
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>http_cache<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>http_cache_length<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#get origin ip
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>http_add_origin_header<span style="color:#f92672">=</span>false
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pprof debug options
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#pprof_ip=0.0.0.0
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#pprof_port=9999
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#client disconnect timeout
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>disconnect_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>
+</span></span></code></pre></div><h2 id="npcconf">npc.conf</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[common]
+</span></span><span style="display:flex;"><span>server_addr<span style="color:#f92672">=</span><span style="color:#ae81ff">1.1.1.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8024</span>
+</span></span><span style="display:flex;"><span>conn_type<span style="color:#f92672">=</span>tcp
+</span></span><span style="display:flex;"><span>vkey<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>username<span style="color:#f92672">=</span><span style="color:#ae81ff">111</span>
+</span></span><span style="display:flex;"><span>password<span style="color:#f92672">=</span><span style="color:#ae81ff">222</span>
+</span></span><span style="display:flex;"><span>compress<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>crypt<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>rate_limit<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>
+</span></span><span style="display:flex;"><span>flow_limit<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span>
+</span></span><span style="display:flex;"><span>remark<span style="color:#f92672">=</span>test
+</span></span><span style="display:flex;"><span>max_conn<span style="color:#f92672">=</span><span style="color:#ae81ff">10</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pprof_addr=0.0.0.0:9999
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">项</span>	<span style="color:#960050;background-color:#1e0010">含义</span>
+</span></span><span style="display:flex;"><span>server_addr	<span style="color:#960050;background-color:#1e0010">服务端</span>ip<span style="color:#f92672">/</span><span style="color:#960050;background-color:#1e0010">域名</span><span style="color:#f92672">:</span>port
+</span></span><span style="display:flex;"><span>conn_type	<span style="color:#960050;background-color:#1e0010">与服务端通信模式</span>(tcp或kcp)
+</span></span><span style="display:flex;"><span>vkey	<span style="color:#960050;background-color:#1e0010">服务端配置文件中的密钥</span>(<span style="color:#960050;background-color:#1e0010">非</span>web)
+</span></span><span style="display:flex;"><span>username	<span style="color:#a6e22e">socks5或http</span>(s)<span style="color:#960050;background-color:#1e0010">密码保护用户名</span>(<span style="color:#960050;background-color:#1e0010">可忽略</span>)
+</span></span><span style="display:flex;"><span>password	<span style="color:#a6e22e">socks5或http</span>(s)<span style="color:#960050;background-color:#1e0010">密码保护密码</span>(<span style="color:#960050;background-color:#1e0010">可忽略</span>)
+</span></span><span style="display:flex;"><span>compress	<span style="color:#960050;background-color:#1e0010">是否压缩传输</span>(true或false或忽略)
+</span></span><span style="display:flex;"><span>crypt	<span style="color:#960050;background-color:#1e0010">是否加密传输</span>(true或false或忽略)
+</span></span><span style="display:flex;"><span>rate_limit	<span style="color:#960050;background-color:#1e0010">速度限制，可忽略</span>
+</span></span><span style="display:flex;"><span>flow_limit	<span style="color:#960050;background-color:#1e0010">流量限制，可忽略</span>
+</span></span><span style="display:flex;"><span>remark	<span style="color:#960050;background-color:#1e0010">客户端备注，可忽略</span>
+</span></span><span style="display:flex;"><span>max_conn	<span style="color:#960050;background-color:#1e0010">最大连接数，可忽略</span>
+</span></span><span style="display:flex;"><span>pprof_addr	debug pprof ip:port
+</span></span></code></pre></div><p>通过域名访问</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[common]
+</span></span><span style="display:flex;"><span>server_addr<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">域名</span><span style="color:#f92672">:</span><span style="color:#ae81ff">20002</span>
+</span></span><span style="display:flex;"><span>conn_type<span style="color:#f92672">=</span>https
+</span></span><span style="display:flex;"><span>vkey<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>auto_reconnection<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>max_conn<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>flow_limit<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>rate_limit<span style="color:#f92672">=</span><span style="color:#ae81ff">1000</span>
+</span></span><span style="display:flex;"><span>basic_username<span style="color:#f92672">=</span><span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>basic_password<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>web_username<span style="color:#f92672">=</span>user
+</span></span><span style="display:flex;"><span>web_password<span style="color:#f92672">=</span><span style="color:#ae81ff">1234</span>
+</span></span><span style="display:flex;"><span>crypt<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span>compress<span style="color:#f92672">=</span>true
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#pprof_addr=0.0.0.0:9999
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>disconnect_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[health_check_test1]
+</span></span><span style="display:flex;"><span>health_check_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>health_check_max_failed<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>health_check_interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>health_http_url<span style="color:#f92672">=/</span>
+</span></span><span style="display:flex;"><span>health_check_type<span style="color:#f92672">=</span>http
+</span></span><span style="display:flex;"><span>health_check_target<span style="color:#f92672">=</span><span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8083</span>,<span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8082</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[health_check_test2]
+</span></span><span style="display:flex;"><span>health_check_timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>health_check_max_failed<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>
+</span></span><span style="display:flex;"><span>health_check_interval<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>health_check_type<span style="color:#f92672">=</span>tcp
+</span></span><span style="display:flex;"><span>health_check_target<span style="color:#f92672">=</span><span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8083</span>,<span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8082</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[web]
+</span></span><span style="display:flex;"><span>host<span style="color:#f92672">=</span><span style="color:#960050;background-color:#1e0010">域名</span>
+</span></span><span style="display:flex;"><span>target_addr<span style="color:#f92672">=</span><span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8080</span>
+</span></span></code></pre></div><p>说明</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-c" data-lang="c"><span style="display:flex;"><span>[common]
+</span></span><span style="display:flex;"><span>server_addr<span style="color:#f92672">=</span><span style="color:#ae81ff">1.1.1.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8024</span>
+</span></span><span style="display:flex;"><span>vkey<span style="color:#f92672">=</span><span style="color:#ae81ff">123</span>
+</span></span><span style="display:flex;"><span>[web1]
+</span></span><span style="display:flex;"><span>host<span style="color:#f92672">=</span>a.proxy.com
+</span></span><span style="display:flex;"><span>target_addr<span style="color:#f92672">=</span><span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8080</span>,<span style="color:#ae81ff">127.0.0.1</span><span style="color:#f92672">:</span><span style="color:#ae81ff">8082</span>
+</span></span><span style="display:flex;"><span>host_change<span style="color:#f92672">=</span>www.proxy.com
+</span></span><span style="display:flex;"><span>header_set_proxy<span style="color:#f92672">=</span>nps
+</span></span></code></pre></div></section>
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/04/jwt/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>JWT 解析</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/post/2024/03/xiaomi_4a/"
+            ><span>小米 4a 路由器刷机</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.xyz";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+
+            <div class="hidden lg:block ml-8">
+                  <aside class="sticky w-64">
+      
+  
+  
+  
+  <div class="not-prose sticky top-24 rounded-lg bg-white dark:bg-neutral-800 p-6 shadow-sm">
+    <h3 class="mb-4 text-lg font-semibold bg-gradient-to-r from-neutral-800 to-neutral-600 dark:from-neutral-200 dark:to-neutral-400 bg-clip-text text-transparent">
+      目录
+    </h3>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#服务器-nps">服务器 nps</a>
+      <ul>
+        <li><a href="#1-如果没下载-docker">1. 如果没下载 Docker</a></li>
+        <li><a href="#2-创建nps的配置文件夹">2. 创建nps的配置文件夹，</a></li>
+        <li><a href="#3-拉取docker-image">3. 拉取docker image</a></li>
+        <li><a href="#4-在nps的github下载配置文件">4. 在nps的github下载配置文件</a></li>
+        <li><a href="#5-修改配置文件也可以不改见8">5. 修改配置文件（也可以不改，见8）</a></li>
+        <li><a href="#6-运行">6. 运行</a></li>
+      </ul>
+    </li>
+    <li><a href="#客户端-npc">客户端 npc</a>
+      <ul>
+        <li><a href="#1-拉取docker-image">1. 拉取docker image</a></li>
+        <li><a href="#2-配置文件见文末">2. 配置文件见文末</a></li>
+        <li><a href="#3-未修改配置文件启动">3. 未修改配置文件启动</a></li>
+        <li><a href="#6-配置文件启动">6. 配置文件启动</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置文件">配置文件</a>
+      <ul>
+        <li><a href="#npsconf">nps.conf</a></li>
+        <li><a href="#npcconf">npc.conf</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+  
+</aside>
+
+<style>
+ 
+aside {
+  position: fixed;   
+  top: 8rem;           
+   bottom: 8rem;        
+   right: 0rem;
+   width: 14rem;
+   height: auto;        
+   overflow-y: auto;
+   z-index: 10;
+}
+
+ 
+.toc-container {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+  .toc-container {
+    background: rgb(38 38 38);
+  }
+}
+
+ 
+.toc {
+  max-height: calc(100vh - 180px);  
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a.active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+@media (max-width: 768px) {
+  aside {
+    display: none;  
+  }
+}
+
+ 
+@media (prefers-color-scheme: dark) {
+  .toc a {
+    color: #9ca3af;
+  }
+
+  .toc a:hover,
+  .toc a.active {
+    background-color: #262626;
+    color: #e5e7eb;
+  }
+
+  .toc::-webkit-scrollbar-thumb {
+    background-color: #404040;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;  
+}
+
+</style>
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+});
+
+  
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  document.addEventListener('touchstart', e => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, false);
+
+  document.addEventListener('touchend', e => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, false);
+
+  function handleSwipe() {
+    const aside = document.querySelector('aside');
+    const swipeLength = touchEndX - touchStartX;
+
+    if (Math.abs(swipeLength) > 50) {
+      if (swipeLength < 0) {
+        aside?.classList.add('show');
+      } else {
+        aside?.classList.remove('show');
+      }
+    }
+  }
+</script>
+
+            </div>
+        </div>
+        <footer class="flex items-center text-xs uppercase">
+    <div class="mr-auto opacity-60">
+         &copy; 2025
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        
+    </div>
+    
+    <div>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    本站访问 <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> 次
+  </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+    </body>
+</html>

@@ -50,6 +50,12 @@ repoId = 'R_kgDONgnnzg'
 category = 'Announcements'
 categoryId = 'DIC_kwDONgnnzs4ClayH'
 mapping = 'pathname'
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+# theme = "preferred_color_scheme"
+crossorigin = "anonymous"
 theme = 'light'
 lang = 'zh-CN'
 
@@ -94,7 +100,7 @@ github = 'caoyang2002'
 instagram = 'caoyang2002'
 
 # 个人信息配置
-avatar = 'reggiesimons2cy@gmail.com'
+avatar = 'https://caoyang2002.xyz/avatar/avatar.jpg'
 name = 'Cyrus'
 bio = '用光的艺术'
 
