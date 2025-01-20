@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang2002</title><link>https://caoyang2002.xyz/posts/</link><description>Recent content in Posts on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang2002</title><link>https://caoyang2002.xyz/posts/</link><description>Recent content in Posts on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>markdown-test</title><link>https://caoyang2002.xyz/post/2025/01/file_name/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/file_name/</guid><description>&lt;blockquote alt="success">&lt;p>目录&lt;/p>&lt;/blockquote>
+&lt;p>[toc]&lt;/p>
+&lt;div style="page-break-after:always">&lt;/div>
+&lt;h1 id="一thompsgo主题简介">一、Thompsgo主题简介&lt;/h1>
+&lt;p>&lt;font title="blue">&lt;span>感谢dyzj、黑石、github、krafty、purple、Volantis、stack overflow等主题和网站作者的开发和讲解，本主题在他们的基础上进行开发&lt;/span>&lt;/font>&lt;/p>
+&lt;p>&lt;font title="blue">&lt;span>本主题免费开源&lt;/span>&lt;/font>&lt;/p>
+&lt;blockquote>
+&lt;p>源代码达&lt;code>1500行&lt;/code>, &lt;code>50%&lt;/code> 的代码都是注释，没写的基本是可以搜到的，还有一些是我不确定作用功能的代码 ，想自定义的可以去看看我在源码里面写的注释和使用方法，可以直接把建议和问题反馈到我的邮箱&lt;code>cy12968@163.com&lt;/code>，我会尽快处理。&lt;/p></description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote>
 &lt;p>有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p>
 &lt;p>但是，你为什么觉得自己需要一个设计师？&lt;/p>
 &lt;p>我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p>
 &lt;p>有时候，甚至是大多数时候你都不需要设计师。&lt;/p>
-&lt;p>相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p></description></item><item><title>mac 汇编笔记</title><link>https://caoyang2002.xyz/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/mac_assembly/</guid><description>&lt;p>&lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html">https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html&lt;/a>&lt;/p>
+&lt;p>相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p></description></item><item><title>mac 汇编笔记</title><link>https://caoyang2002.xyz/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/mac_assembly/</guid><description>&lt;p>
+&lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="梦开始的地方">梦开始的地方&lt;/h1>
 &lt;h1 id="简单的-asm">简单的 asm&lt;/h1>
 &lt;p>&lt;code>null.s&lt;/code>&lt;/p>
@@ -291,11 +311,50 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> Ok(())
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p></description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://caoyang2002.xyz/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考">参考：&lt;/h1>
-&lt;p>中文文档 &lt;a href="https://hugo.opendocs.io/getting-started/quick-start/">https://hugo.opendocs.io/getting-started/quick-start/&lt;/a>&lt;/p>
+&lt;p>中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;p>博客：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary">https://blog.gujiakai.top/2023/03/hugo-theme-development-diary&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://juejin.cn/post/7151253414427492382">https://juejin.cn/post/7151253414427492382&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;h1 id="一个简单的-hugo-主题">一个简单的 Hugo 主题&lt;/h1>
 &lt;h2 id="创建一个空的网站模版">创建一个空的网站模版&lt;/h2>
@@ -305,8 +364,8 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>cd demo
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>hugo new theme hugo-zero
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>得到输出信息：&lt;/p>
-&lt;pre tabindex="0">&lt;code>Creating theme at /hugo/demo/themes/hugo-zero
-&lt;/code>&lt;/pre>&lt;p>一开始的目录结构如下图所示：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>Creating theme at /hugo/demo/themes/hugo-zero
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>一开始的目录结构如下图所示：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>hugo-zero（hugo主题）
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── archetypes（hugo主题文章模板）
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>├── layouts（hugo主题布局文件）
@@ -394,25 +453,25 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="5">
 &lt;li>包的组织：&lt;/li>
 &lt;/ol>
-&lt;pre tabindex="0">&lt;code>✅ 正确的包组织：
-project/
- ├── api/
- │ └── handler/ # HTTP 处理层
- ├── internal/
- │ ├── service/ # 业务逻辑层
- │ ├── repository/ # 数据访问层
- │ └── model/ # 内部数据模型
- ├── pkg/
- │ └── util/ # 公共工具函数
- └── main.go
-
-❌ 错误的包组织：
-project/
- ├── handlers/
- ├── services/
- ├── models/
- └── main.go
-&lt;/code>&lt;/pre>&lt;ol start="6">
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>✅ 正确的包组织：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>project/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── api/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> │ └── handler/ # HTTP 处理层
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── internal/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> │ ├── service/ # 业务逻辑层
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> │ ├── repository/ # 数据访问层
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> │ └── model/ # 内部数据模型
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── pkg/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> │ └── util/ # 公共工具函数
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── main.go
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>❌ 错误的包组织：
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>project/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── handlers/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── services/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ├── models/
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> └── main.go
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="6">
 &lt;li>依赖注入：&lt;/li>
 &lt;/ol>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// ✅ 正确：通过构造函数注入依赖&lt;/span>
@@ -490,18 +549,96 @@ project/
 &lt;p>研究人员随机找了 2 组消费者，在两组面前都呈现了一系列昂贵的果酱，并且给他们提供试吃机会和优惠券。不同的是A组消费者面前摆着 6 款不同的果酱，B 组消费者面前摆着 24 种不同的果酱。&lt;/p></description></item><item><title>资源</title><link>https://caoyang2002.xyz/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源">如何找资源&lt;/h1>
 &lt;blockquote>
 &lt;p>下载
-&lt;a href="https://www.pansou.vip/">盘搜&lt;/a>&lt;/p>
+
+&lt;a href="https://www.pansou.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 盘搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;/blockquote>
 &lt;ul>
-&lt;li>&lt;a href="https://pansoso.com/">盘搜搜&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://www.dashengpan.com/">大圣盘&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://t.me/jisou">TG机器人&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://aliso.cc/">阿里搜&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://pansoso.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 盘搜搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://www.dashengpan.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 大圣盘
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://t.me/jisou"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ TG机器人
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://aliso.cc/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 阿里搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
 &lt;/ul>
 &lt;p>{/bs-accord}&lt;/p>
 &lt;h1 id="一我维护的其他站">一、我维护的其他站&lt;/h1>
 &lt;h2 id="move-学习">Move 学习&lt;/h2>
-&lt;p>&lt;a href="http://43.138.107.218/">move&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="http://43.138.107.218/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ move
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="二编程相关内容">二、编程相关内容&lt;/h1>
 &lt;h2 id="各种镜像收录">各种镜像收录&lt;/h2>
 &lt;p>{bs-accord style=common title=鱼香}&lt;iframe src="http://fishros.com/#/fish_home" width="100%" height="600">&lt;/iframe>{/bs-accord}&lt;/p>
@@ -594,9 +731,74 @@ project/
 &lt;p>16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p>
 &lt;h2 id="为什么改用hugo">为什么改用Hugo&lt;/h2>
 &lt;h3 id="依赖管理问题">依赖管理问题&lt;/h3>
-&lt;p>在&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/">静态博客的同步和备份方案&lt;/a>一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p></description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://caoyang2002.xyz/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/hexo/</guid><description>&lt;p>我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用&lt;a href="https://hexo.io/">Hexo&lt;/a>以及主题&lt;a href="https://theme-next.js.org/">Theme NexT&lt;/a>，
-在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到&lt;a href="https://vercel.com/">vercel&lt;/a>&lt;/p>
-&lt;p>作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p></description></item><item><title>shell mac 教程</title><link>https://caoyang2002.xyz/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/11/shell_mac_pop/</guid><description>&lt;p>&lt;a href="https://juejin.cn/post/6921144388802641933">原文&lt;/a>&lt;/p>
+&lt;p>在
+&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 静态博客的同步和备份方案
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p></description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://caoyang2002.xyz/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/hexo/</guid><description>&lt;p>我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
+&lt;a href="https://hexo.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ Hexo
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+以及主题
+&lt;a href="https://theme-next.js.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ Theme NexT
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+，
+在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
+&lt;a href="https://vercel.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ vercel
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p></description></item><item><title>shell mac 教程</title><link>https://caoyang2002.xyz/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/11/shell_mac_pop/</guid><description>&lt;p>
+&lt;a href="https://juejin.cn/post/6921144388802641933"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原文
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-as" data-lang="as">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span>&lt;span style="color:#f92672">!/&lt;/span>&lt;span style="color:#a6e22e">bin&lt;/span>&lt;span style="color:#f92672">/&lt;/span>&lt;span style="color:#a6e22e">bash&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">#&lt;/span> &lt;span style="color:#ae81ff">1&lt;/span>. &lt;span style="color:#960050;background-color:#1e0010">自定义通知消息&lt;/span>
@@ -694,23 +896,52 @@ project/
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">showInputAlertMessage&lt;/span> &lt;span style="color:#e6db74">&amp;#34;请输入密码&amp;#34;&lt;/span> &lt;span style="color:#e6db74">&amp;#34;登录验证&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>谷歌账号注册的问题</title><link>https://caoyang2002.xyz/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/07/google_account/</guid><description>&lt;p>参考：&lt;/p>
 &lt;ol>
-&lt;li>&lt;a href="https://www.gmail777.com/archives/69">中州西鹿&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352">多图详细教你注册Google（Gmail）新账号，常见问题和注意事项&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://uzbox.com/usa/google-add-tel.html">此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法&lt;/a>&lt;/li>
+&lt;li>
+&lt;a href="https://www.gmail777.com/archives/69"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 中州西鹿
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 多图详细教你注册Google（Gmail）新账号，常见问题和注意事项
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://uzbox.com/usa/google-add-tel.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
 &lt;/ol>
 &lt;h1 id="谷歌账号注册的问题">谷歌账号注册的问题&lt;/h1>
 &lt;h2 id="注册">注册&lt;/h2>
-&lt;p>通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p>
-&lt;p>如果你注册输入手机号提示“此电话号码无法用于进行验证”，那么有这样几种可能的原因：&lt;/p>
-&lt;ol>
-&lt;li>你用来访问的网络环境不是很稳定，Google认为有风险。&lt;/li>
-&lt;li>你用来访问的浏览器是新的，或者是手机浏览器，Google 认为有风险。&lt;/li>
-&lt;li>你输入的手机号已经被频繁验证&lt;/li>
-&lt;li>你的 IP 被注册了大量的 Google 账号&lt;/li>
-&lt;li>（可能）你的 Google 浏览器不是英文的&lt;/li>
-&lt;li>（可能）是个虚拟平台的号码&lt;/li>
-&lt;/ol>
-&lt;p>多个成功实践证明，只要是国内三大运营商正常使用的手机号，都是可以正常验证、接收验证码的，请不要怀疑这点。&lt;/p></description></item><item><title>C 语言字符画</title><link>https://caoyang2002.xyz/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/06/c_shar/</guid><description>&lt;blockquote>
+&lt;p>通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p></description></item><item><title>C 语言字符画</title><link>https://caoyang2002.xyz/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/06/c_shar/</guid><description>&lt;blockquote>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-c" data-lang="c">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#ae81ff">3&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">*&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">*&lt;/span> &lt;span style="color:#f92672">*&lt;/span>
@@ -814,28 +1045,119 @@ project/
 &lt;li>
 &lt;p>&lt;strong>提交这个更改&lt;/strong>：
 然后，提交这个更改到你的本地仓库：&lt;/p></description></item><item><title>TG 下载器</title><link>https://caoyang2002.xyz/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件">软件&lt;/h1>
-&lt;p>&lt;a href="https://github.com/tangyoha/telegram_media_downloader/">https://github.com/tangyoha/telegram_media_downloader/&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://github.com/tangyoha/telegram_media_downloader/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h2 id="在-elease-里面下载可执行程序">在 elease 里面下载可执行程序&lt;/h2>
 &lt;h1 id="win">Win&lt;/h1>
 &lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt="">&lt;/p>
-&lt;p>&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip">https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="linux-x86_64">Linux （x86_64)&lt;/h1>
 &lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt="">&lt;/p>
-&lt;p>&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip">https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="mac">mac&lt;/h1>
 &lt;p>没有测试
-&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip">https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip&lt;/a>&lt;/p>
+
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="配置">配置&lt;/h1>
 &lt;p>所有配置都通过 config.yaml 文件传递​​给 &lt;code>Telegram Media Downloader&lt;/code>。&lt;/p>
 &lt;p>&lt;strong>获取您的 API 密钥：&lt;/strong>
 第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p>
 &lt;ol>
-&lt;li>访问 &lt;a href="https://my.telegram.org/apps">https://my.telegram.org/apps&lt;/a> 并使用您的 Telegram 帐户登录。&lt;/li>
+&lt;li>访问 
+&lt;a href="https://my.telegram.org/apps"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://my.telegram.org/apps
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+ 并使用您的 Telegram 帐户登录。&lt;/li>
 &lt;li>填写表格以注册新的 Telegram 应用程序。&lt;/li>
 &lt;li>完成！ API 密钥由两部分组成：&lt;strong>api_id&lt;/strong> 和&lt;strong>api_hash&lt;/strong>。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;strong>获取聊天ID：&lt;/strong>&lt;/p></description></item><item><title>x86 教程</title><link>https://caoyang2002.xyz/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/05/x86/</guid><description>&lt;p>作者： &lt;a href="http://www.ruanyifeng.com/">阮一峰&lt;/a>&lt;/p>
-&lt;p>日期： &lt;a href="http://www.ruanyifeng.com/blog/2018/01/">2018年1月21日&lt;/a>&lt;/p>
+&lt;p>&lt;strong>获取聊天ID：&lt;/strong>&lt;/p></description></item><item><title>x86 教程</title><link>https://caoyang2002.xyz/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/05/x86/</guid><description>&lt;p>作者： 
+&lt;a href="http://www.ruanyifeng.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 阮一峰
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>日期： 
+&lt;a href="http://www.ruanyifeng.com/blog/2018/01/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 2018年1月21日
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;p>学习编程其实就是学高级语言，即那些为人类设计的计算机语言。&lt;/p>
 &lt;p>但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。&lt;/p>
 &lt;p>&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img">&lt;/p>
@@ -878,12 +1200,38 @@ project/
 &lt;blockquote>
 &lt;p>这个主要是企业报税用的&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://etax.sichuan.chinatax.gov.cn/loginb/">https://etax.sichuan.chinatax.gov.cn/loginb/&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://etax.sichuan.chinatax.gov.cn/loginb/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://etax.sichuan.chinatax.gov.cn/loginb/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h2 id="自然人电子税务局">自然人电子税务局&lt;/h2>
 &lt;blockquote>
 &lt;p>这个主要是给法人报税用的&lt;/p>
 &lt;/blockquote>
-&lt;p>&lt;a href="https://etax.chinatax.gov.cn">https://etax.chinatax.gov.cn&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://etax.chinatax.gov.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://etax.chinatax.gov.cn
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="关于注销">关于注销&lt;/h1>
 &lt;blockquote>
 &lt;p>税务申报方面需要仔细一点, 然后就是一些文件里面的项, 我啥也不懂, 就没有改, 发现需要再缴 500, 不知道是什么, 就缴了,&lt;/p>
@@ -907,35 +1255,126 @@ project/
 &lt;p>可能需要先安装
 &lt;code>npm install vite --save-dev&lt;/code>&lt;/p>
 &lt;/blockquote>
-&lt;pre tabindex="0">&lt;code>caoyang@cccy del % npm init vite
-# 使用 上下键 选择
-✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
-✔ Select a framework: › React # 使用 React 库
-✔ Select a variant: › TypeScript # 使用 TS 语言开发
-
-Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
-
-Done. Now run:
-
-# 需要先运行以下代码
- cd playground
- npm install
- npm run dev
-&lt;/code>&lt;/pre>&lt;h3 id="12-一键创建">1.2 一键创建&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span style="display:flex;">&lt;span>caoyang&lt;span style="color:#960050;background-color:#1e0010">@&lt;/span>cccy del &lt;span style="color:#f92672">%&lt;/span> npm init vite
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 使用 上下键 选择&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">✔&lt;/span> Project name: &lt;span style="color:#960050;background-color:#1e0010">…&lt;/span> playground &lt;span style="color:#75715e"># playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">✔&lt;/span> Select a framework: &lt;span style="color:#960050;background-color:#1e0010">›&lt;/span> React &lt;span style="color:#75715e"># 使用 React 库&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#960050;background-color:#1e0010">✔&lt;/span> Select a variant: &lt;span style="color:#960050;background-color:#1e0010">›&lt;/span> TypeScript &lt;span style="color:#75715e"># 使用 TS 语言开发&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Scaffolding project &lt;span style="color:#f92672">in&lt;/span> &lt;span style="color:#f92672">/&lt;/span>Users&lt;span style="color:#f92672">/&lt;/span>caoyang&lt;span style="color:#f92672">/&lt;/span>Documents&lt;span style="color:#f92672">/&lt;/span>Aptos&lt;span style="color:#f92672">/&lt;/span>del&lt;span style="color:#f92672">/&lt;/span>playground&lt;span style="color:#f92672">...&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Done&lt;span style="color:#f92672">.&lt;/span> Now run:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e"># 需要先运行以下代码&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> cd playground
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> npm install
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> npm run dev
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="12-一键创建">1.2 一键创建&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>npm init vite playground -- --template react-ts
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者&lt;/p></description></item><item><title>设计资料：样机</title><link>https://caoyang2002.xyz/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/04/design/</guid><description>&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机">&lt;/p>
 &lt;h1 id="样机">样机&lt;/h1>
-&lt;p>&lt;a href="https://bannermockup.com/">https://bannermockup.com/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://mockupplanet.com/">https://mockupplanet.com/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://www.anthonyboyd.graphics/">https://www.anthonyboyd.graphics/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://www.pixeden.com/">https://www.pixeden.com/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://www.ls.graphics">https://www.ls.graphics&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://bannermockup.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://bannermockup.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://mockupplanet.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://mockupplanet.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.anthonyboyd.graphics/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.anthonyboyd.graphics/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.pixeden.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.pixeden.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.ls.graphics"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.ls.graphics
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h2 id="条件">条件&lt;/h2>
 &lt;h3 id="登录">登录&lt;/h3>
 &lt;p>grapicpear&lt;/p>
 &lt;h1 id="插画">插画&lt;/h1>
-&lt;p>&lt;a href="https://dotown.maeda-design-room.net/">https://dotown.maeda-design-room.net/&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://www.opendoodles.com">https://www.opendoodles.com&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://dotown.maeda-design-room.net/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://dotown.maeda-design-room.net/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.opendoodles.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.opendoodles.com
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;p>设计师必备 50 款免费可商用图库网站：照片、插画、纹理一网打尽&lt;/p>
 &lt;p>免费素材图像素材工具推荐
 Angel Wang・2022-10-13
@@ -943,9 +1382,48 @@ Angel Wang・2022-10-13
 &lt;p>SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p>
 &lt;p>对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
 比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p></description></item><item><title>JWT 解析</title><link>https://caoyang2002.xyz/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/04/jwt/</guid><description>&lt;p>&lt;img src="" alt="JWT">&lt;/p>
-&lt;p>&lt;a href="https://zhuanlan.zhihu.com/p/86937325">原文一&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://blog.csdn.net/weixin_39779004/article/details/110801387">原文二&lt;/a>&lt;/p>
-&lt;p>&lt;a href="https://b23.tv/3f7Yrct">视频&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://zhuanlan.zhihu.com/p/86937325"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原文一
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://blog.csdn.net/weixin_39779004/article/details/110801387"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原文二
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://b23.tv/3f7Yrct"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 视频
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="一什么是-jwt">一、什么是 JWT&lt;/h1>
 &lt;p>JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑的、自包含的方式，用于作为JSON对象在各方之间安全地传输信息。该信息可以被验证和信任，因为它是数字签名的。&lt;/p>
 &lt;h1 id="二设计目标">二、设计目标&lt;/h1>
@@ -953,17 +1431,69 @@ Angel Wang・2022-10-13
 &lt;p>&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/OIP-C-20240424140338352.jpeg" alt="JWT认证方案讲解-阿里云开发者社区">&lt;/p>
 &lt;h1 id="三-json-web-token-的结构是什么样的">三、 JSON Web Token 的结构是什么样的&lt;/h1>
 &lt;p>JSON Web Token由三部分组成，例如&lt;code>dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code>&lt;/p></description></item><item><title>搭建 NPS</title><link>https://caoyang2002.xyz/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/docker_pns/</guid><description>&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/ehang-io/nps/tree/master">github&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://github.com/ehang-io/nps/tree/master"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ github
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>&lt;a href="https://ehang-io.github.io/nps/#/install">官方文档&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://ehang-io.github.io/nps/#/install"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 官方文档
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;/blockquote>
 &lt;p>{bs-font color=&amp;quot;#000000&amp;quot;} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}&lt;/p>
 &lt;p>以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
-简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p></description></item><item><title>小米 4a 路由器刷机</title><link>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</guid><description>&lt;p>&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708">查看原文&lt;/a>&lt;/p>
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p></description></item><item><title>小米 4a 路由器刷机</title><link>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</guid><description>&lt;p>
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 查看原文
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="一获取原厂固件的-ssh-登录权限">一、获取原厂固件的 ssh 登录权限&lt;/h1>
 &lt;p>有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p>
-&lt;p>小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p></description></item><item><title>小米 4c 路由器刷机</title><link>https://caoyang2002.xyz/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p>&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713">原文&lt;/a>&lt;/p>
+&lt;p>小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p></description></item><item><title>小米 4c 路由器刷机</title><link>https://caoyang2002.xyz/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p>
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原文
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;p>介绍一下配置：&lt;/p>
 &lt;ul>
 &lt;li>wifi 全程不用连网&lt;/li>
@@ -975,8 +1505,34 @@ Angel Wang・2022-10-13
 &lt;p>基本介绍：
 OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
 几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p></description></item><item><title>Quartz 教程</title><link>https://caoyang2002.xyz/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/02/quartz/</guid><description>&lt;blockquote>
-&lt;p>&lt;a href="https://quartz.jzhao.xyz">原作者&lt;/a>
-&lt;a href="https://www.chyraw.com">个人配置&lt;/a>&lt;/p>
+&lt;p>
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原作者
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 个人配置
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;/blockquote>
 &lt;h1 id="下载">下载&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
@@ -987,18 +1543,7 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;h2 id="布局">布局&lt;/h2>
 &lt;p>某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
 默认页面布局可以在 &lt;code>quartz.layout.ts&lt;/code> 中找到。&lt;/p>
-&lt;p>每个页面由多个不同的部分组成，这些部分包含 &lt;code>QuartzComponents&lt;/code>。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p>
-&lt;p>&lt;code>quartz/cfg.ts&lt;/code>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-typescript" data-lang="typescript">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">export&lt;/span> &lt;span style="color:#66d9ef">interface&lt;/span> &lt;span style="color:#a6e22e">FullPageLayout&lt;/span> {
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">head&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span> &lt;span style="color:#75715e">// 单个组件
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">header&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span>[] &lt;span style="color:#75715e">// 水平布局
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">beforeBody&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span>[] &lt;span style="color:#75715e">// 垂直布局
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">pageBody&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span> &lt;span style="color:#75715e">// 单个组件
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">left&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span>[] &lt;span style="color:#75715e">// 桌面上垂直布局，在移动设备上水平布局
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">right&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span>[] &lt;span style="color:#75715e">// 桌面上垂直布局，在移动设备上水平布局
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span> &lt;span style="color:#a6e22e">footer&lt;/span>: &lt;span style="color:#66d9ef">QuartzComponent&lt;/span> &lt;span style="color:#75715e">// 单个组件
-&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&lt;/span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这些对应于页面的以下部分：&lt;/p></description></item><item><title>C 语言推荐书籍</title><link>https://caoyang2002.xyz/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列">C语言系列&lt;/h1>
+&lt;p>每个页面由多个不同的部分组成，这些部分包含 &lt;code>QuartzComponents&lt;/code>。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p></description></item><item><title>C 语言推荐书籍</title><link>https://caoyang2002.xyz/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列">C语言系列&lt;/h1>
 &lt;ol>
 &lt;li>《C漏洞与缺陷》&lt;/li>
 &lt;li>《C语言深度解剖》&lt;/li>
@@ -1076,7 +1621,20 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;li>《LinkedIn&amp;rsquo;s Tips for Highly Effective Code Review》&lt;/li>
 &lt;li>《A Large-Scale Study of Programming Language and Code Quality in Github》&lt;/li>
 &lt;li>《Optimizing Software in C++ - Agner Fog》&lt;/li>
-&lt;/ul></description></item><item><title>OpenWRT 教程</title><link>https://caoyang2002.xyz/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/10/openwrt/</guid><description>&lt;p>&lt;a href="https://lidrive.vip/">OpenWRT下载地址&lt;/a>&lt;/p>
+&lt;/ul></description></item><item><title>OpenWRT 教程</title><link>https://caoyang2002.xyz/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/10/openwrt/</guid><description>&lt;p>
+&lt;a href="https://lidrive.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ OpenWRT下载地址
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="下载">下载&lt;/h1>
 &lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本">&lt;/p>
 &lt;h1 id="制作启动盘">制作启动盘&lt;/h1>
@@ -1095,14 +1653,40 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;/ul>
 &lt;h1 id="如何变现">如何变现&lt;/h1>
 &lt;h2 id="一积累">一、积累&lt;/h2>
-&lt;p>千里之行，积于跬步。任何一件事都是通过小成功达到的，所以你得确保自己有一个一个的小成功，具体来说，你得让你身边的人 有求于你，或是向别人推荐你，这就需要你能够掌握大多数人不能掌握的技术，需要你更多地去学习，并要更多的别人没有的经验和经历。&lt;/p></description></item><item><title>群晖开发</title><link>https://caoyang2002.xyz/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/08/synology/</guid><description>&lt;p>&lt;a href="https://blog.csdn.net/christmans/article/details/129641264">原文链接&lt;/a>&lt;/p>
+&lt;p>千里之行，积于跬步。任何一件事都是通过小成功达到的，所以你得确保自己有一个一个的小成功，具体来说，你得让你身边的人 有求于你，或是向别人推荐你，这就需要你能够掌握大多数人不能掌握的技术，需要你更多地去学习，并要更多的别人没有的经验和经历。&lt;/p></description></item><item><title>群晖开发</title><link>https://caoyang2002.xyz/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/08/synology/</guid><description>&lt;p>
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原文链接
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="查看-cpu-架构">查看 CPU 架构&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-shell" data-lang="shell">&lt;span style="display:flex;">&lt;span>uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>arch：该命令可以查看Linux系统的CPU架构。
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cat /proc/version：该命令可以查看系统内核的版本信息。
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
-&lt;p>&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/">脚本目录&lt;/a>&lt;/p></description></item><item><title>浮点数的存储</title><link>https://caoyang2002.xyz/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储">浮点数的存储&lt;/h1>
+&lt;p>
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 脚本目录
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p></description></item><item><title>浮点数的存储</title><link>https://caoyang2002.xyz/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储">浮点数的存储&lt;/h1>
 &lt;blockquote>
 &lt;p>IEEE745 国际标准：&lt;/p>
 &lt;p>任意一个二进制的浮点数可以表示为下面的形式：&lt;/p>
@@ -1221,7 +1805,20 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;li>辗转相除法&lt;/li>
 &lt;/ul>
 &lt;blockquote>
-&lt;p>两个数的&lt;em>&lt;strong>最大公约数&lt;/strong>&lt;/em>等于其中较小的数字和二者之间余数的最大公约数&lt;/p></description></item><item><title>C++ 命名规范</title><link>https://caoyang2002.xyz/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/05/cpp_named/</guid><description>&lt;p>&lt;a href="https://codeif.xinke.org.cn">codeif&lt;/a>&lt;/p>
+&lt;p>两个数的&lt;em>&lt;strong>最大公约数&lt;/strong>&lt;/em>等于其中较小的数字和二者之间余数的最大公约数&lt;/p></description></item><item><title>C++ 命名规范</title><link>https://caoyang2002.xyz/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/05/cpp_named/</guid><description>&lt;p>
+&lt;a href="https://codeif.xinke.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ codeif
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
 &lt;h1 id="文件命名">文件命名&lt;/h1>
 &lt;blockquote>
 &lt;p>所有文件&lt;/p>
@@ -1252,46 +1849,84 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;ul>
 &lt;li>空格敏感&lt;/li>
 &lt;/ul>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">mindmap
- root((思维导图))
- 节点一
- 记录1.1
- ::icon(fa fa-book)
- 节点1.1
- 记录1.1.1
- 节点二
- 记录2.1
- 记录2.2
- 节点2.1
- 记录2.1.1
- 			记录2.1.2
- 	记录2.1.3
- 节点三
- 记录3.1
- 记录3.2
-&lt;/code>&lt;/pre>&lt;ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>mindmap
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> root((思维导图))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 节点一
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录1.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> ::icon(fa fa-book)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 节点1.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录1.1.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 节点二
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录2.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录2.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 节点2.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录2.1.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 			记录2.1.2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 	记录2.1.3
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 节点三
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录3.1
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> 记录3.2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>
-&lt;p>基础&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>语法&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>形状&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>默认&lt;/p>
-&lt;pre tabindex="0">&lt;code class="language-mermaid" data-lang="mermaid">mindmap
- I am the default shape
-&lt;/code>&lt;/pre>&lt;/li>
-&lt;li>
-&lt;p>&lt;code>[]&lt;/code>矩形&lt;/p></description></item><item><title>Post 3</title><link>https://caoyang2002.xyz/post/2023/03/post-3/</link><pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate><guid>https://caoyang2002.xyz/post/2023/03/post-3/</guid><description>&lt;p>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p>
+&lt;p>基础&lt;/p></description></item><item><title>Post 3</title><link>https://caoyang2002.xyz/post/2023/03/post-3/</link><pubDate>Wed, 15 Mar 2023 11:00:00 -0700</pubDate><guid>https://caoyang2002.xyz/post/2023/03/post-3/</guid><description>&lt;p>Occaecat aliqua consequat laborum ut ex aute aliqua culpa quis irure esse magna dolore quis. Proident fugiat labore eu laboris officia Lorem enim. Ipsum occaecat cillum ut tempor id sint aliqua incididunt nisi incididunt reprehenderit. Voluptate ad minim sint est aute aliquip esse occaecat tempor officia qui sunt. Aute ex ipsum id ut in est velit est laborum incididunt. Aliqua qui id do esse sunt eiusmod id deserunt eu nostrud aute sit ipsum. Deserunt esse cillum Lorem non magna adipisicing mollit amet consequat.&lt;/p>
 &lt;p>&lt;img src="bryce-canyon.jpg" alt="Bryce Canyon National Park">&lt;/p>
 &lt;p>Sit excepteur do velit veniam mollit in nostrud laboris incididunt ea. Amet eu cillum ut reprehenderit culpa aliquip labore laborum amet sit sit duis. Laborum id proident nostrud dolore laborum reprehenderit quis mollit nulla amet veniam officia id id. Aliquip in deserunt qui magna duis qui pariatur officia sunt deserunt.&lt;/p></description></item><item><title>Post 2</title><link>https://caoyang2002.xyz/post/2023/02/post-2/</link><pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate><guid>https://caoyang2002.xyz/post/2023/02/post-2/</guid><description>&lt;p>Anim eiusmod irure incididunt sint cupidatat. Incididunt irure irure irure nisi ipsum do ut quis fugiat consectetur proident cupidatat incididunt cillum. Dolore voluptate occaecat qui mollit laborum ullamco et. Ipsum laboris officia anim laboris culpa eiusmod ex magna ex cupidatat anim ipsum aute. Mollit aliquip occaecat qui sunt velit ut cupidatat reprehenderit enim sunt laborum. Velit veniam in officia nulla adipisicing ut duis officia.&lt;/p>
 &lt;p>Exercitation voluptate irure in irure tempor mollit Lorem nostrud ad officia. Velit id fugiat occaecat do tempor. Sit officia Lorem aliquip eu deserunt consectetur. Aute proident deserunt in nulla aliquip dolore ipsum Lorem ut cupidatat consectetur sit sint laborum. Esse cupidatat sit sint sunt tempor exercitation deserunt. Labore dolor duis laborum est do nisi ut veniam dolor et nostrud nostrud.&lt;/p></description></item><item><title>Post 1</title><link>https://caoyang2002.xyz/post/2023/01/post-1/</link><pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate><guid>https://caoyang2002.xyz/post/2023/01/post-1/</guid><description>&lt;p>Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p>
 &lt;p>Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p></description></item><item><title>字符图片</title><link>https://caoyang2002.xyz/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2022/07/chart_image/</guid><description>&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg">
 &lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg" alt="cool.jpg">&lt;/p>
-&lt;p>&lt;a href="http://patorjk.com/software/taag">http://patorjk.com/software/taag&lt;/a>
-&lt;a href="http://www.network-science.de/ascii/">http://www.network-science.de/ascii/&lt;/a>
-&lt;a href="http://www.degraeve.com/img2txt.php">http://www.degraeve.com/img2txt.php&lt;/a>
-&lt;a href="http://life.chacuo.net/convertfont2char">http://life.chacuo.net/convertfont2char&lt;/a>&lt;/p></description></item></channel></rss>
+&lt;p>
+&lt;a href="http://patorjk.com/software/taag"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://patorjk.com/software/taag
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+
+&lt;a href="http://www.network-science.de/ascii/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://www.network-science.de/ascii/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+
+&lt;a href="http://www.degraeve.com/img2txt.php"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://www.degraeve.com/img2txt.php
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+
+&lt;a href="http://life.chacuo.net/convertfont2char"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://life.chacuo.net/convertfont2char
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p></description></item></channel></rss>
