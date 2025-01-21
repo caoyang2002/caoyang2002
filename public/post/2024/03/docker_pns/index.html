@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>搭建 NPS - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>搭建 NPS - caoyang2002</title>
 <meta name=theme-color><meta name=description content='
 
 
@@ -38,7 +38,7 @@
 <span class=external-icon>↗</span>
 </a>把配置文件放在之前创建的 <code>/opt/nps/conf</code></p><h2 id=5-修改配置文件也可以不改见8>5. 修改配置文件（也可以不改，见8）</h2><p>具体文件内容在文末，修改nps.conf中的端口号，在nps.conf中将https_just_proxy设置为true，并且打开https_proxy_port端口，然后nps将直接转发https请求到内网服务器上，由内网服务器进行https处理</p><h2 id=6-运行>6. 运行</h2><p><code>docker run -d -p 20000-20010:20000-20010 -v /opt/nps/conf:/conf --name=nps ffdfgdfg/nps</code> 解释：<code>-d</code>:后台运行容器，并返回容器ID；<code>-p</code>: 指定端口映射，格式为：主机(宿主)端口:容器端口; <code>20000-20010:20000-20010</code>: 主机(宿主)端口:(docker)容器端口; <code>-v</code>:绑定一个卷; <code>/opt/nps/conf:/conf</code>: (宿主)目录: docker目录 <code>-name=nps</code>: 为容器指定一个名称； <code>ffdfgdfg/nps</code>:镜像，【应该是这个意思】</p><p>如果报错，查看镜像是否存在 <code>docker iamge</code>; 查看运行状态 <code>docker ps -a</code> 删除容器 <code>docker rm 容器名或id</code> 停止运行<code>docker stop 容器名或id</code></p><p>使用默认配置 <code>docker run --net=host --name nps_server -d ffdfgdfg/nps</code> ，解释 <code>--net="bridge"</code>: 指定容器的网络连接类型，支持 bridge/host/none/container: 四种类型；</p><p>通过公网ip访问：<code>你的公网ip</code>:<code>你设置的端口</code> 比如：8.8.8.8:20003, 默认端口<code>20003</code></p><blockquote><p>后续发现停止运行了, 可以使用 <code>docker start nps</code> 启动 nps 服务</p></blockquote><blockquote><p>面板上的客户端就是实体设备，客户端通过这里设置的秘钥访问nps
 面板上的隧道就是设备上的端口，只要你客户端配置好了，隧道就自动在线了。隧道的就是客户端 id + 客户端端口 + 服务器映射端口（给公网访问）</p></blockquote><h1 id=客户端-npc>客户端 npc</h1><h2 id=1-拉取docker-image>1. 拉取docker image</h2><p><code>docker pull ffdfgdfg/npc</code></p><h2 id=2-配置文件见文末>2. 配置文件见文末</h2><p>不推荐修改配置</p><h2 id=3-未修改配置文件启动>3. 未修改配置文件启动</h2><ol><li>在服务端打开面板</li><li>客户端 -> 新增（可以不用配置，改改备注就行）-> 新增；</li><li>点击新增条目左边的加号，获取客户端命令。类似于：./npc -server=8.8.8.8:20002 -vkey=fds4322we232w -type=tcp；<code>./nps</code>可以不用复制，命令其余部分复制下来，用于配置客户端docker</li><li>运行 <code>docker run -d --name npc --net=host ffdfgdfg/npc -server=ip地址:20002 -vkey=z8uhasdfsfdshx -type=tcp</code></li></ol><h2 id=6-配置文件启动>6. 配置文件启动</h2><p>没用过，不瞎解释。</p><ol><li>主要是修改启动<code>server_addr</code> 改为你自己的地址
-<code>docker run -d -p 18080-18090:8080-8090 -v /root/npc/conf:/conf --name=npc ffdfgdfg/npc</code></li></ol><h1 id=配置文件>配置文件</h1><h2 id=npsconf>nps.conf</h2><div class=highlight><pre class=chroma><code class=language-c data-lang=c>appname = nps
+<code>docker run -d -p 18080-18090:8080-8090 -v /root/npc/conf:/conf --name=npc ffdfgdfg/npc</code></li></ol><h1 id=配置文件>配置文件</h1><h2 id=npsconf>nps.conf</h2><div><pre><code class=language-c data-lang=c>appname = nps
 runmode = dev
 
 http_proxy_ip=0.0.0.0
@@ -79,7 +79,7 @@ allow_multi_ip=false
 system_info_display=false
 http_cache=false
 http_cache_length=100
-http_add_origin_header=false</code></pre></div><p>配置文件（/etc/nps/conf/nps.conf）的含义：</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c>名称	含义
+http_add_origin_header=false</code></pre></div><p>配置文件（/etc/nps/conf/nps.conf）的含义：</p><div><pre><code class=language-c data-lang=c>名称	含义
 web_port	web管理端口
 web_password	web界面管理密码
 web_username	web界面管理账号
@@ -98,7 +98,7 @@ p2p_ip	服务端Ip，使用p2p模式必填
 p2p_port	p2p模式开启的udp端口
 pprof_ip	debug pprof 服务端ip
 pprof_port	debug pprof 端口
-disconnect_timeout	客户端连接超时，单位 5s，默认值 60，即 300s = 5mins</code></pre></div><p>默认配置</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c>appname = nps
+disconnect_timeout	客户端连接超时，单位 5s，默认值 60，即 300s = 5mins</code></pre></div><p>默认配置</p><div><pre><code class=language-c data-lang=c>appname = nps
 #Boot mode(dev|pro)
 runmode = dev
 
@@ -182,7 +182,7 @@ http_add_origin_header=false
 #pprof_port=9999
 
 #client disconnect timeout
-disconnect_timeout=60</code></pre></div><h2 id=npcconf>npc.conf</h2><div class=highlight><pre class=chroma><code class=language-c data-lang=c>[common]
+disconnect_timeout=60</code></pre></div><h2 id=npcconf>npc.conf</h2><div><pre><code class=language-c data-lang=c>[common]
 server_addr=1.1.1.1:8024
 conn_type=tcp
 vkey=123
@@ -194,7 +194,7 @@ rate_limit=10000
 flow_limit=100
 remark=test
 max_conn=10
-#pprof_addr=0.0.0.0:9999</code></pre></div><div class=highlight><pre class=chroma><code class=language-c data-lang=c>项	含义
+#pprof_addr=0.0.0.0:9999</code></pre></div><div><pre><code class=language-c data-lang=c>项	含义
 server_addr	服务端ip/域名:port
 conn_type	与服务端通信模式(tcp或kcp)
 vkey	服务端配置文件中的密钥(非web)
@@ -206,7 +206,7 @@ rate_limit	速度限制，可忽略
 flow_limit	流量限制，可忽略
 remark	客户端备注，可忽略
 max_conn	最大连接数，可忽略
-pprof_addr	debug pprof ip:port</code></pre></div><p>通过域名访问</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c>[common]
+pprof_addr	debug pprof ip:port</code></pre></div><p>通过域名访问</p><div><pre><code class=language-c data-lang=c>[common]
 server_addr=域名:20002
 conn_type=https
 vkey=123
@@ -240,7 +240,7 @@ health_check_target=127.0.0.1:8083,127.0.0.1:8082
 
 [web]
 host=域名
-target_addr=127.0.0.1:8080</code></pre></div><p>说明</p><div class=highlight><pre class=chroma><code class=language-c data-lang=c>[common]
+target_addr=127.0.0.1:8080</code></pre></div><p>说明</p><div><pre><code class=language-c data-lang=c>[common]
 server_addr=1.1.1.1:8024
 vkey=123
 [web1]

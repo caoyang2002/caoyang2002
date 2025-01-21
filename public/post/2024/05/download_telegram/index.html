@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>TG 下载器 - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>TG 下载器 - caoyang2002</title>
 <meta name=theme-color><meta name=description content="软件
 
 
@@ -84,7 +84,7 @@ mac
 - 几乎所有电报用户：将用户名发送给机器人或将他们的消息转发给机器人
 - 任何聊天：发送聊天用户名或复制并发送其加入聊天链接到机器人
 - 公共或私人频道：与聊天相同，只需复制并发送给机器人
-- 任何电报机器人的 ID</p><h3 id=配置文件>配置文件</h3><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml>api_hash: your_api_hash
+- 任何电报机器人的 ID</p><h3 id=配置文件>配置文件</h3><div><pre><code class=language-yaml data-lang=yaml>api_hash: your_api_hash
 api_id: your_api_id
 bot_token: your_bot_token
 chat:
@@ -132,13 +132,13 @@ web_login_secret: 123</code></pre></div><ul><li><strong>api_hash</strong> - 你�
 <a href=https://github.com/tangyoha/telegram_media_downloader/wiki/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8%E8%BF%87%E6%BB%A4%E5%99%A8 target=_blank rel="noopener noreferrer" class=external-link>如何使用过滤器
 <span class=external-icon>↗</span></a></li><li><code>last_read_message_id</code> -如果这是您第一次阅读频道，请将其设置为“0”，或者如果您已经使用此脚本下载媒体，它将有一些数字，这些数字会在脚本成功执行后自动更新。不要改变它。</li></ul></li><li><strong>chat_id</strong> - 您要下载媒体的聊天/频道的 ID。你从上述步骤中得到的。</li><li><strong>last_read_message_id</strong> - 如果这是您第一次阅读频道，请将其设置为“0”，或者如果您已经使用此脚本下载媒体，它将有一些数字，这些数字会在脚本成功执行后自动更新。不要改变它。</li><li><strong>ids_to_retry</strong> - <code>保持原样。</code>下载器脚本使用它来跟踪所有跳过的下载，以便在下次执行脚本时可以下载它。</li><li><strong>media_types</strong> - 要下载的媒体类型，您可以更新要下载的媒体类型，它可以是一种或任何可用类型。</li><li><strong>file_formats</strong> - 为支持的媒体类型（“音频”、“文档”和“视频”）下载的文件类型。默认格式为“all”，下载所有文件。</li><li><strong>save_path</strong> - 你想存储下载文件的根目录</li><li><strong>file_path_prefix</strong> - 存储文件子文件夹，列表的顺序不定，可以随机组合<ul><li><code>chat_title</code> - 聊天频道或者群组标题, 如果找不到标题则为配置文件中的<code>chat_id</code></li><li><code>media_datetime</code> - 资源的发布时间</li><li><code>media_type</code> - 资源类型，类型查阅 <code>media_types</code></li></ul></li><li><strong>disable_syslog</strong> - 您可以选择要禁用的日志类型，请参阅 <code>logging._nameToLevel</code></li><li><strong>upload_drive</strong> - 您可以将文件上传到云盘<ul><li><code>enable_upload_file</code> - [必填]启用上传文件，默认为<code>false</code></li><li><code>remote_dir</code> - [必填]你上传的地方</li><li><code>upload_adapter</code> - [必填]上传文件适配器，可以为<code>rclone</code>,<code>aligo</code>。如果为<code>rclone</code>，则支持rclone所有支持上传的服务器，如果为aligo，则支持上传阿里云盘</li><li><code>rclone_path</code>，如果配置<code>upload_adapter</code>为<code>rclone</code>则为必填，<code>rclone</code>的可执行目录，查阅
 <a href=https://github.com/tangyoha/telegram_media_downloader/wiki/Rclone target=_blank rel="noopener noreferrer" class=external-link>如何使用rclone
-<span class=external-icon>↗</span></a></li><li><code>before_upload_file_zip</code> - 上传前压缩文件，默认为<code>false</code></li><li><code>after_upload_file_delete</code> - 上传成功后删除文件，默认为<code>false</code></li></ul></li><li><strong>file_name_prefix</strong> - 自定义文件名称,使用和 <strong>file_path_prefix</strong> 一样<ul><li><code>message_id</code> - 消息id</li><li><code>file_name</code> - 文件名称（可能为空）</li><li><code>caption</code> - 消息的标题（可能为空）</li></ul></li><li><strong>file_name_prefix_split</strong> - 自定义文件名称分割符号，默认为<code>-</code></li><li><strong>max_download_task</strong> - 最大任务下载任务个数，默认为5个。</li><li><strong>hide_file_name</strong> - 是否隐藏web界面文件名称，默认<code>false</code></li><li><strong>web_host</strong> - web界面地址</li><li><strong>web_port</strong> - web界面端口</li><li><strong>language</strong> - 应用语言，默认为英文(<code>EN</code>),可选<code>ZH</code>（中文）,<code>RU</code>,<code>UA</code></li><li><strong>web_login_secret</strong> - 网页登录密码，如果不配置则访问网页不需要登录</li></ul><h2 id=执行>执行</h2><div class=highlight><pre class=chroma><code class=language-sh data-lang=sh>python3 media_downloader.py</code></pre></div><p>所有下载的媒体都将存储在<code>save_path</code>根目录下。
-具体位置参考如下：</p><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml>file_path_prefix:
+<span class=external-icon>↗</span></a></li><li><code>before_upload_file_zip</code> - 上传前压缩文件，默认为<code>false</code></li><li><code>after_upload_file_delete</code> - 上传成功后删除文件，默认为<code>false</code></li></ul></li><li><strong>file_name_prefix</strong> - 自定义文件名称,使用和 <strong>file_path_prefix</strong> 一样<ul><li><code>message_id</code> - 消息id</li><li><code>file_name</code> - 文件名称（可能为空）</li><li><code>caption</code> - 消息的标题（可能为空）</li></ul></li><li><strong>file_name_prefix_split</strong> - 自定义文件名称分割符号，默认为<code>-</code></li><li><strong>max_download_task</strong> - 最大任务下载任务个数，默认为5个。</li><li><strong>hide_file_name</strong> - 是否隐藏web界面文件名称，默认<code>false</code></li><li><strong>web_host</strong> - web界面地址</li><li><strong>web_port</strong> - web界面端口</li><li><strong>language</strong> - 应用语言，默认为英文(<code>EN</code>),可选<code>ZH</code>（中文）,<code>RU</code>,<code>UA</code></li><li><strong>web_login_secret</strong> - 网页登录密码，如果不配置则访问网页不需要登录</li></ul><h2 id=执行>执行</h2><div><pre><code class=language-sh data-lang=sh>python3 media_downloader.py</code></pre></div><p>所有下载的媒体都将存储在<code>save_path</code>根目录下。
+具体位置参考如下：</p><div><pre><code class=language-yaml data-lang=yaml>file_path_prefix:
   - chat_title
   - media_datetime
   - media_type</code></pre></div><p>视频下载完整目录为：<code>save_path</code>/<code>chat_title</code>/<code>media_datetime</code>/<code>media_type</code>。
 列表的顺序不定，可以随机组合。
-如果配置为空，则所有文件保存在<code>save_path</code>下。</p><h2 id=代理>代理</h2><p>该项目目前支持 socks4、socks5、http 代理。要使用它，请将以下内容添加到<code>config.yaml</code>文件的底部</p><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml>proxy:
+如果配置为空，则所有文件保存在<code>save_path</code>下。</p><h2 id=代理>代理</h2><p>该项目目前支持 socks4、socks5、http 代理。要使用它，请将以下内容添加到<code>config.yaml</code>文件的底部</p><div><pre><code class=language-yaml data-lang=yaml>proxy:
   scheme: socks5
   hostname: 127.0.0.1
   port: 1234
