@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>SQL 教程 - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{background-image:url(/imgs/background_img.jpg);background-size:auto;background-repeat:repeat-y;background-position:50% 0}html,body{min-height:100vh}body::before{content:"";position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;background-image:url(/imgs/background_img.jpg);background-size:500px 300px;background-repeat:repeat-y;background-position:50% 0}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>SQL 教程 - caoyang2002</title>
 <meta name=theme-color><meta name=description content=" 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加
 数据库相关的操作
 查询数据库	 SHOW DATABASES
@@ -16,7 +16,16 @@ USE 数据库名
 USE mydatabase
 DDL语句	 数据定义语言
 创建表
-CREATE TABLE 表名(
+
+
+
+
+
+
+
+
+
+    CREATE TABLE 表名(
    列名1 类型[长度] [DEFAULT 默认值] [约束条件]
    列名2 类型
    ……
@@ -29,8 +38,10 @@ CREATE TABLE userinfo(
    nickname VARCHAR(32)
    age INT(3)
 );
+
+
 查看当前数据库创建的所有表
-SHOW TABLES;"><meta name=author content="曹洋 simons"><link rel="preload stylesheet" as=style href=https://caoyang2002.xyz/main.min.css><link rel=preload as=image href=https://caoyang2002.xyz/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=https://caoyang2002.xyz/twitter.svg><link rel=preload as=image href=https://caoyang2002.xyz/github.svg><link rel=preload as=image href=https://caoyang2002.xyz/instagram.svg><link rel=preload as=image href=https://caoyang2002.xyz/rss.svg><script defer src=https://caoyang2002.xyz/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.xyz/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.xyz/apple-touch-icon.png><meta name=generator content="Hugo 0.141.0"><meta itemprop=name content="SQL 教程"><meta itemprop=description content="在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加 数据库相关的操作 查询数据库	SHOW DATABASES
+SHOW TABLES;"><meta name=author content="曹洋 simons"><link rel="preload stylesheet" as=style href=https://caoyang2002.xyz/main.min.css><link rel=preload as=image href=https://caoyang2002.xyz/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=https://caoyang2002.xyz/twitter.svg><link rel=preload as=image href=https://caoyang2002.xyz/github.svg><link rel=preload as=image href=https://caoyang2002.xyz/instagram.svg><link rel=preload as=image href=https://caoyang2002.xyz/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script defer src=https://caoyang2002.xyz/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.xyz/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.xyz/apple-touch-icon.png><meta name=generator content="Hugo 0.141.0"><meta itemprop=name content="SQL 教程"><meta itemprop=description content="在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加 数据库相关的操作 查询数据库	SHOW DATABASES
 创建数据库 CREATE DATABASE 数据库名 CREATE DATABASE mydatabase
 查看数据库信息 SHOW CREATE DATABASE 数据库名 SHOW CREATE DATABASE database
 删除数据库 DROP DATABASE 数据库名 DROP DATABASE mydatabase
@@ -48,11 +59,11 @@ CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] �
 删除数据库 DROP DATABASE 数据库名 DROP DATABASE mydatabase
 使用数据库 USE 数据库名 USE mydatabase
 DDL语句	数据定义语言 创建表
-CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] 列名2 类型 …… ); CREATE TABLE userinfo( id INT username VARCHAR(32) password VARCHAR(32) nickname VARCHAR(32) age INT(3) ); 查看当前数据库创建的所有表 SHOW TABLES;"><link rel=canonical href=https://caoyang2002.xyz/post/2024/04/sql/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.xyz/>caoyang2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-12 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/>首页</a>
+CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] 列名2 类型 …… ); CREATE TABLE userinfo( id INT username VARCHAR(32) password VARCHAR(32) nickname VARCHAR(32) age INT(3) ); 查看当前数据库创建的所有表 SHOW TABLES;"><link rel=canonical href=https://caoyang2002.xyz/post/2024/04/sql/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.xyz/>caoyang2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/>首页</a>
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a>
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>联系</a>
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/guestbook/>留言</a>
-<a href=/search class=search-link><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">SQL 教程</h1><div class="text-xs antialiased opacity-60"><time>2024年4月29日</time></div></div><section><p style=color:red>在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加<p><h1 id=数据库相关的操作>数据库相关的操作</h1><p>查询数据库 <code>SHOW DATABASES</code></p><p>创建数据库
+<a href=/search class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal">搜索</a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">SQL 教程</h1><div class="text-xs antialiased opacity-60"><time>2024年4月29日</time></div></div><section><p style=color:red>在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加<p><h1 id=数据库相关的操作>数据库相关的操作</h1><p>查询数据库 <code>SHOW DATABASES</code></p><p>创建数据库
 <code>CREATE DATABASE 数据库名</code>
 <code>CREATE DATABASE mydatabase</code></p><p>查看数据库信息
 <code>SHOW CREATE DATABASE 数据库名</code>
@@ -60,20 +71,19 @@ CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] �
 <code>DROP DATABASE 数据库名</code>
 <code>DROP DATABASE mydatabase</code></p><p>使用数据库
 <code>USE 数据库名</code>
-<code>USE mydatabase</code></p><h1 id=ddl语句-数据定义语言>DDL语句 数据定义语言</h1><p>创建表</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#960050;background-color:#1e0010>表名</span>(
-</span></span><span style=display:flex><span>   <span style=color:#960050;background-color:#1e0010>列名</span><span style=color:#ae81ff>1</span> <span style=color:#960050;background-color:#1e0010>类型</span>[<span style=color:#960050;background-color:#1e0010>长度</span>] [<span style=color:#66d9ef>DEFAULT</span> <span style=color:#960050;background-color:#1e0010>默认值</span>] [<span style=color:#960050;background-color:#1e0010>约束条件</span>]
-</span></span><span style=display:flex><span>   <span style=color:#960050;background-color:#1e0010>列名</span><span style=color:#ae81ff>2</span> <span style=color:#960050;background-color:#1e0010>类型</span>
-</span></span><span style=display:flex><span>   <span style=color:#960050;background-color:#1e0010>……</span>
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> userinfo(
-</span></span><span style=display:flex><span>   id INT
-</span></span><span style=display:flex><span>   username VARCHAR(<span style=color:#ae81ff>32</span>)
-</span></span><span style=display:flex><span>   password VARCHAR(<span style=color:#ae81ff>32</span>)
-</span></span><span style=display:flex><span>   nickname VARCHAR(<span style=color:#ae81ff>32</span>)
-</span></span><span style=display:flex><span>   age INT(<span style=color:#ae81ff>3</span>)
-</span></span><span style=display:flex><span>);
-</span></span></code></pre></div><p>查看当前数据库创建的所有表
+<code>USE mydatabase</code></p><h1 id=ddl语句-数据定义语言>DDL语句 数据定义语言</h1><p>创建表</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>CREATE TABLE 表名(
+   列名1 类型[长度] [DEFAULT 默认值] [约束条件]
+   列名2 类型
+   ……
+);
+
+CREATE TABLE userinfo(
+   id INT
+   username VARCHAR(32)
+   password VARCHAR(32)
+   nickname VARCHAR(32)
+   age INT(3)
+);</code></pre></div><p>查看当前数据库创建的所有表
 <code>SHOW TABLES;</code></p><p>查看表的详细信息
 <code>SHOW CREATE TABLE 表名</code>
 <code>SHOW CREATE TABLE table;</code></p><p>查看表结构
@@ -107,10 +117,9 @@ CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] �
 <code>SHOW DATABASE mydb</code></p><p>查询表的部分所有字段
 <code>SELECT 字段名1[字段名2，字段名3，... 或 *] FROM 表名</code>
 <code>SELECT * FROM user</code></p><p>查看emp表的特定的字段
-<code>SELECT name,job FROM emp</code></p><ul><li>WHERE字句（添加过滤条件，查询满足条件的）<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>;
-</span></span></code></pre></div>连接多个条件
+<code>SELECT name,job FROM emp</code></p><ul><li>WHERE字句（添加过滤条件，查询满足条件的）<div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,job,sal
+FROM emp
+WHERE sal&gt;1000;</code></pre></div>连接多个条件
 <code>AND、OR</code></li></ul><p>值在列表中
 <code>IN(列表) IN(emp)</code></p><p>区间
 <code>BETWWEEN 2000 AND 3000</code></p><p>去重
@@ -141,366 +150,343 @@ CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] �
 <code>DROP DATABASE db2;</code></p><p>使用数据库
 <code>USE 数据库名字</code>
 <code>USE mydb;</code></p><h1 id=表相关的操作>表相关的操作</h1><blockquote><p>（列：字段，是一组数据中各属性信息）
-（行：记录，一条记录保存一组数据）</p></blockquote><h1 id=ddl语句>DDL语句</h1><blockquote><p>（数据定义语言：用来操作数据库对象的）（数据库对象：表、视图、索引都属于数据库对象）</p></blockquote><p>创建表</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#960050;background-color:#1e0010>表名</span>(
-</span></span><span style=display:flex><span>  <span style=color:#960050;background-color:#1e0010>列名</span><span style=color:#ae81ff>1</span> <span style=color:#960050;background-color:#1e0010>类型</span>[(<span style=color:#960050;background-color:#1e0010>长度</span>)] [<span style=color:#66d9ef>DEFAULT</span> <span style=color:#960050;background-color:#1e0010>默认值</span>] [<span style=color:#960050;background-color:#1e0010>约束条件</span>],
-</span></span><span style=display:flex><span>	<span style=color:#960050;background-color:#1e0010>列名</span><span style=color:#ae81ff>2</span> <span style=color:#960050;background-color:#1e0010>类型</span>...
-</span></span><span style=display:flex><span>)[CHARSET<span style=color:#f92672>=</span>UTF8<span style=color:#f92672>/</span>GBK]
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> userinfo(
-</span></span><span style=display:flex><span>    id INT,
-</span></span><span style=display:flex><span>    username VARCHAR(<span style=color:#ae81ff>32</span>),
-</span></span><span style=display:flex><span>    password VARCHAR(<span style=color:#ae81ff>32</span>),
-</span></span><span style=display:flex><span>    nickname VARCHAR(<span style=color:#ae81ff>32</span>),
-</span></span><span style=display:flex><span>    age INT(<span style=color:#ae81ff>3</span>)
-</span></span><span style=display:flex><span>);
-</span></span></code></pre></div><blockquote><p>数字的长度表示位数，VACHAR的长度表示最多占用的字节数</p></blockquote><hr><hr><h1 id=插入数据>插入数据</h1><p><code>INSERT INTO 表名[(字段1,字段2...)] VALUES (字段1的值,字段2的值...)</code></p><p><code>INSERT INTO person(name,age) VALUES ('张三',22);</code>
+（行：记录，一条记录保存一组数据）</p></blockquote><h1 id=ddl语句>DDL语句</h1><blockquote><p>（数据定义语言：用来操作数据库对象的）（数据库对象：表、视图、索引都属于数据库对象）</p></blockquote><p>创建表</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>CREATE TABLE 表名(
+  列名1 类型[(长度)] [DEFAULT 默认值] [约束条件],
+	列名2 类型...
+)[CHARSET=UTF8/GBK]
+
+CREATE TABLE userinfo(
+    id INT,
+    username VARCHAR(32),
+    password VARCHAR(32),
+    nickname VARCHAR(32),
+    age INT(3)
+);</code></pre></div><blockquote><p>数字的长度表示位数，VACHAR的长度表示最多占用的字节数</p></blockquote><hr><hr><h1 id=插入数据>插入数据</h1><p><code>INSERT INTO 表名[(字段1,字段2...)] VALUES (字段1的值,字段2的值...)</code></p><p><code>INSERT INTO person(name,age) VALUES ('张三',22);</code>
 <code>INSERT INTO person(age,name) VALUES (27,'赵六'); # 对应即可</code></p><p>未指定的列插入都是列的默认值，当创建表时没有为列声明特定的默认值时，列的默认值为null</p><p><code>INSERT INTO person(name) VALUES ('李四');</code></p><p>字段名可以忽略不写，此时为全列插入，即：VALUES需要指定每一列的值，且顺序、个数、类型必须与表相同</p><p><code>INSERT INTO person VALUES ('王五',24);</code></p><p>查看person表中的所有数据</p><p><code>SELECT * FROM person;</code></p><p>修改表数据操作: UPDATE语句</p><p><code>UPDATE 表名 STE 字段名1=新值1[字段2=新值2...][WHERE 过滤条件]</code></p><p><code>UPDATE person SET age=23 WHERE name='李四';</code></p><p>WHERE 中常用的条件: =,>,&lt;,>=,&lt;=,&lt;>不等于（!= 不是所有数据库都支持）</p><p><code>UPDATE person SET age=25 WHERE age>50;</code></p><p><code>UPDATE person SET age=age+1 ;</code></p><p><code>UPDATE person</code>
 <code>SET name='李老四',age=55</code>
 <code>WHERE age=24;</code></p><p>通常修改语句要添加WHERE子句，用于添加过滤条件来定位要修改的记录，不添加WHERE子句则是全表所有记录都修改</p><p><code>UPDATE person SET age=55;</code></p><h1 id=删除数据>删除数据</h1><p><code>DELETE FROM 表名 [WHERE 过滤条件]</code></p><p>注意！！！不添加WHERE条件则是全发表删除！！！</p><p><code>DELETE FROM person WHERE name='李老四';</code></p><p><code>UPDATE person SET age=20 WHERE name='张三';</code>
-<code>DELETE FROM person WHERE age>25; #删除年龄大于25岁的人</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>DATABASE</span> day1db CHARSET<span style=color:#f92672>=</span>UTF8;
-</span></span><span style=display:flex><span>USE day1db;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> t_hero(
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>32</span>)
-</span></span><span style=display:flex><span>)CHARSET UTF8;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>RENAME</span> <span style=color:#66d9ef>TABLE</span> t_hero <span style=color:#66d9ef>TO</span> hero;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ALTER</span> <span style=color:#66d9ef>TABLE</span> hero <span style=color:#66d9ef>ADD</span> money INT(<span style=color:#ae81ff>10</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ALTER</span> <span style=color:#66d9ef>TABLE</span> hero <span style=color:#66d9ef>ADD</span> id INT <span style=color:#66d9ef>FIRST</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ALTER</span> <span style=color:#66d9ef>TABLE</span> hero <span style=color:#66d9ef>ADD</span> age INT(<span style=color:#ae81ff>3</span>) <span style=color:#66d9ef>AFTER</span> name;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> hero(name,age,money) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;李白&#39;</span>,<span style=color:#ae81ff>22</span>,<span style=color:#ae81ff>6888</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> hero(name,age,money) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;赵云&#39;</span>,<span style=color:#ae81ff>30</span>,<span style=color:#ae81ff>13888</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> hero(name,age,money) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;刘备&#39;</span>,<span style=color:#ae81ff>25</span>,<span style=color:#ae81ff>6888</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name <span style=color:#66d9ef>FROM</span> hero <span style=color:#66d9ef>WHERE</span> money<span style=color:#f92672>=</span><span style=color:#ae81ff>6888</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> hero;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>UPDATE</span> hero <span style=color:#66d9ef>SET</span> age<span style=color:#f92672>=</span><span style=color:#ae81ff>52</span> <span style=color:#66d9ef>WHERE</span> name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;刘备&#39;</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>UPDATE</span> hero <span style=color:#66d9ef>SET</span> money<span style=color:#f92672>=</span><span style=color:#ae81ff>5000</span> <span style=color:#66d9ef>WHERE</span> age<span style=color:#f92672>&lt;</span><span style=color:#ae81ff>50</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> hero <span style=color:#66d9ef>WHERE</span> money<span style=color:#f92672>=</span><span style=color:#ae81ff>5000</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> hero;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>DATABASE</span>  day1db;
-</span></span><span style=display:flex><span>USE empdb;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span>USE mydb;
-</span></span></code></pre></div><h1 id=数据类型>数据类型</h1><h1 id=数字类型>数字类型</h1><ul><li>整数: INT(m)和BIGINT(m) m表示的是长度 例如:m=5,存数字18,实际存储00018</li><li>浮点数:DOUBLE(m,n) m表示整体数字长度,n表示小数位 例如:DOUBLE(5,3) 99.999 （实际插入数据时，当精度超过可保存范围时，会四舍五入）</li></ul><h1 id=字符类型>字符类型</h1><ul><li>CHAR(n):定长字符串，每条记录实际占用的字节空间是定长的，不足的部分补充空字符来满足长度要求
+<code>DELETE FROM person WHERE age>25; #删除年龄大于25岁的人</code></p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>CREATE DATABASE day1db CHARSET=UTF8;
+USE day1db;
+CREATE TABLE t_hero(
+    name VARCHAR(32)
+)CHARSET UTF8;
+RENAME TABLE t_hero TO hero;
+ALTER TABLE hero ADD money INT(10);
+ALTER TABLE hero ADD id INT FIRST;
+ALTER TABLE hero ADD age INT(3) AFTER name;
+
+INSERT INTO hero(name,age,money) VALUES (&#39;李白&#39;,22,6888);
+INSERT INTO hero(name,age,money) VALUES (&#39;赵云&#39;,30,13888);
+INSERT INTO hero(name,age,money) VALUES (&#39;刘备&#39;,25,6888);
+
+SELECT name FROM hero WHERE money=6888;
+SELECT * FROM hero;
+
+UPDATE hero SET age=52 WHERE name=&#39;刘备&#39;;
+UPDATE hero SET money=5000 WHERE age&lt;50;
+
+DELETE FROM hero WHERE money=5000;
+DROP TABLE hero;
+DROP DATABASE  day1db;
+USE empdb;
+SELECT * FROM emp;
+USE mydb;</code></pre></div><h1 id=数据类型>数据类型</h1><h1 id=数字类型>数字类型</h1><ul><li>整数: INT(m)和BIGINT(m) m表示的是长度 例如:m=5,存数字18,实际存储00018</li><li>浮点数:DOUBLE(m,n) m表示整体数字长度,n表示小数位 例如:DOUBLE(5,3) 99.999 （实际插入数据时，当精度超过可保存范围时，会四舍五入）</li></ul><h1 id=字符类型>字符类型</h1><ul><li>CHAR(n):定长字符串，每条记录实际占用的字节空间是定长的，不足的部分补充空字符来满足长度要求
 优点:查询速度快 缺点:浪费磁盘空间</li><li>VARCHAR(n):变长字符串，最多存n指定的字节数对应的字符，实际保存时，用多少占多少 （推荐）
-优点:节省磁盘空间 缺点:查询速度慢</li><li>TEXT(n):可变长字符串，最大65535</li></ul><p>日期时间类型</p><ul><li>DATE:保存年月日</li><li>TIME:保存十分秒</li><li>DATETIME:保存年月日时分秒</li><li>TIMESTAMP:时间戳，记录UTC时间，从1970-01-01 00:00:00到表示的时间之间经过的毫秒</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> userinfo;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> userinfo(
-</span></span><span style=display:flex><span>    id INT,
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>30</span>),
-</span></span><span style=display:flex><span>    birth DATETIME,
-</span></span><span style=display:flex><span>    salary DOUBLE(<span style=color:#ae81ff>7</span>,<span style=color:#ae81ff>2</span>)
-</span></span><span style=display:flex><span>)CHARSET UTF8;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>set</span> <span style=color:#66d9ef>names</span> UTF8;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> userinfo <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>1</span>,<span style=color:#e6db74>&#39;张三&#39;</span>,<span style=color:#e6db74>&#39;1992-08-02 11:22:05&#39;</span>,<span style=color:#ae81ff>5000</span>.<span style=color:#ae81ff>59</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> userinfo <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>2</span>,<span style=color:#e6db74>&#39;李四&#39;</span>,<span style=color:#e6db74>&#39;1999-05-16&#39;</span>,<span style=color:#ae81ff>6500</span>.<span style=color:#ae81ff>23</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> userinfo <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>3</span>,<span style=color:#e6db74>&#39;王五&#39;</span>,<span style=color:#e6db74>&#39;06:12:45&#39;</span>,<span style=color:#ae81ff>9700</span>.<span style=color:#ae81ff>342</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> userinfo;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> userinfo;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> userinfo <span style=color:#66d9ef>WHERE</span> name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;王五&#39;</span>;
-</span></span></code></pre></div><p>约束:约束是为表中某个字段添加特定的限制条件，只有符合条件的记录才可以保存
+优点:节省磁盘空间 缺点:查询速度慢</li><li>TEXT(n):可变长字符串，最大65535</li></ul><p>日期时间类型</p><ul><li>DATE:保存年月日</li><li>TIME:保存十分秒</li><li>DATETIME:保存年月日时分秒</li><li>TIMESTAMP:时间戳，记录UTC时间，从1970-01-01 00:00:00到表示的时间之间经过的毫秒</li></ul><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>DROP TABLE userinfo;
+CREATE TABLE userinfo(
+    id INT,
+    name VARCHAR(30),
+    birth DATETIME,
+    salary DOUBLE(7,2)
+)CHARSET UTF8;
+set names UTF8;
+INSERT INTO userinfo VALUES (1,&#39;张三&#39;,&#39;1992-08-02 11:22:05&#39;,5000.59);
+INSERT INTO userinfo VALUES (2,&#39;李四&#39;,&#39;1999-05-16&#39;,6500.23);
+INSERT INTO userinfo VALUES (3,&#39;王五&#39;,&#39;06:12:45&#39;,9700.342);
+DELETE FROM userinfo;
+SELECT * FROM userinfo;
+DELETE FROM userinfo WHERE name=&#39;王五&#39;;</code></pre></div><p>约束:约束是为表中某个字段添加特定的限制条件，只有符合条件的记录才可以保存
 主键约束:该字段非空且唯一，用该字段的值唯一表示一条记录
 非空约束:该字段的值不允许为空
-外键约束:实际开发中几乎不用</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> student(
-</span></span><span style=display:flex><span>    id INT AUTO_INCREMENT <span style=color:#66d9ef>PRIMARY</span> <span style=color:#66d9ef>KEY</span> ,<span style=color:#f92672>#</span> AUTO_INCREMENT <span style=color:#960050;background-color:#1e0010>自增</span>
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>30</span>) <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span> ,
-</span></span><span style=display:flex><span>    age INT(<span style=color:#ae81ff>3</span>),
-</span></span><span style=display:flex><span>    gender CHAR(<span style=color:#ae81ff>1</span>)
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DESC</span> student;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> student;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student <span style=color:#66d9ef>VALUES</span> (<span style=color:#66d9ef>NULL</span>,<span style=color:#66d9ef>NULL</span>,<span style=color:#ae81ff>55</span>,<span style=color:#e6db74>&#39;m&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student <span style=color:#66d9ef>VALUES</span> (<span style=color:#66d9ef>NULL</span>,<span style=color:#e6db74>&#39;刘桑&#39;</span>,<span style=color:#ae81ff>55</span>,<span style=color:#e6db74>&#39;m&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student(name,age,gender) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;克晶&#39;</span>,<span style=color:#ae81ff>18</span>,<span style=color:#e6db74>&#39;f&#39;</span>);
-</span></span></code></pre></div><p>不允许</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student(age,gender) <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>18</span>,<span style=color:#e6db74>&#39;f&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student(name,age,gender) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;传奇&#39;</span>,<span style=color:#ae81ff>22</span>,<span style=color:#66d9ef>NULL</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> student(name,age) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;国斌&#39;</span>,<span style=color:#ae81ff>33</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DELETE</span> <span style=color:#66d9ef>FROM</span> student <span style=color:#66d9ef>WHERE</span> id<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> teacher(
-</span></span><span style=display:flex><span>    id INT <span style=color:#66d9ef>PRIMARY</span> <span style=color:#66d9ef>KEY</span> ,
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>30</span>) <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>,
-</span></span><span style=display:flex><span>    age INT(<span style=color:#ae81ff>3</span>),
-</span></span><span style=display:flex><span>    gender CHAR(<span style=color:#ae81ff>1</span>)
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> teacher <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>1</span>,<span style=color:#e6db74>&#39;张三&#39;</span>,<span style=color:#ae81ff>22</span>,<span style=color:#e6db74>&#39;F&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> teacher <span style=color:#66d9ef>VALUES</span> (<span style=color:#ae81ff>1</span>,<span style=color:#e6db74>&#39;李四&#39;</span>,<span style=color:#ae81ff>23</span>,<span style=color:#e6db74>&#39;M&#39;</span>);<span style=color:#f92672>#</span> <span style=color:#960050;background-color:#1e0010>不可重复</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> teacher <span style=color:#66d9ef>VALUES</span> (<span style=color:#66d9ef>NULL</span>,<span style=color:#e6db74>&#39;李四&#39;</span>,<span style=color:#ae81ff>23</span>,<span style=color:#e6db74>&#39;M&#39;</span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> teacher;
-</span></span></code></pre></div><h1 id=null-要作为条件要使用is-null-或-is-not-null>NULL 要作为条件，要使用IS NULL 或 IS NOT NULL</h1><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> student <span style=color:#66d9ef>WHERE</span> gender <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NULL</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> student <span style=color:#66d9ef>WHERE</span> gender <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>;
-</span></span></code></pre></div><h1 id=dql语句--数据查询语句>DQL语句 数据查询语句</h1><h2 id=基本语法>基本语法:</h2><p><code>SELECT 字段名1[字段名2，字段名2，...或 * ] FROM 表名</code></p><p><code>USE empdb;</code></p><p>查看emp表的所有字段</p><p><code>SELECT * FROM emp;</code>
+外键约束:实际开发中几乎不用</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>CREATE TABLE student(
+    id INT AUTO_INCREMENT PRIMARY KEY ,# AUTO_INCREMENT 自增
+    name VARCHAR(30) NOT NULL ,
+    age INT(3),
+    gender CHAR(1)
+);
+DESC student;
+SELECT * FROM student;
+
+INSERT INTO student VALUES (NULL,NULL,55,&#39;m&#39;);
+INSERT INTO student VALUES (NULL,&#39;刘桑&#39;,55,&#39;m&#39;);
+INSERT INTO student(name,age,gender) VALUES (&#39;克晶&#39;,18,&#39;f&#39;);</code></pre></div><p>不允许</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>INSERT INTO student(age,gender) VALUES (18,&#39;f&#39;);
+
+INSERT INTO student(name,age,gender) VALUES (&#39;传奇&#39;,22,NULL);
+INSERT INTO student(name,age) VALUES (&#39;国斌&#39;,33);
+
+DELETE FROM student WHERE id=3;
+
+
+
+CREATE TABLE teacher(
+    id INT PRIMARY KEY ,
+    name VARCHAR(30) NOT NULL,
+    age INT(3),
+    gender CHAR(1)
+);
+INSERT INTO teacher VALUES (1,&#39;张三&#39;,22,&#39;F&#39;);
+INSERT INTO teacher VALUES (1,&#39;李四&#39;,23,&#39;M&#39;);# 不可重复
+INSERT INTO teacher VALUES (NULL,&#39;李四&#39;,23,&#39;M&#39;);
+SELECT * FROM teacher;</code></pre></div><h1 id=null-要作为条件要使用is-null-或-is-not-null>NULL 要作为条件，要使用IS NULL 或 IS NOT NULL</h1><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT * FROM student WHERE gender IS NULL;
+SELECT * FROM student WHERE gender IS NOT NULL;</code></pre></div><h1 id=dql语句--数据查询语句>DQL语句 数据查询语句</h1><h2 id=基本语法>基本语法:</h2><p><code>SELECT 字段名1[字段名2，字段名2，...或 * ] FROM 表名</code></p><p><code>USE empdb;</code></p><p>查看emp表的所有字段</p><p><code>SELECT * FROM emp;</code>
 查看特定的字段
-<code>SELECT name,job,hiredate FROM emp;</code></p><h2 id=where子句用来添加过滤条件此时可以仅将满足条件的记录查询出来>WHERE子句，用来添加过滤条件，此时可以仅将满足条件的记录查询出来</h2><p>比较运算符:=,&lt;,>,>=,&lt;=,&lt;></p><p>查看工资大于1000的员工的名字，职位，工资</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span>  name,job,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job<span style=color:#f92672>&lt;&gt;</span><span style=color:#e6db74>&#39;人事&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>;
-</span></span></code></pre></div><h2 id=使用and和or来连接多个条件>使用AND和OR来连接多个条件</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span> <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;人事&#39;</span> <span style=color:#66d9ef>OR</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;销售&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;人事&#39;</span> <span style=color:#66d9ef>OR</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span> <span style=color:#66d9ef>AND</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;销售&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> (job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;人事&#39;</span> <span style=color:#66d9ef>OR</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;销售&#39;</span>) <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>; <span style=color:#f92672>#</span> and优先级大于or,<span style=color:#960050;background-color:#1e0010>可以通过（）提高优先级</span>
-</span></span></code></pre></div><h2 id=in列表-值在列表中等于列表中的其中之一>IN(列表) 值在列表中（等于列表中的其中之一）</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>IN</span> (<span style=color:#e6db74>&#39;人事&#39;</span>,<span style=color:#e6db74>&#39;销售&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>IN</span> (<span style=color:#e6db74>&#39;人事&#39;</span>,<span style=color:#e6db74>&#39;销售&#39;</span>);
-</span></span></code></pre></div><h2 id=区间>区间</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal <span style=color:#66d9ef>BETWEEN</span> <span style=color:#ae81ff>2000</span> <span style=color:#66d9ef>AND</span> <span style=color:#ae81ff>3000</span>;
-</span></span></code></pre></div><h2 id=去重>去重</h2><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> job <span style=color:#66d9ef>FROM</span> emp;
-</span></span></code></pre></div><p>多列去重时，就是去除指定这些列的值的组合有重复的行</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> job,dept_id <span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span> <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span> <span style=color:#66d9ef>OR</span> sal<span style=color:#f92672>=</span><span style=color:#ae81ff>5000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal <span style=color:#66d9ef>BETWEEN</span> <span style=color:#ae81ff>1000</span> <span style=color:#66d9ef>AND</span> <span style=color:#ae81ff>2000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>2000</span>,<span style=color:#ae81ff>5000</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>;
-</span></span></code></pre></div><h2 id=模糊查询-like>模糊查询: LIKE</h2><h3 id=like-中两个通配符_和>LIKE 中两个通配符:_和%</h3><ul><li>%:表示任意的一个字符(0-多个)</li><li>_:表示一个字符</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;孙%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%悟%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;__精&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;_骨%&#39;</span>;
-</span></span></code></pre></div><p>总结:</p><ul><li>%X%:字符串中包含&rsquo;X'</li><li>%X:字符串以X结尾</li><li>X%:字符串以X开头</li><li>_X%:字符串第二个字符是X</li><li><em>%X</em>:倒数第二个字符是X</li><li>X%Y:字符串以X开头Y结尾</li><li>X_Y:字符串只有三个字，第一个是X，第三个是Y</li></ul><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;猪%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%僧%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%精&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%销售%&#39;</span> <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1500</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;_售%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>) <span style=color:#66d9ef>AND</span> job <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;市%&#39;</span>;
-</span></span></code></pre></div><h3 id=order-by-子句根据指定的字段排序查询结果集该子句只能放在查询语句的最后一个子句上>ORDER BY 子句，根据指定的字段排序查询结果集，该子句只能放在查询语句的最后一个子句上</h3><p>默认升序 DESC降序</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,hiredate
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> hiredate;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal <span style=color:#66d9ef>DESC</span>;
-</span></span></code></pre></div><p>按照多字段排序，在前的优先，可以单独设置升序和降序</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,dept_id,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> dept_id,sal <span style=color:#66d9ef>DESC</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> manager <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> hiredate;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span> <span style=color:#66d9ef>AND</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%八%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>) <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&lt;</span><span style=color:#ae81ff>5000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal,job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>IN</span> (<span style=color:#e6db74>&#39;人事&#39;</span>,<span style=color:#e6db74>&#39;程序员&#39;</span>) <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2500</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,job,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>IN</span> (<span style=color:#e6db74>&#39;CEO&#39;</span>) <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2000</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal <span style=color:#66d9ef>DESC</span> ;
-</span></span></code></pre></div><h1 id=分页查询>分页查询</h1><p>将满足查询条件的数据分段分批查询出来。这可以减少不必要的系统开销。</p><p>LIMITE 跳过的记录数，显示的记录数</p><p>LIMITE (页数-1)*美页显示的记录数，每页显示的记录数</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal <span style=color:#66d9ef>LIMIT</span> <span style=color:#ae81ff>3</span>,<span style=color:#ae81ff>3</span>;
-</span></span></code></pre></div><h2 id=查询的字段可以使用表达式>查询的字段可以使用表达式</h2><p><code>SELECT name,sal,sal*12 FROM emp;</code></p><h2 id=查询时也可以使用函数的结果作为字段>查询时也可以使用函数的结果作为字段</h2><p><code>SELECT CONCAT(name,'的职位是',job) FROM emp;</code></p><p><code>SELECT CONCAT(name,'的奖金是',comm) FROM emp;</code></p><p>数字与NULL运算，结果就是NULL</p><p><code>SELECT sal,comm,sal+comm</code>
+<code>SELECT name,job,hiredate FROM emp;</code></p><h2 id=where子句用来添加过滤条件此时可以仅将满足条件的记录查询出来>WHERE子句，用来添加过滤条件，此时可以仅将满足条件的记录查询出来</h2><p>比较运算符:=,&lt;,>,>=,&lt;=,&lt;></p><p>查看工资大于1000的员工的名字，职位，工资</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,job,sal
+FROM emp
+WHERE sal&gt;1000;
+
+SELECT  name,job,sal
+FROM emp
+WHERE job&lt;&gt;&#39;人事&#39;;
+
+SELECT name,job,sal,dept_id
+FROM emp
+WHERE dept_id=2;</code></pre></div><h2 id=使用and和or来连接多个条件>使用AND和OR来连接多个条件</h2><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal,job,dept_id
+FROM emp
+WHERE dept_id=2 AND sal&gt;1000;
+
+SELECT name,sal,job,dept_id
+FROM emp
+WHERE job=&#39;人事&#39; OR job=&#39;销售&#39;;
+
+SELECT name,sal,job
+FROM emp
+WHERE job=&#39;人事&#39; OR sal&gt;1000 AND job=&#39;销售&#39;;
+
+SELECT name,sal,job
+FROM emp
+WHERE (job=&#39;人事&#39; OR job=&#39;销售&#39;) AND sal&gt;1000; # and优先级大于or,可以通过（）提高优先级</code></pre></div><h2 id=in列表-值在列表中等于列表中的其中之一>IN(列表) 值在列表中（等于列表中的其中之一）</h2><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal,job,dept_id
+FROM emp
+WHERE job IN (&#39;人事&#39;,&#39;销售&#39;);
+
+SELECT name,sal,job,dept_id
+FROM emp
+WHERE job NOT IN (&#39;人事&#39;,&#39;销售&#39;);</code></pre></div><h2 id=区间>区间</h2><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal,job
+FROM emp
+WHERE sal BETWEEN 2000 AND 3000;</code></pre></div><h2 id=去重>去重</h2><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT DISTINCT job FROM emp;</code></pre></div><p>多列去重时，就是去除指定这些列的值的组合有重复的行</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT DISTINCT job,dept_id FROM emp;
+
+
+SELECT *
+FROM emp
+WHERE dept_id=2 AND sal&gt;1000;
+
+SELECT name,job,sal,dept_id
+FROM emp
+WHERE dept_id=3 OR sal=5000;
+
+SELECT name,job,sal,dept_id
+FROM emp
+WHERE sal BETWEEN 1000 AND 2000;
+
+SELECT name,sal,job,dept_id
+FROM emp
+WHERE sal NOT IN (2000,5000);
+
+SELECT DISTINCT job
+FROM emp
+WHERE dept_id=1;</code></pre></div><h2 id=模糊查询-like>模糊查询: LIKE</h2><h3 id=like-中两个通配符_和>LIKE 中两个通配符:_和%</h3><ul><li>%:表示任意的一个字符(0-多个)</li><li>_:表示一个字符</li></ul><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal,job
+FROM emp
+WHERE name LIKE &#39;孙%&#39;;
+
+SELECT name,sal,job
+FROM emp
+WHERE name LIKE &#39;%悟%&#39;;
+
+SELECT name,sal,job
+FROM emp
+WHERE name LIKE &#39;__精&#39;;
+
+SELECT name,sal,job
+FROM emp
+WHERE name LIKE &#39;_骨%&#39;;</code></pre></div><p>总结:</p><ul><li>%X%:字符串中包含&rsquo;X'</li><li>%X:字符串以X结尾</li><li>X%:字符串以X开头</li><li>_X%:字符串第二个字符是X</li><li><em>%X</em>:倒数第二个字符是X</li><li>X%Y:字符串以X开头Y结尾</li><li>X_Y:字符串只有三个字，第一个是X，第三个是Y</li></ul><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name
+FROM emp
+WHERE name LIKE &#39;猪%&#39;;
+
+SELECT *
+FROM emp
+WHERE name LIKE &#39;%僧%&#39;;
+
+SELECT name
+FROM emp
+WHERE name LIKE &#39;%精&#39;;
+
+SELECT *
+FROM emp
+WHERE job LIKE &#39;%销售%&#39; AND sal&gt;1500;
+
+SELECT name,job
+FROM emp
+WHERE job LIKE &#39;_售%&#39;;
+
+SELECT *
+FROM emp
+WHERE dept_id IN (1,2) AND job LIKE &#39;市%&#39;;</code></pre></div><h3 id=order-by-子句根据指定的字段排序查询结果集该子句只能放在查询语句的最后一个子句上>ORDER BY 子句，根据指定的字段排序查询结果集，该子句只能放在查询语句的最后一个子句上</h3><p>默认升序 DESC降序</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal
+FROM emp
+ORDER BY sal;
+
+SELECT name,hiredate
+FROM emp
+ORDER BY hiredate;
+
+SELECT name,sal
+FROM emp
+ORDER BY sal DESC;</code></pre></div><p>按照多字段排序，在前的优先，可以单独设置升序和降序</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,dept_id,sal
+FROM emp
+ORDER BY dept_id,sal DESC;
+
+
+SELECT *
+FROM emp
+WHERE manager IS NOT NULL
+ORDER BY hiredate;
+
+SELECT *
+FROM emp
+WHERE dept_id=1 AND name LIKE &#39;%八%&#39;;
+
+SELECT *
+FROM emp
+WHERE dept_id IN (2,3) AND sal&lt;5000;
+
+SELECT name,sal,job
+FROM emp
+WHERE job IN (&#39;人事&#39;,&#39;程序员&#39;) AND sal&gt;2500;
+
+SELECT name,job,sal
+FROM emp
+WHERE job NOT IN (&#39;CEO&#39;) AND sal&gt;2000
+ORDER BY sal DESC ;</code></pre></div><h1 id=分页查询>分页查询</h1><p>将满足查询条件的数据分段分批查询出来。这可以减少不必要的系统开销。</p><p>LIMITE 跳过的记录数，显示的记录数</p><p>LIMITE (页数-1)*美页显示的记录数，每页显示的记录数</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal
+FROM emp
+ORDER BY sal LIMIT 3,3;</code></pre></div><h2 id=查询的字段可以使用表达式>查询的字段可以使用表达式</h2><p><code>SELECT name,sal,sal*12 FROM emp;</code></p><h2 id=查询时也可以使用函数的结果作为字段>查询时也可以使用函数的结果作为字段</h2><p><code>SELECT CONCAT(name,'的职位是',job) FROM emp;</code></p><p><code>SELECT CONCAT(name,'的奖金是',comm) FROM emp;</code></p><p>数字与NULL运算，结果就是NULL</p><p><code>SELECT sal,comm,sal+comm</code>
 <code>FROM emp;</code></p><p>NVL函数 用来替换NULL值</p><p>NVL(arg1,arg2) 当arg1不为NULL时，则函数返回arg1的值，如果arg1为NULL在返回arg2的值</p><p><code>SELECT name,sal,NVL(comm,0) FROM emp;</code></p><h2 id=别名字段和表>别名（字段和表）</h2><p>为字段定义别名:</p><p>1.隐藏实际表字段名</p><p>2.为计算表达式或函数的结果值作为字段时定义可读性更好的字段名</p><p><code>SELECT name ename,sal salary FROM emp;</code>
-<code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=支持的语法>支持的语法</h2><p>字段名 别名</p><p><code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=字段名-as-别名>字段名 as 别名</h2><p><code>SELECT name,sal*12 as salary FROM emp;</code></p><h2 id=字段名-as-别名-1>字段名 as &lsquo;别名&rsquo;</h2><p><code>SELECT name,sal*12 as 'salary' FROM emp;</code></p><h2 id=字段名-as-别名-2>字段名 as &ldquo;别名&rdquo;</h2><p><code>SELECT name,sal*12 as "salary" FROM emp;</code></p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>3</span> <span style=color:#66d9ef>AND</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1500</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span> <span style=color:#66d9ef>OR</span> manager <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NULL</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> manager <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,hiredate
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> hiredate <span style=color:#66d9ef>DESC</span> ;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%僧%&#39;</span> <span style=color:#66d9ef>OR</span>  name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%精%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>DISTINCT</span> job
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> sal <span style=color:#66d9ef>LIMIT</span> <span style=color:#ae81ff>6</span>,<span style=color:#ae81ff>2</span>;
-</span></span></code></pre></div><p>聚合函数（多行函数）: 用来将多条记录统计为一条记录 (忽略NULL值)</p><p>MIN():求最小值</p><p>MAX():求最大值</p><p>COUNT():统计记录数</p><p>AVG():求平均值</p><p>SUM():求和</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MIN</span>(sal) <span style=color:#960050;background-color:#1e0010>最低工资</span>,<span style=color:#66d9ef>MAX</span>(sal) <span style=color:#960050;background-color:#1e0010>最高工资</span>,<span style=color:#66d9ef>AVG</span>(sal) <span style=color:#960050;background-color:#1e0010>平均工资</span>,<span style=color:#66d9ef>SUM</span>(sal) <span style=color:#960050;background-color:#1e0010>工资总和</span> <span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;销售&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;程序员&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%精%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>SUM</span>(sal)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> job <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%销售%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal) <span style=color:#960050;background-color:#1e0010>最高工资</span>, <span style=color:#66d9ef>MIN</span>(sal) <span style=color:#960050;background-color:#1e0010>最低工资</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>;
-</span></span></code></pre></div><p>GROUP BY子句，分组
-GROUP BY 也是为统计服务的，所以是搭配在聚合函数上使用的</p><p>SELECT子句中不在聚合函数中的其他字段必须出现GROUP BY子句中</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal),dept_id <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal),job <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> job;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal),dept_id <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id; <span style=color:#f92672>#</span><span style=color:#960050;background-color:#1e0010>查询最高工资</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2000</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MIN</span>(sal),job <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> job;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>COUNT</span>(<span style=color:#f92672>*</span>),dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>1</span>,<span style=color:#ae81ff>2</span>)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) <span style=color:#66d9ef>avg</span>,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> <span style=color:#66d9ef>avg</span> <span style=color:#66d9ef>DESC</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>LIMIT</span> <span style=color:#ae81ff>0</span>,<span style=color:#ae81ff>1</span>;
-</span></span></code></pre></div><p>聚合函数不能写在WHERE子句中</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) <span style=color:#66d9ef>avg</span>,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> <span style=color:#66d9ef>AVG</span>(sal)<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2000</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ORDER</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span></code></pre></div><p>HAVING子句 HAVING子句是跟在GROUP BY子句之后，对分组统计出的结果再进行过滤的</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal),dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> <span style=color:#66d9ef>AVG</span>(sal)<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>2000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal),dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> <span style=color:#66d9ef>MIN</span>(sal)<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1000</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>SUM</span>(sal) sal,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> manager <span style=color:#66d9ef>IS</span> <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> <span style=color:#66d9ef>SUM</span>(sal)<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>5400</span>;
-</span></span></code></pre></div><h3 id=嵌套在其他sql语句中的查询语句被称作子查询>嵌套在其他SQl语句中的查询语句被称作“子查询”</h3><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> sal<span style=color:#f92672>&gt;</span> (<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) <span style=color:#66d9ef>FROM</span> emp);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> sal<span style=color:#f92672>&gt;</span> (<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>2</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> sal<span style=color:#f92672>&lt;</span>(<span style=color:#66d9ef>SELECT</span> sal <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;沙僧&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> job<span style=color:#f92672>=</span>(<span style=color:#66d9ef>SELECT</span> job <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;孙悟空&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>HAVING</span> dept_id<span style=color:#f92672>=</span>(<span style=color:#66d9ef>SELECT</span> dept_id <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>=</span>(<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MIN</span>(sal) <span style=color:#66d9ef>FROM</span> emp));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#66d9ef>ALL</span>(<span style=color:#66d9ef>SELECT</span> sal <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>));
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#66d9ef>ANY</span>(<span style=color:#66d9ef>SELECT</span> sal <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> dept_id <span style=color:#66d9ef>IN</span> (<span style=color:#ae81ff>2</span>,<span style=color:#ae81ff>3</span>));
-</span></span></code></pre></div><h3 id=子查询分类按查询结果集分类>子查询分类（按查询结果集分类）:</h3><p>单行单列查询（结果集只有一个值）
+<code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=支持的语法>支持的语法</h2><p>字段名 别名</p><p><code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=字段名-as-别名>字段名 as 别名</h2><p><code>SELECT name,sal*12 as salary FROM emp;</code></p><h2 id=字段名-as-别名-1>字段名 as &lsquo;别名&rsquo;</h2><p><code>SELECT name,sal*12 as 'salary' FROM emp;</code></p><h2 id=字段名-as-别名-2>字段名 as &ldquo;别名&rdquo;</h2><p><code>SELECT name,sal*12 as "salary" FROM emp;</code></p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT *
+FROM emp
+WHERE dept_id=3 AND sal&gt;1500;
+
+SELECT *
+FROM emp
+WHERE dept_id=2 OR manager IS NULL;
+
+SELECT name,sal
+FROM emp
+WHERE manager IS NOT NULL
+ORDER BY sal;
+
+SELECT name,hiredate
+FROM emp
+WHERE dept_id IN (2,3)
+ORDER BY hiredate DESC ;
+
+SELECT name
+FROM emp
+WHERE name LIKE &#39;%僧%&#39; OR  name LIKE &#39;%精%&#39;;
+
+SELECT DISTINCT job
+FROM emp
+WHERE sal&gt;2000;
+
+SELECT sal
+FROM emp
+ORDER BY sal LIMIT 6,2;</code></pre></div><p>聚合函数（多行函数）: 用来将多条记录统计为一条记录 (忽略NULL值)</p><p>MIN():求最小值</p><p>MAX():求最大值</p><p>COUNT():统计记录数</p><p>AVG():求平均值</p><p>SUM():求和</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT MIN(sal) 最低工资,MAX(sal) 最高工资,AVG(sal) 平均工资,SUM(sal) 工资总和 FROM emp;
+
+
+SELECT AVG(sal)
+FROM emp
+WHERE job=&#39;销售&#39;;
+
+
+SELECT MAX(sal)
+FROM emp
+WHERE job=&#39;程序员&#39;;
+
+SELECT COUNT(*)
+FROM emp
+WHERE name LIKE &#39;%精%&#39;;
+
+SELECT SUM(sal)
+FROM emp
+WHERE job LIKE &#39;%销售%&#39;;
+
+SELECT MAX(sal) 最高工资, MIN(sal) 最低工资
+FROM emp
+WHERE dept_id=2;</code></pre></div><p>GROUP BY子句，分组
+GROUP BY 也是为统计服务的，所以是搭配在聚合函数上使用的</p><p>SELECT子句中不在聚合函数中的其他字段必须出现GROUP BY子句中</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT AVG(sal),dept_id FROM emp GROUP BY dept_id;
+
+SELECT MAX(sal),job FROM emp GROUP BY job;
+
+SELECT MAX(sal),dept_id FROM emp GROUP BY dept_id; #查询最高工资
+
+SELECT COUNT(*)
+FROM emp
+WHERE sal&gt;2000
+GROUP BY dept_id;
+
+SELECT MIN(sal),job FROM emp GROUP BY job;
+
+SELECT COUNT(*),dept_id
+FROM emp
+WHERE dept_id IN (1,2)
+GROUP BY dept_id;
+
+SELECT AVG(sal) avg,dept_id
+FROM emp
+GROUP BY dept_id
+ORDER BY avg DESC
+LIMIT 0,1;</code></pre></div><p>聚合函数不能写在WHERE子句中</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT AVG(sal) avg,dept_id
+FROM emp
+WHERE AVG(sal)&gt;2000
+ORDER BY dept_id;</code></pre></div><p>HAVING子句 HAVING子句是跟在GROUP BY子句之后，对分组统计出的结果再进行过滤的</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT AVG(sal),dept_id
+FROM emp
+GROUP BY dept_id
+HAVING AVG(sal)&gt;2000;
+
+SELECT AVG(sal),dept_id
+FROM emp
+GROUP BY dept_id
+HAVING MIN(sal)&gt;1000;
+
+
+SELECT SUM(sal) sal,dept_id
+FROM emp
+WHERE manager IS NOT NULL
+GROUP BY dept_id
+HAVING SUM(sal)&gt;5400;</code></pre></div><h3 id=嵌套在其他sql语句中的查询语句被称作子查询>嵌套在其他SQl语句中的查询语句被称作“子查询”</h3><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT name,sal
+FROM emp
+HAVING sal&gt; (SELECT AVG(sal) FROM emp);
+
+SELECT *
+FROM emp
+HAVING sal&gt; (SELECT AVG(sal) FROM emp WHERE dept_id=2);
+
+SELECT *
+FROM emp
+HAVING sal&lt;(SELECT sal FROM emp WHERE name=&#39;沙僧&#39;);
+
+SELECT *
+FROM emp
+HAVING job=(SELECT job FROM emp WHERE name=&#39;孙悟空&#39;);
+
+SELECT *
+FROM emp
+HAVING dept_id=(SELECT dept_id FROM emp WHERE sal=(SELECT MIN(sal) FROM emp));
+
+
+SELECT *
+FROM emp
+WHERE sal&gt;ALL(SELECT sal FROM emp WHERE dept_id IN (2,3));
+
+SELECT *
+FROM emp
+WHERE sal&gt;ANY(SELECT sal FROM emp WHERE dept_id IN (2,3));</code></pre></div><h3 id=子查询分类按查询结果集分类>子查询分类（按查询结果集分类）:</h3><p>单行单列查询（结果集只有一个值）
 多行单列子查询（结果集有多个值）
 多行多列子查询（结果集是一个表）</p><p>单行单列查询通常在过滤条件中使用
 单行单列可以配合>,>=,=,&lt;,&lt;=使用
@@ -509,236 +495,220 @@ GROUP BY 也是为统计服务的，所以是搭配在聚合函数上使用的</
 &lt;ALL(子查询)
 ANY(子查询)
 &lt;ANY(子查询)：
-IN(子查询)：等于子查询结果集中的任意一个值</p></blockquote><p>多行多列子查询（结果通常是一个表），通常就当做一个表，可以跟在FROM子句中，或者跟在DDl语句中，可以基于一个查询结果集创建表。</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>CREATE</span>  <span style=color:#66d9ef>TABLE</span> emp_dept1
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AS</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> dept_id<span style=color:#f92672>=</span><span style=color:#ae81ff>1</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp_dept1;
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>如果创建表基于的子查询某个字段是一个表达式或函数时，要给该字段取别名，那么创建出来的表该字段会以别名作为字段名</span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> emp_dept_sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AS</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal) max_sal,<span style=color:#66d9ef>MIN</span>(sal) min_sal,<span style=color:#66d9ef>AVG</span>(sal) avg_sal, <span style=color:#66d9ef>SUM</span>(sal) sum_sal,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp_dept_sal;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> emp_annual_salary;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> emp_annual_salary
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AS</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name aneme,sal salary,sal<span style=color:#f92672>+</span><span style=color:#ae81ff>12</span> a_salary,dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp_annual_salary;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> aneme,a_salary
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp_annual_salary
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> aneme <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%精%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> dept;
-</span></span></code></pre></div><h3 id=关联查询>关联查询</h3><p>查询结果集中的数据来自多张表，而表中的数据之间的对应关系就是关联关系</p><p>两张表就可以产生关联关系了，关联关系分为三类:
+IN(子查询)：等于子查询结果集中的任意一个值</p></blockquote><p>多行多列子查询（结果通常是一个表），通常就当做一个表，可以跟在FROM子句中，或者跟在DDl语句中，可以基于一个查询结果集创建表。</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>CREATE  TABLE emp_dept1
+AS
+SELECT * FROM emp WHERE dept_id=1;
+SELECT * FROM emp_dept1;
+如果创建表基于的子查询某个字段是一个表达式或函数时，要给该字段取别名，那么创建出来的表该字段会以别名作为字段名
+
+CREATE TABLE emp_dept_sal
+AS
+SELECT MAX(sal) max_sal,MIN(sal) min_sal,AVG(sal) avg_sal, SUM(sal) sum_sal,dept_id
+FROM emp
+GROUP BY dept_id;
+
+SELECT * FROM emp_dept_sal;
+
+
+DROP TABLE emp_annual_salary;
+CREATE TABLE emp_annual_salary
+AS
+SELECT name aneme,sal salary,sal&#43;12 a_salary,dept_id
+FROM emp;
+
+SELECT * FROM emp_annual_salary;
+
+SELECT aneme,a_salary
+FROM emp_annual_salary
+WHERE aneme LIKE &#39;%精%&#39;;
+
+
+SELECT * FROM dept;</code></pre></div><h3 id=关联查询>关联查询</h3><p>查询结果集中的数据来自多张表，而表中的数据之间的对应关系就是关联关系</p><p>两张表就可以产生关联关系了，关联关系分为三类:
 1:一对一 A表中的1条记录只唯一对应B表中的1条记录
 2:一对多 A表中的1条记录可以对应B表中的多条记录
 3:多对多 A表与B表双向都是一对多时，就是多对多关系。</p><p>关联查询就是基于多张表联合查询数据而形成一个结果集的过程，在关联查询中一个至关重要的点就是关联条件
 原则:N张表关联查询至少要有N-1个连接条件。
 缺失连接条件会产生笛卡尔积，该查询结果集的记录数是关联表中所有记录数乘积的结果，它通常是一个无意义的结果集，要
-尽量避免产生</p><p>关联查询语法:</p><p>SELECT 字段</p><p>FROM 表A，表B[，表C，表D&mldr;]</p><p>WHERE 过滤条件</p><p>AND 连接条件</p><p>注意:连接条件必须与过滤条件同时成立!!</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp,dept;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>当表中的字段名相同时，我们可以通过给表取别名用</span><span style=color:#e6db74>&#34;别名.字段名&#34;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,e.dept_id,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,e.job,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> d.loc<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;天庭&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> e.name <span style=color:#66d9ef>LIKE</span> <span style=color:#e6db74>&#39;%飞%&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,<span style=color:#66d9ef>MAX</span>(e.sal) max_sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e ,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> d.loc<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;天庭&#39;</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(e.sal),d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e ,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> sal,name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>3000</span>;
-</span></span></code></pre></div><p>内连接JOIN子句</p><p>SELECT 字段</p><p>FROM A表 a</p><p>JOIN B表</p><p>ON a.xx=b.xx(连接条件)</p><p>JOIN C表 c</p><p>ON c.xxx=b.xxx或c.xxx=a.xxx;</p><p>JOIN&mldr;ON&mldr;</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>on</span> e.dept_id<span style=color:#f92672>=</span>d.id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>在内连接中，过滤条件还是写在</span>WHERE子句中
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.<span style=color:#f92672>*</span>,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id <span style=color:#f92672>=</span> d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.sal<span style=color:#f92672>&gt;</span><span style=color:#ae81ff>1300</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#960050;background-color:#1e0010>在关联查询中不满足连接条件的记录会被排除在外</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>INSERT</span> <span style=color:#66d9ef>INTO</span> emp(name,dept_id) <span style=color:#66d9ef>VALUES</span> (<span style=color:#e6db74>&#39;灭霸&#39;</span>,<span style=color:#ae81ff>5</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id <span style=color:#f92672>=</span> d.id
-</span></span></code></pre></div><p>如果需要在结果集中列出不满足连接条件的记录时我们需要使用外连接
+尽量避免产生</p><p>关联查询语法:</p><p>SELECT 字段</p><p>FROM 表A，表B[，表C，表D&mldr;]</p><p>WHERE 过滤条件</p><p>AND 连接条件</p><p>注意:连接条件必须与过滤条件同时成立!!</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT *
+FROM emp,dept;
+
+当表中的字段名相同时，我们可以通过给表取别名用&#34;别名.字段名&#34;
+SELECT e.name,e.sal,e.dept_id,d.name,d.loc
+FROM emp e,dept d
+WHERE e.dept_id=d.id;
+
+SELECT e.name,e.sal,e.job,d.name,d.loc
+FROM emp e,dept d
+WHERE e.dept_id=d.id
+AND d.loc=&#39;天庭&#39;;
+
+SELECT e.name,d.loc
+FROM emp e,dept d
+WHERE e.dept_id=d.id
+AND e.name LIKE &#39;%飞%&#39;;
+
+SELECT e.name,MAX(e.sal) max_sal,d.loc
+FROM emp e ,dept d
+WHERE e.dept_id=d.id
+AND d.loc=&#39;天庭&#39;
+GROUP BY d.loc;
+
+
+SELECT AVG(e.sal),d.loc
+FROM emp e ,dept d
+WHERE e.dept_id=d.id
+GROUP BY d.loc;
+
+SELECT sal,name
+FROM emp
+WHERE sal&gt;3000;</code></pre></div><p>内连接JOIN子句</p><p>SELECT 字段</p><p>FROM A表 a</p><p>JOIN B表</p><p>ON a.xx=b.xx(连接条件)</p><p>JOIN C表 c</p><p>ON c.xxx=b.xxx或c.xxx=a.xxx;</p><p>JOIN&mldr;ON&mldr;</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM emp e
+JOIN dept d
+on e.dept_id=d.id;
+
+在内连接中，过滤条件还是写在WHERE子句中
+SELECT e.*,d.loc
+FROM emp e
+JOIN dept d
+ON e.dept_id = d.id
+WHERE e.sal&gt;1300;
+
+在关联查询中不满足连接条件的记录会被排除在外
+SELECT * FROM emp;
+INSERT INTO emp(name,dept_id) VALUES (&#39;灭霸&#39;,5);
+
+SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM emp e
+JOIN dept d
+ON e.dept_id = d.id</code></pre></div><p>如果需要在结果集中列出不满足连接条件的记录时我们需要使用外连接
 外连接:
 左外连接: 以LEFT JOIN左侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL
-右外连接: 以RIGHT JOIN右侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>LEFT</span> <span style=color:#66d9ef>JOIN</span> dept d  <span style=color:#f92672>#</span><span style=color:#960050;background-color:#1e0010>此为主表，展示所有，不满足的为</span><span style=color:#66d9ef>NULL</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id <span style=color:#f92672>=</span> d.id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>RIGHT</span> <span style=color:#66d9ef>JOIN</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> d.id <span style=color:#f92672>=</span> e.dept_id
-</span></span></code></pre></div><p>全连接效果，结果集包含满足连接条件的左连接和有连接的所有数据</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>LEFT</span> <span style=color:#66d9ef>JOIN</span> dept d  <span style=color:#f92672>#</span><span style=color:#960050;background-color:#1e0010>此为主表，展示所有，不满足的为</span><span style=color:#66d9ef>NULL</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id <span style=color:#f92672>=</span> d.id;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>UNION</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.job,e.manager,e.sal,d.name,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>RIGHT</span> <span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> d.id <span style=color:#f92672>=</span> e.dept_id;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.<span style=color:#f92672>*</span>,d.<span style=color:#f92672>*</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d <span style=color:#66d9ef>on</span> d.id <span style=color:#f92672>=</span> e.dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span>(<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>WHERE</span> e.dept_id);
-</span></span></code></pre></div><p>查看比本部门平均工资高的员工工资
-1.查看每个部门的平均工资</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span>avg_sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) avg_sal,dept_id <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id;
-</span></span></code></pre></div><p>2.将子查询结果当做表进行关联</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,e.dept_id,a.avg_sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,(<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(sal) avg_sal,dept_id <span style=color:#66d9ef>FROM</span> emp <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> dept_id) a
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>a.dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> e.sal<span style=color:#f92672>&gt;</span>a.avg_sal;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> dept d,emp e <span style=color:#66d9ef>WHERE</span> d.id<span style=color:#f92672>=</span>e.dept_id;
-</span></span></code></pre></div><p>1.查看每个地区的平均工资</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(e.sal) avg_sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> d.id <span style=color:#f92672>=</span> e.dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,e.dept_id,a.avg_sal,d.loc,d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,
-</span></span><span style=display:flex><span>     (<span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(e.sal) avg_sal,d.loc
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>ON</span> d.id <span style=color:#f92672>=</span> e.dept_id
-</span></span><span style=display:flex><span>            <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc) a,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> a.loc<span style=color:#f92672>=</span>d.loc <span style=color:#66d9ef>AND</span> d.id<span style=color:#f92672>=</span>e.dept_id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> e.sal<span style=color:#f92672>&gt;</span>a.avg_sal;
-</span></span></code></pre></div><p>1.查看每个员工的工资及其所在的地区</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id;
-</span></span></code></pre></div><p>2.每个地区平均工资（按照loc字段分组）</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>AVG</span>(e.sal) avg_sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc;
-</span></span></code></pre></div><p>3.关联三张表查询:员工表-部门表-（第二步子查询的结果作为表）</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,a.avg_sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,dept d,(<span style=color:#66d9ef>SELECT</span>  <span style=color:#66d9ef>AVG</span>(e.sal) avg_sal,d.loc
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc) a
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> d.loc<span style=color:#f92672>=</span>a.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>AND</span> e.sal<span style=color:#f92672>&gt;</span>a.avg_sal;
-</span></span></code></pre></div><p>内连接写法</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,e.sal,a.avg_sal,d.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> (<span style=color:#66d9ef>SELECT</span>  <span style=color:#66d9ef>AVG</span>(e.sal) avg_sal,d.loc
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>FROM</span> emp e,dept d
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>WHERE</span> e.dept_id<span style=color:#f92672>=</span>d.id
-</span></span><span style=display:flex><span>                   <span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> d.loc) a
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> d.loc<span style=color:#f92672>=</span>a.loc
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.sal<span style=color:#f92672>&gt;</span>a.avg_sal;
-</span></span></code></pre></div><p>查看每个地区的最高工资是谁</p><p>查看最高工资</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal)
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#66d9ef>MAX</span>(sal),loc,e.name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> dept d
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.dept_id <span style=color:#f92672>=</span> d.id  <span style=color:#f92672>#</span> <span style=color:#960050;background-color:#1e0010>将部门关联起来</span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>GROUP</span> <span style=color:#66d9ef>BY</span> loc; <span style=color:#f92672>#</span> <span style=color:#960050;background-color:#1e0010>按地区分组</span>
-</span></span></code></pre></div><p>内连接
-自连接的设计是为了保存同样的一组数字卡的数据，之间又存在上下级关系时（树状结构数据）</p><p>查看每个员工和他的领导是谁</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,m.name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e,emp m
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.manager<span style=color:#f92672>=</span>m.id
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name,m.name
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> emp m
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.manager<span style=color:#f92672>=</span>m.id;
-</span></span></code></pre></div><p>查看刘备的手下</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> emp;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name name,m.name manager
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> emp m
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.manager<span style=color:#f92672>=</span>m.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> m.name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;刘备&#39;</span>;
-</span></span></code></pre></div><p>查看孙悟空的领导</p><div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-sql data-lang=sql><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> e.name name,m.name manager,m.sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span><span style=color:#66d9ef>JOIN</span> emp m
-</span></span><span style=display:flex><span><span style=color:#66d9ef>ON</span> e.manager<span style=color:#f92672>=</span>m.id
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> e.name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;孙悟空&#39;</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> name,sal
-</span></span><span style=display:flex><span><span style=color:#66d9ef>FROM</span> emp
-</span></span><span style=display:flex><span><span style=color:#66d9ef>WHERE</span> sal<span style=color:#f92672>&gt;</span>(<span style=color:#66d9ef>SELECT</span> m.sal
-</span></span><span style=display:flex><span>           <span style=color:#66d9ef>FROM</span> emp e
-</span></span><span style=display:flex><span>           <span style=color:#66d9ef>JOIN</span> emp m
-</span></span><span style=display:flex><span>           <span style=color:#66d9ef>ON</span> e.manager<span style=color:#f92672>=</span>m.id
-</span></span><span style=display:flex><span>           <span style=color:#66d9ef>WHERE</span> e.name<span style=color:#f92672>=</span><span style=color:#e6db74>&#39;孙悟空&#39;</span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> userinfo(
-</span></span><span style=display:flex><span>    id INT <span style=color:#66d9ef>primary</span> <span style=color:#66d9ef>key</span> auto_increment,
-</span></span><span style=display:flex><span>    username VARCHAR(<span style=color:#ae81ff>30</span>) <span style=color:#66d9ef>NOT</span> <span style=color:#66d9ef>NULL</span> ,
-</span></span><span style=display:flex><span>    password VARCHAR(<span style=color:#ae81ff>30</span>),
-</span></span><span style=display:flex><span>    age INT(<span style=color:#ae81ff>3</span>),
-</span></span><span style=display:flex><span>    salary DOUBLE(<span style=color:#ae81ff>7</span>,<span style=color:#ae81ff>2</span>)
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> userinfo;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DESC</span> userinfo;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> Student(
-</span></span><span style=display:flex><span>    id INT <span style=color:#66d9ef>primary</span> <span style=color:#66d9ef>key</span> auto_increment,
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>32</span>),
-</span></span><span style=display:flex><span>    age INT(<span style=color:#ae81ff>3</span>),
-</span></span><span style=display:flex><span>    class_id INT(<span style=color:#ae81ff>3</span>)
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>CREATE</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#66d9ef>Class</span>(
-</span></span><span style=display:flex><span>    id INT <span style=color:#66d9ef>primary</span> <span style=color:#66d9ef>key</span> auto_increment,
-</span></span><span style=display:flex><span>    name VARCHAR(<span style=color:#ae81ff>32</span>)
-</span></span><span style=display:flex><span>);
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DESC</span> Student;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DESC</span> <span style=color:#66d9ef>class</span>;
-</span></span><span style=display:flex><span>
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> student;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>DROP</span> <span style=color:#66d9ef>TABLE</span> <span style=color:#66d9ef>class</span>;
-</span></span><span style=display:flex><span><span style=color:#66d9ef>SELECT</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>FROM</span> <span style=color:#66d9ef>class</span>;
-</span></span></code></pre></div><hr><p>练习</p><ol><li><p>查询工资大于等于3000的员工姓名和工资
+右外连接: 以RIGHT JOIN右侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM emp e
+LEFT JOIN dept d  #此为主表，展示所有，不满足的为NULL
+ON e.dept_id = d.id;
+
+SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM dept d
+RIGHT JOIN emp e
+ON d.id = e.dept_id</code></pre></div><p>全连接效果，结果集包含满足连接条件的左连接和有连接的所有数据</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM emp e
+LEFT JOIN dept d  #此为主表，展示所有，不满足的为NULL
+ON e.dept_id = d.id;
+UNION
+SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+FROM emp e
+RIGHT JOIN dept d
+ON d.id = e.dept_id;
+
+SELECT e.*,d.*
+FROM emp e
+JOIN dept d on d.id = e.dept_id
+WHERE sal&gt;(SELECT AVG(sal) FROM emp WHERE e.dept_id);</code></pre></div><p>查看比本部门平均工资高的员工工资
+1.查看每个部门的平均工资</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>avg_sal
+SELECT AVG(sal) avg_sal,dept_id FROM emp GROUP BY dept_id;</code></pre></div><p>2.将子查询结果当做表进行关联</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,e.sal,e.dept_id,a.avg_sal
+FROM emp e,(SELECT AVG(sal) avg_sal,dept_id FROM emp GROUP BY dept_id) a
+WHERE e.dept_id=a.dept_id
+AND e.sal&gt;a.avg_sal;
+SELECT * FROM dept d,emp e WHERE d.id=e.dept_id;</code></pre></div><p>1.查看每个地区的平均工资</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT AVG(e.sal) avg_sal,d.loc
+FROM emp e
+JOIN dept d
+ON d.id = e.dept_id
+GROUP BY d.loc;
+
+
+SELECT e.name,e.sal,e.dept_id,a.avg_sal,d.loc,d.id
+FROM emp e,
+     (SELECT AVG(e.sal) avg_sal,d.loc
+            FROM emp e
+            JOIN dept d
+            ON d.id = e.dept_id
+            GROUP BY d.loc) a,dept d
+WHERE a.loc=d.loc AND d.id=e.dept_id
+AND e.sal&gt;a.avg_sal;</code></pre></div><p>1.查看每个员工的工资及其所在的地区</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.sal,d.loc
+FROM emp e,dept d
+WHERE e.dept_id=d.id;</code></pre></div><p>2.每个地区平均工资（按照loc字段分组）</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT AVG(e.sal) avg_sal,d.loc
+FROM emp e,dept d
+WHERE e.dept_id=d.id
+GROUP BY d.loc;</code></pre></div><p>3.关联三张表查询:员工表-部门表-（第二步子查询的结果作为表）</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>
+SELECT e.name,e.sal,a.avg_sal,d.loc
+FROM emp e,dept d,(SELECT  AVG(e.sal) avg_sal,d.loc
+                   FROM emp e,dept d
+                   WHERE e.dept_id=d.id
+                   GROUP BY d.loc) a
+WHERE e.dept_id=d.id
+AND d.loc=a.loc
+AND e.sal&gt;a.avg_sal;</code></pre></div><p>内连接写法</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,e.sal,a.avg_sal,d.loc
+FROM emp e
+JOIN dept d
+ON e.dept_id=d.id
+JOIN (SELECT  AVG(e.sal) avg_sal,d.loc
+                   FROM emp e,dept d
+                   WHERE e.dept_id=d.id
+                   GROUP BY d.loc) a
+ON d.loc=a.loc
+WHERE e.sal&gt;a.avg_sal;</code></pre></div><p>查看每个地区的最高工资是谁</p><p>查看最高工资</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT MAX(sal)
+FROM emp
+
+SELECT MAX(sal),loc,e.name
+FROM emp e
+JOIN dept d
+ON e.dept_id = d.id  # 将部门关联起来
+GROUP BY loc; # 按地区分组</code></pre></div><p>内连接
+自连接的设计是为了保存同样的一组数字卡的数据，之间又存在上下级关系时（树状结构数据）</p><p>查看每个员工和他的领导是谁</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name,m.name
+FROM emp e,emp m
+WHERE e.manager=m.id
+
+SELECT e.name,m.name
+FROM emp e
+JOIN emp m
+ON e.manager=m.id;</code></pre></div><p>查看刘备的手下</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT * FROM emp;
+SELECT e.name name,m.name manager
+FROM emp e
+JOIN emp m
+ON e.manager=m.id
+WHERE m.name=&#39;刘备&#39;;</code></pre></div><p>查看孙悟空的领导</p><div class=highlight><pre class=chroma><code class=language-sql data-lang=sql>SELECT e.name name,m.name manager,m.sal
+FROM emp e
+JOIN emp m
+ON e.manager=m.id
+WHERE e.name=&#39;孙悟空&#39;;
+
+SELECT name,sal
+FROM emp
+WHERE sal&gt;(SELECT m.sal
+           FROM emp e
+           JOIN emp m
+           ON e.manager=m.id
+           WHERE e.name=&#39;孙悟空&#39;);
+
+CREATE TABLE userinfo(
+    id INT primary key auto_increment,
+    username VARCHAR(30) NOT NULL ,
+    password VARCHAR(30),
+    age INT(3),
+    salary DOUBLE(7,2)
+);
+DROP TABLE userinfo;
+
+DESC userinfo;
+
+CREATE TABLE Student(
+    id INT primary key auto_increment,
+    name VARCHAR(32),
+    age INT(3),
+    class_id INT(3)
+);
+
+CREATE TABLE Class(
+    id INT primary key auto_increment,
+    name VARCHAR(32)
+);
+DESC Student;
+DESC class;
+
+DROP TABLE student;
+DROP TABLE class;
+SELECT * FROM class;</code></pre></div><hr><p>练习</p><ol><li><p>查询工资大于等于3000的员工姓名和工资
 SELECT name,sal
 FROM emp
 WHERE sal>=3000;</p></li><li><p>查询1号部门的员工姓名和工作
