@@ -106,7 +106,7 @@ color = 'linen'
 subtitle = 'The Best Widgets on Earth'
 toc = true                             # 全局启用目录
 # 背景图片
-backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
+# backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
 
 # 社交媒体链接
 twitter = 'caoyang2002'
