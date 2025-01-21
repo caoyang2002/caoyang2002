@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>hugo 配置 - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>hugo 配置 - caoyang2002</title>
 <meta name=theme-color><meta name=description content='
     # 基础优化配置
 enableGitInfo = true                # 启用 Git 信息,可以显示文章的最后修改时间
@@ -87,7 +87,7 @@ images = ["og-image.jpg"]
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a>
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>联系</a>
 <a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/guestbook/>留言</a>
-<a href=/search class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal">搜索</a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">hugo 配置</h1><div class="text-xs antialiased opacity-60"><time>2024年12月22日</time></div></div><section><div class=highlight><pre class=chroma><code class=language-toml data-lang=toml># 基础优化配置
+<a href=/search class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal">搜索</a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">hugo 配置</h1><div class="text-xs antialiased opacity-60"><time>2024年12月22日</time></div></div><section><div><pre><code class=language-toml data-lang=toml># 基础优化配置
 enableGitInfo = true                # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true              # 启用中日韩文字支持,能准确统计字数
 summaryLength = 140                # 文章摘要长度
@@ -167,18 +167,18 @@ images = [&#34;og-image.jpg&#34;]
   lineNos = true                         # 显示行号
   lineNumbersInTable = true              # 使用表格式行号
   tabWidth = 4                           # 制表符宽度
-  style = &#34;monokai&#34;                      # 代码高亮主题</code></pre></div><p>一些重要的最佳实践建议：</p><ol><li>内容组织</li></ol><div class=highlight><pre class=chroma><code class=language- data-lang>content/
+  style = &#34;monokai&#34;                      # 代码高亮主题</code></pre></div><p>一些重要的最佳实践建议：</p><ol><li>内容组织</li></ol><div><pre><code class=language- data-lang>content/
 ├── posts/                # 博客文章
 │   ├── tech/            # 技术文章
 │   └── life/            # 生活随笔
 ├── about/               # 关于页面
 ├── projects/            # 项目展示
-└── notes/               # 学习笔记</code></pre></div><ol start=2><li>图片资源管理</li></ol><div class=highlight><pre class=chroma><code class=language- data-lang>static/
+└── notes/               # 学习笔记</code></pre></div><ol start=2><li>图片资源管理</li></ol><div><pre><code class=language- data-lang>static/
 ├── images/
 │   ├── posts/           # 文章配图
 │   ├── avatars/         # 头像
 │   └── icons/           # 图标
-└── assets/              # 其他资源</code></pre></div><ol start=3><li>文章 Front Matter 模板</li></ol><div class=highlight><pre class=chroma><code class=language-yaml data-lang=yaml>---
+└── assets/              # 其他资源</code></pre></div><ol start=3><li>文章 Front Matter 模板</li></ol><div><pre><code class=language-yaml data-lang=yaml>---
 title: &#34;文章标题&#34;
 date: 2024-03-21T15:04:05&#43;08:00
 lastmod: 2024-03-21T15:04:05&#43;08:00

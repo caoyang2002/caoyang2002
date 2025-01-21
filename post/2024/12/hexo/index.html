@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践 - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践 - caoyang2002</title>
 <meta name=theme-color><meta name=description content="我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
 
    Hexo
@@ -42,9 +42,9 @@
 <span class=external-icon>↗</span></a></td></tr><tr><td>github actions</td><td>亦称为workflows。工作流是将运行一个或多个作业的可配置自动化过程。工作流由签入到存储库的 YAML 文件定义，并在存储库中的事件触发时运行，也可以手动触发或按定义的计划触发。工作流在存储库的 .github/workflows 目录中定义，一个存储库可以有多个工作流，每个工作流可以执行一组不同的任务。例如，您可以有一个工作流来构建和测试拉取请求，另一个工作流在每次创建发布时部署应用程序，还有另一个工作流在每次有人打开新问题时添加标签。</td><td><a href=https://docs.github.com/en/actions/using-workflows/about-workflows target=_blank rel="noopener noreferrer" class=external-link>https://docs.github.com/en/actions/using-workflows/about-workflows
 <span class=external-icon>↗</span></a></td></tr></tbody></table><h1 id=安装并使用hexo>安装并使用hexo</h1><p>首先安装
 <a href=http://nodejs.org/ target=_blank rel="noopener noreferrer" class=external-link>nodejs
-<span class=external-icon>↗</span></a></p><h2 id=安装-hexo>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><div class=highlight><pre class=chroma><code class=language- data-lang>npm install -g hexo-cli</code></pre></div><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><div class=highlight><pre class=chroma><code class=language- data-lang>hexo init &lt;folder&gt;
+<span class=external-icon>↗</span></a></p><h2 id=安装-hexo>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><div><pre><code class=language- data-lang>npm install -g hexo-cli</code></pre></div><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p><div><pre><code class=language- data-lang>hexo init &lt;folder&gt;
 cd &lt;folder&gt;
-npm install</code></pre></div><p>新建完成后，指定文件夹的目录如下：.</p><div class=highlight><pre class=chroma><code class=language- data-lang>.
+npm install</code></pre></div><p>新建完成后，指定文件夹的目录如下：.</p><div><pre><code class=language- data-lang>.
 ├── _config.yml
 ├── package.json
 ├── scaffolds
@@ -56,30 +56,30 @@ npm install</code></pre></div><p>新建完成后，指定文件夹的目录如�
 <span class=external-icon>↗</span>
 </a>信息，您可以在此配置大部分的参数。</p><h3 id=source>source</h3><p>资源文件夹是存放用户资源的地方。除 <code>_posts</code> 文件夹之外，开头命名为 <code>_</code> (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 <code>public</code> 文件夹，而其他文件会被拷贝过去。</p><h3 id=themes>themes</h3><p><a href=https://hexo.io/zh-cn/docs/themes target=_blank rel="noopener noreferrer" class=external-link>主题
 <span class=external-icon>↗</span>
-</a>文件夹。Hexo 会根据主题来生成静态页面。</p><h2 id=写文章>写文章</h2><div class=highlight><pre class=chroma><code class=language- data-lang>hexo new &#34;My New Post&#34;</code></pre></div><p>hexo new会在<code>source/_posts</code>文件夹中创建一个名为<code>My-New-Post.md</code>的新文件，—和—之间是meta元信息，有标题、创建时间、标签等。在其后使用markdown语法写文章。</p><p>更多信息介绍:
+</a>文件夹。Hexo 会根据主题来生成静态页面。</p><h2 id=写文章>写文章</h2><div><pre><code class=language- data-lang>hexo new &#34;My New Post&#34;</code></pre></div><p>hexo new会在<code>source/_posts</code>文件夹中创建一个名为<code>My-New-Post.md</code>的新文件，—和—之间是meta元信息，有标题、创建时间、标签等。在其后使用markdown语法写文章。</p><p>更多信息介绍:
 <a href=https://hexo.io/docs/writing.html target=_blank rel="noopener noreferrer" class=external-link>Writing
-<span class=external-icon>↗</span></a></p><h2 id=运行hexo>运行hexo</h2><div class=highlight><pre class=chroma><code class=language- data-lang>hexo generate
-hexo server</code></pre></div><p>hexo generate会通过源码生成静态Html文件，hexo server会在本地开启服务器，默认url是<code>http://localhost:4000/</code>.</p><p>也可以简写为：</p><div class=highlight><pre class=chroma><code class=language- data-lang>hexo g
-hexo s</code></pre></div><h1 id=安装next主题>安装NexT主题</h1><p>打开终端，切换到 Hexo 站点根目录并安装 NexT 主题</p><div class=highlight><pre class=chroma><code class=language- data-lang>cd hexo-site
+<span class=external-icon>↗</span></a></p><h2 id=运行hexo>运行hexo</h2><div><pre><code class=language- data-lang>hexo generate
+hexo server</code></pre></div><p>hexo generate会通过源码生成静态Html文件，hexo server会在本地开启服务器，默认url是<code>http://localhost:4000/</code>.</p><p>也可以简写为：</p><div><pre><code class=language- data-lang>hexo g
+hexo s</code></pre></div><h1 id=安装next主题>安装NexT主题</h1><p>打开终端，切换到 Hexo 站点根目录并安装 NexT 主题</p><div><pre><code class=language- data-lang>cd hexo-site
 npm install hexo-theme-next</code></pre></div><h2 id=启用next主题配置文件>启用NexT主题配置文件</h2><p><a href=https://theme-next.js.org/docs/getting-started/ target=_blank rel="noopener noreferrer" class=external-link>NexT官方教程
 <span class=external-icon>↗</span>
 </a>中给出的2个方式都不是太好，有缺陷。官方教程是修改themes/next/_config.yml或者node_modules/hexo-theme-next/_config.yml，这种方式不利于将来升级NexT，最新的最佳实践是创建<code>_config.next.yml</code>文件，和<code>_config.yml</code>同级。这一点可以查看[hexo的官方文档](
 <a href=https://hexo.io/docs/configuration.html#Using-an-Alternate-Config target=_blank rel="noopener noreferrer" class=external-link>Configuration | Hexo
 <span class=external-icon>↗</span>
-</a>), 从Hexo 5.0.0版本开始支持。</p><p>创建完<code>_config.next.yml</code>文件后，把<code>_config.yml</code>中theme值改为next即可启用</p><div class=highlight><pre class=chroma><code class=language- data-lang># Extensions
+</a>), 从Hexo 5.0.0版本开始支持。</p><p>创建完<code>_config.next.yml</code>文件后，把<code>_config.yml</code>中theme值改为next即可启用</p><div><pre><code class=language- data-lang># Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next</code></pre></div><h2 id=next主题重要配置>Next主题重要配置</h2><p>scheme 建议使用Gemini，NexT官方网站就是使用的Gemini</p><div class=highlight><pre class=chroma><code class=language- data-lang>#scheme: Muse
+theme: next</code></pre></div><h2 id=next主题重要配置>Next主题重要配置</h2><p>scheme 建议使用Gemini，NexT官方网站就是使用的Gemini</p><div><pre><code class=language- data-lang>#scheme: Muse
 #scheme: Mist
 #scheme: Pisces
 scheme: Gemini</code></pre></div><h3 id=开启搜索>开启搜索</h3><p>安装[搜索插件](
 <a href=https://github.com/next-theme/hexo-generator-searchdb target=_blank rel="noopener noreferrer" class=external-link>GitHub - next-theme/hexo-generator-searchdb: 🔍 Seach data generator plugin for Hexo.
 <span class=external-icon>↗</span>
-</a>)</p><div class=highlight><pre class=chroma><code class=language- data-lang>npm install hexo-generator-searchdb</code></pre></div><p>Hexo config file <code>_config.yml</code></p><div class=highlight><pre class=chroma><code class=language- data-lang>search:
+</a>)</p><div><pre><code class=language- data-lang>npm install hexo-generator-searchdb</code></pre></div><p>Hexo config file <code>_config.yml</code></p><div><pre><code class=language- data-lang>search:
  path: search.xml
  field: post
  content: true
- format: html</code></pre></div><p>NexT config file <code>_config.next.yml</code></p><div class=highlight><pre class=chroma><code class=language- data-lang># Local search
+ format: html</code></pre></div><p>NexT config file <code>_config.next.yml</code></p><div><pre><code class=language- data-lang># Local search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: true
@@ -101,10 +101,10 @@ local_search:
 <span class=external-icon>↗</span></a></td><td>推荐，无需登录，支持匿名评论</td></tr></tbody></table><p>如果要使用giscus，需要先在源代码项目安装[hexo giscus插件](
 <a href=https://github.com/next-theme/hexo-next-giscus target=_blank rel="noopener noreferrer" class=external-link>GitHub - next-theme/hexo-next-giscus: Giscus comment system for NexT
 <span class=external-icon>↗</span>
-</a>) :</p><div class=highlight><pre class=chroma><code class=language- data-lang>npm install hexo-next-giscus</code></pre></div><p>其次创建一个自己名下用来存储的公开仓库，然后打开
+</a>) :</p><div><pre><code class=language- data-lang>npm install hexo-next-giscus</code></pre></div><p>其次创建一个自己名下用来存储的公开仓库，然后打开
 <a href=https://giscus.app/zh-CN target=_blank rel="noopener noreferrer" class=external-link>giscus
 <span class=external-icon>↗</span>
-</a>填写相关信息，即可自动生成giscus配置。</p><div class=highlight><pre class=chroma><code class=language- data-lang>giscus:
+</a>填写相关信息，即可自动生成giscus配置。</p><div><pre><code class=language- data-lang>giscus:
   enable: true
   repo:  #需要修改成自己的公开仓库
   repo_id: 需要修改成自己的
@@ -126,7 +126,7 @@ local_search:
   loading: lazy</code></pre></div><p>其他的设置都比较简单，可以自行参考
 <a href=https://theme-next.js.org/docs/theme-settings/ target=_blank rel="noopener noreferrer" class=external-link>NexT官方文档
 <span class=external-icon>↗</span>
-</a>。</p><h3 id=开启文章底部分享>开启文章底部分享</h3><div class=highlight><pre class=chroma><code class=language- data-lang>_config.next.yml
+</a>。</p><h3 id=开启文章底部分享>开启文章底部分享</h3><div><pre><code class=language- data-lang>_config.next.yml
 addtoany:
   enable: true
   buttons:
@@ -137,13 +137,13 @@ addtoany:
     - qzone
     - sina_weibo</code></pre></div><h3 id=开启文章字数计数>开启文章字数计数</h3><p>详见
 <a href="https://theme-next.js.org/docs/theme-settings/posts.html?highlight=hexo+word+counter" target=_blank rel="noopener noreferrer" class=external-link>hexo+word+counter
-<span class=external-icon>↗</span></a></p><p>安装</p><div class=highlight><pre class=chroma><code class=language- data-lang>npm install hexo-word-counter</code></pre></div><p><code>_config.next.yml</code>配置</p><div class=highlight><pre class=chroma><code class=language- data-lang># Post wordcount display settings
+<span class=external-icon>↗</span></a></p><p>安装</p><div><pre><code class=language- data-lang>npm install hexo-word-counter</code></pre></div><p><code>_config.next.yml</code>配置</p><div><pre><code class=language- data-lang># Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
 symbols_count_time:
   separated_meta: true
   item_text_total: true</code></pre></div><h3 id=标签词云>标签词云</h3><p><img src=https://github.com/D0n9X1n/hexo-tag-cloud/raw/master/img/example.png alt=TagCloud>标签词云的github地址为
 <a href=https://github.com/D0n9X1n/hexo-tag-cloud target=_blank rel="noopener noreferrer" class=external-link>hexo-tag-cloud
-<span class=external-icon>↗</span></a></p><p>安装</p><div class=highlight><pre class=chroma><code class=language- data-lang>npm install hexo-tag-cloud</code></pre></div><p><code>_config.next.yml</code>配置</p><div class=highlight><pre class=chroma><code class=language- data-lang># hexo-tag-cloud
+<span class=external-icon>↗</span></a></p><p>安装</p><div><pre><code class=language- data-lang>npm install hexo-tag-cloud</code></pre></div><p><code>_config.next.yml</code>配置</p><div><pre><code class=language- data-lang># hexo-tag-cloud
 tag_cloud:
   textFont: Trebuchet MS, Helvetica
   textColor: &#39;#333&#39;
@@ -156,7 +156,7 @@ tag_cloud:
 <span class=external-icon>↗</span></a></p><h1 id=部署流程>部署流程</h1><p><code>npm install -g hexo-cli</code> 再<code>hexo init</code>之后，会生成一个nodejs项目，hexo new会在source 文件夹中生成新的markdown文件。这个项目有_config.yml、package.json、.gitignore等文件，可以把这个项目称之为“源代码”项目。源代码项目是私有的。</p><p>然后生成的html静态网站，应该搞一个单独的html项目，例如项目名叫<code>chunqiujinjing.github.io</code>。</p><p>hexo new 新文章编辑好之后，就可以把“源代码”项目commit+push到git上面了。最后运行一下hexo g + hexo d可以部署到html项目中。</p><p>其实html项目也可以是私有的，只不过想使用github pages必须命名为<code>chunqiujinjing.github.io</code>并且公有才行。其实就算随便取名字，设置为私有，也可以自己部署到任意地方。</p><p>如果想做到commit+push源代码之后自动部署html项目，可以使用github actions。</p><h2 id=github-actions>github actions</h2><p>在[hexo的github-pages文档](
 <a href=https://hexo.io/docs/github-pages.html target=_blank rel="noopener noreferrer" class=external-link>GitHub Pages | Hexo
 <span class=external-icon>↗</span>
-</a>) 中有一个github actions的示例，但是其中配置的做法并不科学。它把源代码项目和html项目放到了一个仓库中，用不同的分支来区分，然后还部署到了github pages，github pages必须使用公开仓库。这就导致了网站的源代码和html代码都暴露了，你的所有配置将被一览无余：例如leancloud的appkey、giscus的id等等。</p><p>最佳实践是源代码仓库设置为私有，通过hexo deploy（或者由github action自动化）部署到html仓库。html仓库如果使用github pages部署，必须设置为公开，但通过vercel或者其他托管网站部署则可以设置为私有。</p><h3 id=最佳实践>最佳实践</h3><p>1 修改源代码仓库：</p><div class=highlight><pre class=chroma><code class=language- data-lang>_config.yml
+</a>) 中有一个github actions的示例，但是其中配置的做法并不科学。它把源代码项目和html项目放到了一个仓库中，用不同的分支来区分，然后还部署到了github pages，github pages必须使用公开仓库。这就导致了网站的源代码和html代码都暴露了，你的所有配置将被一览无余：例如leancloud的appkey、giscus的id等等。</p><p>最佳实践是源代码仓库设置为私有，通过hexo deploy（或者由github action自动化）部署到html仓库。html仓库如果使用github pages部署，必须设置为公开，但通过vercel或者其他托管网站部署则可以设置为私有。</p><h3 id=最佳实践>最佳实践</h3><p>1 修改源代码仓库：</p><div><pre><code class=language- data-lang>_config.yml
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -166,7 +166,7 @@ deploy:
 <a href=https://github.com/sma11black/hexo-action target=_blank rel="noopener noreferrer" class=external-link>hexo-action
 <span class=external-icon>↗</span>
 </a>来设置。</p><p>2.1 设置 <code>Deploy keys</code> 和 <code>Secrets</code></p><p>2.1.1 运行<code>ssh-keygen -t rsa -C "username@example.com"</code> (替换为你的邮箱) ，会生成一个文件，里面有公钥和私钥。</p><p>2.1.2 在 Github html存储库中：在 <code>Settings > Deploy Keys</code> 添加公钥。</p><p>2.1.3 在 hexo 源代码存储库中：在 <code>Settings > Secrets</code> 菜单中添加私钥。</p><p><img src=https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing.png alt=img>
-<img src=https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing_source.png alt=img></p><p>2.2 创建<code>github/workflows/deploy.yml</code> 文件，</p><div class=highlight><pre class=chroma><code class=language- data-lang>name: Deploy
+<img src=https://www.chunqiujinjing.com/2023/06/18/hexo-hello-world/chunqiujinjing_source.png alt=img></p><p>2.2 创建<code>github/workflows/deploy.yml</code> 文件，</p><div><pre><code class=language- data-lang>name: Deploy
 
 on: [push]
 

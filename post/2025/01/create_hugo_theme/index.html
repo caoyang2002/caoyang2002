@@ -1,4 +1,4 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Hugo 主题创建方法及简单说明 - caoyang2002</title>
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Hugo 主题创建方法及简单说明 - caoyang2002</title>
 <meta name=theme-color><meta name=description content="参考：
 中文文档 
 
@@ -107,13 +107,13 @@ hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├�
 <a href=https://hugo.opendocs.io/getting-started/quick-start/ target=_blank rel="noopener noreferrer" class=external-link>https://hugo.opendocs.io/getting-started/quick-start/
 <span class=external-icon>↗</span></a></p><p>博客：</p><ul><li><a href=https://blog.gujiakai.top/2023/03/hugo-theme-development-diary target=_blank rel="noopener noreferrer" class=external-link>https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
 <span class=external-icon>↗</span></a></li><li><a href=https://juejin.cn/post/7151253414427492382 target=_blank rel="noopener noreferrer" class=external-link>https://juejin.cn/post/7151253414427492382
-<span class=external-icon>↗</span></a></li></ul><h1 id=一个简单的-hugo-主题>一个简单的 Hugo 主题</h1><h2 id=创建一个空的网站模版>创建一个空的网站模版</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>hugo new site demo</code></pre></div><p>这会在当前目录创建一个名为 <code>demo</code> 的目录，然后初始化 <code>hugo</code> 的目录结构，</p><h2 id=创建一个空的主题模版>创建一个空的主题模版</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>cd demo
-hugo new theme hugo-zero</code></pre></div><p>得到输出信息：</p><div class=highlight><pre class=chroma><code class=language- data-lang>Creating theme at /hugo/demo/themes/hugo-zero</code></pre></div><p>一开始的目录结构如下图所示：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>hugo-zero（hugo主题）
+<span class=external-icon>↗</span></a></li></ul><h1 id=一个简单的-hugo-主题>一个简单的 Hugo 主题</h1><h2 id=创建一个空的网站模版>创建一个空的网站模版</h2><div><pre><code class=language-bash data-lang=bash>hugo new site demo</code></pre></div><p>这会在当前目录创建一个名为 <code>demo</code> 的目录，然后初始化 <code>hugo</code> 的目录结构，</p><h2 id=创建一个空的主题模版>创建一个空的主题模版</h2><div><pre><code class=language-bash data-lang=bash>cd demo
+hugo new theme hugo-zero</code></pre></div><p>得到输出信息：</p><div><pre><code class=language- data-lang>Creating theme at /hugo/demo/themes/hugo-zero</code></pre></div><p>一开始的目录结构如下图所示：</p><div><pre><code class=language-bash data-lang=bash>hugo-zero（hugo主题）
 ├── archetypes（hugo主题文章模板）
 ├── layouts（hugo主题布局文件）
 ├── static（hugo主题的静态文件）
 ├── LICENSE（hugo主题的许可证信息）
-└── themes.toml（hugo主题的元数据信息）</code></pre></div><p>其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。</p><p>layouts 文件夹的目录结构如下图所示：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>layouts
+└── themes.toml（hugo主题的元数据信息）</code></pre></div><p>其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。</p><p>layouts 文件夹的目录结构如下图所示：</p><div><pre><code class=language-bash data-lang=bash>layouts
 ├── _default（默认页面布局文件夹）
 │   ├── baseof.html（所有页面的基底模板）
 │   ├── list.html（列表页面的模板文件）
@@ -123,7 +123,7 @@ hugo new theme hugo-zero</code></pre></div><p>得到输出信息：</p><div clas
 │   ├── header.html（网页的主导航栏）
 │   └── footer.html（网页的页脚信息）
 ├── 404.html（网站的404错误页面）
-└── index.html（网站的主页）</code></pre></div><h2 id=在-configtoml-里添加一行>在 <code>config.toml</code> 里添加一行：</h2><div class=highlight><pre class=chroma><code class=language-toml data-lang=toml>theme = &#34;hugo-zero&#34;</code></pre></div><p>这样就可以加载主题 <code>hugo-zero</code>了，运行看看有没有报错：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>hugo server</code></pre></div><p>如果配置有问题会显示出错误信息，一切正常的话，能看到下面的输出：</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>| EN
+└── index.html（网站的主页）</code></pre></div><h2 id=在-configtoml-里添加一行>在 <code>config.toml</code> 里添加一行：</h2><div><pre><code class=language-toml data-lang=toml>theme = &#34;hugo-zero&#34;</code></pre></div><p>这样就可以加载主题 <code>hugo-zero</code>了，运行看看有没有报错：</p><div><pre><code class=language-bash data-lang=bash>hugo server</code></pre></div><p>如果配置有问题会显示出错误信息，一切正常的话，能看到下面的输出：</p><div><pre><code class=language-bash data-lang=bash>| EN
 &#43;------------------&#43;----&#43;
 Pages            |  3
 Paginator pages  |  0
@@ -146,17 +146,17 @@ baseof.html 所有页面的模版，每个页面都是基于这个页面进行�
 css 目录用来放样式文件。
 head.html用来定义<head>部分的内容，加载 CSS 样式文件就在这里添加。
 footer.html一般用来展示版权信息。
-header.html显示在顶部，展示网站名称。</p><h1 id=使用>使用</h1><h2 id=创建网站>创建网站</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash># 创建 demo 网站
+header.html显示在顶部，展示网站名称。</p><h1 id=使用>使用</h1><h2 id=创建网站>创建网站</h2><div><pre><code class=language-bash data-lang=bash># 创建 demo 网站
 hugo new site demo
 #  进入网站文件夹
-cd demo</code></pre></div><h2 id=添加主题>添加主题</h2><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash># 初始化 git 仓库
+cd demo</code></pre></div><h2 id=添加主题>添加主题</h2><div><pre><code class=language-bash data-lang=bash># 初始化 git 仓库
 git init
 # 添加 git 子模块（主题）
-git submodule add https://github.com/caoyang2002/hugo-zero.git themes/hugo-zero</code></pre></div><h2 id=在-configtoml-里添加一行-1>在 <code>config.toml</code> 里添加一行：</h2><div class=highlight><pre class=chroma><code class=language-toml data-lang=toml>theme = &#34;hugo-zero&#34;</code></pre></div><h1 id=创建文章>创建文章</h1><p>创建 <code>post_name.md</code> 文章</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>hugo new content/posts/post_name.md</code></pre></div><p>生成 <code>post_name.md</code> 文件并添加元信息</p><div class=highlight><pre class=chroma><code class=language-bash data-lang=bash>&#43;&#43;&#43;
+git submodule add https://github.com/caoyang2002/hugo-zero.git themes/hugo-zero</code></pre></div><h2 id=在-configtoml-里添加一行-1>在 <code>config.toml</code> 里添加一行：</h2><div><pre><code class=language-toml data-lang=toml>theme = &#34;hugo-zero&#34;</code></pre></div><h1 id=创建文章>创建文章</h1><p>创建 <code>post_name.md</code> 文章</p><div><pre><code class=language-bash data-lang=bash>hugo new content/posts/post_name.md</code></pre></div><p>生成 <code>post_name.md</code> 文件并添加元信息</p><div><pre><code class=language-bash data-lang=bash>&#43;&#43;&#43;
 date = &#39;2025-01-03T11:11:07&#43;08:00&#39;
 draft = true
 title = &#39;Post_name&#39;
-&#43;&#43;&#43;</code></pre></div><h2 id=启动>启动</h2><div class=highlight><pre class=chroma><code class=language-bahs data-lang=bahs># 不包含草稿内容
+&#43;&#43;&#43;</code></pre></div><h2 id=启动>启动</h2><div><pre><code class=language-bahs data-lang=bahs># 不包含草稿内容
 hugo server
 
 # 包含草稿内容
