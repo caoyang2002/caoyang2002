@@ -1,5 +1,90 @@
-<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{min-height:100vh;background-color:var(--bg);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}</style><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>x86 教程 - caoyang2002</title>
-<meta name=theme-color><meta name=description content="作者： 
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="zh-CN"
+    dir="ltr"
+>
+    
+    
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+        body {
+            min-height: 100vh;
+            background-color: var(--bg);
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: transparent;
+        }
+    </style>
+
+    
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>x86 教程 - caoyang2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="作者： 
 
    阮一峰
    
@@ -18,37 +103,492 @@
 学习编程其实就是学高级语言，即那些为人类设计的计算机语言。
 但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。
 
-计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。"><meta name=author content="曹洋 simons"><link rel="preload stylesheet" as=style href=https://caoyang2002.xyz/main.min.css><link rel=preload as=image href=https://caoyang2002.xyz/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=https://caoyang2002.xyz/twitter.svg><link rel=preload as=image href=https://caoyang2002.xyz/github.svg><link rel=preload as=image href=https://caoyang2002.xyz/instagram.svg><link rel=preload as=image href=https://caoyang2002.xyz/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script defer src=https://caoyang2002.xyz/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.xyz/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.xyz/apple-touch-icon.png><meta name=generator content="Hugo 0.140.2"><meta itemprop=name content="x86 教程"><meta itemprop=description content="作者： 阮一峰 ↗ 日期： 2018年1月21日 ↗ 学习编程其实就是学高级语言，即那些为人类设计的计算机语言。
-但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。
-计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。"><meta itemprop=datePublished content="2024-05-02T09:31:37+08:00"><meta itemprop=dateModified content="2025-01-05T10:56:18+08:00"><meta itemprop=wordCount content="4353"><meta property="og:url" content="https://caoyang2002.xyz/post/2024/05/x86/"><meta property="og:site_name" content="caoyang2002"><meta property="og:title" content="x86 教程"><meta property="og:description" content="作者： 阮一峰 ↗ 日期： 2018年1月21日 ↗ 学习编程其实就是学高级语言，即那些为人类设计的计算机语言。
-但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。
-计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-05-02T09:31:37+08:00"><meta property="article:modified_time" content="2025-01-05T10:56:18+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="x86 教程"><meta name=twitter:description content="作者： 阮一峰 ↗ 日期： 2018年1月21日 ↗ 学习编程其实就是学高级语言，即那些为人类设计的计算机语言。
-但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。
-计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。"><link rel=canonical href=https://caoyang2002.xyz/post/2024/05/x86/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.xyz/>caoyang2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/>首页</a>
-<a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/about/>关于</a>
-<a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/contact/>联系</a>
-<a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal" href=/guestbook/>留言</a>
-<a href=/search class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal">搜索</a></nav></div></header><style>header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">x86 教程</h1><div class="text-xs antialiased opacity-60"><time>2024年5月2日</time></div></div><section><p>作者：
-<a href=http://www.ruanyifeng.com/ target=_blank rel="noopener noreferrer" class=external-link>阮一峰
-<span class=external-icon>↗</span></a></p><p>日期：
-<a href=http://www.ruanyifeng.com/blog/2018/01/ target=_blank rel="noopener noreferrer" class=external-link>2018年1月21日
-<span class=external-icon>↗</span></a></p><p>学习编程其实就是学高级语言，即那些为人类设计的计算机语言。</p><p>但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png alt=img></p><p>计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。</p><p>汇编语言不容易学习，就连简明扼要的介绍都很难找到。下面我尝试写一篇最好懂的汇编语言教程，解释 CPU 如何执行代码。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012202.jpg alt=img></p><h2 id=一汇编语言是什么>一、汇编语言是什么？</h2><p>我们知道，CPU 只负责计算，本身不具备智能。你输入一条指令（instruction），它就运行一次，然后停下来，等待下一条指令。</p><p>这些指令都是二进制的，称为操作码（opcode），比如加法指令就是<code>00000011</code>。
-<a href=http://www.ruanyifeng.com/blog/2014/11/compiler.html target=_blank rel="noopener noreferrer" class=external-link>编译器
-<span class=external-icon>↗</span>
-</a>的作用，就是将高级语言写好的程序，翻译成一条条操作码。</p><p>对于人类来说，二进制程序是不可读的，根本看不出来机器干了什么。为了解决可读性的问题，以及偶尔的编辑需求，就诞生了汇编语言。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012203.jpg alt=img></p><p><strong>汇编语言是二进制指令的文本形式</strong>，与指令是一一对应的关系。比如，加法指令<code>00000011</code>写成汇编语言就是 ADD。只要还原成二进制，汇编语言就可以被 CPU 直接执行，所以它是最底层的低级语言。</p><h2 id=二来历>二、来历</h2><p>最早的时候，编写程序就是手写二进制指令，然后通过各种开关输入计算机，比如要做加法了，就按一下加法开关。后来，发明了纸带打孔机，通过在纸带上打孔，将二进制指令自动输入计算机。</p><p>为了解决二进制指令的可读性问题，工程师将那些指令写成了八进制。二进制转八进制是轻而易举的，但是八进制的可读性也不行。很自然地，最后还是用文字表达，加法指令写成 ADD。内存地址也不再直接引用，而是用标签表示。</p><p>这样的话，就多出一个步骤，要把这些文字指令翻译成二进制，这个步骤就称为 assembling，完成这个步骤的程序就叫做 assembler。它处理的文本，自然就叫做 aseembly code。标准化以后，称为 assembly language，缩写为 asm，中文译为汇编语言。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012205.jpg alt=img></p><p>每一种 CPU 的机器指令都是不一样的，因此对应的汇编语言也不一样。本文介绍的是目前最常见的 x86 汇编语言，即 Intel 公司的 CPU 使用的那一种。</p><h2 id=三寄存器>三、寄存器</h2><p>学习汇编语言，首先必须了解两个知识点：寄存器和内存模型。</p><p>先来看寄存器。CPU 本身只负责运算，不负责储存数据。数据一般都储存在内存之中，CPU 要用的时候就去内存读写数据。但是，CPU 的运算速度远高于内存的读写速度，为了避免被拖慢，CPU 都自带一级缓存和二级缓存。基本上，CPU 缓存可以看作是读写速度较快的内存。</p><p>但是，CPU 缓存还是不够快，另外数据在缓存里面的地址是不固定的，CPU 每次读写都要寻址也会拖慢速度。因此，除了缓存之外，CPU 还自带了寄存器（register），用来储存最常用的数据。也就是说，那些最频繁读写的数据（比如循环变量），都会放在寄存器里面，CPU 优先读写寄存器，再由寄存器跟内存交换数据。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012206.png alt=img></p><p>寄存器不依靠地址区分数据，而依靠名称。每一个寄存器都有自己的名称，我们告诉 CPU 去具体的哪一个寄存器拿数据，这样的速度是最快的。有人比喻寄存器是 CPU 的零级缓存。</p><h2 id=四寄存器的种类>四、寄存器的种类</h2><p>早期的 x86 CPU 只有8个寄存器，而且每个都有不同的用途。现在的寄存器已经有100多个了，都变成通用寄存器，不特别指定用途了，但是早期寄存器的名字都被保存了下来。</p><blockquote><ul><li>EAX</li><li>EBX</li><li>ECX</li><li>EDX</li><li>EDI</li><li>ESI</li><li>EBP</li><li>ESP</li></ul></blockquote><p>上面这8个寄存器之中，前面七个都是通用的。ESP 寄存器有特定用途，保存当前 Stack 的地址（详见下一节）。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012207.png alt=img></p><p>我们常常看到 32位 CPU、64位 CPU 这样的名称，其实指的就是寄存器的大小。32 位 CPU 的寄存器大小就是4个字节。</p><h2 id=五内存模型heap>五、内存模型：Heap</h2><p>寄存器只能存放很少量的数据，大多数时候，CPU 要指挥寄存器，直接跟内存交换数据。所以，除了寄存器，还必须了解内存怎么储存数据。</p><p>程序运行的时候，操作系统会给它分配一段内存，用来储存程序和运行产生的数据。这段内存有起始地址和结束地址，比如从<code>0x1000</code>到<code>0x8000</code>，起始地址是较小的那个地址，结束地址是较大的那个地址。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012208.png alt=img></p><p>程序运行过程中，对于动态的内存占用请求（比如新建对象，或者使用<code>malloc</code>命令），系统就会从预先分配好的那段内存之中，划出一部分给用户，具体规则是从起始地址开始划分（实际上，起始地址会有一段静态数据，这里忽略）。举例来说，用户要求得到10个字节内存，那么从起始地址<code>0x1000</code>开始给他分配，一直分配到地址<code>0x100A</code>，如果再要求得到22个字节，那么就分配到<code>0x1020</code>。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012209.png alt=img></p><p>这种因为用户主动请求而划分出来的内存区域，叫做 Heap（堆）。它由起始地址开始，从低位（地址）向高位（地址）增长。Heap 的一个重要特点就是不会自动消失，必须手动释放，或者由垃圾回收机制来回收。</p><h2 id=六内存模型stack>六、内存模型：Stack</h2><p>除了 Heap 以外，其他的内存占用叫做 Stack（栈）。简单说，Stack 是由于函数运行而临时占用的内存区域。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012210.png alt=img></p><p>请看下面的例子。</p><blockquote><div><pre><code class=language-clike data-lang=clike>int main() {
+计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。" />
+    <meta name="author" content="曹洋 simons" />
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/about/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+    
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+    
+    
+
+    
+    
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        onload="hljs.initHighlightingOnLoad();"
+    ></script>
+     
+    <script
+        defer
+        src="http://localhost:1313/highlight.min.js"
+        onload="hljs.initHighlightingOnLoad();"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="http://localhost:1313/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="http://localhost:1313/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        
+        <header class="mx-auto flex h-[4.5rem] px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[4.5rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+        
+        <nav
+            class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/"
+                >首页</a
+            >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/about/"
+                >关于</a
+            >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/contact/"
+                >联系</a
+            >
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+                href="/guestbook/"
+                >留言</a
+            >
+            
+            
+            <a
+                href="/search"
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+            >
+                搜索
+                
+            </a>
+        </nav>
+        
+
+        
+        
+        
+    </div>
+</header>
+
+<style>
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="prose prose-neutral flex-1 min-h-[calc(100vh-9rem)] pt-14 pb-16 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">x86 教程</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+            
+            <time>2024年5月2日</time>
+            
+            
+             
+            
+        </div>
+         
+    </div>
+
+    <section><p>作者： 
+<a href="http://www.ruanyifeng.com/"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   阮一峰
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+<p>日期： 
+<a href="http://www.ruanyifeng.com/blog/2018/01/"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   2018年1月21日
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+<p>学习编程其实就是学高级语言，即那些为人类设计的计算机语言。</p>
+<p>但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img"></p>
+<p>计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。</p>
+<p>汇编语言不容易学习，就连简明扼要的介绍都很难找到。下面我尝试写一篇最好懂的汇编语言教程，解释 CPU 如何执行代码。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012202.jpg" alt="img"></p>
+<h2 id="一汇编语言是什么">一、汇编语言是什么？</h2>
+<p>我们知道，CPU 只负责计算，本身不具备智能。你输入一条指令（instruction），它就运行一次，然后停下来，等待下一条指令。</p>
+<p>这些指令都是二进制的，称为操作码（opcode），比如加法指令就是<code>00000011</code>。
+<a href="http://www.ruanyifeng.com/blog/2014/11/compiler.html"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   编译器
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+的作用，就是将高级语言写好的程序，翻译成一条条操作码。</p>
+<p>对于人类来说，二进制程序是不可读的，根本看不出来机器干了什么。为了解决可读性的问题，以及偶尔的编辑需求，就诞生了汇编语言。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012203.jpg" alt="img"></p>
+<p><strong>汇编语言是二进制指令的文本形式</strong>，与指令是一一对应的关系。比如，加法指令<code>00000011</code>写成汇编语言就是 ADD。只要还原成二进制，汇编语言就可以被 CPU 直接执行，所以它是最底层的低级语言。</p>
+<h2 id="二来历">二、来历</h2>
+<p>最早的时候，编写程序就是手写二进制指令，然后通过各种开关输入计算机，比如要做加法了，就按一下加法开关。后来，发明了纸带打孔机，通过在纸带上打孔，将二进制指令自动输入计算机。</p>
+<p>为了解决二进制指令的可读性问题，工程师将那些指令写成了八进制。二进制转八进制是轻而易举的，但是八进制的可读性也不行。很自然地，最后还是用文字表达，加法指令写成 ADD。内存地址也不再直接引用，而是用标签表示。</p>
+<p>这样的话，就多出一个步骤，要把这些文字指令翻译成二进制，这个步骤就称为 assembling，完成这个步骤的程序就叫做 assembler。它处理的文本，自然就叫做 aseembly code。标准化以后，称为 assembly language，缩写为 asm，中文译为汇编语言。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012205.jpg" alt="img"></p>
+<p>每一种 CPU 的机器指令都是不一样的，因此对应的汇编语言也不一样。本文介绍的是目前最常见的 x86 汇编语言，即 Intel 公司的 CPU 使用的那一种。</p>
+<h2 id="三寄存器">三、寄存器</h2>
+<p>学习汇编语言，首先必须了解两个知识点：寄存器和内存模型。</p>
+<p>先来看寄存器。CPU 本身只负责运算，不负责储存数据。数据一般都储存在内存之中，CPU 要用的时候就去内存读写数据。但是，CPU 的运算速度远高于内存的读写速度，为了避免被拖慢，CPU 都自带一级缓存和二级缓存。基本上，CPU 缓存可以看作是读写速度较快的内存。</p>
+<p>但是，CPU 缓存还是不够快，另外数据在缓存里面的地址是不固定的，CPU 每次读写都要寻址也会拖慢速度。因此，除了缓存之外，CPU 还自带了寄存器（register），用来储存最常用的数据。也就是说，那些最频繁读写的数据（比如循环变量），都会放在寄存器里面，CPU 优先读写寄存器，再由寄存器跟内存交换数据。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012206.png" alt="img"></p>
+<p>寄存器不依靠地址区分数据，而依靠名称。每一个寄存器都有自己的名称，我们告诉 CPU 去具体的哪一个寄存器拿数据，这样的速度是最快的。有人比喻寄存器是 CPU 的零级缓存。</p>
+<h2 id="四寄存器的种类">四、寄存器的种类</h2>
+<p>早期的 x86 CPU 只有8个寄存器，而且每个都有不同的用途。现在的寄存器已经有100多个了，都变成通用寄存器，不特别指定用途了，但是早期寄存器的名字都被保存了下来。</p>
+<blockquote>
+<ul>
+<li>EAX</li>
+<li>EBX</li>
+<li>ECX</li>
+<li>EDX</li>
+<li>EDI</li>
+<li>ESI</li>
+<li>EBP</li>
+<li>ESP</li>
+</ul>
+</blockquote>
+<p>上面这8个寄存器之中，前面七个都是通用的。ESP 寄存器有特定用途，保存当前 Stack 的地址（详见下一节）。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012207.png" alt="img"></p>
+<p>我们常常看到 32位 CPU、64位 CPU 这样的名称，其实指的就是寄存器的大小。32 位 CPU 的寄存器大小就是4个字节。</p>
+<h2 id="五内存模型heap">五、内存模型：Heap</h2>
+<p>寄存器只能存放很少量的数据，大多数时候，CPU 要指挥寄存器，直接跟内存交换数据。所以，除了寄存器，还必须了解内存怎么储存数据。</p>
+<p>程序运行的时候，操作系统会给它分配一段内存，用来储存程序和运行产生的数据。这段内存有起始地址和结束地址，比如从<code>0x1000</code>到<code>0x8000</code>，起始地址是较小的那个地址，结束地址是较大的那个地址。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012208.png" alt="img"></p>
+<p>程序运行过程中，对于动态的内存占用请求（比如新建对象，或者使用<code>malloc</code>命令），系统就会从预先分配好的那段内存之中，划出一部分给用户，具体规则是从起始地址开始划分（实际上，起始地址会有一段静态数据，这里忽略）。举例来说，用户要求得到10个字节内存，那么从起始地址<code>0x1000</code>开始给他分配，一直分配到地址<code>0x100A</code>，如果再要求得到22个字节，那么就分配到<code>0x1020</code>。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012209.png" alt="img"></p>
+<p>这种因为用户主动请求而划分出来的内存区域，叫做 Heap（堆）。它由起始地址开始，从低位（地址）向高位（地址）增长。Heap 的一个重要特点就是不会自动消失，必须手动释放，或者由垃圾回收机制来回收。</p>
+<h2 id="六内存模型stack">六、内存模型：Stack</h2>
+<p>除了 Heap 以外，其他的内存占用叫做 Stack（栈）。简单说，Stack 是由于函数运行而临时占用的内存区域。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012210.png" alt="img"></p>
+<p>请看下面的例子。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">int main() {
    int a = 2;
    int b = 3;
-}</code></pre></div></blockquote><p>上面代码中，系统开始执行<code>main</code>函数时，会为它在内存里面建立一个帧（frame），所有<code>main</code>的内部变量（比如<code>a</code>和<code>b</code>）都保存在这个帧里面。<code>main</code>函数执行结束后，该帧就会被回收，释放所有的内部变量，不再占用空间。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012211.png alt=img></p><p>如果函数内部调用了其他函数，会发生什么情况？</p><blockquote><div><pre><code class=language-clike data-lang=clike>int main() {
+}</code></pre>
+</div>
+
+</blockquote>
+<p>上面代码中，系统开始执行<code>main</code>函数时，会为它在内存里面建立一个帧（frame），所有<code>main</code>的内部变量（比如<code>a</code>和<code>b</code>）都保存在这个帧里面。<code>main</code>函数执行结束后，该帧就会被回收，释放所有的内部变量，不再占用空间。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012211.png" alt="img"></p>
+<p>如果函数内部调用了其他函数，会发生什么情况？</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">int main() {
    int a = 2;
    int b = 3;
    return add_a_and_b(a, b);
-}</code></pre></div></blockquote><p>上面代码中，<code>main</code>函数内部调用了<code>add_a_and_b</code>函数。执行到这一行的时候，系统也会为<code>add_a_and_b</code>新建一个帧，用来储存它的内部变量。也就是说，此时同时存在两个帧：<code>main</code>和<code>add_a_and_b</code>。一般来说，调用栈有多少层，就有多少帧。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012212.png alt=img></p><p>等到<code>add_a_and_b</code>运行结束，它的帧就会被回收，系统会回到函数<code>main</code>刚才中断执行的地方，继续往下执行。通过这种机制，就实现了函数的层层调用，并且每一层都能使用自己的本地变量。</p><p>所有的帧都存放在 Stack，由于帧是一层层叠加的，所以 Stack 叫做栈。生成新的帧，叫做"入栈"，英文是 push；栈的回收叫做"出栈"，英文是 pop。Stack 的特点就是，最晚入栈的帧最早出栈（因为最内层的函数调用，最先结束运行），这就叫做"后进先出"的数据结构。每一次函数执行结束，就自动释放一个帧，所有函数执行结束，整个 Stack 就都释放了。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012213.jpg alt=img></p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012214.jpg alt=img></p><p>Stack 是由内存区域的结束地址开始，从高位（地址）向低位（地址）分配。比如，内存区域的结束地址是<code>0x8000</code>，第一帧假定是16字节，那么下一次分配的地址就会从<code>0x7FF0</code>开始；第二帧假定需要64字节，那么地址就会移动到<code>0x7FB0</code>。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012215.png alt=img></p><h2 id=七cpu-指令>七、CPU 指令</h2><h3 id=71-一个实例>7.1 一个实例</h3><p>了解寄存器和内存模型以后，就可以来看汇编语言到底是什么了。下面是一个简单的程序<code>example.c</code>。</p><blockquote><div><pre><code class=language-clike data-lang=clike>int add_a_and_b(int a, int b) {
+}</code></pre>
+</div>
+
+</blockquote>
+<p>上面代码中，<code>main</code>函数内部调用了<code>add_a_and_b</code>函数。执行到这一行的时候，系统也会为<code>add_a_and_b</code>新建一个帧，用来储存它的内部变量。也就是说，此时同时存在两个帧：<code>main</code>和<code>add_a_and_b</code>。一般来说，调用栈有多少层，就有多少帧。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012212.png" alt="img"></p>
+<p>等到<code>add_a_and_b</code>运行结束，它的帧就会被回收，系统会回到函数<code>main</code>刚才中断执行的地方，继续往下执行。通过这种机制，就实现了函数的层层调用，并且每一层都能使用自己的本地变量。</p>
+<p>所有的帧都存放在 Stack，由于帧是一层层叠加的，所以 Stack 叫做栈。生成新的帧，叫做&quot;入栈&quot;，英文是 push；栈的回收叫做&quot;出栈&quot;，英文是 pop。Stack 的特点就是，最晚入栈的帧最早出栈（因为最内层的函数调用，最先结束运行），这就叫做&quot;后进先出&quot;的数据结构。每一次函数执行结束，就自动释放一个帧，所有函数执行结束，整个 Stack 就都释放了。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012213.jpg" alt="img"></p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012214.jpg" alt="img"></p>
+<p>Stack 是由内存区域的结束地址开始，从高位（地址）向低位（地址）分配。比如，内存区域的结束地址是<code>0x8000</code>，第一帧假定是16字节，那么下一次分配的地址就会从<code>0x7FF0</code>开始；第二帧假定需要64字节，那么地址就会移动到<code>0x7FB0</code>。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012215.png" alt="img"></p>
+<h2 id="七cpu-指令">七、CPU 指令</h2>
+<h3 id="71-一个实例">7.1 一个实例</h3>
+<p>了解寄存器和内存模型以后，就可以来看汇编语言到底是什么了。下面是一个简单的程序<code>example.c</code>。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">int add_a_and_b(int a, int b) {
    return a &#43; b;
 }
 
 int main() {
    return add_a_and_b(2, 3);
-}</code></pre></div></blockquote><p>gcc 将这个程序转成汇编语言。</p><blockquote><div><pre><code class=language-bash data-lang=bash>$ gcc -S example.c</code></pre></div></blockquote><p>上面的命令执行以后，会生成一个文本文件<code>example.s</code>，里面就是汇编语言，包含了几十行指令。这么说吧，一个高级语言的简单操作，底层可能由几个，甚至几十个 CPU 指令构成。CPU 依次执行这些指令，完成这一步操作。</p><p><code>example.s</code>经过简化以后，大概是下面的样子。</p><blockquote><div><pre><code class=language-clike data-lang=clike>_add_a_and_b:
+}</code></pre>
+</div>
+
+</blockquote>
+<p>gcc 将这个程序转成汇编语言。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">$ gcc -S example.c</code></pre>
+</div>
+
+</blockquote>
+<p>上面的命令执行以后，会生成一个文本文件<code>example.s</code>，里面就是汇编语言，包含了几十行指令。这么说吧，一个高级语言的简单操作，底层可能由几个，甚至几十个 CPU 指令构成。CPU 依次执行这些指令，完成这一步操作。</p>
+<p><code>example.s</code>经过简化以后，大概是下面的样子。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">_add_a_and_b:
    push   %ebx
    mov    %eax, [%esp&#43;8]
    mov    %ebx, [%esp&#43;12]
@@ -61,11 +601,735 @@ _main:
    push   2
    call   _add_a_and_b
    add    %esp, 8
-   ret</code></pre></div></blockquote><p>可以看到，原程序的两个函数<code>add_a_and_b</code>和<code>main</code>，对应两个标签<code>_add_a_and_b</code>和<code>_main</code>。每个标签里面是该函数所转成的 CPU 运行流程。</p><p>每一行就是 CPU 执行的一次操作。它又分成两部分，就以其中一行为例。</p><blockquote><div><pre><code class=language-clike data-lang=clike>push   %ebx</code></pre></div></blockquote><p>这一行里面，<code>push</code>是 CPU 指令，<code>%ebx</code>是该指令要用到的运算子。一个 CPU 指令可以有零个到多个运算子。</p><p>下面我就一行一行讲解这个汇编程序，建议读者最好把这个程序，在另一个窗口拷贝一份，省得阅读的时候再把页面滚动上来。</p><h3 id=72-push-指令>7.2 push 指令</h3><p>根据约定，程序从<code>_main</code>标签开始执行，这时会在 Stack 上为<code>main</code>建立一个帧，并将 Stack 所指向的地址，写入 ESP 寄存器。后面如果有数据要写入<code>main</code>这个帧，就会写在 ESP 寄存器所保存的地址。</p><p>然后，开始执行第一行代码。</p><blockquote><div><pre><code class=language-clike data-lang=clike>push   3</code></pre></div></blockquote><p><code>push</code>指令用于将运算子放入 Stack，这里就是将<code>3</code>写入<code>main</code>这个帧。</p><p>虽然看上去很简单，<code>push</code>指令其实有一个前置操作。它会先取出 ESP 寄存器里面的地址，将其减去4个字节，然后将新地址写入 ESP 寄存器。使用减法是因为 Stack 从高位向低位发展，4个字节则是因为<code>3</code>的类型是<code>int</code>，占用4个字节。得到新地址以后， 3 就会写入这个地址开始的四个字节。</p><blockquote><div><pre><code class=language-clike data-lang=clike>push   2</code></pre></div></blockquote><p>第二行也是一样，<code>push</code>指令将<code>2</code>写入<code>main</code>这个帧，位置紧贴着前面写入的<code>3</code>。这时，ESP 寄存器会再减去 4个字节（累计减去8）。</p><p><img src=https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012216.png alt=img></p><h3 id=73-call-指令>7.3 call 指令</h3><p>第三行的<code>call</code>指令用来调用函数。</p><blockquote><div><pre><code class=language-clike data-lang=clike>call   _add_a_and_b</code></pre></div></blockquote><p>上面的代码表示调用<code>add_a_and_b</code>函数。这时，程序就会去找<code>_add_a_and_b</code>标签，并为该函数建立一个新的帧。</p><p>下面就开始执行<code>_add_a_and_b</code>的代码。</p><blockquote><div><pre><code class=language-clike data-lang=clike>push   %ebx</code></pre></div></blockquote><p>这一行表示将 EBX 寄存器里面的值，写入<code>_add_a_and_b</code>这个帧。这是因为后面要用到这个寄存器，就先把里面的值取出来，用完后再写回去。</p><p>这时，<code>push</code>指令会再将 ESP 寄存器里面的地址减去4个字节（累计减去12）。</p><h3 id=74-mov-指令>7.4 mov 指令</h3><p><code>mov</code>指令用于将一个值写入某个寄存器。</p><blockquote><div><pre><code class=language-clike data-lang=clike>mov    %eax, [%esp&#43;8]</code></pre></div></blockquote><p>这一行代码表示，先将 ESP 寄存器里面的地址加上8个字节，得到一个新的地址，然后按照这个地址在 Stack 取出数据。根据前面的步骤，可以推算出这里取出的是<code>2</code>，再将<code>2</code>写入 EAX 寄存器。</p><p>下一行代码也是干同样的事情。</p><blockquote><div><pre><code class=language-clike data-lang=clike>mov    %ebx, [%esp&#43;12]</code></pre></div></blockquote><p>上面的代码将 ESP 寄存器的值加12个字节，再按照这个地址在 Stack 取出数据，这次取出的是<code>3</code>，将其写入 EBX 寄存器。</p><h3 id=75-add-指令>7.5 add 指令</h3><p><code>add</code>指令用于将两个运算子相加，并将结果写入第一个运算子。</p><blockquote><div><pre><code class=language-clike data-lang=clike>add    %eax, %ebx</code></pre></div></blockquote><p>上面的代码将 EAX 寄存器的值（即2）加上 EBX 寄存器的值（即3），得到结果5，再将这个结果写入第一个运算子 EAX 寄存器。</p><h3 id=76-pop-指令>7.6 pop 指令</h3><p><code>pop</code>指令用于取出 Stack 最近一个写入的值（即最低位地址的值），并将这个值写入运算子指定的位置。</p><blockquote><div><pre><code class=language-clike data-lang=clike>pop    %ebx</code></pre></div></blockquote><p>上面的代码表示，取出 Stack 最近写入的值（即 EBX 寄存器的原始值），再将这个值写回 EBX 寄存器（因为加法已经做完了，EBX 寄存器用不到了）。</p><p>注意，<code>pop</code>指令还会将 ESP 寄存器里面的地址加4，即回收4个字节。</p><h3 id=77-ret-指令>7.7 ret 指令</h3><p><code>ret</code>指令用于终止当前函数的执行，将运行权交还给上层函数。也就是，当前函数的帧将被回收。</p><blockquote><div><pre><code class=language-clike data-lang=clike>ret</code></pre></div></blockquote><p>可以看到，该指令没有运算子。</p><p>随着<code>add_a_and_b</code>函数终止执行，系统就回到刚才<code>main</code>函数中断的地方，继续往下执行。</p><blockquote><div><pre><code class=language-clike data-lang=clike>add    %esp, 8</code></pre></div></blockquote><p>上面的代码表示，将 ESP 寄存器里面的地址，手动加上8个字节，再写回 ESP 寄存器。这是因为 ESP 寄存器的是 Stack 的写入开始地址，前面的<code>pop</code>操作已经回收了4个字节，这里再回收8个字节，等于全部回收。</p><blockquote><div><pre><code class=language-clike data-lang=clike>ret</code></pre></div></blockquote><p>最后，<code>main</code>函数运行结束，<code>ret</code>指令退出程序执行。</p><p><a href=https://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html target=_blank rel="noopener noreferrer" class=external-link>原文地址
-<span class=external-icon>↗</span></a></p></section><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://caoyang2002.xyz/post/2024/05/download_telegram/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>TG 下载器</span></a>
-<a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://caoyang2002.xyz/post/2024/04/sql/><span>SQL 教程</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-24 w-100rem" id=disqus_thread></div><script>const disqusShortname="caoyang2002.xyz",script=document.createElement("script");script.src="https://"+disqusShortname+".disqus.com/embed.js",script.setAttribute("data-timestamp",+new Date),document.head.appendChild(script)</script><div class="giscus mt-24"></div><script src=https://giscus.app/client.js data-repo=caoyang2002/caoyang2002 data-repo-id=R_kgDONgnnzg data-category=Announcements data-category-id=DIC_kwDONgnnzs4ClayH data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script></article></main><div class=ml-2><button class=mobile-toc-toggle><svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36z" fill="#223d60" p-id="7155"/><path d="M210.2 229m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7156"/><path d="M210.2 487m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7157"/><path d="M210.2 745m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7158"/></svg></button><aside class=toc-aside><div class=toc-container><div class=toc-header><h3 class=toc-title>目录</h3><button class=toc-close><svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"/></svg></button></div><nav id=TableOfContents class=toc><nav id=TableOfContents><ul><li><ul><li><a href=#一汇编语言是什么>一、汇编语言是什么？</a></li><li><a href=#二来历>二、来历</a></li><li><a href=#三寄存器>三、寄存器</a></li><li><a href=#四寄存器的种类>四、寄存器的种类</a></li><li><a href=#五内存模型heap>五、内存模型：Heap</a></li><li><a href=#六内存模型stack>六、内存模型：Stack</a></li><li><a href=#七cpu-指令>七、CPU 指令</a><ul><li><a href=#71-一个实例>7.1 一个实例</a></li><li><a href=#72-push-指令>7.2 push 指令</a></li><li><a href=#73-call-指令>7.3 call 指令</a></li><li><a href=#74-mov-指令>7.4 mov 指令</a></li><li><a href=#75-add-指令>7.5 add 指令</a></li><li><a href=#76-pop-指令>7.6 pop 指令</a></li><li><a href=#77-ret-指令>7.7 ret 指令</a></li></ul></li></ul></li></ul></nav></nav></div></aside><style>.toc-aside{position:fixed;top:6rem;bottom:4rem;right:0;width:16rem;z-index:100;transition:transform .3s ease}.toc-container{background:#fff;height:100%;border-radius:.5rem .5rem .5rem .5rem;box-shadow:-2px 0 8px rgba(0,0,0,.1);display:flex;flex-direction:column}.toc-header{position:sticky;border-radius:.5rem .5rem 0 0;top:0;background:#fff;padding:1rem;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;z-index:10}.toc-title{margin:0;font-size:1rem;font-weight:600}.mobile-toc-toggle{display:none;position:fixed;top:6rem;right:1rem;z-index:99;width:3rem;height:3rem;border-radius:50%;background:#fff;border:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.1);color:#4b5563;cursor:pointer;transition:all .2s}.mobile-toc-toggle:hover{background:#f3f4f6}.mobile-toc-toggle .menu-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.toc-close{padding:.5rem;background:0 0;border:none;color:--bg;cursor:pointer;transition:all .2s}.toc-close:hover{color:#111827}.toc{flex:1;overflow-y:auto;padding:1rem;scrollbar-gutter:stable}.toc ul{list-style:none;padding-left:1rem;margin:0}.toc li{margin:.5rem 0}.toc a{display:block;padding:.25rem .5rem;color:#4b5563;text-decoration:none;border-radius:.25rem;transition:all .2s}.toc a:hover{background-color:#f3f4f6;color:#111827}.toc a:active{background-color:#f3f4f6;color:#111827;font-weight:500}.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-track{background:0 0}.toc::-webkit-scrollbar-thumb{background-color:#d1d1d1;border-radius:4px}@media(max-width:912px){.mobile-toc-toggle{display:flex;justify-content:center;align-items:center}.toc-aside{transform:translateX(100%);width:80vw;max-width:20rem}.toc-aside.show{transform:translateX(0)}}h1,h2,h3,h4,h5,h6{scroll-margin-top:100px}</style><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".toc-aside"),t=document.querySelector(".mobile-toc-toggle"),n=document.querySelector(".toc-close");t?.addEventListener("click",()=>{e?.classList.add("show")}),n?.addEventListener("click",()=>{e?.classList.remove("show")}),document.addEventListener("click",n=>{window.innerWidth<=912&&e?.classList.contains("show")&&!e.contains(n.target)&&!t?.contains(n.target)&&e.classList.remove("show")});const s=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id"),n=document.querySelector(`.toc a[href="#${t}"]`);e.intersectionRatio>0&&(document.querySelectorAll(".toc a.active").forEach(e=>{e.classList.remove("active")}),n?.classList.add("active"))})},{rootMargin:"-20% 0px -80% 0px"});document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(e=>{s.observe(e)})})</script></div></div><footer class="flex items-center text-xs uppercase"><div class="mr-auto opacity-60">&copy; 2025
-<a class=link href=https://caoyang2002.xyz/>caoyang2002</a></div><div><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><p class="link mx-6 opacity-60">本站访问
-<span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span>
-次</p></div><a class="link mx-6 opacity-60" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
-<a class="link mx-6 opacity-60" href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a>
-<a class="link opacity-60" href=https://github.com/caoyang2002/hugo-focus rel=noopener target=_blank>hugo-focus</a></footer><style>footer{position:fixed;bottom:0;left:0;right:0;z-index:50;width:100%;padding:.5rem;padding-bottom:calc(.5rem + var(--safe-padding-bottom));padding-left:max(.5rem,var(--safe-padding-left));padding-right:max(.5rem,var(--safe-padding-right));display:flex;justify-content:center;align-items:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(12px);background:rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.3);box-shadow:0 -4px 20px rgba(0,0,0,5%)}.dark footer{background:rgba(0,0,0,.85);border-top-color:rgba(255,255,255,.1)}.footer-content{width:100%;max-width:var(--w);margin:0 auto;padding:0 1rem;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:1rem}.footer-element{padding:.75rem 1.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;border-radius:.5rem;background:rgba(255,255,255,.1);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:all .2s ease}.footer-element:hover{opacity:1;background:rgba(255,255,255,.2)}.dark .footer-element{background:rgba(255,255,255,5%)}.dark .footer-element:hover{background:rgba(255,255,255,.1)}@media(max-width:768px){footer{padding-top:.5rem;padding-bottom:calc(.5rem + env(safe-area-inset-bottom))}.footer-content{padding:0 .5rem;gap:.5rem}.footer-element{padding:.5rem 1rem;font-size:.75rem}}@media(min-width:768px){.footer-element{font-size:.875rem}}@media(min-width:1024px){.footer-content{padding:0 2rem;gap:2rem}.footer-element{padding:.75rem 2rem}}</style></body></html>
+   ret</code></pre>
+</div>
+
+</blockquote>
+<p>可以看到，原程序的两个函数<code>add_a_and_b</code>和<code>main</code>，对应两个标签<code>_add_a_and_b</code>和<code>_main</code>。每个标签里面是该函数所转成的 CPU 运行流程。</p>
+<p>每一行就是 CPU 执行的一次操作。它又分成两部分，就以其中一行为例。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">push   %ebx</code></pre>
+</div>
+
+</blockquote>
+<p>这一行里面，<code>push</code>是 CPU 指令，<code>%ebx</code>是该指令要用到的运算子。一个 CPU 指令可以有零个到多个运算子。</p>
+<p>下面我就一行一行讲解这个汇编程序，建议读者最好把这个程序，在另一个窗口拷贝一份，省得阅读的时候再把页面滚动上来。</p>
+<h3 id="72-push-指令">7.2 push 指令</h3>
+<p>根据约定，程序从<code>_main</code>标签开始执行，这时会在 Stack 上为<code>main</code>建立一个帧，并将 Stack 所指向的地址，写入 ESP 寄存器。后面如果有数据要写入<code>main</code>这个帧，就会写在 ESP 寄存器所保存的地址。</p>
+<p>然后，开始执行第一行代码。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">push   3</code></pre>
+</div>
+
+</blockquote>
+<p><code>push</code>指令用于将运算子放入 Stack，这里就是将<code>3</code>写入<code>main</code>这个帧。</p>
+<p>虽然看上去很简单，<code>push</code>指令其实有一个前置操作。它会先取出 ESP 寄存器里面的地址，将其减去4个字节，然后将新地址写入 ESP 寄存器。使用减法是因为 Stack 从高位向低位发展，4个字节则是因为<code>3</code>的类型是<code>int</code>，占用4个字节。得到新地址以后， 3 就会写入这个地址开始的四个字节。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">push   2</code></pre>
+</div>
+
+</blockquote>
+<p>第二行也是一样，<code>push</code>指令将<code>2</code>写入<code>main</code>这个帧，位置紧贴着前面写入的<code>3</code>。这时，ESP 寄存器会再减去 4个字节（累计减去8）。</p>
+<p><img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012216.png" alt="img"></p>
+<h3 id="73-call-指令">7.3 call 指令</h3>
+<p>第三行的<code>call</code>指令用来调用函数。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">call   _add_a_and_b</code></pre>
+</div>
+
+</blockquote>
+<p>上面的代码表示调用<code>add_a_and_b</code>函数。这时，程序就会去找<code>_add_a_and_b</code>标签，并为该函数建立一个新的帧。</p>
+<p>下面就开始执行<code>_add_a_and_b</code>的代码。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">push   %ebx</code></pre>
+</div>
+
+</blockquote>
+<p>这一行表示将 EBX 寄存器里面的值，写入<code>_add_a_and_b</code>这个帧。这是因为后面要用到这个寄存器，就先把里面的值取出来，用完后再写回去。</p>
+<p>这时，<code>push</code>指令会再将 ESP 寄存器里面的地址减去4个字节（累计减去12）。</p>
+<h3 id="74-mov-指令">7.4 mov 指令</h3>
+<p><code>mov</code>指令用于将一个值写入某个寄存器。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">mov    %eax, [%esp&#43;8]</code></pre>
+</div>
+
+</blockquote>
+<p>这一行代码表示，先将 ESP 寄存器里面的地址加上8个字节，得到一个新的地址，然后按照这个地址在 Stack 取出数据。根据前面的步骤，可以推算出这里取出的是<code>2</code>，再将<code>2</code>写入 EAX 寄存器。</p>
+<p>下一行代码也是干同样的事情。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">mov    %ebx, [%esp&#43;12]</code></pre>
+</div>
+
+</blockquote>
+<p>上面的代码将 ESP 寄存器的值加12个字节，再按照这个地址在 Stack 取出数据，这次取出的是<code>3</code>，将其写入 EBX 寄存器。</p>
+<h3 id="75-add-指令">7.5 add 指令</h3>
+<p><code>add</code>指令用于将两个运算子相加，并将结果写入第一个运算子。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">add    %eax, %ebx</code></pre>
+</div>
+
+</blockquote>
+<p>上面的代码将 EAX 寄存器的值（即2）加上 EBX 寄存器的值（即3），得到结果5，再将这个结果写入第一个运算子 EAX 寄存器。</p>
+<h3 id="76-pop-指令">7.6 pop 指令</h3>
+<p><code>pop</code>指令用于取出 Stack 最近一个写入的值（即最低位地址的值），并将这个值写入运算子指定的位置。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">pop    %ebx</code></pre>
+</div>
+
+</blockquote>
+<p>上面的代码表示，取出 Stack 最近写入的值（即 EBX 寄存器的原始值），再将这个值写回 EBX 寄存器（因为加法已经做完了，EBX 寄存器用不到了）。</p>
+<p>注意，<code>pop</code>指令还会将 ESP 寄存器里面的地址加4，即回收4个字节。</p>
+<h3 id="77-ret-指令">7.7 ret 指令</h3>
+<p><code>ret</code>指令用于终止当前函数的执行，将运行权交还给上层函数。也就是，当前函数的帧将被回收。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">ret</code></pre>
+</div>
+
+</blockquote>
+<p>可以看到，该指令没有运算子。</p>
+<p>随着<code>add_a_and_b</code>函数终止执行，系统就回到刚才<code>main</code>函数中断的地方，继续往下执行。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">add    %esp, 8</code></pre>
+</div>
+
+</blockquote>
+<p>上面的代码表示，将 ESP 寄存器里面的地址，手动加上8个字节，再写回 ESP 寄存器。这是因为 ESP 寄存器的是 Stack 的写入开始地址，前面的<code>pop</code>操作已经回收了4个字节，这里再回收8个字节，等于全部回收。</p>
+<blockquote>
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-clike" data-lang="clike">ret</code></pre>
+</div>
+
+</blockquote>
+<p>最后，<code>main</code>函数运行结束，<code>ret</code>指令退出程序执行。</p>
+<p>
+<a href="https://www.ruanyifeng.com/blog/2018/01/assembly-language-primer.html"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   原文地址
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+</section>
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/05/download_telegram/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>TG 下载器</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/post/2024/04/sql/"
+            ><span>SQL 教程</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.xyz";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+
+            
+            <div class="ml-2">
+
+
+<button class="mobile-toc-toggle">
+<svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 522.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 780.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36z" fill="#223D60" p-id="7155"></path><path d="M210.2 229m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7156"></path><path d="M210.2 487m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7157"></path><path d="M210.2 745m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7158"></path></svg>
+</button>
+
+
+<aside class="toc-aside">
+
+  
+  <div class="toc-container">
+    <div class="toc-header">
+      <h3 class="toc-title">目录</h3>
+
+      <button class="toc-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一汇编语言是什么">一、汇编语言是什么？</a></li>
+        <li><a href="#二来历">二、来历</a></li>
+        <li><a href="#三寄存器">三、寄存器</a></li>
+        <li><a href="#四寄存器的种类">四、寄存器的种类</a></li>
+        <li><a href="#五内存模型heap">五、内存模型：Heap</a></li>
+        <li><a href="#六内存模型stack">六、内存模型：Stack</a></li>
+        <li><a href="#七cpu-指令">七、CPU 指令</a>
+          <ul>
+            <li><a href="#71-一个实例">7.1 一个实例</a></li>
+            <li><a href="#72-push-指令">7.2 push 指令</a></li>
+            <li><a href="#73-call-指令">7.3 call 指令</a></li>
+            <li><a href="#74-mov-指令">7.4 mov 指令</a></li>
+            <li><a href="#75-add-指令">7.5 add 指令</a></li>
+            <li><a href="#76-pop-指令">7.6 pop 指令</a></li>
+            <li><a href="#77-ret-指令">7.7 ret 指令</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+</aside>
+
+
+<style>
+ 
+.toc-aside {
+  position: fixed;
+  top: 6rem;
+  bottom: 4rem;
+  right: 0;
+  width: 16rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+ 
+.toc-container {
+  background: white;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.toc-header {
+  position: sticky;
+  border-radius: 0.5rem 0.5rem 0 0;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.toc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ 
+.mobile-toc-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+   
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-toc-toggle:hover {
+  background: #f3f4f6;
+}
+
+.mobile-toc-toggle .menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 
+.toc-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: --bg;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toc-close:hover {
+  color: #111827;
+}
+
+ 
+.toc {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a:active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+@media (max-width: 912px) {
+  .mobile-toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toc-aside {
+    transform: translateX(100%);
+    width: 80vw;
+    max-width: 20rem;
+  }
+
+  .toc-aside.show {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tocAside = document.querySelector('.toc-aside');
+  const mobileToggle = document.querySelector('.mobile-toc-toggle');
+  const closeButton = document.querySelector('.toc-close');
+
+
+  
+  mobileToggle?.addEventListener('click', () => {
+    tocAside?.classList.add('show');
+  });
+
+  
+  closeButton?.addEventListener('click', () => {
+    tocAside?.classList.remove('show');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 912 &&
+        tocAside?.classList.contains('show') &&
+        !tocAside.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      tocAside.classList.remove('show');
+    }
+  });
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+
+});
+</script>
+</div>
+
+            
+        </div>
+
+        <footer class="flex items-center text-xs uppercase">
+    
+    <div class="mr-auto opacity-60">
+         &copy; 2025
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        
+    </div>
+
+    
+    <div>
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+        <p class="link mx-6 opacity-60">
+            本站访问
+            <span id="busuanzi_value_page_pv"
+                ><i class="fa fa-spinner fa-spin"></i
+            ></span>
+            次
+        </p>
+    </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+        
+        
+    </body>
+</html>
