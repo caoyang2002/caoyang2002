@@ -1,18 +1,113 @@
 +++
 date = '2025-01-21T01:53:21+08:00'
 draft = false
-title = 'markdown-test'
+title = 'Hugo-Focus 主题介绍'
 toc = true
+mermaid = true  # 启用 mermaid
+codeRunners = true
 +++
 
-<blockquote alt="success"><p>目录</p></blockquote>
+# 简述
 
-[toc]
+这是一个专注与编程的博客设计，简洁美观和可用性是主题的根本。
 
-<div style="page-break-after:always"></div>
+参考了我此前为 `Typora` 开发的 `Thompsgo` 主题
+
+# 特性
+
+## 运行代码
+
+**支持的语言：**
+- `python (wasm)`
+- `cpp (playground)`
+- `lisp (playground)`
+- `rust (playground)`
+- `go (playground)`
+- `ts ()`
+- `js (原生)`
+
+**短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）**
+- `swift`
+- `ruby`
+
+
+
+## 代码运行示例
+
+> **Rust**
+>
+> ```rust
+>fn main() {
+> println!("Hello from Rust!");
+> }
+>   ```
+
+
+>**Go**
+>
+>```go
+>package
+>import "fmt"
+>func main(){
+>	fmt.print("hello")
+>}
+>```
+
+> **Ruby**
+>
+> ```ruby
+> puts "Hello World"
+> ```
+
+> **TypeScript**
+>
+> ```ts
+> console.log("hello")
+> ```
+
+> **Swift**
+>
+> ```swift
+> print("Hello, world!")
+> ```
+
+> **C++**
+>
+> ```c++
+> #include <iostream>
+> int main(){
+>     std::cout << "Hello World!";
+>     return 0;
+> }
+> ```
+
+> **Java**
+>
+> ```java
+> class HelloWorld {
+>   public static void main(String[] args) {
+>     System.out.println("Hello, World!");
+>   }
+> }
+> ```
+
+> **Lisp**
+>
+> ```lisp
+> (progn
+>   (format t "Hello from Lisp!")
+>   "Hello from Lisp!")
+> ```
+
+> **Python**
+>
+> ```python
+> print("test")
+> ```
+
+
 
 # 一、Thompsgo主题简介
-
 
 <font title="blue"><span>感谢dyzj、黑石、github、krafty、purple、Volantis、stack overflow等主题和网站作者的开发和讲解，本主题在他们的基础上进行开发</span></font>
 
@@ -135,7 +230,7 @@ toc = true
 
 
    您可以像这样创建脚注[^footnote].
-   [^footnote]: Here is the *text* of the **footnote**.
+[^footnote]: Here is the *text* of the **footnote**.
    ```
 
    - 示例
@@ -612,22 +707,20 @@ Typora 现在支持 YAML Front Matter 。 在文章顶部输入 --- 然后按 En
 
 
 
-   - 基础
+  - 基础
 
-   - 语法
+  - 语法
 
-     - 形状
+    - 形状
 
-       - 默认
+      - 默认
 
-         ```mermaid
-         mindmap
-             I am the default shape
-         ```
+        ```mermaid
+        mindmap
+            I am the default shape
+        ```
 
-
-
-       - `[]`矩形
+      - `[]`矩形
 
          ```mermaid
          mindmap
@@ -897,7 +990,7 @@ sequenceDiagram
     - 循环
 
       ```markdown
-    loop 循环说明
+      loop 循环说明
       	循环内容
       end
       ```
@@ -1600,7 +1693,7 @@ pie title 字符统计
           "Exl" : 10.01
           "Ppt" :  5
       ```
-   9.
+      9.
    10. | 参数           | 描述                                             | 默认值 |
        | :------------- | :----------------------------------------------- | :----- |
        | `textPosition` | 馅饼片标签的轴向位置，从中心0.0到圆圈外缘的1.0。 | `0.75` |
@@ -1612,42 +1705,42 @@ pie title 字符统计
 #### 图片
 
 1. 原图
- ![no](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![no](/images/test/show.jpg)
 
 ##### 模糊
 ```markdown
 ![circle](图片地址)
 ![圆](图片地址)
 ```
- ![circle](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![circle](/images/test/show.jpg)
 
 ##### 自适应缩小
 ```markdown
 ![zoom](图片地址)
 ![缩](图片地址)
 ```
- ![zoom](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![zoom](/images/test/show.jpg)
 
 ##### 阴影圆角
 ```markdown
 ![shadow](图片地址)
 ![阴影](图片地址)
 ```
- ![shadow](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![shadow](/images/test/show.jpg)
 
 ##### 虚线
 ```markdown
 ![dline](图片地址)
 ![虚线](图片地址)
 ```
- ![dline](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![dline](/images/test/show.jpg)
 
 ##### 实线
 ```markdown
 ![line](图片地址)
 ![线](图片地址)
 ```
- ![line](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![line](/images/test/show.jpg)
 
 #####  阴影圆角和自适应缩放
 ```markdown
@@ -1656,40 +1749,40 @@ pie title 字符统计
 ![圆角-阴影](图片地址)
 ![阴影-圆角](图片地址)
 ```
- ![shadow-zoom](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![shadow-zoom](/images/test/show.jpg)
 
 ##### 色彩反转
 ```markdown
 ![rev](图片地址)
 ![反](图片地址)
 ```
- ![rev](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![rev](/images/test/show.jpg)
 
 ##### 半透明
 ```markdown
 ![opa](图片地址)
 ![半透](图片地址)
 ```
- ![opa](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![opa](/images/test/show.jpg)
 
 ##### 毛玻璃
 ```markdown
 ![glazing](图片地址)
 ![毛玻璃](图片地址)
 ```
- ![gla](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![gla](/images/test/show.jpg)
 
 ##### 模糊特效（交互）
 ```markdown
 ![blur](图片地址)
 ```
- ![blur](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![blur](/images/test/show.jpg)
 
 ##### 图片单色特效（交互）
 ```markdown
 ![gray](图片地址)
 ```
- ![gray](/Users/caoyang/Desktop/IMG_3637.JPG)
+ ![gray](/images/test/show.jpg)
 
 #### 文字
 ##### 图片靠右显示
