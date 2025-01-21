@@ -105,6 +105,8 @@ ordered = false
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
 toc = true                             # 全局启用目录
+# 背景图片
+backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
 
 # 社交媒体链接
 twitter = 'caoyang2002'
@@ -172,6 +174,6 @@ guessSyntax = true
 # lineNos = true
 lineNumbersInTable = true
 # 使用 classes 而不是内联样式
-# noClasses = false
+noClasses = false
 # # 选择高亮主题
 style = "monokai" # 代码高亮主题

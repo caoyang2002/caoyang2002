@@ -1,0 +1,178 @@
+# 基础配置
+baseURL = 'https://caoyang2002.xyz/'
+languageCode = 'zh-CN'
+title = 'caoyang2002'
+theme = "hugo-focus"
+
+# 基础优化配置
+enableGitInfo = true
+hasCJKLanguage = true
+summaryLength = 140
+DefaultContentLanguage = "zh"
+
+# 全局功能开关
+comments = true
+math = true
+pagination.pagerSize = 10
+
+# 导航菜单配置
+[[menu.main]]
+identifier = "/"
+name = "首页"
+url = "/"
+weight = 10
+
+[[menu.main]]
+identifier = "about"
+name = "关于"
+url = "/about/"
+weight = 20
+
+[[menu.main]]
+identifier = "contact"
+name = "联系"
+url = "/contact/"
+weight = 30
+
+[[menu.main]]
+identifier = "guestbook"
+name = "留言"
+url = "/guestbook/"
+weight = 40
+
+# 隐私相关配置
+[privacy.vimeo]
+disabled = false
+simple = true
+
+# 评论服务配置
+[services.disqus]
+shortname = 'caoyang2002.xyz'
+
+# 分类配置
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+# Giscus评论系统配置
+[params.giscus]
+repo = 'caoyang2002/caoyang2002'
+repoId = 'R_kgDONgnnzg'
+category = 'Announcements'
+categoryId = 'DIC_kwDONgnnzs4ClayH'
+mapping = 'pathname'
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "top"
+# theme = "preferred_color_scheme"
+crossorigin = "anonymous"
+theme = 'light'
+lang = 'zh-CN'
+
+# RSS 订阅配置
+[params.rss]
+limit = 20
+fullContent = true
+
+# 文章配置
+[permalinks]
+posts = "/post/:year/:month/:filename/"
+
+# 图片配置
+[imaging]
+quality = 75
+resampleFilter = "Lanczos"
+anchor = "Smart"
+
+[imaging.exif]
+disableDate = true
+disableLatLong = true
+
+# Markdown配置
+[markup.tableOfContents]
+endLevel = 4
+startLevel = 1
+ordered = false
+# startLevel = 2
+
+# [markup.goldmark.renderer]
+# unsafe = true
+
+# 主题参数配置
+[params]
+color = 'linen'
+subtitle = 'The Best Widgets on Earth'
+toc = true                                   # 全局启用目录
+backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
+
+# 社交媒体链接
+twitter = 'caoyang2002'
+github = 'caoyang2002'
+instagram = 'caoyang2002'
+
+# 个人信息配置
+avatar = '/about/avatar.jpg'
+name = '曹洋 simons'
+bio = '用光的艺术'
+
+disablePostNavigation = false # 禁用文章导航
+
+# 其他设置
+disableHLJS = false # 禁用 highlight.js 代码高亮
+# disablePostNavigation = true             # 禁用文章导航
+monoDarkIcon = false # 使用单色暗模式图标
+# gravatarCdn = 'GRAVATAR_CDN_LINK'        # Gravatar CDN 链接，例如 'https://cdn.v2ex.com/gravatar/'
+math = true        # 全局启用 KaTeX 数学公式排版
+localKatex = false # 使用本地 KaTeX js/css 而不是 CDN
+# graphCommentId = "YOUR_GRAPH_COMMENT_ID" # 使用 Graph Comment（Disqus 替代品）
+favicon = "favicon.ico"                 # 自定义网站图标
+appleTouchIcon = "apple-touch-icon.png" # 自定义苹果设备触摸图标
+
+# RTL 支持
+direction = "ltr" # 支持从右到左的语言排版
+
+pageViewConter = true
+
+[params.contact]
+email = 'info@example.org'
+phone = '+1 202-555-1212'
+
+# 主题模块导入
+# [[module.imports]]
+# path = "github.com/caoyang2002/hugo-focus"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true     # 允许原始 HTML
+hardWraps = false # 控制换行行为
+
+[markup.goldmark.extensions]
+typographer = true
+footnote = true
+linkify = true
+strikethrough = true
+table = true
+
+[markup.highlight]
+# 启用代码围栏功能
+codeFences = true
+# 启用语言猜测
+guessSyntax = true
+# 启用行号
+# lineNos = true
+lineNumbersInTable = true
+# 使用 classes 而不是内联样式
+noClasses = false
+# # 选择高亮主题
+style = "monokai" # 代码高亮主题
