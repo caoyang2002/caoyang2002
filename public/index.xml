@@ -78,7 +78,7 @@ $$&lt;/p>
 &lt;p>&lt;strong>支持的语言：&lt;/strong>&lt;/p>
 &lt;ul>
 &lt;li>&lt;code>python (wasm)&lt;/code>&lt;/li>
-&lt;li>&lt;code>lisp ( JavaScript 实现的 Common Lisp (JSCL) 解释器)&lt;/code>&lt;/li>
+&lt;li>&lt;code>lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)&lt;/code>&lt;/li>
 &lt;li>&lt;code>cpp (playground)&lt;/code>&lt;/li>
 &lt;li>&lt;code>rust (playground)&lt;/code>&lt;/li>
 &lt;li>&lt;code>go (playground)&lt;/code>&lt;/li>

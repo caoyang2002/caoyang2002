@@ -19,7 +19,7 @@ codeRunners = true
 
 **支持的语言：**
 - `python (wasm)`
-- `lisp ( JavaScript 实现的 Common Lisp (JSCL) 解释器)`
+- `lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)`
 - `cpp (playground)`
 - `rust (playground)`
 - `go (playground)`
