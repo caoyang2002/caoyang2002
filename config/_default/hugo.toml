@@ -1,6 +1,5 @@
 # 基础配置
 baseURL = 'https://caoyang2002.xyz'
-staticDir = ['static']  # 确保静态资源目录配置正确
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
@@ -173,6 +172,7 @@ style = "monokai" # 代码高亮主题
 # 中文
 [languages.zh]
    contentDir = 'content/zh'
+
    disabled = false
    languageCode = 'zh-CN'
    languageDirection = 'ltr'
