@@ -1,8 +1,15 @@
 # 基础配置
 baseURL = 'https://caoyang2002.xyz'
+staticDir = ['static']  # 确保静态资源目录配置正确
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
+ignoreLogs = ['warning-goldmark-raw-html']
+# 设置默认语言
+defaultContentLanguage = "zh"
+# 将内容放在语言子目录下
+defaultContentLanguageInSubdir = true
+
 
 # 基础优化配置
 enableGitInfo = true
@@ -13,7 +20,7 @@ summaryLength = 140
 # 全局功能开关
 comments = true
 math = true
-pagination.pagerSize = 10
+
 
 
 # 隐私相关配置
@@ -86,6 +93,7 @@ ordered = false
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
 toc = true                             # 全局启用目录
+paginationSize = 10
 # 背景图片
 # backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
 
@@ -159,10 +167,7 @@ style = "monokai" # 代码高亮主题
 # 多语言支持
 
 
-# 设置默认语言
-defaultContentLanguage = "zh"
-# 将内容放在语言子目录下
-defaultContentLanguageInSubdir = true
+
 
 # 语言配置
 [languages]
@@ -173,7 +178,7 @@ defaultContentLanguageInSubdir = true
    languageCode = 'zh-CN'
    languageDirection = 'ltr'
    languageName = 'Chinese'
-   title = 'Hugo Focus 文档'
+   title = 'caoyang 2002'
    weight = 1
 [languages.zh.params]
     subtitle = '中文文档'
@@ -185,7 +190,7 @@ defaultContentLanguageInSubdir = true
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'Hugo Focus Documentation'
+    title = 'caoyang2002'
     weight = 2
 [languages.en.params]
 subtitle = 'Reference, Tutorials, and Explanations'
@@ -197,7 +202,7 @@ subtitle = 'Reference, Tutorials, and Explanations'
     languageCode = 'es-ES'
     languageDirection = 'ltr'
     languageName = 'Español'
-    title = 'Documentación de Hugo Focus'
+    title = 'caoyang2002'
     weight = 3
 [languages.es.params]
 subtitle = 'Referencia, Tutoriales y Explicaciones'
