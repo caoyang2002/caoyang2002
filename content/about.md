@@ -5,11 +5,11 @@ lastmod: 2024-03-21T15:04:05+08:00
 draft: false
 weight: 1
 categories: ["关于"]
-tags: ["标签1", "标签2"]
-aliases:  ["about-us", "about-hugo", "contact"]
+tags: ["关于"]
+aliases:  ["about-us", "about-hugo"]
 author: "simons"
 description: "关于我以及这个网站"
-featuredImage: "featured-image.jpg"
+featuredImage: "/about/simons.jpg"
 toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录
 ---
