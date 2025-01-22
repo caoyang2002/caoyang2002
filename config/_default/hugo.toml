@@ -87,8 +87,10 @@ startLevel = 1
 ordered = false
 # startLevel = 2
 
-# [markup.goldmark.renderer]
-# unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
+
+
 
 # 主题参数配置
 [params]

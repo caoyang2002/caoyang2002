@@ -4,7 +4,7 @@ draft = false
 title = 'Hugo-Focus 主题介绍'
 toc = true
 mermaid = true  # 启用 mermaid
-codeRunners = true
+codeRunners = true #启用运行代码
 +++
 
 # 一、简述
@@ -25,10 +25,6 @@ codeRunners = true
 - `go (playground)`
 - `ts (TypeScript 的 JavaScript 实现)`
 - `js (原生)`
-
-**短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）**
-- `swift`
-- `ruby`
 
 ## 2. 代码运行示例
 
@@ -80,33 +76,57 @@ codeRunners = true
 > }
 > ```
 
-> **Swift**
->
-> ```swift
-> print("Hello, world!")
-> ```
+## 2. mermaid
 
-> **Ruby**
->
-> ```ruby
-> puts "Hello World"
-> ```
+```mermaid
+sequenceDiagram
+    张三->>李四: 我是张三！
+    李四-->>张三: 我是李四!
+    张三-)李四: 好的!
+```
 
-> **Java**
->
-> ```java
-> class HelloWorld {
->   public static void main(String[] args) {
->     System.out.println("Hello, World!");
->   }
-> }
-> ```
+## 3. 数学公式
 
-# 特殊
+$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
+    \mathbf{i} & \mathbf{j} & \mathbf{k} \\
+    \frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
+    \frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+    \end{vmatrix}
+$$
+
+## 4.
+
+## 5. 多语言
+
+参考 hugo 的多语言配置，默认使用路径语言参数（例如`/en`）
+
+## 6. 目录
+
+在移动端支持折叠和展开，并支持目录标题跳转
 
 
-# 参考
-Thompsgo
+## 7. 搜索
+
+使用模糊搜索库 `fuse.js` 实现搜索功能
+
+## 8. 博客统计
+
+- 博客文章基础统计
+- 标签云
+- 热门文章
+- 归档
+
+
+## 9. 日/夜模式
+
+参考 `Hugo-Paper`
+
+
+## 10. 评论
+
+参考 `Hugo-Paper`
+
 
 
 # 三、基本编辑
@@ -1747,24 +1767,26 @@ pie title 字符统计
  ![gray](/images/test/show.jpg)
 
 #### 文字
-##### 图片靠右显示
+<!-- ##### 图片靠右显示
 `<img src="https://static.cnbetacdn.com/article/2020/0626/f049de2172d4580.jpg" style="zoom: 50%;" align=right />`
 <img src="https://static.cnbetacdn.com/article/2020/0626/f049de2172d4580.jpg" style="zoom: 50%;" align=right />
 
 ##### 图片靠左显示
 `<img src="https://static.cnbetacdn.com/article/2020/0626/f049de2172d4580.jpg" style="zoom: 50%;" align=left />`
-<img src="https://static.cnbetacdn.com/article/2020/0626/f049de2172d4580.jpg" style="zoom: 50%;" align=left />
+<img src="https://static.cnbetacdn.com/article/2020/0626/f049de2172d4580.jpg" style="zoom: 50%;" align=left /> -->
 
 ##### 隐藏文本
   1. 隐藏可显示
 
-    `<span alt="hide"><span>隐藏文本</span></span>`
-    <span alt="hide"><span>隐藏文本</span></span>
+  `<span alt="hide"><span>隐藏文本</span></span>`
+
+  <span alt="hide"><span>隐藏文本</span></span>
 
   2. 隐藏不可显示
 
-    `<span style="display:none">导出时会被隐藏</span>`
-    <span style="display:none">I am hidden after export</span>
+  `<span style="display:none">导出时会被隐藏</span>`
+
+  <span style="display:none">I am hidden after export</span>
 
 
 

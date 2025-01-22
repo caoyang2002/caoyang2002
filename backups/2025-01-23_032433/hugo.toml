@@ -9,7 +9,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 # 设置默认语言
 defaultContentLanguage = "zh"
 # 将内容放在语言子目录下
-defaultContentLanguageInSubdir = true
+defaultContentLanguageInSubdir = false
 
 
 # 基础优化配置
@@ -87,8 +87,10 @@ startLevel = 1
 ordered = false
 # startLevel = 2
 
-# [markup.goldmark.renderer]
-# unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
+
+
 
 # 主题参数配置
 [params]
@@ -172,7 +174,8 @@ style = "monokai" # 代码高亮主题
 # 中文
 [languages.zh]
    contentDir = 'content/zh'
-
+ staticDir = ['static']
+   notFound = "/404.html"
    disabled = false
    languageCode = 'zh-CN'
    languageDirection = 'ltr'
@@ -185,6 +188,8 @@ style = "monokai" # 代码高亮主题
 # 英语
 [languages.en]
     contentDir = 'content/en'
+     staticDir = ['static']
+
     disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
@@ -197,6 +202,7 @@ subtitle = 'Reference, Tutorials, and Explanations'
 # 西班牙语
 [languages.es]
     contentDir = 'content/es'
+    staticDir = ['static']
     disabled = false
     languageCode = 'es-ES'
     languageDirection = 'ltr'
