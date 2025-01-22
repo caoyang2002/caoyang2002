@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Hugo Focus 文档</title><link>https://caoyang2002.xyz/zh/posts/</link><description>Recent content in Posts on Hugo Focus 文档</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/zh/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/zh/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>Hugo-Focus 主题介绍</title><link>https://caoyang2002.xyz/zh/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述">一、简述&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang 2002</title><link>https://caoyang2002.xyz/zh/posts/</link><description>Recent content in Posts on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/zh/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/zh/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>Hugo-Focus 主题介绍</title><link>https://caoyang2002.xyz/zh/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述">一、简述&lt;/h1>
 &lt;p>这是一个专注于编程的 Hugo 博客主题。&lt;/p>
 &lt;p>参考了我此前为 &lt;code>Typora&lt;/code> 开发的 
 &lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo"
@@ -1513,7 +1513,6 @@ func TestAll(t *testing.T) {
 &lt;/a>
 &lt;/li>
 &lt;/ul>
-&lt;p>{/bs-accord}&lt;/p>
 &lt;h1 id="一我维护的其他站">一、我维护的其他站&lt;/h1>
 &lt;h2 id="move-学习">Move 学习&lt;/h2>
 &lt;p>
@@ -1532,11 +1531,31 @@ func TestAll(t *testing.T) {
 &lt;/p>
 &lt;h1 id="二编程相关内容">二、编程相关内容&lt;/h1>
 &lt;h2 id="各种镜像收录">各种镜像收录&lt;/h2>
-&lt;p>{bs-accord style=common title=鱼香}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=亦是美网络}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=达内开发文档服务器}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=虚拟手机号}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=共享站}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</guid><description>&lt;div>
+&lt;!-- raw HTML omitted -->
+&lt;p>iframe src=&amp;ldquo;
+&lt;a href="http://www.yishimei.cn/%22"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://www.yishimei.cn/"
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+ width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;600&amp;rdquo;&amp;gt;&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;p>NPS: http://101.43.125.94:20002/
+DS220j-SSH: http://101.43.125.94:20010/
+DS220j-DSM: http://101.43.125.94:20011/&lt;/p>
+&lt;p>Windows10: http://101.43.125.94:20020/&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</guid><description>&lt;div>
  &lt;pre>&lt;code class="language-toml" data-lang="toml"># 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数

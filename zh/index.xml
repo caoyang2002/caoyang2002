@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo Focus 文档</title><link>https://caoyang2002.xyz/zh/</link><description>Recent content on Hugo Focus 文档</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/zh/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>关于</title><link>https://caoyang2002.xyz/zh/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/about/</guid><description>&lt;h1 id="关于我">关于我&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/zh/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/zh/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/zh/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>关于</title><link>https://caoyang2002.xyz/zh/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/zh/about/</guid><description>&lt;h1 id="关于我">关于我&lt;/h1>
 &lt;p>&lt;img src="https://caoyang2002.xyz/about/simons.jpg" alt="me">&lt;/p>
 &lt;p>你好，我是曹洋。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p>
 &lt;p>下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p>
@@ -1520,7 +1520,6 @@ func TestAll(t *testing.T) {
 &lt;/a>
 &lt;/li>
 &lt;/ul>
-&lt;p>{/bs-accord}&lt;/p>
 &lt;h1 id="一我维护的其他站">一、我维护的其他站&lt;/h1>
 &lt;h2 id="move-学习">Move 学习&lt;/h2>
 &lt;p>
@@ -1539,11 +1538,31 @@ func TestAll(t *testing.T) {
 &lt;/p>
 &lt;h1 id="二编程相关内容">二、编程相关内容&lt;/h1>
 &lt;h2 id="各种镜像收录">各种镜像收录&lt;/h2>
-&lt;p>{bs-accord style=common title=鱼香}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=亦是美网络}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=达内开发文档服务器}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=虚拟手机号}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=共享站}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</guid><description>&lt;div>
+&lt;!-- raw HTML omitted -->
+&lt;p>iframe src=&amp;ldquo;
+&lt;a href="http://www.yishimei.cn/%22"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://www.yishimei.cn/"
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+ width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;600&amp;rdquo;&amp;gt;&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;p>NPS: http://101.43.125.94:20002/
+DS220j-SSH: http://101.43.125.94:20010/
+DS220j-DSM: http://101.43.125.94:20011/&lt;/p>
+&lt;p>Windows10: http://101.43.125.94:20020/&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/12/about_hugo_config/</guid><description>&lt;div>
  &lt;pre>&lt;code class="language-toml" data-lang="toml"># 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
