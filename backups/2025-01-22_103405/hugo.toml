@@ -41,6 +41,11 @@ url = "/guestbook/"
 weight = 40
 
 # 隐私相关配置
+[privacy]
+[privacy.x]
+disable = false
+enableDNT = false
+simple = false
 [privacy.vimeo]
 disabled = false
 simple = true
@@ -104,8 +109,9 @@ ordered = false
 [params]
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
-toc = true                                   # 全局启用目录
-backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
+toc = true                             # 全局启用目录
+# 背景图片
+# backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
 
 # 社交媒体链接
 twitter = 'caoyang2002'
@@ -152,19 +158,15 @@ priority = 0.5
 filename = "sitemap.xml"
 
 [markup]
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true     # 允许原始 HTML
-hardWraps = false # 控制换行行为
+defaultMarkdownHandler = 'goldmark'
 
-[markup.goldmark.extensions]
-typographer = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
 
 [markup.highlight]
+anchorLineNos = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+tabWidth = 4
 # 启用代码围栏功能
 codeFences = true
 # 启用语言猜测
@@ -174,5 +176,5 @@ guessSyntax = true
 lineNumbersInTable = true
 # 使用 classes 而不是内联样式
 noClasses = false
-# # 选择高亮主题
+# 选择高亮主题
 style = "monokai" # 代码高亮主题

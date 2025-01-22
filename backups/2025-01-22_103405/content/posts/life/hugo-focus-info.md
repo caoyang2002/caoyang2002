@@ -7,41 +7,38 @@ mermaid = true  # 启用 mermaid
 codeRunners = true
 +++
 
-# 简述
+# 一、简述
 
-这是一个专注与编程的博客设计，简洁美观和可用性是主题的根本。
+这是一个专注于编程的 Hugo 博客主题。
 
-参考了我此前为 `Typora` 开发的 `Thompsgo` 主题
+参考了我此前为 `Typora` 开发的 [`Thompsgo` 主题](https://github.com/caoyang2002/Typora-Themes-Thompsgo)
 
-# 特性
+# 二、特性
 
-## 运行代码
+## 1. 运行代码
 
 **支持的语言：**
 - `python (wasm)`
+- `lisp ( JavaScript 实现的 Common Lisp (JSCL) 解释器)`
 - `cpp (playground)`
-- `lisp (playground)`
 - `rust (playground)`
 - `go (playground)`
-- `ts ()`
+- `ts (TypeScript 的 JavaScript 实现)`
 - `js (原生)`
 
 **短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）**
 - `swift`
 - `ruby`
 
-
-
-## 代码运行示例
+## 2. 代码运行示例
 
 > **Rust**
 >
 > ```rust
->fn main() {
-> println!("Hello from Rust!");
+> fn main() {
+>   println!("Hello from Rust!");
 > }
 >   ```
-
 
 >**Go**
 >
@@ -53,10 +50,18 @@ codeRunners = true
 >}
 >```
 
-> **Ruby**
+> **Lisp**
 >
-> ```ruby
-> puts "Hello World"
+> ```lisp
+>(progn
+> (format t "Hello from Lisp!")
+> "Hello from Lisp!")
+> ```
+
+> **Python**
+>
+> ```python
+> print("test")
 > ```
 
 > **TypeScript**
@@ -65,20 +70,26 @@ codeRunners = true
 > console.log("hello")
 > ```
 
+> **C++**
+>
+> ```cpp
+> #include <iostream>
+> int main(){
+>     std::cout << "Hello World!";
+>     return 0;
+> }
+> ```
+
 > **Swift**
 >
 > ```swift
 > print("Hello, world!")
 > ```
 
-> **C++**
+> **Ruby**
 >
-> ```c++
-> #include <iostream>
-> int main(){
->     std::cout << "Hello World!";
->     return 0;
-> }
+> ```ruby
+> puts "Hello World"
 > ```
 
 > **Java**
@@ -91,65 +102,11 @@ codeRunners = true
 > }
 > ```
 
-> **Lisp**
->
-> ```lisp
-> (progn
->   (format t "Hello from Lisp!")
->   "Hello from Lisp!")
-> ```
-
-> **Python**
->
-> ```python
-> print("test")
-> ```
+# 特殊
 
 
-
-# 一、Thompsgo主题简介
-
-<font title="blue"><span>感谢dyzj、黑石、github、krafty、purple、Volantis、stack overflow等主题和网站作者的开发和讲解，本主题在他们的基础上进行开发</span></font>
-
-<font title="blue"><span>本主题免费开源</span></font>
-
-> 源代码达`1500行`,  `50%` 的代码都是注释，没写的基本是可以搜到的，还有一些是我不确定作用功能的代码 ，想自定义的可以去看看我在源码里面写的注释和使用方法，可以直接把建议和问题反馈到我的邮箱`cy12968@163.com`，我会尽快处理。
-
-- `Thompsgo`是`Typora`软件（一个Markdown编辑器）的主题
-- `Markdown `是一种轻量级标记语言，它允许编辑者使用易读易写的纯文本格式编写文档，不需要鼠标也能完成排版，相对于Word、html等格式的文档，它更高效。[^markdown为何高效]
-- 包含一个文件和一个文件夹，文件夹内是主题的背景图和字体（开源字体）
-
-
-<div style="page-break-after:always"></div>
-
-<blockquote alt="success"><p>开始阅读</p></blockquote>
-
-# 二、解决方案
-
-## 1. 我的期望
-
-1. 让文字编辑页面有比较暖的色彩，增加一些质感
-2. 文字不要太硬
-3. 增加图片效果
-
-
-
-## 2. 我的解决方案
-
-1. 页面使用的是纸张的纹理作为全局背景，并把内容编辑区域改为透明
-2. 基本字体使用的是可免费商用的`975 朦胧黑体`[^字体介绍][^字体授权说明]
-3. 参考`dyzj`主题，制作了图片滤镜，可以使用中英文关键字显示
-
-
-
-## 3. 目前的问题
-
-1. 换行时会出现行间距太宽，通过查看源代码可以发现换了两个行
-1. 纸张不会随着文字的滚动而滚动
-1. 导出`PDF`时，背景无法完全覆盖纸张
-1. 修改甘特图的日期会卡死，建议改代码语言后再修改
-1. 首次打开可能会卡顿
-
+# 参考
+Thompsgo
 
 
 # 三、基本编辑
