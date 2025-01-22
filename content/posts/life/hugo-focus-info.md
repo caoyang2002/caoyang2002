@@ -19,11 +19,11 @@ codeRunners = true
 
 **支持的语言：**
 - `python (wasm)`
+- `lisp ( JavaScript 实现的 Common Lisp (JSCL) 解释器)`
 - `cpp (playground)`
-- `lisp (playground)`
 - `rust (playground)`
 - `go (playground)`
-- `ts ()`
+- `ts (TypeScript 的 JavaScript 实现)`
 - `js (原生)`
 
 **短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）**
@@ -35,8 +35,8 @@ codeRunners = true
 > **Rust**
 >
 > ```rust
->fn main() {
-> println!("Hello from Rust!");
+> fn main() {
+>   println!("Hello from Rust!");
 > }
 >   ```
 
@@ -53,9 +53,9 @@ codeRunners = true
 > **Lisp**
 >
 > ```lisp
-> (progn
->   (format t "Hello from Lisp!")
->   "Hello from Lisp!")
+>(progn
+> (format t "Hello from Lisp!")
+> "Hello from Lisp!")
 > ```
 
 > **Python**
