@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Move on caoyang2002</title><link>https://caoyang2002.xyz/tags/move/</link><description>Recent content in Move on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 05 Jan 2025 10:56:18 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/move/index.xml" rel="self" type="application/rss+xml"/><item><title>创建一个远程编译环境</title><link>https://caoyang2002.xyz/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/04/a_code_env/</guid><description>&lt;blockquote>
+&lt;p>我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="一前端tsreact">一、前端（ts、react）&lt;/h1>
+&lt;blockquote>
+&lt;p>前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="1-初始化模板">1. 初始化模板&lt;/h2>
+&lt;blockquote>
+&lt;p>任意选一个就行&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="11-交互式">1.1 交互式&lt;/h3>
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">npm init vite&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;blockquote>
+&lt;p>可能需要先安装
+&lt;code>npm install vite --save-dev&lt;/code>&lt;/p>
+&lt;/blockquote>
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-" data-lang="">caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React # 使用 React 库
+✔ Select a variant: › TypeScript # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+ cd playground
+ npm install
+ npm run dev&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;h3 id="12-一键创建">1.2 一键创建&lt;/h3>
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">npm init vite playground -- --template react-ts&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>或者&lt;/p></description></item></channel></rss>
