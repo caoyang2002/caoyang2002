@@ -1,56 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang2002</title><link>https://caoyang2002.xyz/posts/</link><description>Recent content in Posts on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>示例文章</title><link>https://caoyang2002.xyz/post/2025/01/test/</link><pubDate>Tue, 21 Jan 2025 00:00:00 +0000</pubDate><guid>https://caoyang2002.xyz/post/2025/01/test/</guid><description>&lt;h1 id="标题示例">标题示例&lt;/h1>
-&lt;h2 id="链接示例">链接示例&lt;/h2>
-&lt;p>
-&lt;a href="https://example.com"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 外部链接
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-
-
-&lt;a href="https://caoyang2002.xyz/posts/another"
- 
- >
- 内部链接
- 
-&lt;/a>
-&lt;/p>
-&lt;h2 id="图片示例">图片示例&lt;/h2>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/example.jpg" alt="图片描述" title="图片标题">&lt;/p>
-&lt;h2 id="数学公式">数学公式&lt;/h2>
-&lt;p>$$
-f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d\xi
-$$&lt;/p>
-&lt;h2 id="流程图">流程图&lt;/h2>
-
-
-
-
-
-
-
-&lt;div class="mermaid">graph TD
- A[开始] --> B{判断}
- B -->|Yes| C[执行]
- B -->|No| D[结束]&lt;/div>
-
-&lt;h2 id="脚注示例">脚注示例&lt;/h2>
-&lt;p>这是一个脚注&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
-&lt;div class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1">
-&lt;p>脚注内容&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/div></description></item><item><title>Hugo-Focus 主题介绍</title><link>https://caoyang2002.xyz/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述">一、简述&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang2002</title><link>https://caoyang2002.xyz/posts/</link><description>Recent content in Posts on caoyang2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>Hugo-Focus 主题介绍</title><link>https://caoyang2002.xyz/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述">一、简述&lt;/h1>
 &lt;p>这是一个专注于编程的 Hugo 博客主题。&lt;/p>
 &lt;p>参考了我此前为 &lt;code>Typora&lt;/code> 开发的 
 &lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo"
@@ -1588,7 +1536,7 @@ func TestAll(t *testing.T) {
 &lt;p>{bs-accord style=common title=亦是美网络}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
 &lt;p>{bs-accord style=common title=达内开发文档服务器}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
 &lt;p>{bs-accord style=common title=虚拟手机号}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p>
-&lt;p>{bs-accord style=common title=共享站}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p></description></item><item><title>关于这个网站</title><link>https://caoyang2002.xyz/post/2024/12/about_this_website/</link><pubDate>Sun, 22 Dec 2024 19:49:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/about_this_website/</guid><description>&lt;p>多年前，我对网站的兴趣飞船大，第一个网站还是&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/about_hugo_config/</guid><description>&lt;div>
+&lt;p>{bs-accord style=common title=共享站}&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->{/bs-accord}&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.xyz/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/about_hugo_config/</guid><description>&lt;div>
  &lt;pre>&lt;code class="language-toml" data-lang="toml"># 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
@@ -2539,7 +2487,7 @@ Angel Wang・2022-10-13
 &lt;/a>
 &lt;/p>
 &lt;/blockquote>
-&lt;p>{bs-font color=&amp;quot;#000000&amp;quot;} 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。{/bs-font}&lt;/p>
+&lt;p>其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p>
 &lt;p>以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
 简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p></description></item><item><title>小米 4a 路由器刷机</title><link>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/xiaomi_4a/</guid><description>&lt;p>
 &lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
