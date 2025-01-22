@@ -7,6 +7,8 @@ mermaid = true  # 启用 mermaid
 codeRunners = true #启用运行代码
 +++
 
+==fds==
+
 # 一、简述
 
 这是一个专注于编程的 Hugo 博客主题。
@@ -26,7 +28,7 @@ codeRunners = true #启用运行代码
 - `ts (TypeScript 的 JavaScript 实现)`
 - `js (原生)`
 
-## 2. 代码运行示例
+### 代码运行示例
 
 > **Rust**
 >
@@ -76,7 +78,7 @@ codeRunners = true #启用运行代码
 > }
 > ```
 
-## 2. mermaid
+## 2. mermaid 图表
 
 ```mermaid
 sequenceDiagram
@@ -95,7 +97,27 @@ $$
     \end{vmatrix}
 $$
 
-## 4.
+## 4. 效果
+
+### 文字
+
+- 彩色标签
+- 抖音字
+- 空心字
+- 闪烁字
+- 黑底字
+- 彩虹字
+- 隐藏文本
+- 提示块
+
+### 图片
+
+- 单色
+- 模糊
+- 半透明
+- 反色
+- 圆角
+- 边框
 
 ## 5. 多语言
 
@@ -126,6 +148,34 @@ $$
 ## 10. 评论
 
 参考 `Hugo-Paper`
+
+## 11. 时间线
+
+<div alt="timeline">
+    <div alt="timenode">
+        <div alt="meta">2021.1 ~ 2022.2 <a href="#">开发</a></div>
+        <div alt="body">
+            dev
+        </div>
+    </div>
+    <div alt="timenode">
+        <div alt="meta">2022.4 ~ 2023.3 <a href="#">设计</a></div>
+        <div alt="body">
+            des
+        </div>
+    </div>
+</div>
+
+## 12. 折叠菜单
+
+<details>
+  <summary>I have keys but no locks. I have space but no room. You can enter but can't leave. What am I?</summary>
+  A keyboard.
+</details>
+
+## 13. 嵌入
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2870133096&auto=1&height=430"></iframe>
 
 
 
