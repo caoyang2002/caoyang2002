@@ -1,19 +1,119 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>资源 on Hugo Focus 文档</title>
-    <link>http://localhost:1313/zh/tags/%E8%B5%84%E6%BA%90/</link>
-    <description>Recent content in 资源 on Hugo Focus 文档</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sun, 29 Dec 2024 09:31:37 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/zh/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>资源</title>
-      <link>http://localhost:1313/zh/post/2024/12/resource/</link>
-      <pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate>
-      <guid>http://localhost:1313/zh/post/2024/12/resource/</guid>
-      <description>&lt;h1 id=&#34;如何找资源&#34;&gt;如何找资源&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;下载&#xA;&#xA;&lt;a href=&#34;https://www.pansou.vip/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   盘搜&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://pansoso.com/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   盘搜搜&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://www.dashengpan.com/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   大圣盘&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://t.me/jisou&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   TG机器人&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://aliso.cc/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   阿里搜&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;{/bs-accord}&lt;/p&gt;&#xA;&lt;h1 id=&#34;一我维护的其他站&#34;&gt;一、我维护的其他站&lt;/h1&gt;&#xA;&lt;h2 id=&#34;move-学习&#34;&gt;Move 学习&lt;/h2&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://43.138.107.218/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   move&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;二编程相关内容&#34;&gt;二、编程相关内容&lt;/h1&gt;&#xA;&lt;h2 id=&#34;各种镜像收录&#34;&gt;各种镜像收录&lt;/h2&gt;&#xA;&lt;p&gt;{bs-accord style=common title=鱼香}&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;{/bs-accord}&lt;/p&gt;&#xA;&lt;p&gt;{bs-accord style=common title=亦是美网络}&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;{/bs-accord}&lt;/p&gt;&#xA;&lt;p&gt;{bs-accord style=common title=达内开发文档服务器}&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;{/bs-accord}&lt;/p&gt;&#xA;&lt;p&gt;{bs-accord style=common title=虚拟手机号}&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;{/bs-accord}&lt;/p&gt;&#xA;&lt;p&gt;{bs-accord style=common title=共享站}&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;{/bs-accord}&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资源 on caoyang 2002</title><link>https://caoyang2002.xyz/zh/tags/%E8%B5%84%E6%BA%90/</link><description>Recent content in 资源 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/zh/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>资源</title><link>https://caoyang2002.xyz/zh/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/zh/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源">如何找资源&lt;/h1>
+&lt;blockquote>
+&lt;p>下载
+
+&lt;a href="https://www.pansou.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 盘搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;ul>
+&lt;li>
+&lt;a href="https://pansoso.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 盘搜搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://www.dashengpan.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 大圣盘
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://t.me/jisou"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ TG机器人
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://aliso.cc/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 阿里搜
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="一我维护的其他站">一、我维护的其他站&lt;/h1>
+&lt;h2 id="move-学习">Move 学习&lt;/h2>
+&lt;p>
+&lt;a href="http://43.138.107.218/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ move
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;h1 id="二编程相关内容">二、编程相关内容&lt;/h1>
+&lt;h2 id="各种镜像收录">各种镜像收录&lt;/h2>
+&lt;!-- raw HTML omitted -->
+&lt;p>iframe src=&amp;ldquo;
+&lt;a href="http://www.yishimei.cn/%22"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ http://www.yishimei.cn/"
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+ width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;600&amp;rdquo;&amp;gt;&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;p>NPS: http://101.43.125.94:20002/
+DS220j-SSH: http://101.43.125.94:20010/
+DS220j-DSM: http://101.43.125.94:20011/&lt;/p>
+&lt;p>Windows10: http://101.43.125.94:20020/&lt;/p></description></item></channel></rss>

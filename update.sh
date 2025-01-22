@@ -86,9 +86,9 @@ health_check() {
 
   # 检查配置文件
   local config_found=false
-  for config in "hugo.toml" "hugo.yaml" "hugo.json"; do
+  for config in "hugo.toml" "hugo.yaml" "hugo.json" "./config/_default/hugo.toml"; do
     if [[ -f "$config" ]]; then
-      config_found=true
+        config_found=true
       break
     fi
   done
@@ -119,7 +119,7 @@ health_check() {
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
   local -a default_dirs=("content" "static")
-  local -a config_files=("hugo.toml" "hugo.yaml" "hugo.json")
+  local -a config_files=("hugo.toml" "hugo.yaml" "hugo.json" "config/_default/hugo.toml")
 
   log "INFO" "开始创建备份..."
 
