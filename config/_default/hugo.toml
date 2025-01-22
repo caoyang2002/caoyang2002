@@ -4,7 +4,9 @@ staticDir = ['static']  # 确保静态资源目录配置正确
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
+
 ignoreLogs = ['warning-goldmark-raw-html']
+
 # 设置默认语言
 defaultContentLanguage = "zh"
 # 将内容放在语言子目录下
@@ -29,6 +31,7 @@ math = true
 disable = false
 enableDNT = false
 simple = false
+
 [privacy.vimeo]
 disabled = false
 simple = true
@@ -144,7 +147,6 @@ filename = "sitemap.xml"
 [markup]
 defaultMarkdownHandler = 'goldmark'
 
-
 [markup.highlight]
 anchorLineNos = false
 lineAnchors = ''
@@ -165,9 +167,6 @@ style = "monokai" # 代码高亮主题
 
 
 # 多语言支持
-
-
-
 
 # 语言配置
 [languages]
