@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on caoyang2002</title><link>https://caoyang2002.xyz/en/tags/rust/</link><description>Recent content in Rust on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Wed, 15 Jan 2025 13:22:26 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/en/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包">为什么需要闭包？&lt;/h1>
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">// 问题1：函数复用
+// 没有闭包时，需要传入所有参数
+fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
+
+// 有了闭包，可以部分应用
+let base = 5;
+let add_five = |x| x &amp;#43; base;
+
+// 问题2：函数式编程需求
+vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
+vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
+
+// 问题3：上下文捕获
+// 没有闭包时很难处理
+struct Context { value: i32 }
+let ctx = Context { value: 42 };
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pre>
+ &lt;/div>
+ &lt;div class="controls">
+ &lt;button class="run-button">
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ >运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ >
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ >&lt;/path>
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ >&lt;/path>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="output" style="display: none">
+ &lt;pre class="output-content">&lt;/pre>
+ &lt;/div>
+&lt;/div>
+
+&lt;h1 id="闭包是什么">闭包是什么？&lt;/h1>
+&lt;ul>
+&lt;li>闭包是可以捕获其环境的匿名函数&lt;/li>
+&lt;li>它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li>
+&lt;li>闭包 = 函数 + 环境&lt;/li>
+&lt;/ul>
+&lt;h1 id="闭包的优势">闭包的优势&lt;/h1>
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">// 1. 简洁的语法
+let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
+
+// 2. 灵活的环境捕获
+let multiplier = 2;
+let double = |x| x * multiplier; // 捕获 multiplier
+
+// 3. 支持函数式编程
+let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
+let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
+ .into_iter()
+ .filter(|x| x % 2 == 0)
+ .collect();&lt;/code>&lt;/pre>
+ &lt;/div>
+ &lt;div class="controls">
+ &lt;button class="run-button">
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ >运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ >
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ >&lt;/path>
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ >&lt;/path>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="output" style="display: none">
+ &lt;pre class="output-content">&lt;/pre>
+ &lt;/div>
+&lt;/div>
+
+&lt;h1 id="理解闭包">理解闭包&lt;/h1>
+&lt;p>我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p></description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹">引用：你的快递地址和包裹&lt;/h1>
+&lt;p>想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p>
+&lt;ol>
+&lt;li>你家的地址（引用）&lt;/li>
+&lt;li>花瓶本身（值）&lt;/li>
+&lt;/ol>
+&lt;h2 id="为什么我们需要引用">为什么我们需要引用？&lt;/h2>
+&lt;p>让我们看一个具体的问题：&lt;/p>
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code>&lt;/pre>
+ &lt;/div>
+ &lt;div class="controls">
+ &lt;button class="run-button">
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ >运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ >
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ >&lt;/path>
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ >&lt;/path>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="output" style="display: none">
+ &lt;pre class="output-content">&lt;/pre>
+ &lt;/div>
+&lt;/div>
+
+&lt;p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p></description></item><item><title>rust 闭包</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起">从一个常见问题说起&lt;/h2>
+&lt;p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p>
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
+ &lt;/div>
+ &lt;div class="controls">
+ &lt;button class="run-button">
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ >运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ >
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ >&lt;/path>
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ >&lt;/path>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="output" style="display: none">
+ &lt;pre class="output-content">&lt;/pre>
+ &lt;/div>
+&lt;/div>
+
+&lt;h2 id="闭包的本质">闭包的本质&lt;/h2>
+&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
+&lt;p>假设我们在写一个文件处理程序：&lt;/p>
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
+ std::fs::read_to_string(path) // 这里会返回什么？
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ &lt;div class="controls">
+ &lt;button class="run-button">
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ >运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ >
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ >&lt;/path>
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ >&lt;/path>
+ &lt;/svg>
+ &lt;/span>
+ &lt;/button>
+ &lt;/div>
+ &lt;div class="output" style="display: none">
+ &lt;pre class="output-content">&lt;/pre>
+ &lt;/div>
+&lt;/div>
+
+&lt;p>这段代码看似简单，但隐藏着两个基本问题：&lt;/p>
+&lt;ol>
+&lt;li>文件可能不存在&lt;/li>
+&lt;li>即使文件存在，读取过程也可能失败&lt;/li>
+&lt;/ol>
+&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p></description></item></channel></rss>

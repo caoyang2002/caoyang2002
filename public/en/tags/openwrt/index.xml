@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openwrt on caoyang2002</title><link>https://caoyang2002.xyz/en/tags/openwrt/</link><description>Recent content in Openwrt on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Sun, 29 Oct 2023 09:31:37 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/en/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWRT 教程</title><link>https://caoyang2002.xyz/en/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2023/10/openwrt/</guid><description>&lt;p>
+&lt;a href="https://lidrive.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ OpenWRT下载地址
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;h1 id="下载">下载&lt;/h1>
+&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本">&lt;/p>
+&lt;h1 id="制作启动盘">制作启动盘&lt;/h1>
+&lt;p>将PE系统写入到U盘，window：rufus，macOS：balenaEtcher
+将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p>
+&lt;h1 id="进入bios">进入BIOS&lt;/h1>
+&lt;p>将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p>
+&lt;h1 id="删除设备的磁盘分区">删除设备的磁盘分区&lt;/h1>
+&lt;p>进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p></description></item></channel></rss>
