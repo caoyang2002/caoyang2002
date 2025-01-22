@@ -129,6 +129,11 @@ Thompsgo
 
 - 如果不起作用请检查是否有空格或者尝试换行
 
+
+$$
+f(x) = \int_{-\infty}^{\infty} \hat{f}(\xi) e^{2 \pi i \xi x} d\xi
+$$
+
 1. 标题
 
    ```markdown

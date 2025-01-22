@@ -2,6 +2,7 @@
 date = '2024-06-29T09:31:37+08:00'
 draft = false
 title = 'C 语言字符画'
+tags = ["编程"]
 toc = true
 +++
 

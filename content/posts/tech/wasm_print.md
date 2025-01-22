@@ -2,6 +2,7 @@
 date = '2025-01-15T00:31:17+08:00'
 draft = false
 title = 'Wasm 打印输出和浏览器特性等最佳实践'
+tags = ["编程", "wasm"]
 toc = true
 +++
 

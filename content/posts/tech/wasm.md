@@ -2,6 +2,7 @@
 date = '2025-01-05T12:41:17+08:00'
 draft = true
 title = 'Wasm'
+tags = ["编程", "wasm"]
 toc = true
 +++
 

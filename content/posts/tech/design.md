@@ -2,6 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = '设计资料：样机'
+tags = ["设计"]
 toc = true
 +++
 

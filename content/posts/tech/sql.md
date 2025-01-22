@@ -2,6 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = 'SQL 教程'
+tags = ["编程", "sql"]
 toc = true
 +++
 

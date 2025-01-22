@@ -2,6 +2,7 @@
 date = '2025-01-15T11:29:27+08:00'
 draft = false
 title = 'rust 闭包'
+tags = ["编程", "rust"]
 toc = true
 
 +++

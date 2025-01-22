@@ -2,6 +2,7 @@
 date = '2023-11-29T09:31:37+08:00'
 draft = false
 title = 'C 语言推荐书籍'
+tags = ["书"]
 toc = true
 +++
 

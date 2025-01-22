@@ -1,6 +1,7 @@
 +++
 date = '2025-01-03T11:11:07+08:00'
 draft = false
+tags = ["hugo"]
 title = 'Hugo 主题创建方法及简单说明'
 +++
 

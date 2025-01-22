@@ -2,6 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = '什么是 SimHash'
+tags = ["编程", "算法"]
 toc = true
 +++
 

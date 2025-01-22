@@ -2,6 +2,7 @@
 date = '2025-01-18T11:35:14+08:00'
 draft = false
 title = 'mac 汇编笔记'
+tags= ["编程"]
 toc = true
 +++
 

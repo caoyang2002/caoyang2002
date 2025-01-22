@@ -2,6 +2,7 @@
 date = '2023-08-29T09:31:37+08:00'
 draft = false
 title = '群晖开发'
+tags = ["编程", "群晖"]
 toc = true
 +++
 

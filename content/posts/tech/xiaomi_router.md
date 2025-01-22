@@ -2,6 +2,7 @@
 date = '2024-03-22T09:31:37+08:00'
 draft = false
 title = '小米路由器'
+tags = ["硬件"]
 toc = true
 +++
 

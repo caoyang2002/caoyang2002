@@ -2,6 +2,7 @@
 date = '2024-07-17T09:31:37+08:00'
 draft = false
 title = '谷歌账号注册的问题'
+tags = ["运维","技能"]
 toc = true
 +++
 

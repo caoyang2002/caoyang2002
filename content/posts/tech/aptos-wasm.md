@@ -2,6 +2,7 @@
 date = '2025-01-05T11:08:24+08:00'
 draft = true
 title = 'Aptos Wasm 开发笔记'
+tags = ["aptos","wasm"]
 toc = true
 +++
 
@@ -202,7 +203,7 @@ pub enum MoveTool {
     pub async fn execute(self) -> CliResult { // 返回类型
         match self {
         // ...
-        Test(TestPackage), // test 命令执行 
+        Test(TestPackage), // test 命令执行
         // ...
         }
     }
@@ -508,4 +509,3 @@ extern "C" {
 
 
 ## 在控制台输出
-

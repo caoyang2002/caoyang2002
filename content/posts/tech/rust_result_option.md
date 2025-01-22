@@ -2,6 +2,7 @@
 date = '2025-01-15T11:26:02+08:00'
 draft = false
 title = '深入解释 Rust 中的 Result 和 Option 这两个核心类型'
+tags = ["编程", "rust"]
 toc = true
 +++
 

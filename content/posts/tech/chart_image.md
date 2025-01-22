@@ -2,6 +2,7 @@
 date = '2022-07-29T09:31:37+08:00'
 draft = false
 title = '字符图片'
+tags = ["编程"]
 toc = true
 +++
 

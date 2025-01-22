@@ -2,6 +2,7 @@
 date = '2024-12-22T18:12:52+08:00'
 draft = false
 title = 'hugo 配置'
+tags = ["hugo"]
 toc = true
 +++
 

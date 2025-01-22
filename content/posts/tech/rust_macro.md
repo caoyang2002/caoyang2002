@@ -2,6 +2,7 @@
 date = '2025-01-15T11:16:52+08:00'
 draft = true
 title = 'rust 中的属性宏'
+tags = ["编程", "rust"]
 toc = true
 +++
 

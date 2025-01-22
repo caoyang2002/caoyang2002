@@ -2,6 +2,7 @@
 date = '2023-10-29T09:31:37+08:00'
 draft = false
 title = 'OpenWRT 教程'
+tags = ["运维","openwrt"]
 toc = true
 +++
 

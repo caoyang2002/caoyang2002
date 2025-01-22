@@ -2,6 +2,7 @@
 date = '2025-01-15T11:38:20+08:00'
 draft = true
 title = '深入理解 Rust 所有权机制'
+tags = ["编程", "rust"]
 toc = true
 
 +++
@@ -44,8 +45,8 @@ let s2 = s1;  // 所有权从s1转移到s2
 ```
 s1              s2
 ptr ----------> "hello"    // 移动前
-               
-s2 
+
+s2
 ptr ----------> "hello"    // 移动后，s1不再有效
 ```
 
@@ -245,7 +246,7 @@ fn main() {
 
    - 如果忘记释放会怎样？
 
-   
+
 
 2. 系统设计权衡：
 
@@ -355,7 +356,7 @@ fn main() {
         let s = String::from("hello");  // s 进入作用域
         // 使用 s
     }  // s 离开作用域，String 被清理
-    
+
     // println!("{}", s);  // 错误：s 已经不存在
 }
 ```
@@ -365,16 +366,16 @@ fn main() {
 ```rust
 fn main() {
     let mut s = String::from("hello");
-    
+
     // 不可变借用
     let r1 = &s;
     let r2 = &s;  // 多个不可变借用是允许的
     println!("{}, {}", r1, r2);
-    
+
     // 可变借用
     let r3 = &mut s;  // 同一时间只能有一个可变借用
     r3.push_str(" world");
-    
+
     // println!("{}", r1);  // 错误：不能同时存在可变和不可变借用
 }
 ```
@@ -393,12 +394,12 @@ fn main() {
 ```rust
 fn main() {
     let mut data = vec![1, 2, 3];
-    
+
     // 错误案例
     let ref1 = &data;
     data.push(4);  // 错误：不能在存在不可变借用时修改
     println!("{:?}", ref1);
-    
+
     // 正确使用
     {
         let ref2 = &data;
@@ -421,10 +422,10 @@ fn borrow_string(s: &String) {  // s 仅借用引用
 
 fn main() {
     let s = String::from("hello");
-    
+
     borrow_string(&s);  // s 仅借出引用
     println!("{}", s);  // s 仍然可用
-    
+
     process_string(s);  // s 的所有权被移动
     // println!("{}", s);  // 错误：s 已经无效
 }

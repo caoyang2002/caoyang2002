@@ -2,6 +2,7 @@
 date : '2024-12-22T18:12:52+08:00'
 draft : false
 title : '从 Hexo 迁移至 Hugo'
+tags: ["hugo"]
 toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录
 ---

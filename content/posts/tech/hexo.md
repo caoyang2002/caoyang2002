@@ -1,6 +1,7 @@
 ---
 title: 使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践
 date:  '2024-12-22T18:12:52+08:00'
+tags: ["hexo"]
 draft: false
 ---
 

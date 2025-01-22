@@ -2,6 +2,7 @@
 date = '2023-09-29T09:31:37+08:00'
 draft = false
 title = '左耳朵耗子：程序员'
+tags = ["经验"]
 toc = true
 +++
 
