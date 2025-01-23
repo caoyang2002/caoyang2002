@@ -1,19 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>公告 on caoyang 2002</title>
-    <link>http://localhost:1313/tags/%E5%85%AC%E5%91%8A/</link>
-    <description>Recent content in 公告 on caoyang 2002</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Jan 2025 10:58:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>公告</title>
-      <link>http://localhost:1313/post/2024/03/notice/</link>
-      <pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024/03/notice/</guid>
-      <description>&lt;div class=&#34;notice note&#34;&gt;这是一个注意事项&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;protected-content&#34;&gt;&#xA;    &lt;div class=&#34;password-form&#34;&gt;&#xA;        &lt;input type=&#34;password&#34; placeholder=&#34;输入访问密码&#34; class=&#34;pass-input&#34; /&gt;&#xA;        &lt;button onclick=&#34;decryptContent(this)&#34; class=&#34;pass-btn&#34;&gt;访问&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div&#xA;        class=&#34;encrypted-content&#34;&#xA;        style=&#34;display: none&#34;&#xA;        data-content=&#34;&#xA;机密内容&#xA;&#34;&#xA;    &gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;    function decryptContent(btn) {&#xA;        const container = btn.closest(&#34;.protected-content&#34;);&#xA;        const input = container.querySelector(&#34;.pass-input&#34;);&#xA;        const content = container.querySelector(&#34;.encrypted-content&#34;);&#xA;&#xA;        if (input.value === &#34;123&#34;) {&#xA;            content.innerHTML = content.dataset.content;&#xA;            content.style.display = &#34;block&#34;;&#xA;            container.querySelector(&#34;.password-form&#34;).style.display = &#34;none&#34;;&#xA;        } else {&#xA;            alert(&#34;密码错误&#34;);&#xA;        }&#xA;    }&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;    .protected-content {&#xA;        border: 1px solid #eee;&#xA;        padding: 20px;&#xA;        border-radius: 5px;&#xA;    }&#xA;    .pass-input {&#xA;        padding: 8px;&#xA;        margin-right: 10px;&#xA;    }&#xA;    .pass-btn {&#xA;        padding: 8px 16px;&#xA;        background: #0066cc;&#xA;        color: white;&#xA;        border: none;&#xA;        border-radius: 4px;&#xA;        cursor: pointer;&#xA;    }&#xA;&lt;/style&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cover/blue.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Jan 2025 10:58:00 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+
+&lt;div class="protected-content">
+ &lt;div class="password-form">
+ &lt;input type="password" placeholder="输入访问密码" class="pass-input" />
+ &lt;button onclick="decryptContent(this)" class="pass-btn">访问&lt;/button>
+ &lt;/div>
+ &lt;div
+ class="encrypted-content"
+ style="display: none"
+ data-content="
+机密内容
+"
+ >&lt;/div>
+&lt;/div>
+&lt;script>
+ function decryptContent(btn) {
+ const container = btn.closest(".protected-content");
+ const input = container.querySelector(".pass-input");
+ const content = container.querySelector(".encrypted-content");
+
+ if (input.value === "123") {
+ content.innerHTML = content.dataset.content;
+ content.style.display = "block";
+ container.querySelector(".password-form").style.display = "none";
+ } else {
+ alert("密码错误");
+ }
+ }
+&lt;/script>
+&lt;style>
+ .protected-content {
+ border: 1px solid #eee;
+ padding: 20px;
+ border-radius: 5px;
+ }
+ .pass-input {
+ padding: 8px;
+ margin-right: 10px;
+ }
+ .pass-btn {
+ padding: 8px 16px;
+ background: #0066cc;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+&lt;/style>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item></channel></rss>

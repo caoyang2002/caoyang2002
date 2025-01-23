@@ -239,7 +239,7 @@ deploy() {
 
   # Vercel 部署
   log "INFO" "开始 Vercel 部署..."
-  if ! vercel --prod; then
+  if ! vercel --prod --archive=tgz; then
     log "ERROR" "Vercel 部署失败"
     return 1
   fi

@@ -1,19 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Quartz on caoyang2002</title>
-    <link>http://localhost:1313/es/tags/quartz/</link>
-    <description>Recent content in Quartz on caoyang2002</description>
-    <generator>Hugo</generator>
-    <language>es-ES</language>
-    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/es/tags/quartz/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Quartz 教程</title>
-      <link>http://localhost:1313/es/post/2024/02/quartz/</link>
-      <pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate>
-      <guid>http://localhost:1313/es/post/2024/02/quartz/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://quartz.jzhao.xyz&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   原作者&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&#xA;&#xA;&lt;a href=&#34;https://www.chyraw.com&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   个人配置&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;下载&#34;&gt;下载&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;git clone https://github.com/caoyang2002/quartz-obsidian-webside.git&#xA;cd quartz-obsidian-webside&#xA;npm i&#xA;npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;&#xA;&lt;h2 id=&#34;布局&#34;&gt;布局&lt;/h2&gt;&#xA;&lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。&#xA;默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;&#xA;&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Quartz on caoyang2002</title><link>https://caoyang2002.xyz/es/tags/quartz/</link><description>Recent content in Quartz on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/es/tags/quartz/index.xml" rel="self" type="application/rss+xml"/><item><title>Quartz 教程</title><link>https://caoyang2002.xyz/es/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/02/quartz/</guid><description>&lt;blockquote>
+&lt;p>
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 原作者
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 个人配置
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="下载">下载&lt;/h1>
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
+cd quartz-obsidian-webside
+npm i
+npx quartz build --serve&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;h1 id="配置">配置&lt;/h1>
+&lt;h2 id="布局">布局&lt;/h2>
+&lt;p>某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
+默认页面布局可以在 &lt;code>quartz.layout.ts&lt;/code> 中找到。&lt;/p>
+&lt;p>每个页面由多个不同的部分组成，这些部分包含 &lt;code>QuartzComponents&lt;/code>。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p></description></item></channel></rss>
