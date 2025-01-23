@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -184,14 +184,14 @@ hugo new theme hugo-zero
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -203,13 +203,13 @@ hugo new theme hugo-zero
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -237,7 +237,7 @@ hugo new theme hugo-zero
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -299,63 +299,17 @@ hugo new theme hugo-zero
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="Hugo 主题创建方法及简单说明">
-  <meta itemprop="description" content="参考： 中文文档 https://hugo.opendocs.io/getting-started/quick-start/ ↗ 博客：
-https://blog.gujiakai.top/2023/03/hugo-theme-development-diary ↗ https://juejin.cn/post/7151253414427492382 ↗ 一个简单的 Hugo 主题 创建一个空的网站模版 hugo new site demo 这会在当前目录创建一个名为 demo 的目录，然后初始化 hugo 的目录结构，
-创建一个空的主题模版 cd demo hugo new theme hugo-zero 得到输出信息：
-Creating theme at /hugo/demo/themes/hugo-zero 一开始的目录结构如下图所示：
-hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├── layouts（hugo主题布局文件） ├── static（hugo主题的静态文件） ├── LICENSE（hugo主题的许可证信息） └── themes.toml（hugo主题的元数据信息） 其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。">
-  <meta itemprop="datePublished" content="2025-01-03T11:11:07+08:00">
-  <meta itemprop="dateModified" content="2025-01-22T22:41:30+08:00">
-  <meta itemprop="wordCount" content="966">
-  <meta itemprop="keywords" content="Hugo">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/post/2025/01/create_hugo_theme/">
-  <meta property="og:site_name" content="caoyang 2002">
-  <meta property="og:title" content="Hugo 主题创建方法及简单说明">
-  <meta property="og:description" content="参考： 中文文档 https://hugo.opendocs.io/getting-started/quick-start/ ↗ 博客：
-https://blog.gujiakai.top/2023/03/hugo-theme-development-diary ↗ https://juejin.cn/post/7151253414427492382 ↗ 一个简单的 Hugo 主题 创建一个空的网站模版 hugo new site demo 这会在当前目录创建一个名为 demo 的目录，然后初始化 hugo 的目录结构，
-创建一个空的主题模版 cd demo hugo new theme hugo-zero 得到输出信息：
-Creating theme at /hugo/demo/themes/hugo-zero 一开始的目录结构如下图所示：
-hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├── layouts（hugo主题布局文件） ├── static（hugo主题的静态文件） ├── LICENSE（hugo主题的许可证信息） └── themes.toml（hugo主题的元数据信息） 其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-03T11:11:07+08:00">
-    <meta property="article:modified_time" content="2025-01-22T22:41:30+08:00">
-    <meta property="article:tag" content="Hugo">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Hugo 主题创建方法及简单说明">
-  <meta name="twitter:description" content="参考： 中文文档 https://hugo.opendocs.io/getting-started/quick-start/ ↗ 博客：
-https://blog.gujiakai.top/2023/03/hugo-theme-development-diary ↗ https://juejin.cn/post/7151253414427492382 ↗ 一个简单的 Hugo 主题 创建一个空的网站模版 hugo new site demo 这会在当前目录创建一个名为 demo 的目录，然后初始化 hugo 的目录结构，
-创建一个空的主题模版 cd demo hugo new theme hugo-zero 得到输出信息：
-Creating theme at /hugo/demo/themes/hugo-zero 一开始的目录结构如下图所示：
-hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├── layouts（hugo主题布局文件） ├── static（hugo主题的静态文件） ├── LICENSE（hugo主题的许可证信息） └── themes.toml（hugo主题的元数据信息） 其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/post/2025/01/create_hugo_theme/" />
     
     
 </head>
@@ -370,7 +324,7 @@ hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├�
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang 2002</a
         >
         <div
@@ -709,7 +663,7 @@ hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├�
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -733,7 +687,7 @@ hugo-zero（hugo主题） ├── archetypes（hugo主题文章模板） ├�
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/hugo"
+                href="http://localhost:1313/tags/hugo"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 hugo
@@ -1045,7 +999,7 @@ hugo server -D</code></pre>
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2025/01/wasm_print/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2025/01/wasm_print/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>Wasm 打印输出和浏览器特性等最佳实践</span></a
         >
@@ -1053,7 +1007,7 @@ hugo server -D</code></pre>
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/post/2024/12/go/"
+            href="http://localhost:1313/post/2024/12/go/"
             ><span>Go 最佳实践</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1385,7 +1339,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang 2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
         
     </div>
 

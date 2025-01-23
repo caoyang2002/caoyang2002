@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -106,14 +106,14 @@
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -125,13 +125,13 @@
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -159,7 +159,7 @@
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -221,54 +221,17 @@
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="小米 4a 路由器刷机">
-  <meta itemprop="description" content="查看原文 ↗ 一、获取原厂固件的 ssh 登录权限 有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。
-小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。">
-  <meta itemprop="datePublished" content="2024-03-24T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-22T22:41:30+08:00">
-  <meta itemprop="wordCount" content="1624">
-  <meta itemprop="keywords" content="硬件">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/post/2024/03/xiaomi_4a/">
-  <meta property="og:site_name" content="caoyang 2002">
-  <meta property="og:title" content="小米 4a 路由器刷机">
-  <meta property="og:description" content="查看原文 ↗ 一、获取原厂固件的 ssh 登录权限 有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。
-小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-03-24T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-22T22:41:30+08:00">
-    <meta property="article:tag" content="硬件">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="小米 4a 路由器刷机">
-  <meta name="twitter:description" content="查看原文 ↗ 一、获取原厂固件的 ssh 登录权限 有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。
-小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/post/2024/03/xiaomi_4a/" />
     
     
 </head>
@@ -283,7 +246,7 @@
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang 2002</a
         >
         <div
@@ -622,7 +585,7 @@
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -646,7 +609,7 @@
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%A1%AC%E4%BB%B6"
+                href="http://localhost:1313/tags/%E7%A1%AC%E4%BB%B6"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 硬件
@@ -821,7 +784,7 @@ Padavan下载地址：https://opt.cn2qq.com/padavan/
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2024/03/docker_pns/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/03/docker_pns/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>搭建 NPS</span></a
         >
@@ -829,7 +792,7 @@ Padavan下载地址：https://opt.cn2qq.com/padavan/
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/post/2024/03/xiaomi_4c_router/"
+            href="http://localhost:1313/post/2024/03/xiaomi_4c_router/"
             ><span>小米 4c 路由器刷机</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1167,7 +1130,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang 2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
         
     </div>
 

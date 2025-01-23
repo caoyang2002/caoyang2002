@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Zhs on caoyang 2002</title>
-    <link>https://caoyang2002.xyz/zh/</link>
+    <link>http://localhost:1313/zh/</link>
     <description>Recent content in Zhs on caoyang 2002</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate></lastBuildDate>
-    <atom:link href="https://caoyang2002.xyz/zh/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/zh/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

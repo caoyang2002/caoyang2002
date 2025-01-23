@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -504,14 +504,14 @@ func TestAll(t *testing.T) {
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -523,13 +523,13 @@ func TestAll(t *testing.T) {
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -557,7 +557,7 @@ func TestAll(t *testing.T) {
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -619,55 +619,17 @@ func TestAll(t *testing.T) {
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="Go 最佳实践">
-  <meta itemprop="description" content="在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：
-接口定义规则： // ✅ 正确：接口定义在使用方(调用方)包中 package handler type UserService interface { Create(ctx context.Context, user *User) error } // ❌ 错误：接口定义在实现方包中 package service type UserService interface { Create(ctx context.Context, user *User) error } 运行 依赖方向： // ✅ 正确的依赖方向 handler -&gt; service -&gt; repository -&gt; database // ❌ 错误：不应该出现反向依赖 service -&gt; handler repository -&gt; service 运行 数据模型定义： // ✅ 正确：每层使用自己的数据模型 package handler type CreateUserRequest struct { // API层模型 Username string `json:&#34;username&#34;` } package service type UserDTO struct { // 业务层模型 ID uint64 Username string } package repository type UserDO struct { // 数据层模型 ID uint64 `gorm:&#34;primaryKey&#34;` Username string CreatedAt time.Time } // ❌ 错误：直接在所有层使用相同的模型 type User struct { ID uint64 `json:&#34;id&#34; gorm:&#34;primaryKey&#34;` Username string `json:&#34;username&#34;` CreatedAt time.Time `json:&#34;created_at&#34;` } 运行 错误处理层级： // ✅ 正确：每层对错误进行适当包装 package repository func (r *UserRepo) Create(user *UserDO) error { return fmt.Errorf(&#34;database error: %w&#34;, err) } package service func (s *UserService) Create(user *UserDTO) error { return fmt.Errorf(&#34;business error: %w&#34;, err) } package handler func (h *UserHandler) Create(c *gin.Context) { if err := h.service.Create(user); err != nil { c.JSON(getErrorStatus(err), ErrorResponse{err.Error()}) return } } // ❌ 错误：直接暴露底层错误 if err := db.Create(&amp;user).Error; err != nil { c.JSON(500, err.Error()) } 运行 包的组织： ✅ 正确的包组织： project/ ├── api/ │ └── handler/ # HTTP 处理层 ├── internal/ │ ├── service/ # 业务逻辑层 │ ├── repository/ # 数据访问层 │ └── model/ # 内部数据模型 ├── pkg/ │ └── util/ # 公共工具函数 └── main.go ❌ 错误的包组织： project/ ├── handlers/ ├── services/ ├── models/ └── main.go 依赖注入： // ✅ 正确：通过构造函数注入依赖 func NewUserHandler(service UserService) *UserHandler { return &amp;UserHandler{service: service} } // ❌ 错误：全局变量或直接初始化 var userService = &amp;UserService{} 运行 接口隔离： // ✅ 正确：小接口，职责单一 type UserReader interface { GetUser(id uint64) (*User, error) } type UserWriter interface { CreateUser(user *User) error } // ❌ 错误：大接口，职责过多 type UserService interface { GetUser(id uint64) (*User, error) CreateUser(user *User) error UpdateUser(user *User) error DeleteUser(id uint64) error ListUsers() ([]*User, error) SearchUsers(query string) ([]*User, error) } 运行 配置管理： // ✅ 正确：集中管理配置 package config type Config struct { Server ServerConfig DB DatabaseConfig Redis RedisConfig } // ❌ 错误：分散的配置或硬编码 var serverPort = 8080 var dbConnection = &#34;root:password@tcp(localhost:3306)/db&#34; 运行 上下文传递： // ✅ 正确：统一使用 context 传递请求上下文 func (h *Handler) Create(c *gin.Context) { ctx := c.Request.Context() err := h.service.Create(ctx, req) } // ❌ 错误：不传递上下文或使用不一致的上下文 func (h *Handler) Create(c *gin.Context) { err := h.service.Create(req) } 运行 测试组织： // ✅ 正确：测试文件与源文件对应 package handler func TestUserHandler_Create(t *testing.T) { // 单元测试 } // ❌ 错误：测试代码与源码混合或测试覆盖不全 func TestAll(t *testing.T) { // 混合测试多个功能 } 运行 遵循这些规则可以使代码：">
-  <meta itemprop="datePublished" content="2024-12-29T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-22T22:41:30+08:00">
-  <meta itemprop="wordCount" content="9688">
-  <meta itemprop="keywords" content="编程,Go">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/post/2024/12/go/">
-  <meta property="og:site_name" content="caoyang 2002">
-  <meta property="og:title" content="Go 最佳实践">
-  <meta property="og:description" content="在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：
-接口定义规则： // ✅ 正确：接口定义在使用方(调用方)包中 package handler type UserService interface { Create(ctx context.Context, user *User) error } // ❌ 错误：接口定义在实现方包中 package service type UserService interface { Create(ctx context.Context, user *User) error } 运行 依赖方向： // ✅ 正确的依赖方向 handler -&gt; service -&gt; repository -&gt; database // ❌ 错误：不应该出现反向依赖 service -&gt; handler repository -&gt; service 运行 数据模型定义： // ✅ 正确：每层使用自己的数据模型 package handler type CreateUserRequest struct { // API层模型 Username string `json:&#34;username&#34;` } package service type UserDTO struct { // 业务层模型 ID uint64 Username string } package repository type UserDO struct { // 数据层模型 ID uint64 `gorm:&#34;primaryKey&#34;` Username string CreatedAt time.Time } // ❌ 错误：直接在所有层使用相同的模型 type User struct { ID uint64 `json:&#34;id&#34; gorm:&#34;primaryKey&#34;` Username string `json:&#34;username&#34;` CreatedAt time.Time `json:&#34;created_at&#34;` } 运行 错误处理层级： // ✅ 正确：每层对错误进行适当包装 package repository func (r *UserRepo) Create(user *UserDO) error { return fmt.Errorf(&#34;database error: %w&#34;, err) } package service func (s *UserService) Create(user *UserDTO) error { return fmt.Errorf(&#34;business error: %w&#34;, err) } package handler func (h *UserHandler) Create(c *gin.Context) { if err := h.service.Create(user); err != nil { c.JSON(getErrorStatus(err), ErrorResponse{err.Error()}) return } } // ❌ 错误：直接暴露底层错误 if err := db.Create(&amp;user).Error; err != nil { c.JSON(500, err.Error()) } 运行 包的组织： ✅ 正确的包组织： project/ ├── api/ │ └── handler/ # HTTP 处理层 ├── internal/ │ ├── service/ # 业务逻辑层 │ ├── repository/ # 数据访问层 │ └── model/ # 内部数据模型 ├── pkg/ │ └── util/ # 公共工具函数 └── main.go ❌ 错误的包组织： project/ ├── handlers/ ├── services/ ├── models/ └── main.go 依赖注入： // ✅ 正确：通过构造函数注入依赖 func NewUserHandler(service UserService) *UserHandler { return &amp;UserHandler{service: service} } // ❌ 错误：全局变量或直接初始化 var userService = &amp;UserService{} 运行 接口隔离： // ✅ 正确：小接口，职责单一 type UserReader interface { GetUser(id uint64) (*User, error) } type UserWriter interface { CreateUser(user *User) error } // ❌ 错误：大接口，职责过多 type UserService interface { GetUser(id uint64) (*User, error) CreateUser(user *User) error UpdateUser(user *User) error DeleteUser(id uint64) error ListUsers() ([]*User, error) SearchUsers(query string) ([]*User, error) } 运行 配置管理： // ✅ 正确：集中管理配置 package config type Config struct { Server ServerConfig DB DatabaseConfig Redis RedisConfig } // ❌ 错误：分散的配置或硬编码 var serverPort = 8080 var dbConnection = &#34;root:password@tcp(localhost:3306)/db&#34; 运行 上下文传递： // ✅ 正确：统一使用 context 传递请求上下文 func (h *Handler) Create(c *gin.Context) { ctx := c.Request.Context() err := h.service.Create(ctx, req) } // ❌ 错误：不传递上下文或使用不一致的上下文 func (h *Handler) Create(c *gin.Context) { err := h.service.Create(req) } 运行 测试组织： // ✅ 正确：测试文件与源文件对应 package handler func TestUserHandler_Create(t *testing.T) { // 单元测试 } // ❌ 错误：测试代码与源码混合或测试覆盖不全 func TestAll(t *testing.T) { // 混合测试多个功能 } 运行 遵循这些规则可以使代码：">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-12-29T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-22T22:41:30+08:00">
-    <meta property="article:tag" content="编程">
-    <meta property="article:tag" content="Go">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Go 最佳实践">
-  <meta name="twitter:description" content="在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：
-接口定义规则： // ✅ 正确：接口定义在使用方(调用方)包中 package handler type UserService interface { Create(ctx context.Context, user *User) error } // ❌ 错误：接口定义在实现方包中 package service type UserService interface { Create(ctx context.Context, user *User) error } 运行 依赖方向： // ✅ 正确的依赖方向 handler -&gt; service -&gt; repository -&gt; database // ❌ 错误：不应该出现反向依赖 service -&gt; handler repository -&gt; service 运行 数据模型定义： // ✅ 正确：每层使用自己的数据模型 package handler type CreateUserRequest struct { // API层模型 Username string `json:&#34;username&#34;` } package service type UserDTO struct { // 业务层模型 ID uint64 Username string } package repository type UserDO struct { // 数据层模型 ID uint64 `gorm:&#34;primaryKey&#34;` Username string CreatedAt time.Time } // ❌ 错误：直接在所有层使用相同的模型 type User struct { ID uint64 `json:&#34;id&#34; gorm:&#34;primaryKey&#34;` Username string `json:&#34;username&#34;` CreatedAt time.Time `json:&#34;created_at&#34;` } 运行 错误处理层级： // ✅ 正确：每层对错误进行适当包装 package repository func (r *UserRepo) Create(user *UserDO) error { return fmt.Errorf(&#34;database error: %w&#34;, err) } package service func (s *UserService) Create(user *UserDTO) error { return fmt.Errorf(&#34;business error: %w&#34;, err) } package handler func (h *UserHandler) Create(c *gin.Context) { if err := h.service.Create(user); err != nil { c.JSON(getErrorStatus(err), ErrorResponse{err.Error()}) return } } // ❌ 错误：直接暴露底层错误 if err := db.Create(&amp;user).Error; err != nil { c.JSON(500, err.Error()) } 运行 包的组织： ✅ 正确的包组织： project/ ├── api/ │ └── handler/ # HTTP 处理层 ├── internal/ │ ├── service/ # 业务逻辑层 │ ├── repository/ # 数据访问层 │ └── model/ # 内部数据模型 ├── pkg/ │ └── util/ # 公共工具函数 └── main.go ❌ 错误的包组织： project/ ├── handlers/ ├── services/ ├── models/ └── main.go 依赖注入： // ✅ 正确：通过构造函数注入依赖 func NewUserHandler(service UserService) *UserHandler { return &amp;UserHandler{service: service} } // ❌ 错误：全局变量或直接初始化 var userService = &amp;UserService{} 运行 接口隔离： // ✅ 正确：小接口，职责单一 type UserReader interface { GetUser(id uint64) (*User, error) } type UserWriter interface { CreateUser(user *User) error } // ❌ 错误：大接口，职责过多 type UserService interface { GetUser(id uint64) (*User, error) CreateUser(user *User) error UpdateUser(user *User) error DeleteUser(id uint64) error ListUsers() ([]*User, error) SearchUsers(query string) ([]*User, error) } 运行 配置管理： // ✅ 正确：集中管理配置 package config type Config struct { Server ServerConfig DB DatabaseConfig Redis RedisConfig } // ❌ 错误：分散的配置或硬编码 var serverPort = 8080 var dbConnection = &#34;root:password@tcp(localhost:3306)/db&#34; 运行 上下文传递： // ✅ 正确：统一使用 context 传递请求上下文 func (h *Handler) Create(c *gin.Context) { ctx := c.Request.Context() err := h.service.Create(ctx, req) } // ❌ 错误：不传递上下文或使用不一致的上下文 func (h *Handler) Create(c *gin.Context) { err := h.service.Create(req) } 运行 测试组织： // ✅ 正确：测试文件与源文件对应 package handler func TestUserHandler_Create(t *testing.T) { // 单元测试 } // ❌ 错误：测试代码与源码混合或测试覆盖不全 func TestAll(t *testing.T) { // 混合测试多个功能 } 运行 遵循这些规则可以使代码：">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/post/2024/12/go/" />
     
     
 </head>
@@ -682,7 +644,7 @@ func TestAll(t *testing.T) {
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang 2002</a
         >
         <div
@@ -1021,7 +983,7 @@ func TestAll(t *testing.T) {
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -1045,14 +1007,14 @@ func TestAll(t *testing.T) {
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
             </a>
              
             <a
-                href="https://caoyang2002.xyz/tags/go"
+                href="http://localhost:1313/tags/go"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 go
@@ -5824,7 +5786,7 @@ mod internal {
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2025/01/create_hugo_theme/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2025/01/create_hugo_theme/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>Hugo 主题创建方法及简单说明</span></a
         >
@@ -5832,7 +5794,7 @@ mod internal {
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/post/2024/12/decision_paralysis/"
+            href="http://localhost:1313/post/2024/12/decision_paralysis/"
             ><span>营销</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -6218,7 +6180,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang 2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
         
     </div>
 

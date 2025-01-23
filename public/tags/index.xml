@@ -2,220 +2,220 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on caoyang 2002</title>
-    <link>https://caoyang2002.xyz/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on caoyang 2002</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 23 Jan 2025 00:13:15 +0800</lastBuildDate>
-    <atom:link href="https://caoyang2002.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Jan 2025 10:58:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>开发</title>
-      <link>https://caoyang2002.xyz/tags/%E5%BC%80%E5%8F%91/</link>
+      <link>http://localhost:1313/tags/%E5%BC%80%E5%8F%91/</link>
       <pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E5%BC%80%E5%8F%91/</guid>
+      <guid>http://localhost:1313/tags/%E5%BC%80%E5%8F%91/</guid>
       <description></description>
     </item>
     <item>
       <title>设计</title>
-      <link>https://caoyang2002.xyz/tags/%E8%AE%BE%E8%AE%A1/</link>
+      <link>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</link>
       <pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E8%AE%BE%E8%AE%A1/</guid>
+      <guid>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</guid>
       <description></description>
     </item>
     <item>
       <title>编程</title>
-      <link>https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B/</link>
+      <link>http://localhost:1313/tags/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B/</guid>
+      <guid>http://localhost:1313/tags/%E7%BC%96%E7%A8%8B/</guid>
       <description></description>
     </item>
     <item>
       <title>Rust</title>
-      <link>https://caoyang2002.xyz/tags/rust/</link>
+      <link>http://localhost:1313/tags/rust/</link>
       <pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/rust/</guid>
+      <guid>http://localhost:1313/tags/rust/</guid>
       <description></description>
     </item>
     <item>
       <title>Wasm</title>
-      <link>https://caoyang2002.xyz/tags/wasm/</link>
+      <link>http://localhost:1313/tags/wasm/</link>
       <pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/wasm/</guid>
+      <guid>http://localhost:1313/tags/wasm/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
-      <link>https://caoyang2002.xyz/tags/hugo/</link>
+      <link>http://localhost:1313/tags/hugo/</link>
       <pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/hugo/</guid>
+      <guid>http://localhost:1313/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>Go</title>
-      <link>https://caoyang2002.xyz/tags/go/</link>
+      <link>http://localhost:1313/tags/go/</link>
       <pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/go/</guid>
+      <guid>http://localhost:1313/tags/go/</guid>
       <description></description>
     </item>
     <item>
       <title>营销</title>
-      <link>https://caoyang2002.xyz/tags/%E8%90%A5%E9%94%80/</link>
+      <link>http://localhost:1313/tags/%E8%90%A5%E9%94%80/</link>
       <pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E8%90%A5%E9%94%80/</guid>
+      <guid>http://localhost:1313/tags/%E8%90%A5%E9%94%80/</guid>
       <description></description>
     </item>
     <item>
       <title>资源</title>
-      <link>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</link>
+      <link>http://localhost:1313/tags/%E8%B5%84%E6%BA%90/</link>
       <pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</guid>
+      <guid>http://localhost:1313/tags/%E8%B5%84%E6%BA%90/</guid>
       <description></description>
     </item>
     <item>
       <title>Hexo</title>
-      <link>https://caoyang2002.xyz/tags/hexo/</link>
+      <link>http://localhost:1313/tags/hexo/</link>
       <pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/hexo/</guid>
+      <guid>http://localhost:1313/tags/hexo/</guid>
       <description></description>
     </item>
     <item>
       <title>Shell</title>
-      <link>https://caoyang2002.xyz/tags/shell/</link>
+      <link>http://localhost:1313/tags/shell/</link>
       <pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/shell/</guid>
+      <guid>http://localhost:1313/tags/shell/</guid>
       <description></description>
     </item>
     <item>
       <title>技能</title>
-      <link>https://caoyang2002.xyz/tags/%E6%8A%80%E8%83%BD/</link>
+      <link>http://localhost:1313/tags/%E6%8A%80%E8%83%BD/</link>
       <pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E6%8A%80%E8%83%BD/</guid>
+      <guid>http://localhost:1313/tags/%E6%8A%80%E8%83%BD/</guid>
       <description></description>
     </item>
     <item>
       <title>运维</title>
-      <link>https://caoyang2002.xyz/tags/%E8%BF%90%E7%BB%B4/</link>
+      <link>http://localhost:1313/tags/%E8%BF%90%E7%BB%B4/</link>
       <pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E8%BF%90%E7%BB%B4/</guid>
+      <guid>http://localhost:1313/tags/%E8%BF%90%E7%BB%B4/</guid>
       <description></description>
     </item>
     <item>
       <title>Git</title>
-      <link>https://caoyang2002.xyz/tags/git/</link>
+      <link>http://localhost:1313/tags/git/</link>
       <pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/git/</guid>
+      <guid>http://localhost:1313/tags/git/</guid>
       <description></description>
     </item>
     <item>
       <title>X86</title>
-      <link>https://caoyang2002.xyz/tags/x86/</link>
+      <link>http://localhost:1313/tags/x86/</link>
       <pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/x86/</guid>
+      <guid>http://localhost:1313/tags/x86/</guid>
       <description></description>
     </item>
     <item>
       <title>Move</title>
-      <link>https://caoyang2002.xyz/tags/move/</link>
+      <link>http://localhost:1313/tags/move/</link>
       <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/move/</guid>
+      <guid>http://localhost:1313/tags/move/</guid>
       <description></description>
     </item>
     <item>
       <title>Sql</title>
-      <link>https://caoyang2002.xyz/tags/sql/</link>
+      <link>http://localhost:1313/tags/sql/</link>
       <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/sql/</guid>
+      <guid>http://localhost:1313/tags/sql/</guid>
       <description></description>
     </item>
     <item>
       <title>办公</title>
-      <link>https://caoyang2002.xyz/tags/%E5%8A%9E%E5%85%AC/</link>
+      <link>http://localhost:1313/tags/%E5%8A%9E%E5%85%AC/</link>
       <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E5%8A%9E%E5%85%AC/</guid>
+      <guid>http://localhost:1313/tags/%E5%8A%9E%E5%85%AC/</guid>
       <description></description>
     </item>
     <item>
       <title>算法</title>
-      <link>https://caoyang2002.xyz/tags/%E7%AE%97%E6%B3%95/</link>
+      <link>http://localhost:1313/tags/%E7%AE%97%E6%B3%95/</link>
       <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E7%AE%97%E6%B3%95/</guid>
+      <guid>http://localhost:1313/tags/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     <item>
       <title>硬件</title>
-      <link>https://caoyang2002.xyz/tags/%E7%A1%AC%E4%BB%B6/</link>
+      <link>http://localhost:1313/tags/%E7%A1%AC%E4%BB%B6/</link>
       <pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E7%A1%AC%E4%BB%B6/</guid>
+      <guid>http://localhost:1313/tags/%E7%A1%AC%E4%BB%B6/</guid>
       <description></description>
     </item>
     <item>
       <title>公告</title>
-      <link>https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/</link>
+      <link>http://localhost:1313/tags/%E5%85%AC%E5%91%8A/</link>
       <pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/</guid>
+      <guid>http://localhost:1313/tags/%E5%85%AC%E5%91%8A/</guid>
       <description></description>
     </item>
     <item>
       <title>关于</title>
-      <link>https://caoyang2002.xyz/tags/%E5%85%B3%E4%BA%8E/</link>
+      <link>http://localhost:1313/tags/%E5%85%B3%E4%BA%8E/</link>
       <pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E5%85%B3%E4%BA%8E/</guid>
+      <guid>http://localhost:1313/tags/%E5%85%B3%E4%BA%8E/</guid>
       <description></description>
     </item>
     <item>
       <title>Quartz</title>
-      <link>https://caoyang2002.xyz/tags/quartz/</link>
+      <link>http://localhost:1313/tags/quartz/</link>
       <pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/quartz/</guid>
+      <guid>http://localhost:1313/tags/quartz/</guid>
       <description></description>
     </item>
     <item>
       <title>经验</title>
-      <link>https://caoyang2002.xyz/tags/%E7%BB%8F%E9%AA%8C/</link>
+      <link>http://localhost:1313/tags/%E7%BB%8F%E9%AA%8C/</link>
       <pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E7%BB%8F%E9%AA%8C/</guid>
+      <guid>http://localhost:1313/tags/%E7%BB%8F%E9%AA%8C/</guid>
       <description></description>
     </item>
     <item>
       <title>书</title>
-      <link>https://caoyang2002.xyz/tags/%E4%B9%A6/</link>
+      <link>http://localhost:1313/tags/%E4%B9%A6/</link>
       <pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E4%B9%A6/</guid>
+      <guid>http://localhost:1313/tags/%E4%B9%A6/</guid>
       <description></description>
     </item>
     <item>
       <title>Openwrt</title>
-      <link>https://caoyang2002.xyz/tags/openwrt/</link>
+      <link>http://localhost:1313/tags/openwrt/</link>
       <pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/openwrt/</guid>
+      <guid>http://localhost:1313/tags/openwrt/</guid>
       <description></description>
     </item>
     <item>
       <title>群晖</title>
-      <link>https://caoyang2002.xyz/tags/%E7%BE%A4%E6%99%96/</link>
+      <link>http://localhost:1313/tags/%E7%BE%A4%E6%99%96/</link>
       <pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/%E7%BE%A4%E6%99%96/</guid>
+      <guid>http://localhost:1313/tags/%E7%BE%A4%E6%99%96/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>https://caoyang2002.xyz/tags/c/</link>
+      <link>http://localhost:1313/tags/c/</link>
       <pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/c/</guid>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>Cpp</title>
-      <link>https://caoyang2002.xyz/tags/cpp/</link>
+      <link>http://localhost:1313/tags/cpp/</link>
       <pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/tags/cpp/</guid>
+      <guid>http://localhost:1313/tags/cpp/</guid>
       <description></description>
     </item>
     <item>
       <title>Tech</title>
-      <link>https://caoyang2002.xyz/tags/tech/</link>
+      <link>http://localhost:1313/tags/tech/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://caoyang2002.xyz/tags/tech/</guid>
+      <guid>http://localhost:1313/tags/tech/</guid>
       <description></description>
     </item>
   </channel>

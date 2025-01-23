@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -163,14 +163,14 @@ Done. Now run:
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -182,13 +182,13 @@ Done. Now run:
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -216,7 +216,7 @@ Done. Now run:
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -278,63 +278,17 @@ Done. Now run:
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="创建一个远程编译环境">
-  <meta itemprop="description" content="我使用的是 Mac，所以以下都是 Mac 的说明
-一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
-1. 初始化模板 任意选一个就行
-1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
-caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者">
-  <meta itemprop="datePublished" content="2024-04-29T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-23T01:00:04+08:00">
-  <meta itemprop="wordCount" content="3872">
-  <meta itemprop="keywords" content="Move">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/es/post/2024/04/a_code_env/">
-  <meta property="og:site_name" content="caoyang2002">
-  <meta property="og:title" content="创建一个远程编译环境">
-  <meta property="og:description" content="我使用的是 Mac，所以以下都是 Mac 的说明
-一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
-1. 初始化模板 任意选一个就行
-1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
-caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-04-29T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-23T01:00:04+08:00">
-    <meta property="article:tag" content="Move">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="创建一个远程编译环境">
-  <meta name="twitter:description" content="我使用的是 Mac，所以以下都是 Mac 的说明
-一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
-1. 初始化模板 任意选一个就行
-1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
-caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/es/post/2024/04/a_code_env/" />
     
     
 </head>
@@ -349,7 +303,7 @@ caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: …
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang2002</a
         >
         <div
@@ -688,7 +642,7 @@ caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: …
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -712,7 +666,7 @@ caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: …
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/move"
+                href="http://localhost:1313/tags/move"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 move
@@ -1999,7 +1953,7 @@ subdir = &#34;aptos-move/framework/aptos-framework&#34;
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/es/post/2024/04/simhash/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/es/post/2024/04/simhash/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>什么是 SimHash</span></a
         >
@@ -2007,7 +1961,7 @@ subdir = &#34;aptos-move/framework/aptos-framework&#34;
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/es/post/2024/04/compent/"
+            href="http://localhost:1313/es/post/2024/04/compent/"
             ><span>报税记账</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -2389,7 +2343,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
         
     </div>
 

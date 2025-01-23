@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -128,14 +128,14 @@ Rust 的闭包本质上是一种特殊的数据结构，它包含：" />
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -147,13 +147,13 @@ Rust 的闭包本质上是一种特殊的数据结构，它包含：" />
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -181,7 +181,7 @@ Rust 的闭包本质上是一种特殊的数据结构，它包含：" />
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -243,55 +243,17 @@ Rust 的闭包本质上是一种特殊的数据结构，它包含：" />
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="rust 闭包">
-  <meta itemprop="description" content="从一个常见问题说起 假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：
-let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let even_numbers = ??? // 这里怎么写 let multiplied_numbers = ??? // 这里怎么写 运行 闭包的本质 Rust 的闭包本质上是一种特殊的数据结构，它包含：">
-  <meta itemprop="datePublished" content="2025-01-15T11:29:27+08:00">
-  <meta itemprop="dateModified" content="2025-01-23T01:00:04+08:00">
-  <meta itemprop="wordCount" content="2125">
-  <meta itemprop="keywords" content="编程,Rust">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/es/post/2025/01/rust_closure/">
-  <meta property="og:site_name" content="caoyang2002">
-  <meta property="og:title" content="rust 闭包">
-  <meta property="og:description" content="从一个常见问题说起 假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：
-let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let even_numbers = ??? // 这里怎么写 let multiplied_numbers = ??? // 这里怎么写 运行 闭包的本质 Rust 的闭包本质上是一种特殊的数据结构，它包含：">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-15T11:29:27+08:00">
-    <meta property="article:modified_time" content="2025-01-23T01:00:04+08:00">
-    <meta property="article:tag" content="编程">
-    <meta property="article:tag" content="Rust">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="rust 闭包">
-  <meta name="twitter:description" content="从一个常见问题说起 假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：
-let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let even_numbers = ??? // 这里怎么写 let multiplied_numbers = ??? // 这里怎么写 运行 闭包的本质 Rust 的闭包本质上是一种特殊的数据结构，它包含：">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/es/post/2025/01/rust_closure/" />
     
     
 </head>
@@ -306,7 +268,7 @@ let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let e
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang2002</a
         >
         <div
@@ -645,7 +607,7 @@ let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let e
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -669,14 +631,14 @@ let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let e
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
             </a>
              
             <a
-                href="https://caoyang2002.xyz/tags/rust"
+                href="http://localhost:1313/tags/rust"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 rust
@@ -2135,7 +2097,7 @@ let closure = move || println!(&#34;{}&#34;, value);</code></pre>
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/es/post/2025/01/rust_ref/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/es/post/2025/01/rust_ref/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>Rust 中的引用</span></a
         >
@@ -2143,7 +2105,7 @@ let closure = move || println!(&#34;{}&#34;, value);</code></pre>
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/es/post/2025/01/rust_result_option/"
+            href="http://localhost:1313/es/post/2025/01/rust_result_option/"
             ><span>深入解释 Rust 中的 Result 和 Option 这两个核心类型</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -2503,7 +2465,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
         
     </div>
 

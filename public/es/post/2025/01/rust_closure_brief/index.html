@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -185,14 +185,14 @@ let even_numbers: Vec&lt;i32&gt; = numbers
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -204,13 +204,13 @@ let even_numbers: Vec&lt;i32&gt; = numbers
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -238,7 +238,7 @@ let even_numbers: Vec&lt;i32&gt; = numbers
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -300,52 +300,17 @@ let even_numbers: Vec&lt;i32&gt; = numbers
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="简述 Rust 中的闭包">
-  <meta itemprop="description" content="为什么需要闭包？ // 问题1：函数复用 // 没有闭包时，需要传入所有参数 fn add(x: i32, base: i32) -&gt; i32 { x &#43; base } // 有了闭包，可以部分应用 let base = 5; let add_five = |x| x &#43; base; // 问题2：函数式编程需求 vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁 vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数 // 问题3：上下文捕获 // 没有闭包时很难处理 struct Context { value: i32 } let ctx = Context { value: 42 }; let use_context = || println!(&#34;{}&#34;, ctx.value); 运行 闭包是什么？ 闭包是可以捕获其环境的匿名函数 它&#34;封闭&#34;了其定义时的环境，故称&#34;闭包&#34; 闭包 = 函数 &#43; 环境 闭包的优势 // 1. 简洁的语法 let add = |a, b| a &#43; b; // vs fn add(a: i32, b: i32) -&gt; i32 // 2. 灵活的环境捕获 let multiplier = 2; let double = |x| x * multiplier; // 捕获 multiplier // 3. 支持函数式编程 let numbers: Vec&lt;i32&gt; = vec![1, 2, 3, 4, 5]; let even_numbers: Vec&lt;i32&gt; = numbers .into_iter() .filter(|x| x % 2 == 0) .collect(); 运行 理解闭包 我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：">
-  <meta itemprop="datePublished" content="2025-01-15T13:22:26+08:00">
-  <meta itemprop="dateModified" content="2025-01-23T01:00:04+08:00">
-  <meta itemprop="wordCount" content="1162">
-  <meta itemprop="keywords" content="编程,Rust">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/es/post/2025/01/rust_closure_brief/">
-  <meta property="og:site_name" content="caoyang2002">
-  <meta property="og:title" content="简述 Rust 中的闭包">
-  <meta property="og:description" content="为什么需要闭包？ // 问题1：函数复用 // 没有闭包时，需要传入所有参数 fn add(x: i32, base: i32) -&gt; i32 { x &#43; base } // 有了闭包，可以部分应用 let base = 5; let add_five = |x| x &#43; base; // 问题2：函数式编程需求 vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁 vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数 // 问题3：上下文捕获 // 没有闭包时很难处理 struct Context { value: i32 } let ctx = Context { value: 42 }; let use_context = || println!(&#34;{}&#34;, ctx.value); 运行 闭包是什么？ 闭包是可以捕获其环境的匿名函数 它&#34;封闭&#34;了其定义时的环境，故称&#34;闭包&#34; 闭包 = 函数 &#43; 环境 闭包的优势 // 1. 简洁的语法 let add = |a, b| a &#43; b; // vs fn add(a: i32, b: i32) -&gt; i32 // 2. 灵活的环境捕获 let multiplier = 2; let double = |x| x * multiplier; // 捕获 multiplier // 3. 支持函数式编程 let numbers: Vec&lt;i32&gt; = vec![1, 2, 3, 4, 5]; let even_numbers: Vec&lt;i32&gt; = numbers .into_iter() .filter(|x| x % 2 == 0) .collect(); 运行 理解闭包 我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2025-01-15T13:22:26+08:00">
-    <meta property="article:modified_time" content="2025-01-23T01:00:04+08:00">
-    <meta property="article:tag" content="编程">
-    <meta property="article:tag" content="Rust">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="简述 Rust 中的闭包">
-  <meta name="twitter:description" content="为什么需要闭包？ // 问题1：函数复用 // 没有闭包时，需要传入所有参数 fn add(x: i32, base: i32) -&gt; i32 { x &#43; base } // 有了闭包，可以部分应用 let base = 5; let add_five = |x| x &#43; base; // 问题2：函数式编程需求 vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁 vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数 // 问题3：上下文捕获 // 没有闭包时很难处理 struct Context { value: i32 } let ctx = Context { value: 42 }; let use_context = || println!(&#34;{}&#34;, ctx.value); 运行 闭包是什么？ 闭包是可以捕获其环境的匿名函数 它&#34;封闭&#34;了其定义时的环境，故称&#34;闭包&#34; 闭包 = 函数 &#43; 环境 闭包的优势 // 1. 简洁的语法 let add = |a, b| a &#43; b; // vs fn add(a: i32, b: i32) -&gt; i32 // 2. 灵活的环境捕获 let multiplier = 2; let double = |x| x * multiplier; // 捕获 multiplier // 3. 支持函数式编程 let numbers: Vec&lt;i32&gt; = vec![1, 2, 3, 4, 5]; let even_numbers: Vec&lt;i32&gt; = numbers .into_iter() .filter(|x| x % 2 == 0) .collect(); 运行 理解闭包 我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/es/post/2025/01/rust_closure_brief/" />
     
     
 </head>
@@ -360,7 +325,7 @@ let even_numbers: Vec&lt;i32&gt; = numbers
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang2002</a
         >
         <div
@@ -699,7 +664,7 @@ let even_numbers: Vec&lt;i32&gt; = numbers
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -723,14 +688,14 @@ let even_numbers: Vec&lt;i32&gt; = numbers
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
             </a>
              
             <a
-                href="https://caoyang2002.xyz/tags/rust"
+                href="http://localhost:1313/tags/rust"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 rust
@@ -1297,7 +1262,7 @@ let config = Config::new()
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/es/post/2025/01/mac_assembly/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/es/post/2025/01/mac_assembly/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>mac 汇编笔记</span></a
         >
@@ -1305,7 +1270,7 @@ let config = Config::new()
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/es/post/2025/01/rust_ref/"
+            href="http://localhost:1313/es/post/2025/01/rust_ref/"
             ><span>Rust 中的引用</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1630,7 +1595,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
         
     </div>
 

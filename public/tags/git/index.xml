@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on caoyang 2002</title>
-    <link>https://caoyang2002.xyz/tags/git/</link>
+    <link>http://localhost:1313/tags/git/</link>
     <description>Recent content in Git on caoyang 2002</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate>
-    <atom:link href="https://caoyang2002.xyz/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>删除错误提交到GitHub仓库中的文件</title>
-      <link>https://caoyang2002.xyz/post/2024/06/git_delete_file/</link>
+      <link>http://localhost:1313/post/2024/06/git_delete_file/</link>
       <pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/post/2024/06/git_delete_file/</guid>
+      <guid>http://localhost:1313/post/2024/06/git_delete_file/</guid>
       <description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;在本地仓库中删除文件&lt;/strong&gt;：&#xA;首先，在你的本地仓库中删除该文件：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>办公 on caoyang 2002</title>
-    <link>https://caoyang2002.xyz/tags/%E5%8A%9E%E5%85%AC/</link>
+    <link>http://localhost:1313/tags/%E5%8A%9E%E5%85%AC/</link>
     <description>Recent content in 办公 on caoyang 2002</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate>
-    <atom:link href="https://caoyang2002.xyz/tags/%E5%8A%9E%E5%85%AC/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%8A%9E%E5%85%AC/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>报税记账</title>
-      <link>https://caoyang2002.xyz/post/2024/04/compent/</link>
+      <link>http://localhost:1313/post/2024/04/compent/</link>
       <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>https://caoyang2002.xyz/post/2024/04/compent/</guid>
+      <guid>http://localhost:1313/post/2024/04/compent/</guid>
       <description>&lt;blockquote&gt;&#xA;&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;报税网址&#34;&gt;报税网址&lt;/h1&gt;&#xA;&lt;h2 id=&#34;四川省电子税务局&#34;&gt;四川省电子税务局&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://etax.sichuan.chinatax.gov.cn/loginb/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://etax.sichuan.chinatax.gov.cn/loginb/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;自然人电子税务局&#34;&gt;自然人电子税务局&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这个主要是给法人报税用的&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://etax.chinatax.gov.cn&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://etax.chinatax.gov.cn&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;关于注销&#34;&gt;关于注销&lt;/h1&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;税务申报方面需要仔细一点, 然后就是一些文件里面的项, 我啥也不懂, 就没有改, 发现需要再缴 500, 不知道是什么, 就缴了,&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;去注销企业的时候遇到的一些问题:&lt;/p&gt;&#xA;&lt;p&gt;我使用的是 &amp;ldquo;简易注销&amp;rdquo;, 这个比较方便, 是一站式的, 办理完后需要等待 20 天的公示期,公示期结束后继续办理注销流程&lt;/p&gt;</description>
     </item>
   </channel>

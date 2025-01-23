@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -152,14 +152,14 @@ int main(){
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -171,13 +171,13 @@ int main(){
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -205,7 +205,7 @@ int main(){
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -267,54 +267,17 @@ int main(){
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="C 语言数学">
-  <meta itemprop="description" content="暴力算法 时间复杂度过大
-#include &lt;stdio.h&gt; #include &lt;malloc/_malloc.h&gt; #include &lt;string.h&gt; #include &lt;errno.h&gt; // 最大公约数 // 最小公倍数 //计算最小公倍数和最大公约数的和 int main(){ int n = 0; int m = 0; while(scanf(&#34;%d %d&#34;,&amp;n,&amp;m) == 2){//读取两个数 int min = n &lt; m ? n : m; int max = n &gt; m ? n : m; int i = min;//最大公约数 int j = max;//最小公倍数 while(1){ if(n%i == 0 &amp;&amp; m%i == 0){ break; } i--; } // i就是最大公约数 while(1){ if(j%n == 0 &amp;&amp; j%m == 0){ break; } j&#43;&#43;; } // j就是最大公倍数 printf(&#34;最大公倍数 %d &#43; 最小公约数 %d = %d\n&#34;,j,i,j&#43;i); } return 0; } 辗转相除法 两个数的最大公约数等于其中较小的数字和二者之间余数的最大公约数">
-  <meta itemprop="datePublished" content="2023-06-29T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-22T22:41:30+08:00">
-  <meta itemprop="wordCount" content="405">
-  <meta itemprop="keywords" content="编程">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/post/2023/06/c_number/">
-  <meta property="og:site_name" content="caoyang 2002">
-  <meta property="og:title" content="C 语言数学">
-  <meta property="og:description" content="暴力算法 时间复杂度过大
-#include &lt;stdio.h&gt; #include &lt;malloc/_malloc.h&gt; #include &lt;string.h&gt; #include &lt;errno.h&gt; // 最大公约数 // 最小公倍数 //计算最小公倍数和最大公约数的和 int main(){ int n = 0; int m = 0; while(scanf(&#34;%d %d&#34;,&amp;n,&amp;m) == 2){//读取两个数 int min = n &lt; m ? n : m; int max = n &gt; m ? n : m; int i = min;//最大公约数 int j = max;//最小公倍数 while(1){ if(n%i == 0 &amp;&amp; m%i == 0){ break; } i--; } // i就是最大公约数 while(1){ if(j%n == 0 &amp;&amp; j%m == 0){ break; } j&#43;&#43;; } // j就是最大公倍数 printf(&#34;最大公倍数 %d &#43; 最小公约数 %d = %d\n&#34;,j,i,j&#43;i); } return 0; } 辗转相除法 两个数的最大公约数等于其中较小的数字和二者之间余数的最大公约数">
-  <meta property="og:locale" content="zh_CN">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2023-06-29T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-22T22:41:30+08:00">
-    <meta property="article:tag" content="编程">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="C 语言数学">
-  <meta name="twitter:description" content="暴力算法 时间复杂度过大
-#include &lt;stdio.h&gt; #include &lt;malloc/_malloc.h&gt; #include &lt;string.h&gt; #include &lt;errno.h&gt; // 最大公约数 // 最小公倍数 //计算最小公倍数和最大公约数的和 int main(){ int n = 0; int m = 0; while(scanf(&#34;%d %d&#34;,&amp;n,&amp;m) == 2){//读取两个数 int min = n &lt; m ? n : m; int max = n &gt; m ? n : m; int i = min;//最大公约数 int j = max;//最小公倍数 while(1){ if(n%i == 0 &amp;&amp; m%i == 0){ break; } i--; } // i就是最大公约数 while(1){ if(j%n == 0 &amp;&amp; j%m == 0){ break; } j&#43;&#43;; } // j就是最大公倍数 printf(&#34;最大公倍数 %d &#43; 最小公约数 %d = %d\n&#34;,j,i,j&#43;i); } return 0; } 辗转相除法 两个数的最大公约数等于其中较小的数字和二者之间余数的最大公约数">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/post/2023/06/c_number/" />
     
     
 </head>
@@ -329,7 +292,7 @@ int main(){
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang 2002</a
         >
         <div
@@ -668,7 +631,7 @@ int main(){
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -692,7 +655,7 @@ int main(){
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
@@ -826,7 +789,7 @@ int main(){
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2023/06/c_struct/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2023/06/c_struct/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>C 语言结构体</span></a
         >
@@ -834,7 +797,7 @@ int main(){
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/post/2023/05/cpp_named/"
+            href="http://localhost:1313/post/2023/05/cpp_named/"
             ><span>C&#43;&#43; 命名规范</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1128,7 +1091,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang 2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
         
     </div>
 

@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -99,14 +99,14 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -118,13 +118,13 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -152,7 +152,7 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -214,55 +214,17 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="什么是 SimHash">
-  <meta itemprop="description" content="一、什么是SimHash SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
-对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。 比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。">
-  <meta itemprop="datePublished" content="2024-04-29T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-23T01:00:04+08:00">
-  <meta itemprop="wordCount" content="4843">
-  <meta itemprop="keywords" content="编程,算法">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/en/post/2024/04/simhash/">
-  <meta property="og:site_name" content="caoyang2002">
-  <meta property="og:title" content="什么是 SimHash">
-  <meta property="og:description" content="一、什么是SimHash SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
-对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。 比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-04-29T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-23T01:00:04+08:00">
-    <meta property="article:tag" content="编程">
-    <meta property="article:tag" content="算法">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="什么是 SimHash">
-  <meta name="twitter:description" content="一、什么是SimHash SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
-对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。 比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/en/post/2024/04/simhash/" />
     
     
 </head>
@@ -277,7 +239,7 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang2002</a
         >
         <div
@@ -616,7 +578,7 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -640,14 +602,14 @@ SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for 
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
             </a>
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%AE%97%E6%B3%95"
+                href="http://localhost:1313/tags/%E7%AE%97%E6%B3%95"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 算法
@@ -909,7 +871,7 @@ ytho：
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/en/post/2024/04/sql/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/en/post/2024/04/sql/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>SQL 教程</span></a
         >
@@ -917,7 +879,7 @@ ytho：
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/en/post/2024/04/a_code_env/"
+            href="http://localhost:1313/en/post/2024/04/a_code_env/"
             ><span>创建一个远程编译环境</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1252,7 +1214,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
         
     </div>
 

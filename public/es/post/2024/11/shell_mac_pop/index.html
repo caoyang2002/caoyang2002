@@ -53,7 +53,7 @@
 >
     
     
-    <style>
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -208,14 +208,14 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
     
     
     
-    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
+    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
 
     
     
@@ -227,13 +227,13 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
 
     
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
     
-    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
+    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
     
     
 
@@ -261,7 +261,7 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
      
     <script
         defer
-        src="https://caoyang2002.xyz/highlight.min.js"
+        src="http://localhost:1313/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
 
@@ -323,52 +323,17 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
     
     <link
         rel="icon"
-        href="https://caoyang2002.xyz/favicon.ico"
+        href="http://localhost:1313/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="https://caoyang2002.xyz/apple-touch-icon.png"
+        href="http://localhost:1313/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
-    
-    
-    
-    
-    
-  <meta itemprop="name" content="shell mac 教程">
-  <meta itemprop="description" content="原文 ↗ #!/bin/bash # 1. 自定义通知消息 # 传参 $1:消息描述 $2:通知标题 $3:通知副标题 function showNoteMessage(){ osascript -e &#34;display notification \&#34;${1}\&#34; with title \&#34;${2}\&#34; subtitle \&#34;${3}\&#34; sound name \&#34;Funk\&#34;&#34; } #test case: #showNoteMessage &#34;消息内容&#34; &#34;通知&#34; &#34;通知副标题&#34; # 2. 自定义弹窗(统一通用方法) # 传参$1 弹窗消息内容 # 传参$2 弹窗标题 # 传参$3 按钮标题,多个用英文逗号隔开 # 传参$4 默认选中的按钮标题或者按钮数字下标 # 传参$5 是否为输入框类型 传&#34;0&#34;或者&#34;1&#34; 默认&#34;0&#34; # 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &#34;&#34; # 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取) # tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false function showCustomAlertMessage(){ if [[ -n &#34;$4&#34; ]]; then if [[ ${4} == *[!0-9]* ]]; then defaultButton=&#34;default button \&#34;${4}\&#34;&#34; else defaultButton=&#34;default button ${4}&#34; fi else defaultButton=&#34;&#34; fi #是否为输入框模式 if [[ &#34;$5&#34; = &#34;1&#34; ]]; then IS_InputMode=&#34;default answer \&#34;${6}\&#34;&#34; ReturnValue=&#34;get result&#34; else IS_InputMode=&#34;&#34; ReturnValue=&#34;get the button returned of the result&#34; fi if [[ -n &#34;$7&#34; ]]; then case ${7} in note) ICON=&#34;with icon note&#34; ;; stop) ICON=&#34;with icon stop&#34; ;; caution) ICON=&#34;with icon caution&#34; ;; *) ICON=&#34;with icon file \&#34;${7}\&#34;&#34; ;; esac else ICON=&#34;with icon file \&#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&#34;&#34; fi osascript &lt;&lt;EOF set buttonStr to &#34;${3}&#34; set oldDelimiters to AppleScript&#39;s text item delimiters set AppleScript&#39;s text item delimiters to &#34;,&#34; set buttonList to every text item of buttonStr set AppleScript&#39;s text item delimiters to oldDelimiters get buttonList set btns to buttonList display dialog &#34;${1}&#34; with title &#34;${2}&#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON} ${ReturnValue} EOF } # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;1&#34; &#34;占位内容&#34; &#34;note&#34; # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; 2 &#34;0&#34; &#34;占位内容&#34; &#34;note&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;stop&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&#34; # 普通弹窗 一个ok就够了 就是一个确认的那种 function onlyConfirmButton(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;好的&#34; 1 } #onlyConfirmButton &#34;登录成功!\n弹窗成功!&#34; # 多按钮弹窗 最多三个按钮 多了会报错 function mostButtons(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮3&#34; } #mostButtons &#34;最多只能定义三个按钮哦&#34; # 输入框弹窗 function showInputAlertMessage(){ showCustomAlertMessage &#34;$1&#34; &#34;$2&#34; &#34;取消,确认&#34; 2 &#34;1&#34; &#34;&#34; } showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;">
-  <meta itemprop="datePublished" content="2024-11-09T09:31:37+08:00">
-  <meta itemprop="dateModified" content="2025-01-23T01:00:04+08:00">
-  <meta itemprop="wordCount" content="1050">
-  <meta itemprop="keywords" content="编程,Shell">
-    
-    <meta property="og:url" content="https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/">
-  <meta property="og:site_name" content="caoyang2002">
-  <meta property="og:title" content="shell mac 教程">
-  <meta property="og:description" content="原文 ↗ #!/bin/bash # 1. 自定义通知消息 # 传参 $1:消息描述 $2:通知标题 $3:通知副标题 function showNoteMessage(){ osascript -e &#34;display notification \&#34;${1}\&#34; with title \&#34;${2}\&#34; subtitle \&#34;${3}\&#34; sound name \&#34;Funk\&#34;&#34; } #test case: #showNoteMessage &#34;消息内容&#34; &#34;通知&#34; &#34;通知副标题&#34; # 2. 自定义弹窗(统一通用方法) # 传参$1 弹窗消息内容 # 传参$2 弹窗标题 # 传参$3 按钮标题,多个用英文逗号隔开 # 传参$4 默认选中的按钮标题或者按钮数字下标 # 传参$5 是否为输入框类型 传&#34;0&#34;或者&#34;1&#34; 默认&#34;0&#34; # 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &#34;&#34; # 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取) # tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false function showCustomAlertMessage(){ if [[ -n &#34;$4&#34; ]]; then if [[ ${4} == *[!0-9]* ]]; then defaultButton=&#34;default button \&#34;${4}\&#34;&#34; else defaultButton=&#34;default button ${4}&#34; fi else defaultButton=&#34;&#34; fi #是否为输入框模式 if [[ &#34;$5&#34; = &#34;1&#34; ]]; then IS_InputMode=&#34;default answer \&#34;${6}\&#34;&#34; ReturnValue=&#34;get result&#34; else IS_InputMode=&#34;&#34; ReturnValue=&#34;get the button returned of the result&#34; fi if [[ -n &#34;$7&#34; ]]; then case ${7} in note) ICON=&#34;with icon note&#34; ;; stop) ICON=&#34;with icon stop&#34; ;; caution) ICON=&#34;with icon caution&#34; ;; *) ICON=&#34;with icon file \&#34;${7}\&#34;&#34; ;; esac else ICON=&#34;with icon file \&#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&#34;&#34; fi osascript &lt;&lt;EOF set buttonStr to &#34;${3}&#34; set oldDelimiters to AppleScript&#39;s text item delimiters set AppleScript&#39;s text item delimiters to &#34;,&#34; set buttonList to every text item of buttonStr set AppleScript&#39;s text item delimiters to oldDelimiters get buttonList set btns to buttonList display dialog &#34;${1}&#34; with title &#34;${2}&#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON} ${ReturnValue} EOF } # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;1&#34; &#34;占位内容&#34; &#34;note&#34; # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; 2 &#34;0&#34; &#34;占位内容&#34; &#34;note&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;stop&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&#34; # 普通弹窗 一个ok就够了 就是一个确认的那种 function onlyConfirmButton(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;好的&#34; 1 } #onlyConfirmButton &#34;登录成功!\n弹窗成功!&#34; # 多按钮弹窗 最多三个按钮 多了会报错 function mostButtons(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮3&#34; } #mostButtons &#34;最多只能定义三个按钮哦&#34; # 输入框弹窗 function showInputAlertMessage(){ showCustomAlertMessage &#34;$1&#34; &#34;$2&#34; &#34;取消,确认&#34; 2 &#34;1&#34; &#34;&#34; } showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;">
-  <meta property="og:locale" content="es_ES">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2024-11-09T09:31:37+08:00">
-    <meta property="article:modified_time" content="2025-01-23T01:00:04+08:00">
-    <meta property="article:tag" content="编程">
-    <meta property="article:tag" content="Shell">
-
-    
-    
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="shell mac 教程">
-  <meta name="twitter:description" content="原文 ↗ #!/bin/bash # 1. 自定义通知消息 # 传参 $1:消息描述 $2:通知标题 $3:通知副标题 function showNoteMessage(){ osascript -e &#34;display notification \&#34;${1}\&#34; with title \&#34;${2}\&#34; subtitle \&#34;${3}\&#34; sound name \&#34;Funk\&#34;&#34; } #test case: #showNoteMessage &#34;消息内容&#34; &#34;通知&#34; &#34;通知副标题&#34; # 2. 自定义弹窗(统一通用方法) # 传参$1 弹窗消息内容 # 传参$2 弹窗标题 # 传参$3 按钮标题,多个用英文逗号隔开 # 传参$4 默认选中的按钮标题或者按钮数字下标 # 传参$5 是否为输入框类型 传&#34;0&#34;或者&#34;1&#34; 默认&#34;0&#34; # 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &#34;&#34; # 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取) # tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false function showCustomAlertMessage(){ if [[ -n &#34;$4&#34; ]]; then if [[ ${4} == *[!0-9]* ]]; then defaultButton=&#34;default button \&#34;${4}\&#34;&#34; else defaultButton=&#34;default button ${4}&#34; fi else defaultButton=&#34;&#34; fi #是否为输入框模式 if [[ &#34;$5&#34; = &#34;1&#34; ]]; then IS_InputMode=&#34;default answer \&#34;${6}\&#34;&#34; ReturnValue=&#34;get result&#34; else IS_InputMode=&#34;&#34; ReturnValue=&#34;get the button returned of the result&#34; fi if [[ -n &#34;$7&#34; ]]; then case ${7} in note) ICON=&#34;with icon note&#34; ;; stop) ICON=&#34;with icon stop&#34; ;; caution) ICON=&#34;with icon caution&#34; ;; *) ICON=&#34;with icon file \&#34;${7}\&#34;&#34; ;; esac else ICON=&#34;with icon file \&#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&#34;&#34; fi osascript &lt;&lt;EOF set buttonStr to &#34;${3}&#34; set oldDelimiters to AppleScript&#39;s text item delimiters set AppleScript&#39;s text item delimiters to &#34;,&#34; set buttonList to every text item of buttonStr set AppleScript&#39;s text item delimiters to oldDelimiters get buttonList set btns to buttonList display dialog &#34;${1}&#34; with title &#34;${2}&#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON} ${ReturnValue} EOF } # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;1&#34; &#34;占位内容&#34; &#34;note&#34; # showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; 2 &#34;0&#34; &#34;占位内容&#34; &#34;note&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;stop&#34; #showCustomAlertMessage &#34;弹窗消息内容&#34; &#34;弹窗标题&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮2&#34; &#34;0&#34; &#34;占位内容&#34; &#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&#34; # 普通弹窗 一个ok就够了 就是一个确认的那种 function onlyConfirmButton(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;好的&#34; 1 } #onlyConfirmButton &#34;登录成功!\n弹窗成功!&#34; # 多按钮弹窗 最多三个按钮 多了会报错 function mostButtons(){ showCustomAlertMessage &#34;$1&#34; &#34;温馨提示&#34; &#34;按钮1,按钮2,按钮3&#34; &#34;按钮3&#34; } #mostButtons &#34;最多只能定义三个按钮哦&#34; # 输入框弹窗 function showInputAlertMessage(){ showCustomAlertMessage &#34;$1&#34; &#34;$2&#34; &#34;取消,确认&#34; 2 &#34;1&#34; &#34;&#34; } showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;">
-
-    
-    
-
-    
-    <link rel="canonical" href="https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/" />
     
     
 </head>
@@ -383,7 +348,7 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="https://caoyang2002.xyz/"
+            href="http://localhost:1313/"
             >caoyang2002</a
         >
         <div
@@ -722,7 +687,7 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
     </div>
     <script
         async
-        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+        src="https://website-statistics.vercel.app/js/analytics.pure.mini.js"
     ></script>
 </div>
 
@@ -746,14 +711,14 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;
         <span class="text-md antialiased opacity-60">
              
             <a
-                href="https://caoyang2002.xyz/tags/%E7%BC%96%E7%A8%8B"
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 编程
             </a>
              
             <a
-                href="https://caoyang2002.xyz/tags/shell"
+                href="http://localhost:1313/tags/shell"
                 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
             >
                 shell
@@ -896,7 +861,7 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;</code></p
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/es/post/2024/12/hexo/"
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/es/post/2024/12/hexo/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>使用 Hexo&#43;GitHub&#43;Vercel 搭建个人免费博客的最佳实践</span></a
         >
@@ -904,7 +869,7 @@ showInputAlertMessage &#34;请输入密码&#34; &#34;登录验证&#34;</code></p
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="https://caoyang2002.xyz/es/post/2024/07/google_account/"
+            href="http://localhost:1313/es/post/2024/07/google_account/"
             ><span>谷歌账号注册的问题</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -1198,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="https://caoyang2002.xyz/">caoyang2002</a>
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
         
     </div>
 
