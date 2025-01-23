@@ -1,1 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 23 Jan 2025 10:58:00 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+
+&lt;div class="protected-content">
+ &lt;div class="password-form">
+ &lt;input type="password" placeholder="输入访问密码" class="pass-input" />
+ &lt;button onclick="decryptContent(this)" class="pass-btn">访问&lt;/button>
+ &lt;/div>
+ &lt;div
+ class="encrypted-content"
+ style="display: none"
+ data-content="
+机密内容
+"
+ >&lt;/div>
+&lt;/div>
+&lt;script>
+ function decryptContent(btn) {
+ const container = btn.closest(".protected-content");
+ const input = container.querySelector(".pass-input");
+ const content = container.querySelector(".encrypted-content");
+
+ if (input.value === "123") {
+ content.innerHTML = content.dataset.content;
+ content.style.display = "block";
+ container.querySelector(".password-form").style.display = "none";
+ } else {
+ alert("密码错误");
+ }
+ }
+&lt;/script>
+&lt;style>
+ .protected-content {
+ border: 1px solid #eee;
+ padding: 20px;
+ border-radius: 5px;
+ }
+ .pass-input {
+ padding: 8px;
+ margin-right: 10px;
+ }
+ .pass-btn {
+ padding: 8px 16px;
+ background: #0066cc;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+&lt;/style>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item></channel></rss>
