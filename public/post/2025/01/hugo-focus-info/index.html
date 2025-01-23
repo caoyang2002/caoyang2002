@@ -53,7 +53,7 @@
 >
     
     
-    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+    <style>
         body {
             min-height: 100vh;
             background-color: var(--bg);
@@ -152,14 +152,14 @@ Go" />
     
     
     
-    <link rel="preload stylesheet" as="style" href="http://localhost:1313/main.min.css" />
+    <link rel="preload stylesheet" as="style" href="https://caoyang2002.xyz/main.min.css" />
 
     
     
     
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/theme.png" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/theme.png" />
 
     
     
@@ -171,13 +171,13 @@ Go" />
 
     
     
-    <link rel="preload" as="image" href="http://localhost:1313/twitter.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/twitter.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/github.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/github.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/instagram.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/instagram.svg" />
     
-    <link rel="preload" as="image" href="http://localhost:1313/rss.svg" />
+    <link rel="preload" as="image" href="https://caoyang2002.xyz/rss.svg" />
     
     
 
@@ -194,6 +194,9 @@ Go" />
         src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
     
+
+    
+
     <script
         defer
         src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
@@ -202,9 +205,20 @@ Go" />
      
     <script
         defer
-        src="http://localhost:1313/highlight.min.js"
+        src="https://caoyang2002.xyz/highlight.min.js"
         onload="hljs.initHighlightingOnLoad();"
     ></script>
+
+    
+
+    <script>
+        window.onload = function () {
+            hljs.highlightAll();
+        };
+    </script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/lisp.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/mariadb.min.js"></script>
     
 
     
@@ -253,17 +267,61 @@ Go" />
     
     <link
         rel="icon"
-        href="http://localhost:1313/favicon.ico"
+        href="https://caoyang2002.xyz/favicon.ico"
     />
     <link
         rel="apple-touch-icon"
-        href="http://localhost:1313/apple-touch-icon.png"
+        href="https://caoyang2002.xyz/apple-touch-icon.png"
     />
 
     
     <meta name="generator" content="Hugo 0.140.2">
 
     
+    
+    
+    
+    
+    
+  <meta itemprop="name" content="Hugo-Focus 主题介绍">
+  <meta itemprop="description" content="==fds==
+一、简述 这是一个专注于编程的 Hugo 博客主题。
+参考了我此前为 Typora 开发的 Thompsgo 主题 ↗ 二、特性 1. 运行代码 支持的语言：
+python (wasm) lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器) cpp (playground) rust (playground) go (playground) ts (TypeScript 的 JavaScript 实现) js (原生) 代码运行示例 Rust
+fn main() { println!(&#34;Hello from Rust!&#34;); } 运行 Go">
+  <meta itemprop="datePublished" content="2025-01-21T01:53:21+08:00">
+  <meta itemprop="dateModified" content="2025-01-23T03:53:28+08:00">
+  <meta itemprop="wordCount" content="2606">
+    
+    <meta property="og:url" content="https://caoyang2002.xyz/post/2025/01/hugo-focus-info/">
+  <meta property="og:site_name" content="caoyang 2002">
+  <meta property="og:title" content="Hugo-Focus 主题介绍">
+  <meta property="og:description" content="==fds==
+一、简述 这是一个专注于编程的 Hugo 博客主题。
+参考了我此前为 Typora 开发的 Thompsgo 主题 ↗ 二、特性 1. 运行代码 支持的语言：
+python (wasm) lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器) cpp (playground) rust (playground) go (playground) ts (TypeScript 的 JavaScript 实现) js (原生) 代码运行示例 Rust
+fn main() { println!(&#34;Hello from Rust!&#34;); } 运行 Go">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-01-21T01:53:21+08:00">
+    <meta property="article:modified_time" content="2025-01-23T03:53:28+08:00">
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hugo-Focus 主题介绍">
+  <meta name="twitter:description" content="==fds==
+一、简述 这是一个专注于编程的 Hugo 博客主题。
+参考了我此前为 Typora 开发的 Thompsgo 主题 ↗ 二、特性 1. 运行代码 支持的语言：
+python (wasm) lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器) cpp (playground) rust (playground) go (playground) ts (TypeScript 的 JavaScript 实现) js (原生) 代码运行示例 Rust
+fn main() { println!(&#34;Hello from Rust!&#34;); } 运行 Go">
+
+    
+    
+
+    
+    <link rel="canonical" href="https://caoyang2002.xyz/post/2025/01/hugo-focus-info/" />
     
     
 </head>
@@ -278,7 +336,7 @@ Go" />
     >
         <a
             class="-translate-y-[1px] text-2xl font-medium"
-            href="http://localhost:1313/"
+            href="https://caoyang2002.xyz/"
             >caoyang 2002</a
         >
         <div
@@ -389,7 +447,8 @@ Go" />
             
             
             
-            <div class="language-selector"><div class="inline-block text-left dropdown">
+            <div class="language-selector">
+                <div class="inline-block text-left dropdown">
     
     <div>
         <p class="selected-language">Chinese</p>
@@ -486,7 +545,8 @@ Go" />
         color: #0042da;
     }
 </style>
-</div>
+
+            </div>
         </nav>
     </div>
 </header>
@@ -546,7 +606,53 @@ Go" />
                 class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"
             >
                 
-
+<div>
+    <link
+        rel="stylesheet"
+        href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <div>
+        本站访问
+        <span id="website_visits_value">
+            <i className="fa fa-spinner fa-spin"></i>
+        </span>
+        次
+    </div>
+    <div>
+        当前页面访问
+        <span id="_page_visits">
+            <i className="fa fa-spinner fa-spin"></i>
+        </span>
+        次
+    </div>
+    <div>
+        文章评分
+        <span id="artical_star_value_pv">
+            <i className="fa fa-spinner fa-spin"></i>
+        </span>
+        分 评分总人数(
+        <span id="people_star_sum_value_pv">
+            <i className="fa fa-spinner fa-spin"></i>
+        </span>
+        ) 平均分(
+        <span id="artical_star_sum_value_pv">
+            <i className="fa fa-spinner fa-spin"></i>
+        </span>
+        )
+    </div>
+    <Rating />
+    <div className="rating">
+        <i className="fa fa-star rating-star text-red-500" data-value="1"></i>
+        <i className="fa fa-star rating-star" data-value="2"></i>
+        <i className="fa fa-star rating-star" data-value="3"></i>
+        <i className="fa fa-star rating-star" data-value="4"></i>
+        <i className="fa fa-star rating-star" data-value="5"></i>
+    </div>
+    <script
+        async
+        src="//website-statistics.vercel.app//js/analytics.pure.mini.js"
+    ></script>
+</div>
 
 <article class="text-left">
     
@@ -3977,7 +4083,7 @@ if(!title || title == &#34;${title}&#34;) {
         class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
     >
         
-        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2024/03/notice/"
+        <a class="ltr:pr-3 rtl:pl-3" href="https://caoyang2002.xyz/post/2024/03/notice/"
             ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
             ><span>公告</span></a
         >
@@ -3985,7 +4091,7 @@ if(!title || title == &#34;${title}&#34;) {
         
         <a
             class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
-            href="http://localhost:1313/post/2025/01/do_you_really_need_a_designer/"
+            href="https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/"
             ><span>作为独立开发者，你真的需要设计师吗？</span
             ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
         >
@@ -4373,7 +4479,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <div class="mr-auto opacity-60">
          &copy; 2025
-        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
+        <a class="link" href="https://caoyang2002.xyz/">caoyang 2002</a>
         
     </div>
 
@@ -4388,11 +4494,10 @@ document.addEventListener('DOMContentLoaded', () => {
             src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         ></script>
         <p class="link mx-6 opacity-60">
-            本站访问
+            本站累计访问次数
             <span id="busuanzi_value_page_pv"
                 ><i class="fa fa-spinner fa-spin"></i
             ></span>
-            次
         </p>
     </div>
 

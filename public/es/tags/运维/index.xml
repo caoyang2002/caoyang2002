@@ -1,190 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>运维 on caoyang2002</title><link>https://caoyang2002.xyz/es/tags/%E8%BF%90%E7%BB%B4/</link><description>Recent content in 运维 on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/es/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>谷歌账号注册的问题</title><link>https://caoyang2002.xyz/es/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/07/google_account/</guid><description>&lt;p>参考：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;a href="https://www.gmail777.com/archives/69"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 中州西鹿
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 多图详细教你注册Google（Gmail）新账号，常见问题和注意事项
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://uzbox.com/usa/google-add-tel.html"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;/ol>
-&lt;h1 id="谷歌账号注册的问题">谷歌账号注册的问题&lt;/h1>
-&lt;h2 id="注册">注册&lt;/h2>
-&lt;p>通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p></description></item><item><title>TG 下载器</title><link>https://caoyang2002.xyz/es/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件">软件&lt;/h1>
-&lt;p>
-&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://github.com/tangyoha/telegram_media_downloader/
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h2 id="在-elease-里面下载可执行程序">在 elease 里面下载可执行程序&lt;/h2>
-&lt;h1 id="win">Win&lt;/h1>
-&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt="">&lt;/p>
-&lt;p>
-&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h1 id="linux-x86_64">Linux （x86_64)&lt;/h1>
-&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt="">&lt;/p>
-&lt;p>
-&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h1 id="mac">mac&lt;/h1>
-&lt;p>没有测试
-
-&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h1 id="配置">配置&lt;/h1>
-&lt;p>所有配置都通过 config.yaml 文件传递​​给 &lt;code>Telegram Media Downloader&lt;/code>。&lt;/p>
-&lt;p>&lt;strong>获取您的 API 密钥：&lt;/strong>
-第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p>
-&lt;ol>
-&lt;li>访问 
-&lt;a href="https://my.telegram.org/apps"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://my.telegram.org/apps
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
- 并使用您的 Telegram 帐户登录。&lt;/li>
-&lt;li>填写表格以注册新的 Telegram 应用程序。&lt;/li>
-&lt;li>完成！ API 密钥由两部分组成：&lt;strong>api_id&lt;/strong> 和&lt;strong>api_hash&lt;/strong>。&lt;/li>
-&lt;/ol>
-&lt;p>&lt;strong>获取聊天ID：&lt;/strong>&lt;/p></description></item><item><title>搭建 NPS</title><link>https://caoyang2002.xyz/es/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/03/docker_pns/</guid><description>&lt;blockquote>
-&lt;p>
-&lt;a href="https://github.com/ehang-io/nps/tree/master"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- github
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>
-&lt;a href="https://ehang-io.github.io/nps/#/install"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 官方文档
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;/blockquote>
-&lt;p>其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p>
-&lt;p>以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
-简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p></description></item><item><title>OpenWRT 教程</title><link>https://caoyang2002.xyz/es/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2023/10/openwrt/</guid><description>&lt;p>
-&lt;a href="https://lidrive.vip/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- OpenWRT下载地址
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h1 id="下载">下载&lt;/h1>
-&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本">&lt;/p>
-&lt;h1 id="制作启动盘">制作启动盘&lt;/h1>
-&lt;p>将PE系统写入到U盘，window：rufus，macOS：balenaEtcher
-将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p>
-&lt;h1 id="进入bios">进入BIOS&lt;/h1>
-&lt;p>将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p>
-&lt;h1 id="删除设备的磁盘分区">删除设备的磁盘分区&lt;/h1>
-&lt;p>进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>运维 on caoyang2002</title>
+    <link>https://caoyang2002.xyz/es/tags/%E8%BF%90%E7%BB%B4/</link>
+    <description>Recent content in 运维 on caoyang2002</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
+    <atom:link href="https://caoyang2002.xyz/es/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>谷歌账号注册的问题</title>
+      <link>https://caoyang2002.xyz/es/post/2024/07/google_account/</link>
+      <pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate>
+      <guid>https://caoyang2002.xyz/es/post/2024/07/google_account/</guid>
+      <description>&lt;p&gt;参考：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://www.gmail777.com/archives/69&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   中州西鹿&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://blog.csdn.net/huayanhuicui/article/details/137236352&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   多图详细教你注册Google（Gmail）新账号，常见问题和注意事项&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://uzbox.com/usa/google-add-tel.html&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h1 id=&#34;谷歌账号注册的问题&#34;&gt;谷歌账号注册的问题&lt;/h1&gt;&#xA;&lt;h2 id=&#34;注册&#34;&gt;注册&lt;/h2&gt;&#xA;&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>TG 下载器</title>
+      <link>https://caoyang2002.xyz/es/post/2024/05/download_telegram/</link>
+      <pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate>
+      <guid>https://caoyang2002.xyz/es/post/2024/05/download_telegram/</guid>
+      <description>&lt;h1 id=&#34;软件&#34;&gt;软件&lt;/h1&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://github.com/tangyoha/telegram_media_downloader/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://github.com/tangyoha/telegram_media_downloader/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;在-elease-里面下载可执行程序&#34;&gt;在 elease 里面下载可执行程序&lt;/h2&gt;&#xA;&lt;h1 id=&#34;win&#34;&gt;Win&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;linux-x86_64&#34;&gt;Linux （x86_64)&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;mac&#34;&gt;mac&lt;/h1&gt;&#xA;&lt;p&gt;没有测试&#xA;&#xA;&lt;a href=&#34;https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;配置&#34;&gt;配置&lt;/h1&gt;&#xA;&lt;p&gt;所有配置都通过 config.yaml 文件传递​​给 &lt;code&gt;Telegram Media Downloader&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;获取您的 API 密钥：&lt;/strong&gt;&#xA;第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;访问 &#xA;&lt;a href=&#34;https://my.telegram.org/apps&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://my.telegram.org/apps&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA; 并使用您的 Telegram 帐户登录。&lt;/li&gt;&#xA;&lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;&#xA;&lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>搭建 NPS</title>
+      <link>https://caoyang2002.xyz/es/post/2024/03/docker_pns/</link>
+      <pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate>
+      <guid>https://caoyang2002.xyz/es/post/2024/03/docker_pns/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://github.com/ehang-io/nps/tree/master&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   github&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://ehang-io.github.io/nps/#/install&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   官方文档&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;&#xA;&lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。&#xA;简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenWRT 教程</title>
+      <link>https://caoyang2002.xyz/es/post/2023/10/openwrt/</link>
+      <pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate>
+      <guid>https://caoyang2002.xyz/es/post/2023/10/openwrt/</guid>
+      <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://lidrive.vip/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   OpenWRT下载地址&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;下载&#34;&gt;下载&lt;/h1&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png&#34; alt=&#34;版本&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;制作启动盘&#34;&gt;制作启动盘&lt;/h1&gt;&#xA;&lt;p&gt;将PE系统写入到U盘，window：rufus，macOS：balenaEtcher&#xA;将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p&gt;&#xA;&lt;h1 id=&#34;进入bios&#34;&gt;进入BIOS&lt;/h1&gt;&#xA;&lt;p&gt;将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p&gt;&#xA;&lt;h1 id=&#34;删除设备的磁盘分区&#34;&gt;删除设备的磁盘分区&lt;/h1&gt;&#xA;&lt;p&gt;进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

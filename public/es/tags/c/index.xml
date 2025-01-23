@@ -1,26 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C on caoyang2002</title><link>https://caoyang2002.xyz/es/tags/c/</link><description>Recent content in C on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/es/tags/c/index.xml" rel="self" type="application/rss+xml"/><item><title>函数栈帧的创建和销毁</title><link>https://caoyang2002.xyz/es/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2023/07/function_stack/</guid><description>&lt;p>&lt;code>C/C++&lt;/code>&lt;/p>
-&lt;p>函数栈帧的创建和销毁&lt;/p>
-&lt;p>在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p>
-&lt;p>比如：&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;p>函数的作用域是怎么形成的呢？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>局部变量是如何创建的？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>函数是如何传参的？&lt;/p>
-&lt;p>传参的顺序又是怎么样的呢？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>形参和实参的关系是什么？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>函数的调用是怎么实现的呢？&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>函数调用结束后是怎么返回的呢？&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C on caoyang2002</title>
+    <link>https://caoyang2002.xyz/es/tags/c/</link>
+    <description>Recent content in C on caoyang2002</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
+    <atom:link href="https://caoyang2002.xyz/es/tags/c/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>函数栈帧的创建和销毁</title>
+      <link>https://caoyang2002.xyz/es/post/2023/07/function_stack/</link>
+      <pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate>
+      <guid>https://caoyang2002.xyz/es/post/2023/07/function_stack/</guid>
+      <description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;&#xA;&lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;&#xA;&lt;p&gt;比如：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;函数的作用域是怎么形成的呢？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;局部变量是如何创建的？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;函数是如何传参的？&lt;/p&gt;&#xA;&lt;p&gt;传参的顺序又是怎么样的呢？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;形参和实参的关系是什么？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
