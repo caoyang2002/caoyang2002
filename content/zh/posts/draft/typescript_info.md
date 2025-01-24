@@ -1,6 +1,6 @@
 +++
 date = '2025-01-24T13:46:32+08:00'
-draft = false
+draft = true
 title = 'typescript 技术解析'
 toc = true
 categories= ["设计"]

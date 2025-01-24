@@ -2,14 +2,14 @@
 date = '2025-01-24T12:56:26+08:00'
 draft = false
 title = '即时设计插件开发'
+author = "simons"
 toc = true
 categories= ["开发"]
 tags = ["插件"]
-description = "即时设计插件开发"
-
+description = "关于即使设计开发中的项目结构和代码组织介绍"
 +++
 
-# Simple-jsd
+# 简述
 
 这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，[GitHub 地址](https://github.com/jsdesigndev/plugin-samples/tree/main/react%20插件示例)
 
@@ -24,9 +24,12 @@ https://js.design/download
 https://code.visualstudio.com/Download
 
 > **code 快捷命令（可选）**
-> macOS 系统快捷键：`⇧ ⌘ P （command + shift + p）`
-> Windows/Linux 快捷键: `Ctrl + Shift + P`
-> 搜索安装 `shell command`
+>
+> macOS 系统快捷键：<kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>P</kbd> （command + shift + p）
+>
+> Windows/Linux 快捷键: <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>
+>
+>搜索安装 `shell command`
 
 3. nodejs/npm
 
@@ -39,7 +42,7 @@ npm install @types/react @types/react-dom
 ```
 
 > **启用类型提示**
-> 在 vscode 按 `ctrl + shift + b` 开发即时设计类型提示
+> 在 vscode 按 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>b</kbd> 开发即时设计类型提示
 
 
 

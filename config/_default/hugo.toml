@@ -3,8 +3,9 @@ baseURL = 'https://caoyang2002.xyz'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
-# 忽略文件
-ignoreFiles = ["/draft/.*"]
+
+author = "Simons"
+
 ignoreLogs = ['warning-goldmark-raw-html']
 
 # 设置默认语言
@@ -101,7 +102,8 @@ subtitle = 'The Best Widgets on Earth'
 toc = true                             # 全局启用目录
 paginationSize = 10
 # 背景图片
-# backgroundImage = "/imgs/background_img.jpg" # 放在 static 下
+
+author = "Simons"
 
 # 社交媒体链接
 twitter = 'caoyang2002'

@@ -7,7 +7,7 @@ weight: 1
 categories: ["公告"]
 tags: ["公告"]
 author: "simons"
-description: "公告"
+description: "这是长期置顶的内容，主要用于提示和测试"
 # featuredImage: "/images/cover/blue.jpg"
 toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录

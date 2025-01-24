@@ -1,9 +1,9 @@
 +++
-date = '{{ .Date }}'
-draft = false
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
-toc = true
-categories= ["设计"]
-tags = ["排版"]
-description = "这是一段描述内容"
+date = {{ .Date }}
+draft = true
+author = "{{ .Site.Params.defaults.author }}"
+categories = {{ .Site.Params.defaults.categories  | jsonify }}
+tags = {{ .Site.Params.defaults.tags  | jsonify }}
+description = "{{ .Site.Params.defaults.description }}"
 +++
