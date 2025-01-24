@@ -2,6 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = '创建一个远程编译环境'
+categories= ["开发"]
 tags = ["move"]
 toc = true
 +++

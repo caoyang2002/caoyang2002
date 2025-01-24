@@ -14,4 +14,13 @@ autoCollapseToc: true    # 自动折叠目录
 ---
 
 
+{{< notice note >}}
+这是一个注意事项
+{{< /notice >}}
+
+
+{{% protected "123" %}}
+掩耳盗铃
+{{% /protected %}}
+
 ![image](/images/cover/blue.jpg)

@@ -3,7 +3,8 @@ baseURL = 'https://caoyang2002.xyz'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
-
+# 忽略文件
+ignoreFiles = ["/draft/.*"]
 ignoreLogs = ['warning-goldmark-raw-html']
 
 # 设置默认语言
