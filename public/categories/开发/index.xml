@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Jan 2025 12:56:26 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>即时设计插件开发</title><link>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="simple-jsd">Simple-jsd&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 24 Jan 2025 19:24:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>即时设计插件开发</title><link>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述">简述&lt;/h1>
 &lt;p>这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
 &lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
  
@@ -49,10 +49,10 @@
 &lt;/a>
 &lt;/p>
 &lt;blockquote>
-&lt;p>&lt;strong>code 快捷命令（可选）&lt;/strong>
-macOS 系统快捷键：&lt;code>⇧ ⌘ P （command + shift + p）&lt;/code>
-Windows/Linux 快捷键: &lt;code>Ctrl + Shift + P&lt;/code>
-搜索安装 &lt;code>shell command&lt;/code>&lt;/p>
+&lt;p>&lt;strong>code 快捷命令（可选）&lt;/strong>&lt;/p>
+&lt;p>macOS 系统快捷键：&lt;kbd>⌘&lt;/kbd> + &lt;kbd>⇧&lt;/kbd> + &lt;kbd>P&lt;/kbd> （command + shift + p）&lt;/p>
+&lt;p>Windows/Linux 快捷键: &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>P&lt;/kbd>&lt;/p>
+&lt;p>搜索安装 &lt;code>shell command&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;ol start="3">
 &lt;li>nodejs/npm&lt;/li>
@@ -88,7 +88,7 @@ Windows/Linux 快捷键: &lt;code>Ctrl + Shift + P&lt;/code>
 
 &lt;blockquote>
 &lt;p>&lt;strong>启用类型提示&lt;/strong>
-在 vscode 按 &lt;code>ctrl + shift + b&lt;/code> 开发即时设计类型提示&lt;/p>
+在 vscode 按 &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>b&lt;/kbd> 开发即时设计类型提示&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="效率工具">效率工具&lt;/h2>
 &lt;h3 id="webpack">webpack&lt;/h3>
