@@ -470,8 +470,9 @@ pub async fn to_common_result<T: Serialize>(
 
 现在考虑如何将 move 编译器如何打包为 wasm
 
-目前考虑的方向是将
+在 aptos crate 下面，创建 wasm 项目，并在这里编译 wasm
 
+现在
 
 
 

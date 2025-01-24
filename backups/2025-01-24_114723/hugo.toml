@@ -12,6 +12,7 @@ defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 
 
+
 # 基础优化配置
 enableGitInfo = true
 hasCJKLanguage = true
@@ -87,8 +88,10 @@ startLevel = 1
 ordered = false
 # startLevel = 2
 
-# [markup.goldmark.renderer]
-# unsafe = true
+[markup.goldmark.renderer]
+unsafe = true
+
+
 
 # 主题参数配置
 [params]
@@ -143,26 +146,7 @@ changefreq = "monthly"
 priority = 0.5
 filename = "sitemap.xml"
 
-[markup]
-defaultMarkdownHandler = 'goldmark'
 
-[markup.highlight]
-anchorLineNos = false
-lineAnchors = ''
-lineNoStart = 1
-lineNos = false
-tabWidth = 4
-# 启用代码围栏功能
-codeFences = true
-# 启用语言猜测
-guessSyntax = true
-# 启用行号
-# lineNos = true
-lineNumbersInTable = true
-# 使用 classes 而不是内联样式
-noClasses = false
-# 选择高亮主题
-style = "monokai" # 代码高亮主题
 
 
 # 多语言支持
@@ -209,3 +193,38 @@ subtitle = 'Reference, Tutorials, and Explanations'
     weight = 3
 [languages.es.params]
 subtitle = 'Referencia, Tutoriales y Explicaciones'
+
+
+
+[markup]
+defaultMarkdownHandler = 'goldmark'
+
+[markup.highlight]
+anchorLineNos = false
+lineAnchors = ''
+lineNoStart = 1
+lineNos = false
+tabWidth = 4
+# 启用代码围栏功能
+codeFences = true
+# 启用语言猜测
+guessSyntax = true
+# 启用行号
+# lineNos = true
+lineNumbersInTable = true
+# 使用 classes 而不是内联样式
+noClasses = false
+# 选择高亮主题
+style = "monokai" # 代码高亮主题
+
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true
+
+[markup.goldmark.extensions]
+  strikethrough = true
+  table = true
+  taskList = true
+  typographer = true
+  highlight = true
+  mark = true    # 支持 ==标记== 语法
