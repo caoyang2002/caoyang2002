@@ -457,11 +457,11 @@ class App extends React.Component {
 
   onCreate = () => { // 点击“创建”按钮时触发的函数。
     const count = parseInt(this.textbox.value, 10) // 从输入框中获取用户输入的值（矩形数量）。
-    parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*') // 向 Figma 插件主逻辑发送消息，消息类型为 create-rectangles，并传递 count 参数。
+    parent.postMessage({ pluginMessage: { type: 'create-rectangles', count } }, '*') // 向 JSD 插件主逻辑发送消息，消息类型为 create-rectangles，并传递 count 参数。
   }
 
   onCancel = () => { // 点击“取消”按钮时触发的函数。
-    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*') // 向 Figma 插件主逻辑发送消息，消息类型为 cancel。
+    parent.postMessage({ pluginMessage: { type: 'cancel' } }, '*') // 向 JSD 插件主逻辑发送消息，消息类型为 cancel。
   }
 
   render() { // 渲染组件的 UI。

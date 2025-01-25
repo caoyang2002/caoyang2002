@@ -18,6 +18,9 @@ autoCollapseToc: true    # 自动折叠目录
 这是一个注意事项
 {{< /notice >}}
 
+{{<crypto>}}
+这是一个加密内容。
+{{</crypto >}}
 
 {{% protected "123" %}}
 掩耳盗铃
