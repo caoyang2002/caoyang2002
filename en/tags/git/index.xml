@@ -11,6 +11,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-sh" data-lang="sh">git rm --cached &amp;lt;file&amp;gt;&lt;/code>&lt;/pre>
 &lt;/div>

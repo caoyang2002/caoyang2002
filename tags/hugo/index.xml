@@ -54,12 +54,16 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">hugo new site demo&lt;/code>&lt;/pre>
 &lt;/div>
 
 &lt;p>这会在当前目录创建一个名为 &lt;code>demo&lt;/code> 的目录，然后初始化 &lt;code>hugo&lt;/code> 的目录结构，&lt;/p>
 &lt;h2 id="创建一个空的主题模版">创建一个空的主题模版&lt;/h2>
+
+
 
 
 
@@ -82,11 +86,15 @@ hugo new theme hugo-zero&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-" data-lang="">Creating theme at /hugo/demo/themes/hugo-zero&lt;/code>&lt;/pre>
 &lt;/div>
 
 &lt;p>一开始的目录结构如下图所示：&lt;/p>
+
+
 
 
 

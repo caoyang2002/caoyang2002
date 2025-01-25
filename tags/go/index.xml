@@ -9,7 +9,10 @@
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：接口定义在使用方(调用方)包中
@@ -24,34 +27,9 @@ type UserService interface {
  Create(ctx context.Context, user *User) error
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="2">
@@ -64,7 +42,10 @@ type UserService interface {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确的依赖方向
@@ -74,34 +55,9 @@ handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 service -&amp;gt; handler
 repository -&amp;gt; service&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="3">
@@ -114,7 +70,10 @@ repository -&amp;gt; service&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：每层使用自己的数据模型
@@ -143,34 +102,9 @@ type User struct {
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="4">
@@ -183,7 +117,10 @@ type User struct {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：每层对错误进行适当包装
@@ -210,39 +147,16 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="5">
 &lt;li>包的组织：&lt;/li>
 &lt;/ol>
+
+
 
 
 
@@ -282,7 +196,10 @@ project/
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：通过构造函数注入依赖
@@ -293,34 +210,9 @@ func NewUserHandler(service UserService) *UserHandler {
 // ❌ 错误：全局变量或直接初始化
 var userService = &amp;amp;UserService{}&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="7">
@@ -333,7 +225,10 @@ var userService = &amp;amp;UserService{}&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：小接口，职责单一
@@ -355,34 +250,9 @@ type UserService interface {
  SearchUsers(query string) ([]*User, error)
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="8">
@@ -395,7 +265,10 @@ type UserService interface {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：集中管理配置
@@ -411,34 +284,9 @@ type Config struct {
 var serverPort = 8080
 var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="9">
@@ -451,7 +299,10 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：统一使用 context 传递请求上下文
@@ -465,34 +316,9 @@ func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="10">
@@ -505,7 +331,10 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：测试文件与源文件对应
@@ -520,34 +349,9 @@ func TestAll(t *testing.T) {
  // 混合测试多个功能
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>遵循这些规则可以使代码：&lt;/p></description></item></channel></rss>

@@ -23,6 +23,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-sql" data-lang="sql">CREATE TABLE 表名(
  列名1 类型[长度] [DEFAULT 默认值] [约束条件]

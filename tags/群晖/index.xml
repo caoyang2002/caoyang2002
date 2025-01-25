@@ -21,6 +21,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-shell" data-lang="shell">uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
 arch：该命令可以查看Linux系统的CPU架构。
