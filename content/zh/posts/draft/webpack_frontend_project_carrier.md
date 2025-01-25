@@ -1,7 +1,7 @@
 +++
 date = '2025-01-24T13:41:27+08:00'
 draft = true
-title = 'webpack 基础解析'
+title = 'Webpack：前端项目的"搬运工"'
 toc = true
 categories= ["设计"]
 tags = ["排版"]

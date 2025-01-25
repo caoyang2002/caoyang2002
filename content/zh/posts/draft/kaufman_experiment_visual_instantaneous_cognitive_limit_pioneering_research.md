@@ -1,5 +1,5 @@
 +++
-title = '6f6ba845'
+title = 'Kaufman实验：视觉瞬时认知极限的开创性研究'
 date = 2025-01-25T05:44:29+08:00
 draft = true
 author = "simons"

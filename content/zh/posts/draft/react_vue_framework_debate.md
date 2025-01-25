@@ -1,7 +1,7 @@
 +++
 date = '2025-01-24T13:57:50+08:00'
 draft = true
-title = '前端框架之争的深层思考'
+title = 'React vs Vue: 框架之争的深层思考'
 toc = true
 categories= ["开发"]
 tags = ["思考"]

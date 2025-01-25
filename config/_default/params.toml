@@ -4,6 +4,8 @@ reward = true
 wechatPaymentCode = '/images/payment/wechat.jpg'
 alipayPaymentCode = '/images/payment/alipay.jpg'
 
+paginatePath = 'page'
+
 # 反馈
 feedback = true
 email = 'reggiesimons2cy@gmail.com'

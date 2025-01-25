@@ -13,7 +13,6 @@ toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录
 ---
 
-
 {{< notice note >}}
 这是一个注意事项
 {{< /notice >}}

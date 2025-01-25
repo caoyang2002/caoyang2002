@@ -99,9 +99,12 @@ unsafe = true
 [params]
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
-toc = true                             # 全局启用目录
+toc = true
+# 全局启用目录
+#
+# 分页
 paginationSize = 10
-# 背景图片
+paginatePath = "page"
 
 author = "Simons"
 
