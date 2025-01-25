@@ -82,6 +82,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">npm install @types/react @types/react-dom&lt;/code>&lt;/pre>
 &lt;/div>
@@ -121,6 +123,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">npm init vite&lt;/code>&lt;/pre>
 &lt;/div>
@@ -129,6 +133,8 @@
 &lt;p>可能需要先安装
 &lt;code>npm install vite --save-dev&lt;/code>&lt;/p>
 &lt;/blockquote>
+
+
 
 
 
@@ -155,6 +161,8 @@ Done. Now run:
 &lt;/div>
 
 &lt;h3 id="12-一键创建">1.2 一键创建&lt;/h3>
+
+
 
 
 

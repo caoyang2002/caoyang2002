@@ -6,7 +6,10 @@
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">// 问题1：函数复用
@@ -27,34 +30,9 @@ struct Context { value: i32 }
 let ctx = Context { value: 42 };
 let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h1 id="闭包是什么">闭包是什么？&lt;/h1>
@@ -71,7 +49,10 @@ let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pr
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">// 1. 简洁的语法
@@ -88,34 +69,9 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
  .filter(|x| x % 2 == 0)
  .collect();&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h1 id="理解闭包">理解闭包&lt;/h1>
@@ -134,7 +90,10 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">fn calculate_length(s: String) -&amp;gt; usize {
@@ -145,34 +104,9 @@ let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
 println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p></description></item><item><title>rust 闭包</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起">从一个常见问题说起&lt;/h2>
@@ -184,7 +118,10 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
@@ -192,38 +129,53 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 let even_numbers = ??? // 这里怎么写
 let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h2 id="闭包的本质">闭包的本质&lt;/h2>
-&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
+&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p>
+&lt;ol>
+&lt;li>函数逻辑&lt;/li>
+&lt;li>捕获的环境变量&lt;/li>
+&lt;/ol>
+&lt;p>让我们通过反编译来看闭包的真实面目：&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h2 id="闭包的三种类型">闭包的三种类型&lt;/h2>
+&lt;p>通过具体案例来理解三种闭包 trait：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
 &lt;p>假设我们在写一个文件处理程序：&lt;/p>
 
 
@@ -232,41 +184,19 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>这段代码看似简单，但隐藏着两个基本问题：&lt;/p>
@@ -274,4 +204,121 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
 &lt;li>文件可能不存在&lt;/li>
 &lt;li>即使文件存在，读取过程也可能失败&lt;/li>
 &lt;/ol>
-&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p></description></item></channel></rss>
+&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p>
+&lt;h2 id="option处理有与没有">&lt;code>Option&lt;/code>：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2>
+&lt;h3 id="option-的本质">&lt;code>Option&lt;/code> 的本质&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">enum Option&amp;lt;T&amp;gt; {
+ Some(T), // 有值
+ None, // 没有值
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;p>让我们看一个实际例子：&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ if id == 0 {
+ None // 用户不存在
+ } else {
+ Some(User { id, ... }) // 用户存在
+ }
+}
+
+// 使用方式
+match find_user(1) {
+ Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
+ None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h3 id="option-的常用方法">&lt;code>Option&lt;/code> 的常用方法&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">let x: Option&amp;lt;i32&amp;gt; = Some(5);
+
+// 方法1：unwrap - 危险操作
+let value1 = x.unwrap(); // 如果是 None 会 panic
+
+// 方法2：unwrap_or - 提供默认值
+let value2 = x.unwrap_or(0); // None 时返回0
+
+// 方法3：map - 变换内部值
+let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
+
+// 方法4：and_then - 链式操作
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h2 id="result处理成功与失败">&lt;code>Result&lt;/code>：处理“成功”与“失败”&lt;/h2>
+&lt;h3 id="result-的本质">&lt;code>Result&lt;/code> 的本质&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">enum Result&amp;lt;T, E&amp;gt; {
+ Ok(T), // 成功，包含值 T
+ Err(E), // 错误，包含错误 E
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;p>实际应用示例：&lt;/p></description></item></channel></rss>

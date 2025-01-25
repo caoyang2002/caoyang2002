@@ -25,4 +25,4 @@ timeZone = "Asia/Shanghai"
 
 [frontmatter]
   default = ["title", "author", "date", "draft", "categories", "tags", "description"]
-  post = ["title", "author", "date", "draft", "categories", "tags", "description"]
+  post = ["title", "author", "date", "draft", "categories", "tags", "description","codeRunners"]

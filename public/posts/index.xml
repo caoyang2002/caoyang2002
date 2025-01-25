@@ -1,5 +1,109 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang 2002</title><link>https://caoyang2002.xyz/posts/</link><description>Recent content in Posts on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.xyz/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
+
+&lt;div class="crypto-content">
+ &lt;div class="crypto-form">
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ />
+ &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
+ &lt;/div>
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="Cui/meaYr&amp;#43;S4gOS4quWKoOWvhuWGheWuueOAggo="
+ >
+ 已加密，请输入密码
+ &lt;/div>
+&lt;/div>
+
+&lt;script>
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "20250126";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256("123456" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
+ output.textContent = decoded;
+ form.style.display = 'none';
+ } catch(e) {
+ showError('密码错误，请重试');
+ }
+ }
+
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b => b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script>
+
+&lt;style>
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style>
+
 &lt;div class="protected-content">
  &lt;div class="password-form">
  &lt;input type="password" placeholder="输入访问密码" class="pass-input" />
@@ -131,6 +235,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">npm install @types/react @types/react-dom&lt;/code>&lt;/pre>
 &lt;/div>
@@ -188,13 +294,19 @@
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">fn main() {
  println!(&amp;#34;Hello from Rust!&amp;#34;);
 }&lt;/code>&lt;/pre>
  &lt;/div>
+ 
+
+ 
  &lt;div class="controls">
  &lt;button class="run-button">
  &lt;span style="display: flex; align-items: center; gap: 4px"
@@ -223,6 +335,7 @@
  &lt;div class="output" style="display: none">
  &lt;pre class="output-content">&lt;/pre>
  &lt;/div>
+ 
 &lt;/div>
 
 &lt;/blockquote>
@@ -257,6 +370,8 @@
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-asm" data-lang="asm">.section __TEXT,__text
 .globl _main
@@ -274,11 +389,15 @@ ret&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-c" data-lang="c">int main() {
  return 0;
 }&lt;/code>&lt;/pre>
 &lt;/div>
+
+
 
 
 
@@ -310,7 +429,10 @@ gcc null.s -o null&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">// 问题1：函数复用
@@ -331,34 +453,9 @@ struct Context { value: i32 }
 let ctx = Context { value: 42 };
 let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h1 id="闭包是什么">闭包是什么？&lt;/h1>
@@ -375,7 +472,10 @@ let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pr
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">// 1. 简洁的语法
@@ -392,34 +492,9 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
  .filter(|x| x % 2 == 0)
  .collect();&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h1 id="理解闭包">理解闭包&lt;/h1>
@@ -438,7 +513,10 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">fn calculate_length(s: String) -&amp;gt; usize {
@@ -449,34 +527,9 @@ let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
 println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p></description></item><item><title>rust 闭包</title><link>https://caoyang2002.xyz/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起">从一个常见问题说起&lt;/h2>
@@ -488,7 +541,10 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
@@ -496,38 +552,53 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 let even_numbers = ??? // 这里怎么写
 let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;h2 id="闭包的本质">闭包的本质&lt;/h2>
-&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
+&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p>
+&lt;ol>
+&lt;li>函数逻辑&lt;/li>
+&lt;li>捕获的环境变量&lt;/li>
+&lt;/ol>
+&lt;p>让我们通过反编译来看闭包的真实面目：&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h2 id="闭包的三种类型">闭包的三种类型&lt;/h2>
+&lt;p>通过具体案例来理解三种闭包 trait：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.xyz/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
 &lt;p>假设我们在写一个文件处理程序：&lt;/p>
 
 
@@ -536,41 +607,19 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>这段代码看似简单，但隐藏着两个基本问题：&lt;/p>
@@ -578,7 +627,124 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
 &lt;li>文件可能不存在&lt;/li>
 &lt;li>即使文件存在，读取过程也可能失败&lt;/li>
 &lt;/ol>
-&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p></description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.xyz/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/wasm_print/</guid><description>&lt;p>在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p>
+&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p>
+&lt;h2 id="option处理有与没有">&lt;code>Option&lt;/code>：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2>
+&lt;h3 id="option-的本质">&lt;code>Option&lt;/code> 的本质&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">enum Option&amp;lt;T&amp;gt; {
+ Some(T), // 有值
+ None, // 没有值
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;p>让我们看一个实际例子：&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ if id == 0 {
+ None // 用户不存在
+ } else {
+ Some(User { id, ... }) // 用户存在
+ }
+}
+
+// 使用方式
+match find_user(1) {
+ Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
+ None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h3 id="option-的常用方法">&lt;code>Option&lt;/code> 的常用方法&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">let x: Option&amp;lt;i32&amp;gt; = Some(5);
+
+// 方法1：unwrap - 危险操作
+let value1 = x.unwrap(); // 如果是 None 会 panic
+
+// 方法2：unwrap_or - 提供默认值
+let value2 = x.unwrap_or(0); // None 时返回0
+
+// 方法3：map - 变换内部值
+let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
+
+// 方法4：and_then - 链式操作
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;h2 id="result处理成功与失败">&lt;code>Result&lt;/code>：处理“成功”与“失败”&lt;/h2>
+&lt;h3 id="result-的本质">&lt;code>Result&lt;/code> 的本质&lt;/h3>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">enum Result&amp;lt;T, E&amp;gt; {
+ Ok(T), // 成功，包含值 T
+ Err(E), // 错误，包含错误 E
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;p>实际应用示例：&lt;/p></description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.xyz/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/wasm_print/</guid><description>&lt;p>在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p>
 &lt;ol>
 &lt;li>使用 &lt;code>web_sys&lt;/code> 和 &lt;code>wasm_bindgen&lt;/code> 进行浏览器 API 调用：&lt;/li>
 &lt;/ol>
@@ -589,7 +755,10 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">use wasm_bindgen::prelude::*;
@@ -625,39 +794,16 @@ pub fn move_test(name: &amp;amp;str) {
  }
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="2">
 &lt;li>在 Cargo.toml 中需要添加必要的依赖：&lt;/li>
 &lt;/ol>
+
+
 
 
 
@@ -690,7 +836,10 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">use web_sys::console;
@@ -705,34 +854,9 @@ pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="4">
@@ -745,7 +869,10 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">use wasm_bindgen::prelude::*;
@@ -774,34 +901,9 @@ pub fn move_test(name: &amp;amp;str) {
  }
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="5">
@@ -814,7 +916,10 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
@@ -832,34 +937,9 @@ pub fn move_test(name: &amp;amp;str) {
  }
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="6">
@@ -872,7 +952,10 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
 &lt;div class="code-playground" data-language="rust">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-rust">use web_sys::Storage;
@@ -894,34 +977,9 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  Ok(())
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p></description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://caoyang2002.xyz/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考">参考：&lt;/h1>
@@ -980,12 +1038,16 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">hugo new site demo&lt;/code>&lt;/pre>
 &lt;/div>
 
 &lt;p>这会在当前目录创建一个名为 &lt;code>demo&lt;/code> 的目录，然后初始化 &lt;code>hugo&lt;/code> 的目录结构，&lt;/p>
 &lt;h2 id="创建一个空的主题模版">创建一个空的主题模版&lt;/h2>
+
+
 
 
 
@@ -1008,11 +1070,15 @@ hugo new theme hugo-zero&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-" data-lang="">Creating theme at /hugo/demo/themes/hugo-zero&lt;/code>&lt;/pre>
 &lt;/div>
 
 &lt;p>一开始的目录结构如下图所示：&lt;/p>
+
+
 
 
 
@@ -1041,7 +1107,10 @@ hugo new theme hugo-zero&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：接口定义在使用方(调用方)包中
@@ -1056,34 +1125,9 @@ type UserService interface {
  Create(ctx context.Context, user *User) error
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="2">
@@ -1096,7 +1140,10 @@ type UserService interface {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确的依赖方向
@@ -1106,34 +1153,9 @@ handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 service -&amp;gt; handler
 repository -&amp;gt; service&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="3">
@@ -1146,7 +1168,10 @@ repository -&amp;gt; service&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：每层使用自己的数据模型
@@ -1175,34 +1200,9 @@ type User struct {
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="4">
@@ -1215,7 +1215,10 @@ type User struct {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：每层对错误进行适当包装
@@ -1242,39 +1245,16 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="5">
 &lt;li>包的组织：&lt;/li>
 &lt;/ol>
+
+
 
 
 
@@ -1314,7 +1294,10 @@ project/
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：通过构造函数注入依赖
@@ -1325,34 +1308,9 @@ func NewUserHandler(service UserService) *UserHandler {
 // ❌ 错误：全局变量或直接初始化
 var userService = &amp;amp;UserService{}&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="7">
@@ -1365,7 +1323,10 @@ var userService = &amp;amp;UserService{}&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：小接口，职责单一
@@ -1387,34 +1348,9 @@ type UserService interface {
  SearchUsers(query string) ([]*User, error)
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="8">
@@ -1427,7 +1363,10 @@ type UserService interface {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：集中管理配置
@@ -1443,34 +1382,9 @@ type Config struct {
 var serverPort = 8080
 var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="9">
@@ -1483,7 +1397,10 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：统一使用 context 传递请求上下文
@@ -1497,34 +1414,9 @@ func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;ol start="10">
@@ -1537,7 +1429,10 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
+
+
 &lt;div class="code-playground" data-language="go">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-go">// ✅ 正确：测试文件与源文件对应
@@ -1552,39 +1447,61 @@ func TestAll(t *testing.T) {
  // 混合测试多个功能
 }&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
-&lt;p>遵循这些规则可以使代码：&lt;/p></description></item><item><title>营销</title><link>https://caoyang2002.xyz/post/2024/12/decision_paralysis/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/decision_paralysis/</guid><description>&lt;h1 id="决策瘫痪">决策瘫痪&lt;/h1>
-&lt;p>同行的朋友都觉得这样的菜单隐隐让自己很不舒服，不知道该选什么。但他们都让老板推荐了几个菜之后开始吃起来，忘记了刚刚“不舒服”的选择过程。而我却无法容忍这种模糊的感觉，希望探究一下背后的道理。然后想着想着，突然想到了很久之前看过的一个心理学实验：&lt;/p>
-&lt;p>研究人员随机找了 2 组消费者，在两组面前都呈现了一系列昂贵的果酱，并且给他们提供试吃机会和优惠券。不同的是A组消费者面前摆着 6 款不同的果酱，B 组消费者面前摆着 24 种不同的果酱。&lt;/p></description></item><item><title>资源</title><link>https://caoyang2002.xyz/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源">如何找资源&lt;/h1>
+&lt;p>遵循这些规则可以使代码：&lt;/p></description></item><item><title>营销</title><link>https://caoyang2002.xyz/post/2024/12/decision_paralysis/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/decision_paralysis/</guid><description>&lt;h1 id="决策瘫痪选择太多反而寸步难行">决策瘫痪：选择太多反而寸步难行&lt;/h1>
+&lt;h2 id="现象解析">现象解析&lt;/h2>
+&lt;p>当面对过多选择时，人们会:&lt;/p>
+&lt;ol>
+&lt;li>耗费过多精力对比选项&lt;/li>
+&lt;li>担心做出错误决策&lt;/li>
+&lt;li>因认知负荷过重而放弃选择&lt;/li>
+&lt;li>即使做出选择也会感到不确定和焦虑&lt;/li>
+&lt;/ol>
+&lt;h2 id="科学依据">科学依据&lt;/h2>
+&lt;h3 id="果酱实验深度剖析">果酱实验深度剖析&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>实验设计：&lt;/p>
+&lt;ul>
+&lt;li>A组：6种果酱，简单决策场景&lt;/li>
+&lt;li>B组：24种果酱，复杂决策场景&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>关键数据：&lt;/p>
+&lt;ul>
+&lt;li>A组购买率：30%&lt;/li>
+&lt;li>B组购买率：3%&lt;/li>
+&lt;li>差距达10倍&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>认知机制：&lt;/p>
+&lt;/li>
+&lt;/ul>
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid">graph TD
+ A[大量选项] --> B[信息过载]
+ B --> C[认知资源耗尽]
+ C --> D[决策质量下降]
+ D --> E[放弃决策]&lt;/div>
+
+&lt;h3 id="神经科学解释">神经科学解释&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>工作记忆负荷&lt;/p></description></item><item><title>资源</title><link>https://caoyang2002.xyz/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源">如何找资源&lt;/h1>
 &lt;blockquote>
 &lt;p>下载
 
@@ -1866,6 +1783,8 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-as" data-lang="as">#!/bin/bash
 
@@ -2018,6 +1937,8 @@ showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&am
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-c" data-lang="c">3
 * * *
@@ -2035,6 +1956,8 @@ showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&am
 &lt;ul>
 &lt;li>非多组输入&lt;/li>
 &lt;/ul>
+
+
 
 
 
@@ -2089,6 +2012,8 @@ int main() {
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-c" data-lang="c">#include &amp;lt;stdio.h&amp;gt;
 //行和列定位
@@ -2122,7 +2047,10 @@ int main() {
 
 
 
+
+
 &lt;div class="code-playground" data-language="cpp">
+ 
  &lt;div>
  &lt;pre>
  &lt;code class="language-cpp">#include &amp;#34;pch.h&amp;#34;
@@ -2144,34 +2072,9 @@ namespace fs = std::filesystem;
  return 0;
 };&lt;/code>&lt;/pre>
  &lt;/div>
- &lt;div class="controls">
- &lt;button class="run-button">
- &lt;span style="display: flex; align-items: center; gap: 4px"
- >运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- >
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- >&lt;/path>
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- >&lt;/path>
- &lt;/svg>
- &lt;/span>
- &lt;/button>
- &lt;/div>
- &lt;div class="output" style="display: none">
- &lt;pre class="output-content">&lt;/pre>
- &lt;/div>
+ 
+
+ 
 &lt;/div>
 
 &lt;p>&lt;code>.h&lt;/code>文件&lt;/p></description></item><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://caoyang2002.xyz/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/06/git_delete_file/</guid><description>&lt;p>如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p>
@@ -2179,6 +2082,8 @@ namespace fs = std::filesystem;
 &lt;li>
 &lt;p>&lt;strong>在本地仓库中删除文件&lt;/strong>：
 首先，在你的本地仓库中删除该文件：&lt;/p>
+
+
 
 
 
@@ -2333,6 +2238,8 @@ namespace fs = std::filesystem;
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-sql" data-lang="sql">CREATE TABLE 表名(
  列名1 类型[长度] [DEFAULT 默认值] [约束条件]
@@ -2416,6 +2323,8 @@ CREATE TABLE userinfo(
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">npm init vite&lt;/code>&lt;/pre>
 &lt;/div>
@@ -2424,6 +2333,8 @@ CREATE TABLE userinfo(
 &lt;p>可能需要先安装
 &lt;code>npm install vite --save-dev&lt;/code>&lt;/p>
 &lt;/blockquote>
+
+
 
 
 
@@ -2450,6 +2361,8 @@ Done. Now run:
 &lt;/div>
 
 &lt;h3 id="12-一键创建">1.2 一键创建&lt;/h3>
+
+
 
 
 
@@ -2734,6 +2647,8 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-bash" data-lang="bash">git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
 cd quartz-obsidian-webside
@@ -2878,6 +2793,8 @@ npx quartz build --serve&lt;/code>&lt;/pre>
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-shell" data-lang="shell">uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
 arch：该命令可以查看Linux系统的CPU架构。
@@ -2956,6 +2873,8 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 
 
 
+
+
 &lt;div>
  &lt;pre>&lt;code class="language-c" data-lang="c">#include &amp;lt;stdio.h&amp;gt;
 struct S1{
@@ -2990,6 +2909,8 @@ int main(){
 &lt;blockquote>
 &lt;p>时间复杂度过大&lt;/p>
 &lt;/blockquote>
+
+
 
 
 
@@ -3091,6 +3012,8 @@ int main(){
 
 
 
+
+
 &lt;div class="mermaid">mindmap
  root((思维导图))
  节点一
@@ -3121,6 +3044,8 @@ int main(){
 &lt;ul>
 &lt;li>
 &lt;p>默认&lt;/p>
+
+
 
 
 
