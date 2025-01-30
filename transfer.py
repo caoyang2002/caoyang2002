@@ -7,7 +7,11 @@ import time
 from datetime import datetime
 import requests  # 导入 requests 库
 import sys
+from posix import replace
 
+# source venv/bin/activate
+# pip3 install requests
+# python3 transfer.py
 # 获取命令行参数
 args = sys.argv
 
@@ -109,8 +113,13 @@ response = requests.post(endpoint, headers=headers, data=payload)
 # 输出结果
 if response.status_code == 200:
     response_data = response.json()
-    print(response_data)
-    print("翻译结果：", response_data['Response']['TargetText'])
+
+    translated_text = response_data['Response']['TargetText']
+    print("翻译结果：", translated_text)
+
+    # 替换空格并打印
+    replaced_text = translated_text.replace(" ", "_")
+    print("替换后的结果：", replaced_text)
 else:
     print("请求失败，状态码：", response.status_code)
     print("错误信息：", response.text)

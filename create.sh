@@ -4,9 +4,7 @@ RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-source venv/bin/activate
-pip3 install requests
-python3 transfer.py
+
 
 create_post() {
    local filename=${1:-$(date +%s | sha256sum | head -c 8)}
