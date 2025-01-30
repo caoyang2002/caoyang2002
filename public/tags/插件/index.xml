@@ -1,105 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>插件 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E6%8F%92%E4%BB%B6/</link><description>Recent content in 插件 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 00:39:59 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>即时设计插件开发</title><link>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述">简述&lt;/h1>
-&lt;p>这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
-&lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- GitHub 地址
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;h1 id="一前置条件">一、前置条件&lt;/h1>
-&lt;ol>
-&lt;li>即时设计客户端&lt;/li>
-&lt;/ol>
-&lt;p>
-&lt;a href="https://js.design/download"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://js.design/download
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;ol start="2">
-&lt;li>vscode&lt;/li>
-&lt;/ol>
-&lt;p>
-&lt;a href="https://code.visualstudio.com/Download"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://code.visualstudio.com/Download
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;blockquote>
-&lt;p>&lt;strong>code 快捷命令（可选）&lt;/strong>&lt;/p>
-&lt;p>macOS 系统快捷键：&lt;kbd>⌘&lt;/kbd> + &lt;kbd>⇧&lt;/kbd> + &lt;kbd>P&lt;/kbd> （command + shift + p）&lt;/p>
-&lt;p>Windows/Linux 快捷键: &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>P&lt;/kbd>&lt;/p>
-&lt;p>搜索安装 &lt;code>shell command&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;ol start="3">
-&lt;li>nodejs/npm&lt;/li>
-&lt;/ol>
-&lt;p>
-&lt;a href="https://nodejs.org/en/download/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- https://nodejs.org/en/download/
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;ol start="4">
-&lt;li>react&lt;/li>
-&lt;/ol>
-
-
-
-
-
-
-
-
-
-
-&lt;div>
- &lt;pre>&lt;code class="language-bash" data-lang="bash">npm install @types/react @types/react-dom&lt;/code>&lt;/pre>
-&lt;/div>
-
-&lt;blockquote>
-&lt;p>&lt;strong>启用类型提示&lt;/strong>
-在 vscode 按 &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>b&lt;/kbd> 开发即时设计类型提示&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="效率工具">效率工具&lt;/h2>
-&lt;h3 id="webpack">webpack&lt;/h3>
-&lt;blockquote>
-&lt;p>关于 webpack 的简介，可以查看
-&lt;a href=""
- 
- >
- 这篇文章
- 
-&lt;/a>
-&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>插件 on caoyang 2002</title>
+    <link>http://localhost:1313/tags/%E6%8F%92%E4%BB%B6/</link>
+    <description>Recent content in 插件 on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sun, 26 Jan 2025 00:39:59 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%8F%92%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>即时设计插件开发</title>
+      <link>http://localhost:1313/post/2025/01/jsdesign_plugin_dev/</link>
+      <pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/jsdesign_plugin_dev/</guid>
+      <description>&lt;h1 id=&#34;简述&#34;&gt;简述&lt;/h1&gt;&#xA;&lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，&#xA;&lt;a href=&#34;https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   GitHub 地址&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;一前置条件&#34;&gt;一、前置条件&lt;/h1&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;即时设计客户端&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://js.design/download&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://js.design/download&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;vscode&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://code.visualstudio.com/Download&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://code.visualstudio.com/Download&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;code 快捷命令（可选）&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;macOS 系统快捷键：&lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;⇧&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt; （command + shift + p）&lt;/p&gt;&#xA;&lt;p&gt;Windows/Linux 快捷键: &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt;&lt;/p&gt;&#xA;&lt;p&gt;搜索安装 &lt;code&gt;shell command&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;nodejs/npm&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://nodejs.org/en/download/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://nodejs.org/en/download/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;react&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;npm install @types/react @types/react-dom&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;strong&gt;启用类型提示&lt;/strong&gt;&#xA;在 vscode 按 &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;b&lt;/kbd&gt; 开发即时设计类型提示&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;效率工具&#34;&gt;效率工具&lt;/h2&gt;&#xA;&lt;h3 id=&#34;webpack&#34;&gt;webpack&lt;/h3&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;关于 webpack 的简介，可以查看&#xA;&lt;a href=&#34;&#34;&#xA;   &#xA;   &gt;&#xA;   这篇文章&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
