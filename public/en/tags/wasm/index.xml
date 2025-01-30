@@ -1,33 +1,239 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Wasm on caoyang2002</title>
-    <link>http://localhost:1313/en/tags/wasm/</link>
-    <description>Recent content in Wasm on caoyang2002</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/wasm/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Wasm 打印输出和浏览器特性等最佳实践</title>
-      <link>http://localhost:1313/en/post/2025/01/wasm_print/</link>
-      <pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2025/01/wasm_print/</guid>
-      <description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;use wasm_bindgen::prelude::*;&#xA;use web_sys::{console, window};&#xA;&#xA;pub fn move_test(name: &amp;amp;str) {&#xA;    // 控制台打印&#xA;    console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;move test: {}&amp;#34;, name)));&#xA;&#xA;    // 使用 console.warn&#xA;    console::warn_1(&amp;amp;JsValue::from_str(&amp;#34;This is a warning&amp;#34;));&#xA;&#xA;    // 使用 console.error&#xA;    console::error_1(&amp;amp;JsValue::from_str(&amp;#34;This is an error&amp;#34;));&#xA;&#xA;    // 浏览器 alert&#xA;    if let Some(window) = window() {&#xA;        window&#xA;            .alert_with_message(&amp;amp;format!(&amp;#34;Hello, {}!&amp;#34;, name))&#xA;            .expect(&amp;#34;alert failed&amp;#34;);&#xA;    }&#xA;&#xA;    // 确认对话框&#xA;    if let Some(window) = window() {&#xA;        if window&#xA;            .confirm_with_message(&amp;#34;Do you want to continue?&amp;#34;)&#xA;            .expect(&amp;#34;confirm failed&amp;#34;)&#xA;        {&#xA;            console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked OK&amp;#34;));&#xA;        } else {&#xA;            console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));&#xA;        }&#xA;    }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;在 Cargo.toml 中需要添加必要的依赖：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[dependencies]&#xA;wasm-bindgen = &amp;#34;0.2&amp;#34;&#xA;web-sys = { version = &amp;#34;0.3&amp;#34;, features = [&#xA;    &amp;#34;console&amp;#34;,&#xA;    &amp;#34;Window&amp;#34;,&#xA;    &amp;#34;Document&amp;#34;,&#xA;    &amp;#34;Element&amp;#34;,&#xA;    &amp;#34;HtmlElement&amp;#34;,&#xA;    &amp;#34;Node&amp;#34;,&#xA;    &amp;#34;Location&amp;#34;&#xA;]}&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;如果需要格式化打印，可以使用 &lt;code&gt;console::log!&lt;/code&gt; 宏：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;use web_sys::console;&#xA;&#xA;// 需要引入宏&#xA;#[macro_export]&#xA;macro_rules! console_log {&#xA;    ($($t:tt)*) =&amp;gt; (console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!($($t)*))))&#xA;}&#xA;&#xA;pub fn move_test(name: &amp;amp;str) {&#xA;    console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;操作 DOM 示例：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;use wasm_bindgen::prelude::*;&#xA;use web_sys::{Document, Element, HtmlElement, window};&#xA;&#xA;pub fn move_test(name: &amp;amp;str) {&#xA;    // 获取 document&#xA;    let window = window().expect(&amp;#34;no global window exists&amp;#34;);&#xA;    let document = window.document().expect(&amp;#34;no document exists&amp;#34;);&#xA;&#xA;    // 创建新元素&#xA;    if let Some(div) = document.get_element_by_id(&amp;#34;test-input&amp;#34;) {&#xA;        // 修改输入框的值&#xA;        if let Some(input) = div.dyn_ref::&amp;lt;HtmlElement&amp;gt;() {&#xA;            input.set_inner_text(&amp;amp;format!(&amp;#34;New value: {}&amp;#34;, name));&#xA;        }&#xA;    }&#xA;&#xA;    // 创建新元素&#xA;    let new_div = document.create_element(&amp;#34;div&amp;#34;).unwrap();&#xA;    new_div.set_text_content(Some(&amp;amp;format!(&amp;#34;Hello {}&amp;#34;, name)));&#xA;&#xA;    // 添加到 body&#xA;    if let Some(body) = document.body() {&#xA;        body.append_child(&amp;amp;new_div).unwrap();&#xA;    }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;处理错误和 Result：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {&#xA;    // 使用 ? 运算符处理错误&#xA;    let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;&#xA;    let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;&#xA;&#xA;    // 处理可能的错误&#xA;    match document.get_element_by_id(&amp;#34;test-input&amp;#34;) {&#xA;        Some(element) =&amp;gt; {&#xA;            console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Found element: {}&amp;#34;, name)));&#xA;            Ok(())&#xA;        },&#xA;        None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))&#xA;    }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;6&#34;&gt;&#xA;&lt;li&gt;使用本地存储：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;use web_sys::Storage;&#xA;&#xA;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {&#xA;    let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;&#xA;&#xA;    // 获取 localStorage&#xA;    if let Some(storage) = window.local_storage()? {&#xA;        // 存储数据&#xA;        storage.set_item(&amp;#34;user_name&amp;#34;, name)?;&#xA;&#xA;        // 读取数据&#xA;        if let Ok(Some(saved_name)) = storage.get_item(&amp;#34;user_name&amp;#34;) {&#xA;            console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Saved name: {}&amp;#34;, saved_name)));&#xA;        }&#xA;    }&#xA;&#xA;    Ok(())&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Wasm</title>
-      <link>http://localhost:1313/en/post/2025/01/wasm/</link>
-      <pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2025/01/wasm/</guid>
-      <description>&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cargo build&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;webassembly-核心技术剖析&#34;&gt;WebAssembly 核心技术剖析&lt;/h1&gt;&#xA;&lt;p&gt;让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？&lt;/p&gt;&#xA;&lt;h2 id=&#34;深入理解-wasm-的本质&#34;&gt;深入理解 WASM 的本质&lt;/h2&gt;&#xA;&lt;p&gt;首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。&lt;/p&gt;&#xA;&lt;h3 id=&#34;内存模型解析&#34;&gt;内存模型解析&lt;/h3&gt;&#xA;&lt;p&gt;让我们看一段具体代码：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;cpp&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-cpp&#34;&gt;// C&amp;#43;&amp;#43; 代码&#xA;int* buffer = new int[1024];  // 分配4KB内存&#xA;buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;编译成 WASM 后：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Aptos Wasm 开发笔记</title>
-      <link>http://localhost:1313/en/post/2025/01/aptos-wasm/</link>
-      <pubDate>Sun, 05 Jan 2025 11:08:24 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2025/01/aptos-wasm/</guid>
-      <description>&lt;h1 id=&#34;起因&#34;&gt;起因&lt;/h1&gt;&#xA;&lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;&#xA;&lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;&#xA;&lt;h1 id=&#34;开始&#34;&gt;开始&lt;/h1&gt;&#xA;&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wasm on caoyang2002</title><link>https://caoyang2002.xyz/en/tags/wasm/</link><description>Recent content in Wasm on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/en/tags/wasm/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</guid><description>&lt;p>在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p>
+&lt;ol>
+&lt;li>使用 &lt;code>web_sys&lt;/code> 和 &lt;code>wasm_bindgen&lt;/code> 进行浏览器 API 调用：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">use wasm_bindgen::prelude::*;
+use web_sys::{console, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 控制台打印
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;move test: {}&amp;#34;, name)));
+
+ // 使用 console.warn
+ console::warn_1(&amp;amp;JsValue::from_str(&amp;#34;This is a warning&amp;#34;));
+
+ // 使用 console.error
+ console::error_1(&amp;amp;JsValue::from_str(&amp;#34;This is an error&amp;#34;));
+
+ // 浏览器 alert
+ if let Some(window) = window() {
+ window
+ .alert_with_message(&amp;amp;format!(&amp;#34;Hello, {}!&amp;#34;, name))
+ .expect(&amp;#34;alert failed&amp;#34;);
+ }
+
+ // 确认对话框
+ if let Some(window) = window() {
+ if window
+ .confirm_with_message(&amp;#34;Do you want to continue?&amp;#34;)
+ .expect(&amp;#34;confirm failed&amp;#34;)
+ {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked OK&amp;#34;));
+ } else {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
+ }
+ }
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;ol start="2">
+&lt;li>在 Cargo.toml 中需要添加必要的依赖：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-toml" data-lang="toml">[dependencies]
+wasm-bindgen = &amp;#34;0.2&amp;#34;
+web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
+ &amp;#34;console&amp;#34;,
+ &amp;#34;Window&amp;#34;,
+ &amp;#34;Document&amp;#34;,
+ &amp;#34;Element&amp;#34;,
+ &amp;#34;HtmlElement&amp;#34;,
+ &amp;#34;Node&amp;#34;,
+ &amp;#34;Location&amp;#34;
+]}&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;ol start="3">
+&lt;li>如果需要格式化打印，可以使用 &lt;code>console::log!&lt;/code> 宏：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">use web_sys::console;
+
+// 需要引入宏
+#[macro_export]
+macro_rules! console_log {
+ ($($t:tt)*) =&amp;gt; (console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!($($t)*))))
+}
+
+pub fn move_test(name: &amp;amp;str) {
+ console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;ol start="4">
+&lt;li>操作 DOM 示例：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">use wasm_bindgen::prelude::*;
+use web_sys::{Document, Element, HtmlElement, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 获取 document
+ let window = window().expect(&amp;#34;no global window exists&amp;#34;);
+ let document = window.document().expect(&amp;#34;no document exists&amp;#34;);
+
+ // 创建新元素
+ if let Some(div) = document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ // 修改输入框的值
+ if let Some(input) = div.dyn_ref::&amp;lt;HtmlElement&amp;gt;() {
+ input.set_inner_text(&amp;amp;format!(&amp;#34;New value: {}&amp;#34;, name));
+ }
+ }
+
+ // 创建新元素
+ let new_div = document.create_element(&amp;#34;div&amp;#34;).unwrap();
+ new_div.set_text_content(Some(&amp;amp;format!(&amp;#34;Hello {}&amp;#34;, name)));
+
+ // 添加到 body
+ if let Some(body) = document.body() {
+ body.append_child(&amp;amp;new_div).unwrap();
+ }
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;ol start="5">
+&lt;li>处理错误和 Result：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ // 使用 ? 运算符处理错误
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+ let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
+
+ // 处理可能的错误
+ match document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ Some(element) =&amp;gt; {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Found element: {}&amp;#34;, name)));
+ Ok(())
+ },
+ None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
+ }
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;ol start="6">
+&lt;li>使用本地存储：&lt;/li>
+&lt;/ol>
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust">
+ 
+ &lt;div>
+ &lt;pre>
+ &lt;code class="language-rust">use web_sys::Storage;
+
+pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+
+ // 获取 localStorage
+ if let Some(storage) = window.local_storage()? {
+ // 存储数据
+ storage.set_item(&amp;#34;user_name&amp;#34;, name)?;
+
+ // 读取数据
+ if let Ok(Some(saved_name)) = storage.get_item(&amp;#34;user_name&amp;#34;) {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Saved name: {}&amp;#34;, saved_name)));
+ }
+ }
+
+ Ok(())
+}&lt;/code>&lt;/pre>
+ &lt;/div>
+ 
+
+ 
+&lt;/div>
+
+&lt;p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p></description></item></channel></rss>

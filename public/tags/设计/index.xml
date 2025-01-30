@@ -1,26 +1,113 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>设计 on caoyang 2002</title>
-    <link>http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/</link>
-    <description>Recent content in 设计 on caoyang 2002</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>作为独立开发者，你真的需要设计师吗？</title>
-      <link>http://localhost:1313/post/2025/01/do_you_really_need_a_designer/</link>
-      <pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate>
-      <guid>http://localhost:1313/post/2025/01/do_you_really_need_a_designer/</guid>
-      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;&#xA;&lt;p&gt;但是，你为什么觉得自己需要一个设计师？&lt;/p&gt;&#xA;&lt;p&gt;我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p&gt;&#xA;&lt;p&gt;有时候，甚至是大多数时候你都不需要设计师。&lt;/p&gt;&#xA;&lt;p&gt;相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>设计资料：样机</title>
-      <link>http://localhost:1313/post/2024/04/design/</link>
-      <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024/04/design/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png&#34; alt=&#34;样机&#34;&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;样机&#34;&gt;样机&lt;/h1&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://bannermockup.com/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://bannermockup.com/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://mockupplanet.com/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://mockupplanet.com/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://www.anthonyboyd.graphics/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://www.anthonyboyd.graphics/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://www.pixeden.com/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://www.pixeden.com/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://www.ls.graphics&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://www.ls.graphics&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h2 id=&#34;条件&#34;&gt;条件&lt;/h2&gt;&#xA;&lt;h3 id=&#34;登录&#34;&gt;登录&lt;/h3&gt;&#xA;&lt;p&gt;grapicpear&lt;/p&gt;&#xA;&lt;h1 id=&#34;插画&#34;&gt;插画&lt;/h1&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://dotown.maeda-design-room.net/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://dotown.maeda-design-room.net/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;https://www.opendoodles.com&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://www.opendoodles.com&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;设计师必备 50 款免费可商用图库网站：照片、插画、纹理一网打尽&lt;/p&gt;&#xA;&lt;p&gt;免费素材图像素材工具推荐&#xA;Angel Wang・2022-10-13&#xA;大家好，本周我为大家准备了超全面的免费可商用高清图库，可能是全网最全的总结，推荐的图库类型有：照片图库、博物馆艺术品图库、图片生成器、纹理图库、插画图库、图标库，总有一种你用得到！&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>设计 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E8%AE%BE%E8%AE%A1/</link><description>Recent content in 设计 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote>
+&lt;p>有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p>
+&lt;p>但是，你为什么觉得自己需要一个设计师？&lt;/p>
+&lt;p>我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p>
+&lt;p>有时候，甚至是大多数时候你都不需要设计师。&lt;/p>
+&lt;p>相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p></description></item><item><title>设计资料：样机</title><link>https://caoyang2002.xyz/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/04/design/</guid><description>&lt;p>&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机">&lt;/p>
+&lt;h1 id="样机">样机&lt;/h1>
+&lt;p>
+&lt;a href="https://bannermockup.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://bannermockup.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://mockupplanet.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://mockupplanet.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.anthonyboyd.graphics/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.anthonyboyd.graphics/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.pixeden.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.pixeden.com/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.ls.graphics"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.ls.graphics
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;h2 id="条件">条件&lt;/h2>
+&lt;h3 id="登录">登录&lt;/h3>
+&lt;p>grapicpear&lt;/p>
+&lt;h1 id="插画">插画&lt;/h1>
+&lt;p>
+&lt;a href="https://dotown.maeda-design-room.net/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://dotown.maeda-design-room.net/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>
+&lt;a href="https://www.opendoodles.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://www.opendoodles.com
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>设计师必备 50 款免费可商用图库网站：照片、插画、纹理一网打尽&lt;/p>
+&lt;p>免费素材图像素材工具推荐
+Angel Wang・2022-10-13
+大家好，本周我为大家准备了超全面的免费可商用高清图库，可能是全网最全的总结，推荐的图库类型有：照片图库、博物馆艺术品图库、图片生成器、纹理图库、插画图库、图标库，总有一种你用得到！&lt;/p></description></item></channel></rss>

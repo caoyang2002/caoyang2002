@@ -1,19 +1,154 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>公告 on caoyang 2002</title>
-    <link>http://localhost:1313/categories/%E5%85%AC%E5%91%8A/</link>
-    <description>Recent content in 公告 on caoyang 2002</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Sun, 26 Jan 2025 02:08:55 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>公告</title>
-      <link>http://localhost:1313/post/2024/03/notice/</link>
-      <pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate>
-      <guid>http://localhost:1313/post/2024/03/notice/</guid>
-      <description>&lt;div class=&#34;notice note&#34;&gt;这是一个注意事项&lt;/div&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;crypto-content&#34;&gt;&#xA;    &lt;div class=&#34;crypto-form&#34;&gt;&#xA;        &lt;input&#xA;            type=&#34;password&#34;&#xA;            placeholder=&#34;输入密码&#34;&#xA;            class=&#34;crypto-input&#34;&#xA;            id=&#34;crypto-password&#34;&#xA;        /&gt;&#xA;        &lt;button onclick=&#34;decrypt()&#34; class=&#34;crypto-btn&#34;&gt;解密&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div&#xA;        class=&#34;encrypted-content&#34;&#xA;        id=&#34;crypto-output&#34;&#xA;        data-content=&#34;Cui/meaYr&amp;#43;S4gOS4quWKoOWvhuWGheWuueOAggo=&#34;&#xA;    &gt;&#xA;        已加密，请输入密码&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;script&gt;&#xA;    async function decrypt() {&#xA;        try {&#xA;            const input = document.getElementById(&#39;crypto-password&#39;);&#xA;            const output = document.getElementById(&#39;crypto-output&#39;);&#xA;            const form = document.querySelector(&#39;.crypto-form&#39;);&#xA;&#xA;            if(!input?.value) {&#xA;                showError(&#39;请输入密码&#39;);&#xA;                return;&#xA;            }&#xA;&#xA;            const password = input.value;&#xA;            const publishDate = &#34;20250126&#34;;&#xA;            const hash = await sha256(password + publishDate);&#xA;            const targetHash = await sha256(&#34;123456&#34; + publishDate);&#xA;&#xA;            if(hash !== targetHash) {&#xA;                throw new Error(&#39;密码错误&#39;);&#xA;            }&#xA;&#xA;            const base64 = output.getAttribute(&#39;data-content&#39;);&#xA;            const decoder = new TextDecoder();&#xA;            const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));&#xA;            output.textContent = decoded;&#xA;            form.style.display = &#39;none&#39;;&#xA;        } catch(e) {&#xA;            showError(&#39;密码错误，请重试&#39;);&#xA;        }&#xA;    }&#xA;&#xA;    async function sha256(text) {&#xA;        const encoder = new TextEncoder();&#xA;        const data = encoder.encode(text);&#xA;        const hash = await crypto.subtle.digest(&#39;SHA-256&#39;, data);&#xA;        return Array.from(new Uint8Array(hash))&#xA;            .map(b =&gt; b.toString(16).padStart(2, &#39;0&#39;))&#xA;            .join(&#39;&#39;);&#xA;    }&#xA;&#xA;    function showError(message) {&#xA;        const output = document.getElementById(&#39;crypto-output&#39;);&#xA;        output.textContent = message;&#xA;        output.className = &#39;encrypted-content error-msg&#39;;&#xA;    }&#xA;&lt;/script&gt;&#xA;&#xA;&lt;style&gt;&#xA;    .crypto-content {&#xA;        margin: 0;&#xA;        padding: 0;&#xA;        border: 1px solid #ddd;&#xA;        border-radius: 4px;&#xA;    }&#xA;    .crypto-form {&#xA;        display: flex;&#xA;        gap: 0;&#xA;    }&#xA;    .crypto-input {&#xA;        flex: 1;&#xA;        padding: 0;&#xA;        margin: 1rem 1rem 0 1rem;&#xA;        border: 1px solid #ddd;&#xA;        border-radius: 4px;&#xA;    }&#xA;    .crypto-btn {&#xA;        padding: 0.25rem;&#xA;        margin: 1rem 1rem 0 1rem;&#xA;        background: #4a4a4a;&#xA;        color: white;&#xA;        border: none;&#xA;        border-radius: 4px;&#xA;        cursor: pointer;&#xA;    }&#xA;    .error-msg {&#xA;        color: #ff4444;&#xA;    }&#xA;    .encrypted-content {&#xA;        margin: 0 1rem 1rem 1rem;&#xA;         &#xA;        word-break: break-all;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;div class=&#34;protected-content&#34;&gt;&#xA;    &lt;div class=&#34;password-form&#34;&gt;&#xA;        &lt;input type=&#34;password&#34; placeholder=&#34;输入访问密码&#34; class=&#34;pass-input&#34; /&gt;&#xA;        &lt;button onclick=&#34;decryptContent(this)&#34; class=&#34;pass-btn&#34;&gt;访问&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div&#xA;        class=&#34;encrypted-content&#34;&#xA;        style=&#34;display: none&#34;&#xA;        data-content=&#34;&#xA;掩耳盗铃&#xA;&#34;&#xA;    &gt;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;script&gt;&#xA;    function decryptContent(btn) {&#xA;        const container = btn.closest(&#34;.protected-content&#34;);&#xA;        const input = container.querySelector(&#34;.pass-input&#34;);&#xA;        const content = container.querySelector(&#34;.encrypted-content&#34;);&#xA;&#xA;        if (input.value === &#34;123&#34;) {&#xA;            content.innerHTML = content.dataset.content;&#xA;            content.style.display = &#34;block&#34;;&#xA;            container.querySelector(&#34;.password-form&#34;).style.display = &#34;none&#34;;&#xA;        } else {&#xA;            alert(&#34;密码错误&#34;);&#xA;        }&#xA;    }&#xA;&lt;/script&gt;&#xA;&lt;style&gt;&#xA;    .protected-content {&#xA;        border: 1px solid #eee;&#xA;        padding: 20px;&#xA;        border-radius: 5px;&#xA;    }&#xA;    .pass-input {&#xA;        padding: 8px;&#xA;        margin-right: 10px;&#xA;    }&#xA;    .pass-btn {&#xA;        padding: 8px 16px;&#xA;        background: #0066cc;&#xA;        color: white;&#xA;        border: none;&#xA;        border-radius: 4px;&#xA;        cursor: pointer;&#xA;    }&#xA;&lt;/style&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/cover/blue.jpg&#34; alt=&#34;image&#34;&gt;&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 02:08:55 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+
+
+&lt;div class="crypto-content">
+ &lt;div class="crypto-form">
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ />
+ &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
+ &lt;/div>
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="Cui/meaYr&amp;#43;S4gOS4quWKoOWvhuWGheWuueOAggo="
+ >
+ 已加密，请输入密码
+ &lt;/div>
+&lt;/div>
+
+&lt;script>
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "20250130";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256("123456" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
+ output.textContent = decoded;
+ form.style.display = 'none';
+ } catch(e) {
+ showError('密码错误，请重试');
+ }
+ }
+
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b => b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script>
+
+&lt;style>
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style>
+
+&lt;div class="protected-content">
+ &lt;div class="password-form">
+ &lt;input type="password" placeholder="输入访问密码" class="pass-input" />
+ &lt;button onclick="decryptContent(this)" class="pass-btn">访问&lt;/button>
+ &lt;/div>
+ &lt;div
+ class="encrypted-content"
+ style="display: none"
+ data-content="
+掩耳盗铃
+"
+ >&lt;/div>
+&lt;/div>
+&lt;script>
+ function decryptContent(btn) {
+ const container = btn.closest(".protected-content");
+ const input = container.querySelector(".pass-input");
+ const content = container.querySelector(".encrypted-content");
+
+ if (input.value === "123") {
+ content.innerHTML = content.dataset.content;
+ content.style.display = "block";
+ container.querySelector(".password-form").style.display = "none";
+ } else {
+ alert("密码错误");
+ }
+ }
+&lt;/script>
+&lt;style>
+ .protected-content {
+ border: 1px solid #eee;
+ padding: 20px;
+ border-radius: 5px;
+ }
+ .pass-input {
+ padding: 8px;
+ margin-right: 10px;
+ }
+ .pass-btn {
+ padding: 8px 16px;
+ background: #0066cc;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+&lt;/style>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item></channel></rss>
