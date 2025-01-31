@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250130";
+ const publishDate = "20250131";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -151,7 +151,11 @@
  cursor: pointer;
  }
 &lt;/style>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>即时设计插件开发</title><link>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述">简述&lt;/h1>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>如何取一个好名字</title><link>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</link><pubDate>Thu, 30 Jan 2025 14:08:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</guid><description>&lt;blockquote>
+&lt;p>注：&lt;/p>
+&lt;p>这里只讨论被作为产品品牌传播的名称，对于腾讯、米哈游这样的名称不讨论，原因有两点：&lt;/p>
+&lt;p>一是幸存者偏差，这类名称在同一时期可能有很多，但是大多数都没能传播开来，而现存的只是幸存者。&lt;/p>
+&lt;p>二是他们是企业名不是产品名，这些名称不是传播的，比如别人问你在用什么软件聊天的时候，你会说“我用 QQ”，而不会说“我用腾讯 QQ”。&lt;/p></description></item><item><title>即时设计插件开发</title><link>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述">简述&lt;/h1>
 &lt;p>这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
 &lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
  
