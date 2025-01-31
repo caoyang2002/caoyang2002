@@ -1,5 +1,5 @@
 +++
-title = 'File_name'
+title = '人类认知极限：一瞥之间的五个界限'
 date = 2025-01-25T05:35:27+08:00
 draft = true
 author = "simons"
@@ -30,6 +30,10 @@ class VisualCognition:
    - 工作记忆容量：7±2项
    - 瞬时识别：5项以内
    - 证实了"神奇数字5"
+
+https://www.woshipm.com/ucd/5140036.html
+
+希克定律，原称希克海曼定律（Hick Hymalrs 1aw），是一种心理物理学定律。 简单的说，它的意思就是：一个人所面临的选择越多，做出选择所花的时间就越多，当面临选择的数量增加，做出决定的时间也会跟着增加。
 
 ## 认知机制
 

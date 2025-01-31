@@ -1,7 +1,7 @@
 +++
 date = '2025-01-24T13:53:44+08:00'
 draft = true
-title = 'File_name'
+title = 'Vue: 一个让前端开发不再痛苦的框架'
 toc = true
 categories= ["设计"]
 tags = ["排版"]
