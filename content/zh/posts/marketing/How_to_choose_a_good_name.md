@@ -612,5 +612,3 @@ description = "结合小马宋和华与华的观点以及历史发展，思考�
 [品牌取名指南：这样取名字，能帮你减少50％以上的广告费用](https://www.36kr.com/p/1722678312961)
 
 [做品牌前先把名字取好｜8个品牌命名公式](https://www.ubrand.com/blog/262)
-
-[小马宋：普通人如何取一个营销学上的好名字？](https://mp.weixin.qq.com/s/O6S7aJh6MaRR7sFXZldxgw)
