@@ -1,5 +1,5 @@
 +++
-title = 'C4fa2cf7'
+title = 'GitHub Projects深入剖析：不只是看板，是工程管理的操作系统'
 date = 2025-01-26T10:48:35+08:00
 draft = true
 author = "simons"

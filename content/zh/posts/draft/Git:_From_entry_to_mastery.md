@@ -10,11 +10,12 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 # Git: 从入门到精通
 
-很多人用Git只会`add/commit/push`三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。
+很多人用 Git 只会 `add/commit/push` 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。
 
 ## Git的本质
 
 Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：
+
 ```bash
 # 看看Git的底层对象
 echo 'test' > test.txt
@@ -45,6 +46,7 @@ git branch feature  # 只是创建一个指针
 ## 深入原理
 
 Git的分支模型：
+
 ```bash
 # master分支
 A -> B -> C
@@ -52,11 +54,12 @@ A -> B -> C
             D -> E  # feature分支
 ```
 
-每个commit都是一个节点，分支只是指向节点的指针。这就是为什么Git分支如此轻量。
+每个 commit 都是一个节点，分支只是指向节点的指针。这就是为什么 Git 分支如此轻量。
 
 ## 实战经验
 
 1. 分支管理
+
 ```bash
 # 创建开发分支
 git checkout -b dev
@@ -69,6 +72,7 @@ git merge dev
 ```
 
 2. 解决冲突
+
 ```bash
 # 发生冲突时
 git status  # 看看冲突文件
@@ -78,6 +82,7 @@ git commit -m "fix: resolve conflict"
 ```
 
 3. 撤销操作
+
 ```bash
 # 撤销工作区修改
 git checkout -- file
@@ -91,13 +96,15 @@ git reset --hard HEAD^
 
 ## 高级技巧
 
-1. 交互式rebase
+1. 交互式 rebase
+
 ```bash
 # 合并最近3个提交
 git rebase -i HEAD~3
 ```
 
 2. cherry-pick
+
 ```bash
 # 把某个提交应用到当前分支
 git cherry-pick commit_id
@@ -116,12 +123,13 @@ git stash pop
 ## 工作流最佳实践
 
 1. 分支策略
-- master：稳定版本
-- develop：开发主线
-- feature/*：新功能
-- hotfix/*：紧急修复
+- `master` ：稳定版本
+- `develop` ：开发主线
+- `feature/*` ：新功能
+- `hotfix/*` ：紧急修复
 
 2. 提交规范
+
 ```bash
 feat: 新功能
 fix: 修复bug
@@ -133,20 +141,20 @@ chore: 其他修改
 ```
 
 记住几个原则：
-1. commit要原子化，一个提交做一件事
+1. commit 要原子化，一个提交做一件事
 2. 分支要及时清理，不要留太多
 3. 冲突要谨慎解决，不要盲目覆盖
 
 ## 总结
 
-Git不难，难的是理解它的思维方式：
+Git 不难，难的是理解它的思维方式：
 - 分支是指针，创建分支不会复制代码
-- commit是不可变的，reset只是移动指针
+- commit 是不可变的，reset只是移动指针
 - 冲突不可怕，理解原理就简单了
 
 工具用不好不是工具的问题，而是你对它理解不够深入。理解了原理，Git就是一个很好用的时光机。
 
-别再停留在`add/commit/push`的层面了，Git能做的远比你想象的多。
+别再停留在 `add/commit/push` 的层面了，Git能做的远比你想象的多。
 
 # 用了很长时间 Git，但不敢操作 git 命令？
 
@@ -161,9 +169,9 @@ $ echo 'hello' > test.txt
 $ git add test.txt
 $ git commit -m "first commit"
 $ git cat-file -p HEAD
-tree 9c16a4980736f3bfd32d47c48143da88d91703b8
-author CoolShell <coolshell@gmail.com> 1632910000 +0800
-committer CoolShell <coolshell@gmail.com> 1632910000 +0800
+tree 517d952c5850bc2fccc48ef8eb2f80372d760ac0
+author caoyang2002 <cy12968@163.com> 1738337558 +0800
+committer caoyang2002 <cy12968@163.com> 1738337558 +0800
 
 first commit
 ```

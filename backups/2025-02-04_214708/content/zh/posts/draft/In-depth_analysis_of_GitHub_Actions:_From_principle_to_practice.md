@@ -1,5 +1,5 @@
 +++
-title = 'A3788b64'
+title = 'GitHub Actions 深入剖析：从原理到实践'
 date = 2025-01-26T10:47:26+08:00
 draft = true
 author = "simons"
