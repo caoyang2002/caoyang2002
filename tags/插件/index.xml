@@ -52,8 +52,7 @@
 &lt;p>&lt;strong>code 快捷命令（可选）&lt;/strong>&lt;/p>
 &lt;p>macOS 系统快捷键：&lt;kbd>⌘&lt;/kbd> + &lt;kbd>⇧&lt;/kbd> + &lt;kbd>P&lt;/kbd> （command + shift + p）&lt;/p>
 &lt;p>Windows/Linux 快捷键: &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>P&lt;/kbd>&lt;/p>
-&lt;p>搜索安装 &lt;code>shell command&lt;/code>&lt;/p>
-&lt;/blockquote>
+&lt;p>搜索安装 &lt;code>shell command&lt;/code>&lt;/p>&lt;/blockquote>
 &lt;ol start="3">
 &lt;li>nodejs/npm&lt;/li>
 &lt;/ol>
@@ -90,16 +89,4 @@
 
 &lt;blockquote>
 &lt;p>&lt;strong>启用类型提示&lt;/strong>
-在 vscode 按 &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>b&lt;/kbd> 开发即时设计类型提示&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="效率工具">效率工具&lt;/h2>
-&lt;h3 id="webpack">webpack&lt;/h3>
-&lt;blockquote>
-&lt;p>关于 webpack 的简介，可以查看
-&lt;a href=""
- 
- >
- 这篇文章
- 
-&lt;/a>
-&lt;/p></description></item></channel></rss>
+在 vscode 按 &lt;kbd>Ctrl&lt;/kbd> + &lt;kbd>Shift&lt;/kbd> + &lt;kbd>b&lt;/kbd> 开发即时设计类型提示&lt;/p></description></item></channel></rss>
