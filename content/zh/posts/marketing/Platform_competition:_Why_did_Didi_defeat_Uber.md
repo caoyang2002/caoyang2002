@@ -1,7 +1,7 @@
 +++
 title = '注意力与策略之争：在早期的竞争中滴滴做对了什么？？'
 date = 2025-02-08T11:05:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["经济学"]
 tags = ["打车"]
