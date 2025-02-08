@@ -1,5 +1,5 @@
 +++
-title = '如何取一个好名字'
+title = '命名：如何取一个容易传播的名字'
 date = 2025-01-30T14:08:26+08:00
 draft = false
 author = "simons"
