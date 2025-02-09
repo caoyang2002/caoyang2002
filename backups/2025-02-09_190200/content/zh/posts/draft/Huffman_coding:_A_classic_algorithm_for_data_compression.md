@@ -3,8 +3,8 @@ title = '哈夫曼编码：数据压缩的经典算法'
 date = 2025-01-26T11:08:57+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["计算机"]
+tags = ["算法"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

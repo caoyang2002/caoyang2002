@@ -3,8 +3,8 @@ title = 'Git: 从入门到精通'
 date = 2025-01-26T10:50:22+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["开发"]
+tags = ["Git"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,8 +3,8 @@ title = 'Kaufman实验：视觉瞬时认知极限的开创性研究'
 date = 2025-01-25T05:44:29+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["心理学"]
+tags = ["认知"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
