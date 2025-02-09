@@ -3,9 +3,9 @@ title = '人类认知极限：一瞥之间的五个界限'
 date = 2025-01-25T05:35:27+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["设计"]
+tags = ["排版"]
+description = "一瞥之间的五个界限"
 +++
 
 # 人类认知极限：一瞥之间的五个界限
