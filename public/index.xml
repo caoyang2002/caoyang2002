@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Feb 2025 18:42:13 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Feb 2025 19:41:37 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
 
 &lt;div class="crypto-content">
@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250209";
+ const publishDate = "20250210";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -158,7 +158,12 @@
 &lt;p>&lt;img src="https://caoyang2002.xyz/about/history/first_h5.jpg" alt="first_h5">&lt;/p>
 &lt;p>下图是我 2024 年给创业项目做的网站：&lt;/p>
 &lt;p>&lt;img src="https://caoyang2002.xyz/about/history/chyraw_food.jpg" alt="chyraw_food">&lt;/p>
-&lt;p>关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p></description></item><item><title>自媒体平台封面图片尺寸合集</title><link>https://caoyang2002.xyz/post/2025/02/images_size/</link><pubDate>Sun, 09 Feb 2025 18:42:13 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/images_size/</guid><description>&lt;h1 id="2024最全自媒体平台封面图片尺寸合集">2024最全自媒体平台封面图片尺寸合集&lt;/h1>
+&lt;p>关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p></description></item><item><title>下拉刷新：社交平台有诚心想过帮用户戒 “瘾” 吗？</title><link>https://caoyang2002.xyz/post/2025/02/zeigarnik_effect/</link><pubDate>Sun, 09 Feb 2025 19:41:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/zeigarnik_effect/</guid><description>&lt;blockquote>
+&lt;p>奥威尔警告人们将会受到外来压迫的奴役，而赫胥黎则认为，人们失去自由、成功和历史并不是 “老大哥” 之过。在他看来，人们会渐渐爱上压迫，崇拜那些使他们丧失思考能力的工业技术。&lt;/p>
+&lt;p>《娱乐至死》&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="一未完成的故事与心理效应">一、未完成的故事与心理效应&lt;/h1>
+&lt;p>想象一个场景：你的朋友正在给你讲一个故事，但还没讲完就匆匆离开。你会有什么感受？大多数人会感到焦虑和好奇，迫切想知道故事的结局。在不知道结局之前，你很难专注于其他事情。这种对未完成事情的执着，正是心理学中的&lt;strong>蔡格尼克效应&lt;/strong>。&lt;/p></description></item><item><title>自媒体平台封面图片尺寸合集</title><link>https://caoyang2002.xyz/post/2025/02/images_size/</link><pubDate>Sun, 09 Feb 2025 18:42:13 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/images_size/</guid><description>&lt;h1 id="2024最全自媒体平台封面图片尺寸合集">2024最全自媒体平台封面图片尺寸合集&lt;/h1>
 &lt;h2 id="01-小红书图片尺寸">01 小红书图片尺寸&lt;/h2>
 &lt;p>小红书以生活分享和种草内容著称，是年轻人寻求时尚、美妆、旅行等资讯的首选平台。&lt;/p>
 &lt;p>&lt;img src="https://www.ubrand.com/_next/image?url=%2Foss%2Farticles%2F2024%2F08%2F20%2F%25E7%2594%25BB%25E6%259D%25BF%25207.png&amp;amp;w=3840&amp;amp;q=75" alt="img">&lt;/p>
