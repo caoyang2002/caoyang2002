@@ -181,8 +181,8 @@ description = "为什么我们总是放不下手机？社交平台通过\"下拉
 
 # 八、参考
 
-1. [马斯克称Twitter限制浏览量是在帮用户戒网瘾？网友：大可不必！](https://news.pedaily.cn/202307/516777.shtml)
-2. [为了人类文明进步而努力！马斯克：TikTok浪费时间，而推特就要改变这个问题](https://t.qianzhan.com/caijing/detail/231025-d45dbbec.html)
-3. [从《1984》到《美丽新世界》，为什么波兹曼说赫胥黎的预言正在实现？](https://www.sohu.com/a/113387493_483391)
+1. 马斯克称Twitter限制浏览量是在帮用户戒网瘾？网友：大可不必！（[链接](https://news.pedaily.cn/202307/516777.shtml)）
+2. 为了人类文明进步而努力！马斯克：TikTok浪费时间，而推特就要改变这个问题（[链接](https://t.qianzhan.com/caijing/detail/231025-d45dbbec.html)）
+3. 从《1984》到《美丽新世界》，为什么波兹曼说赫胥黎的预言正在实现？（[链接](https://www.sohu.com/a/113387493_483391)）
 4. 《上瘾》
 5. 《娱乐至死》
