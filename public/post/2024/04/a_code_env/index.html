@@ -1,0 +1,648 @@
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{background-image:url(/images/ui/background.jpg);background-repeat:no-repeat;background-position:50%;background-attachment:fixed;background-size:cover;min-height:100vh}html,body{min-height:100vh}</style><script id=LA_COLLECT src=//sdk.51.la/js-sdk-pro.min.js></script><script>LA.init({id:"3L3XAvCJS5maI7j0",ck:"3L3XAvCJS5maI7j0"})</script><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>创建一个远程编译环境 - caoyang 2002</title>
+<meta name=theme-color><meta name=description content="
+我使用的是 Mac，所以以下都是 Mac 的说明
+
+一、前端（ts、react）
+
+前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2
+
+1. 初始化模板
+
+任意选一个就行
+
+1.1 交互式
+
+
+
+
+
+
+
+
+
+
+
+    npm init vite
+
+
+
+可能需要先安装
+npm install vite --save-dev
+
+
+
+
+
+
+
+
+
+
+
+
+    caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground  # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React  # 使用 React 库
+✔ Select a variant: › TypeScript  # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+  cd playground
+  npm install
+  npm run dev
+
+
+1.2 一键创建
+
+
+
+
+
+
+
+
+
+
+
+    npm init vite playground -- --template react-ts
+
+
+或者"><meta name=author content="曹洋 simons"><script src=/js/code-copy.js defer></script><link rel="preload stylesheet" as=style href=https://caoyang2002.xyz/bundle.min.css><link rel=preload as=image href=https://caoyang2002.xyz/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=https://caoyang2002.xyz/twitter.svg><link rel=preload as=image href=https://caoyang2002.xyz/github.svg><link rel=preload as=image href=https://caoyang2002.xyz/instagram.svg><link rel=preload as=image href=https://caoyang2002.xyz/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script defer src=https://caoyang2002.xyz/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script>window.onload=function(){hljs.highlightAll()}</script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/lisp.min.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/mariadb.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.xyz/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.xyz/apple-touch-icon.png><meta name=generator content="Hugo 0.140.2"><meta itemprop=name content="创建一个远程编译环境"><meta itemprop=description content="我使用的是 Mac，所以以下都是 Mac 的说明
+一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
+1. 初始化模板 任意选一个就行
+1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
+caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者"><meta itemprop=datePublished content="2024-04-29T09:31:37+08:00"><meta itemprop=dateModified content="2025-01-24T11:49:05+08:00"><meta itemprop=wordCount content="3868"><meta itemprop=keywords content="Move"><meta property="og:url" content="https://caoyang2002.xyz/post/2024/04/a_code_env/"><meta property="og:site_name" content="caoyang 2002"><meta property="og:title" content="创建一个远程编译环境"><meta property="og:description" content="我使用的是 Mac，所以以下都是 Mac 的说明
+一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
+1. 初始化模板 任意选一个就行
+1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
+caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2024-04-29T09:31:37+08:00"><meta property="article:modified_time" content="2025-01-24T11:49:05+08:00"><meta property="article:tag" content="Move"><meta name=twitter:card content="summary"><meta name=twitter:title content="创建一个远程编译环境"><meta name=twitter:description content="我使用的是 Mac，所以以下都是 Mac 的说明
+一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
+1. 初始化模板 任意选一个就行
+1.1 交互式 npm init vite 可能需要先安装 npm install vite --save-dev
+caoyang@cccy del % npm init vite # 使用 上下键 选择 ✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录 ✔ Select a framework: › React # 使用 React 库 ✔ Select a variant: › TypeScript # 使用 TS 语言开发 Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground... Done. Now run: # 需要先运行以下代码 cd playground npm install npm run dev 1.2 一键创建 npm init vite playground -- --template react-ts 或者"><link rel=canonical href=https://caoyang2002.xyz/post/2024/04/a_code_env/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-12 px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.xyz/>caoyang 2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/>首页
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/about/>关于
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/contact/>联系
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/guestbook/>留言
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/search/>搜索</a><div class=language-selector><div class="inline-block text-left dropdown"><div><p class=selected-language>Chinese</p></div><div style=background-color:red;z-index:1000><ul class=dropdown-menu id=dropdownMenu><li><a href=/en/post/2024/04/a_code_env/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>English</a></li><li><a href=/es/post/2024/04/a_code_env/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Español</a></li></ul></div></div><script>const dropdownButton=document.getElementById("dropdownButton"),dropdownMenu=document.getElementById("dropdownMenu"),dropdownIcon=document.querySelector(".dropdown-icon");dropdownButton.addEventListener("click",function(){dropdownMenu.classList.toggle("show"),dropdownButton.parentElement.classList.toggle("open")}),dropdownMenu.querySelectorAll("li").forEach(e=>{e.addEventListener("click",function(){dropdownButton.textContent=e.textContent+" ",dropdownButton.appendChild(dropdownIcon),dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open");const t=e.getAttribute("data-value");console.log("Selected Language:",t)})}),document.addEventListener("click",function(e){!dropdownButton.contains(e.target)&&!dropdownMenu.contains(e.target)&&(dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open"))})</script><style>.dropdown{display:inline-block;margin:0}.dropdown-menu{background-color:#fff;border:1px solid #ddd;border-radius:8px;padding:0;margin:0;display:none}.dropdown-menu.show{display:block}.dropdown-menu li{padding:.2rem;cursor:pointer;color:#333}.dropdown-menu>li:hover{background-color:transparent}.selected-language:hover{color:#0042da}</style></div></nav></div></header><style>.language-selector{position:relative;display:inline-block;z-index:10}.language-selector .dropdown-menu{display:none;position:absolute;top:100%;right:0;background-color:#fff;border:1px solid #ddd;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,.1);z-index:50}.language-selector:hover .dropdown-menu{display:block}.header-menu:hover{color:#0042da}header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}.header-menu:hover{color:#0042da}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">创建一个远程编译环境</h1><div class="text-xs antialiased opacity-60"><time>2024年4月29日星期一
+</time><span class=mx-1>&#183;</span>
+<span>simons
+</span><span class=mx-1>&#183;</span>
+<span class=post-date>本文共 3868
+个字 ， 预计需要阅读 8
+分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://caoyang2002.xyz/tags/move class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">move</a></span></div><section><blockquote><p>我使用的是 Mac，所以以下都是 Mac 的说明</p></blockquote><h1 id=一前端tsreact>一、前端（ts、react）</h1><blockquote><p>前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2</p></blockquote><h2 id=1-初始化模板>1. 初始化模板</h2><blockquote><p>任意选一个就行</p></blockquote><h3 id=11-交互式>1.1 交互式</h3><div><pre><code class=language-bash data-lang=bash>npm init vite</code></pre></div><blockquote><p>可能需要先安装
+<code>npm install vite --save-dev</code></p></blockquote><div><pre><code class=language- data-lang>caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground  # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React  # 使用 React 库
+✔ Select a variant: › TypeScript  # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+  cd playground
+  npm install
+  npm run dev</code></pre></div><h3 id=12-一键创建>1.2 一键创建</h3><div><pre><code class=language-bash data-lang=bash>npm init vite playground -- --template react-ts</code></pre></div><p>或者</p><div><pre><code class=language-bash data-lang=bash>npx create-vite playground --template react-ts</code></pre></div><p>或者</p><div><pre><code class=language-bash data-lang=bash>npm init @vitejs/app playground -- --template react-ts</code></pre></div><p>{bs-accord style=line title=解析}
+<code>npm init vite</code> : 是一个 npm 初始化命令，它使用了 Vite 工具，
+<code>my-react-ts-app</code> : 是您希望创建的项目的名称。
+<code>--</code> : 是用来分隔 npm 命令行选项和参数的，
+<code>--template react-ts</code> : 是向 Vite 提供的选项，它告诉 Vite 使用 React TypeScript 模板来生成项目。
+{/bs-accord}</p><h2 id=2-安装并运行模板>2. 安装并运行模板</h2><div><pre><code class=language-bash data-lang=bash># 需要先运行以下代码
+  cd playground
+  npm install
+  npm run dev</code></pre></div><blockquote><div><pre><code class=language-bash data-lang=bash>caoyang@cccy playground %   npm install
+added 218 packages, and audited 219 packages in 59s
+41 packages are looking for funding
+ run `npm fund` for details
+found 0 vulnerabilities</code></pre></div></blockquote><blockquote><p>在 vscode 中打开，并编辑</p></blockquote><h2 id=3-删除不需要的文件>3. 删除不需要的文件</h2><p>建议删除，否则可能出现非预期的情况</p><ul><li><code>public / vite.svg</code></li><li><code>src / App.css</code></li><li><code>src / index.css</code></li><li>删除 <code>App.tsx</code> 和 <code>main.tsx</code> 中的导入</li></ul><h2 id=4-创建-playgroundtsx-组件>4. 创建 <code>playground.tsx</code> 组件</h2><blockquote><p>安装依赖项</p></blockquote><div><pre><code class=language-bash data-lang=bash>npm install axios codemirror react-codemirror2
+# 或者
+npm install axios codemirror react-codemirror2 --legacy-peer-deps
+# 或者
+npm install axios@1.6.8 codemirror@5.65.16 react@18.2.0 react-codemirror2@7.3.0 react-dom@18.2.0</code></pre></div><div><pre><code class=language-tsx data-lang=tsx>import React, { useState } from &#39;react&#39;;
+import { Controlled as CodeMirror } from &#39;react-codemirror2&#39;;
+import axios from &#39;axios&#39;;
+import &#39;codemirror/lib/codemirror.css&#39;;
+import &#39;codemirror/theme/material.css&#39;;
+import &#39;./move.js&#39;; // 导入 move.js 文件
+
+const Playground: React.FC = () =&gt; {
+	const [code, setCode] = useState(&#39;&#39;);
+	const [output, setOutput] = useState(&#39;&#39;);
+
+	const handleCodeChange = (editor: any, data: any, value: string) =&gt; {
+		setCode(value);
+	};
+
+	const executeCode = async () =&gt; {
+		try {
+			// 发送 Move 代码到后端服务
+			const response = await axios.post(&#39;http://127.0.0.1:8081/run_move&#39;, code);
+			setOutput(response.data);
+		} catch (error) {
+			console.error(&#39;执行 Move 代码时出错:&#39;, error);
+		}
+
+
+	};
+
+	return (
+		&lt;div&gt;
+			&lt;CodeMirror
+				value={code}
+				options={{
+					mode: &#39;move&#39;, // 使用 move 模式
+					theme: &#39;material&#39;,
+					lineNumbers: true,
+				}}
+				onBeforeChange={(editor, data, value) =&gt; {
+					setCode(value);
+				}}
+				onChange={handleCodeChange}
+			/&gt;
+			&lt;button onClick={executeCode}&gt;执行&lt;/button&gt;
+			&lt;div&gt;
+				&lt;h3&gt;执行结果:&lt;/h3&gt;
+				&lt;pre&gt;{output}&lt;/pre&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	);
+};
+
+export default Playground;</code></pre></div><h2 id=5-修改maintsx>5. 修改<code>main.tsx</code></h2><div><pre><code class=language-tsx data-lang=tsx>import React from &#39;react&#39;
+import ReactDOM from &#39;react-dom/client&#39;
+import App from &#39;./App.tsx&#39;
+
+ReactDOM.createRoot(document.getElementById(&#39;root&#39;)!).render(
+  // &lt;React.StrictMode&gt;
+  &lt;App /&gt;
+  // &lt;/React.StrictMode&gt;,
+)</code></pre></div><h2 id=6-修改apptsx>6. 修改<code>App.tsx</code></h2><div><pre><code class=language-tsx data-lang=tsx>import { useState } from &#39;react&#39;
+import Playground from &#39;./playground&#39;
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    &lt;&gt;
+      &lt;Playground /&gt;
+    &lt;/&gt;
+  )
+}
+
+export default App</code></pre></div><h2 id=7-创建语法高亮-movejs>7. 创建语法高亮 <code>move.js</code></h2><blockquote><p>这部分没有完全适配，只是一个 rust 模板。</p></blockquote><div class=code-playground data-language=js><div><pre>
+                <code class=language-js>import CodeMirror from &#39;codemirror&#39;;
+
+CodeMirror.defineMode(&#34;move&#34;, function (config, parserConfig) {
+	var indentUnit = config.indentUnit,
+		statementIndentUnit = parserConfig.statementIndentUnit || indentUnit,
+		dontAlignCalls = parserConfig.dontAlignCalls,
+		keywords = parserConfig.keywords || {},
+		builtin = parserConfig.builtin || {},
+		blockKeywords = parserConfig.blockKeywords || {},
+		atoms = parserConfig.atoms || {},
+		hooks = parserConfig.hooks || {},
+		multiLineStrings = parserConfig.multiLineStrings;
+	var isOperatorChar = /[&#43;\-*&amp;%=&lt;&gt;!?|\/]/;
+
+	var curPunc;
+
+	function tokenBase(stream, state) {
+		var ch = stream.next();
+		if (hooks[ch]) {
+			var result = hooks[ch](stream, state);
+			if (result !== false) return result;
+		}
+		if (ch == &#39;&#34;&#39; || ch == &#34;&#39;&#34;) {
+			state.tokenize = tokenString(ch);
+			return state.tokenize(stream, state);
+		}
+		if (/[\[\]{}\(\),;\:\.]/.test(ch)) {
+			curPunc = ch;
+			return null;
+		}
+		if (/\d/.test(ch)) {
+			stream.eatWhile(/[\w\.]/);
+			return &#34;number&#34;;
+		}
+		if (ch == &#34;/&#34;) {
+			if (stream.eat(&#34;*&#34;)) {
+				state.tokenize = tokenComment;
+				return tokenComment(stream, state);
+			}
+			if (stream.eat(&#34;/&#34;)) {
+				stream.skipToEnd();
+				return &#34;comment&#34;;
+			}
+		}
+		if (isOperatorChar.test(ch)) {
+			stream.eatWhile(isOperatorChar);
+			return &#34;operator&#34;;
+		}
+		stream.eatWhile(/[\w\$_]/);
+		var cur = stream.current();
+		if (keywords.propertyIsEnumerable(cur)) {
+			if (blockKeywords.propertyIsEnumerable(cur)) curPunc = &#34;newstatement&#34;;
+			return &#34;keyword&#34;;
+		}
+		if (builtin.propertyIsEnumerable(cur)) {
+			if (blockKeywords.propertyIsEnumerable(cur)) curPunc = &#34;newstatement&#34;;
+			return &#34;builtin&#34;;
+		}
+		if (atoms.propertyIsEnumerable(cur)) return &#34;atom&#34;;
+		return &#34;variable&#34;;
+	}
+
+	function tokenString(quote) {
+		return function (stream, state) {
+			var escaped = false, next, end = false;
+			while ((next = stream.next()) != null) {
+				if (next == quote &amp;&amp; !escaped) { end = true; break; }
+				escaped = !escaped &amp;&amp; next == &#34;\\&#34;;
+			}
+			if (end || !(escaped || multiLineStrings))
+				state.tokenize = null;
+			return &#34;string&#34;;
+		};
+	}
+
+	function tokenComment(stream, state) {
+		var maybeEnd = false, ch;
+		while (ch = stream.next()) {
+			if (ch == &#34;/&#34; &amp;&amp; maybeEnd) {
+				state.tokenize = null;
+				break;
+			}
+			maybeEnd = (ch == &#34;*&#34;);
+		}
+		return &#34;comment&#34;;
+	}
+
+	function Context(indented, column, type, align, prev) {
+		this.indented = indented;
+		this.column = column;
+		this.type = type;
+		this.align = align;
+		this.prev = prev;
+	}
+	function pushContext(state, col, type) {
+		var indent = state.indented;
+		if (state.context &amp;&amp; state.context.type == &#34;statement&#34;)
+			indent = state.context.indented;
+		return state.context = new Context(indent, col, type, null, state.context);
+	}
+	function popContext(state) {
+		var t = state.context.type;
+		if (t == &#34;)&#34; || t == &#34;]&#34; || t == &#34;}&#34;)
+			state.indented = state.context.indented;
+		return state.context = state.context.prev;
+	}
+
+	// Interface
+
+	return {
+		startState: function (basecolumn) {
+			return {
+				tokenize: null,
+				context: new Context((basecolumn || 0) - indentUnit, 0, &#34;top&#34;, false),
+				indented: 0,
+				startOfLine: true
+			};
+		},
+
+		token: function (stream, state) {
+			var ctx = state.context;
+			if (stream.sol()) {
+				if (ctx.align == null) ctx.align = false;
+				state.indented = stream.indentation();
+				state.startOfLine = true;
+			}
+			if (stream.eatSpace()) return null;
+			curPunc = null;
+			var style = (state.tokenize || tokenBase)(stream, state);
+			if (style == &#34;comment&#34; || style == &#34;meta&#34;) return style;
+			if (ctx.align == null) ctx.align = true;
+
+			if ((curPunc == &#34;;&#34; || curPunc == &#34;:&#34; || curPunc == &#34;,&#34;) &amp;&amp; ctx.type == &#34;statement&#34;) popContext(state);
+			else if (curPunc == &#34;{&#34;) pushContext(state, stream.column(), &#34;}&#34;);
+			else if (curPunc == &#34;[&#34;) pushContext(state, stream.column(), &#34;]&#34;);
+			else if (curPunc == &#34;(&#34;) pushContext(state, stream.column(), &#34;)&#34;);
+			else if (curPunc == &#34;}&#34;) {
+				while (ctx.type == &#34;statement&#34;) ctx = popContext(state);
+				if (ctx.type == &#34;}&#34;) ctx = popContext(state);
+				while (ctx.type == &#34;statement&#34;) ctx = popContext(state);
+			}
+			else if (curPunc == ctx.type) popContext(state);
+			else if (((ctx.type == &#34;}&#34; || ctx.type == &#34;top&#34;) &amp;&amp; curPunc != &#39;;&#39;) || (ctx.type == &#34;statement&#34; &amp;&amp; curPunc == &#34;newstatement&#34;))
+				pushContext(state, stream.column(), &#34;statement&#34;);
+			state.startOfLine = false;
+			return style;
+		},
+
+		indent: function (state, textAfter) {
+			if (state.tokenize != tokenBase &amp;&amp; state.tokenize != null) return CodeMirror.Pass;
+			var ctx = state.context, firstChar = textAfter &amp;&amp; textAfter.charAt(0);
+			if (ctx.type == &#34;statement&#34; &amp;&amp; firstChar == &#34;}&#34;) ctx = ctx.prev;
+			var closing = firstChar == ctx.type;
+			if (ctx.type == &#34;statement&#34;) return ctx.indented &#43; (firstChar == &#34;{&#34; ? 0 : statementIndentUnit);
+			else if (ctx.align &amp;&amp; (!dontAlignCalls || ctx.type != &#34;)&#34;)) return ctx.column &#43; (closing ? 0 : 1);
+			else if (ctx.type == &#34;)&#34; &amp;&amp; !closing) return ctx.indented &#43; statementIndentUnit;
+			else return ctx.indented &#43; (closing ? 0 : indentUnit);
+		},
+
+		electricChars: &#34;{}&#34;,
+		blockCommentStart: &#34;/*&#34;,
+		blockCommentEnd: &#34;*/&#34;,
+		lineComment: &#34;//&#34;,
+		fold: &#34;brace&#34;
+	};
+});
+
+(function () {
+	function words(str) {
+		var obj = {}, words = str.split(&#34; &#34;);
+		for (var i = 0; i &lt; words.length; &#43;&#43;i) obj[words[i]] = true;
+		return obj;
+	}
+	var rustKeywords = &#34;abstract async await become box break const continue crate do dyn else enum extern false fn for if impl in let loop macro match mod move mut pub ref return self Self static struct super trait true type union unsafe use where while yield&#34;;
+
+	function rustHook(stream, state) {
+		if (!state.startOfLine) return false;
+		for (; ;) {
+			if (stream.skipTo(&#34;\\&#34;)) {
+				stream.next();
+				if (stream.eol()) {
+					state.tokenize = rustHook;
+					break;
+				}
+			} else {
+				stream.skipToEnd();
+				state.tokenize = null;
+				break;
+			}
+		}
+		return &#34;meta&#34;;
+	}
+
+	// Rust-style strings where &#34;&#34; escapes a quote.
+	function tokenAtString(stream, state) {
+		var next;
+		while ((next = stream.next()) != null) {
+			if (next == &#39;&#34;&#39; &amp;&amp; !stream.eat(&#39;&#34;&#39;)) {
+				state.tokenize = null;
+				break;
+			}
+		}
+		return &#34;string&#34;;
+	}
+
+	function mimes(ms, mode) {
+		for (var i = 0; i &lt; ms.length; &#43;&#43;i) CodeMirror.defineMIME(ms[i], mode);
+	}
+
+	mimes([&#34;text/x-rustsrc&#34;, &#34;text/x-rust&#34;], {
+		name: &#34;rust&#34;,
+		keywords: words(rustKeywords),
+		blockKeywords: words(&#34;enum struct&#34;),
+		atoms: words(&#34;true false None Some&#34;),
+		hooks: { &#34;#&#34;: rustHook }
+	});
+}());</code></pre></div></div><h2 id=8-测试运行>8. 测试运行</h2><div><pre><code class=language-bash data-lang=bash>npm run dev</code></pre></div><p>访问页面</p><div><pre><code class=language-bash data-lang=bash> VITE v5.2.8  ready in 177 ms
+
+  ➜  Local:   http://localhost:5173/  # 访问这个地址可以打开
+  ➜  Network: use --host to expose
+  ➜  press h &#43; enter to show help</code></pre></div><blockquote><p>如果无法运行
+报错：</p><div><pre><code class=language-bash data-lang=bash> [vite] Internal server error: Missing &#34;./lib/codemirror.css&#34; specifier in &#34;codemirror&#34; package</code></pre></div><p>检查 <code>paclage.json</code> 中的 <code>"codemirror": "^5.65.16"</code> 版本是否正确</p></blockquote><p><img src=https://www.caoyang2002.top/usr/uploads/2024/04/2369201853.png alt=前端></p><blockquote><p>这时候点击 <code>执行</code> 会出错，因为还没写服务端</p></blockquote><h1 id=二服务端rust>二、服务端（rust）</h1><h2 id=1-安装-rust安装-rust-时会默认安装-cargo>1. 安装 Rust（安装 Rust 时会默认安装 Cargo）</h2><div><pre><code class=language-bash data-lang=bash>curl --proto &#39;=https&#39; --tlsv1.2 -sSf https://sh.rustup.rs | sh</code></pre></div><blockquote><p>按照提示操作，选择默认选项安装即可。</p></blockquote><h2 id=2-rust-环境>2. Rust 环境</h2><blockquote><p>安装完成后，根据终端中的提示，运行以下命令将 Rust 工具链添加到您的 shell 环境中：</p></blockquote><div><pre><code class=language-bash data-lang=bash>source $HOME/.cargo/env</code></pre></div><h2 id=3-验证安装>3. 验证安装</h2><blockquote><p>在终端中运行以下命令来验证 Rust 和 Cargo 是否成功安装：</p></blockquote><div><pre><code class=language-bash data-lang=bash>rustc --version # 或者 rustc -V
+cargo --version   # 或者 cargo -V</code></pre></div><blockquote><p>查看帮助</p><div><pre><code class=language-bash data-lang=bash>rustc --help
+cargo --help
+cargo run --help
+cargo build --help</code></pre></div></blockquote><h2 id=4-创建-rust-项目>4. 创建 Rust 项目</h2><blockquote><p>在您选择的目录中，打开终端。</p></blockquote><p>创建一个新的 Rust 项目</p><div><pre><code class=language-bash data-lang=bash>cargo new rust_move_server  # rust_move_server 是项目的名称，它会创建一个该名称的文件夹作为项目根目录</code></pre></div><p>{bs-accord style=line title=文件解析}
+<code>Cargo.toml</code> 是 Rust 项目的配置文件，类似于其他语言中的 package.json 或者 requirements.txt。它用来指定项目的元数据、依赖项以及构建配置等信息。您可以在 Cargo.toml 中指定项目的名称、版本号、作者信息等，同时也可以列出项目的依赖项和构建脚本。</p><p><code>src</code> 目录是 Rust 项目的源代码目录，其中包含了您编写的 Rust 源代码文件。通常情况下，Rust 项目的主要源代码文件会放在 src 目录下。您可以在 src 目录中创建 Rust 源代码文件（通常以 .rs 扩展名结尾），并在这些文件中编写 Rust 代码来实现项目的功能。</p><blockquote><p>初始的 <code>src</code> 目录内包含一个 <code>main.rs</code> 文件</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn main() {
+    println!(&#34;Hello, world!&#34;);
+}</code></pre></div></div></blockquote><p>{/bs-accord}</p><h2 id=5-进入项目目录>5. 进入项目目录</h2><div><pre><code class=language-bash data-lang=bash>cd rust_move_server</code></pre></div><blockquote><p>进入您新创建的项目目录。</p></blockquote><h2 id=6-构建项目>6. 构建项目</h2><blockquote><p>您新创建的项目目录内</p></blockquote><div><pre><code class=language-bash data-lang=bash>cargo build</code></pre></div><blockquote><p>Cargo 将会自动下载和构建项目的依赖项，并生成可执行文件。</p></blockquote><h2 id=7-运行项目>7. 运行项目</h2><blockquote><p>构建完成后，您可以在项目目录中找到生成的可执行文件。</p></blockquote><p>执行项目</p><div><pre><code class=language-bash data-lang=bash>./target/debug/your_project_name</code></pre></div><p>{bs-accord style=line title=构建同时运行}</p><div><pre><code class=language-bash data-lang=bash>cargo run</code></pre></div><p>用于构建并运行 Rust 项目的可执行文件。它实际上是 <code>cargo build</code> 和执行生成的可执行文件的组合操作。</p><p>具体来说，<code>cargo run</code> 命令会执行以下操作：</p><ol><li><p><strong>构建项目</strong>：如果项目尚未构建，<code>cargo run</code> 会首先执行与 <code>cargo build</code> 相同的操作，即编译 Rust 项目的源代码并生成可执行文件。如果项目已经构建过，它会跳过这一步，除非代码或依赖项发生了变化。</p></li><li><p><strong>运行可执行文件</strong>：一旦项目构建完成，<code>cargo run</code> 会自动在项目的 <code>target/debug</code> 目录中查找生成的可执行文件，并将其运行起来。如果项目是库项目而不是可执行文件项目，则 <code>cargo run</code> 不会执行任何操作，因为库项目没有可执行文件。</p></li><li><p><strong>传递参数</strong>：<code>cargo run</code> 命令可以接受额外的参数，并将它们传递给生成的可执行文件。这些参数可以在执行可执行文件时使用，例如指定程序的运行配置或传递运行时参数。
+{/bs-accord}</p></li></ol><h2 id=8-写入-rust-服务端代码>8. 写入 Rust 服务端代码</h2><h3 id=81-配置依赖项-cargotoml>8.1 配置依赖项 <code>Cargo.toml</code></h3><div><pre><code class=language-bash data-lang=bash>[package]
+name = &#34;test_server&#34;
+version = &#34;0.1.0&#34;
+edition = &#34;2021&#34;
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = &#34;4.0&#34;
+actix-cors = { version = &#34;0.6.0-beta.10&#34; }</code></pre></div><h3 id=82-写入rust-代码>8.2 写入Rust 代码</h3><div><pre><code class=language-bash data-lang=bash>use actix_web::{web, App, HttpResponse, HttpServer, Responder};
+use std::process::{Command, Stdio};
+use std::fs;
+use std::path::Path;
+use std::str;
+use actix_cors::Cors;
+
+async fn compile_and_run_move(move_code: web::Bytes) -&gt; impl Responder {
+    println!(&#34;Received Move code: {:?}&#34;, move_code);
+    // 创建临时文件目录
+    let tmp_dir = &#34;/tmp&#34;;
+    if !Path::new(tmp_dir).exists() {
+        fs::create_dir(tmp_dir).expect(&#34;Failed to create temporary directory&#34;);
+    }
+
+    // 将接收到的 Move 代码写入临时文件
+    let tmp_file = &#34;/Users/caoyang/Documents/Aptos/ts_playground/move_code/sources/test.move&#34;;
+    fs::write(tmp_file, move_code).expect(&#34;写入文件：Failed to write Move code to file&#34;);
+
+    // 编译 Move 代码
+let compile_output = Command::new(&#34;aptos&#34;)
+    .arg(&#34;move&#34;)
+    .arg(&#34;test&#34;)
+    .arg(&#34;--package-dir&#34;)
+    .arg(&#34;/Users/caoyang/Documents/Aptos/ts_playground/move_code&#34;)
+    .output()
+    .expect(&#34;Failed to execute aptos move test command&#34;);
+
+if !compile_output.status.success() {
+    let stderr = str::from_utf8(&amp;compile_output.stderr).unwrap_or(&#34;Error reading stderr&#34;);
+    return HttpResponse::InternalServerError().body(format!(&#34;Move compilation failed: {}&#34;, stderr));
+}
+
+    // 将运行结果作为响应返回给客户端
+    HttpResponse::Ok().body(String::from_utf8_lossy(&amp;compile_output.stdout).to_string())
+}
+
+
+#[actix_web::main]
+async fn main() -&gt; std::io::Result&lt;()&gt; {
+    // 启动服务器
+    HttpServer::new(|| {
+        App::new()
+            // 添加CORS中间件
+            .wrap(
+                Cors::permissive() // &lt;- 使用 Cors::permissive() 替换 Cors::new()
+                    .allowed_origin(&#34;http://localhost:5173&#34;)
+            )
+            // 定义路由
+            .route(&#34;/run_move&#34;, web::post().to(compile_and_run_move))
+    })
+    .bind(&#34;127.0.0.1:8081&#34;)?
+    .run()
+    .await
+}</code></pre></div><h2 id=9-发送-post-请求进行测试>9. 发送 post 请求进行测试</h2><div><pre><code class=language-bash data-lang=bash> curl -X POST -d &#39;module 0x12::test{
+  use std::debug::print;
+  use std::string::utf8;
+  #[test]
+  fun test_server(){
+    print(&amp;utf8(b&#34;server is running&#34;));
+  }
+}&#39; http://127.0.0.1:8081/run_move</code></pre></div><h2 id=rust-部分完成>Rust 部分完成</h2><h1 id=三move-临时代码>三、move 临时代码</h1><blockquote><p>这个目录主要是用于存储前端的代码，然后执行这段代码，将结果返回给前端</p></blockquote><ul><li>先创建目录</li></ul><div><pre><code class=language-bash data-lang=bash>mkdir move_code_tmp
+cd move_code_tmp</code></pre></div><h2 id=1-初始化-move-项目>1. 初始化 Move 项目</h2><div><pre><code class=language-bash data-lang=bash>aptos move init  --name move_code</code></pre></div><blockquote><p>这个命令会在当前目录下初始化一个 move 项目，不会新创建项目，
+根据提示输入内容，或者直接回车
+创建的 <code>Move.toml</code> 包含了程序的配置信息</p></blockquote><p>返回结果</p><blockquote><div><pre><code class=language-bash data-lang=bash>caoyang@cccy move_code_tmp % aptos move init  --name move_code
+{
+ &#34;Result&#34;: &#34;Success&#34;
+}</code></pre></div></blockquote><h2 id=2-初始化-aptos-账户>2. 初始化 aptos 账户</h2><div><pre><code class=language-bash data-lang=bash>aptos init --network testnet</code></pre></div><blockquote><p>这个命令会在 <code>.aptos</code> 目录下创建一个 <code>config.yaml</code> 文件，这个文件包含了账户的所有信息</p></blockquote><p>返回结果</p><blockquote><div><pre><code class=language-bash data-lang=bash>caoyang@cccy move_code_tmp % aptos init --network testnet
+Configuring for profile default
+Configuring for network Testnet
+Enter your private key as a hex literal (0x...) [Current: None | No input: Generate new key (or keep one if present)]
+ No key given, generating key...
+ Account 0x3846fb4052a41807816c58611911e913526e2370cd97a160025cc7dc670efeff doesn&#39;t exist, creating it and funding it with 100000000 Octas
+ Account 0x3846fb4052a41807816c58611911e913526e2370cd97a160025cc7dc670efeff funded successfully
+ ---
+ Aptos CLI is now set up for account 0x3846fb4052a41807816c58611911e913526e2370cd97a160025cc7dc670efeff as profile default!  Run `aptos --help` for more information about commands
+ {
+   &#34;Result&#34;: &#34;Success&#34;
+   }</code></pre></div></blockquote><h2 id=3-创建临时-move-代码文件-tempmove>3. 创建临时 Move 代码文件 <code>temp.move</code></h2><blockquote><p>用于临时存储前端发送的 Move 代码，并执行代码</p></blockquote><h3 id=31-输入一段-move-代码>3.1 输入一段 Move 代码</h3><div><pre><code class=language-move data-lang=move>module 0x42::test{
+    use std::debug::print;
+	  use std::string::utf8;
+    #[test]
+    fun test_my(){
+        print(&amp;utf8(b&#34;server is running&#34;));
+    }
+}</code></pre></div><h3 id=32-测试运行>3.2 测试运行</h3><div><pre><code class=language-bash data-lang=bash>aptos move test</code></pre></div><p>返回的结果</p><blockquote><div><pre><code class=language-bash data-lang=bash>caoyang@cccy move_code_tmp % aptos move test
+INCLUDING DEPENDENCY AptosFramework
+INCLUDING DEPENDENCY AptosStdlib
+INCLUDING DEPENDENCY MoveStdlib
+BUILDING move_code
+warning: unused alias
+  ┌─ /Users/caoyang/Documents/Aptos/del/move_code_tmp/sources/temp.move:2:21
+  │
+2 │     use std::debug::print;
+  │                     ^^^^^ Unused &#39;use&#39; of alias &#39;print&#39;. Consider removing it    # 这是正常的，因为未使用
+
+warning: unused alias
+  ┌─ /Users/caoyang/Documents/Aptos/del/move_code_tmp/sources/temp.move:3:21
+  │
+3 │       use std::string::utf8;
+  │                        ^^^^ Unused &#39;use&#39; of alias &#39;utf8&#39;. Consider removing it    # 这是正常的，因为未使用
+
+Running Move unit tests
+[debug] &#34;server is running&#34;   # 输出了源码中预期的结果
+[ PASS    ] 0x42::test::test_my
+Test result: OK. Total tests: 1; passed: 1; failed: 0
+{
+  &#34;Result&#34;: &#34;Success&#34;
+}</code></pre></div></blockquote><h2 id=move-部分完成>Move 部分完成</h2><h1 id=四测试>四、测试</h1><blockquote><p>输入以下代码后，点击 <code>执行</code>，等待一段时间后，可以看到执行结果区域有输出</p></blockquote><div><pre><code class=language-move data-lang=move>module 0x12::test{
+  use std::debug::print;
+  use std::string::utf8;
+  #[test]
+  fun test_server(){
+    print(&amp;utf8(b&#34;server is running&#34;));
+  }
+}</code></pre></div><p><img src=https://www.caoyang2002.top/usr/uploads/2024/04/2477546867.png alt></p><h1 id=五目录结构>五、目录结构</h1><div><pre><code class=language-bash data-lang=bash> tree -I &#39;node_modules|build|target&#39; ./</code></pre></div><div><pre><code class=language-bash data-lang=bash>caoyang@cccy ts_playground % tree -I &#39;node_modules|build|target&#39; ./
+./
+├── move_code   # move 程序代码
+│   ├── Move.toml  # 可以更换为国内源
+│   ├── scripts
+│   ├── sources
+│   │   └── temp.move  # move 临时代码
+│   └── tests
+├── playground
+│   ├── README.md
+│   ├── codemirror.d.ts
+│   ├── index.html
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   └── vite.svg # 这个可以删掉
+│   ├── src
+│   │   ├── App.tsx # 取消严格模式，防止渲染两个输入框
+│   │   ├── assets
+│   │   │   └── react.svg  # 这个可以删掉
+│   │   ├── main.tsx
+│   │   ├── move.js  # 高亮语法
+│   │   ├── playground.tsx  # 文本编辑器
+│   │   └── vite-env.d.ts
+│   ├── tsconfig.json
+│   ├── tsconfig.node.json
+│   └── vite.config.ts
+└── rust_move_server  # rust 服务端，用于接受 post 请求，并返回 move 的执行结果
+    └── test_server
+        ├── Cargo.lock
+        ├── Cargo.toml  # 需要配置依赖项
+        └── src
+            └── main.rs # 服务端代码</code></pre></div><h1 id=附录>附录</h1><h2 id=playground>playground</h2><h3 id=packagejson>package.json</h3><div><pre><code class=language-json data-lang=json>{
+  &#34;name&#34;: &#34;playground&#34;,
+  &#34;private&#34;: true,
+  &#34;version&#34;: &#34;0.0.0&#34;,
+  &#34;type&#34;: &#34;module&#34;,
+  &#34;scripts&#34;: {
+    &#34;dev&#34;: &#34;vite&#34;,
+    &#34;build&#34;: &#34;tsc &amp;&amp; vite build&#34;,
+    &#34;lint&#34;: &#34;eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0&#34;,
+    &#34;preview&#34;: &#34;vite preview&#34;
+  },
+  &#34;dependencies&#34;: {
+    &#34;axios&#34;: &#34;^1.6.8&#34;,
+    &#34;codemirror&#34;: &#34;^5.65.16&#34;,
+    &#34;react&#34;: &#34;^18.2.0&#34;,
+    &#34;react-codemirror2&#34;: &#34;^7.3.0&#34;,
+    &#34;react-dom&#34;: &#34;^18.2.0&#34;
+  },
+  &#34;devDependencies&#34;: {
+    &#34;@types/codemirror&#34;: &#34;^5.60.15&#34;,
+    &#34;@types/react&#34;: &#34;^18.2.66&#34;,
+    &#34;@types/react-dom&#34;: &#34;^18.2.22&#34;,
+    &#34;@typescript-eslint/eslint-plugin&#34;: &#34;^7.2.0&#34;,
+    &#34;@typescript-eslint/parser&#34;: &#34;^7.2.0&#34;,
+    &#34;@vitejs/plugin-react&#34;: &#34;^4.2.1&#34;,
+    &#34;eslint&#34;: &#34;^8.57.0&#34;,
+    &#34;eslint-plugin-react-hooks&#34;: &#34;^4.6.0&#34;,
+    &#34;eslint-plugin-react-refresh&#34;: &#34;^0.4.6&#34;,
+    &#34;typescript&#34;: &#34;^5.2.2&#34;,
+    &#34;vite&#34;: &#34;^5.2.0&#34;
+  }
+}</code></pre></div><h2 id=rust>rust</h2><h3 id=cargotoml>Cargo.toml</h3><div><pre><code class=language-toml data-lang=toml>[package]
+name = &#34;rust_move_server&#34;
+version = &#34;0.1.0&#34;
+edition = &#34;2021&#34;
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-web = &#34;4.0&#34;
+actix-cors = { version = &#34;0.6.0-beta.10&#34; }</code></pre></div><h2 id=move>move</h2><h3 id=movetoml>Move.toml</h3><div><pre><code class=language-move data-lang=move>[package]
+name = &#34;move_code&#34;
+version = &#34;1.0.0&#34;
+authors = []
+
+[addresses]
+
+[dev-addresses]
+
+[dependencies.AptosFramework]
+git = &#34;https://github.com/aptos-labs/aptos-core.git&#34;
+rev = &#34;mainnet&#34;
+subdir = &#34;aptos-move/framework/aptos-framework&#34;
+
+[dev-dependencies]</code></pre></div></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://caoyang2002.xyz/post/2024/04/compent/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>报税记账</span></a>
+<a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://caoyang2002.xyz/post/2024/04/design/><span>设计资料：样机</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
+<textarea name=message placeholder=请输入您的建议或意见... required></textarea>
+<button type=submit>发送</button></form></div><style>.feedback-trigger{background:#007bff;color:#fff;border:none;padding:.25rem .5rem;border-radius:12px;cursor:pointer;box-shadow:0 2px 5px rgba(0,0,0,.2);margin:1rem}.feedback-form{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);margin-bottom:10px}.feedback-form.hidden{display:none}.feedback-form input,.feedback-form textarea{width:100%;margin-bottom:10px;padding:8px;border:1px solid #ddd;border-radius:4px}.feedback-form textarea{height:100px;resize:vertical}.feedback-form button{width:100%;background:#007bff;color:#fff;border:none;padding:8px;border-radius:4px;cursor:pointer}</style><script>function toggleFeedback(){document.querySelector(".feedback-form").classList.toggle("hidden")}function sendFeedback(e){e.preventDefault();const t=e.target,n=`mailto:reggiesimons2cy@gmail.com?subject=https://caoyang2002.xyz/ Feedback from ${t.name.value}&body=${encodeURIComponent(t.message.value)}%0D%0A%0D%0AFrom: ${t.name.value}%0D%0AEmail: ${t.email.value}`;window.location.href=n}</script></div><div class="mt-24 w-100rem" id=disqus_thread></div><script>const disqusShortname="caoyang2002.xyz",script=document.createElement("script");script.src="https://"+disqusShortname+".disqus.com/embed.js",script.setAttribute("data-timestamp",+new Date),document.head.appendChild(script)</script><div class="giscus mt-24"></div><script src=https://giscus.app/client.js data-repo=caoyang2002/caoyang2002 data-repo-id=R_kgDONgnnzg data-category=Announcements data-category-id=DIC_kwDONgnnzs4ClayH data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script></article></main><div class="ml-2 mr-4"><button class=mobile-toc-toggle><svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36z" fill="#223d60" p-id="7155"/><path d="M210.2 229m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7156"/><path d="M210.2 487m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7157"/><path d="M210.2 745m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7158"/></svg></button><aside class="toc-aside mr-4"><div class=toc-container><div class=toc-header><h3 class=toc-title>目录</h3><button class=toc-close><svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"/></svg></button></div><nav id=TableOfContents class=toc><nav id=TableOfContents><ul><li><a href=#一前端tsreact>一、前端（ts、react）</a><ul><li><a href=#1-初始化模板>1. 初始化模板</a><ul><li><a href=#11-交互式>1.1 交互式</a></li><li><a href=#12-一键创建>1.2 一键创建</a></li></ul></li><li><a href=#2-安装并运行模板>2. 安装并运行模板</a></li><li><a href=#3-删除不需要的文件>3. 删除不需要的文件</a></li><li><a href=#4-创建-playgroundtsx-组件>4. 创建 <code>playground.tsx</code> 组件</a></li><li><a href=#5-修改maintsx>5. 修改<code>main.tsx</code></a></li><li><a href=#6-修改apptsx>6. 修改<code>App.tsx</code></a></li><li><a href=#7-创建语法高亮-movejs>7. 创建语法高亮 <code>move.js</code></a></li><li><a href=#8-测试运行>8. 测试运行</a></li></ul></li><li><a href=#二服务端rust>二、服务端（rust）</a><ul><li><a href=#1-安装-rust安装-rust-时会默认安装-cargo>1. 安装 Rust（安装 Rust 时会默认安装 Cargo）</a></li><li><a href=#2-rust-环境>2. Rust 环境</a></li><li><a href=#3-验证安装>3. 验证安装</a></li><li><a href=#4-创建-rust-项目>4. 创建 Rust 项目</a></li><li><a href=#5-进入项目目录>5. 进入项目目录</a></li><li><a href=#6-构建项目>6. 构建项目</a></li><li><a href=#7-运行项目>7. 运行项目</a></li><li><a href=#8-写入-rust-服务端代码>8. 写入 Rust 服务端代码</a><ul><li><a href=#81-配置依赖项-cargotoml>8.1 配置依赖项 <code>Cargo.toml</code></a></li><li><a href=#82-写入rust-代码>8.2 写入Rust 代码</a></li></ul></li><li><a href=#9-发送-post-请求进行测试>9. 发送 post 请求进行测试</a></li><li><a href=#rust-部分完成>Rust 部分完成</a></li></ul></li><li><a href=#三move-临时代码>三、move 临时代码</a><ul><li><a href=#1-初始化-move-项目>1. 初始化 Move 项目</a></li><li><a href=#2-初始化-aptos-账户>2. 初始化 aptos 账户</a></li><li><a href=#3-创建临时-move-代码文件-tempmove>3. 创建临时 Move 代码文件 <code>temp.move</code></a><ul><li><a href=#31-输入一段-move-代码>3.1 输入一段 Move 代码</a></li><li><a href=#32-测试运行>3.2 测试运行</a></li></ul></li><li><a href=#move-部分完成>Move 部分完成</a></li></ul></li><li><a href=#四测试>四、测试</a></li><li><a href=#五目录结构>五、目录结构</a></li><li><a href=#附录>附录</a><ul><li><a href=#playground>playground</a><ul><li><a href=#packagejson>package.json</a></li></ul></li><li><a href=#rust>rust</a><ul><li><a href=#cargotoml>Cargo.toml</a></li></ul></li><li><a href=#move>move</a><ul><li><a href=#movetoml>Move.toml</a></li></ul></li></ul></li></ul></nav></nav></div></aside><style>.toc-aside{position:fixed;top:6rem;bottom:4rem;right:0;width:16rem;z-index:100;transition:transform .3s ease}.toc-container{background:#fff;height:100%;border-radius:.5rem .5rem .5rem .5rem;box-shadow:-2px 0 8px rgba(0,0,0,.1);display:flex;flex-direction:column}.toc-header{position:sticky;border-radius:.5rem .5rem 0 0;top:0;background:#fff;padding:1rem;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;z-index:10}.toc-title{margin:0;font-size:1rem;font-weight:600}.mobile-toc-toggle{display:none;position:fixed;top:6rem;right:1rem;z-index:99;width:3rem;height:3rem;border-radius:50%;background:#fff;border:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.1);color:#4b5563;cursor:pointer;transition:all .2s}.mobile-toc-toggle:hover{background:#f3f4f6}.mobile-toc-toggle .menu-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.toc-close{padding:.5rem;background:0 0;border:none;color:--bg;cursor:pointer;transition:all .2s}.toc-close:hover{color:#111827}.toc{flex:1;overflow-y:auto;padding:1rem;scrollbar-gutter:stable}.toc ul{list-style:none;padding-left:1rem;margin:0}.toc li{margin:.5rem 0}.toc a{display:block;padding:.25rem .5rem;color:#4b5563;text-decoration:none;border-radius:.25rem;transition:all .2s}.toc a:hover{background-color:#f3f4f6;color:#111827}.toc a:active{background-color:#f3f4f6;color:#111827;font-weight:500}.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-track{background:0 0}.toc::-webkit-scrollbar-thumb{background-color:#d1d1d1;border-radius:4px}@media(max-width:912px){.mobile-toc-toggle{display:flex;justify-content:center;align-items:center}.toc-aside{transform:translateX(100%);width:80vw;max-width:20rem}.toc-aside.show{transform:translateX(0)}}h1,h2,h3,h4,h5,h6{scroll-margin-top:100px}</style><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".toc-aside"),t=document.querySelector(".mobile-toc-toggle"),n=document.querySelector(".toc-close");t?.addEventListener("click",()=>{e?.classList.add("show")}),n?.addEventListener("click",()=>{e?.classList.remove("show")}),document.addEventListener("click",n=>{window.innerWidth<=912&&e?.classList.contains("show")&&!e.contains(n.target)&&!t?.contains(n.target)&&e.classList.remove("show")});const s=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id"),n=document.querySelector(`.toc a[href="#${t}"]`);e.intersectionRatio>0&&(document.querySelectorAll(".toc a.active").forEach(e=>{e.classList.remove("active")}),n?.classList.add("active"))})},{rootMargin:"-20% 0px -80% 0px"});document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(e=>{s.observe(e)})})</script></div></div><footer class="flex items-center text-xs uppercase h-8"><div class="mr-auto opacity-60">&copy; 2025
+<a class=link href=https://caoyang2002.xyz/>caoyang 2002</a></div><div><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><p class="link mx-6 opacity-60">本站累计访问次数
+<span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span></p></div><a class="link mx-6 opacity-60" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
+<a class="link mx-6 opacity-60" href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a>
+<a class="link opacity-60" href=https://github.com/caoyang2002/hugo-focus rel=noopener target=_blank>hugo-focus</a></footer><style>footer{position:fixed;bottom:0;left:0;right:0;z-index:50;width:100%;padding:.5rem;padding-bottom:calc(.5rem + var(--safe-padding-bottom));padding-left:max(.5rem,var(--safe-padding-left));padding-right:max(.5rem,var(--safe-padding-right));display:flex;justify-content:center;align-items:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(12px);background:rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.3);box-shadow:0 -4px 20px rgba(0,0,0,5%)}.dark footer{background:rgba(0,0,0,.85);border-top-color:rgba(255,255,255,.1)}.footer-content{width:100%;max-width:var(--w);margin:0 auto;padding:0 1rem;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:1rem}.footer-element{padding:.75rem 1.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;border-radius:.5rem;background:rgba(255,255,255,.1);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:all .2s ease}.footer-element:hover{opacity:1;background:rgba(255,255,255,.2)}.dark .footer-element{background:rgba(255,255,255,5%)}.dark .footer-element:hover{background:rgba(255,255,255,.1)}@media(max-width:768px){footer{padding-top:.5rem;padding-bottom:calc(.5rem + env(safe-area-inset-bottom))}.footer-content{padding:0 .5rem;gap:.5rem}.footer-element{padding:.5rem 1rem;font-size:.75rem}}@media(min-width:768px){.footer-element{font-size:.875rem}}@media(min-width:1024px){.footer-content{padding:0 2rem;gap:2rem}.footer-element{padding:.75rem 2rem}}</style></body></html>
