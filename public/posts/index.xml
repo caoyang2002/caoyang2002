@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250213";
+ const publishDate = "20250214";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -151,7 +151,13 @@
  cursor: pointer;
  }
 &lt;/style>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>东方表达：同样是中国文化《哪吒》和《功夫熊猫》的不同之处是什么？</title><link>https://caoyang2002.xyz/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</link><pubDate>Fri, 14 Feb 2025 00:44:19 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</guid><description>&lt;blockquote>
+&lt;p>在《哪吒》之前，四二（笔者）最喜欢的是《功夫熊猫》，那还是我在小学的时候看的。&lt;/p>
+&lt;p>《哪吒》系列与《功夫熊猫》系列可谓是中美两国动画电影的代表，两者不仅在票房和口碑上取得了巨大成功，更在视觉符号、角色塑造、叙事风格等方面展现了相似类型动画中，两国文化的底层差异。&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Desktop/%E6%AF%94%E8%BE%83.png" alt="比较">&lt;/p>
+&lt;h1 id="一视觉符号">一、视觉符号&lt;/h1>
+&lt;p>首先是《哪吒》中的文化东方，根植于中国传统文化，以中国古代神话故事《封神演义》为蓝本，对哪吒这一经典神话人物及其相关故事进行了改编与延续，其中融入了大量中国传统文化元素，如结界兽的造型灵感来源于三星堆青铜面具，展现了中国文化的深厚底蕴。&lt;/p></description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong>&lt;/p>
 &lt;p>爱德华·伯尼斯&lt;/p>
 &lt;/blockquote>
