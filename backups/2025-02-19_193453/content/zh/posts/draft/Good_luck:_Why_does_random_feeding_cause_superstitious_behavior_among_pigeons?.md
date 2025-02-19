@@ -1,7 +1,7 @@
 +++
 title = '好彩头：为什么随机投喂会让鸽子产生迷信行为？'
 date = 2025-02-14T12:58:34+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["心理"]
@@ -145,4 +145,3 @@ description = "为什么在营销中，讨彩头、黄道吉日等迷信行为�
 [行为主义学习理论在市场营销中的应用 ——以万宝路和宜家的品牌创建为例](https://m.fx361.cc/news/2020/1220/13215683.html)
 
 [经典心理学实验之迷信的鸽子 ](https://www.sohu.com/a/24015679_209583)
-

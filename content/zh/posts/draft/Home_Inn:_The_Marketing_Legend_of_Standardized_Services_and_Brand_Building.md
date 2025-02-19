@@ -1,7 +1,7 @@
 +++
 title = '如家酒店：以标准化为琴键，谱就中国连锁酒店业的交响华章'
 date = 2025-02-14T18:24:59+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
