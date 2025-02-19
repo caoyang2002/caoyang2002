@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资源 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</link><description>Recent content in 资源 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Feb 2025 19:02:40 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>资源</title><link>https://caoyang2002.xyz/resource/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resource/</guid><description>&lt;div class="crypto-content">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资源 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</link><description>Recent content in 资源 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 16 Feb 2025 10:33:20 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>资源</title><link>https://caoyang2002.xyz/resource/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resource/</guid><description>&lt;div class="crypto-content">
  &lt;div class="crypto-form">
  &lt;input
  type="password"
@@ -11,7 +11,7 @@
  &lt;div
  class="encrypted-content"
  id="crypto-output"
- data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCgo="
+ data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCjIuIFvmsp/pgJrnmoTmlrnms5UgLSDohLHkuI3oirFdKCkKMy4gW&amp;#43;iWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpl0oaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8pCjQuIFvmgKror57ooYzkuLrlraZdKGh0dHBzOi8vYm9va3MuY2luYXMuY246ODAwMCkK"
  >
  已加密，请输入密码
  &lt;/div>
@@ -30,7 +30,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250216";
+ const publishDate = "20250219";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 

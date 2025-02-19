@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 16 Feb 2025 00:02:14 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 18 Feb 2025 22:10:20 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
 
 &lt;div class="crypto-content">
@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250216";
+ const publishDate = "20250219";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -171,7 +171,7 @@
  &lt;div
  class="encrypted-content"
  id="crypto-output"
- data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCgo="
+ data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCjIuIFvmsp/pgJrnmoTmlrnms5UgLSDohLHkuI3oirFdKCkKMy4gW&amp;#43;iWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpl0oaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8pCjQuIFvmgKror57ooYzkuLrlraZdKGh0dHBzOi8vYm9va3MuY2luYXMuY246ODAwMCkK"
  >
  已加密，请输入密码
  &lt;/div>
@@ -190,7 +190,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250216";
+ const publishDate = "20250219";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -259,7 +259,10 @@
  
  word-break: break-all;
  }
-&lt;/style></description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p>&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片">&lt;/p>
+&lt;/style></description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://caoyang2002.xyz/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p>&lt;img src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="img">&lt;/p>
+&lt;blockquote>
+&lt;p>价格弹性是指在其他因素不变的情况下，商品或服务的价格变动百分之一所引起的需求量变动的百分比。它反映了需求量对价格变动的反应程度。&lt;/p>
+&lt;p>消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p></description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p>&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片">&lt;/p>
 &lt;p>拼多多，这家在争议中野蛮生长的电商巨头，自诞生之日起便凭借低价策略和社交电商模式迅速崛起，成为中国电商行业的一匹黑马。然而，假货问题如影随形，始终困扰着其发展。尽管拼多多多次承诺加强监管、打击假货，但效果并不理想。&lt;/p>
 &lt;p>这家曾被贴上“假货聚集地”“消费降级代表”标签的平台，一边承受着“砍一刀”的骂声，一边以火箭速度超越淘宝、京东，成为用户数第一的电商平台。拼多多的低价策略和社交电商模式，使其在下沉市场迅速崛起。2024年第三季度，拼多多总营收达到993.54亿元，同比增长44%。拼多多的净利润率高达24.24%，远超同期的好市多和阿里巴巴。这种高增长和高利润的背后，是拼多多对下沉市场的深度耕耘和对用户需求的精准把握，是一场关于中国商业底层逻辑的深刻博弈。本文将从拼多多的商业战略角度，深入分析其为何难以解决假货问题。&lt;/p></description></item><item><title>为什么高级餐厅味道并不一定好？</title><link>https://caoyang2002.xyz/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</link><pubDate>Sat, 15 Feb 2025 13:30:46 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</guid><description>&lt;blockquote>
 &lt;p>这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”&lt;/p>
