@@ -1,7 +1,7 @@
 +++
-title = '如何做一个有质量的技术分享'
+title = '【转载】如何做一个有质量的技术分享'
 date = 2025-02-12T09:28:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

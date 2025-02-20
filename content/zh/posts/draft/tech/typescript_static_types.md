@@ -1,7 +1,7 @@
 +++
+title = 'TypeScript: 静态类型，所以 NB'
 date = '2025-01-24T13:46:32+08:00'
 draft = true
-title = 'TypeScript: 静态类型，所以 NB'
 toc = true
 categories= ["设计"]
 tags = ["排版"]
