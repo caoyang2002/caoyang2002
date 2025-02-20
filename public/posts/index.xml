@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250219";
+ const publishDate = "20250220";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -203,7 +203,43 @@
 &lt;/blockquote>
 &lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Desktop/%E6%AF%94%E8%BE%83.png" alt="比较">&lt;/p>
 &lt;h1 id="一视觉符号">一、视觉符号&lt;/h1>
-&lt;p>首先是《哪吒》中的文化东方，根植于中国传统文化，以中国古代神话故事《封神演义》为蓝本，对哪吒这一经典神话人物及其相关故事进行了改编与延续，其中融入了大量中国传统文化元素，如结界兽的造型灵感来源于三星堆青铜面具，展现了中国文化的深厚底蕴。&lt;/p></description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote>
+&lt;p>首先是《哪吒》中的文化东方，根植于中国传统文化，以中国古代神话故事《封神演义》为蓝本，对哪吒这一经典神话人物及其相关故事进行了改编与延续，其中融入了大量中国传统文化元素，如结界兽的造型灵感来源于三星堆青铜面具，展现了中国文化的深厚底蕴。&lt;/p></description></item><item><title>营销人必看网站</title><link>https://caoyang2002.xyz/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站">营销人必备网站：6大类，41个网站&lt;/h1>
+&lt;p>从去年到现在，很多小伙伴会问到宿言如何才能提升自己的营销能力。其实提升营销能力主要分为两部分，那就是“不停学习+各种实践”。&lt;/p>
+&lt;p>关于学习，我们可以通过各类网站及资讯平台来不断的获取知识，毕竟营销这个职业太瞬息万变了，我们需要不断的吸收新的知识，才能做到百战不殆。关于实践，我们需要用到各种
+&lt;a href="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 营销人
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p></description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote>
+&lt;p>&lt;strong>转载&lt;/strong>
+文章作者：左耳朵耗子
+出处：
+&lt;a href="https://coolshell.cn/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 酷 壳 – CoolShell
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+
+非商用&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://coolshell.org/wp-content/uploads/2021/07/knowledge_sharing-300x169.jpeg" alt="img">&lt;/p>
+&lt;p>分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：&lt;/p>
+&lt;p>1）分享内容的保鲜期是很长的，&lt;/p></description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong>&lt;/p>
 &lt;p>爱德华·伯尼斯&lt;/p>
 &lt;/blockquote>
@@ -281,7 +317,9 @@
 &lt;p>在普通拍卖中，人们总是倾向于压低自己的实际心理价位，生怕出价太高导致利润太少，或出价太低导致拿不到商品。&lt;/p>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>二价拍卖又叫维克里拍卖、第二价格密封拍卖、二价拍卖、第二高价格拍卖，由维克里提出。这个理论的应用并不广泛，曾经在谷歌广告有大量的应用，但是由于投资回报率太低就放弃了。即便没有规模性应用，但不可否认其在诚实报价的研究方面有着重要的作用。&lt;/p></description></item><item><title>好听好记：如何取一个容易传播的名字？</title><link>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</link><pubDate>Thu, 30 Jan 2025 14:08:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</guid><description>&lt;blockquote>
+&lt;p>二价拍卖又叫维克里拍卖、第二价格密封拍卖、二价拍卖、第二高价格拍卖，由维克里提出。这个理论的应用并不广泛，曾经在谷歌广告有大量的应用，但是由于投资回报率太低就放弃了。即便没有规模性应用，但不可否认其在诚实报价的研究方面有着重要的作用。&lt;/p></description></item><item><title>营销学理论 4P、4C、4S、4R、4V、4I</title><link>https://caoyang2002.xyz/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</link><pubDate>Tue, 04 Feb 2025 15:52:44 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</guid><description>&lt;p>原文：https://zhuanlan.zhihu.com/p/61432788&lt;/p>
+&lt;p>一、4P 的内涵与应用&lt;/p>
+&lt;p>4P营销理论(The Marketing Theory of 4Ps)，4P理论产生于20世纪60年代的美国，随着营销组合理论的提出而出现的。1953年，尼尔·博登（NeilBorden）在美国市场营销学会的就职演说中创造了“市场营销组合”（Marketingmix）这一术语，其意是指市场需求或多或少的在某种程度上受到所谓“营销变量”或“营销要素”的影响。&lt;/p></description></item><item><title>好听好记：如何取一个容易传播的名字？</title><link>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</link><pubDate>Thu, 30 Jan 2025 14:08:26 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/01/how_to_choose_a_good_name/</guid><description>&lt;blockquote>
 &lt;p>注：&lt;/p>
 &lt;p>这里只讨论被作为产品品牌传播的名称，对于腾讯、米哈游这样的名称不讨论，原因有两点：&lt;/p>
 &lt;p>一是幸存者偏差，这类名称在同一时期可能有很多，但是大多数都没能传播开来，而现存的只是幸存者。&lt;/p>
