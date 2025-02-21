@@ -1,11 +1,11 @@
 +++
 title = '得到课程《跟熊浩学沟通30讲》课程笔记'
 date = 2025-02-21T18:17:03+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["谈判"]
 tags = ["冲突解决","熊浩"]
-description = "熊浩冲突解决课程笔记！（）"
+description = "熊浩冲突解决课程笔记！"
 +++
 
 # 沟通的四个基本原则
