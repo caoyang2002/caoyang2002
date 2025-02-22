@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250221";
+ const publishDate = "20250222";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -151,7 +151,18 @@
  cursor: pointer;
  }
 &lt;/style>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>得到课程《跟熊浩学沟通30讲》课程笔记</title><link>https://caoyang2002.xyz/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</link><pubDate>Fri, 21 Feb 2025 18:17:03 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</guid><description>&lt;h1 id="沟通的四个基本原则">沟通的四个基本原则&lt;/h1>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>什么是营销</title><link>https://caoyang2002.xyz/post/2025/02/what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/what_is_marketing/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片">&lt;/p>
+&lt;h1 id="一行业定义">一、行业定义&lt;/h1>
+&lt;h2 id="1-专家解释">1. 专家解释&lt;/h2>
+&lt;p>现代营销学之父菲利普·科特勒在不同的场景下分别解释了 “营销” 和与之相关的词。&lt;/p>
+&lt;ol>
+&lt;li>企业的营销能力是企业盈利的根本保证。&lt;/li>
+&lt;li>市场营销就是辨别并满足人类和社会的需要。对市场营销最简洁的定义，就是 “满足别人并获得利润”。&lt;/li>
+&lt;li>我们可以把营销管理看成艺术和科学的组合 —— 选择目标市场，并通过创造、交付和传播优质的顾客价值来获得顾客、挽留顾客的科学与艺术。&lt;/li>
+&lt;li>所谓市场营销，就是个人和集体通过创造、提供、出售、同别人自由交换产品和服务的方式，以获得自己所需产品或服务的社会过程。&lt;/li>
+&lt;li>营销人员主要经营以下十大类产品：有形的商品、服务、节事、体验、人物、场所、产权、组织、信息和创意。&lt;/li>
+&lt;/ol>
+&lt;p>科特勒将营销分为 4 个阶段：&lt;/p></description></item><item><title>得到课程《跟熊浩学沟通30讲》课程笔记</title><link>https://caoyang2002.xyz/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</link><pubDate>Fri, 21 Feb 2025 18:17:03 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</guid><description>&lt;h1 id="沟通的四个基本原则">沟通的四个基本原则&lt;/h1>
 &lt;p>结构、性质、目标、风格&lt;/p>
 &lt;h2 id="结构">结构&lt;/h2>
 &lt;p>定事之前先定势&lt;/p>
