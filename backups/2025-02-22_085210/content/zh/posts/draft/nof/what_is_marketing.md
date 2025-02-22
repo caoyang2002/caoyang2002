@@ -11,6 +11,15 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 https://www.icourse163.org/learn/INU-1463177161?tid=1471548445#/learn/content?type=detail&id=1256653456&cid=1289770056&replay=true
 
+https://www.icourse163.org/learn/ZUEL-1001965012?tid=1465518462#/learn/content?type=detail&id=1244896888&cid=1269498524&replay=true
+
+# AMA 对营销的四次界定
+
+1. 销售过程（1960 年）
+
+市场营销是将货物和劳务从业者流转到消费者过程中的一切企业活动。即所有权转移的过程。
+
+2.
 
 
 # 营销不是什么
