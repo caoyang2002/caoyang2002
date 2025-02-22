@@ -1,5 +1,5 @@
 +++
-title = '什么是营销'
+title = '营销基础：什么是营销？'
 date = 2025-02-21T22:27:09+08:00
 draft = false
 author = "simons"
