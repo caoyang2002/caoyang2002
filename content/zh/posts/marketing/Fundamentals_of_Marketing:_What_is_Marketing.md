@@ -384,7 +384,7 @@ description = "多数人都可能认为营销就是推销或者打广告，这�
 
 [市场营销组合](https://wiki.mbalib.com/wiki/Marketing_mix)
 
-[UPS 理论](https://baike.baidu.com/item/USP%E7%90%86%E8%AE%BA/4472748)
+[USP 理论](https://baike.baidu.com/item/USP%E7%90%86%E8%AE%BA/4472748)
 
 [弗雷德里克·温斯洛·泰勒](https://baike.baidu.com/item/%E5%BC%97%E9%9B%B7%E5%BE%B7%E9%87%8C%E5%85%8B%C2%B7%E6%B8%A9%E6%96%AF%E6%B4%9B%C2%B7%E6%B3%B0%E5%8B%92/1316066)
 
