@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 22 Feb 2025 13:25:48 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 22 Feb 2025 22:42:54 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
 
 &lt;div class="crypto-content">
@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250222";
+ const publishDate = "20250223";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -190,7 +190,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250222";
+ const publishDate = "20250223";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -259,7 +259,40 @@
  
  word-break: break-all;
  }
-&lt;/style></description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p>&lt;img src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg" alt="img">&lt;/p>
+&lt;/style></description></item><item><title>营销基础：营销的核心价值</title><link>https://caoyang2002.xyz/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值">顾客让渡价值&lt;/h1>
+&lt;p>顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p>
+&lt;ul>
+&lt;li>顾客价值：&lt;strong>顾客从某个产品或服务获得的利益综合（功能、符号、利益等）&lt;/strong>，比如一款手机，其具备高清拍照、快速运行软件、大容量存储等功能，这些功能满足了顾客在通讯、娱乐、工作等方面的需求。其次是符号价值，像一些奢侈品品牌，消费者购买它们不仅仅是为了产品的实际使用功能，更是因为品牌所代表的社会地位、身份象征等符号意义。还有服务价值，例如在购买汽车时，4S 店提供的免费保养、道路救援等售后服务，也构成了顾客价值的一部分，让顾客在使用产品的过程中享受到更全面的保障和便利。&lt;/li>
+&lt;li>顾客成本：&lt;strong>顾客购买产品或服务所付出的成本或费用（货币、时间、精力等）&lt;/strong>，比如购买一台笔记本电脑花费了 5000 元。时间成本也不容忽视，例如顾客为了购买一款热门的限量版球鞋，可能需要提前几天排队等候，这段时间就是顾客付出的时间成本。精力成本同样重要，像消费者在购买复杂的金融产品时，需要花费大量精力去了解产品的风险、收益、条款等内容，这个过程所耗费的精力就是精力成本。&lt;/li>
+&lt;/ul>
+&lt;h2 id="如何提升顾客让渡价值">如何提升顾客让渡价值？&lt;/h2>
+&lt;ol>
+&lt;li>提升顾客价值：&lt;strong>为顾客提供的不是物理形态的产品，而是效用（产品、商品、解决方案、价值）&lt;/strong>。
+&lt;ul>
+&lt;li>比如增加产品的功能，例如一个耳机不仅可以听音乐，还有防水功能，并且提供三年质保，或者采用更优质的材料制作耳机，让音质更清晰、佩戴更舒适；或者优化产品的外观设计，使其更符合当下流行的审美，更具时尚感和吸引力，这些都是通过物理形态上提升顾客价值的方式。&lt;/li>
+&lt;li>如何从效用层面提升顾客价值呢？同样是一个耳机，企业生产出耳机是一个产品；这个产品放在经销商的仓库里，这是商品；这个商品被顾客购买后，于顾客而言是一个解决方案；这个耳机在顾客游泳的时候可以听，给顾客带来了更好的游泳体验，这是价值。&lt;/li>
+&lt;li>提高顾客让渡价值，通过增加服务、降低价格、增加满意度，比如京东的商品保价服务，或者与顾客建立良好的沟通，及时了解顾客的需求和反馈，做出相应的调整和改进。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>降低顾客成本，比如通过重组供应链，让耳机的生产变的高效，从而降低成本，或者优化物流配送服务，缩短配送时间，使顾客能更快地收到产品。此外，还可以降低顾客的精力成本，例如提供简单易懂的产品使用说明和操作指南，让顾客无需花费过多精力就能轻松上手使用耳机。&lt;/li>
+&lt;/ol></description></item><item><title>营销基础：如何理解需求？</title><link>https://caoyang2002.xyz/post/2025/02/how_to_understand_needs/</link><pubDate>Sat, 22 Feb 2025 21:51:52 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_to_understand_needs/</guid><description>&lt;h1 id="需要欲望和需求的区别">需要、欲望和需求的区别？&lt;/h1>
+&lt;p>需要（needs）：抽象理解是人类最基本的要求，比如一套服装、一份食物、一个住处，马斯洛需求层次原理中的表述。&lt;/p>
+&lt;p>欲望（wants）：具体化的需要，比如一件衬衫、一份牛排、一所大学、一个节目等。&lt;/p>
+&lt;p>需求（demands）：具有支付能力的欲望，一件 100 元的衬衫、一份 50 元的牛排、一所学费 6000 元的大学。&lt;/p></description></item><item><title>营销基础：营销导向</title><link>https://caoyang2002.xyz/post/2025/02/marketing_orientation/</link><pubDate>Sat, 22 Feb 2025 13:34:41 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_orientation/</guid><description>&lt;h1 id="产品导向">产品导向&lt;/h1>
+&lt;p>以产定销，这是一个企业本位的营销思想，企业生产多少就销售多少。有三个观念：&lt;/p>
+&lt;ul>
+&lt;li>生产观念：&lt;/li>
+&lt;li>产品观念&lt;/li>
+&lt;li>推销观念&lt;/li>
+&lt;/ul>
+&lt;h2 id="生产观念">生产观念&lt;/h2>
+&lt;ul>
+&lt;li>规模化、大批量、单一品种&lt;/li>
+&lt;li>关心产品的有无，而非数量&lt;/li>
+&lt;li>供不应求、垄断&lt;/li>
+&lt;/ul>
+&lt;p>福特通过标准化技术，实现规模化生产，在 1908 年福特成为美国乃至世界的汽车大王。&lt;/p>
+&lt;p>那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p></description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p>&lt;img src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg" alt="img">&lt;/p>
 &lt;blockquote>
 &lt;p>丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。&lt;/p>
 &lt;p>—— 维基百科&lt;/p>

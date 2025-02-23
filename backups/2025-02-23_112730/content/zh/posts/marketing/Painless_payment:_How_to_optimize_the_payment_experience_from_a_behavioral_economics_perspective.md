@@ -1,7 +1,7 @@
 +++
 title = '无痛支付：如何从行为经济学视角优化支付体验？'
 date = 2025-02-20T14:49:59+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
