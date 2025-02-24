@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250223";
+ const publishDate = "20250224";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -151,7 +151,22 @@
  cursor: pointer;
  }
 &lt;/style>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>美可特品牌设计：从广告公司到品牌设计伙伴的营销转型之路</title><link>https://caoyang2002.xyz/post/2025/02/w/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/w/</guid><description>&lt;p>美可特品牌设计成立于1988年，最初以广告公司的形式运作。然而，由于公司位于台中，相较于广告资源丰富的台北，美可特在媒体资源获取上存在天然劣势。当时的市场环境对仅有广告创意的公司极为不利，尤其是当客户越来越倾向于整合营销的模式时，这种单一的广告业务模式严重限制了美可特的早期发展。&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>热榜查询</title><link>https://caoyang2002.xyz/post/2025/02/hotsort/</link><pubDate>Mon, 24 Feb 2025 08:31:56 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/hotsort/</guid><description>&lt;p>
+&lt;a href="https://rebang.today/?tab=top"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 热榜网
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p></description></item><item><title>咨询广告：为何广告公司纷纷转型咨询公司？</title><link>https://caoyang2002.xyz/post/2025/02/a/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/a/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片">&lt;/p>
+&lt;p>在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p>
+&lt;p>一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p></description></item><item><title>王盈发与美可特：从广告公司到品牌设计伙伴的营销转型之路</title><link>https://caoyang2002.xyz/post/2025/02/marketing_transformation_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_transformation_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p>美可特品牌设计成立于1988年，最初以广告公司的形式运作。然而，由于公司位于台中，相较于广告资源丰富的台北，美可特在媒体资源获取上存在天然劣势。当时的市场环境对仅有广告创意的公司极为不利，尤其是当客户越来越倾向于整合营销的模式时，这种单一的广告业务模式严重限制了美可特的早期发展。&lt;/p>
 &lt;p>在美可特成立后的早期阶段，中南部的业主往往较为强势，认为自己作为出资方，理应拥有项目百分之百的主导权。这使得设计师在合作过程中话语权较弱，创意和想法难以充分施展，公司发展受到抑制。直到美可特成立10年后，1999年台湾发生了921大地震。这场灾难促使人们深刻反思商业模式的可行性和有效性。与此同时，美可特的执行总监王盈发观察到设计生态的变化，业主开始放松对合作主导权的把控，逐渐意识到从设计出发也能实现理想的市场效果。&lt;/p></description></item><item><title>营销基础：营销的核心价值</title><link>https://caoyang2002.xyz/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值">顾客让渡价值&lt;/h1>
 &lt;p>顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p>
 &lt;ul>
@@ -219,7 +234,10 @@
 &lt;li>利益分歧：对有形价值承载物的争夺，需要使用的方法是谈判。&lt;/li>
 &lt;li>认同分歧：在信仰、仪式、忠诚、价值观、情感上的重要经历产生了不同意见。&lt;/li>
 &lt;/ul>
-&lt;p>人们一旦进入认同分歧，情绪会被快速激活，对话的双方会迅速进入“眩晕”状态，在这种状态下，他们看不见别人，只能看见敌人，他们不认为对方提出了一个方案、想法的普通人，而是认为对方要摧毁自己。&lt;/p></description></item><item><title>无痛支付：如何从行为经济学视角优化支付体验？</title><link>https://caoyang2002.xyz/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</link><pubDate>Thu, 20 Feb 2025 14:49:59 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</guid><description>&lt;p>&lt;img src="https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&amp;amp;riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&amp;amp;ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0&amp;amp;sres=1&amp;amp;sresct=1" alt="微信扫码二维码支付哪家强？">&lt;/p>
+&lt;p>人们一旦进入认同分歧，情绪会被快速激活，对话的双方会迅速进入“眩晕”状态，在这种状态下，他们看不见别人，只能看见敌人，他们不认为对方提出了一个方案、想法的普通人，而是认为对方要摧毁自己。&lt;/p></description></item><item><title>解决冲突：饭里吃到苍蝇应该如何获得应有赔偿？</title><link>https://caoyang2002.xyz/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</link><pubDate>Thu, 20 Feb 2025 18:50:22 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</guid><description>&lt;blockquote>
+&lt;p>本期主要描述了冲突场景下的解决方案，方法来自复旦大学的熊浩老师。下一期将讲述哈佛谈判的细节，或者评论你想了解的内容或事件！&lt;/p>
+&lt;/blockquote>
+&lt;p>在日常生活中，我们非常容易遇到冲突。比如在点餐判队的时候，遇到插队的，通常我们的解决方案是回避。有些时候我们很难回避，例如在餐厅中吃到异物。我们应该如何解决生活中的冲突？&lt;/p></description></item><item><title>无痛支付：如何从行为经济学视角优化支付体验？</title><link>https://caoyang2002.xyz/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</link><pubDate>Thu, 20 Feb 2025 14:49:59 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</guid><description>&lt;p>&lt;img src="https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&amp;amp;riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&amp;amp;ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0&amp;amp;sres=1&amp;amp;sresct=1" alt="微信扫码二维码支付哪家强？">&lt;/p>
 &lt;h1 id="一痛苦的本质神经科学与行为经济学的双重证据">一、痛苦的本质：神经科学与行为经济学的双重证据&lt;/h1>
 &lt;p>结账时的痛苦不仅是心理感受，更是大脑的生理反应。神经科学研究表明，当消费者支付现金时，大脑岛叶皮层（与身体疼痛相关的区域）活动显著增强，这种神经层面的“损失感”被行为经济学称为“支付疼痛”（Payment Pain）。&lt;/p>
 &lt;p>一项经典研究发现，使用现金支付的消费者在购买高价商品时，决策时间比信用卡用户长 30%，且更容易放弃购买。这种差异源于心理账户（Mental Accounting）理论 —— 现金支付因“看得见的损失”而触发更强的痛苦感。例如，消费者在面对现金支付时，会更加感受到资金的减少，从而产生更强的支付疼痛感，导致他们在购买决策时更加谨慎，甚至放弃购买。而使用信用卡或电子支付方式时，由于支付过程相对抽象，消费者对资金减少的感受较弱，支付疼痛感也相对较轻，从而更容易完成购买行为。&lt;/p></description></item><item><title>营销与竞选：奥巴马如何通过营销策略获得胜利？</title><link>https://caoyang2002.xyz/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</link><pubDate>Wed, 19 Feb 2025 17:16:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</guid><description>&lt;blockquote>
@@ -246,7 +264,10 @@
 &lt;p>奥巴马团队在短短两分钟的视频中，精准地描述了美国当时面临的困境，包括战争、经济等方面的问题。这在营销中被称为 PEST 分析（政治、经济、社会、技术）。视频中，观众在听到布什的演讲时表现出疲倦，而在听到奥巴马的演讲时则显得激动。这种对比鲜明的情绪反应，凸显了民众对“改变”的强烈诉求。&lt;/p></description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://caoyang2002.xyz/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p>&lt;img src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="img">&lt;/p>
 &lt;blockquote>
 &lt;p>价格弹性是指在其他因素不变的情况下，商品或服务的价格变动百分之一所引起的需求量变动的百分比。它反映了需求量对价格变动的反应程度。&lt;/p>
-&lt;p>消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p></description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p>&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片">&lt;/p>
+&lt;p>消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p></description></item><item><title>改变利益关系：如何解决艺考机构的骚扰问题？</title><link>https://caoyang2002.xyz/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</link><pubDate>Sun, 16 Feb 2025 14:39:07 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</guid><description>&lt;blockquote>
+&lt;p>前几天和一个朋友聊天，谈到艺考机构对女同学的骚扰问题。感觉和薛兆丰老师谈到的政府公交系统补贴很相似，于是写了这篇文章。
+但是这篇文章不够全面，仅从利益的角度考虑，而未考虑复杂的社会影响，比如当单方面使用权力 “独裁” 的时候，如何考虑优化问题、伪造情形下的利害关系以及腐败问题的解决方案等
+注：这篇文章并不是控诉，而是从经济学角度，探讨组织行为优化的可能性问题。&lt;/p></description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p>&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片">&lt;/p>
 &lt;p>拼多多，这家在争议中野蛮生长的电商巨头，自诞生之日起便凭借低价策略和社交电商模式迅速崛起，成为中国电商行业的一匹黑马。然而，假货问题如影随形，始终困扰着其发展。尽管拼多多多次承诺加强监管、打击假货，但效果并不理想。&lt;/p>
 &lt;p>这家曾被贴上“假货聚集地”“消费降级代表”标签的平台，一边承受着“砍一刀”的骂声，一边以火箭速度超越淘宝、京东，成为用户数第一的电商平台。拼多多的低价策略和社交电商模式，使其在下沉市场迅速崛起。2024年第三季度，拼多多总营收达到993.54亿元，同比增长44%。拼多多的净利润率高达24.24%，远超同期的好市多和阿里巴巴。这种高增长和高利润的背后，是拼多多对下沉市场的深度耕耘和对用户需求的精准把握，是一场关于中国商业底层逻辑的深刻博弈。本文将从拼多多的商业战略角度，深入分析其为何难以解决假货问题。&lt;/p></description></item><item><title>为什么高级餐厅味道并不一定好？</title><link>https://caoyang2002.xyz/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</link><pubDate>Sat, 15 Feb 2025 13:30:46 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</guid><description>&lt;blockquote>
 &lt;p>这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”&lt;/p>
@@ -289,7 +310,9 @@
  &lt;span class="external-icon">↗&lt;/span>
  
 &lt;/a>
-必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p></description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote>
+必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p></description></item><item><title>为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？</title><link>https://caoyang2002.xyz/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</link><pubDate>Thu, 13 Feb 2025 05:51:23 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</guid><description>&lt;h3 id="为什么在茶叶粮油这些大市场中出现不了大品牌大公司呢">为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？&lt;/h3>
+&lt;p>简单来说就是：&lt;code>低壁垒&lt;/code> + &lt;code>弱规模经济&lt;/code> + &lt;code>强需求分化&lt;/code>&lt;/p>
+&lt;p>同样是与“喝”相关的行业，白酒、红酒、啤酒都有市场认知度极高的品牌，甚至“股王”级上市公司。咖啡领域有星巴克和瑞幸，后者拥有国内最大的直营网络，如今颇有东山再起的架势。但规模超万亿的茶行业，强势的品牌或公司却不多。新华社 2008 年曾提出疑问：“七万中国茶厂，为何不抵一家立顿”。14年后的今天，行业依然缺少一个响亮的“大品牌”。问题出在哪里了？&lt;/p></description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote>
 &lt;p>&lt;strong>转载&lt;/strong>
 文章作者：左耳朵耗子
 出处：
