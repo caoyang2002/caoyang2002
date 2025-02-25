@@ -1,11 +1,11 @@
 +++
-title = 'Note_hundun'
+title = '定位：营销的起点'
 date = 2025-02-24T11:48:01+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+description = "混沌学园课程笔记"
 
 +++
 
