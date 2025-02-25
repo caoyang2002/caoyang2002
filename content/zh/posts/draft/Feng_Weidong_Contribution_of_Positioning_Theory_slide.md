@@ -1,5 +1,5 @@
 +++
-title = '冯卫东：定位理论的贡献'
+title = '冯卫东：定位理论的贡献（幻灯片）'
 date = 2025-02-24T10:03:13+08:00
 draft = false
 author = "simons"
@@ -9,211 +9,211 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 +++
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/1.png)
+![img](/solid/feng_wei_dong/1.png)
 
 1/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/2.png)
+![img](/solid/feng_wei_dong/2.png)
 
 2/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/3.png)
+![img](/solid/feng_wei_dong/3.png)
 
 3/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/4.png)
+![img](/solid/feng_wei_dong/4.png)
 
 4/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/5.png)
+![img](/solid/feng_wei_dong/5.png)
 
 5/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/6.png)
+![img](/solid/feng_wei_dong/6.png)
 
 6/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/7.png)
+![img](/solid/feng_wei_dong/7.png)
 
 7/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/8.png)
+![img](/solid/feng_wei_dong/8.png)
 
 8/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/9.png)
+![img](/solid/feng_wei_dong/9.png)
 
 9/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/10.png)
+![img](/solid/feng_wei_dong/10.png)
 
 10/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/11.png)
+![img](/solid/feng_wei_dong/11.png)
 
 11/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/12.png)
+![img](/solid/feng_wei_dong/12.png)
 
 12/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/13.png)
+![img](/solid/feng_wei_dong/13.png)
 
 13/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/14.png)
+![img](/solid/feng_wei_dong/14.png)
 
 14/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/15.png)
+![img](/solid/feng_wei_dong/15.png)
 
 15/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/16.png)
+![img](/solid/feng_wei_dong/16.png)
 
 16/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/17.png)
+![img](/solid/feng_wei_dong/17.png)
 
 17/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/18.png)
+![img](/solid/feng_wei_dong/18.png)
 
 18/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/19.png)
+![img](/solid/feng_wei_dong/19.png)
 
 19/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/20.png)
+![img](/solid/feng_wei_dong/20.png)
 
 20/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/21.png)
+![img](/solid/feng_wei_dong/21.png)
 
 21/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/22.png)
+![img](/solid/feng_wei_dong/22.png)
 
 22/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/23.png)
+![img](/solid/feng_wei_dong/23.png)
 
 23/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/24.png)
+![img](/solid/feng_wei_dong/24.png)
 
 24/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/25.png)
+![img](/solid/feng_wei_dong/25.png)
 
 25/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/26.png)
+![img](/solid/feng_wei_dong/26.png)
 
 26/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/27.png)
+![img](/solid/feng_wei_dong/27.png)
 
 27/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/28.png)
+![img](/solid/feng_wei_dong/28.png)
 
 28/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/29.png)
+![img](/solid/feng_wei_dong/29.png)
 
 29/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/30.png)
+![img](/solid/feng_wei_dong/30.png)
 
 30/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/31.png)
+![img](/solid/feng_wei_dong/31.png)
 
 31/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/32.png)
+![img](/solid/feng_wei_dong/32.png)
 
 32/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/33.png)
+![img](/solid/feng_wei_dong/33.png)
 
 33/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/34.png)
+![img](/solid/feng_wei_dong/34.png)
 
 34/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/35.png)
+![img](/solid/feng_wei_dong/35.png)
 
 35/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/36.png)
+![img](/solid/feng_wei_dong/36.png)
 
 36/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/37.png)
+![img](/solid/feng_wei_dong/37.png)
 
 37/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/38.png)
+![img](/solid/feng_wei_dong/38.png)
 
 38/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/39.png)
+![img](/solid/feng_wei_dong/39.png)
 
 39/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/40.png)
+![img](/solid/feng_wei_dong/40.png)
 
 40/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/41.png)
+![img](/solid/feng_wei_dong/41.png)
 
 41/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/42.png)
+![img](/solid/feng_wei_dong/42.png)
 
 42/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/43.png)
+![img](/solid/feng_wei_dong/43.png)
 
 43/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/44.png)
+![img](/solid/feng_wei_dong/44.png)
 
 44/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/45.png)
+![img](/solid/feng_wei_dong/45.png)
 
 45/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/46.png)
+![img](/solid/feng_wei_dong/46.png)
 
 46/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/47.png)
+![img](/solid/feng_wei_dong/47.png)
 
 47/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/48.png)
+![img](/solid/feng_wei_dong/48.png)
 
 48/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/49.png)
+![img](/solid/feng_wei_dong/49.png)
 
 49/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/50.png)
+![img](/solid/feng_wei_dong/50.png)
 
 50/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/51.png)
+![img](/solid/feng_wei_dong/51.png)
 
 51/53
 
-![img](/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/52.png)
+![img](/solid/feng_wei_dong/52.png)
 
 
 
@@ -305,15 +305,15 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 优衣库，大多少倍？六倍。
 
-所以柳井正成为了日本首富，而无印良品被沃尔玛收购了。 
+所以柳井正成为了日本首富，而无印良品被沃尔玛收购了。
 
-不明确自己的品类，顾客很难在产生品类需求的时候想到它，只有逛街的时候，随机地进去看看，这两者带来的转化率是有巨大差别的。 
+不明确自己的品类，顾客很难在产生品类需求的时候想到它，只有逛街的时候，随机地进去看看，这两者带来的转化率是有巨大差别的。
 
 2. 新品类是新品牌的主要来源。
 
 品类最重要的一个特点就是，持续分化，不断产生新的品类。
 
-一个新的品类相当于一块空白的殖民地，找到它并抢先进入，是打造品牌的最好机会。 随着品类的成长壮大，它的顾客会越来愈多，顾客一多，必然会带来一些不能被有效满足的用户需求，当这些少数派越来越多，达到一定临界规模的时候，就会催生出一个新的细分品类，去满足这些新产生的需求。 
+一个新的品类相当于一块空白的殖民地，找到它并抢先进入，是打造品牌的最好机会。 随着品类的成长壮大，它的顾客会越来愈多，顾客一多，必然会带来一些不能被有效满足的用户需求，当这些少数派越来越多，达到一定临界规模的时候，就会催生出一个新的细分品类，去满足这些新产生的需求。
 
 3. 当一个新品类产生的时候，它一定会获得一个名字。这个名字基本上攸关这个品类的生死。
 
@@ -331,8 +331,8 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 1. 有根。
    - 遵循品类分化的原则，把老品类需求和顾客挖过来。 比如酸奶和豆奶，借助牛奶这个品类的联想，分化用户对牛奶的需求。
-2. 好感。更有价值的表达角度。 
-   - 同样是从植物中提取的黄油，你叫人造黄油，大家肯定没兴趣吃了，你说叫植物黄油，素食者可能会更偏爱。而且你还可以重新定义，植物黄油不含胆固醇，富含异黄酮等等，更好地表达这样的品类。 
+2. 好感。更有价值的表达角度。
+   - 同样是从植物中提取的黄油，你叫人造黄油，大家肯定没兴趣吃了，你说叫植物黄油，素食者可能会更偏爱。而且你还可以重新定义，植物黄油不含胆固醇，富含异黄酮等等，更好地表达这样的品类。
 3. 直白。
    - 直指品牌的特性，或者形象化。 平衡车最早叫什么？叫体感车，身体感应控制的车。大部分人以为跟拉杆箱的“体感”一样。我们觉得最好的翻译应该叫立行车，最形象直白。
 4. 简短。
@@ -343,8 +343,8 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 6. 市场特性指能够影响顾客选择的市场表现。
    - 这里可以分为很多种。 比如说开创者。开创者就意味着原创，别人都是山寨，因为你是原创，所以很大程度上，你拥有更多的专业知识。 领导者。我就是市场上卖的最好的，最受消费者认可的，这点对于顾客来说，很有说服力。
-   - 
-   经典。我这个品牌存在了300年，经过了历史的验证，顾客也会觉得很有价值。 
+   -
+   经典。我这个品牌存在了300年，经过了历史的验证，顾客也会觉得很有价值。
 
 热销。卖断货了，这个信息往往会让消费者觉得印象很深刻。 最受青睐。是某个特定人群最喜欢的品牌，比如耐克，是专业运动员最青睐的品牌，对于消费者来说也马上不一样了。
 
@@ -352,7 +352,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 第三问：何以见得？向顾客提供三种信任状 第三位叫做何以见得，要向顾客提供信任状。
 
-信任状分为三种类型。 
+信任状分为三种类型。
 
 1. 权威第三方证明：德州扒鸡（中华老字号）、八马铁观音（国家级非物质文化遗产）。
 2. 顾客自行验证：眼见为实的信息。比如我们看到一家餐馆门前排队，我们潜意识就判断这家餐馆一定很好吃。
@@ -367,7 +367,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 怎么才能够写出有效的广告？其实我把它总结成“二语三性”的法则。
 
-“二语”指的是销售用语和顾客用语。 
+“二语”指的是销售用语和顾客用语。
 
 什么是销售用语？是否包含了有效卖点？
 
