@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 24 Feb 2025 10:26:53 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 24 Feb 2025 10:03:13 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
 
 &lt;div class="crypto-content">
@@ -33,7 +33,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250224";
+ const publishDate = "20250225";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -190,7 +190,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250224";
+ const publishDate = "20250225";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
@@ -259,110 +259,7 @@
  
  word-break: break-all;
  }
-&lt;/style></description></item><item><title>定位理论的贡献00daf5af</title><link>https://caoyang2002.xyz/post/2025/02/00daf5af/</link><pubDate>Mon, 24 Feb 2025 10:03:13 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/00daf5af/</guid><description>&lt;p>
-&lt;a href="https://www.hundun.cn/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- &lt;img src="https://www.hundun.cn/logo.png" alt="混沌学园">
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;a href="https://www.hundun.cn/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 首页
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://www.hundun.cn/course"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 在线学习
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://www.hundun.cn/cxsxy?from=csy_pc_top"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 混沌创商院
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://b.hundun.cn/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 企业服务
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://www.hundun.cn/app"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 下载APP
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;li>
-&lt;a href="https://www.hundun.cn/about"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- >
- 关于
- 
- &lt;span class="external-icon">↗&lt;/span>
- 
-&lt;/a>
-&lt;/li>
-&lt;/ul>
-&lt;p>&lt;img src="https://yxs-web.oss-cn-beijing.aliyuncs.com/a6191fcf9748491aeb7b5d653ac3a3dd.png" alt="img">&lt;/p>
-&lt;p>退出&lt;/p>
-&lt;p>&lt;video webkit-playsinline="" playsinline="" x-webkit-airplay="" x5-playsinline="" preload="preload" autoplay="autoplay" src="blob:https://www.hundun.cn/ff4f2a1c-f732-4e12-9496-0171a2955bb6" style="box-sizing: border-box; border: 0px; --tw-border-opacity: 1; --tw-shadow: 0 0 #0000; --tw-ring-inset: var(--tw-empty, ); --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59, 130, 246, 0.5); --tw-ring-offset-shadow: 0 0 #0000; --tw-ring-shadow: 0 0 #0000; display: block; vertical-align: baseline; max-width: 100%; height: 184px; margin: 0px; padding: 0px; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-stretch: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; left: 164px; top: 92px; transform: translate(-50%, -50%); transform-origin: center center; border-radius: 4px; width: 328px;">&lt;/video>&lt;/p>
-&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/1.png" alt="img">&lt;/p>
+&lt;/style></description></item><item><title>冯卫东：定位理论的贡献</title><link>https://caoyang2002.xyz/post/2025/02/what_are_the_three_major_contributions_of_positioning_theory/</link><pubDate>Mon, 24 Feb 2025 10:03:13 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/what_are_the_three_major_contributions_of_positioning_theory/</guid><description>&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/1.png" alt="img">&lt;/p>
 &lt;p>1/53&lt;/p>
 &lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/2.png" alt="img">&lt;/p>
 &lt;p>2/53&lt;/p>
@@ -377,7 +274,137 @@
 &lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/7.png" alt="img">&lt;/p>
 &lt;p>7/53&lt;/p>
 &lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/8.png" alt="img">&lt;/p>
-&lt;p>8/53&lt;/p></description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://caoyang2002.xyz/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略">领导者战略&lt;/h1>
+&lt;p>8/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/9.png" alt="img">&lt;/p>
+&lt;p>9/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/10.png" alt="img">&lt;/p>
+&lt;p>10/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/11.png" alt="img">&lt;/p>
+&lt;p>11/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/12.png" alt="img">&lt;/p>
+&lt;p>12/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/13.png" alt="img">&lt;/p>
+&lt;p>13/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/14.png" alt="img">&lt;/p>
+&lt;p>14/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/15.png" alt="img">&lt;/p>
+&lt;p>15/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/16.png" alt="img">&lt;/p>
+&lt;p>16/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/17.png" alt="img">&lt;/p>
+&lt;p>17/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/18.png" alt="img">&lt;/p>
+&lt;p>18/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/19.png" alt="img">&lt;/p>
+&lt;p>19/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/20.png" alt="img">&lt;/p>
+&lt;p>20/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/21.png" alt="img">&lt;/p>
+&lt;p>21/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/22.png" alt="img">&lt;/p>
+&lt;p>22/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/23.png" alt="img">&lt;/p>
+&lt;p>23/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/24.png" alt="img">&lt;/p>
+&lt;p>24/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/25.png" alt="img">&lt;/p>
+&lt;p>25/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/26.png" alt="img">&lt;/p>
+&lt;p>26/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/27.png" alt="img">&lt;/p>
+&lt;p>27/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/28.png" alt="img">&lt;/p>
+&lt;p>28/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/29.png" alt="img">&lt;/p>
+&lt;p>29/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/30.png" alt="img">&lt;/p>
+&lt;p>30/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/31.png" alt="img">&lt;/p>
+&lt;p>31/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/32.png" alt="img">&lt;/p>
+&lt;p>32/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/33.png" alt="img">&lt;/p>
+&lt;p>33/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/34.png" alt="img">&lt;/p>
+&lt;p>34/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/35.png" alt="img">&lt;/p>
+&lt;p>35/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/36.png" alt="img">&lt;/p>
+&lt;p>36/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/37.png" alt="img">&lt;/p>
+&lt;p>37/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/38.png" alt="img">&lt;/p>
+&lt;p>38/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/39.png" alt="img">&lt;/p>
+&lt;p>39/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/40.png" alt="img">&lt;/p>
+&lt;p>40/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/41.png" alt="img">&lt;/p>
+&lt;p>41/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/42.png" alt="img">&lt;/p>
+&lt;p>42/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/43.png" alt="img">&lt;/p>
+&lt;p>43/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/44.png" alt="img">&lt;/p>
+&lt;p>44/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/45.png" alt="img">&lt;/p>
+&lt;p>45/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/46.png" alt="img">&lt;/p>
+&lt;p>46/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/47.png" alt="img">&lt;/p>
+&lt;p>47/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/48.png" alt="img">&lt;/p>
+&lt;p>48/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/49.png" alt="img">&lt;/p>
+&lt;p>49/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/50.png" alt="img">&lt;/p>
+&lt;p>50/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/51.png" alt="img">&lt;/p>
+&lt;p>51/53&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/Users/simons/Documents/Github/caoyang2002/static/solid/feng_wei_dong/52.png" alt="img">&lt;/p>
+&lt;h2 id="冯卫东品牌起名这件小事攸关生死笔记">冯卫东：品牌起名这件小事，攸关生死【笔记】&lt;/h2>
+&lt;p>12月24日，天图资本CEO冯卫东来到混沌研习社，用多年投资消费品品牌的经验和我们分享了他对于品牌定位理论的思考。&lt;/p></description></item><item><title>定位的贡献：如果可口可乐失去配方会倒闭吗？</title><link>https://caoyang2002.xyz/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</link><pubDate>Mon, 24 Feb 2025 10:00:03 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</guid><description>&lt;p>&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科">&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong>&lt;/p>
+&lt;p>杰克·特劳特&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="一可口可乐神话">一、可口可乐神话&lt;/h1>
+&lt;p>&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24">&lt;/p>
+&lt;p>可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p>
+&lt;p>如果要让这个神话破灭，以下那个条件可以达成？&lt;/p>
+&lt;ol>
+&lt;li>供应商资料全部葬身大火&lt;/li>
+&lt;li>经销商资料全部葬身大火&lt;/li>
+&lt;li>员工全部葬身大火&lt;/li>
+&lt;li>竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li>
+&lt;/ol>
+&lt;p>可口可乐的大火没有发生，但是王老吉的 “大火” 却发生了。中国版本的真实 “可口可乐” 神话 —— 
+&lt;a href="https://www.wlj.com.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 王老吉
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+和
+&lt;a href="https://www.jdbchina.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 加多宝
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+之战。&lt;/p></description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://caoyang2002.xyz/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略">领导者战略&lt;/h1>
 &lt;p>市场领导者：占有最大市场份额，在价格变化、新产品开发、分销渠道，以及促销战略上对本行业其他公司起到领导作用的公司。例如苹果、谷歌这样的公司。&lt;/p>
 &lt;p>如何才能成为领导者呢？第一种方式是把蛋糕做大，第二种方式是吧蛋糕做厚&lt;/p>
 &lt;p>市场总量 &lt;code>Q = aq&lt;/code>&lt;/p>
@@ -446,14 +473,7 @@
 &lt;li>供不应求、垄断&lt;/li>
 &lt;/ul>
 &lt;p>福特通过标准化技术，实现规模化生产，在 1908 年福特成为美国乃至世界的汽车大王。&lt;/p>
-&lt;p>那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p></description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p>&lt;img src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg" alt="img">&lt;/p>
-&lt;blockquote>
-&lt;p>丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。&lt;/p>
-&lt;p>—— 维基百科&lt;/p>
-&lt;/blockquote>
-&lt;p>在大学的时候，如果你是男生，你可能会有这样的经历：&lt;/p>
-&lt;blockquote>
-&lt;p>你有个好兄弟非常喜欢一个女生，然后有一天，他实在按捺不住心中的激动，于是把女生约了出来吃饭，想创造一点机会。&lt;/p></description></item><item><title>营销基础：什么是营销？</title><link>https://caoyang2002.xyz/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片">&lt;/p>
+&lt;p>那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p></description></item><item><title>营销基础：什么是营销？</title><link>https://caoyang2002.xyz/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片">&lt;/p>
 &lt;h1 id="一行业定义">一、行业定义&lt;/h1>
 &lt;h2 id="1-专家解释">1. 专家解释&lt;/h2>
 &lt;p>现代营销学之父菲利普·科特勒在不同的场景下分别解释了 “营销” 和与之相关的词。&lt;/p>
