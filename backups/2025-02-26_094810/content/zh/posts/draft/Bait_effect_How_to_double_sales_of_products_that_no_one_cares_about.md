@@ -1,7 +1,7 @@
 +++
 title = '诱饵效应：如何让无人问津的产品销量翻倍？'
 date = 2025-02-22T13:25:48+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["行为经济学"]
 tags = ["对比效应","诱饵效应"]
@@ -11,7 +11,7 @@ description = "如何通过引入一个不太好的选项，反而能让原来�
 
 ![img](https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg)
 
-> 丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。 
+> 丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。
 >
 > —— 维基百科
 
