@@ -30,7 +30,7 @@
  }
 
  const password = input.value;
- const publishDate = "20250226";
+ const publishDate = "20250228";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256("123456" + publishDate);
 
