@@ -1,7 +1,7 @@
 +++
 title = '诱饵效应：如何让无人问津的产品销量翻倍？'
 date = 2025-02-22T13:25:48+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["行为经济学"]
 tags = ["对比效应","诱饵效应"]
