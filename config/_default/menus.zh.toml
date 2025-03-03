@@ -5,6 +5,16 @@ pageRef = '/'
 weight = 10
 
 [[main]]
+name = '日程'
+pageRef = '/schedule/'
+weight = 11
+
+[[main]]
+name = "作品集"
+pageRef = "/protfolio/"
+weight = 12
+
+[[main]]
 name = "关于"
 pageRef = "/about/"
 weight = 20
@@ -18,6 +28,16 @@ weight = 30
 name = "留言"
 pageRef = "/guestbook/"
 weight = 40
+
+[[main]]
+name = '资源'
+pageRef = '/resources/'
+weight = 41
+
+[[main]]
+name = '书单'
+pageRef = '/booklist/'
+weight = 42
 
 [[main]]
 name = "搜索"

@@ -1,9 +1,11 @@
 ---
 title: "书单"
+layout: "booklist"
 description: "书单"
+
 date: 2024-01-21T15:04:05+08:00
 author: "simons"
-draft: true
+draft: false
 ---
 
 # 书单
