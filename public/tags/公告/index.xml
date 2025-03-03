@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 02:08:55 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
+ 
+
+
+
+
+
+
+
 
 &lt;div class="crypto-content">
+ 
  &lt;div class="crypto-form">
  &lt;input
  type="password"
@@ -11,6 +20,7 @@
  />
  &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
  &lt;/div>
+ 
  &lt;div
  class="encrypted-content"
  id="crypto-output"
@@ -21,21 +31,23 @@
 &lt;/div>
 
 &lt;script>
+ 
  async function decrypt() {
  try {
  const input = document.getElementById('crypto-password');
  const output = document.getElementById('crypto-output');
  const form = document.querySelector('.crypto-form');
 
+ 
  if(!input?.value) {
  showError('请输入密码');
  return;
  }
 
  const password = input.value;
- const publishDate = "20250301";
+ const publishDate = "303500303";
  const hash = await sha256(password + publishDate);
- const targetHash = await sha256("123456" + publishDate);
+ const targetHash = await sha256( "公告" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -44,13 +56,16 @@
  const base64 = output.getAttribute('data-content');
  const decoder = new TextDecoder();
  const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.textContent = decoded;
+ output.innerHTML = decoded;
+ console.log(decoded);
  form.style.display = 'none';
  } catch(e) {
+ console.log(e)
  showError('密码错误，请重试');
  }
  }
 
+ 
  async function sha256(text) {
  const encoder = new TextEncoder();
  const data = encoder.encode(text);
@@ -60,6 +75,7 @@
  .join('');
  }
 
+ 
  function showError(message) {
  const output = document.getElementById('crypto-output');
  output.textContent = message;

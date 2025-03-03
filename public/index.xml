@@ -1,7 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 28 Feb 2025 15:30:00 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 02 Mar 2025 14:25:57 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+
+ 
+
+
+
+
+
+
 
 
 &lt;div class="crypto-content">
+ 
  &lt;div class="crypto-form">
  &lt;input
  type="password"
@@ -11,6 +20,7 @@
  />
  &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
  &lt;/div>
+ 
  &lt;div
  class="encrypted-content"
  id="crypto-output"
@@ -21,21 +31,23 @@
 &lt;/div>
 
 &lt;script>
+ 
  async function decrypt() {
  try {
  const input = document.getElementById('crypto-password');
  const output = document.getElementById('crypto-output');
  const form = document.querySelector('.crypto-form');
 
+ 
  if(!input?.value) {
  showError('请输入密码');
  return;
  }
 
  const password = input.value;
- const publishDate = "20250301";
+ const publishDate = "303500303";
  const hash = await sha256(password + publishDate);
- const targetHash = await sha256("123456" + publishDate);
+ const targetHash = await sha256( "公告" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -44,13 +56,16 @@
  const base64 = output.getAttribute('data-content');
  const decoder = new TextDecoder();
  const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.textContent = decoded;
+ output.innerHTML = decoded;
+ console.log(decoded);
  form.style.display = 'none';
  } catch(e) {
+ console.log(e)
  showError('密码错误，请重试');
  }
  }
 
+ 
  async function sha256(text) {
  const encoder = new TextEncoder();
  const data = encoder.encode(text);
@@ -60,6 +75,7 @@
  .join('');
  }
 
+ 
  function showError(message) {
  const output = document.getElementById('crypto-output');
  output.textContent = message;
@@ -158,7 +174,73 @@
 &lt;p>&lt;img src="https://caoyang2002.xyz/about/history/first_h5.jpg" alt="first_h5">&lt;/p>
 &lt;p>下图是我 2024 年给创业项目做的网站：&lt;/p>
 &lt;p>&lt;img src="https://caoyang2002.xyz/about/history/chyraw_food.jpg" alt="chyraw_food">&lt;/p>
-&lt;p>关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p></description></item><item><title>资源</title><link>https://caoyang2002.xyz/resource/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resource/</guid><description>&lt;div class="crypto-content">
+&lt;p>关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p></description></item><item><title>资源</title><link>https://caoyang2002.xyz/resources/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resources/</guid><description>&lt;h1 id="公开资源">公开资源&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>
+&lt;a href="chat.deepseek.com"
+ 
+ >
+ deepseek
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="kimi.moonshot.cn"
+ 
+ >
+ kimi
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://mp.weixin.qq.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 微信公众号
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://www.cnblogs.com/R00R/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 开源交易平台
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="个人资源">个人资源&lt;/h1>
+ 
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content">
+ 
  &lt;div class="crypto-form">
  &lt;input
  type="password"
@@ -168,31 +250,34 @@
  />
  &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
  &lt;/div>
+ 
  &lt;div
  class="encrypted-content"
  id="crypto-output"
- data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCjIuIFvmsp/pgJrnmoTmlrnms5UgLSDohLHkuI3oirFdKCkKMy4gW&amp;#43;iWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpl0oaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8pCjQuIFvmgKror57ooYzkuLrlraZdKGh0dHBzOi8vYm9va3MuY2luYXMuY246ODAwMCkK"
+ data-content="Cjx1bD4KPGxpPgo8YSBocmVmPSJodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIiPui3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrI8L2E&amp;#43;CjwvbGk&amp;#43;CjxsaT4KPGEgaHJlZj0iaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8iPuiWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpjwvYT4KPC9saT4KPGxpPiA8YSBocmVmPSJodHRwczovL2Jvb2tzLmNpbmFzLmNuOjgwMDAiPuaAquivnuihjOS4uuWtpjwvYT48L2xpPgoKPC91bD4K"
  >
  已加密，请输入密码
  &lt;/div>
 &lt;/div>
 
 &lt;script>
+ 
  async function decrypt() {
  try {
  const input = document.getElementById('crypto-password');
  const output = document.getElementById('crypto-output');
  const form = document.querySelector('.crypto-form');
 
+ 
  if(!input?.value) {
  showError('请输入密码');
  return;
  }
 
  const password = input.value;
- const publishDate = "20250301";
+ const publishDate = "303500303";
  const hash = await sha256(password + publishDate);
- const targetHash = await sha256("123456" + publishDate);
+ const targetHash = await sha256( "caoyang" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -201,13 +286,16 @@
  const base64 = output.getAttribute('data-content');
  const decoder = new TextDecoder();
  const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.textContent = decoded;
+ output.innerHTML = decoded;
+ console.log(decoded);
  form.style.display = 'none';
  } catch(e) {
+ console.log(e)
  showError('密码错误，请重试');
  }
  }
 
+ 
  async function sha256(text) {
  const encoder = new TextEncoder();
  const data = encoder.encode(text);
@@ -217,6 +305,7 @@
  .join('');
  }
 
+ 
  function showError(message) {
  const output = document.getElementById('crypto-output');
  output.textContent = message;
@@ -259,7 +348,66 @@
  
  word-break: break-all;
  }
-&lt;/style></description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p>在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p></description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p>作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p></description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p>作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p></description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p>2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p>
+&lt;/style></description></item><item><title>mermaid</title><link>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</link><pubDate>Sun, 02 Mar 2025 14:25:57 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p>
+&lt;h4 id="1思维导图">1.思维导图&lt;/h4>
+&lt;ul>
+&lt;li>空格敏感&lt;/li>
+&lt;/ul>
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid">mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div>
+
+&lt;ul>
+&lt;li>
+&lt;p>基础&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>语法&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>形状&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>默认&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid">mindmap
+ I am the default shape&lt;/div>
+
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>[]&lt;/code>矩形&lt;/p></description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p>在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p></description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p>作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p></description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p>作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p></description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p>2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p>
 &lt;p>&lt;img src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641" alt="图片">&lt;/p>
 &lt;h1 id="一背景">一、背景&lt;/h1>
 &lt;p>多邻国自 2012 年诞生以来，凭借其丰富的语言课程和广泛的认可度，取得了显著的市场成绩。2023 年 Q3 月活近亿，且在多个国家的教育类应用榜单中名列前茅，2024 年 1 月双端商店流水超 4 千万美元，下载收入环比增长幅度居首。&lt;/p></description></item><item><title>营销基础：市场营销环境分析</title><link>https://caoyang2002.xyz/post/2025/02/marketing_environment/</link><pubDate>Thu, 27 Feb 2025 09:20:12 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_environment/</guid><description>&lt;h1 id="pest-分析">PEST 分析&lt;/h1>
@@ -3190,7 +3338,105 @@ npx quartz build --serve&lt;/code>&lt;/pre>
 &lt;h2 id="布局">布局&lt;/h2>
 &lt;p>某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
 默认页面布局可以在 &lt;code>quartz.layout.ts&lt;/code> 中找到。&lt;/p>
-&lt;p>每个页面由多个不同的部分组成，这些部分包含 &lt;code>QuartzComponents&lt;/code>。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p></description></item><item><title>C 语言推荐书籍</title><link>https://caoyang2002.xyz/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列">C语言系列&lt;/h1>
+&lt;p>每个页面由多个不同的部分组成，这些部分包含 &lt;code>QuartzComponents&lt;/code>。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p></description></item><item><title>书单</title><link>https://caoyang2002.xyz/booklist/</link><pubDate>Sun, 21 Jan 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/booklist/</guid><description>&lt;h1 id="书单">书单&lt;/h1>
+&lt;h2 id="传播--舆论">传播 / 舆论&lt;/h2>
+&lt;ul>
+&lt;li>《大众传播媒介》约翰·维维安&lt;/li>
+&lt;li>《幻影公众》李普曼&lt;/li>
+&lt;li>《舆论的结晶》爱德华·伯内斯&lt;/li>
+&lt;li>《狂热分子》埃里克·霍弗&lt;/li>
+&lt;li>《传播学原来很有趣：16 位大师的精华课》梁萍&lt;/li>
+&lt;li>《传播学中的心理效应》刘京林&lt;/li>
+&lt;li>《中外公共案例宝典》何春晖&lt;/li>
+&lt;li>《取悦公众：公关之父艾维·李和美国公关发展史》艾维·李&lt;/li>
+&lt;li>《无公关不品牌：公关 36 计 思维训练与实战进阶》杜鸣浩&lt;/li>
+&lt;li>《公关之父伯奈斯：影响民意的人（一个关于创意的传奇）》赖瑞·泰伊&lt;/li>
+&lt;li>《宣传》爱德华·伯内斯&lt;/li>
+&lt;li>《The Father of Spin》Edward L. Bernays (《颠倒黑白之父：爱德华伯内斯与公共关系的诞生》)&lt;/li>
+&lt;li>《制造认同：伯内斯的公共关系学教材》爱德华·伯内斯&lt;/li>
+&lt;li>《Crystallizing Public Opinion》Edward Bernays（《制造舆论》）&lt;/li>
+&lt;li>《牛津科学传播手册》凯瑟琳·霍尔·贾米森 / 丹·卡亨 / 迪特姆·A·舍费尔&lt;/li>
+&lt;li>《品牌叙事》王菲&lt;/li>
+&lt;li>《当代广告学与整合营销传播》威廉·阿伦斯 / 迈克尔·维戈尔德&lt;/li>
+&lt;li>《以讹传讹：错误的信息如何传播》詹姆斯·欧文·韦瑟罗尔 / 凯林·奥康纳&lt;/li>
+&lt;li>《引爆点？：传播学经典理论揭示流行背后的三个黄金法则》马尔科姆·格拉德威尔&lt;/li>
+&lt;li>《弱传播：舆论世界的哲学》邹振东&lt;/li>
+&lt;li>《品牌亲密度：营销中的情感价值》&lt;/li>
+&lt;li>《无公关不品牌》&lt;/li>
+&lt;li>《取悦公众》&lt;/li>
+&lt;li>《中外公共案例宝典》&lt;/li>
+&lt;li>《市场营销：原理与实践》&lt;/li>
+&lt;li>《传播中的心理效应》&lt;/li>
+&lt;li>《传播学原来很有趣》&lt;/li>
+&lt;/ul>
+&lt;h2 id="营销--竞争">营销 / 竞争&lt;/h2>
+&lt;ul>
+&lt;li>《影响力》&lt;/li>
+&lt;li>《科学营销》&lt;/li>
+&lt;li>《竞争优势》迈克尔·波特&lt;/li>
+&lt;li>《竞争战略》迈克尔·波特&lt;/li>
+&lt;li>《营销管理》菲利普·科特勒 / 凯文·莱恩·凯勒&lt;/li>
+&lt;li>《市场营销学》菲利普·科特勒 / 加里·阿姆斯特朗&lt;/li>
+&lt;li>《市场营销：原理与实践》菲利普·科特勒 / 加里·阿姆斯特朗&lt;/li>
+&lt;li>《文案功夫：成为金牌文案的 6 大核心能力》乐剑峰&lt;/li>
+&lt;li>《上瘾的秘密：潜移默化的营销方式如何重塑我们的大脑》马特·约翰逊 / 普林斯·古曼&lt;/li>
+&lt;li>《与运气竞争：关于创新与用户选择》克莱顿·克里斯坦森 / 戴维·邓肯 / 凯伦·迪伦 / 泰迪·霍尔&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul>
+&lt;h2 id="社会心理">社会心理&lt;/h2>
+&lt;ul>
+&lt;li>《津巴多普通心理学》菲利普·津巴多&lt;/li>
+&lt;li>《态度改变与社会影响》菲利普·津巴多&lt;/li>
+&lt;li>《社会心理学》阿伦森&lt;/li>
+&lt;li>《社会性动物》乔舒亚·阿伦森 / 艾略特·阿伦森&lt;/li>
+&lt;li>《影响力》罗伯特·西奥迪尼&lt;/li>
+&lt;li>《先发影响力》罗伯特·西奥迪尼&lt;/li>
+&lt;li>《宣传力》埃利奥特·阿伦森&lt;/li>
+&lt;/ul>
+&lt;h2 id="经济">经济&lt;/h2>
+&lt;ul>
+&lt;li>《经济学原理：宏观经济学分册》曼昆&lt;/li>
+&lt;li>《经济学原理：微观经济学分册》曼昆&lt;/li>
+&lt;li>《新制度经济学》卢现祥 / 朱巧玲&lt;/li>
+&lt;li>《思考，快与慢》丹尼尔·卡尼玛&lt;/li>
+&lt;li>《怪诞行为学》丹·艾瑞里&lt;/li>
+&lt;li>《斯坦福极简经济学》&lt;/li>
+&lt;li>《经济学的思维方式》&lt;/li>
+&lt;/ul>
+&lt;h2 id="产品">产品&lt;/h2>
+&lt;ul>
+&lt;li>《俞军产品方法论》俞军&lt;/li>
+&lt;/ul>
+&lt;h2 id="沟通">沟通&lt;/h2>
+&lt;ul>
+&lt;li>《沃顿商学院最受欢迎的谈判课》斯图尔特·戴蒙德&lt;/li>
+&lt;li>《关键对话》科里·帕特森&lt;/li>
+&lt;/ul>
+&lt;h2 id="历史与文化">历史与文化&lt;/h2>
+&lt;ul>
+&lt;li>《上瘾五百年》&lt;/li>
+&lt;/ul>
+&lt;h1 id="哲学">哲学&lt;/h1>
+&lt;ul>
+&lt;li>《有限与无限的游戏》&lt;/li>
+&lt;/ul>
+&lt;h1 id="人物">人物&lt;/h1>
+&lt;ul>
+&lt;li>菲利普·津巴多（社会心理学）&lt;/li>
+&lt;li>丹尼尔 · 卡尼曼（行为经济学）&lt;/li>
+&lt;li>丹 · 艾瑞里 （行为经济学）&lt;/li>
+&lt;li>董晨宇（传播学）&lt;/li>
+&lt;li>弗洛伊德（精神分析）&lt;/li>
+&lt;li>彼得·德鲁克（现代管理学之父）：消费者买的，大部情况下都不是公司认为的他们卖的东西。&lt;/li>
+&lt;li>西奥多·莱维特（哈佛大学营销教授）：人们其实不想买一个四分之一英寸的钻头。他们只想要一个四分之一英寸的洞！&lt;/li>
+&lt;li>克里斯坦森&lt;/li>
+&lt;/ul>
+&lt;h1 id="效应">效应&lt;/h1>
+&lt;ul>
+&lt;li>麦格克效应（McGurk efect）&lt;/li>
+&lt;li>记忆力编码：注意力、冲突、情绪唤醒。&lt;/li>
+&lt;li>消费者任务：消费者购买一件产品是为了完成一件特定的任务。&lt;/li>
+&lt;/ul></description></item><item><title>C 语言推荐书籍</title><link>https://caoyang2002.xyz/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列">C语言系列&lt;/h1>
 &lt;ol>
 &lt;li>《C漏洞与缺陷》&lt;/li>
 &lt;li>《C语言深度解剖》&lt;/li>
@@ -3645,4 +3891,87 @@ int main(){
  &lt;span class="external-icon">↗&lt;/span>
  
 &lt;/a>
-&lt;/p></description></item><item><title>搜索</title><link>https://caoyang2002.xyz/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caoyang2002.xyz/search/</guid><description/></item></channel></rss>
+&lt;/p></description></item><item><title>日程表</title><link>https://caoyang2002.xyz/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caoyang2002.xyz/schedule/</guid><description/></item><item><title>搜索</title><link>https://caoyang2002.xyz/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caoyang2002.xyz/search/</guid><description/></item><item><title>作品集</title><link>https://caoyang2002.xyz/protfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://caoyang2002.xyz/protfolio/</guid><description>&lt;h1 id="前端开发">前端开发：&lt;/h1>
+&lt;p>
+&lt;a href="https://chicunjie.top"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://chicunjie.top
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;h1 id="插画--设计--排版">插画 &amp;amp; 设计 &amp;amp; 排版&lt;/h1>
+&lt;h2 id="hs-设计团队成都大学">HS 设计团队（成都大学）&lt;/h2>
+&lt;h3 id="大运会前期设计">大运会前期设计&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.f48724cae9aeb0e900089c40d6740f4b?rik=n6Sn%2bkmLSuQFag&amp;amp;riu=http%3a%2f%2fimg.jsports.cn%2fimages%2f2020%2f3%2f31%2f20203311585646177595_76.png&amp;amp;ehk=d6DdgKp%2boGQLZt0RXcSbBh%2bYlPrLhlZPEG7pixbh7GY%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="image">&lt;/p>
+&lt;p>示例&lt;/p>
+&lt;/blockquote>
+&lt;h3 id="水井坊">水井坊&lt;/h3>
+&lt;blockquote>
+&lt;p>&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.741653029c575ae6bda8812666b65115?rik=XC9nAL5EOcrbhg&amp;amp;riu=http%3a%2f%2fimg09.jiuxian.com%2f2019%2f0227%2f6e23219739b74f6c83d39c541f216c55.jpg&amp;amp;ehk=wZ0iwyn52pxW6YYhoue%2bXiaXeOhdJ1nH%2fUT4iGT2IAg%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="image">&lt;/p>
+&lt;p>示例&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="粤商科技实习">粤商科技（实习）&lt;/h2>
+&lt;h3 id="广州农商银行">广州农商银行&lt;/h3>
+&lt;ol>
+&lt;li>
+&lt;p>
+&lt;a href="https://mp.weixin.qq.com/s/RG5gSthhqRuBuu2rIxLEjA"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 节气海报
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://mp.weixin.qq.com/s/wK557u1T0SFE2j1_7iZEsw"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 插画设计
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://mp.weixin.qq.com/s/hgmCIFqzrlzD5RQrT59G2w"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ H5 设计
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>理财海报 (未在线上发布)&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h2 id="ui-设计">UI 设计&lt;/h2>
+&lt;h2 id="vis-设计">VIS 设计&lt;/h2></description></item></channel></rss>

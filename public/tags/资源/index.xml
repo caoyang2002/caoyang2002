@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资源 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</link><description>Recent content in 资源 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 19 Feb 2025 12:03:48 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>资源</title><link>https://caoyang2002.xyz/resource/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resource/</guid><description>&lt;div class="crypto-content">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>资源 on caoyang 2002</title><link>https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/</link><description>Recent content in 资源 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Feb 2025 19:02:40 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>资源</title><link>https://caoyang2002.xyz/resources/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/resources/</guid><description>&lt;h1 id="公开资源">公开资源&lt;/h1>
+&lt;ul>
+&lt;li>
+&lt;p>
+&lt;a href="chat.deepseek.com"
+ 
+ >
+ deepseek
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="kimi.moonshot.cn"
+ 
+ >
+ kimi
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://mp.weixin.qq.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 微信公众号
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>
+&lt;a href="https://www.cnblogs.com/R00R/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 开源交易平台
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="个人资源">个人资源&lt;/h1>
+ 
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content">
+ 
  &lt;div class="crypto-form">
  &lt;input
  type="password"
@@ -8,31 +74,34 @@
  />
  &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
  &lt;/div>
+ 
  &lt;div
  class="encrypted-content"
  id="crypto-output"
- data-content="CjEuIFvot5/nhormtanlrabmsp/pgJrCtzMw6K6yXShodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIpCjIuIFvmsp/pgJrnmoTmlrnms5UgLSDohLHkuI3oirFdKCkKMy4gW&amp;#43;iWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpl0oaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8pCjQuIFvmgKror57ooYzkuLrlraZdKGh0dHBzOi8vYm9va3MuY2luYXMuY246ODAwMCkK"
+ data-content="Cjx1bD4KPGxpPgo8YSBocmVmPSJodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIiPui3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrI8L2E&amp;#43;CjwvbGk&amp;#43;CjxsaT4KPGEgaHJlZj0iaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8iPuiWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpjwvYT4KPC9saT4KPGxpPiA8YSBocmVmPSJodHRwczovL2Jvb2tzLmNpbmFzLmNuOjgwMDAiPuaAquivnuihjOS4uuWtpjwvYT48L2xpPgoKPC91bD4K"
  >
  已加密，请输入密码
  &lt;/div>
 &lt;/div>
 
 &lt;script>
+ 
  async function decrypt() {
  try {
  const input = document.getElementById('crypto-password');
  const output = document.getElementById('crypto-output');
  const form = document.querySelector('.crypto-form');
 
+ 
  if(!input?.value) {
  showError('请输入密码');
  return;
  }
 
  const password = input.value;
- const publishDate = "20250301";
+ const publishDate = "303500303";
  const hash = await sha256(password + publishDate);
- const targetHash = await sha256("123456" + publishDate);
+ const targetHash = await sha256( "caoyang" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -41,13 +110,16 @@
  const base64 = output.getAttribute('data-content');
  const decoder = new TextDecoder();
  const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.textContent = decoded;
+ output.innerHTML = decoded;
+ console.log(decoded);
  form.style.display = 'none';
  } catch(e) {
+ console.log(e)
  showError('密码错误，请重试');
  }
  }
 
+ 
  async function sha256(text) {
  const encoder = new TextEncoder();
  const data = encoder.encode(text);
@@ -57,6 +129,7 @@
  .join('');
  }
 
+ 
  function showError(message) {
  const output = document.getElementById('crypto-output');
  output.textContent = message;
