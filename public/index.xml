@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 03 Mar 2025 14:14:35 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 04 Mar 2025 12:35:23 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
  
 
@@ -45,7 +45,7 @@
  }
 
  const password = input.value;
- const publishDate = "404260304";
+ const publishDate = "404170304";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -229,126 +229,58 @@
 &lt;/p>
 &lt;/li>
 &lt;/ul>
-&lt;h1 id="个人资源">个人资源&lt;/h1>
- 
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content">
- 
- &lt;div class="crypto-form">
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- />
- &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
- &lt;/div>
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="Cjx1bD4KPGxpPgo8YSBocmVmPSJodHRwczovL3NpbmNlMTk4Mi1teS5zaGFyZXBvaW50LmNvbS9wZXJzb25hbC9zaW5jZTI1MDFfc2luY2UxOTgyX29yZy9fbGF5b3V0cy8xNS9vbmVkcml2ZS5hc3B4P2dhPTEmaWQ9JTJGcGVyc29uYWwlMkZzaW5jZTI1MDElNUZzaW5jZTE5ODIlNUZvcmclMkZEb2N1bWVudHMlMkZQMTYyNCUyMOi3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrIiPui3n&amp;#43;eGiua1qeWtpuayn&amp;#43;mAmsK3MzDorrI8L2E&amp;#43;CjwvbGk&amp;#43;CjxsaT4KPGEgaHJlZj0iaHR0cHM6Ly9ib290c29vbi5naXRodWIuaW8iPuiWm&amp;#43;WFhuS4sOe7j&amp;#43;a1juWtpjwvYT4KPC9saT4KPGxpPiA8YSBocmVmPSJodHRwczovL2Jvb2tzLmNpbmFzLmNuOjgwMDAiPuaAquivnuihjOS4uuWtpjwvYT48L2xpPgoKPC91bD4K"
- >
- 已加密，请输入密码
- &lt;/div>
-&lt;/div>
-
-&lt;script>
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "404260304";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "caoyang" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b => b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script>
-
-&lt;style>
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style></description></item><item><title>mermaid</title><link>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</link><pubDate>Sun, 02 Mar 2025 14:25:57 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
+&lt;summary>
+标题一
+&lt;/summary>
+&lt;details>
+ &lt;section data-mpa-template="t" mpa-from-tpl="t" data-mpa-action-id="m7ua6h3nz3j">
+ &lt;section style="display: flex;flex-direction: column;" data-mid="" mpa-from-tpl="t">
+ &lt;section style="display: flex;align-items: flex-start;align-self: center;" data-mid="" mpa-from-tpl="t">
+ &lt;section nodeleaf="" style="width: 11px;height: 13px;display: flex;justify-content: center;align-items: center;flex-shrink: 0;margin: 15px -2px 0 0;" data-mid="" mpa-from-tpl="t">
+ &lt;img data-src="https://mmbiz.qpic.cn/sz_mmbiz_png/y1QI2YhicdLP4A6CJCoYmgfmBVh3BkCcbbMmHzE0pfXkzvgKHvvL4yCJK5ycfpdXQGJYE8CVS4vQhNC63F0ibLWQ/0?from=appmsg" src="https://mmbiz.qpic.cn/sz_mmbiz_png/y1QI2YhicdLP4A6CJCoYmgfmBVh3BkCcbbMmHzE0pfXkzvgKHvvL4yCJK5ycfpdXQGJYE8CVS4vQhNC63F0ibLWQ/0?from=appmsg">
+ &lt;/section>
+ &lt;section style="padding: 23px 0 0 0;z-index: 5;" data-mid="" mpa-from-tpl="t">
+ &lt;section style="padding: 0 0 2px 0;text-align: center;" data-mid="" mpa-from-tpl="t">
+ &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #FF6A03;line-height: 25px;word-break: break-word;" data-mid="">
+ &lt;span leaf="">简约的生活方式&lt;/span>
+ &lt;/p>
+ &lt;/section>
+ &lt;section style="width: 100%;height: 4px;background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #5593FF 100%);" data-mid="" mpa-from-tpl="t">
+ &lt;span leaf="">&lt;br>&lt;/span>
+ &lt;/section>
+ &lt;/section>
+ &lt;section nodeleaf="" style="width: 60px;height: 61px;display: flex;justify-content: center;align-items: center;flex-shrink: 0;margin: 0 0 0 -33px;" data-mid="" mpa-from-tpl="t">
+ &lt;img data-src="https://mmbiz.qpic.cn/mmbiz_gif/EKJmde9BNBQr1SF5uCicwKjcBriaic7iaaDCdOMMOic9GqCLibzRmvSqGIaoutpPQrrMU9h34dLiaws2WW2IbDsNGSBTg/0?from=appmsg" src="https://mmbiz.qpic.cn/mmbiz_gif/EKJmde9BNBQr1SF5uCicwKjcBriaic7iaaDCdOMMOic9GqCLibzRmvSqGIaoutpPQrrMU9h34dLiaws2WW2IbDsNGSBTg/0?from=appmsg">
+ &lt;/section>
+ &lt;/section>
+ &lt;/section>
+ &lt;/section>
+ &lt;section>
+ &lt;span leaf="">&lt;br>&lt;/span>
+ &lt;/section>
+ &lt;p style="display: none;">
+ &lt;mp-style-type data-value="3">
+ &lt;/mp-style-type>
+ &lt;/p>
+&lt;/details>
+&lt;summary>
+标题二
+&lt;/summary>
+&lt;details>
+ &lt;section data-mpa-template="t" mpa-from-tpl="t" data-mpa-action-id="m7ua894b1qd0">
+ &lt;section style="display: flex;flex-direction: column;" data-mid="" mpa-from-tpl="t">
+ &lt;section style="display: flex;flex-direction: column;align-self: center;" data-mid="" mpa-from-tpl="t">
+ &lt;section style="display: flex;align-items: flex-start;" data-mid="" mpa-from-tpl="t">
+ &lt;section style="text-align: center;width: 38px;height: 34px;background: url(https://mmbiz.qpic.cn/mmbiz_png/K7LJuapfb6cO3KJjoyyAjHqibFH7M5PHQL5wz03pnXysPqv4dnhckjQibNURN8maXTsTQJ9ibCVj0eiciaTxKWCIZKQ/0?from=appmsg);background-repeat: no-repeat;background-size: 100% 100%;padding: 7px 2px 0 0;" data-mid="" mpa-from-tpl="t">
+ &lt;p style="font-weight: bold;font-size: 18px;color: #FFFFFF;line-height: 25px;height: 25px;overflow: hidden;" data-mid="">
+ &lt;span leaf="">01&lt;/span>
+ &lt;/p>
+ &lt;/section>
+ &lt;section data-mid="" mpa-from-tpl="t">
+ &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t">
+ &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid="">
+ &lt;span leaf="">生活的点滴温暖&lt;/span>
+ &lt;/p></description></item><item><title>mermaid</title><link>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</link><pubDate>Sun, 02 Mar 2025 14:25:57 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/ed05d9d8/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
 下面是几个常用的图示类型&lt;/p>
 &lt;h4 id="1思维导图">1.思维导图&lt;/h4>
 &lt;ul>
