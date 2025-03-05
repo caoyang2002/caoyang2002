@@ -93,17 +93,19 @@ rate = "[0.52, 0.2]"
 
 [[events]]
 title = "DNB-订房网站（全栈）"
+status = "active"
 start = 2025-03-06
 end = 2025-04-10
 progress = 100
 category = "全栈开发"
 dependencies = ["项目启动"]
-rate = "[0.1,0.7]"
+rate = "[0.7,0.7]"
+
 
 
 
 [[events]]
-title = "LHC-模型网站（全栈）"
+title = "LHC-改装车网站（全栈）"
 start = 2025-04-24
 end = 2025-05-08
 progress = 100
@@ -127,16 +129,17 @@ end = 2025-05-29
 progress = 100
 category = "平面设计"
 dependencies = ["项目启动"]
-rate = "[0.6, 0.15]"
+rate = "[0.63, 0.15]"
 
 [[events]]
 title = "《毕业不就》纪录片拍摄（重点）"
+status = "active"
 start = 2025-03-03
 end = 2025-06-16
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
+rate = "[0.85, 0.95]"
 
 [[events]]
 title = "《语言的边界》纪实摄影"
@@ -144,7 +147,6 @@ start = 2025-03-04
 end = 2025-06-17
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
@@ -153,7 +155,6 @@ start = 2025-03-05
 end = 2025-06-18
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
@@ -162,7 +163,6 @@ start = 2025-03-06
 end = 2025-06-19
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
@@ -171,7 +171,6 @@ start = 2025-03-06
 end = 2025-06-19
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
@@ -182,5 +181,22 @@ progress = 100
 category = "平面设计"
 dependencies = ["项目启动"]
 
+[[events]]
+title = "DEV-SynoMD编辑器(套件)"
+start = 2025-06-10
+end = 2025-06-24
+progress = 100
+category = "全栈开发"
+dependencies = ["项目启动"]
+rate = "[0.1, 0.2]"
+
+[[events]]
+title = "DEV-公众号样式编辑器"
+start = 2025-04-24
+end = 2025-05-08
+progress = 100
+category = "全栈开发"
+dependencies = ["项目启动"]
+rate = "[0.3, 0.3]"
 
 +++
