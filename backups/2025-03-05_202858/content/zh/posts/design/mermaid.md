@@ -1,12 +1,11 @@
 +++
-title = 'mermaid'
-date = 2025-03-02T14:25:57+08:00
+title = 'mermaid？'
+date = 2025-03-14T14:51:51+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
-mermaid = true
+categories = ["营销"]
+tags = ["经典案例"]
+description = "test"
 +++
 
 mermaid可以在主流的markdown工具中使用

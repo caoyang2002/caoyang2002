@@ -40,6 +40,11 @@ pageRef = '/booklist/'
 weight = 42
 
 [[main]]
+name = '热搜'
+pageRef = '/hotlist/'
+weight = 43
+
+[[main]]
 name = "搜索"
 pageRef = "/search/"
 weight = 50
