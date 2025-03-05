@@ -83,43 +83,38 @@ description = '''
 '''
 
 [[events]]
-title = "CCJ-个人网站开发"
-start = 2025-03-14
-end = 2025-03-20
+title = "CCJ-个人网站开发（前端）"
+start = 2025-04-10
+end = 2025-04-20
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
 rate = "[0.52, 0.2]"
 
 [[events]]
-title = "DNB-订房网站"
-start = 2025-03-21
+title = "DNB-订房网站（全栈）"
+status = "active"
+start = 2025-03-06
 end = 2025-04-10
 progress = 100
-category = "前端开发"
+category = "全栈开发"
 dependencies = ["项目启动"]
-rate = "[0.1,0.7]"
+rate = "[0.7,0.7]"
+
+
+
 
 [[events]]
-title = "DNB-订房网站"
-start = 2025-04-10
-end = 2025-04-24
-progress = 100
-category = "后端开发"
-dependencies = ["项目启动"]
-rate = "[0.2,0.7]"
-
-[[events]]
-title = "LHC-模型网站"
+title = "LHC-改装车网站（全栈）"
 start = 2025-04-24
 end = 2025-05-08
 progress = 100
-category = "前端开发"
+category = "全栈开发"
 dependencies = ["项目启动"]
 rate = "[0.35, 0.78]"
 
 [[events]]
-title = "Focus-功能修改"
+title = "Focus-功能修改（前端）"
 start = 2025-05-08
 end = 2025-05-15
 progress = 100
@@ -134,51 +129,48 @@ end = 2025-05-29
 progress = 100
 category = "平面设计"
 dependencies = ["项目启动"]
-rate = "[0.6, 0.15]"
+rate = "[0.63, 0.15]"
 
 [[events]]
-title = "纪录片拍摄"
+title = "《毕业不就》纪录片拍摄（重点）"
+status = "active"
 start = 2025-03-03
 end = 2025-06-16
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
+rate = "[0.85, 0.95]"
 
 [[events]]
-title = "图片摄影"
+title = "《语言的边界》纪实摄影"
 start = 2025-03-04
 end = 2025-06-17
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "美学"
+title = "《影视美学》论述"
 start = 2025-03-05
 end = 2025-06-18
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "纪实摄影"
+title = "《未到》纪实摄影"
 start = 2025-03-06
 end = 2025-06-19
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "广告摄影"
+title = "《暂定》广告摄影"
 start = 2025-03-06
 end = 2025-06-19
 progress = 100
 category = "传媒影视"
-status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
@@ -189,5 +181,22 @@ progress = 100
 category = "平面设计"
 dependencies = ["项目启动"]
 
+[[events]]
+title = "DEV-SynoMD编辑器(套件)"
+start = 2025-06-10
+end = 2025-06-24
+progress = 100
+category = "全栈开发"
+dependencies = ["项目启动"]
+rate = "[0.1, 0.2]"
+
+[[events]]
+title = "DEV-公众号样式编辑器"
+start = 2025-04-24
+end = 2025-05-08
+progress = 100
+category = "全栈开发"
+dependencies = ["项目启动"]
+rate = "[0.3, 0.3]"
 
 +++
