@@ -3,6 +3,17 @@ title = "日程表"
 layout = "schedule"
 categories = ["日程"]
 
+[decision]
+title = "决策矩阵"
+xAxisLeft = "不重要"
+xAxisRight = "重要"
+yAxisDown= "不紧急"
+yAxisUp = "紧急"
+quadrant1 = "立即处理"
+quadrant2 = "可能需要立即处理"
+quadrant3 = "浪费时间的事情"
+quadrant4 = "不需要立即处理"
+
 [[reservation]]
 title = "营销咨询"
 active = true
@@ -64,6 +75,7 @@ end = 2025-12-31
 progress = 60
 category = "营销管理"
 status = "active" # 活动 active, 完成 done, 临界 crit, 里程碑milestone.
+rate = "[0.9, 0.9]"
 dependencies = []
 description = '''
 这是多行文本示例
@@ -72,19 +84,21 @@ description = '''
 
 [[events]]
 title = "CCJ-个人网站开发"
-start = 2025-03-14
-end = 2025-03-20
+start = 2025-04-10
+end = 2025-04-20
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
+rate = "[0.52, 0.2]"
 
 [[events]]
 title = "DNB-订房网站"
-start = 2025-03-21
+start = 2025-03-06
 end = 2025-04-10
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
+rate = "[0.1,0.7]"
 
 [[events]]
 title = "DNB-订房网站"
@@ -93,6 +107,7 @@ end = 2025-04-24
 progress = 100
 category = "后端开发"
 dependencies = ["项目启动"]
+rate = "[0.2,0.7]"
 
 [[events]]
 title = "LHC-模型网站"
@@ -101,6 +116,7 @@ end = 2025-05-08
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
+rate = "[0.35, 0.78]"
 
 [[events]]
 title = "Focus-功能修改"
@@ -109,6 +125,7 @@ end = 2025-05-15
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
+rate = "[0.6, 0.10]"
 
 [[events]]
 title = "WBC-品牌设计"
@@ -117,6 +134,7 @@ end = 2025-05-29
 progress = 100
 category = "平面设计"
 dependencies = ["项目启动"]
+rate = "[0.6, 0.15]"
 
 [[events]]
 title = "纪录片拍摄"

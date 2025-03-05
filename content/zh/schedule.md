@@ -84,8 +84,8 @@ description = '''
 
 [[events]]
 title = "CCJ-个人网站开发"
-start = 2025-03-14
-end = 2025-03-20
+start = 2025-04-10
+end = 2025-04-20
 progress = 100
 category = "前端开发"
 dependencies = ["项目启动"]
@@ -93,21 +93,14 @@ rate = "[0.52, 0.2]"
 
 [[events]]
 title = "DNB-订房网站"
-start = 2025-03-21
+start = 2025-03-06
 end = 2025-04-10
 progress = 100
-category = "前端开发"
+category = "全栈开发"
 dependencies = ["项目启动"]
 rate = "[0.1,0.7]"
 
-[[events]]
-title = "DNB-订房网站"
-start = 2025-04-10
-end = 2025-04-24
-progress = 100
-category = "后端开发"
-dependencies = ["项目启动"]
-rate = "[0.2,0.7]"
+
 
 [[events]]
 title = "LHC-模型网站"
