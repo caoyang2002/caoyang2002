@@ -83,7 +83,7 @@ description = '''
 '''
 
 [[events]]
-title = "CCJ-个人网站开发"
+title = "CCJ-个人网站开发（前端）"
 start = 2025-04-10
 end = 2025-04-20
 progress = 100
@@ -92,7 +92,7 @@ dependencies = ["项目启动"]
 rate = "[0.52, 0.2]"
 
 [[events]]
-title = "DNB-订房网站"
+title = "DNB-订房网站（全栈）"
 start = 2025-03-06
 end = 2025-04-10
 progress = 100
@@ -103,16 +103,16 @@ rate = "[0.1,0.7]"
 
 
 [[events]]
-title = "LHC-模型网站"
+title = "LHC-模型网站（全栈）"
 start = 2025-04-24
 end = 2025-05-08
 progress = 100
-category = "前端开发"
+category = "全栈开发"
 dependencies = ["项目启动"]
 rate = "[0.35, 0.78]"
 
 [[events]]
-title = "Focus-功能修改"
+title = "Focus-功能修改（前端）"
 start = 2025-05-08
 end = 2025-05-15
 progress = 100
@@ -130,7 +130,7 @@ dependencies = ["项目启动"]
 rate = "[0.6, 0.15]"
 
 [[events]]
-title = "纪录片拍摄"
+title = "《毕业不就》纪录片拍摄（重点）"
 start = 2025-03-03
 end = 2025-06-16
 progress = 100
@@ -139,7 +139,7 @@ status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "图片摄影"
+title = "《语言的边界》纪实摄影"
 start = 2025-03-04
 end = 2025-06-17
 progress = 100
@@ -148,7 +148,7 @@ status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "美学"
+title = "《影视美学》论述"
 start = 2025-03-05
 end = 2025-06-18
 progress = 100
@@ -157,7 +157,7 @@ status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "纪实摄影"
+title = "《未到》纪实摄影"
 start = 2025-03-06
 end = 2025-06-19
 progress = 100
@@ -166,7 +166,7 @@ status = "active"
 dependencies = ["项目启动"]
 
 [[events]]
-title = "广告摄影"
+title = "《暂定》广告摄影"
 start = 2025-03-06
 end = 2025-06-19
 progress = 100
