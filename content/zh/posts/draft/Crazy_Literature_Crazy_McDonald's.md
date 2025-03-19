@@ -1,10 +1,10 @@
 +++
-title = '贴脸开大：麦当劳和肯德基'
+title = '发疯文学，疯狂的麦当劳'
 date = 2025-03-01T12:41:51+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["营销"]
+tags = ["案例"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

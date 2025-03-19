@@ -1,10 +1,10 @@
 +++
-title = 'Alfamart如何成为印尼第二大便利店连锁？'
+title = 'Alfamart 如何成为印尼第二大便利店连锁？'
 date = 2025-03-01T12:40:51+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["营销"]
+tags = ["案例分析"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
@@ -14,7 +14,7 @@ https://mp.weixin.qq.com/s/LBo_KK99ZD7nOQ7jVvjIUA
 
 Original FBIF [FBIF食品饮料创新](javascript:void(0);) *2025年02月23日 08:36* *上海*
 
-*作者：Mote莫特 FBIF创始人（微信：motechan）*
+
 
 *
 *
@@ -43,7 +43,7 @@ Alfamart，作为印度尼西亚领先的便利店连锁品牌，自1989年成�
 
 # **从烟草经销到零售巨头：Alfamart的早期历史**
 
-##  
+
 
 **1、从传统市场到现代零售**
 
@@ -139,7 +139,7 @@ Alfamart的产品线涵盖了从烹饪调料、即食食品到美容用品等多
 
 # **国际化步伐：成功进军菲律宾市场**
 
-##  
+##
 
 ## **1、与SM Group合作：Alfamart首度海外布局**
 

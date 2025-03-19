@@ -1,5 +1,5 @@
 +++
-title = '没有奇迹：胖东来'
+title = '没有奇迹：胖东来的增长策略'
 date = 2025-03-01T12:45:12+08:00
 draft = true
 author = "simons"
