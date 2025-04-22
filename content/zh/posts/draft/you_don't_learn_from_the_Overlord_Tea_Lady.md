@@ -1,5 +1,5 @@
 +++
-title = 'B427e102'
+title = '喜茶，不学霸王茶姬'
 date = 2025-03-01T12:47:47+08:00
 draft = true
 author = "simons"
@@ -9,12 +9,6 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 https://mp.weixin.qq.com/s/dtDz1DOLcLZC30s6taMBuw
-
-# 喜茶，不学霸王茶姬
-
-[FBIF食品饮料创新](javascript:void(0);) *2025年02月16日 08:37* *上海*
-
-The following article is from 中国企业家杂志 Author 孙欣
 
 ![img](http://wx.qlogo.cn/mmhead/Q3auHgzwzM7w21sATPDXupiaVT01lfibXzCT69fN7SFXZHEu2nJorGmg/0)
 
@@ -367,32 +361,3 @@ XVC投资公司创始人胡博予曾这样形容张俊杰：“他已经想好�
 
 
 ![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)
-
-
-
-更多文章
-
-
-
-[![Image](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)](https://mp.weixin.qq.com/s?__biz=MzA3ODEzMjg5Mg==&mid=2652851390&idx=3&sn=378cae48eae066d79feff97e4979beb2&scene=21#wechat_redirect)
-
-[![Image](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)](https://mp.weixin.qq.com/s?__biz=MzA3ODEzMjg5Mg==&mid=2652846629&idx=3&sn=f923943c81414874fc1bac1181387365&scene=21#wechat_redirect)
-
-[![Image](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)](https://mp.weixin.qq.com/s?__biz=MzA3ODEzMjg5Mg==&mid=2652836231&idx=2&sn=12b581ff7aab33bc869fcad0c647ebf4&scene=21#wechat_redirect)
-
-**
-**
-
-**/ FBIF食品微信群 /**
-
-让专业的人聚在一起，30w+食品人已加入!
-
-[![图片](data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg width='1px' height='1px' viewBox='0 0 1 1' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3E%3C/title%3E%3Cg stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' fill-opacity='0'%3E%3Cg transform='translate(-249.000000, -126.000000)' fill='%23FFFFFF'%3E%3Crect x='249' y='126' width='1' height='1'%3E%3C/rect%3E%3C/g%3E%3C/g%3E%3C/svg%3E)](https://mp.weixin.qq.com/s/dtDz1DOLcLZC30s6taMBuw)
-
-![赞赏二维码](https://mp.weixin.qq.com/s/dtDz1DOLcLZC30s6taMBuw)
-
-
-
-![img](https://mp.weixin.qq.com/mp/qrcode?scene=10000004&size=102&__biz=MzA3ODEzMjg5Mg==&mid=2652852019&idx=1&sn=8d42a2212f68065ea08fc89f286ae619&send_time=)
-
-Scan to Follow
