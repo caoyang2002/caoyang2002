@@ -1,7 +1,7 @@
 +++
 title = '18种最常见的促销方法'
 date = 2025-03-01T12:29:29+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
@@ -210,7 +210,7 @@ Original 问智星 [问智星PPT](javascript:void(0);) *2024年09月09日 10:32*
 
 未经允许，请勿转载
 
-文章开白/投稿/合作 
+文章开白/投稿/合作
 
 请联系微信：wangheqi686868
 

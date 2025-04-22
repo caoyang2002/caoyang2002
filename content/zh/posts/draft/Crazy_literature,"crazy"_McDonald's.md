@@ -1,7 +1,7 @@
 +++
 title = '发疯文学，“疯狂”的麦当劳'
 date = 2025-03-01T12:18:53+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
@@ -9,7 +9,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 +++
 
-# 一、麦当劳 “商战” 
+# 一、麦当劳 “商战”
 
 前不久，麦当劳的 CFC 火了，网上纷纷表示：“真正的商战就是这么朴实无华。”
 
@@ -93,7 +93,7 @@ Shun Feng Che（顺风车）
 
 ![Image](https://mmbiz.qpic.cn/sz_mmbiz_jpg/7PGLMg5gEEonXs099njQznhA8nZJDr4zJRcLtQyzWspMG3WFqjIvuQeySJjZNN5VfRwNTRCjgUbpBknBzoibYRg/640?wx_fmt=jpeg&from=appmsg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-可谓是全民玩梗了。这场看上去有些幼稚的 “掐架式” 营销，让众多品牌都有了另一个形象 “整活”。 
+可谓是全民玩梗了。这场看上去有些幼稚的 “掐架式” 营销，让众多品牌都有了另一个形象 “整活”。
 
 网友也是感叹这种 “小学生式” 的掐架行为。
 
@@ -201,7 +201,7 @@ Shun Feng Che（顺风车）
 
 不过这还不是最原型的版本， “林黛玉发疯文学” 可能才是：
 
-> “你大抵是倦了，竟回我这般敷衍。” 
+> “你大抵是倦了，竟回我这般敷衍。”
 >
 > “刚刚还在与我聊天，突然就消失不见 了,这么说来倒显得我斤斤计较了。如果我跟你斤斤计较倒是我的不是了, 我这心窝子，可比那数九寒天的冰渣子还冷。”
 >
