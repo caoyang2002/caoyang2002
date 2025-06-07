@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 05 Mar 2025 23:35:10 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>caoyang 2002</title><link>https://caoyang2002.xyz/</link><description>Recent content on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 22 Apr 2025 08:54:55 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
 
  
 
@@ -45,7 +45,7 @@
  }
 
  const password = input.value;
- const publishDate = "1919100319";
+ const publishDate = "707590607";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -280,7 +280,33 @@
  &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t">
  &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid="">
  &lt;span leaf="">生活的点滴温暖&lt;/span>
- &lt;/p></description></item><item><title>mermaid？</title><link>https://caoyang2002.xyz/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/mermaid/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
+ &lt;/p></description></item><item><title>品类命名方法</title><link>https://caoyang2002.xyz/post/2025/04/category_naming_method/</link><pubDate>Sat, 05 Apr 2025 07:18:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/04/category_naming_method/</guid><description>&lt;p>艾·里斯在《品牌的起源》中说：“开创并主导一个新品类是打造强势品牌的捷径。”&lt;/p>
+&lt;p>猕猴桃原产于中国，最初被称为“羊桃”（Yang Tao）或“猕猴桃”（Mihou Tao）。&lt;/p>
+&lt;p>&lt;img src="https://x0.ifengimg.com/ucms/2022_44/82E36D1E67537AA5B703F1000596BF214E3DBB09_size171_w1267_h950.jpg" alt="宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网">&lt;/p>
+&lt;p>20世纪初，猕猴桃被引入新西兰。&lt;/p>
+&lt;p>1904年，一位名叫Isabel Fraser的女教师从中国带回了猕猴桃的种子，并成功在新西兰种植。&lt;/p></description></item><item><title>品牌三问之三：何以见得</title><link>https://caoyang2002.xyz/post/2025/03/how_so/</link><pubDate>Sun, 30 Mar 2025 14:13:28 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/how_so/</guid><description>&lt;p>我们都知道，品牌声称自已占有某种优势的时候，顾客通常是不会相信的。&lt;/p>
+&lt;p>“王婆卖瓜” 式的传达，对顾客来说司空见惯。&lt;/p>
+&lt;p>因此品牌需要拿出有力的证据，来证明这种真实性。&lt;/p>
+&lt;p>只有这样顾客才会把品牌关联到它主张的特性上。&lt;/p>
+&lt;p>在定位理论中，这被称为 “信任状”。&lt;/p>
+&lt;p>信任状就是让品牌定位显得真实可信的事实。&lt;/p>
+&lt;p>作为信任状的事实不一定是客观事实，也可以是认知事实，也就是顾客认知中是正确的。&lt;/p></description></item><item><title>品牌三问之二：有何不同？</title><link>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</link><pubDate>Fri, 28 Mar 2025 21:38:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</guid><description>&lt;p>在玲琅满目的产品中，消费者发现了你的品牌后，最想要了解的就是你和其他品牌的区别，消费者为什么要选择你，而不是其他品牌？&lt;/p>
+&lt;p>这个特性不是自说自话，比如恒大冰泉的广告语 “恒大冰泉，一处水源供全球”。&lt;/p>
+&lt;p>&lt;img src="https://p1.ssl.qhmsg.com/dr/270_500_/t014f525c0dd0175999.jpg" alt="恒大冰泉_360百科">&lt;/p>
+&lt;p>消费者很可能不明白 “一处水源供全球” 的意义是什么，对消费者来说过于隐晦了。&lt;/p>
+&lt;p>这样的广告语显然不如农夫山泉的广告语 “农夫山泉有点甜”。&lt;/p></description></item><item><title>定位理论的贡献二：竞争的基本单位是品牌</title><link>https://caoyang2002.xyz/post/2025/03/the_basic_unit_of_competition_is_brand/</link><pubDate>Wed, 26 Mar 2025 08:28:43 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/the_basic_unit_of_competition_is_brand/</guid><description>&lt;p>在多数人眼里，竞争的就是企业和企业之间的竞争，或者商业模式的竞争，有时候还能听见资源竞争、资本竞争，其实这样说是不准确的，企业的目的是盈利，企业之间的竞争本质是为了获得消费者。&lt;/p>
+&lt;p>所以竞争要从消费者的视角看，不难发现，&lt;strong>企业之间竞争的本质其实是品牌之间的竞争。&lt;/strong>&lt;/p>
+&lt;p>对消费者说 “字节跳动”，可能不会有任何反应，但是说 “抖音” 就能够引起共鸣。&lt;/p></description></item><item><title>企业的核心经营成果在哪里？</title><link>https://caoyang2002.xyz/post/2025/03/where_are_the_core_operating_results_of_the_company/</link><pubDate>Sat, 22 Mar 2025 00:27:31 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/where_are_the_core_operating_results_of_the_company/</guid><description>&lt;p>现代管理学之父彼得·德鲁克说：“企业的经营成果在企业外部，在企业内部的只有成本。”&lt;/p>
+&lt;p>&lt;img src="https://xqimg.imedao.com/184c0e2b2877b653fe70e08b.jpg!800.jpg" alt="德鲁克60句经典名言 彼得·德鲁克，被誉为“现代管理学之父”。我们熟知的营销、目标管理、人力资源和知识工作者等许多管理理论和概念都是他首先提出 &amp;hellip;">&lt;/p>
+&lt;p>但是，德鲁克并没有说明 “外部” 的具体位置，多年后，定位理论指出 “企业的核心经营成果在顾客的心智中，它左右顾客的选择，这个核心经营成果就是品牌。”&lt;/p></description></item><item><title>【315 专题】高效触达：智能外呼的罪与罚</title><link>https://caoyang2002.xyz/post/2025/03/crimes_and_penalties_for_intelligent_outcries/</link><pubDate>Wed, 19 Mar 2025 08:48:29 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/crimes_and_penalties_for_intelligent_outcries/</guid><description>&lt;h1 id="事件经过">事件经过&lt;/h1>
+&lt;img src="https://caoyang2002.xyz/Users/simons/Library/Application Support/typora-user-images/image-20250319085205087.png" alt="image-20250319085205087" style="zoom:25%;" />
+&lt;p>外呼，也叫电销，即向手机用户拨打自己的营销电话。&lt;/p>
+&lt;p>![image-20250319085403467](/Users/simons/Library/Application Support/typora-user-images/image-20250319085403467.png)&lt;/p>
+&lt;p>当下，使用机器人拨打营销电话已经成为这个行业的主流。&lt;/p>
+&lt;p>使用这种外呼智能机器人，效率比人工高出数倍。&lt;/p>
+&lt;p>![image-20250319094201779](/Users/simons/Library/Application Support/typora-user-images/image-20250319094201779.png)&lt;/p>
+&lt;p>并且这些机器人的声音由真人录制而成，使用户难辨真伪，从而更能提高接听率。&lt;/p>
+&lt;p>记者来到智优擎网络科技公司，这是一家从从事外呼业务好几年的企业。&lt;/p></description></item><item><title>mermaid？</title><link>https://caoyang2002.xyz/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/mermaid/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
 下面是几个常用的图示类型&lt;/p>
 &lt;h4 id="1思维导图">1.思维导图&lt;/h4>
 &lt;ul>
@@ -341,7 +367,35 @@
 &lt;li>
 &lt;p>&lt;code>[]&lt;/code>矩形&lt;/p></description></item><item><title>雪王敲钟：蜜雪冰城上市，甜蜜与爱的胜利</title><link>https://caoyang2002.xyz/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</link><pubDate>Tue, 04 Mar 2025 20:26:01 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</guid><description>&lt;p>&lt;img src="https://x0.ifengimg.com/ucms/2022_38/FCA8B7161B53D1F6D29AA2DE40A74F2E8170212E_size101_w690_h388.jpg" alt="蜜雪冰城IPO再进一步 已完成上市辅导_凤凰网">&lt;/p>
 &lt;p>2025年1月2日，有着“雪王”之称的蜜雪冰城向港交所提交了上市申请。最新披露的招股书数据展现出其强劲的发展态势：2023年前9个月，蜜雪冰城实现营收154亿元，净利润达25亿元，同比分别增长46%与51.1%。&lt;/p>
-&lt;p>经推算，2023年“雪王”平均每日盈利约926万元，盈利能力十分突出 。&lt;/p></description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p>在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p></description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p>作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p></description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p>作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p></description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p>2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p>
+&lt;p>经推算，2023年“雪王”平均每日盈利约926万元，盈利能力十分突出 。&lt;/p></description></item><item><title>18种最常见的促销方法</title><link>https://caoyang2002.xyz/post/2025/03/18_most_common_promotion_methods/</link><pubDate>Sat, 01 Mar 2025 12:29:29 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/18_most_common_promotion_methods/</guid><description>&lt;p>
+&lt;a href="https://mp.weixin.qq.com/s/cJHML67-AWcqs_J6h8PZPA"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://mp.weixin.qq.com/s/cJHML67-AWcqs_J6h8PZPA
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;h1 id="盘点18种最常见的营销方法">盘点！18种最常见的营销方法&lt;/h1>
+&lt;p>Original 问智星 
+&lt;a href="javascript:void%280%29;"
+ 
+ >
+ 问智星PPT
+ 
+&lt;/a>
+ &lt;em>2024年09月09日 10:32&lt;/em> &lt;em>北京&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://mmbiz.qpic.cn/mmbiz_png/chd40XbicQicQjQ94NMwkTRR1NC1GJ1HTXtvJqfhtjCnehoQ2mplN07vghoGI2icicAPwpbtMSzGZxjqHVS9eic0SNQ/640?wx_fmt=png&amp;amp;from=appmsg&amp;amp;tp=webp&amp;amp;wxfrom=5&amp;amp;wx_lazy=1&amp;amp;wx_co=1" alt="Image">&lt;/p>
+&lt;p>&lt;strong>01 打折&lt;/strong>&lt;/p>
+&lt;p>**优点：**迅速、果断、精准——这正是我们短期内激发消费热情的秘诀。通过这一策略，我们不仅能够迅速占领市场，还能在激烈的竞争中始终保持领先。相比竞争对手，我们的产品以独特的优势脱颖而出，确保了我们在市场中的主导地位。&lt;/p></description></item><item><title>发疯文学，“疯狂”的麦当劳</title><link>https://caoyang2002.xyz/post/2025/03/crazy_literaturecrazy_mcdonalds/</link><pubDate>Sat, 01 Mar 2025 12:18:53 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/crazy_literaturecrazy_mcdonalds/</guid><description>&lt;h1 id="一麦当劳-商战">一、麦当劳 “商战”&lt;/h1>
+&lt;p>前不久，麦当劳的 CFC 火了，网上纷纷表示：“真正的商战就是这么朴实无华。”&lt;/p>
+&lt;p>相信很多人都听说过：“广东人的商战，就是悄悄溜进竞争对手的公司，用开水浇死他们的发财树。” 还听说一个有趣的案例是收买竞争对手的保安，然后让他去拔网线，实在是让人很难相信这是真的。&lt;/p>
+&lt;p>在我有限的经验里，只记得比较著名的李嘉诚商战，四两拨千金、以进为退的运筹；明修栈道，暗渡陈仓的狡猾。总以为商战都是从别人的各个营销环节和财务线索上面找漏洞，然后挑其薄弱处，一击致命。或者是找大量的虚假用户发低劣内容，然后反手一个举报的卑鄙攻击手段。&lt;/p></description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p>在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p></description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p>作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p></description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p>作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p></description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p>2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p>
 &lt;p>&lt;img src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641" alt="图片">&lt;/p>
 &lt;h1 id="一背景">一、背景&lt;/h1>
 &lt;p>多邻国自 2012 年诞生以来，凭借其丰富的语言课程和广泛的认可度，取得了显著的市场成绩。2023 年 Q3 月活近亿，且在多个国家的教育类应用榜单中名列前茅，2024 年 1 月双端商店流水超 4 千万美元，下载收入环比增长幅度居首。&lt;/p></description></item><item><title>营销基础：市场营销环境分析</title><link>https://caoyang2002.xyz/post/2025/02/marketing_environment/</link><pubDate>Thu, 27 Feb 2025 09:20:12 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/02/marketing_environment/</guid><description>&lt;h1 id="pest-分析">PEST 分析&lt;/h1>
