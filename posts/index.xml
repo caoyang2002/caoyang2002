@@ -45,7 +45,7 @@
  }
 
  const password = input.value;
- const publishDate = "2323170423";
+ const publishDate = "70760607";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -171,7 +171,13 @@
 &lt;p>猕猴桃原产于中国，最初被称为“羊桃”（Yang Tao）或“猕猴桃”（Mihou Tao）。&lt;/p>
 &lt;p>&lt;img src="https://x0.ifengimg.com/ucms/2022_44/82E36D1E67537AA5B703F1000596BF214E3DBB09_size171_w1267_h950.jpg" alt="宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网">&lt;/p>
 &lt;p>20世纪初，猕猴桃被引入新西兰。&lt;/p>
-&lt;p>1904年，一位名叫Isabel Fraser的女教师从中国带回了猕猴桃的种子，并成功在新西兰种植。&lt;/p></description></item><item><title>品牌三问之二：有何不同？</title><link>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</link><pubDate>Fri, 28 Mar 2025 21:38:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</guid><description>&lt;p>在玲琅满目的产品中，消费者发现了你的品牌后，最想要了解的就是你和其他品牌的区别，消费者为什么要选择你，而不是其他品牌？&lt;/p>
+&lt;p>1904年，一位名叫Isabel Fraser的女教师从中国带回了猕猴桃的种子，并成功在新西兰种植。&lt;/p></description></item><item><title>品牌三问之三：何以见得</title><link>https://caoyang2002.xyz/post/2025/03/how_so/</link><pubDate>Sun, 30 Mar 2025 14:13:28 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/how_so/</guid><description>&lt;p>我们都知道，品牌声称自已占有某种优势的时候，顾客通常是不会相信的。&lt;/p>
+&lt;p>“王婆卖瓜” 式的传达，对顾客来说司空见惯。&lt;/p>
+&lt;p>因此品牌需要拿出有力的证据，来证明这种真实性。&lt;/p>
+&lt;p>只有这样顾客才会把品牌关联到它主张的特性上。&lt;/p>
+&lt;p>在定位理论中，这被称为 “信任状”。&lt;/p>
+&lt;p>信任状就是让品牌定位显得真实可信的事实。&lt;/p>
+&lt;p>作为信任状的事实不一定是客观事实，也可以是认知事实，也就是顾客认知中是正确的。&lt;/p></description></item><item><title>品牌三问之二：有何不同？</title><link>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</link><pubDate>Fri, 28 Mar 2025 21:38:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/03/what_is_the_difference/</guid><description>&lt;p>在玲琅满目的产品中，消费者发现了你的品牌后，最想要了解的就是你和其他品牌的区别，消费者为什么要选择你，而不是其他品牌？&lt;/p>
 &lt;p>这个特性不是自说自话，比如恒大冰泉的广告语 “恒大冰泉，一处水源供全球”。&lt;/p>
 &lt;p>&lt;img src="https://p1.ssl.qhmsg.com/dr/270_500_/t014f525c0dd0175999.jpg" alt="恒大冰泉_360百科">&lt;/p>
 &lt;p>消费者很可能不明白 “一处水源供全球” 的意义是什么，对消费者来说过于隐晦了。&lt;/p>
