@@ -1,17 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shell on caoyang2002</title><link>https://caoyang2002.xyz/es/tags/shell/</link><description>Recent content in Shell on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/es/tags/shell/index.xml" rel="self" type="application/rss+xml"/><item><title>shell mac 教程</title><link>https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/</guid><description>&lt;p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Shell on caoyang2002</title><link>https://caoyang2002.xyz/es/tags/shell/</link><description>Recent content in Shell on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/es/tags/shell/index.xml" rel="self" type="application/rss+xml"/><item><title>shell mac 教程</title><link>https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/es/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
 &lt;a href="https://juejin.cn/post/6921144388802641933"
  
  
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
- >
+ &gt;
  原文
  
- &lt;span class="external-icon">↗&lt;/span>
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
-&lt;/a>
-&lt;/p>
+&lt;/a&gt;
+&lt;/p&gt;
 
 
 
@@ -22,8 +22,8 @@
 
 
 
-&lt;div>
- &lt;pre>&lt;code class="language-as" data-lang="as">#!/bin/bash
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-as" data-lang="as"&gt;#!/bin/bash
 
 # 1. 自定义通知消息
 # 传参 $1:消息描述 $2:通知标题 $3:通知副标题
@@ -117,5 +117,5 @@ function mostButtons(){
 function showInputAlertMessage(){
 	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;$2&amp;#34; &amp;#34;取消,确认&amp;#34; 2 &amp;#34;1&amp;#34; &amp;#34;&amp;#34;
 }
-showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code>&lt;/pre>
-&lt;/div></description></item></channel></rss>
+showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item></channel></rss>

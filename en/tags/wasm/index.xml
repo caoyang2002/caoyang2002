@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wasm on caoyang2002</title><link>https://caoyang2002.xyz/en/tags/wasm/</link><description>Recent content in Wasm on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/en/tags/wasm/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</guid><description>&lt;p>在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p>
-&lt;ol>
-&lt;li>使用 &lt;code>web_sys&lt;/code> 和 &lt;code>wasm_bindgen&lt;/code> 进行浏览器 API 调用：&lt;/li>
-&lt;/ol>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wasm on caoyang2002</title><link>https://caoyang2002.xyz/en/tags/wasm/</link><description>Recent content in Wasm on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/en/tags/wasm/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.xyz/en/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -11,11 +11,11 @@
 
 
 
-&lt;div class="code-playground" data-language="rust">
+&lt;div class="code-playground" data-language="rust"&gt;
  
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">use wasm_bindgen::prelude::*;
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -46,18 +46,16 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code>&lt;/pre>
- &lt;/div>
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
  
 
  
-&lt;/div>
+&lt;/div&gt;
 
-&lt;ol start="2">
-&lt;li>在 Cargo.toml 中需要添加必要的依赖：&lt;/li>
-&lt;/ol>
-
-
+&lt;ol start="2"&gt;
+&lt;li&gt;在 Cargo.toml 中需要添加必要的依赖：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -66,8 +64,10 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-&lt;div>
- &lt;pre>&lt;code class="language-toml" data-lang="toml">[dependencies]
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;[dependencies]
 wasm-bindgen = &amp;#34;0.2&amp;#34;
 web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
  &amp;#34;console&amp;#34;,
@@ -77,14 +77,12 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
  &amp;#34;HtmlElement&amp;#34;,
  &amp;#34;Node&amp;#34;,
  &amp;#34;Location&amp;#34;
-]}&lt;/code>&lt;/pre>
-&lt;/div>
+]}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
 
-&lt;ol start="3">
-&lt;li>如果需要格式化打印，可以使用 &lt;code>console::log!&lt;/code> 宏：&lt;/li>
-&lt;/ol>
-
-
+&lt;ol start="3"&gt;
+&lt;li&gt;如果需要格式化打印，可以使用 &lt;code&gt;console::log!&lt;/code&gt; 宏：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -92,11 +90,13 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
-&lt;div class="code-playground" data-language="rust">
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
  
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">use web_sys::console;
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -106,18 +106,16 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code>&lt;/pre>
- &lt;/div>
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
  
 
  
-&lt;/div>
+&lt;/div&gt;
 
-&lt;ol start="4">
-&lt;li>操作 DOM 示例：&lt;/li>
-&lt;/ol>
-
-
+&lt;ol start="4"&gt;
+&lt;li&gt;操作 DOM 示例：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -125,11 +123,13 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-&lt;div class="code-playground" data-language="rust">
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
  
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">use wasm_bindgen::prelude::*;
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -153,18 +153,16 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code>&lt;/pre>
- &lt;/div>
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
  
 
  
-&lt;/div>
+&lt;/div&gt;
 
-&lt;ol start="5">
-&lt;li>处理错误和 Result：&lt;/li>
-&lt;/ol>
-
-
+&lt;ol start="5"&gt;
+&lt;li&gt;处理错误和 Result：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -172,11 +170,13 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-&lt;div class="code-playground" data-language="rust">
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
  
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  // 使用 ? 运算符处理错误
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
  let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
@@ -189,18 +189,16 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code>&lt;/pre>
- &lt;/div>
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
  
 
  
-&lt;/div>
+&lt;/div&gt;
 
-&lt;ol start="6">
-&lt;li>使用本地存储：&lt;/li>
-&lt;/ol>
-
-
+&lt;ol start="6"&gt;
+&lt;li&gt;使用本地存储：&lt;/li&gt;
+&lt;/ol&gt;
 
 
 
@@ -208,11 +206,13 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-&lt;div class="code-playground" data-language="rust">
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
  
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">use web_sys::Storage;
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::Storage;
 
 pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
@@ -229,11 +229,11 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code>&lt;/pre>
- &lt;/div>
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
  
 
  
-&lt;/div>
+&lt;/div&gt;
 
-&lt;p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p></description></item></channel></rss>
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item></channel></rss>
