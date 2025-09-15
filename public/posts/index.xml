@@ -45,7 +45,7 @@
  }
 
  const password = input.value;
- const publishDate = "707590607";
+ const publishDate = "1010150610";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -167,7 +167,19 @@
  cursor: pointer;
  }
 &lt;/style>
-&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>品类命名方法</title><link>https://caoyang2002.xyz/post/2025/04/category_naming_method/</link><pubDate>Sat, 05 Apr 2025 07:18:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/04/category_naming_method/</guid><description>&lt;p>艾·里斯在《品牌的起源》中说：“开创并主导一个新品类是打造强势品牌的捷径。”&lt;/p>
+&lt;p>&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image">&lt;/p></description></item><item><title>营销的产品思维</title><link>https://caoyang2002.xyz/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</link><pubDate>Tue, 10 Jun 2025 08:53:50 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</guid><description>&lt;p>知名产品经理俞军在他的书《俞军产品方法论》中说：&lt;/p>
+&lt;blockquote>
+&lt;p>“产品经理只要学会用四个概念分析产品和用户就算及格了：效用、成本、边际、供需定律。”&lt;/p>
+&lt;/blockquote>
+&lt;p>在营销中，这也大有用处。&lt;/p>
+&lt;h1 id="效用">效用&lt;/h1>
+&lt;p>效用就是指产品的功效作用。&lt;/p>
+&lt;p>最近天很热，你买一瓶矿泉水，可以解渴。矿泉水就是有用的，因为它满足了你的需求。&lt;/p>
+&lt;p>但是，你的眼前同时出现了 “怡宝” “农夫山泉” 和 “百岁山”，假设价格和容量分别是 300ml / 1.5元、550ml / 2元、350ml / 3元。&lt;/p></description></item><item><title>跟随者的定位</title><link>https://caoyang2002.xyz/post/2025/04/%E8%B7%9F%E9%9A%8F%E8%80%85%E7%9A%84%E5%AE%9A%E4%BD%8D/</link><pubDate>Wed, 30 Apr 2025 13:07:28 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/04/%E8%B7%9F%E9%9A%8F%E8%80%85%E7%9A%84%E5%AE%9A%E4%BD%8D/</guid><description>&lt;p>领导者可以通过拦截的方式，维护自己的领导地位，但是跟随者不能使用这样的方式。&lt;/p>
+&lt;p>对于顾客来说，如果跟随者效仿领导者的做法，那不是拦截，而是跟风。&lt;/p>
+&lt;p>DEC 花费了很长的时间，企图 “在个人电脑上超过 IBM”，结果错过了开发台式机的机会，最后被康柏公司收购。&lt;/p>
+&lt;p>作为跟随者，不跟风的方式，如何获得竞争优势呢？&lt;/p>
+&lt;p>趁局势不明的时候发起进攻。&lt;/p></description></item><item><title>品类命名方法</title><link>https://caoyang2002.xyz/post/2025/04/category_naming_method/</link><pubDate>Sat, 05 Apr 2025 07:18:08 +0800</pubDate><guid>https://caoyang2002.xyz/post/2025/04/category_naming_method/</guid><description>&lt;p>艾·里斯在《品牌的起源》中说：“开创并主导一个新品类是打造强势品牌的捷径。”&lt;/p>
 &lt;p>猕猴桃原产于中国，最初被称为“羊桃”（Yang Tao）或“猕猴桃”（Mihou Tao）。&lt;/p>
 &lt;p>&lt;img src="https://x0.ifengimg.com/ucms/2022_44/82E36D1E67537AA5B703F1000596BF214E3DBB09_size171_w1267_h950.jpg" alt="宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网">&lt;/p>
 &lt;p>20世纪初，猕猴桃被引入新西兰。&lt;/p>
