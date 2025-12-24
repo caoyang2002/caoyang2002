@@ -1,5 +1,5 @@
 # 基础配置
-baseURL = 'https://caoyang2002.xyz'
+baseURL = 'https://caoyang2002.pages.dev'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
@@ -40,7 +40,7 @@ simple = true
 
 # 评论服务配置
 [services.disqus]
-shortname = 'caoyang2002.xyz'
+shortname = 'caoyang2002.pages.dev'
 
 # 分类配置
 [taxonomies]
