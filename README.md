@@ -110,7 +110,7 @@
 
 `主题`  `Hugo`
 
-这是一个 Hugo 的主题，也是我个人网站（caoyang2002.xyz）使用的主题。
+这是一个 Hugo 的主题，也是我个人网站（caoyang2002.pages.dev）使用的主题。
 
 
 
