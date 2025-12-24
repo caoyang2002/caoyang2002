@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 26 Jan 2025 02:08:55 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.xyz/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/03/notice/</guid><description>&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.pages.dev/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 24 Dec 2025 14:56:41 +0800</lastBuildDate><atom:link href="https://caoyang2002.pages.dev/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.pages.dev/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.pages.dev/post/2024/03/notice/</guid><description>&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
 
  
 
@@ -24,7 +24,7 @@
  &lt;div
  class="encrypted-content"
  id="crypto-output"
- data-content="Cui/meaYr&amp;#43;S4gOS4quWKoOWvhuWGheWuueOAggo="
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
  &gt;
  已加密，请输入密码
  &lt;/div&gt;
@@ -45,7 +45,7 @@
  }
 
  const password = input.value;
- const publishDate = "313141031";
+ const publishDate = "242451224";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -120,51 +120,4 @@
  }
 &lt;/style&gt;
 
-&lt;div class="protected-content"&gt;
- &lt;div class="password-form"&gt;
- &lt;input type="password" placeholder="输入访问密码" class="pass-input" /&gt;
- &lt;button onclick="decryptContent(this)" class="pass-btn"&gt;访问&lt;/button&gt;
- &lt;/div&gt;
- &lt;div
- class="encrypted-content"
- style="display: none"
- data-content="
-掩耳盗铃
-"
- &gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;script&gt;
- function decryptContent(btn) {
- const container = btn.closest(".protected-content");
- const input = container.querySelector(".pass-input");
- const content = container.querySelector(".encrypted-content");
-
- if (input.value === "123") {
- content.innerHTML = content.dataset.content;
- content.style.display = "block";
- container.querySelector(".password-form").style.display = "none";
- } else {
- alert("密码错误");
- }
- }
-&lt;/script&gt;
-&lt;style&gt;
- .protected-content {
- border: 1px solid #eee;
- padding: 20px;
- border-radius: 5px;
- }
- .pass-input {
- padding: 8px;
- margin-right: 10px;
- }
- .pass-btn {
- padding: 8px 16px;
- background: #0066cc;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
-&lt;/style&gt;
-&lt;p&gt;&lt;img src="https://caoyang2002.xyz/images/cover/blue.jpg" alt="image"&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;123&lt;/p&gt;</description></item></channel></rss>
