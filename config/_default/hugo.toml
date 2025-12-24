@@ -1,5 +1,5 @@
 # 基础配置
-baseURL = 'https://caoyang2002.pages.dev'
+baseURL = 'https://caoyang2002.vercel.app'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
@@ -40,7 +40,7 @@ simple = true
 
 # 评论服务配置
 [services.disqus]
-shortname = 'caoyang2002.pages.dev'
+shortname = 'caoyang2002.vercel.app'
 
 # 分类配置
 [taxonomies]
