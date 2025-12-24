@@ -1,131 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on caoyang 2002</title><link>https://caoyang2002.vercel.app/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 24 Dec 2025 14:56:41 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.vercel.app/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/notice/</guid><description>&lt;div class="notice note">这是一个注意事项&lt;/div>
-
-&lt;style>
- .notice {
- color: red;
- }
-&lt;/style>
-
- 
-
- 公告
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content">
- 
- &lt;div class="crypto-form">
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- />
- &lt;button onclick="decrypt()" class="crypto-btn">解密&lt;/button>
- &lt;/div>
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
- >
- 已加密，请输入密码
- &lt;/div>
-&lt;/div>
-
-&lt;script>
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "2424231224";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "公告" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c => c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b => b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script>
-
-&lt;style>
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style>
-
-&lt;p>123&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>公告 on caoyang 2002</title>
+    <link>http://localhost:1313/categories/%E5%85%AC%E5%91%8A/</link>
+    <description>Recent content in 公告 on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 24 Dec 2025 14:56:41 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>公告</title>
+      <link>http://localhost:1313/post/2024/03/notice/</link>
+      <pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate>
+      <guid>http://localhost:1313/post/2024/03/notice/</guid>
+      <description>&lt;div class=&#34;notice note&#34;&gt;这是一个注意事项&lt;/div&gt;&#xA;&#xA;&lt;style&gt;&#xA;    .notice {&#xA;        color: red;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA; &#xA;&#xA; 公告&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;crypto-content&#34;&gt;&#xA;    &#xA;    &lt;div class=&#34;crypto-form&#34;&gt;&#xA;        &lt;input&#xA;            type=&#34;password&#34;&#xA;            placeholder=&#34;输入密码&#34;&#xA;            class=&#34;crypto-input&#34;&#xA;            id=&#34;crypto-password&#34;&#xA;        /&gt;&#xA;        &lt;button onclick=&#34;decrypt()&#34; class=&#34;crypto-btn&#34;&gt;解密&lt;/button&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;    &lt;div&#xA;        class=&#34;encrypted-content&#34;&#xA;        id=&#34;crypto-output&#34;&#xA;        data-content=&#34;CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo=&#34;&#xA;    &gt;&#xA;        已加密，请输入密码&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;script&gt;&#xA;    &#xA;    async function decrypt() {&#xA;        try {&#xA;            const input = document.getElementById(&#39;crypto-password&#39;);&#xA;            const output = document.getElementById(&#39;crypto-output&#39;);&#xA;            const form = document.querySelector(&#39;.crypto-form&#39;);&#xA;&#xA;            &#xA;            if(!input?.value) {&#xA;                showError(&#39;请输入密码&#39;);&#xA;                return;&#xA;            }&#xA;&#xA;            const password = input.value;&#xA;            const publishDate = &#34;2424251224&#34;;&#xA;            const hash = await sha256(password + publishDate);&#xA;            const targetHash = await sha256( &#34;公告&#34; + publishDate);&#xA;&#xA;            if(hash !== targetHash) {&#xA;                throw new Error(&#39;密码错误&#39;);&#xA;            }&#xA;&#xA;            const base64 = output.getAttribute(&#39;data-content&#39;);&#xA;            const decoder = new TextDecoder();&#xA;            const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));&#xA;            output.innerHTML = decoded;&#xA;            console.log(decoded);&#xA;            form.style.display = &#39;none&#39;;&#xA;        } catch(e) {&#xA;          console.log(e)&#xA;            showError(&#39;密码错误，请重试&#39;);&#xA;        }&#xA;    }&#xA;&#xA;    &#xA;    async function sha256(text) {&#xA;        const encoder = new TextEncoder();&#xA;        const data = encoder.encode(text);&#xA;        const hash = await crypto.subtle.digest(&#39;SHA-256&#39;, data);&#xA;        return Array.from(new Uint8Array(hash))&#xA;            .map(b =&gt; b.toString(16).padStart(2, &#39;0&#39;))&#xA;            .join(&#39;&#39;);&#xA;    }&#xA;&#xA;    &#xA;    function showError(message) {&#xA;        const output = document.getElementById(&#39;crypto-output&#39;);&#xA;        output.textContent = message;&#xA;        output.className = &#39;encrypted-content error-msg&#39;;&#xA;    }&#xA;&lt;/script&gt;&#xA;&#xA;&lt;style&gt;&#xA;    .crypto-content {&#xA;        margin: 0;&#xA;        padding: 0;&#xA;        border: 1px solid #ddd;&#xA;        border-radius: 4px;&#xA;    }&#xA;    .crypto-form {&#xA;        display: flex;&#xA;        gap: 0;&#xA;    }&#xA;    .crypto-input {&#xA;        flex: 1;&#xA;        padding: 0;&#xA;        margin: 1rem 1rem 0 1rem;&#xA;        border: 1px solid #ddd;&#xA;        border-radius: 4px;&#xA;    }&#xA;    .crypto-btn {&#xA;        padding: 0.25rem;&#xA;        margin: 1rem 1rem 0 1rem;&#xA;        background: #4a4a4a;&#xA;        color: white;&#xA;        border: none;&#xA;        border-radius: 4px;&#xA;        cursor: pointer;&#xA;    }&#xA;    .error-msg {&#xA;        color: #ff4444;&#xA;    }&#xA;    .encrypted-content {&#xA;        margin: 0 1rem 1rem 1rem;&#xA;         &#xA;        word-break: break-all;&#xA;    }&#xA;&lt;/style&gt;&#xA;&#xA;&lt;p&gt;123&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

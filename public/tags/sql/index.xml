@@ -1,45 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Sql on caoyang 2002</title><link>https://caoyang2002.vercel.app/tags/sql/</link><description>Recent content in Sql on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/tags/sql/index.xml" rel="self" type="application/rss+xml"/><item><title>SQL 教程</title><link>https://caoyang2002.vercel.app/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/sql/</guid><description>&lt;p style=color:red;> 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p>
-&lt;h1 id="数据库相关的操作">数据库相关的操作&lt;/h1>
-&lt;p>查询数据库	 &lt;code>SHOW DATABASES&lt;/code>&lt;/p>
-&lt;p>创建数据库
-&lt;code>CREATE DATABASE 数据库名&lt;/code>
-&lt;code>CREATE DATABASE mydatabase&lt;/code>&lt;/p>
-&lt;p>查看数据库信息
-&lt;code>SHOW CREATE DATABASE 数据库名&lt;/code>
-&lt;code>SHOW CREATE DATABASE database&lt;/code>&lt;/p>
-&lt;p>删除数据库
-&lt;code>DROP DATABASE 数据库名&lt;/code>
-&lt;code>DROP DATABASE mydatabase&lt;/code>&lt;/p>
-&lt;p>使用数据库
-&lt;code>USE 数据库名&lt;/code>
-&lt;code>USE mydatabase&lt;/code>&lt;/p>
-&lt;h1 id="ddl语句-数据定义语言">DDL语句	 数据定义语言&lt;/h1>
-&lt;p>创建表&lt;/p>
-
-
-
-
-
-
-
-
-
-
-&lt;div>
- &lt;pre>&lt;code class="language-sql" data-lang="sql">CREATE TABLE 表名(
- 列名1 类型[长度] [DEFAULT 默认值] [约束条件]
- 列名2 类型
- ……
-);
-
-CREATE TABLE userinfo(
- id INT
- username VARCHAR(32)
- password VARCHAR(32)
- nickname VARCHAR(32)
- age INT(3)
-);&lt;/code>&lt;/pre>
-&lt;/div>
-
-&lt;p>查看当前数据库创建的所有表
-&lt;code>SHOW TABLES;&lt;/code>&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sql on caoyang 2002</title>
+    <link>http://localhost:1313/tags/sql/</link>
+    <description>Recent content in Sql on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL 教程</title>
+      <link>http://localhost:1313/post/2024/04/sql/</link>
+      <pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate>
+      <guid>http://localhost:1313/post/2024/04/sql/</guid>
+      <description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;&#xA;&lt;h1 id=&#34;数据库相关的操作&#34;&gt;数据库相关的操作&lt;/h1&gt;&#xA;&lt;p&gt;查询数据库&#x9; &lt;code&gt;SHOW DATABASES&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;创建数据库&#xA;&lt;code&gt;CREATE DATABASE 数据库名&lt;/code&gt;&#xA;&lt;code&gt;CREATE DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;查看数据库信息&#xA;&lt;code&gt;SHOW CREATE DATABASE 数据库名&lt;/code&gt;&#xA;&lt;code&gt;SHOW CREATE DATABASE database&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;删除数据库&#xA;&lt;code&gt;DROP DATABASE 数据库名&lt;/code&gt;&#xA;&lt;code&gt;DROP DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;&#xA;&lt;p&gt;使用数据库&#xA;&lt;code&gt;USE 数据库名&lt;/code&gt;&#xA;&lt;code&gt;USE mydatabase&lt;/code&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;ddl语句-数据定义语言&#34;&gt;DDL语句&#x9; 数据定义语言&lt;/h1&gt;&#xA;&lt;p&gt;创建表&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-sql&#34; data-lang=&#34;sql&#34;&gt;CREATE TABLE 表名(&#xA;   列名1 类型[长度] [DEFAULT 默认值] [约束条件]&#xA;   列名2 类型&#xA;   ……&#xA;);&#xA;&#xA;CREATE TABLE userinfo(&#xA;   id INT&#xA;   username VARCHAR(32)&#xA;   password VARCHAR(32)&#xA;   nickname VARCHAR(32)&#xA;   age INT(3)&#xA;);&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;查看当前数据库创建的所有表&#xA;&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

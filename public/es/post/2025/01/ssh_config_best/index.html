@@ -1,0 +1,1850 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="es-ES"
+    dir="ltr"
+>
+    
+    
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+        body {
+            background-image: url("/images/ui/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        html,
+        body {
+            min-height: 100vh;
+        }
+    </style>
+    
+    <script
+        charset="UTF-8"
+        id="LA_COLLECT"
+        src="//sdk.51.la/js-sdk-pro.min.js"
+    ></script>
+    <script>
+        LA.init({ id: "3L3XAvCJS5maI7j0", ck: "3L3XAvCJS5maI7j0" });
+    </script>
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>更好的 zsh 配置 - caoyang2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="zsh 配置
+安装 oh my zsh
+
+
+
+
+
+
+
+
+
+
+
+    sh -c &#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;
+
+
+配置 .zshrc
+
+
+
+
+
+
+
+
+
+
+
+    
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH=&#34;$HOME/.oh-my-zsh&#34;
+
+# Set name of the theme to load --- if set to &#34;random&#34;, it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME=&#34;robbyrussell&#34;
+ZSH_THEME=&#34;amuse&#34;
+# theme:
+# git: xiong-chiamiov-plus amuse powerlevel10k
+# time: crunch
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE=&#34;true&#34;
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE=&#34;true&#34;
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle &#39;:omz:update&#39; mode disabled  # disable automatic updates
+# zstyle &#39;:omz:update&#39; mode auto      # update automatically without asking
+# zstyle &#39;:omz:update&#39; mode reminder  # just remind me to update when it&#39;s time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle &#39;:omz:update&#39; frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=&#34;true&#34;
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS=&#34;true&#34;
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE=&#34;true&#34;
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION=&#34;true&#34;
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34;
+# Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS=&#34;true&#34;
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34;
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34;
+# or set a custom format using the strftime function format specifications,
+# see &#39;man strftime&#39; for details.
+# HIST_STAMPS=&#34;mm/dd/yyyy&#34;
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  extract
+  autojump
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH=&#34;/usr/local/man:$MANPATH&#34;
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export EDITOR=&#39;vim&#39;
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR=&#39;vim&#39;
+# else
+#   export EDITOR=&#39;nvim&#39;
+# fi
+
+# Compilation flags
+# export ARCHFLAGS=&#34;-arch $(uname -m)&#34;
+
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig=&#34;mate ~/.zshrc&#34;
+# alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34;
+
+
+# IDEA path
+#
+
+# PATH env
+source &#34;$HOME/.cargo/env&#34;
+# for autojump https://github.com/wting/autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] &amp;&amp; . /opt/homebrew/etc/profile.d/autojump.sh
+
+# fnm
+# fnm
+FNM_PATH=&#34;$HOME/.local/share/fnm&#34;
+if [ -d &#34;$FNM_PATH&#34; ]; then
+  export PATH=&#34;$FNM_PATH:$PATH&#34;
+  eval &#34;`fnm env`&#34;
+fi
+
+# IDEA path
+export PATH=&#34;/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH&#34;
+export PATH=&#34;/opt/homebrew/opt/dotnet@6/bin:$PATH&#34;
+export PATH=&#34;/home/simons/.local/bin:$PATH&#34;
+export PATH=&#34;/Users/simons/.yarn/bin:/Users/simons/.config/yarn/global:$PATH&#34;
+
+# pnpm
+export PNPM_HOME=&#34;/Users/simons/Library/pnpm&#34;
+case &#34;:$PATH:&#34; in
+  *&#34;:$PNPM_HOME:&#34;*) ;;
+  *) export PATH=&#34;$PNPM_HOME:$PATH&#34; ;;
+esac
+# pnpm end
+#
+#
+
+# poetry
+export PATH=&#34;$HOME/.local/bin:$PATH&#34;
+
+# go
+export PATH=&#34;$PATH:$GOPATH/bin&#34;
+
+
+配置 Github
+生成密钥对
+
+
+
+
+
+
+
+
+
+
+
+    # 生成一对 SSH 密钥
+ssh-keygen -t ed25519 -C &#34;your_email@example.com&#34; # 输入邮箱
+# 启动 SSH 代理，用于管理 SSH 密钥
+eval &#34;$(ssh-agent -s)&#34;
+# 将 SSH 私钥添加到 SSH 代理
+ssh-add ~/.ssh/id_ed25519
+# 显示公钥内容
+cat ~/.ssh/id_ed25519.pub
+
+
+配置 SSH 密钥：
+
+
+将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。" />
+    <meta name="author" content="曹洋 simons" />
+    
+
+    
+    <script src="/js/code-copy.js" defer></script>
+       
+    
+    
+
+    <link rel="preload stylesheet" as="style" href="/bundle.min.1f095e32d40a0e4e5769102bcd31bd821d4bdbe596aaea70cca5e8bbeb930cb6.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/about/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="/twitter.svg" />
+    
+    <link rel="preload" as="image" href="/github.svg" />
+    
+    <link rel="preload" as="image" href="/instagram.svg" />
+    
+    <link rel="preload" as="image" href="/rss.svg" />
+    
+    
+
+    
+    
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+
+    <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        onload="hljs.highlightAll();"
+    ></script>
+
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"
+    ></script>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        
+        <header class="mx-auto flex h-12 px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+
+        <nav
+            class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/es/"
+                >Inicio
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/es/about/"
+                >Acerca de
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/es/contact/"
+                >Contacto
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/es/guestbook/"
+                >Libro de visitas
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/es/search/"
+                >Buscar
+            </a>
+            
+            
+            
+
+            <div class="language-selector">
+                <div class="inline-block text-left dropdown">
+    
+    <div>
+        <p class="selected-language">Español</p>
+    </div>
+
+    
+    <div style="background-color: red; z-index: 1000">
+        
+
+        <ul class="dropdown-menu" id="dropdownMenu">
+            
+            <li>
+                <a
+                    href="/post/2025/01/ssh_config_best/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                >
+                    Chinese
+                </a>
+            </li>
+            
+            <li>
+                <a
+                    href="/en/post/2025/01/ssh_config_best/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                >
+                    English
+                </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</div>
+
+<script>
+    
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownIcon = document.querySelector(".dropdown-icon");
+
+    
+    dropdownButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("show");
+        dropdownButton.parentElement.classList.toggle("open");
+    });
+
+    
+    dropdownMenu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", function () {
+            
+            dropdownButton.textContent = item.textContent + " ";
+            dropdownButton.appendChild(dropdownIcon);
+
+            
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+
+            
+            const selectedValue = item.getAttribute("data-value");
+            console.log("Selected Language:", selectedValue);
+        });
+    });
+
+    
+    document.addEventListener("click", function (event) {
+        if (
+            !dropdownButton.contains(event.target) &&
+            !dropdownMenu.contains(event.target)
+        ) {
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+        }
+    });
+</script>
+
+<style>
+     
+    .dropdown {
+         
+        display: inline-block;
+        margin: 0;
+    }
+
+     
+    .dropdown-menu {
+         
+         
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+         
+         
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+         
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+     
+    .dropdown-menu li {
+        padding: 0.2rem;
+        cursor: pointer;
+        color: #333;
+         
+         
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: transparent;  
+    }
+    .selected-language:hover {
+        color: #0042da;
+    }
+</style>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+     
+    .language-selector {
+        position: relative;  
+        display: inline-block;  
+        z-index: 10;
+    }
+
+     
+    .language-selector .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+    }
+
+    .language-selector:hover .dropdown-menu {
+        display: block;
+    }
+
+     
+    .header-menu:hover {
+        color: #0042da;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .header-menu:hover {
+        color: #0042da;
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">更好的 zsh 配置</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+
+            
+
+            <time>
+                martes, 7 de enero de 2025
+            </time>
+
+            
+            <span class="mx-1">&middot;</span>
+            <span>
+                simons
+            </span>
+            
+            <span class="mx-1">&middot;</span>
+
+            <span class="post-date">
+                本文共 1314
+                个字 ， 预计需要阅读 3
+                分钟
+            </span>
+
+            
+        </div>
+        
+
+        <span class="text-md antialiased opacity-60">
+             
+            <a
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                编程
+            </a>
+             
+            <a
+                href="http://localhost:1313/tags/zsh"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                zsh
+            </a>
+            
+        </span>
+        
+        
+        
+    </div>
+
+    <section><h1 id="zsh-配置">zsh 配置</h1>
+<h2 id="安装-oh-my-zsh">安装 oh my zsh</h2>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">sh -c &#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&#34;</code></pre>
+</div>
+
+<p>配置 <code>.zshrc</code></p>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH=&#34;$HOME/.oh-my-zsh&#34;
+
+# Set name of the theme to load --- if set to &#34;random&#34;, it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME=&#34;robbyrussell&#34;
+ZSH_THEME=&#34;amuse&#34;
+# theme:
+# git: xiong-chiamiov-plus amuse powerlevel10k
+# time: crunch
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( &#34;robbyrussell&#34; &#34;agnoster&#34; )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE=&#34;true&#34;
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE=&#34;true&#34;
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle &#39;:omz:update&#39; mode disabled  # disable automatic updates
+# zstyle &#39;:omz:update&#39; mode auto      # update automatically without asking
+# zstyle &#39;:omz:update&#39; mode reminder  # just remind me to update when it&#39;s time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle &#39;:omz:update&#39; frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=&#34;true&#34;
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS=&#34;true&#34;
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE=&#34;true&#34;
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION=&#34;true&#34;
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS=&#34;%F{yellow}waiting...%f&#34;
+# Caution: this setting can cause issues with multiline prompts in zsh &lt; 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS=&#34;true&#34;
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY=&#34;true&#34;
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# &#34;mm/dd/yyyy&#34;|&#34;dd.mm.yyyy&#34;|&#34;yyyy-mm-dd&#34;
+# or set a custom format using the strftime function format specifications,
+# see &#39;man strftime&#39; for details.
+# HIST_STAMPS=&#34;mm/dd/yyyy&#34;
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git
+  extract
+  autojump
+  zsh-autosuggestions
+  zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH=&#34;/usr/local/man:$MANPATH&#34;
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export EDITOR=&#39;vim&#39;
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR=&#39;vim&#39;
+# else
+#   export EDITOR=&#39;nvim&#39;
+# fi
+
+# Compilation flags
+# export ARCHFLAGS=&#34;-arch $(uname -m)&#34;
+
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig=&#34;mate ~/.zshrc&#34;
+# alias ohmyzsh=&#34;mate ~/.oh-my-zsh&#34;
+
+
+# IDEA path
+#
+
+# PATH env
+source &#34;$HOME/.cargo/env&#34;
+# for autojump https://github.com/wting/autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] &amp;&amp; . /opt/homebrew/etc/profile.d/autojump.sh
+
+# fnm
+# fnm
+FNM_PATH=&#34;$HOME/.local/share/fnm&#34;
+if [ -d &#34;$FNM_PATH&#34; ]; then
+  export PATH=&#34;$FNM_PATH:$PATH&#34;
+  eval &#34;`fnm env`&#34;
+fi
+
+# IDEA path
+export PATH=&#34;/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH&#34;
+export PATH=&#34;/opt/homebrew/opt/dotnet@6/bin:$PATH&#34;
+export PATH=&#34;/home/simons/.local/bin:$PATH&#34;
+export PATH=&#34;/Users/simons/.yarn/bin:/Users/simons/.config/yarn/global:$PATH&#34;
+
+# pnpm
+export PNPM_HOME=&#34;/Users/simons/Library/pnpm&#34;
+case &#34;:$PATH:&#34; in
+  *&#34;:$PNPM_HOME:&#34;*) ;;
+  *) export PATH=&#34;$PNPM_HOME:$PATH&#34; ;;
+esac
+# pnpm end
+#
+#
+
+# poetry
+export PATH=&#34;$HOME/.local/bin:$PATH&#34;
+
+# go
+export PATH=&#34;$PATH:$GOPATH/bin&#34;</code></pre>
+</div>
+
+<h1 id="配置-github">配置 Github</h1>
+<h2 id="生成密钥对">生成密钥对</h2>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash"># 生成一对 SSH 密钥
+ssh-keygen -t ed25519 -C &#34;your_email@example.com&#34; # 输入邮箱
+# 启动 SSH 代理，用于管理 SSH 密钥
+eval &#34;$(ssh-agent -s)&#34;
+# 将 SSH 私钥添加到 SSH 代理
+ssh-add ~/.ssh/id_ed25519
+# 显示公钥内容
+cat ~/.ssh/id_ed25519.pub</code></pre>
+</div>
+
+<h2 id="配置-ssh-密钥">配置 SSH 密钥：</h2>
+<ol>
+<li>
+<p>将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。</p>
+</li>
+<li>
+<p>使用 SSH 克隆仓库或推送代码，无需每次都输入密码。</p>
+</li>
+</ol>
+<h1 id="远程服务器登录">远程服务器登录</h1>
+<p>生成 SSH 密钥。</p>
+<p>将公钥内容复制到远程服务器的 ~/.ssh/authorized_keys 文件中。</p>
+<p>使用 SSH 私钥登录远程服务器，无需输入密码。</p>
+<h1 id="设置-git">设置 Git</h1>
+<ol>
+<li>重新设置 <code>https</code> 为 <code>ssh</code></li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">git remote -v。# 查看协议
+
+ggit remote set-url origin git@github.com:caoyang2002/web3_obsidian.git。# 设置为 ssh
+
+ssh -T git@github.com. # 测试连接</code></pre>
+</div>
+
+<h2 id="配置代理可选">配置代理（可选）</h2>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">export https_proxy=http://127.0.0.1:7897 http_proxy=http://127.0.0.1:7897 all_proxy=socks5://127.0.0.1:7897
+
+export https_proxy=http://192.168.5.1:7890 http_proxy=http://192.168.5.1:7890 all_proxy=socks5://192.168.5.1:7891</code></pre>
+</div>
+
+<p>安装 ts-node</p>
+<p>安装 service</p>
+<h1 id="mysql">Mysql</h1>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-bash" data-lang="bash">brew install mysql
+
+brew services start mysql
+
+mysql_secure_installation
+
+mysql -u root -p
+# 可以直接登录
+
+# 修改密码
+ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED BY &#39;新密码&#39;;
+# or
+SET PASSWORD FOR &#39;root&#39;@&#39;localhost&#39; = PASSWORD(&#39;新密码&#39;);
+
+# 刷新
+FLUSH PRIVILEGES
+
+# 创建新用户
+CREATE USER &#39;新用户名&#39;@&#39;%&#39; IDENTIFIED BY &#39;密码&#39;;
+
+# 授予所有权限
+GRANT ALL PRIVILEGES ON *.* TO &#39;新用户名&#39;@&#39;localhost&#39;;
+
+# 授予特定数据库权限
+GRANT ALL PRIVILEGES ON 数据库名.* TO &#39;新用户名&#39;@&#39;localhost&#39;;
+
+# 授予特定的操作权限
+RANT SELECT, INSERT, UPDATE, DELETE ON 数据库名.* TO &#39;新用户名&#39;@&#39;localhost&#39;;
+
+# 刷新
+FLUSH PRIVILEGES;
+
+# 删除用户
+DROP USER &#39;用户名&#39;@&#39;localhost&#39;;</code></pre>
+</div>
+
+</section>
+
+      
+
+<div class="reward-container">
+    <button
+        class="reward-button"
+        aria-expanded="false"
+        aria-controls="reward-pop"
+    >
+        支持作者
+    </button>
+    <div id="reward-pop" class="reward-popup hidden">
+        <p class="reward-text">感谢支持！🍻</p>
+        <div class="qr-container">
+            <div class="reward-qr">
+                <img
+                    src="/images/payment/wechat.jpg"
+                    alt="微信支付二维码"
+                    loading="lazy"
+                />
+                <p>微信</p>
+            </div>
+            <div class="reward-qr">
+                <img src="/images/payment/alipay.jpg" alt="支付宝二维码" loading="lazy" />
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .reward-container {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .reward-button {
+        padding: 0.5rem 1.25rem;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+    }
+
+    .reward-button:hover {
+        background-color: red;
+        font-size: 1rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .reward-button:active {
+        background-color: red;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .reward-popup {
+        margin-top: 1.5rem;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .reward-popup.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reward-text {
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .reward-text:is(.dark *) {
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .qr-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .reward-qr {
+        text-align: center;
+    }
+
+    .reward-qr img {
+        width: 200px;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .reward-qr img:hover {
+        transform: scale(1.02);
+    }
+
+    .reward-qr p {
+        margin: 0.5rem 0 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .reward-qr p:is(.dark *) {
+        margin: 0.5rem 0 0;
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    const button = document.querySelector(".reward-button");
+    const popup = document.getElementById("reward-pop");
+
+    button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !isExpanded);
+
+        popup.classList.toggle("hidden");
+        setTimeout(() => {
+            popup.classList.toggle("visible");
+        }, 10);
+    });
+</script>
+ 
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/es/post/2025/01/vim_config/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>更好的 vim 配置</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/es/post/2025/01/wasm/"
+            ><span>Wasm</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    <div class="mt-12 rounded-xl" style="text-align: center">
+          
+
+<button class="feedback-trigger" onclick="toggleFeedback()">建议 / 反馈</button>
+<div class="feedback-form hidden">
+    <p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p>
+    <form id="feedback-form" onsubmit="sendFeedback(event)">
+        <input type="text" name="name" placeholder="怎么称呼？" required />
+        
+        <textarea
+            name="message"
+            placeholder="请输入您的建议或意见..."
+            required
+        ></textarea>
+        <button type="submit">发送</button>
+    </form>
+</div>
+
+<style>
+    .feedback-trigger {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+    }
+
+    .feedback-form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .feedback-form.hidden {
+        display: none;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .feedback-form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .feedback-form button {
+        width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function toggleFeedback() {
+        document.querySelector(".feedback-form").classList.toggle("hidden");
+    }
+
+    function sendFeedback(e) {
+        e.preventDefault();
+        const form = e.target;
+        const mailtoLink = `mailto:reggiesimons2cy@gmail.com?subject=http:\/\/localhost:1313\/ Feedback from ${form.name.value}&body=${encodeURIComponent(form.message.value)}%0D%0A%0D%0AFrom: ${form.name.value}%0D%0AEmail: ${form.email.value}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+ 
+    </div>
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.vercel.app";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+            
+            <div class="ml-2 mr-4">
+
+
+<button class="mobile-toc-toggle">
+<svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 522.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 780.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36z" fill="#223D60" p-id="7155"></path><path d="M210.2 229m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7156"></path><path d="M210.2 487m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7157"></path><path d="M210.2 745m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7158"></path></svg>
+</button>
+
+
+<aside class="toc-aside mr-4">
+
+  
+  <div class="toc-container">
+    <div class="toc-header">
+      <h3 class="toc-title">目录</h3>
+
+      <button class="toc-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#zsh-配置">zsh 配置</a>
+      <ul>
+        <li><a href="#安装-oh-my-zsh">安装 oh my zsh</a></li>
+      </ul>
+    </li>
+    <li><a href="#配置-github">配置 Github</a>
+      <ul>
+        <li><a href="#生成密钥对">生成密钥对</a></li>
+        <li><a href="#配置-ssh-密钥">配置 SSH 密钥：</a></li>
+      </ul>
+    </li>
+    <li><a href="#远程服务器登录">远程服务器登录</a></li>
+    <li><a href="#设置-git">设置 Git</a>
+      <ul>
+        <li><a href="#配置代理可选">配置代理（可选）</a></li>
+      </ul>
+    </li>
+    <li><a href="#mysql">Mysql</a></li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+</aside>
+
+
+<style>
+ 
+.toc-aside {
+  position: fixed;
+  top: 6rem;
+  bottom: 4rem;
+  right: 0;
+  width: 16rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+ 
+.toc-container {
+  background: white;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.toc-header {
+  position: sticky;
+  border-radius: 0.5rem 0.5rem 0 0;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.toc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ 
+.mobile-toc-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+   
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-toc-toggle:hover {
+  background: #f3f4f6;
+}
+
+.mobile-toc-toggle .menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 
+.toc-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: --bg;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toc-close:hover {
+  color: #111827;
+}
+
+ 
+.toc {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a:active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+@media (max-width: 912px) {
+  .mobile-toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toc-aside {
+    transform: translateX(100%);
+    width: 80vw;
+    max-width: 20rem;
+  }
+
+  .toc-aside.show {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tocAside = document.querySelector('.toc-aside');
+  const mobileToggle = document.querySelector('.mobile-toc-toggle');
+  const closeButton = document.querySelector('.toc-close');
+
+
+  
+  mobileToggle?.addEventListener('click', () => {
+    tocAside?.classList.add('show');
+  });
+
+  
+  closeButton?.addEventListener('click', () => {
+    tocAside?.classList.remove('show');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 912 &&
+        tocAside?.classList.contains('show') &&
+        !tocAside.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      tocAside.classList.remove('show');
+    }
+  });
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+
+});
+</script>
+</div>
+
+            
+        </div>
+
+        <footer class="flex items-center text-xs uppercase h-8">
+    
+    <div class="mr-auto opacity-60">
+         &copy; 2025
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        
+    </div>
+
+    
+    <div>
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+        
+        <p class="link mx-6 opacity-60">
+            本站累计访问次数
+            <span id="busuanzi_value_page_pv"
+                ><i class="fa fa-spinner fa-spin"></i
+            ></span>
+        </p>
+    </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+        
+        
+    </body>
+</html>

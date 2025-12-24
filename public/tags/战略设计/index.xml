@@ -1,1 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>战略设计 on caoyang 2002</title><link>https://caoyang2002.vercel.app/tags/%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1/</link><description>Recent content in 战略设计 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 01 Mar 2025 11:41:12 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/tags/%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>战略设计 on caoyang 2002</title>
+    <link>http://localhost:1313/tags/%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1/</link>
+    <description>Recent content in 战略设计 on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 01 Mar 2025 11:41:12 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%88%98%E7%95%A5%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title>
+      <link>http://localhost:1313/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link>
+      <pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid>
+      <description>&lt;p&gt;2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

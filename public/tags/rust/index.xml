@@ -1,324 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on caoyang 2002</title><link>https://caoyang2002.vercel.app/tags/rust/</link><description>Recent content in Rust on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包">为什么需要闭包？&lt;/h1>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">// 问题1：函数复用
-// 没有闭包时，需要传入所有参数
-fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
-
-// 有了闭包，可以部分应用
-let base = 5;
-let add_five = |x| x &amp;#43; base;
-
-// 问题2：函数式编程需求
-vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
-vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
-
-// 问题3：上下文捕获
-// 没有闭包时很难处理
-struct Context { value: i32 }
-let ctx = Context { value: 42 };
-let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h1 id="闭包是什么">闭包是什么？&lt;/h1>
-&lt;ul>
-&lt;li>闭包是可以捕获其环境的匿名函数&lt;/li>
-&lt;li>它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li>
-&lt;li>闭包 = 函数 + 环境&lt;/li>
-&lt;/ul>
-&lt;h1 id="闭包的优势">闭包的优势&lt;/h1>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">// 1. 简洁的语法
-let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
-
-// 2. 灵活的环境捕获
-let multiplier = 2;
-let double = |x| x * multiplier; // 捕获 multiplier
-
-// 3. 支持函数式编程
-let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
-let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
- .into_iter()
- .filter(|x| x % 2 == 0)
- .collect();&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h1 id="理解闭包">理解闭包&lt;/h1>
-&lt;p>我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p></description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹">引用：你的快递地址和包裹&lt;/h1>
-&lt;p>想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p>
-&lt;ol>
-&lt;li>你家的地址（引用）&lt;/li>
-&lt;li>花瓶本身（值）&lt;/li>
-&lt;/ol>
-&lt;h2 id="为什么我们需要引用">为什么我们需要引用？&lt;/h2>
-&lt;p>让我们看一个具体的问题：&lt;/p>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">fn calculate_length(s: String) -&amp;gt; usize {
- s.len()
-}
-
-let s = String::from(&amp;#34;hello&amp;#34;);
-let len = calculate_length(s);
-println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p></description></item><item><title>rust 闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起">从一个常见问题说起&lt;/h2>
-&lt;p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
-// 如何优雅地复用过滤逻辑？
-let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h2 id="闭包的本质">闭包的本质&lt;/h2>
-&lt;p>Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p>
-&lt;ol>
-&lt;li>函数逻辑&lt;/li>
-&lt;li>捕获的环境变量&lt;/li>
-&lt;/ol>
-&lt;p>让我们通过反编译来看闭包的真实面目：&lt;/p>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">// 表面上的闭包
-let multiplier = 2;
-let closure = |x| x * multiplier;
-
-// 编译器实际生成的结构（简化版）
-struct Closure {
- multiplier: i32,
-}
-
-impl Closure {
- fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
- x * self.multiplier
- }
-}&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h2 id="闭包的三种类型">闭包的三种类型&lt;/h2>
-&lt;p>通过具体案例来理解三种闭包 trait：&lt;/p></description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始">从一个实际问题开始&lt;/h1>
-&lt;p>假设我们在写一个文件处理程序：&lt;/p>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
- std::fs::read_to_string(path) // 这里会返回什么？
-}&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;p>这段代码看似简单，但隐藏着两个基本问题：&lt;/p>
-&lt;ol>
-&lt;li>文件可能不存在&lt;/li>
-&lt;li>即使文件存在，读取过程也可能失败&lt;/li>
-&lt;/ol>
-&lt;p>这就是为什么 Rust 引入了 &lt;code>Result&lt;/code> 和 &lt;code>Option&lt;/code>。&lt;/p>
-&lt;h2 id="option处理有与没有">&lt;code>Option&lt;/code>：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2>
-&lt;h3 id="option-的本质">&lt;code>Option&lt;/code> 的本质&lt;/h3>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">enum Option&amp;lt;T&amp;gt; {
- Some(T), // 有值
- None, // 没有值
-}&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;p>让我们看一个实际例子：&lt;/p>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
- if id == 0 {
- None // 用户不存在
- } else {
- Some(User { id, ... }) // 用户存在
- }
-}
-
-// 使用方式
-match find_user(1) {
- Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
- None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
-}&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h3 id="option-的常用方法">&lt;code>Option&lt;/code> 的常用方法&lt;/h3>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">let x: Option&amp;lt;i32&amp;gt; = Some(5);
-
-// 方法1：unwrap - 危险操作
-let value1 = x.unwrap(); // 如果是 None 会 panic
-
-// 方法2：unwrap_or - 提供默认值
-let value2 = x.unwrap_or(0); // None 时返回0
-
-// 方法3：map - 变换内部值
-let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
-
-// 方法4：and_then - 链式操作
-let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;h2 id="result处理成功与失败">&lt;code>Result&lt;/code>：处理“成功”与“失败”&lt;/h2>
-&lt;h3 id="result-的本质">&lt;code>Result&lt;/code> 的本质&lt;/h3>
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust">
- 
- &lt;div>
- &lt;pre>
- &lt;code class="language-rust">enum Result&amp;lt;T, E&amp;gt; {
- Ok(T), // 成功，包含值 T
- Err(E), // 错误，包含错误 E
-}&lt;/code>&lt;/pre>
- &lt;/div>
- 
-
- 
-&lt;/div>
-
-&lt;p>实际应用示例：&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on caoyang 2002</title>
+    <link>http://localhost:1313/tags/rust/</link>
+    <description>Recent content in Rust on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>简述 Rust 中的闭包</title>
+      <link>http://localhost:1313/post/2025/01/rust_closure_brief/</link>
+      <pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_closure_brief/</guid>
+      <description>&lt;h1 id=&#34;为什么需要闭包&#34;&gt;为什么需要闭包？&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 问题1：函数复用&#xA;// 没有闭包时，需要传入所有参数&#xA;fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }&#xA;&#xA;// 有了闭包，可以部分应用&#xA;let base = 5;&#xA;let add_five = |x| x &amp;#43; base;&#xA;&#xA;// 问题2：函数式编程需求&#xA;vec![1, 2, 3].iter().map(|x| x * 2);  // 更简洁&#xA;vec![1, 2, 3].iter().map(multiply);    // 需要单独定义函数&#xA;&#xA;// 问题3：上下文捕获&#xA;// 没有闭包时很难处理&#xA;struct Context { value: i32 }&#xA;let ctx = Context { value: 42 };&#xA;let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;闭包是什么&#34;&gt;闭包是什么？&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;闭包是可以捕获其环境的匿名函数&lt;/li&gt;&#xA;&lt;li&gt;它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li&gt;&#xA;&lt;li&gt;闭包 = 函数 + 环境&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;闭包的优势&#34;&gt;闭包的优势&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 1. 简洁的语法&#xA;let add = |a, b| a &amp;#43; b;  // vs fn add(a: i32, b: i32) -&amp;gt; i32&#xA;&#xA;// 2. 灵活的环境捕获&#xA;let multiplier = 2;&#xA;let double = |x| x * multiplier;  // 捕获 multiplier&#xA;&#xA;// 3. 支持函数式编程&#xA;let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];&#xA;let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers&#xA;    .into_iter()&#xA;    .filter(|x| x % 2 == 0)&#xA;    .collect();&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;理解闭包&#34;&gt;理解闭包&lt;/h1&gt;&#xA;&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rust 中的引用</title>
+      <link>http://localhost:1313/post/2025/01/rust_ref/</link>
+      <pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_ref/</guid>
+      <description>&lt;h1 id=&#34;引用你的快递地址和包裹&#34;&gt;引用：你的快递地址和包裹&lt;/h1&gt;&#xA;&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;你家的地址（引用）&lt;/li&gt;&#xA;&lt;li&gt;花瓶本身（值）&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;为什么我们需要引用&#34;&gt;为什么我们需要引用？&lt;/h2&gt;&#xA;&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;fn calculate_length(s: String) -&amp;gt; usize {&#xA;    s.len()&#xA;}&#xA;&#xA;let s = String::from(&amp;#34;hello&amp;#34;);&#xA;let len = calculate_length(s);&#xA;println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rust 函数式编程</title>
+      <link>http://localhost:1313/post/2025/01/rust_programming/</link>
+      <pubDate>Wed, 15 Jan 2025 11:48:53 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_programming/</guid>
+      <description>&lt;p&gt;让我用这种方式来讲解 Rust 的函数式编程概念：&lt;/p&gt;&#xA;&lt;h1 id=&#34;引入问题&#34;&gt;引入问题&lt;/h1&gt;&#xA;&lt;p&gt;想象这样一个场景：你需要处理一个电商系统的订单数据。要求：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;过滤出金额大于 100 的订单&lt;/li&gt;&#xA;&lt;li&gt;计算这些订单的总金额&lt;/li&gt;&#xA;&lt;li&gt;给每个订单加上 10% 的折扣&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;传统的命令式编程可能是这样：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;let mut total = 0;&#xA;for order in orders {&#xA;    if order.amount &amp;gt; 100 {&#xA;        total &amp;#43;= order.amount * 0.9;&#xA;    }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这段代码有什么问题？&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;可读性不高：逻辑分散在循环中&lt;/li&gt;&#xA;&lt;li&gt;难以修改：如果要改变处理逻辑，需要修改循环内部&lt;/li&gt;&#xA;&lt;li&gt;难以复用：这段逻辑很难在其他地方重用&lt;/li&gt;&#xA;&lt;li&gt;易出错：可变状态(total)增加了出错风险&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;问题模型&#34;&gt;问题模型&lt;/h1&gt;&#xA;&lt;p&gt;我们需要一种方式能够：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rust 生命周期</title>
+      <link>http://localhost:1313/post/2025/01/rust_cyc/</link>
+      <pubDate>Wed, 15 Jan 2025 11:41:27 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_cyc/</guid>
+      <description>&lt;p&gt;让我系统地分析 Rust 的生命周期：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;问题场景：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 考虑这个场景：我们需要返回一个引用&#xA;fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {&#xA;    if x.len() &amp;gt; y.len() {&#xA;        x&#xA;    } else {&#xA;        y&#xA;    }&#xA;}&#xA;// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;这个特性是什么：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;生命周期是 Rust 的类型系统中用于确保引用有效性的一种机制&lt;/li&gt;&#xA;&lt;li&gt;它通过标注来告诉编译器多个引用之间的生命周期关系&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;导致这个特性出现的问题：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 问题1：悬垂引用&#xA;let r;&#xA;{&#xA;    let x = 5;&#xA;    r = &amp;amp;x;  // x 在这里就会被销毁&#xA;}&#xA;println!(&amp;#34;{}&amp;#34;, r);  // r 引用了已经无效的内存&#xA;&#xA;// 问题2：引用的有效期不明确&#xA;struct Person&amp;lt;&amp;#39;a&amp;gt; {&#xA;    name: &amp;amp;&amp;#39;a str  // 没有生命周期标注时，不知道这个引用能活多久&#xA;}&#xA;&#xA;// 问题3：函数返回引用时的所有权问题&#xA;fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str {  // 返回引用时需要明确它的有效期&#xA;    data&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;4&#34;&gt;&#xA;&lt;li&gt;解决方案分析：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 方案1：完全避免使用引用，使用所有权&#xA;struct Person {&#xA;    name: String  // 而不是 &amp;amp;str&#xA;}&#xA;// 优点：安全&#xA;// 缺点：性能开销，不够灵活&#xA;&#xA;// 方案2：生命周期标注&#xA;struct Person&amp;lt;&amp;#39;a&amp;gt; {&#xA;    name: &amp;amp;&amp;#39;a str&#xA;}&#xA;// 优点：既安全又灵活&#xA;// 缺点：语法复杂度增加&#xA;&#xA;// 方案3：使用智能指针&#xA;struct Person {&#xA;    name: Rc&amp;lt;String&amp;gt;&#xA;}&#xA;// 优点：灵活性高&#xA;// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;5&#34;&gt;&#xA;&lt;li&gt;最佳解决方案 - 生命周期标注：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 1. 函数中的生命周期标注&#xA;fn longest&amp;lt;&amp;#39;a&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;a str) -&amp;gt; &amp;amp;&amp;#39;a str {&#xA;    if x.len() &amp;gt; y.len() {&#xA;        x&#xA;    } else {&#xA;        y&#xA;    }&#xA;}&#xA;&#xA;// 2. 结构体中的生命周期标注&#xA;struct Book&amp;lt;&amp;#39;a&amp;gt; {&#xA;    title: &amp;amp;&amp;#39;a str,&#xA;    author: &amp;amp;&amp;#39;a str,&#xA;}&#xA;&#xA;// 3. impl 块中的生命周期标注&#xA;impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {&#xA;    fn get_title(&amp;amp;self) -&amp;gt; &amp;amp;str {&#xA;        self.title&#xA;    }&#xA;}&#xA;&#xA;// 4. 多个生命周期参数&#xA;fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {&#xA;    x&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;6&#34;&gt;&#xA;&lt;li&gt;生命周期最佳实践：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 1. 生命周期省略规则&#xA;fn first_word(s: &amp;amp;str) -&amp;gt; &amp;amp;str {  // 隐含 &amp;lt;&amp;#39;a&amp;gt;&#xA;    // ...&#xA;}&#xA;&#xA;// 2. 静态生命周期&#xA;let static_str: &amp;amp;&amp;#39;static str = &amp;#34;I live forever&amp;#34;;&#xA;&#xA;// 3. 生命周期约束&#xA;fn print_type&amp;lt;T: Display &amp;#43; &amp;#39;static&amp;gt;(t: T) {&#xA;    println!(&amp;#34;{}&amp;#34;, t);&#xA;}&#xA;&#xA;// 4. 正确使用 &amp;#39;static&#xA;// 好的做法&#xA;const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;&#xA;&#xA;// 避免过度使用 &amp;#39;static&#xA;// 不好的做法&#xA;fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {&#xA;    data&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;ol start=&#34;7&#34;&gt;&#xA;&lt;li&gt;结论总结：&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;生命周期是 Rust 独特的解决内存安全的机制&lt;/li&gt;&#xA;&lt;li&gt;它在编译时就能发现潜在的内存问题&lt;/li&gt;&#xA;&lt;li&gt;主要用途：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;防止悬垂引用&lt;/li&gt;&#xA;&lt;li&gt;确保引用的有效性&lt;/li&gt;&#xA;&lt;li&gt;管理数据的生存期&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;使用建议：&#xA;&lt;ol&gt;&#xA;&lt;li&gt;优先使用生命周期省略规则&lt;/li&gt;&#xA;&lt;li&gt;需要时才显式标注&lt;/li&gt;&#xA;&lt;li&gt;谨慎使用 &amp;lsquo;static&lt;/li&gt;&#xA;&lt;li&gt;理解借用检查器的错误信息&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;通过这个特性，Rust 在编译时就能保证内存安全，而不需要运行时垃圾回收，这是它的一个重要优势。虽然生命周期标注增加了一些代码复杂度，但这是为了内存安全付出的必要成本。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>深入理解 Rust 所有权机制</title>
+      <link>http://localhost:1313/post/2025/01/rust_ownership/</link>
+      <pubDate>Wed, 15 Jan 2025 11:38:20 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_ownership/</guid>
+      <description>&lt;h1 id=&#34;从一个常见问题说起&#34;&gt;从一个常见问题说起&lt;/h1&gt;&#xA;&lt;p&gt;看这段在其他语言中很普通的代码：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;fn main() {&#xA;    let data = vec![1, 2, 3];&#xA;    process_data(data);&#xA;    println!(&amp;#34;{:?}&amp;#34;, data);  // 编译错误！&#xA;}&#xA;&#xA;fn process_data(v: Vec&amp;lt;i32&amp;gt;) {&#xA;    println!(&amp;#34;Processing: {:?}&amp;#34;, v);&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。&lt;/p&gt;&#xA;&lt;h2 id=&#34;所有权的三条核心规则&#34;&gt;所有权的三条核心规则&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;每个值只能有一个所有者&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;所有者离开作用域，值将被丢弃&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;一个值同一时刻只能有一个所有者&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;让我们通过代码详细理解这些规则：&lt;/p&gt;&#xA;&lt;h3 id=&#34;规则1单一所有权&#34;&gt;规则1：单一所有权&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);&#xA;let s2 = s1;  // 所有权从s1转移到s2&#xA;// println!(&amp;#34;{}&amp;#34;, s1);  // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;内存布局变化：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>rust 闭包</title>
+      <link>http://localhost:1313/post/2025/01/rust_closure/</link>
+      <pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_closure/</guid>
+      <description>&lt;h2 id=&#34;从一个常见问题说起&#34;&gt;从一个常见问题说起&lt;/h2&gt;&#xA;&lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;let numbers = vec![1, 2, 3, 4, 5];&#xA;// 如何优雅地复用过滤逻辑？&#xA;let even_numbers = ??? // 这里怎么写&#xA;let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;闭包的本质&#34;&gt;闭包的本质&lt;/h2&gt;&#xA;&lt;p&gt;Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;函数逻辑&lt;/li&gt;&#xA;&lt;li&gt;捕获的环境变量&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;让我们通过反编译来看闭包的真实面目：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;// 表面上的闭包&#xA;let multiplier = 2;&#xA;let closure = |x| x * multiplier;&#xA;&#xA;// 编译器实际生成的结构（简化版）&#xA;struct Closure {&#xA;    multiplier: i32,&#xA;}&#xA;&#xA;impl Closure {&#xA;    fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {&#xA;        x * self.multiplier&#xA;    }&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;闭包的三种类型&#34;&gt;闭包的三种类型&lt;/h2&gt;&#xA;&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title>
+      <link>http://localhost:1313/post/2025/01/rust_result_option/</link>
+      <pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_result_option/</guid>
+      <description>&lt;h1 id=&#34;从一个实际问题开始&#34;&gt;从一个实际问题开始&lt;/h1&gt;&#xA;&lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {&#xA;    std::fs::read_to_string(path)  // 这里会返回什么？&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这段代码看似简单，但隐藏着两个基本问题：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;文件可能不存在&lt;/li&gt;&#xA;&lt;li&gt;即使文件存在，读取过程也可能失败&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;这就是为什么 Rust 引入了 &lt;code&gt;Result&lt;/code&gt; 和 &lt;code&gt;Option&lt;/code&gt;。&lt;/p&gt;&#xA;&lt;h2 id=&#34;option处理有与没有&#34;&gt;&lt;code&gt;Option&lt;/code&gt;：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2&gt;&#xA;&lt;h3 id=&#34;option-的本质&#34;&gt;&lt;code&gt;Option&lt;/code&gt; 的本质&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;enum Option&amp;lt;T&amp;gt; {&#xA;    Some(T),    // 有值&#xA;    None,       // 没有值&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;让我们看一个实际例子：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {&#xA;    if id == 0 {&#xA;        None                    // 用户不存在&#xA;    } else {&#xA;        Some(User { id, ... })  // 用户存在&#xA;    }&#xA;}&#xA;&#xA;// 使用方式&#xA;match find_user(1) {&#xA;    Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),&#xA;    None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h3 id=&#34;option-的常用方法&#34;&gt;&lt;code&gt;Option&lt;/code&gt; 的常用方法&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);&#xA;&#xA;// 方法1：unwrap - 危险操作&#xA;let value1 = x.unwrap();  // 如果是 None 会 panic&#xA;&#xA;// 方法2：unwrap_or - 提供默认值&#xA;let value2 = x.unwrap_or(0);  // None 时返回0&#xA;&#xA;// 方法3：map - 变换内部值&#xA;let value3 = x.map(|n| n * 2);  // Some(5) -&amp;gt; Some(10)&#xA;&#xA;// 方法4：and_then - 链式操作&#xA;let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;result处理成功与失败&#34;&gt;&lt;code&gt;Result&lt;/code&gt;：处理“成功”与“失败”&lt;/h2&gt;&#xA;&lt;h3 id=&#34;result-的本质&#34;&gt;&lt;code&gt;Result&lt;/code&gt; 的本质&lt;/h3&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;rust&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-rust&#34;&gt;enum Result&amp;lt;T, E&amp;gt; {&#xA;    Ok(T),    // 成功，包含值 T&#xA;    Err(E),   // 错误，包含错误 E&#xA;}&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;实际应用示例：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>rust 中的属性宏</title>
+      <link>http://localhost:1313/post/2025/01/rust_macro/</link>
+      <pubDate>Wed, 15 Jan 2025 11:16:52 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/rust_macro/</guid>
+      <description>&lt;h1 id=&#34;deriveclone-debug-serialize-deserialize-eq-partialeq&#34;&gt;&lt;code&gt;#[derive(Clone, Debug, Serialize, Deserialize, Eq, PartialEq)]&lt;/code&gt;&lt;/h1&gt;&#xA;&lt;p&gt;这是 Rust 语言中的属性宏(attribute macro)声明，用于自动为数据结构实现一些常用的特性(traits)。让我详细解释每个部分：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;code&gt;derive&lt;/code&gt; - 这是 Rust 的派生宏，用于自动生成特定 trait 的实现&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;括号里的每个特性具体作用是：&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;Clone&lt;/code&gt; - 允许类型创建自身的深拷贝&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Debug&lt;/code&gt; - 实现格式化调试输出，使用 &lt;code&gt;{:?}&lt;/code&gt; 格式说明符可以打印该类型&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Serialize&lt;/code&gt; - 来自 serde 库，使类型可以被序列化(比如转换成 JSON)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Deserialize&lt;/code&gt; - 也来自 serde 库，使类型可以被反序列化(比如从 JSON 转换回来)&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;Eq&lt;/code&gt; - 实现完全相等比较&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;PartialEq&lt;/code&gt; - 实现部分相等比较，允许使用 &lt;code&gt;==&lt;/code&gt; 和 &lt;code&gt;!=&lt;/code&gt; 运算符&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;这种写法可以让我们避免手动实现这些特性，编译器会自动为我们生成实现代码。这在定义数据结构时非常常用，特别是在需要序列化/反序列化数据的场景中。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
