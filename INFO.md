@@ -1,9 +1,8 @@
 https://www.gohugo.org/doc/
 git pull --recurse-submodules
 
-https://caoyang2002.xyz
 https://caoyang2002.vercel.app
-https://caoyang2002.pages.dev
+https://caoyang2002.vercel.app
 https://caoyang2002.github.io/caoyang2002
 
 

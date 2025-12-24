@@ -1,0 +1,201 @@
+<!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{background-image:url(/images/ui/background.jpg);background-repeat:no-repeat;background-position:50%;background-attachment:fixed;background-size:cover;min-height:100vh}html,body{min-height:100vh}</style><script id=LA_COLLECT src=//sdk.51.la/js-sdk-pro.min.js></script><script>LA.init({id:"3L3XAvCJS5maI7j0",ck:"3L3XAvCJS5maI7j0"})</script><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Rust 中的引用 - caoyang 2002</title>
+<meta name=theme-color><meta name=description content='引用：你的快递地址和包裹
+想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：
+
+你家的地址（引用）
+花瓶本身（值）
+
+为什么我们需要引用？
+让我们看一个具体的问题：
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+                fn calculate_length(s: String) -> usize {
+    s.len()
+}
+
+let s = String::from("hello");
+let len = calculate_length(s);
+println!("{}", s); // 编译错误！s 已经被转移了所有权
+    
+    
+
+    
+
+
+这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。'><meta name=author content="曹洋 simons"><script src=/js/code-copy.js defer></script><link rel="preload stylesheet" as=style href=https://caoyang2002.vercel.app/bundle.min.css><link rel=preload as=image href=https://caoyang2002.vercel.app/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=https://caoyang2002.vercel.app/twitter.svg><link rel=preload as=image href=https://caoyang2002.vercel.app/github.svg><link rel=preload as=image href=https://caoyang2002.vercel.app/instagram.svg><link rel=preload as=image href=https://caoyang2002.vercel.app/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script defer src=https://caoyang2002.vercel.app/highlight.min.js onload=hljs.initHighlightingOnLoad()></script><script>window.onload=function(){hljs.highlightAll()}</script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/lisp.min.js></script><script src=//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/languages/mariadb.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=https://caoyang2002.vercel.app/favicon.ico><link rel=apple-touch-icon href=https://caoyang2002.vercel.app/apple-touch-icon.png><meta name=generator content="Hugo 0.140.2"><meta itemprop=name content="Rust 中的引用"><meta itemprop=description content='引用：你的快递地址和包裹 想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：
+你家的地址（引用） 花瓶本身（值） 为什么我们需要引用？ 让我们看一个具体的问题：
+fn calculate_length(s: String) -> usize { s.len() } let s = String::from("hello"); let len = calculate_length(s); println!("{}", s); // 编译错误！s 已经被转移了所有权 这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。'><meta itemprop=datePublished content="2025-01-15T11:57:02+08:00"><meta itemprop=dateModified content="2025-01-22T22:41:30+08:00"><meta itemprop=wordCount content="2021"><meta itemprop=keywords content="编程,Rust"><meta property="og:url" content="https://caoyang2002.vercel.app/post/2025/01/rust_ref/"><meta property="og:site_name" content="caoyang 2002"><meta property="og:title" content="Rust 中的引用"><meta property="og:description" content='引用：你的快递地址和包裹 想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：
+你家的地址（引用） 花瓶本身（值） 为什么我们需要引用？ 让我们看一个具体的问题：
+fn calculate_length(s: String) -> usize { s.len() } let s = String::from("hello"); let len = calculate_length(s); println!("{}", s); // 编译错误！s 已经被转移了所有权 这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。'><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-01-15T11:57:02+08:00"><meta property="article:modified_time" content="2025-01-22T22:41:30+08:00"><meta property="article:tag" content="编程"><meta property="article:tag" content="Rust"><meta name=twitter:card content="summary"><meta name=twitter:title content="Rust 中的引用"><meta name=twitter:description content='引用：你的快递地址和包裹 想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：
+你家的地址（引用） 花瓶本身（值） 为什么我们需要引用？ 让我们看一个具体的问题：
+fn calculate_length(s: String) -> usize { s.len() } let s = String::from("hello"); let len = calculate_length(s); println!("{}", s); // 编译错误！s 已经被转移了所有权 这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。'><link rel=canonical href=https://caoyang2002.vercel.app/post/2025/01/rust_ref/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-12 px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://caoyang2002.vercel.app/>caoyang 2002</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/>首页
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/schedule/>日程
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/protfolio/>作品集
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/about/>关于
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/contact/>联系
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/guestbook/>留言
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/resources/>资源
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/booklist/>书单
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/hotlist/>热搜
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/search/>搜索</a><div class=language-selector><div class="inline-block text-left dropdown"><div><p class=selected-language>Chinese</p></div><div style=background-color:red;z-index:1000><ul class=dropdown-menu id=dropdownMenu><li><a href=/en/post/2025/01/rust_ref/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>English</a></li><li><a href=/es/post/2025/01/rust_ref/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Español</a></li></ul></div></div><script>const dropdownButton=document.getElementById("dropdownButton"),dropdownMenu=document.getElementById("dropdownMenu"),dropdownIcon=document.querySelector(".dropdown-icon");dropdownButton.addEventListener("click",function(){dropdownMenu.classList.toggle("show"),dropdownButton.parentElement.classList.toggle("open")}),dropdownMenu.querySelectorAll("li").forEach(e=>{e.addEventListener("click",function(){dropdownButton.textContent=e.textContent+" ",dropdownButton.appendChild(dropdownIcon),dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open");const t=e.getAttribute("data-value");console.log("Selected Language:",t)})}),document.addEventListener("click",function(e){!dropdownButton.contains(e.target)&&!dropdownMenu.contains(e.target)&&(dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open"))})</script><style>.dropdown{display:inline-block;margin:0}.dropdown-menu{background-color:#fff;border:1px solid #ddd;border-radius:8px;padding:0;margin:0;display:none}.dropdown-menu.show{display:block}.dropdown-menu li{padding:.2rem;cursor:pointer;color:#333}.dropdown-menu>li:hover{background-color:transparent}.selected-language:hover{color:#0042da}</style></div></nav></div></header><style>.language-selector{position:relative;display:inline-block;z-index:10}.language-selector .dropdown-menu{display:none;position:absolute;top:100%;right:0;background-color:#fff;border:1px solid #ddd;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,.1);z-index:50}.language-selector:hover .dropdown-menu{display:block}.header-menu:hover{color:#0042da}header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}.header-menu:hover{color:#0042da}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"><article class=text-left><div class="mb-14 mt-8"><h1 class="!my-0 pb-2.5">Rust 中的引用</h1><div class="text-xs antialiased opacity-60"><time>2025年1月15日星期三
+</time><span class=mx-1>&#183;</span>
+<span>simons
+</span><span class=mx-1>&#183;</span>
+<span class=post-date>本文共 2021
+个字 ， 预计需要阅读 5
+分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://caoyang2002.vercel.app/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
+</a><a href=https://caoyang2002.vercel.app/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><h1 id=引用你的快递地址和包裹>引用：你的快递地址和包裹</h1><p>想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：</p><ol><li>你家的地址（引用）</li><li>花瓶本身（值）</li></ol><h2 id=为什么我们需要引用>为什么我们需要引用？</h2><p>让我们看一个具体的问题：</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn calculate_length(s: String) -&gt; usize {
+    s.len()
+}
+
+let s = String::from(&#34;hello&#34;);
+let len = calculate_length(s);
+println!(&#34;{}&#34;, s); // 编译错误！s 已经被转移了所有权</code></pre></div></div><p>这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。</p><h2 id=引用的本质是什么>引用的本质是什么？</h2><p>引用就像是地址，它告诉我们值在哪里，但不拥有值本身。就像快递员拿着你家的地址，但房子依然是你的。</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn calculate_length(s: &amp;String) -&gt; usize {  // 借用花瓶
+    s.len()
+}
+
+let s = String::from(&#34;hello&#34;);
+let len = calculate_length(&amp;s);  // 给出地址
+println!(&#34;{}&#34;, s);  // 可以使用！因为我们只是借出去看看</code></pre></div></div><h2 id=引用的规则>引用的规则</h2><h3 id=1-不可变引用>1. 不可变引用</h3><p>就像快递员只能看看你的花瓶，不能重新给它上色：</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn modify(s: &amp;String) {
+    s.push_str(&#34;world&#34;);  // 编译错误！不能修改借用的值
+}</code></pre></div></div><h3 id=2-可变引用>2. 可变引用</h3><p>有时候我们确实需要让快递员修改花瓶（比如补个裂缝）：</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn modify(s: &amp;mut String) {
+    s.push_str(&#34;world&#34;);  // OK！可以修改
+}
+
+let mut s = String::from(&#34;hello&#34;);
+modify(&amp;mut s);</code></pre></div></div><h3 id=3-引用的限制>3. 引用的限制</h3><p>就像一个花瓶同一时间：</p><ul><li>要么可以有多个人在看（多个不可变引用）</li><li>要么只能有一个人在修改（一个可变引用）</li><li>但不能同时发生</li></ul><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>let mut s = String::from(&#34;hello&#34;);
+
+let r1 = &amp;s;     // ok
+let r2 = &amp;s;     // ok
+let r3 = &amp;mut s; // 编译错误！不能同时有可变和不可变引用
+
+println!(&#34;{}, {}&#34;, r1, r2);</code></pre></div></div><h2 id=实战经验>实战经验</h2><ol><li>使用引用的最佳实践：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 好的实践：使用引用避免不必要的所有权转移
+fn process(data: &amp;Vec&lt;i32&gt;) {
+    // 处理数据但不需要所有权
+}
+
+// 不好的实践：不必要的所有权转移
+fn process(data: Vec&lt;i32&gt;) {
+    // 获取了所有权但其实不需要
+}</code></pre></div></div><ol start=2><li>生命周期问题：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn danger() -&gt; &amp;String {        // 编译错误！
+    let s = String::from(&#34;hello&#34;);
+    &amp;s  // s 要被销毁了，不能返回它的引用
+}</code></pre></div></div><p>这就像快递员记录了一个即将拆迁的房子的地址 —— 等他送货时，房子已经不在了。</p><h2 id=引用的方法论>引用的方法论</h2><ol><li><p>所有权原则：</p><ul><li>值同时只能有一个所有者</li><li>引用不获取所有权，只是借用</li></ul></li><li><p>借用规则：</p><ul><li>要么多个不可变引用</li><li>要么一个可变引用</li><li>引用必须总是有效的</li></ul></li><li><p>实践指导：</p><ul><li>优先使用不可变引用</li><li>仅在必要时使用可变引用</li><li>注意引用的生命周期</li></ul></li></ol><p>通过这样的理解，Rust 的引用机制就不再神秘。它就像现实世界中的地址和借用概念，帮助我们安全高效地管理内存。记住：引用就是地址，借用就是临时使用权，这两个概念将帮助你更好地理解和使用 Rust 的引用系统。</p><h1 id=引用实践看似简单实则暗藏玄机>引用实践，看似简单实则暗藏玄机</h1><p>在我们日常开发中，经常会遇到这样的问题：</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 场景1：我想传递一个很大的数据结构
+struct BigData {
+    data: [u8; 1024 * 1024]  // 1MB 数据
+}
+
+fn process_data(data: BigData) {  // 每次调用都要拷贝1MB？
+    // 处理数据
+}
+
+// 场景2：多个地方需要读取同一个数据
+let data = String::from(&#34;hello&#34;);
+let data2 = data;  // data 的所有权被移动了
+println!(&#34;{}&#34;, data);  // 编译错误！</code></pre></div></div><p>这些问题归结为一个核心矛盾：<strong>我们既想高效地共享数据，又要保证内存安全</strong>。</p><h1 id=为什么传统方案不够好>为什么传统方案不够好？</h1><p>让我们看看其他语言是怎么处理的：</p><h2 id=cc-的指针方案>C/C++ 的指针方案</h2><div class=code-playground data-language=cpp><div><pre>
+                <code class=language-cpp>void process(Data* data) {
+    data-&gt;field = 100;  // 随意修改
+    delete data;        // 随意释放
+    data-&gt;field = 200;  // 使用已释放的内存！
+}</code></pre></div></div><p>问题：</p><ul><li>可能出现悬垂指针</li><li>可能重复释放</li><li>数据竞争随处可见</li></ul><h2 id=java-的引用方案>Java 的引用方案</h2><div><pre><code class=language-java data-lang=java>void process(Data data) {
+    // 安全但是：
+    // 1. 需要GC，性能开销大
+    // 2. 没有解决并发修改的问题
+}</code></pre></div><h2 id=go-的指针方案>Go 的指针方案</h2><div class=code-playground data-language=go><div><pre>
+                <code class=language-go>func process(data *Data) {
+    // 安全性好，但是：
+    // 1. 没有生命周期控制
+    // 2. 并发安全需要额外机制
+}</code></pre></div></div><h1 id=rust-的借用检查器安全与性能的完美平衡>Rust 的借用检查器：安全与性能的完美平衡</h1><p>Rust 通过引用解决了这个问题：</p><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 基本语法
+let x = 5;
+let r = &amp;x;    // 不可变引用
+let rm = &amp;mut x;  // 可变引用
+
+// 引用规则
+fn process(data: &amp;BigData) {  // 借用数据，无需拷贝
+    println!(&#34;{:?}&#34;, data);
+    // data 会自动归还，无需手动释放
+}</code></pre></div></div><h2 id=为什么这样设计>为什么这样设计？</h2><ol><li>所有权系统保证了资源的正确管理：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>let s1 = String::from(&#34;hello&#34;);
+let s2 = &amp;s1;    // s1 仍然拥有所有权
+println!(&#34;{}, {}&#34;, s1, s2);  // 都可以使用
+// s2 在这里自动失效
+drop(s1);  // 只有所有者负责清理</code></pre></div></div><ol start=2><li>借用规则保证了内存安全：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>let mut data = String::from(&#34;hello&#34;);
+
+// 规则1：同一时刻，只能有多个不可变引用或一个可变引用
+let r1 = &amp;data;
+let r2 = &amp;data;     // OK：多个不可变引用
+let rm = &amp;mut data; // 错误！已经有不可变引用了
+
+// 规则2：引用不能比它引用的数据存活更久
+let r;
+{
+    let x = 5;
+    r = &amp;x;  // 错误：x 的生命周期太短
+}
+println!(&#34;{}&#34;, r);</code></pre></div></div><h1 id=最佳实践>最佳实践</h1><ol><li>优先使用不可变引用：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 好的做法
+fn process(data: &amp;BigData) {
+    // 只读访问
+}
+
+// 不好的做法
+fn process(data: &amp;mut BigData) {
+    // 除非真的需要修改
+}</code></pre></div></div><ol start=2><li>合理使用生命周期标注：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 当需要在结构体中存储引用时
+struct Cache&lt;&#39;a&gt; {
+    data: &amp;&#39;a str
+}</code></pre></div></div><ol start=3><li>避免复杂的引用关系：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>// 避免这样的代码
+struct Node&lt;&#39;a&gt; {
+    next: Option&lt;&amp;&#39;a mut Node&lt;&#39;a&gt;&gt;
+}</code></pre></div></div><h1 id=引用的威力一些实际例子>引用的威力：一些实际例子</h1><ol><li>高效的字符串处理：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>fn process_string(s: &amp;str) {
+    // 直接使用字符串切片，无需拷贝
+}
+
+let string = String::from(&#34;hello&#34;);
+process_string(&amp;string);  // 借用而不是移动</code></pre></div></div><ol start=2><li>集合的遍历：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>let vec = vec![1, 2, 3, 4, 5];
+for item in &amp;vec {  // 借用遍历，无需获取所有权
+    println!(&#34;{}&#34;, item);
+}
+// vec 仍然可用</code></pre></div></div><ol start=3><li>方法实现：</li></ol><div class=code-playground data-language=rust><div><pre>
+                <code class=language-rust>impl MyStruct {
+    fn get_data(&amp;self) -&gt; &amp;str {  // self 的引用
+        &amp;self.data
+    }
+}</code></pre></div></div><h1 id=关键思维模型>关键思维模型</h1><ol><li><p>地址思维：
+引用是地址，不是值本身</p></li><li><p>借用思维：
+临时使用权，不是所有权</p></li><li><p>安全思维：
+编译器确保所有借用都是安全的</p></li></ol><h1 id=总结>总结</h1><p>Rust 的引用系统看似复杂，实则体现了以下核心原则：</p><ol><li>安全性：通过借用检查器在编译期防止常见的内存问题</li><li>性能：零成本抽象，运行时无额外开销</li><li>人体工程学：符合直觉的所有权和借用规则</li></ol><p>掌握引用，你就掌握了 Rust 最核心的特性之一。它不仅能帮你写出更安全的代码，还能帮你获得更好的性能。记住：<strong>引用不是为了限制你，而是为了保护你</strong>。</p><p>这就像是生活中的借用：你可以借别人的书看，但不能撕掉书页；可以同时借给多人看，但不能在有人看的时候去修改内容。这些规则不是限制，而是让所有人都能安全愉快地共享资源。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>简述 Rust 中的闭包</span></a>
+<a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://caoyang2002.vercel.app/post/2025/01/rust_closure/><span>rust 闭包</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
+<textarea name=message placeholder=请输入您的建议或意见... required></textarea>
+<button type=submit>发送</button></form></div><style>.feedback-trigger{background:#007bff;color:#fff;border:none;padding:.25rem .5rem;border-radius:12px;cursor:pointer;box-shadow:0 2px 5px rgba(0,0,0,.2);margin:1rem}.feedback-form{background:#fff;padding:20px;border-radius:8px;box-shadow:0 2px 10px rgba(0,0,0,.1);margin-bottom:10px}.feedback-form.hidden{display:none}.feedback-form input,.feedback-form textarea{width:100%;margin-bottom:10px;padding:8px;border:1px solid #ddd;border-radius:4px}.feedback-form textarea{height:100px;resize:vertical}.feedback-form button{width:100%;background:#007bff;color:#fff;border:none;padding:8px;border-radius:4px;cursor:pointer}</style><script>function toggleFeedback(){document.querySelector(".feedback-form").classList.toggle("hidden")}function sendFeedback(e){e.preventDefault();const t=e.target,n=`mailto:reggiesimons2cy@gmail.com?subject=https://caoyang2002.vercel.app/ Feedback from ${t.name.value}&body=${encodeURIComponent(t.message.value)}%0D%0A%0D%0AFrom: ${t.name.value}%0D%0AEmail: ${t.email.value}`;window.location.href=n}</script></div><div class="mt-24 w-100rem" id=disqus_thread></div><script>const disqusShortname="caoyang2002.vercel.app",script=document.createElement("script");script.src="https://"+disqusShortname+".disqus.com/embed.js",script.setAttribute("data-timestamp",+new Date),document.head.appendChild(script)</script><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.css><script src=https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js></script><div class="giscus mt-24"></div><script src=https://giscus.app/client.js data-repo=caoyang2002/caoyang2002 data-repo-id=R_kgDONgnnzg data-category=Announcements data-category-id=DIC_kwDONgnnzs4ClayH data-mapping=pathname data-strict=0 data-reactions-enabled=1 data-emit-metadata=0 data-input-position=top data-theme=light data-lang=zh-CN data-loading=lazy crossorigin=anonymous async></script></article></main><div class="ml-2 mr-4"><button class=mobile-toc-toggle><svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36zm0 258H378.2c-19.8.0-36-16.2-36-36s16.2-36 36-36h433.5c19.8.0 36 16.2 36 36-.1 19.8-16.3 36-36.1 36z" fill="#223d60" p-id="7155"/><path d="M210.2 229m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7156"/><path d="M210.2 487m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7157"/><path d="M210.2 745m-37.9.0a37.9 37.9.0 1075.8.0 37.9 37.9.0 10-75.8.0z" fill="#223d60" p-id="7158"/></svg></button><aside class="toc-aside mr-4"><div class=toc-container><div class=toc-header><h3 class=toc-title>目录</h3><button class=toc-close><svg viewBox="0 0 24 24" width="24" height="24"><path fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 18 6M6 6l12 12"/></svg></button></div><nav id=TableOfContents class=toc><nav id=TableOfContents><ul><li><a href=#引用你的快递地址和包裹>引用：你的快递地址和包裹</a><ul><li><a href=#为什么我们需要引用>为什么我们需要引用？</a></li><li><a href=#引用的本质是什么>引用的本质是什么？</a></li><li><a href=#引用的规则>引用的规则</a><ul><li><a href=#1-不可变引用>1. 不可变引用</a></li><li><a href=#2-可变引用>2. 可变引用</a></li><li><a href=#3-引用的限制>3. 引用的限制</a></li></ul></li><li><a href=#实战经验>实战经验</a></li><li><a href=#引用的方法论>引用的方法论</a></li></ul></li><li><a href=#引用实践看似简单实则暗藏玄机>引用实践，看似简单实则暗藏玄机</a></li><li><a href=#为什么传统方案不够好>为什么传统方案不够好？</a><ul><li><a href=#cc-的指针方案>C/C++ 的指针方案</a></li><li><a href=#java-的引用方案>Java 的引用方案</a></li><li><a href=#go-的指针方案>Go 的指针方案</a></li></ul></li><li><a href=#rust-的借用检查器安全与性能的完美平衡>Rust 的借用检查器：安全与性能的完美平衡</a><ul><li><a href=#为什么这样设计>为什么这样设计？</a></li></ul></li><li><a href=#最佳实践>最佳实践</a></li><li><a href=#引用的威力一些实际例子>引用的威力：一些实际例子</a></li><li><a href=#关键思维模型>关键思维模型</a></li><li><a href=#总结>总结</a></li></ul></nav></nav></div></aside><style>.toc-aside{position:fixed;top:6rem;bottom:4rem;right:0;width:16rem;z-index:100;transition:transform .3s ease}.toc-container{background:#fff;height:100%;border-radius:.5rem .5rem .5rem .5rem;box-shadow:-2px 0 8px rgba(0,0,0,.1);display:flex;flex-direction:column}.toc-header{position:sticky;border-radius:.5rem .5rem 0 0;top:0;background:#fff;padding:1rem;border-bottom:1px solid #e5e7eb;display:flex;justify-content:space-between;align-items:center;z-index:10}.toc-title{margin:0;font-size:1rem;font-weight:600}.mobile-toc-toggle{display:none;position:fixed;top:6rem;right:1rem;z-index:99;width:3rem;height:3rem;border-radius:50%;background:#fff;border:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,.1);color:#4b5563;cursor:pointer;transition:all .2s}.mobile-toc-toggle:hover{background:#f3f4f6}.mobile-toc-toggle .menu-icon{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}.toc-close{padding:.5rem;background:0 0;border:none;color:--bg;cursor:pointer;transition:all .2s}.toc-close:hover{color:#111827}.toc{flex:1;overflow-y:auto;padding:1rem;scrollbar-gutter:stable}.toc ul{list-style:none;padding-left:1rem;margin:0}.toc li{margin:.5rem 0}.toc a{display:block;padding:.25rem .5rem;color:#4b5563;text-decoration:none;border-radius:.25rem;transition:all .2s}.toc a:hover{background-color:#f3f4f6;color:#111827}.toc a:active{background-color:#f3f4f6;color:#111827;font-weight:500}.toc::-webkit-scrollbar{width:4px}.toc::-webkit-scrollbar-track{background:0 0}.toc::-webkit-scrollbar-thumb{background-color:#d1d1d1;border-radius:4px}@media(max-width:912px){.mobile-toc-toggle{display:flex;justify-content:center;align-items:center}.toc-aside{transform:translateX(100%);width:80vw;max-width:20rem}.toc-aside.show{transform:translateX(0)}}h1,h2,h3,h4,h5,h6{scroll-margin-top:100px}</style><script>document.addEventListener("DOMContentLoaded",()=>{const e=document.querySelector(".toc-aside"),t=document.querySelector(".mobile-toc-toggle"),n=document.querySelector(".toc-close");t?.addEventListener("click",()=>{e?.classList.add("show")}),n?.addEventListener("click",()=>{e?.classList.remove("show")}),document.addEventListener("click",n=>{window.innerWidth<=912&&e?.classList.contains("show")&&!e.contains(n.target)&&!t?.contains(n.target)&&e.classList.remove("show")});const s=new IntersectionObserver(e=>{e.forEach(e=>{const t=e.target.getAttribute("id"),n=document.querySelector(`.toc a[href="#${t}"]`);e.intersectionRatio>0&&(document.querySelectorAll(".toc a.active").forEach(e=>{e.classList.remove("active")}),n?.classList.add("active"))})},{rootMargin:"-20% 0px -80% 0px"});document.querySelectorAll("h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]").forEach(e=>{s.observe(e)})})</script></div></div><footer class="flex items-center text-xs uppercase h-8"><div class="mr-auto opacity-60">&copy; 2025
+<a class=link href=https://caoyang2002.vercel.app/>caoyang 2002</a></div><div><link rel=stylesheet href=//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css><script async src=//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js></script><p class="link mx-6 opacity-60">本站累计访问次数
+<span id=busuanzi_value_page_pv><i class="fa fa-spinner fa-spin"></i></span></p></div><a class="link mx-6 opacity-60" href=https://gohugo.io/ rel=noopener target=_blank>powered by hugo️️</a>️
+<a class="link mx-6 opacity-60" href=https://github.com/nanxiaobei/hugo-paper rel=noopener target=_blank>hugo-paper</a>
+<a class="link opacity-60" href=https://github.com/caoyang2002/hugo-focus rel=noopener target=_blank>hugo-focus</a></footer><style>footer{position:fixed;bottom:0;left:0;right:0;z-index:50;width:100%;padding:.5rem;padding-bottom:calc(.5rem + var(--safe-padding-bottom));padding-left:max(.5rem,var(--safe-padding-left));padding-right:max(.5rem,var(--safe-padding-right));display:flex;justify-content:center;align-items:center;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(12px);background:rgba(255,255,255,.85);border-top:1px solid rgba(255,255,255,.3);box-shadow:0 -4px 20px rgba(0,0,0,5%)}.dark footer{background:rgba(0,0,0,.85);border-top-color:rgba(255,255,255,.1)}.footer-content{width:100%;max-width:var(--w);margin:0 auto;padding:0 1rem;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:1rem}.footer-element{padding:.75rem 1.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.05em;opacity:.8;border-radius:.5rem;background:rgba(255,255,255,.1);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);transition:all .2s ease}.footer-element:hover{opacity:1;background:rgba(255,255,255,.2)}.dark .footer-element{background:rgba(255,255,255,5%)}.dark .footer-element:hover{background:rgba(255,255,255,.1)}@media(max-width:768px){footer{padding-top:.5rem;padding-bottom:calc(.5rem + env(safe-area-inset-bottom))}.footer-content{padding:0 .5rem;gap:.5rem}.footer-element{padding:.5rem 1rem;font-size:.75rem}}@media(min-width:768px){.footer-element{font-size:.875rem}}@media(min-width:1024px){.footer-content{padding:0 2rem;gap:2rem}.footer-element{padding:.75rem 2rem}}</style></body></html>

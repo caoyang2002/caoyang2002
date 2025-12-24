@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>营销 on caoyang 2002</title><link>https://caoyang2002.vercel.app/categories/%E8%90%A5%E9%94%80/</link><description>Recent content in 营销 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 10 Jun 2025 08:53:50 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/categories/%E8%90%A5%E9%94%80/index.xml" rel="self" type="application/rss+xml"/><item><title>营销的产品思维</title><link>https://caoyang2002.vercel.app/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</link><pubDate>Tue, 10 Jun 2025 08:53:50 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</guid><description>&lt;p>知名产品经理俞军在他的书《俞军产品方法论》中说：&lt;/p>
+&lt;blockquote>
+&lt;p>“产品经理只要学会用四个概念分析产品和用户就算及格了：效用、成本、边际、供需定律。”&lt;/p>
+&lt;/blockquote>
+&lt;p>在营销中，这也大有用处。&lt;/p>
+&lt;h1 id="效用">效用&lt;/h1>
+&lt;p>效用就是指产品的功效作用。&lt;/p>
+&lt;p>最近天很热，你买一瓶矿泉水，可以解渴。矿泉水就是有用的，因为它满足了你的需求。&lt;/p>
+&lt;p>但是，你的眼前同时出现了 “怡宝” “农夫山泉” 和 “百岁山”，假设价格和容量分别是 300ml / 1.5元、550ml / 2元、350ml / 3元。&lt;/p></description></item><item><title>品牌三问之二：有何不同？</title><link>https://caoyang2002.vercel.app/post/2025/03/what_is_the_difference/</link><pubDate>Fri, 28 Mar 2025 21:38:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/what_is_the_difference/</guid><description>&lt;p>在玲琅满目的产品中，消费者发现了你的品牌后，最想要了解的就是你和其他品牌的区别，消费者为什么要选择你，而不是其他品牌？&lt;/p>
+&lt;p>这个特性不是自说自话，比如恒大冰泉的广告语 “恒大冰泉，一处水源供全球”。&lt;/p>
+&lt;p>&lt;img src="https://p1.ssl.qhmsg.com/dr/270_500_/t014f525c0dd0175999.jpg" alt="恒大冰泉_360百科">&lt;/p>
+&lt;p>消费者很可能不明白 “一处水源供全球” 的意义是什么，对消费者来说过于隐晦了。&lt;/p>
+&lt;p>这样的广告语显然不如农夫山泉的广告语 “农夫山泉有点甜”。&lt;/p></description></item><item><title>【315 专题】高效触达：智能外呼的罪与罚</title><link>https://caoyang2002.vercel.app/post/2025/03/crimes_and_penalties_for_intelligent_outcries/</link><pubDate>Wed, 19 Mar 2025 08:48:29 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/crimes_and_penalties_for_intelligent_outcries/</guid><description>&lt;h1 id="事件经过">事件经过&lt;/h1>
+&lt;img src="https://caoyang2002.vercel.app/Users/simons/Library/Application Support/typora-user-images/image-20250319085205087.png" alt="image-20250319085205087" style="zoom:25%;" />
+&lt;p>外呼，也叫电销，即向手机用户拨打自己的营销电话。&lt;/p>
+&lt;p>![image-20250319085403467](/Users/simons/Library/Application Support/typora-user-images/image-20250319085403467.png)&lt;/p>
+&lt;p>当下，使用机器人拨打营销电话已经成为这个行业的主流。&lt;/p>
+&lt;p>使用这种外呼智能机器人，效率比人工高出数倍。&lt;/p>
+&lt;p>![image-20250319094201779](/Users/simons/Library/Application Support/typora-user-images/image-20250319094201779.png)&lt;/p>
+&lt;p>并且这些机器人的声音由真人录制而成，使用户难辨真伪，从而更能提高接听率。&lt;/p>
+&lt;p>记者来到智优擎网络科技公司，这是一家从从事外呼业务好几年的企业。&lt;/p></description></item><item><title>mermaid？</title><link>https://caoyang2002.vercel.app/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/mermaid/</guid><description>&lt;p>mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p>
+&lt;h4 id="1思维导图">1.思维导图&lt;/h4>
+&lt;ul>
+&lt;li>空格敏感&lt;/li>
+&lt;/ul>
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid">mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div>
+
+&lt;ul>
+&lt;li>
+&lt;p>基础&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>语法&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>形状&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>默认&lt;/p>
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid">mindmap
+ I am the default shape&lt;/div>
+
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>[]&lt;/code>矩形&lt;/p></description></item><item><title>雪王敲钟：蜜雪冰城上市，甜蜜与爱的胜利</title><link>https://caoyang2002.vercel.app/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</link><pubDate>Tue, 04 Mar 2025 20:26:01 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</guid><description>&lt;p>&lt;img src="https://x0.ifengimg.com/ucms/2022_38/FCA8B7161B53D1F6D29AA2DE40A74F2E8170212E_size101_w690_h388.jpg" alt="蜜雪冰城IPO再进一步 已完成上市辅导_凤凰网">&lt;/p>
+&lt;p>2025年1月2日，有着“雪王”之称的蜜雪冰城向港交所提交了上市申请。最新披露的招股书数据展现出其强劲的发展态势：2023年前9个月，蜜雪冰城实现营收154亿元，净利润达25亿元，同比分别增长46%与51.1%。&lt;/p>
+&lt;p>经推算，2023年“雪王”平均每日盈利约926万元，盈利能力十分突出 。&lt;/p></description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p>2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p></description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p>在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p></description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.vercel.app/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p>作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p></description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.vercel.app/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p>作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p></description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.vercel.app/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p>2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p>
+&lt;p>&lt;img src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641" alt="图片">&lt;/p>
+&lt;h1 id="一背景">一、背景&lt;/h1>
+&lt;p>多邻国自 2012 年诞生以来，凭借其丰富的语言课程和广泛的认可度，取得了显著的市场成绩。2023 年 Q3 月活近亿，且在多个国家的教育类应用榜单中名列前茅，2024 年 1 月双端商店流水超 4 千万美元，下载收入环比增长幅度居首。&lt;/p></description></item><item><title>营销基础：市场营销环境分析</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_environment/</link><pubDate>Thu, 27 Feb 2025 09:20:12 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_environment/</guid><description>&lt;h1 id="pest-分析">PEST 分析&lt;/h1>
+&lt;ul>
+&lt;li>P：政治&lt;/li>
+&lt;li>E：经济&lt;/li>
+&lt;li>S：社会&lt;/li>
+&lt;li>T：技术&lt;/li>
+&lt;/ul>
+&lt;h1 id="奥巴马符合通过植入网络营销的技术促成他成功竞选美国总统">奥巴马符合通过植入网络营销的技术，促成他成功竞选美国总统？&lt;/h1>
+&lt;p>从商业的角度来看，美国总统的选举实际上是一场商战。产品就是竞选人，消费者就是选民，钞票就是选票。&lt;/p>
+&lt;p>在《8 years later》这个竞选广告中，可以发现几个美国面临的问题：&lt;/p>
+&lt;ol>
+&lt;li>政治方面：美国深陷伊拉克战争泥潭。&lt;/li>
+&lt;li>经济方面：失业率大增，股市下滑，民不聊生。&lt;/li>
+&lt;li>民生方面：民众需要医疗，需要救助。&lt;/li>
+&lt;/ol>
+&lt;p>在几分钟的广告里，奥巴马把美国面临的问题提炼得非常透彻。所以在进行环境分析的时候，需要以下几步：&lt;/p></description></item><item><title>爆梗出圈：营销视角下 “鸡你太美” 如何引发狂欢？</title><link>https://caoyang2002.vercel.app/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</link><pubDate>Tue, 25 Feb 2025 17:37:32 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</guid><description>&lt;blockquote>
+&lt;p>“b 站 up 主们、弹幕群众们，用流行文化打击流行偶像，这是本世纪最棒的文化奇观。”——汪海林&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.532d6f43acf5d24e6ffd9a484c23f509?rik=oWC6136AMtfsZQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20220616ac%2f600%2fw1920h1080%2f20220616%2f84c9-0f134f134f8bc0cac92a0488b0565b7a.jpg&amp;amp;ehk=mot26IwWZXjD4I7GrCg4WljqwXARRVVMO16%2bpMFwmow%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="蔡徐坤|光影帅气写真‖桌面壁纸|蔡徐坤|写真|桌面壁纸_新浪新闻">&lt;/p>
+&lt;p>2018 年，蔡徐坤在《偶像练习生》中的自我介绍表演，因一句 “只因你太美” 被空耳为 “鸡你太美”，成为网络热梗的雏形。谁也没想到，这个起初只是网友调侃的素材，会在随后几年间掀起一场全民狂欢，并在 2023 年再度翻红，成为网络文化中一个经久不衰的现象级符号。&lt;/p></description></item><item><title>定位：营销的起点</title><link>https://caoyang2002.vercel.app/post/2025/02/positioning_the_starting_point_of_marketing/</link><pubDate>Mon, 24 Feb 2025 11:48:01 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/positioning_the_starting_point_of_marketing/</guid><description>&lt;p>&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科">&lt;/p>
+&lt;blockquote>
+&lt;p>&lt;strong>定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong>&lt;/p>
+&lt;p>杰克·特劳特&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="打破神话">打破神话&lt;/h1>
+&lt;p>&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24">&lt;/p>
+&lt;p>可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p>
+&lt;p>如果要让这个神话破灭，以下那个条件可以达成？&lt;/p>
+&lt;ol>
+&lt;li>供应商资料全部葬身大火&lt;/li>
+&lt;li>经销商资料全部葬身大火&lt;/li>
+&lt;li>员工全部葬身大火&lt;/li>
+&lt;li>竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li>
+&lt;/ol>
+&lt;p>中国版本的真实 “可口可乐” 神话 —— 广药和加多宝之战&lt;/p></description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://caoyang2002.vercel.app/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略">领导者战略&lt;/h1>
+&lt;p>市场领导者：占有最大市场份额，在价格变化、新产品开发、分销渠道，以及促销战略上对本行业其他公司起到领导作用的公司。例如苹果、谷歌这样的公司。&lt;/p>
+&lt;p>如何才能成为领导者呢？第一种方式是把蛋糕做大，第二种方式是把蛋糕做厚&lt;/p>
+&lt;p>市场总量 &lt;code>Q = aq&lt;/code>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>Q：总量&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>a：使用频率&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>q：使用改产品的人数&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>提升市场总量的两种方式：&lt;/p>
+&lt;ol>
+&lt;li>提升消费者使用频率&lt;/li>
+&lt;li>提升使用该产品的人数&lt;/li>
+&lt;/ol>
+&lt;p>对于提升消费者使用频率方面，有个口香糖品牌叫益达，口香糖这个品类很难想到它的使用场景是什么，所以销量一致不好，而后做了一系列广告，比较知名的广告语是 “吃完喝完嚼益达” 和 “吃完来两粒”。通过这些广告，益达成功地将自己与餐后清洁口腔的场景绑定在一起，培养了用户在进食后嚼口香糖的习惯，从而提升了使用频率。&lt;/p></description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://caoyang2002.vercel.app/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片">&lt;/p>
+&lt;p>在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p>
+&lt;p>一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p></description></item><item><title>不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？</title><link>https://caoyang2002.vercel.app/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p>台湾的广告设计与营销传播历史，是一部与时代脉搏紧密相连的发展史。从早期简单的广告代理到如今多元化的品牌设计与营销传播，这一过程不仅反映了台湾经济的发展轨迹，也展现了广告行业在不同历史阶段的机遇与挑战。而美可特品牌设计公司及其执行总监王盈发带领美可特的转型的故事，则是这一历史进程中的一个典型案例。&lt;/p></description></item><item><title>营销基础：营销的核心价值</title><link>https://caoyang2002.vercel.app/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值">顾客让渡价值&lt;/h1>
+&lt;p>顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p>
+&lt;ul>
+&lt;li>顾客价值：&lt;strong>顾客从某个产品或服务获得的利益综合（功能、符号、利益等）&lt;/strong>，比如一款手机，其具备高清拍照、快速运行软件、大容量存储等功能，这些功能满足了顾客在通讯、娱乐、工作等方面的需求。其次是符号价值，像一些奢侈品品牌，消费者购买它们不仅仅是为了产品的实际使用功能，更是因为品牌所代表的社会地位、身份象征等符号意义。还有服务价值，例如在购买汽车时，4S 店提供的免费保养、道路救援等售后服务，也构成了顾客价值的一部分，让顾客在使用产品的过程中享受到更全面的保障和便利。&lt;/li>
+&lt;li>顾客成本：&lt;strong>顾客购买产品或服务所付出的成本或费用（货币、时间、精力等）&lt;/strong>，比如购买一台笔记本电脑花费了 5000 元。时间成本也不容忽视，例如顾客为了购买一款热门的限量版球鞋，可能需要提前几天排队等候，这段时间就是顾客付出的时间成本。精力成本同样重要，像消费者在购买复杂的金融产品时，需要花费大量精力去了解产品的风险、收益、条款等内容，这个过程所耗费的精力就是精力成本。&lt;/li>
+&lt;/ul>
+&lt;h2 id="如何提升顾客让渡价值">如何提升顾客让渡价值？&lt;/h2>
+&lt;ol>
+&lt;li>提升顾客价值：&lt;strong>为顾客提供的不是物理形态的产品，而是效用（产品、商品、解决方案、价值）&lt;/strong>。
+&lt;ul>
+&lt;li>比如增加产品的功能，例如一个耳机不仅可以听音乐，还有防水功能，并且提供三年质保，或者采用更优质的材料制作耳机，让音质更清晰、佩戴更舒适；或者优化产品的外观设计，使其更符合当下流行的审美，更具时尚感和吸引力，这些都是通过物理形态上提升顾客价值的方式。&lt;/li>
+&lt;li>如何从效用层面提升顾客价值呢？同样是一个耳机，企业生产出耳机是一个产品；这个产品放在经销商的仓库里，这是商品；这个商品被顾客购买后，于顾客而言是一个解决方案；这个耳机在顾客游泳的时候可以听，给顾客带来了更好的游泳体验，这是价值。&lt;/li>
+&lt;li>提高顾客让渡价值，通过增加服务、降低价格、增加满意度，比如京东的商品保价服务，或者与顾客建立良好的沟通，及时了解顾客的需求和反馈，做出相应的调整和改进。&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>降低顾客成本，比如通过重组供应链，让耳机的生产变的高效，从而降低成本，或者优化物流配送服务，缩短配送时间，使顾客能更快地收到产品。此外，还可以降低顾客的精力成本，例如提供简单易懂的产品使用说明和操作指南，让顾客无需花费过多精力就能轻松上手使用耳机。&lt;/li>
+&lt;/ol></description></item><item><title>营销基础：如何理解需求？</title><link>https://caoyang2002.vercel.app/post/2025/02/how_to_understand_needs/</link><pubDate>Sat, 22 Feb 2025 21:51:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_to_understand_needs/</guid><description>&lt;h1 id="需要欲望和需求的区别">需要、欲望和需求的区别？&lt;/h1>
+&lt;p>需要（needs）：抽象理解是人类最基本的要求，比如一套服装、一份食物、一个住处，马斯洛需求层次原理中的表述。&lt;/p>
+&lt;p>欲望（wants）：具体化的需要，比如一件衬衫、一份牛排、一所大学、一个节目等。&lt;/p>
+&lt;p>需求（demands）：具有支付能力的欲望，一件 100 元的衬衫、一份 50 元的牛排、一所学费 6000 元的大学。&lt;/p></description></item><item><title>营销基础：营销导向</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_orientation/</link><pubDate>Sat, 22 Feb 2025 13:34:41 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_orientation/</guid><description>&lt;h1 id="产品导向">产品导向&lt;/h1>
+&lt;p>以产定销，这是一个企业本位的营销思想，企业生产多少就销售多少。有三个观念：&lt;/p>
+&lt;ul>
+&lt;li>生产观念：&lt;/li>
+&lt;li>产品观念&lt;/li>
+&lt;li>推销观念&lt;/li>
+&lt;/ul>
+&lt;h2 id="生产观念">生产观念&lt;/h2>
+&lt;ul>
+&lt;li>规模化、大批量、单一品种&lt;/li>
+&lt;li>关心产品的有无，而非数量&lt;/li>
+&lt;li>供不应求、垄断&lt;/li>
+&lt;/ul>
+&lt;p>福特通过标准化技术，实现规模化生产，在 1908 年福特成为美国乃至世界的汽车大王。&lt;/p>
+&lt;p>那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p></description></item><item><title>营销基础：什么是营销？</title><link>https://caoyang2002.vercel.app/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p>&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片">&lt;/p>
+&lt;h1 id="一行业定义">一、行业定义&lt;/h1>
+&lt;h2 id="1-专家解释">1. 专家解释&lt;/h2>
+&lt;p>现代营销学之父菲利普·科特勒在不同的场景下分别解释了 “营销” 和与之相关的词。&lt;/p>
+&lt;ol>
+&lt;li>企业的营销能力是企业盈利的根本保证。&lt;/li>
+&lt;li>市场营销就是辨别并满足人类和社会的需要。对市场营销最简洁的定义，就是 “满足别人并获得利润”。&lt;/li>
+&lt;li>我们可以把营销管理看成艺术和科学的组合 —— 选择目标市场，并通过创造、交付和传播优质的顾客价值来获得顾客、挽留顾客的科学与艺术。&lt;/li>
+&lt;li>所谓市场营销，就是个人和集体通过创造、提供、出售、同别人自由交换产品和服务的方式，以获得自己所需产品或服务的社会过程。&lt;/li>
+&lt;li>营销人员主要经营以下十大类产品：有形的商品、服务、节事、体验、人物、场所、产权、组织、信息和创意。&lt;/li>
+&lt;/ol>
+&lt;p>科特勒将营销分为 4 个阶段：&lt;/p></description></item><item><title>营销与竞选：奥巴马如何通过营销策略获得胜利？</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</link><pubDate>Wed, 19 Feb 2025 17:16:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</guid><description>&lt;blockquote>
+&lt;p>原视频： 
+&lt;a href="https://youtu.be/Pf_8nZ3K3qU"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://youtu.be/Pf_8nZ3K3qU
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;/blockquote>
+&lt;p>![img](&lt;img src="https://dingyue.ws.126.net/2022/0827/7f8da491j00rh9xnm001oc000xc00m7m.jpg" alt="img">&lt;/p>
+&lt;h1 id="一竞选背景与挑战">一、竞选背景与挑战&lt;/h1>
+&lt;p>奥巴马作为美国历史上第一位黑人总统竞选人，当时他并没有足够的优势，尤其是缺乏在国家级政府机构的工作经历。然而，他通过电子商务和市场营销手段，成功赢得了总统选举。&lt;/p>
+&lt;p>关于奥巴马总统竞选的一则广告可以在 Youtube 上通过关键字 “wassup OBAMA 8 years later” 搜索到。&lt;/p>
+&lt;h1 id="二洞察社会趋势">二、洞察社会趋势&lt;/h1>
+&lt;p>奥巴马团队在短短两分钟的视频中，精准地描述了美国当时面临的困境，包括战争、经济等方面的问题。这在营销中被称为 PEST 分析（政治、经济、社会、技术）。视频中，观众在听到布什的演讲时表现出疲倦，而在听到奥巴马的演讲时则显得激动。这种对比鲜明的情绪反应，凸显了民众对“改变”的强烈诉求。&lt;/p></description></item><item><title>为什么高级餐厅味道并不一定好？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</link><pubDate>Sat, 15 Feb 2025 13:30:46 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</guid><description>&lt;blockquote>
+&lt;p>这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="为什么高级餐厅味道并不一定好">为什么高级餐厅味道并不一定好？&lt;/h1>
+&lt;p>在美食的江湖中，高级餐厅往往被视为味蕾的圣地，然而，你是否有过这样的经历：怀着崇敬之心踏入一家价格不菲、装潢精美的高级餐厅，满心期待一场味觉盛宴，可当菜品端上桌，轻轻咬下一口后，却发现味道并不满意，甚至有些令人作呕？这究竟是味蕾的错觉，还是另有隐情？&lt;/p></description></item><item><title>为什么可口可乐要创造快乐联想？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_does_coca-cola_create_happy_associations/</link><pubDate>Sat, 15 Feb 2025 01:59:25 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_does_coca-cola_create_happy_associations/</guid><description>&lt;h1 id="为什么可口可乐要创造快乐联想">为什么可口可乐要创造快乐联想？&lt;/h1>
+&lt;p>在当今竞争激烈的市场环境中，品牌已不仅仅是产品的代名词，更是一系列联想的集合体。可口可乐作为全球饮料行业的领军品牌，其成功的关键在于深刻理解了品牌联想的力量，并将其与快乐紧密绑定。本文将探讨可口可乐为何要创造快乐联想，以及这一策略如何为其带来巨大的商业成功。&lt;/p>
+&lt;h2 id="品牌的本质联想的集合">品牌的本质：联想的集合&lt;/h2>
+&lt;p>神经学家认为，品牌是一连串的联想。消费者在购买产品时，不仅仅是在购买其功能，更是在购买与品牌相关的情感和体验。可口可乐深知这一点，因此每年在广告营销和品牌推广上投入数十亿美元，旨在打造强大的品牌联想。根据 Interbrand 的品牌价值排行榜，可口可乐位列第五，仅次于苹果、谷歌、亚马逊和微软，这充分证明了其品牌战略的成功。&lt;/p></description></item><item><title>可口可乐：百年营销传奇与创收型营销新篇</title><link>https://caoyang2002.vercel.app/post/2025/02/coca-cola_a_century-old_marketing_legend_and_a_new_chapter_in_revenue-generating_marketing/</link><pubDate>Sat, 15 Feb 2025 00:21:32 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/coca-cola_a_century-old_marketing_legend_and_a_new_chapter_in_revenue-generating_marketing/</guid><description>&lt;h2 id="一1985-年新配方风波情感共鸣的深刻洞察">一、1985 年新配方风波：情感共鸣的深刻洞察&lt;/h2>
+&lt;p>1985 年，可口可乐公司经历了一次品牌历史上的至暗时刻，却也为我们呈现了一个关于消费者情感共鸣的深刻案例。面对百事可乐销量的快速增长，可口可乐的首位外籍 CEO 郭思达决定改变可口可乐原有配方，以面向更多用户群体。经过大规模的口味盲测，新配方以 61% 比 39% 的优势胜出，公司投入巨资进行研发和推广。然而，这一改变却引发了消费者的强烈不满，从抗议电话到示威游行，消费者们用行动表达了对新可乐的愤怒。百事可乐更是趁机火上浇油，将新可乐发布会当天定为 “百事可乐日”。最终，可口可乐不得不将配方改回来以平民愤。&lt;/p></description></item><item><title>好彩头：为什么随机投喂会让鸽子产生迷信行为？</title><link>https://caoyang2002.vercel.app/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</link><pubDate>Fri, 14 Feb 2025 12:58:34 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</guid><description>&lt;blockquote>
+&lt;p>迷信行为不仅在人类中存在，动物也会表现出类似的 “迷信”。心理学家伯尔赫斯・弗雷德里克・斯金纳（B.F. Skinner）通过实验揭示了这一现象背后的心理学原理。&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShlMz4vLZIpqZ1Pv6CmLOoukU-yD8YjTl2g&amp;amp;s" alt="斯金纳_心理学家_心理图库_心理学图_525心理网">&lt;/p>
+&lt;h1 id="一生活中的迷信行为">一、生活中的“迷信”行为&lt;/h1>
+&lt;p>在我们的生活中，处处充满“迷信”的东西，在大多数时候我们都把它当做讨彩头的方式，作为一种积极暗示。比如考试前吃一根火腿肠和两个鸡蛋，又或是新买的东西主人先用。这样的事情我们屡见不鲜。&lt;/p></description></item><item><title>为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</link><pubDate>Thu, 13 Feb 2025 05:51:23 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</guid><description>&lt;h3 id="为什么在茶叶粮油这些大市场中出现不了大品牌大公司呢">为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？&lt;/h3>
+&lt;p>简单来说就是：&lt;code>低壁垒&lt;/code> + &lt;code>弱规模经济&lt;/code> + &lt;code>强需求分化&lt;/code>&lt;/p>
+&lt;p>同样是与“喝”相关的行业，白酒、红酒、啤酒都有市场认知度极高的品牌，甚至“股王”级上市公司。咖啡领域有星巴克和瑞幸，后者拥有国内最大的直营网络，如今颇有东山再起的架势。但规模超万亿的茶行业，强势的品牌或公司却不多。新华社 2008 年曾提出疑问：“七万中国茶厂，为何不抵一家立顿”。14年后的今天，行业依然缺少一个响亮的“大品牌”。问题出在哪里了？&lt;/p></description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.vercel.app/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote>
+&lt;p>&lt;strong>说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong>&lt;/p>
+&lt;p>爱德华·伯尼斯&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;img src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg" alt="img">&lt;/p>
+&lt;p>**爱德华·伯尼斯（Edward L.Bernays）**被称为公关之父（美国一共有三个人得到这个称号，其他两个是巴纳姆、艾维·李）。出身维也纳，著名心理学家佛洛伊德的外甥，是公共关系学科化的先驱者，纽约大学教授。&lt;/p></description></item><item><title>快乐为何转瞬即逝？多学科视角下的短暂性解析与营销启示</title><link>https://caoyang2002.vercel.app/post/2025/02/why_does_happiness_pass_so_quickly/</link><pubDate>Tue, 11 Feb 2025 02:42:59 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_does_happiness_pass_so_quickly/</guid><description>&lt;blockquote>
+&lt;p>我的一个朋友在做蛋糕，口味非常好，我每次去玩总会吃到免费的蛋糕，但是每只最多只能吃两个，但那远远还未到饱腹感，为什么？&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="分析部分快乐为何转瞬即逝的秘密">分析部分：快乐为何转瞬即逝的秘密&lt;/h1>
+&lt;p>快乐总是转瞬即逝。回想一下上次吃美味的蛋糕时的情景：蛋糕摆在面前，糖霜闪闪发光，味蕾兴奋不已，期待着即将品尝到的味道。当你用叉子叉起一口蛋糕放入口中时，那种满足感瞬间达到顶峰，甚至让你闭上眼睛细细品味。然而，这种快乐持续了多久？几分钟后，快乐感逐渐消退，甚至可能被其他情绪所取代。&lt;/p></description></item><item><title>消费者任务: 分析与实践</title><link>https://caoyang2002.vercel.app/post/2025/02/consumer_task_analysis_and_practice/</link><pubDate>Mon, 10 Feb 2025 10:51:22 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/consumer_task_analysis_and_practice/</guid><description>&lt;h1 id="分析篇">分析篇&lt;/h1>
+&lt;p>在20世纪90年代中期，两位来自底特律的顾问 —— 鲍勃•莫埃斯塔和他的合伙人瑞克•佩迪 —— 专程前往哈佛商学院，拜访了当时刚刚提出颠覆性创新理论的克莱顿•克里斯滕森教授。他们的目标是深入了解这一理论，并探讨如何将其应用于他们的利基业务：为面包店和零食公司提供新产品开发建议。&lt;/p>
+&lt;p>颠覆性创新理论在当时已经显示出其强大的预测能力，尤其是在解释根基稳固的企业如何应对来自小型竞争者的威胁时。然而，莫埃斯塔和佩迪发现，尽管这一理论能够清晰地解释因果关系，但它并未为他们的客户提供具体的行动路线图。换句话说，理论虽然能解释“为什么”，但并未明确告诉企业“怎么做”才能成功防御或发起颠覆性创新。&lt;/p></description></item><item><title>营销学理论 4P、4C、4S、4R、4V、4I</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</link><pubDate>Tue, 04 Feb 2025 15:52:44 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</guid><description>&lt;p>原文：https://zhuanlan.zhihu.com/p/61432788&lt;/p>
+&lt;p>一、4P 的内涵与应用&lt;/p>
+&lt;p>4P营销理论(The Marketing Theory of 4Ps)，4P理论产生于20世纪60年代的美国，随着营销组合理论的提出而出现的。1953年，尼尔·博登（NeilBorden）在美国市场营销学会的就职演说中创造了“市场营销组合”（Marketingmix）这一术语，其意是指市场需求或多或少的在某种程度上受到所谓“营销变量”或“营销要素”的影响。&lt;/p></description></item><item><title>好听好记：如何取一个容易传播的名字？</title><link>https://caoyang2002.vercel.app/post/2025/01/how_to_choose_a_good_name/</link><pubDate>Thu, 30 Jan 2025 14:08:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/how_to_choose_a_good_name/</guid><description>&lt;blockquote>
+&lt;p>注：&lt;/p>
+&lt;p>这里只讨论被作为产品品牌传播的名称，对于腾讯、米哈游这样的名称不讨论，原因有两点：&lt;/p>
+&lt;p>一是幸存者偏差，这类名称在同一时期可能有很多，但是大多数都没能传播开来，而现存的只是幸存者。&lt;/p>
+&lt;p>二是他们是企业名不是产品名，这些名称不是传播的，比如别人问你在用什么软件聊天的时候，你会说“我用 QQ”，而不会说“我用腾讯 QQ”。&lt;/p></description></item></channel></rss>
