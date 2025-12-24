@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on caoyang 2002</title>
+    <link>http://localhost:1313/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 24 Dec 2025 11:04:31 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>群晖安装 GO 语言</title>
+      <link>http://localhost:1313/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</link>
+      <pubDate>Wed, 24 Dec 2025 11:04:31 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</guid>
+      <description>&lt;p&gt;查看架构&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;arm&lt;/li&gt;&#xA;&lt;li&gt;x86_64&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;uname -a&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h1 id=&#34;安装-go&#34;&gt;安装 go&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd /tmp &amp;amp;&amp;amp; \&#xA;wget -q https://go.dev/dl/go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \&#xA;sudo rm -rf /usr/local/go &amp;amp;&amp;amp; \&#xA;sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \&#xA;export PATH=/usr/local/go/bin:$PATH &amp;amp;&amp;amp; \&#xA;go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h1 id=&#34;安装到-jupyter&#34;&gt;安装到 jupyter&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;go clean -cache -modcache &amp;amp;&amp;amp; \&#xA;cd ~/go-module/gophernotes &amp;amp;&amp;amp; \&#xA;rm -f ~/go/bin/gophernotes &amp;amp;&amp;amp; \&#xA;GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o ~/go/bin/gophernotes &amp;amp;&amp;amp; \&#xA;chmod &amp;#43;x ~/go/bin/gophernotes &amp;amp;&amp;amp; \&#xA;~/go/bin/gophernotes install &amp;amp;&amp;amp; \&#xA;echo &amp;#34;✅ 安装完成！&amp;#34; &amp;amp;&amp;amp; \&#xA;jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+  </channel>
+</rss>
