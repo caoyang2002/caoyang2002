@@ -1,20 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Git on caoyang 2002</title><link>https://caoyang2002.xyz/tags/git/</link><description>Recent content in Git on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.xyz/tags/git/index.xml" rel="self" type="application/rss+xml"/><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://caoyang2002.xyz/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.xyz/post/2024/06/git_delete_file/</guid><description>&lt;p>如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;strong>在本地仓库中删除文件&lt;/strong>：
-首先，在你的本地仓库中删除该文件：&lt;/p>
-
-
-
-
-
-
-
-
-
-
-&lt;div>
- &lt;pre>&lt;code class="language-sh" data-lang="sh">git rm --cached &amp;lt;file&amp;gt;&lt;/code>&lt;/pre>
-&lt;/div>
-
-&lt;p>这里 &lt;code>&amp;lt;file&amp;gt;&lt;/code> 是你想要从仓库中删除的文件名。&lt;code>--cached&lt;/code> 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Git on caoyang 2002</title>
+    <link>http://localhost:1313/tags/git/</link>
+    <description>Recent content in Git on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 19 Feb 2025 19:35:32 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git: 从入门到精通</title>
+      <link>http://localhost:1313/post/2025/01/git_from_entry_to_mastery/</link>
+      <pubDate>Sun, 26 Jan 2025 10:50:22 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/git_from_entry_to_mastery/</guid>
+      <description>&lt;h1 id=&#34;git-从入门到精通&#34;&gt;Git: 从入门到精通&lt;/h1&gt;&#xA;&lt;p&gt;很多人用 Git 只会 &lt;code&gt;add/commit/push&lt;/code&gt; 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。&lt;/p&gt;&#xA;&lt;h2 id=&#34;git的本质&#34;&gt;Git的本质&lt;/h2&gt;&#xA;&lt;p&gt;Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;# 看看Git的底层对象&#xA;echo &amp;#39;test&amp;#39; &amp;gt; test.txt&#xA;git add test.txt&#xA;git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;核心概念就三个：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Workspace：工作区&lt;/li&gt;&#xA;&lt;li&gt;Index/Stage：暂存区&lt;/li&gt;&#xA;&lt;li&gt;Repository：仓库区&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;为什么用git&#34;&gt;为什么用Git？&lt;/h2&gt;&#xA;&lt;p&gt;对比一下传统SVN：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>删除错误提交到GitHub仓库中的文件</title>
+      <link>http://localhost:1313/post/2024/06/git_delete_file/</link>
+      <pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate>
+      <guid>http://localhost:1313/post/2024/06/git_delete_file/</guid>
+      <description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;strong&gt;在本地仓库中删除文件&lt;/strong&gt;：&#xA;首先，在你的本地仓库中删除该文件：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-sh&#34; data-lang=&#34;sh&#34;&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

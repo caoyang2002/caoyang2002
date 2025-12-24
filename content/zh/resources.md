@@ -1410,6 +1410,7 @@ featuredImage: "/about/simons.jpg"
 # 个人资源
 
 {{<crypto pwd="passwd">}}
+
 <ul>
 <li>
 <a href="https://since1982-my.sharepoint.com/personal/since2501_since1982_org/_layouts/15/onedrive.aspx?ga=1&id=%2Fpersonal%2Fsince2501%5Fsince1982%5Forg%2FDocuments%2FP1624%20跟熊浩学沟通·30讲">跟熊浩学沟通·30讲</a>

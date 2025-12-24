@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>计算机 on caoyang 2002</title>
+    <link>http://localhost:1313/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+    <description>Recent content in 计算机 on caoyang 2002</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 20 Feb 2025 14:41:10 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>哈夫曼编码：数据压缩的经典算法</title>
+      <link>http://localhost:1313/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</link>
+      <pubDate>Sun, 26 Jan 2025 11:08:57 +0800</pubDate>
+      <guid>http://localhost:1313/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</guid>
+      <description>&lt;h1 id=&#34;哈夫曼编码数据压缩的经典算法&#34;&gt;哈夫曼编码：数据压缩的经典算法&lt;/h1&gt;&#xA;&lt;p&gt;今天遇到一个有趣的问题：一个100MB的日志文件，需要实时传输，但带宽只有 10MB。很多人二话不说就上 gzip，但你真的理解压缩算法的原理吗？&lt;/p&gt;&#xA;&lt;h2 id=&#34;什么是哈夫曼编码&#34;&gt;什么是哈夫曼编码？&lt;/h2&gt;&#xA;&lt;p&gt;本质上，哈夫曼编码是一种变长编码方案。它的核心思想是：出现频率高的字符用短编码，频率低的用长编码。&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div class=&#34;code-playground&#34; data-language=&#34;python&#34;&gt;&#xA;    &#xA;    &lt;div&gt;&#xA;        &lt;pre&gt;&#xA;                &lt;code class=&#34;language-python&#34;&gt;# 一个简单的例子&#xA;text = &amp;#34;AAAAABBBCC&amp;#34;  # 原始数据&#xA;# 普通编码：每个字符占8位&#xA;# A: 01000001 (8位) × 5 = 40位&#xA;# B: 01000010 (8位) × 3 = 24位&#xA;# C: 01000011 (8位) × 2 = 16位&#xA;# 总共：80位&#xA;&#xA;# 哈夫曼编码&#xA;# A: 0 (1位) × 5 = 5位&#xA;# B: 10 (2位) × 3 = 6位&#xA;# C: 11 (2位) × 2 = 4位&#xA;# 总共：15位&lt;/code&gt;&lt;/pre&gt;&#xA;    &lt;/div&gt;&#xA;    &#xA;&#xA;    &#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;为什么需要哈夫曼编码&#34;&gt;为什么需要哈夫曼编码？&lt;/h2&gt;&#xA;&lt;p&gt;看看其他编码方案的问题：&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
