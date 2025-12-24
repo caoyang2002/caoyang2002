@@ -20,5 +20,8 @@ get_taxonomies() {
    find public/tags -type d -maxdepth 1 -mindepth 1 -exec basename {} \; | sort | column
 }
 
+echo "创建"
 create_post "$1"
+
+echo "分类"
 get_taxonomies
