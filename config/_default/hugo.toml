@@ -11,7 +11,8 @@ ignoreLogs = ['warning-goldmark-raw-html']
 # 设置默认语言
 defaultContentLanguage = "zh"
 # 将内容放在语言子目录下
-defaultContentLanguageInSubdir = false
+# defaultContentLanguageInSubdir = false
+defaultContentLanguageInSubdir = true  # 重要：默认语言也在子目录中
 
 
 
@@ -19,7 +20,6 @@ defaultContentLanguageInSubdir = false
 enableGitInfo = true
 hasCJKLanguage = true
 summaryLength = 140
-# DefaultContentLanguage = "zh"
 
 # 全局功能开关
 comments = true

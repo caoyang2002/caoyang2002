@@ -1,0 +1,51 @@
+
+# 导航菜单配置
+[[main]]
+name = 'Home'
+pageRef = '/'
+weight = 10
+
+[[main]]
+name = 'Schedule'
+pageRef = '/schedule/'
+weight = 11
+
+[[main]]
+name = "Protfolio"
+pageRef = "/protfolio/"
+weight = 12
+
+[[main]]
+name = "About"
+pageRef = "/about/"
+weight = 20
+
+[[main]]
+name = "Contact"
+pageRef = "/contact/"
+weight = 30
+
+[[main]]
+name = "Guestabook"
+pageRef = "/guestbook/"
+weight = 40
+
+[[main]]
+name = 'Resources'
+pageRef = '/resources/'
+weight = 41
+
+[[main]]
+name = 'Booklist'
+pageRef = '/booklist/'
+weight = 42
+
+[[main]]
+name = 'Hotlist'
+pageRef = '/hotlist/'
+weight = 43
+
+[[main]]
+name = "Search"
+pageRef = "/search/"
+weight = 50

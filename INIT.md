@@ -9,3 +9,10 @@ git submodule update --recursive
 ```bash
 hugo server -D
 ```
+
+# 部署
+
+```bash
+hugo --environment production --baseURL https://caoyang2002.vercel.app --minify
+vercel --prod
+```

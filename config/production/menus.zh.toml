@@ -1,0 +1,50 @@
+# 导航菜单配置
+[[main]]
+name = '首页'
+pageRef = '/'
+weight = 10
+
+[[main]]
+name = '日程'
+pageRef = '/schedule/'
+weight = 11
+
+[[main]]
+name = "作品集"
+pageRef = "/protfolio/"
+weight = 12
+
+[[main]]
+name = "关于"
+pageRef = "/about/"
+weight = 20
+
+[[main]]
+name = "联系"
+pageRef = "/contact/"
+weight = 30
+
+[[main]]
+name = "留言"
+pageRef = "/guestbook/"
+weight = 40
+
+[[main]]
+name = '资源'
+pageRef = '/resources/'
+weight = 41
+
+[[main]]
+name = '书单'
+pageRef = '/booklist/'
+weight = 42
+
+[[main]]
+name = '热搜'
+pageRef = '/hotlist/'
+weight = 43
+
+[[main]]
+name = "搜索"
+pageRef = "/search/"
+weight = 50
