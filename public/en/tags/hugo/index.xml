@@ -1,33 +1,216 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on caoyang2002</title>
-    <link>http://localhost:1313/en/tags/hugo/</link>
-    <description>Recent content in Hugo on caoyang2002</description>
-    <generator>Hugo</generator>
-    <language>en-US</language>
-    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/en/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Hugo 主题创建方法及简单说明</title>
-      <link>http://localhost:1313/en/post/2025/01/create_hugo_theme/</link>
-      <pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2025/01/create_hugo_theme/</guid>
-      <description>&lt;h1 id=&#34;参考&#34;&gt;参考：&lt;/h1&gt;&#xA;&lt;p&gt;中文文档 &#xA;&lt;a href=&#34;https://hugo.opendocs.io/getting-started/quick-start/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://hugo.opendocs.io/getting-started/quick-start/&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;p&gt;博客：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://blog.gujiakai.top/2023/03/hugo-theme-development-diary&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://blog.gujiakai.top/2023/03/hugo-theme-development-diary&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;a href=&#34;https://juejin.cn/post/7151253414427492382&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   https://juejin.cn/post/7151253414427492382&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;一个简单的-hugo-主题&#34;&gt;一个简单的 Hugo 主题&lt;/h1&gt;&#xA;&lt;h2 id=&#34;创建一个空的网站模版&#34;&gt;创建一个空的网站模版&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;&#xA;&lt;h2 id=&#34;创建一个空的主题模版&#34;&gt;创建一个空的主题模版&lt;/h2&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;cd demo&#xA;hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;得到输出信息：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-&#34; data-lang=&#34;&#34;&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo-zero（hugo主题）&#xA;├── archetypes（hugo主题文章模板）&#xA;├── layouts（hugo主题布局文件）&#xA;├── static（hugo主题的静态文件）&#xA;├── LICENSE（hugo主题的许可证信息）&#xA;└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>hugo 配置</title>
-      <link>http://localhost:1313/en/post/2024/12/about_hugo_config/</link>
-      <pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2024/12/about_hugo_config/</guid>
-      <description>&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;# 基础优化配置&#xA;enableGitInfo = true                # 启用 Git 信息,可以显示文章的最后修改时间&#xA;hasCJKLanguage = true              # 启用中日韩文字支持,能准确统计字数&#xA;summaryLength = 140                # 文章摘要长度&#xA;&#xA;# SEO 优化&#xA;[params]&#xA;keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;]    # 网站关键词&#xA;description = &amp;#34;个人技术博客&amp;#34;        # 网站描述&#xA;images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片&#xA;# 自定义 Open Graph 信息&#xA;[params.og]&#xA;title = &amp;#34;我的博客&amp;#34;&#xA;type = &amp;#34;website&amp;#34;&#xA;images = [&amp;#34;og-image.jpg&amp;#34;]&#xA;&#xA;# 性能优化&#xA;[minify]&#xA;  disableCSS = false               # 启用 CSS 压缩&#xA;  disableHTML = false              # 启用 HTML 压缩&#xA;  disableJS = false                # 启用 JS 压缩&#xA;  disableJSON = false              # 启用 JSON 压缩&#xA;  minifyOutput = true              # 压缩 HTML 输出&#xA;&#xA;# 图片处理&#xA;[imaging]&#xA;  quality = 75                     # JPEG 图片质量&#xA;  resampleFilter = &amp;#34;Lanczos&amp;#34;       # 图片重采样过滤器&#xA;  anchor = &amp;#34;Smart&amp;#34;                 # 图片裁剪锚点&#xA;&#xA;# 内容安全策略&#xA;[params.csp]&#xA;  childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]&#xA;  fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]&#xA;  formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]&#xA;  framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]&#xA;  imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]&#xA;  objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]&#xA;  stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]&#xA;  scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]&#xA;&#xA;# 文章配置&#xA;[permalinks]&#xA;  posts = &amp;#34;/post/:year/:month/:slug/&amp;#34;    # 自定义文章 URL 结构&#xA;&#xA;# 自定义输出格式&#xA;[outputs]&#xA;  home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;]         # 支持 JSON API 输出&#xA;  section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]&#xA;  taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]&#xA;  term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]&#xA;&#xA;# RSS 订阅配置&#xA;[params.rss]&#xA;  limit = 20                             # RSS 文章数量限制&#xA;  fullContent = true                     # RSS 包含完整文章内容&#xA;&#xA;# 站内搜索配置&#xA;[outputs]&#xA;  home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]&#xA;[outputFormats.SearchIndex]&#xA;  mediaType = &amp;#34;application/json&amp;#34;&#xA;  baseName = &amp;#34;searchindex&amp;#34;&#xA;  isPlainText = true&#xA;  notAlternative = true&#xA;&#xA;# 文章目录配置&#xA;[markup.tableOfContents]&#xA;  endLevel = 3                           # 目录最大深度&#xA;  ordered = false                        # 使用无序列表&#xA;  startLevel = 2                         # 目录开始层级&#xA;&#xA;# 代码高亮配置&#xA;[markup.highlight]&#xA;  codeFences = true                      # 启用代码围栏&#xA;  guessSyntax = true                    # 自动推测代码语言&#xA;  lineNoStart = 1                        # 起始行号&#xA;  lineNos = true                         # 显示行号&#xA;  lineNumbersInTable = true              # 使用表格式行号&#xA;  tabWidth = 4                           # 制表符宽度&#xA;  style = &amp;#34;monokai&amp;#34;                      # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>从 Hexo 迁移至 Hugo</title>
-      <link>http://localhost:1313/en/post/2024/12/my-first-post/</link>
-      <pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate>
-      <guid>http://localhost:1313/en/post/2024/12/my-first-post/</guid>
-      <description>&lt;h1 id=&#34;再见hexo从hexo迁移至hugo&#34;&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;&#xA;&lt;p&gt;16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么改用hugo&#34;&gt;为什么改用Hugo&lt;/h2&gt;&#xA;&lt;h3 id=&#34;依赖管理问题&#34;&gt;依赖管理问题&lt;/h3&gt;&#xA;&lt;p&gt;在&#xA;&lt;a href=&#34;https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   静态博客的同步和备份方案&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on caoyang2002</title><link>https://caoyang2002.vercel.app/en/tags/hugo/</link><description>Recent content in Hugo on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/en/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://caoyang2002.vercel.app/en/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考">参考：&lt;/h1>
+&lt;p>中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/p>
+&lt;p>博客：&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;li>
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;h1 id="一个简单的-hugo-主题">一个简单的 Hugo 主题&lt;/h1>
+&lt;h2 id="创建一个空的网站模版">创建一个空的网站模版&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">hugo new site demo&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>这会在当前目录创建一个名为 &lt;code>demo&lt;/code> 的目录，然后初始化 &lt;code>hugo&lt;/code> 的目录结构，&lt;/p>
+&lt;h2 id="创建一个空的主题模版">创建一个空的主题模版&lt;/h2>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">cd demo
+hugo new theme hugo-zero&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>得到输出信息：&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-" data-lang="">Creating theme at /hugo/demo/themes/hugo-zero&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>一开始的目录结构如下图所示：&lt;/p>
+
+
+
+
+
+
+
+
+
+
+&lt;div>
+ &lt;pre>&lt;code class="language-bash" data-lang="bash">hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p></description></item><item><title>hugo 配置</title><link>https://caoyang2002.vercel.app/en/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/12/about_hugo_config/</guid><description>&lt;div>
+ &lt;pre>&lt;code class="language-toml" data-lang="toml"># 基础优化配置
+enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
+hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
+summaryLength = 140 # 文章摘要长度
+
+# SEO 优化
+[params]
+keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;] # 网站关键词
+description = &amp;#34;个人技术博客&amp;#34; # 网站描述
+images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片
+# 自定义 Open Graph 信息
+[params.og]
+title = &amp;#34;我的博客&amp;#34;
+type = &amp;#34;website&amp;#34;
+images = [&amp;#34;og-image.jpg&amp;#34;]
+
+# 性能优化
+[minify]
+ disableCSS = false # 启用 CSS 压缩
+ disableHTML = false # 启用 HTML 压缩
+ disableJS = false # 启用 JS 压缩
+ disableJSON = false # 启用 JSON 压缩
+ minifyOutput = true # 压缩 HTML 输出
+
+# 图片处理
+[imaging]
+ quality = 75 # JPEG 图片质量
+ resampleFilter = &amp;#34;Lanczos&amp;#34; # 图片重采样过滤器
+ anchor = &amp;#34;Smart&amp;#34; # 图片裁剪锚点
+
+# 内容安全策略
+[params.csp]
+ childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]
+ formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]
+ stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]
+ scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]
+
+# 文章配置
+[permalinks]
+ posts = &amp;#34;/post/:year/:month/:slug/&amp;#34; # 自定义文章 URL 结构
+
+# 自定义输出格式
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;] # 支持 JSON API 输出
+ section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+
+# RSS 订阅配置
+[params.rss]
+ limit = 20 # RSS 文章数量限制
+ fullContent = true # RSS 包含完整文章内容
+
+# 站内搜索配置
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]
+[outputFormats.SearchIndex]
+ mediaType = &amp;#34;application/json&amp;#34;
+ baseName = &amp;#34;searchindex&amp;#34;
+ isPlainText = true
+ notAlternative = true
+
+# 文章目录配置
+[markup.tableOfContents]
+ endLevel = 3 # 目录最大深度
+ ordered = false # 使用无序列表
+ startLevel = 2 # 目录开始层级
+
+# 代码高亮配置
+[markup.highlight]
+ codeFences = true # 启用代码围栏
+ guessSyntax = true # 自动推测代码语言
+ lineNoStart = 1 # 起始行号
+ lineNos = true # 显示行号
+ lineNumbersInTable = true # 使用表格式行号
+ tabWidth = 4 # 制表符宽度
+ style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code>&lt;/pre>
+&lt;/div>
+
+&lt;p>一些重要的最佳实践建议：&lt;/p></description></item><item><title>从 Hexo 迁移至 Hugo</title><link>https://caoyang2002.vercel.app/en/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo">再见Hexo——从Hexo迁移至Hugo&lt;/h1>
+&lt;p>16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p>
+&lt;h2 id="为什么改用hugo">为什么改用Hugo&lt;/h2>
+&lt;h3 id="依赖管理问题">依赖管理问题&lt;/h3>
+&lt;p>在
+&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ >
+ 静态博客的同步和备份方案
+ 
+ &lt;span class="external-icon">↗&lt;/span>
+ 
+&lt;/a>
+一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p></description></item></channel></rss>

@@ -1,0 +1,30 @@
+author = "simons"
+# 打赏
+reward = true
+wechatPaymentCode = '/images/payment/wechat.jpg'
+alipayPaymentCode = '/images/payment/alipay.jpg'
+
+paginatePath = 'page'
+
+# 反馈
+feedback = true
+email = 'reggiesimons2cy@gmail.com'
+# 主题配置
+# 背景图片
+backgroundImage = "/images/ui/background.jpg" # 放在 static 下
+# 时区
+timeZone = "Asia/Shanghai"
+
+
+[defaults]
+  date = '1960-01-01T00:00:00+00:00'
+  draft = false
+  author = "simons"
+  toc = true
+  categories = ["暂无"]
+  tags = ["暂无"]
+  description = "糟糕，写文章的时候忘记添加描述了！！！"
+
+[frontmatter]
+  default = ["title", "author", "date", "draft", "categories", "tags", "description"]
+  post = ["title", "author", "date", "draft", "categories", "tags", "description","codeRunners"]

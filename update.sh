@@ -206,6 +206,37 @@ cleanup() {
   log "INFO" "清理完成"
 }
 
+# 更新主题
+update_theme(){
+    # 更新主题
+    log "INFO" "更新主题..."
+    (cd "$HUGO_THEME_PATH" && git pull origin "$HUGO_THEME_BRANCH") || {
+      log "ERROR" "主题更新失败"
+      return 1
+    }
+}
+
+# hugo 构建
+hugo_build(){
+    # Hugo 构建
+    log "INFO" "开始 Hugo 构建..."
+    if ! hugo --environment production --baseURL https://caoyang2002.vercel.app --minify; then
+      log "ERROR" "Hugo 构建失败"
+      return 1
+    fi
+}
+
+git_push(){
+    # Git 操作
+    log "INFO" "更新 Git 仓库..."
+    git submodule update --init --recursive --remote
+    git add .
+    git commit -m "Deploy: $deploy_time" || true
+    if ! git push; then
+      log "ERROR" "Git 推送失败"
+      return 1
+    fi
+}
 
 # 部署到 vervel
 deploy() {
@@ -223,34 +254,10 @@ deploy() {
   log "INFO" "清理缓存..."
   rm -rf "$HUGO_PUBLIC_DIR" "$HUGO_RESOURCE_DIR" .hugo_build.lock
 
-  # 更新主题
-  log "INFO" "更新主题..."
-  (cd "$HUGO_THEME_PATH" && git pull origin "$HUGO_THEME_BRANCH") || {
-    log "ERROR" "主题更新失败"
-    return 1
-  }
-
-  # Hugo 构建
-  log "INFO" "开始 Hugo 构建..."
-  if ! hugo --minify --gc; then
-    log "ERROR" "Hugo 构建失败"
-    return 1
-  fi
-
   # Vercel 部署
   log "INFO" "开始 Vercel 部署..."
   if ! vercel --prod --archive=tgz; then
     log "ERROR" "Vercel 部署失败"
-    return 1
-  fi
-
-  # Git 操作
-  log "INFO" "更新 Git 仓库..."
-  git submodule update --init --recursive --remote
-  git add .
-  git commit -m "Deploy: $deploy_time" || true
-  if ! git push; then
-    log "ERROR" "Git 推送失败"
     return 1
   fi
 
