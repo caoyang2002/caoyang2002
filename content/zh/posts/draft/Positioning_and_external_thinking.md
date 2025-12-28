@@ -204,4 +204,3 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 [《品类战略五阶段之防御期：如何抵御竞争对手？群晖、吉列、戴比尔斯》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485039&idx=1&sn=d2570d51de30edcc26eb83ed0b143aba&scene=21#wechat_redirect)
 
 [《品牌战略五阶段之进攻期：什么时候对领导品牌的正面硬刚？巴奴和海底捞的 “鸭血之战”》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485004&idx=1&sn=3b0ab1d23240a2471e451b2292e89d99&scene=21#wechat_redirect)
-

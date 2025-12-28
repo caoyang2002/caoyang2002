@@ -1,5 +1,5 @@
 +++
-title = 'Openwrt_failed_to_install_1panel'
+title = '解决在 openwrt 中自动安装 1panel 失败的问题'
 date = 2025-01-29T08:28:43+08:00
 draft = true
 author = "simons"
@@ -34,11 +34,7 @@ Collected errors:
 >
 > 在命令行中，检查 `/opt/` 和 `/opt/containerd` 下是否有 `1Panel` 的目录，如果有就删除，再重新安装
 
-
-
 # 后面的没写完，因为我删除 1Panel 目录后就可以在 istore  中安装了
-
-
 
 # 方法一：检查是否可以手动通过 docker 的方式安装
 
@@ -283,6 +279,3 @@ docker ps -a # 查看进程
 docker stop 1panel # 停止容器
 docker rm 1panel # 删除镜像
 ```
-
-
-

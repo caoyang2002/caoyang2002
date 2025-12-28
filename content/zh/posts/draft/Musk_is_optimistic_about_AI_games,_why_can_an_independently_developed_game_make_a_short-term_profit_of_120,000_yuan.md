@@ -480,4 +480,3 @@ Pieter的成功并非遥不可及、无法复刻，普通个体同样能够从�
 13. [The Story of Pieter Pieter (Pieterio) & How This Solopreneur Become So Successful - goldpenguin](https://goldpenguin.org/blog/the-story-of-pieter-Pieter/)
 
 14. [Transcript for Pieter Pieter: Programming, Viral AI Startups, and Digital Nomad Life | Lex Fridman Podcast #440](https://lexfridman.com/pieter-Pieter-transcript)
-

@@ -3,14 +3,14 @@ title = 'GitHub Projects深入剖析：不只是看板，是工程管理的操�
 date = 2025-01-26T10:48:35+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["编程"]
+tags = ["github"]
+description = "GitHub 的 Projects 是什么"
 +++
 
 # GitHub Projects深入剖析：不只是看板，是工程管理的操作系统
 
-先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知 - 一团糟。
+先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。
 
 ## 本质分析
 

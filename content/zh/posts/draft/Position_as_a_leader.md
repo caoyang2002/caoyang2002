@@ -74,4 +74,3 @@ RCA 的失败在于试图直接挑战 IBM 的主导地位，而没有找到一�
 [《成为第一是进入心智的捷径：京东“掐”美团，饿了么怎么活？》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485182&idx=1&sn=44a42e2113248cd3f3e435d39b5c3b2c&scene=21#wechat_redirect)
 
 [《定位理论的边界：没有边界就是没有能力》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485164&idx=1&sn=d34f19f27cb6928fef8e28ae4fd34f81&scene=21#wechat_redirect)
-

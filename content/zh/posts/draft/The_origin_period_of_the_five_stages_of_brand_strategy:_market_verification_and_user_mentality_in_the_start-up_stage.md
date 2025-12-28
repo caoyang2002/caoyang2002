@@ -222,4 +222,3 @@ App的推出标志着樊登读书从一个基于社交媒体的读书社群，�
 [《品类三界之产品品类（下）》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484868&idx=1&sn=4241352acac2ce33f1460d097e522a7c&scene=21#wechat_redirect)
 
 [《品类三界之产品品类（上）》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484833&idx=1&sn=33fb6108dc1001f47622be4e1621c54f&scene=21#wechat_redirect)
-

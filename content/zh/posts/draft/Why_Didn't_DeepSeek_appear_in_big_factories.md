@@ -1,7 +1,7 @@
 +++
 title = '放手一搏：为什么 DeepSeek 没有出现在大厂？'
 date = 2025-02-28T15:30:00+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["营销"]
 tags = ["创新者的窘境","战略设计"]

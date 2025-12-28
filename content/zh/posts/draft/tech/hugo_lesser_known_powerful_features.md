@@ -3,9 +3,9 @@ title = 'Hugo 不为人知的强大特性'
 date = 2025-01-26T01:44:00+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["建站"]
+tags = ["hugo"]
+description = "Hugo 的特性"
 +++
 # Hugo 不为人知的强大特性
 

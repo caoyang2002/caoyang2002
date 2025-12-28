@@ -210,4 +210,3 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 6. [海底捞 “魔童尿海”事件舆情翻车，最新回应：10倍赔偿 - 36Kr](https://www.36kr.com/p/3203447473776134)
 7. [胖东来宣布不再开除尝面员工，回应来了 - 澎湃](https://www.thepaper.cn/newsDetail_forward_26403463)
 8. [重新审视对尝面员工的开除决定！胖东来：门店关停，员工分流](https://news.qq.com/rain/a/20240219A07QLX00)
-

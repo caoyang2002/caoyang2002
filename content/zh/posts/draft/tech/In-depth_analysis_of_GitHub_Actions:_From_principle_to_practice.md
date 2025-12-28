@@ -3,9 +3,9 @@ title = 'GitHub Actions 深入剖析：从原理到实践'
 date = 2025-01-26T10:47:26+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["编程"]
+tags = ["github"]
+description = "Github 的 Action 概述"
 +++
 
 # GitHub Actions 深入剖析：从原理到实践

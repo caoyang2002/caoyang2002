@@ -400,4 +400,3 @@ Cott Corporation 作为专业的饮料制造商，在生产效率、成本控制
 [《品类三界之渠道品类（下）》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484890&idx=1&sn=73e4db2a5ab2c66e996ec5918eb9eb13&scene=21#wechat_redirect)
 
 [《品类三界之渠道品类（上）》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484879&idx=1&sn=2fc5815b9fabdecfb8a9eaf3437216fd&scene=21#wechat_redirect)
-

@@ -201,6 +201,3 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 [《品类命名方法：奇异果与中国鹅莓》](https://mp.weixin.qq.com/s/OYr3qxH2KYYWk4AtDgI5fA)
 
 [《商业模式之企业商业模式：雷士照明》](https://mp.weixin.qq.com/s/Fyx0stI0ZtCzZJoNrarcdw)
-
-
-
