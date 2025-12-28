@@ -180,4 +180,3 @@ Facebook 的创始人扎克伯格回到哈佛演讲时说，“脸书并不是�
 [《六大心智规律：如何通过心智策略让顾客需要？》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485154&idx=1&sn=89662a9f271d1d40202f57b18914c32d&scene=21#wechat_redirect)
 
 [《定位与外部思维：从雀巢广告思考如何从顾客的视角考虑信息的传播？》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247485130&idx=1&sn=f8f79ea43616473a2d34313962f7e898&scene=21#wechat_redirect)
-

@@ -1,7 +1,7 @@
 +++
 title = '定位理论的贡献二：竞争的基本单位是品牌'
 date = 2025-03-26T08:28:43+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

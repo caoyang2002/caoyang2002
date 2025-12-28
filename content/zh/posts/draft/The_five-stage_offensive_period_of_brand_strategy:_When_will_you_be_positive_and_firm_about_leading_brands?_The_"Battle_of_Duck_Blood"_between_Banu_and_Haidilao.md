@@ -274,4 +274,3 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 [《品类三界之导购品类》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484920&idx=1&sn=4957dd76fedc625c8f65423d3b49ac70&scene=21#wechat_redirect)
 
 [《品类三界之渠道品类（下）》](https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&mid=2247484890&idx=1&sn=73e4db2a5ab2c66e996ec5918eb9eb13&scene=21#wechat_redirect)
-
