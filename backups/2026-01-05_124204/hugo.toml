@@ -1,5 +1,5 @@
 # 基础配置
-baseURL = "{{ os.Getenv "BASE_URL" }}"
+baseURL = 'https://caoyang2002.vercel.app'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
@@ -163,42 +163,42 @@ filename = "sitemap.xml"
 [languages]
 # 中文
 [languages.zh]
-contentDir = 'content/zh'
-staticDir = ['static']
-notFound = "/404.html"
-disabled = false
-languageCode = 'zh-CN'
-languageDirection = 'ltr'
-languageName = 'Chinese'
-title = 'caoyang 2002'
-weight = 1
+   contentDir = 'content/zh'
+ staticDir = ['static']
+   notFound = "/404.html"
+   disabled = false
+   languageCode = 'zh-CN'
+   languageDirection = 'ltr'
+   languageName = 'Chinese'
+   title = 'caoyang 2002'
+   weight = 1
 [languages.zh.params]
-subtitle = '中文文档'
+    subtitle = '中文文档'
 
 # 英语
 [languages.en]
-contentDir = 'content/en'
-staticDir = ['static']
+    contentDir = 'content/en'
+     staticDir = ['static']
 
-disabled = false
-languageCode = 'en-US'
-languageDirection = 'ltr'
-languageName = 'English'
-title = 'caoyang2002'
-weight = 2
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    title = 'caoyang2002'
+    weight = 2
 [languages.en.params]
 subtitle = 'Reference, Tutorials, and Explanations'
 
 # 西班牙语
 [languages.es]
-contentDir = 'content/es'
-staticDir = ['static']
-disabled = false
-languageCode = 'es-ES'
-languageDirection = 'ltr'
-languageName = 'Español'
-title = 'caoyang2002'
-weight = 3
+    contentDir = 'content/es'
+    staticDir = ['static']
+    disabled = false
+    languageCode = 'es-ES'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'caoyang2002'
+    weight = 3
 [languages.es.params]
 subtitle = 'Referencia, Tutoriales y Explicaciones'
 
@@ -226,16 +226,13 @@ noClasses = false
 style = "monokai" # 代码高亮主题
 
 [markup.goldmark.parser.attribute]
-block = true
-title = true
+  block = true
+  title = true
 
 [markup.goldmark.extensions]
-strikethrough = true
-table = true
-taskList = true
-typographer = true
-highlight = true
-mark = true    # 支持 ==标记== 语法
-
-[params]
-web_host = "{{ os.Getenv "BASE_URL" }}"
+  strikethrough = true
+  table = true
+  taskList = true
+  typographer = true
+  highlight = true
+  mark = true    # 支持 ==标记== 语法
