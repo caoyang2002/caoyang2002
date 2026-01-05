@@ -7,6 +7,7 @@ categories= ["营销"]
 description = "决策瘫痪"
 toc = true
 +++
+
 # 决策瘫痪：选择太多反而寸步难行
 
 ## 现象解析
