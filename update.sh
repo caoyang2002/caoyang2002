@@ -50,6 +50,7 @@ log() {
   timestamp=$(date +'%Y-%m-%d %H:%M:%S')
   printf "${color}[${timestamp}] [${level}] ${message}${NC}\n" | tee -a "$LOG_FILE"
 }
+
 # 错误处理
 error_handler() {
   local line_no=$1
@@ -114,6 +115,8 @@ health_check() {
     exit 1
   fi
 }
+
+current_time=$(date +%Y-%m-%d_%H%M%S)
 
 # 备份
 backup() {
@@ -231,12 +234,13 @@ git_push(){
     log "INFO" "更新 Git 仓库..."
     git submodule update --init --recursive --remote
     git add .
-    git commit -m "Deploy: $deploy_time" || true
+    git commit -m "Deploy: $current_time" || true
     if ! git push; then
       log "ERROR" "Git 推送失败"
       return 1
     fi
 }
+
 
 # 部署到 vervel
 deploy() {
@@ -298,6 +302,9 @@ EOF
 # 主函数
 main() {
   case "${1:-}" in
+  "--git" | "-g")
+    git_push
+    ;;
   "--dev" | "-d")
     dev
     ;;
