@@ -1,5 +1,5 @@
 # 基础配置
-baseURL = "{{ os.Getenv "BASE_URL" }}"
+baseURL = "https://caoyang2002.vercel.app"
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
@@ -236,6 +236,3 @@ taskList = true
 typographer = true
 highlight = true
 mark = true    # 支持 ==标记== 语法
-
-[params]
-web_host = "{{ os.Getenv "BASE_URL" }}"
