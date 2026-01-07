@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>群晖 on caoyang2002</title>
+    <link>http://localhost:1313/es/tags/%E7%BE%A4%E6%99%96/</link>
+    <description>Recent content in 群晖 on caoyang2002</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>群晖开发</title>
+      <link>http://localhost:1313/es/post/2023/08/synology/</link>
+      <pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate>
+      <guid>http://localhost:1313/es/post/2023/08/synology/</guid>
+      <description>&lt;p&gt;&#xA;&lt;a href=&#34;https://blog.csdn.net/christmans/article/details/129641264&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   原文链接&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;&#xA;&lt;h1 id=&#34;查看-cpu-架构&#34;&gt;查看 CPU 架构&lt;/h1&gt;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&lt;div&gt;&#xA;    &lt;pre&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。&#xA;arch：该命令可以查看Linux系统的CPU架构。&#xA;cat /proc/version：该命令可以查看系统内核的版本信息。&#xA;cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&#xA;&lt;a href=&#34;http://ipkg.nslu2-linux.org/optware-ng/bootstrap/&#34;&#xA;   &#xA;   &#xA;     target=&#34;_blank&#34;&#xA;     rel=&#34;noopener noreferrer&#34;&#xA;     class=&#34;external-link&#34;&#xA;   &gt;&#xA;   脚本目录&#xA;   &#xA;     &lt;span class=&#34;external-icon&#34;&gt;↗&lt;/span&gt;&#xA;   &#xA;&lt;/a&gt;&#xA;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

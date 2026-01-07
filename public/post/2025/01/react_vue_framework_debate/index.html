@@ -1,0 +1,1967 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="zh-CN"
+    dir="ltr"
+>
+    
+    
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+        body {
+            background-image: url("/images/ui/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        html,
+        body {
+            min-height: 100vh;
+        }
+    </style>
+    
+    <script
+        charset="UTF-8"
+        id="LA_COLLECT"
+        src="//sdk.51.la/js-sdk-pro.min.js"
+    ></script>
+    <script>
+        LA.init({ id: "3L3XAvCJS5maI7j0", ck: "3L3XAvCJS5maI7j0" });
+    </script>
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>React vs Vue: 框架之争的深层思考 - caoyang 2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="React vs Vue：深度技术分析与对比
+一、核心设计哲学差异
+1.1 编程范式
+React：函数式编程优先
+
+强调不可变性和纯函数
+组件本质是函数（props in, JSX out）
+Hooks强化了函数式概念
+
+
+
+
+
+
+
+
+
+
+
+
+    // React函数式组件
+const Component = ({ data }) =&gt; {
+  const [state, setState] = useState(initialState);
+  const derivedValue = useMemo(() =&gt; compute(data), [data]);
+  
+  return &lt;div&gt;{derivedValue}&lt;/div&gt;;
+};
+
+
+Vue：响应式编程 &#43; 面向对象
+
+基于可变状态的响应式系统
+组合式API提供函数式能力
+传统选项式API符合OOP思维
+
+
+
+
+
+
+
+
+
+
+
+
+    &lt;!-- Vue组合式API --&gt;
+&lt;script setup&gt;
+import { ref, computed } from &#39;vue&#39;
+
+const data = ref(initialData)
+const derivedValue = computed(() =&gt; compute(data.value))
+&lt;/script&gt;
+
+
+1.2 架构理念
+React：最小化API，一切靠JavaScript" />
+    <meta name="author" content="曹洋 simons" />
+    
+
+    
+    <script src="/js/code-copy.js" defer></script>
+       
+    
+    
+
+    <link rel="preload stylesheet" as="style" href="/bundle.min.1f095e32d40a0e4e5769102bcd31bd821d4bdbe596aaea70cca5e8bbeb930cb6.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/about/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="/twitter.svg" />
+    
+    <link rel="preload" as="image" href="/github.svg" />
+    
+    <link rel="preload" as="image" href="/instagram.svg" />
+    
+    <link rel="preload" as="image" href="/rss.svg" />
+    
+    
+
+    
+    
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+
+    <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        onload="hljs.highlightAll();"
+    ></script>
+
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"
+    ></script>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        
+        <header class="mx-auto flex h-12 px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang 2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+
+        <nav
+            class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/"
+                >首页
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/schedule/"
+                >日程
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/protfolio/"
+                >作品集
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/about/"
+                >关于
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/contact/"
+                >联系
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/guestbook/"
+                >留言
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/resources/"
+                >资源
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/booklist/"
+                >书单
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/hotlist/"
+                >热搜
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/search/"
+                >搜索
+            </a>
+            
+            
+            
+
+            <div class="language-selector">
+                <div class="inline-block text-left dropdown">
+    
+    <div>
+        <p class="selected-language">Chinese</p>
+    </div>
+
+    
+    <div style="background-color: red; z-index: 1000">
+        
+    </div>
+</div>
+
+<script>
+    
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownIcon = document.querySelector(".dropdown-icon");
+
+    
+    dropdownButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("show");
+        dropdownButton.parentElement.classList.toggle("open");
+    });
+
+    
+    dropdownMenu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", function () {
+            
+            dropdownButton.textContent = item.textContent + " ";
+            dropdownButton.appendChild(dropdownIcon);
+
+            
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+
+            
+            const selectedValue = item.getAttribute("data-value");
+            console.log("Selected Language:", selectedValue);
+        });
+    });
+
+    
+    document.addEventListener("click", function (event) {
+        if (
+            !dropdownButton.contains(event.target) &&
+            !dropdownMenu.contains(event.target)
+        ) {
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+        }
+    });
+</script>
+
+<style>
+     
+    .dropdown {
+         
+        display: inline-block;
+        margin: 0;
+    }
+
+     
+    .dropdown-menu {
+         
+         
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+         
+         
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+         
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+     
+    .dropdown-menu li {
+        padding: 0.2rem;
+        cursor: pointer;
+        color: #333;
+         
+         
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: transparent;  
+    }
+    .selected-language:hover {
+        color: #0042da;
+    }
+</style>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+     
+    .language-selector {
+        position: relative;  
+        display: inline-block;  
+        z-index: 10;
+    }
+
+     
+    .language-selector .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+    }
+
+    .language-selector:hover .dropdown-menu {
+        display: block;
+    }
+
+     
+    .header-menu:hover {
+        color: #0042da;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .header-menu:hover {
+        color: #0042da;
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">React vs Vue: 框架之争的深层思考</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+
+            
+
+            <time>
+                2025年1月24日星期五
+            </time>
+
+            
+            <span class="mx-1">&middot;</span>
+            <span>
+                simons
+            </span>
+            
+            <span class="mx-1">&middot;</span>
+
+            <span class="post-date">
+                本文共 3186
+                个字 ， 预计需要阅读 7
+                分钟
+            </span>
+
+            
+        </div>
+        
+
+        <span class="text-md antialiased opacity-60">
+             
+            <a
+                href="http://localhost:1313/tags/%E6%80%9D%E8%80%83"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                思考
+            </a>
+            
+        </span>
+        
+        
+        
+    </div>
+
+    <section><h1 id="react-vs-vue深度技术分析与对比">React vs Vue：深度技术分析与对比</h1>
+<h2 id="一核心设计哲学差异">一、核心设计哲学差异</h2>
+<h3 id="11-编程范式">1.1 编程范式</h3>
+<p><strong>React</strong>：函数式编程优先</p>
+<ul>
+<li>强调不可变性和纯函数</li>
+<li>组件本质是函数（props in, JSX out）</li>
+<li>Hooks强化了函数式概念</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-jsx" data-lang="jsx">// React函数式组件
+const Component = ({ data }) =&gt; {
+  const [state, setState] = useState(initialState);
+  const derivedValue = useMemo(() =&gt; compute(data), [data]);
+  
+  return &lt;div&gt;{derivedValue}&lt;/div&gt;;
+};</code></pre>
+</div>
+
+<p><strong>Vue</strong>：响应式编程 + 面向对象</p>
+<ul>
+<li>基于可变状态的响应式系统</li>
+<li>组合式API提供函数式能力</li>
+<li>传统选项式API符合OOP思维</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<div>
+    <pre><code class="language-vue" data-lang="vue">&lt;!-- Vue组合式API --&gt;
+&lt;script setup&gt;
+import { ref, computed } from &#39;vue&#39;
+
+const data = ref(initialData)
+const derivedValue = computed(() =&gt; compute(data.value))
+&lt;/script&gt;</code></pre>
+</div>
+
+<h3 id="12-架构理念">1.2 架构理念</h3>
+<p><strong>React</strong>：最小化API，一切靠JavaScript</p>
+<ul>
+<li>&ldquo;Learn Once, Write Anywhere&rdquo;</li>
+<li>只提供核心渲染抽象</li>
+<li>状态管理、路由等由社区解决</li>
+</ul>
+<p><strong>Vue</strong>：渐进式框架</p>
+<ul>
+<li>核心库 + 官方路由/状态管理</li>
+<li>从轻量视图层到完整框架</li>
+<li>更强的开箱即用体验</li>
+</ul>
+<h2 id="二核心机制实现对比">二、核心机制实现对比</h2>
+<h3 id="21-响应式系统实现">2.1 响应式系统实现</h3>
+<p><strong>React的实现</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// 基于引用的不可变性检测
+const [state, setState] = useState({ count: 0 });
+
+// 触发重新渲染的条件：
+// 1. setState调用
+// 2. Props引用变化
+// 3. Context变化
+
+// 优势：
+// - 简单可预测
+// - 容易实现时间旅行调试
+// - 无魔法，显式更新
+
+// 劣势：
+// - 需要手动优化（useMemo/useCallback）
+// - 全组件重新渲染，依赖开发者优化</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p><strong>Vue的实现</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// Vue 2: Object.defineProperty
+Object.defineProperty(obj, key, {
+  get() { /* 依赖收集 */ },
+  set(newVal) { /* 触发更新 */ }
+});
+
+// Vue 3: Proxy
+const reactive = (obj) =&gt; new Proxy(obj, {
+  get(target, key) { /* 依赖追踪 */ },
+  set(target, key, value) { /* 触发更新 */ }
+});
+
+// 优势：
+// - 自动依赖追踪
+// - 细粒度更新（组件/组件内元素）
+// - 无需手动声明依赖
+
+// 劣势：
+// - 响应式对象有特殊要求
+// - 部分操作需要特殊API（Vue.set/数组方法）
+// - Proxy兼容性（Vue 3需要现代浏览器）</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h3 id="22-虚拟dom与渲染机制">2.2 虚拟DOM与渲染机制</h3>
+<p><strong>React的Reconciliation</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// React的Diff算法（O(n)复杂度）
+// 1. 不同类型的元素 =&gt; 销毁重建
+// 2. 相同类型的DOM元素 =&gt; 更新属性
+// 3. 相同类型的组件元素 =&gt; 递归比较子节点
+
+// Concurrent Features（React 18&#43;）
+// - 可中断的渲染过程
+// - 优先级调度
+// - 自动批处理</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p><strong>Vue的渲染优化</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// Vue 3的编译器优化：
+// 1. 静态提升（Static Hoisting）
+// 2. 补丁标志（Patch Flags）
+// 3. 树结构拍平（Tree Flattening）
+
+// 示例编译结果
+const _hoisted_1 = /*静态节点*/;
+// 动态节点带有补丁标志
+createVNode(&#34;div&#34;, null, [
+  _hoisted_1,
+  createVNode(&#34;span&#34;, { class: _normalizedClass }, null, 2 /* CLASS */)
+])</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="三关键机制详细对比">三、关键机制详细对比</h2>
+<h3 id="31-状态管理">3.1 状态管理</h3>
+<p><strong>React状态管理演变</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// 类组件时代
+class Component extends React.Component {
+  state = { count: 0 };
+  increment = () =&gt; {
+    this.setState(prev =&gt; ({ count: prev.count &#43; 1 }));
+  };
+}
+
+// Hooks时代
+const [state, setState] = useState();
+const [reducerState, dispatch] = useReducer(reducer, initialState);
+
+// 外部状态管理（Redux Toolkit现代方式）
+import { createSlice, configureStore } from &#39;@reduxjs/toolkit&#39;;
+
+const counterSlice = createSlice({
+  name: &#39;counter&#39;,
+  initialState: { value: 0 },
+  reducers: { increment: state =&gt; { state.value &#43;= 1; } }
+});</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p><strong>Vue状态管理</strong>：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// Options API
+export default {
+  data() {
+    return { count: 0 };
+  },
+  methods: {
+    increment() { this.count&#43;&#43;; }
+  }
+};
+
+// Composition API
+import { ref } from &#39;vue&#39;;
+const count = ref(0);
+const increment = () =&gt; count.value&#43;&#43;;
+
+// Pinia（Vuex的现代替代）
+import { defineStore } from &#39;pinia&#39;;
+export const useCounterStore = defineStore(&#39;counter&#39;, {
+  state: () =&gt; ({ count: 0 }),
+  actions: { increment() { this.count&#43;&#43;; } }
+});</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h3 id="32-组件逻辑复用">3.2 组件逻辑复用</h3>
+<p><strong>React：自定义Hooks</strong></p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// 自定义Hook
+function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  
+  useEffect(() =&gt; {
+    // 获取数据逻辑
+  }, [url]);
+  
+  return { data, loading };
+}
+
+// 使用
+const { data, loading } = useFetch(&#39;/api/data&#39;);</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p><strong>Vue：Composables</strong></p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="javascript">
+    
+    <div>
+        <pre>
+                <code class="language-javascript">// Composable函数
+export function useFetch(url) {
+  const data = ref(null);
+  const loading = ref(false);
+  
+  watchEffect(async () =&gt; {
+    loading.value = true;
+    data.value = await fetch(url).then(r =&gt; r.json());
+    loading.value = false;
+  });
+  
+  return { data, loading };
+}
+
+// 使用
+const { data, loading } = useFetch(&#39;/api/data&#39;);</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="四性能特点分析">四、性能特点分析</h2>
+<h3 id="41-更新粒度对比">4.1 更新粒度对比</h3>
+<p><strong>React</strong>：组件级重新渲染</p>
+<ul>
+<li>默认情况下，状态变化导致整个组件函数重新执行</li>
+<li>需要手动优化：React.memo、useMemo、useCallback</li>
+<li>优势：心智模型简单，更新行为可预测</li>
+<li>劣势：过度渲染风险，需要开发者优化意识</li>
+</ul>
+<p><strong>Vue</strong>：依赖追踪的精确更新</p>
+<ul>
+<li>响应式系统自动追踪依赖，只更新依赖变化的组件</li>
+<li>组件内元素级别更新（通过补丁标志）</li>
+<li>优势：默认性能较好，减少手动优化需求</li>
+<li>劣势：响应式系统有一定运行时开销</li>
+</ul>
+<h3 id="42-编译时优化">4.2 编译时优化</h3>
+<p><strong>React</strong>：</p>
+<ul>
+<li>JSX在运行时编译（Babel/TypeScript）</li>
+<li>有限的编译时优化</li>
+<li>React Forget（未来可能的编译时优化）</li>
+</ul>
+<p><strong>Vue</strong>：</p>
+<ul>
+<li>模板编译时的静态分析</li>
+<li>生成优化的渲染函数</li>
+<li>树结构拍平减少虚拟DOM节点</li>
+</ul>
+<h2 id="五生态系统与工具链">五、生态系统与工具链</h2>
+<h3 id="51-开发体验">5.1 开发体验</h3>
+<p><strong>React</strong>：</p>
+<ul>
+<li>Create React App（官方但较旧）</li>
+<li>Vite + React（现代推荐）</li>
+<li>Next.js（全栈框架，SSR/SSG）</li>
+<li>Remix（新兴全栈框架）</li>
+</ul>
+<p><strong>Vue</strong>：</p>
+<ul>
+<li>Vue CLI（官方，维护中）</li>
+<li>Vite + Vue（现代推荐，官方支持）</li>
+<li>Nuxt.js（全栈框架，SSR/SSG）</li>
+<li>VitePress（文档生成器）</li>
+</ul>
+<h3 id="52-类型支持">5.2 类型支持</h3>
+<p><strong>React</strong>：</p>
+<ul>
+<li>原生JSX类型支持（TSX）</li>
+<li>成熟的TypeScript生态</li>
+<li>组件Props类型定义直接</li>
+</ul>
+<p><strong>Vue</strong>：</p>
+<ul>
+<li>Vue 3 + TypeScript支持良好</li>
+<li><code>&lt;script setup&gt;</code> + TypeScript体验优秀</li>
+<li>模板中的类型检查稍弱于JSX</li>
+</ul>
+<h3 id="53-移动端与跨平台">5.3 移动端与跨平台</h3>
+<p><strong>React</strong>：</p>
+<ul>
+<li>React Native（成熟的跨平台移动方案）</li>
+<li>React Native Web（Web支持）</li>
+</ul>
+<p><strong>Vue</strong>：</p>
+<ul>
+<li>Vue Native（基于React Native，生态较小）</li>
+<li>微信小程序官方支持</li>
+<li>Uni-app（跨端解决方案，中国流行）</li>
+</ul>
+<h2 id="六技术选型建议">六、技术选型建议</h2>
+<h3 id="61-选择react的场景">6.1 选择React的场景</h3>
+<ol>
+<li><strong>大型复杂应用</strong>：需要高度可定制架构</li>
+<li><strong>跨平台需求</strong>：需要同时开发Web和移动端</li>
+<li><strong>函数式编程团队</strong>：团队偏好不可变性和纯函数</li>
+<li><strong>丰富生态需求</strong>：需要大量第三方库选择</li>
+<li><strong>长期维护项目</strong>：Facebook长期支持，API稳定</li>
+</ol>
+<h3 id="62-选择vue的场景">6.2 选择Vue的场景</h3>
+<ol>
+<li><strong>快速原型开发</strong>：简洁的API和模板语法</li>
+<li><strong>渐进式增强</strong>：现有项目逐步引入</li>
+<li><strong>开发团队经验</strong>：特别是HTML/CSS强，JS经验较少</li>
+<li><strong>中国国内市场</strong>：中文文档完善，国内生态丰富</li>
+<li><strong>性能敏感应用</strong>：自动的细粒度更新优化</li>
+</ol>
+<h3 id="63-混合进阶选择">6.3 混合/进阶选择</h3>
+<ol>
+<li><strong>学习曲线</strong>：Vue入门更简单，React概念更抽象</li>
+<li><strong>团队转型</strong>：Vue 2到3有断代，React 16到18相对平滑</li>
+<li><strong>全栈框架</strong>：Next.js vs Nuxt.js，根据主要框架选择</li>
+</ol>
+<h2 id="七未来发展趋势">七、未来发展趋势</h2>
+<h3 id="71-react发展方向">7.1 React发展方向</h3>
+<ol>
+<li><strong>并发特性全面化</strong>：Suspense、流式SSR</li>
+<li><strong>服务器组件</strong>：减少客户端包大小</li>
+<li><strong>React Forget</strong>：编译时自动Memoization</li>
+<li><strong>状态管理简化</strong>：Context + useReducer模式</li>
+</ol>
+<h3 id="72-vue发展方向">7.2 Vue发展方向</h3>
+<ol>
+<li><strong>Vapor Mode</strong>（实验性）：编译时模式，减少虚拟DOM</li>
+<li><strong>工具链统一</strong>：Vite作为官方构建工具</li>
+<li><strong>TypeScript深化</strong>：更好的类型推导</li>
+<li><strong>组合式API普及</strong>：逐渐替代Options API</li>
+</ol>
+<h2 id="八深度思考题答案">八、深度思考题答案</h2>
+<h3 id="81-为什么react选择单向数据流">8.1 为什么React选择单向数据流？</h3>
+<ol>
+<li><strong>可预测性</strong>：数据流向单一，便于调试和追踪</li>
+<li><strong>组件解耦</strong>：父组件控制子组件行为，减少意外副作用</li>
+<li><strong>时间旅行调试</strong>：状态历史可追溯，Redux DevTools等工具的基础</li>
+<li><strong>函数式理念</strong>：符合React的函数式编程哲学</li>
+</ol>
+<h3 id="82-vue为什么主推模板语法">8.2 Vue为什么主推模板语法？</h3>
+<ol>
+<li><strong>关注点分离</strong>：HTML、CSS、JavaScript分离符合传统Web开发习惯</li>
+<li><strong>渐进式采用</strong>：模板对设计师和传统开发者更友好</li>
+<li><strong>编译时优化</strong>：模板可以进行静态分析，生成优化代码</li>
+<li><strong>开发体验</strong>：简洁的声明式语法，减少样板代码</li>
+</ol>
+<h3 id="83-下一代前端框架会是什么样">8.3 下一代前端框架会是什么样？</h3>
+<ol>
+<li><strong>编译时优化增强</strong>：减少运行时开销（Svelte、SolidJS方向）</li>
+<li><strong>岛屿架构</strong>（Islands Architecture）：部分交互性，减少JS加载</li>
+<li><strong>服务端优先</strong>：React Server Components、Qwik等</li>
+<li><strong>构建工具集成</strong>：框架与构建工具深度集成（Vite）</li>
+<li><strong>类型安全全面化</strong>：从API到样式的全链路类型安全</li>
+<li><strong>Web标准对齐</strong>：更多使用原生浏览器API，减少框架代码</li>
+</ol>
+<h2 id="九总结">九、总结</h2>
+<table>
+  <thead>
+      <tr>
+          <th>维度</th>
+          <th>React</th>
+          <th>Vue</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>核心思想</strong></td>
+          <td>函数式、不可变性</td>
+          <td>响应式、渐进式</td>
+      </tr>
+      <tr>
+          <td><strong>学习曲线</strong></td>
+          <td>陡峭但概念统一</td>
+          <td>平缓但API较多</td>
+      </tr>
+      <tr>
+          <td><strong>性能默认</strong></td>
+          <td>需要手动优化</td>
+          <td>自动优化较好</td>
+      </tr>
+      <tr>
+          <td><strong>类型支持</strong></td>
+          <td>TypeScript原生</td>
+          <td>Vue 3 + TS良好</td>
+      </tr>
+      <tr>
+          <td><strong>生态规模</strong></td>
+          <td>庞大、碎片化</td>
+          <td>官方主导、完整</td>
+      </tr>
+      <tr>
+          <td><strong>移动端</strong></td>
+          <td>React Native成熟</td>
+          <td>生态相对较小</td>
+      </tr>
+      <tr>
+          <td><strong>适用场景</strong></td>
+          <td>大型应用、跨平台</td>
+          <td>快速开发、渐进增强</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>最终建议</strong>：</p>
+<ul>
+<li>选择React：追求架构灵活性、需要跨平台、团队技术能力强</li>
+<li>选择Vue：追求开发效率、需要渐进增强、团队全栈能力均衡</li>
+</ul>
+<p>两个框架都在持续进化，选择哪一个更重要的是团队熟悉度和项目需求匹配度。在现代前端开发中，掌握两者核心概念比纠结选择更有价值，因为底层思想（组件化、响应式）是相通的。</p>
+</section>
+
+      
+
+<div class="reward-container">
+    <button
+        class="reward-button"
+        aria-expanded="false"
+        aria-controls="reward-pop"
+    >
+        支持作者
+    </button>
+    <div id="reward-pop" class="reward-popup hidden">
+        <p class="reward-text">感谢支持！🍻</p>
+        <div class="qr-container">
+            <div class="reward-qr">
+                <img
+                    src="/images/payment/wechat.jpg"
+                    alt="微信支付二维码"
+                    loading="lazy"
+                />
+                <p>微信</p>
+            </div>
+            <div class="reward-qr">
+                <img src="/images/payment/alipay.jpg" alt="支付宝二维码" loading="lazy" />
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .reward-container {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .reward-button {
+        padding: 0.5rem 1.25rem;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+    }
+
+    .reward-button:hover {
+        background-color: red;
+        font-size: 1rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .reward-button:active {
+        background-color: red;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .reward-popup {
+        margin-top: 1.5rem;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .reward-popup.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reward-text {
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .reward-text:is(.dark *) {
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .qr-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .reward-qr {
+        text-align: center;
+    }
+
+    .reward-qr img {
+        width: 200px;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .reward-qr img:hover {
+        transform: scale(1.02);
+    }
+
+    .reward-qr p {
+        margin: 0.5rem 0 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .reward-qr p:is(.dark *) {
+        margin: 0.5rem 0 0;
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    const button = document.querySelector(".reward-button");
+    const popup = document.getElementById("reward-pop");
+
+    button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !isExpanded);
+
+        popup.classList.toggle("hidden");
+        setTimeout(() => {
+            popup.classList.toggle("visible");
+        }, 10);
+    });
+</script>
+ 
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2025/01/human_cognitive_limits_five_boundaries_in_a_glance/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>人类认知极限：一瞥之间的五个界限</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/post/2025/01/vue_painless_frontend_framework/"
+            ><span>Vue: 一个让前端开发不再痛苦的框架</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    <div class="mt-12 rounded-xl" style="text-align: center">
+          
+
+<button class="feedback-trigger" onclick="toggleFeedback()">建议 / 反馈</button>
+<div class="feedback-form hidden">
+    <p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p>
+    <form id="feedback-form" onsubmit="sendFeedback(event)">
+        <input type="text" name="name" placeholder="怎么称呼？" required />
+        
+        <textarea
+            name="message"
+            placeholder="请输入您的建议或意见..."
+            required
+        ></textarea>
+        <button type="submit">发送</button>
+    </form>
+</div>
+
+<style>
+    .feedback-trigger {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+    }
+
+    .feedback-form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .feedback-form.hidden {
+        display: none;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .feedback-form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .feedback-form button {
+        width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function toggleFeedback() {
+        document.querySelector(".feedback-form").classList.toggle("hidden");
+    }
+
+    function sendFeedback(e) {
+        e.preventDefault();
+        const form = e.target;
+        const mailtoLink = `mailto:reggiesimons2cy@gmail.com?subject=http:\/\/localhost:1313\/ Feedback from ${form.name.value}&body=${encodeURIComponent(form.message.value)}%0D%0A%0D%0AFrom: ${form.name.value}%0D%0AEmail: ${form.email.value}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+ 
+    </div>
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.vercel.app";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+            
+            <div class="ml-2 mr-4">
+
+
+<button class="mobile-toc-toggle">
+<svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 522.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 780.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36z" fill="#223D60" p-id="7155"></path><path d="M210.2 229m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7156"></path><path d="M210.2 487m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7157"></path><path d="M210.2 745m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7158"></path></svg>
+</button>
+
+
+<aside class="toc-aside mr-4">
+
+  
+  <div class="toc-container">
+    <div class="toc-header">
+      <h3 class="toc-title">目录</h3>
+
+      <button class="toc-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#react-vs-vue深度技术分析与对比">React vs Vue：深度技术分析与对比</a>
+      <ul>
+        <li><a href="#一核心设计哲学差异">一、核心设计哲学差异</a>
+          <ul>
+            <li><a href="#11-编程范式">1.1 编程范式</a></li>
+            <li><a href="#12-架构理念">1.2 架构理念</a></li>
+          </ul>
+        </li>
+        <li><a href="#二核心机制实现对比">二、核心机制实现对比</a>
+          <ul>
+            <li><a href="#21-响应式系统实现">2.1 响应式系统实现</a></li>
+            <li><a href="#22-虚拟dom与渲染机制">2.2 虚拟DOM与渲染机制</a></li>
+          </ul>
+        </li>
+        <li><a href="#三关键机制详细对比">三、关键机制详细对比</a>
+          <ul>
+            <li><a href="#31-状态管理">3.1 状态管理</a></li>
+            <li><a href="#32-组件逻辑复用">3.2 组件逻辑复用</a></li>
+          </ul>
+        </li>
+        <li><a href="#四性能特点分析">四、性能特点分析</a>
+          <ul>
+            <li><a href="#41-更新粒度对比">4.1 更新粒度对比</a></li>
+            <li><a href="#42-编译时优化">4.2 编译时优化</a></li>
+          </ul>
+        </li>
+        <li><a href="#五生态系统与工具链">五、生态系统与工具链</a>
+          <ul>
+            <li><a href="#51-开发体验">5.1 开发体验</a></li>
+            <li><a href="#52-类型支持">5.2 类型支持</a></li>
+            <li><a href="#53-移动端与跨平台">5.3 移动端与跨平台</a></li>
+          </ul>
+        </li>
+        <li><a href="#六技术选型建议">六、技术选型建议</a>
+          <ul>
+            <li><a href="#61-选择react的场景">6.1 选择React的场景</a></li>
+            <li><a href="#62-选择vue的场景">6.2 选择Vue的场景</a></li>
+            <li><a href="#63-混合进阶选择">6.3 混合/进阶选择</a></li>
+          </ul>
+        </li>
+        <li><a href="#七未来发展趋势">七、未来发展趋势</a>
+          <ul>
+            <li><a href="#71-react发展方向">7.1 React发展方向</a></li>
+            <li><a href="#72-vue发展方向">7.2 Vue发展方向</a></li>
+          </ul>
+        </li>
+        <li><a href="#八深度思考题答案">八、深度思考题答案</a>
+          <ul>
+            <li><a href="#81-为什么react选择单向数据流">8.1 为什么React选择单向数据流？</a></li>
+            <li><a href="#82-vue为什么主推模板语法">8.2 Vue为什么主推模板语法？</a></li>
+            <li><a href="#83-下一代前端框架会是什么样">8.3 下一代前端框架会是什么样？</a></li>
+          </ul>
+        </li>
+        <li><a href="#九总结">九、总结</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+</aside>
+
+
+<style>
+ 
+.toc-aside {
+  position: fixed;
+  top: 6rem;
+  bottom: 4rem;
+  right: 0;
+  width: 16rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+ 
+.toc-container {
+  background: white;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.toc-header {
+  position: sticky;
+  border-radius: 0.5rem 0.5rem 0 0;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.toc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ 
+.mobile-toc-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+   
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-toc-toggle:hover {
+  background: #f3f4f6;
+}
+
+.mobile-toc-toggle .menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 
+.toc-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: --bg;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toc-close:hover {
+  color: #111827;
+}
+
+ 
+.toc {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a:active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+@media (max-width: 912px) {
+  .mobile-toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toc-aside {
+    transform: translateX(100%);
+    width: 80vw;
+    max-width: 20rem;
+  }
+
+  .toc-aside.show {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tocAside = document.querySelector('.toc-aside');
+  const mobileToggle = document.querySelector('.mobile-toc-toggle');
+  const closeButton = document.querySelector('.toc-close');
+
+
+  
+  mobileToggle?.addEventListener('click', () => {
+    tocAside?.classList.add('show');
+  });
+
+  
+  closeButton?.addEventListener('click', () => {
+    tocAside?.classList.remove('show');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 912 &&
+        tocAside?.classList.contains('show') &&
+        !tocAside.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      tocAside.classList.remove('show');
+    }
+  });
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+
+});
+</script>
+</div>
+
+            
+        </div>
+
+        <footer class="flex items-center text-xs uppercase h-8">
+    
+    <div class="mr-auto opacity-60">
+         &copy; 2026
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
+        
+    </div>
+
+    
+    <div>
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+        
+        <p class="link mx-6 opacity-60">
+            本站累计访问次数
+            <span id="busuanzi_value_page_pv"
+                ><i class="fa fa-spinner fa-spin"></i
+            ></span>
+        </p>
+    </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+        
+        
+    </body>
+</html>

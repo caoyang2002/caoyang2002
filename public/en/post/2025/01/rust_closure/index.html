@@ -1,0 +1,2295 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="en-US"
+    dir="ltr"
+>
+    
+    
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+        body {
+            background-image: url("/images/ui/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        html,
+        body {
+            min-height: 100vh;
+        }
+    </style>
+    
+    <script
+        charset="UTF-8"
+        id="LA_COLLECT"
+        src="//sdk.51.la/js-sdk-pro.min.js"
+    ></script>
+    <script>
+        LA.init({ id: "3L3XAvCJS5maI7j0", ck: "3L3XAvCJS5maI7j0" });
+    </script>
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>rust 闭包 - caoyang2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="从一个常见问题说起
+假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+                let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写
+    
+    
+
+    
+
+
+闭包的本质
+Rust 的闭包本质上是一种特殊的数据结构，它包含：
+
+函数逻辑
+捕获的环境变量
+
+让我们通过反编译来看闭包的真实面目：
+
+
+
+
+
+
+
+
+
+
+    
+    
+        
+                // 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+    multiplier: i32,
+}
+
+impl Closure {
+    fn call(&amp;self, x: i32) -&gt; i32 {
+        x * self.multiplier
+    }
+}
+    
+    
+
+    
+
+
+闭包的三种类型
+通过具体案例来理解三种闭包 trait：" />
+    <meta name="author" content="曹洋 simons" />
+    
+
+    
+    <script src="/js/code-copy.js" defer></script>
+       
+    
+    
+
+    <link rel="preload stylesheet" as="style" href="/bundle.min.1f095e32d40a0e4e5769102bcd31bd821d4bdbe596aaea70cca5e8bbeb930cb6.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/about/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="/twitter.svg" />
+    
+    <link rel="preload" as="image" href="/github.svg" />
+    
+    <link rel="preload" as="image" href="/instagram.svg" />
+    
+    <link rel="preload" as="image" href="/rss.svg" />
+    
+    
+
+    
+    
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+
+    <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        onload="hljs.highlightAll();"
+    ></script>
+
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"
+    ></script>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        
+        <header class="mx-auto flex h-12 px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+
+        <nav
+            class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/en/"
+                >Home
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href=""
+                >Schedule
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href=""
+                >Protfolio
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/en/about/"
+                >About
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/en/contact/"
+                >Contact
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/en/guestbook/"
+                >Guestabook
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href=""
+                >Resources
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href=""
+                >Booklist
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href=""
+                >Hotlist
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/en/search/"
+                >Search
+            </a>
+            
+            
+            
+
+            <div class="language-selector">
+                <div class="inline-block text-left dropdown">
+    
+    <div>
+        <p class="selected-language">English</p>
+    </div>
+
+    
+    <div style="background-color: red; z-index: 1000">
+        
+
+        <ul class="dropdown-menu" id="dropdownMenu">
+            
+            <li>
+                <a
+                    href="/post/2025/01/rust_closure/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                >
+                    Chinese
+                </a>
+            </li>
+            
+            <li>
+                <a
+                    href="/es/post/2025/01/rust_closure/"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+                    role="menuitem"
+                >
+                    Español
+                </a>
+            </li>
+            
+        </ul>
+        
+    </div>
+</div>
+
+<script>
+    
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownIcon = document.querySelector(".dropdown-icon");
+
+    
+    dropdownButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("show");
+        dropdownButton.parentElement.classList.toggle("open");
+    });
+
+    
+    dropdownMenu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", function () {
+            
+            dropdownButton.textContent = item.textContent + " ";
+            dropdownButton.appendChild(dropdownIcon);
+
+            
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+
+            
+            const selectedValue = item.getAttribute("data-value");
+            console.log("Selected Language:", selectedValue);
+        });
+    });
+
+    
+    document.addEventListener("click", function (event) {
+        if (
+            !dropdownButton.contains(event.target) &&
+            !dropdownMenu.contains(event.target)
+        ) {
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+        }
+    });
+</script>
+
+<style>
+     
+    .dropdown {
+         
+        display: inline-block;
+        margin: 0;
+    }
+
+     
+    .dropdown-menu {
+         
+         
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+         
+         
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+         
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+     
+    .dropdown-menu li {
+        padding: 0.2rem;
+        cursor: pointer;
+        color: #333;
+         
+         
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: transparent;  
+    }
+    .selected-language:hover {
+        color: #0042da;
+    }
+</style>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+     
+    .language-selector {
+        position: relative;  
+        display: inline-block;  
+        z-index: 10;
+    }
+
+     
+    .language-selector .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+    }
+
+    .language-selector:hover .dropdown-menu {
+        display: block;
+    }
+
+     
+    .header-menu:hover {
+        color: #0042da;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .header-menu:hover {
+        color: #0042da;
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">rust 闭包</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+
+            
+
+            <time>
+                Wednesday, January 15, 2025
+            </time>
+
+            
+            <span class="mx-1">&middot;</span>
+            <span>
+                simons
+            </span>
+            
+            <span class="mx-1">&middot;</span>
+
+            <span class="post-date">
+                本文共 2071
+                个字 ， 预计需要阅读 5
+                分钟
+            </span>
+
+            
+        </div>
+        
+
+        <span class="text-md antialiased opacity-60">
+             
+            <a
+                href="http://localhost:1313/tags/%E7%BC%96%E7%A8%8B"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                编程
+            </a>
+             
+            <a
+                href="http://localhost:1313/tags/rust"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                rust
+            </a>
+            
+        </span>
+        
+        
+        
+    </div>
+
+    <section><h2 id="从一个常见问题说起">从一个常见问题说起</h2>
+<p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="闭包的本质">闭包的本质</h2>
+<p>Rust 的闭包本质上是一种特殊的数据结构，它包含：</p>
+<ol>
+<li>函数逻辑</li>
+<li>捕获的环境变量</li>
+</ol>
+<p>让我们通过反编译来看闭包的真实面目：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+    multiplier: i32,
+}
+
+impl Closure {
+    fn call(&amp;self, x: i32) -&gt; i32 {
+        x * self.multiplier
+    }
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="闭包的三种类型">闭包的三种类型</h2>
+<p>通过具体案例来理解三种闭包 trait：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 1. FnOnce - 获取所有权
+let vec = vec![1, 2, 3];
+let consume = move || { // 使用 move 语义
+    // vec在这里被消费
+    println!(&#34;Consumed: {:?}&#34;, vec);
+};
+consume(); // 只能调用一次
+
+// 2. FnMut - 可变借用
+let mut counter = 0;
+let mut increment = || {
+    counter &#43;= 1; // 修改捕获的变量
+    println!(&#34;Counter: {}&#34;, counter);
+};
+increment(); // 可以多次调用
+
+// 3. Fn - 不可变借用
+let factor = 2;
+let multiply = |x| x * factor; // 仅读取 factor
+println!(&#34;Result: {}&#34;, multiply(5));
+// factor 仍然可以在这里使用</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="理解闭包">理解闭包</h1>
+<p>假设你正在开发一个文件处理系统，需要对不同类型的文件执行不同的操作。你可能会写出这样的代码：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">fn process_files(files: Vec&lt;String&gt;) {
+    for file in files {
+        if file.ends_with(&#34;.txt&#34;) {
+            process_text_file(file);
+        } else if file.ends_with(&#34;.json&#34;) {
+            process_json_file(file);
+        }
+    }
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p>这段代码虽然能工作，但如果要增加新的文件类型支持，就需要修改这个函数。如何让这个处理逻辑更灵活？这就是闭包可以发挥作用的地方。</p>
+<h1 id="一闭包的本质">一、闭包的本质</h1>
+<h2 id="11-从函数到闭包">1.1 从函数到闭包</h2>
+<p>先看一个基础示例：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 传统函数
+fn add_one(x: i32) -&gt; i32 {
+    x &#43; 1
+}
+
+// 等价的闭包
+let add_one = |x: i32| -&gt; i32 { x &#43; 1 };</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p>闭包实际上是一个可以捕获其环境的匿名函数。关键在于&quot;捕获环境&quot;这四个字：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let multiplier = 10;
+let multiply = |x| x * multiplier;  // 捕获了外部变量multiplier
+
+println!(&#34;Result: {}&#34;, multiply(5)); // 输出：50</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="12-深入闭包特性">1.2 深入闭包特性</h2>
+<p>Rust的闭包有三个关键特征：</p>
+<ol>
+<li><strong>类型推导</strong></li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 完整语法
+let add_verbose = |x: i32| -&gt; i32 { x &#43; 1 };
+
+// 简化语法（类型推导）
+let add_simple = |x| x &#43; 1;</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<ol start="2">
+<li><strong>环境捕获</strong></li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">#[derive(Debug)]
+struct Counter {
+    count: i32,
+}
+
+fn main() {
+    let counter = Counter { count: 0 };
+
+    // 通过引用捕获
+    let print_count = || println!(&#34;Count: {}&#34;, counter.count);
+
+    print_count(); // 可以访问counter
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<ol start="3">
+<li><strong>所有权语义</strong></li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let mut vector = vec![1, 2, 3];
+
+// 通过可变引用捕获
+let mut mutate_vec = || vector.push(4);
+
+mutate_vec();
+println!(&#34;Vector: {:?}&#34;, vector); // [1, 2, 3, 4]</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="13-深入理解闭包捕获规则">1.3 深入理解闭包捕获规则</h2>
+<p>闭包捕获变量遵循几个关键原则：</p>
+<ol>
+<li>最小权限原则：</li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let name = String::from(&#34;Alice&#34;);
+let printer = || println!(&#34;Name: {}&#34;, name);  // 只需不可变借用
+let consumer = || name;  // 需要所有权，编译器会报错</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<ol start="2">
+<li>移动语义：</li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let data = vec![1, 2, 3];
+let closure = move || {
+    // data 的所有权移入闭包
+    println!(&#34;{:?}&#34;, data);
+};
+// 这里不能再使用 data</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<ol start="3">
+<li>生命周期约束：</li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let result: Option&lt;Vec&lt;i32&gt;&gt; = None;
+let mut processor = || {
+    result.as_ref().map(|v| v.len())
+};</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="二闭包的实现机制">二、闭包的实现机制</h1>
+<h2 id="21-rust-中的闭包特征">2.1 Rust 中的闭包特征</h2>
+<p>Rust使用三个特征来实现闭包功能：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 1. FnOnce - 获取所有权并消费
+let consume = || vector;
+consume(); // vector的所有权被转移
+
+// 2. FnMut - 可变借用
+let mut counter = 0;
+let mut add_to_counter = || counter &#43;= 1;
+add_to_counter(); // counter被可变借用
+
+// 3. Fn - 不可变借用
+let value = String::from(&#34;hello&#34;);
+let print_value = || println!(&#34;{}&#34;, value);
+print_value(); // value被不可变借用</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="22-内存实现分析">2.2 内存实现分析</h2>
+<p>看一个具体例子：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">fn main() {
+    let external = String::from(&#34;external data&#34;);
+
+    let closure = || {
+        println!(&#34;Using: {}&#34;, external);
+    };
+
+    closure();
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p>这个闭包在编译时会被转换为类似这样的结构：</p>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 编译器生成的等效代码
+struct ClosureEnvironment {
+    external: String,
+}
+
+impl Fn() for ClosureEnvironment {
+    fn call(&amp;self) {
+        println!(&#34;Using: {}&#34;, self.external);
+    }
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="三闭包示例">三、闭包示例</h1>
+<h2 id="1-自定义排序">1. 自定义排序：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let mut users = vec![
+    User { name: &#34;Alice&#34;, age: 30 },
+    User { name: &#34;Bob&#34;, age: 25 },
+];
+users.sort_by_key(|u| u.age);  // 按年龄排序</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="2-惰性求值">2. 惰性求值：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">struct Cached&lt;T&gt;
+where
+    T: Fn(u32) -&gt; u32,
+{
+    calculation: T,
+    value: Option&lt;u32&gt;,
+}
+
+impl&lt;T&gt; Cached&lt;T&gt;
+where
+    T: Fn(u32) -&gt; u32,
+{
+    fn new(calculation: T) -&gt; Cached&lt;T&gt; {
+        Cached {
+            calculation,
+            value: None,
+        }
+    }
+
+    fn value(&amp;mut self, arg: u32) -&gt; u32 {
+        match self.value {
+            Some(v) =&gt; v,
+            None =&gt; {
+                let v = (self.calculation)(arg);
+                self.value = Some(v);
+                v
+            }
+        }
+    }
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="3-错误处理模式">3. 错误处理模式：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let error_handler = |err| {
+    log::error!(&#34;Operation failed: {}&#34;, err);
+    // 返回默认值
+    Vec::new()
+};
+
+let result = operation().unwrap_or_else(error_handler);</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="四性能考虑">四、性能考虑</h1>
+<h2 id="41-大小优化">4.1 大小优化：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 编译器优化前
+let large_data = vec![1; 1000];
+let closure = move || large_data[0];  // 整个vec被移动
+
+// 优化后
+let large_data = vec![1; 1000];
+let closure = move || &amp;large_data[0];  // 只捕获引用</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="42-内联优化">4.2 内联优化：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 通常会被内联优化
+let multiply = |x| x * 2;
+let result = multiply(4);  // 直接优化为 let result = 4 * 2;</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="五常见陷阱">五、常见陷阱</h1>
+<h2 id="51-生命周期问题">5.1 生命周期问题：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">fn create_closure() -&gt; impl Fn(i32) -&gt; i32 {
+    let factor = 2;
+    // 错误：factor的生命周期不够长
+    |x| x * factor
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="52-可变性冲突">5.2 可变性冲突：</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let mut data = vec![1, 2, 3];
+let closure = || {
+    // 错误：不能同时有可变和不可变借用
+    data.push(4);
+    println!(&#34;{:?}&#34;, data);
+};</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p>通过这些具体的示例和分析，我们可以看到Rust闭包不仅是一个语法糖，更是一个强大的工具，它能够帮助我们写出更加灵活和高效的代码。理解其内部机制和使用规则，对于编写高质量的Rust程序至关重要。</p>
+<p>你可以从这个分析中看到，闭包的每个特性都有其实际的应用场景和性能影响。这不仅帮助我们理解&quot;是什么&quot;，更重要的是理解&quot;为什么&quot;和&quot;怎么用&quot;。</p>
+<h1 id="六实战应用">六、实战应用</h1>
+<h2 id="61-函数式迭代器">6.1 函数式迭代器</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">let numbers = vec![1, 2, 3, 4, 5];
+
+// 链式调用示例
+let sum: i32 = numbers.iter()
+    .filter(|&amp;x| x % 2 == 0)  // 过滤偶数
+    .map(|&amp;x| x * x)          // 平方
+    .sum();                   // 求和
+
+println!(&#34;Sum of squares of even numbers: {}&#34;, sum);</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="62-自定义排序">6.2 自定义排序</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">#[derive(Debug)]
+struct Person {
+    name: String,
+    age: u32,
+}
+
+fn main() {
+    let mut people = vec![
+        Person { name: String::from(&#34;Alice&#34;), age: 30 },
+        Person { name: String::from(&#34;Bob&#34;), age: 25 },
+    ];
+
+    // 使用闭包定义排序规则
+    people.sort_by_key(|p| p.age);
+
+    println!(&#34;Sorted by age: {:?}&#34;, people);
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h2 id="63-资源管理">6.3 资源管理</h2>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">struct Connection {
+    port: u32,
+}
+
+impl Connection {
+    fn new(port: u32) -&gt; Connection {
+        println!(&#34;Opening connection on port {}&#34;, port);
+        Connection { port }
+    }
+}
+
+impl Drop for Connection {
+    fn drop(&amp;mut self) {
+        println!(&#34;Closing connection on port {}&#34;, self.port);
+    }
+}
+
+fn with_connection&lt;F&gt;(port: u32, f: F)
+where
+    F: FnOnce(&amp;Connection)
+{
+    let conn = Connection::new(port);
+    f(&amp;conn);
+    // 连接会在这里自动关闭
+}
+
+fn main() {
+    with_connection(8080, |conn| {
+        println!(&#34;Using connection on port {}&#34;, conn.port);
+    });
+}</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<h1 id="七性能和调试技巧">七、性能和调试技巧</h1>
+<ol>
+<li><strong>内联优化</strong></li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">#[inline]
+fn regular_function(x: i32) -&gt; i32 {
+    x &#43; 1
+}
+
+let closure = |x| x &#43; 1;  // 编译器通常会自动内联</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<ol start="2">
+<li><strong>大小优化</strong></li>
+</ol>
+
+
+
+
+
+
+
+
+
+<div class="code-playground" data-language="rust">
+    
+    <div>
+        <pre>
+                <code class="language-rust">// 移动捕获而不是引用可能更高效
+let value = String::from(&#34;hello&#34;);
+let closure = move || println!(&#34;{}&#34;, value);</code></pre>
+    </div>
+    
+
+    
+</div>
+
+<p>通过这些实例和分析，我们可以看到Rust闭包不仅仅是一个语法特性，更是一套完整的系统设计。它结合了函数式编程的灵活性和Rust的安全性保证，为我们提供了强大的编程工具。</p>
+<p>这种设计告诉我们：语言特性的设计不是随意的，而是要考虑实用性、性能和安全性的平衡。Rust的闭包实现就很好地体现了这一点。</p>
+</section>
+
+      
+
+<div class="reward-container">
+    <button
+        class="reward-button"
+        aria-expanded="false"
+        aria-controls="reward-pop"
+    >
+        支持作者
+    </button>
+    <div id="reward-pop" class="reward-popup hidden">
+        <p class="reward-text">感谢支持！🍻</p>
+        <div class="qr-container">
+            <div class="reward-qr">
+                <img
+                    src="/images/payment/wechat.jpg"
+                    alt="微信支付二维码"
+                    loading="lazy"
+                />
+                <p>微信</p>
+            </div>
+            <div class="reward-qr">
+                <img src="/images/payment/alipay.jpg" alt="支付宝二维码" loading="lazy" />
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .reward-container {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .reward-button {
+        padding: 0.5rem 1.25rem;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+    }
+
+    .reward-button:hover {
+        background-color: red;
+        font-size: 1rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .reward-button:active {
+        background-color: red;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .reward-popup {
+        margin-top: 1.5rem;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .reward-popup.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reward-text {
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .reward-text:is(.dark *) {
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .qr-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .reward-qr {
+        text-align: center;
+    }
+
+    .reward-qr img {
+        width: 200px;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .reward-qr img:hover {
+        transform: scale(1.02);
+    }
+
+    .reward-qr p {
+        margin: 0.5rem 0 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .reward-qr p:is(.dark *) {
+        margin: 0.5rem 0 0;
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    const button = document.querySelector(".reward-button");
+    const popup = document.getElementById("reward-pop");
+
+    button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !isExpanded);
+
+        popup.classList.toggle("hidden");
+        setTimeout(() => {
+            popup.classList.toggle("visible");
+        }, 10);
+    });
+</script>
+ 
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/en/post/2025/01/rust_ownership/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>深入理解 Rust 所有权机制</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/en/post/2025/01/rust_result_option/"
+            ><span>深入解释 Rust 中的 Result 和 Option 这两个核心类型</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    <div class="mt-12 rounded-xl" style="text-align: center">
+          
+
+<button class="feedback-trigger" onclick="toggleFeedback()">建议 / 反馈</button>
+<div class="feedback-form hidden">
+    <p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p>
+    <form id="feedback-form" onsubmit="sendFeedback(event)">
+        <input type="text" name="name" placeholder="怎么称呼？" required />
+        
+        <textarea
+            name="message"
+            placeholder="请输入您的建议或意见..."
+            required
+        ></textarea>
+        <button type="submit">发送</button>
+    </form>
+</div>
+
+<style>
+    .feedback-trigger {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+    }
+
+    .feedback-form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .feedback-form.hidden {
+        display: none;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .feedback-form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .feedback-form button {
+        width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function toggleFeedback() {
+        document.querySelector(".feedback-form").classList.toggle("hidden");
+    }
+
+    function sendFeedback(e) {
+        e.preventDefault();
+        const form = e.target;
+        const mailtoLink = `mailto:reggiesimons2cy@gmail.com?subject=http:\/\/localhost:1313\/ Feedback from ${form.name.value}&body=${encodeURIComponent(form.message.value)}%0D%0A%0D%0AFrom: ${form.name.value}%0D%0AEmail: ${form.email.value}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+ 
+    </div>
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.vercel.app";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+            
+            <div class="ml-2 mr-4">
+
+
+<button class="mobile-toc-toggle">
+<svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 522.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 780.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36z" fill="#223D60" p-id="7155"></path><path d="M210.2 229m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7156"></path><path d="M210.2 487m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7157"></path><path d="M210.2 745m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7158"></path></svg>
+</button>
+
+
+<aside class="toc-aside mr-4">
+
+  
+  <div class="toc-container">
+    <div class="toc-header">
+      <h3 class="toc-title">目录</h3>
+
+      <button class="toc-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#从一个常见问题说起">从一个常见问题说起</a></li>
+        <li><a href="#闭包的本质">闭包的本质</a></li>
+        <li><a href="#闭包的三种类型">闭包的三种类型</a></li>
+      </ul>
+    </li>
+    <li><a href="#理解闭包">理解闭包</a></li>
+    <li><a href="#一闭包的本质">一、闭包的本质</a>
+      <ul>
+        <li><a href="#11-从函数到闭包">1.1 从函数到闭包</a></li>
+        <li><a href="#12-深入闭包特性">1.2 深入闭包特性</a></li>
+        <li><a href="#13-深入理解闭包捕获规则">1.3 深入理解闭包捕获规则</a></li>
+      </ul>
+    </li>
+    <li><a href="#二闭包的实现机制">二、闭包的实现机制</a>
+      <ul>
+        <li><a href="#21-rust-中的闭包特征">2.1 Rust 中的闭包特征</a></li>
+        <li><a href="#22-内存实现分析">2.2 内存实现分析</a></li>
+      </ul>
+    </li>
+    <li><a href="#三闭包示例">三、闭包示例</a>
+      <ul>
+        <li><a href="#1-自定义排序">1. 自定义排序：</a></li>
+        <li><a href="#2-惰性求值">2. 惰性求值：</a></li>
+        <li><a href="#3-错误处理模式">3. 错误处理模式：</a></li>
+      </ul>
+    </li>
+    <li><a href="#四性能考虑">四、性能考虑</a>
+      <ul>
+        <li><a href="#41-大小优化">4.1 大小优化：</a></li>
+        <li><a href="#42-内联优化">4.2 内联优化：</a></li>
+      </ul>
+    </li>
+    <li><a href="#五常见陷阱">五、常见陷阱</a>
+      <ul>
+        <li><a href="#51-生命周期问题">5.1 生命周期问题：</a></li>
+        <li><a href="#52-可变性冲突">5.2 可变性冲突：</a></li>
+      </ul>
+    </li>
+    <li><a href="#六实战应用">六、实战应用</a>
+      <ul>
+        <li><a href="#61-函数式迭代器">6.1 函数式迭代器</a></li>
+        <li><a href="#62-自定义排序">6.2 自定义排序</a></li>
+        <li><a href="#63-资源管理">6.3 资源管理</a></li>
+      </ul>
+    </li>
+    <li><a href="#七性能和调试技巧">七、性能和调试技巧</a></li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+</aside>
+
+
+<style>
+ 
+.toc-aside {
+  position: fixed;
+  top: 6rem;
+  bottom: 4rem;
+  right: 0;
+  width: 16rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+ 
+.toc-container {
+  background: white;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.toc-header {
+  position: sticky;
+  border-radius: 0.5rem 0.5rem 0 0;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.toc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ 
+.mobile-toc-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+   
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-toc-toggle:hover {
+  background: #f3f4f6;
+}
+
+.mobile-toc-toggle .menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 
+.toc-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: --bg;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toc-close:hover {
+  color: #111827;
+}
+
+ 
+.toc {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a:active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+@media (max-width: 912px) {
+  .mobile-toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toc-aside {
+    transform: translateX(100%);
+    width: 80vw;
+    max-width: 20rem;
+  }
+
+  .toc-aside.show {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tocAside = document.querySelector('.toc-aside');
+  const mobileToggle = document.querySelector('.mobile-toc-toggle');
+  const closeButton = document.querySelector('.toc-close');
+
+
+  
+  mobileToggle?.addEventListener('click', () => {
+    tocAside?.classList.add('show');
+  });
+
+  
+  closeButton?.addEventListener('click', () => {
+    tocAside?.classList.remove('show');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 912 &&
+        tocAside?.classList.contains('show') &&
+        !tocAside.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      tocAside.classList.remove('show');
+    }
+  });
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+
+});
+</script>
+</div>
+
+            
+        </div>
+
+        <footer class="flex items-center text-xs uppercase h-8">
+    
+    <div class="mr-auto opacity-60">
+         &copy; 2026
+        <a class="link" href="http://localhost:1313/">caoyang2002</a>
+        
+    </div>
+
+    
+    <div>
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+        
+        <p class="link mx-6 opacity-60">
+            本站累计访问次数
+            <span id="busuanzi_value_page_pv"
+                ><i class="fa fa-spinner fa-spin"></i
+            ></span>
+        </p>
+    </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+        
+        
+    </body>
+</html>

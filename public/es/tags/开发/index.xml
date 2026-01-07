@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>开发 on caoyang2002</title>
+    <link>http://localhost:1313/es/tags/%E5%BC%80%E5%8F%91/</link>
+    <description>Recent content in 开发 on caoyang2002</description>
+    <generator>Hugo</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>作为独立开发者，你真的需要设计师吗？</title>
+      <link>http://localhost:1313/es/post/2025/01/do_you_really_need_a_designer/</link>
+      <pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate>
+      <guid>http://localhost:1313/es/post/2025/01/do_you_really_need_a_designer/</guid>
+      <description>&lt;blockquote&gt;&#xA;&lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;&#xA;&lt;p&gt;但是，你为什么觉得自己需要一个设计师？&lt;/p&gt;&#xA;&lt;p&gt;我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p&gt;&#xA;&lt;p&gt;有时候，甚至是大多数时候你都不需要设计师。&lt;/p&gt;&#xA;&lt;p&gt;相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

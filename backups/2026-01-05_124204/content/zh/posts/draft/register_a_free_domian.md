@@ -1,5 +1,5 @@
 +++
-title = 'Register_a_free_domian'
+title = '注册一个免费的域名'
 date = 2026-01-05T12:28:47+08:00
 draft = true
 author = "simons"

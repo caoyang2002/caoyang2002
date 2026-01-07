@@ -1,0 +1,1434 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html
+    class="not-ready lg:text-base close"
+    style="--bg: #faf8f1"
+    lang="zh-CN"
+    dir="ltr"
+>
+    
+    
+    <script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><style>
+        body {
+            background-image: url("/images/ui/background.jpg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        html,
+        body {
+            min-height: 100vh;
+        }
+    </style>
+    
+    <script
+        charset="UTF-8"
+        id="LA_COLLECT"
+        src="//sdk.51.la/js-sdk-pro.min.js"
+    ></script>
+    <script>
+        LA.init({ id: "3L3XAvCJS5maI7j0", ck: "3L3XAvCJS5maI7j0" });
+    </script>
+    
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    
+    <title>定位理论的边界 - caoyang 2002</title>
+
+    
+    <meta name="theme-color" />
+
+    
+    
+    
+    
+    <meta name="description" content="一、能力的边界
+芒格和很多杰出人物（特别是在投资领域）都有一个信条：只做自己能力圈（circle of competence）以内的事。
+所谓能力圈，我的理解是熟悉且擅长处理的事情，对于做成这些事有相当的把握。
+《明朝那些事儿》作者当年明月也说过类似的话，“人一定要有自知之明，切不可做你不熟悉的事，不擅长的事”。" />
+    <meta name="author" content="simons" />
+    
+
+    
+    <script src="/js/code-copy.js" defer></script>
+       
+    
+    
+
+    <link rel="preload stylesheet" as="style" href="/bundle.min.1f095e32d40a0e4e5769102bcd31bd821d4bdbe596aaea70cca5e8bbeb930cb6.css" />
+
+    
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/theme.png" />
+
+    
+    
+    
+    
+    <link rel="preload" as="image" href="/about/avatar.jpg" />
+    
+    
+
+    
+    
+    <link rel="preload" as="image" href="/twitter.svg" />
+    
+    <link rel="preload" as="image" href="/github.svg" />
+    
+    <link rel="preload" as="image" href="/instagram.svg" />
+    
+    <link rel="preload" as="image" href="/rss.svg" />
+    
+    
+
+    
+    
+    
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css"
+    />
+
+    <script
+        defer
+        src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"
+        onload="hljs.highlightAll();"
+    ></script>
+
+    
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js"
+    ></script>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js"
+    ></script>
+    
+
+    
+    
+    
+    
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css"
+  integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI"
+  crossorigin="anonymous"
+/>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js"
+  integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t"
+  crossorigin="anonymous"
+></script>
+<script
+  defer
+  src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js"
+  integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05"
+  crossorigin="anonymous"
+></script>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () =>
+    renderMathInElement(document.body, {
+      
+      
+      delimiters: [
+        { left: '$$', right: '$$', display: true },
+        { left: '$', right: '$', display: false },
+      ],
+      
+      throwOnError: false,
+    }),
+  );
+</script>
+
+    
+    
+    
+
+    
+    <link
+        rel="icon"
+        href="/favicon.ico"
+    />
+    <link
+        rel="apple-touch-icon"
+        href="/apple-touch-icon.png"
+    />
+
+    
+    <meta name="generator" content="Hugo 0.140.2">
+
+    
+    
+    
+</head>
+
+
+    <body class="text-black duration-200 ease-out dark:text-white">
+        
+        <header class="mx-auto flex h-12 px-8 lg:justify-center">
+    
+    <div
+        class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"
+    >
+        <a
+            class="-translate-y-[1px] text-2xl font-medium"
+            href="http://localhost:1313/"
+            >caoyang 2002</a
+        >
+        <div
+            class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]"
+            role="button"
+            aria-label="Dark"
+        ></div>
+    </div>
+
+    <div
+        class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        role="button"
+        aria-label="Menu"
+    ></div>
+
+    
+
+    <script>
+        
+        const htmlClass = document.documentElement.classList;
+        setTimeout(() => {
+            htmlClass.remove("not-ready");
+        }, 10);
+
+        
+        const btnMenu = document.querySelector(".btn-menu");
+        btnMenu.addEventListener("click", () => {
+            if (htmlClass.contains("open")) {
+                htmlClass.remove("open");
+                htmlClass.add("close");
+            } else {
+                htmlClass.remove("close");
+                htmlClass.add("open");
+            }
+        });
+
+        
+        const metaTheme = document.querySelector('meta[name="theme-color"]');
+        const lightBg = "#faf8f1".replace(/"/g, "");
+        const setDark = (isDark) => {
+            metaTheme.setAttribute("content", isDark ? "#000" : lightBg);
+            htmlClass[isDark ? "add" : "remove"]("dark");
+            localStorage.setItem("dark", isDark);
+        };
+
+        
+        const darkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+        if (htmlClass.contains("dark")) {
+            setDark(true);
+        } else {
+            const darkVal = localStorage.getItem("dark");
+            setDark(darkVal ? darkVal === "true" : darkScheme.matches);
+        }
+
+        
+        darkScheme.addEventListener("change", (event) => {
+            setDark(event.matches);
+        });
+
+        
+        const btnDark = document.querySelector(".btn-dark");
+        btnDark.addEventListener("click", () => {
+            setDark(localStorage.getItem("dark") !== "true");
+        });
+    </script>
+
+    
+    <div
+        class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"
+    >
+        
+
+        <nav
+            class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"
+        >
+            
+            
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/"
+                >首页
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/schedule/"
+                >日程
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/protfolio/"
+                >作品集
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/about/"
+                >关于
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/contact/"
+                >联系
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/guestbook/"
+                >留言
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/resources/"
+                >资源
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/booklist/"
+                >书单
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/hotlist/"
+                >热搜
+            </a>
+            
+            <a
+                class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu"
+                href="/search/"
+                >搜索
+            </a>
+            
+            
+            
+
+            <div class="language-selector">
+                <div class="inline-block text-left dropdown">
+    
+    <div>
+        <p class="selected-language">Chinese</p>
+    </div>
+
+    
+    <div style="background-color: red; z-index: 1000">
+        
+    </div>
+</div>
+
+<script>
+    
+    const dropdownButton = document.getElementById("dropdownButton");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const dropdownIcon = document.querySelector(".dropdown-icon");
+
+    
+    dropdownButton.addEventListener("click", function () {
+        dropdownMenu.classList.toggle("show");
+        dropdownButton.parentElement.classList.toggle("open");
+    });
+
+    
+    dropdownMenu.querySelectorAll("li").forEach((item) => {
+        item.addEventListener("click", function () {
+            
+            dropdownButton.textContent = item.textContent + " ";
+            dropdownButton.appendChild(dropdownIcon);
+
+            
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+
+            
+            const selectedValue = item.getAttribute("data-value");
+            console.log("Selected Language:", selectedValue);
+        });
+    });
+
+    
+    document.addEventListener("click", function (event) {
+        if (
+            !dropdownButton.contains(event.target) &&
+            !dropdownMenu.contains(event.target)
+        ) {
+            dropdownMenu.classList.remove("show");
+            dropdownButton.parentElement.classList.remove("open");
+        }
+    });
+</script>
+
+<style>
+     
+    .dropdown {
+         
+        display: inline-block;
+        margin: 0;
+    }
+
+     
+    .dropdown-menu {
+         
+         
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+         
+         
+        padding: 0;
+        margin: 0;
+        display: none;
+         
+         
+    }
+
+    .dropdown-menu.show {
+        display: block;
+    }
+
+     
+    .dropdown-menu li {
+        padding: 0.2rem;
+        cursor: pointer;
+        color: #333;
+         
+         
+    }
+
+    .dropdown-menu > li:hover {
+        background-color: transparent;  
+    }
+    .selected-language:hover {
+        color: #0042da;
+    }
+</style>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+<style>
+     
+    .language-selector {
+        position: relative;  
+        display: inline-block;  
+        z-index: 10;
+    }
+
+     
+    .language-selector .dropdown-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+    }
+
+    .language-selector:hover .dropdown-menu {
+        display: block;
+    }
+
+     
+    .header-menu:hover {
+        color: #0042da;
+    }
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;  
+        right: 0;  
+        z-index: 50;
+        width: 100vw;  
+        text-align: center;
+
+         
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+    .header-menu:hover {
+        color: #0042da;
+    }
+</style>
+
+
+        <div class="relative flex justify-start max-w-[90vw] px-8">
+            <main
+                class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left"
+            >
+                
+
+
+<article class="text-left">
+    
+    <div class="mb-14 mt-8">
+        <h1 class="!my-0 pb-2.5">定位理论的边界</h1>
+
+        
+        <div class="text-xs antialiased opacity-60">
+            
+
+            
+
+            <time>
+                2025年4月23日星期三
+            </time>
+
+            
+            <span class="mx-1">&middot;</span>
+            <span>
+                simons
+            </span>
+            
+            <span class="mx-1">&middot;</span>
+
+            <span class="post-date">
+                本文共 2201
+                个字 ， 预计需要阅读 5
+                分钟
+            </span>
+
+            
+        </div>
+        
+
+        <span class="text-md antialiased opacity-60">
+             
+            <a
+                href="http://localhost:1313/tags/%E6%9A%82%E6%97%A0"
+                class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]"
+            >
+                暂无
+            </a>
+            
+        </span>
+        
+        
+        
+    </div>
+
+    <section><h1 id="一能力的边界">一、能力的边界</h1>
+<p>芒格和很多杰出人物（特别是在投资领域）都有一个信条：只做自己能力圈（circle of competence）以内的事。</p>
+<p>所谓能力圈，我的理解是熟悉且擅长处理的事情，对于做成这些事有相当的把握。</p>
+<p>《明朝那些事儿》作者当年明月也说过类似的话，“人一定要有自知之明，切不可做你不熟悉的事，不擅长的事”。</p>
+<p>有人问芒格，说不知道自己做的事情是否超过了自己的能力边界。芒格给他的回答是：</p>
+<p><img src="https://n.sinaimg.cn/sinakd202113s/103/w1080h623/20210103/e726-kherpxx3252015.png" alt="查理·芒格震撼演讲：如何低成本地从错误中爬出来__财经头条"></p>
+<p><strong>“如果你有（某方面的）能力，你基本上已经知道（自己在这方面的）能力边界。问出这个问题 ‘自己是否已超出了能力边界’ 本身就是答案（当然是超出了）”。</strong></p>
+<blockquote>
+<p>If you have competence, you pretty much know it&rsquo;s boundaries already. To ask the question &lsquo;of whether you are past the boundary&rsquo; is to answer it.</p>
+</blockquote>
+<p><strong>虽然超出能力圈时禁忌，但我们的“能力圈”并不是一成不变的，通过足够用心地学习积累某方面的知识和技能，就可以拓展自己的 “能力圈”。</strong></p>
+<p>同芒格一样，巴菲特也是特别强调“能力圈”。</p>
+<p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.38f48ff4cc9f320882fd3cf10965bfb8?rik=Umi7p28T%2bCswRg&amp;riu=http%3a%2f%2fp2.ifengimg.com%2fa%2f2016_37%2f44f468984913875_size267_w1536_h1119.jpg&amp;ehk=MOq7rUayPeNop0bzyq8p8JLZfKIpW7Eugx77ewIn1YA%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="再一次打败市场 巴菲特今年赚翻了！_凤凰财经"></p>
+<p>被称为 “史上最伟大击球手” Ted Williams 提出自己只在 “甜蜜区” 击打棒球的方法，巴菲特大受启发。</p>
+<p>在投资领域巴菲特只投自己能完全看懂的企业，而不是什么火投什么。</p>
+<p>最著名的就是他很少投高科技公司，因为看不懂。</p>
+<p>严格划分定位理论的能力边界并不是一件容易的事。</p>
+<p>截至目前的定位理论主要是来自冯卫东的升级定位理论。</p>
+<p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.d2b596dc02ec4950ba5a634a7f60c97f?rik=XLsnulznBzFq8w&amp;riu=http%3a%2f%2fwww.dingweililun.com%2fueditor%2fphp%2fupload%2fimage%2f20201021%2f1603260748152518.jpeg&amp;ehk=5kj9%2ftcx6b75ZnkXA8MDqN1fzcXMM6nOR1AAKSygkLs%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="天图投资CEO冯卫东：如何用“资本&#43;产业”双轮驱动，引领企业发展"></p>
+<p>他通过正面清单和负面清单大致分隔出一个边界。</p>
+<p>升级定位的核心理论处理的核心领域是品牌战略和企业战略。</p>
+<p>定位理论最具革命性的地方，就是管理品牌在顾客心智中的认知，以获得认知优势，从而被顾客优先选择。</p>
+<p>定位不能夸大，因为定位主要是战略，是用来决定资源配置的。</p>
+<p>诸如企业可以使用定位理论，但是一个复杂的社会情境或者结构就不能使用定位理论。</p>
+<p>这时候，市场竞争是配置资源的主要手段。</p>
+<h1 id="二认知大于事实">二、认知大于事实？</h1>
+<p>认知大于事实是一个不严谨的描述。</p>
+<p>就像水大于空气一样，我们可以理解水的密度大于空气，但是没有限制的比较，无异于望文生义。</p>
+<p>同样的，“认知大于事实” 不够严谨，导致误读不断。</p>
+<p>严谨地说，认知对行为的影响大于事实对行为的影响。</p>
+<p>蕨菜被认为有抗癌功效时身价倍增，但是被发现是致癌物后，身价一落千丈。</p>
+<p><strong>认知作为行为的中介变量，其作用力往往超越客观事实本身</strong>。</p>
+<p>这与神经科学中的&quot;预测编码理论&quot;（大脑基于先验认知处理信息）以及行为经济学中的&quot;框架效应&quot;（信息呈现方式影响决策）高度契合。</p>
+<p>在20世纪70年代，可口可乐在全球饮料市场占据主导地位，而百事可乐作为后来者，市场份额相对较小，品牌影响力也不及可口可乐。</p>
+<p><img src="https://img.3dmgame.com/uploads/images/news/20181222/1545470174_165488.jpg" alt="百事可乐与可口可乐合作推出一款饮料 会是什么味道呢|百事可乐|可口可乐-滚动读报-川北在线"></p>
+<p>百事可乐为了突破市场格局，挑战可口可乐的霸主地位，策划并实施了“百事挑战”活动。</p>
+<p>1975年，百事可乐首次发起“百事挑战”活动，该活动在美国多个城市展开。</p>
+<p>百事在街头或公共场所设置品尝台，准备两杯没有标签的可乐，一杯是百事可乐，另一杯是可口可乐，邀请路人进行品尝，并让他们选择更喜欢的一种。</p>
+<p>在盲测过程中，消费者并不知道哪杯是百事可乐，哪杯是可口可乐，仅凭口感进行选择。</p>
+<p>盲测结果显示，多数参与者认为百事可乐的口感更好，选择百事可乐的人数超过了选择可口可乐的人数。</p>
+<p>这一结果与消费者在日常购买中的选择形成了鲜明对比，因为在当时，可口可乐的销量远高于百事可乐。</p>
+<p>尽管盲测结果表明百事可乐在口感上更受青睐，但当消费者知道哪杯是可口可乐后，很多人改变了选择，表示更喜欢可口可乐。</p>
+<p>这足以说明消费者对品牌的认知在很大程度上影响了他们的选择，而非单纯的产品事实。</p>
+<h1 id="三互联网时代的适用性">三、互联网时代的适用性</h1>
+<p>1969 年定位理论的第一篇署名文章《定位：今天“ME-TOO”市场中的竞赛》在《工业营销》杂志上正式发表。</p>
+<p>1972 年《广告时代》刊登了艾·里斯和杰克·特劳特的系列文章《定位时代的来临》，标志着“定位理论”正式进入世界营销的舞台。</p>
+<p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.2dea58c7aa4a3322dd5e7b6b9280b777?rik=TtLm6oC%2fAiocAQ&amp;riu=http%3a%2f%2fpic.baike.soso.com%2fp%2f20120906%2f20120906121920-252982863.jpg&amp;ehk=i0xwDOeQM7eI3%2f5cqy%2bSk%2fDIWkb4F3ZFfKQifNqsN7k%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="301 Moved Permanently"></p>
+<p>所以，有人认为，在如今的互联网时代，这样的理论就不管用了。</p>
+<p>其实定位理论是基于心智的理论，只要心智不变，这个理论就是有效的。</p>
+<p>互联网和现代化是以技术发展为基础形成的，技术只是让沟通的场景发生了变化，并没有对竞争的战场 —— 顾客心智产生影响。</p>
+<p>前文已经讨论过 “心智” 了，这是一个新兴的研究领域，更广泛的说，这设计行为经济学、社会心理学、传播学等交叉学科。</p>
+<p>作为从业者，需要做的是发现前沿的信息，然后运用它。</p>
+<p>至于它什么时候过期，者不是眼下回发生的，唯一重要的是，了解前沿信息，综合运用。</p>
+<h1 id="四多元思维模型">四、多元思维模型</h1>
+<p>温铁军教授认为，单一学科的研究方法在面对复杂的社会问题时存在局限性，而交叉学科能够提供更全面、系统的视角。</p>
+<p><img src="https://ts1.tc.mm.bing.net/th/id/R-C.ee35b68eedee4a4d5ba635836570628e?rik=9OS0sbpbkVpuPg&amp;riu=http%3a%2f%2fwww.cepnews.com.cn%2fuploads%2fallimg%2f230215%2f1P0015c9_0.jpg&amp;ehk=ugJLpyKL2UeJHhxQA1SAYtiR5nvEPhl06nhVC0tNcl8%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0" alt="著名三农专家温铁军生态环保解读2023年中央一号文件_中国环保新闻网 | 环保网"></p>
+<p>学者们应积极更新知识体系，运用最新的技术手段和学科间的交叉融合。</p>
+<p>他鼓励年轻学者学习跨学科理论和研究方法，以更好地应对复杂的社会问题。</p>
+<p>升级定位理论是复合学科的集成者，涵盖了经济学、心理学、管理学、传播学、创新理论、非定位战略等学科理论，但是一旦成文就必然有其局限性。</p>
+<p>此理论依然只是企业经营活动多元思维模型中的一个，绝非替代。</p>
+<p>主题明确、逻辑清晰、研究详尽、自成体系是判断一个知识是否具有优势的必要条件。</p>
+<p>大道至简看上去是一个捷径，但遗憾的是，大道不可能至简。</p>
+<p>所谓科学，就是将该体系可能涵盖的每一个细枝末节都进行详尽的分析解释。</p>
+<p><strong>查看最近 5 期文章</strong></p>
+<p>
+<a href="https://mp.weixin.qq.com/s/VAvlGXDhGe0OHflVghWHPg"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   《定位与外部思维：从雀巢广告思考如何从顾客的视角考虑信息的传播？》
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+<p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&amp;mid=2247485117&amp;idx=1&amp;sn=50e738fa896b7c98e09f728f505eecfe&amp;scene=21#wechat_redirect"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   《企业战略的聚焦：淘宝如何解决初期的挑战？以及 “主业+投资” 的智谱案例》
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+<p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&amp;mid=2247485104&amp;idx=1&amp;sn=9171cb5b7ccbe5c9ead275e26d423f4b&amp;scene=21#wechat_redirect"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   《品牌战略的聚焦：如何提升投资回报率？魅族和当当网的教训》
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+<p>
+<a href="https://mp.weixin.qq.com/s?__biz=Mzg3ODU1NTA4Mw==&amp;mid=2247485070&amp;idx=1&amp;sn=2aff28757a5e7edd42b0b94e162a4b37&amp;scene=21#wechat_redirect"
+   
+   
+     target="_blank"
+     rel="noopener noreferrer"
+     class="external-link"
+   >
+   《品牌战略五阶段之撤退期：如何保持品牌生命力？富士、蓝月亮》
+   
+     <span class="external-icon">↗</span>
+   
+</a>
+</p>
+</section>
+
+      
+
+<div class="reward-container">
+    <button
+        class="reward-button"
+        aria-expanded="false"
+        aria-controls="reward-pop"
+    >
+        支持作者
+    </button>
+    <div id="reward-pop" class="reward-popup hidden">
+        <p class="reward-text">感谢支持！🍻</p>
+        <div class="qr-container">
+            <div class="reward-qr">
+                <img
+                    src="/images/payment/wechat.jpg"
+                    alt="微信支付二维码"
+                    loading="lazy"
+                />
+                <p>微信</p>
+            </div>
+            <div class="reward-qr">
+                <img src="/images/payment/alipay.jpg" alt="支付宝二维码" loading="lazy" />
+                <p>支付宝</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .reward-container {
+        text-align: center;
+        margin: 2rem 0;
+    }
+
+    .reward-button {
+        padding: 0.5rem 1.25rem;
+        background-color: #f44336;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        font-size: 1rem;
+    }
+
+    .reward-button:hover {
+        background-color: red;
+        font-size: 1rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .reward-button:active {
+        background-color: red;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transform: translateY(-1px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+    .reward-popup {
+        margin-top: 1.5rem;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: all 0.3s ease;
+    }
+
+    .reward-popup.visible {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .reward-text {
+        margin-bottom: 1rem;
+        color: #333;
+        font-size: 1.1rem;
+    }
+    .reward-text:is(.dark *) {
+        margin-bottom: 1rem;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+
+    .qr-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .reward-qr {
+        text-align: center;
+    }
+
+    .reward-qr img {
+        width: 200px;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .reward-qr img:hover {
+        transform: scale(1.02);
+    }
+
+    .reward-qr p {
+        margin: 0.5rem 0 0;
+        color: #666;
+        font-size: 0.95rem;
+    }
+
+    .reward-qr p:is(.dark *) {
+        margin: 0.5rem 0 0;
+        color: #fff;
+        font-size: 0.95rem;
+    }
+
+    .hidden {
+        display: none;
+    }
+</style>
+
+<script>
+    const button = document.querySelector(".reward-button");
+    const popup = document.getElementById("reward-pop");
+
+    button.addEventListener("click", () => {
+        const isExpanded = button.getAttribute("aria-expanded") === "true";
+        button.setAttribute("aria-expanded", !isExpanded);
+
+        popup.classList.toggle("hidden");
+        setTimeout(() => {
+            popup.classList.toggle("visible");
+        }, 10);
+    });
+</script>
+ 
+
+    
+    
+
+    
+    
+    
+    
+    <nav
+        class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"
+    >
+        
+        <a class="ltr:pr-3 rtl:pl-3" href="http://localhost:1313/post/2025/04/becoming_number_one_is_the_shortcut_to_the_mind/"
+            ><span class="ltr:mr-1.5 rtl:ml-1.5">←</span
+            ><span>成为第一是进入心智的捷径：京东“掐”美团，饿了么怎么活？</span></a
+        >
+        
+        
+        <a
+            class="ltr:ml-auto rtl:mr-auto justify-end pl-3"
+            href="http://localhost:1313/post/2025/04/six_mental_laws/"
+            ><span>六大心智规律：如何通过心智策略让顾客需要？</span
+            ><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a
+        >
+        
+    </nav>
+    
+    
+
+    
+    <div class="mt-12 rounded-xl" style="text-align: center">
+          
+
+<button class="feedback-trigger" onclick="toggleFeedback()">建议 / 反馈</button>
+<div class="feedback-form hidden">
+    <p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p>
+    <form id="feedback-form" onsubmit="sendFeedback(event)">
+        <input type="text" name="name" placeholder="怎么称呼？" required />
+        
+        <textarea
+            name="message"
+            placeholder="请输入您的建议或意见..."
+            required
+        ></textarea>
+        <button type="submit">发送</button>
+    </form>
+</div>
+
+<style>
+    .feedback-trigger {
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 0.25rem 0.5rem;
+        border-radius: 12px;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        margin: 1rem;
+    }
+
+    .feedback-form {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 10px;
+    }
+
+    .feedback-form.hidden {
+        display: none;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 8px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    .feedback-form textarea {
+        height: 100px;
+        resize: vertical;
+    }
+
+    .feedback-form button {
+        width: 100%;
+        background: #007bff;
+        color: white;
+        border: none;
+        padding: 8px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function toggleFeedback() {
+        document.querySelector(".feedback-form").classList.toggle("hidden");
+    }
+
+    function sendFeedback(e) {
+        e.preventDefault();
+        const form = e.target;
+        const mailtoLink = `mailto:reggiesimons2cy@gmail.com?subject=http:\/\/localhost:1313\/ Feedback from ${form.name.value}&body=${encodeURIComponent(form.message.value)}%0D%0A%0D%0AFrom: ${form.name.value}%0D%0AEmail: ${form.email.value}`;
+        window.location.href = mailtoLink;
+    }
+</script>
+ 
+    </div>
+
+    
+    
+    <div class="mt-24 w-100rem" id="disqus_thread"></div>
+    <script>
+        const disqusShortname = "caoyang2002.vercel.app";
+        const script = document.createElement("script");
+        script.src = "https://" + disqusShortname + ".disqus.com/embed.js";
+        script.setAttribute("data-timestamp", +new Date());
+        document.head.appendChild(script);
+    </script>
+    
+
+    
+    
+
+    
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.6.1/mermaid.min.js"></script>
+
+
+    
+    <div class="giscus mt-24"></div>
+    <script
+        src="https://giscus.app/client.js"
+        data-repo="caoyang2002/caoyang2002"
+        data-repo-id="R_kgDONgnnzg"
+        data-category="Announcements"
+        data-category-id="DIC_kwDONgnnzs4ClayH"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="zh-CN"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async
+    ></script>
+    
+</article>
+
+
+            </main>
+            
+            <div class="ml-2 mr-4">
+
+
+<button class="mobile-toc-toggle">
+<svg t="1737363365612" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="7154" width="32" height="32"><path d="M811.6 264.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 522.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36zM811.6 780.1H378.2c-19.8 0-36-16.2-36-36s16.2-36 36-36h433.5c19.8 0 36 16.2 36 36-0.1 19.8-16.3 36-36.1 36z" fill="#223D60" p-id="7155"></path><path d="M210.2 229m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7156"></path><path d="M210.2 487m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7157"></path><path d="M210.2 745m-37.9 0a37.9 37.9 0 1 0 75.8 0 37.9 37.9 0 1 0-75.8 0Z" fill="#223D60" p-id="7158"></path></svg>
+</button>
+
+
+<aside class="toc-aside mr-4">
+
+  
+  <div class="toc-container">
+    <div class="toc-header">
+      <h3 class="toc-title">目录</h3>
+
+      <button class="toc-close">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="TableOfContents" class="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#一能力的边界">一、能力的边界</a></li>
+    <li><a href="#二认知大于事实">二、认知大于事实？</a></li>
+    <li><a href="#三互联网时代的适用性">三、互联网时代的适用性</a></li>
+    <li><a href="#四多元思维模型">四、多元思维模型</a></li>
+  </ul>
+</nav>
+    </nav>
+  </div>
+  
+</aside>
+
+
+<style>
+ 
+.toc-aside {
+  position: fixed;
+  top: 6rem;
+  bottom: 4rem;
+  right: 0;
+  width: 16rem;
+  z-index: 100;
+  transition: transform 0.3s ease;
+}
+
+ 
+.toc-container {
+  background: white;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+ 
+.toc-header {
+  position: sticky;
+  border-radius: 0.5rem 0.5rem 0 0;
+  top: 0;
+  background: white;
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.toc-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+ 
+.mobile-toc-toggle {
+  display: none;
+  position: fixed;
+  top: 6rem;
+  right: 1rem;
+   
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #4b5563;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mobile-toc-toggle:hover {
+  background: #f3f4f6;
+}
+
+.mobile-toc-toggle .menu-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ 
+.toc-close {
+  padding: 0.5rem;
+  background: none;
+  border: none;
+  color: --bg;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toc-close:hover {
+  color: #111827;
+}
+
+ 
+.toc {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem;
+  scrollbar-gutter: stable;
+}
+
+ 
+.toc ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.toc li {
+  margin: 0.5rem 0;
+}
+
+.toc a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: all 0.2s;
+}
+
+.toc a:hover {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.toc a:active {
+  background-color: #f3f4f6;
+  color: #111827;
+  font-weight: 500;
+}
+
+ 
+.toc::-webkit-scrollbar {
+  width: 4px;
+}
+
+.toc::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.toc::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 4px;
+}
+
+ 
+@media (max-width: 912px) {
+  .mobile-toc-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .toc-aside {
+    transform: translateX(100%);
+    width: 80vw;
+    max-width: 20rem;
+  }
+
+  .toc-aside.show {
+    transform: translateX(0);
+  }
+}
+
+ 
+ 
+
+ 
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 100px;
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const tocAside = document.querySelector('.toc-aside');
+  const mobileToggle = document.querySelector('.mobile-toc-toggle');
+  const closeButton = document.querySelector('.toc-close');
+
+
+  
+  mobileToggle?.addEventListener('click', () => {
+    tocAside?.classList.add('show');
+  });
+
+  
+  closeButton?.addEventListener('click', () => {
+    tocAside?.classList.remove('show');
+  });
+
+  
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 912 &&
+        tocAside?.classList.contains('show') &&
+        !tocAside.contains(e.target) &&
+        !mobileToggle?.contains(e.target)) {
+      tocAside.classList.remove('show');
+    }
+  });
+
+  
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const tocLink = document.querySelector(`.toc a[href="#${id}"]`);
+
+      if (entry.intersectionRatio > 0) {
+        document.querySelectorAll('.toc a.active').forEach(node => {
+          node.classList.remove('active');
+        });
+        tocLink?.classList.add('active');
+      }
+    });
+  }, {
+    rootMargin: '-20% 0px -80% 0px'
+  });
+
+  
+  document.querySelectorAll('h1[id], h2[id], h3[id], h4[id], h5[id], h6[id]').forEach(heading => {
+    observer.observe(heading);
+  });
+
+});
+</script>
+</div>
+
+            
+        </div>
+
+        <footer class="flex items-center text-xs uppercase h-8">
+    
+    <div class="mr-auto opacity-60">
+         &copy; 2026
+        <a class="link" href="http://localhost:1313/">caoyang 2002</a>
+        
+    </div>
+
+    
+    <div>
+        <link
+            rel="stylesheet"
+            href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+        />
+        <script
+            async
+            src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+        ></script>
+        
+        <p class="link mx-6 opacity-60">
+            本站累计访问次数
+            <span id="busuanzi_value_page_pv"
+                ><i class="fa fa-spinner fa-spin"></i
+            ></span>
+        </p>
+    </div>
+
+    <a
+        class="link mx-6 opacity-60"
+        href="https://gohugo.io/"
+        rel="noopener"
+        target="_blank"
+        >powered by hugo️️</a
+    >️
+    <a
+        class="link mx-6 opacity-60"
+        href="https://github.com/nanxiaobei/hugo-paper"
+        rel="noopener"
+        target="_blank"
+        >hugo-paper</a
+    >
+    <a
+        class="link opacity-60"
+        href="https://github.com/caoyang2002/hugo-focus"
+        rel="noopener"
+        target="_blank"
+        >hugo-focus</a
+    >
+</footer>
+
+<style>
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        width: 100%;
+
+        padding: 0.5rem;
+        padding-bottom: calc(0.5rem + var(--safe-padding-bottom));
+        padding-left: max(0.5rem, var(--safe-padding-left));
+        padding-right: max(0.5rem, var(--safe-padding-right));
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(12px);
+        background: rgba(255, 255, 255, 0.85);
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+     
+    .dark footer {
+        background: rgba(0, 0, 0, 0.85);
+        border-top-color: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    .footer-content {
+        width: 100%;
+        max-width: var(--w);
+        margin: 0 auto;
+        padding: 0 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+     
+    .footer-element {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        border-radius: 0.5rem;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        transition: all 0.2s ease;
+    }
+
+    .footer-element:hover {
+        opacity: 1;
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    .dark .footer-element {
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .dark .footer-element:hover {
+        background: rgba(255, 255, 255, 0.1);
+    }
+
+     
+    @media (max-width: 768px) {
+        footer {
+            padding-top: 0.5rem;
+            padding-bottom: calc(0.5rem + env(safe-area-inset-bottom));
+        }
+
+        .footer-content {
+            padding: 0 0.5rem;
+            gap: 0.5rem;
+        }
+
+        .footer-element {
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .footer-element {
+            font-size: 0.875rem;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .footer-content {
+            padding: 0 2rem;
+            gap: 2rem;
+        }
+
+        .footer-element {
+            padding: 0.75rem 2rem;
+        }
+    }
+</style>
+
+        
+        
+    </body>
+</html>
