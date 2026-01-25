@@ -67,14 +67,3 @@ The following are representative projects categorized by field. Click on the nam
   <sub>Thanks for visiting! ✨ Profile Views: <img src="https://komarev.com/ghpvc/?username=caoyang2002&label=Profile%20Views&color=34C759&style=flat" alt="View Counter" /></sub>
 </p>
 ```
-
-### ✨ **Notes for Use**
-
-1.  **Copy and Paste**: You can directly copy the entire Markdown code above into the `README.md` file of your **GitHub Profile repository** (the one named `caoyang2002`). The visual effects will take effect immediately.
-2.  **Personalization**:
-    *   Remember to replace `your-email@example.com` with your actual contact email.
-    *   Feel free to add, remove, or adjust the tech tags in the "Core Tech Stack" and project tables to better match your skills.
-    *   It's recommended to keep around 7 projects in the "Featured Projects" section, ordered by **completeness, technical complexity, and utility**.
-3.  **Keep it Fresh**: You can periodically update the list in "Featured Projects" or rotate the projects under "View More Projects" to keep your profile dynamic.
-
-This version highlights your **technical breadth** (full-stack, mobile, desktop, blockchain) and **practical ability** (over ten projects), while making the information clearer through categorization and status tags. I hope you like this new version
