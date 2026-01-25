@@ -1,7 +1,7 @@
 +++
 title = '情绪如何驱动消费'
 date = 2025-02-11T01:09:04+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["心理","名词解释"]

@@ -1,6 +1,6 @@
 +++
 date = '2025-01-15T11:48:53+08:00'
-draft = true
+draft = false
 title = 'Rust 函数式编程'
 tags = ["编程", "rust"]
 toc = true

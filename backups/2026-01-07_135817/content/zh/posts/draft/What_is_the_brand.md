@@ -1,7 +1,7 @@
 +++
 title = '定位理论的贡献三：品牌是什么？'
 date = 2025-03-26T10:47:16+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

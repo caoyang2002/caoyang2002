@@ -1,7 +1,7 @@
 +++
 title = '争取更多：如何让每一次谈判都成功？'
 date = 2025-02-16T06:51:45+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["谈判"]
 tags = ["沟通"]

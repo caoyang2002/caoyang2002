@@ -1,7 +1,7 @@
 +++
 title = '定位与外部思维：从顾客的视角考虑信息的传播'
 date = 2025-04-21T13:06:57+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

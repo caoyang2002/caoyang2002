@@ -1,6 +1,6 @@
 +++
 date = '2025-01-15T11:41:27+08:00'
-draft = true
+draft = false
 title = 'Rust 生命周期'
 tags = ["编程", "rust"]
 toc = true

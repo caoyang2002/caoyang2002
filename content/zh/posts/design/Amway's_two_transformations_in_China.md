@@ -1,7 +1,7 @@
 +++
 title = '逆风翻盘：安利如何通过两次转型变危机为机遇实现业绩逆势增长？'
 date = 2025-02-14T14:51:51+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["经典案例"]

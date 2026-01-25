@@ -1,7 +1,7 @@
 +++
 title = '【人物】罗永浩：彪悍的人生不需要解释'
 date = 2025-03-05T17:14:33+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

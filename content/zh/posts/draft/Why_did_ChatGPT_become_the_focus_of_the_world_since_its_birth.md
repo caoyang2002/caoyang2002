@@ -1,7 +1,7 @@
 +++
 title = '科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？'
 date = 2025-02-28T15:05:18+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["案例"]

@@ -149,7 +149,7 @@ hugo new content/posts/post_name.md
 ```bash
 +++
 date = '2025-01-03T11:11:07+08:00'
-draft = true
+draft = false
 title = 'Post_name'
 +++
 ```

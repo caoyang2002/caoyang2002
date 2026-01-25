@@ -1,7 +1,7 @@
 +++
 title = '赛博印钞：马斯克看好的 AI 游戏，为什么独立开发的一个游戏能够短期获利 12 万？'
 date = 2025-03-05T10:08:02+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["个人"]

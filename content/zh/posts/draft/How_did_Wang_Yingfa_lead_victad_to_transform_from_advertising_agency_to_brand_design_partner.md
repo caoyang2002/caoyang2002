@@ -1,7 +1,7 @@
 +++
 title = '不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？'
 date = 2025-02-23T13:21:23+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["设计转型"]

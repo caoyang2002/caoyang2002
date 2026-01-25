@@ -1,7 +1,7 @@
 +++
 title = '【人物】孙宇晨：营销造势，放股神巴菲特鸽子的人'
 date = 2025-03-05T17:12:41+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

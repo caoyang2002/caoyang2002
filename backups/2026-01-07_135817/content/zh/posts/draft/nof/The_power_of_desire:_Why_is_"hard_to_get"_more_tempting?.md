@@ -1,7 +1,7 @@
 +++
 title = '稀缺与歧视：为什么“难以获得”更有诱惑力？'
 date = 2025-02-16T15:12:15+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

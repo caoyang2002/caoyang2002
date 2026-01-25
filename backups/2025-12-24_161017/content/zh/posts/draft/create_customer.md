@@ -1,7 +1,7 @@
 +++
 title = '创造顾客：心智预售与进场费'
 date = 2025-03-23T08:10:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["暂无"]

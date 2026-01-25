@@ -1,7 +1,7 @@
 +++
 title = '引爆点：如何引爆流行【读书笔记】'
 date = 2025-02-25T18:04:27+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["流行"]

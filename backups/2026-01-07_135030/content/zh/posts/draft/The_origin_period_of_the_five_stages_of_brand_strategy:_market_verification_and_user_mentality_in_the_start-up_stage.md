@@ -1,7 +1,7 @@
 +++
 title = '品牌战略五阶段之原点期：初创阶段的市场验证与用户心智'
 date = 2025-04-13T21:28:38+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

@@ -1,7 +1,7 @@
 +++
 title = '如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试'
 date = 2025-04-06T17:09:20+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

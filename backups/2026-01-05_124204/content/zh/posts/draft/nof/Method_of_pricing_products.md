@@ -1,7 +1,7 @@
 +++
 title = '产品定价的方法'
 date = 2025-02-10T21:04:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["定价"]

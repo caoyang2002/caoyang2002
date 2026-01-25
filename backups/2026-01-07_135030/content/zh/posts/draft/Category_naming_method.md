@@ -1,7 +1,7 @@
 +++
 title = '品类命名方法'
 date = 2025-04-05T07:18:08+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

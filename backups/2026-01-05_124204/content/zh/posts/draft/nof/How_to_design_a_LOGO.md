@@ -1,7 +1,7 @@
 +++
 title = '如何设计一个LOGO'
 date = 2025-02-01T09:27:43+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["设计"]

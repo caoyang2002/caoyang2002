@@ -1,7 +1,7 @@
 +++
 title = '对失败的容忍是激励创新的必要条件'
 date = 2025-04-27T08:37:47+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

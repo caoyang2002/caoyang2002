@@ -1,7 +1,7 @@
 +++
 title = '上瘾的秘密：潜移默化的营销方式如何重塑我们的大脑'
 date = 2025-02-04T09:50:18+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["阅读"]
 tags = ["笔记"]

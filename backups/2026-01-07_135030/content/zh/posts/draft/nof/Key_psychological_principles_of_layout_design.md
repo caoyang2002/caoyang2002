@@ -1,7 +1,7 @@
 +++
 title = '排版设计的关键心理学原理'
 date = 2025-01-25T05:57:06+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["设计"]
 tags = ["排版"]

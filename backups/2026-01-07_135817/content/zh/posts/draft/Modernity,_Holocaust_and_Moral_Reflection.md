@@ -1,7 +1,7 @@
 +++
 title = '现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心'
 date = 2025-03-10T18:57:52+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

@@ -1,7 +1,7 @@
 +++
 title = '感受价格：如何门店销售中让消费者有低价感？'
 date = 2025-03-01T12:35:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

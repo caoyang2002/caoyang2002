@@ -1,7 +1,7 @@
 +++
 title = '营销'
 date = '2024-12-29T09:31:37+08:00'
-draft = true
+draft = false
 tags = ["营销"]
 categories= ["营销"]
 description = "决策瘫痪"

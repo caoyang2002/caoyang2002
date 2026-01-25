@@ -1,7 +1,7 @@
 +++
 title = '注册一个免费的域名'
 date = 2026-01-05T12:28:47+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

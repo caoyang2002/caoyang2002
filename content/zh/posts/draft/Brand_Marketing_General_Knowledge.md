@@ -1,7 +1,7 @@
 +++
-title = 'F2ac8bed'
+title = '营销通识'
 date = 2025-03-01T12:28:00+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

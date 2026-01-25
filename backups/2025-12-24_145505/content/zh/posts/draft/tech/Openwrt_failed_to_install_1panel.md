@@ -1,7 +1,7 @@
 +++
 title = 'Openwrt_failed_to_install_1panel'
 date = 2025-01-29T08:28:43+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["运维"]
 tags = ["openwrt"]

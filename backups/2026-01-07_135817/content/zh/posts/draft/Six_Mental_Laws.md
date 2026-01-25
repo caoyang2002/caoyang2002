@@ -1,7 +1,7 @@
 +++
 title = '六大心智规律：如何通过心智策略让顾客需要？'
 date = 2025-04-22T13:13:56+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

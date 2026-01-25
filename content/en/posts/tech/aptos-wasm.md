@@ -1,6 +1,6 @@
 +++
 date = '2025-01-05T11:08:24+08:00'
-draft = true
+draft = false
 title = 'Aptos Wasm 开发笔记'
 tags = ["aptos","wasm"]
 toc = true

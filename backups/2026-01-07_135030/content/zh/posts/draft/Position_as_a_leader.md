@@ -1,7 +1,7 @@
 +++
 title = '成为领导者的定位：RCA 与 IBM 的分析'
 date = 2025-04-29T08:59:15+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
