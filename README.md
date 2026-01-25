@@ -1,14 +1,7 @@
 my web
 
 Hello
-<iframe 
-    src="https://simons.qzz.io" 
-    width="100%" 
-    height="500"
-    frameborder="0"
-    allowfullscreen>
-</iframe>
-
+[Simons Web](https://simons.qzz.io)
 
 # 一、关于我
 
