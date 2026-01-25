@@ -3,16 +3,31 @@
 > **A programming enthusiast with full-stack development experience, spanning frontend/backend, embedded systems, and blockchain.**
 > Since 2022, I have completed over ten projects, passionate about turning ideas into functional products.
 
-[![Personal Website](https://img.shields.io/badge/🌐-Personal_Website-simons.qzz.io-34C759?style=flat&logo=internet-explorer)](https://simons.qzz.io)
-[![GitHub](https://img.shields.io/badge/GitHub-Repositories-181717?style=flat&logo=github)](https://github.com/caoyang2002)
+<div align="center">
+  <!-- 个人网站 -->
+  <a href="https://simons.qzz.io">
+    <img src="https://img.shields.io/badge/Personal_Website-simons.qzz.io-34C759?style=flat&logo=internet-explorer&logoColor=white" alt="Personal Website"/>
+  </a>
+  <!-- 邮箱 -->
+  <a href="mailto:reggiesimons2cy@gmail.com">
+    <img src="https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <!-- LinkedIn（可选） -->
+  <a href="https://x.com/in/caoyang2002">
+    <img src="https://img.shields.io/badge/_-Connect-0A66C2?style=flat&logo=x&logoColor=white" alt="LinkedIn"/>
+  </a>
+</div>
 
 ---
 
 ### 🛠️ Core Tech Stack
 
 **Frontend:** ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
+
 **Backend/Full-Stack:** ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=nodedotjs&logoColor=white) ![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?logo=openjdk&logoColor=white)
+
 **Mobile/Desktop:** ![Swift](https://img.shields.io/badge/-Swift-F05138?logo=swift&logoColor=white) ![C++](https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white) ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white)
+
 **Tools/Others:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Qt](https://img.shields.io/badge/-Qt-41CD52?logo=qt&logoColor=white) ![Blockchain](https://img.shields.io/badge/-Blockchain-121D33?logo=ethereum&logoColor=white)
 
 ---
@@ -63,7 +78,7 @@ The following are representative projects categorized by field. Click on the nam
 - **💼 Open to Connecting:** Interested in open-source collaboration, full-stack projects, or tech innovation? Feel free to reach out!
 
 ---
+
 <p align="center">
   <sub>Thanks for visiting! ✨ Profile Views: <img src="https://komarev.com/ghpvc/?username=caoyang2002&label=Profile%20Views&color=34C759&style=flat" alt="View Counter" /></sub>
 </p>
-```
