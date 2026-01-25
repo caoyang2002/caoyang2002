@@ -1,7 +1,6 @@
 ## 👨‍💻 Simons | Full-Stack Developer & Technology Explorer
 
 > **A programming enthusiast with full-stack development experience, spanning frontend/backend, embedded systems, and blockchain.**
-> Since 2022, I have completed over ten projects, passionate about turning ideas into functional products.
 
 <div align="center">
   <a href="https://simons.qzz.io">
