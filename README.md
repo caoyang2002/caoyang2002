@@ -1,4 +1,80 @@
-my web
+### 👨‍💻 Simons | Full-Stack Developer & Technology Explorer
 
-Hello
-[Simons Web](https://simons.qzz.io)
+> **A programming enthusiast with full-stack development experience, spanning frontend/backend, embedded systems, and blockchain.**
+> Since 2022, I have completed over ten projects, passionate about turning ideas into functional products.
+
+[![Personal Website](https://img.shields.io/badge/🌐-Personal_Website-simons.qzz.io-34C759?style=flat&logo=internet-explorer)](https://simons.qzz.io)
+[![GitHub](https://img.shields.io/badge/GitHub-Repositories-181717?style=flat&logo=github)](https://github.com/caoyang2002)
+
+---
+
+### 🛠️ Core Tech Stack
+
+**Frontend:** ![Vue.js](https://img.shields.io/badge/-Vue.js-4FC08D?logo=vuedotjs&logoColor=white) ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white)
+**Backend/Full-Stack:** ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=nodedotjs&logoColor=white) ![Go](https://img.shields.io/badge/-Go-00ADD8?logo=go&logoColor=white) ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white) ![Java](https://img.shields.io/badge/-Java-007396?logo=openjdk&logoColor=white)
+**Mobile/Desktop:** ![Swift](https://img.shields.io/badge/-Swift-F05138?logo=swift&logoColor=white) ![C++](https://img.shields.io/badge/-C++-00599C?logo=cplusplus&logoColor=white) ![Rust](https://img.shields.io/badge/-Rust-000000?logo=rust&logoColor=white)
+**Tools/Others:** ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white) ![Qt](https://img.shields.io/badge/-Qt-41CD52?logo=qt&logoColor=white) ![Blockchain](https://img.shields.io/badge/-Blockchain-121D33?logo=ethereum&logoColor=white)
+
+---
+
+### 🚀 Featured Projects
+
+The following are representative projects categorized by field. Click on the names to view the source code.
+
+| Project | Description | Tech Tags | Status / Link |
+| :--- | :--- | :--- | :--- |
+| **🚀 [SimpleResume](https://github.com/caoyang2002/SimpleResume)** | A tool to quickly generate resumes via forms without memorizing syntax, offering multiple templates. | `Vue` `TypeScript` `Frontend` `Utility` | **[Live Demo](https://ohohresume.vercel.app/)** |
+| **🛠️ [laoxiao_tools](https://github.com/caoyang2002/laoxiao_tools)** | A desktop tool developed for a friend to efficiently convert specially formatted text into tables. | `Rust` `egui` `Desktop` | Completed |
+| **💎 [hugo-focus](https://github.com/caoyang2002/hugo-focus)** | A clean and efficient Hugo blog theme, also the theme powering my personal website. | `Hugo` `Theme` | **[My Website](https://caoyang2002.vercel.app)** |
+| **⚙️ [Focus Edit](https://github.com/caoyang2002/FocusEdit)** | A Qt-based video editing software with completed video import and basic playback features. | `C++` `Qt` `Desktop` | In Development |
+| **🔌 [zed-move-aptos](https://github.com/caoyang2002/zed-move-aptos)** | A Zed editor plugin providing syntax highlighting and checking for the Move language (Aptos). | `JavaScript` `Zed Plugin` `move-lang` | With [Parser](https://github.com/caoyang2002/tree-sitter-move-aptos) |
+| **🌐 [chyraw_food_website](https://github.com/caoyang2002/chyraw_food_website)** | Official website developed for a food company. | `Vue` `JavaScript` `Frontend` | Live |
+| **🤖 [W3Bot](https://github.com/caoyang2002/W3Bot)** | A Python-based WeChat robot capable of intelligent Q&A. | `Python` `WeChat` | Completed |
+
+<details>
+<summary><b>View More Projects (Click to Expand)</b></summary>
+
+| Project | Description | Tech Tags | Status |
+| :--- | :--- | :--- | :--- |
+| [Share Anything](https://github.com/caoyang2002/ShareAnything) | A file-sharing tool similar to Code Share. | `React` `TypeScript` | Completed |
+| [movelgo](https://github.com/caoyang2002/movelgo) | An online Integrated Development Environment (IDE). | `React` `TypeScript` `Full-Stack` | Discontinued |
+| [dnbExample](https://github.com/caoyang2002/dnbExample) | A community full-stack project with Airbnb-like functionality. | `Swift` `Go` `React` | Stalled |
+| [Paint3D](https://github.com/caoyang2002/Paint3D) | An iPad painting app exploring realistic pigment mixing effects. | `Swift` `Mobile` | Exploration Ended |
+| [Freqtrade Binance](https://github.com/caoyang2002/freqtrade-binance) | A quantitative trading program based on Python. | `Python` | Strategy Failed, Abandoned |
+| [Rysigy](https://github.com/caoyang2002/Rysigy) | A version control tool practice project developed with C++ and imGui. | `C++` | Practice Project, Terminated |
+
+</details>
+
+---
+
+### 📊 GitHub Stats Overview
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=caoyang2002&show_icons=true&theme=vue&hide_border=true&count_private=true" alt="GitHub Stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=caoyang2002&layout=compact&theme=vue&hide_border=true&langs_count=8" alt="Top Languages" />
+</p>
+
+---
+
+### 📫 Get In Touch
+
+- **💌 Email:** `your-email@example.com` *(Please replace with your actual email)*
+- **🌐 Personal Website:** [simons.qzz.io](https://simons.qzz.io)
+- **💼 Open to Connecting:** Interested in open-source collaboration, full-stack projects, or tech innovation? Feel free to reach out!
+
+---
+<p align="center">
+  <sub>Thanks for visiting! ✨ Profile Views: <img src="https://komarev.com/ghpvc/?username=caoyang2002&label=Profile%20Views&color=34C759&style=flat" alt="View Counter" /></sub>
+</p>
+```
+
+### ✨ **Notes for Use**
+
+1.  **Copy and Paste**: You can directly copy the entire Markdown code above into the `README.md` file of your **GitHub Profile repository** (the one named `caoyang2002`). The visual effects will take effect immediately.
+2.  **Personalization**:
+    *   Remember to replace `your-email@example.com` with your actual contact email.
+    *   Feel free to add, remove, or adjust the tech tags in the "Core Tech Stack" and project tables to better match your skills.
+    *   It's recommended to keep around 7 projects in the "Featured Projects" section, ordered by **completeness, technical complexity, and utility**.
+3.  **Keep it Fresh**: You can periodically update the list in "Featured Projects" or rotate the projects under "View More Projects" to keep your profile dynamic.
+
+This version highlights your **technical breadth** (full-stack, mobile, desktop, blockchain) and **practical ability** (over ten projects), while making the information clearer through categorization and status tags. I hope you like this new version
