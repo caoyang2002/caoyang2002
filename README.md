@@ -70,7 +70,7 @@ The following are representative projects categorized by field. Click on the nam
 
 ### 📫 Get In Touch
 
-- **💌 Email:** `your-email@example.com` *(Please replace with your actual email)*
+- **💌 Email:** `reggiesimons2cy@gmail.com` 
 - **🌐 Personal Website:** [simons.qzz.io](https://simons.qzz.io)
 - **💼 Open to Connecting:** Interested in open-source collaboration, full-stack projects, or tech innovation? Feel free to reach out!
 
