@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思考 on caoyang 2002</title><link>https://caoyang2002.vercel.app/tags/%E6%80%9D%E8%80%83/</link><description>Recent content in 思考 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 05 Jan 2026 15:48:22 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/tags/%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml"/><item><title>React vs Vue: 框架之争的深层思考</title><link>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
+&lt;h2 id="一核心设计哲学差异"&gt;一、核心设计哲学差异&lt;/h2&gt;
+&lt;h3 id="11-编程范式"&gt;1.1 编程范式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：函数式编程优先&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强调不可变性和纯函数&lt;/li&gt;
+&lt;li&gt;组件本质是函数（props in, JSX out）&lt;/li&gt;
+&lt;li&gt;Hooks强化了函数式概念&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
+const Component = ({ data }) =&amp;gt; {
+ const [state, setState] = useState(initialState);
+ const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
+ 
+ return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于可变状态的响应式系统&lt;/li&gt;
+&lt;li&gt;组合式API提供函数式能力&lt;/li&gt;
+&lt;li&gt;传统选项式API符合OOP思维&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+&amp;lt;script setup&amp;gt;
+import { ref, computed } from &amp;#39;vue&amp;#39;
+
+const data = ref(initialData)
+const derivedValue = computed(() =&amp;gt; compute(data.value))
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：最小化API，一切靠JavaScript&lt;/p&gt;</description></item></channel></rss>

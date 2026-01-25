@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on caoyang 2002</title><link>https://caoyang2002.vercel.app/categories/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 28 Dec 2025 21:46:14 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Gitea</title><link>https://caoyang2002.vercel.app/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;参考：
+&lt;a href="https://docs.gitea.com/zh-cn/category/installation"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Gitea 支持多种安装方法，这里只介绍 docker 的安装方法&lt;/p&gt;
+&lt;h1 id="方法一使用docker命令行安装推荐"&gt;方法一：使用Docker命令行安装（推荐）&lt;/h1&gt;
+&lt;h2 id="1-创建数据目录"&gt;1. 创建数据目录&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 创建必要的目录
+sudo mkdir -p /opt/gitea/data
+sudo mkdir -p /opt/gitea/config
+sudo mkdir -p /opt/gitea/logs
+
+# 设置权限（Gitea默认使用uid=1000, gid=1000的用户）
+sudo chown -R 1000:1000 /opt/gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="2-运行gitea容器"&gt;2. 运行Gitea容器&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -d \
+ --name=gitea \
+ --privileged=true \
+ --restart=unless-stopped \
+ -p 3000:3000 \
+ -p 2222:22 \
+ -v /opt/gitea/data:/data \
+ -v /opt/gitea/config:/etc/gitea \
+ -v /etc/timezone:/etc/timezone:ro \
+ -v /etc/localtime:/etc/localtime:ro \
+ -e USER_UID=1000 \
+ -e USER_GID=1000 \
+ gitea/gitea:latest&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="3-验证安装"&gt;3. 验证安装&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 查看容器状态
+docker ps -a
+
+# 查看日志
+docker logs gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;访问：&lt;code&gt;http://your-server-ip:3000&lt;/code&gt; 进行初始设置。&lt;/p&gt;</description></item></channel></rss>

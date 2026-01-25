@@ -1,0 +1,3806 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on caoyang 2002</title><link>https://caoyang2002.vercel.app/posts/</link><description>Recent content in Posts on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://caoyang2002.vercel.app/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://caoyang2002.vercel.app/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/notice/</guid><description>&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+
+&lt;style&gt;
+ .notice {
+ color: red;
+ }
+&lt;/style&gt;
+
+ 
+
+ 公告
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content"&gt;
+ 
+ &lt;div class="crypto-form"&gt;
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ /&gt;
+ &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ &gt;
+ 已加密，请输入密码
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ 
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ 
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "2525500125";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256( "公告" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
+ output.innerHTML = decoded;
+ console.log(decoded);
+ form.style.display = 'none';
+ } catch(e) {
+ console.log(e)
+ showError('密码错误，请重试');
+ }
+ }
+
+ 
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b =&gt; b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ 
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script&gt;
+
+&lt;style&gt;
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style&gt;
+
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://caoyang2002.vercel.app/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前提条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
+&lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-url" data-lang="url"&gt;https://spk.bobohome.store:8880&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="2-安装-vaultwarden"&gt;2. 安装 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://caoyang2002.vercel.app/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;参考：
+&lt;a href="https://docs.gitea.com/zh-cn/category/installation"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Gitea 支持多种安装方法，这里只介绍 docker 的安装方法&lt;/p&gt;
+&lt;h1 id="方法一使用docker命令行安装推荐"&gt;方法一：使用Docker命令行安装（推荐）&lt;/h1&gt;
+&lt;h2 id="1-创建数据目录"&gt;1. 创建数据目录&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 创建必要的目录
+sudo mkdir -p /opt/gitea/data
+sudo mkdir -p /opt/gitea/config
+sudo mkdir -p /opt/gitea/logs
+
+# 设置权限（Gitea默认使用uid=1000, gid=1000的用户）
+sudo chown -R 1000:1000 /opt/gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="2-运行gitea容器"&gt;2. 运行Gitea容器&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -d \
+ --name=gitea \
+ --privileged=true \
+ --restart=unless-stopped \
+ -p 3000:3000 \
+ -p 2222:22 \
+ -v /opt/gitea/data:/data \
+ -v /opt/gitea/config:/etc/gitea \
+ -v /etc/timezone:/etc/timezone:ro \
+ -v /etc/localtime:/etc/localtime:ro \
+ -e USER_UID=1000 \
+ -e USER_GID=1000 \
+ gitea/gitea:latest&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="3-验证安装"&gt;3. 验证安装&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 查看容器状态
+docker ps -a
+
+# 查看日志
+docker logs gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;访问：&lt;code&gt;http://your-server-ip:3000&lt;/code&gt; 进行初始设置。&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://caoyang2002.vercel.app/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考： 
+&lt;a href="https://jupyter-docker-stacks.readthedocs.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ docker stack
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="conda-安装"&gt;Conda 安装&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考: 
+&lt;a href="https://lab.jupyter.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jupyter lab
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="安装"&gt;安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;conda install -c conda-forge JupyterLab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="启动"&gt;启动&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;jupyter lab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>企业的核心经营成果在哪里？</title><link>https://caoyang2002.vercel.app/post/2025/03/where_are_the_core_operating_results_of_the_company/</link><pubDate>Sat, 22 Mar 2025 00:27:31 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/where_are_the_core_operating_results_of_the_company/</guid><description>&lt;p&gt;现代管理学之父彼得·德鲁克说：“企业的经营成果在企业外部，在企业内部的只有成本。”&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://xqimg.imedao.com/184c0e2b2877b653fe70e08b.jpg!800.jpg" alt="德鲁克60句经典名言 彼得·德鲁克，被誉为“现代管理学之父”。我们熟知的营销、目标管理、人力资源和知识工作者等许多管理理论和概念都是他首先提出 …"&gt;&lt;/p&gt;
+&lt;p&gt;但是，德鲁克并没有说明 “外部” 的具体位置，多年后，定位理论指出 “企业的核心经营成果在顾客的心智中，它左右顾客的选择，这个核心经营成果就是品牌。”&lt;/p&gt;</description></item><item><title>mermaid？</title><link>https://caoyang2002.vercel.app/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/03/mermaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p&gt;
+&lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空格敏感&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ I am the default shape&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://caoyang2002.vercel.app/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p&gt;作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p&gt;</description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://caoyang2002.vercel.app/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p&gt;作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p&gt;</description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://caoyang2002.vercel.app/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p&gt;2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641" alt="图片"&gt;&lt;/p&gt;
+&lt;h1 id="一背景"&gt;一、背景&lt;/h1&gt;
+&lt;p&gt;多邻国自 2012 年诞生以来，凭借其丰富的语言课程和广泛的认可度，取得了显著的市场成绩。2023 年 Q3 月活近亿，且在多个国家的教育类应用榜单中名列前茅，2024 年 1 月双端商店流水超 4 千万美元，下载收入环比增长幅度居首。&lt;/p&gt;</description></item><item><title>营销基础：市场营销环境分析</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_environment/</link><pubDate>Thu, 27 Feb 2025 09:20:12 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_environment/</guid><description>&lt;h1 id="pest-分析"&gt;PEST 分析&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;P：政治&lt;/li&gt;
+&lt;li&gt;E：经济&lt;/li&gt;
+&lt;li&gt;S：社会&lt;/li&gt;
+&lt;li&gt;T：技术&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="奥巴马符合通过植入网络营销的技术促成他成功竞选美国总统"&gt;奥巴马符合通过植入网络营销的技术，促成他成功竞选美国总统？&lt;/h1&gt;
+&lt;p&gt;从商业的角度来看，美国总统的选举实际上是一场商战。产品就是竞选人，消费者就是选民，钞票就是选票。&lt;/p&gt;
+&lt;p&gt;在《8 years later》这个竞选广告中，可以发现几个美国面临的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;政治方面：美国深陷伊拉克战争泥潭。&lt;/li&gt;
+&lt;li&gt;经济方面：失业率大增，股市下滑，民不聊生。&lt;/li&gt;
+&lt;li&gt;民生方面：民众需要医疗，需要救助。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;在几分钟的广告里，奥巴马把美国面临的问题提炼得非常透彻。所以在进行环境分析的时候，需要以下几步：&lt;/p&gt;</description></item><item><title>爆梗出圈：营销视角下 “鸡你太美” 如何引发狂欢？</title><link>https://caoyang2002.vercel.app/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</link><pubDate>Tue, 25 Feb 2025 17:37:32 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;“b 站 up 主们、弹幕群众们，用流行文化打击流行偶像，这是本世纪最棒的文化奇观。”——汪海林&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.532d6f43acf5d24e6ffd9a484c23f509?rik=oWC6136AMtfsZQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20220616ac%2f600%2fw1920h1080%2f20220616%2f84c9-0f134f134f8bc0cac92a0488b0565b7a.jpg&amp;amp;ehk=mot26IwWZXjD4I7GrCg4WljqwXARRVVMO16%2bpMFwmow%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="蔡徐坤|光影帅气写真‖桌面壁纸|蔡徐坤|写真|桌面壁纸_新浪新闻"&gt;&lt;/p&gt;
+&lt;p&gt;2018 年，蔡徐坤在《偶像练习生》中的自我介绍表演，因一句 “只因你太美” 被空耳为 “鸡你太美”，成为网络热梗的雏形。谁也没想到，这个起初只是网友调侃的素材，会在随后几年间掀起一场全民狂欢，并在 2023 年再度翻红，成为网络文化中一个经久不衰的现象级符号。&lt;/p&gt;</description></item><item><title>定位：营销的起点</title><link>https://caoyang2002.vercel.app/post/2025/02/positioning_the_starting_point_of_marketing/</link><pubDate>Mon, 24 Feb 2025 11:48:01 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/positioning_the_starting_point_of_marketing/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;杰克·特劳特&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="打破神话"&gt;打破神话&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24"&gt;&lt;/p&gt;
+&lt;p&gt;可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p&gt;
+&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;供应商资料全部葬身大火&lt;/li&gt;
+&lt;li&gt;经销商资料全部葬身大火&lt;/li&gt;
+&lt;li&gt;员工全部葬身大火&lt;/li&gt;
+&lt;li&gt;竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;中国版本的真实 “可口可乐” 神话 —— 广药和加多宝之战&lt;/p&gt;</description></item><item><title>冯卫东：定位理论的贡献（幻灯片）</title><link>https://caoyang2002.vercel.app/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</link><pubDate>Mon, 24 Feb 2025 10:03:13 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</guid><description>&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/1.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;1/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/2.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;2/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/3.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;3/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/4.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;4/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/5.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;5/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/6.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;6/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/7.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;7/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/8.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;8/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/9.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;9/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/10.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;10/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/11.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;11/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/12.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;12/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/13.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;13/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/14.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;14/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/15.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;15/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/16.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;16/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/17.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;17/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/18.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;18/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/19.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;19/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/20.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;20/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/21.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;21/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/22.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;22/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/23.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;23/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/24.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;24/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/25.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;25/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/26.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;26/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/27.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;27/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/28.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;28/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/29.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;29/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/30.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;30/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/31.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;31/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/32.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;32/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/33.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;33/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/34.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;34/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/35.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;35/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/36.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;36/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/37.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;37/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/38.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;38/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/39.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;39/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/40.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;40/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/41.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;41/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/42.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;42/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/43.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;43/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/44.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;44/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/45.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;45/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/46.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;46/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/47.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;47/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/48.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;48/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/49.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;49/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/50.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;50/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/51.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;51/53&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/solid/feng_wei_dong/52.png" alt="img"&gt;&lt;/p&gt;
+&lt;h2 id="冯卫东品牌起名这件小事攸关生死笔记"&gt;冯卫东：品牌起名这件小事，攸关生死【笔记】&lt;/h2&gt;
+&lt;p&gt;12月24日，天图资本CEO冯卫东来到混沌研习社，用多年投资消费品品牌的经验和我们分享了他对于品牌定位理论的思考。&lt;/p&gt;</description></item><item><title>定位的贡献：如果可口可乐失去配方会倒闭吗？</title><link>https://caoyang2002.vercel.app/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</link><pubDate>Mon, 24 Feb 2025 10:00:03 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;杰克·特劳特&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一可口可乐神话"&gt;一、可口可乐神话&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24"&gt;&lt;/p&gt;
+&lt;p&gt;可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p&gt;
+&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;供应商资料全部葬身大火&lt;/li&gt;
+&lt;li&gt;经销商资料全部葬身大火&lt;/li&gt;
+&lt;li&gt;员工全部葬身大火&lt;/li&gt;
+&lt;li&gt;竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;可口可乐的大火没有发生，但是王老吉的 “大火” 却发生了。中国版本的真实 “可口可乐” 神话 —— 
+&lt;a href="https://www.wlj.com.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 王老吉
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+和
+&lt;a href="https://www.jdbchina.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 加多宝
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+之战。&lt;/p&gt;</description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://caoyang2002.vercel.app/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略"&gt;领导者战略&lt;/h1&gt;
+&lt;p&gt;市场领导者：占有最大市场份额，在价格变化、新产品开发、分销渠道，以及促销战略上对本行业其他公司起到领导作用的公司。例如苹果、谷歌这样的公司。&lt;/p&gt;
+&lt;p&gt;如何才能成为领导者呢？第一种方式是把蛋糕做大，第二种方式是把蛋糕做厚&lt;/p&gt;
+&lt;p&gt;市场总量 &lt;code&gt;Q = aq&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Q：总量&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;a：使用频率&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;q：使用改产品的人数&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;提升市场总量的两种方式：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;提升消费者使用频率&lt;/li&gt;
+&lt;li&gt;提升使用该产品的人数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;对于提升消费者使用频率方面，有个口香糖品牌叫益达，口香糖这个品类很难想到它的使用场景是什么，所以销量一致不好，而后做了一系列广告，比较知名的广告语是 “吃完喝完嚼益达” 和 “吃完来两粒”。通过这些广告，益达成功地将自己与餐后清洁口腔的场景绑定在一起，培养了用户在进食后嚼口香糖的习惯，从而提升了使用频率。&lt;/p&gt;</description></item><item><title>热榜查询</title><link>https://caoyang2002.vercel.app/post/2025/02/hot_list_query/</link><pubDate>Mon, 24 Feb 2025 08:31:56 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/hot_list_query/</guid><description>&lt;p&gt;
+&lt;a href="https://rebang.today/?tab=top"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 热榜网
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://caoyang2002.vercel.app/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片"&gt;&lt;/p&gt;
+&lt;p&gt;在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p&gt;
+&lt;p&gt;一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p&gt;</description></item><item><title>营销基础：营销的核心价值</title><link>https://caoyang2002.vercel.app/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值"&gt;顾客让渡价值&lt;/h1&gt;
+&lt;p&gt;顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;顾客价值：&lt;strong&gt;顾客从某个产品或服务获得的利益综合（功能、符号、利益等）&lt;/strong&gt;，比如一款手机，其具备高清拍照、快速运行软件、大容量存储等功能，这些功能满足了顾客在通讯、娱乐、工作等方面的需求。其次是符号价值，像一些奢侈品品牌，消费者购买它们不仅仅是为了产品的实际使用功能，更是因为品牌所代表的社会地位、身份象征等符号意义。还有服务价值，例如在购买汽车时，4S 店提供的免费保养、道路救援等售后服务，也构成了顾客价值的一部分，让顾客在使用产品的过程中享受到更全面的保障和便利。&lt;/li&gt;
+&lt;li&gt;顾客成本：&lt;strong&gt;顾客购买产品或服务所付出的成本或费用（货币、时间、精力等）&lt;/strong&gt;，比如购买一台笔记本电脑花费了 5000 元。时间成本也不容忽视，例如顾客为了购买一款热门的限量版球鞋，可能需要提前几天排队等候，这段时间就是顾客付出的时间成本。精力成本同样重要，像消费者在购买复杂的金融产品时，需要花费大量精力去了解产品的风险、收益、条款等内容，这个过程所耗费的精力就是精力成本。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="如何提升顾客让渡价值"&gt;如何提升顾客让渡价值？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;提升顾客价值：&lt;strong&gt;为顾客提供的不是物理形态的产品，而是效用（产品、商品、解决方案、价值）&lt;/strong&gt;。
+&lt;ul&gt;
+&lt;li&gt;比如增加产品的功能，例如一个耳机不仅可以听音乐，还有防水功能，并且提供三年质保，或者采用更优质的材料制作耳机，让音质更清晰、佩戴更舒适；或者优化产品的外观设计，使其更符合当下流行的审美，更具时尚感和吸引力，这些都是通过物理形态上提升顾客价值的方式。&lt;/li&gt;
+&lt;li&gt;如何从效用层面提升顾客价值呢？同样是一个耳机，企业生产出耳机是一个产品；这个产品放在经销商的仓库里，这是商品；这个商品被顾客购买后，于顾客而言是一个解决方案；这个耳机在顾客游泳的时候可以听，给顾客带来了更好的游泳体验，这是价值。&lt;/li&gt;
+&lt;li&gt;提高顾客让渡价值，通过增加服务、降低价格、增加满意度，比如京东的商品保价服务，或者与顾客建立良好的沟通，及时了解顾客的需求和反馈，做出相应的调整和改进。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;降低顾客成本，比如通过重组供应链，让耳机的生产变的高效，从而降低成本，或者优化物流配送服务，缩短配送时间，使顾客能更快地收到产品。此外，还可以降低顾客的精力成本，例如提供简单易懂的产品使用说明和操作指南，让顾客无需花费过多精力就能轻松上手使用耳机。&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>营销基础：如何理解需求？</title><link>https://caoyang2002.vercel.app/post/2025/02/how_to_understand_needs/</link><pubDate>Sat, 22 Feb 2025 21:51:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_to_understand_needs/</guid><description>&lt;h1 id="需要欲望和需求的区别"&gt;需要、欲望和需求的区别？&lt;/h1&gt;
+&lt;p&gt;需要（needs）：抽象理解是人类最基本的要求，比如一套服装、一份食物、一个住处，马斯洛需求层次原理中的表述。&lt;/p&gt;
+&lt;p&gt;欲望（wants）：具体化的需要，比如一件衬衫、一份牛排、一所大学、一个节目等。&lt;/p&gt;
+&lt;p&gt;需求（demands）：具有支付能力的欲望，一件 100 元的衬衫、一份 50 元的牛排、一所学费 6000 元的大学。&lt;/p&gt;</description></item><item><title>营销基础：营销导向</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_orientation/</link><pubDate>Sat, 22 Feb 2025 13:34:41 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_orientation/</guid><description>&lt;h1 id="产品导向"&gt;产品导向&lt;/h1&gt;
+&lt;p&gt;以产定销，这是一个企业本位的营销思想，企业生产多少就销售多少。有三个观念：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;生产观念：&lt;/li&gt;
+&lt;li&gt;产品观念&lt;/li&gt;
+&lt;li&gt;推销观念&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="生产观念"&gt;生产观念&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;规模化、大批量、单一品种&lt;/li&gt;
+&lt;li&gt;关心产品的有无，而非数量&lt;/li&gt;
+&lt;li&gt;供不应求、垄断&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;福特通过标准化技术，实现规模化生产，在 1908 年福特成为美国乃至世界的汽车大王。&lt;/p&gt;
+&lt;p&gt;那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p&gt;</description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://caoyang2002.vercel.app/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p&gt;&lt;img src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。&lt;/p&gt;
+&lt;p&gt;—— 维基百科&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在大学的时候，如果你是男生，你可能会有这样的经历：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你有个好兄弟非常喜欢一个女生，然后有一天，他实在按捺不住心中的激动，于是把女生约了出来吃饭，想创造一点机会。&lt;/p&gt;</description></item><item><title>营销基础：什么是营销？</title><link>https://caoyang2002.vercel.app/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片"&gt;&lt;/p&gt;
+&lt;h1 id="一行业定义"&gt;一、行业定义&lt;/h1&gt;
+&lt;h2 id="1-专家解释"&gt;1. 专家解释&lt;/h2&gt;
+&lt;p&gt;现代营销学之父菲利普·科特勒在不同的场景下分别解释了 “营销” 和与之相关的词。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;企业的营销能力是企业盈利的根本保证。&lt;/li&gt;
+&lt;li&gt;市场营销就是辨别并满足人类和社会的需要。对市场营销最简洁的定义，就是 “满足别人并获得利润”。&lt;/li&gt;
+&lt;li&gt;我们可以把营销管理看成艺术和科学的组合 —— 选择目标市场，并通过创造、交付和传播优质的顾客价值来获得顾客、挽留顾客的科学与艺术。&lt;/li&gt;
+&lt;li&gt;所谓市场营销，就是个人和集体通过创造、提供、出售、同别人自由交换产品和服务的方式，以获得自己所需产品或服务的社会过程。&lt;/li&gt;
+&lt;li&gt;营销人员主要经营以下十大类产品：有形的商品、服务、节事、体验、人物、场所、产权、组织、信息和创意。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;科特勒将营销分为 4 个阶段：&lt;/p&gt;</description></item><item><title>得到课程《跟熊浩学沟通30讲》课程笔记</title><link>https://caoyang2002.vercel.app/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</link><pubDate>Fri, 21 Feb 2025 18:17:03 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/get_the_course_notes_of_the_course_30_lectures_on_communicating_with_xiong_haoxue/</guid><description>&lt;h1 id="沟通的四个基本原则"&gt;沟通的四个基本原则&lt;/h1&gt;
+&lt;p&gt;结构、性质、目标、风格&lt;/p&gt;
+&lt;h2 id="结构"&gt;结构&lt;/h2&gt;
+&lt;p&gt;定事之前先定势&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;决定权在对方，对应的沟通策略是说服&lt;/li&gt;
+&lt;li&gt;决定权在他方，对应的沟通策略是辩论&lt;/li&gt;
+&lt;li&gt;决定权在双方，对应的沟通策略是谈判&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;谈判的第一个核心要素是利益要素，第二个核心要素是选项要素。&lt;/p&gt;
+&lt;h2 id="性质"&gt;性质&lt;/h2&gt;
+&lt;p&gt;分歧的性质，分为两大类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;利益分歧：对有形价值承载物的争夺，需要使用的方法是谈判。&lt;/li&gt;
+&lt;li&gt;认同分歧：在信仰、仪式、忠诚、价值观、情感上的重要经历产生了不同意见。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;人们一旦进入认同分歧，情绪会被快速激活，对话的双方会迅速进入“眩晕”状态，在这种状态下，他们看不见别人，只能看见敌人，他们不认为对方提出了一个方案、想法的普通人，而是认为对方要摧毁自己。&lt;/p&gt;</description></item><item><title>解决冲突：饭里吃到苍蝇应该如何获得应有赔偿？</title><link>https://caoyang2002.vercel.app/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</link><pubDate>Thu, 20 Feb 2025 18:50:22 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;本期主要描述了冲突场景下的解决方案，方法来自复旦大学的熊浩老师。下一期将讲述哈佛谈判的细节，或者评论你想了解的内容或事件！&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在日常生活中，我们非常容易遇到冲突。比如在点餐判队的时候，遇到插队的，通常我们的解决方案是回避。有些时候我们很难回避，例如在餐厅中吃到异物。我们应该如何解决生活中的冲突？&lt;/p&gt;</description></item><item><title>无痛支付：如何从行为经济学视角优化支付体验？</title><link>https://caoyang2002.vercel.app/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</link><pubDate>Thu, 20 Feb 2025 14:49:59 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</guid><description>&lt;p&gt;&lt;img src="https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&amp;amp;riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&amp;amp;ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0&amp;amp;sres=1&amp;amp;sresct=1" alt="微信扫码二维码支付哪家强？"&gt;&lt;/p&gt;
+&lt;h1 id="一痛苦的本质神经科学与行为经济学的双重证据"&gt;一、痛苦的本质：神经科学与行为经济学的双重证据&lt;/h1&gt;
+&lt;p&gt;结账时的痛苦不仅是心理感受，更是大脑的生理反应。神经科学研究表明，当消费者支付现金时，大脑岛叶皮层（与身体疼痛相关的区域）活动显著增强，这种神经层面的“损失感”被行为经济学称为“支付疼痛”（Payment Pain）。&lt;/p&gt;
+&lt;p&gt;一项经典研究发现，使用现金支付的消费者在购买高价商品时，决策时间比信用卡用户长 30%，且更容易放弃购买。这种差异源于心理账户（Mental Accounting）理论 —— 现金支付因“看得见的损失”而触发更强的痛苦感。例如，消费者在面对现金支付时，会更加感受到资金的减少，从而产生更强的支付疼痛感，导致他们在购买决策时更加谨慎，甚至放弃购买。而使用信用卡或电子支付方式时，由于支付过程相对抽象，消费者对资金减少的感受较弱，支付疼痛感也相对较轻，从而更容易完成购买行为。&lt;/p&gt;</description></item><item><title>营销与竞选：奥巴马如何通过营销策略获得胜利？</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</link><pubDate>Wed, 19 Feb 2025 17:16:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_and_campaign_how_did_obama_win_through_marketing_tactics/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;原视频： 
+&lt;a href="https://youtu.be/Pf_8nZ3K3qU"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://youtu.be/Pf_8nZ3K3qU
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;![img](&lt;img src="https://dingyue.ws.126.net/2022/0827/7f8da491j00rh9xnm001oc000xc00m7m.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;h1 id="一竞选背景与挑战"&gt;一、竞选背景与挑战&lt;/h1&gt;
+&lt;p&gt;奥巴马作为美国历史上第一位黑人总统竞选人，当时他并没有足够的优势，尤其是缺乏在国家级政府机构的工作经历。然而，他通过电子商务和市场营销手段，成功赢得了总统选举。&lt;/p&gt;
+&lt;p&gt;关于奥巴马总统竞选的一则广告可以在 Youtube 上通过关键字 “wassup OBAMA 8 years later” 搜索到。&lt;/p&gt;
+&lt;h1 id="二洞察社会趋势"&gt;二、洞察社会趋势&lt;/h1&gt;
+&lt;p&gt;奥巴马团队在短短两分钟的视频中，精准地描述了美国当时面临的困境，包括战争、经济等方面的问题。这在营销中被称为 PEST 分析（政治、经济、社会、技术）。视频中，观众在听到布什的演讲时表现出疲倦，而在听到奥巴马的演讲时则显得激动。这种对比鲜明的情绪反应，凸显了民众对“改变”的强烈诉求。&lt;/p&gt;</description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://caoyang2002.vercel.app/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="img"&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;价格弹性是指在其他因素不变的情况下，商品或服务的价格变动百分之一所引起的需求量变动的百分比。它反映了需求量对价格变动的反应程度。&lt;/p&gt;
+&lt;p&gt;消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p&gt;</description></item><item><title>改变利益关系：如何解决艺考机构的骚扰问题？</title><link>https://caoyang2002.vercel.app/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</link><pubDate>Sun, 16 Feb 2025 14:39:07 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前几天和一个朋友聊天，谈到艺考机构对女同学的骚扰问题。感觉和薛兆丰老师谈到的政府公交系统补贴很相似，于是写了这篇文章。
+但是这篇文章不够全面，仅从利益的角度考虑，而未考虑复杂的社会影响，比如当单方面使用权力 “独裁” 的时候，如何考虑优化问题、伪造情形下的利害关系以及腐败问题的解决方案等
+注：这篇文章并不是控诉，而是从经济学角度，探讨组织行为优化的可能性问题。&lt;/p&gt;</description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://caoyang2002.vercel.app/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p&gt;&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片"&gt;&lt;/p&gt;
+&lt;p&gt;拼多多，这家在争议中野蛮生长的电商巨头，自诞生之日起便凭借低价策略和社交电商模式迅速崛起，成为中国电商行业的一匹黑马。然而，假货问题如影随形，始终困扰着其发展。尽管拼多多多次承诺加强监管、打击假货，但效果并不理想。&lt;/p&gt;
+&lt;p&gt;这家曾被贴上“假货聚集地”“消费降级代表”标签的平台，一边承受着“砍一刀”的骂声，一边以火箭速度超越淘宝、京东，成为用户数第一的电商平台。拼多多的低价策略和社交电商模式，使其在下沉市场迅速崛起。2024年第三季度，拼多多总营收达到993.54亿元，同比增长44%。拼多多的净利润率高达24.24%，远超同期的好市多和阿里巴巴。这种高增长和高利润的背后，是拼多多对下沉市场的深度耕耘和对用户需求的精准把握，是一场关于中国商业底层逻辑的深刻博弈。本文将从拼多多的商业战略角度，深入分析其为何难以解决假货问题。&lt;/p&gt;</description></item><item><title>为什么高级餐厅味道并不一定好？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</link><pubDate>Sat, 15 Feb 2025 13:30:46 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="为什么高级餐厅味道并不一定好"&gt;为什么高级餐厅味道并不一定好？&lt;/h1&gt;
+&lt;p&gt;在美食的江湖中，高级餐厅往往被视为味蕾的圣地，然而，你是否有过这样的经历：怀着崇敬之心踏入一家价格不菲、装潢精美的高级餐厅，满心期待一场味觉盛宴，可当菜品端上桌，轻轻咬下一口后，却发现味道并不满意，甚至有些令人作呕？这究竟是味蕾的错觉，还是另有隐情？&lt;/p&gt;</description></item><item><title>为什么可口可乐要创造快乐联想？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_does_coca-cola_create_happy_associations/</link><pubDate>Sat, 15 Feb 2025 01:59:25 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_does_coca-cola_create_happy_associations/</guid><description>&lt;h1 id="为什么可口可乐要创造快乐联想"&gt;为什么可口可乐要创造快乐联想？&lt;/h1&gt;
+&lt;p&gt;在当今竞争激烈的市场环境中，品牌已不仅仅是产品的代名词，更是一系列联想的集合体。可口可乐作为全球饮料行业的领军品牌，其成功的关键在于深刻理解了品牌联想的力量，并将其与快乐紧密绑定。本文将探讨可口可乐为何要创造快乐联想，以及这一策略如何为其带来巨大的商业成功。&lt;/p&gt;
+&lt;h2 id="品牌的本质联想的集合"&gt;品牌的本质：联想的集合&lt;/h2&gt;
+&lt;p&gt;神经学家认为，品牌是一连串的联想。消费者在购买产品时，不仅仅是在购买其功能，更是在购买与品牌相关的情感和体验。可口可乐深知这一点，因此每年在广告营销和品牌推广上投入数十亿美元，旨在打造强大的品牌联想。根据 Interbrand 的品牌价值排行榜，可口可乐位列第五，仅次于苹果、谷歌、亚马逊和微软，这充分证明了其品牌战略的成功。&lt;/p&gt;</description></item><item><title>可口可乐：百年营销传奇与创收型营销新篇</title><link>https://caoyang2002.vercel.app/post/2025/02/coca-cola_a_century-old_marketing_legend_and_a_new_chapter_in_revenue-generating_marketing/</link><pubDate>Sat, 15 Feb 2025 00:21:32 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/coca-cola_a_century-old_marketing_legend_and_a_new_chapter_in_revenue-generating_marketing/</guid><description>&lt;h2 id="一1985-年新配方风波情感共鸣的深刻洞察"&gt;一、1985 年新配方风波：情感共鸣的深刻洞察&lt;/h2&gt;
+&lt;p&gt;1985 年，可口可乐公司经历了一次品牌历史上的至暗时刻，却也为我们呈现了一个关于消费者情感共鸣的深刻案例。面对百事可乐销量的快速增长，可口可乐的首位外籍 CEO 郭思达决定改变可口可乐原有配方，以面向更多用户群体。经过大规模的口味盲测，新配方以 61% 比 39% 的优势胜出，公司投入巨资进行研发和推广。然而，这一改变却引发了消费者的强烈不满，从抗议电话到示威游行，消费者们用行动表达了对新可乐的愤怒。百事可乐更是趁机火上浇油，将新可乐发布会当天定为 “百事可乐日”。最终，可口可乐不得不将配方改回来以平民愤。&lt;/p&gt;</description></item><item><title>如家酒店：以标准化为琴键，谱就中国连锁酒店业的交响华章</title><link>https://caoyang2002.vercel.app/post/2025/02/home_inn_the_marketing_legend_of_standardized_services_and_brand_building/</link><pubDate>Fri, 14 Feb 2025 18:24:59 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/home_inn_the_marketing_legend_of_standardized_services_and_brand_building/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;当商旅人士拖着行李箱穿过陌生的城市街道，总有一盏黄色笑脸灯牌在暮色中温暖等待——如家酒店如何用二十年时间，让这个充满人文关怀的符号成为中国经济型酒店的代名词？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://res.klook.com/klook-hotel/image/upload/meituan_p1/tdchoteldark/d6d52024709b0d8460400b1606f4477c1565588.jpg" alt="images"&gt;&lt;/p&gt;
+&lt;h1 id="一在红海中发现蓝海绿洲"&gt;一、在红海中发现&amp;quot;蓝海绿洲&amp;quot;&lt;/h1&gt;
+&lt;p&gt;2002 年的中国酒店市场，高端酒店如金字塔尖的明珠，招待所则似散落戈壁的砾石。如家创始人季琦敏锐捕捉到中端市场的真空地带，将定位精准锚定 &amp;ldquo;商务客的第二个家&amp;rdquo;。当时，国内五星级以下酒店大多处于亏损状态，尤其是三星级中等酒店，投入产出比低，客房空置率奇高。而旅社、招待所目标客户为收入层次较低人群，酒店设施和卫生条件差、服务质量难以令人满意。&lt;/p&gt;</description></item><item><title>香港“自由行”营销奇迹：化危机为转机，重振经济的策略解析</title><link>https://caoyang2002.vercel.app/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</link><pubDate>Fri, 14 Feb 2025 16:25:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</guid><description>&lt;p&gt;&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.6f9c9c7354d6f512ff9eadcf9160e3ab?rik=iCCKcoQq%2f00t8A&amp;amp;riu=http%3a%2f%2fpic1.k1u.com%2fk1u%2fmb%2fd%2ffile%2f20170706%2f1499324500487138_836_10000.png&amp;amp;ehk=d4ShS5enGLb64enPf1GnER7yHOERowoJMN5ASC21Bc0%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="香港自由行攻略2017_旅泊网"&gt;&lt;/p&gt;
+&lt;h1 id="一危机中的机遇香港自由行政策的诞生"&gt;一、危机中的机遇：香港“自由行”政策的诞生&lt;/h1&gt;
+&lt;p&gt;1997年香港回归中国后，亚洲金融风暴及“非典”袭港，导致经济整体低迷，2003年香港的国内生产总值（GDP）仅为12340亿港元，是1997年回归以来最低的一年，香港旅游业更是受到重创。旅游业对香港经济影响巨大，不仅是香港四大支柱产业之一，而且是香港赚取外汇的第二大行业。2003年5月，赴港游客同比下降68%，仅旅游收入就减少123亿港元。这一损失很快波及零售业和消费业，导致失业率达到香港特别行政区政府成立以来的新高。&lt;/p&gt;</description></item><item><title>好彩头：为什么随机投喂会让鸽子产生迷信行为？</title><link>https://caoyang2002.vercel.app/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</link><pubDate>Fri, 14 Feb 2025 12:58:34 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;迷信行为不仅在人类中存在，动物也会表现出类似的 “迷信”。心理学家伯尔赫斯・弗雷德里克・斯金纳（B.F. Skinner）通过实验揭示了这一现象背后的心理学原理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShlMz4vLZIpqZ1Pv6CmLOoukU-yD8YjTl2g&amp;amp;s" alt="斯金纳_心理学家_心理图库_心理学图_525心理网"&gt;&lt;/p&gt;
+&lt;h1 id="一生活中的迷信行为"&gt;一、生活中的“迷信”行为&lt;/h1&gt;
+&lt;p&gt;在我们的生活中，处处充满“迷信”的东西，在大多数时候我们都把它当做讨彩头的方式，作为一种积极暗示。比如考试前吃一根火腿肠和两个鸡蛋，又或是新买的东西主人先用。这样的事情我们屡见不鲜。&lt;/p&gt;</description></item><item><title>东方表达：同样是中国文化《哪吒》和《功夫熊猫》的不同之处是什么？</title><link>https://caoyang2002.vercel.app/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</link><pubDate>Fri, 14 Feb 2025 00:44:19 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;在《哪吒》之前，四二（笔者）最喜欢的是《功夫熊猫》，那还是我在小学的时候看的。&lt;/p&gt;
+&lt;p&gt;《哪吒》系列与《功夫熊猫》系列可谓是中美两国动画电影的代表，两者不仅在票房和口碑上取得了巨大成功，更在视觉符号、角色塑造、叙事风格等方面展现了相似类型动画中，两国文化的底层差异。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://caoyang2002.vercel.app/Users/simons/Desktop/%E6%AF%94%E8%BE%83.png" alt="比较"&gt;&lt;/p&gt;
+&lt;h1 id="一视觉符号"&gt;一、视觉符号&lt;/h1&gt;
+&lt;p&gt;首先是《哪吒》中的文化东方，根植于中国传统文化，以中国古代神话故事《封神演义》为蓝本，对哪吒这一经典神话人物及其相关故事进行了改编与延续，其中融入了大量中国传统文化元素，如结界兽的造型灵感来源于三星堆青铜面具，展现了中国文化的深厚底蕴。&lt;/p&gt;</description></item><item><title>营销人必看网站</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站"&gt;营销人必备网站：6大类，41个网站&lt;/h1&gt;
+&lt;p&gt;从去年到现在，很多小伙伴会问到宿言如何才能提升自己的营销能力。其实提升营销能力主要分为两部分，那就是“不停学习+各种实践”。&lt;/p&gt;
+&lt;p&gt;关于学习，我们可以通过各类网站及资讯平台来不断的获取知识，毕竟营销这个职业太瞬息万变了，我们需要不断的吸收新的知识，才能做到百战不殆。关于实践，我们需要用到各种
+&lt;a href="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 营销人
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p&gt;</description></item><item><title>为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？</title><link>https://caoyang2002.vercel.app/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</link><pubDate>Thu, 13 Feb 2025 05:51:23 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</guid><description>&lt;h3 id="为什么在茶叶粮油这些大市场中出现不了大品牌大公司呢"&gt;为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？&lt;/h3&gt;
+&lt;p&gt;简单来说就是：&lt;code&gt;低壁垒&lt;/code&gt; + &lt;code&gt;弱规模经济&lt;/code&gt; + &lt;code&gt;强需求分化&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;同样是与“喝”相关的行业，白酒、红酒、啤酒都有市场认知度极高的品牌，甚至“股王”级上市公司。咖啡领域有星巴克和瑞幸，后者拥有国内最大的直营网络，如今颇有东山再起的架势。但规模超万亿的茶行业，强势的品牌或公司却不多。新华社 2008 年曾提出疑问：“七万中国茶厂，为何不抵一家立顿”。14年后的今天，行业依然缺少一个响亮的“大品牌”。问题出在哪里了？&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://caoyang2002.vercel.app/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
+文章作者：左耳朵耗子
+出处：
+&lt;a href="https://coolshell.cn/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 酷 壳 – CoolShell
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+非商用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://coolshell.org/wp-content/uploads/2021/07/knowledge_sharing-300x169.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：&lt;/p&gt;
+&lt;p&gt;1）分享内容的保鲜期是很长的，&lt;/p&gt;</description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://caoyang2002.vercel.app/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;爱德华·伯尼斯&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;**爱德华·伯尼斯（Edward L.Bernays）**被称为公关之父（美国一共有三个人得到这个称号，其他两个是巴纳姆、艾维·李）。出身维也纳，著名心理学家佛洛伊德的外甥，是公共关系学科化的先驱者，纽约大学教授。&lt;/p&gt;</description></item><item><title>快乐为何转瞬即逝？多学科视角下的短暂性解析与营销启示</title><link>https://caoyang2002.vercel.app/post/2025/02/why_does_happiness_pass_so_quickly/</link><pubDate>Tue, 11 Feb 2025 02:42:59 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/why_does_happiness_pass_so_quickly/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;我的一个朋友在做蛋糕，口味非常好，我每次去玩总会吃到免费的蛋糕，但是每只最多只能吃两个，但那远远还未到饱腹感，为什么？&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="分析部分快乐为何转瞬即逝的秘密"&gt;分析部分：快乐为何转瞬即逝的秘密&lt;/h1&gt;
+&lt;p&gt;快乐总是转瞬即逝。回想一下上次吃美味的蛋糕时的情景：蛋糕摆在面前，糖霜闪闪发光，味蕾兴奋不已，期待着即将品尝到的味道。当你用叉子叉起一口蛋糕放入口中时，那种满足感瞬间达到顶峰，甚至让你闭上眼睛细细品味。然而，这种快乐持续了多久？几分钟后，快乐感逐渐消退，甚至可能被其他情绪所取代。&lt;/p&gt;</description></item><item><title>消费者任务: 分析与实践</title><link>https://caoyang2002.vercel.app/post/2025/02/consumer_task_analysis_and_practice/</link><pubDate>Mon, 10 Feb 2025 10:51:22 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/consumer_task_analysis_and_practice/</guid><description>&lt;h1 id="分析篇"&gt;分析篇&lt;/h1&gt;
+&lt;p&gt;在20世纪90年代中期，两位来自底特律的顾问 —— 鲍勃•莫埃斯塔和他的合伙人瑞克•佩迪 —— 专程前往哈佛商学院，拜访了当时刚刚提出颠覆性创新理论的克莱顿•克里斯滕森教授。他们的目标是深入了解这一理论，并探讨如何将其应用于他们的利基业务：为面包店和零食公司提供新产品开发建议。&lt;/p&gt;
+&lt;p&gt;颠覆性创新理论在当时已经显示出其强大的预测能力，尤其是在解释根基稳固的企业如何应对来自小型竞争者的威胁时。然而，莫埃斯塔和佩迪发现，尽管这一理论能够清晰地解释因果关系，但它并未为他们的客户提供具体的行动路线图。换句话说，理论虽然能解释“为什么”，但并未明确告诉企业“怎么做”才能成功防御或发起颠覆性创新。&lt;/p&gt;</description></item><item><title>下拉刷新：社交娱乐平台有诚心想过帮用户戒 “瘾” 吗？</title><link>https://caoyang2002.vercel.app/post/2025/02/zeigarnik_effect/</link><pubDate>Sun, 09 Feb 2025 19:41:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/zeigarnik_effect/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;奥威尔在《1984》警告人们将会受到外来压迫的奴役，而赫胥黎则认为，人们失去自由、成功和历史并不是 “老大哥” 之过。在他看来，人们会渐渐爱上压迫，崇拜那些使他们丧失思考能力的工业技术。&lt;/p&gt;
+&lt;p&gt;《娱乐至死》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一未完成的故事与心理效应"&gt;一、未完成的故事与心理效应&lt;/h1&gt;
+&lt;p&gt;想象一个场景：你的朋友正在给你讲一个故事，但还没讲完就匆匆离开。你会有什么感受？大多数人会感到焦虑和好奇，迫切想知道故事的结局。在不知道结局之前，你很难专注于其他事情。这种对未完成事情的执着，正是心理学中的&lt;strong&gt;蔡格尼克效应&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>自媒体平台封面图片尺寸合集</title><link>https://caoyang2002.vercel.app/post/2025/02/images_size/</link><pubDate>Sun, 09 Feb 2025 18:42:13 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/images_size/</guid><description>&lt;h1 id="2024最全自媒体平台封面图片尺寸合集"&gt;2024最全自媒体平台封面图片尺寸合集&lt;/h1&gt;
+&lt;h2 id="01-小红书图片尺寸"&gt;01 小红书图片尺寸&lt;/h2&gt;
+&lt;p&gt;小红书以生活分享和种草内容著称，是年轻人寻求时尚、美妆、旅行等资讯的首选平台。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.ubrand.com/_next/image?url=%2Foss%2Farticles%2F2024%2F08%2F20%2F%25E7%2594%25BB%25E6%259D%25BF%25207.png&amp;amp;w=3840&amp;amp;q=75" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;●小红书头像：&lt;code&gt;400 * 400 PX&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;●小红书个人背景图：&lt;code&gt;1000 * 800 PX&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;●小红书圈文封面（坚版）：&lt;code&gt;1242 * 1660 PX （3：4）&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;●小红书图文封面（方版）：&lt;code&gt;1080 * 1080 PX （1：1）&lt;/code&gt;&lt;/p&gt;</description></item><item><title>免费图片网站</title><link>https://caoyang2002.vercel.app/post/2025/02/free_images_website/</link><pubDate>Sun, 09 Feb 2025 18:32:46 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/free_images_website/</guid><description>&lt;h1 id="1pexels"&gt;1.
+&lt;a href="https://www.pexels.com/zh-cn/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ pexels
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;个人最常用的一个图片网站，优点就是图片质量高，相对比较全，不适合抽象词汇的搜索。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://pic4.zhimg.com/v2-4aa0fe79a6cd810dbb393e930893bd0f_1440w.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;h1 id="2beautiful-free-images--pictures--unsplash"&gt;2.
+&lt;a href="https://unsplash.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Beautiful Free Images &amp;amp; Pictures | Unsplash
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;这个站主要搭配上面的站作为补充使用，基本上可以找到合适的素材。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://picx.zhimg.com/v2-56d63885ada6ccd6ef80f0f5ae59acc1_1440w.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;h1 id="3pixabay"&gt;3.
+&lt;a href="https://pixabay.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ pixabay
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;这个站也不错，只不过个人常用的就上面两个，不是因为什么原因，是因为它们俩是搜藏夹的头两个，找到图片就不会再去翻其他站了。以下的推荐也是这个原因。&lt;/p&gt;</description></item><item><title>注意力与策略之争：在早期的竞争中滴滴做对了什么？</title><link>https://caoyang2002.vercel.app/post/2025/02/platform_competition_why_did_didi_defeat_uber/</link><pubDate>Sat, 08 Feb 2025 11:05:36 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/platform_competition_why_did_didi_defeat_uber/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;在信息极大丰富的时代，唯一稀缺的资源是注意力。 —— 赫伯特 · 西蒙&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="移动出行市场"&gt;移动出行市场&lt;/h1&gt;
+&lt;h2 id="双边市场"&gt;双边市场&lt;/h2&gt;
+&lt;p&gt;移动出行市场是一个典型的&lt;strong&gt;双边市场&lt;/strong&gt;，乘客和司机是市场的两端。双边市场的特点是网络效应显著，即一方的用户数量和质量直接影响另一方的用户体验。没有足够的司机，乘客难以叫到车；反之，没有足够的乘客，司机也难以获得订单。这种 “鸡生蛋，蛋生鸡” 的关系使得平台必须在两端同时发力，才能形成良性循环。&lt;/p&gt;</description></item><item><title>二价拍卖：如何让诚实报价成为最佳选择？</title><link>https://caoyang2002.vercel.app/post/2025/02/second_price_auction/</link><pubDate>Thu, 06 Feb 2025 07:58:16 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/second_price_auction/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;在普通拍卖中，人们总是倾向于压低自己的实际心理价位，生怕出价太高导致利润太少，或出价太低导致拿不到商品。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二价拍卖又叫维克里拍卖、第二价格密封拍卖、二价拍卖、第二高价格拍卖，由维克里提出。这个理论的应用并不广泛，曾经在谷歌广告有大量的应用，但是由于投资回报率太低就放弃了。即便没有规模性应用，但不可否认其在诚实报价的研究方面有着重要的作用。&lt;/p&gt;</description></item><item><title>营销学理论 4P、4C、4S、4R、4V、4I</title><link>https://caoyang2002.vercel.app/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</link><pubDate>Tue, 04 Feb 2025 15:52:44 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/02/marketing_theory_4p_4c_4s_4r_4v_4i_full_version/</guid><description>&lt;p&gt;原文：https://zhuanlan.zhihu.com/p/61432788&lt;/p&gt;
+&lt;p&gt;一、4P 的内涵与应用&lt;/p&gt;
+&lt;p&gt;4P营销理论(The Marketing Theory of 4Ps)，4P理论产生于20世纪60年代的美国，随着营销组合理论的提出而出现的。1953年，尼尔·博登（NeilBorden）在美国市场营销学会的就职演说中创造了“市场营销组合”（Marketingmix）这一术语，其意是指市场需求或多或少的在某种程度上受到所谓“营销变量”或“营销要素”的影响。&lt;/p&gt;</description></item><item><title>好听好记：如何取一个容易传播的名字？</title><link>https://caoyang2002.vercel.app/post/2025/01/how_to_choose_a_good_name/</link><pubDate>Thu, 30 Jan 2025 14:08:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/how_to_choose_a_good_name/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;注：&lt;/p&gt;
+&lt;p&gt;这里只讨论被作为产品品牌传播的名称，对于腾讯、米哈游这样的名称不讨论，原因有两点：&lt;/p&gt;
+&lt;p&gt;一是幸存者偏差，这类名称在同一时期可能有很多，但是大多数都没能传播开来，而现存的只是幸存者。&lt;/p&gt;
+&lt;p&gt;二是他们是企业名不是产品名，这些名称不是传播的，比如别人问你在用什么软件聊天的时候，你会说“我用 QQ”，而不会说“我用腾讯 QQ”。&lt;/p&gt;</description></item><item><title>React vs Vue: 框架之争的深层思考</title><link>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
+&lt;h2 id="一核心设计哲学差异"&gt;一、核心设计哲学差异&lt;/h2&gt;
+&lt;h3 id="11-编程范式"&gt;1.1 编程范式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：函数式编程优先&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强调不可变性和纯函数&lt;/li&gt;
+&lt;li&gt;组件本质是函数（props in, JSX out）&lt;/li&gt;
+&lt;li&gt;Hooks强化了函数式概念&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
+const Component = ({ data }) =&amp;gt; {
+ const [state, setState] = useState(initialState);
+ const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
+ 
+ return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于可变状态的响应式系统&lt;/li&gt;
+&lt;li&gt;组合式API提供函数式能力&lt;/li&gt;
+&lt;li&gt;传统选项式API符合OOP思维&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+&amp;lt;script setup&amp;gt;
+import { ref, computed } from &amp;#39;vue&amp;#39;
+
+const data = ref(initialData)
+const derivedValue = computed(() =&amp;gt; compute(data.value))
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：最小化API，一切靠JavaScript&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://caoyang2002.vercel.app/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
+&lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
+&lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ GitHub 地址
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一前置条件"&gt;一、前置条件&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;即时设计客户端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://js.design/download"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://js.design/download
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;vscode&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://code.visualstudio.com/Download"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://code.visualstudio.com/Download
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;code 快捷命令（可选）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;macOS 系统快捷键：&lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;⇧&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt; （command + shift + p）&lt;/p&gt;
+&lt;p&gt;Windows/Linux 快捷键: &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;搜索安装 &lt;code&gt;shell command&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;nodejs/npm&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://nodejs.org/en/download/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://nodejs.org/en/download/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;react&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm install @types/react @types/react-dom&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;启用类型提示&lt;/strong&gt;
+在 vscode 按 &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;b&lt;/kbd&gt; 开发即时设计类型提示&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="效率工具"&gt;效率工具&lt;/h2&gt;
+&lt;h3 id="webpack"&gt;webpack&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关于 webpack 的简介，可以查看
+&lt;a href=""
+ 
+ &gt;
+ 这篇文章
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>Hugo-Focus 主题介绍</title><link>https://caoyang2002.vercel.app/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/hugo-focus-info/</guid><description>&lt;p&gt;==fds==&lt;/p&gt;
+&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
+&lt;p&gt;这是一个专注于编程的 Hugo 博客主题。&lt;/p&gt;
+&lt;p&gt;参考了我此前为 &lt;code&gt;Typora&lt;/code&gt; 开发的 
+&lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ &lt;code&gt;Thompsgo&lt;/code&gt; 主题
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="二特性"&gt;二、特性&lt;/h1&gt;
+&lt;h2 id="1-运行代码"&gt;1. 运行代码&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;支持的语言：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python (wasm)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cpp (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rust (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ts (TypeScript 的 JavaScript 实现)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js (原生)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="代码运行示例"&gt;代码运行示例&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ println!(&amp;#34;Hello from Rust!&amp;#34;);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ &gt;运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Go&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://caoyang2002.vercel.app/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;
+&lt;p&gt;但是，你为什么觉得自己需要一个设计师？&lt;/p&gt;
+&lt;p&gt;我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p&gt;
+&lt;p&gt;有时候，甚至是大多数时候你都不需要设计师。&lt;/p&gt;
+&lt;p&gt;相反你应该花更多的时间想想这个产品为什么而存在。但这不是一篇教你挖掘需求或者产品设计的文章。所有的方法都只是设计的见解。&lt;/p&gt;</description></item><item><title>mac 汇编笔记</title><link>https://caoyang2002.vercel.app/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
+&lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="梦开始的地方"&gt;梦开始的地方&lt;/h1&gt;
+&lt;h1 id="简单的-asm"&gt;简单的 asm&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;null.s&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-asm" data-lang="asm"&gt;.section __TEXT,__text
+.globl _main
+.p2align 2
+_main:
+mov w0, #0
+ret&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;int main() {
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;as null.s -o null.o # 汇编
+ld null.o -lSystem -L $(xcrun --show-sdk-path -sdk macosx)/usr/lib -o null # 链接（由于在 macOS 上不能创建静态链接的可执行文件，因此在链接时必须使用 -lSystem 动态链接上系统库。）
+./null # 运行
+
+# or
+clang null.s -o null
+
+# or
+gcc null.s -o null&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;as&lt;/code&gt; 是 LLVM 的汇编器, &lt;code&gt;lldb&lt;/code&gt; 是 LLVM 的调试器。
+&lt;code&gt;GCC&lt;/code&gt; 套件是 GNU 操作系统的一个部分，GNU 是开源的、社区驱动的。而 LLVM 项目也是开源的，现在主要是 Apple 在投资运行。因此，既然在 macOS 上，我就主要用的是 LLVM 系的工具。&lt;/p&gt;</description></item><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：函数复用
+// 没有闭包时，需要传入所有参数
+fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
+
+// 有了闭包，可以部分应用
+let base = 5;
+let add_five = |x| x &amp;#43; base;
+
+// 问题2：函数式编程需求
+vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
+vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
+
+// 问题3：上下文捕获
+// 没有闭包时很难处理
+struct Context { value: i32 }
+let ctx = Context { value: 42 };
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="闭包是什么"&gt;闭包是什么？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;闭包是可以捕获其环境的匿名函数&lt;/li&gt;
+&lt;li&gt;它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li&gt;
+&lt;li&gt;闭包 = 函数 + 环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="闭包的优势"&gt;闭包的优势&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 简洁的语法
+let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
+
+// 2. 灵活的环境捕获
+let multiplier = 2;
+let double = |x| x * multiplier; // 捕获 multiplier
+
+// 3. 支持函数式编程
+let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
+let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
+ .into_iter()
+ .filter(|x| x % 2 == 0)
+ .collect();&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你家的地址（引用）&lt;/li&gt;
+&lt;li&gt;花瓶本身（值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么我们需要引用"&gt;为什么我们需要引用？&lt;/h2&gt;
+&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的本质"&gt;闭包的本质&lt;/h2&gt;
+&lt;p&gt;Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数逻辑&lt;/li&gt;
+&lt;li&gt;捕获的环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过反编译来看闭包的真实面目：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
+&lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
+ std::fs::read_to_string(path) // 这里会返回什么？
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码看似简单，但隐藏着两个基本问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文件可能不存在&lt;/li&gt;
+&lt;li&gt;即使文件存在，读取过程也可能失败&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这就是为什么 Rust 引入了 &lt;code&gt;Result&lt;/code&gt; 和 &lt;code&gt;Option&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="option处理有与没有"&gt;&lt;code&gt;Option&lt;/code&gt;：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2&gt;
+&lt;h3 id="option-的本质"&gt;&lt;code&gt;Option&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
+ Some(T), // 有值
+ None, // 没有值
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;让我们看一个实际例子：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ if id == 0 {
+ None // 用户不存在
+ } else {
+ Some(User { id, ... }) // 用户存在
+ }
+}
+
+// 使用方式
+match find_user(1) {
+ Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
+ None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="option-的常用方法"&gt;&lt;code&gt;Option&lt;/code&gt; 的常用方法&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);
+
+// 方法1：unwrap - 危险操作
+let value1 = x.unwrap(); // 如果是 None 会 panic
+
+// 方法2：unwrap_or - 提供默认值
+let value2 = x.unwrap_or(0); // None 时返回0
+
+// 方法3：map - 变换内部值
+let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
+
+// 方法4：and_then - 链式操作
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="result处理成功与失败"&gt;&lt;code&gt;Result&lt;/code&gt;：处理“成功”与“失败”&lt;/h2&gt;
+&lt;h3 id="result-的本质"&gt;&lt;code&gt;Result&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
+ Ok(T), // 成功，包含值 T
+ Err(E), // 错误，包含错误 E
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;实际应用示例：&lt;/p&gt;</description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.vercel.app/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{console, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 控制台打印
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;move test: {}&amp;#34;, name)));
+
+ // 使用 console.warn
+ console::warn_1(&amp;amp;JsValue::from_str(&amp;#34;This is a warning&amp;#34;));
+
+ // 使用 console.error
+ console::error_1(&amp;amp;JsValue::from_str(&amp;#34;This is an error&amp;#34;));
+
+ // 浏览器 alert
+ if let Some(window) = window() {
+ window
+ .alert_with_message(&amp;amp;format!(&amp;#34;Hello, {}!&amp;#34;, name))
+ .expect(&amp;#34;alert failed&amp;#34;);
+ }
+
+ // 确认对话框
+ if let Some(window) = window() {
+ if window
+ .confirm_with_message(&amp;#34;Do you want to continue?&amp;#34;)
+ .expect(&amp;#34;confirm failed&amp;#34;)
+ {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked OK&amp;#34;));
+ } else {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
+ }
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;在 Cargo.toml 中需要添加必要的依赖：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;[dependencies]
+wasm-bindgen = &amp;#34;0.2&amp;#34;
+web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
+ &amp;#34;console&amp;#34;,
+ &amp;#34;Window&amp;#34;,
+ &amp;#34;Document&amp;#34;,
+ &amp;#34;Element&amp;#34;,
+ &amp;#34;HtmlElement&amp;#34;,
+ &amp;#34;Node&amp;#34;,
+ &amp;#34;Location&amp;#34;
+]}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;如果需要格式化打印，可以使用 &lt;code&gt;console::log!&lt;/code&gt; 宏：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::console;
+
+// 需要引入宏
+#[macro_export]
+macro_rules! console_log {
+ ($($t:tt)*) =&amp;gt; (console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!($($t)*))))
+}
+
+pub fn move_test(name: &amp;amp;str) {
+ console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;操作 DOM 示例：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{Document, Element, HtmlElement, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 获取 document
+ let window = window().expect(&amp;#34;no global window exists&amp;#34;);
+ let document = window.document().expect(&amp;#34;no document exists&amp;#34;);
+
+ // 创建新元素
+ if let Some(div) = document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ // 修改输入框的值
+ if let Some(input) = div.dyn_ref::&amp;lt;HtmlElement&amp;gt;() {
+ input.set_inner_text(&amp;amp;format!(&amp;#34;New value: {}&amp;#34;, name));
+ }
+ }
+
+ // 创建新元素
+ let new_div = document.create_element(&amp;#34;div&amp;#34;).unwrap();
+ new_div.set_text_content(Some(&amp;amp;format!(&amp;#34;Hello {}&amp;#34;, name)));
+
+ // 添加到 body
+ if let Some(body) = document.body() {
+ body.append_child(&amp;amp;new_div).unwrap();
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;处理错误和 Result：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ // 使用 ? 运算符处理错误
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+ let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
+
+ // 处理可能的错误
+ match document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ Some(element) =&amp;gt; {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Found element: {}&amp;#34;, name)));
+ Ok(())
+ },
+ None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;使用本地存储：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::Storage;
+
+pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+
+ // 获取 localStorage
+ if let Some(storage) = window.local_storage()? {
+ // 存储数据
+ storage.set_item(&amp;#34;user_name&amp;#34;, name)?;
+
+ // 读取数据
+ if let Ok(Some(saved_name)) = storage.get_item(&amp;#34;user_name&amp;#34;) {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Saved name: {}&amp;#34;, saved_name)));
+ }
+ }
+
+ Ok(())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://caoyang2002.vercel.app/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://caoyang2002.vercel.app/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接口定义规则：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+package handler
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}
+
+// ❌ 错误：接口定义在实现方包中
+package service
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;依赖方向：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
+
+// ❌ 错误：不应该出现反向依赖
+service -&amp;gt; handler
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;数据模型定义：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+package handler
+type CreateUserRequest struct { // API层模型
+ Username string `json:&amp;#34;username&amp;#34;`
+}
+
+package service
+type UserDTO struct { // 业务层模型
+ ID uint64
+ Username string
+}
+
+package repository
+type UserDO struct { // 数据层模型
+ ID uint64 `gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string
+ CreatedAt time.Time
+}
+
+// ❌ 错误：直接在所有层使用相同的模型
+type User struct {
+ ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string `json:&amp;#34;username&amp;#34;`
+ CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;错误处理层级：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+package repository
+func (r *UserRepo) Create(user *UserDO) error {
+ return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
+}
+
+package service
+func (s *UserService) Create(user *UserDTO) error {
+ return fmt.Errorf(&amp;#34;business error: %w&amp;#34;, err)
+}
+
+package handler
+func (h *UserHandler) Create(c *gin.Context) {
+ if err := h.service.Create(user); err != nil {
+ c.JSON(getErrorStatus(err), ErrorResponse{err.Error()})
+ return
+ }
+}
+
+// ❌ 错误：直接暴露底层错误
+if err := db.Create(&amp;amp;user).Error; err != nil {
+ c.JSON(500, err.Error())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;包的组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;✅ 正确的包组织：
+project/
+ ├── api/
+ │ └── handler/ # HTTP 处理层
+ ├── internal/
+ │ ├── service/ # 业务逻辑层
+ │ ├── repository/ # 数据访问层
+ │ └── model/ # 内部数据模型
+ ├── pkg/
+ │ └── util/ # 公共工具函数
+ └── main.go
+
+❌ 错误的包组织：
+project/
+ ├── handlers/
+ ├── services/
+ ├── models/
+ └── main.go&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;依赖注入：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+func NewUserHandler(service UserService) *UserHandler {
+ return &amp;amp;UserHandler{service: service}
+}
+
+// ❌ 错误：全局变量或直接初始化
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;接口隔离：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+type UserReader interface {
+ GetUser(id uint64) (*User, error)
+}
+
+type UserWriter interface {
+ CreateUser(user *User) error
+}
+
+// ❌ 错误：大接口，职责过多
+type UserService interface {
+ GetUser(id uint64) (*User, error)
+ CreateUser(user *User) error
+ UpdateUser(user *User) error
+ DeleteUser(id uint64) error
+ ListUsers() ([]*User, error)
+ SearchUsers(query string) ([]*User, error)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="8"&gt;
+&lt;li&gt;配置管理：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+package config
+
+type Config struct {
+ Server ServerConfig
+ DB DatabaseConfig
+ Redis RedisConfig
+}
+
+// ❌ 错误：分散的配置或硬编码
+var serverPort = 8080
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="9"&gt;
+&lt;li&gt;上下文传递：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+func (h *Handler) Create(c *gin.Context) {
+ ctx := c.Request.Context()
+ err := h.service.Create(ctx, req)
+}
+
+// ❌ 错误：不传递上下文或使用不一致的上下文
+func (h *Handler) Create(c *gin.Context) {
+ err := h.service.Create(req)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="10"&gt;
+&lt;li&gt;测试组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+package handler
+
+func TestUserHandler_Create(t *testing.T) {
+ // 单元测试
+}
+
+// ❌ 错误：测试代码与源码混合或测试覆盖不全
+func TestAll(t *testing.T) {
+ // 混合测试多个功能
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>资源</title><link>https://caoyang2002.vercel.app/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源"&gt;如何找资源&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;下载
+
+&lt;a href="https://www.pansou.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 盘搜
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://pansoso.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 盘搜搜
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.dashengpan.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 大圣盘
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://t.me/jisou"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ TG机器人
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://aliso.cc/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 阿里搜
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一我维护的其他站"&gt;一、我维护的其他站&lt;/h1&gt;
+&lt;h2 id="move-学习"&gt;Move 学习&lt;/h2&gt;
+&lt;p&gt;
+&lt;a href="http://43.138.107.218/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ move
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="二编程相关内容"&gt;二、编程相关内容&lt;/h1&gt;
+&lt;h2 id="各种镜像收录"&gt;各种镜像收录&lt;/h2&gt;
+&lt;iframe src="http://fishros.com/#/fish_home" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;p&gt;iframe src=&amp;ldquo;
+&lt;a href="http://www.yishimei.cn/%22"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.yishimei.cn/"
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ width=&amp;ldquo;100%&amp;rdquo; height=&amp;ldquo;600&amp;rdquo;&amp;gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;iframe src="http://doc.vrd.net.cn/" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://sms-activate.org/cn/getNumber" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://pan.oldming.top/" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://res.yunpan.win/" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://cplusplus.com/reference/" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;iframe src="https://www.coursera.org/" width="100%" height="600"&gt;&lt;/iframe&gt;
+&lt;p&gt;NPS: http://101.43.125.94:20002/
+DS220j-SSH: http://101.43.125.94:20010/
+DS220j-DSM: http://101.43.125.94:20011/&lt;/p&gt;
+&lt;p&gt;Windows10: http://101.43.125.94:20020/&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://caoyang2002.vercel.app/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
+enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
+hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
+summaryLength = 140 # 文章摘要长度
+
+# SEO 优化
+[params]
+keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;] # 网站关键词
+description = &amp;#34;个人技术博客&amp;#34; # 网站描述
+images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片
+# 自定义 Open Graph 信息
+[params.og]
+title = &amp;#34;我的博客&amp;#34;
+type = &amp;#34;website&amp;#34;
+images = [&amp;#34;og-image.jpg&amp;#34;]
+
+# 性能优化
+[minify]
+ disableCSS = false # 启用 CSS 压缩
+ disableHTML = false # 启用 HTML 压缩
+ disableJS = false # 启用 JS 压缩
+ disableJSON = false # 启用 JSON 压缩
+ minifyOutput = true # 压缩 HTML 输出
+
+# 图片处理
+[imaging]
+ quality = 75 # JPEG 图片质量
+ resampleFilter = &amp;#34;Lanczos&amp;#34; # 图片重采样过滤器
+ anchor = &amp;#34;Smart&amp;#34; # 图片裁剪锚点
+
+# 内容安全策略
+[params.csp]
+ childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]
+ formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]
+ stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]
+ scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]
+
+# 文章配置
+[permalinks]
+ posts = &amp;#34;/post/:year/:month/:slug/&amp;#34; # 自定义文章 URL 结构
+
+# 自定义输出格式
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;] # 支持 JSON API 输出
+ section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+
+# RSS 订阅配置
+[params.rss]
+ limit = 20 # RSS 文章数量限制
+ fullContent = true # RSS 包含完整文章内容
+
+# 站内搜索配置
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]
+[outputFormats.SearchIndex]
+ mediaType = &amp;#34;application/json&amp;#34;
+ baseName = &amp;#34;searchindex&amp;#34;
+ isPlainText = true
+ notAlternative = true
+
+# 文章目录配置
+[markup.tableOfContents]
+ endLevel = 3 # 目录最大深度
+ ordered = false # 使用无序列表
+ startLevel = 2 # 目录开始层级
+
+# 代码高亮配置
+[markup.highlight]
+ codeFences = true # 启用代码围栏
+ guessSyntax = true # 自动推测代码语言
+ lineNoStart = 1 # 起始行号
+ lineNos = true # 显示行号
+ lineNumbersInTable = true # 使用表格式行号
+ tabWidth = 4 # 制表符宽度
+ style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item><item><title>从 Hexo 迁移至 Hugo</title><link>https://caoyang2002.vercel.app/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo"&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;
+&lt;p&gt;16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p&gt;
+&lt;h2 id="为什么改用hugo"&gt;为什么改用Hugo&lt;/h2&gt;
+&lt;h3 id="依赖管理问题"&gt;依赖管理问题&lt;/h3&gt;
+&lt;p&gt;在
+&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 静态博客的同步和备份方案
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p&gt;</description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://caoyang2002.vercel.app/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
+&lt;a href="https://hexo.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hexo
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+以及主题
+&lt;a href="https://theme-next.js.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Theme NexT
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，
+在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
+&lt;a href="https://vercel.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ vercel
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p&gt;</description></item><item><title>shell mac 教程</title><link>https://caoyang2002.vercel.app/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
+&lt;a href="https://juejin.cn/post/6921144388802641933"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-as" data-lang="as"&gt;#!/bin/bash
+
+# 1. 自定义通知消息
+# 传参 $1:消息描述 $2:通知标题 $3:通知副标题
+function showNoteMessage(){
+ osascript -e &amp;#34;display notification \&amp;#34;${1}\&amp;#34; with title \&amp;#34;${2}\&amp;#34; subtitle \&amp;#34;${3}\&amp;#34; sound name \&amp;#34;Funk\&amp;#34;&amp;#34;
+}
+#test case:
+#showNoteMessage &amp;#34;消息内容&amp;#34; &amp;#34;通知&amp;#34; &amp;#34;通知副标题&amp;#34;
+
+# 2. 自定义弹窗(统一通用方法)
+# 传参$1 弹窗消息内容
+# 传参$2 弹窗标题
+# 传参$3 按钮标题,多个用英文逗号隔开
+# 传参$4 默认选中的按钮标题或者按钮数字下标
+# 传参$5 是否为输入框类型 传&amp;#34;0&amp;#34;或者&amp;#34;1&amp;#34; 默认&amp;#34;0&amp;#34;
+# 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &amp;#34;&amp;#34;
+# 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取)
+# tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false
+function showCustomAlertMessage(){
+
+if [[ -n &amp;#34;$4&amp;#34; ]]; then
+
+	if [[ ${4} == *[!0-9]* ]]; then
+ 	defaultButton=&amp;#34;default button \&amp;#34;${4}\&amp;#34;&amp;#34;
+ 	else
+ 	defaultButton=&amp;#34;default button ${4}&amp;#34;
+	fi
+else
+	defaultButton=&amp;#34;&amp;#34;
+fi
+
+#是否为输入框模式
+if [[ &amp;#34;$5&amp;#34; = &amp;#34;1&amp;#34; ]]; then
+	IS_InputMode=&amp;#34;default answer \&amp;#34;${6}\&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get result&amp;#34;
+else
+	IS_InputMode=&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get the button returned of the result&amp;#34;
+fi
+
+if [[ -n &amp;#34;$7&amp;#34; ]]; then
+ case ${7} in
+	note)
+	ICON=&amp;#34;with icon note&amp;#34;
+	;;
+	stop)
+	ICON=&amp;#34;with icon stop&amp;#34;
+	;;
+	caution)
+	ICON=&amp;#34;with icon caution&amp;#34;
+	;;
+	*)
+	ICON=&amp;#34;with icon file \&amp;#34;${7}\&amp;#34;&amp;#34;
+	;;
+ esac
+else
+ ICON=&amp;#34;with icon file \&amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&amp;#34;&amp;#34;
+fi
+
+osascript &amp;lt;&amp;lt;EOF
+	set buttonStr to &amp;#34;${3}&amp;#34;
+	set oldDelimiters to AppleScript&amp;#39;s text item delimiters
+	set AppleScript&amp;#39;s text item delimiters to &amp;#34;,&amp;#34;
+	set buttonList to every text item of buttonStr
+	set AppleScript&amp;#39;s text item delimiters to oldDelimiters
+	get buttonList
+	set btns to buttonList
+	display dialog &amp;#34;${1}&amp;#34; with title &amp;#34;${2}&amp;#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON}
+	${ReturnValue}
+EOF
+}
+
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;1&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; 2 &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;stop&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&amp;#34;
+
+# 普通弹窗 一个ok就够了 就是一个确认的那种
+function onlyConfirmButton(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;好的&amp;#34; 1
+}
+#onlyConfirmButton &amp;#34;登录成功!\n弹窗成功!&amp;#34;
+
+# 多按钮弹窗 最多三个按钮 多了会报错
+function mostButtons(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮3&amp;#34;
+}
+#mostButtons &amp;#34;最多只能定义三个按钮哦&amp;#34;
+
+# 输入框弹窗
+function showInputAlertMessage(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;$2&amp;#34; &amp;#34;取消,确认&amp;#34; 2 &amp;#34;1&amp;#34; &amp;#34;&amp;#34;
+}
+showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>谷歌账号注册的问题</title><link>https://caoyang2002.vercel.app/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/07/google_account/</guid><description>&lt;p&gt;参考：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href="https://www.gmail777.com/archives/69"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中州西鹿
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 多图详细教你注册Google（Gmail）新账号，常见问题和注意事项
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://uzbox.com/usa/google-add-tel.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="谷歌账号注册的问题"&gt;谷歌账号注册的问题&lt;/h1&gt;
+&lt;h2 id="注册"&gt;注册&lt;/h2&gt;
+&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description></item><item><title>C 语言字符画</title><link>https://caoyang2002.vercel.app/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+* * *
+* *
+* * *
+
+4
+* * * *
+* *
+* *
+* * * *&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;非多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行定位
+int main() {
+ int n = 0;
+ scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {
+ if (i == 0 || i == n - 1) {//首尾行输出一行*
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {
+ printf(&amp;#34;* &amp;#34;);
+ }
+ } else {
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//其它行首尾输出*
+ if(j==0 || j == n-1)
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ }
+ printf(&amp;#34;\n&amp;#34;);//换行
+ }
+
+ return 0;
+}
+
+// 3 ---- n
+// * * * --- 1行每个位置都输出 一共n个
+// * * --- 其它行1和n位置输出 一共2个
+// * * * --- n行每个位置都输出 一共n个
+// 思路：
+// 使用for 和 if
+// 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行和列定位
+int main() {
+ int n = 0;
+ while(scanf(&amp;#34;%d&amp;#34;, &amp;amp;n) == 1){//输入的数量为1
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {//控制行
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//控制列
+ if(i == 0 || i == n-1 || j == 0 || j == n-1)//第0行，第n-1行，第0列，第n-1列输出 *_,其它位置输出 __
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ printf(&amp;#34;\n&amp;#34;);
+ }
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://caoyang2002.vercel.app/post/2024/06/dl/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/06/dl/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
+&lt;li&gt;创建一个类（右键创建类，会自动包含需要的文件） 以查询目录下的文件为例
+创建的文件可以不用管
+&lt;code&gt;.cpp&lt;/code&gt;文件 输入自己的代码&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
+#include &amp;#34;check_repository.h&amp;#34;
+namespace fs = std::filesystem;
+ int Check::CheckRepository() {
+ std::string folderName = &amp;#34;.Rysigy&amp;#34;;
+ fs::path currentPath = fs::current_path();
+ fs::path folderPath = currentPath / folderName;
+
+ if (fs::exists(folderPath) &amp;amp;&amp;amp; fs::is_directory(folderPath)) {
+ std::cout &amp;lt;&amp;lt; &amp;#34;存储库 &amp;#39;.Rysigy&amp;#39; 文件夹存在\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ else {
+ std::cout &amp;lt;&amp;lt; &amp;#34;[错误]\t存储库 &amp;#39;.Rysigy&amp;#39; 文件夹不存在\n请在右键菜单中点击 &amp;#39;创建存储库&amp;#39;\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
+ _getch();
+ return 0;
+};&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://caoyang2002.vercel.app/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/06/git_delete_file/</guid><description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在本地仓库中删除文件&lt;/strong&gt;：
+首先，在你的本地仓库中删除该文件：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sh" data-lang="sh"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://caoyang2002.vercel.app/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="在-elease-里面下载可执行程序"&gt;在 elease 里面下载可执行程序&lt;/h2&gt;
+&lt;h1 id="win"&gt;Win&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="linux-x86_64"&gt;Linux （x86_64)&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="mac"&gt;mac&lt;/h1&gt;
+&lt;p&gt;没有测试
+
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;p&gt;所有配置都通过 config.yaml 文件传递​​给 &lt;code&gt;Telegram Media Downloader&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;获取您的 API 密钥：&lt;/strong&gt;
+第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 
+&lt;a href="https://my.telegram.org/apps"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://my.telegram.org/apps
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ 并使用您的 Telegram 帐户登录。&lt;/li&gt;
+&lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;
+&lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>x86 教程</title><link>https://caoyang2002.vercel.app/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
+&lt;a href="http://www.ruanyifeng.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 阮一峰
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;日期： 
+&lt;a href="http://www.ruanyifeng.com/blog/2018/01/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 2018年1月21日
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;学习编程其实就是学高级语言，即那些为人类设计的计算机语言。&lt;/p&gt;
+&lt;p&gt;但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。&lt;/p&gt;</description></item><item><title>SQL 教程</title><link>https://caoyang2002.vercel.app/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/sql/</guid><description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;
+&lt;h1 id="数据库相关的操作"&gt;数据库相关的操作&lt;/h1&gt;
+&lt;p&gt;查询数据库	 &lt;code&gt;SHOW DATABASES&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;创建数据库
+&lt;code&gt;CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;CREATE DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看数据库信息
+&lt;code&gt;SHOW CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;SHOW CREATE DATABASE database&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除数据库
+&lt;code&gt;DROP DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;DROP DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库
+&lt;code&gt;USE 数据库名&lt;/code&gt;
+&lt;code&gt;USE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="ddl语句-数据定义语言"&gt;DDL语句	 数据定义语言&lt;/h1&gt;
+&lt;p&gt;创建表&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
+ 列名1 类型[长度] [DEFAULT 默认值] [约束条件]
+ 列名2 类型
+ ……
+);
+
+CREATE TABLE userinfo(
+ id INT
+ username VARCHAR(32)
+ password VARCHAR(32)
+ nickname VARCHAR(32)
+ age INT(3)
+);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;查看当前数据库创建的所有表
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>报税记账</title><link>https://caoyang2002.vercel.app/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/compent/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="报税网址"&gt;报税网址&lt;/h1&gt;
+&lt;h2 id="四川省电子税务局"&gt;四川省电子税务局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://etax.sichuan.chinatax.gov.cn/loginb/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://etax.sichuan.chinatax.gov.cn/loginb/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="自然人电子税务局"&gt;自然人电子税务局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个主要是给法人报税用的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://etax.chinatax.gov.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://etax.chinatax.gov.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="关于注销"&gt;关于注销&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;税务申报方面需要仔细一点, 然后就是一些文件里面的项, 我啥也不懂, 就没有改, 发现需要再缴 500, 不知道是什么, 就缴了,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;去注销企业的时候遇到的一些问题:&lt;/p&gt;
+&lt;p&gt;我使用的是 &amp;ldquo;简易注销&amp;rdquo;, 这个比较方便, 是一站式的, 办理完后需要等待 20 天的公示期,公示期结束后继续办理注销流程&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://caoyang2002.vercel.app/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;可能需要先安装
+&lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React # 使用 React 库
+✔ Select a variant: › TypeScript # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+ cd playground
+ npm install
+ npm run dev&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-一键创建"&gt;1.2 一键创建&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://caoyang2002.vercel.app/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
+&lt;h1 id="样机"&gt;样机&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://bannermockup.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://bannermockup.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://mockupplanet.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://mockupplanet.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.anthonyboyd.graphics/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.anthonyboyd.graphics/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.pixeden.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.pixeden.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.ls.graphics"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.ls.graphics
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="条件"&gt;条件&lt;/h2&gt;
+&lt;h3 id="登录"&gt;登录&lt;/h3&gt;
+&lt;p&gt;grapicpear&lt;/p&gt;
+&lt;h1 id="插画"&gt;插画&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://dotown.maeda-design-room.net/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://dotown.maeda-design-room.net/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.opendoodles.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.opendoodles.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;设计师必备 50 款免费可商用图库网站：照片、插画、纹理一网打尽&lt;/p&gt;
+&lt;p&gt;免费素材图像素材工具推荐
+Angel Wang・2022-10-13
+大家好，本周我为大家准备了超全面的免费可商用高清图库，可能是全网最全的总结，推荐的图库类型有：照片图库、博物馆艺术品图库、图片生成器、纹理图库、插画图库、图标库，总有一种你用得到！&lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://caoyang2002.vercel.app/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
+&lt;p&gt;SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p&gt;
+&lt;p&gt;对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
+比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://caoyang2002.vercel.app/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/86937325"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文一
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://blog.csdn.net/weixin_39779004/article/details/110801387"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文二
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://b23.tv/3f7Yrct"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 视频
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一什么是-jwt"&gt;一、什么是 JWT&lt;/h1&gt;
+&lt;p&gt;JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑的、自包含的方式，用于作为JSON对象在各方之间安全地传输信息。该信息可以被验证和信任，因为它是数字签名的。&lt;/p&gt;
+&lt;h1 id="二设计目标"&gt;二、设计目标&lt;/h1&gt;
+&lt;p&gt;不需要服务器端存储状态，安全地传递非敏感信息&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/OIP-C-20240424140338352.jpeg" alt="JWT认证方案讲解-阿里云开发者社区"&gt;&lt;/p&gt;
+&lt;h1 id="三-json-web-token-的结构是什么样的"&gt;三、 JSON Web Token 的结构是什么样的&lt;/h1&gt;
+&lt;p&gt;JSON Web Token由三部分组成，例如&lt;code&gt;dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code&gt;&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://caoyang2002.vercel.app/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/ehang-io/nps/tree/master"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://ehang-io.github.io/nps/#/install"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;
+&lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item><item><title>小米 4a 路由器刷机</title><link>https://caoyang2002.vercel.app/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一获取原厂固件的-ssh-登录权限"&gt;一、获取原厂固件的 ssh 登录权限&lt;/h1&gt;
+&lt;p&gt;有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p&gt;
+&lt;p&gt;小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p&gt;</description></item><item><title>小米 4c 路由器刷机</title><link>https://caoyang2002.vercel.app/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;介绍一下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wifi 全程不用连网&lt;/li&gt;
+&lt;li&gt;win系统电脑刷机，需要下载一个刷机包&lt;/li&gt;
+&lt;li&gt;windows 有 python 程序，查看方法：在命令提示符窗口输入 &lt;code&gt;python --version&lt;/code&gt;，会输出版本号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至于让路由器变砖，并且对于以后更换固件非常友好，强烈建议刷Breed。&lt;/p&gt;</description></item><item><title>小米路由器</title><link>https://caoyang2002.vercel.app/post/2024/03/xiaomi_router/</link><pubDate>Fri, 22 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/03/xiaomi_router/</guid><description>&lt;p&gt;{bs-font color=&amp;quot;#FF0000&amp;quot;}刷机有风险，如果能用，请不要为了不一样而刷机，又不是不能用！{/bs-font}&lt;/p&gt;
+&lt;p&gt;现在你的路由器和小米已经没有任何关系了，恭喜你上了贼船！&lt;/p&gt;
+&lt;p&gt;基本介绍：
+OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
+几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://caoyang2002.vercel.app/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原作者
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 个人配置
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
+cd quartz-obsidian-webside
+npm i
+npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;h2 id="布局"&gt;布局&lt;/h2&gt;
+&lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
+默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;
+&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item><item><title>C 语言推荐书籍</title><link>https://caoyang2002.vercel.app/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列"&gt;C语言系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《C漏洞与缺陷》&lt;/li&gt;
+&lt;li&gt;《C语言深度解剖》&lt;/li&gt;
+&lt;li&gt;《C和指针》&lt;/li&gt;
+&lt;li&gt;《明解C语言》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="c系列"&gt;C++系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《高质量的C/C++编程》&lt;/li&gt;
+&lt;li&gt;《程序员的自我修养》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="java系列"&gt;java系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《java编程思想》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="计算机系列"&gt;计算机系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;深入理解计算机系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="数据结构"&gt;数据结构&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《大话数据结构》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="内存"&gt;内存&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《地址的故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="编程"&gt;编程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《程序员编程故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="算法"&gt;算法&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《剑指offer》&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>左耳朵耗子：技术领导力</title><link>https://caoyang2002.vercel.app/post/2023/11/houle/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/11/houle/</guid><description>&lt;h1 id="技术领导力"&gt;技术领导力&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《C语言程序设计（第二版）》&lt;/li&gt;
+&lt;li&gt;《深入理解计算机系统》&lt;/li&gt;
+&lt;li&gt;《UNIX环境高级编程》&lt;/li&gt;
+&lt;li&gt;《UNIX网络编程》&lt;/li&gt;
+&lt;li&gt;《Windows核心编程》&lt;/li&gt;
+&lt;li&gt;《TCP/IP详解》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="每个程序员都应该要读的书"&gt;每个程序员都应该要读的书&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《Code Complete (2nd edition) 》《代码大全》&lt;/li&gt;
+&lt;li&gt;《The Pragmatic Programmer》 《程序员修炼之道》&lt;/li&gt;
+&lt;li&gt;《Structure and interpretation of Computer Programs》&lt;/li&gt;
+&lt;li&gt;《The C Programming Language》&lt;/li&gt;
+&lt;li&gt;《Introduction to Algorithms 》&lt;/li&gt;
+&lt;li&gt;《Design Patterns》&lt;/li&gt;
+&lt;li&gt;《Refactoring: Improving the Design of Exsting Code》&lt;/li&gt;
+&lt;li&gt;《The Mythical Man Month》&lt;/li&gt;
+&lt;li&gt;《The Art of Computer Programming》&lt;/li&gt;
+&lt;li&gt;《Compilers: Principles, Techniques and Tool》&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="推荐"&gt;推荐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《代码大全》&lt;/li&gt;
+&lt;li&gt;《程序员修炼之道》&lt;/li&gt;
+&lt;li&gt;《计算机的构造和解释》&lt;/li&gt;
+&lt;li&gt;《算法导论》&lt;/li&gt;
+&lt;li&gt;《设计模式》&lt;/li&gt;
+&lt;li&gt;《重构》&lt;/li&gt;
+&lt;li&gt;《人月神话》&lt;/li&gt;
+&lt;li&gt;《代码整洁之道》&lt;/li&gt;
+&lt;li&gt;《Effective C++》/《More Effective C++》&lt;/li&gt;
+&lt;li&gt;《Unix编程艺术》《Unix高级环境编程》&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="经典文章"&gt;经典文章&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《What every computer science major should know》&lt;/li&gt;
+&lt;li&gt;《LinkedIn&amp;rsquo;s Tips for Highly Effective Code Review》&lt;/li&gt;
+&lt;li&gt;《A Large-Scale Study of Programming Language and Code Quality in Github》&lt;/li&gt;
+&lt;li&gt;《Optimizing Software in C++ - Agner Fog》&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>OpenWRT 教程</title><link>https://caoyang2002.vercel.app/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/10/openwrt/</guid><description>&lt;p&gt;
+&lt;a href="https://lidrive.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ OpenWRT下载地址
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本"&gt;&lt;/p&gt;
+&lt;h1 id="制作启动盘"&gt;制作启动盘&lt;/h1&gt;
+&lt;p&gt;将PE系统写入到U盘，window：rufus，macOS：balenaEtcher
+将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p&gt;
+&lt;h1 id="进入bios"&gt;进入BIOS&lt;/h1&gt;
+&lt;p&gt;将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p&gt;
+&lt;h1 id="删除设备的磁盘分区"&gt;删除设备的磁盘分区&lt;/h1&gt;
+&lt;p&gt;进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p&gt;</description></item><item><title>左耳朵耗子：程序员</title><link>https://caoyang2002.vercel.app/post/2023/09/coder/</link><pubDate>Fri, 29 Sep 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/09/coder/</guid><description>&lt;p style="color:red"&gt;25~35岁是每个人最宝贵的时间，应该用在刀刃上&lt;/p&gt;
+&lt;p&gt;本质上来说，程序员就是个手艺人，有手艺的人就能做出别人做不出来的东西，而付费就是一件很自然的事了。&lt;/p&gt;
+&lt;h1 id="提升方法"&gt;提升方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;要去经历大多数人经历不到的， 要把时间花在那些比较难的地方。&lt;/li&gt;
+&lt;li&gt;要写文章就写没有人写过的，或者是别人写过，但是自己能写得更好的。&lt;/li&gt;
+&lt;li&gt;更重要的是， 技术和知识是完全可以变现的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="如何变现"&gt;如何变现&lt;/h1&gt;
+&lt;h2 id="一积累"&gt;一、积累&lt;/h2&gt;
+&lt;p&gt;千里之行，积于跬步。任何一件事都是通过小成功达到的，所以你得确保自己有一个一个的小成功，具体来说，你得让你身边的人 有求于你，或是向别人推荐你，这就需要你能够掌握大多数人不能掌握的技术，需要你更多地去学习，并要更多的别人没有的经验和经历。&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://caoyang2002.vercel.app/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文链接
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="查看-cpu-架构"&gt;查看 CPU 架构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-shell" data-lang="shell"&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
+arch：该命令可以查看Linux系统的CPU架构。
+cat /proc/version：该命令可以查看系统内核的版本信息。
+cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 脚本目录
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://caoyang2002.vercel.app/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+&lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;V = (-1)^s^ * M * 2^E^&lt;/li&gt;
+&lt;li&gt;(-1)^s^表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
+&lt;li&gt;M表示有效数字，大于等于1，小于2; 1&amp;lt;= M &amp;lt;2&lt;/li&gt;
+&lt;li&gt;2^E^：E表示指数位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;V = 5.0 f&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;二进制：101.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://caoyang2002.vercel.app/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
+&lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;函数的作用域是怎么形成的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;局部变量是如何创建的？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数是如何传参的？&lt;/p&gt;
+&lt;p&gt;传参的顺序又是怎么样的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形参和实参的关系是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://caoyang2002.vercel.app/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+struct S1{
+ char c1;//1
+ int i;//4
+ char c2;//1
+};
+
+struct S2{
+ char c1;//1
+ char c2;//1
+ int i;//4
+};
+int main(){
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S1));//12
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;对齐规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一个成员在与结构体变量偏移量为0的地址处&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
+对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
+&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C 语言数学</title><link>https://caoyang2002.vercel.app/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;li&gt;暴力算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;malloc/_malloc.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+#include &amp;lt;errno.h&amp;gt;
+// 最大公约数
+// 最小公倍数
+//计算最小公倍数和最大公约数的和
+int main(){
+ int n = 0;
+ int m = 0;
+ while(scanf(&amp;#34;%d %d&amp;#34;,&amp;amp;n,&amp;amp;m) == 2){//读取两个数
+ int min = n &amp;lt; m ? n : m;
+ int max = n &amp;gt; m ? n : m;
+ int i = min;//最大公约数
+ int j = max;//最小公倍数
+ while(1){
+ if(n%i == 0 &amp;amp;&amp;amp; m%i == 0){
+ break;
+ }
+ i--;
+ }
+ // i就是最大公约数
+ while(1){
+ if(j%n == 0 &amp;amp;&amp;amp; j%m == 0){
+ break;
+ }
+ j&amp;#43;&amp;#43;;
+ }
+ // j就是最大公倍数
+
+ printf(&amp;#34;最大公倍数 %d &amp;#43; 最小公约数 %d = %d\n&amp;#34;,j,i,j&amp;#43;i);
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;辗转相除法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://caoyang2002.vercel.app/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+&lt;a href="https://codeif.xinke.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ codeif
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="文件命名"&gt;文件命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有文件&lt;/p&gt;
+&lt;p&gt;头文件和原文件成对出现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;全部小写, 可是使用下划线&amp;quot;_&amp;quot;(默认)或连字符&amp;quot;-&amp;quot;, 称完整, 不要有歧义&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;system_file.c &amp;amp; system_file.h&lt;/li&gt;
+&lt;li&gt;item_name.c&lt;/li&gt;
+&lt;li&gt;item-name.c&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="类型命名"&gt;类型命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类, 结构体, 类型定义(Typedef), 枚举, 类型模板参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;每个单词首字母大写, 不使用下划线&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;Timer&lt;/li&gt;
+&lt;li&gt;File&lt;/li&gt;
+&lt;li&gt;Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="变量命名"&gt;变量命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;变量, 函数参数, 数据成员名&lt;/p&gt;</description></item><item><title>mermaid 教程</title><link>https://caoyang2002.vercel.app/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p&gt;
+&lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空格敏感&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ I am the default shape&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://caoyang2002.vercel.app/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2022/07/chart_image/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg"&gt;
+&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg" alt="cool.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="http://patorjk.com/software/taag"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://patorjk.com/software/taag
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="http://www.network-science.de/ascii/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.network-science.de/ascii/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="http://www.degraeve.com/img2txt.php"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.degraeve.com/img2txt.php
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="http://life.chacuo.net/convertfont2char"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://life.chacuo.net/convertfont2char
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item></channel></rss>

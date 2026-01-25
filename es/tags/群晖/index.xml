@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>群晖 on caoyang2002</title><link>https://caoyang2002.vercel.app/es/tags/%E7%BE%A4%E6%99%96/</link><description>Recent content in 群晖 on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/es/tags/%E7%BE%A4%E6%99%96/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖开发</title><link>https://caoyang2002.vercel.app/es/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/es/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文链接
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="查看-cpu-架构"&gt;查看 CPU 架构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-shell" data-lang="shell"&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
+arch：该命令可以查看Linux系统的CPU架构。
+cat /proc/version：该命令可以查看系统内核的版本信息。
+cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 脚本目录
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item></channel></rss>
