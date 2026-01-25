@@ -1,7 +1,7 @@
 +++
 title = '广告的二语三性：为什么你的广告销售不说，顾客不传？'
 date = 2025-04-07T08:18:08+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["营销"]

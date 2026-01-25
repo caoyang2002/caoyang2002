@@ -1,7 +1,7 @@
 +++
 title = '解决在 openwrt 中自动安装 1panel 失败的问题'
 date = 2025-01-29T08:28:43+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["运维"]
 tags = ["openwrt"]

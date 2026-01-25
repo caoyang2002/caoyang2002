@@ -1,7 +1,7 @@
 +++
 title = '商超神话：人性向善，胖东来的觉醒故事'
 date = 2025-03-01T12:39:24+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["案例"]

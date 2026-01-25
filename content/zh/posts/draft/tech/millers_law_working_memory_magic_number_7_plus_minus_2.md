@@ -1,7 +1,7 @@
 +++
 title = "Miller's Law: 工作记忆的神奇数字 7±2"
 date = 2025-01-25T05:46:34+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["设计"]
 tags = ["设计心理学"]

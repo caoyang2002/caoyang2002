@@ -1,7 +1,7 @@
 +++
 title = '愚人节：拉近距离，无畏表达'
 date = 2025-04-01T05:14:36+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

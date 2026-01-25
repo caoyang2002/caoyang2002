@@ -1,6 +1,6 @@
 +++
 date = '2025-01-07T13:33:19+08:00'
-draft = true
+draft = false
 title = '更好的 zsh 配置'
 tags = ["编程", "zsh"]
 toc = true

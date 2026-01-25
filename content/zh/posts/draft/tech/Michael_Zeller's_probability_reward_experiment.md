@@ -1,7 +1,7 @@
 +++
 title = '迈克尔·泽勒的概率奖励实验'
 date = 2025-02-03T15:23:10+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

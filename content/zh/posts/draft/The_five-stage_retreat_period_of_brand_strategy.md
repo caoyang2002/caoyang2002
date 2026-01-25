@@ -1,7 +1,7 @@
 +++
 title = '品牌战略五阶段之撤退期：如何保持品牌生命力？富士、蓝月亮'
 date = 2025-04-18T20:12:16+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["品牌战略"]

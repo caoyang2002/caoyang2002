@@ -1,6 +1,6 @@
 +++
 date = '2025-01-07T13:48:33+08:00'
-draft = true
+draft = false
 title = '更好的 vim 配置'
 tags = ["编程", "vim"]
 toc = true

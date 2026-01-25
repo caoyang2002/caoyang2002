@@ -1,7 +1,7 @@
 +++
 title = '营销公式那些事'
 date = 2025-02-14T00:11:47+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

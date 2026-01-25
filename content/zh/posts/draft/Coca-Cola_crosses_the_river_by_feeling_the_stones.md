@@ -1,7 +1,7 @@
 +++
 title = '实现本土化：可口可乐“摸着石头过河”'
 date = 2025-03-22T01:36:28+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

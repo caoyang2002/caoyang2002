@@ -1,7 +1,7 @@
 +++
 title = 'Arm 与 Amd 的恩怨情仇'
 date = 2025-12-24T11:45:52+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["计算机"]
 tags = ["处理器架构"]

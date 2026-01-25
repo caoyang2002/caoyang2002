@@ -1,7 +1,7 @@
 +++
 title = 'mysql'
 date = 2025-03-06T08:42:26+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

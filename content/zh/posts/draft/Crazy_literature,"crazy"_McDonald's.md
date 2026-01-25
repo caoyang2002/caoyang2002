@@ -1,7 +1,7 @@
 +++
 title = '发疯文学，“疯狂”的麦当劳'
 date = 2025-03-01T12:18:53+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

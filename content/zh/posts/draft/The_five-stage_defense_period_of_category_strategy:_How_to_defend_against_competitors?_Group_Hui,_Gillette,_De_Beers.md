@@ -1,7 +1,7 @@
 +++
 title = '品类战略五阶段之防御期：如何抵御竞争对手？群晖、吉列、戴比尔斯'
 date = 2025-04-17T23:15:33+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

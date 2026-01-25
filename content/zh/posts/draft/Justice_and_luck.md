@@ -1,7 +1,7 @@
 +++
 title = '正义与运气'
 date = 2025-03-11T12:41:51+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["演讲"]
 tags = ["葛四友"]

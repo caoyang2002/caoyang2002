@@ -1,7 +1,7 @@
 +++
 title = 'Alfamart 如何成为印尼第二大便利店连锁？'
 date = 2025-03-01T12:40:51+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["案例分析"]

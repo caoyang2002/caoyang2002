@@ -1,7 +1,7 @@
 +++
 title = '品牌战略五阶段之进攻期：什么时候对领导品牌的正面硬刚？巴奴和海底捞的 “鸭血之战”'
 date = 2025-04-16T12:38:20+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

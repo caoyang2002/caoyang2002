@@ -1,7 +1,7 @@
 +++
 title = 'Kaufman实验：视觉瞬时认知极限的开创性研究'
 date = 2025-01-25T05:44:29+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["心理学"]
 tags = ["认知"]

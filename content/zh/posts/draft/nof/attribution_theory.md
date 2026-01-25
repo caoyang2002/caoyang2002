@@ -1,7 +1,7 @@
 +++
 title = '归因理论'
 date = 2025-02-10T10:04:15+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

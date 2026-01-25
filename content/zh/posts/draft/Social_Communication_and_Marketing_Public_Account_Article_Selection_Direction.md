@@ -1,7 +1,7 @@
 +++
 title = '社会传播与营销公众号文章选题方向'
 date = 2025-02-14T14:44:38+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["定位"]
 tags = ["战略"]

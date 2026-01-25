@@ -1,7 +1,7 @@
 +++
 title = '价值：顾客为什么购买？'
 date = 2025-03-24T08:23:09+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["冯卫东"]

@@ -1,7 +1,7 @@
 +++
 title = '18种最常见的促销方法'
 date = 2025-03-01T12:29:29+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

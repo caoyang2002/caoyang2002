@@ -1,7 +1,7 @@
 +++
-title = '商业模式之企业商业模式：皮克斯'
+title = '商业模式之企业商业模式'
 date = 2025-04-02T13:26:37+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

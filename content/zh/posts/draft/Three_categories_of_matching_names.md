@@ -1,7 +1,7 @@
 +++
 title = '配称的三种分类'
 date = 2025-03-31T08:26:48+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

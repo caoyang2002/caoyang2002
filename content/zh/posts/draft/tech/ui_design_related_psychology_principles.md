@@ -1,7 +1,7 @@
 +++
 title = 'UI 设计相关心理学原理'
 date = 2025-01-25T05:52:05+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]

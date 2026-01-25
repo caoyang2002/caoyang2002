@@ -1,7 +1,7 @@
 +++
 title = 'GitHub Actions 深入剖析：从原理到实践'
 date = 2025-01-26T10:47:26+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["编程"]
 tags = ["github"]
