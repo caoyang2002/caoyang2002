@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wasm on caoyang2002</title><link>https://simons.qzz.io/es/tags/wasm/</link><description>Recent content in Wasm on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/es/tags/wasm/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://simons.qzz.io/es/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Wasm on caoyang2002</title><link>https://simons.qzz.io/es/tags/wasm/</link><description>Recent content in Wasm on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Sun, 25 Jan 2026 18:42:54 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/es/tags/wasm/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://simons.qzz.io/es/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
 &lt;/ol&gt;
@@ -236,4 +236,40 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  
 &lt;/div&gt;
 
-&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/es/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/wasm/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
+&lt;p&gt;让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？&lt;/p&gt;
+&lt;h2 id="深入理解-wasm-的本质"&gt;深入理解 WASM 的本质&lt;/h2&gt;
+&lt;p&gt;首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。&lt;/p&gt;
+&lt;h3 id="内存模型解析"&gt;内存模型解析&lt;/h3&gt;
+&lt;p&gt;让我们看一段具体代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+int* buffer = new int[1024]; // 分配4KB内存
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;编译成 WASM 后：&lt;/p&gt;</description></item><item><title>Aptos Wasm 开发笔记</title><link>https://simons.qzz.io/es/post/2025/01/aptos-wasm/</link><pubDate>Sun, 05 Jan 2025 11:08:24 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/aptos-wasm/</guid><description>&lt;h1 id="起因"&gt;起因&lt;/h1&gt;
+&lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;
+&lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;
+&lt;h1 id="开始"&gt;开始&lt;/h1&gt;
+&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item></channel></rss>

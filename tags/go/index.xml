@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on caoyang 2002</title><link>https://simons.qzz.io/tags/go/</link><description>Recent content in Go on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>GO on caoyang 2002</title><link>https://simons.qzz.io/tags/go/</link><description>Recent content in GO on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 24 Dec 2025 11:04:31 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 GO 语言</title><link>https://simons.qzz.io/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</link><pubDate>Wed, 24 Dec 2025 11:04:31 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</guid><description>&lt;p&gt;查看架构&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;arm&lt;/li&gt;
+&lt;li&gt;x86_64&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd /tmp &amp;amp;&amp;amp; \
+wget -q https://go.dev/dl/go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
+sudo rm -rf /usr/local/go &amp;amp;&amp;amp; \
+sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
+export PATH=/usr/local/go/bin:$PATH &amp;amp;&amp;amp; \
+go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="安装到-jupyter"&gt;安装到 jupyter&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
+cd ~/go-module/gophernotes &amp;amp;&amp;amp; \
+rm -f ~/go/bin/gophernotes &amp;amp;&amp;amp; \
+GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o ~/go/bin/gophernotes &amp;amp;&amp;amp; \
+chmod &amp;#43;x ~/go/bin/gophernotes &amp;amp;&amp;amp; \
+~/go/bin/gophernotes install &amp;amp;&amp;amp; \
+echo &amp;#34;✅ 安装完成！&amp;#34; &amp;amp;&amp;amp; \
+jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;接口定义规则：&lt;/li&gt;
 &lt;/ol&gt;

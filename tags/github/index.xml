@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Github on caoyang 2002</title><link>https://simons.qzz.io/tags/github/</link><description>Recent content in Github on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 25 Jan 2026 18:42:54 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/github/index.xml" rel="self" type="application/rss+xml"/><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
+&lt;p&gt;先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。&lt;/p&gt;
+&lt;h2 id="本质分析"&gt;本质分析&lt;/h2&gt;
+&lt;p&gt;GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。&lt;/p&gt;</description></item><item><title>GitHub Actions 深入剖析：从原理到实践</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</link><pubDate>Sun, 26 Jan 2025 10:47:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</guid><description>&lt;h1 id="github-actions-深入剖析从原理到实践"&gt;GitHub Actions 深入剖析：从原理到实践&lt;/h1&gt;
+&lt;p&gt;最近收到一个问题：&amp;ldquo;为什么我的 CI/CD 流水线总是莫名其妙失败？&amp;ldquo;这让我想起了 GitHub Actions 的一些有趣特性。今天就来扒一扒它的底层原理。&lt;/p&gt;
+&lt;h2 id="github-actions-的本质"&gt;GitHub Actions 的本质&lt;/h2&gt;
+&lt;p&gt;本质上，GitHub Actions 就是一个事件驱动的工作流自动化引擎。它监听 GitHub 事件，然后执行预定义的动作。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
+name: CI
+on: [push] # 事件触发器
+jobs:
+ build: # 工作单元
+ runs-on: ubuntu-latest # 运行环境
+ steps: # 执行步骤
+ - uses: actions/checkout@v2
+ - run: npm test&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item></channel></rss>
