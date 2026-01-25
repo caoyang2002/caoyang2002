@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on caoyang2002</title><link>https://caoyang2002.vercel.app/es/tags/hugo/</link><description>Recent content in Hugo on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/es/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://caoyang2002.vercel.app/es/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://caoyang2002.vercel.app/es/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on caoyang2002</title><link>https://simons.qzz.io/es/tags/hugo/</link><description>Recent content in Hugo on caoyang2002</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/es/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/es/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
 &lt;p&gt;中文文档 
 &lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
  
@@ -112,7 +112,7 @@ hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
 └── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://caoyang2002.vercel.app/es/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/es/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/es/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
  &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
@@ -196,7 +196,7 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
  style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item><item><title>从 Hexo 迁移至 Hugo</title><link>https://caoyang2002.vercel.app/es/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://caoyang2002.vercel.app/es/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo"&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;
+&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item><item><title>从 Hexo 迁移至 Hugo</title><link>https://simons.qzz.io/es/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo"&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;
 &lt;p&gt;16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p&gt;
 &lt;h2 id="为什么改用hugo"&gt;为什么改用Hugo&lt;/h2&gt;
 &lt;h3 id="依赖管理问题"&gt;依赖管理问题&lt;/h3&gt;

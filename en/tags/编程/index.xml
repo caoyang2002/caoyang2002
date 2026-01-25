@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on caoyang2002</title><link>https://caoyang2002.vercel.app/en/tags/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/en/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>mac 汇编笔记</title><link>https://caoyang2002.vercel.app/en/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on caoyang2002</title><link>https://simons.qzz.io/en/tags/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/en/tags/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>mac 汇编笔记</title><link>https://simons.qzz.io/en/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
 &lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
  
  
@@ -74,7 +74,7 @@ gcc null.s -o null&lt;/code&gt;&lt;/pre&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;as&lt;/code&gt; 是 LLVM 的汇编器, &lt;code&gt;lldb&lt;/code&gt; 是 LLVM 的调试器。
-&lt;code&gt;GCC&lt;/code&gt; 套件是 GNU 操作系统的一个部分，GNU 是开源的、社区驱动的。而 LLVM 项目也是开源的，现在主要是 Apple 在投资运行。因此，既然在 macOS 上，我就主要用的是 LLVM 系的工具。&lt;/p&gt;</description></item><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.vercel.app/en/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+&lt;code&gt;GCC&lt;/code&gt; 套件是 GNU 操作系统的一个部分，GNU 是开源的、社区驱动的。而 LLVM 项目也是开源的，现在主要是 Apple 在投资运行。因此，既然在 macOS 上，我就主要用的是 LLVM 系的工具。&lt;/p&gt;</description></item><item><title>简述 Rust 中的闭包</title><link>https://simons.qzz.io/en/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
 
 
 
@@ -151,7 +151,7 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 &lt;/div&gt;
 
 &lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
-&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.vercel.app/en/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://simons.qzz.io/en/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
 &lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;你家的地址（引用）&lt;/li&gt;
@@ -185,7 +185,7 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
  
 &lt;/div&gt;
 
-&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://caoyang2002.vercel.app/en/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://simons.qzz.io/en/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
 &lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
 
 
@@ -251,7 +251,7 @@ impl Closure {
 &lt;/div&gt;
 
 &lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
-&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.vercel.app/en/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://simons.qzz.io/en/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
 &lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;
 
 
@@ -397,7 +397,7 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
  
 &lt;/div&gt;
 
-&lt;p&gt;实际应用示例：&lt;/p&gt;</description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://caoyang2002.vercel.app/en/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+&lt;p&gt;实际应用示例：&lt;/p&gt;</description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://simons.qzz.io/en/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://simons.qzz.io/en/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
 &lt;/ol&gt;
@@ -635,7 +635,7 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  
 &lt;/div&gt;
 
-&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://caoyang2002.vercel.app/en/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/en/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;接口定义规则：&lt;/li&gt;
 &lt;/ol&gt;
@@ -991,7 +991,7 @@ func TestAll(t *testing.T) {
  
 &lt;/div&gt;
 
-&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>shell mac 教程</title><link>https://caoyang2002.vercel.app/en/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
+&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>shell mac 教程</title><link>https://simons.qzz.io/en/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
 &lt;a href="https://juejin.cn/post/6921144388802641933"
  
  
@@ -1111,7 +1111,7 @@ function showInputAlertMessage(){
 	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;$2&amp;#34; &amp;#34;取消,确认&amp;#34; 2 &amp;#34;1&amp;#34; &amp;#34;&amp;#34;
 }
 showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>C 语言字符画</title><link>https://caoyang2002.vercel.app/en/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
+&lt;/div&gt;</description></item><item><title>C 语言字符画</title><link>https://simons.qzz.io/en/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
 
 
 
@@ -1215,7 +1215,7 @@ int main() {
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://caoyang2002.vercel.app/en/post/2024/06/dl/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/06/dl/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/en/post/2024/06/dl/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/06/dl/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
 &lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
@@ -1260,7 +1260,7 @@ namespace fs = std::filesystem;
  
 &lt;/div&gt;
 
-&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://caoyang2002.vercel.app/en/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/06/git_delete_file/</guid><description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://simons.qzz.io/en/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/06/git_delete_file/</guid><description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;在本地仓库中删除文件&lt;/strong&gt;：
@@ -1279,7 +1279,7 @@ namespace fs = std::filesystem;
  &lt;pre&gt;&lt;code class="language-sh" data-lang="sh"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description></item><item><title>x86 教程</title><link>https://caoyang2002.vercel.app/en/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
+&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description></item><item><title>x86 教程</title><link>https://simons.qzz.io/en/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
 &lt;a href="http://www.ruanyifeng.com/"
  
  
@@ -1310,7 +1310,7 @@ namespace fs = std::filesystem;
 &lt;p&gt;学习编程其实就是学高级语言，即那些为人类设计的计算机语言。&lt;/p&gt;
 &lt;p&gt;但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。&lt;/p&gt;</description></item><item><title>SQL 教程</title><link>https://caoyang2002.vercel.app/en/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/04/sql/</guid><description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;
+&lt;p&gt;计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。&lt;/p&gt;</description></item><item><title>SQL 教程</title><link>https://simons.qzz.io/en/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/04/sql/</guid><description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;
 &lt;h1 id="数据库相关的操作"&gt;数据库相关的操作&lt;/h1&gt;
 &lt;p&gt;查询数据库	 &lt;code&gt;SHOW DATABASES&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;创建数据库
@@ -1354,10 +1354,10 @@ CREATE TABLE userinfo(
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表
-&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://caoyang2002.vercel.app/en/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://simons.qzz.io/en/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
 &lt;p&gt;SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p&gt;
 &lt;p&gt;对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
-比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://caoyang2002.vercel.app/en/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/en/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="https://zhuanlan.zhihu.com/p/86937325"
  
@@ -1406,7 +1406,7 @@ CREATE TABLE userinfo(
 &lt;p&gt;不需要服务器端存储状态，安全地传递非敏感信息&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/OIP-C-20240424140338352.jpeg" alt="JWT认证方案讲解-阿里云开发者社区"&gt;&lt;/p&gt;
 &lt;h1 id="三-json-web-token-的结构是什么样的"&gt;三、 JSON Web Token 的结构是什么样的&lt;/h1&gt;
-&lt;p&gt;JSON Web Token由三部分组成，例如&lt;code&gt;dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://caoyang2002.vercel.app/en/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;JSON Web Token由三部分组成，例如&lt;code&gt;dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code&gt;&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/en/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href="https://quartz.jzhao.xyz"
  
@@ -1458,7 +1458,7 @@ npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;
 &lt;h2 id="布局"&gt;布局&lt;/h2&gt;
 &lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
 默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;
-&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://caoyang2002.vercel.app/en/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://simons.qzz.io/en/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/08/synology/</guid><description>&lt;p&gt;
 &lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
  
  
@@ -1504,7 +1504,7 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://caoyang2002.vercel.app/en/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
+&lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/en/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
@@ -1527,7 +1527,7 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://caoyang2002.vercel.app/en/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/en/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
@@ -1552,7 +1552,7 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 &lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言数学</title><link>https://caoyang2002.vercel.app/en/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言数学</title><link>https://simons.qzz.io/en/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -1610,7 +1610,7 @@ int main(){
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://caoyang2002.vercel.app/en/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/en/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
 
 
 
@@ -1649,7 +1649,7 @@ int main(){
 &lt;li&gt;
 &lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
 对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
-&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://caoyang2002.vercel.app/en/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/en/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
 &lt;a href="https://codeif.xinke.org.cn"
  
  
@@ -1687,7 +1687,7 @@ int main(){
 &lt;/ul&gt;
 &lt;h1 id="变量命名"&gt;变量命名&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;变量, 函数参数, 数据成员名&lt;/p&gt;</description></item><item><title>mermaid 教程</title><link>https://caoyang2002.vercel.app/en/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+&lt;p&gt;变量, 函数参数, 数据成员名&lt;/p&gt;</description></item><item><title>mermaid 教程</title><link>https://simons.qzz.io/en/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
 下面是几个常用的图示类型&lt;/p&gt;
 &lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
 &lt;ul&gt;
@@ -1746,7 +1746,7 @@ int main(){
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://caoyang2002.vercel.app/en/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2022/07/chart_image/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg"&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://simons.qzz.io/en/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2022/07/chart_image/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg"&gt;
 &lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg" alt="cool.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="http://patorjk.com/software/taag"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on caoyang 2002</title><link>https://caoyang2002.vercel.app/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 05 Jan 2026 15:48:22 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>React vs Vue: 框架之争的深层思考</title><link>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on caoyang 2002</title><link>https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 05 Jan 2026 15:48:22 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>React vs Vue: 框架之争的深层思考</title><link>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
 &lt;h2 id="一核心设计哲学差异"&gt;一、核心设计哲学差异&lt;/h2&gt;
 &lt;h3 id="11-编程范式"&gt;1.1 编程范式&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：函数式编程优先&lt;/p&gt;
@@ -54,7 +54,7 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
 &lt;/div&gt;
 
 &lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：最小化API，一切靠JavaScript&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://caoyang2002.vercel.app/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：最小化API，一切靠JavaScript&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
 &lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
 &lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
  
@@ -158,7 +158,7 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
  这篇文章
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://caoyang2002.vercel.app/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
+&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;

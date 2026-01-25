@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on caoyang 2002</title><link>https://caoyang2002.vercel.app/tags/rust/</link><description>Recent content in Rust on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Rust on caoyang 2002</title><link>https://simons.qzz.io/tags/rust/</link><description>Recent content in Rust on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 22 Jan 2025 22:41:30 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/rust/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
 
 
 
@@ -75,7 +75,7 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 &lt;/div&gt;
 
 &lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
-&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://simons.qzz.io/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
 &lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;你家的地址（引用）&lt;/li&gt;
@@ -109,7 +109,7 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
  
 &lt;/div&gt;
 
-&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
 &lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
 
 
@@ -175,7 +175,7 @@ impl Closure {
 &lt;/div&gt;
 
 &lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
-&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://caoyang2002.vercel.app/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://simons.qzz.io/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
 &lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;
 
 

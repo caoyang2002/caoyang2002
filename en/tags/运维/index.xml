@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>运维 on caoyang2002</title><link>https://caoyang2002.vercel.app/en/tags/%E8%BF%90%E7%BB%B4/</link><description>Recent content in 运维 on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://caoyang2002.vercel.app/en/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>谷歌账号注册的问题</title><link>https://caoyang2002.vercel.app/en/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/07/google_account/</guid><description>&lt;p&gt;参考：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>运维 on caoyang2002</title><link>https://simons.qzz.io/en/tags/%E8%BF%90%E7%BB%B4/</link><description>Recent content in 运维 on caoyang2002</description><generator>Hugo</generator><language>en-US</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/en/tags/%E8%BF%90%E7%BB%B4/index.xml" rel="self" type="application/rss+xml"/><item><title>谷歌账号注册的问题</title><link>https://simons.qzz.io/en/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/07/google_account/</guid><description>&lt;p&gt;参考：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;a href="https://www.gmail777.com/archives/69"
@@ -45,7 +45,7 @@
 &lt;/ol&gt;
 &lt;h1 id="谷歌账号注册的问题"&gt;谷歌账号注册的问题&lt;/h1&gt;
 &lt;h2 id="注册"&gt;注册&lt;/h2&gt;
-&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://caoyang2002.vercel.app/en/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
+&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://simons.qzz.io/en/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
  
@@ -131,7 +131,7 @@
 &lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;
 &lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://caoyang2002.vercel.app/en/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/en/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;
 &lt;a href="https://github.com/ehang-io/nps/tree/master"
  
@@ -165,7 +165,7 @@
 &lt;/blockquote&gt;
 &lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;
 &lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
-简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item><item><title>OpenWRT 教程</title><link>https://caoyang2002.vercel.app/en/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://caoyang2002.vercel.app/en/post/2023/10/openwrt/</guid><description>&lt;p&gt;
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item><item><title>OpenWRT 教程</title><link>https://simons.qzz.io/en/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/en/post/2023/10/openwrt/</guid><description>&lt;p&gt;
 &lt;a href="https://lidrive.vip/"
  
  
