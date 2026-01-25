@@ -1,6 +1,6 @@
 
 # 基础配置
-baseURL = 'https://caoyang2002.vercel.app'
+baseURL = 'https://simons.qzz.io'
 languageCode = 'zh-CN'
 title = 'caoyang2002'
 theme = 'hugo-focus'
