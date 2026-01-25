@@ -4,16 +4,13 @@
 > Since 2022, I have completed over ten projects, passionate about turning ideas into functional products.
 
 <div align="center">
-  <!-- 个人网站 -->
   <a href="https://simons.qzz.io">
     <img src="https://img.shields.io/badge/Personal_Website-simons.qzz.io-34C759?style=flat&logo=internet-explorer&logoColor=white" alt="Personal Website"/>
   </a>
-  <!-- 邮箱 -->
   <a href="mailto:reggiesimons2cy@gmail.com">
     <img src="https://img.shields.io/badge/Email-Contact-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"/>
   </a>
-  <!-- LinkedIn（可选） -->
-  <a href="https://x.com/in/caoyang2002">
+  <a href="https://x.com/caoyang2002">
     <img src="https://img.shields.io/badge/_-Connect-0A66C2?style=flat&logo=x&logoColor=white" alt="LinkedIn"/>
   </a>
 </div>
