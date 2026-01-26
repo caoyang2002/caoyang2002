@@ -13,6 +13,12 @@ toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录
 ---
 
+
+本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：
+
+reggiesimons2cy@gmail.com
+
+
 {{< notice note >}}
 这是一个注意事项
 {{< /notice >}}
