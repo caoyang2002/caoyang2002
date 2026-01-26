@@ -63,7 +63,7 @@
  }
 
  const password = input.value;
- const publishDate = "2626120126";
+ const publishDate = "2626370126";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -167,7 +167,16 @@
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-，谷歌使用 HTML 元标记来形成 SERP 片段，而不是用于排名。在这段声明中，他还说一个好的搜索片段会让人们访问你的页面。因此，元标记绝对是您必须关心才能获得流量的内容。&lt;/p&gt;</description></item><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
+，谷歌使用 HTML 元标记来形成 SERP 片段，而不是用于排名。在这段声明中，他还说一个好的搜索片段会让人们访问你的页面。因此，元标记绝对是您必须关心才能获得流量的内容。&lt;/p&gt;</description></item><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+&lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
+&lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
+&lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
+&lt;p&gt;打开 MailPlus Server，如果没有公网 IP，最开始的配置其实无所谓，随便填写都行，毕竟无论如何都发不出邮件。&lt;/p&gt;
+&lt;p&gt;然后点击 &lt;code&gt;服务&lt;/code&gt; 选项，在点击顶部的 &lt;code&gt;MailPlus 客户端&lt;/code&gt; 标签，全部勾选即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png" alt="image"&gt;&lt;/p&gt;
+&lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
+&lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
 &lt;a href="https://www.kegel.com/c10k.html"
  
  
