@@ -1,4 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on caoyang 2002</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 26 Jan 2026 13:47:01 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on caoyang 2002</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on caoyang 2002</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 26 Jan 2026 14:09:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
+&lt;a href="https://www.kegel.com/c10k.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;C10K问题&lt;/strong&gt;&lt;br&gt;
+[请帮助拯救网上最佳的Linux新闻来源——订阅《Linux每周新闻》！]&lt;br&gt;
+现在是时候让Web服务器能够同时处理一万个客户端了，你不觉得吗？毕竟，现在的网络已经非常庞大了。&lt;/p&gt;
+&lt;p&gt;电脑也变得非常强大。你可以花大约1200美元购买一台1000MHz的机器，配备2GB内存和1000Mbit/sec的以太网卡。算一下——对于两万个客户端，每个客户端分配50KHz、100KB和50Kbits/sec的带宽。每秒钟为两万个客户端从磁盘读取4KB数据并发送到网络上，这应该不需要比这更多的计算能力。（顺便说一句，每个客户端的成本约为0.08美元。某些操作系统收取的每客户端100美元的授权费开始显得有点沉重了！）因此，硬件不再是瓶颈。&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
 &lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
 &lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>Vim 折叠代码块</title><link>https://simons.qzz.io/post/2026/01/vim_code_block/</link><pubDate>Mon, 26 Jan 2026 13:36:45 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_code_block/</guid><description>&lt;p&gt;在查看代码的时候，如果代码十分冗长，尤其是 c/c++ 系列的时候，代码结构比较让人难以理清，主要是各种注释、括号的匹配问题。&lt;/p&gt;
 &lt;p&gt;虽然可以用&lt;code&gt;%&lt;/code&gt;来查看匹配的另外一半符号在哪里，但是如果这一对符号之间的代码超过了一页，甚至好几页的话，那么也是比较难以理解的。&lt;/p&gt;
