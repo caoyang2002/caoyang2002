@@ -169,7 +169,7 @@ filename = "sitemap.xml"
    languageCode = 'zh-CN'
    languageDirection = 'ltr'
    languageName = 'Chinese'
-   title = 'caoyang 2002'
+title = '短松江月'
    weight = 1
 [languages.zh.params]
     subtitle = '中文文档'
@@ -183,7 +183,7 @@ filename = "sitemap.xml"
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'caoyang2002'
+    title = 'cyrus reggie'
     weight = 2
 [languages.en.params]
 subtitle = 'Reference, Tutorials, and Explanations'
@@ -196,7 +196,7 @@ subtitle = 'Reference, Tutorials, and Explanations'
     languageCode = 'es-ES'
     languageDirection = 'ltr'
     languageName = 'Español'
-    title = 'caoyang2002'
+    title = 'cyrus reggie'
     weight = 3
 [languages.es.params]
 subtitle = 'Referencia, Tutoriales y Explicaciones'
