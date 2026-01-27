@@ -1,7 +1,7 @@
 # 基础配置
 baseURL = 'https://localhost:1313'
 languageCode = 'zh-CN'
-title = 'caoyang2002'
+title = '短松江月 DEV'
 theme = 'hugo-focus'
 
 author = "Simons"
