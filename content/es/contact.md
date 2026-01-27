@@ -10,8 +10,8 @@ Github：caoyang2002
 
 twitter：caoyang2002
 
-即刻：simons 曹洋
+即刻：simons simons
 
-小红书：simons 曹洋
+小红书：simons simons
 
-抖音：simons 曹洋
+抖音：simons simons

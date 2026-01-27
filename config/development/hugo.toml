@@ -116,8 +116,8 @@ instagram = 'caoyang2002'
 
 # 个人信息配置
 avatar = '/about/avatar.jpg'
-name = '曹洋 simons'
-bio = '用光的艺术'
+name = 'simons'
+bio = '难事必作于易，天下大事必作于细。'
 
 disablePostNavigation = false # 禁用文章导航
 
