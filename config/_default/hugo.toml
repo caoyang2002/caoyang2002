@@ -1,7 +1,7 @@
 # 基础配置
-baseURL = "https://caoyang2002.vercel.app"
+baseURL = "localhost"
 languageCode = 'zh-CN'
-title = 'caoyang2002'
+title = '短松江月'
 theme = 'hugo-focus'
 
 author = "Simons"

@@ -2,7 +2,7 @@
 # 基础配置
 baseURL = 'https://simons.qzz.io'
 languageCode = 'zh-CN'
-title = 'caoyang2002'
+title = '短松江月'
 theme = 'hugo-focus'
 
 author = "Simons"
