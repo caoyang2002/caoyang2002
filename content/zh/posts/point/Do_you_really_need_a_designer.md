@@ -1,7 +1,7 @@
 +++
 date = '2025-01-20T01:09:21+08:00'
 draft = false
-author = '曹洋 simons'
+author = 'simons'
 title = '作为独立开发者，你真的需要设计师吗？'
 tags = ["设计","开发"]
 toc = true
