@@ -12,14 +12,14 @@ https://caoyang2002.github.io/caoyang2002
 hugo new content/posts/tech/name.md`
 ```
 
-
-
+# 下载图片到本地
 
 ## 使用方法：
 
 ### 1. 基本使用：
+
 ```bash
-python image_downloader.py article.md
+python3 md_image_downloader.py content/zh/posts/test/name.md
 ```
 这会：
 - 下载图片到 `static/assets/post_images/`
@@ -59,7 +59,6 @@ python image_downloader.py --init-config config.json
 python image_downloader.py -c config.json article.md
 ```
 
-
 ## 使用配置文件 `hugo_image_config.json`:
 
 ```json
@@ -74,7 +73,7 @@ python image_downloader.py -c config.json article.md
   "download_timeout": 30,
   "delay_between_requests": 0.3,
   "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-  "referer": "https://blog.csdn.net/",
+  "referer": "https://www.cnblogs.com/",
   "backup_original": true,
   "verbose": true
 }

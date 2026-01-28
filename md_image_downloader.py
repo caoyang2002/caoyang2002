@@ -39,7 +39,7 @@ class HugoImageProcessor:
             
             # 请求头
             'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-            'referer': 'https://blog.csdn.net/',
+            'referer': 'https://www.cnblogs.com/',
             'extra_headers': {},
             
             # 处理选项
@@ -472,8 +472,8 @@ def main():
     
     # 请求头配置
     parser.add_argument('-r', '--referer', 
-                       default='https://blog.csdn.net/',
-                       help='Referer请求头 (默认: https://blog.csdn.net/)')
+                       default='https://www.cnblogs.com/',
+                       help='Referer请求头 (默认: https://www.cnblogs.com/)')
     parser.add_argument('--user-agent', 
                        default='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
                        help='User-Agent请求头')
@@ -504,7 +504,7 @@ def main():
             "download_timeout": 30,
             "delay_between_requests": 0.3,
             "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-            "referer": "https://blog.csdn.net/",
+            "referer": "https://www.cnblogs.com/",
             "backup_original": True,
             "verbose": False
         }
