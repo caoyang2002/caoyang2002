@@ -46,7 +46,7 @@ class GitAIAutoCommit:
     
     def generate_commit_message_ai(self, git_info):
         """使用AI生成commit信息"""
-        prompt = f"""基于以下Git变更信息，生成一个简洁、专业的commit信息。
+        prompt = f"""我正在 hugo 程序中进行编辑，基于以下Git变更信息，生成一个简洁、专业的commit信息。
 
 当前分支: {git_info['branch']}
 
@@ -57,7 +57,7 @@ class GitAIAutoCommit:
 {git_info['staged_files']}
 
 请生成符合约定式提交(Conventional Commits)的commit信息，格式：类型(范围): 描述
-例如：feat(auth): 添加用户登录功能
+例如：feat[auth]: 添加用户登录功能
 
 只返回commit信息，不要有其他内容。"""
         
