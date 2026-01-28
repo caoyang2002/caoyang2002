@@ -59,6 +59,12 @@ url = "https://www.spacex.com/updates/"
 description = "SpaceX 官方更新，了解最前沿的火箭技术和发射任务"
 tags = ["Starship", "Falcon 9", "可回收火箭", "火星计划"]
 
+[[blogs]]
+name  = "科创网"
+url = "https://www.kechuang.org/f/74"
+description = "科创网的火箭板块，但是这个板块有很多技术知识被禁了"
+tags = ["论坛" , "中国大陆"]
+
 # 火箭制作技术栈
 [[technologies]]
 icon = "🔥"
