@@ -1,7 +1,7 @@
 +++
 title = '思通舆情安装和配置'
 date = 2026-01-27T18:51:52+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
@@ -57,3 +57,11 @@ docker run -itd --name stonedt_yuqing -p 8085:8085 crpi-8mxxyq37t3w9t2kj.cn-hang
 ```bash
 汤圆+(水饺|混沌)
 ```
+
+## 预警
+
+点击下方的预警开关可以进行预警的信息配置。
+
+# 最后
+
+目前账号是无法更改的。
