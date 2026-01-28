@@ -42,7 +42,7 @@ TCP/IP协议是Internet互联网最基本的协议，其在一定程度上参考
 
 TCP/IP协议与七层ISO模型的对应关系，大致如下图所示：  
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308123113714.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308123113714.png)
 
 图：TCP/IP协议与七层ISO模型的对应关系
 
@@ -86,37 +86,37 @@ TCP/IP协议网络层的作用是在复杂的网络环境中为要发送的数�
 
 很久很久之前，你不与任何其他电脑相连接，孤苦伶仃。
 
-![image](https://img-blog.csdnimg.cn/img_convert/c116974d56c675f7538797a22e91c0a5.png)
+![image](/assets/post_images/c116974d56c675f7538797a22e91c0a5.png)
 
 直到有一天，你希望与另一台电脑 B 建立通信，于是你们各开了一个网口，用一根**网线**连接了起来。
 
-![image](https://img-blog.csdnimg.cn/img_convert/a836e2da1f508613647ca30447a76720.png)
+![image](/assets/post_images/a836e2da1f508613647ca30447a76720.png)
 
 用一根网线连接起来怎么就能"通信"了呢？我可以给你讲 IO、讲中断、讲缓冲区，但这不是研究网络时该关心的问题。
 
 如果你纠结，要么去研究一下操作系统是如何处理网络 IO 的，要么去研究一下包是如何被网卡转换成电信号发送出去的，要么就仅仅把它当做电脑里有个小人在**开枪**吧~
 
-![image.gif](https://img-blog.csdnimg.cn/img_convert/1072881fab34b4a2e55f26b28b80df88.gif)
+![image.gif](/assets/post_images/1072881fab34b4a2e55f26b28b80df88.gif)
 
 反正，你们就是连起来了，并且可以通信。
 
 有一天，一个新伙伴 C 加入了，但聪明的你们很快发现，可以每个人开**两个网口**，用一共**三根网线**，彼此相连。
 
-![image](https://img-blog.csdnimg.cn/img_convert/3ed1eec2d396a3e47d5ef4c54f6cabed.png)
+![image](/assets/post_images/3ed1eec2d396a3e47d5ef4c54f6cabed.png)
 
 随着越来越多的人加入，你发现身上开的网口实在太多了，而且网线密密麻麻，混乱不堪。（而实际上一台电脑根本开不了这么多网口，所以这种连线只在理论上可行，所以连不上的我就用红色虚线表示了，就是这么严谨哈哈~）
 
-![image](https://img-blog.csdnimg.cn/img_convert/00ab6bac211258aedd99d2633d105664.png)
+![image](/assets/post_images/00ab6bac211258aedd99d2633d105664.png)
 
 ### 集线器的诞生
 
 于是你们发明了一个中间设备，你们将网线都插到这个设备上，由这个设备做转发，就可以彼此之间通信了，本质上和原来一样，只不过网口的数量和网线的数量减少了，不再那么混乱。
 
-![image](https://img-blog.csdnimg.cn/img_convert/c33959d3b2df76cd5beb599561e098e9.png)
+![image](/assets/post_images/c33959d3b2df76cd5beb599561e098e9.png)
 
 你给它取名叫**集线器**，它仅仅是无脑将电信号**转发到所有出口（广播）**，不做任何处理，你觉得它是没有智商的，因此把人家定性在了**物理层**。
 
-![image.gif](https://img-blog.csdnimg.cn/img_convert/00f213db8eb3a7d6735c026de3833ca1.gif)
+![image.gif](/assets/post_images/00f213db8eb3a7d6735c026de3833ca1.gif)
 
 由于转发到了所有出口，那 BCDE 四台机器怎么知道数据包是不是发给自己的呢？
 
@@ -126,13 +126,13 @@ TCP/IP协议网络层的作用是在复杂的网络环境中为要发送的数�
 
 这样，A 在发送数据包给 B 时，只要在头部拼接一个这样结构的数据，就可以了。
 
-![image](https://img-blog.csdnimg.cn/img_convert/6b1e9c8e0c27da30b41d0115d3dd1194.png)
+![image](/assets/post_images/6b1e9c8e0c27da30b41d0115d3dd1194.png)
 
 B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个数据包的确是发给自己的，于是便**收下**。
 
 其他的 CDE 收到数据包后，根据头部的目标 MAC 地址信息，判断这个数据包并不是发给自己的，于是便**丢弃**。
 
-![image](https://img-blog.csdnimg.cn/img_convert/e44f6748c5c296f8e37a7eb18d764cb5.gif)
+![image](/assets/post_images/e44f6748c5c296f8e37a7eb18d764cb5.gif)
 
 虽然集线器使整个布局干净不少，但原来我只要发给电脑 B 的消息，现在却要发给连接到集线器中的所有电脑，这样既不安全，又不节省网络资源。
 
@@ -142,13 +142,13 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 如果把这个集线器弄得更智能一些，**只发给目标 MAC 地址指向的那台电脑**，就好了。
 
-![image](https://img-blog.csdnimg.cn/img_convert/9b6ad2350fab1e911a2c8531cba5693d.gif)
+![image](/assets/post_images/9b6ad2350fab1e911a2c8531cba5693d.gif)
 
 ### 交换机的诞生
 
 虽然只比集线器多了这一点点区别，但看起来似乎有智能了，你把这东西叫做**交换机**。也正因为这一点点智能，你把它放在了另一个层级，**数据链路层**。
 
-![image](https://img-blog.csdnimg.cn/img_convert/d13e6e7fb9838fe0acd6370692d57f92.png)
+![image](/assets/post_images/d13e6e7fb9838fe0acd6370692d57f92.png)
 
 如上图所示，你是这样设计的。
 
@@ -163,7 +163,7 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 假如你仍然要发给 B 一个数据包，构造了如下的数据结构从网口出去。
 
-![image](https://img-blog.csdnimg.cn/img_convert/913f402efac18571df11fb219e09f11e.png)
+![image](/assets/post_images/913f402efac18571df11fb219e09f11e.png)
 
 到达交换机时，交换机内部通过自己维护的 MAC 地址表，发现**目标机器 B 的 MAC 地址 bb-bb-bb-bb-bb-bb 映射到了端口 1 上**，于是把数据从 1 号端口发给了 B，完事~
 
@@ -173,7 +173,7 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 假如在 MAC 地址表为空是，你给 B 发送了如下数据
 
-![image](https://img-blog.csdnimg.cn/img_convert/913f402efac18571df11fb219e09f11e.png)
+![image](/assets/post_images/913f402efac18571df11fb219e09f11e.png)
 
 由于这个包从端口 4 进入的交换机，所以此时交换机就可以在 MAC地址表记录第一条数据：
 
@@ -189,13 +189,13 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 过程如下
 
-![image](https://img-blog.csdnimg.cn/img_convert/ae47c4fd0533b29cfce00a78e784e362.gif)
+![image](/assets/post_images/ae47c4fd0533b29cfce00a78e784e362.gif)
 
 经过该网络中的机器不断地通信，交换机最终将 MAC 地址表建立完毕~
 
 随着机器数量越多，交换机的端口也不够了，但聪明的你发现，只要将多个交换机连接起来，这个问题就轻而易举搞定~
 
-![image](https://img-blog.csdnimg.cn/img_convert/96c4da16c077389b994e7526f2ba73f0.png)
+![image](/assets/post_images/96c4da16c077389b994e7526f2ba73f0.png)
 
 你完全不需要设计额外的东西，只需要按照之前的设计和规矩来，按照上述的接线方式即可完成所有电脑的互联，所以交换机设计的这种规则，真的很巧妙。你想想看为什么（比如 A 要发数据给 F）。
 
@@ -247,7 +247,7 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 这个设备就是**路由器，**它的功能就是，作为一台独立的拥有 MAC 地址的设备，并且可以帮我把数据包做一次转发**，**你把它定在了**网络层。**
 
-![image](https://img-blog.csdnimg.cn/img_convert/635d579c31b4ab410cd05715bc764741.png)
+![image](/assets/post_images/635d579c31b4ab410cd05715bc764741.png)
 
 注意，路由器的每一个端口，都有独立的 MAC 地址
 
@@ -295,7 +295,7 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 这样一个可以随时修改的 IP 地址，就可以根据你规划的网络拓扑结构，来调整了。
 
-![image](https://img-blog.csdnimg.cn/img_convert/bbcfa3e647d0bdb78a9b69cf6157c68d.png)
+![image](/assets/post_images/bbcfa3e647d0bdb78a9b69cf6157c68d.png)
 
 如上图所示，假如我想要发送数据包给 ABCD 其中一台设备，不论哪一台，我都可以这样描述，**"将 IP 地址为 192.168.0 开头的全部发送给到路由器，之后再怎么转发，交给它！"**，巧妙吧。
 
@@ -307,7 +307,7 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 我们先给上面的组网方式中的每一台设备，加上自己的 IP 地址
 
-![image](https://img-blog.csdnimg.cn/img_convert/3e0e17cfa7a0fed1b604890ef4e1cca5.png)
+![image](/assets/post_images/3e0e17cfa7a0fed1b604890ef4e1cca5.png)
 
 ![image.gif](https://img-blog.csdnimg.cn/img_convert/84e319b3429e1000bdd3a2c2aca74fc8.png)
 
@@ -315,17 +315,17 @@ B 在收到数据包后，根据头部的目标 MAC 地址信息，判断这个�
 
 假如 A 给 B 发送数据，由于它们直接连着交换机，所以 A 直接发出如下数据包即可，其实网络层没有体现出作用。
 
-![image](https://img-blog.csdnimg.cn/img_convert/ec10004d89fc45b41721099b7408b5f0.png)
+![image](/assets/post_images/ec10004d89fc45b41721099b7408b5f0.png)
 
 但假如 A 给 C 发送数据，A 就需要先转交给路由器，然后再由路由器转交给 C。由于最底层的传输仍然需要依赖以太网，所以数据包是分成两段的。
 
 A ~ 路由器这段的包如下：
 
-![image](https://img-blog.csdnimg.cn/img_convert/36f94ba80eb664a50698787f4ba34a85.png)
+![image](/assets/post_images/36f94ba80eb664a50698787f4ba34a85.png)
 
 路由器到 C 这段的包如下：
 
-![image](https://img-blog.csdnimg.cn/img_convert/adc2e43a9763d4cadae0b5abc55d636e.png)
+![image](/assets/post_images/adc2e43a9763d4cadae0b5abc55d636e.png)
 
 好了，上面说的两种情况（A->B，A->C），相信细心的读者应该会有不少疑问，下面我们一个个来展开。
 
@@ -369,7 +369,7 @@ A ~ 路由器这段的包如下：
 
 那么 A 与 B 在同一个子网，C 与 D 在同一个子网，但是 A 与 C 就不在同一个子网，与 D 也不在同一个子网，以此类推。
 
-![image](https://img-blog.csdnimg.cn/img_convert/7e6a21dbdc49b7a772f1348e542cdfef.png)
+![image](/assets/post_images/7e6a21dbdc49b7a772f1348e542cdfef.png)
 
 所以如果 A 给 C 发消息，A 和 C 的 IP 地址分别 & A 机器配置的子网掩码，发现不相等，则 A 认为 C 和自己不在同一个子网，于是把包发给路由器，就不管了，**之后怎么转发，A 不关心**。
 
@@ -385,7 +385,7 @@ A ~ 路由器这段的包如下：
 
 所以**默认网关，就是 A 在自己电脑里配置的一个 IP 地址**，以便在发给不同子网的机器时，发给这个 IP 地址。
 
-![image](https://img-blog.csdnimg.cn/img_convert/0c30114bad824d8d262469cea973210a.png)
+![image](/assets/post_images/0c30114bad824d8d262469cea973210a.png)
 
 仅此而已！
 
@@ -425,7 +425,7 @@ A ~ 路由器这段的包如下：
 
 配合着结构图来看（这里把子网掩码和默认网关都补齐了）
 
-![image](https://img-blog.csdnimg.cn/img_convert/e48fef70877bae108f18a636b6e2d64f.gif)
+![image](/assets/post_images/e48fef70877bae108f18a636b6e2d64f.gif)
 
 ![image.gif](https://img-blog.csdnimg.cn/img_convert/aec5c1d6632ac1c38314c03832a6bb51.png)
 
@@ -512,7 +512,7 @@ A ~ 路由器这段的包如下：
 
 那接下来我们就放上参考的 **最后一个**网络拓扑图吧，请做好 **战斗** 准备！
 
-![image](https://img-blog.csdnimg.cn/img_convert/a889e11a36f66f1645d918e754a0a173.png)
+![image](/assets/post_images/a889e11a36f66f1645d918e754a0a173.png)
 
 这时路由器 1 连接了路由器 2，所以其路由表有了下一条地址这一个概念，所以它的路由表就变成了这个样子。如果匹配到了有下一跳地址的一项，则需要再次匹配，找到其端口，并找到下一跳 IP 的 MAC 地址。
 
@@ -530,13 +530,13 @@ A ~ 路由器这段的包如下：
 
 ### **这时如果 A 给 F 发送一个数据包，能不能通呢？如果通的话整个过程是怎样的呢？**
 
-![image](https://img-blog.csdnimg.cn/img_convert/da2d65dda084a873779b01f59ff606aa.png)
+![image](/assets/post_images/da2d65dda084a873779b01f59ff606aa.png)
 
 思考一分钟...
 
 **详细过程动画描述：**
 
-![image](https://img-blog.csdnimg.cn/img_convert/6740f3b2596d7bf32d214a40f58603ec.gif)
+![image](/assets/post_images/6740f3b2596d7bf32d214a40f58603ec.gif)
 
 ### **详细过程文字描述：**
 
@@ -546,7 +546,7 @@ A ~ 路由器这段的包如下：
 
 **3.** A 将源 MAC 地址（AAAA）与网关 MAC 地址（ABAB）封装在数据链路层头部，又将源 IP 地址（192.168.0.1）和目的 IP 地址（192.168.2.2）（注意这里千万不要以为填写的是默认网关的 IP 地址，从始至终这个数据包的两个 IP 地址都是不变的，只有 MAC 地址在不断变化）封装在网络层头部，然后发包
 
-![image](https://img-blog.csdnimg.cn/img_convert/7bb8957a74eef0cdc7f36df7a05702dd.png)
+![image](/assets/post_images/7bb8957a74eef0cdc7f36df7a05702dd.png)
 
 **4.** 交换机 1 收到数据包后，发现目标 MAC 地址是 ABAB，转发给路由器1
 
@@ -569,7 +569,7 @@ A ~ 路由器这段的包如下：
 ### HTTP报文传输过程
 
 以一个HTTP请求的传输为例，请求从HTTP客户端（如浏览器）和HTTP服务端应用的传输过程，大致如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122800578.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122800578.png)
 
 图：HTTP请求报文的分层传输过程
 
@@ -578,7 +578,7 @@ A ~ 路由器这段的包如下：
 接下来，为大家介绍一下数据封装和分用。
 
 数据通过互联网传输的时候不可能是光秃秃的不加标识，如果这样数据就会乱。所以数据在发送的时候，需要加上特定标识，加上特定标识的过程叫做数据的封装，在数据使用的时候再去掉特定标识，去掉特定标识的过程就叫做分用。TCP/IP协议的数据封装和分用过程，大致如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122819964.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122819964.png)
 
 图：TCP/IP协议的数据封装和分用过程
 
@@ -599,7 +599,7 @@ A ~ 路由器这段的包如下：
 TCP/IP与OSI的区别主要有哪些呢？除了TCP/IP与OSI在分层模块上稍有区别，更重要的区别为：OSI参考模型注重“通信协议必要的功能是什么”，而TCP/IP则更强调“在计算机上实现协议应该开发哪种程序”。
 
 实际上，在传输过程中，数据报文会在不同的物理网络之间传递，还是以一个HTTP请求的传输为例，请求在不同物理网络之间的传输过程，大致如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122843370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122843370.png)
 
 图：HTTP请求在不同物理网络之间的传输过程
 
@@ -614,7 +614,7 @@ TCP/IP与OSI的区别主要有哪些呢？除了TCP/IP与OSI在分层模块上�
 在TCP/IP协议栈中，IP协议层只关心如何使数据能够跨越本地网络边界的问题，而不关心数据如何传输。整体TCP/IP协议栈，共同配合一起解决数据如何通过许许多多个点对点通路，顺利传输到达目的地。一个点对点通路被称为一“跳”（hop），通过TCP/IP协议栈，网络成员能够在许多“跳”的基础上建立相互的数据通路。
 
 传输层TCP协议提供了一种面向连接的、可靠的字节流服务，其数据帧格式，大致如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122904344.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122904344.png)
 
 图：传输层TCP协议的数据帧格式
 
@@ -655,7 +655,7 @@ Number）标识了报文接收端期望接收的字节序列。如果设置了AC
 
 举个例子，假设发送端（如Client）发送3个净荷为1000byte、起始SN序号为1的数据包给Server服务端，Server每收到一个包之后，需要回复一个ACK响应确认数据包给Client。ACK响应数据包的ACK  
 Number值，为每个Client包的为SN+包净荷，既表示Server已经确认收到的字节数，还表示期望接收到的下一个Client发送包的SN序号，具体的ACK值如下图左边的正常传输部分所示。  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308123045409.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308123045409.png)
 
 图：传输过程的确认序号（Acknowledgment Number）值示例图
 
@@ -811,7 +811,7 @@ Number）值被设置为Server端的SN序列号+1。还有一种情况，Client�
 ### 三次握手的图解
 
 三次握手的交互过程，具体如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122934847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122934847.png)
 
 图：TCP建立的连接时三次握手示意图
 
@@ -844,7 +844,7 @@ Number（确认号）值为断开请求报文的Sequence Number
 ### 四次挥手图解
 
 四次挥手的全部交互过程，具体如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308122951816.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308122951816.png)
 
 图：TCP建立的连接时四次挥手的示意图
 
@@ -873,7 +873,7 @@ Lifetime，指的是一个TCP报文片段在网络中最大的存活时间，具
 三次握手完成两个重要的功能：一是双方都做好发送数据的准备工作，而且双方都知道对方已准备好；二是双方完成初始SN序列号的协商，双方的SN序列号在握手过程中被发送和确认。
 
 如果把三次握手改成两次握手，可能发生死锁。两次握手的话，缺失了Client的二次确认ACK帧，假想的TCP建立的连接时二次挥手，可以如下图所示：  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210308123012842.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2NyYXp5bWFrZXJjaXJjbGU=,size_16,color_FFFFFF,t_70#pic_center)
+![在这里插入图片描述](/assets/post_images/20210308123012842.png)
 
 图：假想的TCP建立的连接时二次握手的示意图
 
