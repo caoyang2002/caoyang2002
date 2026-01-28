@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 27 Jan 2026 16:09:08 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Jan 2026 10:43:09 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="mailto:reggiesimons2cy@gmail.com"
  
@@ -63,7 +63,7 @@
  }
 
  const password = input.value;
- const publishDate = "272760127";
+ const publishDate = "282810128";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -251,7 +251,48 @@
  &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t"&gt;
  &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid=""&gt;
  &lt;span leaf=""&gt;生活的点滴温暖&lt;/span&gt;
- &lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
+ &lt;/p&gt;</description></item><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
+&lt;a href="https://github.com/stonedtman/stonedt-yuqing"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;注意：思通舆情只能安装在 amd64 的设备上。&lt;/p&gt;
+&lt;h1 id="docker-安装"&gt;DOcker 安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -itd --name stonedt_yuqing -p 8085:8085 crpi-8mxxyq37t3w9t2kj.cn-hangzhou.personal.cr.aliyuncs.com/stonedtx/stonedt_yuqing:1.0.10&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果没有提示错误，就是安装成功了&lt;/p&gt;
+&lt;p&gt;访问你安装设备的 8085 端口，例如 http://localhost:8085&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户名 &lt;code&gt;13900000000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;密码 &lt;code&gt;stonedt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这时候，你打开页面只能看到一个方案。&lt;/p&gt;
+&lt;h1 id="创建一个舆情检测方案"&gt;创建一个舆情检测方案&lt;/h1&gt;
+&lt;h2 id="新建方案组"&gt;新建方案组&lt;/h2&gt;
+&lt;p&gt;左上角 &lt;code&gt;新建舆情检测&lt;/code&gt; -&amp;gt; &lt;code&gt;新建舆情方案组&lt;/code&gt; -&amp;gt; 输入方案组名称&lt;/p&gt;
+&lt;h2 id="新建舆情方案"&gt;新建舆情方案&lt;/h2&gt;
+&lt;p&gt;在页面的右上角，点击 &lt;code&gt;新建&lt;/code&gt;, &lt;code&gt;方案名称&lt;/code&gt; 自行设置。然后在 &lt;code&gt;高级创建&lt;/code&gt; 中, 方案主题关键词语法是:&lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg" alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"&gt;&lt;/p&gt;
 &lt;p&gt;很长一段时间以来，HTML 元标记一直被称为 
 &lt;a href="https://www.searchenginejournal.com/seo/"
