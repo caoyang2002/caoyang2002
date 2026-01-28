@@ -13,25 +13,7 @@ hugo new content/posts/tech/name.md`
 ```
 
 
-## 创建配置文件 `hugo_image_config.json`:
 
-```json
-{
-  "md_file": "content/posts/my-article.md",
-  "storage_dir": "static/assets/post_images",
-  "md_path_prefix": "/assets/post_images",
-  "naming_method": "sequential",
-  "use_post_slug": true,
-  "post_slug": "my-article",
-  "overwrite_existing": false,
-  "download_timeout": 30,
-  "delay_between_requests": 0.3,
-  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-  "referer": "https://blog.csdn.net/",
-  "backup_original": true,
-  "verbose": true
-}
-```
 
 ## 使用方法：
 
@@ -75,6 +57,27 @@ python image_downloader.py --init-config config.json
 
 # 使用配置文件
 python image_downloader.py -c config.json article.md
+```
+
+
+## 使用配置文件 `hugo_image_config.json`:
+
+```json
+{
+  "md_file": "content/posts/my-article.md",
+  "storage_dir": "static/assets/post_images",
+  "md_path_prefix": "/assets/post_images",
+  "naming_method": "sequential",
+  "use_post_slug": true,
+  "post_slug": "my-article",
+  "overwrite_existing": false,
+  "download_timeout": 30,
+  "delay_between_requests": 0.3,
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
+  "referer": "https://blog.csdn.net/",
+  "backup_original": true,
+  "verbose": true
+}
 ```
 
 ## 路径映射示例：
