@@ -1,7 +1,7 @@
 +++
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
 date = {{ .Date }}
-draft = true
+draft = false
 author = "{{ .Site.Params.defaults.author }}"
 categories = {{ .Site.Params.defaults.categories  | jsonify }}
 tags = {{ .Site.Params.defaults.tags  | jsonify }}
