@@ -8,7 +8,7 @@ NC='\033[0m'
 
 create_post() {
    local filename=${1:-$(date +%s | sha256sum | head -c 8)}
-   hugo new "posts/draft/${filename}.md"
+   hugo new "posts/test/${filename}.md"
    printf "\n"
 }
 
