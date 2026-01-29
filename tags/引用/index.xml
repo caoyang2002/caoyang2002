@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>引用 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%BC%95%E7%94%A8/</link><description>Recent content in 引用 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%BC%95%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust 中的引用</title><link>https://simons.qzz.io/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你家的地址（引用）&lt;/li&gt;
+&lt;li&gt;花瓶本身（值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么我们需要引用"&gt;为什么我们需要引用？&lt;/h2&gt;
+&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item></channel></rss>

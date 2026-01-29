@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>模板继承 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%A8%A1%E6%9D%BF%E7%BB%A7%E6%89%BF/</link><description>Recent content in 模板继承 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%A8%A1%E6%9D%BF%E7%BB%A7%E6%89%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
+&lt;p&gt;Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。&lt;/p&gt;
+&lt;h2 id="1-模板继承的黑魔法"&gt;1. 模板继承的黑魔法&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+ {{ block &amp;#34;head&amp;#34; . }}{{ end }}
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body&amp;gt;
+ {{ block &amp;#34;main&amp;#34; . }}{{ end }}
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+{{/* 子模板 */}}
+{{ define &amp;#34;main&amp;#34; }}
+ &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;看到这个&lt;code&gt;.&lt;/code&gt;了吗？这是Hugo的上下文传递，相当于其他语言的&lt;code&gt;this&lt;/code&gt;。很多人不知道，它可以这样玩：&lt;/p&gt;</description></item></channel></rss>

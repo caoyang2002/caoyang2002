@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Python on 短松江月</title><link>https://simons.qzz.io/tags/python/</link><description>Recent content in Python on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/python/index.xml" rel="self" type="application/rss+xml"/><item><title>Jupyter 快捷键</title><link>https://simons.qzz.io/post/2026/01/jupyter_key/</link><pubDate>Mon, 26 Jan 2026 13:34:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/jupyter_key/</guid><description>&lt;h3 id="jupyter-notebook-的快捷键"&gt;Jupyter Notebook 的快捷键&lt;/h3&gt;
+&lt;p&gt;Jupyter Notebook 有两种键盘输入模式。编辑模式，允许你往单元中键入代码或文本；这时的单元框线是绿色的。命令模式，键盘输入运行程序命令；这时的单元框线是灰色。&lt;/p&gt;
+&lt;h4 id="命令模式-按键-esc-开启"&gt;命令模式 (按键 Esc 开启)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Enter&lt;/code&gt; : 转入编辑模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Shift-Enter&lt;/code&gt; : 运行本单元，选中下个单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Ctrl-Enter&lt;/code&gt; : 运行本单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Alt-Enter&lt;/code&gt; : 运行本单元，在其下插入新单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Y&lt;/code&gt; : 单元转入代码状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考： 
+&lt;a href="https://jupyter-docker-stacks.readthedocs.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ docker stack
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="conda-安装"&gt;Conda 安装&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考: 
+&lt;a href="https://lab.jupyter.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jupyter lab
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="安装"&gt;安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;conda install -c conda-forge JupyterLab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="启动"&gt;启动&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;jupyter lab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item></channel></rss>

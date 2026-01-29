@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>类型系统 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F/</link><description>Recent content in 类型系统 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%B1%BB%E5%9E%8B%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml"/><item><title>TypeScript: 静态</title><link>https://simons.qzz.io/post/2025/01/typescript_static_types/</link><pubDate>Fri, 24 Jan 2025 13:46:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/typescript_static_types/</guid><description>&lt;h1 id="typescript-静态"&gt;TypeScript: 静态&lt;/h1&gt;
+&lt;h2 id="你遇到过这些问题吗"&gt;你遇到过这些问题吗?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+obj.nonexistMethod()
+
+// 传错参数类型
+calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
+
+// 对象属性拼写错误
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;玩过JavaScript的同学一定很熟悉这些坑。这就是为什么我们需要 TypeScript。&lt;/p&gt;
+&lt;h2 id="typescript是个啥"&gt;TypeScript是个啥?&lt;/h2&gt;
+&lt;p&gt;简单说:TypeScript = JavaScript + 类型系统&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="typescript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-typescript"&gt;// 变量类型
+let name: string = &amp;#34;老陈&amp;#34;
+
+// 函数类型
+function add(x: number, y: number): number {
+ return x &amp;#43; y
+}
+
+// 接口
+interface User {
+ id: number
+ name: string
+ age?: number // 可选属性
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="为什么要用typescript"&gt;为什么要用TypeScript?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;不用写单元测试了?&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>动态渲染 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%8A%A8%E6%80%81%E6%B8%B2%E6%9F%93/</link><description>Recent content in 动态渲染 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%8A%A8%E6%80%81%E6%B8%B2%E6%9F%93/index.xml" rel="self" type="application/rss+xml"/><item><title>爬虫、反爬与反反爬</title><link>https://simons.qzz.io/post/2026/01/the_spider/</link><pubDate>Wed, 28 Jan 2026 11:26:57 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/the_spider/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/vivotech/p/16695804.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;互联网的大数据时代的来临，网络爬虫也成了互联网中一个重要行业，它是一种自动获取网页数据信息的爬虫程序，是网站搜索引擎的重要组成部分。通过爬虫，可以获取自己想要的相关数据信息，让爬虫协助自己的工作，进而降低成本，提高业务成功率和提高业务效率。&lt;/p&gt;
+&lt;p&gt;本文一方面从爬虫与反反爬的角度来说明如何高效的对网络上的公开数据进行爬取，另一方面也会介绍反爬虫的技术手段，为防止外部爬虫大批量的采集数据的过程对服务器造成超负载方面提供些许建议。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数学 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%95%B0%E5%AD%A6/</link><description>Recent content in 数学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;li&gt;暴力算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;malloc/_malloc.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+#include &amp;lt;errno.h&amp;gt;
+// 最大公约数
+// 最小公倍数
+//计算最小公倍数和最大公约数的和
+int main(){
+ int n = 0;
+ int m = 0;
+ while(scanf(&amp;#34;%d %d&amp;#34;,&amp;amp;n,&amp;amp;m) == 2){//读取两个数
+ int min = n &amp;lt; m ? n : m;
+ int max = n &amp;gt; m ? n : m;
+ int i = min;//最大公约数
+ int j = max;//最小公倍数
+ while(1){
+ if(n%i == 0 &amp;amp;&amp;amp; m%i == 0){
+ break;
+ }
+ i--;
+ }
+ // i就是最大公约数
+ while(1){
+ if(j%n == 0 &amp;amp;&amp;amp; j%m == 0){
+ break;
+ }
+ j&amp;#43;&amp;#43;;
+ }
+ // j就是最大公倍数
+
+ printf(&amp;#34;最大公倍数 %d &amp;#43; 最小公约数 %d = %d\n&amp;#34;,j,i,j&amp;#43;i);
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;辗转相除法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术资源 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/</link><description>Recent content in 技术资源 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E8%B5%84%E6%BA%90/index.xml" rel="self" type="application/rss+xml"/><item><title>程序员必备：十类实用在线工具网站全收录</title><link>https://simons.qzz.io/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2022/07/chart_image/</guid><description>&lt;p&gt;在编程和日常开发工作中，合理利用在线工具可以极大提升效率。本文精心整理了十类实用工具网站，涵盖字符串处理、艺术字生成、代码优化等多个常用门类，助你事半功倍。&lt;/p&gt;
+&lt;h2 id="一字符串处理工具"&gt;一、字符串处理工具&lt;/h2&gt;
+&lt;h3 id="1-正则表达式测试与调试"&gt;1. 正则表达式测试与调试&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regex101&lt;/strong&gt; (
+&lt;a href="https://regex101.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regex101.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能最全面的正则表达式在线测试工具，支持多种语言语法高亮，提供详细的匹配解释&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RegExr&lt;/strong&gt; (
+&lt;a href="https://regexr.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regexr.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 界面友好的正则学习与测试平台，内置常用表达式库和实时匹配预览&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-编码与解码工具"&gt;2. 编码与解码工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base64 Guru&lt;/strong&gt; (
+&lt;a href="https://base64.guru"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://base64.guru
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持Base64、URL、HTML等多种编码格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CyberChef&lt;/strong&gt; (
+&lt;a href="https://gchq.github.io/CyberChef"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://gchq.github.io/CyberChef
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 英国情报机构开发的“数字瑞士军刀”，支持数百种数据转换操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-字符串格式化与美化"&gt;3. 字符串格式化与美化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSON Formatter&lt;/strong&gt; (
+&lt;a href="https://jsonformatter.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsonformatter.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - JSON格式化、验证和压缩一站式解决&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SQL Format&lt;/strong&gt; (
+&lt;a href="https://sqlformat.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://sqlformat.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - SQL语句在线格式化，支持多种数据库语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二艺术字与字符设计"&gt;二、艺术字与字符设计&lt;/h2&gt;
+&lt;h3 id="1-ascii艺术生成"&gt;1. ASCII艺术生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Patorjk ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://patorjk.com/software/taag"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://patorjk.com/software/taag
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 经典的ASCII艺术字生成器，提供数十种字体风格选择&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text to ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://www.network-science.de/ascii/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.network-science.de/ascii/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 专业的ASCII字符转换工具，可调节字符密度和布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图片转字符画"&gt;2. 图片转字符画&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://www.degraeve.com/img2txt.php"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.degraeve.com/img2txt.php
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简单直接的图片转ASCII字符画工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text-image.com&lt;/strong&gt; (
+&lt;a href="https://www.text-image.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.text-image.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持多种字符集和颜色选项的图片转换工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-特殊字体与符号"&gt;3. 特殊字体与符号&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cool Symbol&lt;/strong&gt; (
+&lt;a href="https://coolsymbol.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolsymbol.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 收集了数千种特殊符号和颜文字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Font Generator&lt;/strong&gt; (
+&lt;a href="https://www.fontgenerator.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.fontgenerator.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线生成各种奇特风格的文字效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="三代码相关工具"&gt;三、代码相关工具&lt;/h2&gt;
+&lt;h3 id="1-代码美化与格式化"&gt;1. 代码美化与格式化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prettier Playground&lt;/strong&gt; (
+&lt;a href="https://prettier.io/playground"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://prettier.io/playground
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持多种语言的代码格式化工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CodeBeautify&lt;/strong&gt; (
+&lt;a href="https://codebeautify.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://codebeautify.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 集成了HTML、CSS、JavaScript等多种代码美化功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-代码差异对比"&gt;2. 代码差异对比&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Diffchecker&lt;/strong&gt; (
+&lt;a href="https://www.diffchecker.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.diffchecker.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 直观的文件和文本差异比较工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beyond Compare Online&lt;/strong&gt; (
+&lt;a href="https://beyondcompare.online"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://beyondcompare.online
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线文件对比服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四数据转换与处理"&gt;四、数据转换与处理&lt;/h2&gt;
+&lt;h3 id="1-格式转换工具"&gt;1. 格式转换工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Convertio&lt;/strong&gt; (
+&lt;a href="https://convertio.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://convertio.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持超过300种文件格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online-Convert&lt;/strong&gt; (
+&lt;a href="https://www.online-convert.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.online-convert.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 全面的多媒体和文档格式转换平台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-csvjson处理"&gt;2. CSV/JSON处理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CSV Kit&lt;/strong&gt; (
+&lt;a href="https://csvkit.readthedocs.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://csvkit.readthedocs.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线CSV文件处理工具套件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Editor Online&lt;/strong&gt; (
+&lt;a href="https://jsoneditoronline.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsoneditoronline.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 可视化的JSON编辑和验证工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="五图像与多媒体工具"&gt;五、图像与多媒体工具&lt;/h2&gt;
+&lt;h3 id="1-图片压缩与优化"&gt;1. 图片压缩与优化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TinyPNG&lt;/strong&gt; (
+&lt;a href="https://tinypng.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://tinypng.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 智能PNG和JPEG图片压缩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; (
+&lt;a href="https://squoosh.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://squoosh.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Google开发的开源图片压缩工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图标与矢量图形"&gt;2. 图标与矢量图形&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Icons8&lt;/strong&gt; (
+&lt;a href="https://icons8.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://icons8.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 海量图标库和在线编辑工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SVG Editor&lt;/strong&gt; (
+&lt;a href="https://svgeditor.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://svgeditor.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能完整的在线SVG编辑器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="六网络安全工具"&gt;六、网络安全工具&lt;/h2&gt;
+&lt;h3 id="1-加密与哈希"&gt;1. 加密与哈希&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hash Generator&lt;/strong&gt; (
+&lt;a href="https://passwordsgenerator.net/sha256-hash-generator/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://passwordsgenerator.net/sha256-hash-generator/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种哈希算法生成器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSL Server Test&lt;/strong&gt; (
+&lt;a href="https://www.ssllabs.com/ssltest"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.ssllabs.com/ssltest
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 网站SSL配置安全检查&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-网络诊断"&gt;2. 网络诊断&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ping.pe&lt;/strong&gt; (
+&lt;a href="https://ping.pe"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://ping.pe
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 从全球多个节点测试网站连通性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s My DNS&lt;/strong&gt; (
+&lt;a href="https://www.whatsmydns.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.whatsmydns.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - DNS传播状态检查工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="七api测试与开发"&gt;七、API测试与开发&lt;/h2&gt;
+&lt;h3 id="1-api测试工具"&gt;1. API测试工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Postman Web&lt;/strong&gt; (
+&lt;a href="https://web.postman.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://web.postman.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 完整的API开发和测试环境&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTPie Online&lt;/strong&gt; (
+&lt;a href="https://httpie.io/run"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://httpie.io/run
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁的HTTP请求测试工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-mock数据生成"&gt;2. Mock数据生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mockaroo&lt;/strong&gt; (
+&lt;a href="https://www.mockaroo.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.mockaroo.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 生成逼真的测试数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Generator&lt;/strong&gt; (
+&lt;a href="https://www.json-generator.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.json-generator.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 自定义JSON数据生成器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="八文档与写作工具"&gt;八、文档与写作工具&lt;/h2&gt;
+&lt;h3 id="1-markdown编辑器"&gt;1. Markdown编辑器&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;StackEdit&lt;/strong&gt; (
+&lt;a href="https://stackedit.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://stackedit.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能丰富的在线Markdown编辑器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dillinger&lt;/strong&gt; (
+&lt;a href="https://dillinger.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://dillinger.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁美观的Markdown写作工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-文档转换"&gt;2. 文档转换&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pandoc Online&lt;/strong&gt; (
+&lt;a href="https://pandoc.org/try"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://pandoc.org/try
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种文档格式互转工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown to PDF&lt;/strong&gt; (
+&lt;a href="https://md2pdf.netlify.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://md2pdf.netlify.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Markdown转PDF在线工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="九颜色与设计工具"&gt;九、颜色与设计工具&lt;/h2&gt;
+&lt;h3 id="1-配色方案"&gt;1. 配色方案&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coolors&lt;/strong&gt; (
+&lt;a href="https://coolors.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolors.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 快速生成配色方案的优秀工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Color Hunt&lt;/strong&gt; (
+&lt;a href="https://colorhunt.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://colorhunt.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 设计师精选的配色方案库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-调色板生成"&gt;2. 调色板生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Adobe Color&lt;/strong&gt; (
+&lt;a href="https://color.adobe.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://color.adobe.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Adobe官方色彩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paletton&lt;/strong&gt; (
+&lt;a href="https://paletton.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://paletton.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 专业的调色板设计工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="十效率与协作工具"&gt;十、效率与协作工具&lt;/h2&gt;
+&lt;h3 id="1-图表绘制"&gt;1. 图表绘制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Draw.io&lt;/strong&gt; (
+&lt;a href="https://app.diagrams.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://app.diagrams.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 免费的在线图表绘制工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excalidraw&lt;/strong&gt; (
+&lt;a href="https://excalidraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://excalidraw.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 手绘风格的在线白板工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-团队协作"&gt;2. 团队协作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Figma&lt;/strong&gt; (
+&lt;a href="https://www.figma.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.figma.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线UI设计和协作平台&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miro&lt;/strong&gt; (
+&lt;a href="https://miro.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://miro.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线协作白板&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

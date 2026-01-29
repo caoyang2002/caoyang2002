@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>故障排除 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/</link><description>Recent content in 故障排除 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%95%85%E9%9A%9C%E6%8E%92%E9%99%A4/index.xml" rel="self" type="application/rss+xml"/><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-error" data-lang="error"&gt;Multiple packages (libgcc1 and libgcc1) providing same name marked HOLD or
+PREFER. Using latest.
+Multiple packages (libgcc1 and libgcc1) providing same name marked HOLD or PREFER. Using latest.
+Installing app-meta-istorepanel (1.0.6-20250116) to root...
+Downloading https://istore.istoreos.com/repo/all/meta/app-meta-istorepanel_1.0.6-20250116_all.ipk
+Collected errors:
+ * pkg_hash_check_unresolved: cannot find dependency zoneinfo-asia for luci-app-istorepanel
+ * pkg_hash_fetch_best_installation_candidate: Packages for luci-app-istorepanel found, but incompatible with the architectures configured
+ * satisfy_dependencies_for: Cannot satisfy the following dependencies for app-meta-istorepanel:
+ * zoneinfo-asia
+ * opkg_install_cmd: Cannot install package app-meta-istorepanel.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;存在的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;缺少依赖包 &lt;code&gt;zoneinfo-asia&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;架构不兼容的问题&lt;/li&gt;
+&lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item></channel></rss>

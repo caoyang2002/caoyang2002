@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术教程 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</link><description>Recent content in 技术教程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
+&lt;a href="https://github.com/stonedtman/stonedt-yuqing"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;注意：思通舆情只能安装在 amd64 的设备上。&lt;/p&gt;
+&lt;h1 id="docker-安装"&gt;DOcker 安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -itd --name stonedt_yuqing -p 8085:8085 crpi-8mxxyq37t3w9t2kj.cn-hangzhou.personal.cr.aliyuncs.com/stonedtx/stonedt_yuqing:1.0.10&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果没有提示错误，就是安装成功了&lt;/p&gt;
+&lt;p&gt;访问你安装设备的 8085 端口，例如 http://localhost:8085&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户名 &lt;code&gt;13900000000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;密码 &lt;code&gt;stonedt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这时候，你打开页面只能看到一个方案。&lt;/p&gt;
+&lt;h1 id="创建一个舆情检测方案"&gt;创建一个舆情检测方案&lt;/h1&gt;
+&lt;h2 id="新建方案组"&gt;新建方案组&lt;/h2&gt;
+&lt;p&gt;左上角 &lt;code&gt;新建舆情检测&lt;/code&gt; -&amp;gt; &lt;code&gt;新建舆情方案组&lt;/code&gt; -&amp;gt; 输入方案组名称&lt;/p&gt;
+&lt;h2 id="新建舆情方案"&gt;新建舆情方案&lt;/h2&gt;
+&lt;p&gt;在页面的右上角，点击 &lt;code&gt;新建&lt;/code&gt;, &lt;code&gt;方案名称&lt;/code&gt; 自行设置。然后在 &lt;code&gt;高级创建&lt;/code&gt; 中, 方案主题关键词语法是:&lt;/p&gt;</description></item><item><title>Jupyter 快捷键</title><link>https://simons.qzz.io/post/2026/01/jupyter_key/</link><pubDate>Mon, 26 Jan 2026 13:34:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/jupyter_key/</guid><description>&lt;h3 id="jupyter-notebook-的快捷键"&gt;Jupyter Notebook 的快捷键&lt;/h3&gt;
+&lt;p&gt;Jupyter Notebook 有两种键盘输入模式。编辑模式，允许你往单元中键入代码或文本；这时的单元框线是绿色的。命令模式，键盘输入运行程序命令；这时的单元框线是灰色。&lt;/p&gt;
+&lt;h4 id="命令模式-按键-esc-开启"&gt;命令模式 (按键 Esc 开启)&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Enter&lt;/code&gt; : 转入编辑模式&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Shift-Enter&lt;/code&gt; : 运行本单元，选中下个单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Ctrl-Enter&lt;/code&gt; : 运行本单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Alt-Enter&lt;/code&gt; : 运行本单元，在其下插入新单元&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Y&lt;/code&gt; : 单元转入代码状态&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考： 
+&lt;a href="https://jupyter-docker-stacks.readthedocs.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ docker stack
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="conda-安装"&gt;Conda 安装&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考: 
+&lt;a href="https://lab.jupyter.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jupyter lab
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="安装"&gt;安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;conda install -c conda-forge JupyterLab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="启动"&gt;启动&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;jupyter lab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://simons.qzz.io/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
+&lt;a href="https://hexo.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hexo
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+以及主题
+&lt;a href="https://theme-next.js.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Theme NexT
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，
+在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
+&lt;a href="https://vercel.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ vercel
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p&gt;</description></item><item><title>谷歌账号注册的问题</title><link>https://simons.qzz.io/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/07/google_account/</guid><description>&lt;p&gt;参考：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href="https://www.gmail777.com/archives/69"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中州西鹿
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 多图详细教你注册Google（Gmail）新账号，常见问题和注意事项
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://uzbox.com/usa/google-add-tel.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="谷歌账号注册的问题"&gt;谷歌账号注册的问题&lt;/h1&gt;
+&lt;h2 id="注册"&gt;注册&lt;/h2&gt;
+&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dll/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dll/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
+&lt;li&gt;创建一个类（右键创建类，会自动包含需要的文件） 以查询目录下的文件为例
+创建的文件可以不用管
+&lt;code&gt;.cpp&lt;/code&gt;文件 输入自己的代码&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
+#include &amp;#34;check_repository.h&amp;#34;
+namespace fs = std::filesystem;
+ int Check::CheckRepository() {
+ std::string folderName = &amp;#34;.Rysigy&amp;#34;;
+ fs::path currentPath = fs::current_path();
+ fs::path folderPath = currentPath / folderName;
+
+ if (fs::exists(folderPath) &amp;amp;&amp;amp; fs::is_directory(folderPath)) {
+ std::cout &amp;lt;&amp;lt; &amp;#34;存储库 &amp;#39;.Rysigy&amp;#39; 文件夹存在\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ else {
+ std::cout &amp;lt;&amp;lt; &amp;#34;[错误]\t存储库 &amp;#39;.Rysigy&amp;#39; 文件夹不存在\n请在右键菜单中点击 &amp;#39;创建存储库&amp;#39;\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
+ _getch();
+ return 0;
+};&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://simons.qzz.io/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="在-elease-里面下载可执行程序"&gt;在 elease 里面下载可执行程序&lt;/h2&gt;
+&lt;h1 id="win"&gt;Win&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="linux-x86_64"&gt;Linux （x86_64)&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="mac"&gt;mac&lt;/h1&gt;
+&lt;p&gt;没有测试
+
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;p&gt;所有配置都通过 config.yaml 文件传递​​给 &lt;code&gt;Telegram Media Downloader&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;获取您的 API 密钥：&lt;/strong&gt;
+第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 
+&lt;a href="https://my.telegram.org/apps"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://my.telegram.org/apps
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ 并使用您的 Telegram 帐户登录。&lt;/li&gt;
+&lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;
+&lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;可能需要先安装
+&lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React # 使用 React 库
+✔ Select a variant: › TypeScript # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+ cd playground
+ npm install
+ npm run dev&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-一键创建"&gt;1.2 一键创建&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原作者
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 个人配置
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
+cd quartz-obsidian-webside
+npm i
+npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;h2 id="布局"&gt;布局&lt;/h2&gt;
+&lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
+默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;
+&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://simons.qzz.io/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文链接
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="查看-cpu-架构"&gt;查看 CPU 架构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-shell" data-lang="shell"&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
+arch：该命令可以查看Linux系统的CPU架构。
+cat /proc/version：该命令可以查看系统内核的版本信息。
+cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 脚本目录
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>mermaid 教程</title><link>https://simons.qzz.io/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p&gt;
+&lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空格敏感&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ I am the default shape&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item></channel></rss>

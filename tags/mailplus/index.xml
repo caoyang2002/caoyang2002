@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MailPlus on 短松江月</title><link>https://simons.qzz.io/tags/mailplus/</link><description>Recent content in MailPlus on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/mailplus/index.xml" rel="self" type="application/rss+xml"/><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+&lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
+&lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
+&lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
+&lt;p&gt;打开 MailPlus Server，如果没有公网 IP，最开始的配置其实无所谓，随便填写都行，毕竟无论如何都发不出邮件。&lt;/p&gt;
+&lt;p&gt;然后点击 &lt;code&gt;服务&lt;/code&gt; 选项，在点击顶部的 &lt;code&gt;MailPlus 客户端&lt;/code&gt; 标签，全部勾选即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png" alt="image"&gt;&lt;/p&gt;
+&lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
+&lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item></channel></rss>

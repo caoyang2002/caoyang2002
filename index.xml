@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Jan 2026 21:43:15 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="mailto:reggiesimons2cy@gmail.com"
  
@@ -63,7 +63,7 @@
  }
 
  const password = input.value;
- const publishDate = "282810128";
+ const publishDate = "2929290129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -251,7 +251,28 @@
  &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t"&gt;
  &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid=""&gt;
  &lt;span leaf=""&gt;生活的点滴温暖&lt;/span&gt;
- &lt;/p&gt;</description></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+ &lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
+&lt;a href="https://github.com/op7418/Humanizer-zh/tree/main"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;name: humanizer-zh
+description: |
+去除文本中的 AI 生成痕迹。适用于编辑或审阅文本，使其听起来更自然、更像人类书写。
+基于维基百科的&amp;quot;AI 写作特征&amp;quot;综合指南。检测并修复以下模式：夸大的象征意义、
+宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、
+AI 词汇、否定式排比、过多的连接性短语。
+allowed-tools:&lt;/p&gt;</description></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
 &lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
 
 
@@ -284,7 +305,7 @@
 &lt;/div&gt;
 
 &lt;h2 id="整体功能"&gt;整体功能&lt;/h2&gt;
-&lt;p&gt;这个命令会&lt;strong&gt;同时推送代码到两个远程仓库&lt;/strong&gt;：&lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;local&lt;/code&gt;（如果存在）。&lt;/p&gt;</description></item><item><title>绯红之粉（一种开伞剂）</title><link>https://simons.qzz.io/post/2026/01/ssa/</link><pubDate>Wed, 28 Jan 2026 19:19:34 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/ssa/</guid><description>&lt;p&gt;网站：https://www.nakka-rocketry.net/&lt;/p&gt;
+&lt;p&gt;这个命令会&lt;strong&gt;同时推送代码到两个远程仓库&lt;/strong&gt;：&lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;local&lt;/code&gt;（如果存在）。&lt;/p&gt;</description></item><item><title>绯红之粉（一种开伞剂）</title><link>https://simons.qzz.io/post/2026/01/crimson_powder_a_canopy_opener/</link><pubDate>Wed, 28 Jan 2026 19:19:34 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/crimson_powder_a_canopy_opener/</guid><description>&lt;p&gt;网站：https://www.nakka-rocketry.net/&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="https://www.kechuang.org/t/87751"
  
@@ -990,7 +1011,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;不难发现，决定权完全在老板那里。&lt;/p&gt;
 &lt;p&gt;这时候的情况被叫做说服。&lt;/p&gt;
 &lt;h1 id="谈判是利益交换"&gt;谈判是利益交换&lt;/h1&gt;
-&lt;p&gt;假如，你现在已经入职很久了，并且在某个方面很有潜力，已经帮助企业取得了不错的成就。&lt;/p&gt;</description></item><item><title>营销的阶梯：</title><link>https://simons.qzz.io/post/2025/04/the_marketing_ladder/</link><pubDate>Mon, 28 Apr 2025 05:09:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/the_marketing_ladder/</guid><description>&lt;h1 id="合理的期望"&gt;合理的期望&lt;/h1&gt;
+&lt;p&gt;假如，你现在已经入职很久了，并且在某个方面很有潜力，已经帮助企业取得了不错的成就。&lt;/p&gt;</description></item><item><title>营销的阶梯</title><link>https://simons.qzz.io/post/2025/04/the_marketing_ladder/</link><pubDate>Mon, 28 Apr 2025 05:09:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/the_marketing_ladder/</guid><description>&lt;h1 id="合理的期望"&gt;合理的期望&lt;/h1&gt;
 &lt;p&gt;任何广告的首要目标就是提高人们的期望值。&lt;/p&gt;
 &lt;p&gt;但是如果人们对产品的期望过高，产品就会陷入困境。&lt;/p&gt;
 &lt;p&gt;一个品牌想要推出一个新的品类，就需要一个新的阶梯。&lt;/p&gt;
@@ -1419,34 +1440,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;password&lt;/code&gt;&lt;/strong&gt;：用户的密码。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id="示例"&gt;示例：&lt;/h4&gt;
-&lt;p&gt;创建一个名为 &lt;code&gt;testuser&lt;/code&gt; 的用户，密码为 &lt;code&gt;testpass&lt;/code&gt;，允许从任何主机连接：&lt;/p&gt;</description></item><item><title>新茶饮市场</title><link>https://simons.qzz.io/post/2025/03/new_tea_market/</link><pubDate>Wed, 05 Mar 2025 17:30:03 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/new_tea_market/</guid><description>&lt;p&gt;
-&lt;a href="https://mp.weixin.qq.com/s/KbzX93JDk462FNkhzEuv3Q"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://mp.weixin.qq.com/s/KbzX93JDk462FNkhzEuv3Q
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="https://mp.weixin.qq.com/s/RcGKas4EdtDgnGc9zvWwUQ"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://mp.weixin.qq.com/s/RcGKas4EdtDgnGc9zvWwUQ
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>【人物】罗永浩：彪悍的人生不需要解释</title><link>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</link><pubDate>Wed, 05 Mar 2025 17:14:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</guid><description>&lt;p&gt;提起罗永浩，我们大多数人可能都会想到那句经典名言 “彪悍的人生不需要解释”。&lt;/p&gt;
+&lt;p&gt;创建一个名为 &lt;code&gt;testuser&lt;/code&gt; 的用户，密码为 &lt;code&gt;testpass&lt;/code&gt;，允许从任何主机连接：&lt;/p&gt;</description></item><item><title>【人物】罗永浩：彪悍的人生不需要解释</title><link>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</link><pubDate>Wed, 05 Mar 2025 17:14:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</guid><description>&lt;p&gt;提起罗永浩，我们大多数人可能都会想到那句经典名言 “彪悍的人生不需要解释”。&lt;/p&gt;
 &lt;p&gt;四二（笔者）也曾一度对他的各种事件做出 “狂热” 举动，&lt;/p&gt;
 &lt;p&gt;回望那些精彩的宣传，例如在 “老罗英语培训” 时期在迷笛音乐节上做的广告&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://img.mp.sohu.com/upload/20161017/925ea911de1c4c088c728e9e6f5fd11e_th.jpeg" alt="img"&gt;&lt;/p&gt;
@@ -1489,7 +1483,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;聂云宸为喜茶踩下加盟刹车。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;刚开年，聂云宸就给卷成一片红海的新茶饮行业浇了盆冷水。&lt;/p&gt;
-&lt;p&gt;身为喜茶创始人，一向低调的他，这次罕见用强悍语气表态：“拒绝无意义的门店规模内卷。”同时，在2月10日向全员发布的邮件中，他用“数字游戏”“无意义的价格、营收、规模内卷”等词形容当下的新茶饮业，最后还表态：喜茶暂停接受事业合伙（加盟）申请。&lt;/p&gt;</description></item><item><title>271f5424</title><link>https://simons.qzz.io/post/2025/03/what_is_mixue_ice_city_thinking/</link><pubDate>Sat, 01 Mar 2025 12:46:31 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_is_mixue_ice_city_thinking/</guid><description>&lt;p&gt;
+&lt;p&gt;身为喜茶创始人，一向低调的他，这次罕见用强悍语气表态：“拒绝无意义的门店规模内卷。”同时，在2月10日向全员发布的邮件中，他用“数字游戏”“无意义的价格、营收、规模内卷”等词形容当下的新茶饮业，最后还表态：喜茶暂停接受事业合伙（加盟）申请。&lt;/p&gt;</description></item><item><title>开店不如开厂：蜜雪冰城在想什么？</title><link>https://simons.qzz.io/post/2025/03/what_is_mixue_ice_city_thinking/</link><pubDate>Sat, 01 Mar 2025 12:46:31 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_is_mixue_ice_city_thinking/</guid><description>&lt;p&gt;
 &lt;a href="https://mp.weixin.qq.com/s/fMa7CfpeUuxaJE_2tr_abg"
  
  
@@ -1503,7 +1497,6 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  
 &lt;/a&gt;
 &lt;/p&gt;
-&lt;h1 id="开店不如开厂蜜雪冰城在想什么"&gt;开店不如开厂：蜜雪冰城在想什么？&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href="javascript:void%280%29;"
  
@@ -1908,24 +1901,1645 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;提升消费者使用频率&lt;/li&gt;
 &lt;li&gt;提升使用该产品的人数&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;对于提升消费者使用频率方面，有个口香糖品牌叫益达，口香糖这个品类很难想到它的使用场景是什么，所以销量一致不好，而后做了一系列广告，比较知名的广告语是 “吃完喝完嚼益达” 和 “吃完来两粒”。通过这些广告，益达成功地将自己与餐后清洁口腔的场景绑定在一起，培养了用户在进食后嚼口香糖的习惯，从而提升了使用频率。&lt;/p&gt;</description></item><item><title>热榜查询</title><link>https://simons.qzz.io/post/2025/02/hot_list_query/</link><pubDate>Mon, 24 Feb 2025 08:31:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hot_list_query/</guid><description>&lt;p&gt;
-&lt;a href="https://rebang.today/?tab=top"
+&lt;p&gt;对于提升消费者使用频率方面，有个口香糖品牌叫益达，口香糖这个品类很难想到它的使用场景是什么，所以销量一致不好，而后做了一系列广告，比较知名的广告语是 “吃完喝完嚼益达” 和 “吃完来两粒”。通过这些广告，益达成功地将自己与餐后清洁口腔的场景绑定在一起，培养了用户在进食后嚼口香糖的习惯，从而提升了使用频率。&lt;/p&gt;</description></item><item><title>热榜查询</title><link>https://simons.qzz.io/post/2025/02/hot_list_query/</link><pubDate>Mon, 24 Feb 2025 08:31:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hot_list_query/</guid><description>&lt;h3 id="第一部分热点数据与舆情监控-13"&gt;第一部分：热点数据与舆情监控 (1/3)&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;核心目标&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;工具/平台推荐&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;核心功能与特点&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;适用范围&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;官网链接&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🎪 热榜与舆情监控&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;AnyKnew&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;聚合全网热搜榜，快速发现热点。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内内容运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.anyknew.com"
  
  
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- 热榜网
+ anyknew.com
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片"&gt;&lt;/p&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;今日热榜&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;聚合各平台热门排行榜。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内内容运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;≈&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;百度指数&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;查看关键词搜索趋势与需求图谱，免费权威。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内市场洞察&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://index.baidu.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ index.baidu.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;微热点&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;微博用户数据分析事件热词趋势。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内微博舆情&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.wrd.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.wrd.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;知微事见&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;分析热点事件传播脉络与影响力。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内事件传播分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://ef.zhiweidata.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ ef.zhiweidata.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;数说聚合&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;整合社媒、新闻、电商等多源数据，提供热点追踪与自动化报告。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内整合营销洞察&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.datastory.com.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ datastory.com.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;KAWO科握 SOV&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;专注国内社媒，跨平台整合品牌与竞品声量、互动与情感数据。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内社媒声量监测&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.kawo.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ kawo.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;鹰眼速读网&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;政务/企业级舆情监测系统，数据源全面，提供免费试用。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内品牌与公关&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;≈&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;沃观(Wovision)&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;支持全球多语种的网络舆情与品牌声誉监测。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外/全球品牌管理&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.wovision.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ wovision.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Brandwatch&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;深度分析海外社交媒体舆情与消费者偏好。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外社媒与舆情分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.brandwatch.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ brandwatch.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Meltwater&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球媒体与社媒融合监控，擅长品牌声誉管理和公关预警。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球媒体监控与公关&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.meltwater.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ meltwater.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Talkwalker&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全渠道舆情监测，擅长多语种分析和AI视觉识别。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球多语种舆情监控&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.talkwalker.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ talkwalker.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Sprinklr&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;企业级舆情管理与客户互动系统，实现闭环管理。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球大型企业客户体验&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.sprinklr.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ sprinklr.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="第二部分市场洞察广告分析与电商运营-23"&gt;第二部分：市场洞察、广告分析与电商运营 (2/3)&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;核心目标&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;工具/平台推荐&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;核心功能与特点&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;适用范围&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;官网链接&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;📈 市场趋势与竞品分析&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;新榜海汇&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;深度分析竞品在各平台的广告投放策略与素材。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内竞品广告分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://hb.newrank.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ hb.newrank.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;声量通&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;新榜出品，主打全平台社媒竞品分析。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内社媒竞品分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://sr.newrank.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ sr.newrank.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;魔镜市场情报&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;分析电商大盘数据，洞察行业趋势与竞品销售。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内电商市场分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.mktindex.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ mktindex.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;鲸参谋&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;聚焦国内电商平台的行业趋势、品牌监控与选品分析。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内电商市场分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.jingcanmou.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jingcanmou.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;情报魔方&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;覆盖淘宝、京东、小红书等，提供竞品店铺与商品运营监控。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内电商运营分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;≈&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;SimilarWeb&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;估算网站流量来源、用户画像与竞争对手。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球网站流量分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.similarweb.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ similarweb.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Ahrefs&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;SEO与流量分析标杆，强于外链分析、关键词排名追踪和竞品研究。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球SEO与流量分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://ahrefs.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ ahrefs.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;DataHawk&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全渠道电商运营分析平台，可同步监控亚马逊、沃尔玛、Shopify等数据。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外多平台电商分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.datahawk.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ datahawk.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Helium 10&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;亚马逊平台选品、关键词优化及竞品跟踪工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外亚马逊运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.helium10.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ helium10.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Jungle Scout&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;亚马逊平台专属的选品、市场分析与竞品监控工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外亚马逊运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.junglescout.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.junglescout.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;亚马逊船长&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;专注亚马逊平台的SaaS运营系统，提供一站式服务。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外亚马逊运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.amzcaptain.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ amzcaptain.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;SurTime工具箱&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;主打跨境电商关键词挖掘与优化，操作简单。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外电商关键词优化&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;≈&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;数跨境BI&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;一站式跨境电商数据分析平台，擅长整合多平台数据。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外跨平台电商分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;≈&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;艾瑞咨询&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;提供互联网及移动互联网行业的权威数据、研究和报告。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内互联网数据洞察&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.iresearch.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.iresearch.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;QuestMobile&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;提供移动App分析、用户洞察等商业智能服务。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内移动互联网分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.questmobile.com.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.questmobile.com.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;📊 广告投放与效果分析&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;巨量云图&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;字节跳动官方广告投放与数据分析后台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内字节系平台&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://trendinsight.oceanengine.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ trendinsight.oceanengine.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;腾讯广告&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;腾讯官方广告投放平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内腾讯系平台&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://e.qq.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ e.qq.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;神策数据&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内领先的用户行为分析与营销科技平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内用户行为分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.sensorsdata.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ sensorsdata.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Google Ads&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球最大的搜索广告平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外搜索广告&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://ads.google.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ ads.google.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Meta Ads Manager&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;管理Facebook、Instagram等广告的一站式工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外社交广告&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://business.facebook.com/adsmanager"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ business.facebook.com/adsmanager
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Adobe Experience Cloud&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;企业级营销套件，提供跨渠道广告、营销自动化等一体化解决方案。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球大型企业营销&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://business.adobe.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ business.adobe.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Salesloft&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;面向中大型企业的销售互动平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球销售流程自动化&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.salesloft.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ salesloft.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Google Analytics&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;网站流量与用户行为分析的行业标准。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球网站分析&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://analytics.google.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ analytics.google.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🛒 电商运营与销售增长&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;生意参谋&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;淘宝/天猫店铺官方经营数据分析必备工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内淘宝/天猫&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://sycm.taobao.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ sycm.taobao.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;蝉妈妈&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;专注抖音、快手等内容电商的直播与商品数据分析。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内直播电商&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.chanmama.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ chanmama.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;飞瓜数据&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;侧重抖音、快手等短视频平台的投流与带货数据分析。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内短视频电商&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.feigua.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ feigua.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;多多情报通&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;拼多多官方数据服务商工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内拼多多平台运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.duoduodata.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ duoduodata.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;新红数据&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;深耕小红书生态，监测爆款笔记与品牌舆情。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内小红书运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://xh.newrank.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ xh.newrank.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Vitals&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Shopify独立站应用集合，专注于提升店铺转化率。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外Shopify站&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://vitals.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ vitals.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Heepsy&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外红人(KOL)发现与管理平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外红人营销&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.heepsy.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ heepsy.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id="第三部分营销创意内容生产与团队协作-33"&gt;第三部分：营销创意、内容生产与团队协作 (3/3)&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th style="text-align: left"&gt;核心目标&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;工具/平台推荐&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;核心功能与特点&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;适用范围&lt;/th&gt;
+ &lt;th style="text-align: left"&gt;官网链接&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;💡 广告案例与灵感&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;ADGuider&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;智能广告创意案例搜索库，可按多种维度精准检索。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球广告案例查询&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.adguider.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.adguider.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;AdsoftheWorld&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球最具创意的广告案例库，每日更新。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球创意广告&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.adsoftheworld.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.adsoftheworld.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;广告门案例库&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;最新最全的中文广告营销案例库。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内广告案例&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://case.adquan.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ case.adquan.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;WELOVEAD&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球广告数据库与创意人社群，案例质量高。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球广告创意社群&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.welovead.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.welovead.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🏆 广告奖项与节庆&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;戛纳国际创意节&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球广告与创意界最高荣誉，了解年度顶尖作品趋势。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球顶级创意风向标&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.canneslions.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.canneslions.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;D&amp;amp;AD 黄铅笔奖&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球创意设计与广告领域的卓越奖项。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球设计与广告&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.dandad.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.dandad.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;One Show&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球顶级广告创意奖项，注重视觉与概念创新。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球广告创意&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.oneshow.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.oneshow.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;金投赏&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;大中华区最具影响力的商业创意奖项。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;大中华区商业创意&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.roifestival.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.roifestival.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🎨 设计参考与灵感&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;站酷 (ZCOOL)&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;中国设计师互动平台，聚集大量设计作品与灵感。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内设计参考&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.zcool.com.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.zcool.com.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Behance&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;Adobe旗下，全球领先的创意作品展示与发现平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球设计灵感&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.behance.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.behance.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Dribbble&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球设计师社区，以展示UI/UX、插画等作品为主。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球UI/UX设计&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://dribbble.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ dribbble.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Pinterest&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;以视觉方式发现创意点子的图片收藏与分享平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球视觉灵感收集&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.pinterest.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.pinterest.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;花瓣网&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;中国版的Pinterest，陪你做生活的设计师。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内图片灵感收集&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://huaban.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ huaban.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;古田路9号&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;品牌创意/版权保护平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内品牌设计&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.gtn9.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.gtn9.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;✍️ 文案与内容资讯&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;梅花网&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;营销者的信息中心，提供大量文案、方案等营销素材。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内营销文案与素材&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.meihua.info"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.meihua.info
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;数英&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;中国数字整合营销及招聘平台，提供丰富的行业资讯与深度文章。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内营销人资讯获取&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.digitaling.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.digitaling.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;SocialBeta&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;领先的社交媒体和数字营销内容平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内数字营销趋势&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://socialbeta.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ socialbeta.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;TOPYS&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球顶尖创意分享与启发性内容平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球创意灵感&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.topys.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.topys.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;WARC&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球营销洞察与有效性研究权威平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球营销策略研究&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.warc.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.warc.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;📹 视频与H5创意&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;新片场&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;专业的影视创作人社区，汇聚大量优质短片与广告视频。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内视频创作与灵感&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.xinpianchang.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.xinpianchang.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;V电影&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;高品质短片分享平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内短片灵感&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.vmovier.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.vmovier.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;开眼&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;每日精选视频，汇聚全球优质短视频。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球短视频灵感&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.eyepetizer.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.eyepetizer.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;FWA&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;展示全球最前沿的网站、H5等数字作品。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球数字互动创意&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://thefwa.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ thefwa.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;⚙️ 效率与创作工具&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Canva可画&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;在线平面设计工具，提供海量模板，可快速制作营销素材。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球快速设计&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.canva.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.canva.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;创客贴&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内在线设计平台，模板更贴合本土化营销场景。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内快速设计&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.chuangkit.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.chuangkit.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;稿定设计&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;在线设计神器，尤其擅长电商和新媒体配图。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内在线设计&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.gaoding.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.gaoding.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Thunderbit&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;通过AI从网站自动抓取数据，实现竞品监控与数据采集。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球数据采集&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.thunderbit.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ thunderbit.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;简道云&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;零代码平台，可自定义搭建CRM、协作等业务系统。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内流程管理&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.jiandaoyun.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jiandaoyun.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Pipedrive&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;以销售管道为核心的CRM，视觉化、易上手。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球销售管理&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.pipedrive.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ pipedrive.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Clay&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;灵活的数据聚合与个性化外联工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球个性化营销外联&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.clay.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ clay.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;📢 营销自动化与CRM&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;HubSpot&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;集客营销标杆，提供营销、销售、客服一体化平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球，尤其B2B&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.hubspot.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ hubspot.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Zoho CRM&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;高性价比的全球化CRM，内置营销自动化功能。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球，尤其中小企业&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.zoho.com/crm"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ zoho.com/crm
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;ActiveCampaign&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;集邮件营销、营销自动化、CRM和消息聊天于一体的平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球（尤其中小企业）&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.activecampaign.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ activecampaign.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Klaviyo&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;以电商场景为核心的营销自动化平台。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球电商营销自动化&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.klaviyo.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ klaviyo.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🌐 海外社媒管理&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Sendible&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;为代理机构设计，支持集中管理多客户社媒账号。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外社媒代运营&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.sendible.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ sendible.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;Planoly&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;视觉化内容日历，适合Instagram、Pinterest排期。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;海外视觉内容规划&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.planoly.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ planoly.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;🤝 团队协作&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;石墨文档&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;支持多人实时协作的在线Office工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内团队在线协作&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://shimo.im"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ shimo.im
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;腾讯文档&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;腾讯出品，与微信、QQ生态深度整合的在线协作工具。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内团队协作&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://docs.qq.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ docs.qq.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;ProcessOn&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;免费在线作图工具，支持流程图、思维导图等实时协作。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;全球在线图表协作&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.processon.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.processon.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td style="text-align: left"&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;&lt;strong&gt;飞书&lt;/strong&gt;&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;字节跳动旗下的一站式企业协作平台，整合即时沟通、日历、文档等功能。&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;国内团队协作与办公&lt;/td&gt;
+ &lt;td style="text-align: left"&gt;
+&lt;a href="https://www.feishu.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ www.feishu.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;</description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片"&gt;&lt;/p&gt;
 &lt;p&gt;在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p&gt;
-&lt;p&gt;一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p&gt;</description></item><item><title>不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？</title><link>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p&gt;台湾的广告设计与营销传播历史，是一部与时代脉搏紧密相连的发展史。从早期简单的广告代理到如今多元化的品牌设计与营销传播，这一过程不仅反映了台湾经济的发展轨迹，也展现了广告行业在不同历史阶段的机遇与挑战。而美可特品牌设计公司及其执行总监王盈发带领美可特的转型的故事，则是这一历史进程中的一个典型案例。&lt;/p&gt;</description></item><item><title>文案节奏：为何优雅是艺术？</title><link>https://simons.qzz.io/post/2025/02/wor/</link><pubDate>Sun, 23 Feb 2025 12:04:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/wor/</guid><description>&lt;p&gt;“只要 98，只要 98，价值 1988 的红外治疗仪抱回家！你还犹豫什么，赶紧拿起电话订购吧……” 此刻，宛若一个充满力量的声音在耳边回荡，你我也许都不陌生，但是那个时代一去不返。&lt;/p&gt;
-&lt;p&gt;但是，为什么&lt;/p&gt;
-&lt;p&gt;在电视购物的时代，“今年过节不收礼，收礼还收脑白金” 这样的广告广泛传播，而如今，这样的广告文案为什么越来越少？&lt;/p&gt;</description></item><item><title>营销基础：营销的核心价值</title><link>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值"&gt;顾客让渡价值&lt;/h1&gt;
+&lt;p&gt;一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p&gt;</description></item><item><title>不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？</title><link>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p&gt;台湾的广告设计与营销传播历史，是一部与时代脉搏紧密相连的发展史。从早期简单的广告代理到如今多元化的品牌设计与营销传播，这一过程不仅反映了台湾经济的发展轨迹，也展现了广告行业在不同历史阶段的机遇与挑战。而美可特品牌设计公司及其执行总监王盈发带领美可特的转型的故事，则是这一历史进程中的一个典型案例。&lt;/p&gt;</description></item><item><title>营销基础：营销的核心价值</title><link>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值"&gt;顾客让渡价值&lt;/h1&gt;
 &lt;p&gt;顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;顾客价值：&lt;strong&gt;顾客从某个产品或服务获得的利益综合（功能、符号、利益等）&lt;/strong&gt;，比如一款手机，其具备高清拍照、快速运行软件、大容量存储等功能，这些功能满足了顾客在通讯、娱乐、工作等方面的需求。其次是符号价值，像一些奢侈品品牌，消费者购买它们不仅仅是为了产品的实际使用功能，更是因为品牌所代表的社会地位、身份象征等符号意义。还有服务价值，例如在购买汽车时，4S 店提供的免费保养、道路救援等售后服务，也构成了顾客价值的一部分，让顾客在使用产品的过程中享受到更全面的保障和便利。&lt;/li&gt;
@@ -2090,11 +3704,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;比如，2015 年，格力推出的 “三年不用换的手机”，董明珠提到 “三年不用换手机，一晚只需一度电”这就是营销层面的错误。具体来说，是在理解市场和顾客需求的部分没有做好。&lt;/p&gt;</description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="img"&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;价格弹性是指在其他因素不变的情况下，商品或服务的价格变动百分之一所引起的需求量变动的百分比。它反映了需求量对价格变动的反应程度。&lt;/p&gt;
-&lt;p&gt;消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p&gt;</description></item><item><title>稀缺与歧视：为什么“难以获得”更有诱惑力？</title><link>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</link><pubDate>Sun, 16 Feb 2025 15:12:15 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;价格歧视&lt;/p&gt;
-&lt;p&gt;会员、学生票、年卡，想必你至少办过其中一种，或者原价、建议零售价你至少见过一个，他们&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="参考"&gt;参考&lt;/h1&gt;
+&lt;p&gt;消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p&gt;</description></item><item><title>稀缺与歧视：为什么“难以获得”更有诱惑力？</title><link>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</link><pubDate>Sun, 16 Feb 2025 15:12:15 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</guid><description>&lt;h1 id="参考"&gt;参考&lt;/h1&gt;
 &lt;p&gt;经济学思维方式&lt;/p&gt;
 &lt;h1 id="汤姆--索亚的智慧"&gt;汤姆 · 索亚的智慧&lt;/h1&gt;
 &lt;p&gt;汤姆・索亚是个聪明又顽皮的男孩，总觉生活平淡，渴望冒险。被罚刷墙时，他觉得无聊且担心被嘲笑，于是想出妙计：假装刷墙很有趣且有特权。朋友本路过，汤姆表现出极大热情，拒绝让本参与，本甚至愿用苹果交换。其他男孩也被吸引，纷纷用玩具换取机会。汤姆轻松完成任务，还收获一堆玩具，发现定律：让人们渴望做一件事，只需让机会变得难以获得。&lt;/p&gt;</description></item><item><title>改变利益关系：如何解决艺考机构的骚扰问题？</title><link>https://simons.qzz.io/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</link><pubDate>Sun, 16 Feb 2025 14:39:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/changing_interest_relationships_how_to_solve_the_harassment_problem_of_art_examination_agencies/</guid><description>&lt;blockquote&gt;
@@ -2325,8 +3935,8 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;面膜 35/11&lt;/p&gt;
 &lt;p&gt;拯救痘痘 81/43&lt;/p&gt;</description></item><item><title>为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？</title><link>https://simons.qzz.io/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</link><pubDate>Thu, 13 Feb 2025 05:51:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/why_cant_big_brands_and_big_companies_appear_in_big_markets_such_as_tea_and_grain_and_oil/</guid><description>&lt;h3 id="为什么在茶叶粮油这些大市场中出现不了大品牌大公司呢"&gt;为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？&lt;/h3&gt;
 &lt;p&gt;简单来说就是：&lt;code&gt;低壁垒&lt;/code&gt; + &lt;code&gt;弱规模经济&lt;/code&gt; + &lt;code&gt;强需求分化&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;同样是与“喝”相关的行业，白酒、红酒、啤酒都有市场认知度极高的品牌，甚至“股王”级上市公司。咖啡领域有星巴克和瑞幸，后者拥有国内最大的直营网络，如今颇有东山再起的架势。但规模超万亿的茶行业，强势的品牌或公司却不多。新华社 2008 年曾提出疑问：“七万中国茶厂，为何不抵一家立顿”。14年后的今天，行业依然缺少一个响亮的“大品牌”。问题出在哪里了？&lt;/p&gt;</description></item><item><title>没人帮你真的是因为你实力不够强吗</title><link>https://simons.qzz.io/post/2025/02/is_it_really_because_no_one_helps_you_because_you_are_not_strong_enough/</link><pubDate>Wed, 12 Feb 2025 21:48:30 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/is_it_really_because_no_one_helps_you_because_you_are_not_strong_enough/</guid><description>&lt;h2 id="影响力的幻觉论传播的本质与生存智慧"&gt;影响力的幻觉：论传播的本质与生存智慧&lt;/h2&gt;
-&lt;p&gt;在某个商场的母婴室里，新生儿的啼哭声穿透隔音墙，正在选购商品的女士放下手中的连衣裙，哺乳期的母亲解开衣襟，保洁阿姨小跑着送来温热的毛巾。这个场景印证了人类最原始的生存法则：不会传播的生命体早已湮灭在进化长河中。哭声作为最原始的信息编码，完美诠释了传播的本质——不是强者的专利，而是生命的本能。&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;同样是与“喝”相关的行业，白酒、红酒、啤酒都有市场认知度极高的品牌，甚至“股王”级上市公司。咖啡领域有星巴克和瑞幸，后者拥有国内最大的直营网络，如今颇有东山再起的架势。但规模超万亿的茶行业，强势的品牌或公司却不多。新华社 2008 年曾提出疑问：“七万中国茶厂，为何不抵一家立顿”。14年后的今天，行业依然缺少一个响亮的“大品牌”。问题出在哪里了？&lt;/p&gt;</description></item><item><title>没人帮你真的是因为你实力不够强吗</title><link>https://simons.qzz.io/post/2025/02/is_it_really_because_no_one_helps_you_because_you_are_not_strong_enough/</link><pubDate>Wed, 12 Feb 2025 21:48:30 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/is_it_really_because_no_one_helps_you_because_you_are_not_strong_enough/</guid><description>&lt;p&gt;很多人觉得，没人帮忙是因为自己还不够厉害，得先变强才行。但我认为，这正好把事情搞反了。很多时候，问题不在于你强不强，而在于你&lt;strong&gt;会不会“说”&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;想象一下婴儿的哭声。当婴儿啼哭时，周围的大人——无论是母亲、陌生人还是保洁阿姨——几乎都会本能地停下手里的事，想去帮他。婴儿有什么“实力”可言呢？他连话都不会说。但他的哭声，就是一种最原始、也最高效的“传播”。这哭声绕过一切理性的判断，直接触动我们大脑深处最古老的回路，让我们无法坐视不理。&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
 文章作者：左耳朵耗子
 出处：
@@ -2347,8 +3957,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;&lt;img src="https://coolshell.org/wp-content/uploads/2021/07/knowledge_sharing-300x169.jpeg" alt="img"&gt;&lt;/p&gt;
 &lt;p&gt;分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：&lt;/p&gt;
-&lt;p&gt;1）分享内容的保鲜期是很长的，&lt;/p&gt;</description></item><item><title>如何用"不确定的快乐"让消费者欲罢不能？神经科学揭示的营销密码</title><link>https://simons.qzz.io/post/2025/02/random_preference_the_source_of_pleasure_deep_in_the_brain/</link><pubDate>Tue, 11 Feb 2025 22:34:46 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/random_preference_the_source_of_pleasure_deep_in_the_brain/</guid><description>&lt;h1&gt;&lt;/h1&gt;
-&lt;h2 id="引言当神经科学遇上营销心理学"&gt;引言：当神经科学遇上营销心理学&lt;/h2&gt;
+&lt;p&gt;1）分享内容的保鲜期是很长的，&lt;/p&gt;</description></item><item><title>如何用"不确定的快乐"让消费者欲罢不能？神经科学揭示的营销密码</title><link>https://simons.qzz.io/post/2025/02/random_preference_the_source_of_pleasure_deep_in_the_brain/</link><pubDate>Tue, 11 Feb 2025 22:34:46 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/random_preference_the_source_of_pleasure_deep_in_the_brain/</guid><description>&lt;h2 id="引言当神经科学遇上营销心理学"&gt;引言：当神经科学遇上营销心理学&lt;/h2&gt;
 &lt;p&gt;2001年，神经学家格雷格•伯恩斯在实验室里发现了一个有趣现象：当受试者以不可预测的方式获得果汁时，他们大脑伏隔核的活跃程度，比定时获得同样果汁时高出30%。这个发现不仅解开了人类愉悦感的神秘面纱，更为现代营销打开了一扇新的大门 —— 我们的大脑，天生就对随机事件充满渴望。&lt;/p&gt;
 &lt;h2 id="吊桥经济学偶然造就的商业奇迹"&gt;吊桥经济学：偶然造就的商业奇迹&lt;/h2&gt;
 &lt;p&gt;在美国切萨皮克湾的河岸边，冲浪烧烤酒吧（Surfside Grill）曾面临致命的地理劣势。每当吊桥升起让船只通过，酒吧与顾客就会被河水隔绝长达6分钟。但经营者却将这种不便转化为营销契机：宣布吊桥升起期间所有啤酒仅售25美分。这个巧妙的设计让平均客流量提升了45%，翻台率提高2.3倍。顾客们甚至自发开发出&amp;quot;吊桥预测&amp;quot;游戏，在社交平台上分享船只经过的时间规律，形成持续的话题效应。&lt;/p&gt;</description></item><item><title>自由火炬运动：从“我需要所以我购买“到”我想要所以我购买“</title><link>https://simons.qzz.io/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</link><pubDate>Tue, 11 Feb 2025 12:09:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/freedom_torch_movement_from_i_need_it_so_i_buy_it_to_i_want_it_so_i_buy_it/</guid><description>&lt;blockquote&gt;
@@ -2615,21 +4224,7 @@ jobs:
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>博客数据统计</title><link>https://simons.qzz.io/post/2025/01/blog_data_statistics/</link><pubDate>Sun, 26 Jan 2025 02:11:05 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/blog_data_statistics/</guid><description>&lt;p&gt;博客数据统计&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="https://v6.51.la/report/realtime?comId=510836"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://v6.51.la/report/realtime?comId=510836
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
+&lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
 &lt;p&gt;Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。&lt;/p&gt;
 &lt;h2 id="1-模板继承的黑魔法"&gt;1. 模板继承的黑魔法&lt;/h2&gt;
 
@@ -3370,7 +4965,7 @@ export default {
 &lt;h2 id="为什么选vue"&gt;为什么选Vue?&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;上手容易&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>TypeScript: 静态类型，所以 NB</title><link>https://simons.qzz.io/post/2025/01/typescript_static_types/</link><pubDate>Fri, 24 Jan 2025 13:46:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/typescript_static_types/</guid><description>&lt;h1 id="typescript-静态类型所以-nb"&gt;TypeScript: 静态类型，所以 NB&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;上手容易&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>TypeScript: 静态</title><link>https://simons.qzz.io/post/2025/01/typescript_static_types/</link><pubDate>Fri, 24 Jan 2025 13:46:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/typescript_static_types/</guid><description>&lt;h1 id="typescript-静态"&gt;TypeScript: 静态&lt;/h1&gt;
 &lt;h2 id="你遇到过这些问题吗"&gt;你遇到过这些问题吗?&lt;/h2&gt;
 
 
@@ -6043,7 +7638,7 @@ int main() {
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dl/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dl/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dll/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dll/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
 &lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
@@ -6934,10 +8529,10 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 &lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;V = (-1)^s^ * M * 2^E^&lt;/li&gt;
-&lt;li&gt;(-1)^s^表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
+&lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
+&lt;li&gt;$(-1)^s^$ 表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
 &lt;li&gt;M表示有效数字，大于等于1，小于2; 1&amp;lt;= M &amp;lt;2&lt;/li&gt;
-&lt;li&gt;2^E^：E表示指数位&lt;/li&gt;
+&lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -6952,7 +8547,10 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
@@ -6977,46 +8575,7 @@ cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core�
 &lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
-struct S1{
- char c1;//1
- int i;//4
- char c2;//1
-};
-
-struct S2{
- char c1;//1
- char c2;//1
- int i;//4
-};
-int main(){
- printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S1));//12
- printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
- return 0;
-}&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;对齐规则：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;第一个成员在与结构体变量偏移量为0的地址处&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
-对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
-&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C 语言数学</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
@@ -7074,7 +8633,46 @@ int main(){
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
 &lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+struct S1{
+ char c1;//1
+ int i;//4
+ char c2;//1
+};
+
+struct S2{
+ char c1;//1
+ char c2;//1
+ int i;//4
+};
+int main(){
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S1));//12
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;对齐规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一个成员在与结构体变量偏移量为0的地址处&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
+对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
+&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
 &lt;a href="https://codeif.xinke.org.cn"
  
  
@@ -7187,9 +8785,105 @@ int main(){
  
 &lt;/a&gt;
 &lt;/p&gt;
-&lt;p&gt;国内消费市场正值存量破局和品牌议价的发展阶段，全球化扩张正在成为国内龙头企业筹谋布局的重要战略方向之一。食品饮料各子板块中，消费者对软饮料品类具备较高的包容度和尝鲜偏好，因此软饮企业或有较高的出海可能性。我们以全球软饮龙头可口可乐为样本，通过复盘可口可乐的百年发展历程，深入探讨可口可乐的核心竞争力及全球化发展进程，并选取中国市场进驻作为案例分析，阐述可口可乐的全球化进程对于国内饮料企业出海的借鉴与启示，并进一步划分为出海前、出海时、出海后三阶段来展开分析。&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://simons.qzz.io/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2022/07/chart_image/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg"&gt;
-&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg" alt="cool.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;
+&lt;p&gt;国内消费市场正值存量破局和品牌议价的发展阶段，全球化扩张正在成为国内龙头企业筹谋布局的重要战略方向之一。食品饮料各子板块中，消费者对软饮料品类具备较高的包容度和尝鲜偏好，因此软饮企业或有较高的出海可能性。我们以全球软饮龙头可口可乐为样本，通过复盘可口可乐的百年发展历程，深入探讨可口可乐的核心竞争力及全球化发展进程，并选取中国市场进驻作为案例分析，阐述可口可乐的全球化进程对于国内饮料企业出海的借鉴与启示，并进一步划分为出海前、出海时、出海后三阶段来展开分析。&lt;/p&gt;</description></item><item><title>程序员必备：十类实用在线工具网站全收录</title><link>https://simons.qzz.io/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2022/07/chart_image/</guid><description>&lt;p&gt;在编程和日常开发工作中，合理利用在线工具可以极大提升效率。本文精心整理了十类实用工具网站，涵盖字符串处理、艺术字生成、代码优化等多个常用门类，助你事半功倍。&lt;/p&gt;
+&lt;h2 id="一字符串处理工具"&gt;一、字符串处理工具&lt;/h2&gt;
+&lt;h3 id="1-正则表达式测试与调试"&gt;1. 正则表达式测试与调试&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regex101&lt;/strong&gt; (
+&lt;a href="https://regex101.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regex101.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能最全面的正则表达式在线测试工具，支持多种语言语法高亮，提供详细的匹配解释&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RegExr&lt;/strong&gt; (
+&lt;a href="https://regexr.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regexr.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 界面友好的正则学习与测试平台，内置常用表达式库和实时匹配预览&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-编码与解码工具"&gt;2. 编码与解码工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base64 Guru&lt;/strong&gt; (
+&lt;a href="https://base64.guru"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://base64.guru
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持Base64、URL、HTML等多种编码格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CyberChef&lt;/strong&gt; (
+&lt;a href="https://gchq.github.io/CyberChef"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://gchq.github.io/CyberChef
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 英国情报机构开发的“数字瑞士军刀”，支持数百种数据转换操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-字符串格式化与美化"&gt;3. 字符串格式化与美化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSON Formatter&lt;/strong&gt; (
+&lt;a href="https://jsonformatter.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsonformatter.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - JSON格式化、验证和压缩一站式解决&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SQL Format&lt;/strong&gt; (
+&lt;a href="https://sqlformat.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://sqlformat.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - SQL语句在线格式化，支持多种数据库语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二艺术字与字符设计"&gt;二、艺术字与字符设计&lt;/h2&gt;
+&lt;h3 id="1-ascii艺术生成"&gt;1. ASCII艺术生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Patorjk ASCII Art Generator&lt;/strong&gt; (
 &lt;a href="http://patorjk.com/software/taag"
  
  
@@ -7202,8 +8896,8 @@ int main(){
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-
-
+) - 经典的ASCII艺术字生成器，提供数十种字体风格选择&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text to ASCII Art Generator&lt;/strong&gt; (
 &lt;a href="http://www.network-science.de/ascii/"
  
  
@@ -7216,8 +8910,11 @@ int main(){
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-
-
+) - 专业的ASCII字符转换工具，可调节字符密度和布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图片转字符画"&gt;2. 图片转字符画&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ASCII Art Generator&lt;/strong&gt; (
 &lt;a href="http://www.degraeve.com/img2txt.php"
  
  
@@ -7230,21 +8927,557 @@ int main(){
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-
-
-&lt;a href="http://life.chacuo.net/convertfont2char"
+) - 简单直接的图片转ASCII字符画工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text-image.com&lt;/strong&gt; (
+&lt;a href="https://www.text-image.com"
  
  
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- http://life.chacuo.net/convertfont2char
+ https://www.text-image.com
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>火箭爱好者</title><link>https://simons.qzz.io/rocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/rocket/</guid><description/></item><item><title>热搜</title><link>https://simons.qzz.io/hotlist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/hotlist/</guid><description/></item><item><title>日程表</title><link>https://simons.qzz.io/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/schedule/</guid><description/></item><item><title>搜索</title><link>https://simons.qzz.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/search/</guid><description/></item><item><title>作品集</title><link>https://simons.qzz.io/protfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/protfolio/</guid><description>&lt;h1 id="正在整理此处仅展示部分"&gt;正在整理，此处仅展示部分&lt;/h1&gt;
+) - 支持多种字符集和颜色选项的图片转换工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-特殊字体与符号"&gt;3. 特殊字体与符号&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cool Symbol&lt;/strong&gt; (
+&lt;a href="https://coolsymbol.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolsymbol.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 收集了数千种特殊符号和颜文字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Font Generator&lt;/strong&gt; (
+&lt;a href="https://www.fontgenerator.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.fontgenerator.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线生成各种奇特风格的文字效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="三代码相关工具"&gt;三、代码相关工具&lt;/h2&gt;
+&lt;h3 id="1-代码美化与格式化"&gt;1. 代码美化与格式化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prettier Playground&lt;/strong&gt; (
+&lt;a href="https://prettier.io/playground"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://prettier.io/playground
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持多种语言的代码格式化工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CodeBeautify&lt;/strong&gt; (
+&lt;a href="https://codebeautify.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://codebeautify.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 集成了HTML、CSS、JavaScript等多种代码美化功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-代码差异对比"&gt;2. 代码差异对比&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Diffchecker&lt;/strong&gt; (
+&lt;a href="https://www.diffchecker.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.diffchecker.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 直观的文件和文本差异比较工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beyond Compare Online&lt;/strong&gt; (
+&lt;a href="https://beyondcompare.online"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://beyondcompare.online
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线文件对比服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四数据转换与处理"&gt;四、数据转换与处理&lt;/h2&gt;
+&lt;h3 id="1-格式转换工具"&gt;1. 格式转换工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Convertio&lt;/strong&gt; (
+&lt;a href="https://convertio.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://convertio.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持超过300种文件格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online-Convert&lt;/strong&gt; (
+&lt;a href="https://www.online-convert.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.online-convert.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 全面的多媒体和文档格式转换平台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-csvjson处理"&gt;2. CSV/JSON处理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CSV Kit&lt;/strong&gt; (
+&lt;a href="https://csvkit.readthedocs.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://csvkit.readthedocs.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线CSV文件处理工具套件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Editor Online&lt;/strong&gt; (
+&lt;a href="https://jsoneditoronline.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsoneditoronline.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 可视化的JSON编辑和验证工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="五图像与多媒体工具"&gt;五、图像与多媒体工具&lt;/h2&gt;
+&lt;h3 id="1-图片压缩与优化"&gt;1. 图片压缩与优化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TinyPNG&lt;/strong&gt; (
+&lt;a href="https://tinypng.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://tinypng.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 智能PNG和JPEG图片压缩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; (
+&lt;a href="https://squoosh.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://squoosh.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Google开发的开源图片压缩工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图标与矢量图形"&gt;2. 图标与矢量图形&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Icons8&lt;/strong&gt; (
+&lt;a href="https://icons8.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://icons8.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 海量图标库和在线编辑工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SVG Editor&lt;/strong&gt; (
+&lt;a href="https://svgeditor.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://svgeditor.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能完整的在线SVG编辑器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="六网络安全工具"&gt;六、网络安全工具&lt;/h2&gt;
+&lt;h3 id="1-加密与哈希"&gt;1. 加密与哈希&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hash Generator&lt;/strong&gt; (
+&lt;a href="https://passwordsgenerator.net/sha256-hash-generator/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://passwordsgenerator.net/sha256-hash-generator/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种哈希算法生成器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSL Server Test&lt;/strong&gt; (
+&lt;a href="https://www.ssllabs.com/ssltest"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.ssllabs.com/ssltest
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 网站SSL配置安全检查&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-网络诊断"&gt;2. 网络诊断&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ping.pe&lt;/strong&gt; (
+&lt;a href="https://ping.pe"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://ping.pe
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 从全球多个节点测试网站连通性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s My DNS&lt;/strong&gt; (
+&lt;a href="https://www.whatsmydns.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.whatsmydns.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - DNS传播状态检查工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="七api测试与开发"&gt;七、API测试与开发&lt;/h2&gt;
+&lt;h3 id="1-api测试工具"&gt;1. API测试工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Postman Web&lt;/strong&gt; (
+&lt;a href="https://web.postman.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://web.postman.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 完整的API开发和测试环境&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTPie Online&lt;/strong&gt; (
+&lt;a href="https://httpie.io/run"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://httpie.io/run
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁的HTTP请求测试工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-mock数据生成"&gt;2. Mock数据生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mockaroo&lt;/strong&gt; (
+&lt;a href="https://www.mockaroo.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.mockaroo.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 生成逼真的测试数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Generator&lt;/strong&gt; (
+&lt;a href="https://www.json-generator.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.json-generator.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 自定义JSON数据生成器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="八文档与写作工具"&gt;八、文档与写作工具&lt;/h2&gt;
+&lt;h3 id="1-markdown编辑器"&gt;1. Markdown编辑器&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;StackEdit&lt;/strong&gt; (
+&lt;a href="https://stackedit.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://stackedit.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能丰富的在线Markdown编辑器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dillinger&lt;/strong&gt; (
+&lt;a href="https://dillinger.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://dillinger.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁美观的Markdown写作工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-文档转换"&gt;2. 文档转换&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pandoc Online&lt;/strong&gt; (
+&lt;a href="https://pandoc.org/try"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://pandoc.org/try
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种文档格式互转工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown to PDF&lt;/strong&gt; (
+&lt;a href="https://md2pdf.netlify.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://md2pdf.netlify.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Markdown转PDF在线工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="九颜色与设计工具"&gt;九、颜色与设计工具&lt;/h2&gt;
+&lt;h3 id="1-配色方案"&gt;1. 配色方案&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coolors&lt;/strong&gt; (
+&lt;a href="https://coolors.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolors.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 快速生成配色方案的优秀工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Color Hunt&lt;/strong&gt; (
+&lt;a href="https://colorhunt.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://colorhunt.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 设计师精选的配色方案库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-调色板生成"&gt;2. 调色板生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Adobe Color&lt;/strong&gt; (
+&lt;a href="https://color.adobe.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://color.adobe.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Adobe官方色彩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paletton&lt;/strong&gt; (
+&lt;a href="https://paletton.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://paletton.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 专业的调色板设计工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="十效率与协作工具"&gt;十、效率与协作工具&lt;/h2&gt;
+&lt;h3 id="1-图表绘制"&gt;1. 图表绘制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Draw.io&lt;/strong&gt; (
+&lt;a href="https://app.diagrams.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://app.diagrams.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 免费的在线图表绘制工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excalidraw&lt;/strong&gt; (
+&lt;a href="https://excalidraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://excalidraw.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 手绘风格的在线白板工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-团队协作"&gt;2. 团队协作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Figma&lt;/strong&gt; (
+&lt;a href="https://www.figma.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.figma.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线UI设计和协作平台&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miro&lt;/strong&gt; (
+&lt;a href="https://miro.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://miro.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线协作白板&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>火箭爱好者</title><link>https://simons.qzz.io/rocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/rocket/</guid><description/></item><item><title>热搜</title><link>https://simons.qzz.io/hotlist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/hotlist/</guid><description/></item><item><title>日程表</title><link>https://simons.qzz.io/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/schedule/</guid><description/></item><item><title>搜索</title><link>https://simons.qzz.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/search/</guid><description/></item><item><title>作品集</title><link>https://simons.qzz.io/protfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/protfolio/</guid><description>&lt;h1 id="正在整理此处仅展示部分"&gt;正在整理，此处仅展示部分&lt;/h1&gt;
 &lt;h1 id="前端开发"&gt;前端开发：&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href="https://chicunjie.top"

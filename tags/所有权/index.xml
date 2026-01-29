@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>所有权 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%89%80%E6%9C%89%E6%9D%83/</link><description>Recent content in 所有权 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%89%80%E6%9C%89%E6%9D%83/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：函数复用
+// 没有闭包时，需要传入所有参数
+fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
+
+// 有了闭包，可以部分应用
+let base = 5;
+let add_five = |x| x &amp;#43; base;
+
+// 问题2：函数式编程需求
+vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
+vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
+
+// 问题3：上下文捕获
+// 没有闭包时很难处理
+struct Context { value: i32 }
+let ctx = Context { value: 42 };
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="闭包是什么"&gt;闭包是什么？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;闭包是可以捕获其环境的匿名函数&lt;/li&gt;
+&lt;li&gt;它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li&gt;
+&lt;li&gt;闭包 = 函数 + 环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="闭包的优势"&gt;闭包的优势&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 简洁的语法
+let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
+
+// 2. 灵活的环境捕获
+let multiplier = 2;
+let double = |x| x * multiplier; // 捕获 multiplier
+
+// 3. 支持函数式编程
+let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
+let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
+ .into_iter()
+ .filter(|x| x % 2 == 0)
+ .collect();&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://simons.qzz.io/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你家的地址（引用）&lt;/li&gt;
+&lt;li&gt;花瓶本身（值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么我们需要引用"&gt;为什么我们需要引用？&lt;/h2&gt;
+&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>深入理解 Rust 所有权机制</title><link>https://simons.qzz.io/post/2025/01/rust_ownership/</link><pubDate>Wed, 15 Jan 2025 11:38:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ownership/</guid><description>&lt;h1 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h1&gt;
+&lt;p&gt;看这段在其他语言中很普通的代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ let data = vec![1, 2, 3];
+ process_data(data);
+ println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
+}
+
+fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
+ println!(&amp;#34;Processing: {:?}&amp;#34;, v);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。&lt;/p&gt;
+&lt;h2 id="所有权的三条核心规则"&gt;所有权的三条核心规则&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;每个值只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;所有者离开作用域，值将被丢弃&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个值同一时刻只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过代码详细理解这些规则：&lt;/p&gt;
+&lt;h3 id="规则1单一所有权"&gt;规则1：单一所有权&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+let s2 = s1; // 所有权从s1转移到s2
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;内存布局变化：&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的本质"&gt;闭包的本质&lt;/h2&gt;
+&lt;p&gt;Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数逻辑&lt;/li&gt;
+&lt;li&gt;捕获的环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过反编译来看闭包的真实面目：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item></channel></rss>

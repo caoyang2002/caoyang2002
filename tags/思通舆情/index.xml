@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>思通舆情 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%80%9D%E9%80%9A%E8%88%86%E6%83%85/</link><description>Recent content in 思通舆情 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%80%9D%E9%80%9A%E8%88%86%E6%83%85/index.xml" rel="self" type="application/rss+xml"/><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
+&lt;a href="https://github.com/stonedtman/stonedt-yuqing"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;注意：思通舆情只能安装在 amd64 的设备上。&lt;/p&gt;
+&lt;h1 id="docker-安装"&gt;DOcker 安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -itd --name stonedt_yuqing -p 8085:8085 crpi-8mxxyq37t3w9t2kj.cn-hangzhou.personal.cr.aliyuncs.com/stonedtx/stonedt_yuqing:1.0.10&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;如果没有提示错误，就是安装成功了&lt;/p&gt;
+&lt;p&gt;访问你安装设备的 8085 端口，例如 http://localhost:8085&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;用户名 &lt;code&gt;13900000000&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;密码 &lt;code&gt;stonedt&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这时候，你打开页面只能看到一个方案。&lt;/p&gt;
+&lt;h1 id="创建一个舆情检测方案"&gt;创建一个舆情检测方案&lt;/h1&gt;
+&lt;h2 id="新建方案组"&gt;新建方案组&lt;/h2&gt;
+&lt;p&gt;左上角 &lt;code&gt;新建舆情检测&lt;/code&gt; -&amp;gt; &lt;code&gt;新建舆情方案组&lt;/code&gt; -&amp;gt; 输入方案组名称&lt;/p&gt;
+&lt;h2 id="新建舆情方案"&gt;新建舆情方案&lt;/h2&gt;
+&lt;p&gt;在页面的右上角，点击 &lt;code&gt;新建&lt;/code&gt;, &lt;code&gt;方案名称&lt;/code&gt; 自行设置。然后在 &lt;code&gt;高级创建&lt;/code&gt; 中, 方案主题关键词语法是:&lt;/p&gt;</description></item></channel></rss>

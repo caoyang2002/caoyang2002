@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>配置教程 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/</link><description>Recent content in 配置教程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Webpack：前端项目的"搬运工"</title><link>https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/</link><pubDate>Fri, 24 Jan 2025 13:41:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/</guid><description>&lt;h1 id="webpack前端项目的搬运工"&gt;Webpack：前端项目的&amp;quot;搬运工&amp;quot;&lt;/h1&gt;
+&lt;h2 id="你遇到过这样的问题吗"&gt;你遇到过这样的问题吗？&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 项目目录
+src/
+ ├── js/
+ │ ├── user.js
+ │ ├── order.js
+ │ └── payment.js
+ ├── css/
+ │ ├── main.css
+ │ └── theme.css
+ └── images/
+ └── logo.png&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;每次部署都要手动:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合并 JS 文件&lt;/li&gt;
+&lt;li&gt;压缩 CSS&lt;/li&gt;
+&lt;li&gt;处理图片&lt;/li&gt;
+&lt;li&gt;更新版本号&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这让我想起小时候帮妈妈打扫房间 - 东西太多，到处都是，不知从何下手。&lt;/p&gt;
+&lt;h2 id="为什么会有这些问题"&gt;为什么会有这些问题？&lt;/h2&gt;
+&lt;h3 id="前端的特殊性"&gt;前端的特殊性&lt;/h3&gt;
+&lt;p&gt;浏览器需要加载:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML (建筑框架)&lt;/li&gt;
+&lt;li&gt;CSS (装修风格)&lt;/li&gt;
+&lt;li&gt;JS (家具电器)&lt;/li&gt;
+&lt;li&gt;图片等资源 (装饰品)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;每多一个文件就多一次 HTTP 请求，网页加载越慢。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编码规范 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</link><description>Recent content in 编码规范 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml"/><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+&lt;a href="https://codeif.xinke.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ codeif
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="文件命名"&gt;文件命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有文件&lt;/p&gt;
+&lt;p&gt;头文件和原文件成对出现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;全部小写, 可是使用下划线&amp;quot;_&amp;quot;(默认)或连字符&amp;quot;-&amp;quot;, 称完整, 不要有歧义&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;system_file.c &amp;amp; system_file.h&lt;/li&gt;
+&lt;li&gt;item_name.c&lt;/li&gt;
+&lt;li&gt;item-name.c&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="类型命名"&gt;类型命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类, 结构体, 类型定义(Typedef), 枚举, 类型模板参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;每个单词首字母大写, 不使用下划线&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;Timer&lt;/li&gt;
+&lt;li&gt;File&lt;/li&gt;
+&lt;li&gt;Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="变量命名"&gt;变量命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;变量, 函数参数, 数据成员名&lt;/p&gt;</description></item></channel></rss>

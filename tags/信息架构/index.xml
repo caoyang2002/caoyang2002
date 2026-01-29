@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>信息架构 on 短松江月</title><link>https://simons.qzz.io/tags/%E4%BF%A1%E6%81%AF%E6%9E%B6%E6%9E%84/</link><description>Recent content in 信息架构 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E4%BF%A1%E6%81%AF%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml"/><item><title>人类认知极限：一瞥之间的五个界限</title><link>https://simons.qzz.io/post/2025/01/human_cognitive_limits_five_boundaries_in_a_glance/</link><pubDate>Sat, 25 Jan 2025 05:35:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/human_cognitive_limits_five_boundaries_in_a_glance/</guid><description>&lt;h1 id="人类认知极限一瞥之间的五个界限"&gt;人类认知极限：一瞥之间的五个界限&lt;/h1&gt;
+&lt;h2 id="科学发现"&gt;科学发现&lt;/h2&gt;
+&lt;h3 id="数字识别极限"&gt;数字识别极限&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-python"&gt;class VisualCognition:
+ MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="实验证据"&gt;实验证据&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kaufman实验(1949)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向受试者闪现不同数量点阵&lt;/li&gt;
+&lt;li&gt;显示时间：50毫秒&lt;/li&gt;
+&lt;li&gt;结果：4-5个点能准确报数&lt;/li&gt;
+&lt;li&gt;超过5个需要计数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Miller&amp;rsquo;s Law(1956)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工作记忆容量：7±2项&lt;/li&gt;
+&lt;li&gt;瞬时识别：5项以内&lt;/li&gt;
+&lt;li&gt;证实了&amp;quot;神奇数字5&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://www.woshipm.com/ucd/5140036.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.woshipm.com/ucd/5140036.html
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;希克定律，原称希克海曼定律（Hick Hymalrs 1aw），是一种心理物理学定律。 简单的说，它的意思就是：一个人所面临的选择越多，做出选择所花的时间就越多，当面临选择的数量增加，做出决定的时间也会跟着增加。&lt;/p&gt;</description></item></channel></rss>

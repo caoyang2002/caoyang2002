@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vaultwarden on 短松江月</title><link>https://simons.qzz.io/tags/vaultwarden/</link><description>Recent content in Vaultwarden on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/vaultwarden/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前提条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
+&lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-url" data-lang="url"&gt;https://spk.bobohome.store:8880&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="2-安装-vaultwarden"&gt;2. 安装 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item></channel></rss>

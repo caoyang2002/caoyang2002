@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>界面设计 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1/</link><description>Recent content in 界面设计 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>配称的三种分类</title><link>https://simons.qzz.io/post/2025/03/three_categories_of_matching_names/</link><pubDate>Mon, 31 Mar 2025 08:26:48 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/three_categories_of_matching_names/</guid><description>&lt;p&gt;&lt;strong&gt;定位发生在心智战场，配称发生在物理战场。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;比如被称为 “肥宅快乐水” 的可口可乐，以快乐为标的，在客户心智中占据一个强有力的定位。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.231c6c1e3af136e9895199c366677ecb?rik=YAQk3M4PpLCxEQ&amp;amp;riu=http%3a%2f%2fimg1.mydrivers.com%2fimg%2f20190110%2fSa5a8ad17-5056-42b0-9f83-a08356433352.jpg&amp;amp;ehk=H%2f2E5FdvCgAN7u3F2maKTMPL33Kshyh2eLh2WV6htm8%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="“肥宅快乐水”为什么能给我们带来快乐？-肥宅快乐水,可乐,饮料,科普 ——快科技(驱动之家旗下媒体)–科技改变未来"&gt;&lt;/p&gt;
+&lt;p&gt;有比如以干净为标的的餐饮品牌，使用 “明厨亮灶” 的运营方式也是一种配称。&lt;/p&gt;
+&lt;p&gt;那么他们是怎么实现这个定位的呢？&lt;/p&gt;
+&lt;p&gt;通常来说，无外乎通过各式各样的媒介进行宣传，实现这个定位的过程就是配称。&lt;/p&gt;</description></item><item><title>Miller's Law: 工作记忆的神奇数字 7±2</title><link>https://simons.qzz.io/post/2025/01/millers_law_working_memory_magic_number_7_plus_minus_2/</link><pubDate>Sat, 25 Jan 2025 05:46:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/millers_law_working_memory_magic_number_7_plus_minus_2/</guid><description>&lt;h1 id="millers-law-工作记忆的神奇数字-72"&gt;Miller&amp;rsquo;s Law: 工作记忆的神奇数字 7±2&lt;/h1&gt;
+&lt;h2 id="核心原理"&gt;核心原理&lt;/h2&gt;
+&lt;h3 id="理论基础"&gt;理论基础&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;提出时间：1956年&lt;/li&gt;
+&lt;li&gt;作者：George Miller&lt;/li&gt;
+&lt;li&gt;发表：《The Magical Number Seven, Plus or Minus Two》&lt;/li&gt;
+&lt;li&gt;核心观点：人类短期记忆容量为7±2个组块&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-python"&gt;class WorkingMemory:
+ MIN_CAPACITY = 5 # 最小容量
+ MAX_CAPACITY = 9 # 最大容量
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="信息组块化"&gt;信息组块化&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;组块策略&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电话号码：138-8888-9999&lt;/li&gt;
+&lt;li&gt;信用卡：5432-1234-5678&lt;/li&gt;
+&lt;li&gt;身份证：110101-199001-011234&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;记忆效率&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>人类认知极限：一瞥之间的五个界限</title><link>https://simons.qzz.io/post/2025/01/human_cognitive_limits_five_boundaries_in_a_glance/</link><pubDate>Sat, 25 Jan 2025 05:35:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/human_cognitive_limits_five_boundaries_in_a_glance/</guid><description>&lt;h1 id="人类认知极限一瞥之间的五个界限"&gt;人类认知极限：一瞥之间的五个界限&lt;/h1&gt;
+&lt;h2 id="科学发现"&gt;科学发现&lt;/h2&gt;
+&lt;h3 id="数字识别极限"&gt;数字识别极限&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-python"&gt;class VisualCognition:
+ MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="实验证据"&gt;实验证据&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Kaufman实验(1949)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;向受试者闪现不同数量点阵&lt;/li&gt;
+&lt;li&gt;显示时间：50毫秒&lt;/li&gt;
+&lt;li&gt;结果：4-5个点能准确报数&lt;/li&gt;
+&lt;li&gt;超过5个需要计数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Miller&amp;rsquo;s Law(1956)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;工作记忆容量：7±2项&lt;/li&gt;
+&lt;li&gt;瞬时识别：5项以内&lt;/li&gt;
+&lt;li&gt;证实了&amp;quot;神奇数字5&amp;quot;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://www.woshipm.com/ucd/5140036.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.woshipm.com/ucd/5140036.html
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;希克定律，原称希克海曼定律（Hick Hymalrs 1aw），是一种心理物理学定律。 简单的说，它的意思就是：一个人所面临的选择越多，做出选择所花的时间就越多，当面临选择的数量增加，做出决定的时间也会跟着增加。&lt;/p&gt;</description></item></channel></rss>

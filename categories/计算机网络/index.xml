@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>计算机网络 on 短松江月</title><link>https://simons.qzz.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link><description>Recent content in 计算机网络 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/crazymakercircle/p/14499211.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="tcpip协议详解"&gt;TCP/IP协议详解&lt;/h2&gt;
+&lt;p&gt;TCP/IP协议包含了一系列的协议，也叫TCP/IP协议族（TCP/IP Protocol Suite，或TCP/IP&lt;br&gt;
+Protocols），简称TCP/IP。TCP/IP协议族提供了点对点的连结机制，并且将传输数据帧的封装、寻址、传输、路由以及接收方式，都予以标准化。&lt;/p&gt;
+&lt;h2 id="tcpip协议的分层模型"&gt;TCP/IP协议的分层模型&lt;/h2&gt;
+&lt;p&gt;在展开介绍TCP/IP协议之前，首先介绍一下七层ISO模型。国际标准化组织ISO为了使网络应用更为普及，推出了OSI参考模型，即开放式系统互联（Open&lt;br&gt;
+System Interconnect）模型，&lt;br&gt;
+一般都叫OSI参考模型。OSI参考模型是ISO组织在1985年发布的网络互连模型，其含义就是为所有公司使用一个统一的规范来控制网络，这样所有公司遵循相同的通信规范，网络就能互联互通了。&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
+&lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item></channel></rss>

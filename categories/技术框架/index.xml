@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术框架 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/</link><description>Recent content in 技术框架 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF%E6%A1%86%E6%9E%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue: 一个让前端开发不再痛苦的框架</title><link>https://simons.qzz.io/post/2025/01/vue_painless_frontend_framework/</link><pubDate>Fri, 24 Jan 2025 13:53:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/vue_painless_frontend_framework/</guid><description>&lt;h1 id="vue-一个让前端开发不再痛苦的框架"&gt;Vue: 一个让前端开发不再痛苦的框架&lt;/h1&gt;
+&lt;h2 id="老板又改需求了"&gt;老板又改需求了?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
+document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
+document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就是没用Vue的下场。数据和视图分离,改一个要改几个地方,还容易改出bug。&lt;/p&gt;
+&lt;h2 id="vue是啥"&gt;Vue是啥?&lt;/h2&gt;
+&lt;p&gt;简单说: Vue = 数据驱动视图 + 组件化开发&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;template&amp;gt;
+ &amp;lt;div&amp;gt;
+ &amp;lt;!-- 数据自动同步到视图 --&amp;gt;
+ &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;
+ &amp;lt;button @click=&amp;#34;changeTitle&amp;#34;&amp;gt;改标题&amp;lt;/button&amp;gt;
+ &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+ data() {
+ return {
+ title: &amp;#34;原标题&amp;#34;
+ }
+ },
+ methods: {
+ changeTitle() {
+ // 改数据,视图自动更新
+ this.title = &amp;#34;新标题&amp;#34;
+ }
+ }
+}
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="为什么选vue"&gt;为什么选Vue?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;上手容易&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>借用检查 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%80%9F%E7%94%A8%E6%A3%80%E6%9F%A5/</link><description>Recent content in 借用检查 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%80%9F%E7%94%A8%E6%A3%80%E6%9F%A5/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust 生命周期</title><link>https://simons.qzz.io/post/2025/01/rust_cyc/</link><pubDate>Wed, 15 Jan 2025 11:41:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_cyc/</guid><description>&lt;p&gt;让我系统地分析 Rust 的生命周期：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;问题场景：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 考虑这个场景：我们需要返回一个引用
+fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
+ if x.len() &amp;gt; y.len() {
+ x
+ } else {
+ y
+ }
+}
+// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;这个特性是什么：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;生命周期是 Rust 的类型系统中用于确保引用有效性的一种机制&lt;/li&gt;
+&lt;li&gt;它通过标注来告诉编译器多个引用之间的生命周期关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;导致这个特性出现的问题：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：悬垂引用
+let r;
+{
+ let x = 5;
+ r = &amp;amp;x; // x 在这里就会被销毁
+}
+println!(&amp;#34;{}&amp;#34;, r); // r 引用了已经无效的内存
+
+// 问题2：引用的有效期不明确
+struct Person&amp;lt;&amp;#39;a&amp;gt; {
+ name: &amp;amp;&amp;#39;a str // 没有生命周期标注时，不知道这个引用能活多久
+}
+
+// 问题3：函数返回引用时的所有权问题
+fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需要明确它的有效期
+ data
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;解决方案分析：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 方案1：完全避免使用引用，使用所有权
+struct Person {
+ name: String // 而不是 &amp;amp;str
+}
+// 优点：安全
+// 缺点：性能开销，不够灵活
+
+// 方案2：生命周期标注
+struct Person&amp;lt;&amp;#39;a&amp;gt; {
+ name: &amp;amp;&amp;#39;a str
+}
+// 优点：既安全又灵活
+// 缺点：语法复杂度增加
+
+// 方案3：使用智能指针
+struct Person {
+ name: Rc&amp;lt;String&amp;gt;
+}
+// 优点：灵活性高
+// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;最佳解决方案 - 生命周期标注：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 函数中的生命周期标注
+fn longest&amp;lt;&amp;#39;a&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;a str) -&amp;gt; &amp;amp;&amp;#39;a str {
+ if x.len() &amp;gt; y.len() {
+ x
+ } else {
+ y
+ }
+}
+
+// 2. 结构体中的生命周期标注
+struct Book&amp;lt;&amp;#39;a&amp;gt; {
+ title: &amp;amp;&amp;#39;a str,
+ author: &amp;amp;&amp;#39;a str,
+}
+
+// 3. impl 块中的生命周期标注
+impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {
+ fn get_title(&amp;amp;self) -&amp;gt; &amp;amp;str {
+ self.title
+ }
+}
+
+// 4. 多个生命周期参数
+fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {
+ x
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;生命周期最佳实践：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 生命周期省略规则
+fn first_word(s: &amp;amp;str) -&amp;gt; &amp;amp;str { // 隐含 &amp;lt;&amp;#39;a&amp;gt;
+ // ...
+}
+
+// 2. 静态生命周期
+let static_str: &amp;amp;&amp;#39;static str = &amp;#34;I live forever&amp;#34;;
+
+// 3. 生命周期约束
+fn print_type&amp;lt;T: Display &amp;#43; &amp;#39;static&amp;gt;(t: T) {
+ println!(&amp;#34;{}&amp;#34;, t);
+}
+
+// 4. 正确使用 &amp;#39;static
+// 好的做法
+const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;
+
+// 避免过度使用 &amp;#39;static
+// 不好的做法
+fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {
+ data
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;结论总结：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;生命周期是 Rust 独特的解决内存安全的机制&lt;/li&gt;
+&lt;li&gt;它在编译时就能发现潜在的内存问题&lt;/li&gt;
+&lt;li&gt;主要用途：
+&lt;ol&gt;
+&lt;li&gt;防止悬垂引用&lt;/li&gt;
+&lt;li&gt;确保引用的有效性&lt;/li&gt;
+&lt;li&gt;管理数据的生存期&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;使用建议：
+&lt;ol&gt;
+&lt;li&gt;优先使用生命周期省略规则&lt;/li&gt;
+&lt;li&gt;需要时才显式标注&lt;/li&gt;
+&lt;li&gt;谨慎使用 &amp;lsquo;static&lt;/li&gt;
+&lt;li&gt;理解借用检查器的错误信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过这个特性，Rust 在编译时就能保证内存安全，而不需要运行时垃圾回收，这是它的一个重要优势。虽然生命周期标注增加了一些代码复杂度，但这是为了内存安全付出的必要成本。&lt;/p&gt;</description></item><item><title>深入理解 Rust 所有权机制</title><link>https://simons.qzz.io/post/2025/01/rust_ownership/</link><pubDate>Wed, 15 Jan 2025 11:38:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ownership/</guid><description>&lt;h1 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h1&gt;
+&lt;p&gt;看这段在其他语言中很普通的代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ let data = vec![1, 2, 3];
+ process_data(data);
+ println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
+}
+
+fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
+ println!(&amp;#34;Processing: {:?}&amp;#34;, v);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。&lt;/p&gt;
+&lt;h2 id="所有权的三条核心规则"&gt;所有权的三条核心规则&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;每个值只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;所有者离开作用域，值将被丢弃&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个值同一时刻只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过代码详细理解这些规则：&lt;/p&gt;
+&lt;h3 id="规则1单一所有权"&gt;规则1：单一所有权&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+let s2 = s1; // 所有权从s1转移到s2
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;内存布局变化：&lt;/p&gt;</description></item></channel></rss>

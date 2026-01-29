@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程练习 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/</link><description>Recent content in 编程练习 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B%E7%BB%83%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>C 语言字符画</title><link>https://simons.qzz.io/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+* * *
+* *
+* * *
+
+4
+* * * *
+* *
+* *
+* * * *&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;非多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行定位
+int main() {
+ int n = 0;
+ scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {
+ if (i == 0 || i == n - 1) {//首尾行输出一行*
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {
+ printf(&amp;#34;* &amp;#34;);
+ }
+ } else {
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//其它行首尾输出*
+ if(j==0 || j == n-1)
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ }
+ printf(&amp;#34;\n&amp;#34;);//换行
+ }
+
+ return 0;
+}
+
+// 3 ---- n
+// * * * --- 1行每个位置都输出 一共n个
+// * * --- 其它行1和n位置输出 一共2个
+// * * * --- n行每个位置都输出 一共n个
+// 思路：
+// 使用for 和 if
+// 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行和列定位
+int main() {
+ int n = 0;
+ while(scanf(&amp;#34;%d&amp;#34;, &amp;amp;n) == 1){//输入的数量为1
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {//控制行
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//控制列
+ if(i == 0 || i == n-1 || j == 0 || j == n-1)//第0行，第n-1行，第0列，第n-1列输出 *_,其它位置输出 __
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ printf(&amp;#34;\n&amp;#34;);
+ }
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item></channel></rss>

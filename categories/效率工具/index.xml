@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>效率工具 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/</link><description>Recent content in 效率工具 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml"/><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+&lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
+&lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
+&lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
+&lt;p&gt;打开 MailPlus Server，如果没有公网 IP，最开始的配置其实无所谓，随便填写都行，毕竟无论如何都发不出邮件。&lt;/p&gt;
+&lt;p&gt;然后点击 &lt;code&gt;服务&lt;/code&gt; 选项，在点击顶部的 &lt;code&gt;MailPlus 客户端&lt;/code&gt; 标签，全部勾选即可。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png" alt="image"&gt;&lt;/p&gt;
+&lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
+&lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>Vim 折叠代码块</title><link>https://simons.qzz.io/post/2026/01/vim_code_block/</link><pubDate>Mon, 26 Jan 2026 13:36:45 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_code_block/</guid><description>&lt;p&gt;在查看代码的时候，如果代码十分冗长，尤其是 c/c++ 系列的时候，代码结构比较让人难以理清，主要是各种注释、括号的匹配问题。&lt;/p&gt;
+&lt;p&gt;虽然可以用&lt;code&gt;%&lt;/code&gt;来查看匹配的另外一半符号在哪里，但是如果这一对符号之间的代码超过了一页，甚至好几页的话，那么也是比较难以理解的。&lt;/p&gt;
+&lt;p&gt;于是可以使用这个vim所提供的折叠功能来简化这些分析。&lt;/p&gt;</description></item><item><title>Vim 命令速查</title><link>https://simons.qzz.io/post/2026/01/vim_refrence/</link><pubDate>Mon, 26 Jan 2026 13:35:50 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_refrence/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/chloneda/vim-cheatsheet"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim-cheatsheet - GitHub
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="https://gitee.com/chloneda/vim-cheatsheet"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim-cheatsheet - Gitee
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.vim.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim 官网
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="https://github.com/vim/vim"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim GitHub
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim 中文文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="./vimrc"
+ 
+ &gt;
+ Vim 跨平台配置文件 vimrc
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="resources/vim-tools.md"
+ 
+ &gt;
+ Vim 体系化工具集
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一重复的威力"&gt;一、重复的威力&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;. # 小数点，即重复（Dot）命令，重复执行上一次命令
+N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;
+&lt;h1 id="二移动"&gt;二、移动&lt;/h1&gt;
+&lt;h2 id="1-光标移动"&gt;1. 光标移动&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：普通（Normal）模式下，任意一个动作都可以重复。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>营销人必看网站</title><link>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站"&gt;营销人必备网站：6大类，41个网站&lt;/h1&gt;
+&lt;p&gt;从去年到现在，很多小伙伴会问到宿言如何才能提升自己的营销能力。其实提升营销能力主要分为两部分，那就是“不停学习+各种实践”。&lt;/p&gt;
+&lt;p&gt;关于学习，我们可以通过各类网站及资讯平台来不断的获取知识，毕竟营销这个职业太瞬息万变了，我们需要不断的吸收新的知识，才能做到百战不殆。关于实践，我们需要用到各种
+&lt;a href="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 营销人
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
+&lt;p&gt;Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。&lt;/p&gt;
+&lt;h2 id="1-模板继承的黑魔法"&gt;1. 模板继承的黑魔法&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
+&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html&amp;gt;
+ &amp;lt;head&amp;gt;
+ {{ block &amp;#34;head&amp;#34; . }}{{ end }}
+ &amp;lt;/head&amp;gt;
+ &amp;lt;body&amp;gt;
+ {{ block &amp;#34;main&amp;#34; . }}{{ end }}
+ &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+{{/* 子模板 */}}
+{{ define &amp;#34;main&amp;#34; }}
+ &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;看到这个&lt;code&gt;.&lt;/code&gt;了吗？这是Hugo的上下文传递，相当于其他语言的&lt;code&gt;this&lt;/code&gt;。很多人不知道，它可以这样玩：&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>错误处理 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/</link><description>Recent content in 错误处理 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://simons.qzz.io/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
+&lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
+ std::fs::read_to_string(path) // 这里会返回什么？
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码看似简单，但隐藏着两个基本问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文件可能不存在&lt;/li&gt;
+&lt;li&gt;即使文件存在，读取过程也可能失败&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这就是为什么 Rust 引入了 &lt;code&gt;Result&lt;/code&gt; 和 &lt;code&gt;Option&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="option处理有与没有"&gt;&lt;code&gt;Option&lt;/code&gt;：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2&gt;
+&lt;h3 id="option-的本质"&gt;&lt;code&gt;Option&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
+ Some(T), // 有值
+ None, // 没有值
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;让我们看一个实际例子：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ if id == 0 {
+ None // 用户不存在
+ } else {
+ Some(User { id, ... }) // 用户存在
+ }
+}
+
+// 使用方式
+match find_user(1) {
+ Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
+ None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="option-的常用方法"&gt;&lt;code&gt;Option&lt;/code&gt; 的常用方法&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);
+
+// 方法1：unwrap - 危险操作
+let value1 = x.unwrap(); // 如果是 None 会 panic
+
+// 方法2：unwrap_or - 提供默认值
+let value2 = x.unwrap_or(0); // None 时返回0
+
+// 方法3：map - 变换内部值
+let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
+
+// 方法4：and_then - 链式操作
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="result处理成功与失败"&gt;&lt;code&gt;Result&lt;/code&gt;：处理“成功”与“失败”&lt;/h2&gt;
+&lt;h3 id="result-的本质"&gt;&lt;code&gt;Result&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
+ Ok(T), // 成功，包含值 T
+ Err(E), // 错误，包含错误 E
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;实际应用示例：&lt;/p&gt;</description></item></channel></rss>

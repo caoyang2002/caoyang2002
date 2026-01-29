@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小米路由器 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/</link><description>Recent content in 小米路由器 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%B0%8F%E7%B1%B3%E8%B7%AF%E7%94%B1%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一获取原厂固件的-ssh-登录权限"&gt;一、获取原厂固件的 ssh 登录权限&lt;/h1&gt;
+&lt;p&gt;有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p&gt;
+&lt;p&gt;小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p&gt;</description></item><item><title>小米 4c 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;介绍一下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wifi 全程不用连网&lt;/li&gt;
+&lt;li&gt;win系统电脑刷机，需要下载一个刷机包&lt;/li&gt;
+&lt;li&gt;windows 有 python 程序，查看方法：在命令提示符窗口输入 &lt;code&gt;python --version&lt;/code&gt;，会输出版本号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至于让路由器变砖，并且对于以后更换固件非常友好，强烈建议刷Breed。&lt;/p&gt;</description></item><item><title>小米路由器</title><link>https://simons.qzz.io/post/2024/03/xiaomi_router/</link><pubDate>Fri, 22 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_router/</guid><description>&lt;p&gt;{bs-font color=&amp;quot;#FF0000&amp;quot;}刷机有风险，如果能用，请不要为了不一样而刷机，又不是不能用！{/bs-font}&lt;/p&gt;
+&lt;p&gt;现在你的路由器和小米已经没有任何关系了，恭喜你上了贼船！&lt;/p&gt;
+&lt;p&gt;基本介绍：
+OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
+几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item></channel></rss>

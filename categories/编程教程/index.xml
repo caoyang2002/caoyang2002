@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程教程 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B%E6%95%99%E7%A8%8B/</link><description>Recent content in 编程教程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>SQL 教程</title><link>https://simons.qzz.io/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/sql/</guid><description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;
+&lt;h1 id="数据库相关的操作"&gt;数据库相关的操作&lt;/h1&gt;
+&lt;p&gt;查询数据库	 &lt;code&gt;SHOW DATABASES&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;创建数据库
+&lt;code&gt;CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;CREATE DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看数据库信息
+&lt;code&gt;SHOW CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;SHOW CREATE DATABASE database&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除数据库
+&lt;code&gt;DROP DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;DROP DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库
+&lt;code&gt;USE 数据库名&lt;/code&gt;
+&lt;code&gt;USE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="ddl语句-数据定义语言"&gt;DDL语句	 数据定义语言&lt;/h1&gt;
+&lt;p&gt;创建表&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
+ 列名1 类型[长度] [DEFAULT 默认值] [约束条件]
+ 列名2 类型
+ ……
+);
+
+CREATE TABLE userinfo(
+ id INT
+ username VARCHAR(32)
+ password VARCHAR(32)
+ nickname VARCHAR(32)
+ age INT(3)
+);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;查看当前数据库创建的所有表
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

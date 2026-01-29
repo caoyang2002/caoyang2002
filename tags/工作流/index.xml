@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工作流 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/</link><description>Recent content in 工作流 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81/index.xml" rel="self" type="application/rss+xml"/><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;h1 id="一软件篇"&gt;一、软件篇&lt;/h1&gt;
+&lt;h2 id="1-创意收集整理"&gt;1. 创意收集整理：&lt;/h2&gt;
+&lt;p&gt;1、&lt;code&gt;XMind ZEN&lt;/code&gt; (思维导图，zen版本更为简洁)
+2、&lt;code&gt;Typora&lt;/code&gt;(写markdown的编辑器)
+3、有道云笔记(推荐)、印象笔记、为知笔记、OneNote&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关于markdown：
+github：readme.md(md=markdown)
+建议从事技术的同行都掌握的一种文本语言
+可以在多平台自由遨游，到处分享而无须担心格式&lt;/p&gt;</description></item><item><title>GitHub Actions 深入剖析：从原理到实践</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</link><pubDate>Sun, 26 Jan 2025 10:47:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</guid><description>&lt;h1 id="github-actions-深入剖析从原理到实践"&gt;GitHub Actions 深入剖析：从原理到实践&lt;/h1&gt;
+&lt;p&gt;最近收到一个问题：&amp;ldquo;为什么我的 CI/CD 流水线总是莫名其妙失败？&amp;ldquo;这让我想起了 GitHub Actions 的一些有趣特性。今天就来扒一扒它的底层原理。&lt;/p&gt;
+&lt;h2 id="github-actions-的本质"&gt;GitHub Actions 的本质&lt;/h2&gt;
+&lt;p&gt;本质上，GitHub Actions 就是一个事件驱动的工作流自动化引擎。它监听 GitHub 事件，然后执行预定义的动作。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
+name: CI
+on: [push] # 事件触发器
+jobs:
+ build: # 工作单元
+ runs-on: ubuntu-latest # 运行环境
+ steps: # 执行步骤
+ - uses: actions/checkout@v2
+ - run: npm test&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item></channel></rss>

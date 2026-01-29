@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MySQL on 短松江月</title><link>https://simons.qzz.io/tags/mysql/</link><description>Recent content in MySQL on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/mysql/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;参考：
+&lt;a href="https://docs.gitea.com/zh-cn/category/installation"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Gitea 支持多种安装方法，这里只介绍 docker 的安装方法&lt;/p&gt;
+&lt;h1 id="方法一使用docker命令行安装推荐"&gt;方法一：使用Docker命令行安装（推荐）&lt;/h1&gt;
+&lt;h2 id="1-创建数据目录"&gt;1. 创建数据目录&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 创建必要的目录
+sudo mkdir -p /opt/gitea/data
+sudo mkdir -p /opt/gitea/config
+sudo mkdir -p /opt/gitea/logs
+
+# 设置权限（Gitea默认使用uid=1000, gid=1000的用户）
+sudo chown -R 1000:1000 /opt/gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="2-运行gitea容器"&gt;2. 运行Gitea容器&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -d \
+ --name=gitea \
+ --privileged=true \
+ --restart=unless-stopped \
+ -p 3000:3000 \
+ -p 2222:22 \
+ -v /opt/gitea/data:/data \
+ -v /opt/gitea/config:/etc/gitea \
+ -v /etc/timezone:/etc/timezone:ro \
+ -v /etc/localtime:/etc/localtime:ro \
+ -e USER_UID=1000 \
+ -e USER_GID=1000 \
+ gitea/gitea:latest&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="3-验证安装"&gt;3. 验证安装&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 查看容器状态
+docker ps -a
+
+# 查看日志
+docker logs gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;访问：&lt;code&gt;http://your-server-ip:3000&lt;/code&gt; 进行初始设置。&lt;/p&gt;</description></item><item><title>更好的 zsh 配置</title><link>https://simons.qzz.io/post/2025/01/ssh_config_best/</link><pubDate>Tue, 07 Jan 2025 13:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/ssh_config_best/</guid><description>&lt;h1 id="zsh-配置"&gt;zsh 配置&lt;/h1&gt;
+&lt;h2 id="安装-oh-my-zsh"&gt;安装 oh my zsh&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;配置 &lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH=&amp;#34;$HOME/.oh-my-zsh&amp;#34;
+
+# Set name of the theme to load --- if set to &amp;#34;random&amp;#34;, it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME=&amp;#34;robbyrussell&amp;#34;
+ZSH_THEME=&amp;#34;amuse&amp;#34;
+# theme:
+# git: xiong-chiamiov-plus amuse powerlevel10k
+# time: crunch
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( &amp;#34;robbyrussell&amp;#34; &amp;#34;agnoster&amp;#34; )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE=&amp;#34;true&amp;#34;
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle &amp;#39;:omz:update&amp;#39; mode disabled # disable automatic updates
+# zstyle &amp;#39;:omz:update&amp;#39; mode auto # update automatically without asking
+# zstyle &amp;#39;:omz:update&amp;#39; mode reminder # just remind me to update when it&amp;#39;s time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle &amp;#39;:omz:update&amp;#39; frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS=&amp;#34;%F{yellow}waiting...%f&amp;#34;
+# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY=&amp;#34;true&amp;#34;
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# &amp;#34;mm/dd/yyyy&amp;#34;|&amp;#34;dd.mm.yyyy&amp;#34;|&amp;#34;yyyy-mm-dd&amp;#34;
+# or set a custom format using the strftime function format specifications,
+# see &amp;#39;man strftime&amp;#39; for details.
+# HIST_STAMPS=&amp;#34;mm/dd/yyyy&amp;#34;
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+ git
+ extract
+ autojump
+ zsh-autosuggestions
+ zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH=&amp;#34;/usr/local/man:$MANPATH&amp;#34;
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export EDITOR=&amp;#39;vim&amp;#39;
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+# export EDITOR=&amp;#39;vim&amp;#39;
+# else
+# export EDITOR=&amp;#39;nvim&amp;#39;
+# fi
+
+# Compilation flags
+# export ARCHFLAGS=&amp;#34;-arch $(uname -m)&amp;#34;
+
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig=&amp;#34;mate ~/.zshrc&amp;#34;
+# alias ohmyzsh=&amp;#34;mate ~/.oh-my-zsh&amp;#34;
+
+
+# IDEA path
+#
+
+# PATH env
+source &amp;#34;$HOME/.cargo/env&amp;#34;
+# for autojump https://github.com/wting/autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] &amp;amp;&amp;amp; . /opt/homebrew/etc/profile.d/autojump.sh
+
+# fnm
+# fnm
+FNM_PATH=&amp;#34;$HOME/.local/share/fnm&amp;#34;
+if [ -d &amp;#34;$FNM_PATH&amp;#34; ]; then
+ export PATH=&amp;#34;$FNM_PATH:$PATH&amp;#34;
+ eval &amp;#34;`fnm env`&amp;#34;
+fi
+
+# IDEA path
+export PATH=&amp;#34;/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH&amp;#34;
+export PATH=&amp;#34;/opt/homebrew/opt/dotnet@6/bin:$PATH&amp;#34;
+export PATH=&amp;#34;/home/simons/.local/bin:$PATH&amp;#34;
+export PATH=&amp;#34;/Users/simons/.yarn/bin:/Users/simons/.config/yarn/global:$PATH&amp;#34;
+
+# pnpm
+export PNPM_HOME=&amp;#34;/Users/simons/Library/pnpm&amp;#34;
+case &amp;#34;:$PATH:&amp;#34; in
+ *&amp;#34;:$PNPM_HOME:&amp;#34;*) ;;
+ *) export PATH=&amp;#34;$PNPM_HOME:$PATH&amp;#34; ;;
+esac
+# pnpm end
+#
+#
+
+# poetry
+export PATH=&amp;#34;$HOME/.local/bin:$PATH&amp;#34;
+
+# go
+export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置-github"&gt;配置 Github&lt;/h1&gt;
+&lt;h2 id="生成密钥对"&gt;生成密钥对&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 生成一对 SSH 密钥
+ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; # 输入邮箱
+# 启动 SSH 代理，用于管理 SSH 密钥
+eval &amp;#34;$(ssh-agent -s)&amp;#34;
+# 将 SSH 私钥添加到 SSH 代理
+ssh-add ~/.ssh/id_ed25519
+# 显示公钥内容
+cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="配置-ssh-密钥"&gt;配置 SSH 密钥：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>虚拟DOM on 短松江月</title><link>https://simons.qzz.io/tags/%E8%99%9A%E6%8B%9Fdom/</link><description>Recent content in 虚拟DOM on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E8%99%9A%E6%8B%9Fdom/index.xml" rel="self" type="application/rss+xml"/><item><title>React vs Vue: 框架之争的深层思考</title><link>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
+&lt;h2 id="一核心设计哲学差异"&gt;一、核心设计哲学差异&lt;/h2&gt;
+&lt;h3 id="11-编程范式"&gt;1.1 编程范式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：函数式编程优先&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;强调不可变性和纯函数&lt;/li&gt;
+&lt;li&gt;组件本质是函数（props in, JSX out）&lt;/li&gt;
+&lt;li&gt;Hooks强化了函数式概念&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
+const Component = ({ data }) =&amp;gt; {
+ const [state, setState] = useState(initialState);
+ const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
+ 
+ return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
+};&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基于可变状态的响应式系统&lt;/li&gt;
+&lt;li&gt;组合式API提供函数式能力&lt;/li&gt;
+&lt;li&gt;传统选项式API符合OOP思维&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+&amp;lt;script setup&amp;gt;
+import { ref, computed } from &amp;#39;vue&amp;#39;
+
+const data = ref(initialData)
+const derivedValue = computed(() =&amp;gt; compute(data.value))
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：最小化API，一切靠JavaScript&lt;/p&gt;</description></item><item><title>React 开发痛点与解决方案详解</title><link>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</link><pubDate>Fri, 24 Jan 2025 13:44:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</guid><description>&lt;h1 id="react-开发痛点与解决方案详解"&gt;React 开发痛点与解决方案详解&lt;/h1&gt;
+&lt;h2 id="1-dom-操作的深层困境"&gt;1. DOM 操作的深层困境&lt;/h2&gt;
+&lt;h3 id="传统方式的问题"&gt;传统方式的问题&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 更新用户信息
+$(&amp;#39;#userName&amp;#39;).text(user.name);
+$(&amp;#39;#userRole&amp;#39;).text(user.role);
+$(&amp;#39;#department&amp;#39;).text(user.department);
+
+// 更新权限信息
+function updatePermissions(permissions) {
+ $(&amp;#39;#permissionList&amp;#39;).empty();
+ permissions.forEach(p =&amp;gt; {
+ $(&amp;#39;#permissionList&amp;#39;).append(`&amp;lt;li&amp;gt;${p}&amp;lt;/li&amp;gt;`);
+ });
+}
+
+// 更新用户状态
+function toggleUserStatus(status) {
+ if(status === &amp;#39;active&amp;#39;) {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;active&amp;#39;).removeClass(&amp;#39;inactive&amp;#39;);
+ } else {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这种操作方式存在严重问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;代码分散导致的维护噩梦&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM 操作散布在各个函数中&lt;/li&gt;
+&lt;li&gt;状态变化需要手动同步多处DOM&lt;/li&gt;
+&lt;li&gt;代码修改容易遗漏关联更新&lt;/li&gt;
+&lt;li&gt;难以追踪数据流向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;性能瓶颈&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

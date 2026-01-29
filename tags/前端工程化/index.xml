@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>前端工程化 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/</link><description>Recent content in 前端工程化 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>React 开发痛点与解决方案详解</title><link>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</link><pubDate>Fri, 24 Jan 2025 13:44:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</guid><description>&lt;h1 id="react-开发痛点与解决方案详解"&gt;React 开发痛点与解决方案详解&lt;/h1&gt;
+&lt;h2 id="1-dom-操作的深层困境"&gt;1. DOM 操作的深层困境&lt;/h2&gt;
+&lt;h3 id="传统方式的问题"&gt;传统方式的问题&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 更新用户信息
+$(&amp;#39;#userName&amp;#39;).text(user.name);
+$(&amp;#39;#userRole&amp;#39;).text(user.role);
+$(&amp;#39;#department&amp;#39;).text(user.department);
+
+// 更新权限信息
+function updatePermissions(permissions) {
+ $(&amp;#39;#permissionList&amp;#39;).empty();
+ permissions.forEach(p =&amp;gt; {
+ $(&amp;#39;#permissionList&amp;#39;).append(`&amp;lt;li&amp;gt;${p}&amp;lt;/li&amp;gt;`);
+ });
+}
+
+// 更新用户状态
+function toggleUserStatus(status) {
+ if(status === &amp;#39;active&amp;#39;) {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;active&amp;#39;).removeClass(&amp;#39;inactive&amp;#39;);
+ } else {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这种操作方式存在严重问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;代码分散导致的维护噩梦&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM 操作散布在各个函数中&lt;/li&gt;
+&lt;li&gt;状态变化需要手动同步多处DOM&lt;/li&gt;
+&lt;li&gt;代码修改容易遗漏关联更新&lt;/li&gt;
+&lt;li&gt;难以追踪数据流向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;性能瓶颈&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Webpack：前端项目的"搬运工"</title><link>https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/</link><pubDate>Fri, 24 Jan 2025 13:41:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/</guid><description>&lt;h1 id="webpack前端项目的搬运工"&gt;Webpack：前端项目的&amp;quot;搬运工&amp;quot;&lt;/h1&gt;
+&lt;h2 id="你遇到过这样的问题吗"&gt;你遇到过这样的问题吗？&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 项目目录
+src/
+ ├── js/
+ │ ├── user.js
+ │ ├── order.js
+ │ └── payment.js
+ ├── css/
+ │ ├── main.css
+ │ └── theme.css
+ └── images/
+ └── logo.png&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;每次部署都要手动:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;合并 JS 文件&lt;/li&gt;
+&lt;li&gt;压缩 CSS&lt;/li&gt;
+&lt;li&gt;处理图片&lt;/li&gt;
+&lt;li&gt;更新版本号&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这让我想起小时候帮妈妈打扫房间 - 东西太多，到处都是，不知从何下手。&lt;/p&gt;
+&lt;h2 id="为什么会有这些问题"&gt;为什么会有这些问题？&lt;/h2&gt;
+&lt;h3 id="前端的特殊性"&gt;前端的特殊性&lt;/h3&gt;
+&lt;p&gt;浏览器需要加载:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;HTML (建筑框架)&lt;/li&gt;
+&lt;li&gt;CSS (装修风格)&lt;/li&gt;
+&lt;li&gt;JS (家具电器)&lt;/li&gt;
+&lt;li&gt;图片等资源 (装饰品)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;每多一个文件就多一次 HTTP 请求，网页加载越慢。&lt;/p&gt;</description></item></channel></rss>

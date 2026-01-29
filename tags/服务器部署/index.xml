@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>服务器部署 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/</link><description>Recent content in 服务器部署 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/ehang-io/nps/tree/master"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://ehang-io.github.io/nps/#/install"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;
+&lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item></channel></rss>

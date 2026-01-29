@@ -1,0 +1,3895 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程专题 on 短松江月</title><link>https://simons.qzz.io/posts/programming/</link><description>Recent content in 编程专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+&lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git config --global alias.sync &amp;#39;!f() { 
+ echo &amp;#34;Pushing to origin...&amp;#34;;
+ git push origin main || echo &amp;#34;Failed to push to origin&amp;#34;;
+ 
+ echo &amp;#34;&amp;#34;;
+ echo &amp;#34;Checking local remote...&amp;#34;;
+ if git remote | grep -q &amp;#34;^local$&amp;#34;; then
+ echo &amp;#34;Pushing to local...&amp;#34;;
+ git push local main || echo &amp;#34;Failed to push to local&amp;#34;;
+ else
+ echo &amp;#34;⚠️ Local remote not found. Skipping.&amp;#34;;
+ echo &amp;#34; To add local: git remote add local /path/to/repo.git&amp;#34;;
+ fi
+ 
+ echo &amp;#34;&amp;#34;;
+ echo &amp;#34;✨ Sync completed!&amp;#34;;
+}; f&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="整体功能"&gt;整体功能&lt;/h2&gt;
+&lt;p&gt;这个命令会&lt;strong&gt;同时推送代码到两个远程仓库&lt;/strong&gt;：&lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;local&lt;/code&gt;（如果存在）。&lt;/p&gt;</description></item><item><title>Epoll</title><link>https://simons.qzz.io/post/2026/01/epoll/</link><pubDate>Wed, 28 Jan 2026 18:27:07 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/epoll/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/Hijack-you/p/13057792.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;本文会从网卡接收数据的流程讲起，串联起CPU中断、操作系统进程调度等知识；再一步步分析阻塞接收数据、select到epoll的进化过程；最后探究epoll的实现细节。&lt;/p&gt;
+&lt;h1 id="一从网卡接收数据说起"&gt;一、从网卡接收数据说起&lt;/h1&gt;
+&lt;p&gt;下图是一个典型的计算机结构图，计算机由CPU、存储器（内存）、网络接口等部件组成。了解epoll本质的第一步，要从硬件的角度看计算机怎样接收网络数据。&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前提条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
+&lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-url" data-lang="url"&gt;https://spk.bobohome.store:8880&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="2-安装-vaultwarden"&gt;2. 安装 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>mac 汇编笔记</title><link>https://simons.qzz.io/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
+&lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="梦开始的地方"&gt;梦开始的地方&lt;/h1&gt;
+&lt;h1 id="简单的-asm"&gt;简单的 asm&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;null.s&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-asm" data-lang="asm"&gt;.section __TEXT,__text
+.globl _main
+.p2align 2
+_main:
+mov w0, #0
+ret&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;int main() {
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;as null.s -o null.o # 汇编
+ld null.o -lSystem -L $(xcrun --show-sdk-path -sdk macosx)/usr/lib -o null # 链接（由于在 macOS 上不能创建静态链接的可执行文件，因此在链接时必须使用 -lSystem 动态链接上系统库。）
+./null # 运行
+
+# or
+clang null.s -o null
+
+# or
+gcc null.s -o null&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;as&lt;/code&gt; 是 LLVM 的汇编器, &lt;code&gt;lldb&lt;/code&gt; 是 LLVM 的调试器。
+&lt;code&gt;GCC&lt;/code&gt; 套件是 GNU 操作系统的一个部分，GNU 是开源的、社区驱动的。而 LLVM 项目也是开源的，现在主要是 Apple 在投资运行。因此，既然在 macOS 上，我就主要用的是 LLVM 系的工具。&lt;/p&gt;</description></item><item><title>简述 Rust 中的闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：函数复用
+// 没有闭包时，需要传入所有参数
+fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
+
+// 有了闭包，可以部分应用
+let base = 5;
+let add_five = |x| x &amp;#43; base;
+
+// 问题2：函数式编程需求
+vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
+vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
+
+// 问题3：上下文捕获
+// 没有闭包时很难处理
+struct Context { value: i32 }
+let ctx = Context { value: 42 };
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="闭包是什么"&gt;闭包是什么？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;闭包是可以捕获其环境的匿名函数&lt;/li&gt;
+&lt;li&gt;它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li&gt;
+&lt;li&gt;闭包 = 函数 + 环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="闭包的优势"&gt;闭包的优势&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 简洁的语法
+let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
+
+// 2. 灵活的环境捕获
+let multiplier = 2;
+let double = |x| x * multiplier; // 捕获 multiplier
+
+// 3. 支持函数式编程
+let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
+let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
+ .into_iter()
+ .filter(|x| x % 2 == 0)
+ .collect();&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://simons.qzz.io/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你家的地址（引用）&lt;/li&gt;
+&lt;li&gt;花瓶本身（值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么我们需要引用"&gt;为什么我们需要引用？&lt;/h2&gt;
+&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>Rust 函数式编程</title><link>https://simons.qzz.io/post/2025/01/rust_programming/</link><pubDate>Wed, 15 Jan 2025 11:48:53 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_programming/</guid><description>&lt;p&gt;让我用这种方式来讲解 Rust 的函数式编程概念：&lt;/p&gt;
+&lt;h1 id="引入问题"&gt;引入问题&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你需要处理一个电商系统的订单数据。要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;过滤出金额大于 100 的订单&lt;/li&gt;
+&lt;li&gt;计算这些订单的总金额&lt;/li&gt;
+&lt;li&gt;给每个订单加上 10% 的折扣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;传统的命令式编程可能是这样：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let mut total = 0;
+for order in orders {
+ if order.amount &amp;gt; 100 {
+ total &amp;#43;= order.amount * 0.9;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码有什么问题？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可读性不高：逻辑分散在循环中&lt;/li&gt;
+&lt;li&gt;难以修改：如果要改变处理逻辑，需要修改循环内部&lt;/li&gt;
+&lt;li&gt;难以复用：这段逻辑很难在其他地方重用&lt;/li&gt;
+&lt;li&gt;易出错：可变状态(total)增加了出错风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="问题模型"&gt;问题模型&lt;/h1&gt;
+&lt;p&gt;我们需要一种方式能够：&lt;/p&gt;</description></item><item><title>Rust 生命周期</title><link>https://simons.qzz.io/post/2025/01/rust_cyc/</link><pubDate>Wed, 15 Jan 2025 11:41:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_cyc/</guid><description>&lt;p&gt;让我系统地分析 Rust 的生命周期：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;问题场景：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 考虑这个场景：我们需要返回一个引用
+fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
+ if x.len() &amp;gt; y.len() {
+ x
+ } else {
+ y
+ }
+}
+// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;这个特性是什么：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;生命周期是 Rust 的类型系统中用于确保引用有效性的一种机制&lt;/li&gt;
+&lt;li&gt;它通过标注来告诉编译器多个引用之间的生命周期关系&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;导致这个特性出现的问题：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：悬垂引用
+let r;
+{
+ let x = 5;
+ r = &amp;amp;x; // x 在这里就会被销毁
+}
+println!(&amp;#34;{}&amp;#34;, r); // r 引用了已经无效的内存
+
+// 问题2：引用的有效期不明确
+struct Person&amp;lt;&amp;#39;a&amp;gt; {
+ name: &amp;amp;&amp;#39;a str // 没有生命周期标注时，不知道这个引用能活多久
+}
+
+// 问题3：函数返回引用时的所有权问题
+fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需要明确它的有效期
+ data
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;解决方案分析：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 方案1：完全避免使用引用，使用所有权
+struct Person {
+ name: String // 而不是 &amp;amp;str
+}
+// 优点：安全
+// 缺点：性能开销，不够灵活
+
+// 方案2：生命周期标注
+struct Person&amp;lt;&amp;#39;a&amp;gt; {
+ name: &amp;amp;&amp;#39;a str
+}
+// 优点：既安全又灵活
+// 缺点：语法复杂度增加
+
+// 方案3：使用智能指针
+struct Person {
+ name: Rc&amp;lt;String&amp;gt;
+}
+// 优点：灵活性高
+// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;最佳解决方案 - 生命周期标注：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 函数中的生命周期标注
+fn longest&amp;lt;&amp;#39;a&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;a str) -&amp;gt; &amp;amp;&amp;#39;a str {
+ if x.len() &amp;gt; y.len() {
+ x
+ } else {
+ y
+ }
+}
+
+// 2. 结构体中的生命周期标注
+struct Book&amp;lt;&amp;#39;a&amp;gt; {
+ title: &amp;amp;&amp;#39;a str,
+ author: &amp;amp;&amp;#39;a str,
+}
+
+// 3. impl 块中的生命周期标注
+impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {
+ fn get_title(&amp;amp;self) -&amp;gt; &amp;amp;str {
+ self.title
+ }
+}
+
+// 4. 多个生命周期参数
+fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {
+ x
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;生命周期最佳实践：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 生命周期省略规则
+fn first_word(s: &amp;amp;str) -&amp;gt; &amp;amp;str { // 隐含 &amp;lt;&amp;#39;a&amp;gt;
+ // ...
+}
+
+// 2. 静态生命周期
+let static_str: &amp;amp;&amp;#39;static str = &amp;#34;I live forever&amp;#34;;
+
+// 3. 生命周期约束
+fn print_type&amp;lt;T: Display &amp;#43; &amp;#39;static&amp;gt;(t: T) {
+ println!(&amp;#34;{}&amp;#34;, t);
+}
+
+// 4. 正确使用 &amp;#39;static
+// 好的做法
+const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;
+
+// 避免过度使用 &amp;#39;static
+// 不好的做法
+fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {
+ data
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;结论总结：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;生命周期是 Rust 独特的解决内存安全的机制&lt;/li&gt;
+&lt;li&gt;它在编译时就能发现潜在的内存问题&lt;/li&gt;
+&lt;li&gt;主要用途：
+&lt;ol&gt;
+&lt;li&gt;防止悬垂引用&lt;/li&gt;
+&lt;li&gt;确保引用的有效性&lt;/li&gt;
+&lt;li&gt;管理数据的生存期&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;使用建议：
+&lt;ol&gt;
+&lt;li&gt;优先使用生命周期省略规则&lt;/li&gt;
+&lt;li&gt;需要时才显式标注&lt;/li&gt;
+&lt;li&gt;谨慎使用 &amp;lsquo;static&lt;/li&gt;
+&lt;li&gt;理解借用检查器的错误信息&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;通过这个特性，Rust 在编译时就能保证内存安全，而不需要运行时垃圾回收，这是它的一个重要优势。虽然生命周期标注增加了一些代码复杂度，但这是为了内存安全付出的必要成本。&lt;/p&gt;</description></item><item><title>深入理解 Rust 所有权机制</title><link>https://simons.qzz.io/post/2025/01/rust_ownership/</link><pubDate>Wed, 15 Jan 2025 11:38:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ownership/</guid><description>&lt;h1 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h1&gt;
+&lt;p&gt;看这段在其他语言中很普通的代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ let data = vec![1, 2, 3];
+ process_data(data);
+ println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
+}
+
+fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
+ println!(&amp;#34;Processing: {:?}&amp;#34;, v);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。&lt;/p&gt;
+&lt;h2 id="所有权的三条核心规则"&gt;所有权的三条核心规则&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;每个值只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;所有者离开作用域，值将被丢弃&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个值同一时刻只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过代码详细理解这些规则：&lt;/p&gt;
+&lt;h3 id="规则1单一所有权"&gt;规则1：单一所有权&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+let s2 = s1; // 所有权从s1转移到s2
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;内存布局变化：&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的本质"&gt;闭包的本质&lt;/h2&gt;
+&lt;p&gt;Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数逻辑&lt;/li&gt;
+&lt;li&gt;捕获的环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过反编译来看闭包的真实面目：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item><item><title>深入解释 Rust 中的 Result 和 Option 这两个核心类型</title><link>https://simons.qzz.io/post/2025/01/rust_result_option/</link><pubDate>Wed, 15 Jan 2025 11:26:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_result_option/</guid><description>&lt;h1 id="从一个实际问题开始"&gt;从一个实际问题开始&lt;/h1&gt;
+&lt;p&gt;假设我们在写一个文件处理程序：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
+ std::fs::read_to_string(path) // 这里会返回什么？
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码看似简单，但隐藏着两个基本问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;文件可能不存在&lt;/li&gt;
+&lt;li&gt;即使文件存在，读取过程也可能失败&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;这就是为什么 Rust 引入了 &lt;code&gt;Result&lt;/code&gt; 和 &lt;code&gt;Option&lt;/code&gt;。&lt;/p&gt;
+&lt;h2 id="option处理有与没有"&gt;&lt;code&gt;Option&lt;/code&gt;：处理&amp;quot;有&amp;quot;与&amp;quot;没有&amp;quot;&lt;/h2&gt;
+&lt;h3 id="option-的本质"&gt;&lt;code&gt;Option&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
+ Some(T), // 有值
+ None, // 没有值
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;让我们看一个实际例子：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ if id == 0 {
+ None // 用户不存在
+ } else {
+ Some(User { id, ... }) // 用户存在
+ }
+}
+
+// 使用方式
+match find_user(1) {
+ Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
+ None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="option-的常用方法"&gt;&lt;code&gt;Option&lt;/code&gt; 的常用方法&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);
+
+// 方法1：unwrap - 危险操作
+let value1 = x.unwrap(); // 如果是 None 会 panic
+
+// 方法2：unwrap_or - 提供默认值
+let value2 = x.unwrap_or(0); // None 时返回0
+
+// 方法3：map - 变换内部值
+let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
+
+// 方法4：and_then - 链式操作
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="result处理成功与失败"&gt;&lt;code&gt;Result&lt;/code&gt;：处理“成功”与“失败”&lt;/h2&gt;
+&lt;h3 id="result-的本质"&gt;&lt;code&gt;Result&lt;/code&gt; 的本质&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
+ Ok(T), // 成功，包含值 T
+ Err(E), // 错误，包含错误 E
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;实际应用示例：&lt;/p&gt;</description></item><item><title>rust 中的属性宏</title><link>https://simons.qzz.io/post/2025/01/rust_macro/</link><pubDate>Wed, 15 Jan 2025 11:16:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_macro/</guid><description>&lt;h1 id="deriveclone-debug-serialize-deserialize-eq-partialeq"&gt;&lt;code&gt;#[derive(Clone, Debug, Serialize, Deserialize, Eq, PartialEq)]&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;这是 Rust 语言中的属性宏(attribute macro)声明，用于自动为数据结构实现一些常用的特性(traits)。让我详细解释每个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;derive&lt;/code&gt; - 这是 Rust 的派生宏，用于自动生成特定 trait 的实现&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;括号里的每个特性具体作用是：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Clone&lt;/code&gt; - 允许类型创建自身的深拷贝&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Debug&lt;/code&gt; - 实现格式化调试输出，使用 &lt;code&gt;{:?}&lt;/code&gt; 格式说明符可以打印该类型&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Serialize&lt;/code&gt; - 来自 serde 库，使类型可以被序列化(比如转换成 JSON)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Deserialize&lt;/code&gt; - 也来自 serde 库，使类型可以被反序列化(比如从 JSON 转换回来)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Eq&lt;/code&gt; - 实现完全相等比较&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PartialEq&lt;/code&gt; - 实现部分相等比较，允许使用 &lt;code&gt;==&lt;/code&gt; 和 &lt;code&gt;!=&lt;/code&gt; 运算符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种写法可以让我们避免手动实现这些特性，编译器会自动为我们生成实现代码。这在定义数据结构时非常常用，特别是在需要序列化/反序列化数据的场景中。&lt;/p&gt;</description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://simons.qzz.io/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{console, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 控制台打印
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;move test: {}&amp;#34;, name)));
+
+ // 使用 console.warn
+ console::warn_1(&amp;amp;JsValue::from_str(&amp;#34;This is a warning&amp;#34;));
+
+ // 使用 console.error
+ console::error_1(&amp;amp;JsValue::from_str(&amp;#34;This is an error&amp;#34;));
+
+ // 浏览器 alert
+ if let Some(window) = window() {
+ window
+ .alert_with_message(&amp;amp;format!(&amp;#34;Hello, {}!&amp;#34;, name))
+ .expect(&amp;#34;alert failed&amp;#34;);
+ }
+
+ // 确认对话框
+ if let Some(window) = window() {
+ if window
+ .confirm_with_message(&amp;#34;Do you want to continue?&amp;#34;)
+ .expect(&amp;#34;confirm failed&amp;#34;)
+ {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked OK&amp;#34;));
+ } else {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
+ }
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;在 Cargo.toml 中需要添加必要的依赖：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;[dependencies]
+wasm-bindgen = &amp;#34;0.2&amp;#34;
+web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
+ &amp;#34;console&amp;#34;,
+ &amp;#34;Window&amp;#34;,
+ &amp;#34;Document&amp;#34;,
+ &amp;#34;Element&amp;#34;,
+ &amp;#34;HtmlElement&amp;#34;,
+ &amp;#34;Node&amp;#34;,
+ &amp;#34;Location&amp;#34;
+]}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;如果需要格式化打印，可以使用 &lt;code&gt;console::log!&lt;/code&gt; 宏：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::console;
+
+// 需要引入宏
+#[macro_export]
+macro_rules! console_log {
+ ($($t:tt)*) =&amp;gt; (console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!($($t)*))))
+}
+
+pub fn move_test(name: &amp;amp;str) {
+ console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;操作 DOM 示例：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{Document, Element, HtmlElement, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 获取 document
+ let window = window().expect(&amp;#34;no global window exists&amp;#34;);
+ let document = window.document().expect(&amp;#34;no document exists&amp;#34;);
+
+ // 创建新元素
+ if let Some(div) = document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ // 修改输入框的值
+ if let Some(input) = div.dyn_ref::&amp;lt;HtmlElement&amp;gt;() {
+ input.set_inner_text(&amp;amp;format!(&amp;#34;New value: {}&amp;#34;, name));
+ }
+ }
+
+ // 创建新元素
+ let new_div = document.create_element(&amp;#34;div&amp;#34;).unwrap();
+ new_div.set_text_content(Some(&amp;amp;format!(&amp;#34;Hello {}&amp;#34;, name)));
+
+ // 添加到 body
+ if let Some(body) = document.body() {
+ body.append_child(&amp;amp;new_div).unwrap();
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;处理错误和 Result：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ // 使用 ? 运算符处理错误
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+ let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
+
+ // 处理可能的错误
+ match document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ Some(element) =&amp;gt; {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Found element: {}&amp;#34;, name)));
+ Ok(())
+ },
+ None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;使用本地存储：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::Storage;
+
+pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+
+ // 获取 localStorage
+ if let Some(storage) = window.local_storage()? {
+ // 存储数据
+ storage.set_item(&amp;#34;user_name&amp;#34;, name)?;
+
+ // 读取数据
+ if let Ok(Some(saved_name)) = storage.get_item(&amp;#34;user_name&amp;#34;) {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Saved name: {}&amp;#34;, saved_name)));
+ }
+ }
+
+ Ok(())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>更好的 vim 配置</title><link>https://simons.qzz.io/post/2025/01/vim_config/</link><pubDate>Tue, 07 Jan 2025 13:48:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/vim_config/</guid><description>&lt;p&gt;~ ⌚ 13:47:21
+$ cat .vimrc
+&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;quot; 显示相关&lt;/p&gt;
+&lt;p&gt;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&amp;quot;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;set shortmess=atI &amp;quot; 启动的时候不显示那个援助乌干达儿童的提示&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;winpos 5 5 &amp;quot; 设定窗口位置&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;set lines=40 columns=155 &amp;quot; 设定窗口大小&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;set nu &amp;quot; 显示行号&lt;/p&gt;
+&lt;p&gt;set go= &amp;quot; 不要图形按钮&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;color asmanian2 &amp;quot; 设置背景主题&lt;/p&gt;
+&lt;p&gt;set guifont=Courier_New:h10:cANSI &amp;quot; 设置字体&lt;/p&gt;
+&lt;p&gt;syntax on &amp;quot; 语法高亮&lt;/p&gt;
+&lt;p&gt;autocmd InsertLeave * se nocul &amp;quot; 用浅色高亮当前行&lt;/p&gt;
+&lt;p&gt;autocmd InsertEnter * se cul &amp;quot; 用浅色高亮当前行&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;set ruler &amp;quot; 显示标尺&lt;/p&gt;
+&lt;p&gt;set showcmd &amp;quot; 输入的命令显示出来，看的清楚些&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;set cmdheight=1 &amp;quot; 命令行（在状态行下）的高度，设置为1&lt;/p&gt;</description></item><item><title>更好的 zsh 配置</title><link>https://simons.qzz.io/post/2025/01/ssh_config_best/</link><pubDate>Tue, 07 Jan 2025 13:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/ssh_config_best/</guid><description>&lt;h1 id="zsh-配置"&gt;zsh 配置&lt;/h1&gt;
+&lt;h2 id="安装-oh-my-zsh"&gt;安装 oh my zsh&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;配置 &lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+
+# Path to your Oh My Zsh installation.
+export ZSH=&amp;#34;$HOME/.oh-my-zsh&amp;#34;
+
+# Set name of the theme to load --- if set to &amp;#34;random&amp;#34;, it will
+# load a random theme each time Oh My Zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH_THEME=&amp;#34;robbyrussell&amp;#34;
+ZSH_THEME=&amp;#34;amuse&amp;#34;
+# theme:
+# git: xiong-chiamiov-plus amuse powerlevel10k
+# time: crunch
+
+# Set list of themes to pick from when loading at random
+# Setting this variable when ZSH_THEME=random will cause zsh to load
+# a theme from this variable instead of looking in $ZSH/themes/
+# If set to an empty array, this variable will have no effect.
+# ZSH_THEME_RANDOM_CANDIDATES=( &amp;#34;robbyrussell&amp;#34; &amp;#34;agnoster&amp;#34; )
+
+# Uncomment the following line to use case-sensitive completion.
+# CASE_SENSITIVE=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to use hyphen-insensitive completion.
+# Case-sensitive completion must be off. _ and - will be interchangeable.
+# HYPHEN_INSENSITIVE=&amp;#34;true&amp;#34;
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle &amp;#39;:omz:update&amp;#39; mode disabled # disable automatic updates
+# zstyle &amp;#39;:omz:update&amp;#39; mode auto # update automatically without asking
+# zstyle &amp;#39;:omz:update&amp;#39; mode reminder # just remind me to update when it&amp;#39;s time
+
+# Uncomment the following line to change how often to auto-update (in days).
+# zstyle &amp;#39;:omz:update&amp;#39; frequency 13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to disable colors in ls.
+# DISABLE_LS_COLORS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to disable auto-setting terminal title.
+# DISABLE_AUTO_TITLE=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to enable command auto-correction.
+# ENABLE_CORRECTION=&amp;#34;true&amp;#34;
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+# You can also set it to another string to have that shown instead of the default red dots.
+# e.g. COMPLETION_WAITING_DOTS=&amp;#34;%F{yellow}waiting...%f&amp;#34;
+# Caution: this setting can cause issues with multiline prompts in zsh &amp;lt; 5.7.1 (see #5765)
+# COMPLETION_WAITING_DOTS=&amp;#34;true&amp;#34;
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY=&amp;#34;true&amp;#34;
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# You can set one of the optional three formats:
+# &amp;#34;mm/dd/yyyy&amp;#34;|&amp;#34;dd.mm.yyyy&amp;#34;|&amp;#34;yyyy-mm-dd&amp;#34;
+# or set a custom format using the strftime function format specifications,
+# see &amp;#39;man strftime&amp;#39; for details.
+# HIST_STAMPS=&amp;#34;mm/dd/yyyy&amp;#34;
+
+# Would you like to use another custom folder than $ZSH/custom?
+# ZSH_CUSTOM=/path/to/new-custom-folder
+
+# Which plugins would you like to load?
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+ git
+ extract
+ autojump
+ zsh-autosuggestions
+ zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+
+# export MANPATH=&amp;#34;/usr/local/man:$MANPATH&amp;#34;
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export EDITOR=&amp;#39;vim&amp;#39;
+
+# Preferred editor for local and remote sessions
+# if [[ -n $SSH_CONNECTION ]]; then
+# export EDITOR=&amp;#39;vim&amp;#39;
+# else
+# export EDITOR=&amp;#39;nvim&amp;#39;
+# fi
+
+# Compilation flags
+# export ARCHFLAGS=&amp;#34;-arch $(uname -m)&amp;#34;
+
+# Set personal aliases, overriding those provided by Oh My Zsh libs,
+# plugins, and themes. Aliases can be placed here, though Oh My Zsh
+# users are encouraged to define aliases within a top-level file in
+# the $ZSH_CUSTOM folder, with .zsh extension. Examples:
+# - $ZSH_CUSTOM/aliases.zsh
+# - $ZSH_CUSTOM/macos.zsh
+# For a full list of active aliases, run `alias`.
+#
+# Example aliases
+# alias zshconfig=&amp;#34;mate ~/.zshrc&amp;#34;
+# alias ohmyzsh=&amp;#34;mate ~/.oh-my-zsh&amp;#34;
+
+
+# IDEA path
+#
+
+# PATH env
+source &amp;#34;$HOME/.cargo/env&amp;#34;
+# for autojump https://github.com/wting/autojump
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] &amp;amp;&amp;amp; . /opt/homebrew/etc/profile.d/autojump.sh
+
+# fnm
+# fnm
+FNM_PATH=&amp;#34;$HOME/.local/share/fnm&amp;#34;
+if [ -d &amp;#34;$FNM_PATH&amp;#34; ]; then
+ export PATH=&amp;#34;$FNM_PATH:$PATH&amp;#34;
+ eval &amp;#34;`fnm env`&amp;#34;
+fi
+
+# IDEA path
+export PATH=&amp;#34;/Applications/IntelliJ IDEA CE.app/Contents/MacOS:$PATH&amp;#34;
+export PATH=&amp;#34;/opt/homebrew/opt/dotnet@6/bin:$PATH&amp;#34;
+export PATH=&amp;#34;/home/simons/.local/bin:$PATH&amp;#34;
+export PATH=&amp;#34;/Users/simons/.yarn/bin:/Users/simons/.config/yarn/global:$PATH&amp;#34;
+
+# pnpm
+export PNPM_HOME=&amp;#34;/Users/simons/Library/pnpm&amp;#34;
+case &amp;#34;:$PATH:&amp;#34; in
+ *&amp;#34;:$PNPM_HOME:&amp;#34;*) ;;
+ *) export PATH=&amp;#34;$PNPM_HOME:$PATH&amp;#34; ;;
+esac
+# pnpm end
+#
+#
+
+# poetry
+export PATH=&amp;#34;$HOME/.local/bin:$PATH&amp;#34;
+
+# go
+export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置-github"&gt;配置 Github&lt;/h1&gt;
+&lt;h2 id="生成密钥对"&gt;生成密钥对&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 生成一对 SSH 密钥
+ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; # 输入邮箱
+# 启动 SSH 代理，用于管理 SSH 密钥
+eval &amp;#34;$(ssh-agent -s)&amp;#34;
+# 将 SSH 私钥添加到 SSH 代理
+ssh-add ~/.ssh/id_ed25519
+# 显示公钥内容
+cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="配置-ssh-密钥"&gt;配置 SSH 密钥：&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
+&lt;p&gt;让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？&lt;/p&gt;
+&lt;h2 id="深入理解-wasm-的本质"&gt;深入理解 WASM 的本质&lt;/h2&gt;
+&lt;p&gt;首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。&lt;/p&gt;
+&lt;h3 id="内存模型解析"&gt;内存模型解析&lt;/h3&gt;
+&lt;p&gt;让我们看一段具体代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+int* buffer = new int[1024]; // 分配4KB内存
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;编译成 WASM 后：&lt;/p&gt;</description></item><item><title>Aptos Wasm 开发笔记</title><link>https://simons.qzz.io/post/2025/01/aptos-wasm/</link><pubDate>Sun, 05 Jan 2025 11:08:24 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/aptos-wasm/</guid><description>&lt;h1 id="起因"&gt;起因&lt;/h1&gt;
+&lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;
+&lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;
+&lt;h1 id="开始"&gt;开始&lt;/h1&gt;
+&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接口定义规则：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+package handler
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}
+
+// ❌ 错误：接口定义在实现方包中
+package service
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;依赖方向：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
+
+// ❌ 错误：不应该出现反向依赖
+service -&amp;gt; handler
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;数据模型定义：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+package handler
+type CreateUserRequest struct { // API层模型
+ Username string `json:&amp;#34;username&amp;#34;`
+}
+
+package service
+type UserDTO struct { // 业务层模型
+ ID uint64
+ Username string
+}
+
+package repository
+type UserDO struct { // 数据层模型
+ ID uint64 `gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string
+ CreatedAt time.Time
+}
+
+// ❌ 错误：直接在所有层使用相同的模型
+type User struct {
+ ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string `json:&amp;#34;username&amp;#34;`
+ CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;错误处理层级：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+package repository
+func (r *UserRepo) Create(user *UserDO) error {
+ return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
+}
+
+package service
+func (s *UserService) Create(user *UserDTO) error {
+ return fmt.Errorf(&amp;#34;business error: %w&amp;#34;, err)
+}
+
+package handler
+func (h *UserHandler) Create(c *gin.Context) {
+ if err := h.service.Create(user); err != nil {
+ c.JSON(getErrorStatus(err), ErrorResponse{err.Error()})
+ return
+ }
+}
+
+// ❌ 错误：直接暴露底层错误
+if err := db.Create(&amp;amp;user).Error; err != nil {
+ c.JSON(500, err.Error())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;包的组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;✅ 正确的包组织：
+project/
+ ├── api/
+ │ └── handler/ # HTTP 处理层
+ ├── internal/
+ │ ├── service/ # 业务逻辑层
+ │ ├── repository/ # 数据访问层
+ │ └── model/ # 内部数据模型
+ ├── pkg/
+ │ └── util/ # 公共工具函数
+ └── main.go
+
+❌ 错误的包组织：
+project/
+ ├── handlers/
+ ├── services/
+ ├── models/
+ └── main.go&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;依赖注入：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+func NewUserHandler(service UserService) *UserHandler {
+ return &amp;amp;UserHandler{service: service}
+}
+
+// ❌ 错误：全局变量或直接初始化
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;接口隔离：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+type UserReader interface {
+ GetUser(id uint64) (*User, error)
+}
+
+type UserWriter interface {
+ CreateUser(user *User) error
+}
+
+// ❌ 错误：大接口，职责过多
+type UserService interface {
+ GetUser(id uint64) (*User, error)
+ CreateUser(user *User) error
+ UpdateUser(user *User) error
+ DeleteUser(id uint64) error
+ ListUsers() ([]*User, error)
+ SearchUsers(query string) ([]*User, error)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="8"&gt;
+&lt;li&gt;配置管理：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+package config
+
+type Config struct {
+ Server ServerConfig
+ DB DatabaseConfig
+ Redis RedisConfig
+}
+
+// ❌ 错误：分散的配置或硬编码
+var serverPort = 8080
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="9"&gt;
+&lt;li&gt;上下文传递：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+func (h *Handler) Create(c *gin.Context) {
+ ctx := c.Request.Context()
+ err := h.service.Create(ctx, req)
+}
+
+// ❌ 错误：不传递上下文或使用不一致的上下文
+func (h *Handler) Create(c *gin.Context) {
+ err := h.service.Create(req)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="10"&gt;
+&lt;li&gt;测试组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+package handler
+
+func TestUserHandler_Create(t *testing.T) {
+ // 单元测试
+}
+
+// ❌ 错误：测试代码与源码混合或测试覆盖不全
+func TestAll(t *testing.T) {
+ // 混合测试多个功能
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
+enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
+hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
+summaryLength = 140 # 文章摘要长度
+
+# SEO 优化
+[params]
+keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;] # 网站关键词
+description = &amp;#34;个人技术博客&amp;#34; # 网站描述
+images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片
+# 自定义 Open Graph 信息
+[params.og]
+title = &amp;#34;我的博客&amp;#34;
+type = &amp;#34;website&amp;#34;
+images = [&amp;#34;og-image.jpg&amp;#34;]
+
+# 性能优化
+[minify]
+ disableCSS = false # 启用 CSS 压缩
+ disableHTML = false # 启用 HTML 压缩
+ disableJS = false # 启用 JS 压缩
+ disableJSON = false # 启用 JSON 压缩
+ minifyOutput = true # 压缩 HTML 输出
+
+# 图片处理
+[imaging]
+ quality = 75 # JPEG 图片质量
+ resampleFilter = &amp;#34;Lanczos&amp;#34; # 图片重采样过滤器
+ anchor = &amp;#34;Smart&amp;#34; # 图片裁剪锚点
+
+# 内容安全策略
+[params.csp]
+ childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]
+ formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]
+ stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]
+ scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]
+
+# 文章配置
+[permalinks]
+ posts = &amp;#34;/post/:year/:month/:slug/&amp;#34; # 自定义文章 URL 结构
+
+# 自定义输出格式
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;] # 支持 JSON API 输出
+ section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+
+# RSS 订阅配置
+[params.rss]
+ limit = 20 # RSS 文章数量限制
+ fullContent = true # RSS 包含完整文章内容
+
+# 站内搜索配置
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]
+[outputFormats.SearchIndex]
+ mediaType = &amp;#34;application/json&amp;#34;
+ baseName = &amp;#34;searchindex&amp;#34;
+ isPlainText = true
+ notAlternative = true
+
+# 文章目录配置
+[markup.tableOfContents]
+ endLevel = 3 # 目录最大深度
+ ordered = false # 使用无序列表
+ startLevel = 2 # 目录开始层级
+
+# 代码高亮配置
+[markup.highlight]
+ codeFences = true # 启用代码围栏
+ guessSyntax = true # 自动推测代码语言
+ lineNoStart = 1 # 起始行号
+ lineNos = true # 显示行号
+ lineNumbersInTable = true # 使用表格式行号
+ tabWidth = 4 # 制表符宽度
+ style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item><item><title>从 Hexo 迁移至 Hugo</title><link>https://simons.qzz.io/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo"&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;
+&lt;p&gt;16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p&gt;
+&lt;h2 id="为什么改用hugo"&gt;为什么改用Hugo&lt;/h2&gt;
+&lt;h3 id="依赖管理问题"&gt;依赖管理问题&lt;/h3&gt;
+&lt;p&gt;在
+&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 静态博客的同步和备份方案
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p&gt;</description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://simons.qzz.io/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
+&lt;a href="https://hexo.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hexo
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+以及主题
+&lt;a href="https://theme-next.js.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Theme NexT
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，
+在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
+&lt;a href="https://vercel.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ vercel
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p&gt;</description></item><item><title>shell mac 教程</title><link>https://simons.qzz.io/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
+&lt;a href="https://juejin.cn/post/6921144388802641933"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-as" data-lang="as"&gt;#!/bin/bash
+
+# 1. 自定义通知消息
+# 传参 $1:消息描述 $2:通知标题 $3:通知副标题
+function showNoteMessage(){
+ osascript -e &amp;#34;display notification \&amp;#34;${1}\&amp;#34; with title \&amp;#34;${2}\&amp;#34; subtitle \&amp;#34;${3}\&amp;#34; sound name \&amp;#34;Funk\&amp;#34;&amp;#34;
+}
+#test case:
+#showNoteMessage &amp;#34;消息内容&amp;#34; &amp;#34;通知&amp;#34; &amp;#34;通知副标题&amp;#34;
+
+# 2. 自定义弹窗(统一通用方法)
+# 传参$1 弹窗消息内容
+# 传参$2 弹窗标题
+# 传参$3 按钮标题,多个用英文逗号隔开
+# 传参$4 默认选中的按钮标题或者按钮数字下标
+# 传参$5 是否为输入框类型 传&amp;#34;0&amp;#34;或者&amp;#34;1&amp;#34; 默认&amp;#34;0&amp;#34;
+# 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &amp;#34;&amp;#34;
+# 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取)
+# tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false
+function showCustomAlertMessage(){
+
+if [[ -n &amp;#34;$4&amp;#34; ]]; then
+
+	if [[ ${4} == *[!0-9]* ]]; then
+ 	defaultButton=&amp;#34;default button \&amp;#34;${4}\&amp;#34;&amp;#34;
+ 	else
+ 	defaultButton=&amp;#34;default button ${4}&amp;#34;
+	fi
+else
+	defaultButton=&amp;#34;&amp;#34;
+fi
+
+#是否为输入框模式
+if [[ &amp;#34;$5&amp;#34; = &amp;#34;1&amp;#34; ]]; then
+	IS_InputMode=&amp;#34;default answer \&amp;#34;${6}\&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get result&amp;#34;
+else
+	IS_InputMode=&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get the button returned of the result&amp;#34;
+fi
+
+if [[ -n &amp;#34;$7&amp;#34; ]]; then
+ case ${7} in
+	note)
+	ICON=&amp;#34;with icon note&amp;#34;
+	;;
+	stop)
+	ICON=&amp;#34;with icon stop&amp;#34;
+	;;
+	caution)
+	ICON=&amp;#34;with icon caution&amp;#34;
+	;;
+	*)
+	ICON=&amp;#34;with icon file \&amp;#34;${7}\&amp;#34;&amp;#34;
+	;;
+ esac
+else
+ ICON=&amp;#34;with icon file \&amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&amp;#34;&amp;#34;
+fi
+
+osascript &amp;lt;&amp;lt;EOF
+	set buttonStr to &amp;#34;${3}&amp;#34;
+	set oldDelimiters to AppleScript&amp;#39;s text item delimiters
+	set AppleScript&amp;#39;s text item delimiters to &amp;#34;,&amp;#34;
+	set buttonList to every text item of buttonStr
+	set AppleScript&amp;#39;s text item delimiters to oldDelimiters
+	get buttonList
+	set btns to buttonList
+	display dialog &amp;#34;${1}&amp;#34; with title &amp;#34;${2}&amp;#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON}
+	${ReturnValue}
+EOF
+}
+
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;1&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; 2 &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;stop&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&amp;#34;
+
+# 普通弹窗 一个ok就够了 就是一个确认的那种
+function onlyConfirmButton(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;好的&amp;#34; 1
+}
+#onlyConfirmButton &amp;#34;登录成功!\n弹窗成功!&amp;#34;
+
+# 多按钮弹窗 最多三个按钮 多了会报错
+function mostButtons(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮3&amp;#34;
+}
+#mostButtons &amp;#34;最多只能定义三个按钮哦&amp;#34;
+
+# 输入框弹窗
+function showInputAlertMessage(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;$2&amp;#34; &amp;#34;取消,确认&amp;#34; 2 &amp;#34;1&amp;#34; &amp;#34;&amp;#34;
+}
+showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>谷歌账号注册的问题</title><link>https://simons.qzz.io/post/2024/07/google_account/</link><pubDate>Wed, 17 Jul 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/07/google_account/</guid><description>&lt;p&gt;参考：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;a href="https://www.gmail777.com/archives/69"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中州西鹿
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://blog.csdn.net/huayanhuicui/article/details/137236352"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 多图详细教你注册Google（Gmail）新账号，常见问题和注意事项
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://uzbox.com/usa/google-add-tel.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 此电话号码已用过太多次，此电话号码无法用于进行验证 谷歌账号无法注册解决方法
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="谷歌账号注册的问题"&gt;谷歌账号注册的问题&lt;/h1&gt;
+&lt;h2 id="注册"&gt;注册&lt;/h2&gt;
+&lt;p&gt;通过google主页或直接访问 Gmail 主页，选择登录，在登录的时候选择“创建账号”，一般选个人用途就可以了。选好了以后点击下一步。耗时3秒&lt;/p&gt;</description></item><item><title>C 语言字符画</title><link>https://simons.qzz.io/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+* * *
+* *
+* * *
+
+4
+* * * *
+* *
+* *
+* * * *&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;非多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行定位
+int main() {
+ int n = 0;
+ scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {
+ if (i == 0 || i == n - 1) {//首尾行输出一行*
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {
+ printf(&amp;#34;* &amp;#34;);
+ }
+ } else {
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//其它行首尾输出*
+ if(j==0 || j == n-1)
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ }
+ printf(&amp;#34;\n&amp;#34;);//换行
+ }
+
+ return 0;
+}
+
+// 3 ---- n
+// * * * --- 1行每个位置都输出 一共n个
+// * * --- 其它行1和n位置输出 一共2个
+// * * * --- n行每个位置都输出 一共n个
+// 思路：
+// 使用for 和 if
+// 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行和列定位
+int main() {
+ int n = 0;
+ while(scanf(&amp;#34;%d&amp;#34;, &amp;amp;n) == 1){//输入的数量为1
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {//控制行
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//控制列
+ if(i == 0 || i == n-1 || j == 0 || j == n-1)//第0行，第n-1行，第0列，第n-1列输出 *_,其它位置输出 __
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ printf(&amp;#34;\n&amp;#34;);
+ }
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dll/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dll/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
+&lt;li&gt;创建一个类（右键创建类，会自动包含需要的文件） 以查询目录下的文件为例
+创建的文件可以不用管
+&lt;code&gt;.cpp&lt;/code&gt;文件 输入自己的代码&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
+#include &amp;#34;check_repository.h&amp;#34;
+namespace fs = std::filesystem;
+ int Check::CheckRepository() {
+ std::string folderName = &amp;#34;.Rysigy&amp;#34;;
+ fs::path currentPath = fs::current_path();
+ fs::path folderPath = currentPath / folderName;
+
+ if (fs::exists(folderPath) &amp;amp;&amp;amp; fs::is_directory(folderPath)) {
+ std::cout &amp;lt;&amp;lt; &amp;#34;存储库 &amp;#39;.Rysigy&amp;#39; 文件夹存在\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ else {
+ std::cout &amp;lt;&amp;lt; &amp;#34;[错误]\t存储库 &amp;#39;.Rysigy&amp;#39; 文件夹不存在\n请在右键菜单中点击 &amp;#39;创建存储库&amp;#39;\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
+ _getch();
+ return 0;
+};&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item><item><title>删除错误提交到GitHub仓库中的文件</title><link>https://simons.qzz.io/post/2024/06/git_delete_file/</link><pubDate>Wed, 19 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/git_delete_file/</guid><description>&lt;p&gt;如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;在本地仓库中删除文件&lt;/strong&gt;：
+首先，在你的本地仓库中删除该文件：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sh" data-lang="sh"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://simons.qzz.io/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="在-elease-里面下载可执行程序"&gt;在 elease 里面下载可执行程序&lt;/h2&gt;
+&lt;h1 id="win"&gt;Win&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="linux-x86_64"&gt;Linux （x86_64)&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="mac"&gt;mac&lt;/h1&gt;
+&lt;p&gt;没有测试
+
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;p&gt;所有配置都通过 config.yaml 文件传递​​给 &lt;code&gt;Telegram Media Downloader&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;获取您的 API 密钥：&lt;/strong&gt;
+第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 
+&lt;a href="https://my.telegram.org/apps"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://my.telegram.org/apps
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ 并使用您的 Telegram 帐户登录。&lt;/li&gt;
+&lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;
+&lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>x86 教程</title><link>https://simons.qzz.io/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
+&lt;a href="http://www.ruanyifeng.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 阮一峰
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;日期： 
+&lt;a href="http://www.ruanyifeng.com/blog/2018/01/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 2018年1月21日
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;学习编程其实就是学高级语言，即那些为人类设计的计算机语言。&lt;/p&gt;
+&lt;p&gt;但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。&lt;/p&gt;</description></item><item><title>SQL 教程</title><link>https://simons.qzz.io/post/2024/04/sql/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/sql/</guid><description>&lt;p style=color:red;&gt; 在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加&lt;p&gt;
+&lt;h1 id="数据库相关的操作"&gt;数据库相关的操作&lt;/h1&gt;
+&lt;p&gt;查询数据库	 &lt;code&gt;SHOW DATABASES&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;创建数据库
+&lt;code&gt;CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;CREATE DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;查看数据库信息
+&lt;code&gt;SHOW CREATE DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;SHOW CREATE DATABASE database&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;删除数据库
+&lt;code&gt;DROP DATABASE 数据库名&lt;/code&gt;
+&lt;code&gt;DROP DATABASE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;使用数据库
+&lt;code&gt;USE 数据库名&lt;/code&gt;
+&lt;code&gt;USE mydatabase&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="ddl语句-数据定义语言"&gt;DDL语句	 数据定义语言&lt;/h1&gt;
+&lt;p&gt;创建表&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
+ 列名1 类型[长度] [DEFAULT 默认值] [约束条件]
+ 列名2 类型
+ ……
+);
+
+CREATE TABLE userinfo(
+ id INT
+ username VARCHAR(32)
+ password VARCHAR(32)
+ nickname VARCHAR(32)
+ age INT(3)
+);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;查看当前数据库创建的所有表
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;前端配置：TypeScript、React
+依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;可能需要先安装
+&lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;caoyang@cccy del % npm init vite
+# 使用 上下键 选择
+✔ Project name: … playground # playground 是项目名称，它会创建一个该名称的文件夹作为项目根目录
+✔ Select a framework: › React # 使用 React 库
+✔ Select a variant: › TypeScript # 使用 TS 语言开发
+
+Scaffolding project in /Users/caoyang/Documents/Aptos/del/playground...
+
+Done. Now run:
+
+# 需要先运行以下代码
+ cd playground
+ npm install
+ npm run dev&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="12-一键创建"&gt;1.2 一键创建&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
+&lt;h1 id="样机"&gt;样机&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://bannermockup.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://bannermockup.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://mockupplanet.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://mockupplanet.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.anthonyboyd.graphics/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.anthonyboyd.graphics/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.pixeden.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.pixeden.com/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.ls.graphics"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.ls.graphics
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="条件"&gt;条件&lt;/h2&gt;
+&lt;h3 id="登录"&gt;登录&lt;/h3&gt;
+&lt;p&gt;grapicpear&lt;/p&gt;
+&lt;h1 id="插画"&gt;插画&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://dotown.maeda-design-room.net/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://dotown.maeda-design-room.net/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.opendoodles.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.opendoodles.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;设计师必备 50 款免费可商用图库网站：照片、插画、纹理一网打尽&lt;/p&gt;
+&lt;p&gt;免费素材图像素材工具推荐
+Angel Wang・2022-10-13
+大家好，本周我为大家准备了超全面的免费可商用高清图库，可能是全网最全的总结，推荐的图库类型有：照片图库、博物馆艺术品图库、图片生成器、纹理图库、插画图库、图标库，总有一种你用得到！&lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://simons.qzz.io/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
+&lt;p&gt;SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p&gt;
+&lt;p&gt;对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
+比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/86937325"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文一
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://blog.csdn.net/weixin_39779004/article/details/110801387"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文二
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://b23.tv/3f7Yrct"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 视频
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一什么是-jwt"&gt;一、什么是 JWT&lt;/h1&gt;
+&lt;p&gt;JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑的、自包含的方式，用于作为JSON对象在各方之间安全地传输信息。该信息可以被验证和信任，因为它是数字签名的。&lt;/p&gt;
+&lt;h1 id="二设计目标"&gt;二、设计目标&lt;/h1&gt;
+&lt;p&gt;不需要服务器端存储状态，安全地传递非敏感信息&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/OIP-C-20240424140338352.jpeg" alt="JWT认证方案讲解-阿里云开发者社区"&gt;&lt;/p&gt;
+&lt;h1 id="三-json-web-token-的结构是什么样的"&gt;三、 JSON Web Token 的结构是什么样的&lt;/h1&gt;
+&lt;p&gt;JSON Web Token由三部分组成，例如&lt;code&gt;dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code&gt;&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/ehang-io/nps/tree/master"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://ehang-io.github.io/nps/#/install"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;
+&lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一获取原厂固件的-ssh-登录权限"&gt;一、获取原厂固件的 ssh 登录权限&lt;/h1&gt;
+&lt;p&gt;有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p&gt;
+&lt;p&gt;小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p&gt;</description></item><item><title>小米 4c 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;介绍一下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wifi 全程不用连网&lt;/li&gt;
+&lt;li&gt;win系统电脑刷机，需要下载一个刷机包&lt;/li&gt;
+&lt;li&gt;windows 有 python 程序，查看方法：在命令提示符窗口输入 &lt;code&gt;python --version&lt;/code&gt;，会输出版本号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至于让路由器变砖，并且对于以后更换固件非常友好，强烈建议刷Breed。&lt;/p&gt;</description></item><item><title>小米路由器</title><link>https://simons.qzz.io/post/2024/03/xiaomi_router/</link><pubDate>Fri, 22 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_router/</guid><description>&lt;p&gt;{bs-font color=&amp;quot;#FF0000&amp;quot;}刷机有风险，如果能用，请不要为了不一样而刷机，又不是不能用！{/bs-font}&lt;/p&gt;
+&lt;p&gt;现在你的路由器和小米已经没有任何关系了，恭喜你上了贼船！&lt;/p&gt;
+&lt;p&gt;基本介绍：
+OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
+几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原作者
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 个人配置
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
+cd quartz-obsidian-webside
+npm i
+npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;h2 id="布局"&gt;布局&lt;/h2&gt;
+&lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
+默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;
+&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item><item><title>C 语言推荐书籍</title><link>https://simons.qzz.io/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列"&gt;C语言系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《C漏洞与缺陷》&lt;/li&gt;
+&lt;li&gt;《C语言深度解剖》&lt;/li&gt;
+&lt;li&gt;《C和指针》&lt;/li&gt;
+&lt;li&gt;《明解C语言》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="c系列"&gt;C++系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《高质量的C/C++编程》&lt;/li&gt;
+&lt;li&gt;《程序员的自我修养》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="java系列"&gt;java系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《java编程思想》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="计算机系列"&gt;计算机系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;深入理解计算机系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="数据结构"&gt;数据结构&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《大话数据结构》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="内存"&gt;内存&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《地址的故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="编程"&gt;编程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《程序员编程故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="算法"&gt;算法&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《剑指offer》&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>左耳朵耗子：技术领导力</title><link>https://simons.qzz.io/post/2023/11/houle/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/11/houle/</guid><description>&lt;h1 id="技术领导力"&gt;技术领导力&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《C语言程序设计（第二版）》&lt;/li&gt;
+&lt;li&gt;《深入理解计算机系统》&lt;/li&gt;
+&lt;li&gt;《UNIX环境高级编程》&lt;/li&gt;
+&lt;li&gt;《UNIX网络编程》&lt;/li&gt;
+&lt;li&gt;《Windows核心编程》&lt;/li&gt;
+&lt;li&gt;《TCP/IP详解》&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="每个程序员都应该要读的书"&gt;每个程序员都应该要读的书&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《Code Complete (2nd edition) 》《代码大全》&lt;/li&gt;
+&lt;li&gt;《The Pragmatic Programmer》 《程序员修炼之道》&lt;/li&gt;
+&lt;li&gt;《Structure and interpretation of Computer Programs》&lt;/li&gt;
+&lt;li&gt;《The C Programming Language》&lt;/li&gt;
+&lt;li&gt;《Introduction to Algorithms 》&lt;/li&gt;
+&lt;li&gt;《Design Patterns》&lt;/li&gt;
+&lt;li&gt;《Refactoring: Improving the Design of Exsting Code》&lt;/li&gt;
+&lt;li&gt;《The Mythical Man Month》&lt;/li&gt;
+&lt;li&gt;《The Art of Computer Programming》&lt;/li&gt;
+&lt;li&gt;《Compilers: Principles, Techniques and Tool》&lt;/li&gt;
+&lt;li&gt;&amp;hellip;&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="推荐"&gt;推荐&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《代码大全》&lt;/li&gt;
+&lt;li&gt;《程序员修炼之道》&lt;/li&gt;
+&lt;li&gt;《计算机的构造和解释》&lt;/li&gt;
+&lt;li&gt;《算法导论》&lt;/li&gt;
+&lt;li&gt;《设计模式》&lt;/li&gt;
+&lt;li&gt;《重构》&lt;/li&gt;
+&lt;li&gt;《人月神话》&lt;/li&gt;
+&lt;li&gt;《代码整洁之道》&lt;/li&gt;
+&lt;li&gt;《Effective C++》/《More Effective C++》&lt;/li&gt;
+&lt;li&gt;《Unix编程艺术》《Unix高级环境编程》&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="经典文章"&gt;经典文章&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;《What every computer science major should know》&lt;/li&gt;
+&lt;li&gt;《LinkedIn&amp;rsquo;s Tips for Highly Effective Code Review》&lt;/li&gt;
+&lt;li&gt;《A Large-Scale Study of Programming Language and Code Quality in Github》&lt;/li&gt;
+&lt;li&gt;《Optimizing Software in C++ - Agner Fog》&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>OpenWRT 教程</title><link>https://simons.qzz.io/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/10/openwrt/</guid><description>&lt;p&gt;
+&lt;a href="https://lidrive.vip/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ OpenWRT下载地址
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本"&gt;&lt;/p&gt;
+&lt;h1 id="制作启动盘"&gt;制作启动盘&lt;/h1&gt;
+&lt;p&gt;将PE系统写入到U盘，window：rufus，macOS：balenaEtcher
+将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p&gt;
+&lt;h1 id="进入bios"&gt;进入BIOS&lt;/h1&gt;
+&lt;p&gt;将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p&gt;
+&lt;h1 id="删除设备的磁盘分区"&gt;删除设备的磁盘分区&lt;/h1&gt;
+&lt;p&gt;进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p&gt;</description></item><item><title>左耳朵耗子：程序员</title><link>https://simons.qzz.io/post/2023/09/coder/</link><pubDate>Fri, 29 Sep 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/09/coder/</guid><description>&lt;p style="color:red"&gt;25~35岁是每个人最宝贵的时间，应该用在刀刃上&lt;/p&gt;
+&lt;p&gt;本质上来说，程序员就是个手艺人，有手艺的人就能做出别人做不出来的东西，而付费就是一件很自然的事了。&lt;/p&gt;
+&lt;h1 id="提升方法"&gt;提升方法&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;要去经历大多数人经历不到的， 要把时间花在那些比较难的地方。&lt;/li&gt;
+&lt;li&gt;要写文章就写没有人写过的，或者是别人写过，但是自己能写得更好的。&lt;/li&gt;
+&lt;li&gt;更重要的是， 技术和知识是完全可以变现的。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="如何变现"&gt;如何变现&lt;/h1&gt;
+&lt;h2 id="一积累"&gt;一、积累&lt;/h2&gt;
+&lt;p&gt;千里之行，积于跬步。任何一件事都是通过小成功达到的，所以你得确保自己有一个一个的小成功，具体来说，你得让你身边的人 有求于你，或是向别人推荐你，这就需要你能够掌握大多数人不能掌握的技术，需要你更多地去学习，并要更多的别人没有的经验和经历。&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://simons.qzz.io/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文链接
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="查看-cpu-架构"&gt;查看 CPU 架构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-shell" data-lang="shell"&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
+arch：该命令可以查看Linux系统的CPU架构。
+cat /proc/version：该命令可以查看系统内核的版本信息。
+cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 脚本目录
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+&lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
+&lt;li&gt;$(-1)^s^$ 表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
+&lt;li&gt;M表示有效数字，大于等于1，小于2; 1&amp;lt;= M &amp;lt;2&lt;/li&gt;
+&lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;V = 5.0 f&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;二进制：101.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
+&lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;函数的作用域是怎么形成的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;局部变量是如何创建的？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数是如何传参的？&lt;/p&gt;
+&lt;p&gt;传参的顺序又是怎么样的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形参和实参的关系是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;li&gt;暴力算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;malloc/_malloc.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+#include &amp;lt;errno.h&amp;gt;
+// 最大公约数
+// 最小公倍数
+//计算最小公倍数和最大公约数的和
+int main(){
+ int n = 0;
+ int m = 0;
+ while(scanf(&amp;#34;%d %d&amp;#34;,&amp;amp;n,&amp;amp;m) == 2){//读取两个数
+ int min = n &amp;lt; m ? n : m;
+ int max = n &amp;gt; m ? n : m;
+ int i = min;//最大公约数
+ int j = max;//最小公倍数
+ while(1){
+ if(n%i == 0 &amp;amp;&amp;amp; m%i == 0){
+ break;
+ }
+ i--;
+ }
+ // i就是最大公约数
+ while(1){
+ if(j%n == 0 &amp;amp;&amp;amp; j%m == 0){
+ break;
+ }
+ j&amp;#43;&amp;#43;;
+ }
+ // j就是最大公倍数
+
+ printf(&amp;#34;最大公倍数 %d &amp;#43; 最小公约数 %d = %d\n&amp;#34;,j,i,j&amp;#43;i);
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;辗转相除法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+struct S1{
+ char c1;//1
+ int i;//4
+ char c2;//1
+};
+
+struct S2{
+ char c1;//1
+ char c2;//1
+ int i;//4
+};
+int main(){
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S1));//12
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;对齐规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一个成员在与结构体变量偏移量为0的地址处&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
+对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
+&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+&lt;a href="https://codeif.xinke.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ codeif
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="文件命名"&gt;文件命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;所有文件&lt;/p&gt;
+&lt;p&gt;头文件和原文件成对出现&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;全部小写, 可是使用下划线&amp;quot;_&amp;quot;(默认)或连字符&amp;quot;-&amp;quot;, 称完整, 不要有歧义&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;system_file.c &amp;amp; system_file.h&lt;/li&gt;
+&lt;li&gt;item_name.c&lt;/li&gt;
+&lt;li&gt;item-name.c&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="类型命名"&gt;类型命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;类, 结构体, 类型定义(Typedef), 枚举, 类型模板参数&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;每个单词首字母大写, 不使用下划线&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Number&lt;/li&gt;
+&lt;li&gt;Timer&lt;/li&gt;
+&lt;li&gt;File&lt;/li&gt;
+&lt;li&gt;Name&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="变量命名"&gt;变量命名&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;变量, 函数参数, 数据成员名&lt;/p&gt;</description></item><item><title>mermaid 教程</title><link>https://simons.qzz.io/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p&gt;
+&lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空格敏感&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ I am the default shape&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>程序员必备：十类实用在线工具网站全收录</title><link>https://simons.qzz.io/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2022/07/chart_image/</guid><description>&lt;p&gt;在编程和日常开发工作中，合理利用在线工具可以极大提升效率。本文精心整理了十类实用工具网站，涵盖字符串处理、艺术字生成、代码优化等多个常用门类，助你事半功倍。&lt;/p&gt;
+&lt;h2 id="一字符串处理工具"&gt;一、字符串处理工具&lt;/h2&gt;
+&lt;h3 id="1-正则表达式测试与调试"&gt;1. 正则表达式测试与调试&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Regex101&lt;/strong&gt; (
+&lt;a href="https://regex101.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regex101.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能最全面的正则表达式在线测试工具，支持多种语言语法高亮，提供详细的匹配解释&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RegExr&lt;/strong&gt; (
+&lt;a href="https://regexr.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://regexr.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 界面友好的正则学习与测试平台，内置常用表达式库和实时匹配预览&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-编码与解码工具"&gt;2. 编码与解码工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Base64 Guru&lt;/strong&gt; (
+&lt;a href="https://base64.guru"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://base64.guru
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持Base64、URL、HTML等多种编码格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CyberChef&lt;/strong&gt; (
+&lt;a href="https://gchq.github.io/CyberChef"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://gchq.github.io/CyberChef
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 英国情报机构开发的“数字瑞士军刀”，支持数百种数据转换操作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-字符串格式化与美化"&gt;3. 字符串格式化与美化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;JSON Formatter&lt;/strong&gt; (
+&lt;a href="https://jsonformatter.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsonformatter.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - JSON格式化、验证和压缩一站式解决&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SQL Format&lt;/strong&gt; (
+&lt;a href="https://sqlformat.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://sqlformat.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - SQL语句在线格式化，支持多种数据库语法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二艺术字与字符设计"&gt;二、艺术字与字符设计&lt;/h2&gt;
+&lt;h3 id="1-ascii艺术生成"&gt;1. ASCII艺术生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Patorjk ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://patorjk.com/software/taag"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://patorjk.com/software/taag
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 经典的ASCII艺术字生成器，提供数十种字体风格选择&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text to ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://www.network-science.de/ascii/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.network-science.de/ascii/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 专业的ASCII字符转换工具，可调节字符密度和布局&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图片转字符画"&gt;2. 图片转字符画&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ASCII Art Generator&lt;/strong&gt; (
+&lt;a href="http://www.degraeve.com/img2txt.php"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ http://www.degraeve.com/img2txt.php
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简单直接的图片转ASCII字符画工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Text-image.com&lt;/strong&gt; (
+&lt;a href="https://www.text-image.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.text-image.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持多种字符集和颜色选项的图片转换工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="3-特殊字体与符号"&gt;3. 特殊字体与符号&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Cool Symbol&lt;/strong&gt; (
+&lt;a href="https://coolsymbol.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolsymbol.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 收集了数千种特殊符号和颜文字&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Font Generator&lt;/strong&gt; (
+&lt;a href="https://www.fontgenerator.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.fontgenerator.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线生成各种奇特风格的文字效果&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="三代码相关工具"&gt;三、代码相关工具&lt;/h2&gt;
+&lt;h3 id="1-代码美化与格式化"&gt;1. 代码美化与格式化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Prettier Playground&lt;/strong&gt; (
+&lt;a href="https://prettier.io/playground"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://prettier.io/playground
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持多种语言的代码格式化工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CodeBeautify&lt;/strong&gt; (
+&lt;a href="https://codebeautify.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://codebeautify.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 集成了HTML、CSS、JavaScript等多种代码美化功能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-代码差异对比"&gt;2. 代码差异对比&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Diffchecker&lt;/strong&gt; (
+&lt;a href="https://www.diffchecker.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.diffchecker.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 直观的文件和文本差异比较工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beyond Compare Online&lt;/strong&gt; (
+&lt;a href="https://beyondcompare.online"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://beyondcompare.online
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线文件对比服务&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="四数据转换与处理"&gt;四、数据转换与处理&lt;/h2&gt;
+&lt;h3 id="1-格式转换工具"&gt;1. 格式转换工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Convertio&lt;/strong&gt; (
+&lt;a href="https://convertio.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://convertio.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 支持超过300种文件格式的转换&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Online-Convert&lt;/strong&gt; (
+&lt;a href="https://www.online-convert.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.online-convert.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 全面的多媒体和文档格式转换平台&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-csvjson处理"&gt;2. CSV/JSON处理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CSV Kit&lt;/strong&gt; (
+&lt;a href="https://csvkit.readthedocs.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://csvkit.readthedocs.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线CSV文件处理工具套件&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Editor Online&lt;/strong&gt; (
+&lt;a href="https://jsoneditoronline.org"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://jsoneditoronline.org
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 可视化的JSON编辑和验证工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="五图像与多媒体工具"&gt;五、图像与多媒体工具&lt;/h2&gt;
+&lt;h3 id="1-图片压缩与优化"&gt;1. 图片压缩与优化&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TinyPNG&lt;/strong&gt; (
+&lt;a href="https://tinypng.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://tinypng.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 智能PNG和JPEG图片压缩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Squoosh&lt;/strong&gt; (
+&lt;a href="https://squoosh.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://squoosh.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Google开发的开源图片压缩工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-图标与矢量图形"&gt;2. 图标与矢量图形&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Icons8&lt;/strong&gt; (
+&lt;a href="https://icons8.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://icons8.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 海量图标库和在线编辑工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SVG Editor&lt;/strong&gt; (
+&lt;a href="https://svgeditor.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://svgeditor.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能完整的在线SVG编辑器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="六网络安全工具"&gt;六、网络安全工具&lt;/h2&gt;
+&lt;h3 id="1-加密与哈希"&gt;1. 加密与哈希&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hash Generator&lt;/strong&gt; (
+&lt;a href="https://passwordsgenerator.net/sha256-hash-generator/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://passwordsgenerator.net/sha256-hash-generator/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种哈希算法生成器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;SSL Server Test&lt;/strong&gt; (
+&lt;a href="https://www.ssllabs.com/ssltest"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.ssllabs.com/ssltest
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 网站SSL配置安全检查&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-网络诊断"&gt;2. 网络诊断&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ping.pe&lt;/strong&gt; (
+&lt;a href="https://ping.pe"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://ping.pe
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 从全球多个节点测试网站连通性&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What&amp;rsquo;s My DNS&lt;/strong&gt; (
+&lt;a href="https://www.whatsmydns.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.whatsmydns.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - DNS传播状态检查工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="七api测试与开发"&gt;七、API测试与开发&lt;/h2&gt;
+&lt;h3 id="1-api测试工具"&gt;1. API测试工具&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Postman Web&lt;/strong&gt; (
+&lt;a href="https://web.postman.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://web.postman.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 完整的API开发和测试环境&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;HTTPie Online&lt;/strong&gt; (
+&lt;a href="https://httpie.io/run"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://httpie.io/run
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁的HTTP请求测试工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-mock数据生成"&gt;2. Mock数据生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Mockaroo&lt;/strong&gt; (
+&lt;a href="https://www.mockaroo.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.mockaroo.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 生成逼真的测试数据&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSON Generator&lt;/strong&gt; (
+&lt;a href="https://www.json-generator.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.json-generator.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 自定义JSON数据生成器&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="八文档与写作工具"&gt;八、文档与写作工具&lt;/h2&gt;
+&lt;h3 id="1-markdown编辑器"&gt;1. Markdown编辑器&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;StackEdit&lt;/strong&gt; (
+&lt;a href="https://stackedit.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://stackedit.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能丰富的在线Markdown编辑器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dillinger&lt;/strong&gt; (
+&lt;a href="https://dillinger.io"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://dillinger.io
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 简洁美观的Markdown写作工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-文档转换"&gt;2. 文档转换&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Pandoc Online&lt;/strong&gt; (
+&lt;a href="https://pandoc.org/try"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://pandoc.org/try
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 多种文档格式互转工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Markdown to PDF&lt;/strong&gt; (
+&lt;a href="https://md2pdf.netlify.app"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://md2pdf.netlify.app
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Markdown转PDF在线工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="九颜色与设计工具"&gt;九、颜色与设计工具&lt;/h2&gt;
+&lt;h3 id="1-配色方案"&gt;1. 配色方案&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coolors&lt;/strong&gt; (
+&lt;a href="https://coolors.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://coolors.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 快速生成配色方案的优秀工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Color Hunt&lt;/strong&gt; (
+&lt;a href="https://colorhunt.co"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://colorhunt.co
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 设计师精选的配色方案库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-调色板生成"&gt;2. 调色板生成&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Adobe Color&lt;/strong&gt; (
+&lt;a href="https://color.adobe.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://color.adobe.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - Adobe官方色彩工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paletton&lt;/strong&gt; (
+&lt;a href="https://paletton.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://paletton.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 专业的调色板设计工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="十效率与协作工具"&gt;十、效率与协作工具&lt;/h2&gt;
+&lt;h3 id="1-图表绘制"&gt;1. 图表绘制&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Draw.io&lt;/strong&gt; (
+&lt;a href="https://app.diagrams.net"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://app.diagrams.net
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 免费的在线图表绘制工具&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Excalidraw&lt;/strong&gt; (
+&lt;a href="https://excalidraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://excalidraw.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 手绘风格的在线白板工具&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="2-团队协作"&gt;2. 团队协作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Figma&lt;/strong&gt; (
+&lt;a href="https://www.figma.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://www.figma.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 在线UI设计和协作平台&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Miro&lt;/strong&gt; (
+&lt;a href="https://miro.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://miro.com
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+) - 功能强大的在线协作白板&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>

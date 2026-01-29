@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>网络技术 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/</link><description>Recent content in 网络技术 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BD%91%E7%BB%9C%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>注册一个免费的域名</title><link>https://simons.qzz.io/post/2026/01/register_a_free_domian/</link><pubDate>Mon, 05 Jan 2026 12:28:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/register_a_free_domian/</guid><description>&lt;p&gt;大家好，欢迎来到AI解码师的频道。&lt;/p&gt;
+&lt;p&gt;之前我们曾发布过一期关于如何利用 DigitalPlat 注册永久免费域名的内容。然而，很可惜，在那个内容上线后不久，us.kg 域名的注册系统就出现了故障，相关的注册服务被迫暂停了一段时间。&lt;/p&gt;
+&lt;p&gt;现在，好消息终于来了！经过这段时间的系统升级和维护，DigitalPlat 现已重新开放注册。更令人惊喜的是，本次升级不仅让注册流程变得更加简单便捷，还额外增加了一个免费域名额度的福利。&lt;/p&gt;</description></item><item><title>小米 4c 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;介绍一下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wifi 全程不用连网&lt;/li&gt;
+&lt;li&gt;win系统电脑刷机，需要下载一个刷机包&lt;/li&gt;
+&lt;li&gt;windows 有 python 程序，查看方法：在命令提示符窗口输入 &lt;code&gt;python --version&lt;/code&gt;，会输出版本号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至于让路由器变砖，并且对于以后更换固件非常友好，强烈建议刷Breed。&lt;/p&gt;</description></item></channel></rss>

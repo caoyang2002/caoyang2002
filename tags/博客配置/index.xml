@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客配置 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/</link><description>Recent content in 博客配置 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
+enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
+hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
+summaryLength = 140 # 文章摘要长度
+
+# SEO 优化
+[params]
+keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;] # 网站关键词
+description = &amp;#34;个人技术博客&amp;#34; # 网站描述
+images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片
+# 自定义 Open Graph 信息
+[params.og]
+title = &amp;#34;我的博客&amp;#34;
+type = &amp;#34;website&amp;#34;
+images = [&amp;#34;og-image.jpg&amp;#34;]
+
+# 性能优化
+[minify]
+ disableCSS = false # 启用 CSS 压缩
+ disableHTML = false # 启用 HTML 压缩
+ disableJS = false # 启用 JS 压缩
+ disableJSON = false # 启用 JSON 压缩
+ minifyOutput = true # 压缩 HTML 输出
+
+# 图片处理
+[imaging]
+ quality = 75 # JPEG 图片质量
+ resampleFilter = &amp;#34;Lanczos&amp;#34; # 图片重采样过滤器
+ anchor = &amp;#34;Smart&amp;#34; # 图片裁剪锚点
+
+# 内容安全策略
+[params.csp]
+ childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]
+ formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]
+ stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]
+ scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]
+
+# 文章配置
+[permalinks]
+ posts = &amp;#34;/post/:year/:month/:slug/&amp;#34; # 自定义文章 URL 结构
+
+# 自定义输出格式
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;] # 支持 JSON API 输出
+ section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+
+# RSS 订阅配置
+[params.rss]
+ limit = 20 # RSS 文章数量限制
+ fullContent = true # RSS 包含完整文章内容
+
+# 站内搜索配置
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]
+[outputFormats.SearchIndex]
+ mediaType = &amp;#34;application/json&amp;#34;
+ baseName = &amp;#34;searchindex&amp;#34;
+ isPlainText = true
+ notAlternative = true
+
+# 文章目录配置
+[markup.tableOfContents]
+ endLevel = 3 # 目录最大深度
+ ordered = false # 使用无序列表
+ startLevel = 2 # 目录开始层级
+
+# 代码高亮配置
+[markup.highlight]
+ codeFences = true # 启用代码围栏
+ guessSyntax = true # 自动推测代码语言
+ lineNoStart = 1 # 起始行号
+ lineNos = true # 显示行号
+ lineNumbersInTable = true # 使用表格式行号
+ tabWidth = 4 # 制表符宽度
+ style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item></channel></rss>

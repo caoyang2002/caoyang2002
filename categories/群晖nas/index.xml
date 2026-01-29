@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>群晖NAS on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BE%A4%E6%99%96nas/</link><description>Recent content in 群晖NAS on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BE%A4%E6%99%96nas/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前提条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
+&lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-url" data-lang="url"&gt;https://spk.bobohome.store:8880&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="2-安装-vaultwarden"&gt;2. 安装 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>群晖开发</title><link>https://simons.qzz.io/post/2023/08/synology/</link><pubDate>Tue, 29 Aug 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/08/synology/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/christmans/article/details/129641264"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文链接
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="查看-cpu-架构"&gt;查看 CPU 架构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-shell" data-lang="shell"&gt;uname -m：该命令会输出当前系统的CPU架构，如x86_64、i386、armv7l等。
+arch：该命令可以查看Linux系统的CPU架构。
+cat /proc/version：该命令可以查看系统内核的版本信息。
+cat /proc/cpuinfo：该命令可以查看CPU信息，如每个物理CPU中core的个数、逻辑CPU的个数、CPU型号等。&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="http://ipkg.nslu2-linux.org/optware-ng/bootstrap/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 脚本目录
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item></channel></rss>

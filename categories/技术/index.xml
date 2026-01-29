@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF/</link><description>Recent content in 技术 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml"/><item><title>Aptos Wasm 开发笔记</title><link>https://simons.qzz.io/post/2025/01/aptos-wasm/</link><pubDate>Sun, 05 Jan 2025 11:08:24 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/aptos-wasm/</guid><description>&lt;h1 id="起因"&gt;起因&lt;/h1&gt;
+&lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;
+&lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;
+&lt;h1 id="开始"&gt;开始&lt;/h1&gt;
+&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item></channel></rss>

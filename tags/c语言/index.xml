@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>C语言 on 短松江月</title><link>https://simons.qzz.io/tags/c%E8%AF%AD%E8%A8%80/</link><description>Recent content in C语言 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/c%E8%AF%AD%E8%A8%80/index.xml" rel="self" type="application/rss+xml"/><item><title>C 语言字符画</title><link>https://simons.qzz.io/post/2024/06/c_shar/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/c_shar/</guid><description>&lt;blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+* * *
+* *
+* * *
+
+4
+* * * *
+* *
+* *
+* * * *&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;非多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行定位
+int main() {
+ int n = 0;
+ scanf(&amp;#34;%d&amp;#34;, &amp;amp;n);
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {
+ if (i == 0 || i == n - 1) {//首尾行输出一行*
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {
+ printf(&amp;#34;* &amp;#34;);
+ }
+ } else {
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//其它行首尾输出*
+ if(j==0 || j == n-1)
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ }
+ printf(&amp;#34;\n&amp;#34;);//换行
+ }
+
+ return 0;
+}
+
+// 3 ---- n
+// * * * --- 1行每个位置都输出 一共n个
+// * * --- 其它行1和n位置输出 一共2个
+// * * * --- n行每个位置都输出 一共n个
+// 思路：
+// 使用for 和 if
+// 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;多组输入&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+//行和列定位
+int main() {
+ int n = 0;
+ while(scanf(&amp;#34;%d&amp;#34;, &amp;amp;n) == 1){//输入的数量为1
+ for (int i = 0; i &amp;lt; n; &amp;#43;&amp;#43;i) {//控制行
+ for (int j = 0; j &amp;lt; n; &amp;#43;&amp;#43;j) {//控制列
+ if(i == 0 || i == n-1 || j == 0 || j == n-1)//第0行，第n-1行，第0列，第n-1列输出 *_,其它位置输出 __
+ printf(&amp;#34;* &amp;#34;);
+ else
+ printf(&amp;#34; &amp;#34;);
+ }
+ printf(&amp;#34;\n&amp;#34;);
+ }
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>C 语言推荐书籍</title><link>https://simons.qzz.io/post/2023/11/c_book/</link><pubDate>Wed, 29 Nov 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/11/c_book/</guid><description>&lt;h1 id="c语言系列"&gt;C语言系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《C漏洞与缺陷》&lt;/li&gt;
+&lt;li&gt;《C语言深度解剖》&lt;/li&gt;
+&lt;li&gt;《C和指针》&lt;/li&gt;
+&lt;li&gt;《明解C语言》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="c系列"&gt;C++系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《高质量的C/C++编程》&lt;/li&gt;
+&lt;li&gt;《程序员的自我修养》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="java系列"&gt;java系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《java编程思想》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="计算机系列"&gt;计算机系列&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;深入理解计算机系统&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="数据结构"&gt;数据结构&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《大话数据结构》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="内存"&gt;内存&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《地址的故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="编程"&gt;编程&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《程序员编程故事》&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id="算法"&gt;算法&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;《剑指offer》&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+&lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
+&lt;li&gt;$(-1)^s^$ 表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
+&lt;li&gt;M表示有效数字，大于等于1，小于2; 1&amp;lt;= M &amp;lt;2&lt;/li&gt;
+&lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;V = 5.0 f&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;二进制：101.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
+&lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;函数的作用域是怎么形成的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;局部变量是如何创建的？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数是如何传参的？&lt;/p&gt;
+&lt;p&gt;传参的顺序又是怎么样的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形参和实参的关系是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
+&lt;li&gt;暴力算法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+#include &amp;lt;malloc/_malloc.h&amp;gt;
+#include &amp;lt;string.h&amp;gt;
+#include &amp;lt;errno.h&amp;gt;
+// 最大公约数
+// 最小公倍数
+//计算最小公倍数和最大公约数的和
+int main(){
+ int n = 0;
+ int m = 0;
+ while(scanf(&amp;#34;%d %d&amp;#34;,&amp;amp;n,&amp;amp;m) == 2){//读取两个数
+ int min = n &amp;lt; m ? n : m;
+ int max = n &amp;gt; m ? n : m;
+ int i = min;//最大公约数
+ int j = max;//最小公倍数
+ while(1){
+ if(n%i == 0 &amp;amp;&amp;amp; m%i == 0){
+ break;
+ }
+ i--;
+ }
+ // i就是最大公约数
+ while(1){
+ if(j%n == 0 &amp;amp;&amp;amp; j%m == 0){
+ break;
+ }
+ j&amp;#43;&amp;#43;;
+ }
+ // j就是最大公倍数
+
+ printf(&amp;#34;最大公倍数 %d &amp;#43; 最小公约数 %d = %d\n&amp;#34;,j,i,j&amp;#43;i);
+ }
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;辗转相除法&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+struct S1{
+ char c1;//1
+ int i;//4
+ char c2;//1
+};
+
+struct S2{
+ char c1;//1
+ char c2;//1
+ int i;//4
+};
+int main(){
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S1));//12
+ printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;对齐规则：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;第一个成员在与结构体变量偏移量为0的地址处&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;其它成员变量要对齐到某个数字（对齐数）的整数倍的地址处
+对齐数 = 编译默认的一个对齐数与该成员大小的&lt;strong&gt;较小值&lt;/strong&gt;。 vs中默认是8&lt;/p&gt;
+&lt;p&gt;(即：第二个成员和编译器的默认对齐数比较大小,第三个成员和编译器的默认对齐数比较大小,第四个成员和编译器的默认对齐数比较大小&amp;hellip;..)&lt;/p&gt;</description></item></channel></rss>

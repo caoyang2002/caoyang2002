@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编译器 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%BC%96%E8%AF%91%E5%99%A8/</link><description>Recent content in 编译器 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%BC%96%E8%AF%91%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>rust 中的属性宏</title><link>https://simons.qzz.io/post/2025/01/rust_macro/</link><pubDate>Wed, 15 Jan 2025 11:16:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_macro/</guid><description>&lt;h1 id="deriveclone-debug-serialize-deserialize-eq-partialeq"&gt;&lt;code&gt;#[derive(Clone, Debug, Serialize, Deserialize, Eq, PartialEq)]&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;这是 Rust 语言中的属性宏(attribute macro)声明，用于自动为数据结构实现一些常用的特性(traits)。让我详细解释每个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;derive&lt;/code&gt; - 这是 Rust 的派生宏，用于自动生成特定 trait 的实现&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;括号里的每个特性具体作用是：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Clone&lt;/code&gt; - 允许类型创建自身的深拷贝&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Debug&lt;/code&gt; - 实现格式化调试输出，使用 &lt;code&gt;{:?}&lt;/code&gt; 格式说明符可以打印该类型&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Serialize&lt;/code&gt; - 来自 serde 库，使类型可以被序列化(比如转换成 JSON)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Deserialize&lt;/code&gt; - 也来自 serde 库，使类型可以被反序列化(比如从 JSON 转换回来)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Eq&lt;/code&gt; - 实现完全相等比较&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;PartialEq&lt;/code&gt; - 实现部分相等比较，允许使用 &lt;code&gt;==&lt;/code&gt; 和 &lt;code&gt;!=&lt;/code&gt; 运算符&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;这种写法可以让我们避免手动实现这些特性，编译器会自动为我们生成实现代码。这在定义数据结构时非常常用，特别是在需要序列化/反序列化数据的场景中。&lt;/p&gt;</description></item></channel></rss>

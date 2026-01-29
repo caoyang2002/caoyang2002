@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CPU on 短松江月</title><link>https://simons.qzz.io/tags/cpu/</link><description>Recent content in CPU on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/cpu/index.xml" rel="self" type="application/rss+xml"/><item><title>x86 教程</title><link>https://simons.qzz.io/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
+&lt;a href="http://www.ruanyifeng.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 阮一峰
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;日期： 
+&lt;a href="http://www.ruanyifeng.com/blog/2018/01/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 2018年1月21日
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;学习编程其实就是学高级语言，即那些为人类设计的计算机语言。&lt;/p&gt;
+&lt;p&gt;但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/bg2018012204.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级语言，直接描述/控制 CPU 的运行。如果你想了解 CPU 到底干了些什么，以及代码的运行步骤，就一定要学习汇编语言。&lt;/p&gt;</description></item></channel></rss>

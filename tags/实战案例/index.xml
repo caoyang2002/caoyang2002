@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>实战案例 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B/</link><description>Recent content in 实战案例 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
+&lt;p&gt;让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？&lt;/p&gt;
+&lt;h2 id="深入理解-wasm-的本质"&gt;深入理解 WASM 的本质&lt;/h2&gt;
+&lt;p&gt;首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。&lt;/p&gt;
+&lt;h3 id="内存模型解析"&gt;内存模型解析&lt;/h3&gt;
+&lt;p&gt;让我们看一段具体代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+int* buffer = new int[1024]; // 分配4KB内存
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;编译成 WASM 后：&lt;/p&gt;</description></item></channel></rss>

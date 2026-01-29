@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>市场竞争 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%B8%82%E5%9C%BA%E7%AB%9E%E4%BA%89/</link><description>Recent content in 市场竞争 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%B8%82%E5%9C%BA%E7%AB%9E%E4%BA%89/index.xml" rel="self" type="application/rss+xml"/><item><title>Arm 与 Amd 的恩怨情仇</title><link>https://simons.qzz.io/post/2025/12/arm_and_amd/</link><pubDate>Wed, 24 Dec 2025 11:45:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/arm_and_amd/</guid><description>&lt;p&gt;简单来说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;x86_64 和 amd64 是同一个东西的两种不同叫法&lt;/strong&gt;，都指64位的x86架构。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt; 则是与 &lt;strong&gt;x86&lt;/strong&gt; 阵营&lt;strong&gt;完全不同的另一种处理器架构&lt;/strong&gt;，两者在设计哲学、指令集和生态上存在竞争关系。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="基本解释"&gt;基本解释&lt;/h1&gt;
+&lt;h2 id="1-x86_64-与-amd64同一个事物的两个名字"&gt;1. x86_64 与 amd64：同一个事物的两个名字&lt;/h2&gt;
+&lt;p&gt;这背后有一段产业历史：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;：起源于英特尔（Intel）的8086处理器，后来一系列处理器都以“86”结尾（80286, 80386, 80486），因此这个架构家族被称为 &lt;strong&gt;x86&lt;/strong&gt;。它是一个 &lt;strong&gt;复杂指令集（CISC）&lt;/strong&gt; 架构。早期的x86主要是 &lt;strong&gt;32位&lt;/strong&gt; 的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;amd64 的诞生&lt;/strong&gt;：当业界需要向64位升级时，英特尔推出了一个与32位x86不兼容的全新64位架构 &lt;strong&gt;IA-64（Itanium）&lt;/strong&gt;，市场接受度不高。此时，英特尔的老对手 &lt;strong&gt;AMD&lt;/strong&gt; 做了一件大事：他们扩展了原有的32位x86指令集，创造出了一个&lt;strong&gt;兼容原有32位x86程序&lt;/strong&gt;的64位架构。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;命名之争&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;AMD 将这个新架构命名为 &lt;strong&gt;AMD64&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;由于技术优秀且兼容性好，AMD64 获得了巨大成功，成为事实标准。英特尔不得不放弃自己的IA-64，也采用了这套方案，并将其命名为 &lt;strong&gt;Intel 64&lt;/strong&gt;（有时也叫EM64T）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中立名称&lt;/strong&gt;：为了保持中立，操作系统和软件社区通常使用 &lt;strong&gt;x86_64&lt;/strong&gt; 或 &lt;strong&gt;x64&lt;/strong&gt; 来指代这个64位的x86架构。在Linux的发行版中，你经常会看到 &lt;code&gt;amd64&lt;/code&gt; 和 &lt;code&gt;x86_64&lt;/code&gt; 这两个术语&lt;strong&gt;互换使用&lt;/strong&gt;，指代同一个64位平台。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;：&lt;code&gt;amd64&lt;/code&gt; 是它的“创始名”，&lt;code&gt;x86_64&lt;/code&gt; 是它的“通用学术名”。就像“创可贴”和“医用绷带”的关系。&lt;/p&gt;</description></item><item><title>通道费：性本善，还是性本恶？</title><link>https://simons.qzz.io/post/2025/03/is_nature_good_or_nature_evil/</link><pubDate>Sun, 23 Mar 2025 09:35:12 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/is_nature_good_or_nature_evil/</guid><description>&lt;p&gt;我们已经通过数据比较了解到：中国目前大多数的连锁型超市公司，包括国际著名的跨国公司，依靠商品零售毛利去掉成本，还能盈利。&lt;/p&gt;
+&lt;p&gt;正对这样一个发展现实，我们必须去研究它存在的合理性，我们从市场经济“交易的公平利益原则”、“交易的竞争原则”来探讨这个问题。&lt;/p&gt;
+&lt;p&gt;　　&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;交易的公平利益原则&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　　&lt;/p&gt;
+&lt;p&gt;收取通道费用是否合理？&lt;/p&gt;
+&lt;p&gt;我们援引2001年美国联邦贸易委员会对供应商投诉连锁商向其收取通道费召开的听证会报告中的一段话：&lt;/p&gt;</description></item><item><title>可乐的故事并不轻松：中国饮料业的三次冲击</title><link>https://simons.qzz.io/post/2025/03/three_shocks_to_china_s_beverage_industry/</link><pubDate>Sat, 22 Mar 2025 00:41:03 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/three_shocks_to_china_s_beverage_industry/</guid><description>&lt;p&gt;《北京青年报》&lt;/p&gt;
+&lt;p&gt;十几年的时间，中国消费者的口味变了可口可乐进入中国的时候，几乎未遇到抵抗。可口可乐在中国的成功，似乎是一夜之间。&lt;/p&gt;
+&lt;p&gt;在可口可乐进入中国市场以前，中国市场巨大的空间对于可口可乐来说是极为难得的机遇：中国没有具有全国性影响的饮料品牌，没有支持全国性饮料品牌的销售渠道。&lt;/p&gt;
+&lt;p&gt;为中国消费者所的饮料品牌几乎都是地域性的；如北京的北冰洋汽水、天津的亚洲汽水、上海的老正兴汽水等。这些产品在其固有的销售区域内，无疑具有强大的影响力，但在计划经济体制下，这些产品无力把它影响力扩展到其它地区。&lt;/p&gt;</description></item></channel></rss>

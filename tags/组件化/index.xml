@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>组件化 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%BB%84%E4%BB%B6%E5%8C%96/</link><description>Recent content in 组件化 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%BB%84%E4%BB%B6%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>Vue: 一个让前端开发不再痛苦的框架</title><link>https://simons.qzz.io/post/2025/01/vue_painless_frontend_framework/</link><pubDate>Fri, 24 Jan 2025 13:53:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/vue_painless_frontend_framework/</guid><description>&lt;h1 id="vue-一个让前端开发不再痛苦的框架"&gt;Vue: 一个让前端开发不再痛苦的框架&lt;/h1&gt;
+&lt;h2 id="老板又改需求了"&gt;老板又改需求了?&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
+document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
+document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就是没用Vue的下场。数据和视图分离,改一个要改几个地方,还容易改出bug。&lt;/p&gt;
+&lt;h2 id="vue是啥"&gt;Vue是啥?&lt;/h2&gt;
+&lt;p&gt;简单说: Vue = 数据驱动视图 + 组件化开发&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;template&amp;gt;
+ &amp;lt;div&amp;gt;
+ &amp;lt;!-- 数据自动同步到视图 --&amp;gt;
+ &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;
+ &amp;lt;button @click=&amp;#34;changeTitle&amp;#34;&amp;gt;改标题&amp;lt;/button&amp;gt;
+ &amp;lt;/div&amp;gt;
+&amp;lt;/template&amp;gt;
+
+&amp;lt;script&amp;gt;
+export default {
+ data() {
+ return {
+ title: &amp;#34;原标题&amp;#34;
+ }
+ },
+ methods: {
+ changeTitle() {
+ // 改数据,视图自动更新
+ this.title = &amp;#34;新标题&amp;#34;
+ }
+ }
+}
+&amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="为什么选vue"&gt;为什么选Vue?&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;上手容易&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>React 开发痛点与解决方案详解</title><link>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</link><pubDate>Fri, 24 Jan 2025 13:44:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/</guid><description>&lt;h1 id="react-开发痛点与解决方案详解"&gt;React 开发痛点与解决方案详解&lt;/h1&gt;
+&lt;h2 id="1-dom-操作的深层困境"&gt;1. DOM 操作的深层困境&lt;/h2&gt;
+&lt;h3 id="传统方式的问题"&gt;传统方式的问题&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// 更新用户信息
+$(&amp;#39;#userName&amp;#39;).text(user.name);
+$(&amp;#39;#userRole&amp;#39;).text(user.role);
+$(&amp;#39;#department&amp;#39;).text(user.department);
+
+// 更新权限信息
+function updatePermissions(permissions) {
+ $(&amp;#39;#permissionList&amp;#39;).empty();
+ permissions.forEach(p =&amp;gt; {
+ $(&amp;#39;#permissionList&amp;#39;).append(`&amp;lt;li&amp;gt;${p}&amp;lt;/li&amp;gt;`);
+ });
+}
+
+// 更新用户状态
+function toggleUserStatus(status) {
+ if(status === &amp;#39;active&amp;#39;) {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;active&amp;#39;).removeClass(&amp;#39;inactive&amp;#39;);
+ } else {
+ $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这种操作方式存在严重问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;代码分散导致的维护噩梦&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DOM 操作散布在各个函数中&lt;/li&gt;
+&lt;li&gt;状态变化需要手动同步多处DOM&lt;/li&gt;
+&lt;li&gt;代码修改容易遗漏关联更新&lt;/li&gt;
+&lt;li&gt;难以追踪数据流向&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;性能瓶颈&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

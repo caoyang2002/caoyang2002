@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>最佳实践 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/</link><description>Recent content in 最佳实践 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5/index.xml" rel="self" type="application/rss+xml"/><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg" alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"&gt;&lt;/p&gt;
+&lt;p&gt;很长一段时间以来，HTML 元标记一直被称为 
+&lt;a href="https://www.searchenginejournal.com/seo/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ SEO
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;
+&lt;p&gt;谷歌的约翰
+&lt;a href="https://www.searchenginejournal.com/google-answers-if-meta-description-matters-for-rankings/449119/#:~:text=John%20Mueller%20answered%3A"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ ·穆勒 （John Mueller） 表示
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，谷歌使用 HTML 元标记来形成 SERP 片段，而不是用于排名。在这段声明中，他还说一个好的搜索片段会让人们访问你的页面。因此，元标记绝对是您必须关心才能获得流量的内容。&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
+文章作者：左耳朵耗子
+出处：
+&lt;a href="https://coolshell.cn/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 酷 壳 – CoolShell
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+非商用&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src="https://coolshell.org/wp-content/uploads/2021/07/knowledge_sharing-300x169.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：&lt;/p&gt;
+&lt;p&gt;1）分享内容的保鲜期是很长的，&lt;/p&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
+&lt;p&gt;先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。&lt;/p&gt;
+&lt;h2 id="本质分析"&gt;本质分析&lt;/h2&gt;
+&lt;p&gt;GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。&lt;/p&gt;</description></item><item><title>Rust 中的引用</title><link>https://simons.qzz.io/post/2025/01/rust_ref/</link><pubDate>Wed, 15 Jan 2025 11:57:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ref/</guid><description>&lt;h1 id="引用你的快递地址和包裹"&gt;引用：你的快递地址和包裹&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你在网上买了个漂亮的花瓶，快递公司需要把它送到你家。快递员需要知道两个信息：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;你家的地址（引用）&lt;/li&gt;
+&lt;li&gt;花瓶本身（值）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么我们需要引用"&gt;为什么我们需要引用？&lt;/h2&gt;
+&lt;p&gt;让我们看一个具体的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ s.len()
+}
+
+let s = String::from(&amp;#34;hello&amp;#34;);
+let len = calculate_length(s);
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这就像你把花瓶（值）直接给了快递员（函数），花瓶就不再属于你了。但很多时候，我们只是想让快递员看看花瓶，而不是把它拿走。&lt;/p&gt;</description></item><item><title>Rust 函数式编程</title><link>https://simons.qzz.io/post/2025/01/rust_programming/</link><pubDate>Wed, 15 Jan 2025 11:48:53 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_programming/</guid><description>&lt;p&gt;让我用这种方式来讲解 Rust 的函数式编程概念：&lt;/p&gt;
+&lt;h1 id="引入问题"&gt;引入问题&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你需要处理一个电商系统的订单数据。要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;过滤出金额大于 100 的订单&lt;/li&gt;
+&lt;li&gt;计算这些订单的总金额&lt;/li&gt;
+&lt;li&gt;给每个订单加上 10% 的折扣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;传统的命令式编程可能是这样：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let mut total = 0;
+for order in orders {
+ if order.amount &amp;gt; 100 {
+ total &amp;#43;= order.amount * 0.9;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码有什么问题？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可读性不高：逻辑分散在循环中&lt;/li&gt;
+&lt;li&gt;难以修改：如果要改变处理逻辑，需要修改循环内部&lt;/li&gt;
+&lt;li&gt;难以复用：这段逻辑很难在其他地方重用&lt;/li&gt;
+&lt;li&gt;易出错：可变状态(total)增加了出错风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="问题模型"&gt;问题模型&lt;/h1&gt;
+&lt;p&gt;我们需要一种方式能够：&lt;/p&gt;</description></item><item><title>Wasm 打印输出和浏览器特性等最佳实践</title><link>https://simons.qzz.io/post/2025/01/wasm_print/</link><pubDate>Wed, 15 Jan 2025 00:31:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm_print/</guid><description>&lt;p&gt;在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用 &lt;code&gt;web_sys&lt;/code&gt; 和 &lt;code&gt;wasm_bindgen&lt;/code&gt; 进行浏览器 API 调用：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{console, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 控制台打印
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;move test: {}&amp;#34;, name)));
+
+ // 使用 console.warn
+ console::warn_1(&amp;amp;JsValue::from_str(&amp;#34;This is a warning&amp;#34;));
+
+ // 使用 console.error
+ console::error_1(&amp;amp;JsValue::from_str(&amp;#34;This is an error&amp;#34;));
+
+ // 浏览器 alert
+ if let Some(window) = window() {
+ window
+ .alert_with_message(&amp;amp;format!(&amp;#34;Hello, {}!&amp;#34;, name))
+ .expect(&amp;#34;alert failed&amp;#34;);
+ }
+
+ // 确认对话框
+ if let Some(window) = window() {
+ if window
+ .confirm_with_message(&amp;#34;Do you want to continue?&amp;#34;)
+ .expect(&amp;#34;confirm failed&amp;#34;)
+ {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked OK&amp;#34;));
+ } else {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
+ }
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;在 Cargo.toml 中需要添加必要的依赖：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;[dependencies]
+wasm-bindgen = &amp;#34;0.2&amp;#34;
+web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
+ &amp;#34;console&amp;#34;,
+ &amp;#34;Window&amp;#34;,
+ &amp;#34;Document&amp;#34;,
+ &amp;#34;Element&amp;#34;,
+ &amp;#34;HtmlElement&amp;#34;,
+ &amp;#34;Node&amp;#34;,
+ &amp;#34;Location&amp;#34;
+]}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;如果需要格式化打印，可以使用 &lt;code&gt;console::log!&lt;/code&gt; 宏：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::console;
+
+// 需要引入宏
+#[macro_export]
+macro_rules! console_log {
+ ($($t:tt)*) =&amp;gt; (console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!($($t)*))))
+}
+
+pub fn move_test(name: &amp;amp;str) {
+ console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;操作 DOM 示例：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+use web_sys::{Document, Element, HtmlElement, window};
+
+pub fn move_test(name: &amp;amp;str) {
+ // 获取 document
+ let window = window().expect(&amp;#34;no global window exists&amp;#34;);
+ let document = window.document().expect(&amp;#34;no document exists&amp;#34;);
+
+ // 创建新元素
+ if let Some(div) = document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ // 修改输入框的值
+ if let Some(input) = div.dyn_ref::&amp;lt;HtmlElement&amp;gt;() {
+ input.set_inner_text(&amp;amp;format!(&amp;#34;New value: {}&amp;#34;, name));
+ }
+ }
+
+ // 创建新元素
+ let new_div = document.create_element(&amp;#34;div&amp;#34;).unwrap();
+ new_div.set_text_content(Some(&amp;amp;format!(&amp;#34;Hello {}&amp;#34;, name)));
+
+ // 添加到 body
+ if let Some(body) = document.body() {
+ body.append_child(&amp;amp;new_div).unwrap();
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;处理错误和 Result：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ // 使用 ? 运算符处理错误
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+ let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
+
+ // 处理可能的错误
+ match document.get_element_by_id(&amp;#34;test-input&amp;#34;) {
+ Some(element) =&amp;gt; {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Found element: {}&amp;#34;, name)));
+ Ok(())
+ },
+ None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;使用本地存储：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;use web_sys::Storage;
+
+pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
+
+ // 获取 localStorage
+ if let Some(storage) = window.local_storage()? {
+ // 存储数据
+ storage.set_item(&amp;#34;user_name&amp;#34;, name)?;
+
+ // 读取数据
+ if let Ok(Some(saved_name)) = storage.get_item(&amp;#34;user_name&amp;#34;) {
+ console::log_1(&amp;amp;JsValue::from_str(&amp;amp;format!(&amp;#34;Saved name: {}&amp;#34;, saved_name)));
+ }
+ }
+
+ Ok(())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接口定义规则：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+package handler
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}
+
+// ❌ 错误：接口定义在实现方包中
+package service
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;依赖方向：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
+
+// ❌ 错误：不应该出现反向依赖
+service -&amp;gt; handler
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;数据模型定义：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+package handler
+type CreateUserRequest struct { // API层模型
+ Username string `json:&amp;#34;username&amp;#34;`
+}
+
+package service
+type UserDTO struct { // 业务层模型
+ ID uint64
+ Username string
+}
+
+package repository
+type UserDO struct { // 数据层模型
+ ID uint64 `gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string
+ CreatedAt time.Time
+}
+
+// ❌ 错误：直接在所有层使用相同的模型
+type User struct {
+ ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string `json:&amp;#34;username&amp;#34;`
+ CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;错误处理层级：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+package repository
+func (r *UserRepo) Create(user *UserDO) error {
+ return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
+}
+
+package service
+func (s *UserService) Create(user *UserDTO) error {
+ return fmt.Errorf(&amp;#34;business error: %w&amp;#34;, err)
+}
+
+package handler
+func (h *UserHandler) Create(c *gin.Context) {
+ if err := h.service.Create(user); err != nil {
+ c.JSON(getErrorStatus(err), ErrorResponse{err.Error()})
+ return
+ }
+}
+
+// ❌ 错误：直接暴露底层错误
+if err := db.Create(&amp;amp;user).Error; err != nil {
+ c.JSON(500, err.Error())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;包的组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;✅ 正确的包组织：
+project/
+ ├── api/
+ │ └── handler/ # HTTP 处理层
+ ├── internal/
+ │ ├── service/ # 业务逻辑层
+ │ ├── repository/ # 数据访问层
+ │ └── model/ # 内部数据模型
+ ├── pkg/
+ │ └── util/ # 公共工具函数
+ └── main.go
+
+❌ 错误的包组织：
+project/
+ ├── handlers/
+ ├── services/
+ ├── models/
+ └── main.go&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;依赖注入：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+func NewUserHandler(service UserService) *UserHandler {
+ return &amp;amp;UserHandler{service: service}
+}
+
+// ❌ 错误：全局变量或直接初始化
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;接口隔离：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+type UserReader interface {
+ GetUser(id uint64) (*User, error)
+}
+
+type UserWriter interface {
+ CreateUser(user *User) error
+}
+
+// ❌ 错误：大接口，职责过多
+type UserService interface {
+ GetUser(id uint64) (*User, error)
+ CreateUser(user *User) error
+ UpdateUser(user *User) error
+ DeleteUser(id uint64) error
+ ListUsers() ([]*User, error)
+ SearchUsers(query string) ([]*User, error)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="8"&gt;
+&lt;li&gt;配置管理：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+package config
+
+type Config struct {
+ Server ServerConfig
+ DB DatabaseConfig
+ Redis RedisConfig
+}
+
+// ❌ 错误：分散的配置或硬编码
+var serverPort = 8080
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="9"&gt;
+&lt;li&gt;上下文传递：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+func (h *Handler) Create(c *gin.Context) {
+ ctx := c.Request.Context()
+ err := h.service.Create(ctx, req)
+}
+
+// ❌ 错误：不传递上下文或使用不一致的上下文
+func (h *Handler) Create(c *gin.Context) {
+ err := h.service.Create(req)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="10"&gt;
+&lt;li&gt;测试组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+package handler
+
+func TestUserHandler_Create(t *testing.T) {
+ // 单元测试
+}
+
+// ❌ 错误：测试代码与源码混合或测试覆盖不全
+func TestAll(t *testing.T) {
+ // 混合测试多个功能
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item></channel></rss>

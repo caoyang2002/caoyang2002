@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>异步编程 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</link><description>Recent content in 异步编程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/node.js_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/node.js_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
+&lt;p&gt;不知道你是否思考过，为什么 Node.js 选择了 JavaScript 作为语言？为什么它能在后端站稳脚跟？今天我们就来扒一扒 Node.js 的底层原理和设计思想。&lt;/p&gt;
+&lt;h2 id="什么是-nodejs"&gt;什么是 Node.js?&lt;/h2&gt;
+&lt;p&gt;本质上，Node.js 就是一个基于 Chrome V8 引擎的 JavaScript 运行时。但这样说太简单了，让我们来看看它的架构：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
+const fs = require(&amp;#39;fs&amp;#39;);
+
+fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
+ if (err) throw err;
+ console.log(data);
+});
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码揭示了 Node.js 最核心的特性：非阻塞I/O和事件驱动。&lt;/p&gt;</description></item></channel></rss>

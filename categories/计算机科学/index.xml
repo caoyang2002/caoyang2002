@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>计算机科学 on 短松江月</title><link>https://simons.qzz.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/</link><description>Recent content in 计算机科学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%A7%91%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>Epoll</title><link>https://simons.qzz.io/post/2026/01/epoll/</link><pubDate>Wed, 28 Jan 2026 18:27:07 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/epoll/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/Hijack-you/p/13057792.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;本文会从网卡接收数据的流程讲起，串联起CPU中断、操作系统进程调度等知识；再一步步分析阻塞接收数据、select到epoll的进化过程；最后探究epoll的实现细节。&lt;/p&gt;
+&lt;h1 id="一从网卡接收数据说起"&gt;一、从网卡接收数据说起&lt;/h1&gt;
+&lt;p&gt;下图是一个典型的计算机结构图，计算机由CPU、存储器（内存）、网络接口等部件组成。了解epoll本质的第一步，要从硬件的角度看计算机怎样接收网络数据。&lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+&lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
+&lt;li&gt;$(-1)^s^$ 表示符号位，当S=0的时候V为正数，当S=1的时候V为负数&lt;/li&gt;
+&lt;li&gt;M表示有效数字，大于等于1，小于2; 1&amp;lt;= M &amp;lt;2&lt;/li&gt;
+&lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;举例：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;V = 5.0 f&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;二进制：101.0&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item></channel></rss>

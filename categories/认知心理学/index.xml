@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>认知心理学 on 短松江月</title><link>https://simons.qzz.io/categories/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6/</link><description>Recent content in 认知心理学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E8%AE%A4%E7%9F%A5%E5%BF%83%E7%90%86%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>Miller's Law: 工作记忆的神奇数字 7±2</title><link>https://simons.qzz.io/post/2025/01/millers_law_working_memory_magic_number_7_plus_minus_2/</link><pubDate>Sat, 25 Jan 2025 05:46:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/millers_law_working_memory_magic_number_7_plus_minus_2/</guid><description>&lt;h1 id="millers-law-工作记忆的神奇数字-72"&gt;Miller&amp;rsquo;s Law: 工作记忆的神奇数字 7±2&lt;/h1&gt;
+&lt;h2 id="核心原理"&gt;核心原理&lt;/h2&gt;
+&lt;h3 id="理论基础"&gt;理论基础&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;提出时间：1956年&lt;/li&gt;
+&lt;li&gt;作者：George Miller&lt;/li&gt;
+&lt;li&gt;发表：《The Magical Number Seven, Plus or Minus Two》&lt;/li&gt;
+&lt;li&gt;核心观点：人类短期记忆容量为7±2个组块&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-python"&gt;class WorkingMemory:
+ MIN_CAPACITY = 5 # 最小容量
+ MAX_CAPACITY = 9 # 最大容量
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h3 id="信息组块化"&gt;信息组块化&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;组块策略&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;电话号码：138-8888-9999&lt;/li&gt;
+&lt;li&gt;信用卡：5432-1234-5678&lt;/li&gt;
+&lt;li&gt;身份证：110101-199001-011234&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;记忆效率&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

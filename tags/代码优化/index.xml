@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>代码优化 on 短松江月</title><link>https://simons.qzz.io/tags/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/</link><description>Recent content in 代码优化 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml"/><item><title>Rust 函数式编程</title><link>https://simons.qzz.io/post/2025/01/rust_programming/</link><pubDate>Wed, 15 Jan 2025 11:48:53 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_programming/</guid><description>&lt;p&gt;让我用这种方式来讲解 Rust 的函数式编程概念：&lt;/p&gt;
+&lt;h1 id="引入问题"&gt;引入问题&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你需要处理一个电商系统的订单数据。要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;过滤出金额大于 100 的订单&lt;/li&gt;
+&lt;li&gt;计算这些订单的总金额&lt;/li&gt;
+&lt;li&gt;给每个订单加上 10% 的折扣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;传统的命令式编程可能是这样：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let mut total = 0;
+for order in orders {
+ if order.amount &amp;gt; 100 {
+ total &amp;#43;= order.amount * 0.9;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码有什么问题？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可读性不高：逻辑分散在循环中&lt;/li&gt;
+&lt;li&gt;难以修改：如果要改变处理逻辑，需要修改循环内部&lt;/li&gt;
+&lt;li&gt;难以复用：这段逻辑很难在其他地方重用&lt;/li&gt;
+&lt;li&gt;易出错：可变状态(total)增加了出错风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="问题模型"&gt;问题模型&lt;/h1&gt;
+&lt;p&gt;我们需要一种方式能够：&lt;/p&gt;</description></item></channel></rss>

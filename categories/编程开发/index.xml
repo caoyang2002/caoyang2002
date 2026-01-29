@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程开发 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/</link><description>Recent content in 编程开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>我的项目</title><link>https://simons.qzz.io/post/2025/01/my_projects/</link><pubDate>Sat, 25 Jan 2025 18:50:19 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/my_projects/</guid><description>&lt;h1 id="一关于我"&gt;一、关于我&lt;/h1&gt;
+&lt;p&gt;我是一个计算机编程爱好者，有一定的全栈开发经验，熟悉前后端、嵌入式、区块链开发。从 2022 年开始，至今已有十余个项目，大部分都是前端项目。&lt;/p&gt;
+&lt;h1 id="二项目介绍"&gt;二、项目介绍&lt;/h1&gt;
+&lt;p&gt;下面介绍以下我开发的项目（开发完成、正在开发、终止开发）&lt;/p&gt;
+&lt;h2 id="simpleresume"&gt;
+&lt;a href="https://github.com/caoyang2002/SimpleResume"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ SimpleResume
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;前端&lt;/code&gt; &lt;code&gt;Vue&lt;/code&gt; &lt;code&gt;TypeScript&lt;/code&gt; &lt;code&gt;实用工具&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://ohohresume.vercel.app/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 简历生成
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;这个工具可以通过填写表单的方式生成简历，而无需记忆 Latex 或者 md 语法。提供少量模板。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;接口定义规则：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+package handler
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}
+
+// ❌ 错误：接口定义在实现方包中
+package service
+type UserService interface {
+ Create(ctx context.Context, user *User) error
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="2"&gt;
+&lt;li&gt;依赖方向：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
+
+// ❌ 错误：不应该出现反向依赖
+service -&amp;gt; handler
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="3"&gt;
+&lt;li&gt;数据模型定义：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+package handler
+type CreateUserRequest struct { // API层模型
+ Username string `json:&amp;#34;username&amp;#34;`
+}
+
+package service
+type UserDTO struct { // 业务层模型
+ ID uint64
+ Username string
+}
+
+package repository
+type UserDO struct { // 数据层模型
+ ID uint64 `gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string
+ CreatedAt time.Time
+}
+
+// ❌ 错误：直接在所有层使用相同的模型
+type User struct {
+ ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
+ Username string `json:&amp;#34;username&amp;#34;`
+ CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="4"&gt;
+&lt;li&gt;错误处理层级：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+package repository
+func (r *UserRepo) Create(user *UserDO) error {
+ return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
+}
+
+package service
+func (s *UserService) Create(user *UserDTO) error {
+ return fmt.Errorf(&amp;#34;business error: %w&amp;#34;, err)
+}
+
+package handler
+func (h *UserHandler) Create(c *gin.Context) {
+ if err := h.service.Create(user); err != nil {
+ c.JSON(getErrorStatus(err), ErrorResponse{err.Error()})
+ return
+ }
+}
+
+// ❌ 错误：直接暴露底层错误
+if err := db.Create(&amp;amp;user).Error; err != nil {
+ c.JSON(500, err.Error())
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="5"&gt;
+&lt;li&gt;包的组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;✅ 正确的包组织：
+project/
+ ├── api/
+ │ └── handler/ # HTTP 处理层
+ ├── internal/
+ │ ├── service/ # 业务逻辑层
+ │ ├── repository/ # 数据访问层
+ │ └── model/ # 内部数据模型
+ ├── pkg/
+ │ └── util/ # 公共工具函数
+ └── main.go
+
+❌ 错误的包组织：
+project/
+ ├── handlers/
+ ├── services/
+ ├── models/
+ └── main.go&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;ol start="6"&gt;
+&lt;li&gt;依赖注入：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+func NewUserHandler(service UserService) *UserHandler {
+ return &amp;amp;UserHandler{service: service}
+}
+
+// ❌ 错误：全局变量或直接初始化
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="7"&gt;
+&lt;li&gt;接口隔离：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+type UserReader interface {
+ GetUser(id uint64) (*User, error)
+}
+
+type UserWriter interface {
+ CreateUser(user *User) error
+}
+
+// ❌ 错误：大接口，职责过多
+type UserService interface {
+ GetUser(id uint64) (*User, error)
+ CreateUser(user *User) error
+ UpdateUser(user *User) error
+ DeleteUser(id uint64) error
+ ListUsers() ([]*User, error)
+ SearchUsers(query string) ([]*User, error)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="8"&gt;
+&lt;li&gt;配置管理：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+package config
+
+type Config struct {
+ Server ServerConfig
+ DB DatabaseConfig
+ Redis RedisConfig
+}
+
+// ❌ 错误：分散的配置或硬编码
+var serverPort = 8080
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="9"&gt;
+&lt;li&gt;上下文传递：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+func (h *Handler) Create(c *gin.Context) {
+ ctx := c.Request.Context()
+ err := h.service.Create(ctx, req)
+}
+
+// ❌ 错误：不传递上下文或使用不一致的上下文
+func (h *Handler) Create(c *gin.Context) {
+ err := h.service.Create(req)
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;ol start="10"&gt;
+&lt;li&gt;测试组织：&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+package handler
+
+func TestUserHandler_Create(t *testing.T) {
+ // 单元测试
+}
+
+// ❌ 错误：测试代码与源码混合或测试覆盖不全
+func TestAll(t *testing.T) {
+ // 混合测试多个功能
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>shell mac 教程</title><link>https://simons.qzz.io/post/2024/11/shell_mac_pop/</link><pubDate>Sat, 09 Nov 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/11/shell_mac_pop/</guid><description>&lt;p&gt;
+&lt;a href="https://juejin.cn/post/6921144388802641933"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-as" data-lang="as"&gt;#!/bin/bash
+
+# 1. 自定义通知消息
+# 传参 $1:消息描述 $2:通知标题 $3:通知副标题
+function showNoteMessage(){
+ osascript -e &amp;#34;display notification \&amp;#34;${1}\&amp;#34; with title \&amp;#34;${2}\&amp;#34; subtitle \&amp;#34;${3}\&amp;#34; sound name \&amp;#34;Funk\&amp;#34;&amp;#34;
+}
+#test case:
+#showNoteMessage &amp;#34;消息内容&amp;#34; &amp;#34;通知&amp;#34; &amp;#34;通知副标题&amp;#34;
+
+# 2. 自定义弹窗(统一通用方法)
+# 传参$1 弹窗消息内容
+# 传参$2 弹窗标题
+# 传参$3 按钮标题,多个用英文逗号隔开
+# 传参$4 默认选中的按钮标题或者按钮数字下标
+# 传参$5 是否为输入框类型 传&amp;#34;0&amp;#34;或者&amp;#34;1&amp;#34; 默认&amp;#34;0&amp;#34;
+# 传参$6 输入框默认占位内容,传不传无所谓,默认为空字符串 &amp;#34;&amp;#34;
+# 传参$7 默认图标note/stop/caution 或者自定义文件路径(:格式路径可以通过choose file获取)
+# tips: 重要! 如果为输入框模式,那么输出结果就是{button returned:button,text returned:text} 否则只有按钮或者false
+function showCustomAlertMessage(){
+
+if [[ -n &amp;#34;$4&amp;#34; ]]; then
+
+	if [[ ${4} == *[!0-9]* ]]; then
+ 	defaultButton=&amp;#34;default button \&amp;#34;${4}\&amp;#34;&amp;#34;
+ 	else
+ 	defaultButton=&amp;#34;default button ${4}&amp;#34;
+	fi
+else
+	defaultButton=&amp;#34;&amp;#34;
+fi
+
+#是否为输入框模式
+if [[ &amp;#34;$5&amp;#34; = &amp;#34;1&amp;#34; ]]; then
+	IS_InputMode=&amp;#34;default answer \&amp;#34;${6}\&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get result&amp;#34;
+else
+	IS_InputMode=&amp;#34;&amp;#34;
+	ReturnValue=&amp;#34;get the button returned of the result&amp;#34;
+fi
+
+if [[ -n &amp;#34;$7&amp;#34; ]]; then
+ case ${7} in
+	note)
+	ICON=&amp;#34;with icon note&amp;#34;
+	;;
+	stop)
+	ICON=&amp;#34;with icon stop&amp;#34;
+	;;
+	caution)
+	ICON=&amp;#34;with icon caution&amp;#34;
+	;;
+	*)
+	ICON=&amp;#34;with icon file \&amp;#34;${7}\&amp;#34;&amp;#34;
+	;;
+ esac
+else
+ ICON=&amp;#34;with icon file \&amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns\&amp;#34;&amp;#34;
+fi
+
+osascript &amp;lt;&amp;lt;EOF
+	set buttonStr to &amp;#34;${3}&amp;#34;
+	set oldDelimiters to AppleScript&amp;#39;s text item delimiters
+	set AppleScript&amp;#39;s text item delimiters to &amp;#34;,&amp;#34;
+	set buttonList to every text item of buttonStr
+	set AppleScript&amp;#39;s text item delimiters to oldDelimiters
+	get buttonList
+	set btns to buttonList
+	display dialog &amp;#34;${1}&amp;#34; with title &amp;#34;${2}&amp;#34; buttons btns ${IS_InputMode} ${defaultButton} ${ICON}
+	${ReturnValue}
+EOF
+}
+
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;1&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+# showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; 2 &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;note&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;stop&amp;#34;
+#showCustomAlertMessage &amp;#34;弹窗消息内容&amp;#34; &amp;#34;弹窗标题&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮2&amp;#34; &amp;#34;0&amp;#34; &amp;#34;占位内容&amp;#34; &amp;#34;Macintosh HD:Applications:Xcode.app:Contents:Resources:Xcode.icns&amp;#34;
+
+# 普通弹窗 一个ok就够了 就是一个确认的那种
+function onlyConfirmButton(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;好的&amp;#34; 1
+}
+#onlyConfirmButton &amp;#34;登录成功!\n弹窗成功!&amp;#34;
+
+# 多按钮弹窗 最多三个按钮 多了会报错
+function mostButtons(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;温馨提示&amp;#34; &amp;#34;按钮1,按钮2,按钮3&amp;#34; &amp;#34;按钮3&amp;#34;
+}
+#mostButtons &amp;#34;最多只能定义三个按钮哦&amp;#34;
+
+# 输入框弹窗
+function showInputAlertMessage(){
+	showCustomAlertMessage &amp;#34;$1&amp;#34; &amp;#34;$2&amp;#34; &amp;#34;取消,确认&amp;#34; 2 &amp;#34;1&amp;#34; &amp;#34;&amp;#34;
+}
+showInputAlertMessage &amp;#34;请输入密码&amp;#34; &amp;#34;登录验证&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item></channel></rss>

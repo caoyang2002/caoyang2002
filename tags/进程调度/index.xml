@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>进程调度 on 短松江月</title><link>https://simons.qzz.io/tags/%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6/</link><description>Recent content in 进程调度 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E8%BF%9B%E7%A8%8B%E8%B0%83%E5%BA%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>Epoll</title><link>https://simons.qzz.io/post/2026/01/epoll/</link><pubDate>Wed, 28 Jan 2026 18:27:07 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/epoll/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/Hijack-you/p/13057792.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;本文会从网卡接收数据的流程讲起，串联起CPU中断、操作系统进程调度等知识；再一步步分析阻塞接收数据、select到epoll的进化过程；最后探究epoll的实现细节。&lt;/p&gt;
+&lt;h1 id="一从网卡接收数据说起"&gt;一、从网卡接收数据说起&lt;/h1&gt;
+&lt;p&gt;下图是一个典型的计算机结构图，计算机由CPU、存储器（内存）、网络接口等部件组成。了解epoll本质的第一步，要从硬件的角度看计算机怎样接收网络数据。&lt;/p&gt;</description></item></channel></rss>

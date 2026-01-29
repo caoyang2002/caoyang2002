@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客搭建 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</link><description>Recent content in 博客搭建 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/index.xml" rel="self" type="application/rss+xml"/><item><title>从 Hexo 迁移至 Hugo</title><link>https://simons.qzz.io/post/2024/12/my-first-post/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/my-first-post/</guid><description>&lt;h1 id="再见hexo从hexo迁移至hugo"&gt;再见Hexo——从Hexo迁移至Hugo&lt;/h1&gt;
+&lt;p&gt;16 年的时候，博客使用的虚拟主机需要做迁移，当时所使用的 Typecho 是一个依赖于数据库的 PHP 博客系统，数据导出过程很艰辛。彼时 Gihub Pages 正大火，我也就跟风转投了静态博客系统 Hexo 。七年过去了，博客还在，但折腾 Hexo 的人是越来越少了。如今我也要和 Hexo 说声再见，拥抱 Hugo 的怀抱了。&lt;/p&gt;
+&lt;h2 id="为什么改用hugo"&gt;为什么改用Hugo&lt;/h2&gt;
+&lt;h3 id="依赖管理问题"&gt;依赖管理问题&lt;/h3&gt;
+&lt;p&gt;在
+&lt;a href="https://easonyang.com/2021/07/10/how-to-sync-and-backup-a-static-blog/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 静态博客的同步和备份方案
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+一文中，我分享了基于 Github 和 iCloud 的同步备份方案，期望在保证数据安全的同时，写作环境可以在我的两台电脑上无缝切换。&lt;/p&gt;</description></item></channel></rss>

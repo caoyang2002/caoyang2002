@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>英特尔 on 短松江月</title><link>https://simons.qzz.io/tags/%E8%8B%B1%E7%89%B9%E5%B0%94/</link><description>Recent content in 英特尔 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E8%8B%B1%E7%89%B9%E5%B0%94/index.xml" rel="self" type="application/rss+xml"/><item><title>Arm 与 Amd 的恩怨情仇</title><link>https://simons.qzz.io/post/2025/12/arm_and_amd/</link><pubDate>Wed, 24 Dec 2025 11:45:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/arm_and_amd/</guid><description>&lt;p&gt;简单来说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;x86_64 和 amd64 是同一个东西的两种不同叫法&lt;/strong&gt;，都指64位的x86架构。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt; 则是与 &lt;strong&gt;x86&lt;/strong&gt; 阵营&lt;strong&gt;完全不同的另一种处理器架构&lt;/strong&gt;，两者在设计哲学、指令集和生态上存在竞争关系。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id="基本解释"&gt;基本解释&lt;/h1&gt;
+&lt;h2 id="1-x86_64-与-amd64同一个事物的两个名字"&gt;1. x86_64 与 amd64：同一个事物的两个名字&lt;/h2&gt;
+&lt;p&gt;这背后有一段产业历史：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;：起源于英特尔（Intel）的8086处理器，后来一系列处理器都以“86”结尾（80286, 80386, 80486），因此这个架构家族被称为 &lt;strong&gt;x86&lt;/strong&gt;。它是一个 &lt;strong&gt;复杂指令集（CISC）&lt;/strong&gt; 架构。早期的x86主要是 &lt;strong&gt;32位&lt;/strong&gt; 的。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;amd64 的诞生&lt;/strong&gt;：当业界需要向64位升级时，英特尔推出了一个与32位x86不兼容的全新64位架构 &lt;strong&gt;IA-64（Itanium）&lt;/strong&gt;，市场接受度不高。此时，英特尔的老对手 &lt;strong&gt;AMD&lt;/strong&gt; 做了一件大事：他们扩展了原有的32位x86指令集，创造出了一个&lt;strong&gt;兼容原有32位x86程序&lt;/strong&gt;的64位架构。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;命名之争&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;AMD 将这个新架构命名为 &lt;strong&gt;AMD64&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;由于技术优秀且兼容性好，AMD64 获得了巨大成功，成为事实标准。英特尔不得不放弃自己的IA-64，也采用了这套方案，并将其命名为 &lt;strong&gt;Intel 64&lt;/strong&gt;（有时也叫EM64T）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;中立名称&lt;/strong&gt;：为了保持中立，操作系统和软件社区通常使用 &lt;strong&gt;x86_64&lt;/strong&gt; 或 &lt;strong&gt;x64&lt;/strong&gt; 来指代这个64位的x86架构。在Linux的发行版中，你经常会看到 &lt;code&gt;amd64&lt;/code&gt; 和 &lt;code&gt;x86_64&lt;/code&gt; 这两个术语&lt;strong&gt;互换使用&lt;/strong&gt;，指代同一个64位平台。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;：&lt;code&gt;amd64&lt;/code&gt; 是它的“创始名”，&lt;code&gt;x86_64&lt;/code&gt; 是它的“通用学术名”。就像“创可贴”和“医用绷带”的关系。&lt;/p&gt;</description></item></channel></rss>

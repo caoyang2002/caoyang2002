@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>系统调用 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/</link><description>Recent content in 系统调用 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>零复制技术</title><link>https://simons.qzz.io/post/2026/01/zero_copy/</link><pubDate>Mon, 26 Jan 2026 13:45:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zero_copy/</guid><description>&lt;p&gt;
+&lt;a href="https://www.cnblogs.com/f-ck-need-u/p/7615914.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="零复制zero-copy技术"&gt;零复制(zero copy)技术&lt;/h1&gt;
+&lt;h2 id="11-背景说明网络数据传输的全过程"&gt;1.1 背景说明：网络数据传输的全过程&lt;/h2&gt;
+&lt;p&gt;在每一次网络io过程，数据都要经过几个缓存，再发送出去。如下图：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://images2017.cnblogs.com/blog/733013/201709/733013-20170930140554637-512964522.png" alt="I/O between OSs" title="I/O between OSs"&gt;&lt;/p&gt;
+&lt;p&gt;以右侧为浏览器，左侧为httpd服务器为例。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;当httpd服务收到浏览器发送的index.html文件的请求时，负责处理请求的httpd子进程/线程总是会先发起系统调用，让内核将index.html从存储设备中加载出来。但是加载到的位置是内核空间的缓冲区kernel buffer，而不是直接给进程/线程的内存区。由于是内存设备和存储设备之间的数据传输，没有CPU的参与，所以这次是DMA操作。&lt;/p&gt;</description></item><item><title>mac 汇编笔记</title><link>https://simons.qzz.io/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
+&lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="梦开始的地方"&gt;梦开始的地方&lt;/h1&gt;
+&lt;h1 id="简单的-asm"&gt;简单的 asm&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;null.s&lt;/code&gt;&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-asm" data-lang="asm"&gt;.section __TEXT,__text
+.globl _main
+.p2align 2
+_main:
+mov w0, #0
+ret&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;int main() {
+ return 0;
+}&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;as null.s -o null.o # 汇编
+ld null.o -lSystem -L $(xcrun --show-sdk-path -sdk macosx)/usr/lib -o null # 链接（由于在 macOS 上不能创建静态链接的可执行文件，因此在链接时必须使用 -lSystem 动态链接上系统库。）
+./null # 运行
+
+# or
+clang null.s -o null
+
+# or
+gcc null.s -o null&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;as&lt;/code&gt; 是 LLVM 的汇编器, &lt;code&gt;lldb&lt;/code&gt; 是 LLVM 的调试器。
+&lt;code&gt;GCC&lt;/code&gt; 套件是 GNU 操作系统的一个部分，GNU 是开源的、社区驱动的。而 LLVM 项目也是开源的，现在主要是 Apple 在投资运行。因此，既然在 macOS 上，我就主要用的是 LLVM 系的工具。&lt;/p&gt;</description></item></channel></rss>

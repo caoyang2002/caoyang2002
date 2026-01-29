@@ -1,4 +1,33 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Openwrt on 短松江月</title><link>https://simons.qzz.io/tags/openwrt/</link><description>Recent content in Openwrt on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Wed, 28 Jan 2026 21:04:06 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenWrt on 短松江月</title><link>https://simons.qzz.io/tags/openwrt/</link><description>Recent content in OpenWrt on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;前提条件：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
+&lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;添加&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-url" data-lang="url"&gt;https://spk.bobohome.store:8880&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="2-安装-vaultwarden"&gt;2. 安装 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
+&lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
+&lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
 
 
 
@@ -30,26 +59,44 @@ Collected errors:
 &lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>OpenWRT 教程</title><link>https://simons.qzz.io/post/2023/10/openwrt/</link><pubDate>Sun, 29 Oct 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/10/openwrt/</guid><description>&lt;p&gt;
-&lt;a href="https://lidrive.vip/"
+&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
  
  
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- OpenWRT下载地址
+ 查看原文
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
 &lt;/a&gt;
 &lt;/p&gt;
-&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/12/3668705269.png" alt="版本"&gt;&lt;/p&gt;
-&lt;h1 id="制作启动盘"&gt;制作启动盘&lt;/h1&gt;
-&lt;p&gt;将PE系统写入到U盘，window：rufus，macOS：balenaEtcher
-将OpenWRT镜像、rufus（在PE系统上写盘会需要）拷贝到写完的U盘里（也可以用另一个U盘）&lt;/p&gt;
-&lt;h1 id="进入bios"&gt;进入BIOS&lt;/h1&gt;
-&lt;p&gt;将U盘插入至路由器，根据硬件选择启动顺序为U盘，笔者的路由器是F12&lt;/p&gt;
-&lt;h1 id="删除设备的磁盘分区"&gt;删除设备的磁盘分区&lt;/h1&gt;
-&lt;p&gt;进入PE系统之后，打开rufus（按Ctrl-Alt-F开启内部磁盘的识别），选择OpenWRT镜像并将其写入到内置的磁盘&lt;/p&gt;</description></item></channel></rss>
+&lt;h1 id="一获取原厂固件的-ssh-登录权限"&gt;一、获取原厂固件的 ssh 登录权限&lt;/h1&gt;
+&lt;p&gt;有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p&gt;
+&lt;p&gt;小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p&gt;</description></item><item><title>小米 4c 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</link><pubDate>Sat, 23 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4c_router/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/xingman510/article/details/127174713"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;介绍一下配置：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;wifi 全程不用连网&lt;/li&gt;
+&lt;li&gt;win系统电脑刷机，需要下载一个刷机包&lt;/li&gt;
+&lt;li&gt;windows 有 python 程序，查看方法：在命令提示符窗口输入 &lt;code&gt;python --version&lt;/code&gt;，会输出版本号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至于让路由器变砖，并且对于以后更换固件非常友好，强烈建议刷Breed。&lt;/p&gt;</description></item><item><title>小米路由器</title><link>https://simons.qzz.io/post/2024/03/xiaomi_router/</link><pubDate>Fri, 22 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_router/</guid><description>&lt;p&gt;{bs-font color=&amp;quot;#FF0000&amp;quot;}刷机有风险，如果能用，请不要为了不一样而刷机，又不是不能用！{/bs-font}&lt;/p&gt;
+&lt;p&gt;现在你的路由器和小米已经没有任何关系了，恭喜你上了贼船！&lt;/p&gt;
+&lt;p&gt;基本介绍：
+OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
+几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item></channel></rss>

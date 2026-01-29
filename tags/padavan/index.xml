@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Padavan on 短松江月</title><link>https://simons.qzz.io/tags/padavan/</link><description>Recent content in Padavan on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/padavan/index.xml" rel="self" type="application/rss+xml"/><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+&lt;a href="https://blog.csdn.net/yilovexing/article/details/129688708"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一获取原厂固件的-ssh-登录权限"&gt;一、获取原厂固件的 ssh 登录权限&lt;/h1&gt;
+&lt;p&gt;有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。&lt;/p&gt;
+&lt;p&gt;小米路由器4A千兆版是利用 2.28.62 版本固件的一个 Shell 命令注入的漏洞，所以要想刷机成功就必须得降级到这个版本（2.28.62 之后的新版本应该是将这个漏洞修复了，我再次通过 OpenWRTInvasion 没获取到 ssh 登录权，所有刷的时候尽量在 2.28.62 这个固件版本下刷机）。&lt;/p&gt;</description></item></channel></rss>

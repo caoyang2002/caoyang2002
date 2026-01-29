@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>文本编辑 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/</link><description>Recent content in 文本编辑 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91/index.xml" rel="self" type="application/rss+xml"/><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
+&lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>Vim 命令速查</title><link>https://simons.qzz.io/post/2026/01/vim_refrence/</link><pubDate>Mon, 26 Jan 2026 13:35:50 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_refrence/</guid><description>&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://github.com/chloneda/vim-cheatsheet"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim-cheatsheet - GitHub
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="https://gitee.com/chloneda/vim-cheatsheet"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim-cheatsheet - Gitee
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://www.vim.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim 官网
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="https://github.com/vim/vim"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim GitHub
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Vim 中文文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="./vimrc"
+ 
+ &gt;
+ Vim 跨平台配置文件 vimrc
+ 
+&lt;/a&gt;
+ | 
+&lt;a href="resources/vim-tools.md"
+ 
+ &gt;
+ Vim 体系化工具集
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一重复的威力"&gt;一、重复的威力&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;. # 小数点，即重复（Dot）命令，重复执行上一次命令
+N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;
+&lt;h1 id="二移动"&gt;二、移动&lt;/h1&gt;
+&lt;h2 id="1-光标移动"&gt;1. 光标移动&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：普通（Normal）模式下，任意一个动作都可以重复。&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

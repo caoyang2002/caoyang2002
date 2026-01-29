@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>内存管理 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/</link><description>Recent content in 内存管理 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/node.js_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/node.js_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
+&lt;p&gt;不知道你是否思考过，为什么 Node.js 选择了 JavaScript 作为语言？为什么它能在后端站稳脚跟？今天我们就来扒一扒 Node.js 的底层原理和设计思想。&lt;/p&gt;
+&lt;h2 id="什么是-nodejs"&gt;什么是 Node.js?&lt;/h2&gt;
+&lt;p&gt;本质上，Node.js 就是一个基于 Chrome V8 引擎的 JavaScript 运行时。但这样说太简单了，让我们来看看它的架构：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
+const fs = require(&amp;#39;fs&amp;#39;);
+
+fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
+ if (err) throw err;
+ console.log(data);
+});
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码揭示了 Node.js 最核心的特性：非阻塞I/O和事件驱动。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
+&lt;p&gt;让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？&lt;/p&gt;
+&lt;h2 id="深入理解-wasm-的本质"&gt;深入理解 WASM 的本质&lt;/h2&gt;
+&lt;p&gt;首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。&lt;/p&gt;
+&lt;h3 id="内存模型解析"&gt;内存模型解析&lt;/h3&gt;
+&lt;p&gt;让我们看一段具体代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+int* buffer = new int[1024]; // 分配4KB内存
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;编译成 WASM 后：&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
+&lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;函数的作用域是怎么形成的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;局部变量是如何创建的？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;为什么未初始化的局部变量的值是随机值或是乱码呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数是如何传参的？&lt;/p&gt;
+&lt;p&gt;传参的顺序又是怎么样的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;形参和实参的关系是什么？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数的调用是怎么实现的呢？&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item></channel></rss>

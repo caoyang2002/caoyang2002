@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DLL on 短松江月</title><link>https://simons.qzz.io/tags/dll/</link><description>Recent content in DLL on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/dll/index.xml" rel="self" type="application/rss+xml"/><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dll/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dll/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
+&lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;在VS开始界面，搜索dll，创建dll动态链接库&lt;/li&gt;
+&lt;li&gt;创建一个类（右键创建类，会自动包含需要的文件） 以查询目录下的文件为例
+创建的文件可以不用管
+&lt;code&gt;.cpp&lt;/code&gt;文件 输入自己的代码&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="cpp"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
+#include &amp;#34;check_repository.h&amp;#34;
+namespace fs = std::filesystem;
+ int Check::CheckRepository() {
+ std::string folderName = &amp;#34;.Rysigy&amp;#34;;
+ fs::path currentPath = fs::current_path();
+ fs::path folderPath = currentPath / folderName;
+
+ if (fs::exists(folderPath) &amp;amp;&amp;amp; fs::is_directory(folderPath)) {
+ std::cout &amp;lt;&amp;lt; &amp;#34;存储库 &amp;#39;.Rysigy&amp;#39; 文件夹存在\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ else {
+ std::cout &amp;lt;&amp;lt; &amp;#34;[错误]\t存储库 &amp;#39;.Rysigy&amp;#39; 文件夹不存在\n请在右键菜单中点击 &amp;#39;创建存储库&amp;#39;\n&amp;#34; &amp;lt;&amp;lt; std::endl;
+ }
+ std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
+ _getch();
+ return 0;
+};&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;.h&lt;/code&gt;文件&lt;/p&gt;</description></item></channel></rss>

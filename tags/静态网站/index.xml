@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>静态网站 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link><description>Recent content in 静态网站 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
+enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
+hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
+summaryLength = 140 # 文章摘要长度
+
+# SEO 优化
+[params]
+keywords = [&amp;#34;博客&amp;#34;,&amp;#34;技术&amp;#34;,&amp;#34;编程&amp;#34;] # 网站关键词
+description = &amp;#34;个人技术博客&amp;#34; # 网站描述
+images = [&amp;#34;site-feature-image.jpg&amp;#34;] # 默认社交媒体分享图片
+# 自定义 Open Graph 信息
+[params.og]
+title = &amp;#34;我的博客&amp;#34;
+type = &amp;#34;website&amp;#34;
+images = [&amp;#34;og-image.jpg&amp;#34;]
+
+# 性能优化
+[minify]
+ disableCSS = false # 启用 CSS 压缩
+ disableHTML = false # 启用 HTML 压缩
+ disableJS = false # 启用 JS 压缩
+ disableJSON = false # 启用 JSON 压缩
+ minifyOutput = true # 压缩 HTML 输出
+
+# 图片处理
+[imaging]
+ quality = 75 # JPEG 图片质量
+ resampleFilter = &amp;#34;Lanczos&amp;#34; # 图片重采样过滤器
+ anchor = &amp;#34;Smart&amp;#34; # 图片裁剪锚点
+
+# 内容安全策略
+[params.csp]
+ childsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ fontsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;https://fonts.gstatic.com&amp;#34;, &amp;#34;https://cdn.jsdelivr.net&amp;#34;]
+ formaction = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ framesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ imgsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;]
+ objectsrc = [&amp;#34;&amp;#39;none&amp;#39;&amp;#34;]
+ stylesrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;]
+ scriptsrc = [&amp;#34;&amp;#39;self&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-inline&amp;#39;&amp;#34;, &amp;#34;&amp;#39;unsafe-eval&amp;#39;&amp;#34;]
+
+# 文章配置
+[permalinks]
+ posts = &amp;#34;/post/:year/:month/:slug/&amp;#34; # 自定义文章 URL 结构
+
+# 自定义输出格式
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;] # 支持 JSON API 输出
+ section = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ taxonomy = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+ term = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;]
+
+# RSS 订阅配置
+[params.rss]
+ limit = 20 # RSS 文章数量限制
+ fullContent = true # RSS 包含完整文章内容
+
+# 站内搜索配置
+[outputs]
+ home = [&amp;#34;HTML&amp;#34;, &amp;#34;RSS&amp;#34;, &amp;#34;JSON&amp;#34;, &amp;#34;SearchIndex&amp;#34;]
+[outputFormats.SearchIndex]
+ mediaType = &amp;#34;application/json&amp;#34;
+ baseName = &amp;#34;searchindex&amp;#34;
+ isPlainText = true
+ notAlternative = true
+
+# 文章目录配置
+[markup.tableOfContents]
+ endLevel = 3 # 目录最大深度
+ ordered = false # 使用无序列表
+ startLevel = 2 # 目录开始层级
+
+# 代码高亮配置
+[markup.highlight]
+ codeFences = true # 启用代码围栏
+ guessSyntax = true # 自动推测代码语言
+ lineNoStart = 1 # 起始行号
+ lineNos = true # 显示行号
+ lineNumbersInTable = true # 使用表格式行号
+ tabWidth = 4 # 制表符宽度
+ style = &amp;#34;monokai&amp;#34; # 代码高亮主题&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一些重要的最佳实践建议：&lt;/p&gt;</description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://simons.qzz.io/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
+&lt;a href="https://hexo.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hexo
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+以及主题
+&lt;a href="https://theme-next.js.org/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Theme NexT
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，
+在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
+&lt;a href="https://vercel.com/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ vercel
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;作为一个把Hexo、NexT官网的文档看了一个遍的人，我想我可以写一篇文章总结一下。&lt;/p&gt;</description></item></channel></rss>

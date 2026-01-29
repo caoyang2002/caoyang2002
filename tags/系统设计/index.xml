@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>系统设计 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/</link><description>Recent content in 系统设计 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1/index.xml" rel="self" type="application/rss+xml"/><item><title>深入理解 Rust 所有权机制</title><link>https://simons.qzz.io/post/2025/01/rust_ownership/</link><pubDate>Wed, 15 Jan 2025 11:38:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_ownership/</guid><description>&lt;h1 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h1&gt;
+&lt;p&gt;看这段在其他语言中很普通的代码：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ let data = vec![1, 2, 3];
+ process_data(data);
+ println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
+}
+
+fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
+ println!(&amp;#34;Processing: {:?}&amp;#34;, v);
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。&lt;/p&gt;
+&lt;h2 id="所有权的三条核心规则"&gt;所有权的三条核心规则&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;每个值只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;所有者离开作用域，值将被丢弃&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;一个值同一时刻只能有一个所有者&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过代码详细理解这些规则：&lt;/p&gt;
+&lt;h3 id="规则1单一所有权"&gt;规则1：单一所有权&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+let s2 = s1; // 所有权从s1转移到s2
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;内存布局变化：&lt;/p&gt;</description></item></channel></rss>

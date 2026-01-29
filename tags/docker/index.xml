@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on 短松江月</title><link>https://simons.qzz.io/tags/docker/</link><description>Recent content in Docker on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;参考：
+&lt;a href="https://docs.gitea.com/zh-cn/category/installation"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Gitea 支持多种安装方法，这里只介绍 docker 的安装方法&lt;/p&gt;
+&lt;h1 id="方法一使用docker命令行安装推荐"&gt;方法一：使用Docker命令行安装（推荐）&lt;/h1&gt;
+&lt;h2 id="1-创建数据目录"&gt;1. 创建数据目录&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 创建必要的目录
+sudo mkdir -p /opt/gitea/data
+sudo mkdir -p /opt/gitea/config
+sudo mkdir -p /opt/gitea/logs
+
+# 设置权限（Gitea默认使用uid=1000, gid=1000的用户）
+sudo chown -R 1000:1000 /opt/gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="2-运行gitea容器"&gt;2. 运行Gitea容器&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -d \
+ --name=gitea \
+ --privileged=true \
+ --restart=unless-stopped \
+ -p 3000:3000 \
+ -p 2222:22 \
+ -v /opt/gitea/data:/data \
+ -v /opt/gitea/config:/etc/gitea \
+ -v /etc/timezone:/etc/timezone:ro \
+ -v /etc/localtime:/etc/localtime:ro \
+ -e USER_UID=1000 \
+ -e USER_GID=1000 \
+ gitea/gitea:latest&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="3-验证安装"&gt;3. 验证安装&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 查看容器状态
+docker ps -a
+
+# 查看日志
+docker logs gitea&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;访问：&lt;code&gt;http://your-server-ip:3000&lt;/code&gt; 进行初始设置。&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考： 
+&lt;a href="https://jupyter-docker-stacks.readthedocs.io/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ docker stack
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="conda-安装"&gt;Conda 安装&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;参考: 
+&lt;a href="https://lab.jupyter.org.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ jupyter lab
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="安装"&gt;安装&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;conda install -c conda-forge JupyterLab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="启动"&gt;启动&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;jupyter lab&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-error" data-lang="error"&gt;Multiple packages (libgcc1 and libgcc1) providing same name marked HOLD or
+PREFER. Using latest.
+Multiple packages (libgcc1 and libgcc1) providing same name marked HOLD or PREFER. Using latest.
+Installing app-meta-istorepanel (1.0.6-20250116) to root...
+Downloading https://istore.istoreos.com/repo/all/meta/app-meta-istorepanel_1.0.6-20250116_all.ipk
+Collected errors:
+ * pkg_hash_check_unresolved: cannot find dependency zoneinfo-asia for luci-app-istorepanel
+ * pkg_hash_fetch_best_installation_candidate: Packages for luci-app-istorepanel found, but incompatible with the architectures configured
+ * satisfy_dependencies_for: Cannot satisfy the following dependencies for app-meta-istorepanel:
+ * zoneinfo-asia
+ * opkg_install_cmd: Cannot install package app-meta-istorepanel.&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;存在的问题：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;缺少依赖包 &lt;code&gt;zoneinfo-asia&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;架构不兼容的问题&lt;/li&gt;
+&lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
+&lt;/ol&gt;
+&lt;blockquote&gt;
+&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>GitHub Actions 深入剖析：从原理到实践</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</link><pubDate>Sun, 26 Jan 2025 10:47:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</guid><description>&lt;h1 id="github-actions-深入剖析从原理到实践"&gt;GitHub Actions 深入剖析：从原理到实践&lt;/h1&gt;
+&lt;p&gt;最近收到一个问题：&amp;ldquo;为什么我的 CI/CD 流水线总是莫名其妙失败？&amp;ldquo;这让我想起了 GitHub Actions 的一些有趣特性。今天就来扒一扒它的底层原理。&lt;/p&gt;
+&lt;h2 id="github-actions-的本质"&gt;GitHub Actions 的本质&lt;/h2&gt;
+&lt;p&gt;本质上，GitHub Actions 就是一个事件驱动的工作流自动化引擎。它监听 GitHub 事件，然后执行预定义的动作。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
+name: CI
+on: [push] # 事件触发器
+jobs:
+ build: # 工作单元
+ runs-on: ubuntu-latest # 运行环境
+ steps: # 执行步骤
+ - uses: actions/checkout@v2
+ - run: npm test&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/ehang-io/nps/tree/master"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ github
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://ehang-io.github.io/nps/#/install"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 官方文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。&lt;/p&gt;
+&lt;p&gt;以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。
+简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占用了，其余的所有都可以不用改。又不是不能用。&lt;/p&gt;</description></item></channel></rss>

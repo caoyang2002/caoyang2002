@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kqueue on 短松江月</title><link>https://simons.qzz.io/tags/kqueue/</link><description>Recent content in Kqueue on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/kqueue/index.xml" rel="self" type="application/rss+xml"/><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
+&lt;a href="https://www.kegel.com/c10k.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
+&lt;p&gt;《C10K问题》这篇经典文章深入探讨了如何在现代硬件条件下构建能够处理数万并发连接的高性能服务器系统。文章开篇即点明核心观点：随着硬件性能的飞速发展，单个服务器已具备同时服务大量客户端的物理能力，真正的挑战在于软件架构设计和操作系统机制优化。&lt;/p&gt;
+&lt;p&gt;作者首先回顾了技术发展背景，指出在二十世纪末期，千兆以太网和高速硬件已经普及，但软件架构却成为制约服务器并发能力的主要瓶颈。接着文章系统性地提出了五种主流的技术方案，每种方案都代表了不同的设计哲学和实现路径。&lt;/p&gt;</description></item></channel></rss>

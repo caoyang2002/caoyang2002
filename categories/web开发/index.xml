@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web开发 on 短松江月</title><link>https://simons.qzz.io/categories/web%E5%BC%80%E5%8F%91/</link><description>Recent content in Web开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/web%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
+&lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://zhuanlan.zhihu.com/p/86937325"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文一
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://blog.csdn.net/weixin_39779004/article/details/110801387"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原文二
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://b23.tv/3f7Yrct"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 视频
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一什么是-jwt"&gt;一、什么是 JWT&lt;/h1&gt;
+&lt;p&gt;JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑的、自包含的方式，用于作为JSON对象在各方之间安全地传输信息。该信息可以被验证和信任，因为它是数字签名的。&lt;/p&gt;
+&lt;h1 id="二设计目标"&gt;二、设计目标&lt;/h1&gt;
+&lt;p&gt;不需要服务器端存储状态，安全地传递非敏感信息&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://mielgo-markdown.oss-cn-chengdu.aliyuncs.com/OIP-C-20240424140338352.jpeg" alt="JWT认证方案讲解-阿里云开发者社区"&gt;&lt;/p&gt;
+&lt;h1 id="三-json-web-token-的结构是什么样的"&gt;三、 JSON Web Token 的结构是什么样的&lt;/h1&gt;
+&lt;p&gt;JSON Web Token由三部分组成，例如&lt;code&gt;dafdsafdwfefeqwad.oijhdaffweqtgfdhfdws.dhshfsghhhhhwfsdke&lt;/code&gt;&lt;/p&gt;</description></item></channel></rss>

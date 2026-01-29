@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>迭代器 on 短松江月</title><link>https://simons.qzz.io/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/</link><description>Recent content in 迭代器 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E8%BF%AD%E4%BB%A3%E5%99%A8/index.xml" rel="self" type="application/rss+xml"/><item><title>简述 Rust 中的闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure_brief/</link><pubDate>Wed, 15 Jan 2025 13:22:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure_brief/</guid><description>&lt;h1 id="为什么需要闭包"&gt;为什么需要闭包？&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 问题1：函数复用
+// 没有闭包时，需要传入所有参数
+fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
+
+// 有了闭包，可以部分应用
+let base = 5;
+let add_five = |x| x &amp;#43; base;
+
+// 问题2：函数式编程需求
+vec![1, 2, 3].iter().map(|x| x * 2); // 更简洁
+vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
+
+// 问题3：上下文捕获
+// 没有闭包时很难处理
+struct Context { value: i32 }
+let ctx = Context { value: 42 };
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="闭包是什么"&gt;闭包是什么？&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;闭包是可以捕获其环境的匿名函数&lt;/li&gt;
+&lt;li&gt;它&amp;quot;封闭&amp;quot;了其定义时的环境，故称&amp;quot;闭包&amp;quot;&lt;/li&gt;
+&lt;li&gt;闭包 = 函数 + 环境&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="闭包的优势"&gt;闭包的优势&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 1. 简洁的语法
+let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
+
+// 2. 灵活的环境捕获
+let multiplier = 2;
+let double = |x| x * multiplier; // 捕获 multiplier
+
+// 3. 支持函数式编程
+let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
+let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
+ .into_iter()
+ .filter(|x| x % 2 == 0)
+ .collect();&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h1 id="理解闭包"&gt;理解闭包&lt;/h1&gt;
+&lt;p&gt;我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：&lt;/p&gt;</description></item><item><title>Rust 函数式编程</title><link>https://simons.qzz.io/post/2025/01/rust_programming/</link><pubDate>Wed, 15 Jan 2025 11:48:53 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_programming/</guid><description>&lt;p&gt;让我用这种方式来讲解 Rust 的函数式编程概念：&lt;/p&gt;
+&lt;h1 id="引入问题"&gt;引入问题&lt;/h1&gt;
+&lt;p&gt;想象这样一个场景：你需要处理一个电商系统的订单数据。要求：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;过滤出金额大于 100 的订单&lt;/li&gt;
+&lt;li&gt;计算这些订单的总金额&lt;/li&gt;
+&lt;li&gt;给每个订单加上 10% 的折扣&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;传统的命令式编程可能是这样：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let mut total = 0;
+for order in orders {
+ if order.amount &amp;gt; 100 {
+ total &amp;#43;= order.amount * 0.9;
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码有什么问题？&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;可读性不高：逻辑分散在循环中&lt;/li&gt;
+&lt;li&gt;难以修改：如果要改变处理逻辑，需要修改循环内部&lt;/li&gt;
+&lt;li&gt;难以复用：这段逻辑很难在其他地方重用&lt;/li&gt;
+&lt;li&gt;易出错：可变状态(total)增加了出错风险&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="问题模型"&gt;问题模型&lt;/h1&gt;
+&lt;p&gt;我们需要一种方式能够：&lt;/p&gt;</description></item></channel></rss>

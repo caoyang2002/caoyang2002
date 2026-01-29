@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>后端开发 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/</link><description>Recent content in 后端开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%90%8E%E7%AB%AF%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
+&lt;a href="https://www.kegel.com/c10k.html"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
+&lt;p&gt;《C10K问题》这篇经典文章深入探讨了如何在现代硬件条件下构建能够处理数万并发连接的高性能服务器系统。文章开篇即点明核心观点：随着硬件性能的飞速发展，单个服务器已具备同时服务大量客户端的物理能力，真正的挑战在于软件架构设计和操作系统机制优化。&lt;/p&gt;
+&lt;p&gt;作者首先回顾了技术发展背景，指出在二十世纪末期，千兆以太网和高速硬件已经普及，但软件架构却成为制约服务器并发能力的主要瓶颈。接着文章系统性地提出了五种主流的技术方案，每种方案都代表了不同的设计哲学和实现路径。&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
+&lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/node.js_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/node.js_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
+&lt;p&gt;不知道你是否思考过，为什么 Node.js 选择了 JavaScript 作为语言？为什么它能在后端站稳脚跟？今天我们就来扒一扒 Node.js 的底层原理和设计思想。&lt;/p&gt;
+&lt;h2 id="什么是-nodejs"&gt;什么是 Node.js?&lt;/h2&gt;
+&lt;p&gt;本质上，Node.js 就是一个基于 Chrome V8 引擎的 JavaScript 运行时。但这样说太简单了，让我们来看看它的架构：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="javascript"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
+const fs = require(&amp;#39;fs&amp;#39;);
+
+fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
+ if (err) throw err;
+ console.log(data);
+});
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;p&gt;这段代码揭示了 Node.js 最核心的特性：非阻塞I/O和事件驱动。&lt;/p&gt;</description></item></channel></rss>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>媒体下载 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%AA%92%E4%BD%93%E4%B8%8B%E8%BD%BD/</link><description>Recent content in 媒体下载 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%AA%92%E4%BD%93%E4%B8%8B%E8%BD%BD/index.xml" rel="self" type="application/rss+xml"/><item><title>TG 下载器</title><link>https://simons.qzz.io/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="在-elease-里面下载可执行程序"&gt;在 elease 里面下载可执行程序&lt;/h2&gt;
+&lt;h1 id="win"&gt;Win&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/348142121.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.3/tdl-v2.2.3-win64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="linux-x86_64"&gt;Linux （x86_64)&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/03/4255088993.png" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-linux-amd64.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="mac"&gt;mac&lt;/h1&gt;
+&lt;p&gt;没有测试
+
+&lt;a href="https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://github.com/tangyoha/telegram_media_downloader/releases/download/v2.2.1/tdl-v2.2.1-macos.zip
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;p&gt;所有配置都通过 config.yaml 文件传递​​给 &lt;code&gt;Telegram Media Downloader&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;获取您的 API 密钥：&lt;/strong&gt;
+第一步需要您获得有效的 Telegram API 密钥（API id/hash pair）：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;访问 
+&lt;a href="https://my.telegram.org/apps"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://my.telegram.org/apps
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ 并使用您的 Telegram 帐户登录。&lt;/li&gt;
+&lt;li&gt;填写表格以注册新的 Telegram 应用程序。&lt;/li&gt;
+&lt;li&gt;完成！ API 密钥由两部分组成：&lt;strong&gt;api_id&lt;/strong&gt; 和&lt;strong&gt;api_hash&lt;/strong&gt;。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;获取聊天ID：&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>

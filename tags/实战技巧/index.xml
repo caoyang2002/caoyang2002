@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>实战技巧 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/</link><description>Recent content in 实战技巧 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml"/><item><title>Git: 从入门到精通</title><link>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</link><pubDate>Sun, 26 Jan 2025 10:50:22 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</guid><description>&lt;h1 id="git-从入门到精通"&gt;Git: 从入门到精通&lt;/h1&gt;
+&lt;p&gt;很多人用 Git 只会 &lt;code&gt;add/commit/push&lt;/code&gt; 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。&lt;/p&gt;
+&lt;h2 id="git的本质"&gt;Git的本质&lt;/h2&gt;
+&lt;p&gt;Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 看看Git的底层对象
+echo &amp;#39;test&amp;#39; &amp;gt; test.txt
+git add test.txt
+git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;核心概念就三个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Workspace：工作区&lt;/li&gt;
+&lt;li&gt;Index/Stage：暂存区&lt;/li&gt;
+&lt;li&gt;Repository：仓库区&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么用git"&gt;为什么用Git？&lt;/h2&gt;
+&lt;p&gt;对比一下传统SVN：&lt;/p&gt;</description></item><item><title>rust 闭包</title><link>https://simons.qzz.io/post/2025/01/rust_closure/</link><pubDate>Wed, 15 Jan 2025 11:29:27 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/rust_closure/</guid><description>&lt;h2 id="从一个常见问题说起"&gt;从一个常见问题说起&lt;/h2&gt;
+&lt;p&gt;假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
+// 如何优雅地复用过滤逻辑？
+let even_numbers = ??? // 这里怎么写
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的本质"&gt;闭包的本质&lt;/h2&gt;
+&lt;p&gt;Rust 的闭包本质上是一种特殊的数据结构，它包含：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;函数逻辑&lt;/li&gt;
+&lt;li&gt;捕获的环境变量&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;让我们通过反编译来看闭包的真实面目：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;// 表面上的闭包
+let multiplier = 2;
+let closure = |x| x * multiplier;
+
+// 编译器实际生成的结构（简化版）
+struct Closure {
+ multiplier: i32,
+}
+
+impl Closure {
+ fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
+ x * self.multiplier
+ }
+}&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+&lt;/div&gt;
+
+&lt;h2 id="闭包的三种类型"&gt;闭包的三种类型&lt;/h2&gt;
+&lt;p&gt;通过具体案例来理解三种闭包 trait：&lt;/p&gt;</description></item></channel></rss>

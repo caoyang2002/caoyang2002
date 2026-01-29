@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>教程 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%95%99%E7%A8%8B/</link><description>Recent content in 教程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%95%99%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;中文文档 
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://hugo.opendocs.io/getting-started/quick-start/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://juejin.cn/post/7151253414427492382
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://quartz.jzhao.xyz"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 原作者
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+
+
+&lt;a href="https://www.chyraw.com"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 个人配置
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="下载"&gt;下载&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git clone https://github.com/caoyang2002/quartz-obsidian-webside.git
+cd quartz-obsidian-webside
+npm i
+npx quartz build --serve&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="配置"&gt;配置&lt;/h1&gt;
+&lt;h2 id="布局"&gt;布局&lt;/h2&gt;
+&lt;p&gt;某些 emitters 可能还会输出HTML文件。为了方便定制，这些 emitters 允许您完全重新排列页面的布局。
+默认页面布局可以在 &lt;code&gt;quartz.layout.ts&lt;/code&gt; 中找到。&lt;/p&gt;
+&lt;p&gt;每个页面由多个不同的部分组成，这些部分包含 &lt;code&gt;QuartzComponents&lt;/code&gt;。以下代码片段列出了您可以向其中添加组件的所有有效部分：&lt;/p&gt;</description></item></channel></rss>

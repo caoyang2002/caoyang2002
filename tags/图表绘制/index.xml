@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>图表绘制 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%9B%BE%E8%A1%A8%E7%BB%98%E5%88%B6/</link><description>Recent content in 图表绘制 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%9B%BE%E8%A1%A8%E7%BB%98%E5%88%B6/index.xml" rel="self" type="application/rss+xml"/><item><title>mermaid 教程</title><link>https://simons.qzz.io/post/2023/03/marmaid/</link><pubDate>Sun, 19 Mar 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/03/marmaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+下面是几个常用的图示类型&lt;/p&gt;
+&lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;空格敏感&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ root((思维导图))
+ 节点一
+ 记录1.1
+ ::icon(fa fa-book)
+ 节点1.1
+ 记录1.1.1
+ 节点二
+ 记录2.1
+ 记录2.2
+ 节点2.1
+ 记录2.1.1
+ 			记录2.1.2
+ 	记录2.1.3
+ 节点三
+ 记录3.1
+ 记录3.2&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;语法&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;形状&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;默认&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="mermaid"&gt;mindmap
+ I am the default shape&lt;/div&gt;
+
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item></channel></rss>
