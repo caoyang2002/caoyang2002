@@ -42,9 +42,3 @@ iframe src="http://www.yishimei.cn/" width="100%" height="600"></iframe>
 <iframe src="https://cplusplus.com/reference/" width="100%" height="600"></iframe>
 
 <iframe src="https://www.coursera.org/" width="100%" height="600"></iframe>
-
-NPS: http://101.43.125.94:20002/
-DS220j-SSH: http://101.43.125.94:20010/
-DS220j-DSM: http://101.43.125.94:20011/
-
-Windows10: http://101.43.125.94:20020/
