@@ -3,9 +3,9 @@ title = 'Hugo 不为人知的强大特性'
 date = 2025-01-26T01:44:00+08:00
 draft = false
 author = "simons"
-categories = ["建站"]
-tags = ["hugo"]
-description = "Hugo 的特性"
+categories = ["建站", "技术分享", "效率工具"]
+tags = ["Hugo", "静态网站生成器", "Go模板", "页面捆绑", "短代码", "模板继承", "性能优化"]
+description = "本文深入探讨Hugo超越基础博客的进阶特性，包括模板继承与上下文传递、页面捆绑管理资源、自定义短代码结合Markdown、数据模板的数学运算能力，以及多格式输出配置。同时分享关键的开发技巧与性能陷阱，帮助开发者充分发挥Hugo在构建高效、可维护静态站点方面的潜力。"
 +++
 # Hugo 不为人知的强大特性
 

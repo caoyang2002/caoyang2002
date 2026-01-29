@@ -3,9 +3,9 @@ title = 'GitHub Actions 深入剖析：从原理到实践'
 date = 2025-01-26T10:47:26+08:00
 draft = false
 author = "simons"
-categories = ["编程"]
-tags = ["github"]
-description = "Github 的 Action 概述"
+categories = ["编程", "DevOps", "CI/CD"]
+tags = ["GitHub Actions", "自动化", "持续集成", "工作流", "YAML", "Docker", "GitHub", "部署"]
+description = "本文深度解析 GitHub Actions 的底层架构与工作原理，从事件触发、工作流编排到容器化执行的完整流程。通过实战案例讲解缓存优化、矩阵构建、密钥管理等进阶技巧，并提供完整的 CI/CD 流水线配置示例，帮助开发者彻底掌握这一自动化工具。"
 +++
 
 # GitHub Actions 深入剖析：从原理到实践
