@@ -3,9 +3,9 @@ date = '2025-01-24T13:41:27+08:00'
 draft = false
 title = 'Webpack：前端项目的"搬运工"'
 toc = true
-categories= ["设计"]
-tags = ["排版"]
-description = "这是一段描述内容"
+categories = ["前端开发", "构建工具", "工程化"]
+tags = ["Webpack", "模块打包", "前端工程化", "构建优化", "JavaScript", "配置教程"]
+description = "本文以生动的搬运工比喻，系统介绍Webpack如何解决前端项目中的模块打包、依赖管理和资源优化等问题。涵盖从手动构建到自动化工具的演进、核心概念解析、配置最佳实践及常见避坑指南，帮助开发者理解并有效运用Webpack提升前端工程化水平。"
 +++
 
 # Webpack：前端项目的"搬运工"

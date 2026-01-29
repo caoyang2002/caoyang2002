@@ -3,9 +3,9 @@ title = 'Node.js 的方法'
 date = 2025-01-26T11:03:43+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["后端开发", "Node.js"]
+tags = ["Node.js", "JavaScript", "事件循环", "异步编程", "性能优化", "内存管理", "V8引擎"]
+description = "本文深入解析Node.js的核心原理与设计思想，从非阻塞I/O、事件循环机制入手，通过代码示例对比传统服务器模型，详细讲解事件循环六个阶段及执行顺序，并分享内存管理、性能优化等实战经验，帮助开发者真正理解Node.js的适用场景与最佳实践。"
 +++
 
 # Node.js 的方法

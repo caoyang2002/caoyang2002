@@ -16,6 +16,33 @@ backgroundImage = "/images/ui/background.jpg" # 放在 static 下
 timeZone = "Asia/Shanghai"
 
 
+
+# 页面设置
+# 主要内容区域
+# 定义网站的主要内容部分，这些部分将在列表页面中优先显示
+
+mainSections = ["posts", "articles"]
+
+# 首页配置
+# 控制首页的特殊设置
+[home]
+# 是否显示首页英雄区域（大图/标题区域）
+showHero = true
+
+# 标签页配置
+# 控制标签页的显示和行为
+[tags]
+# 是否按年份分组显示标签下的文章
+groupByYear = true
+
+# 分页配置
+# 控制列表页面的分页行为
+# 每页显示的文章数量
+paginate = 10
+
+
+
+# 默认
 [defaults]
   date = '1960-01-01T00:00:00+00:00'
   draft = false

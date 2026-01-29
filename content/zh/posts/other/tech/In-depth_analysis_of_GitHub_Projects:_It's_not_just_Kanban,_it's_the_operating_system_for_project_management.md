@@ -3,9 +3,9 @@ title = 'GitHub Projects深入剖析：不只是看板，是工程管理的操�
 date = 2025-01-26T10:48:35+08:00
 draft = false
 author = "simons"
-categories = ["编程"]
-tags = ["github"]
-description = "GitHub 的 Projects 是什么"
+categories = ["编程", "项目管理", "开发工具"]
+tags = ["GitHub", "项目管理", "开发流程", "自动化", "工程效率", "最佳实践"]
+description = "深入解析GitHub Projects的本质，它不仅是任务看板，更是一个完整的工程管理操作系统。本文从数据模型、自动化工作流到实战配置，详细剖析如何利用Projects将Issues、PR、代码和里程碑关联，提供团队级项目管理的最佳实践与避坑指南。"
 +++
 
 # GitHub Projects深入剖析：不只是看板，是工程管理的操作系统

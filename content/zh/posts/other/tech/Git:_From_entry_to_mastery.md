@@ -3,9 +3,9 @@ title = 'Git: 从入门到精通'
 date = 2025-01-26T10:50:22+08:00
 draft = false
 author = "simons"
-categories = ["开发"]
-tags = ["Git"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["软件开发", "版本控制"]
+tags = ["Git", "版本控制", "分支管理", "合并冲突", "Rebase", "实战技巧"]
+description = "本文从Git核心原理（工作区、暂存区、仓库、对象模型）出发，深入讲解分支、合并、撤销、储藏、变基等高级操作，并提供大量实战场景与代码示例，帮助开发者摆脱仅会add/commit/push的局限，真正掌握Git这一强大的分布式版本控制系统。"
 +++
 
 # Git: 从入门到精通

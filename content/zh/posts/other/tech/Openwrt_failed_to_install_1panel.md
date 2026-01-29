@@ -3,9 +3,9 @@ title = '解决在 openwrt 中自动安装 1panel 失败的问题'
 date = 2025-01-29T08:28:43+08:00
 draft = false
 author = "simons"
-categories = ["运维"]
-tags = ["openwrt"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+categories = ["运维", "Linux", "OpenWrt"]
+tags = ["1Panel", "安装问题", "依赖解决", "容器化部署", "故障排除", "Docker", "OpenWrt"]
+description = "本文详细记录了在OpenWrt系统中安装1Panel面板时遇到的zoneinfo-asia依赖缺失、架构不兼容及libgcc1冲突等问题的完整解决方案，提供了通过手动安装依赖、使用Docker容器化部署及清理残留目录等多种实用方法，并附有详细的命令行操作步骤和故障排除指南。"
 +++
 
 解决在 openwrt 中自动安装 1panel 失败的问题：
