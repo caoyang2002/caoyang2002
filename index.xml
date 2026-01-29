@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 02:16:11 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 02:17:53 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
 &lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
 &lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
@@ -70,7 +70,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章来源说明" + publishDate);
 
@@ -210,7 +210,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -350,7 +350,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -490,7 +490,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -630,7 +630,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -7841,11 +7841,7 @@ func TestAll(t *testing.T) {
 &lt;iframe src="https://pan.oldming.top/" width="100%" height="600"&gt;&lt;/iframe&gt;
 &lt;iframe src="https://res.yunpan.win/" width="100%" height="600"&gt;&lt;/iframe&gt;
 &lt;iframe src="https://cplusplus.com/reference/" width="100%" height="600"&gt;&lt;/iframe&gt;
-&lt;iframe src="https://www.coursera.org/" width="100%" height="600"&gt;&lt;/iframe&gt;
-&lt;p&gt;NPS: http://101.43.125.94:20002/
-DS220j-SSH: http://101.43.125.94:20010/
-DS220j-DSM: http://101.43.125.94:20011/&lt;/p&gt;
-&lt;p&gt;Windows10: http://101.43.125.94:20020/&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+&lt;iframe src="https://www.coursera.org/" width="100%" height="600"&gt;&lt;/iframe&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
  &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数

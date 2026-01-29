@@ -63,7 +63,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章来源说明" + publishDate);
 
@@ -203,7 +203,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -343,7 +343,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -483,7 +483,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -623,7 +623,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929390129";
+ const publishDate = "2929210129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "置顶" + publishDate);
 
@@ -698,239 +698,7 @@
  }
 &lt;/style&gt;
 
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
-&lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
-&lt;p&gt;想象你在写一本小说：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;远程仓库&lt;/strong&gt; = 出版社的底稿&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;你的本地&lt;/strong&gt; = 你手里的稿子&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;其他作者&lt;/strong&gt; = 同事也在修改&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;现在情况是：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
-你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
-出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id="-三种解决方案详解"&gt;🎯 三种解决方案详解&lt;/h2&gt;
-&lt;h3 id="1-merge合并---拼图游戏法"&gt;1. &lt;strong&gt;Merge（合并）&lt;/strong&gt; - &amp;ldquo;拼图游戏法&amp;rdquo;&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>免费域名靠谱吗？手把手教你领取！</title><link>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</link><pubDate>Sun, 28 Dec 2025 18:14:25 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</guid><description>&lt;h1 id="免费域名靠谱吗手把手教你领取"&gt;免费域名靠谱吗？手把手教你领取！&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;一个斩获 135k 星的开源项目，正在改写域名规则。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;“免费域名？肯定有坑吧？”&lt;/p&gt;
-&lt;p&gt;这是多数人的第一反应。但今天要介绍的 &lt;strong&gt;FreeDomain&lt;/strong&gt; 项目，可能会颠覆你的认知——它完全免费、无隐藏费用，且已帮助 20w+ 用户注册了自己的域名。&lt;/p&gt;
-&lt;p&gt;这背后是 DigitalPlat 团队的愿景：&lt;strong&gt;让每个人都能拥有自己的数字身份&lt;/strong&gt;。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="01-项目实力真实数据说话"&gt;01 项目实力：真实数据说话&lt;/h2&gt;
-&lt;p&gt;在深入步骤前，我们先看几个关键数据，建立基本信任：&lt;/p&gt;</description></item><item><title>Arm 与 Amd 的恩怨情仇</title><link>https://simons.qzz.io/post/2025/12/arm_and_amd/</link><pubDate>Wed, 24 Dec 2025 11:45:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/arm_and_amd/</guid><description>&lt;p&gt;简单来说：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;x86_64 和 amd64 是同一个东西的两种不同叫法&lt;/strong&gt;，都指64位的x86架构。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ARM&lt;/strong&gt; 则是与 &lt;strong&gt;x86&lt;/strong&gt; 阵营&lt;strong&gt;完全不同的另一种处理器架构&lt;/strong&gt;，两者在设计哲学、指令集和生态上存在竞争关系。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h1 id="基本解释"&gt;基本解释&lt;/h1&gt;
-&lt;h2 id="1-x86_64-与-amd64同一个事物的两个名字"&gt;1. x86_64 与 amd64：同一个事物的两个名字&lt;/h2&gt;
-&lt;p&gt;这背后有一段产业历史：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;x86&lt;/strong&gt;：起源于英特尔（Intel）的8086处理器，后来一系列处理器都以“86”结尾（80286, 80386, 80486），因此这个架构家族被称为 &lt;strong&gt;x86&lt;/strong&gt;。它是一个 &lt;strong&gt;复杂指令集（CISC）&lt;/strong&gt; 架构。早期的x86主要是 &lt;strong&gt;32位&lt;/strong&gt; 的。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;amd64 的诞生&lt;/strong&gt;：当业界需要向64位升级时，英特尔推出了一个与32位x86不兼容的全新64位架构 &lt;strong&gt;IA-64（Itanium）&lt;/strong&gt;，市场接受度不高。此时，英特尔的老对手 &lt;strong&gt;AMD&lt;/strong&gt; 做了一件大事：他们扩展了原有的32位x86指令集，创造出了一个&lt;strong&gt;兼容原有32位x86程序&lt;/strong&gt;的64位架构。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;命名之争&lt;/strong&gt;：
-&lt;ul&gt;
-&lt;li&gt;AMD 将这个新架构命名为 &lt;strong&gt;AMD64&lt;/strong&gt;。&lt;/li&gt;
-&lt;li&gt;由于技术优秀且兼容性好，AMD64 获得了巨大成功，成为事实标准。英特尔不得不放弃自己的IA-64，也采用了这套方案，并将其命名为 &lt;strong&gt;Intel 64&lt;/strong&gt;（有时也叫EM64T）。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;中立名称&lt;/strong&gt;：为了保持中立，操作系统和软件社区通常使用 &lt;strong&gt;x86_64&lt;/strong&gt; 或 &lt;strong&gt;x64&lt;/strong&gt; 来指代这个64位的x86架构。在Linux的发行版中，你经常会看到 &lt;code&gt;amd64&lt;/code&gt; 和 &lt;code&gt;x86_64&lt;/code&gt; 这两个术语&lt;strong&gt;互换使用&lt;/strong&gt;，指代同一个64位平台。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;结论&lt;/strong&gt;：&lt;code&gt;amd64&lt;/code&gt; 是它的“创始名”，&lt;code&gt;x86_64&lt;/code&gt; 是它的“通用学术名”。就像“创可贴”和“医用绷带”的关系。&lt;/p&gt;</description></item><item><title>群晖安装 GO 语言</title><link>https://simons.qzz.io/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</link><pubDate>Wed, 24 Dec 2025 11:04:31 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/%E7%BE%A4%E6%99%96%E5%AE%89%E8%A3%85-go-%E8%AF%AD%E8%A8%80/</guid><description>&lt;p&gt;查看架构&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;arm&lt;/li&gt;
-&lt;li&gt;x86_64&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd /tmp &amp;amp;&amp;amp; \
-wget -q https://go.dev/dl/go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
-sudo rm -rf /usr/local/go &amp;amp;&amp;amp; \
-sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
-export PATH=/usr/local/go/bin:$PATH &amp;amp;&amp;amp; \
-go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h1 id="安装到-jupyter"&gt;安装到 jupyter&lt;/h1&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
-cd ~/go-module/gophernotes &amp;amp;&amp;amp; \
-rm -f ~/go/bin/gophernotes &amp;amp;&amp;amp; \
-GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o ~/go/bin/gophernotes &amp;amp;&amp;amp; \
-chmod &amp;#43;x ~/go/bin/gophernotes &amp;amp;&amp;amp; \
-~/go/bin/gophernotes install &amp;amp;&amp;amp; \
-echo &amp;#34;✅ 安装完成！&amp;#34; &amp;amp;&amp;amp; \
-jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>营销的产品思维</title><link>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</link><pubDate>Tue, 10 Jun 2025 08:53:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</guid><description>&lt;p&gt;知名产品经理俞军在他的书《俞军产品方法论》中说：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“产品经理只要学会用四个概念分析产品和用户就算及格了：效用、成本、边际、供需定律。”&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;在营销中，这也大有用处。&lt;/p&gt;
-&lt;h1 id="效用"&gt;效用&lt;/h1&gt;
-&lt;p&gt;效用就是指产品的功效作用。&lt;/p&gt;
-&lt;p&gt;最近天很热，你买一瓶矿泉水，可以解渴。矿泉水就是有用的，因为它满足了你的需求。&lt;/p&gt;
-&lt;p&gt;但是，你的眼前同时出现了 “怡宝” “农夫山泉” 和 “百岁山”，假设价格和容量分别是 300ml / 1.5元、550ml / 2元、350ml / 3元。&lt;/p&gt;</description></item><item><title>如何做出好产品</title><link>https://simons.qzz.io/post/2025/06/%E5%A6%82%E4%BD%95%E5%81%9A%E5%87%BA%E5%A5%BD%E4%BA%A7%E5%93%81/</link><pubDate>Sat, 07 Jun 2025 01:28:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/06/%E5%A6%82%E4%BD%95%E5%81%9A%E5%87%BA%E5%A5%BD%E4%BA%A7%E5%93%81/</guid><description>&lt;h1 id="和一鸣的聊天"&gt;和一鸣的聊天&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;原创 张晓东&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="javascript:void%280%29;"
- 
- &gt;
- 张晓东西南北
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;2025年06月06日 00:10 北京&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;2014年3月，我在字节，刚入职5个月，准备离职——我之前在360的领导创业，希望我加入，我已经答应了，提了离职。有天晚上在工位，张一鸣突然说聊聊，我有点惊讶，找了个会议室聊聊。&lt;/p&gt;
-&lt;p&gt;跟一鸣聊完，彻底改变了我对做产品的理解，同时我决定留在字节&lt;/p&gt;</description></item><item><title>战略与战术</title><link>https://simons.qzz.io/post/2025/05/%E6%88%98%E7%95%A5%E4%B8%8E%E6%88%98%E6%9C%AF/</link><pubDate>Thu, 22 May 2025 12:57:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/05/%E6%88%98%E7%95%A5%E4%B8%8E%E6%88%98%E6%9C%AF/</guid><description>&lt;p&gt;定位理论的创始人认为，商业竞争方面的优秀著作，并非来自哈佛教授之手，也不是由企业高管所撰。而是由一位名为卡尔·冯·克劳塞维茨的人所写，即《战争论》，作者是一位普鲁士的退役将领。出版于 1832 年，书中概括了所有成功战役背后所隐含的思想。&lt;/p&gt;
-&lt;p&gt;克劳塞维茨第一个提出，武器可以日益先进，但是战争本身基于两个亘古不变的特征：战略和战术。&lt;/p&gt;</description></item><item><title>一个名称只能占领一个标的</title><link>https://simons.qzz.io/post/2025/05/%E4%B8%80%E4%B8%AA%E5%90%8D%E7%A7%B0%E5%8F%AA%E8%83%BD%E5%8D%A0%E9%A2%86%E4%B8%80%E4%B8%AA%E6%A0%87%E7%9A%84/</link><pubDate>Tue, 06 May 2025 08:29:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/05/%E4%B8%80%E4%B8%AA%E5%90%8D%E7%A7%B0%E5%8F%AA%E8%83%BD%E5%8D%A0%E9%A2%86%E4%B8%80%E4%B8%AA%E6%A0%87%E7%9A%84/</guid><description>&lt;p&gt;有的企业只知生产一类产品，这样的企业，通常品牌名就是企业名。&lt;/p&gt;
-&lt;p&gt;后来出现了企业集团，也就是不生产任何产品的企业，他们使用收购之类的方式，将多个品牌合并在一起，形成联合企业，&lt;/p&gt;
-&lt;p&gt;通用电气从飞机发动机开始，然后也开始做核电站到塑料。&lt;/p&gt;
-&lt;p&gt;阿里巴巴从B2B电子商务平台起家，逐步构建起涵盖零售、金融科技、云计算、物流、文娱等领域的数字生态系统，形成了以平台经济为核心、多产业协同发展的商业帝国。&lt;/p&gt;</description></item><item><title>品牌名的陷阱</title><link>https://simons.qzz.io/post/2025/05/%E5%93%81%E7%89%8C%E5%90%8D%E7%9A%84%E9%99%B7%E9%98%B1/</link><pubDate>Sun, 04 May 2025 08:52:45 +0800</pubDate><guid>https://simons.qzz.io/post/2025/05/%E5%93%81%E7%89%8C%E5%90%8D%E7%9A%84%E9%99%B7%E9%98%B1/</guid><description>&lt;h1 id="发音"&gt;发音&lt;/h1&gt;
-&lt;p&gt;如果品牌名称既可以用词也可以用首字母，那么用词是更好的方式。&lt;/p&gt;
-&lt;p&gt;首字母很容易产生歧义。&lt;/p&gt;
-&lt;p&gt;在中国的品牌一般建议是中文，如果由于一些特殊原因，不得不使用英文。&lt;/p&gt;
-&lt;p&gt;那么也应该使用尽可能音节短的单词。&lt;/p&gt;
-&lt;p&gt;发音足够简单，对于顾客来说是省力的，更容易被传播。&lt;/p&gt;
-&lt;p&gt;这也是中文名应该简短的原因之一。&lt;/p&gt;
-&lt;p&gt;有很多品牌，给自己的名称赋予了各种优雅的寓意，但是却忽略了名称的发音。&lt;/p&gt;</description></item><item><title>名字的力量</title><link>https://simons.qzz.io/post/2025/05/%E5%90%8D%E5%AD%97%E7%9A%84%E5%8A%9B%E9%87%8F/</link><pubDate>Sat, 03 May 2025 07:37:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/05/%E5%90%8D%E5%AD%97%E7%9A%84%E5%8A%9B%E9%87%8F/</guid><description>&lt;p&gt;定位理论的创始人说：“名字就像钩子，把品牌挂在顾客心智中的产品阶梯上。在定位时代，你能做的唯一重要的就是给产品起什么名字。”&lt;/p&gt;
-&lt;h1 id="名字"&gt;名字&lt;/h1&gt;
-&lt;p&gt;一个无意义的名字不容易进入人们的心智。&lt;/p&gt;
-&lt;p&gt;好的名字应该能够直接反应产品的主要特点。&lt;/p&gt;
-&lt;p&gt;但是名字也不应该过于接近产品内涵，而感觉像是一个通用名称，以至于这个名字适合所有该类别的产品，而不是一个特定的品牌。&lt;/p&gt;</description></item><item><title>重新定位</title><link>https://simons.qzz.io/post/2025/05/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BD%8D/</link><pubDate>Fri, 02 May 2025 07:43:28 +0800</pubDate><guid>https://simons.qzz.io/post/2025/05/%E9%87%8D%E6%96%B0%E5%AE%9A%E4%BD%8D/</guid><description>&lt;p&gt;寻找空位并不是一个容易的事情，因为每一个品类都有非常多的产品。&lt;/p&gt;
-&lt;p&gt;这时候作为新品牌，基本的营销策略就是重新定位。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;通过给已经占据人们心智的竞争对手重新定位，来创建空位。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;也就是说，要想让一个新的理念或者产品进入人们的心智，那么你就必须把人们心智原有的观念或者产品排挤掉。&lt;/p&gt;
-&lt;p&gt;有人强迫你和一杯一氧化二氢你的感觉可能不会很好，但是有人请你喝一杯水，你就会觉得味道还不错。&lt;/p&gt;</description></item><item><title>跟随者的定位</title><link>https://simons.qzz.io/post/2025/04/%E8%B7%9F%E9%9A%8F%E8%80%85%E7%9A%84%E5%AE%9A%E4%BD%8D/</link><pubDate>Wed, 30 Apr 2025 13:07:28 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/%E8%B7%9F%E9%9A%8F%E8%80%85%E7%9A%84%E5%AE%9A%E4%BD%8D/</guid><description>&lt;p&gt;领导者可以通过拦截的方式，维护自己的领导地位，但是跟随者不能使用这样的方式。&lt;/p&gt;
-&lt;p&gt;对于顾客来说，如果跟随者效仿领导者的做法，那不是拦截，而是跟风。&lt;/p&gt;
-&lt;p&gt;DEC 花费了很长的时间，企图 “在个人电脑上超过 IBM”，结果错过了开发台式机的机会，最后被康柏公司收购。&lt;/p&gt;
-&lt;p&gt;作为跟随者，不跟风的方式，如何获得竞争优势呢？&lt;/p&gt;
-&lt;p&gt;趁局势不明的时候发起进攻。&lt;/p&gt;</description></item><item><title>扫地机器人卷成白菜价：石头科技119亿营收背后，利润被谁偷走了</title><link>https://simons.qzz.io/post/2025/04/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%B7%E6%88%90%E7%99%BD%E8%8F%9C%E4%BB%B7/</link><pubDate>Tue, 29 Apr 2025 14:37:09 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/%E6%89%AB%E5%9C%B0%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%B7%E6%88%90%E7%99%BD%E8%8F%9C%E4%BB%B7/</guid><description>&lt;h1 id="扫地机器人卷成白菜价石头科技119亿营收背后利润被谁偷走了"&gt;扫地机器人卷成白菜价：石头科技119亿营收背后，利润被谁偷走了&lt;/h1&gt;
-&lt;p&gt; 2025-4-22 11:54  171 1 1 分类: 
-&lt;a href="https://mbb.eet-china.com/blog/catid-39_1.html"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- 机器人/ AI
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://p3-sign.toutiaoimg.com/tos-cn-i-axegupay5k/fc4f917aa811487a8f60cccb1a104c00~tplv-tt-origin-web:gif.jpeg?_iz=58558&amp;amp;from=article.pc_detail&amp;amp;lk3s=953192f4&amp;amp;x-expires=1745897644&amp;amp;x-signature=Wic8OK3%2BnPtHUqalJxGwr01OOgo%3D" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;近年来，随着智能家居市场的爆发式增长，扫地机器人作为家庭清洁的核心入口，成为各大科技企业竞逐的焦点。石头科技凭借其深厚的技术积累和精准的市场定位，迅速跻身全球智能清洁领域的第一梯队。&lt;/p&gt;
-&lt;p&gt;据IDC发布的《全球智能家居设备市场数据跟踪报告》报告显示，全球智能扫地机器人市场 2024 年全年出货2,060.3万台，同比增长11.2%；其中，石头科技出货量同比增长20.7%、占全年全球销量市场份额16%、销额市场份额达22.3%，实现了2024年全球销量及销额双第一，这也是其在出货量上首度超过iRobot。&lt;/p&gt;</description></item><item><title>起大早，赶晚集：美国无线电公司（RCA）是如何错失液晶显示屏商用的？</title><link>https://simons.qzz.io/post/2025/04/%E8%B5%B7%E5%A4%A7%E6%97%A9%E8%B5%B6%E6%99%9A%E9%9B%86%E7%BE%8E%E5%9B%BD%E6%97%A0%E7%BA%BF%E7%94%B5%E5%85%AC%E5%8F%B8rca%E6%98%AF%E5%A6%82%E4%BD%95%E9%94%99%E5%A4%B1%E6%B6%B2%E6%99%B6%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%95%86%E7%94%A8%E7%9A%84/</link><pubDate>Tue, 29 Apr 2025 14:31:25 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/%E8%B5%B7%E5%A4%A7%E6%97%A9%E8%B5%B6%E6%99%9A%E9%9B%86%E7%BE%8E%E5%9B%BD%E6%97%A0%E7%BA%BF%E7%94%B5%E5%85%AC%E5%8F%B8rca%E6%98%AF%E5%A6%82%E4%BD%95%E9%94%99%E5%A4%B1%E6%B6%B2%E6%99%B6%E6%98%BE%E7%A4%BA%E5%B1%8F%E5%95%86%E7%94%A8%E7%9A%84/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;RCA 曾拥有早期液晶显示专利，却未能实现液晶显示屏商用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;1967年9月，&lt;/strong&gt; 理查德.克莱恩（Richard Klein）和他的老板劳伦斯.默里（Lawrence Murray）前往美国无线电公司（RCA）位于新泽西州普林斯顿的研究中心。&lt;/p&gt;
-&lt;p&gt;克莱恩在萨默维尔镇附近的该公司的半导体业务部担任助理工程师，由于负责发光二极管方面的工作，他需要与普林斯顿的固态物理研究人员保持密切联系。&lt;/p&gt;</description></item><item><title>谈判与说服</title><link>https://simons.qzz.io/post/2025/04/%E8%B0%88%E5%88%A4%E4%B8%8E%E8%AF%B4%E6%9C%8D/</link><pubDate>Tue, 29 Apr 2025 08:40:30 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/%E8%B0%88%E5%88%A4%E4%B8%8E%E8%AF%B4%E6%9C%8D/</guid><description>&lt;h1 id="说服是价值认同"&gt;说服是价值认同&lt;/h1&gt;
-&lt;p&gt;比如你是公司的职员，你刚入职不久，而且还没有特别突出的能力以及成就。&lt;/p&gt;
-&lt;p&gt;现在，你找老板想要加薪，下个月开始涨 10%。&lt;/p&gt;
-&lt;p&gt;老板说：“要加薪？药家鑫已经死了。”&lt;/p&gt;
-&lt;p&gt;或者是，老板说：“好，下个月涨 200 块。”&lt;/p&gt;
-&lt;p&gt;无论老板是什么回答，你没有任何沟通的余地。&lt;/p&gt;
-&lt;p&gt;不难发现，决定权完全在老板那里。&lt;/p&gt;
-&lt;p&gt;这时候的情况被叫做说服。&lt;/p&gt;
-&lt;h1 id="谈判是利益交换"&gt;谈判是利益交换&lt;/h1&gt;
-&lt;p&gt;假如，你现在已经入职很久了，并且在某个方面很有潜力，已经帮助企业取得了不错的成就。&lt;/p&gt;</description></item><item><title>喜茶，不学霸王茶姬</title><link>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</link><pubDate>Sat, 01 Mar 2025 12:47:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</guid><description>&lt;p&gt;
-&lt;a href="https://mp.weixin.qq.com/s/dtDz1DOLcLZC30s6taMBuw"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://mp.weixin.qq.com/s/dtDz1DOLcLZC30s6taMBuw
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://wx.qlogo.cn/mmhead/Q3auHgzwzM7w21sATPDXupiaVT01lfibXzCT69fN7SFXZHEu2nJorGmg/0" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;中国企业家杂志&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;讲好企业家故事，弘扬企业家精神&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;聂云宸为喜茶踩下加盟刹车。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;刚开年，聂云宸就给卷成一片红海的新茶饮行业浇了盆冷水。&lt;/p&gt;
-&lt;p&gt;身为喜茶创始人，一向低调的他，这次罕见用强悍语气表态：“拒绝无意义的门店规模内卷。”同时，在2月10日向全员发布的邮件中，他用“数字游戏”“无意义的价格、营收、规模内卷”等词形容当下的新茶饮业，最后还表态：喜茶暂停接受事业合伙（加盟）申请。&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源"&gt;如何找资源&lt;/h1&gt;
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源"&gt;如何找资源&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;下载
 
@@ -1044,8 +812,4 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;iframe src="https://pan.oldming.top/" width="100%" height="600"&gt;&lt;/iframe&gt;
 &lt;iframe src="https://res.yunpan.win/" width="100%" height="600"&gt;&lt;/iframe&gt;
 &lt;iframe src="https://cplusplus.com/reference/" width="100%" height="600"&gt;&lt;/iframe&gt;
-&lt;iframe src="https://www.coursera.org/" width="100%" height="600"&gt;&lt;/iframe&gt;
-&lt;p&gt;NPS: http://101.43.125.94:20002/
-DS220j-SSH: http://101.43.125.94:20010/
-DS220j-DSM: http://101.43.125.94:20011/&lt;/p&gt;
-&lt;p&gt;Windows10: http://101.43.125.94:20020/&lt;/p&gt;</description></item></channel></rss>
+&lt;iframe src="https://www.coursera.org/" width="100%" height="600"&gt;&lt;/iframe&gt;</description></item></channel></rss>
