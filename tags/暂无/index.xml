@@ -1,32 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>ABC微型火箭技术－为初学者设计的快速制作技术</title><link>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</link><pubDate>Fri, 30 Jan 2026 00:07:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</guid><description>&lt;p&gt;
-&lt;a href="https://www.kechuang.org/u/4565"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- &lt;img src="https://img.kechuang.org:81/a/5f0d6564351a5f14687960a6?c=userAvatar&amp;amp;t=sm" alt="img"&gt; ABC
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-2008/09/02
-&lt;a href="https://www.kechuang.org/f/89"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- 喷气推进
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
- IP:福建&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;　实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．我用一个月准备这个技术贴的目标正是：给初学者一个成功体验，一点坚持的信心&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 02:11:09 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>ABC微型火箭技术－为初学者设计的快速制作技术</title><link>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</link><pubDate>Fri, 30 Jan 2026 00:07:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</guid><description>&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
+&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．我用一个月准备这个技术贴的目标正是：给初学者一个成功体验，一点坚持的信心&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
 &lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
 &lt;p&gt;想象你在写一本小说：&lt;/p&gt;
 &lt;ul&gt;
