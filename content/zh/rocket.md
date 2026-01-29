@@ -6,10 +6,10 @@ bio = "探索火箭制造技术，连接全球火箭爱好者社区"
 email = "reggiesimons2cy@gmail.com"
 wechat = "thomelgo"
 
-# [[actions]]
-# name = "去到网站"
-# url = "#"
-# target = "_self"
+[[actions]]
+name = "查看专题"
+url = "/posts/rocket"
+target = "_self"
 
 [[actions]]
 name = "返回博客"
