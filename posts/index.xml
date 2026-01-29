@@ -63,7 +63,7 @@
  }
 
  const password = input.value;
- const publishDate = "2929130129";
+ const publishDate = "2929580129";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "公告" + publishDate);
 
@@ -138,7 +138,55 @@
  }
 &lt;/style&gt;
 
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>Rocket_basic</title><link>https://simons.qzz.io/post/2026/01/rocket_basic/</link><pubDate>Thu, 29 Jan 2026 14:24:21 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/rocket_basic/</guid><description>&lt;h1 id="火箭基础知识"&gt;火箭基础知识&lt;/h1&gt;
+&lt;p&gt;为了能给广大火箭爱好者们能有一个更便捷的速成手册，避免走弯路，我整理了部分帖子，并将其合拢。&lt;/p&gt;
+&lt;p&gt;怀着一颗敬畏的心来整理高手们的作品。删除了一些口头语，不标准的词语，并对部分名词进行释读。&lt;/p&gt;
+&lt;p&gt;由于本人能力有限，修订难免有误，欢迎指出。&lt;/p&gt;
+&lt;p&gt;每个帖子后面都有相关原帖的链接及其他增添的链接&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．给初学者一个成功体验，一点坚持的信心!&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;h1 id="分支分叉解决方案全图解用通俗比喻让你秒懂"&gt;分支分叉解决方案全图解：用通俗比喻让你秒懂！&lt;/h1&gt;
+&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
+&lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
+&lt;p&gt;想象你在写一本小说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;远程仓库&lt;/strong&gt; = 出版社的底稿&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;你的本地&lt;/strong&gt; = 你手里的稿子&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他作者&lt;/strong&gt; = 同事也在修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在情况是：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
+你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
+出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="-三种解决方案详解"&gt;🎯 三种解决方案详解&lt;/h2&gt;
+&lt;h3 id="1-merge合并---拼图游戏法"&gt;1. &lt;strong&gt;Merge（合并）&lt;/strong&gt; - &amp;ldquo;拼图游戏法&amp;rdquo;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
 &lt;a href="https://github.com/op7418/Humanizer-zh/tree/main"
  
  
@@ -159,7 +207,91 @@ description: |
 基于维基百科的&amp;quot;AI 写作特征&amp;quot;综合指南。检测并修复以下模式：夸大的象征意义、
 宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、
 AI 词汇、否定式排比、过多的连接性短语。
-allowed-tools:&lt;/p&gt;</description></item><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
+allowed-tools:&lt;/p&gt;</description></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+&lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git config --global alias.sync &amp;#39;!f() { 
+ echo &amp;#34;Pushing to origin...&amp;#34;;
+ git push origin main || echo &amp;#34;Failed to push to origin&amp;#34;;
+ 
+ echo &amp;#34;&amp;#34;;
+ echo &amp;#34;Checking local remote...&amp;#34;;
+ if git remote | grep -q &amp;#34;^local$&amp;#34;; then
+ echo &amp;#34;Pushing to local...&amp;#34;;
+ git push local main || echo &amp;#34;Failed to push to local&amp;#34;;
+ else
+ echo &amp;#34;⚠️ Local remote not found. Skipping.&amp;#34;;
+ echo &amp;#34; To add local: git remote add local /path/to/repo.git&amp;#34;;
+ fi
+ 
+ echo &amp;#34;&amp;#34;;
+ echo &amp;#34;✨ Sync completed!&amp;#34;;
+}; f&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="整体功能"&gt;整体功能&lt;/h2&gt;
+&lt;p&gt;这个命令会&lt;strong&gt;同时推送代码到两个远程仓库&lt;/strong&gt;：&lt;code&gt;origin&lt;/code&gt; 和 &lt;code&gt;local&lt;/code&gt;（如果存在）。&lt;/p&gt;</description></item><item><title>绯红之粉（一种开伞剂）</title><link>https://simons.qzz.io/post/2026/01/crimson_powder-a_dispersal_agent/</link><pubDate>Wed, 28 Jan 2026 19:19:34 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/crimson_powder-a_dispersal_agent/</guid><description>&lt;p&gt;网站：https://www.nakka-rocketry.net/&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.kechuang.org/t/87751"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看中文译文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="https://www.nakka-rocketry.net/articles/Crimson_powder_rev.1.4.pdf"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看英文原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;这是 Richard Nakka 在 2017 年发布的一种开伞药,之前没见论坛上有相应文章,以下是其介绍与制作方法.&lt;/p&gt;
+&lt;p&gt;绯红之粉，用于火箭降落伞弹射。&lt;/p&gt;
+&lt;p&gt;绯红之粉相对于黑火药有一定的优势，包括：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;较低的燃烧温度，最大限度地减少对火箭的热损伤&lt;/p&gt;</description></item><item><title>高二学生自制火箭</title><link>https://simons.qzz.io/post/2026/01/homemade_rocket/</link><pubDate>Wed, 28 Jan 2026 18:50:09 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/homemade_rocket/</guid><description>&lt;p&gt;推荐
+&lt;a href="https://www.kechuang.org/t/89400"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，原文中有视频。&lt;/p&gt;
+&lt;p&gt;本文是一枚小型火箭从设计到制造再到发射的全部过程。&lt;/p&gt;
+&lt;p&gt;大家好，我是一名高一升高二的学生，我利用暑假来制作这枚火箭。&lt;/p&gt;
+&lt;h1 id="一设计理念及整箭设计图"&gt;一、设计理念及整箭设计图&lt;/h1&gt;
+&lt;p&gt;该枚火箭，计划采用32mm&lt;em&gt;150mm一次性固体发动机，箭体使用45mm&lt;/em&gt;39mm*400mm牛皮纸桶，无飞控，使用延时开伞，预计飞行最大高度500m。&lt;/p&gt;</description></item><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
 &lt;a href="https://www.cnblogs.com/crazymakercircle/p/14499211.html"
  
  

@@ -1,4 +1,46 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 12:13:25 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;h1 id="分支分叉解决方案全图解用通俗比喻让你秒懂"&gt;分支分叉解决方案全图解：用通俗比喻让你秒懂！&lt;/h1&gt;
+&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
+&lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
+&lt;p&gt;想象你在写一本小说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;远程仓库&lt;/strong&gt; = 出版社的底稿&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;你的本地&lt;/strong&gt; = 你手里的稿子&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他作者&lt;/strong&gt; = 同事也在修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在情况是：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
+你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
+出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="-三种解决方案详解"&gt;🎯 三种解决方案详解&lt;/h2&gt;
+&lt;h3 id="1-merge合并---拼图游戏法"&gt;1. &lt;strong&gt;Merge（合并）&lt;/strong&gt; - &amp;ldquo;拼图游戏法&amp;rdquo;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
 &lt;a href="https://github.com/op7418/Humanizer-zh/tree/main"
  
  
@@ -19,7 +61,24 @@ description: |
 基于维基百科的&amp;quot;AI 写作特征&amp;quot;综合指南。检测并修复以下模式：夸大的象征意义、
 宣传性语言、以 -ing 结尾的肤浅分析、模糊的归因、破折号过度使用、三段式法则、
 AI 词汇、否定式排比、过多的连接性短语。
-allowed-tools:&lt;/p&gt;</description></item><item><title>免费域名靠谱吗？手把手教你领取！</title><link>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</link><pubDate>Sun, 28 Dec 2025 18:14:25 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</guid><description>&lt;h1 id="免费域名靠谱吗手把手教你领取"&gt;免费域名靠谱吗？手把手教你领取！&lt;/h1&gt;
+allowed-tools:&lt;/p&gt;</description></item><item><title>高二学生自制火箭</title><link>https://simons.qzz.io/post/2026/01/homemade_rocket/</link><pubDate>Wed, 28 Jan 2026 18:50:09 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/homemade_rocket/</guid><description>&lt;p&gt;推荐
+&lt;a href="https://www.kechuang.org/t/89400"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+，原文中有视频。&lt;/p&gt;
+&lt;p&gt;本文是一枚小型火箭从设计到制造再到发射的全部过程。&lt;/p&gt;
+&lt;p&gt;大家好，我是一名高一升高二的学生，我利用暑假来制作这枚火箭。&lt;/p&gt;
+&lt;h1 id="一设计理念及整箭设计图"&gt;一、设计理念及整箭设计图&lt;/h1&gt;
+&lt;p&gt;该枚火箭，计划采用32mm&lt;em&gt;150mm一次性固体发动机，箭体使用45mm&lt;/em&gt;39mm*400mm牛皮纸桶，无飞控，使用延时开伞，预计飞行最大高度500m。&lt;/p&gt;</description></item><item><title>免费域名靠谱吗？手把手教你领取！</title><link>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</link><pubDate>Sun, 28 Dec 2025 18:14:25 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/%E8%8E%B7%E5%8F%96%E5%85%8D%E8%B4%B9%E5%9F%9F%E5%90%8D/</guid><description>&lt;h1 id="免费域名靠谱吗手把手教你领取"&gt;免费域名靠谱吗？手把手教你领取！&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;一个斩获 135k 星的开源项目，正在改写域名规则。&lt;/p&gt;
 &lt;/blockquote&gt;
