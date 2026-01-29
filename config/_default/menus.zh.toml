@@ -49,21 +49,21 @@ icon = 'megaphone'  # 📢 更符合营销
 
 [[main]]
 name = '传统文化'
-pageRef = '/marketing/'
-weight = 8
-icon = 'megaphone'  # 📢 更符合营销
+pageRef = '/culture/'
+weight = 9
+icon = 'book-open'
 
 
 [[main]]
 name = '关于我'
 pageRef = '/about/'
-weight = 9
+weight = 10
 icon = 'user'
 
 [[main]]
 name = '站内搜索'
 pageRef = '/search/'
-weight = 10
+weight = 11
 icon = 'search'
 
 
@@ -96,4 +96,3 @@ icon = 'search'
 # name = '热搜'
 # pageRef = '/hotlist/'
 # weight = 43
-
