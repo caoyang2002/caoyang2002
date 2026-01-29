@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 14:36:47 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
+&lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
+&lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/first_h5.jpg" alt="first_h5"&gt;&lt;/p&gt;
+&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/chyraw_food.jpg" alt="chyraw_food"&gt;&lt;/p&gt;
+&lt;p&gt;关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p&gt;</description></item><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
 &lt;p&gt;
 &lt;a href="mailto:reggiesimons2cy@gmail.com"
  
@@ -18,7 +25,7 @@
 
  
 
- 公告
+ 文章来源说明
 
 
 
@@ -63,9 +70,9 @@
  }
 
  const password = input.value;
- const publishDate = "2929520129";
+ const publishDate = "2929330129";
  const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "公告" + publishDate);
+ const targetHash = await sha256( "文章来源说明" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -138,14 +145,567 @@
  }
 &lt;/style&gt;
 
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
-&lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
-&lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/first_h5.jpg" alt="first_h5"&gt;&lt;/p&gt;
-&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/chyraw_food.jpg" alt="chyraw_food"&gt;&lt;/p&gt;
-&lt;p&gt;关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/resources/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/resources/</guid><description>&lt;h1 id="公开资源"&gt;公开资源&lt;/h1&gt;
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-2/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-2/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="mailto:reggiesimons2cy@gmail.com"
+ 
+ &gt;
+ reggiesimons2cy@gmail.com
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+
+&lt;style&gt;
+ .notice {
+ color: red;
+ }
+&lt;/style&gt;
+
+ 
+
+ 置顶
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content"&gt;
+ 
+ &lt;div class="crypto-form"&gt;
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ /&gt;
+ &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ &gt;
+ 已加密，请输入密码
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ 
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ 
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "2929330129";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256( "置顶" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
+ output.innerHTML = decoded;
+ console.log(decoded);
+ form.style.display = 'none';
+ } catch(e) {
+ console.log(e)
+ showError('密码错误，请重试');
+ }
+ }
+
+ 
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b =&gt; b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ 
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script&gt;
+
+&lt;style&gt;
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style&gt;
+
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-3/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-3/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="mailto:reggiesimons2cy@gmail.com"
+ 
+ &gt;
+ reggiesimons2cy@gmail.com
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+
+&lt;style&gt;
+ .notice {
+ color: red;
+ }
+&lt;/style&gt;
+
+ 
+
+ 置顶
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content"&gt;
+ 
+ &lt;div class="crypto-form"&gt;
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ /&gt;
+ &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ &gt;
+ 已加密，请输入密码
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ 
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ 
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "2929330129";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256( "置顶" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
+ output.innerHTML = decoded;
+ console.log(decoded);
+ form.style.display = 'none';
+ } catch(e) {
+ console.log(e)
+ showError('密码错误，请重试');
+ }
+ }
+
+ 
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b =&gt; b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ 
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script&gt;
+
+&lt;style&gt;
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style&gt;
+
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-4/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-4/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="mailto:reggiesimons2cy@gmail.com"
+ 
+ &gt;
+ reggiesimons2cy@gmail.com
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+
+&lt;style&gt;
+ .notice {
+ color: red;
+ }
+&lt;/style&gt;
+
+ 
+
+ 置顶
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content"&gt;
+ 
+ &lt;div class="crypto-form"&gt;
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ /&gt;
+ &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ &gt;
+ 已加密，请输入密码
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ 
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ 
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "2929330129";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256( "置顶" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
+ output.innerHTML = decoded;
+ console.log(decoded);
+ form.style.display = 'none';
+ } catch(e) {
+ console.log(e)
+ showError('密码错误，请重试');
+ }
+ }
+
+ 
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b =&gt; b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ 
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script&gt;
+
+&lt;style&gt;
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style&gt;
+
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt;
+&lt;a href="mailto:reggiesimons2cy@gmail.com"
+ 
+ &gt;
+ reggiesimons2cy@gmail.com
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+
+&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
+
+&lt;style&gt;
+ .notice {
+ color: red;
+ }
+&lt;/style&gt;
+
+ 
+
+ 置顶
+
+
+
+
+
+
+
+
+&lt;div class="crypto-content"&gt;
+ 
+ &lt;div class="crypto-form"&gt;
+ &lt;input
+ type="password"
+ placeholder="输入密码"
+ class="crypto-input"
+ id="crypto-password"
+ /&gt;
+ &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
+ &lt;/div&gt;
+ 
+ &lt;div
+ class="encrypted-content"
+ id="crypto-output"
+ data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ &gt;
+ 已加密，请输入密码
+ &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+ 
+ async function decrypt() {
+ try {
+ const input = document.getElementById('crypto-password');
+ const output = document.getElementById('crypto-output');
+ const form = document.querySelector('.crypto-form');
+
+ 
+ if(!input?.value) {
+ showError('请输入密码');
+ return;
+ }
+
+ const password = input.value;
+ const publishDate = "2929330129";
+ const hash = await sha256(password + publishDate);
+ const targetHash = await sha256( "置顶" + publishDate);
+
+ if(hash !== targetHash) {
+ throw new Error('密码错误');
+ }
+
+ const base64 = output.getAttribute('data-content');
+ const decoder = new TextDecoder();
+ const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
+ output.innerHTML = decoded;
+ console.log(decoded);
+ form.style.display = 'none';
+ } catch(e) {
+ console.log(e)
+ showError('密码错误，请重试');
+ }
+ }
+
+ 
+ async function sha256(text) {
+ const encoder = new TextEncoder();
+ const data = encoder.encode(text);
+ const hash = await crypto.subtle.digest('SHA-256', data);
+ return Array.from(new Uint8Array(hash))
+ .map(b =&gt; b.toString(16).padStart(2, '0'))
+ .join('');
+ }
+
+ 
+ function showError(message) {
+ const output = document.getElementById('crypto-output');
+ output.textContent = message;
+ output.className = 'encrypted-content error-msg';
+ }
+&lt;/script&gt;
+
+&lt;style&gt;
+ .crypto-content {
+ margin: 0;
+ padding: 0;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-form {
+ display: flex;
+ gap: 0;
+ }
+ .crypto-input {
+ flex: 1;
+ padding: 0;
+ margin: 1rem 1rem 0 1rem;
+ border: 1px solid #ddd;
+ border-radius: 4px;
+ }
+ .crypto-btn {
+ padding: 0.25rem;
+ margin: 1rem 1rem 0 1rem;
+ background: #4a4a4a;
+ color: white;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+ }
+ .error-msg {
+ color: #ff4444;
+ }
+ .encrypted-content {
+ margin: 0 1rem 1rem 1rem;
+ 
+ word-break: break-all;
+ }
+&lt;/style&gt;
+
+&lt;p&gt;123&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/resources/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/resources/</guid><description>&lt;h1 id="公开资源"&gt;公开资源&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;
@@ -251,14 +811,53 @@
  &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t"&gt;
  &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid=""&gt;
  &lt;span leaf=""&gt;生活的点滴温暖&lt;/span&gt;
- &lt;/p&gt;</description></item><item><title>火箭制作基础</title><link>https://simons.qzz.io/post/2026/01/rocket_basic/</link><pubDate>Thu, 29 Jan 2026 14:24:21 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/rocket_basic/</guid><description>&lt;h1 id="火箭基础知识"&gt;火箭基础知识&lt;/h1&gt;
-&lt;p&gt;为了能给广大火箭爱好者们能有一个更便捷的速成手册，避免走弯路，我整理了部分帖子，并将其合拢。&lt;/p&gt;
-&lt;p&gt;怀着一颗敬畏的心来整理高手们的作品。删除了一些口头语，不标准的词语，并对部分名词进行释读。&lt;/p&gt;
-&lt;p&gt;由于本人能力有限，修订难免有误，欢迎指出。&lt;/p&gt;
-&lt;p&gt;每个帖子后面都有相关原帖的链接及其他增添的链接&lt;/p&gt;
+ &lt;/p&gt;</description></item><item><title>ABC微型火箭技术－为初学者设计的快速制作技术</title><link>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</link><pubDate>Fri, 30 Jan 2026 00:07:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</guid><description>&lt;p&gt;
+&lt;a href="https://www.kechuang.org/u/4565"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ &lt;img src="https://img.kechuang.org:81/a/5f0d6564351a5f14687960a6?c=userAvatar&amp;amp;t=sm" alt="img"&gt; ABC
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+2008/09/02
+&lt;a href="https://www.kechuang.org/f/89"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 喷气推进
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+ IP:福建&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;前言&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;　实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．我用一个月准备这个技术贴的目标正是：给初学者一个成功体验，一点坚持的信心&lt;/p&gt;</description></item><item><title>火箭制作基础</title><link>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</link><pubDate>Thu, 29 Jan 2026 14:24:21 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</guid><description>&lt;p&gt;
+&lt;a href="https://www.bilibili.com/read/cv5511550/?opus_fallback=1"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="火箭基础知识"&gt;火箭基础知识&lt;/h1&gt;
+&lt;p&gt;为了能给广大火箭爱好者们能有一个更便捷的速成手册，避免走弯路，我整理了部分帖子，并将其合拢。怀着一颗敬畏的心来整理高手们的作品。删除了一些口头语，不标准的词语，并对部分名词进行释读。&lt;/p&gt;
+&lt;p&gt;由于本人能力有限，修订难免有误，欢迎指出。每个帖子后面都有相关原帖的链接及其他增添的链接&lt;/p&gt;
 &lt;h1 id="前言"&gt;前言&lt;/h1&gt;
-&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．给初学者一个成功体验，一点坚持的信心!&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;h1 id="分支分叉解决方案全图解用通俗比喻让你秒懂"&gt;分支分叉解决方案全图解：用通俗比喻让你秒懂！&lt;/h1&gt;
-&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
+&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多。我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去。&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
 &lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
 &lt;p&gt;想象你在写一本小说：&lt;/p&gt;
 &lt;ul&gt;
@@ -299,7 +898,7 @@
  &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/human_ai/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/human_ai/</guid><description>&lt;p&gt;
+&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</guid><description>&lt;p&gt;
 &lt;a href="https://github.com/op7418/Humanizer-zh/tree/main"
  
  
@@ -7911,52 +8510,7 @@ CREATE TABLE userinfo(
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表
-&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>报税记账</title><link>https://simons.qzz.io/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/compent/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="报税网址"&gt;报税网址&lt;/h1&gt;
-&lt;h2 id="四川省电子税务局"&gt;四川省电子税务局&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;a href="https://etax.sichuan.chinatax.gov.cn/loginb/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://etax.sichuan.chinatax.gov.cn/loginb/
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;h2 id="自然人电子税务局"&gt;自然人电子税务局&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个主要是给法人报税用的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
-&lt;a href="https://etax.chinatax.gov.cn"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://etax.chinatax.gov.cn
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;h1 id="关于注销"&gt;关于注销&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;税务申报方面需要仔细一点, 然后就是一些文件里面的项, 我啥也不懂, 就没有改, 发现需要再缴 500, 不知道是什么, 就缴了,&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;去注销企业的时候遇到的一些问题:&lt;/p&gt;
-&lt;p&gt;我使用的是 &amp;ldquo;简易注销&amp;rdquo;, 这个比较方便, 是一站式的, 办理完后需要等待 20 天的公示期,公示期结束后继续办理注销流程&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
@@ -8029,7 +8583,52 @@ Done. Now run:
  &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>记录一下报税记账</title><link>https://simons.qzz.io/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/compent/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="报税网址"&gt;报税网址&lt;/h1&gt;
+&lt;h2 id="四川省电子税务局"&gt;四川省电子税务局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://etax.sichuan.chinatax.gov.cn/loginb/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://etax.sichuan.chinatax.gov.cn/loginb/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h2 id="自然人电子税务局"&gt;自然人电子税务局&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这个主要是给法人报税用的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;
+&lt;a href="https://etax.chinatax.gov.cn"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://etax.chinatax.gov.cn
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="关于注销"&gt;关于注销&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;税务申报方面需要仔细一点, 然后就是一些文件里面的项, 我啥也不懂, 就没有改, 发现需要再缴 500, 不知道是什么, 就缴了,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;去注销企业的时候遇到的一些问题:&lt;/p&gt;
+&lt;p&gt;我使用的是 &amp;ldquo;简易注销&amp;rdquo;, 这个比较方便, 是一站式的, 办理完后需要等待 20 天的公示期,公示期结束后继续办理注销流程&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
 &lt;h1 id="样机"&gt;样机&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href="https://bannermockup.com/"
@@ -9525,7 +10124,7 @@ int main(){
  
 &lt;/a&gt;
 ) - 功能强大的在线协作白板&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>火箭爱好者</title><link>https://simons.qzz.io/rocket/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/rocket/</guid><description/></item><item><title>热搜</title><link>https://simons.qzz.io/hotlist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/hotlist/</guid><description/></item><item><title>日程表</title><link>https://simons.qzz.io/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/schedule/</guid><description/></item><item><title>搜索</title><link>https://simons.qzz.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/search/</guid><description/></item><item><title>作品集</title><link>https://simons.qzz.io/protfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/protfolio/</guid><description>&lt;h1 id="正在整理此处仅展示部分"&gt;正在整理，此处仅展示部分&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>航空航天好者</title><link>https://simons.qzz.io/aerospace/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/aerospace/</guid><description/></item><item><title>热搜</title><link>https://simons.qzz.io/hotlist/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/hotlist/</guid><description/></item><item><title>日程表</title><link>https://simons.qzz.io/schedule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/schedule/</guid><description/></item><item><title>搜索</title><link>https://simons.qzz.io/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/search/</guid><description/></item><item><title>作品集</title><link>https://simons.qzz.io/protfolio/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/protfolio/</guid><description>&lt;h1 id="正在整理此处仅展示部分"&gt;正在整理，此处仅展示部分&lt;/h1&gt;
 &lt;h1 id="前端开发"&gt;前端开发：&lt;/h1&gt;
 &lt;p&gt;
 &lt;a href="https://chicunjie.top"

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程专题 on 短松江月</title><link>https://simons.qzz.io/posts/programming/</link><description>Recent content in 编程专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 14:36:47 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程专题 on 短松江月</title><link>https://simons.qzz.io/posts/programming/</link><description>Recent content in 编程专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
 &lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
 
 
@@ -76,7 +76,111 @@
 &lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
 &lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
-&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>mac 汇编笔记</title><link>https://simons.qzz.io/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
+&lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
+&lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ GitHub 地址
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="一前置条件"&gt;一、前置条件&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;即时设计客户端&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://js.design/download"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://js.design/download
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;ol start="2"&gt;
+&lt;li&gt;vscode&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://code.visualstudio.com/Download"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://code.visualstudio.com/Download
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;code 快捷命令（可选）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;macOS 系统快捷键：&lt;kbd&gt;⌘&lt;/kbd&gt; + &lt;kbd&gt;⇧&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt; （command + shift + p）&lt;/p&gt;
+&lt;p&gt;Windows/Linux 快捷键: &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;P&lt;/kbd&gt;&lt;/p&gt;
+&lt;p&gt;搜索安装 &lt;code&gt;shell command&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol start="3"&gt;
+&lt;li&gt;nodejs/npm&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;
+&lt;a href="https://nodejs.org/en/download/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ https://nodejs.org/en/download/
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;ol start="4"&gt;
+&lt;li&gt;react&lt;/li&gt;
+&lt;/ol&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm install @types/react @types/react-dom&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;启用类型提示&lt;/strong&gt;
+在 vscode 按 &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;Shift&lt;/kbd&gt; + &lt;kbd&gt;b&lt;/kbd&gt; 开发即时设计类型提示&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id="效率工具"&gt;效率工具&lt;/h2&gt;
+&lt;h3 id="webpack"&gt;webpack&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;关于 webpack 的简介，可以查看
+&lt;a href=""
+ 
+ &gt;
+ 这篇文章
+ 
+&lt;/a&gt;
+&lt;/p&gt;</description></item><item><title>mac 汇编笔记</title><link>https://simons.qzz.io/post/2025/01/mac_assembly/</link><pubDate>Sat, 18 Jan 2025 11:35:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/mac_assembly/</guid><description>&lt;p&gt;
 &lt;a href="https://evian-zhang.github.io/learn-assembly-on-Apple-Silicon-Mac/index.html"
  
  
