@@ -48,6 +48,13 @@ weight = 8
 icon = 'megaphone'  # 📢 更符合营销
 
 [[main]]
+name = '传统文化'
+pageRef = '/marketing/'
+weight = 8
+icon = 'megaphone'  # 📢 更符合营销
+
+
+[[main]]
 name = '关于我'
 pageRef = '/about/'
 weight = 9
