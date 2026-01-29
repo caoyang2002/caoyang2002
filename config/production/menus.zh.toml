@@ -9,6 +9,12 @@ name = '火箭'
 pageRef = '/rocket/'
 weight = 11
 
+[[main]]
+name = '编程'
+pageRef = '/programming/'
+weight = 11
+
+
 # [[main]]
 # name = '日程'
 # pageRef = '/schedule/'
