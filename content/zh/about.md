@@ -1,71 +1,101 @@
----
-title: "关于"
-date: 2024-03-21T15:04:05+08:00
-lastmod: 2024-03-21T15:04:05+08:00
-draft: false
-weight: 1
-categories: ["关于"]
-tags: ["关于"]
-aliases:  ["about-us", "about-hugo"]
-author: "simons"
-description: "关于我以及这个网站"
-featuredImage: "/about/simons.jpg"
-toc: true                # 是否显示目录
-autoCollapseToc: true    # 自动折叠目录
----
-
-# 关于我
-
-![me](/about/simons.jpg)
-
-你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。
-
-下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：
-
-![first_h5](/about/history/first_h5.jpg)
-
-下图是我 2024 年给创业项目做的网站：
-
-![chyraw_food](/about/history/chyraw_food.jpg)
-
-关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。
-
-目前我在帮朋友的设计团队做策划。不过自己有机会的话还是会回食品和零售行业。
-
-我目前是 web3 的开发者，自己经常捣鼓一些小产品。但是目前我已经不做设计工作了，比较空闲的时候会做一些玩。
-
-做过的事情比较多，算是一个“连续创业者”（笑）。
-
-## 回顾
-
-我是四川人，初三的时候，因为不用学数学，毅然去读了某个中专，后来才知道那个学校及其恶心。现在回望，都不知道当初怎么熬过来的。实在不想回忆，只希望不要重蹈覆辙，这些事情我以后再说吧。
-
-中专毕业后，有些同学读了大专，而大部分同学则是去工作了，我做了一个大胆的决定：参加高考！这是中专生可以参加高考的第一年，由于没有任何基础，我第一高考 280 分，情理之中，那是 2019 年，我 16 岁，一个人去了成都，去看培训机构，涉事未深的我，唯一知道的就是货比三家。除了我爸爸和爷爷，没有任何人支持我。我如愿去学了美术，希望通过艺考，再拼一次。
-
-复读。那时候已经是七月份了，距离考试还有不到 5 个月的时间。美术培训的时候，我给自己的强度非常大，希望杀出重围。以至于好几次都感到心脏痛。很快就到了联考，230 分，至少过了本科线，但是文化课实在头疼，很感谢老师的细心指导，我当时无奈自己的基础太差，跟不上。文化成绩  310 分，没过本科线，只能读大专，而且可选的也很少。虽然完成了之前的理想，但是我觉得还不够。我希望更好一点。
-
-复读，第二年。美术 260，准备年后学文化，但是当时我爷爷病重，没多久就去世了，我自己状态非常糟糕。整个文化课，我都缺席了。高考 320 分，我也不想继续在这段日子里折磨自己了，于是就去了成都大学的专科，艺术设计专业，中外合办。那是 2021 年。
-
-在成都大学的时候，正值大运会，我庆幸自己加入了成都大运会的一个设计团队，看到了很多前沿的设计，还有很多实践。如果没有加入这个团队，我也许还在 “硬磨” 自己的设计能力，我不会发现自己原来可以在 City-Pop 风格上游刃有余，甚至排版也有所长，至于给我个人的帮助，就更是数不胜数了。
-
-后来，我发觉自己对开发似乎有难以磨灭的热情，于是在 2022 年年底退出了这个设计团队，我由衷感谢卡卡和海稣的指导。
-
-2023 年，一整年都在“玩”编程，着迷于那种浅尝辄止的乐趣。这一年事情并不多，主要就是毕业实习和毕业设计。毕业实习在广东一家设计公司，给银行做设计，远程办公。毕业设计的指导老师是马老师和叶老师，处处都很细心，但是我的设计很一般，都怪自己没有那么灵活。我毕设的主题是食品广告。年底，我和室友做了一家食品公司。甚至现在还能查到这家公司。
-
-2024 年，我参加了 Aptos 区块链的黑客松，然后注销了这家食品公司。我可能会长期在区块链，我不清楚这个方向是不是我的 “City-Pop”。后来，我去了某个艺术学院，（在读，名字不方便透露），WJQ 在做食品，CXY 去了 NZ 留学，HSF 去了某家设计公司。我帮做品牌的朋友一起开始了关于品牌的旅程。
-
-某艺术学院，摄影专业。相机是借的，只有灰卡是自己买的。其实平时也做设计，但是非常少，都是朋友委托。
-
-回望成都大学的设计专业课，其实挺差的。但是我们班的同学好像是年级关系最好的一个班。
-
----
-
-# 关于本站
-
-![logo](/about/site_info/logo.jpg)
-
-我以前在 caoyang2002.top 写文章，现在已经转到了本站，但是之前的文章都没有了，这不重要。
-
-这个网站主要记录我的经验和见解，博客几乎脱落不了大杂烩的模型，我的博客也一样。
-
-这个网站的主题是我基于 Hugo-Paper 开发的，在介绍页面有详细的说明，也可以看我写的文章 [Hugo-Focus 主题介绍](/post/2025/01/hugo-focus-info/)，
++++
+title = "关于我"
+layout = "about"
+date = 2026-01-30T10:00:00+08:00
+draft = false
+# 个人简介
+bio = "一名热爱技术与生活的开发者/设计师，专注于前端开发、用户体验设计，擅长用简洁的方式解决复杂问题。始终保持学习的热情，追求技术与美学的平衡，乐于分享和交流。"
+# 个人头像（支持本地静态文件或网络链接，本地文件放 static/imgs/ 下）
+avatar = "imgs/avatar.jpg"
+# 技能列表（icon为font-awesome4图标，可自行替换）
+[[skills]]
+name = "前端开发"
+icon = "fa-code"
+description = "构建高性能、响应式的现代网页，兼顾体验与性能"
+tags = ["HTML/CSS", "JavaScript", "Vue", "React", "TailwindCSS"]
+[[skills]]
+name = "UI/UX 设计"
+icon = "fa-paint-brush"
+description = "从用户角度出发，设计简洁、易用的产品界面"
+tags = ["Figma", "原型设计", "视觉设计", "用户研究"]
+[[skills]]
+name = "后端开发"
+icon = "fa-server"
+description = "轻量级后端服务开发，实现前后端数据交互"
+tags = ["Go", "Node.js", "MySQL", "Redis", "RESTful API"]
+[[skills]]
+name = "工具与效率"
+icon = "fa-cogs"
+description = "熟练使用开发工具，提升工作效率，保障开发质量"
+tags = ["Git", "Docker", "CI/CD", "VS Code", "性能优化"]
+# 经历/项目列表
+[[experiences]]
+title = "前端开发工程师"
+company = "XX科技有限公司"
+period = "2023.01 - 至今"
+details = [
+    "负责公司核心产品前端开发与维护，基于Vue3+Vite构建单页应用",
+    "优化页面加载性能，首屏加载速度提升40%，用户留存率提升15%",
+    "参与UI组件库封装，沉淀通用组件20+，提升团队开发效率30%",
+    "与产品、设计团队协作，完成多个版本的需求迭代与上线"
+]
+[[experiences]]
+title = "前端开发实习生"
+company = "XX互联网公司"
+period = "2022.07 - 2022.12"
+details = [
+    "协助开发公司官网与营销活动页面，兼容多终端设备",
+    "参与前端代码评审，修复线上bug30+，提升页面稳定性",
+    "学习并应用TailwindCSS、Pinia等技术，完成独立模块开发"
+]
+[[experiences]]
+title = "个人项目 - 极简博客系统"
+period = "2022.03 - 2022.06"
+details = [
+    "基于Hugo+TailwindCSS构建静态博客，支持文章分类、标签、搜索",
+    "自定义主题样式，实现响应式布局，适配电脑、平板、手机等设备",
+    "部署至GitHub Pages，配置自动化构建，实现提交代码自动更新"
+]
+# 作品列表（视错觉空间展示）
+[[projects]]
+name = "企业官网重构"
+desc = "基于React+Tailwind构建，响应式设计，首屏加载优化60%"
+tags = ["React", "性能优化", "响应式"]
+svg = "<svg viewBox='0 0 100 100' fill='currentColor'><rect x='10' y='10' width='80' height='80' rx='4' stroke='currentColor' stroke-width='2' fill='none'/><line x1='30' y1='30' x2='70' y2='30' stroke-width='1.5'/><line x1='30' y1='50' x2='80' y2='50' stroke-width='1.5'/><line x1='30' y1='70' x2='60' y2='70' stroke-width='1.5'/></svg>"
+[[projects]]
+name = "电商小程序"
+desc = "Vue3+UniApp开发，支持商品分类、购物车、支付对接"
+tags = ["Vue3", "UniApp", "小程序"]
+svg = "<svg viewBox='0 0 100 100' fill='currentColor'><rect x='20' y='15' width='60' height='70' rx='6' stroke='currentColor' stroke-width='2' fill='none'/><circle cx='35' cy='30' r='2'/><circle cx='45' cy='30' r='2'/><circle cx='55' cy='30' r='2'/><circle cx='65' cy='30' r='2'/><rect x='30' y='45' width='40' height='35' rx='2' stroke-width='1.5' fill='none'/></svg>"
+[[projects]]
+name = "数据可视化平台"
+desc = "ECharts+TS开发，多维度数据展示，支持自定义筛选"
+tags = ["TypeScript", "ECharts", "数据可视化"]
+svg = "<svg viewBox='0 0 100 100' fill='currentColor'><rect x='10' y='10' width='80' height='80' rx='4' stroke='currentColor' stroke-width='2' fill='none'/><polyline points='20,70 30,50 40,60 50,30 60,45 70,20 80,35' stroke-width='2' fill='none'/><line x1='20' y1='80' x2='80' y2='80' stroke-width='1.5'/></svg>"
+[[projects]]
+name = "个人博客系统"
+desc = "Hugo+Tailwind构建，静态部署，支持文章搜索/分类"
+tags = ["Hugo", "静态站点", "TailwindCSS"]
+svg = "<svg viewBox='0 0 100 100' fill='currentColor'><rect x='15' y='15' width='70' height='70' rx='4' stroke='currentColor' stroke-width='2' fill='none'/><line x1='25' y1='30' x2='65' y2='30' stroke-width='1.5'/><line x1='25' y1='40' x2='75' y2='40' stroke-width='1.5'/><line x1='25' y1='50' x2='60' y2='50' stroke-width='1.5'/><line x1='25' y1='60' x2='70' y2='60' stroke-width='1.5'/></svg>"
+# 联系信息
+[[contacts]]
+name = "邮箱"
+icon = "fa-envelope"
+value = "your-email@example.com"
+url = "mailto:your-email@example.com"
+[[contacts]]
+name = "GitHub"
+icon = "fa-github"
+value = "your-github-name"
+url = "https://github.com/your-github-name"
+[[contacts]]
+name = "微信"
+icon = "fa-weixin"
+value = "your-wechat-id"
+url = "javascript:;"
+[[contacts]]
+name = "电话"
+icon = "fa-phone"
+value = "138-0000-0000"
+url = "tel:13800000000"
++++
