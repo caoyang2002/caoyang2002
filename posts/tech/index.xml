@@ -40,111 +40,1619 @@
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
-&lt;a href="https://www.cnblogs.com/crazymakercircle/p/14499211.html"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://www.cnblogs.com/crazymakercircle/p/14499211.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.cnblogs.com/crazymakercircle/p/14499211.html" data-preview-enabled="true" &gt;
  原文
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;h2 id="tcpip协议详解"&gt;TCP/IP协议详解&lt;/h2&gt;
-&lt;p&gt;TCP/IP协议包含了一系列的协议，也叫TCP/IP协议族（TCP/IP Protocol Suite，或TCP/IP&lt;br&gt;
-Protocols），简称TCP/IP。TCP/IP协议族提供了点对点的连结机制，并且将传输数据帧的封装、寻址、传输、路由以及接收方式，都予以标准化。&lt;/p&gt;
-&lt;h2 id="tcpip协议的分层模型"&gt;TCP/IP协议的分层模型&lt;/h2&gt;
-&lt;p&gt;在展开介绍TCP/IP协议之前，首先介绍一下七层ISO模型。国际标准化组织ISO为了使网络应用更为普及，推出了OSI参考模型，即开放式系统互联（Open&lt;br&gt;
-System Interconnect）模型，&lt;br&gt;
-一般都叫OSI参考模型。OSI参考模型是ISO组织在1985年发布的网络互连模型，其含义就是为所有公司使用一个统一的规范来控制网络，这样所有公司遵循相同的通信规范，网络就能互联互通了。&lt;/p&gt;</description></item><item><title>爬虫、反爬与反反爬</title><link>https://simons.qzz.io/post/2026/01/the_spider/</link><pubDate>Wed, 28 Jan 2026 11:26:57 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/the_spider/</guid><description>&lt;p&gt;
-&lt;a href="https://www.cnblogs.com/vivotech/p/16695804.html"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>爬虫、反爬与反反爬</title><link>https://simons.qzz.io/post/2026/01/the_spider/</link><pubDate>Wed, 28 Jan 2026 11:26:57 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/the_spider/</guid><description>&lt;p&gt;
+
+&lt;a href="https://www.cnblogs.com/vivotech/p/16695804.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.cnblogs.com/vivotech/p/16695804.html" data-preview-enabled="true" &gt;
  查看原文
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;互联网的大数据时代的来临，网络爬虫也成了互联网中一个重要行业，它是一种自动获取网页数据信息的爬虫程序，是网站搜索引擎的重要组成部分。通过爬虫，可以获取自己想要的相关数据信息，让爬虫协助自己的工作，进而降低成本，提高业务成功率和提高业务效率。&lt;/p&gt;
-&lt;p&gt;本文一方面从爬虫与反反爬的角度来说明如何高效的对网络上的公开数据进行爬取，另一方面也会介绍反爬虫的技术手段，为防止外部爬虫大批量的采集数据的过程对服务器造成超负载方面提供些许建议。&lt;/p&gt;</description></item><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
-&lt;a href="https://github.com/stonedtman/stonedt-yuqing"
+
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
+
+&lt;a href="https://github.com/stonedtman/stonedt-yuqing" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/stonedtman/stonedt-yuqing" data-preview-enabled="true" &gt;
  Github
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;注意：思通舆情只能安装在 amd64 的设备上。&lt;/p&gt;
-&lt;h1 id="docker-安装"&gt;DOcker 安装&lt;/h1&gt;
 
 
 
 
 
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
 
 
 
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
 
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -itd --name stonedt_yuqing -p 8085:8085 crpi-8mxxyq37t3w9t2kj.cn-hangzhou.personal.cr.aliyuncs.com/stonedtx/stonedt_yuqing:1.0.10&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
 
-&lt;p&gt;如果没有提示错误，就是安装成功了&lt;/p&gt;
-&lt;p&gt;访问你安装设备的 8085 端口，例如 http://localhost:8085&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;用户名 &lt;code&gt;13900000000&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;密码 &lt;code&gt;stonedt&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;这时候，你打开页面只能看到一个方案。&lt;/p&gt;
-&lt;h1 id="创建一个舆情检测方案"&gt;创建一个舆情检测方案&lt;/h1&gt;
-&lt;h2 id="新建方案组"&gt;新建方案组&lt;/h2&gt;
-&lt;p&gt;左上角 &lt;code&gt;新建舆情检测&lt;/code&gt; -&amp;gt; &lt;code&gt;新建舆情方案组&lt;/code&gt; -&amp;gt; 输入方案组名称&lt;/p&gt;
-&lt;h2 id="新建舆情方案"&gt;新建舆情方案&lt;/h2&gt;
-&lt;p&gt;在页面的右上角，点击 &lt;code&gt;新建&lt;/code&gt;, &lt;code&gt;方案名称&lt;/code&gt; 自行设置。然后在 &lt;code&gt;高级创建&lt;/code&gt; 中, 方案主题关键词语法是:&lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
 &lt;p&gt;&lt;img src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg" alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"&gt;&lt;/p&gt;
 &lt;p&gt;很长一段时间以来，HTML 元标记一直被称为 
-&lt;a href="https://www.searchenginejournal.com/seo/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://www.searchenginejournal.com/seo/" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.searchenginejournal.com/seo/" data-preview-enabled="true" &gt;
  SEO
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;
-&lt;p&gt;谷歌的约翰
-&lt;a href="https://www.searchenginejournal.com/google-answers-if-meta-description-matters-for-rankings/449119/#:~:text=John%20Mueller%20answered%3A"
+
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- ·穆勒 （John Mueller） 表示
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
  
-&lt;/a&gt;
-，谷歌使用 HTML 元标记来形成 SERP 片段，而不是用于排名。在这段声明中，他还说一个好的搜索片段会让人们访问你的页面。因此，元标记绝对是您必须关心才能获得流量的内容。&lt;/p&gt;</description></item><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
 &lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
 &lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
 &lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
@@ -154,129 +1662,3474 @@ System Interconnect）模型，&lt;br&gt;
 &lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
 &lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
-&lt;a href="https://www.kegel.com/c10k.html"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://www.kegel.com/c10k.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.kegel.com/c10k.html" data-preview-enabled="true" &gt;
  查看原文
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
-&lt;p&gt;《C10K问题》这篇经典文章深入探讨了如何在现代硬件条件下构建能够处理数万并发连接的高性能服务器系统。文章开篇即点明核心观点：随着硬件性能的飞速发展，单个服务器已具备同时服务大量客户端的物理能力，真正的挑战在于软件架构设计和操作系统机制优化。&lt;/p&gt;
-&lt;p&gt;作者首先回顾了技术发展背景，指出在二十世纪末期，千兆以太网和高速硬件已经普及，但软件架构却成为制约服务器并发能力的主要瓶颈。接着文章系统性地提出了五种主流的技术方案，每种方案都代表了不同的设计哲学和实现路径。&lt;/p&gt;</description></item><item><title>零复制技术</title><link>https://simons.qzz.io/post/2026/01/zero_copy/</link><pubDate>Mon, 26 Jan 2026 13:45:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zero_copy/</guid><description>&lt;p&gt;
-&lt;a href="https://www.cnblogs.com/f-ck-need-u/p/7615914.html"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>零复制技术</title><link>https://simons.qzz.io/post/2026/01/zero_copy/</link><pubDate>Mon, 26 Jan 2026 13:45:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zero_copy/</guid><description>&lt;p&gt;
+
+&lt;a href="https://www.cnblogs.com/f-ck-need-u/p/7615914.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.cnblogs.com/f-ck-need-u/p/7615914.html" data-preview-enabled="true" &gt;
  查看原文
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;h1 id="零复制zero-copy技术"&gt;零复制(zero copy)技术&lt;/h1&gt;
-&lt;h2 id="11-背景说明网络数据传输的全过程"&gt;1.1 背景说明：网络数据传输的全过程&lt;/h2&gt;
-&lt;p&gt;在每一次网络io过程，数据都要经过几个缓存，再发送出去。如下图：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://images2017.cnblogs.com/blog/733013/201709/733013-20170930140554637-512964522.png" alt="I/O between OSs" title="I/O between OSs"&gt;&lt;/p&gt;
-&lt;p&gt;以右侧为浏览器，左侧为httpd服务器为例。&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;当httpd服务收到浏览器发送的index.html文件的请求时，负责处理请求的httpd子进程/线程总是会先发起系统调用，让内核将index.html从存储设备中加载出来。但是加载到的位置是内核空间的缓冲区kernel buffer，而不是直接给进程/线程的内存区。由于是内存设备和存储设备之间的数据传输，没有CPU的参与，所以这次是DMA操作。&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
 &lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
 &lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>Vim 折叠代码块</title><link>https://simons.qzz.io/post/2026/01/vim_code_block/</link><pubDate>Mon, 26 Jan 2026 13:36:45 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_code_block/</guid><description>&lt;p&gt;在查看代码的时候，如果代码十分冗长，尤其是 c/c++ 系列的时候，代码结构比较让人难以理清，主要是各种注释、括号的匹配问题。&lt;/p&gt;
 &lt;p&gt;虽然可以用&lt;code&gt;%&lt;/code&gt;来查看匹配的另外一半符号在哪里，但是如果这一对符号之间的代码超过了一页，甚至好几页的话，那么也是比较难以理解的。&lt;/p&gt;
 &lt;p&gt;于是可以使用这个vim所提供的折叠功能来简化这些分析。&lt;/p&gt;</description></item><item><title>Vim 命令速查</title><link>https://simons.qzz.io/post/2026/01/vim_refrence/</link><pubDate>Mon, 26 Jan 2026 13:35:50 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_refrence/</guid><description>&lt;ul&gt;
 &lt;li&gt;
-&lt;a href="https://github.com/chloneda/vim-cheatsheet"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://github.com/chloneda/vim-cheatsheet" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/chloneda/vim-cheatsheet" data-preview-enabled="true" &gt;
  Vim-cheatsheet - GitHub
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="https://gitee.com/chloneda/vim-cheatsheet"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="https://gitee.com/chloneda/vim-cheatsheet" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://gitee.com/chloneda/vim-cheatsheet" data-preview-enabled="true" &gt;
  Vim-cheatsheet - Gitee
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/li&gt;
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href="https://www.vim.org/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://www.vim.org/" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.vim.org/" data-preview-enabled="true" &gt;
  Vim 官网
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="https://github.com/vim/vim"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="https://github.com/vim/vim" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/vim/vim" data-preview-enabled="true" &gt;
  Vim GitHub
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="http://vimcdoc.sourceforge.net/doc/help.html" data-preview-enabled="true" &gt;
  Vim 中文文档
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="./vimrc"
+
+
+
+
+
+
+&lt;style&gt;
  
- &gt;
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;
+
+&lt;a href="./vimrc" &gt;
  Vim 跨平台配置文件 vimrc
  
 &lt;/a&gt;
- | 
-&lt;a href="resources/vim-tools.md"
+
+
+
+
+&lt;style&gt;
  
- &gt;
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="resources/vim-tools.md" &gt;
  Vim 体系化工具集
  
 &lt;/a&gt;
-&lt;/li&gt;
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="一重复的威力"&gt;一、重复的威力&lt;/h1&gt;
 
@@ -294,11 +5147,7 @@ System Interconnect）模型，&lt;br&gt;
 N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;
-&lt;h1 id="二移动"&gt;二、移动&lt;/h1&gt;
-&lt;h2 id="1-光标移动"&gt;1. 光标移动&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;注意：普通（Normal）模式下，任意一个动作都可以重复。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Jupyter 快捷键</title><link>https://simons.qzz.io/post/2026/01/jupyter_key/</link><pubDate>Mon, 26 Jan 2026 13:34:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/jupyter_key/</guid><description>&lt;h3 id="jupyter-notebook-的快捷键"&gt;Jupyter Notebook 的快捷键&lt;/h3&gt;
+&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;</description></item><item><title>Jupyter 快捷键</title><link>https://simons.qzz.io/post/2026/01/jupyter_key/</link><pubDate>Mon, 26 Jan 2026 13:34:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/jupyter_key/</guid><description>&lt;h3 id="jupyter-notebook-的快捷键"&gt;Jupyter Notebook 的快捷键&lt;/h3&gt;
 &lt;p&gt;Jupyter Notebook 有两种键盘输入模式。编辑模式，允许你往单元中键入代码或文本；这时的单元框线是绿色的。命令模式，键盘输入运行程序命令；这时的单元框线是灰色。&lt;/p&gt;
 &lt;h4 id="命令模式-按键-esc-开启"&gt;命令模式 (按键 Esc 开启)&lt;/h4&gt;
 &lt;ul&gt;
@@ -331,152 +5180,803 @@ github：readme.md(md=markdown)
 &lt;p&gt;之前我们曾发布过一期关于如何利用 DigitalPlat 注册永久免费域名的内容。然而，很可惜，在那个内容上线后不久，us.kg 域名的注册系统就出现了故障，相关的注册服务被迫暂停了一段时间。&lt;/p&gt;
 &lt;p&gt;现在，好消息终于来了！经过这段时间的系统升级和维护，DigitalPlat 现已重新开放注册。更令人惊喜的是，本次升级不仅让注册流程变得更加简单便捷，还额外增加了一个免费域名额度的福利。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;参考：
-&lt;a href="https://docs.gitea.com/zh-cn/category/installation"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://docs.gitea.com/zh-cn/category/installation" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://docs.gitea.com/zh-cn/category/installation" data-preview-enabled="true" &gt;
  官方文档
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Gitea 支持多种安装方法，这里只介绍 docker 的安装方法&lt;/p&gt;
-&lt;h1 id="方法一使用docker命令行安装推荐"&gt;方法一：使用Docker命令行安装（推荐）&lt;/h1&gt;
-&lt;h2 id="1-创建数据目录"&gt;1. 创建数据目录&lt;/h2&gt;
 
 
 
 
 
 
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
 
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
 
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
 
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 创建必要的目录
-sudo mkdir -p /opt/gitea/data
-sudo mkdir -p /opt/gitea/config
-sudo mkdir -p /opt/gitea/logs
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
 
-# 设置权限（Gitea默认使用uid=1000, gid=1000的用户）
-sudo chown -R 1000:1000 /opt/gitea&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
 
-&lt;h3 id="2-运行gitea容器"&gt;2. 运行Gitea容器&lt;/h3&gt;
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
 
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
 
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
 
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
 
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
 
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
 
+ .preview-link:hover {
+ text-decoration: underline;
+ }
 
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
 
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
 
+ .hidden {
+ display: none !important;
+ }
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;docker run -d \
- --name=gitea \
- --privileged=true \
- --restart=unless-stopped \
- -p 3000:3000 \
- -p 2222:22 \
- -v /opt/gitea/data:/data \
- -v /opt/gitea/config:/etc/gitea \
- -v /etc/timezone:/etc/timezone:ro \
- -v /etc/localtime:/etc/localtime:ro \
- -e USER_UID=1000 \
- -e USER_GID=1000 \
- gitea/gitea:latest&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
 
-&lt;h2 id="3-验证安装"&gt;3. 验证安装&lt;/h2&gt;
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
 
+ .preview-header {
+ border-color: #374151;
+ }
 
+ .preview-title {
+ color: #f9fafb;
+ }
 
+ .preview-description {
+ color: #d1d5db;
+ }
 
+ .preview-close {
+ color: #9ca3af;
+ }
 
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
 
+ .preview-footer {
+ border-color: #374151;
+ }
 
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
 
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
 
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 查看容器状态
-docker ps -a
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
 
-# 查看日志
-docker logs gitea&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
 
-&lt;p&gt;访问：&lt;code&gt;http://your-server-ip:3000&lt;/code&gt; 进行初始设置。&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;参考： 
-&lt;a href="https://jupyter-docker-stacks.readthedocs.io/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://jupyter-docker-stacks.readthedocs.io/" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://jupyter-docker-stacks.readthedocs.io/" data-preview-enabled="true" &gt;
  docker stack
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="conda-安装"&gt;Conda 安装&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考: 
-&lt;a href="https://lab.jupyter.org.cn"
+
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- jupyter lab
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
  
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="安装"&gt;安装&lt;/h1&gt;
+ this.cache.set(url, previewData);
+ return previewData;
+ }
 
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
 
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
 
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
 
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
 
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
 
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
 
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
 
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;conda install -c conda-forge JupyterLab&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id="启动"&gt;启动&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;jupyter lab&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试</title><link>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</link><pubDate>Sun, 06 Apr 2025 17:09:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</guid><description>&lt;h3 id="引言"&gt;引言&lt;/h3&gt;
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/p&gt;</description></item><item><title>如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试</title><link>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</link><pubDate>Sun, 06 Apr 2025 17:09:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</guid><description>&lt;h3 id="引言"&gt;引言&lt;/h3&gt;
 &lt;p&gt;在物联网（IoT）领域，ESP32因其强大的功能和灵活性而广受欢迎。无论是智能家居、工业自动化还是个人项目，ESP32都能提供可靠的解决方案。然而，要充分利用这一强大的微控制器，首先需要搭建一个稳定的开发环境。本文将详细介绍如何在Ubuntu系统下搭建ESP32开发环境，帮助新手和有一定经验的开发者顺利入门。&lt;/p&gt;</description></item><item><title>mysql</title><link>https://simons.qzz.io/post/2025/03/mysql_creates_user/</link><pubDate>Thu, 06 Mar 2025 08:42:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mysql_creates_user/</guid><description>&lt;h3 id="1-创建用户"&gt;1. &lt;strong&gt;创建用户&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;使用 &lt;code&gt;CREATE USER&lt;/code&gt; 语句创建新用户。语法如下：&lt;/p&gt;
 
@@ -508,24 +6008,415 @@ docker logs gitea&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
 文章作者：左耳朵耗子
 出处：
-&lt;a href="https://coolshell.cn/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://coolshell.cn/" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://coolshell.cn/" data-preview-enabled="true" &gt;
  酷 壳 – CoolShell
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
 
-非商用&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://coolshell.org/wp-content/uploads/2021/07/knowledge_sharing-300x169.jpeg" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;分享信息并不难，大多数人都能做到，就算是不善言谈性格内向的技术人员，通过博客或社交媒体，或是不正式的交流，他们都能或多或少的做到。但是如果你想要做一个有质量有高度的分享，这个就难了，所谓的有质量和有高度，我心里面的定义有两点：&lt;/p&gt;
-&lt;p&gt;1）分享内容的保鲜期是很长的，&lt;/p&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;
+非商用&lt;/p&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
 
 
 
@@ -727,35 +6618,415 @@ jobs:
 &lt;h1 id="二项目介绍"&gt;二、项目介绍&lt;/h1&gt;
 &lt;p&gt;下面介绍以下我开发的项目（开发完成、正在开发、终止开发）&lt;/p&gt;
 &lt;h2 id="simpleresume"&gt;
-&lt;a href="https://github.com/caoyang2002/SimpleResume"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://github.com/caoyang2002/SimpleResume" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/caoyang2002/SimpleResume" data-preview-enabled="true" &gt;
  SimpleResume
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/h2&gt;
-&lt;p&gt;&lt;code&gt;前端&lt;/code&gt; &lt;code&gt;Vue&lt;/code&gt; &lt;code&gt;TypeScript&lt;/code&gt; &lt;code&gt;实用工具&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="https://ohohresume.vercel.app/"
+
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- 简历生成
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
  
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;这个工具可以通过填写表单的方式生成简历，而无需记忆 Latex 或者 md 语法。提供少量模板。&lt;/p&gt;</description></item><item><title>React vs Vue: 框架之争的深层思考</title><link>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;前端&lt;/code&gt; &lt;code&gt;Vue&lt;/code&gt; &lt;code&gt;TypeScript&lt;/code&gt; &lt;code&gt;实用工具&lt;/code&gt;&lt;/p&gt;</description></item><item><title>React vs Vue: 框架之争的深层思考</title><link>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</link><pubDate>Fri, 24 Jan 2025 13:57:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/react_vue_framework_debate/</guid><description>&lt;h1 id="react-vs-vue深度技术分析与对比"&gt;React vs Vue：深度技术分析与对比&lt;/h1&gt;
 &lt;h2 id="一核心设计哲学差异"&gt;一、核心设计哲学差异&lt;/h2&gt;
 &lt;h3 id="11-编程范式"&gt;1.1 编程范式&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;React&lt;/strong&gt;：函数式编程优先&lt;/p&gt;

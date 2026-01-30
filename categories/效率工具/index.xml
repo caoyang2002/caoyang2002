@@ -11,87 +11,2695 @@
 &lt;p&gt;虽然可以用&lt;code&gt;%&lt;/code&gt;来查看匹配的另外一半符号在哪里，但是如果这一对符号之间的代码超过了一页，甚至好几页的话，那么也是比较难以理解的。&lt;/p&gt;
 &lt;p&gt;于是可以使用这个vim所提供的折叠功能来简化这些分析。&lt;/p&gt;</description></item><item><title>Vim 命令速查</title><link>https://simons.qzz.io/post/2026/01/vim_refrence/</link><pubDate>Mon, 26 Jan 2026 13:35:50 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_refrence/</guid><description>&lt;ul&gt;
 &lt;li&gt;
-&lt;a href="https://github.com/chloneda/vim-cheatsheet"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://github.com/chloneda/vim-cheatsheet" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/chloneda/vim-cheatsheet" data-preview-enabled="true" &gt;
  Vim-cheatsheet - GitHub
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="https://gitee.com/chloneda/vim-cheatsheet"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="https://gitee.com/chloneda/vim-cheatsheet" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://gitee.com/chloneda/vim-cheatsheet" data-preview-enabled="true" &gt;
  Vim-cheatsheet - Gitee
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/li&gt;
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
 &lt;li&gt;
-&lt;a href="https://www.vim.org/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://www.vim.org/" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://www.vim.org/" data-preview-enabled="true" &gt;
  Vim 官网
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="https://github.com/vim/vim"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="https://github.com/vim/vim" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://github.com/vim/vim" data-preview-enabled="true" &gt;
  Vim GitHub
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
- | 
-&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html"
+
+
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="http://vimcdoc.sourceforge.net/doc/help.html" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="http://vimcdoc.sourceforge.net/doc/help.html" data-preview-enabled="true" &gt;
  Vim 中文文档
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="./vimrc"
+
+
+
+
+
+
+&lt;style&gt;
  
- &gt;
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
+&lt;li&gt;
+
+&lt;a href="./vimrc" &gt;
  Vim 跨平台配置文件 vimrc
  
 &lt;/a&gt;
- | 
-&lt;a href="resources/vim-tools.md"
+
+
+
+
+&lt;style&gt;
  
- &gt;
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt; | 
+
+&lt;a href="resources/vim-tools.md" &gt;
  Vim 体系化工具集
  
 &lt;/a&gt;
-&lt;/li&gt;
+
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h1 id="一重复的威力"&gt;一、重复的威力&lt;/h1&gt;
 
@@ -109,26 +2717,417 @@
 N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;
-&lt;h1 id="二移动"&gt;二、移动&lt;/h1&gt;
-&lt;h2 id="1-光标移动"&gt;1. 光标移动&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;注意：普通（Normal）模式下，任意一个动作都可以重复。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>营销人必看网站</title><link>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站"&gt;营销人必备网站：6大类，41个网站&lt;/h1&gt;
+&lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;</description></item><item><title>营销人必看网站</title><link>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站"&gt;营销人必备网站：6大类，41个网站&lt;/h1&gt;
 &lt;p&gt;从去年到现在，很多小伙伴会问到宿言如何才能提升自己的营销能力。其实提升营销能力主要分为两部分，那就是“不停学习+各种实践”。&lt;/p&gt;
 &lt;p&gt;关于学习，我们可以通过各类网站及资讯平台来不断的获取知识，毕竟营销这个职业太瞬息万变了，我们需要不断的吸收新的知识，才能做到百战不殆。关于实践，我们需要用到各种
-&lt;a href="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
+
+&lt;a href="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity" target="_blank"
+ rel="noopener noreferrer" class="external-link" data-preview-url="https://zhida.zhihu.com/search?content_id=174338685&amp;amp;content_type=Article&amp;amp;match_order=1&amp;amp;q=%e8%90%a5%e9%94%80%e4%ba%ba&amp;amp;zhida_source=entity" data-preview-enabled="true" &gt;
  营销人
  
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ &lt;span class="external-icon"&gt;
+ 
+ 
+ 
+ &lt;svg
+ style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt; 
+ &lt;/span&gt;
  
 &lt;/a&gt;
-必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
+
+
+
+
+
+&lt;template id="preview-template"&gt;
+ &lt;div class="link-preview"&gt;
+ &lt;div class="preview-loading"&gt;加载预览中...&lt;/div&gt;
+ &lt;div class="preview-content hidden"&gt;
+ &lt;div class="preview-header"&gt;
+ &lt;img class="preview-favicon" src="" alt=""&gt;
+ &lt;div class="preview-title"&gt;&lt;/div&gt;
+ &lt;button class="preview-close"&gt;×&lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-description"&gt;&lt;/div&gt;
+ &lt;div class="preview-image"&gt;&lt;/div&gt;
+ &lt;div class="preview-footer"&gt;
+ &lt;a class="preview-link" href="" target="_blank"&gt;访问网站 →&lt;/a&gt;
+ &lt;/div&gt;
+ &lt;/div&gt;
+ &lt;div class="preview-error hidden"&gt;无法加载预览&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/template&gt;
+&lt;div id="preview-overlay" class="preview-overlay hidden"&gt;&lt;/div&gt;
+
+
+
+&lt;style&gt;
+ 
+ .link-preview {
+ position: absolute;
+ z-index: 9999;
+ width: 320px;
+ background: white;
+ border-radius: 12px;
+ box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+ border: 1px solid #e5e7eb;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+ opacity: 0;
+ transform: translateY(10px);
+ transition: opacity 0.2s, transform 0.2s;
+ pointer-events: none;
+ }
+
+ .link-preview.visible {
+ opacity: 1;
+ transform: translateY(0);
+ pointer-events: auto;
+ }
+
+ .preview-header {
+ display: flex;
+ align-items: center;
+ padding: 16px;
+ border-bottom: 1px solid #f3f4f6;
+ gap: 10px;
+ }
+
+ .preview-favicon {
+ width: 16px;
+ height: 16px;
+ }
+
+ .preview-title {
+ flex: 1;
+ font-weight: 600;
+ font-size: 14px;
+ color: #1f2937;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ }
+
+ .preview-close {
+ background: none;
+ border: none;
+ font-size: 20px;
+ cursor: pointer;
+ color: #9ca3af;
+ line-height: 1;
+ padding: 0;
+ width: 24px;
+ height: 24px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 4px;
+ }
+
+ .preview-close:hover {
+ background: #f3f4f6;
+ color: #374151;
+ }
+
+ .preview-description {
+ padding: 16px;
+ font-size: 14px;
+ line-height: 1.5;
+ color: #4b5563;
+ max-height: 120px;
+ overflow: hidden;
+ display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ }
+
+ .preview-image {
+ height: 180px;
+ overflow: hidden;
+ border-bottom: 1px solid #f3f4f6;
+ }
+
+ .preview-image img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+ }
+
+ .preview-footer {
+ padding: 12px 16px;
+ text-align: right;
+ border-top: 1px solid #f3f4f6;
+ }
+
+ .preview-link {
+ color: #3b82f6;
+ text-decoration: none;
+ font-size: 13px;
+ font-weight: 500;
+ }
+
+ .preview-link:hover {
+ text-decoration: underline;
+ }
+
+ .preview-loading {
+ padding: 40px 20px;
+ text-align: center;
+ color: #6b7280;
+ font-size: 14px;
+ }
+
+ .preview-error {
+ padding: 40px 20px;
+ text-align: center;
+ color: #ef4444;
+ font-size: 14px;
+ }
+
+ .hidden {
+ display: none !important;
+ }
+
+ .preview-overlay {
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ z-index: 9998;
+ background: rgba(0, 0, 0, 0.1);
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .link-preview {
+ background: #1f2937;
+ border-color: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-header {
+ border-color: #374151;
+ }
+
+ .preview-title {
+ color: #f9fafb;
+ }
+
+ .preview-description {
+ color: #d1d5db;
+ }
+
+ .preview-close {
+ color: #9ca3af;
+ }
+
+ .preview-close:hover {
+ background: #374151;
+ color: #f9fafb;
+ }
+
+ .preview-footer {
+ border-color: #374151;
+ }
+
+ .preview-link {
+ color: #60a5fa;
+ }
+ }
+&lt;/style&gt;
+
+&lt;script&gt;
+ class LinkPreview {
+ constructor() {
+ this.preview = null;
+ this.timer = null;
+ this.currentUrl = null;
+ this.cache = new Map();
+ this.init();
+ }
+
+ init() {
+ 
+ const template = document.getElementById('preview-template');
+ if (!template) return;
+
+ this.preview = template.content.cloneNode(true).firstElementChild;
+ document.body.appendChild(this.preview);
+
+ 
+ document.addEventListener('mouseover', this.handleMouseOver.bind(this));
+ document.addEventListener('mouseout', this.handleMouseOut.bind(this));
+
+ 
+ this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
+ this.hidePreview();
+ });
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) {
+ overlay.addEventListener('click', () =&gt; this.hidePreview());
+ }
+ }
+
+ handleMouseOver(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ this.showPreview(link);
+ }, 500); 
+ }
+
+ handleMouseOut(e) {
+ const link = e.target.closest('a[data-preview-enabled="true"]');
+ if (!link) return;
+
+ clearTimeout(this.timer);
+ this.timer = setTimeout(() =&gt; {
+ if (!this.isMouseOverPreview()) {
+ this.hidePreview();
+ }
+ }, 300);
+ }
+
+ isMouseOverPreview() {
+ return this.preview &amp;&amp; this.preview.matches(':hover');
+ }
+
+ async showPreview(link) {
+ const url = link.getAttribute('data-preview-url');
+ if (!url || url === this.currentUrl) return;
+
+ this.currentUrl = url;
+
+ 
+ const rect = link.getBoundingClientRect();
+ this.positionPreview(rect);
+
+ 
+ this.showLoading();
+
+ try {
+ const data = await this.fetchPreviewData(url);
+ this.renderPreview(data);
+ } catch (error) {
+ this.showError();
+ }
+ }
+
+ positionPreview(linkRect) {
+ const viewport = {
+ width: window.innerWidth,
+ height: window.innerHeight
+ };
+
+ let top = linkRect.bottom + 10;
+ let left = linkRect.left;
+
+ 
+ if (top + 350 &gt; viewport.height) {
+ top = linkRect.top - 350 - 10;
+ }
+ if (left + 320 &gt; viewport.width) {
+ left = viewport.width - 320 - 10;
+ }
+ if (left &lt; 10) left = 10;
+
+ this.preview.style.top = `${top + window.scrollY}px`;
+ this.preview.style.left = `${left}px`;
+ this.preview.classList.add('visible');
+
+ 
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.remove('hidden');
+ }
+
+ async fetchPreviewData(url) {
+ 
+ if (this.cache.has(url)) {
+ return this.cache.get(url);
+ }
+
+ 
+ 
+ const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(url)}`;
+
+ const response = await fetch(proxyUrl);
+ const data = await response.json();
+
+ 
+ const parser = new DOMParser();
+ const doc = parser.parseFromString(data.contents, 'text/html');
+
+ const previewData = {
+ title: doc.querySelector('title')?.textContent || '无标题',
+ description: doc.querySelector('meta[name="description"]')?.getAttribute('content') || '',
+ image: doc.querySelector('meta[property="og:image"]')?.getAttribute('content') || '',
+ favicon: `https://www.google.com/s2/favicons?domain=${new URL(url).hostname}&amp;sz=32`,
+ url: url
+ };
+
+ 
+ this.cache.set(url, previewData);
+ return previewData;
+ }
+
+ renderPreview(data) {
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+
+ const content = this.preview.querySelector('.preview-content');
+ content.classList.remove('hidden');
+
+ 
+ this.preview.querySelector('.preview-favicon').src = data.favicon;
+ this.preview.querySelector('.preview-title').textContent = data.title;
+ this.preview.querySelector('.preview-description').textContent = data.description;
+ this.preview.querySelector('.preview-link').href = data.url;
+
+ 
+ const imageContainer = this.preview.querySelector('.preview-image');
+ if (data.image) {
+ const img = document.createElement('img');
+ img.src = data.image;
+ img.alt = data.title;
+ imageContainer.innerHTML = '';
+ imageContainer.appendChild(img);
+ } else {
+ imageContainer.innerHTML = '&lt;div class="no-image"&gt;暂无预览图&lt;/div&gt;';
+ }
+ }
+
+ showLoading() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.remove('hidden');
+ }
+
+ showError() {
+ this.preview.querySelector('.preview-content').classList.add('hidden');
+ this.preview.querySelector('.preview-loading').classList.add('hidden');
+ this.preview.querySelector('.preview-error').classList.remove('hidden');
+ }
+
+ hidePreview() {
+ if (this.preview) {
+ this.preview.classList.remove('visible');
+ this.currentUrl = null;
+
+ const overlay = document.getElementById('preview-overlay');
+ if (overlay) overlay.classList.add('hidden');
+ }
+ }
+ }
+
+ 
+ document.addEventListener('DOMContentLoaded', () =&gt; {
+ new LinkPreview();
+ });
+&lt;/script&gt;必备的营销工具来提升自己的工作效率，这样才能最大程度的节省自己的脑力，把自己的脑子用在刀刃上。&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
 &lt;p&gt;Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。&lt;/p&gt;
 &lt;h2 id="1-模板继承的黑魔法"&gt;1. 模板继承的黑魔法&lt;/h2&gt;
 

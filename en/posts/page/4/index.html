@@ -7,49 +7,192 @@
 </a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href>Resources
 </a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href>Booklist
 </a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href>Hotlist
-</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/en/search/>Search</a><div class=language-selector><div class="inline-block text-left dropdown"><div><p class=selected-language>English</p></div><div style=background-color:red;z-index:1000><ul class=dropdown-menu id=dropdownMenu><li><a href=/posts/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Chinese</a></li><li><a href=/es/posts/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Español</a></li></ul></div></div><script>const dropdownButton=document.getElementById("dropdownButton"),dropdownMenu=document.getElementById("dropdownMenu"),dropdownIcon=document.querySelector(".dropdown-icon");dropdownButton.addEventListener("click",function(){dropdownMenu.classList.toggle("show"),dropdownButton.parentElement.classList.toggle("open")}),dropdownMenu.querySelectorAll("li").forEach(e=>{e.addEventListener("click",function(){dropdownButton.textContent=e.textContent+" ",dropdownButton.appendChild(dropdownIcon),dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open");const t=e.getAttribute("data-value");console.log("Selected Language:",t)})}),document.addEventListener("click",function(e){!dropdownButton.contains(e.target)&&!dropdownMenu.contains(e.target)&&(dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open"))})</script><style>.dropdown{display:inline-block;margin:0}.dropdown-menu{background-color:#fff;border:1px solid #ddd;border-radius:8px;padding:0;margin:0;display:none}.dropdown-menu.show{display:block}.dropdown-menu li{padding:.2rem;cursor:pointer;color:#333}.dropdown-menu>li:hover{background-color:initial}.selected-language:hover{color:#0042da}</style></div></nav></div></header><style>.language-selector{position:relative;display:inline-block;z-index:10}.language-selector .dropdown-menu{display:none;position:absolute;top:100%;right:0;background-color:#fff;border:1px solid #ddd;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,.1);z-index:50}.language-selector:hover .dropdown-menu{display:block}.header-menu:hover{color:#0042da}header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}.header-menu:hover{color:#0042da}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left max-w-full lg:max-w-4xl xl:max-w-6xl"><div class=default-list><h1 class="text-3xl font-bold mb-2">Posts</h1><div class=space-y-6><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">x86 教程</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">作者： 阮一峰 ↗ 日期： 2018年1月21日 ↗ 学习编程其实就是学高级语言，即那些为人类设计的计算机语言。
-但是，计算机不理解高级语言，必须通过编译器转成二进制代码，才能运行。学会高级语言，并不等于理解计算机实际的运行步骤。
-计算机真正能够理解的是低级语言，它专门用来控制硬件。汇编语言就是低级 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-05-02 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+</a><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/en/search/>Search</a><div class=language-selector><div class="inline-block text-left dropdown"><div><p class=selected-language>English</p></div><div style=background-color:red;z-index:1000><ul class=dropdown-menu id=dropdownMenu><li><a href=/posts/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Chinese</a></li><li><a href=/es/posts/ class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900" role=menuitem>Español</a></li></ul></div></div><script>const dropdownButton=document.getElementById("dropdownButton"),dropdownMenu=document.getElementById("dropdownMenu"),dropdownIcon=document.querySelector(".dropdown-icon");dropdownButton.addEventListener("click",function(){dropdownMenu.classList.toggle("show"),dropdownButton.parentElement.classList.toggle("open")}),dropdownMenu.querySelectorAll("li").forEach(e=>{e.addEventListener("click",function(){dropdownButton.textContent=e.textContent+" ",dropdownButton.appendChild(dropdownIcon),dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open");const t=e.getAttribute("data-value");console.log("Selected Language:",t)})}),document.addEventListener("click",function(e){!dropdownButton.contains(e.target)&&!dropdownMenu.contains(e.target)&&(dropdownMenu.classList.remove("show"),dropdownButton.parentElement.classList.remove("open"))})</script><style>.dropdown{display:inline-block;margin:0}.dropdown-menu{background-color:#fff;border:1px solid #ddd;border-radius:8px;padding:0;margin:0;display:none}.dropdown-menu.show{display:block}.dropdown-menu li{padding:.2rem;cursor:pointer;color:#333}.dropdown-menu>li:hover{background-color:initial}.selected-language:hover{color:#0042da}</style></div></nav></div></header><style>.language-selector{position:relative;display:inline-block;z-index:10}.language-selector .dropdown-menu{display:none;position:absolute;top:100%;right:0;background-color:#fff;border:1px solid #ddd;border-radius:4px;box-shadow:0 4px 8px rgba(0,0,0,.1);z-index:50}.language-selector:hover .dropdown-menu{display:block}.header-menu:hover{color:#0042da}header{position:fixed;top:0;left:0;right:0;z-index:50;width:100vw;text-align:center;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);background:rgba(255,255,255,.5);box-shadow:0 4px 30px rgba(0,0,0,.1)}.header-menu:hover{color:#0042da}</style><div class="relative flex justify-start max-w-[90vw] px-8"><main class="min-h-[calc(100vh-5rem)] py-12 prose prose-neutral flex-1 dark:prose-invert text-left max-w-full lg:max-w-4xl xl:max-w-6xl"><div class=default-list><h1 class="text-3xl font-bold mb-2">Posts</h1><div class=space-y-6><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">x86 教程</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">作者： 阮一峰 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-05-02 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 May 2, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>编程, x86</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-9 min</span></div></div></div><a href=/en/post/2024/05/x86/ class="absolute inset-0 z-10" aria-label="阅读 x86 教程"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">SQL 教程</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加 数据库相关的操作 查询数据库 SHOW DATABASES
+9 min</span></div></div></div><a href=/en/post/2024/05/x86/ class="absolute inset-0 z-10" aria-label="阅读 x86 教程"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">SQL 教程</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">在idea中分号并不是必须加的, 在执行多条语句才必须加, 在控制台使用的时候必须加 数据库相关的操作 查询数据库 SHOW DATABASES
 创建数据库 CREATE DATABASE 数据库名 CREATE DATABASE mydatabase
 查看数据库信息 SHOW CREATE …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>编程, sql</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-21 min</span></div></div></div><a href=/en/post/2024/04/sql/ class="absolute inset-0 z-10" aria-label="阅读 SQL 教程"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">什么是 SimHash</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">一、什么是SimHash SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
+21 min</span></div></div></div><a href=/en/post/2024/04/sql/ class="absolute inset-0 z-10" aria-label="阅读 SQL 教程"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">什么是 SimHash</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">一、什么是SimHash SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。
 对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>编程, 算法</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-10 min</span></div></div></div><a href=/en/post/2024/04/simhash/ class="absolute inset-0 z-10" aria-label="阅读 什么是 SimHash"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">创建一个远程编译环境</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">我使用的是 Mac，所以以下都是 Mac 的说明
+10 min</span></div></div></div><a href=/en/post/2024/04/simhash/ class="absolute inset-0 z-10" aria-label="阅读 什么是 SimHash"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">创建一个远程编译环境</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">我使用的是 Mac，所以以下都是 Mac 的说明
 一、前端（ts、react） 前端配置：TypeScript、React 依赖项：axios、codemirror、react-codemirror2
 1. 初始化模板 任意选一个就行
 1.1 交互式 npm init vite 可能需要先安装 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>move</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-8 min</span></div></div></div><a href=/en/post/2024/04/a_code_env/ class="absolute inset-0 z-10" aria-label="阅读 创建一个远程编译环境"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">报税记账</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">以下是我回忆的, 所以没有截图教程
+8 min</span></div></div></div><a href=/en/post/2024/04/a_code_env/ class="absolute inset-0 z-10" aria-label="阅读 创建一个远程编译环境"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">报税记账</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">以下是我回忆的, 所以没有截图教程
 报税网址 四川省电子税务局 这个主要是企业报税用的
-https://etax.sichuan.chinatax.gov.cn/loginb/ ↗ 自然人电子税务局 这个主要是给法人报税用的
-https://etax.chinatax.gov.cn ↗ 关于注销 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+https://etax.sichuan.chinatax.gov.cn/loginb/ 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>办公</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-1 min</span></div></div></div><a href=/en/post/2024/04/compent/ class="absolute inset-0 z-10" aria-label="阅读 报税记账"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">设计资料：样机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">样机 https://bannermockup.com/ ↗ https://mockupplanet.com/ ↗ https://www.anthonyboyd.graphics/ ↗ https://www.pixeden.com/ ↗ https://www.ls.graphics ↗ 条 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+1 min</span></div></div></div><a href=/en/post/2024/04/compent/ class="absolute inset-0 z-10" aria-label="阅读 报税记账"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">设计资料：样机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">样机 https://bannermockup.com/ 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>设计</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-14 min</span></div></div></div><a href=/en/post/2024/04/design/ class="absolute inset-0 z-10" aria-label="阅读 设计资料：样机"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">JWT 解析</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">原文一 ↗ 原文二 ↗ 视频 ↗ 一、什么是 JWT JSON Web Token (JWT)是一个开放标准(RFC 7519)，它定义了一种紧凑的、自包含的方式，用于作为JSON对象在各方之间安全地传输信息。该信息可以被验证和信任，因为它是数字签名的。
-二、设计目标 不需要服务器端存储状态，安全 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-12 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+14 min</span></div></div></div><a href=/en/post/2024/04/design/ class="absolute inset-0 z-10" aria-label="阅读 设计资料：样机"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">JWT 解析</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">原文一 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-04-12 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Apr 12, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>编程</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-8 min</span></div></div></div><a href=/en/post/2024/04/jwt/ class="absolute inset-0 z-10" aria-label="阅读 JWT 解析"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">搭建 NPS</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">github ↗ 官方文档 ↗ 其实所有的配置都不推荐修改，但是如果改了一个配置一定要理解为什么改，以及会影响到什么，请务必打开服务器的端口（防火墙）。
-以下不一定能用，因为我搞了许久才发现是我没打开服务器防火墙，而导致无法访问。 简单说：服务器的配置建议改一下，主要是你服务器可能把8080端口占 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+8 min</span></div></div></div><a href=/en/post/2024/04/jwt/ class="absolute inset-0 z-10" aria-label="阅读 JWT 解析"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">搭建 NPS</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">github 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-29 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Mar 29, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>运维</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-5 min</span></div></div></div><a href=/en/post/2024/03/docker_pns/ class="absolute inset-0 z-10" aria-label="阅读 搭建 NPS"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">小米 4a 路由器刷机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">查看原文 ↗ 一、获取原厂固件的 ssh 登录权限 有些厂商的路由器会提供原厂固件的 ssh 登录权限，有些则需要通过原厂固件漏洞等方式来获取路由器后台登录权限，比如：小米路由器就需要先通过 OpenWRTInvasion 破解路由登录权限。
-小米路由器4A千兆版是利用 2.28.62 版本固件的 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-24 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+5 min</span></div></div></div><a href=/en/post/2024/03/docker_pns/ class="absolute inset-0 z-10" aria-label="阅读 搭建 NPS"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">小米 4a 路由器刷机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">查看原文 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-24 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Mar 24, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>硬件</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
-4 min</span></div></div></div><a href=/en/post/2024/03/xiaomi_4a/ class="absolute inset-0 z-10" aria-label="阅读 小米 4a 路由器刷机"></a></article><article class="article-compact relative group"><div class="flex flex-col md:flex-row md:items-start gap-4 p-4 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-colors"><div class="flex-1 min-w-0"><div class="flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1">小米 4c 路由器刷机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">原文 ↗ 介绍一下配置：
-wifi 全程不用连网 win系统电脑刷机，需要下载一个刷机包 windows 有 python 程序，查看方法：在命令提示符窗口输入 python --version，会输出版本号 Breed也被称为“不死鸟”，顾名思义刷入Breed后即使后续为路由器刷固件失败，也不至 …</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-23 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
+4 min</span></div></div></div><a href=/en/post/2024/03/xiaomi_4a/ class="absolute inset-0 z-10" aria-label="阅读 小米 4a 路由器刷机"></a></article><article class="article-compact relative group"><div class="border-2 border-gray-200 dark:border-gray-700
+shadow-sm
+backdrop-blur-[1px]
+bg-white/1 dark:bg-gray-900/60
+m-0
+flex flex-col md:flex-row md:items-start
+gap-4 p-4
+rounded-lg
+hover:shadow-lg
+hover:border-blue-300 dark:hover:border-blue-600
+hover:bg-white/80 dark:hover:bg-gray-900/80
+hover:scale-[1.01]
+transition-all duration-300
+relative
+overflow-hidden
+group"><div class="absolute inset-0 bg-gradient-to-br from-blue-50/30 to-transparent dark:from-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div><div class="flex-1 min-w-0"><div class="mt-0 flex items-start justify-between gap-2 mb-2"><h3 class="text-lg font-semibold group-hover:text-blue-500 transition-colors line-clamp-2 flex-1 m-0">小米 4c 路由器刷机</h3></div><p class="text-sm text-gray-600 dark:text-gray-400 mb-3 line-clamp-2">原文 加载预览中... × 访问网站 → 无法加载预览</p><div class="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-gray-500 dark:text-gray-400"><time datetime=2024-03-23 class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M6 2A1 1 0 005 3v1H4A2 2 0 002 6v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3A1 1 0 006 2zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/></svg>
 Mar 23, 2024</time><div class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414.0l-7-7A.997.997.0 012 10V5a3 3 0 013-3h5c.256.0.512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
 <span class=line-clamp-1>硬件</span></div><span class="flex items-center"><svg class="w-3.5 h-3.5 mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12A1 1 0 109 6v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/></svg>
 3 min</span></div></div></div><a href=/en/post/2024/03/xiaomi_4c_router/ class="absolute inset-0 z-10" aria-label="阅读 小米 4c 路由器刷机"></a></article></div><nav class="pagination-nav not-prose"><div class=pagination-container><a class="pagination-btn prev" href=/en/posts/page/3/>← 上一页</a><div class=pagination-numbers><a href=/en/posts/ class=page-num>1</a>
