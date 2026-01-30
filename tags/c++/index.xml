@@ -23,7 +23,8 @@
  &lt;pre&gt;
  &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -68,7 +69,8 @@ namespace fs = std::filesystem;
  std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
  _getch();
  return 0;
-};&lt;/code&gt;&lt;/pre&gt;
+};&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

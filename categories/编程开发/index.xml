@@ -58,7 +58,8 @@ type UserService interface {
 package service
 type UserService interface {
  Create(ctx context.Context, user *User) error
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -86,7 +87,8 @@ handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 
 // ❌ 错误：不应该出现反向依赖
 service -&amp;gt; handler
-repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+repository -&amp;gt; service&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -133,7 +135,8 @@ type User struct {
  ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
  Username string `json:&amp;#34;username&amp;#34;`
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -178,7 +181,8 @@ func (h *UserHandler) Create(c *gin.Context) {
 // ❌ 错误：直接暴露底层错误
 if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -241,7 +245,8 @@ func NewUserHandler(service UserService) *UserHandler {
 }
 
 // ❌ 错误：全局变量或直接初始化
-var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+var userService = &amp;amp;UserService{}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -281,7 +286,8 @@ type UserService interface {
  DeleteUser(id uint64) error
  ListUsers() ([]*User, error)
  SearchUsers(query string) ([]*User, error)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -315,7 +321,8 @@ type Config struct {
 
 // ❌ 错误：分散的配置或硬编码
 var serverPort = 8080
-var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -347,7 +354,8 @@ func (h *Handler) Create(c *gin.Context) {
 // ❌ 错误：不传递上下文或使用不一致的上下文
 func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -380,7 +388,8 @@ func TestUserHandler_Create(t *testing.T) {
 // ❌ 错误：测试代码与源码混合或测试覆盖不全
 func TestAll(t *testing.T) {
  // 混合测试多个功能
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

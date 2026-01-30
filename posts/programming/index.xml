@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程专题 on 短松江月</title><link>https://simons.qzz.io/posts/programming/</link><description>Recent content in 编程专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程专题 on 短松江月</title><link>https://simons.qzz.io/posts/programming/</link><description>Recent content in 编程专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 10:36:32 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/programming/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中文文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hugo主题开发日记
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 深入理解Hugo - 主题实例
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
 &lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
 
 
@@ -286,7 +400,8 @@ vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
 // 没有闭包时很难处理
 struct Context { value: i32 }
 let ctx = Context { value: 42 };
-let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -325,7 +440,8 @@ let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
 let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
  .into_iter()
  .filter(|x| x % 2 == 0)
- .collect();&lt;/code&gt;&lt;/pre&gt;
+ .collect();&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -360,7 +476,8 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
-println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -394,7 +511,8 @@ for order in orders {
  if order.amount &amp;gt; 100 {
  total &amp;#43;= order.amount * 0.9;
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -434,7 +552,8 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
  y
  }
 }
-// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;
+// 编译错误：missing lifetime specifier&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -480,7 +599,8 @@ struct Person&amp;lt;&amp;#39;a&amp;gt; {
 // 问题3：函数返回引用时的所有权问题
 fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需要明确它的有效期
  data
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -522,7 +642,8 @@ struct Person {
  name: Rc&amp;lt;String&amp;gt;
 }
 // 优点：灵活性高
-// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;
+// 缺点：运行时开销&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -570,7 +691,8 @@ impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {
 // 4. 多个生命周期参数
 fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {
  x
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -614,7 +736,8 @@ const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;
 // 不好的做法
 fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {
  data
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -666,7 +789,8 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  println!(&amp;#34;Processing: {:?}&amp;#34;, v);
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -697,7 +821,8 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  &lt;pre&gt;
  &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
 let s2 = s1; // 所有权从s1转移到s2
-// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -722,7 +847,8 @@ let s2 = s1; // 所有权从s1转移到s2
  &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -762,7 +888,8 @@ impl Closure {
  fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
  x * self.multiplier
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -787,7 +914,8 @@ impl Closure {
  &lt;pre&gt;
  &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -818,7 +946,8 @@ impl Closure {
  &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
  Some(T), // 有值
  None, // 没有值
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -851,7 +980,8 @@ impl Closure {
 match find_user(1) {
  Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
  None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -884,7 +1014,8 @@ let value2 = x.unwrap_or(0); // None 时返回0
 let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
 
 // 方法4：and_then - 链式操作
-let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -909,7 +1040,8 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
  &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
  Ok(T), // 成功，包含值 T
  Err(E), // 错误，包含错误 E
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -982,7 +1114,8 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1042,7 +1175,8 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1089,7 +1223,8 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1125,7 +1260,8 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1165,7 +1301,8 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1426,7 +1563,8 @@ cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
  &lt;pre&gt;
  &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1437,121 +1575,7 @@ buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;
 &lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;
 &lt;h1 id="开始"&gt;开始&lt;/h1&gt;
-&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
-&lt;p&gt;中文文档 
-&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://hugo.opendocs.io/getting-started/quick-start/
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;博客：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://juejin.cn/post/7151253414427492382"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://juejin.cn/post/7151253414427492382
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
-&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
-&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
-hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;得到输出信息：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
-├── archetypes（hugo主题文章模板）
-├── layouts（hugo主题布局文件）
-├── static（hugo主题的静态文件）
-├── LICENSE（hugo主题的许可证信息）
-└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;接口定义规则：&lt;/li&gt;
 &lt;/ol&gt;
@@ -1578,7 +1602,8 @@ type UserService interface {
 package service
 type UserService interface {
  Create(ctx context.Context, user *User) error
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1606,7 +1631,8 @@ handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 
 // ❌ 错误：不应该出现反向依赖
 service -&amp;gt; handler
-repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+repository -&amp;gt; service&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1653,7 +1679,8 @@ type User struct {
  ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
  Username string `json:&amp;#34;username&amp;#34;`
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1698,7 +1725,8 @@ func (h *UserHandler) Create(c *gin.Context) {
 // ❌ 错误：直接暴露底层错误
 if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1761,7 +1789,8 @@ func NewUserHandler(service UserService) *UserHandler {
 }
 
 // ❌ 错误：全局变量或直接初始化
-var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+var userService = &amp;amp;UserService{}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1801,7 +1830,8 @@ type UserService interface {
  DeleteUser(id uint64) error
  ListUsers() ([]*User, error)
  SearchUsers(query string) ([]*User, error)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1835,7 +1865,8 @@ type Config struct {
 
 // ❌ 错误：分散的配置或硬编码
 var serverPort = 8080
-var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1867,7 +1898,8 @@ func (h *Handler) Create(c *gin.Context) {
 // ❌ 错误：不传递上下文或使用不一致的上下文
 func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1900,7 +1932,8 @@ func TestUserHandler_Create(t *testing.T) {
 // ❌ 错误：测试代码与源码混合或测试覆盖不全
 func TestAll(t *testing.T) {
  // 混合测试多个功能
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -2358,7 +2391,8 @@ namespace fs = std::filesystem;
  std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
  _getch();
  return 0;
-};&lt;/code&gt;&lt;/pre&gt;
+};&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

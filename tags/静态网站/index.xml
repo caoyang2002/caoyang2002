@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>静态网站 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link><description>Recent content in 静态网站 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
-&lt;p&gt;中文文档 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>静态网站 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/</link><description>Recent content in 静态网站 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 10:36:32 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%9D%99%E6%80%81%E7%BD%91%E7%AB%99/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;
 &lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
  
  
@@ -7,7 +7,7 @@
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- https://hugo.opendocs.io/getting-started/quick-start/
+ 中文文档
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
@@ -23,7 +23,7 @@
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
+ Hugo主题开发日记
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  
@@ -37,7 +37,7 @@
  rel="noopener noreferrer"
  class="external-link"
  &gt;
- https://juejin.cn/post/7151253414427492382
+ 深入理解Hugo - 主题实例
  
  &lt;span class="external-icon"&gt;↗&lt;/span&gt;
  

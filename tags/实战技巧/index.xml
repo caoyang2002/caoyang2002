@@ -44,7 +44,8 @@ git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
  &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -84,7 +85,8 @@ impl Closure {
  fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
  x * self.multiplier
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

@@ -41,9 +41,10 @@ Rust
     
     
         
-                fn main() {
+            fn main() {
   println!("Hello from Rust!");
 }
+        
     
     
 
@@ -65,7 +66,7 @@ Rust
 
 
 
-Go'><meta name=author content="simons"><script src=/js/code-copy.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.756cb23838211f06f4b675ad7d4a8680e464a302361a4961ecfedb1e0f66f60c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.0"><meta itemprop=name content="Hugo-Focus 主题介绍"><meta itemprop=description content='一、简述 这是一个专注于编程的 Hugo 博客主题。
+Go'><meta name=author content="simons"><script src=/js/code-handler.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.66b2dab2c6bacce8963b2d2af9ecbb257a82f2249ddd6035c697d7658f3c988c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.0"><meta itemprop=name content="Hugo-Focus 主题介绍"><meta itemprop=description content='一、简述 这是一个专注于编程的 Hugo 博客主题。
 参考了我此前为 Typora 开发的 Thompsgo 主题 ↗ 二、特性 1. 运行代码 支持的语言：
 python (wasm) lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器) cpp (playground) rust (playground) go (playground) ts (TypeScript 的 JavaScript 实现) js (原生) 短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）
 swift ruby 2. 代码运行示例 Rust
@@ -95,29 +96,35 @@ fn main() { println!("Hello from Rust!"); } 运行 Go'><link rel=canonical href=
 分钟</span></div></div><section><h1 id=一简述>一、简述</h1><p>这是一个专注于编程的 Hugo 博客主题。</p><p>参考了我此前为 <code>Typora</code> 开发的
 <a href=https://github.com/caoyang2002/Typora-Themes-Thompsgo target=_blank rel="noopener noreferrer" class=external-link><code>Thompsgo</code> 主题
 <span class=external-icon>↗</span></a></p><h1 id=二特性>二、特性</h1><h2 id=1-运行代码>1. 运行代码</h2><p><strong>支持的语言：</strong></p><ul><li><code>python (wasm)</code></li><li><code>lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)</code></li><li><code>cpp (playground)</code></li><li><code>rust (playground)</code></li><li><code>go (playground)</code></li><li><code>ts (TypeScript 的 JavaScript 实现)</code></li><li><code>js (原生)</code></li></ul><p><strong>短时间不会支持的语言（主要是没有找到 wasm 或 playground 支持）</strong></p><ul><li><code>swift</code></li><li><code>ruby</code></li></ul><h2 id=2-代码运行示例>2. 代码运行示例</h2><blockquote><p><strong>Rust</strong></p><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>fn main() {
+            <code class=language-rust>fn main() {
   println!(&#34;Hello from Rust!&#34;);
-}</code></pre></div><div class=controls><button class=run-button>
+}</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>Go</strong></p><div class=code-playground data-language=go><div><pre>
-                <code class=language-go>package
+            <code class=language-go>package
 import &#34;fmt&#34;
 func main(){
   fmt.print(&#34;hello&#34;)
-}</code></pre></div><div class=controls><button class=run-button>
+}</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>Lisp</strong></p><div class=code-playground data-language=lisp><div><pre>
-                <code class=language-lisp>(progn
+            <code class=language-lisp>(progn
 (format t &#34;Hello from Lisp!&#34;)
-&#34;Hello from Lisp!&#34;)</code></pre></div><div class=controls><button class=run-button>
+&#34;Hello from Lisp!&#34;)</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>Python</strong></p><div class=code-playground data-language=python><div><pre>
-                <code class=language-python>print(&#34;test&#34;)</code></pre></div><div class=controls><button class=run-button>
+            <code class=language-python>print(&#34;test&#34;)</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>TypeScript</strong></p><div class=code-playground data-language=ts><div><pre>
-                <code class=language-ts>console.log(&#34;hello&#34;)</code></pre></div><div class=controls><button class=run-button>
+            <code class=language-ts>console.log(&#34;hello&#34;)</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>C++</strong></p><div class=code-playground data-language=cpp><div><pre>
-                <code class=language-cpp>#include &lt;iostream&gt;
+            <code class=language-cpp>#include &lt;iostream&gt;
 int main(){
     std::cout &lt;&lt; &#34;Hello World!&#34;;
     return 0;
-}</code></pre></div><div class=controls><button class=run-button>
+}</code>
+        </pre></div><div class=controls><button class=run-button>
 <span style=display:flex;align-items:center;gap:4px>运行<svg t="1737473351499" class="icon" viewBox="0 0 1024 1024" p-id="11262" width="16" height="16"><path d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96zm0 768c-194.08.0-352-157.92-352-352S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z" p-id="11263"/><path d="M466.816 324.96A32 32 0 00416 350.848v339.776a32 32 0 0050.816 25.856l233.6-169.888a32 32 0 000-51.776l-233.6-169.856z" p-id="11264"/></svg></span></button></div><div class=output style=display:none><pre class=output-content></pre></div></div></blockquote><blockquote><p><strong>Swift</strong></p><div><pre><code class=language-swift data-lang=swift>print(&#34;Hello, world!&#34;)</code></pre></div></blockquote><blockquote><p><strong>Ruby</strong></p><div><pre><code class=language-ruby data-lang=ruby>puts &#34;Hello World&#34;</code></pre></div></blockquote><blockquote><p><strong>Java</strong></p><div><pre><code class=language-java data-lang=java>class HelloWorld {
   public static void main(String[] args) {
     System.out.println(&#34;Hello, World!&#34;);

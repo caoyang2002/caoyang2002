@@ -1,4 +1,118 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>开发 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/</link><description>Recent content in 开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 10:36:32 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中文文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hugo主题开发日记
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 深入理解Hugo - 主题实例
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
 &lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
 &lt;a href="https://github.com/jsdesigndev/plugin-samples/tree/main/react%20%e6%8f%92%e4%bb%b6%e7%a4%ba%e4%be%8b"
  
@@ -102,118 +216,4 @@
  这篇文章
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
-&lt;p&gt;中文文档 
-&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://hugo.opendocs.io/getting-started/quick-start/
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;博客：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://juejin.cn/post/7151253414427492382"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://juejin.cn/post/7151253414427492382
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
-&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
-&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
-hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;得到输出信息：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
-├── archetypes（hugo主题文章模板）
-├── layouts（hugo主题布局文件）
-├── static（hugo主题的静态文件）
-├── LICENSE（hugo主题的许可证信息）
-└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item></channel></rss>
+&lt;/p&gt;</description></item></channel></rss>

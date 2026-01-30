@@ -15,7 +15,8 @@
  &lt;pre&gt;
  &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -46,7 +47,8 @@
  &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
  Some(T), // 有值
  None, // 没有值
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -79,7 +81,8 @@
 match find_user(1) {
  Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
  None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -112,7 +115,8 @@ let value2 = x.unwrap_or(0); // None 时返回0
 let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
 
 // 方法4：and_then - 链式操作
-let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -137,7 +141,8 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
  &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
  Ok(T), // 成功，包含值 T
  Err(E), // 错误，包含错误 E
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

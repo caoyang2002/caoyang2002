@@ -45,7 +45,8 @@
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;&lt;/pre&gt;
+ return dots - 1&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -74,7 +75,8 @@
  &lt;pre&gt;
  &lt;code class="language-python"&gt;class VisualCognition:
  MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
- PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

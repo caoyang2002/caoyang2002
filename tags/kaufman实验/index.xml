@@ -45,7 +45,8 @@
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;&lt;/pre&gt;
+ return dots - 1&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

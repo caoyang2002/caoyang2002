@@ -28,7 +28,8 @@
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
+{{ end }}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

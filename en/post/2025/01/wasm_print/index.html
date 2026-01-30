@@ -15,7 +15,7 @@
     
     
         
-                use wasm_bindgen::prelude::*;
+            use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;str) {
@@ -47,6 +47,7 @@ pub fn move_test(name: &amp;str) {
         }
     }
 }
+        
     
     
 
@@ -96,7 +97,7 @@ web-sys = { version = "0.3", features = [
     
     
         
-                use web_sys::console;
+            use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -107,6 +108,7 @@ macro_rules! console_log {
 pub fn move_test(name: &amp;str) {
     console_log!("Testing move with name: {}", name);
 }
+        
     
     
 
@@ -129,7 +131,7 @@ pub fn move_test(name: &amp;str) {
     
     
         
-                use wasm_bindgen::prelude::*;
+            use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;str) {
@@ -154,6 +156,7 @@ pub fn move_test(name: &amp;str) {
         body.append_child(&amp;new_div).unwrap();
     }
 }
+        
     
     
 
@@ -176,7 +179,7 @@ pub fn move_test(name: &amp;str) {
     
     
         
-                pub fn move_test(name: &amp;str) -> Result<(), JsValue> {
+            pub fn move_test(name: &amp;str) -> Result<(), JsValue> {
     // 使用 ? 运算符处理错误
     let window = window().ok_or("no global window exists")?;
     let document = window.document().ok_or("no document exists")?;
@@ -190,6 +193,7 @@ pub fn move_test(name: &amp;str) {
         None => Err(JsValue::from_str("Element not found"))
     }
 }
+        
     
     
 
@@ -212,7 +216,7 @@ pub fn move_test(name: &amp;str) {
     
     
         
-                use web_sys::Storage;
+            use web_sys::Storage;
 
 pub fn move_test(name: &amp;str) -> Result<(), JsValue> {
     let window = window().ok_or("no global window exists")?;
@@ -230,13 +234,14 @@ pub fn move_test(name: &amp;str) -> Result<(), JsValue> {
 
     Ok(())
 }
+        
     
     
 
     
 
 
-记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &ldquo;Storage&rdquo; feature：'><meta name=author content="simons"><script src=/js/code-copy.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.756cb23838211f06f4b675ad7d4a8680e464a302361a4961ecfedb1e0f66f60c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.0"><meta itemprop=name content="Wasm 打印输出和浏览器特性等最佳实践"><meta itemprop=description content='在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：
+记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &ldquo;Storage&rdquo; feature：'><meta name=author content="simons"><script src=/js/code-handler.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.66b2dab2c6bacce8963b2d2af9ecbb257a82f2249ddd6035c697d7658f3c988c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}],throwOnError:!1}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.0"><meta itemprop=name content="Wasm 打印输出和浏览器特性等最佳实践"><meta itemprop=description content='在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：
 使用 web_sys 和 wasm_bindgen 进行浏览器 API 调用： use wasm_bindgen::prelude::*; use web_sys::{console, window}; pub fn move_test(name: &amp;str) { // 控制台打印 console::log_1(&amp;JsValue::from_str(&amp;format!("move test: {}", name))); // 使用 console.warn console::warn_1(&amp;JsValue::from_str("This is a warning")); // 使用 console.error console::error_1(&amp;JsValue::from_str("This is an error")); // 浏览器 alert if let Some(window) = window() { window .alert_with_message(&amp;format!("Hello, {}!", name)) .expect("alert failed"); } // 确认对话框 if let Some(window) = window() { if window .confirm_with_message("Do you want to continue?") .expect("confirm failed") { console::log_1(&amp;JsValue::from_str("User clicked OK")); } else { console::log_1(&amp;JsValue::from_str("User clicked Cancel")); } } } 在 Cargo.toml 中需要添加必要的依赖： [dependencies] wasm-bindgen = "0.2" web-sys = { version = "0.3", features = [ "console", "Window", "Document", "Element", "HtmlElement", "Node", "Location" ]} 如果需要格式化打印，可以使用 console::log! 宏： use web_sys::console; // 需要引入宏 #[macro_export] macro_rules! console_log { ($($t:tt)*) => (console::log_1(&amp;JsValue::from_str(&amp;format!($($t)*)))) } pub fn move_test(name: &amp;str) { console_log!("Testing move with name: {}", name); } 操作 DOM 示例： use wasm_bindgen::prelude::*; use web_sys::{Document, Element, HtmlElement, window}; pub fn move_test(name: &amp;str) { // 获取 document let window = window().expect("no global window exists"); let document = window.document().expect("no document exists"); // 创建新元素 if let Some(div) = document.get_element_by_id("test-input") { // 修改输入框的值 if let Some(input) = div.dyn_ref::<HtmlElement>() { input.set_inner_text(&amp;format!("New value: {}", name)); } } // 创建新元素 let new_div = document.create_element("div").unwrap(); new_div.set_text_content(Some(&amp;format!("Hello {}", name))); // 添加到 body if let Some(body) = document.body() { body.append_child(&amp;new_div).unwrap(); } } 处理错误和 Result： pub fn move_test(name: &amp;str) -> Result<(), JsValue> { // 使用 ? 运算符处理错误 let window = window().ok_or("no global window exists")?; let document = window.document().ok_or("no document exists")?; // 处理可能的错误 match document.get_element_by_id("test-input") { Some(element) => { console::log_1(&amp;JsValue::from_str(&amp;format!("Found element: {}", name))); Ok(()) }, None => Err(JsValue::from_str("Element not found")) } } 使用本地存储： use web_sys::Storage; pub fn move_test(name: &amp;str) -> Result<(), JsValue> { let window = window().ok_or("no global window exists")?; // 获取 localStorage if let Some(storage) = window.local_storage()? { // 存储数据 storage.set_item("user_name", name)?; // 读取数据 if let Ok(Some(saved_name)) = storage.get_item("user_name") { console::log_1(&amp;JsValue::from_str(&amp;format!("Saved name: {}", saved_name))); } } Ok(()) } 记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 “Storage” feature：'><meta itemprop=datePublished content="2025-01-15T00:31:17+08:00"><meta itemprop=dateModified content="2025-01-23T01:00:04+08:00"><meta itemprop=wordCount content="1121"><meta itemprop=keywords content="编程,Wasm"><meta property="og:url" content="https://simons.qzz.io/en/post/2025/01/wasm_print/"><meta property="og:site_name" content="cyrus reggie"><meta property="og:title" content="Wasm 打印输出和浏览器特性等最佳实践"><meta property="og:description" content='在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：
 使用 web_sys 和 wasm_bindgen 进行浏览器 API 调用： use wasm_bindgen::prelude::*; use web_sys::{console, window}; pub fn move_test(name: &amp;str) { // 控制台打印 console::log_1(&amp;JsValue::from_str(&amp;format!("move test: {}", name))); // 使用 console.warn console::warn_1(&amp;JsValue::from_str("This is a warning")); // 使用 console.error console::error_1(&amp;JsValue::from_str("This is an error")); // 浏览器 alert if let Some(window) = window() { window .alert_with_message(&amp;format!("Hello, {}!", name)) .expect("alert failed"); } // 确认对话框 if let Some(window) = window() { if window .confirm_with_message("Do you want to continue?") .expect("confirm failed") { console::log_1(&amp;JsValue::from_str("User clicked OK")); } else { console::log_1(&amp;JsValue::from_str("User clicked Cancel")); } } } 在 Cargo.toml 中需要添加必要的依赖： [dependencies] wasm-bindgen = "0.2" web-sys = { version = "0.3", features = [ "console", "Window", "Document", "Element", "HtmlElement", "Node", "Location" ]} 如果需要格式化打印，可以使用 console::log! 宏： use web_sys::console; // 需要引入宏 #[macro_export] macro_rules! console_log { ($($t:tt)*) => (console::log_1(&amp;JsValue::from_str(&amp;format!($($t)*)))) } pub fn move_test(name: &amp;str) { console_log!("Testing move with name: {}", name); } 操作 DOM 示例： use wasm_bindgen::prelude::*; use web_sys::{Document, Element, HtmlElement, window}; pub fn move_test(name: &amp;str) { // 获取 document let window = window().expect("no global window exists"); let document = window.document().expect("no document exists"); // 创建新元素 if let Some(div) = document.get_element_by_id("test-input") { // 修改输入框的值 if let Some(input) = div.dyn_ref::<HtmlElement>() { input.set_inner_text(&amp;format!("New value: {}", name)); } } // 创建新元素 let new_div = document.create_element("div").unwrap(); new_div.set_text_content(Some(&amp;format!("Hello {}", name))); // 添加到 body if let Some(body) = document.body() { body.append_child(&amp;new_div).unwrap(); } } 处理错误和 Result： pub fn move_test(name: &amp;str) -> Result<(), JsValue> { // 使用 ? 运算符处理错误 let window = window().ok_or("no global window exists")?; let document = window.document().ok_or("no document exists")?; // 处理可能的错误 match document.get_element_by_id("test-input") { Some(element) => { console::log_1(&amp;JsValue::from_str(&amp;format!("Found element: {}", name))); Ok(()) }, None => Err(JsValue::from_str("Element not found")) } } 使用本地存储： use web_sys::Storage; pub fn move_test(name: &amp;str) -> Result<(), JsValue> { let window = window().ok_or("no global window exists")?; // 获取 localStorage if let Some(storage) = window.local_storage()? { // 存储数据 storage.set_item("user_name", name)?; // 读取数据 if let Ok(Some(saved_name)) = storage.get_item("user_name") { console::log_1(&amp;JsValue::from_str(&amp;format!("Saved name: {}", saved_name))); } } Ok(()) } 记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 “Storage” feature：'><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-01-15T00:31:17+08:00"><meta property="article:modified_time" content="2025-01-23T01:00:04+08:00"><meta property="article:tag" content="编程"><meta property="article:tag" content="Wasm"><meta name=twitter:card content="summary"><meta name=twitter:title content="Wasm 打印输出和浏览器特性等最佳实践"><meta name=twitter:description content='在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：
 使用 web_sys 和 wasm_bindgen 进行浏览器 API 调用： use wasm_bindgen::prelude::*; use web_sys::{console, window}; pub fn move_test(name: &amp;str) { // 控制台打印 console::log_1(&amp;JsValue::from_str(&amp;format!("move test: {}", name))); // 使用 console.warn console::warn_1(&amp;JsValue::from_str("This is a warning")); // 使用 console.error console::error_1(&amp;JsValue::from_str("This is an error")); // 浏览器 alert if let Some(window) = window() { window .alert_with_message(&amp;format!("Hello, {}!", name)) .expect("alert failed"); } // 确认对话框 if let Some(window) = window() { if window .confirm_with_message("Do you want to continue?") .expect("confirm failed") { console::log_1(&amp;JsValue::from_str("User clicked OK")); } else { console::log_1(&amp;JsValue::from_str("User clicked Cancel")); } } } 在 Cargo.toml 中需要添加必要的依赖： [dependencies] wasm-bindgen = "0.2" web-sys = { version = "0.3", features = [ "console", "Window", "Document", "Element", "HtmlElement", "Node", "Location" ]} 如果需要格式化打印，可以使用 console::log! 宏： use web_sys::console; // 需要引入宏 #[macro_export] macro_rules! console_log { ($($t:tt)*) => (console::log_1(&amp;JsValue::from_str(&amp;format!($($t)*)))) } pub fn move_test(name: &amp;str) { console_log!("Testing move with name: {}", name); } 操作 DOM 示例： use wasm_bindgen::prelude::*; use web_sys::{Document, Element, HtmlElement, window}; pub fn move_test(name: &amp;str) { // 获取 document let window = window().expect("no global window exists"); let document = window.document().expect("no document exists"); // 创建新元素 if let Some(div) = document.get_element_by_id("test-input") { // 修改输入框的值 if let Some(input) = div.dyn_ref::<HtmlElement>() { input.set_inner_text(&amp;format!("New value: {}", name)); } } // 创建新元素 let new_div = document.create_element("div").unwrap(); new_div.set_text_content(Some(&amp;format!("Hello {}", name))); // 添加到 body if let Some(body) = document.body() { body.append_child(&amp;new_div).unwrap(); } } 处理错误和 Result： pub fn move_test(name: &amp;str) -> Result<(), JsValue> { // 使用 ? 运算符处理错误 let window = window().ok_or("no global window exists")?; let document = window.document().ok_or("no document exists")?; // 处理可能的错误 match document.get_element_by_id("test-input") { Some(element) => { console::log_1(&amp;JsValue::from_str(&amp;format!("Found element: {}", name))); Ok(()) }, None => Err(JsValue::from_str("Element not found")) } } 使用本地存储： use web_sys::Storage; pub fn move_test(name: &amp;str) -> Result<(), JsValue> { let window = window().ok_or("no global window exists")?; // 获取 localStorage if let Some(storage) = window.local_storage()? { // 存储数据 storage.set_item("user_name", name)?; // 读取数据 if let Ok(Some(saved_name)) = storage.get_item("user_name") { console::log_1(&amp;JsValue::from_str(&amp;format!("Saved name: {}", saved_name))); } } Ok(()) } 记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 “Storage” feature：'><link rel=canonical href=https://simons.qzz.io/en/post/2025/01/wasm_print/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-12 px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://simons.qzz.io/>cyrus reggie</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/en/>Home
@@ -256,7 +261,7 @@ pub fn move_test(name: &amp;str) -> Result<(), JsValue> {
 个字 ， 预计需要阅读 3
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
 </a><a href=https://simons.qzz.io/tags/wasm class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">wasm</a></span></div><section><p>在 Rust WASM 中，有几种方式可以实现打印输出和调用浏览器特性：</p><ol><li>使用 <code>web_sys</code> 和 <code>wasm_bindgen</code> 进行浏览器 API 调用：</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use wasm_bindgen::prelude::*;
+            <code class=language-rust>use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;str) {
@@ -287,7 +292,8 @@ pub fn move_test(name: &amp;str) {
             console::log_1(&amp;JsValue::from_str(&#34;User clicked Cancel&#34;));
         }
     }
-}</code></pre></div></div><ol start=2><li>在 Cargo.toml 中需要添加必要的依赖：</li></ol><div><pre><code class=language-toml data-lang=toml>[dependencies]
+}</code>
+        </pre></div></div><ol start=2><li>在 Cargo.toml 中需要添加必要的依赖：</li></ol><div><pre><code class=language-toml data-lang=toml>[dependencies]
 wasm-bindgen = &#34;0.2&#34;
 web-sys = { version = &#34;0.3&#34;, features = [
     &#34;console&#34;,
@@ -298,7 +304,7 @@ web-sys = { version = &#34;0.3&#34;, features = [
     &#34;Node&#34;,
     &#34;Location&#34;
 ]}</code></pre></div><ol start=3><li>如果需要格式化打印，可以使用 <code>console::log!</code> 宏：</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use web_sys::console;
+            <code class=language-rust>use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -308,8 +314,9 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;str) {
     console_log!(&#34;Testing move with name: {}&#34;, name);
-}</code></pre></div></div><ol start=4><li>操作 DOM 示例：</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use wasm_bindgen::prelude::*;
+}</code>
+        </pre></div></div><ol start=4><li>操作 DOM 示例：</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;str) {
@@ -333,8 +340,9 @@ pub fn move_test(name: &amp;str) {
     if let Some(body) = document.body() {
         body.append_child(&amp;new_div).unwrap();
     }
-}</code></pre></div></div><ol start=5><li>处理错误和 Result：</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>pub fn move_test(name: &amp;str) -&gt; Result&lt;(), JsValue&gt; {
+}</code>
+        </pre></div></div><ol start=5><li>处理错误和 Result：</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>pub fn move_test(name: &amp;str) -&gt; Result&lt;(), JsValue&gt; {
     // 使用 ? 运算符处理错误
     let window = window().ok_or(&#34;no global window exists&#34;)?;
     let document = window.document().ok_or(&#34;no document exists&#34;)?;
@@ -347,8 +355,9 @@ pub fn move_test(name: &amp;str) {
         },
         None =&gt; Err(JsValue::from_str(&#34;Element not found&#34;))
     }
-}</code></pre></div></div><ol start=6><li>使用本地存储：</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use web_sys::Storage;
+}</code>
+        </pre></div></div><ol start=6><li>使用本地存储：</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>use web_sys::Storage;
 
 pub fn move_test(name: &amp;str) -&gt; Result&lt;(), JsValue&gt; {
     let window = window().ok_or(&#34;no global window exists&#34;)?;
@@ -365,13 +374,14 @@ pub fn move_test(name: &amp;str) -&gt; Result&lt;(), JsValue&gt; {
     }
 
     Ok(())
-}</code></pre></div></div><p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &ldquo;Storage&rdquo; feature：</p><div><pre><code class=language-toml data-lang=toml>web-sys = { version = &#34;0.3&#34;, features = [
+}</code>
+        </pre></div></div><p>记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &ldquo;Storage&rdquo; feature：</p><div><pre><code class=language-toml data-lang=toml>web-sys = { version = &#34;0.3&#34;, features = [
     &#34;console&#34;,
     &#34;Window&#34;,
     &#34;Storage&#34;,
     // ... 其他需要的 features
 ]}</code></pre></div><p>这些示例展示了在 Rust WASM 中如何与浏览器进行交互的基本方法。你可以根据需要组合使用这些功能。</p><p>以下是 Rust WebAssembly 开发的最佳实践建议：</p><ol><li>错误处理</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use wasm_bindgen::prelude::*;
+            <code class=language-rust>use wasm_bindgen::prelude::*;
 use web_sys::console;
 
 // 定义自定义错误类型
@@ -399,8 +409,9 @@ pub fn move_test(name: &amp;str) -&gt; Result&lt;(), WasmError&gt; {
     console::log_1(&amp;format!(&#34;Processing: {}&#34;, name).into());
 
     Ok(())
-}</code></pre></div></div><ol start=2><li>性能优化</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use wasm_bindgen::prelude::*;
+}</code>
+        </pre></div></div><ol start=2><li>性能优化</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>use wasm_bindgen::prelude::*;
 use std::rc::Rc;
 use std::cell::RefCell;
 
@@ -428,8 +439,9 @@ impl App {
 
         Ok(())
     }
-}</code></pre></div></div><ol start=3><li>模块化设计</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>// lib.rs
+}</code>
+        </pre></div></div><ol start=3><li>模块化设计</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>// lib.rs
 mod utils;
 mod components;
 mod types;
@@ -442,8 +454,9 @@ use types::custom_types;
 pub fn initialize() {
     logging::setup_logging();
     button::register_components();
-}</code></pre></div></div><ol start=4><li>日志和调试</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>#[macro_export]
+}</code>
+        </pre></div></div><ol start=4><li>日志和调试</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>#[macro_export]
 macro_rules! console_log {
     ($($t:tt)*) =&gt; {
         web_sys::console::log_1(&amp;format!($($t)*).into())
@@ -462,8 +475,9 @@ pub fn debug_operation(data: &amp;str) {
     console_log!(&#34;Starting operation with: {}&#34;, data);
     // ... 操作代码
     console_log!(&#34;Operation completed&#34;);
-}</code></pre></div></div><ol start=5><li>内存管理</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>#[wasm_bindgen]
+}</code>
+        </pre></div></div><ol start=5><li>内存管理</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>#[wasm_bindgen]
 pub struct LargeData {
     // 使用 Vec&lt;u8&gt; 而不是 String 处理二进制数据
     buffer: Vec&lt;u8&gt;,
@@ -474,8 +488,9 @@ impl Drop for LargeData {
         // 清理资源
         self.buffer.clear();
     }
-}</code></pre></div></div><ol start=6><li>异步操作处理</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use wasm_bindgen_futures::JsFuture;
+}</code>
+        </pre></div></div><ol start=6><li>异步操作处理</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>use wasm_bindgen_futures::JsFuture;
 use web_sys::{Request, RequestInit, Response};
 
 // 异步函数处理
@@ -489,8 +504,9 @@ pub async fn fetch_data(url: &amp;str) -&gt; Result&lt;JsValue, JsValue&gt; {
     let resp: Response = resp_value.dyn_into().unwrap();
 
     JsFuture::from(resp.json()?).await
-}</code></pre></div></div><ol start=7><li>测试策略</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>#[cfg(test)]
+}</code>
+        </pre></div></div><ol start=7><li>测试策略</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>#[cfg(test)]
 mod tests {
     use super::*;
     use wasm_bindgen_test::*;
@@ -503,7 +519,8 @@ mod tests {
         let result = move_test(&#34;test&#34;);
         assert!(result.is_ok());
     }
-}</code></pre></div></div><ol start=8><li>构建优化</li></ol><div><pre><code class=language-toml data-lang=toml># Cargo.toml
+}</code>
+        </pre></div></div><ol start=8><li>构建优化</li></ol><div><pre><code class=language-toml data-lang=toml># Cargo.toml
 [package]
 name = &#34;wasm-project&#34;
 version = &#34;0.1.0&#34;
@@ -515,7 +532,7 @@ crate-type = [&#34;cdylib&#34;]
 lto = true
 opt-level = &#39;z&#39;
 codegen-units = 1</code></pre></div><ol start=9><li>类型安全</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>use serde::{Serialize, Deserialize};
+            <code class=language-rust>use serde::{Serialize, Deserialize};
 
 #[derive(Serialize, Deserialize)]
 pub struct UserData {
@@ -535,8 +552,9 @@ impl UserData {
             age,
         })
     }
-}</code></pre></div></div><ol start=10><li>文档注释</li></ol><div class=code-playground data-language=rust><div><pre>
-                <code class=language-rust>/// Performs a move test operation
+}</code>
+        </pre></div></div><ol start=10><li>文档注释</li></ol><div class=code-playground data-language=rust><div><pre>
+            <code class=language-rust>/// Performs a move test operation
 ///
 /// # Arguments
 ///
@@ -556,7 +574,8 @@ impl UserData {
 #[wasm_bindgen]
 pub fn move_test(name: &amp;str) -&gt; Result&lt;(), WasmError&gt; {
     // 实现代码
-}</code></pre></div></div></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code>
+        </pre></div></div></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/en/post/2025/01/rust_macro/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>rust 中的属性宏</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/en/post/2025/01/vim_config/><span>更好的 vim 配置</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

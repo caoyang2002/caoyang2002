@@ -22,7 +22,8 @@ fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
  if (err) throw err;
  console.log(data);
 });
-console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -54,7 +55,8 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
  &lt;pre&gt;
  &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

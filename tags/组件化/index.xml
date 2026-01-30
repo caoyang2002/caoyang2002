@@ -16,7 +16,8 @@
  &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
 document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
 document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
-document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -101,7 +102,8 @@ function toggleUserStatus(status) {
  } else {
  $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

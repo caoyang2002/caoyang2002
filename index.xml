@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 02:17:53 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 10:36:32 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
 &lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
 &lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
@@ -70,569 +70,9 @@
  }
 
  const password = input.value;
- const publishDate = "2929210129";
+ const publishDate = "3030560130";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章来源说明" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b =&gt; b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script&gt;
-
-&lt;style&gt;
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style&gt;
-
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-2/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-2/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="mailto:reggiesimons2cy@gmail.com"
- 
- &gt;
- reggiesimons2cy@gmail.com
- 
-&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
-
-&lt;style&gt;
- .notice {
- color: red;
- }
-&lt;/style&gt;
-
- 
-
- 置顶
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content"&gt;
- 
- &lt;div class="crypto-form"&gt;
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- /&gt;
- &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
- &lt;/div&gt;
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
- &gt;
- 已加密，请输入密码
- &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "2929210129";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "置顶" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b =&gt; b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script&gt;
-
-&lt;style&gt;
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style&gt;
-
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-3/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-3/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="mailto:reggiesimons2cy@gmail.com"
- 
- &gt;
- reggiesimons2cy@gmail.com
- 
-&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
-
-&lt;style&gt;
- .notice {
- color: red;
- }
-&lt;/style&gt;
-
- 
-
- 置顶
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content"&gt;
- 
- &lt;div class="crypto-form"&gt;
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- /&gt;
- &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
- &lt;/div&gt;
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
- &gt;
- 已加密，请输入密码
- &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "2929210129";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "置顶" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b =&gt; b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script&gt;
-
-&lt;style&gt;
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style&gt;
-
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy-4/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy-4/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="mailto:reggiesimons2cy@gmail.com"
- 
- &gt;
- reggiesimons2cy@gmail.com
- 
-&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
-
-&lt;style&gt;
- .notice {
- color: red;
- }
-&lt;/style&gt;
-
- 
-
- 置顶
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content"&gt;
- 
- &lt;div class="crypto-form"&gt;
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- /&gt;
- &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
- &lt;/div&gt;
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
- &gt;
- 已加密，请输入密码
- &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "2929210129";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "置顶" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b =&gt; b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script&gt;
-
-&lt;style&gt;
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
- 
- word-break: break-all;
- }
-&lt;/style&gt;
-
-&lt;p&gt;123&lt;/p&gt;</description></item><item><title>置顶</title><link>https://simons.qzz.io/post/2024/03/notice-copy/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice-copy/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;
-&lt;a href="mailto:reggiesimons2cy@gmail.com"
- 
- &gt;
- reggiesimons2cy@gmail.com
- 
-&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
-
-&lt;style&gt;
- .notice {
- color: red;
- }
-&lt;/style&gt;
-
- 
-
- 置顶
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content"&gt;
- 
- &lt;div class="crypto-form"&gt;
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- /&gt;
- &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
- &lt;/div&gt;
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
- &gt;
- 已加密，请输入密码
- &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
- 
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "2929210129";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "置顶" + publishDate);
 
  if(hash !== targetHash) {
  throw new Error('密码错误');
@@ -811,8 +251,325 @@
  &lt;section style="text-align: left;" data-mid="" mpa-from-tpl="t"&gt;
  &lt;p yb-mpa-mark="mark-style-text" style="font-weight: bold;font-size: 18px;color: #023F7F;line-height: 25px;word-break: break-word;" data-mid=""&gt;
  &lt;span leaf=""&gt;生活的点滴温暖&lt;/span&gt;
- &lt;/p&gt;</description></item><item><title>ABC微型火箭技术－为初学者设计的快速制作技术</title><link>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</link><pubDate>Fri, 30 Jan 2026 00:07:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</guid><description>&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
-&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．我用一个月准备这个技术贴的目标正是：给初学者一个成功体验，一点坚持的信心&lt;/p&gt;</description></item><item><title>火箭制作基础</title><link>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</link><pubDate>Thu, 29 Jan 2026 14:24:21 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</guid><description>&lt;p&gt;
+ &lt;/p&gt;</description></item><item><title>Hugo-Focus 主题介绍</title><link>https://simons.qzz.io/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
+&lt;p&gt;这是一个专注于编程的 Hugo 博客主题。&lt;/p&gt;
+&lt;p&gt;参考了我此前为 &lt;code&gt;Typora&lt;/code&gt; 开发的 
+&lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ &lt;code&gt;Thompsgo&lt;/code&gt; 主题
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="二特性"&gt;二、特性&lt;/h1&gt;
+&lt;h2 id="1-运行代码"&gt;1. 运行代码&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;支持的语言：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;python (wasm)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cpp (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rust (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;go (playground)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ts (TypeScript 的 JavaScript 实现)&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;js (原生)&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="代码运行示例"&gt;代码运行示例&lt;/h3&gt;
+&lt;h3 id="rust"&gt;Rust&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="rust"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-rust"&gt;fn main() {
+ println!(&amp;#34;Hello from Rust!&amp;#34;);
+}&lt;/code&gt;
+ &lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ &gt;运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;h4 id="javascript"&gt;javascript&lt;/h4&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="js"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-js"&gt;console.log(&amp;#34;hello&amp;#34;)&lt;/code&gt;
+ &lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ &gt;运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;h4 id="go"&gt;Go&lt;/h4&gt;
+
+
+
+
+
+
+
+
+
+&lt;div class="code-playground" data-language="go"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;
+ &lt;code class="language-go"&gt;package
+import &amp;#34;fmt&amp;#34;
+func main(){
+	fmt.print(&amp;#34;hello&amp;#34;)
+}&lt;/code&gt;
+ &lt;/pre&gt;
+ &lt;/div&gt;
+ 
+
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"
+ &gt;运行&lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Lisp&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+&lt;p&gt;
+&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 中文文档
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;p&gt;博客：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ Hugo主题开发日记
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;a href="https://juejin.cn/post/7151253414427492382"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 深入理解Hugo - 主题实例
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
+&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
+&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
+hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;得到输出信息：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
+├── archetypes（hugo主题文章模板）
+├── layouts（hugo主题布局文件）
+├── static（hugo主题的静态文件）
+├── LICENSE（hugo主题的许可证信息）
+└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>ABC微型火箭技术－为初学者设计的快速制作技术</title><link>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</link><pubDate>Fri, 30 Jan 2026 00:07:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/abc_micro_rocket_technology_quick_making_techniques_for_beginners/</guid><description>&lt;p&gt;
+&lt;a href="https://www.kechuang.org/t/7432?page=1"
+ 
+ 
+ target="_blank"
+ rel="noopener noreferrer"
+ class="external-link"
+ &gt;
+ 查看原文
+ 
+ &lt;span class="external-icon"&gt;↗&lt;/span&gt;
+ 
+&lt;/a&gt;
+&lt;/p&gt;
+&lt;h1 id="前言"&gt;前言&lt;/h1&gt;
+&lt;p&gt;实话说，我们有这爱好很难得，能坚持这爱好更难得．相信论坛上多数都是孤独的火箭手，真希望加入这爱好的人会越来越多．我看到不少人对制作火箭是有兴趣的，但能动手做出火箭并成功起飞的就很少了，不少人是在没有引导或多次失败后灰心而去．因此如果能够让那些有心尝试火箭制作的人较容易地实现一飞冲天的梦想，成功体验了发射的享受，他们就有可能爱上并保留这难得的爱好．我用一个月准备这个技术贴的目标正是：给初学者一个成功体验，一点坚持的信心。&lt;/p&gt;</description></item><item><title>火箭制作基础</title><link>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</link><pubDate>Thu, 29 Jan 2026 14:24:21 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/rocket_construction_basics/</guid><description>&lt;p&gt;
 &lt;a href="https://www.bilibili.com/read/cv5511550/?opus_fallback=1"
  
  
@@ -4748,7 +4505,8 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # A: 0 (1位) × 5 = 5位
 # B: 10 (2位) × 3 = 6位
 # C: 11 (2位) × 2 = 4位
-# 总共：15位&lt;/code&gt;&lt;/pre&gt;
+# 总共：15位&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -4780,7 +4538,8 @@ fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
  if (err) throw err;
  console.log(data);
 });
-console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -4874,7 +4633,8 @@ jobs:
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
+{{ end }}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5327,7 +5087,8 @@ jobs:
  &lt;code class="language-python"&gt;class WorkingMemory:
  MIN_CAPACITY = 5 # 最小容量
  MAX_CAPACITY = 9 # 最大容量
- OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5392,7 +5153,8 @@ jobs:
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;&lt;/pre&gt;
+ return dots - 1&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5421,7 +5183,8 @@ jobs:
  &lt;pre&gt;
  &lt;code class="language-python"&gt;class VisualCognition:
  MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
- PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5536,7 +5299,8 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
  &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
 document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
 document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
-document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5607,7 +5371,8 @@ obj.nonexistMethod()
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5643,7 +5408,8 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5689,7 +5455,8 @@ function toggleUserStatus(status) {
  } else {
  $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5733,7 +5500,8 @@ src/
  │ ├── main.css
  │ └── theme.css
  └── images/
- └── logo.png&lt;/code&gt;&lt;/pre&gt;
+ └── logo.png&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -5861,92 +5629,7 @@ src/
  这篇文章
  
 &lt;/a&gt;
-&lt;/p&gt;</description></item><item><title>File_name</title><link>https://simons.qzz.io/en/file_name/</link><pubDate>Wed, 22 Jan 2025 19:08:41 +0800</pubDate><guid>https://simons.qzz.io/en/file_name/</guid><description/></item><item><title>Hugo-Focus 主题介绍</title><link>https://simons.qzz.io/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo-focus-info/</guid><description>&lt;p&gt;==fds==&lt;/p&gt;
-&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
-&lt;p&gt;这是一个专注于编程的 Hugo 博客主题。&lt;/p&gt;
-&lt;p&gt;参考了我此前为 &lt;code&gt;Typora&lt;/code&gt; 开发的 
-&lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- &lt;code&gt;Thompsgo&lt;/code&gt; 主题
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;h1 id="二特性"&gt;二、特性&lt;/h1&gt;
-&lt;h2 id="1-运行代码"&gt;1. 运行代码&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;支持的语言：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;python (wasm)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;lisp (JavaScript 实现的 Common Lisp (JSCL) 解释器)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;cpp (playground)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;rust (playground)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;go (playground)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;ts (TypeScript 的 JavaScript 实现)&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;js (原生)&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id="代码运行示例"&gt;代码运行示例&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Rust&lt;/strong&gt;&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-&lt;div class="code-playground" data-language="rust"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn main() {
- println!(&amp;#34;Hello from Rust!&amp;#34;);
-}&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
- 
-
- 
- &lt;div class="controls"&gt;
- &lt;button class="run-button"&gt;
- &lt;span style="display: flex; align-items: center; gap: 4px"
- &gt;运行&lt;svg
- t="1737473351499"
- class="icon"
- viewBox="0 0 1024 1024"
- version="1.1"
- xmlns="http://www.w3.org/2000/svg"
- p-id="11262"
- width="16"
- height="16"
- &gt;
- &lt;path
- d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
- p-id="11263"
- &gt;&lt;/path&gt;
- &lt;path
- d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
- p-id="11264"
- &gt;&lt;/path&gt;
- &lt;/svg&gt;
- &lt;/span&gt;
- &lt;/button&gt;
- &lt;/div&gt;
- &lt;div class="output" style="display: none"&gt;
- &lt;pre class="output-content"&gt;&lt;/pre&gt;
- &lt;/div&gt;
- 
-&lt;/div&gt;
-
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Go&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>留言</title><link>https://simons.qzz.io/guestbook/</link><pubDate>Mon, 20 Jan 2025 16:13:41 +0800</pubDate><guid>https://simons.qzz.io/guestbook/</guid><description>&lt;h1 id="heading"&gt;🖊️&lt;/h1&gt;</description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://simons.qzz.io/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote&gt;
+&lt;/p&gt;</description></item><item><title>File_name</title><link>https://simons.qzz.io/en/file_name/</link><pubDate>Wed, 22 Jan 2025 19:08:41 +0800</pubDate><guid>https://simons.qzz.io/en/file_name/</guid><description/></item><item><title>留言</title><link>https://simons.qzz.io/guestbook/</link><pubDate>Mon, 20 Jan 2025 16:13:41 +0800</pubDate><guid>https://simons.qzz.io/guestbook/</guid><description>&lt;h1 id="heading"&gt;🖊️&lt;/h1&gt;</description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://simons.qzz.io/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;
 &lt;p&gt;但是，你为什么觉得自己需要一个设计师？&lt;/p&gt;
 &lt;p&gt;我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p&gt;
@@ -6057,7 +5740,8 @@ vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
 // 没有闭包时很难处理
 struct Context { value: i32 }
 let ctx = Context { value: 42 };
-let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6096,7 +5780,8 @@ let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
 let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
  .into_iter()
  .filter(|x| x % 2 == 0)
- .collect();&lt;/code&gt;&lt;/pre&gt;
+ .collect();&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6131,7 +5816,8 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
-println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6165,7 +5851,8 @@ for order in orders {
  if order.amount &amp;gt; 100 {
  total &amp;#43;= order.amount * 0.9;
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6205,7 +5892,8 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
  y
  }
 }
-// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;
+// 编译错误：missing lifetime specifier&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6251,7 +5939,8 @@ struct Person&amp;lt;&amp;#39;a&amp;gt; {
 // 问题3：函数返回引用时的所有权问题
 fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需要明确它的有效期
  data
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6293,7 +5982,8 @@ struct Person {
  name: Rc&amp;lt;String&amp;gt;
 }
 // 优点：灵活性高
-// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;
+// 缺点：运行时开销&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6341,7 +6031,8 @@ impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {
 // 4. 多个生命周期参数
 fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {
  x
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6385,7 +6076,8 @@ const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;
 // 不好的做法
 fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {
  data
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6437,7 +6129,8 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  println!(&amp;#34;Processing: {:?}&amp;#34;, v);
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6468,7 +6161,8 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  &lt;pre&gt;
  &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
 let s2 = s1; // 所有权从s1转移到s2
-// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6493,7 +6187,8 @@ let s2 = s1; // 所有权从s1转移到s2
  &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6533,7 +6228,8 @@ impl Closure {
  fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
  x * self.multiplier
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6558,7 +6254,8 @@ impl Closure {
  &lt;pre&gt;
  &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6589,7 +6286,8 @@ impl Closure {
  &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
  Some(T), // 有值
  None, // 没有值
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6622,7 +6320,8 @@ impl Closure {
 match find_user(1) {
  Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
  None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6655,7 +6354,8 @@ let value2 = x.unwrap_or(0); // None 时返回0
 let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
 
 // 方法4：and_then - 链式操作
-let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6680,7 +6380,8 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
  &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
  Ok(T), // 成功，包含值 T
  Err(E), // 错误，包含错误 E
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6753,7 +6454,8 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6813,7 +6515,8 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6860,7 +6563,8 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6896,7 +6600,8 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -6936,7 +6641,8 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7197,7 +6903,8 @@ cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
  &lt;pre&gt;
  &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7208,121 +6915,7 @@ buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。&lt;/p&gt;
 &lt;p&gt;对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。&lt;/p&gt;
 &lt;h1 id="开始"&gt;开始&lt;/h1&gt;
-&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
-&lt;p&gt;中文文档 
-&lt;a href="https://hugo.opendocs.io/getting-started/quick-start/"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://hugo.opendocs.io/getting-started/quick-start/
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/p&gt;
-&lt;p&gt;博客：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href="https://blog.gujiakai.top/2023/03/hugo-theme-development-diary"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href="https://juejin.cn/post/7151253414427492382"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- https://juejin.cn/post/7151253414427492382
- 
- &lt;span class="external-icon"&gt;↗&lt;/span&gt;
- 
-&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1 id="一个简单的-hugo-主题"&gt;一个简单的 Hugo 主题&lt;/h1&gt;
-&lt;h2 id="创建一个空的网站模版"&gt;创建一个空的网站模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo new site demo&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;这会在当前目录创建一个名为 &lt;code&gt;demo&lt;/code&gt; 的目录，然后初始化 &lt;code&gt;hugo&lt;/code&gt; 的目录结构，&lt;/p&gt;
-&lt;h2 id="创建一个空的主题模版"&gt;创建一个空的主题模版&lt;/h2&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd demo
-hugo new theme hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;得到输出信息：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;Creating theme at /hugo/demo/themes/hugo-zero&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;一开始的目录结构如下图所示：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;hugo-zero（hugo主题）
-├── archetypes（hugo主题文章模板）
-├── layouts（hugo主题布局文件）
-├── static（hugo主题的静态文件）
-├── LICENSE（hugo主题的许可证信息）
-└── themes.toml（hugo主题的元数据信息）&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;其中，重点关注layouts文件夹。剩余的文件可以慢慢补充。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
+&lt;p&gt;我看不懂 &lt;code&gt;aptos-core&lt;/code&gt; 从的功能，但我没有一开始就尝试编译这整个项目，而是在 &lt;code&gt;aptos-core/third_party&lt;/code&gt; 看到了 &lt;code&gt;move&lt;/code&gt; 编译器相关的东西，所以我就从这里开始。&lt;/p&gt;</description></item><item><title>Go 最佳实践</title><link>https://simons.qzz.io/post/2024/12/go/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/go/</guid><description>&lt;p&gt;在 Go 项目架构中，有一些重要的设计原则和规则。我来详细说明：&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;接口定义规则：&lt;/li&gt;
 &lt;/ol&gt;
@@ -7349,7 +6942,8 @@ type UserService interface {
 package service
 type UserService interface {
  Create(ctx context.Context, user *User) error
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7377,7 +6971,8 @@ handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 
 // ❌ 错误：不应该出现反向依赖
 service -&amp;gt; handler
-repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
+repository -&amp;gt; service&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7424,7 +7019,8 @@ type User struct {
  ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
  Username string `json:&amp;#34;username&amp;#34;`
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7469,7 +7065,8 @@ func (h *UserHandler) Create(c *gin.Context) {
 // ❌ 错误：直接暴露底层错误
 if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7532,7 +7129,8 @@ func NewUserHandler(service UserService) *UserHandler {
 }
 
 // ❌ 错误：全局变量或直接初始化
-var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
+var userService = &amp;amp;UserService{}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7572,7 +7170,8 @@ type UserService interface {
  DeleteUser(id uint64) error
  ListUsers() ([]*User, error)
  SearchUsers(query string) ([]*User, error)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7606,7 +7205,8 @@ type Config struct {
 
 // ❌ 错误：分散的配置或硬编码
 var serverPort = 8080
-var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7638,7 +7238,8 @@ func (h *Handler) Create(c *gin.Context) {
 // ❌ 错误：不传递上下文或使用不一致的上下文
 func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -7671,7 +7272,8 @@ func TestUserHandler_Create(t *testing.T) {
 // ❌ 错误：测试代码与源码混合或测试覆盖不全
 func TestAll(t *testing.T) {
  // 混合测试多个功能
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -8292,7 +7894,8 @@ namespace fs = std::filesystem;
  std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
  _getch();
  return 0;
-};&lt;/code&gt;&lt;/pre&gt;
+};&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

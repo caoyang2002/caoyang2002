@@ -586,7 +586,8 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # A: 0 (1位) × 5 = 5位
 # B: 10 (2位) × 3 = 6位
 # C: 11 (2位) × 2 = 4位
-# 总共：15位&lt;/code&gt;&lt;/pre&gt;
+# 总共：15位&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -618,7 +619,8 @@ fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
  if (err) throw err;
  console.log(data);
 });
-console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -712,7 +714,8 @@ jobs:
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
+{{ end }}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -826,7 +829,8 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
  &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
 document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
 document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
-document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -897,7 +901,8 @@ obj.nonexistMethod()
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -933,7 +938,8 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -979,7 +985,8 @@ function toggleUserStatus(status) {
  } else {
  $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
  }
-}&lt;/code&gt;&lt;/pre&gt;
+}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
@@ -1023,7 +1030,8 @@ src/
  │ ├── main.css
  │ └── theme.css
  └── images/
- └── logo.png&lt;/code&gt;&lt;/pre&gt;
+ └── logo.png&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 

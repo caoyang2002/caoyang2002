@@ -158,7 +158,8 @@ N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/c
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;&lt;/pre&gt;
+{{ end }}&lt;/code&gt;
+ &lt;/pre&gt;
  &lt;/div&gt;
  
 
