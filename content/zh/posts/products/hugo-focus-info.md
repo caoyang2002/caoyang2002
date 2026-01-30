@@ -5,9 +5,8 @@ title = 'Hugo-Focus 主题介绍'
 toc = true
 mermaid = true  # 启用 mermaid
 codeRunners = true #启用运行代码
+weight = 2
 +++
-
-==fds==
 
 # 一、简述
 
@@ -30,23 +29,29 @@ codeRunners = true #启用运行代码
 
 ### 代码运行示例
 
-> **Rust**
->
-> ```rust
-> fn main() {
->   println!("Hello from Rust!");
-> }
->   ```
+### Rust
 
->**Go**
->
->```go
->package
->import "fmt"
->func main(){
->	fmt.print("hello")
->}
->```
+```rust
+fn main() {
+  println!("Hello from Rust!");
+}
+```
+
+#### javascript
+
+```js
+console.log("hello")
+````
+
+#### Go
+
+```go
+package
+import "fmt"
+func main(){
+	fmt.print("hello")
+}
+```
 
 > **Lisp**
 >

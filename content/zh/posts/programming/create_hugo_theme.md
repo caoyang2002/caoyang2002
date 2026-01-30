@@ -5,14 +5,15 @@ categories = ["技术", "开发"]
 tags = ["Hugo", "静态网站", "主题开发", "教程"]
 description = "一份详细的 Hugo 静态网站生成器主题创建教程，涵盖了从环境初始化、目录结构解析到主题配置与文章管理的完整流程，并提供主题使用方法。"
 title = 'Hugo 主题创建方法及简单说明'
+weight = 3
 +++
 
 # 参考：
-中文文档 https://hugo.opendocs.io/getting-started/quick-start/
+[中文文档](https://hugo.opendocs.io/getting-started/quick-start/)
 
 博客：
-- https://blog.gujiakai.top/2023/03/hugo-theme-development-diary
-- https://juejin.cn/post/7151253414427492382
+- [Hugo主题开发日记](https://blog.gujiakai.top/2023/03/hugo-theme-development-diary)
+- [深入理解Hugo - 主题实例](https://juejin.cn/post/7151253414427492382)
 
 # 一个简单的 Hugo 主题
 
@@ -21,6 +22,7 @@ title = 'Hugo 主题创建方法及简单说明'
 ```bash
 hugo new site demo
 ```
+
 这会在当前目录创建一个名为 `demo` 的目录，然后初始化 `hugo` 的目录结构，
 
 ## 创建一个空的主题模版
@@ -100,14 +102,15 @@ Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
 Press Ctrl+C to stop
 ```
 
-用浏览器访问 http://localhost:1313/ 看到一个空页面，这个时候什么内容都还没有。
+用浏览器访问 `http://localhost:1313/` 看到一个空页面，这个时候什么内容都还没有。
 
-index.html 是首页，single.html 是文章页面。
-baseof.html 所有页面的模版，每个页面都是基于这个页面进行扩展。
-css 目录用来放样式文件。
-head.html用来定义<head>部分的内容，加载 CSS 样式文件就在这里添加。
-footer.html一般用来展示版权信息。
-header.html显示在顶部，展示网站名称。
+`index.html` 是首页。
+`single.html` 是文章页面。
+`baseof.html` 所有页面的模版，每个页面都是基于这个页面进行扩展。
+`css` 目录用来放样式文件。
+`head.html` 用来定义 `<head>` 部分的内容，加载 CSS 样式文件就在这里添加。
+`footer.html` 一般用来展示版权信息。
+`header.html` 显示在顶部，展示网站名称。
 
 
 # 使用
@@ -129,8 +132,6 @@ git init
 # 添加 git 子模块（主题）
 git submodule add https://github.com/caoyang2002/hugo-zero.git themes/hugo-zero
 ```
-
-
 
 ## 在 `config.toml` 里添加一行：
 
@@ -157,7 +158,7 @@ title = 'Post_name'
 ```
 ## 启动
 
-```bahs
+```bash
 # 不包含草稿内容
 hugo server
 
