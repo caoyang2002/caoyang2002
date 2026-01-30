@@ -463,7 +463,8 @@ G、浇铸完毕，保持振动器开启10分钟，让燃料充分沉底，药�
 
 制作完成的推进剂常压下燃速约 `1mm/s`，有少量残渣。
 
-[已被禁](http://bbs.kechuang.org/read-kc-tid-23864.html)
+[RNX（KN+环氧树脂）全教程](http://bbs.kechuang.org/read-kc-tid-23864.html)
+> 需要注册才能看
 
 # 第二章：固体火箭
 
