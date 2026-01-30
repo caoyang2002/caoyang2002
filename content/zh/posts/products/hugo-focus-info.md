@@ -53,35 +53,35 @@ func main(){
 }
 ```
 
-> **Lisp**
->
-> ```lisp
->(progn
-> (format t "Hello from Lisp!")
-> "Hello from Lisp!")
-> ```
+Lisp
 
-> **Python**
->
-> ```python
-> print("test")
-> ```
+```lisp
+progn
+(format t "Hello from Lisp!")
+"Hello from Lisp!")
+```
 
-> **TypeScript**
->
-> ```ts
-> console.log("hello")
-> ```
+Python
 
-> **C++**
->
-> ```cpp
-> #include <iostream>
-> int main(){
->     std::cout << "Hello World!";
->     return 0;
-> }
-> ```
+```python
+print("test")
+```
+
+TypeScript
+
+```ts
+console.log("hello")
+```
+
+C++
+
+```cpp
+#include <iostream>
+int main(){
+    std::cout << "Hello World!";
+    return 0;
+}
+```
 
 ## 2. mermaid 图表
 
