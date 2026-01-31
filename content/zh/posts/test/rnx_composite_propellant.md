@@ -10,6 +10,9 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 [查看原文](https://www.kechuang.org/t/23864)
 
+[RNX Composite Propellant - 1](https://www.nakka-rocketry.net/rnx.html)
+
+[RNX Composite Propellant - 2](https://www.nakka-rocketry.net/rnx_int.html)
 
 RNX：以KNO3为氧化剂主要成分，环氧树脂为燃烧粘合剂主要成分的推进剂
 

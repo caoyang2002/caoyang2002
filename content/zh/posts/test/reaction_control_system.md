@@ -1,5 +1,5 @@
 +++
-title = '火箭适量助推器'
+title = '星云科技矢量火箭制作流程'
 date = 2026-01-31T01:04:19+08:00
 draft = false
 author = "simons"
@@ -8,57 +8,17 @@ tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
-
-加载中
-
-加载中
-
-[科创网](https://www.kechuang.org/)
-
-- [电波](https://www.kechuang.org/z)
-- [论坛](https://www.kechuang.org/c)
-- [专栏](https://www.kechuang.org/m)
-- [资源](https://www.kechuang.org/apps)
-
-- [创作中心](https://www.kechuang.org/creation)
-
-- 消息
-
-  2
-
-- 
-
-[论坛](https://www.kechuang.org/c)>[航空航天](https://www.kechuang.org/f/74)>[喷气推进](https://www.kechuang.org/f/89)>[飞控制导](https://www.kechuang.org/f/89?cat=132)
-
-文号929539
-
- 
-
-20640
-
- 
-
-12
-
- 
-
-收藏(40)
-
 今天，我们实现了一个来自2021年的梦想——星云科技矢量火箭制作流程及开源计划
 
-[![img](https://img.kechuang.org:81/a/6239d658713b0e43e89615d8?c=userAvatar&t=sm) 白沫0001](https://www.kechuang.org/u/94933)2024/02/15原创 [喷气推进](https://www.kechuang.org/f/89) IP:辽宁
+[查看原文](https://www.kechuang.org/t/89933)
 
-中文摘要
+[Github](https://github.com/baimo0001/vector_rocket2.0)
 
 完成2021年提出的矢量火箭项目的具体过程，以及项目的开源计划，供各位爱好者批评交流。
 
-关键词
-
-制导ArduinoMPU6050飞控矢量火箭姿态控制
-
 > 2021年的时候，我刚刚进入高三，也刚刚开始接触火箭圈子，从那时起便想自己制作一枚搭载控制系统的火箭，在深思熟虑中，我们选择了一种叫做“矢量”的控制方法。本文中的代码和结构文档均已开源，供各位爱好者交流互鉴
 
-**第一阶段：**
+# 第一阶段
 
 最初我们刚刚进入高三，利用课余时间进行绘图、设计，由于彼时的我们不清楚SW、CAD等相对专业的建模软件，故采用了手工绘图的方法。最早的图纸就像下面这样，非常的业余：
 

@@ -6,7 +6,7 @@ author = "simons"
 categories = ["航空航天","DIY制作"]
 tags = ["火箭技术","微型火箭","初学者教程","DIY","喷气推进"]
 description =  "详细讲解微型火箭的制作技术，包括卷芯喷管制作、无加热冷混合推进剂配方、燃料压制方法等。适合火箭制作初学者，材料易得，制作快速，安全可靠。"
-image = 'https://img.kechuang.org:81/r/9142?c=resource'
+cover = 'https://img.kechuang.org:81/r/9142?c=resource'
 +++
 
 [查看原文](https://www.kechuang.org/t/7432?page=1)

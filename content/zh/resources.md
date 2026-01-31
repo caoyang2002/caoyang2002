@@ -30,6 +30,19 @@ subcategory = "教育与社区"
 tags = ["学生组织", "包容性", "STEM教育", "社区"] 
 icon = "fas fa-hands-helping"
 
+# 计算机
+[[resources]]
+
+name = "计算机图形学"
+url = "https://sites.cs.ucsb.edu/~lingqi/teaching/games101.html"
+description = "全球最大的代码托管平台，支持Git版本控制和协作开发"
+category = "计算机"
+subcategory = "代码托管"
+tags = ["版本控制", "协作", "开源", "CI/CD"]
+icon = "fab fa-github"
+
+
+# 开发工具
 
 [[resources]]
 name = "GitHub"
