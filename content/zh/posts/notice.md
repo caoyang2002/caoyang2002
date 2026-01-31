@@ -13,26 +13,8 @@ toc: true                # 是否显示目录
 autoCollapseToc: true    # 自动折叠目录
 ---
 
-
 本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：
 
-`reggiesimons2cy@gmail.com`
+请发送邮件至：[reggiesimons2cy@gmail.com](mailto:reggiesimons2cy@gmail.com)
 
-
-{{< notice note >}}
-这是一个注意事项
-{{< /notice >}}
-
-
-{{<crypto>}}
-掩耳盗铃
-{{</crypto >}}
-
-
-123
-
-{{% protected "123" %}}
-掩耳盗铃
-{{% /protected %}}
-
-![image](/images/cover/blue.jpg)
+[test](https://www.google.com)
