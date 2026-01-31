@@ -611,7 +611,16 @@
 &lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
 &lt;p&gt;打开 MailPlus Server，如果没有公网 IP，最开始的配置其实无所谓，随便填写都行，毕竟无论如何都发不出邮件。&lt;/p&gt;
 &lt;p&gt;然后点击 &lt;code&gt;服务&lt;/code&gt; 选项，在点击顶部的 &lt;code&gt;MailPlus 客户端&lt;/code&gt; 标签，全部勾选即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png"
+ alt="image"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;image&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
 &lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://simons.qzz.io/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;

@@ -2,5 +2,14 @@
 &lt;p&gt;&lt;strong&gt;说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爱德华·伯尼斯&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;**爱德华·伯尼斯（Edward L.Bernays）**被称为公关之父（美国一共有三个人得到这个称号，其他两个是巴纳姆、艾维·李）。出身维也纳，著名心理学家佛洛伊德的外甥，是公共关系学科化的先驱者，纽约大学教授。&lt;/p&gt;</description></item></channel></rss>

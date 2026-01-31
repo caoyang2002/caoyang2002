@@ -1,4 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on cyrus reggie</title><link>https://simons.qzz.io/es/posts/</link><description>Recent content in Posts on cyrus reggie</description><generator>Hugo</generator><language>es-ES</language><atom:link href="https://simons.qzz.io/es/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/es/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/03/notice/</guid><description>&lt;p&gt;&lt;img src="https://simons.qzz.io/images/cover/blue.jpg" alt="image"&gt;&lt;/p&gt;</description></item><item><title>Hugo-Focus 主题介绍</title><link>https://simons.qzz.io/es/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on cyrus reggie</title><link>https://simons.qzz.io/es/posts/</link><description>Recent content in Posts on cyrus reggie</description><generator>Hugo</generator><language>es-ES</language><atom:link href="https://simons.qzz.io/es/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>公告</title><link>https://simons.qzz.io/es/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/03/notice/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/images/cover/blue.jpg"
+ alt="image"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;image&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>Hugo-Focus 主题介绍</title><link>https://simons.qzz.io/es/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
 &lt;p&gt;这是一个专注于编程的 Hugo 博客主题。&lt;/p&gt;
 &lt;p&gt;参考了我此前为 &lt;code&gt;Typora&lt;/code&gt; 开发的 
 
@@ -15309,7 +15318,16 @@ Done. Now run:
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/es/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/es/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/design/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png"
+ alt="样机"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;样机&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="样机"&gt;样机&lt;/h1&gt;
 &lt;p&gt;
 
@@ -15918,7 +15936,16 @@ Done. Now run:
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/es/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/es/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/jwt/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src=""
+ alt="JWT"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;JWT&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -22044,8 +22071,26 @@ int main(){
 
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://simons.qzz.io/es/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2022/07/chart_image/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg" alt="beautiful.jpg"&gt;
-&lt;img src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg" alt="cool.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>字符图片</title><link>https://simons.qzz.io/es/post/2022/07/chart_image/</link><pubDate>Fri, 29 Jul 2022 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2022/07/chart_image/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.caoyang2002.top/usr/uploads/2023/10/958002088.jpg"
+ alt="beautiful.jpg"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;beautiful.jpg&lt;/figcaption&gt;
+&lt;/figure&gt;
+ 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.caoyang2002.top/usr/uploads/2023/10/1324992575.jpg"
+ alt="cool.jpg"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;cool.jpg&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;
 
 

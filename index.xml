@@ -1,11 +1,27 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 14:55:22 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 16:10:07 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/about/simons.jpg"
+ alt="me"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;me&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
 &lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/first_h5.jpg" alt="first_h5"&gt;&lt;/p&gt;
-&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/chyraw_food.jpg" alt="chyraw_food"&gt;&lt;/p&gt;
-&lt;p&gt;关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p&gt;</description></item><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/about/history/first_h5.jpg"
+ alt="first_h5"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;first_h5&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;</description></item><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
 &lt;p&gt;
 
 
@@ -9923,7 +9939,16 @@
 })();
 &lt;/script&gt;
 &lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg" alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg"
+ alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;14 Most Important Meta And HTML Tags You Need To Know For SEO&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;很长一段时间以来，HTML 元标记一直被称为 
 
 
@@ -10537,7 +10562,16 @@
 &lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
 &lt;p&gt;打开 MailPlus Server，如果没有公网 IP，最开始的配置其实无所谓，随便填写都行，毕竟无论如何都发不出邮件。&lt;/p&gt;
 &lt;p&gt;然后点击 &lt;code&gt;服务&lt;/code&gt; 选项，在点击顶部的 &lt;code&gt;MailPlus 客户端&lt;/code&gt; 标签，全部勾选即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png" alt="image"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/assets/mailplus_client_pop_settings.png"
+ alt="image"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;image&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
 &lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
 &lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
@@ -16014,7 +16048,16 @@ github：readme.md(md=markdown)
 &lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;社区&lt;/code&gt; -&amp;gt; &lt;code&gt;Vaultwarden&lt;/code&gt; -&amp;gt; &lt;code&gt;安装套件&lt;/code&gt;&lt;/p&gt;
 &lt;h1 id="3-在主菜单中点击打开-vaultwarden"&gt;3. 在主菜单中点击打开 Vaultwarden&lt;/h1&gt;
 &lt;p&gt;配置可以不改，然后点击 &lt;code&gt;管理&lt;/code&gt;，这会打开一个页面，这个页面会提示你需要使用 https 访问&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/assets/vaultwarden_https_error.png" alt="http 访问"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/assets/vaultwarden_https_error.png"
+ alt="http 访问"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;http 访问&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>注册一个免费的域名</title><link>https://simons.qzz.io/post/2026/01/register_a_free_domian/</link><pubDate>Mon, 05 Jan 2026 12:28:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/register_a_free_domian/</guid><description>&lt;p&gt;大家好，欢迎来到AI解码师的频道。&lt;/p&gt;
 &lt;p&gt;之前我们曾发布过一期关于如何利用 DigitalPlat 注册永久免费域名的内容。然而，很可惜，在那个内容上线后不久，us.kg 域名的注册系统就出现了故障，相关的注册服务被迫暂停了一段时间。&lt;/p&gt;
 &lt;p&gt;现在，好消息终于来了！经过这段时间的系统升级和维护，DigitalPlat 现已重新开放注册。更令人惊喜的是，本次升级不仅让注册流程变得更加简单便捷，还额外增加了一个免费域名额度的福利。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
@@ -18865,7 +18908,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;告诉潜在顾客，你的产品不是什么，往往比你的产品是什么，还要管用。&lt;/p&gt;</description></item><item><title>对失败的容忍是激励创新的必要条件</title><link>https://simons.qzz.io/post/2025/04/tolerance_of_failure_is_a_necessary_condition_to_stimulate_innovation/</link><pubDate>Sun, 27 Apr 2025 08:37:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/tolerance_of_failure_is_a_necessary_condition_to_stimulate_innovation/</guid><description>&lt;h1 id="创新与经济增长"&gt;创新与经济增长&lt;/h1&gt;
 &lt;p&gt;创新非常重要。&lt;/p&gt;
 &lt;p&gt;1956年，美国经济学家索洛(Solow)首先建立了新古典增长模型，认为决定产出的主要生产要素是资本和劳动力的投入，并且两种生产要素之间是可以替代的，而生产要素的边际报酬是递减的。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://p1.ssl.qhimg.com/dr/270_500_/t016eb6016a9903744a.jpg?size=1536x1536" alt="罗伯特·默顿·索洛_360百科"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://p1.ssl.qhimg.com/dr/270_500_/t016eb6016a9903744a.jpg?size=1536x1536"
+ alt="罗伯特·默顿·索洛_360百科"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;罗伯特·默顿·索洛_360百科&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1957年，索洛又在自己关于经济增长的论文中首次提出了技术的概念，他认为单位产量的变化、劳动力的教育程度以及科技进步等因素都属于“技术变化”因素。&lt;/p&gt;</description></item><item><title>战略目标：问题驱动还是概念先行？</title><link>https://simons.qzz.io/post/2025/04/problem_driven_or_concept_first/</link><pubDate>Sat, 26 Apr 2025 11:09:25 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/problem_driven_or_concept_first/</guid><description>&lt;p&gt;一家企业，首先需要搞明白自己的战略是什么？&lt;/p&gt;
 &lt;p&gt;作为初创公司，概念先行不是一个好的实践。&lt;/p&gt;
 &lt;p&gt;因为这种抽象的概念会让企业的行为找不到目标，也就是没有重点。&lt;/p&gt;
@@ -18885,8 +18937,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;大多数信息发送者的目的都是改变接收者的思想和行为，而不只是为了提醒。&lt;/p&gt;
 &lt;p&gt;正所谓 “项庄舞剑，意在沛公”。&lt;/p&gt;
 &lt;p&gt;有一段时间，支付宝都是在顾客打开 app 的时候就弹出版本更新的提示。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.63e53e5629b2ebcf4386bad258291900?rik=1RQcG5stnntdUw&amp;amp;riu=http%3a%2f%2fimg.7qile.com%2fjingyanall%2fyxlady%2f2022042768.jpg&amp;amp;ehk=WihUuWy6Y7Dk1colPVsShjnfj6tXkefktAptLPyaQGM%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="怎样更新支付宝版本(如何更新支付宝最新版本)-七乐经验网"&gt;&lt;/p&gt;
-&lt;p&gt;这时候的顾客通常都处于正在付款的时候，是一个比较紧急的情况。&lt;/p&gt;</description></item><item><title>企业战略的聚焦：淘宝如何解决初期的挑战？以及 “主业+投资” 的智谱案例</title><link>https://simons.qzz.io/post/2025/04/focus_on_corporate_strategy/</link><pubDate>Sun, 20 Apr 2025 13:23:18 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/focus_on_corporate_strategy/</guid><description>&lt;p&gt;企业战略的定义是识别新品类和定位机会，并用战略去捕捉恰当的机会。&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.tc.mm.bing.net/th/id/R-C.63e53e5629b2ebcf4386bad258291900?rik=1RQcG5stnntdUw&amp;amp;riu=http%3a%2f%2fimg.7qile.com%2fjingyanall%2fyxlady%2f2022042768.jpg&amp;amp;ehk=WihUuWy6Y7Dk1colPVsShjnfj6tXkefktAptLPyaQGM%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="怎样更新支付宝版本(如何更新支付宝最新版本)-七乐经验网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;怎样更新支付宝版本(如何更新支付宝最新版本)-七乐经验网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>企业战略的聚焦：淘宝如何解决初期的挑战？以及 “主业+投资” 的智谱案例</title><link>https://simons.qzz.io/post/2025/04/focus_on_corporate_strategy/</link><pubDate>Sun, 20 Apr 2025 13:23:18 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/focus_on_corporate_strategy/</guid><description>&lt;p&gt;企业战略的定义是识别新品类和定位机会，并用战略去捕捉恰当的机会。&lt;/p&gt;
 &lt;p&gt;多品牌企业战略也存在符合经济规律的 “单一目标”，能够通过协同效应提高资源的使用效率。&lt;/p&gt;
 &lt;h1 id="多品牌主导一个抽象品类"&gt;多品牌主导一个抽象品类&lt;/h1&gt;
 &lt;p&gt;第一种具有指导意义的单一目标，就是用多个品牌主导一个抽象品类。&lt;/p&gt;
@@ -19540,11 +19600,17 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;它不同于安踏、洁柔、小米、周黑鸭这些有实物的品牌，我们不能直接说京东的产品实物是什么。&lt;/p&gt;
 &lt;p&gt;所以，产品品类可以是没有实物的，也就是说，产品品类不一定是实物，它还可以是服务，也就是服务型产品品类。&lt;/p&gt;</description></item><item><title>品类三界之产品品类（上）</title><link>https://simons.qzz.io/post/2025/04/product_categories_in_the_three_realms_of_categories_part_1/</link><pubDate>Wed, 09 Apr 2025 08:28:59 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/product_categories_in_the_three_realms_of_categories_part_1/</guid><description>&lt;p&gt;人们对事物进行分类意味着人们对事物的某种认知有了进步。&lt;/p&gt;
 &lt;p&gt;比如人们对生物的分类。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://oss.zhiwugushi.com/Z/Z1wBBXNxiGKU0=VNQPrHIGnyL3c-GsOUcPSirfIJUQYLs_Iv5OfXteEcXTH-e_uRsghQ==.jpg" alt="生物分类学之父——林奈简介"&gt;&lt;/p&gt;
-&lt;p&gt;一开始是动物和植物，然后进一步深入，发现了动物可以继续分类、植物油也可以继续分类，甚至还发现了真菌，生物及生物分类学就这样蓬勃发展起来。&lt;/p&gt;
-&lt;p&gt;品牌三界同样是一种认知进步，即人们对专业化和顾客购买决策的认知进步。&lt;/p&gt;
-&lt;h1 id="为什么专业化是效率提升的关键"&gt;为什么专业化是效率提升的关键？&lt;/h1&gt;
-&lt;p&gt;比如以前一双运动鞋可以满足所有的运动需求，但是到了专业领域，一双运动鞋在足球场上就显得力不从心了，后来就出现了足球鞋。&lt;/p&gt;</description></item><item><title>广告的二语三性：为什么顾客不相信？对手没反应</title><link>https://simons.qzz.io/post/2025/04/why_dont_customers_believe_it_opponents_dont_respond/</link><pubDate>Tue, 08 Apr 2025 08:13:06 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/why_dont_customers_believe_it_opponents_dont_respond/</guid><description>&lt;p&gt;上一篇文章讲了广告中 “二语三性” 的 “二语”，还没看过的可以看上一篇文章《广告的二语三性：为什么你的广告销售不说，顾客不传？》。&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://oss.zhiwugushi.com/Z/Z1wBBXNxiGKU0=VNQPrHIGnyL3c-GsOUcPSirfIJUQYLs_Iv5OfXteEcXTH-e_uRsghQ==.jpg"
+ alt="生物分类学之父——林奈简介"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;生物分类学之父——林奈简介&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;一开始是动物和植物，然后进一步深入，发现了动物可以继续分类、植物油也可以继续分类，甚至还发现了真菌，生物及生物分类学就这样蓬勃发展起来。&lt;/p&gt;</description></item><item><title>广告的二语三性：为什么顾客不相信？对手没反应</title><link>https://simons.qzz.io/post/2025/04/why_dont_customers_believe_it_opponents_dont_respond/</link><pubDate>Tue, 08 Apr 2025 08:13:06 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/why_dont_customers_believe_it_opponents_dont_respond/</guid><description>&lt;p&gt;上一篇文章讲了广告中 “二语三性” 的 “二语”，还没看过的可以看上一篇文章《广告的二语三性：为什么你的广告销售不说，顾客不传？》。&lt;/p&gt;
 &lt;p&gt;这篇文章主要讲 “三性”。&lt;/p&gt;
 &lt;p&gt;前面提到，三性就是 “可信性” “竞争性” “传染性”&lt;/p&gt;
 &lt;h1 id="可信性"&gt;可信性&lt;/h1&gt;
@@ -19556,13 +19622,29 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;h1 id="广告"&gt;广告&lt;/h1&gt;
 &lt;p&gt;美国 “超级碗” 广告常年价格约为 550 万美元 / 30 秒，约合人民币 3800 万 / 30 秒。&lt;/p&gt;</description></item><item><title>如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试</title><link>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</link><pubDate>Sun, 06 Apr 2025 17:09:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</guid><description>&lt;h3 id="引言"&gt;引言&lt;/h3&gt;
 &lt;p&gt;在物联网（IoT）领域，ESP32因其强大的功能和灵活性而广受欢迎。无论是智能家居、工业自动化还是个人项目，ESP32都能提供可靠的解决方案。然而，要充分利用这一强大的微控制器，首先需要搭建一个稳定的开发环境。本文将详细介绍如何在Ubuntu系统下搭建ESP32开发环境，帮助新手和有一定经验的开发者顺利入门。&lt;/p&gt;</description></item><item><title>品牌取名四要</title><link>https://simons.qzz.io/post/2025/04/four_essentials_for_brand_naming/</link><pubDate>Sun, 06 Apr 2025 08:44:05 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/four_essentials_for_brand_naming/</guid><description>&lt;p&gt;定位理论的创始人里斯和特劳特非常重视取名，甚至在《定位》中说：“在定位时代，你能做的唯一重要的营销决策就是为你的产品取个好名字。”&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.eea819ef057e784cfdeb39e2f6f29e2d?rik=gPFB%2bnknDzuYaw&amp;amp;riu=http%3a%2f%2fdingweililun.com%2fueditor%2fphp%2fupload%2fimage%2f20181120%2f1542705073628148.jpg&amp;amp;ehk=rBn7WAp2TgvamaXktHe%2fVe7QX%2fZkFjz1rzNpmvXBwKk%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="21世纪，“定位之父”艾•里斯如何定位“定位理论”？"&gt;&lt;/p&gt;
-&lt;p&gt;天图投资的冯卫东说，根据他二十多年的投资经验来看，好名字不一定会成功，但是坏名字一定很难成功。&lt;/p&gt;
-&lt;p&gt;好名字能有效进行定位沟通和传播。坏名称难记难写，在顾客心中留下一个印象很不容易。&lt;/p&gt;</description></item><item><title>品类命名方法</title><link>https://simons.qzz.io/post/2025/04/category_naming_method/</link><pubDate>Sat, 05 Apr 2025 07:18:08 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/category_naming_method/</guid><description>&lt;p&gt;艾·里斯在《品牌的起源》中说：“开创并主导一个新品类是打造强势品牌的捷径。”&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.tc.mm.bing.net/th/id/R-C.eea819ef057e784cfdeb39e2f6f29e2d?rik=gPFB%2bnknDzuYaw&amp;amp;riu=http%3a%2f%2fdingweililun.com%2fueditor%2fphp%2fupload%2fimage%2f20181120%2f1542705073628148.jpg&amp;amp;ehk=rBn7WAp2TgvamaXktHe%2fVe7QX%2fZkFjz1rzNpmvXBwKk%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="21世纪，“定位之父”艾•里斯如何定位“定位理论”？"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;21世纪，“定位之父”艾•里斯如何定位“定位理论”？&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;天图投资的冯卫东说，根据他二十多年的投资经验来看，好名字不一定会成功，但是坏名字一定很难成功。&lt;/p&gt;</description></item><item><title>品类命名方法</title><link>https://simons.qzz.io/post/2025/04/category_naming_method/</link><pubDate>Sat, 05 Apr 2025 07:18:08 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/category_naming_method/</guid><description>&lt;p&gt;艾·里斯在《品牌的起源》中说：“开创并主导一个新品类是打造强势品牌的捷径。”&lt;/p&gt;
 &lt;p&gt;猕猴桃原产于中国，最初被称为“羊桃”（Yang Tao）或“猕猴桃”（Mihou Tao）。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://x0.ifengimg.com/ucms/2022_44/82E36D1E67537AA5B703F1000596BF214E3DBB09_size171_w1267_h950.jpg" alt="宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网"&gt;&lt;/p&gt;
-&lt;p&gt;20世纪初，猕猴桃被引入新西兰。&lt;/p&gt;
-&lt;p&gt;1904年，一位名叫Isabel Fraser的女教师从中国带回了猕猴桃的种子，并成功在新西兰种植。&lt;/p&gt;</description></item><item><title>商业模式之企业商业模式</title><link>https://simons.qzz.io/post/2025/04/business_model_of_enterprise_business_model/</link><pubDate>Wed, 02 Apr 2025 13:26:37 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/business_model_of_enterprise_business_model/</guid><description>&lt;p&gt;上一片文章是品牌商业模式，不了解的读者可以先读上一篇。&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://x0.ifengimg.com/ucms/2022_44/82E36D1E67537AA5B703F1000596BF214E3DBB09_size171_w1267_h950.jpg"
+ alt="宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;宝鸡市凤翔区果园村：猕猴桃香飘致富路凤凰网陕西_凤凰网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;20世纪初，猕猴桃被引入新西兰。&lt;/p&gt;</description></item><item><title>商业模式之企业商业模式</title><link>https://simons.qzz.io/post/2025/04/business_model_of_enterprise_business_model/</link><pubDate>Wed, 02 Apr 2025 13:26:37 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/business_model_of_enterprise_business_model/</guid><description>&lt;p&gt;上一片文章是品牌商业模式，不了解的读者可以先读上一篇。&lt;/p&gt;
 &lt;p&gt;企业商业模式就是企业与利益相关者的交易结构。&lt;/p&gt;
 &lt;h1 id="品牌运营"&gt;品牌运营&lt;/h1&gt;
 &lt;p&gt;现有企业后有品牌。&lt;/p&gt;
@@ -19582,7 +19664,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  data-preview-url="https://www.21cto.com/uploads/fox/29172227_0.jpg"
  data-preview-type="external"
  &gt;
- &lt;img src="https://www.21cto.com/uploads/fox/29172227_0.jpg" alt="/uploads/fox/29172227_0.jpg"&gt;
+ 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.21cto.com/uploads/fox/29172227_0.jpg"
+ alt="/uploads/fox/29172227_0.jpg"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;/uploads/fox/29172227_0.jpg&lt;/figcaption&gt;
+&lt;/figure&gt;
  
  &lt;span class="external-icon"&gt;
  
@@ -20191,10 +20282,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;其实早在 2023 年就有人在讨论为什么近年愚人节没人过了，后来刘润老师还写过一篇文章。&lt;/p&gt;
 &lt;p&gt;以前的时候，一些人会想尽办法骗你，然后说一句 “愚人节快乐！”&lt;/p&gt;</description></item><item><title>配称的三种分类</title><link>https://simons.qzz.io/post/2025/03/three_categories_of_matching_names/</link><pubDate>Mon, 31 Mar 2025 08:26:48 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/three_categories_of_matching_names/</guid><description>&lt;p&gt;&lt;strong&gt;定位发生在心智战场，配称发生在物理战场。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;比如被称为 “肥宅快乐水” 的可口可乐，以快乐为标的，在客户心智中占据一个强有力的定位。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.231c6c1e3af136e9895199c366677ecb?rik=YAQk3M4PpLCxEQ&amp;amp;riu=http%3a%2f%2fimg1.mydrivers.com%2fimg%2f20190110%2fSa5a8ad17-5056-42b0-9f83-a08356433352.jpg&amp;amp;ehk=H%2f2E5FdvCgAN7u3F2maKTMPL33Kshyh2eLh2WV6htm8%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="“肥宅快乐水”为什么能给我们带来快乐？-肥宅快乐水,可乐,饮料,科普 ——快科技(驱动之家旗下媒体)–科技改变未来"&gt;&lt;/p&gt;
-&lt;p&gt;有比如以干净为标的的餐饮品牌，使用 “明厨亮灶” 的运营方式也是一种配称。&lt;/p&gt;
-&lt;p&gt;那么他们是怎么实现这个定位的呢？&lt;/p&gt;
-&lt;p&gt;通常来说，无外乎通过各式各样的媒介进行宣传，实现这个定位的过程就是配称。&lt;/p&gt;</description></item><item><title>品牌三问之三：何以见得</title><link>https://simons.qzz.io/post/2025/03/how_so/</link><pubDate>Sun, 30 Mar 2025 14:13:28 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_so/</guid><description>&lt;p&gt;我们都知道，品牌声称自已占有某种优势的时候，顾客通常是不会相信的。&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.tc.mm.bing.net/th/id/R-C.231c6c1e3af136e9895199c366677ecb?rik=YAQk3M4PpLCxEQ&amp;amp;riu=http%3a%2f%2fimg1.mydrivers.com%2fimg%2f20190110%2fSa5a8ad17-5056-42b0-9f83-a08356433352.jpg&amp;amp;ehk=H%2f2E5FdvCgAN7u3F2maKTMPL33Kshyh2eLh2WV6htm8%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="“肥宅快乐水”为什么能给我们带来快乐？-肥宅快乐水,可乐,饮料,科普 ——快科技(驱动之家旗下媒体)–科技改变未来"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;“肥宅快乐水”为什么能给我们带来快乐？-肥宅快乐水,可乐,饮料,科普 ——快科技(驱动之家旗下媒体)–科技改变未来&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>品牌三问之三：何以见得</title><link>https://simons.qzz.io/post/2025/03/how_so/</link><pubDate>Sun, 30 Mar 2025 14:13:28 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_so/</guid><description>&lt;p&gt;我们都知道，品牌声称自已占有某种优势的时候，顾客通常是不会相信的。&lt;/p&gt;
 &lt;p&gt;“王婆卖瓜” 式的传达，对顾客来说司空见惯。&lt;/p&gt;
 &lt;p&gt;因此品牌需要拿出有力的证据，来证明这种真实性。&lt;/p&gt;
 &lt;p&gt;只有这样顾客才会把品牌关联到它主张的特性上。&lt;/p&gt;
@@ -20202,9 +20299,26 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;信任状就是让品牌定位显得真实可信的事实。&lt;/p&gt;
 &lt;p&gt;作为信任状的事实不一定是客观事实，也可以是认知事实，也就是顾客认知中是正确的。&lt;/p&gt;</description></item><item><title>品牌三问之二：有何不同？</title><link>https://simons.qzz.io/post/2025/03/what_is_the_difference/</link><pubDate>Fri, 28 Mar 2025 21:38:37 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_is_the_difference/</guid><description>&lt;p&gt;在玲琅满目的产品中，消费者发现了你的品牌后，最想要了解的就是你和其他品牌的区别，消费者为什么要选择你，而不是其他品牌？&lt;/p&gt;
 &lt;p&gt;这个特性不是自说自话，比如恒大冰泉的广告语 “恒大冰泉，一处水源供全球”。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://p1.ssl.qhmsg.com/dr/270_500_/t014f525c0dd0175999.jpg" alt="恒大冰泉_360百科"&gt;&lt;/p&gt;
-&lt;p&gt;消费者很可能不明白 “一处水源供全球” 的意义是什么，对消费者来说过于隐晦了。&lt;/p&gt;
-&lt;p&gt;这样的广告语显然不如农夫山泉的广告语 “农夫山泉有点甜”。&lt;/p&gt;</description></item><item><title>品牌三问之一：你是什么？</title><link>https://simons.qzz.io/post/2025/03/what_do_you/</link><pubDate>Thu, 27 Mar 2025 09:04:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_do_you/</guid><description>&lt;p&gt;&lt;img src="https://pinkehao.com/wp-content/uploads/2022/04/7c587beea1294d088316739000654dfd.png" alt="公司品牌介绍怎么写(写好品牌介绍的五大内容结构) - 拼客号"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://p1.ssl.qhmsg.com/dr/270_500_/t014f525c0dd0175999.jpg"
+ alt="恒大冰泉_360百科"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;恒大冰泉_360百科&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;消费者很可能不明白 “一处水源供全球” 的意义是什么，对消费者来说过于隐晦了。&lt;/p&gt;</description></item><item><title>品牌三问之一：你是什么？</title><link>https://simons.qzz.io/post/2025/03/what_do_you/</link><pubDate>Thu, 27 Mar 2025 09:04:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_do_you/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://pinkehao.com/wp-content/uploads/2022/04/7c587beea1294d088316739000654dfd.png"
+ alt="公司品牌介绍怎么写(写好品牌介绍的五大内容结构) - 拼客号"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;公司品牌介绍怎么写(写好品牌介绍的五大内容结构) - 拼客号&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="品牌三问概述"&gt;品牌三问概述&lt;/h1&gt;
 &lt;ol&gt;
 &lt;li&gt;
@@ -20219,27 +20333,50 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;/ol&gt;
 &lt;h1 id="品类"&gt;品类&lt;/h1&gt;
 &lt;p&gt;品类就是顾客在购买决策中涉及的最后一级商品分类，由该分类可以关联到品牌，并且在该分类上可以完成相应的购买选择。&lt;/p&gt;
-&lt;p&gt;比如提到可乐可以想到可口可乐，提到空调可以想到格力，提到超市可以想到沃尔玛，所以可乐、空调、超市就是品类。&lt;/p&gt;
-&lt;p&gt;在实际中，我们还能看到 “强品类” 和 “弱品类”。&lt;/p&gt;</description></item><item><title>定位理论的贡献三：品牌是什么？</title><link>https://simons.qzz.io/post/2025/03/what_is_the_brand/</link><pubDate>Wed, 26 Mar 2025 10:47:16 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_is_the_brand/</guid><description>&lt;p&gt;&lt;img src="https://pic4.zhimg.com/v2-386dd477c9ada96219efee178e5c1690_r.jpg?source=1940ef5c" alt="如何给新品牌打造出它的知名度？ - 知乎"&gt;&lt;/p&gt;
+&lt;p&gt;比如提到可乐可以想到可口可乐，提到空调可以想到格力，提到超市可以想到沃尔玛，所以可乐、空调、超市就是品类。&lt;/p&gt;</description></item><item><title>定位理论的贡献三：品牌是什么？</title><link>https://simons.qzz.io/post/2025/03/what_is_the_brand/</link><pubDate>Wed, 26 Mar 2025 10:47:16 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/what_is_the_brand/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://pic4.zhimg.com/v2-386dd477c9ada96219efee178e5c1690_r.jpg?source=1940ef5c"
+ alt="如何给新品牌打造出它的知名度？ - 知乎"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;如何给新品牌打造出它的知名度？ - 知乎&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;当我们提及最安全的轿车的时候，会想到沃尔沃。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.qV3vaQFyLkQYOft0cEI_4AHaFj?rs=1&amp;amp;pid=ImgDetMain" alt="沃尔沃汽车logo设计含义及汽车品牌标志设计理念-三文品牌"&gt;&lt;/p&gt;
-&lt;p&gt;也就是在轿车这个领域，“安全” 这个特性是沃尔沃的绑定属性。&lt;/p&gt;
-&lt;p&gt;自19世纪20年代起，沃尔沃一直秉承着相同目标 ：自由出行，为每个人提供最大的安全。&lt;/p&gt;
-&lt;p&gt;虽然现在沃尔沃的事故死亡率和其他品牌难分胜负，但是 “安全” 的特性一直跟随在沃尔沃品牌后面。&lt;/p&gt;
-&lt;h1 id="品牌定义"&gt;品牌定义&lt;/h1&gt;
-&lt;p&gt;定位理论是从消费者出发的，其之处：&lt;strong&gt;品牌是品类及其特性的代表。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>定位理论的贡献二：竞争的基本单位是品牌</title><link>https://simons.qzz.io/post/2025/03/the_basic_unit_of_competition_is_brand/</link><pubDate>Wed, 26 Mar 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/the_basic_unit_of_competition_is_brand/</guid><description>&lt;p&gt;在多数人眼里，竞争的就是企业和企业之间的竞争，或者商业模式的竞争，有时候还能听见资源竞争、资本竞争，其实这样说是不准确的，企业的目的是盈利，企业之间的竞争本质是为了获得消费者。&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://tse4-mm.cn.bing.net/th/id/OIP-C.qV3vaQFyLkQYOft0cEI_4AHaFj?rs=1&amp;amp;pid=ImgDetMain"
+ alt="沃尔沃汽车logo设计含义及汽车品牌标志设计理念-三文品牌"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;沃尔沃汽车logo设计含义及汽车品牌标志设计理念-三文品牌&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;也就是在轿车这个领域，“安全” 这个特性是沃尔沃的绑定属性。&lt;/p&gt;</description></item><item><title>定位理论的贡献二：竞争的基本单位是品牌</title><link>https://simons.qzz.io/post/2025/03/the_basic_unit_of_competition_is_brand/</link><pubDate>Wed, 26 Mar 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/the_basic_unit_of_competition_is_brand/</guid><description>&lt;p&gt;在多数人眼里，竞争的就是企业和企业之间的竞争，或者商业模式的竞争，有时候还能听见资源竞争、资本竞争，其实这样说是不准确的，企业的目的是盈利，企业之间的竞争本质是为了获得消费者。&lt;/p&gt;
 &lt;p&gt;所以竞争要从消费者的视角看，不难发现，&lt;strong&gt;企业之间竞争的本质其实是品牌之间的竞争。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;对消费者说 “字节跳动”，可能不会有任何反应，但是说 “抖音” 就能够引起共鸣。&lt;/p&gt;</description></item><item><title>定位贡献一：竞争的终极战场在哪里？</title><link>https://simons.qzz.io/post/2025/03/where_is_the_ultimate_battlefield_of_competition/</link><pubDate>Tue, 25 Mar 2025 08:24:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/where_is_the_ultimate_battlefield_of_competition/</guid><description>&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.c57a12461150e0245eeff8e2e9e02557?rik=pod42R02gzUpAw&amp;amp;riu=http%3a%2f%2fwww.ppzw.com%2fUploadFiles%2f201751162031145.jpg&amp;amp;ehk=sKsUK6uyU0a0oirJFsVRgegwUJNY0fS2S3jOVj4EJLc%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="“终极拆招”王老吉血战加多宝，定位理论落地中国的四场“定位遭遇战”_【品牌战略】_品牌总网"&gt;&lt;/p&gt;
+&lt;p&gt;对消费者说 “字节跳动”，可能不会有任何反应，但是说 “抖音” 就能够引起共鸣。&lt;/p&gt;</description></item><item><title>定位贡献一：竞争的终极战场在哪里？</title><link>https://simons.qzz.io/post/2025/03/where_is_the_ultimate_battlefield_of_competition/</link><pubDate>Tue, 25 Mar 2025 08:24:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/where_is_the_ultimate_battlefield_of_competition/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.tc.mm.bing.net/th/id/R-C.c57a12461150e0245eeff8e2e9e02557?rik=pod42R02gzUpAw&amp;amp;riu=http%3a%2f%2fwww.ppzw.com%2fUploadFiles%2f201751162031145.jpg&amp;amp;ehk=sKsUK6uyU0a0oirJFsVRgegwUJNY0fS2S3jOVj4EJLc%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="“终极拆招”王老吉血战加多宝，定位理论落地中国的四场“定位遭遇战”_【品牌战略】_品牌总网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;“终极拆招”王老吉血战加多宝，定位理论落地中国的四场“定位遭遇战”_【品牌战略】_品牌总网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;定位理论的两位创始人杰克特劳特和艾·里斯为其创建了庞大的知识体系，完全掌握这些理论是非常困难的。&lt;/p&gt;
-&lt;p&gt;定位理论的实践者冯卫东老师说：“作为实践者，需要运用 ‘二八原则’。其实只要掌握定位理论的三大贡献，就可以享受定位理论 80% 的成果了。”&lt;/p&gt;
-&lt;h1 id="定位理论的三大贡献"&gt;定位理论的三大贡献&lt;/h1&gt;
-&lt;ol&gt;
-&lt;li&gt;竞争的终极战场是用户的心智&lt;/li&gt;
-&lt;li&gt;竞争的基本单位是品牌&lt;/li&gt;
-&lt;li&gt;品牌是品类极其特性的代表&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h1 id="认知大于事实"&gt;认知大于事实&lt;/h1&gt;
-&lt;p&gt;假设你很喜欢摄影，朋友送你一台徕卡的相机，价值四万。&lt;/p&gt;</description></item><item><title>价值：顾客为什么购买？</title><link>https://simons.qzz.io/post/2025/03/why_do_customers_buy/</link><pubDate>Mon, 24 Mar 2025 08:23:09 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/why_do_customers_buy/</guid><description>&lt;p&gt;&lt;img src="https://tse4-mm.cn.bing.net/th/id/OIP-C.qxxZO-dO1LV2nwHpT8JJ4AHaEb?w=289&amp;amp;h=180&amp;amp;c=7&amp;amp;r=0&amp;amp;o=5&amp;amp;dpr=2&amp;amp;pid=1.7" alt="Image result for 价值"&gt;&lt;/p&gt;
+&lt;p&gt;定位理论的实践者冯卫东老师说：“作为实践者，需要运用 ‘二八原则’。其实只要掌握定位理论的三大贡献，就可以享受定位理论 80% 的成果了。”&lt;/p&gt;</description></item><item><title>价值：顾客为什么购买？</title><link>https://simons.qzz.io/post/2025/03/why_do_customers_buy/</link><pubDate>Mon, 24 Mar 2025 08:23:09 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/why_do_customers_buy/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://tse4-mm.cn.bing.net/th/id/OIP-C.qxxZO-dO1LV2nwHpT8JJ4AHaEb?w=289&amp;amp;h=180&amp;amp;c=7&amp;amp;r=0&amp;amp;o=5&amp;amp;dpr=2&amp;amp;pid=1.7"
+ alt="Image result for 价值"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;Image result for 价值&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;顾客选择购买你的商品归根结底是因为&lt;strong&gt;你创造的顾客价值大于顾客所需要付出的成本。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;用经济学的术语来说，就是顾客购买你的产品获得了消费者盈余。&lt;/p&gt;
 &lt;h1 id="顾客价值"&gt;顾客价值&lt;/h1&gt;
@@ -20865,12 +21002,19 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 })();
 &lt;/script&gt;
 ，作者：柳二白，36氪经授权发布。&lt;/p&gt;</description></item><item><title>KA 猛于虎</title><link>https://simons.qzz.io/post/2025/03/ka_is_stronger_than_a_tiger/</link><pubDate>Sun, 23 Mar 2025 08:53:28 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/ka_is_stronger_than_a_tiger/</guid><description>&lt;p&gt;1995年，家乐福进入中国市场，通过向供货商收取通道费、占压货款的方式，赚取还未销售就有的利润——后台利润，实现了低成本的快速扩张。家乐福这种收取进场费、拖延账期的低成本发展方式，很快被其他零售企业效仿，16年间，零售企业这种“守株待兔”式的商业模式被不断扩大升级，通道费用慢慢滋长成为零售业态中一颗去不掉、避不开的“商业毒瘤”。&lt;/p&gt;</description></item><item><title>创造顾客：心智预售与进场费</title><link>https://simons.qzz.io/post/2025/03/create_customer/</link><pubDate>Sun, 23 Mar 2025 08:10:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/create_customer/</guid><description>&lt;p&gt;德鲁克说：“企业存在的唯一目的是创作顾客。”&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://th.bing.com/th/id/R.2c6cb74d5263ddaa2e78e27301166d8d?rik=ZSt6BLj9JI5O5w&amp;amp;riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180619%2ff16af69ae2e24594816359da333e695a.jpeg&amp;amp;ehk=tbGiFID8%2fYpB4W802a8p6lHdJhstweCXPZe07iFucHE%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="德鲁克：信仰需要经历绝望，企业文化就是信仰"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://th.bing.com/th/id/R.2c6cb74d5263ddaa2e78e27301166d8d?rik=ZSt6BLj9JI5O5w&amp;amp;riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180619%2ff16af69ae2e24594816359da333e695a.jpeg&amp;amp;ehk=tbGiFID8%2fYpB4W802a8p6lHdJhstweCXPZe07iFucHE%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="德鲁克：信仰需要经历绝望，企业文化就是信仰"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;德鲁克：信仰需要经历绝望，企业文化就是信仰&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="心智预售"&gt;心智预售&lt;/h1&gt;
 &lt;p&gt;心智预售，简言之，就是指品牌在顾客心中预先占据一个位置，使得顾客在产生相关需求时，能够第一时间想到该品牌，并产生购买欲望。&lt;/p&gt;
-&lt;p&gt;通过 “心智预售”，我们很容易理解品牌为什么会左右顾客的选择。&lt;/p&gt;
-&lt;p&gt;比如，我们想要买无人机的时候，心里想的基本都是大疆。&lt;/p&gt;
-&lt;p&gt;再举一个例子，你现在想要买一个插板给微波炉用，你会买什么品牌？&lt;/p&gt;</description></item><item><title>高手如何做决策</title><link>https://simons.qzz.io/post/2025/03/how_do_experts_make_decisions/</link><pubDate>Sat, 22 Mar 2025 01:59:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_do_experts_make_decisions/</guid><description>&lt;h1 id="王慧文高手如何做决策"&gt;王慧文：高手如何做决策？&lt;/h1&gt;
+&lt;p&gt;通过 “心智预售”，我们很容易理解品牌为什么会左右顾客的选择。&lt;/p&gt;</description></item><item><title>高手如何做决策</title><link>https://simons.qzz.io/post/2025/03/how_do_experts_make_decisions/</link><pubDate>Sat, 22 Mar 2025 01:59:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_do_experts_make_decisions/</guid><description>&lt;h1 id="王慧文高手如何做决策"&gt;王慧文：高手如何做决策？&lt;/h1&gt;
 &lt;p&gt;来源于微信公众号：笔记侠(ID：Notesman)&lt;/p&gt;
 &lt;p&gt;责任编辑 | 君莫笑 浮灯 值班编辑 | 君莫笑&lt;/p&gt;
 &lt;p&gt;内容来源：本文为2020年9月25日王慧文清华产品课，整理自现场实录。&lt;/p&gt;
@@ -21491,14 +21635,31 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;原载于《中国新闻周刊》2008年第15期，作者李杨，原题《可口可乐重返中国》。转自老衲读史2&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="http://5b0988e595225.cdn.sohucs.com/images/20190307/1716fd759c0b4c5d87371d52f7275e8f.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="http://5b0988e595225.cdn.sohucs.com/images/20190307/1716fd759c0b4c5d87371d52f7275e8f.jpeg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1979年第一批到达中国的可口可乐&lt;/p&gt;
 &lt;p&gt;1978年12月13日，北京饭店。美国可口可乐公司与中国粮油进出口总公司签订协议，可口可乐在撤离中国大陆30年后重返中国市场，可口可乐由此成为新中国成立以来，第一家进入大陆的外企。&lt;/p&gt;</description></item><item><title>可乐的故事并不轻松：中国饮料业的三次冲击</title><link>https://simons.qzz.io/post/2025/03/three_shocks_to_china_s_beverage_industry/</link><pubDate>Sat, 22 Mar 2025 00:41:03 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/three_shocks_to_china_s_beverage_industry/</guid><description>&lt;p&gt;《北京青年报》&lt;/p&gt;
 &lt;p&gt;十几年的时间，中国消费者的口味变了可口可乐进入中国的时候，几乎未遇到抵抗。可口可乐在中国的成功，似乎是一夜之间。&lt;/p&gt;
 &lt;p&gt;在可口可乐进入中国市场以前，中国市场巨大的空间对于可口可乐来说是极为难得的机遇：中国没有具有全国性影响的饮料品牌，没有支持全国性饮料品牌的销售渠道。&lt;/p&gt;
 &lt;p&gt;为中国消费者所的饮料品牌几乎都是地域性的；如北京的北冰洋汽水、天津的亚洲汽水、上海的老正兴汽水等。这些产品在其固有的销售区域内，无疑具有强大的影响力，但在计划经济体制下，这些产品无力把它影响力扩展到其它地区。&lt;/p&gt;</description></item><item><title>企业的核心经营成果在哪里？</title><link>https://simons.qzz.io/post/2025/03/where_are_the_core_operating_results_of_the_company/</link><pubDate>Sat, 22 Mar 2025 00:27:31 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/where_are_the_core_operating_results_of_the_company/</guid><description>&lt;p&gt;现代管理学之父彼得·德鲁克说：“企业的经营成果在企业外部，在企业内部的只有成本。”&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://xqimg.imedao.com/184c0e2b2877b653fe70e08b.jpg!800.jpg" alt="德鲁克60句经典名言 彼得·德鲁克，被誉为“现代管理学之父”。我们熟知的营销、目标管理、人力资源和知识工作者等许多管理理论和概念都是他首先提出 …"&gt;&lt;/p&gt;
-&lt;p&gt;但是，德鲁克并没有说明 “外部” 的具体位置，多年后，定位理论指出 “企业的核心经营成果在顾客的心智中，它左右顾客的选择，这个核心经营成果就是品牌。”&lt;/p&gt;</description></item><item><title>【315 专题】暴利机器：疯狂收割的兑吧集团</title><link>https://simons.qzz.io/post/2025/03/duiba_group_which_is_madly_harvesting/</link><pubDate>Thu, 20 Mar 2025 05:24:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/duiba_group_which_is_madly_harvesting/</guid><description>&lt;h1 id="事件经过"&gt;事件经过&lt;/h1&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://xqimg.imedao.com/184c0e2b2877b653fe70e08b.jpg!800.jpg"
+ alt="德鲁克60句经典名言 彼得·德鲁克，被誉为“现代管理学之父”。我们熟知的营销、目标管理、人力资源和知识工作者等许多管理理论和概念都是他首先提出 …"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;德鲁克60句经典名言 彼得·德鲁克，被誉为“现代管理学之父”。我们熟知的营销、目标管理、人力资源和知识工作者等许多管理理论和概念都是他首先提出 …&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>【315 专题】暴利机器：疯狂收割的兑吧集团</title><link>https://simons.qzz.io/post/2025/03/duiba_group_which_is_madly_harvesting/</link><pubDate>Thu, 20 Mar 2025 05:24:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/duiba_group_which_is_madly_harvesting/</guid><description>&lt;h1 id="事件经过"&gt;事件经过&lt;/h1&gt;
 &lt;p&gt;![image-20250320052437019](/Users/simons/Library/Application Support/typora-user-images/image-20250320052437019.png)&lt;/p&gt;
 &lt;p&gt;记者来到诺诺网。&lt;/p&gt;
 &lt;p&gt;诺诺网是一家电子发票第三方服务平台。&lt;/p&gt;
@@ -21515,26 +21676,58 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;使用这种外呼智能机器人，效率比人工高出数倍。&lt;/p&gt;
 &lt;p&gt;![image-20250319094201779](/Users/simons/Library/Application Support/typora-user-images/image-20250319094201779.png)&lt;/p&gt;
 &lt;p&gt;并且这些机器人的声音由真人录制而成，使用户难辨真伪，从而更能提高接听率。&lt;/p&gt;
-&lt;p&gt;记者来到智优擎网络科技公司，这是一家从从事外呼业务好几年的企业。&lt;/p&gt;</description></item><item><title>【315 专题】电子签：高利贷与砍头息</title><link>https://simons.qzz.io/post/2025/03/usury_and_beheading_interest/</link><pubDate>Tue, 18 Mar 2025 08:31:04 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/usury_and_beheading_interest/</guid><description>&lt;p&gt;&lt;img src="https://ts1.tc.mm.bing.net/th/id/R-C.dc3f89354ab7510d576ac7d469181665?rik=Bt3WH4I1Q2U8DQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2ffinance%2fcrawl%2fw550h412%2f20171225%2fusCH-fypyuva9288471.jpg&amp;amp;ehk=ABCCFv9AMjXGMo9aazWM4d5LCREKe7C8x734SWpsrsA%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="裸贷鼻祖借贷宝高调宣布将赴港上市 负面缠身怎过关_荔枝网新闻"&gt;&lt;/p&gt;
+&lt;p&gt;记者来到智优擎网络科技公司，这是一家从从事外呼业务好几年的企业。&lt;/p&gt;</description></item><item><title>【315 专题】电子签：高利贷与砍头息</title><link>https://simons.qzz.io/post/2025/03/usury_and_beheading_interest/</link><pubDate>Tue, 18 Mar 2025 08:31:04 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/usury_and_beheading_interest/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.tc.mm.bing.net/th/id/R-C.dc3f89354ab7510d576ac7d469181665?rik=Bt3WH4I1Q2U8DQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2ffinance%2fcrawl%2fw550h412%2f20171225%2fusCH-fypyuva9288471.jpg&amp;amp;ehk=ABCCFv9AMjXGMo9aazWM4d5LCREKe7C8x734SWpsrsA%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="裸贷鼻祖借贷宝高调宣布将赴港上市 负面缠身怎过关_荔枝网新闻"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;裸贷鼻祖借贷宝高调宣布将赴港上市 负面缠身怎过关_荔枝网新闻&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一经过"&gt;一、经过&lt;/h1&gt;
 &lt;p&gt;![image-20250318083206634](/Users/simons/Library/Application Support/typora-user-images/image-20250318083206634.png)&lt;/p&gt;
 &lt;p&gt;电子签借款是一种利用电子签在陌生人之间借款的方式。但是，这种方式真的靠谱吗？&lt;/p&gt;
 &lt;p&gt;![image-20250318083846976](/Users/simons/Library/Application Support/typora-user-images/image-20250318083846976.png)&lt;/p&gt;
 &lt;p&gt;采访到两位借款人。&lt;/p&gt;
-&lt;p&gt;借款人洪先生说：“借了 5,000 元，到手 3,500 元，七天内还款，电子签走的是借贷宝。”&lt;/p&gt;
-&lt;p&gt;![image-20250318083252233](/Users/simons/Library/Application Support/typora-user-images/image-20250318083252233.png)&lt;/p&gt;
-&lt;p&gt;另一位借款人王女士说：“电子签走的人人信，借了 30,000 元，到账 14,000 元，约定还 30,000 元，扣除了 16,000 元的利息。”&lt;/p&gt;</description></item><item><title>故事经济学</title><link>https://simons.qzz.io/post/2025/03/storyeconomics/</link><pubDate>Mon, 17 Mar 2025 14:50:15 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/storyeconomics/</guid><description>&lt;p&gt;&lt;strong&gt;① 目标受众&lt;/strong&gt;：创作之前必须先想清楚受众是谁，故事结束时，作品将对他们的思想和情感产生怎样的影响？&lt;/p&gt;
+&lt;p&gt;借款人洪先生说：“借了 5,000 元，到手 3,500 元，七天内还款，电子签走的是借贷宝。”&lt;/p&gt;</description></item><item><title>故事经济学</title><link>https://simons.qzz.io/post/2025/03/storyeconomics/</link><pubDate>Mon, 17 Mar 2025 14:50:15 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/storyeconomics/</guid><description>&lt;p&gt;&lt;strong&gt;① 目标受众&lt;/strong&gt;：创作之前必须先想清楚受众是谁，故事结束时，作品将对他们的思想和情感产生怎样的影响？&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;② 主题（背景设定）&lt;/strong&gt;：包含社会背景、主要人物以及核心价值。其中核心价值将体现故事的意义，常表现为主要事件变化的两端：爱/恨、忠诚/背叛、生/死、道德/不道德、希望/绝望、正义/不公……&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;③ 激励事件（导火线）&lt;/strong&gt;：打破核心人物生活平衡，从而为整个故事拉开帷幕的事件。&lt;/p&gt;</description></item><item><title>【315 专题】虾仁偿命：水比货压秤，七成都是冰</title><link>https://simons.qzz.io/post/2025/03/water_is_more_than_cargo_pressure_70_of_it_is_ice/</link><pubDate>Mon, 17 Mar 2025 05:10:55 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/water_is_more_than_cargo_pressure_70_of_it_is_ice/</guid><description>&lt;p&gt;![image-20250317054035112](/Users/simons/Library/Application Support/typora-user-images/image-20250317054035112.png)&lt;/p&gt;
 &lt;p&gt;315晚会曝光的“保水虾仁”问题，揭示了部分水产加工企业通过超量添加保水剂（如复合磷酸盐）和过度包冰的方式，人为增加虾仁重量，从而获取更高利润。例如，一些企业的虾仁保水率高达20%，包冰率甚至达到70%，导致消费者购买的产品中，实际虾仁含量极低。&lt;/p&gt;
-&lt;p&gt;这种现象并非个例，而是行业内的普遍问题。尽管国家规定冷冻水产品中磷酸盐的添加量不得超过千分之五，但部分企业为了迎合客户需求，将添加量提高至千分之三十，严重超标。此外，许多企业在产品包装上并未标注保水剂的使用情况，消费者在不知情的情况下购买了“保水”虾仁。&lt;/p&gt;</description></item><item><title>【315 专题】胡修乱报：啄木鸟放弃公关的公关</title><link>https://simons.qzz.io/post/2025/03/woodpecker_gave_up_public_relations/</link><pubDate>Sun, 16 Mar 2025 09:48:16 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/woodpecker_gave_up_public_relations/</guid><description>&lt;p&gt;&lt;img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0315%2F3f7a8145j00st690m0036d001cb00psm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;这种现象并非个例，而是行业内的普遍问题。尽管国家规定冷冻水产品中磷酸盐的添加量不得超过千分之五，但部分企业为了迎合客户需求，将添加量提高至千分之三十，严重超标。此外，许多企业在产品包装上并未标注保水剂的使用情况，消费者在不知情的情况下购买了“保水”虾仁。&lt;/p&gt;</description></item><item><title>【315 专题】胡修乱报：啄木鸟放弃公关的公关</title><link>https://simons.qzz.io/post/2025/03/woodpecker_gave_up_public_relations/</link><pubDate>Sun, 16 Mar 2025 09:48:16 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/woodpecker_gave_up_public_relations/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://nimg.ws.126.net/?url=http%3A%2F%2Fdingyue.ws.126.net%2F2025%2F0315%2F3f7a8145j00st690m0036d001cb00psm.jpg&amp;amp;thumbnail=660x2147483647&amp;amp;quality=80&amp;amp;type=jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2025年3月15日，中央广播电视总台第35届“3·15”晚会以“共铸诚信、提振消费”为主题，曝光了啄木鸟家庭维修品牌存在的诸多问题。&lt;/p&gt;
-&lt;p&gt;啄木鸟家庭维修创立于1995年，总部位于重庆，业务覆盖C端、B端、F端，为居民、企事业单位和电器家居生产厂家提供维修、保养、安装等服务，是目前最大的家电维修品牌。公司宣称在国内 300 多个城市 开展业务，在线接单的维修人员达十万人。&lt;/p&gt;</description></item><item><title>不加班的大厂，是效率还是合规？</title><link>https://simons.qzz.io/post/2025/03/is_a_large_factory_that_does_not_work_overtime_efficient_or_compliant/</link><pubDate>Sat, 15 Mar 2025 11:55:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/is_a_large_factory_that_does_not_work_overtime_efficient_or_compliant/</guid><description>&lt;p&gt;&lt;img src="https://pic.vjshi.com/2021-11-05/90517c7340f8454f87bf4f53edfc450f/00003.jpg?x-oss-process=style/watermark" alt="顺德北滘美的总部大楼_3840X2160_高清视频素材下载(编号:6671644)_实拍视频_光厂(VJ师网) www.vjshi.com"&gt;&lt;/p&gt;
+&lt;p&gt;啄木鸟家庭维修创立于1995年，总部位于重庆，业务覆盖C端、B端、F端，为居民、企事业单位和电器家居生产厂家提供维修、保养、安装等服务，是目前最大的家电维修品牌。公司宣称在国内 300 多个城市 开展业务，在线接单的维修人员达十万人。&lt;/p&gt;</description></item><item><title>不加班的大厂，是效率还是合规？</title><link>https://simons.qzz.io/post/2025/03/is_a_large_factory_that_does_not_work_overtime_efficient_or_compliant/</link><pubDate>Sat, 15 Mar 2025 11:55:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/is_a_large_factory_that_does_not_work_overtime_efficient_or_compliant/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://pic.vjshi.com/2021-11-05/90517c7340f8454f87bf4f53edfc450f/00003.jpg?x-oss-process=style/watermark"
+ alt="顺德北滘美的总部大楼_3840X2160_高清视频素材下载(编号:6671644)_实拍视频_光厂(VJ师网) www.vjshi.com"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;顺德北滘美的总部大楼_3840X2160_高清视频素材下载(编号:6671644)_实拍视频_光厂(VJ师网) www.vjshi.com&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2025年3月10日，“美的被曝强制18点20下班”冲上热搜，引发了广泛的关注和讨论。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://n.sinaimg.cn/sinakd20250310s/429/w1024h205/20250310/bab7-6747c46a9b0ae70b9f8b5f57aa3d153b.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;美的集团旗下各业务的官方号纷纷出来确认 “真的不加班”。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://q4.itc.cn/q_70/images03/20250312/31a51402fb9f460db41aebfdbb7948cc.jpeg" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;腾讯新闻的《一线》向美的求证，美的工作时间为早上 8:30 上班，晚上 18 点下班，没有打卡的要求。为了让员工准时下班，部门领导一般到点就走，避免员工看到领导在而不敢走，并且员工都是双休。&lt;/p&gt;</description></item><item><title>mermaid？</title><link>https://simons.qzz.io/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mermaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://n.sinaimg.cn/sinakd20250310s/429/w1024h205/20250310/bab7-6747c46a9b0ae70b9f8b5f57aa3d153b.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;美的集团旗下各业务的官方号纷纷出来确认 “真的不加班”。&lt;/p&gt;</description></item><item><title>mermaid？</title><link>https://simons.qzz.io/post/2025/03/mermaid/</link><pubDate>Fri, 14 Mar 2025 14:51:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mermaid/</guid><description>&lt;p&gt;mermaid可以在主流的markdown工具中使用
 下面是几个常用的图示类型&lt;/p&gt;
 &lt;h4 id="1思维导图"&gt;1.思维导图&lt;/h4&gt;
 &lt;ul&gt;
@@ -21784,9 +21977,25 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;[]&lt;/code&gt;矩形&lt;/p&gt;</description></item><item><title>【理论】SWOT 分析</title><link>https://simons.qzz.io/post/2025/03/swot/</link><pubDate>Fri, 14 Mar 2025 07:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/swot/</guid><description>&lt;p&gt;SWOT分析模型（SWOT+Analysis），也称作SWOT分析法（TOWS分析法、道斯矩阵），即态势分析法，是一种被广泛应用于企业战略制定、竞争对手分析等场合的工具。该模型由美国旧金山大学的管理学教授韦里克于20世纪80年代初提出。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://wiki.mbalib.com/w/images/thumb/b/bd/Heinz_Weihrich2.jpg/180px-Heinz_Weihrich2.jpg" alt="海因茨·韦里克（Heinz Weihrich）"&gt;&lt;/p&gt;
-&lt;h1 id="一形成"&gt;一、形成&lt;/h1&gt;
-&lt;p&gt;SWOT分析方法从某种意义上来说隶属于企业内部分析方法，即根据企业自身的条件在既定内进行分析。&lt;/p&gt;</description></item><item><title>火上浇油：海底捞撒尿事件为何被嘲讽 “逆向公关”</title><link>https://simons.qzz.io/post/2025/03/why_was_the_haidilao_pee_incident_ridiculed_as_reverse_public_relations/</link><pubDate>Thu, 13 Mar 2025 08:39:10 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/why_was_the_haidilao_pee_incident_ridiculed_as_reverse_public_relations/</guid><description>&lt;p&gt;&lt;img src="https://image.thepaper.cn/image/342/974/433.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://wiki.mbalib.com/w/images/thumb/b/bd/Heinz_Weihrich2.jpg/180px-Heinz_Weihrich2.jpg"
+ alt="海因茨·韦里克（Heinz Weihrich）"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;海因茨·韦里克（Heinz Weihrich）&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>火上浇油：海底捞撒尿事件为何被嘲讽 “逆向公关”</title><link>https://simons.qzz.io/post/2025/03/why_was_the_haidilao_pee_incident_ridiculed_as_reverse_public_relations/</link><pubDate>Thu, 13 Mar 2025 08:39:10 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/why_was_the_haidilao_pee_incident_ridiculed_as_reverse_public_relations/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://image.thepaper.cn/image/342/974/433.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;在讲海底捞 “撒尿门” 事件之前，我们先讲讲公共，即 “公共关系（PR）” 是什么。&lt;/p&gt;
 &lt;h1 id="一简述公关"&gt;一、简述公关&lt;/h1&gt;
 &lt;p&gt;百度百科上的定义是“&lt;strong&gt;组织机构与公众环境之间的沟通与传播关系&lt;/strong&gt;”。这个定义肯定是不会错的，但是操作性很差，基本可以看作是大而无当的废话。&lt;/p&gt;
@@ -22397,7 +22606,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  }
 })();
 &lt;/script&gt;
-的描述是：“&lt;strong&gt;品牌与公众上的各种利益相关者（Stakeholder）的关系。&lt;/strong&gt;” 到这里，我们还需要解释一下公关、营销、促销和广告三四者的差异和联系。假设你现在非常喜欢一个女孩，你像追求她：&lt;/p&gt;</description></item><item><title>正义与运气</title><link>https://simons.qzz.io/post/2025/03/justice_and_luck/</link><pubDate>Tue, 11 Mar 2025 12:41:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/justice_and_luck/</guid><description>&lt;p&gt;&lt;img src="https://imgcdn.yixi.tv/almond/1646050838618.jpg?imageslim" alt="img"&gt;&lt;/p&gt;
+的描述是：“&lt;strong&gt;品牌与公众上的各种利益相关者（Stakeholder）的关系。&lt;/strong&gt;” 到这里，我们还需要解释一下公关、营销、促销和广告三四者的差异和联系。假设你现在非常喜欢一个女孩，你像追求她：&lt;/p&gt;</description></item><item><title>正义与运气</title><link>https://simons.qzz.io/post/2025/03/justice_and_luck/</link><pubDate>Tue, 11 Mar 2025 12:41:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/justice_and_luck/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imgcdn.yixi.tv/almond/1646050838618.jpg?imageslim"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;大家下午好，我是葛四友，来自华东师范大学哲学系，一直从事的工作就是研究正义与运气。&lt;/p&gt;
 &lt;p&gt;说到运气，我相信很多人的第一反应很可能是什么？买彩票中奖，对吧？前天我刚跟一席节目组谈完话，回去打了个出租，不知道运气好还是不好，那个的士司机在上海S4高速上，以80码到100码的速度跑的时候，他打瞌睡了。我一抬头发现车子往边上撞，还没来得及喊就已经撞上去了。&lt;/p&gt;</description></item><item><title>现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心</title><link>https://simons.qzz.io/post/2025/03/modernity_holocaust_and_moral_reflection/</link><pubDate>Mon, 10 Mar 2025 18:57:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/modernity_holocaust_and_moral_reflection/</guid><description>&lt;h1 id="现代性大屠杀与道德反思-以齐格蒙特鲍曼的现代性与大屠杀为核心"&gt;现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心&lt;/h1&gt;
 &lt;h2 id="现代性大屠杀与道德反思"&gt;&lt;strong&gt;现代性、大屠杀与道德反思&lt;/strong&gt;&lt;/h2&gt;
@@ -22526,26 +22744,87 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;创建一个名为 &lt;code&gt;testuser&lt;/code&gt; 的用户，密码为 &lt;code&gt;testpass&lt;/code&gt;，允许从任何主机连接：&lt;/p&gt;</description></item><item><title>【人物】罗永浩：彪悍的人生不需要解释</title><link>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</link><pubDate>Wed, 05 Mar 2025 17:14:33 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/</guid><description>&lt;p&gt;提起罗永浩，我们大多数人可能都会想到那句经典名言 “彪悍的人生不需要解释”。&lt;/p&gt;
 &lt;p&gt;四二（笔者）也曾一度对他的各种事件做出 “狂热” 举动，&lt;/p&gt;
 &lt;p&gt;回望那些精彩的宣传，例如在 “老罗英语培训” 时期在迷笛音乐节上做的广告&lt;/p&gt;
-&lt;p&gt;&lt;img src="http://img.mp.sohu.com/upload/20161017/925ea911de1c4c088c728e9e6f5fd11e_th.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="http://img.mp.sohu.com/upload/20161017/925ea911de1c4c088c728e9e6f5fd11e_th.jpeg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="罗永浩从-老罗英语-到-锤子科技-的营销案例分析"&gt;罗永浩从 “老罗英语” 到 “锤子科技” 的营销案例分析&lt;/h1&gt;
 &lt;h2 id="引言"&gt;引言&lt;/h2&gt;
 &lt;p&gt;罗永浩是中国科技与创业领域的一位传奇人物，他的职业生涯从英语教师到科技公司CEO，再到直播带货主播，充满了争议与创新。他的营销策略不仅塑造了个人品牌，也为企业带来了巨大的市场关注。本文将从“老罗英语”到“锤子科技”的营销实践入手，分析其营销策略的核心要素、成功与失败的原因，以及对现代营销的启示。&lt;/p&gt;</description></item><item><title>【人物】孙宇晨：营销造势，放股神巴菲特鸽子的人</title><link>https://simons.qzz.io/post/2025/03/people_who_hype_and_blow_off_buffett_the_god_of_stocks/</link><pubDate>Wed, 05 Mar 2025 17:12:41 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/people_who_hype_and_blow_off_buffett_the_god_of_stocks/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;孙宇晨所有营销手段的终极目标也只有一个：向新流量推广波场，为波场和 TRX 造势。&lt;/p&gt;
 &lt;p&gt;&amp;mdash;-《从波场到BTT，币圈走过最长的路是Justin的套路》 36Kr&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://img.lanjinger.com/lanjingapp/default/20190605/142415_5cf7600fc498f.jpg@!thumb800" alt="孙宇晨的这顿最贵巴菲特午餐值吗？-蓝鲸财经"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://img.lanjinger.com/lanjingapp/default/20190605/142415_5cf7600fc498f.jpg@!thumb800"
+ alt="孙宇晨的这顿最贵巴菲特午餐值吗？-蓝鲸财经"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;孙宇晨的这顿最贵巴菲特午餐值吗？-蓝鲸财经&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2024 年 11 月 29 日，格瑞纳达籍华人富豪孙宇晨，在香港以 642 万美元拍下一支香蕉，并表示第二天要吃掉它，冲上热搜。孙宇晨究竟是何人？花高价拍下一根香蕉的目的是什么？这是怎样的一个营销 “怪人”？&lt;/p&gt;</description></item><item><title>赛博印钞：马斯克看好的 AI 游戏，为什么独立开发的一个游戏能够短期获利 12 万？</title><link>https://simons.qzz.io/post/2025/03/musk_is_optimistic_about_ai_games_why_can_an_independently_developed_game_make_a_short-term_profit_of_120000_yuan/</link><pubDate>Wed, 05 Mar 2025 10:08:02 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/musk_is_optimistic_about_ai_games_why_can_an_independently_developed_game_make_a_short-term_profit_of_120000_yuan/</guid><description>&lt;p&gt;在 2025 年的二月，马斯克感慨 AI 游戏的前景。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imagepphcloud.thepaper.cn/pph/image/341/873/406.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imagepphcloud.thepaper.cn/pph/image/341/873/406.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;那么，这个游戏究竟有多厉害呢？&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imagepphcloud.thepaper.cn/pph/image/341/873/413.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imagepphcloud.thepaper.cn/pph/image/341/873/413.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;一个人，只用3个小时，完全靠AI开发游戏，9天时间就赚了17360美元（折合人民币12.64万）。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imagepphcloud.thepaper.cn/pph/image/341/873/405.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imagepphcloud.thepaper.cn/pph/image/341/873/405.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;在浏览量方面更是达到了千万。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://imagepphcloud.thepaper.cn/pph/image/341/873/412.jpg" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;从这里不难看出，他们的盈利方式就是打广告。&lt;/p&gt;
-&lt;p&gt;这款游戏并不是作者第一款产品，在更早之前的 Nomad List 为他后续的开发生涯提供了强有力的支持。那么我们就从作者开始说起。&lt;/p&gt;</description></item><item><title>雪王敲钟：蜜雪冰城上市，甜蜜与爱的胜利</title><link>https://simons.qzz.io/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</link><pubDate>Tue, 04 Mar 2025 20:26:01 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</guid><description>&lt;p&gt;&lt;img src="https://x0.ifengimg.com/ucms/2022_38/FCA8B7161B53D1F6D29AA2DE40A74F2E8170212E_size101_w690_h388.jpg" alt="蜜雪冰城IPO再进一步 已完成上市辅导_凤凰网"&gt;&lt;/p&gt;
-&lt;p&gt;2025年1月2日，有着“雪王”之称的蜜雪冰城向港交所提交了上市申请。最新披露的招股书数据展现出其强劲的发展态势：2023年前9个月，蜜雪冰城实现营收154亿元，净利润达25亿元，同比分别增长46%与51.1%。&lt;/p&gt;
-&lt;p&gt;经推算，2023年“雪王”平均每日盈利约926万元，盈利能力十分突出 。&lt;/p&gt;</description></item><item><title>喜茶，不学霸王茶姬</title><link>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</link><pubDate>Sat, 01 Mar 2025 12:47:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</guid><description>&lt;p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imagepphcloud.thepaper.cn/pph/image/341/873/412.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;从这里不难看出，他们的盈利方式就是打广告。&lt;/p&gt;</description></item><item><title>雪王敲钟：蜜雪冰城上市，甜蜜与爱的胜利</title><link>https://simons.qzz.io/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</link><pubDate>Tue, 04 Mar 2025 20:26:01 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mixue_ice_city_is_listed_a_victory_for_sweetness_and_love/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://x0.ifengimg.com/ucms/2022_38/FCA8B7161B53D1F6D29AA2DE40A74F2E8170212E_size101_w690_h388.jpg"
+ alt="蜜雪冰城IPO再进一步 已完成上市辅导_凤凰网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;蜜雪冰城IPO再进一步 已完成上市辅导_凤凰网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2025年1月2日，有着“雪王”之称的蜜雪冰城向港交所提交了上市申请。最新披露的招股书数据展现出其强劲的发展态势：2023年前9个月，蜜雪冰城实现营收154亿元，净利润达25亿元，同比分别增长46%与51.1%。&lt;/p&gt;</description></item><item><title>喜茶，不学霸王茶姬</title><link>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</link><pubDate>Sat, 01 Mar 2025 12:47:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/%E5%96%9C%E8%8C%B6%E4%B8%8D%E5%AD%A6%E9%9C%B8%E7%8E%8B%E8%8C%B6%E5%A7%AC/</guid><description>&lt;p&gt;
 
 
 
@@ -24973,7 +25252,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>美德与幸福</title><link>https://simons.qzz.io/post/2025/03/virtue_and_happiness/</link><pubDate>Sat, 01 Mar 2025 12:41:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/virtue_and_happiness/</guid><description>&lt;p&gt;&lt;img src="https://imgcdn.yixi.tv/almond/16697738538910.jpg?imageslim" alt="img"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>美德与幸福</title><link>https://simons.qzz.io/post/2025/03/virtue_and_happiness/</link><pubDate>Sat, 01 Mar 2025 12:41:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/virtue_and_happiness/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imgcdn.yixi.tv/almond/16697738538910.jpg?imageslim"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;有点紧张，不经常在这种场合讲点什么，这次一席请我来讲，我就选了这么样一个题目，就是美德与幸福。&lt;/p&gt;
 &lt;p&gt;这个主题说起来也蛮简单的。第一，我们差不多都希望自己幸福吧？有句古老的话说：人人都追求幸福，人生的终极目标是幸福。另一方面，我们也愿意自己是一个品德良好的人，很少有人愿意别人说他是个缺德的人。&lt;/p&gt;</description></item><item><title>Alfamart 如何成为印尼第二大便利店连锁？</title><link>https://simons.qzz.io/post/2025/03/how_did_alfamart_become_the_second_largest_convenience_store_chain_in_indonesia/</link><pubDate>Sat, 01 Mar 2025 12:40:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_did_alfamart_become_the_second_largest_convenience_store_chain_in_indonesia/</guid><description>&lt;p&gt;
 
@@ -25582,9 +25870,26 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>商超神话：人性向善，胖东来的觉醒故事</title><link>https://simons.qzz.io/post/2025/03/humanity_is_good_the_awakening_story_of_pangdonglai/</link><pubDate>Sat, 01 Mar 2025 12:39:24 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/humanity_is_good_the_awakening_story_of_pangdonglai/</guid><description>&lt;p&gt;&lt;img src="https://imgoss.henandaily.cn/app/images/20241008/0a08eb0162cf4f6a842e19675251912c.jpeg" alt="央媒观豫丨何以胖东来——一家“网红”商超的坚守与嬗变 - 区域 - 三门峡网 · 三门峡日报官方网站"&gt;&lt;/p&gt;
-&lt;p&gt;在 2025 年初的郑州东站西广场，一处尚在规划、水泥框架裸露的地下商业区，意外成为众人纷纷前来拍照打卡的热门之地。&lt;/p&gt;
-&lt;p&gt;2 月 23 日，胖东来董事长于东来借助个人抖音账号发布重磅消息：胖东来超市公司正式决定在郑州打造一家独具艺术韵味的超市，旨在推动郑州商业迈向更美好的发展新阶段，为郑州这座城市增添别样魅力。&lt;/p&gt;</description></item><item><title>感受价格：如何门店销售中让消费者有低价感？</title><link>https://simons.qzz.io/post/2025/03/how_to_make_consumers_feel_low_prices_in_store_sales/</link><pubDate>Sat, 01 Mar 2025 12:35:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_to_make_consumers_feel_low_prices_in_store_sales/</guid><description>&lt;p&gt;&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.bcc277886802f7bff601f2b6d2bb444f?rik=wqGxss1LCh%2b3vA&amp;amp;riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180102%2fe94c3b4dbae24c8786a21f42e385c25f.jpeg&amp;amp;ehk=%2bT0XrY3raeCivuvlRFWbnWd0EJSZi8H%2blnLCNqgYlWo%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="超市打折抢购也辛苦，看这位大姐如何带走她的东西"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>商超神话：人性向善，胖东来的觉醒故事</title><link>https://simons.qzz.io/post/2025/03/humanity_is_good_the_awakening_story_of_pangdonglai/</link><pubDate>Sat, 01 Mar 2025 12:39:24 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/humanity_is_good_the_awakening_story_of_pangdonglai/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://imgoss.henandaily.cn/app/images/20241008/0a08eb0162cf4f6a842e19675251912c.jpeg"
+ alt="央媒观豫丨何以胖东来——一家“网红”商超的坚守与嬗变 - 区域 - 三门峡网 · 三门峡日报官方网站"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;央媒观豫丨何以胖东来——一家“网红”商超的坚守与嬗变 - 区域 - 三门峡网 · 三门峡日报官方网站&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在 2025 年初的郑州东站西广场，一处尚在规划、水泥框架裸露的地下商业区，意外成为众人纷纷前来拍照打卡的热门之地。&lt;/p&gt;</description></item><item><title>感受价格：如何门店销售中让消费者有低价感？</title><link>https://simons.qzz.io/post/2025/03/how_to_make_consumers_feel_low_prices_in_store_sales/</link><pubDate>Sat, 01 Mar 2025 12:35:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/how_to_make_consumers_feel_low_prices_in_store_sales/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.cn.mm.bing.net/th/id/R-C.bcc277886802f7bff601f2b6d2bb444f?rik=wqGxss1LCh%2b3vA&amp;amp;riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180102%2fe94c3b4dbae24c8786a21f42e385c25f.jpeg&amp;amp;ehk=%2bT0XrY3raeCivuvlRFWbnWd0EJSZi8H%2blnLCNqgYlWo%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="超市打折抢购也辛苦，看这位大姐如何带走她的东西"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;超市打折抢购也辛苦，看这位大姐如何带走她的东西&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="1-单品打折"&gt;1. 单品打折&lt;/h1&gt;
 &lt;p&gt;价格折扣是门店促销中最常见的方法之一，通过在商品原价基础上直接打折，让消费者直观感受到价格的降低。例如，某服装店在换季时推出全场5折优惠，原价100元的T恤，折后只需50元。这种方式简单直接，能迅速吸引消费者的注意力，激发购买欲望。价格折扣适用于各种类型的门店和商品，尤其在季节交替或库存积压时效果显著。但需要注意的是，频繁的大幅度折扣可能会影响品牌的高端形象，因此商家应根据实际情况合理安排折扣力度和频率。&lt;/p&gt;</description></item><item><title>18种最常见的促销方法</title><link>https://simons.qzz.io/post/2025/03/18_most_common_promotion_methods/</link><pubDate>Sat, 01 Mar 2025 12:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/18_most_common_promotion_methods/</guid><description>&lt;p&gt;
 
@@ -27412,7 +27717,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;前不久，麦当劳的 CFC 火了，网上纷纷表示：“真正的商战就是这么朴实无华。”&lt;/p&gt;
 &lt;p&gt;相信很多人都听说过：“广东人的商战，就是悄悄溜进竞争对手的公司，用开水浇死他们的发财树。” 还听说一个有趣的案例是收买竞争对手的保安，然后让他去拔网线，实在是让人很难相信这是真的。&lt;/p&gt;
 &lt;p&gt;在我有限的经验里，只记得比较著名的李嘉诚商战，四两拨千金、以进为退的运筹；明修栈道，暗渡陈仓的狡猾。总以为商战都是从别人的各个营销环节和财务线索上面找漏洞，然后挑其薄弱处，一击致命。或者是找大量的虚假用户发低劣内容，然后反手一个举报的卑鄙攻击手段。&lt;/p&gt;</description></item><item><title>放手一搏：为什么 DeepSeek 没有出现在大厂？</title><link>https://simons.qzz.io/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</link><pubDate>Fri, 28 Feb 2025 15:30:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/why_didnt_deepseek_appear_in_big_factories/</guid><description>&lt;p&gt;2025 年初，中国人工智能初创公司 DeepSeek（深度求索）凭借开源大模型DeepSeek-R1的发布，在全球AI领域掀起了一场“中国风暴”。这款以超高性价比和高效推理能力著称的模型，仅用 600 万美元的成本便在两个月内完成训练，其性能却能与耗资数十亿美元的美国同行匹敌。然而，这一颠覆性创新并未诞生于腾讯、阿里、华为等中国科技巨头，而是由一群本土年轻团队在资源有限的环境中“突发奇想”而来。这不禁让人追问：为何大厂难以孕育此类突破性技术？答案或许隐藏在《创新者的窘境》的经典理论与当下中国科技生态的复杂博弈中。&lt;/p&gt;</description></item><item><title>科幻现实：为什么 ChatGPT 一诞生就成为了世界焦点？</title><link>https://simons.qzz.io/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</link><pubDate>Fri, 28 Feb 2025 15:05:18 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/why_did_chatgpt_become_the_focus_of_the_world_since_its_birth/</guid><description>&lt;p&gt;在 2022 年 11 月 30 日 OpenAI 悄然推出了 ChatGPT，这一事件宛如一颗投入平静湖面的巨石，激起的涟漪迅速演变成全球性的技术浪潮，其影响力之大，恐怕连 OpenAI 内部团队在最初都难以预料。这个基于 GPT - 3.5 微调而来的语言模型，所引发的舆论风暴，绝非偶然。它既凝聚着长时间技术积累的质变能量，又蕴含着战略选择的必然逻辑，更与人类长久以来对通用人工智能的集体憧憬暗暗契合。&lt;/p&gt;</description></item><item><title>不止参与：小米如何从用户共创到生态扩张？</title><link>https://simons.qzz.io/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</link><pubDate>Fri, 28 Feb 2025 14:14:24 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_does_xiaomi_go_from_user_co-creation_to_ecological_expansion/</guid><description>&lt;p&gt;作为全球科技行业的标杆企业之一，小米的营销战略始终以用户为核心，通过创新模式和生态布局实现快速增长。自2010年成立以来，小米从一家专注于智能手机研发的初创企业，逐步发展成为涵盖智能手机、智能家居、智能穿戴、智能办公等多领域的综合性科技集团，构建起庞大且活跃的智能生态系统。本文将从战略内核、典型案例、市场效果、行业影响等维度，全面解析小米的营销逻辑及其对行业带来的变革。&lt;/p&gt;</description></item><item><title>创造体验：从战略到创意，宜家如何从乡村走向世界？</title><link>https://simons.qzz.io/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</link><pubDate>Fri, 28 Feb 2025 09:52:06 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/from_strategy_to_creativity_how_does_ikea_move_from_rural_to_global/</guid><description>&lt;p&gt;作为全球家居零售行业的标杆企业，宜家（IKEA）凭借独特的品牌战略和营销创新，持续吸引全球消费者。宜家成立于 1943 年，由英格瓦·坎普拉德在瑞典的乡村地区创立，最初只是一家小型邮购公司。经过多年发展，宜家已在全球 60 多个国家和地区拥有约 482 家门店， 2023 年 9 月至 2024 年 8 月，宜家零售总额为 451 亿欧元（以 8 月底汇率计算，约合人民币 3532.91 亿元）。宜家的成功离不开其精准的企业战略、灵活的市场营销和富有创意的广告策略。本文将从企业战略、市场营销和广告创意三个方面，对宜家的营销事件进行深入分析，并总结其对营销行业的启示。&lt;/p&gt;</description></item><item><title>多儿假死：多邻国如何通过荒诞营销达到病毒传播奇迹？</title><link>https://simons.qzz.io/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</link><pubDate>Thu, 27 Feb 2025 10:51:38 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/duo_er_faked_death_how_many_neighboring_countries_achieved_miracle_of_virus_spread_through_absurd_marketing/</guid><description>&lt;p&gt;2025 年 2 月，语言学习应用多邻国凭借一场精心策划的 “吉祥物死亡营销” 引爆全球社交媒体。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641" alt="图片"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://inews.gtimg.com/om_bt/OlwCKSLK-xjZ0YuCLIPv9yB9j6vabU2NAUccqFQtGRIJQAA/641"
+ alt="图片"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;图片&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一背景"&gt;一、背景&lt;/h1&gt;
 &lt;p&gt;多邻国自 2012 年诞生以来，凭借其丰富的语言课程和广泛的认可度，取得了显著的市场成绩。2023 年 Q3 月活近亿，且在多个国家的教育类应用榜单中名列前茅，2024 年 1 月双端商店流水超 4 千万美元，下载收入环比增长幅度居首。&lt;/p&gt;</description></item><item><title>营销基础：市场营销环境分析</title><link>https://simons.qzz.io/post/2025/02/marketing_environment/</link><pubDate>Thu, 27 Feb 2025 09:20:12 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/marketing_environment/</guid><description>&lt;h1 id="pest-分析"&gt;PEST 分析&lt;/h1&gt;
 &lt;ul&gt;
@@ -27433,1329 +27747,265 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;可正如没有一种成功是可以复制的一样，任何一种对“流行”的事后分析都不能复制出另一种“流行”，如果可以，那人人都可以成为流行，制造流行了。&lt;/p&gt;</description></item><item><title>爆梗出圈：营销视角下 “鸡你太美” 如何引发狂欢？</title><link>https://simons.qzz.io/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</link><pubDate>Tue, 25 Feb 2025 17:37:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/exploiting_popularity_how_does_chicken_you_are_too_beautiful_trigger_carnival/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;“b 站 up 主们、弹幕群众们，用流行文化打击流行偶像，这是本世纪最棒的文化奇观。”——汪海林&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.532d6f43acf5d24e6ffd9a484c23f509?rik=oWC6136AMtfsZQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20220616ac%2f600%2fw1920h1080%2f20220616%2f84c9-0f134f134f8bc0cac92a0488b0565b7a.jpg&amp;amp;ehk=mot26IwWZXjD4I7GrCg4WljqwXARRVVMO16%2bpMFwmow%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="蔡徐坤|光影帅气写真‖桌面壁纸|蔡徐坤|写真|桌面壁纸_新浪新闻"&gt;&lt;/p&gt;
-&lt;p&gt;2018 年，蔡徐坤在《偶像练习生》中的自我介绍表演，因一句 “只因你太美” 被空耳为 “鸡你太美”，成为网络热梗的雏形。谁也没想到，这个起初只是网友调侃的素材，会在随后几年间掀起一场全民狂欢，并在 2023 年再度翻红，成为网络文化中一个经久不衰的现象级符号。&lt;/p&gt;</description></item><item><title>定位：营销的起点</title><link>https://simons.qzz.io/post/2025/02/positioning_the_starting_point_of_marketing/</link><pubDate>Mon, 24 Feb 2025 11:48:01 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/positioning_the_starting_point_of_marketing/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.cn.mm.bing.net/th/id/R-C.532d6f43acf5d24e6ffd9a484c23f509?rik=oWC6136AMtfsZQ&amp;amp;riu=http%3a%2f%2fn.sinaimg.cn%2fsinakd20220616ac%2f600%2fw1920h1080%2f20220616%2f84c9-0f134f134f8bc0cac92a0488b0565b7a.jpg&amp;amp;ehk=mot26IwWZXjD4I7GrCg4WljqwXARRVVMO16%2bpMFwmow%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="蔡徐坤|光影帅气写真‖桌面壁纸|蔡徐坤|写真|桌面壁纸_新浪新闻"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;蔡徐坤|光影帅气写真‖桌面壁纸|蔡徐坤|写真|桌面壁纸_新浪新闻&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2018 年，蔡徐坤在《偶像练习生》中的自我介绍表演，因一句 “只因你太美” 被空耳为 “鸡你太美”，成为网络热梗的雏形。谁也没想到，这个起初只是网友调侃的素材，会在随后几年间掀起一场全民狂欢，并在 2023 年再度翻红，成为网络文化中一个经久不衰的现象级符号。&lt;/p&gt;</description></item><item><title>定位：营销的起点</title><link>https://simons.qzz.io/post/2025/02/positioning_the_starting_point_of_marketing/</link><pubDate>Mon, 24 Feb 2025 11:48:01 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/positioning_the_starting_point_of_marketing/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70"
+ alt="杰克·特劳特_百度百科"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;杰克·特劳特_百度百科&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;杰克·特劳特&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id="打破神话"&gt;打破神话&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d"
+ alt="http://zxcy2016.com/newsinfo.asp?id=24"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;http://zxcy2016.com/newsinfo.asp?id=24&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p&gt;
-&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;供应商资料全部葬身大火&lt;/li&gt;
-&lt;li&gt;经销商资料全部葬身大火&lt;/li&gt;
-&lt;li&gt;员工全部葬身大火&lt;/li&gt;
-&lt;li&gt;竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;中国版本的真实 “可口可乐” 神话 —— 广药和加多宝之战&lt;/p&gt;</description></item><item><title>冯卫东：定位理论的贡献（幻灯片）</title><link>https://simons.qzz.io/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</link><pubDate>Mon, 24 Feb 2025 10:03:13 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</guid><description>&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/1.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;</description></item><item><title>冯卫东：定位理论的贡献（幻灯片）</title><link>https://simons.qzz.io/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</link><pubDate>Mon, 24 Feb 2025 10:03:13 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/feng_weidong_contribution_of_positioning_theory_slide/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/1.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/2.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/2.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;2/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/3.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/3.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;3/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/4.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/4.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;4/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/5.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/5.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;5/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/6.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/6.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;6/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/7.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/7.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;7/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/8.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/8.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;8/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/9.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/9.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;9/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/10.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/10.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;10/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/11.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/11.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;11/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/12.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/12.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;12/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/13.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/13.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;13/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/14.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/14.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;14/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/15.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/15.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;15/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/16.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/16.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;16/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/17.png" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/17.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;17/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/18.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;18/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/19.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;19/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/20.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;20/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/21.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;21/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/22.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;22/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/23.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;23/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/24.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;24/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/25.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;25/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/26.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;26/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/27.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;27/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/28.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;28/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/29.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;29/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/30.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;30/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/31.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;31/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/32.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;32/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/33.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;33/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/34.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;34/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/35.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;35/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/36.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;36/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/37.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;37/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/38.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;38/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/39.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;39/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/40.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;40/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/41.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;41/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/42.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;42/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/43.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;43/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/44.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;44/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/45.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;45/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/46.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;46/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/47.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;47/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/48.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;48/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/49.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;49/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/50.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;50/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/51.png" alt="img"&gt;&lt;/p&gt;
-&lt;p&gt;51/53&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/solid/feng_wei_dong/52.png" alt="img"&gt;&lt;/p&gt;
-&lt;h2 id="冯卫东品牌起名这件小事攸关生死笔记"&gt;冯卫东：品牌起名这件小事，攸关生死【笔记】&lt;/h2&gt;
-&lt;p&gt;12月24日，天图资本CEO冯卫东来到混沌研习社，用多年投资消费品品牌的经验和我们分享了他对于品牌定位理论的思考。&lt;/p&gt;</description></item><item><title>定位的贡献：如果可口可乐失去配方会倒闭吗？</title><link>https://simons.qzz.io/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</link><pubDate>Mon, 24 Feb 2025 10:00:03 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70" alt="杰克·特劳特_百度百科"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/solid/feng_wei_dong/18.png"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>定位的贡献：如果可口可乐失去配方会倒闭吗？</title><link>https://simons.qzz.io/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</link><pubDate>Mon, 24 Feb 2025 10:00:03 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/will_coca-cola_go_out_of_business_if_it_loses_its_formula/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70"
+ alt="杰克·特劳特_百度百科"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;杰克·特劳特_百度百科&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;定位不是围绕产品进行的，而是围绕潜在顾客的心智进行的。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;杰克·特劳特&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h1 id="一可口可乐神话"&gt;一、可口可乐神话&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d" alt="http://zxcy2016.com/newsinfo.asp?id=24"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://kimi-img.moonshot.cn/webimg2/zxcy2016.com/74d9361423987f73190dc24c8141b9ea5584778d"
+ alt="http://zxcy2016.com/newsinfo.asp?id=24"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;http://zxcy2016.com/newsinfo.asp?id=24&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;可口可乐总裁罗伯特曾说过：“即使可口可乐在全世界的工厂被一把大火烧掉，我们也能一夜间起死回生。”&lt;/p&gt;
-&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;供应商资料全部葬身大火&lt;/li&gt;
-&lt;li&gt;经销商资料全部葬身大火&lt;/li&gt;
-&lt;li&gt;员工全部葬身大火&lt;/li&gt;
-&lt;li&gt;竞争对手获得可口可乐配方，趁火打劫抢占可乐市场&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;可口可乐的大火没有发生，但是王老吉的 “大火” 却发生了。中国版本的真实 “可口可乐” 神话 —— 
-
-
-
-&lt;a href="https://www.wlj.com.cn"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- data-preview-url="https://www.wlj.com.cn"
- data-preview-type="external"
- &gt;
- 王老吉
- 
- &lt;span class="external-icon"&gt;
- 
- 
- 
- 
- &lt;svg style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt;
- 
- &lt;/span&gt;
- 
-&lt;/a&gt;
-
-
-
-
-&lt;template id="preview-template"&gt;
- &lt;div class="link-preview"&gt;
- &lt;div class="preview-loading"&gt;
- &lt;div class="loading-spinner"&gt;&lt;/div&gt;
- &lt;span&gt;加载中...&lt;/span&gt;
- &lt;/div&gt;
- &lt;div class="preview-content hidden"&gt;
- &lt;div class="preview-header"&gt;
- &lt;img class="preview-favicon" src="" alt=""&gt;
- &lt;div class="preview-title"&gt;&lt;/div&gt;
- &lt;button class="preview-close" aria-label="关闭"&gt;×&lt;/button&gt;
- &lt;/div&gt;
- &lt;div class="preview-body"&gt;
- &lt;div class="preview-image hidden"&gt;&lt;/div&gt;
- &lt;div class="preview-description"&gt;&lt;/div&gt;
- &lt;div class="preview-url"&gt;&lt;/div&gt;
- &lt;/div&gt;
- &lt;div class="preview-footer"&gt;
- &lt;a class="preview-link" href=""&gt;
- &lt;span&gt;访问链接 →&lt;/span&gt;
- &lt;/a&gt;
- &lt;/div&gt;
- &lt;/div&gt;
- &lt;/div&gt;
-&lt;/template&gt;
-
-
-&lt;style&gt;
- 
- .external-link {
- color: #3b82f6;
- text-decoration: underline;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s;
- }
-
- .external-link:hover {
- text-decoration-color: rgba(59, 130, 246, 0.6);
- }
-
- .internal-link {
- color: #8b5cf6;
- text-decoration: underline;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s;
- }
-
- .internal-link:hover {
- text-decoration-color: rgba(139, 92, 246, 0.6);
- }
-
- .external-icon {
- display: inline-block;
- margin-left: 2px;
- opacity: 0.6;
- font-size: 0.9em;
- }
-
- 
- .link-preview {
- position: fixed;
- z-index: 9999;
- width: 340px;
- max-width: calc(100vw - 32px);
- background: white;
- border-radius: 10px;
- box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
- border: 1px solid #e5e7eb;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
- opacity: 0;
- transform: translateY(8px);
- transition: opacity 0.2s, transform 0.2s;
- pointer-events: none;
- overflow: hidden;
- }
-
- .link-preview.visible {
- opacity: 1;
- transform: translateY(0);
- pointer-events: auto;
- }
-
- .preview-header {
- display: flex;
- align-items: center;
- padding: 12px 14px;
- background: #f9fafb;
- border-bottom: 1px solid #e5e7eb;
- gap: 10px;
- }
-
- .preview-favicon {
- width: 16px;
- height: 16px;
- flex-shrink: 0;
- display: none;
- }
-
- .preview-favicon[src]:not([src=""]) {
- display: block;
- }
-
- .preview-title {
- flex: 1;
- font-weight: 600;
- font-size: 14px;
- color: #111827;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-close {
- background: transparent;
- border: none;
- font-size: 20px;
- cursor: pointer;
- color: #6b7280;
- line-height: 1;
- padding: 2px;
- width: 24px;
- height: 24px;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 4px;
- flex-shrink: 0;
- transition: all 0.15s;
- }
-
- .preview-close:hover {
- background: #e5e7eb;
- color: #111827;
- }
-
- .preview-body {
- max-height: 350px;
- overflow: hidden;
- }
-
- .preview-image {
- width: 100%;
- height: 180px;
- overflow: hidden;
- background: #f3f4f6;
- }
-
- .preview-image img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- }
-
- .preview-image.hidden {
- display: none;
- }
-
- .preview-description {
- padding: 14px;
- font-size: 13px;
- line-height: 1.5;
- color: #4b5563;
- overflow: hidden;
- display: -webkit-box;
- -webkit-line-clamp: 4;
- -webkit-box-orient: vertical;
- }
-
- .preview-description:empty {
- display: none;
- }
-
- .preview-url {
- padding: 0 14px 10px;
- font-size: 12px;
- color: #9ca3af;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-footer {
- padding: 10px 14px;
- background: #f9fafb;
- border-top: 1px solid #e5e7eb;
- }
-
- .preview-link {
- display: inline-block;
- color: #3b82f6;
- text-decoration: none;
- font-size: 13px;
- font-weight: 500;
- transition: color 0.15s;
- }
-
- .preview-link:hover {
- color: #2563eb;
- text-decoration: underline;
- }
-
- .preview-loading {
- padding: 40px 20px;
- text-align: center;
- color: #6b7280;
- font-size: 13px;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- }
-
- .loading-spinner {
- width: 20px;
- height: 20px;
- border: 2px solid #e5e7eb;
- border-top-color: #3b82f6;
- border-radius: 50%;
- animation: spin 0.6s linear infinite;
- }
-
- @keyframes spin {
- to { transform: rotate(360deg); }
- }
-
- .hidden {
- display: none !important;
- }
-
- 
- @media (prefers-color-scheme: dark) {
- .link-preview {
- background: #1f2937;
- border-color: #374151;
- }
-
- .preview-header,
- .preview-footer {
- background: #111827;
- border-color: #374151;
- }
-
- .preview-title {
- color: #f9fafb;
- }
-
- .preview-description {
- color: #d1d5db;
- }
-
- .preview-url {
- color: #6b7280;
- }
-
- .preview-close {
- color: #9ca3af;
- }
-
- .preview-close:hover {
- background: #374151;
- color: #f9fafb;
- }
-
- .preview-link {
- color: #60a5fa;
- }
-
- .preview-link:hover {
- color: #93c5fd;
- }
-
- .preview-image {
- background: #111827;
- }
-
- .loading-spinner {
- border-color: #374151;
- border-top-color: #60a5fa;
- }
- }
-&lt;/style&gt;
-
-&lt;script&gt;
-(function() {
- 'use strict';
-
- class LinkPreview {
- constructor() {
- this.preview = null;
- this.showTimer = null;
- this.hideTimer = null;
- this.currentUrl = null;
- this.cache = new Map();
- this.isOverLink = false;
- this.isOverPreview = false;
- this.init();
- }
-
- init() {
- 
- if (window.linkPreviewInitialized) return;
- window.linkPreviewInitialized = true;
-
- const template = document.getElementById('preview-template');
- if (!template) return;
-
- this.preview = template.content.cloneNode(true).firstElementChild;
- document.body.appendChild(this.preview);
-
- this.bindEvents();
- }
-
- bindEvents() {
- 
- document.addEventListener('mouseover', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkEnter(link);
- });
-
- document.addEventListener('mouseout', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkLeave();
- });
-
- 
- this.preview.addEventListener('mouseenter', () =&gt; {
- this.isOverPreview = true;
- clearTimeout(this.hideTimer);
- });
-
- this.preview.addEventListener('mouseleave', () =&gt; {
- this.isOverPreview = false;
- this.scheduleHide();
- });
-
- 
- this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
- this.hide();
- });
-
- 
- document.addEventListener('click', (e) =&gt; {
- if (!this.preview.contains(e.target)) {
- this.hide();
- }
- });
-
- 
- document.addEventListener('keydown', (e) =&gt; {
- if (e.key === 'Escape') this.hide();
- });
- }
-
- handleLinkEnter(link) {
- this.isOverLink = true;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
-
- this.showTimer = setTimeout(() =&gt; {
- if (this.isOverLink) {
- this.show(link);
- }
- }, 300);
- }
-
- handleLinkLeave() {
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- this.scheduleHide();
- }
-
- scheduleHide() {
- clearTimeout(this.hideTimer);
- this.hideTimer = setTimeout(() =&gt; {
- if (!this.isOverLink &amp;&amp; !this.isOverPreview) {
- this.hide();
- }
- }, 150);
- }
-
- async show(link) {
- const url = link.getAttribute('data-preview-url');
- const type = link.getAttribute('data-preview-type');
-
- if (!url) return;
-
- 
- if (url === this.currentUrl &amp;&amp; this.preview.classList.contains('visible')) {
- this.position(link);
- return;
- }
-
- this.currentUrl = url;
- this.position(link);
- this.showLoading();
-
- try {
- const data = type === 'internal'
- ? await this.loadInternal(url)
- : this.loadExternal(url);
-
- this.render(data);
- } catch (err) {
- console.error('Preview error:', err);
- this.hide();
- }
- }
-
- position(link) {
- const rect = link.getBoundingClientRect();
- const width = 340;
- const margin = 10;
-
- let top = rect.bottom + window.scrollY + margin;
- let left = rect.left + window.scrollX;
-
- 
- if (left + width &gt; window.innerWidth - margin) {
- left = window.innerWidth - width - margin;
- }
- if (left &lt; margin) {
- left = margin;
- }
-
- 
- if (rect.bottom + 300 &gt; window.innerHeight) {
- top = rect.top + window.scrollY - 300 - margin;
- }
-
- this.preview.style.top = `${top}px`;
- this.preview.style.left = `${left}px`;
- this.preview.classList.add('visible');
- }
-
- async loadInternal(url) {
- 
- if (this.cache.has(url)) {
- return this.cache.get(url);
- }
-
- try {
- const fullUrl = new URL(url, window.location.origin).href;
- const response = await fetch(fullUrl, {
- method: 'GET',
- headers: { 'Accept': 'text/html' }
- });
-
- if (!response.ok) throw new Error('Fetch failed');
-
- const html = await response.text();
- const parser = new DOMParser();
- const doc = parser.parseFromString(html, 'text/html');
-
- const data = {
- title: this.extractTitle(doc),
- description: this.extractDescription(doc),
- image: this.extractImage(doc, fullUrl),
- favicon: this.extractFavicon(doc, fullUrl),
- url: fullUrl
- };
-
- this.cache.set(url, data);
- return data;
- } catch (err) {
- throw err;
- }
- }
-
- loadExternal(url) {
- 
- try {
- const urlObj = new URL(url);
- const hostname = urlObj.hostname;
-
- return {
- title: hostname,
- description: url,
- image: '',
- favicon: `https://www.google.com/s2/favicons?domain=${hostname}&amp;sz=32`,
- url: url
- };
- } catch (err) {
- return {
- title: '外部链接',
- description: url,
- image: '',
- favicon: '',
- url: url
- };
- }
- }
-
- extractTitle(doc) {
- return doc.querySelector('h1')?.textContent?.trim() ||
- doc.querySelector('meta[property="og:title"]')?.content ||
- doc.querySelector('title')?.textContent?.trim() ||
- '无标题';
- }
-
- extractDescription(doc) {
- const ogDesc = doc.querySelector('meta[property="og:description"]')?.content;
- const metaDesc = doc.querySelector('meta[name="description"]')?.content;
- const firstP = doc.querySelector('article p, main p, p')?.textContent?.trim();
-
- return ogDesc || metaDesc || (firstP ? firstP.substring(0, 200) : '');
- }
-
- extractImage(doc, baseUrl) {
- const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
- const firstImg = doc.querySelector('article img, main img, img')?.src;
-
- const imgSrc = ogImage || firstImg;
- return imgSrc ? new URL(imgSrc, baseUrl).href : '';
- }
-
- extractFavicon(doc, baseUrl) {
- const iconLink = doc.querySelector('link[rel*="icon"]')?.href;
- return iconLink ? new URL(iconLink, baseUrl).href : '';
- }
-
- render(data) {
- this.preview.querySelector('.preview-loading').classList.add('hidden');
- const content = this.preview.querySelector('.preview-content');
- content.classList.remove('hidden');
-
- 
- const favicon = this.preview.querySelector('.preview-favicon');
- if (data.favicon) {
- favicon.src = data.favicon;
- favicon.onerror = () =&gt; favicon.style.display = 'none';
- }
-
- this.preview.querySelector('.preview-title').textContent = data.title;
- this.preview.querySelector('.preview-description').textContent = data.description;
- this.preview.querySelector('.preview-url').textContent = data.url;
-
- const link = this.preview.querySelector('.preview-link');
- link.href = data.url;
-
- 
- const imgContainer = this.preview.querySelector('.preview-image');
- if (data.image) {
- const img = document.createElement('img');
- img.src = data.image;
- img.alt = data.title;
- img.loading = 'lazy';
- img.onerror = () =&gt; imgContainer.classList.add('hidden');
- imgContainer.innerHTML = '';
- imgContainer.appendChild(img);
- imgContainer.classList.remove('hidden');
- } else {
- imgContainer.classList.add('hidden');
- }
- }
-
- showLoading() {
- this.preview.querySelector('.preview-content').classList.add('hidden');
- this.preview.querySelector('.preview-loading').classList.remove('hidden');
- }
-
- hide() {
- this.preview.classList.remove('visible');
- this.currentUrl = null;
- this.isOverPreview = false;
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
- }
- }
-
- 
- if (document.readyState === 'loading') {
- document.addEventListener('DOMContentLoaded', () =&gt; new LinkPreview());
- } else {
- new LinkPreview();
- }
-})();
-&lt;/script&gt;
-和
-
-
-
-&lt;a href="https://www.jdbchina.com"
- 
- 
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- data-preview-url="https://www.jdbchina.com"
- data-preview-type="external"
- &gt;
- 加多宝
- 
- &lt;span class="external-icon"&gt;
- 
- 
- 
- 
- &lt;svg style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt;
- 
- &lt;/span&gt;
- 
-&lt;/a&gt;
-
-
-
-
-&lt;style&gt;
- 
- .external-link {
- color: #3b82f6;
- text-decoration: underline;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s;
- }
-
- .external-link:hover {
- text-decoration-color: rgba(59, 130, 246, 0.6);
- }
-
- .internal-link {
- color: #8b5cf6;
- text-decoration: underline;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s;
- }
-
- .internal-link:hover {
- text-decoration-color: rgba(139, 92, 246, 0.6);
- }
-
- .external-icon {
- display: inline-block;
- margin-left: 2px;
- opacity: 0.6;
- font-size: 0.9em;
- }
-
- 
- .link-preview {
- position: fixed;
- z-index: 9999;
- width: 340px;
- max-width: calc(100vw - 32px);
- background: white;
- border-radius: 10px;
- box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
- border: 1px solid #e5e7eb;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
- opacity: 0;
- transform: translateY(8px);
- transition: opacity 0.2s, transform 0.2s;
- pointer-events: none;
- overflow: hidden;
- }
-
- .link-preview.visible {
- opacity: 1;
- transform: translateY(0);
- pointer-events: auto;
- }
-
- .preview-header {
- display: flex;
- align-items: center;
- padding: 12px 14px;
- background: #f9fafb;
- border-bottom: 1px solid #e5e7eb;
- gap: 10px;
- }
-
- .preview-favicon {
- width: 16px;
- height: 16px;
- flex-shrink: 0;
- display: none;
- }
-
- .preview-favicon[src]:not([src=""]) {
- display: block;
- }
-
- .preview-title {
- flex: 1;
- font-weight: 600;
- font-size: 14px;
- color: #111827;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-close {
- background: transparent;
- border: none;
- font-size: 20px;
- cursor: pointer;
- color: #6b7280;
- line-height: 1;
- padding: 2px;
- width: 24px;
- height: 24px;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 4px;
- flex-shrink: 0;
- transition: all 0.15s;
- }
-
- .preview-close:hover {
- background: #e5e7eb;
- color: #111827;
- }
-
- .preview-body {
- max-height: 350px;
- overflow: hidden;
- }
-
- .preview-image {
- width: 100%;
- height: 180px;
- overflow: hidden;
- background: #f3f4f6;
- }
-
- .preview-image img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- }
-
- .preview-image.hidden {
- display: none;
- }
-
- .preview-description {
- padding: 14px;
- font-size: 13px;
- line-height: 1.5;
- color: #4b5563;
- overflow: hidden;
- display: -webkit-box;
- -webkit-line-clamp: 4;
- -webkit-box-orient: vertical;
- }
-
- .preview-description:empty {
- display: none;
- }
-
- .preview-url {
- padding: 0 14px 10px;
- font-size: 12px;
- color: #9ca3af;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-footer {
- padding: 10px 14px;
- background: #f9fafb;
- border-top: 1px solid #e5e7eb;
- }
-
- .preview-link {
- display: inline-block;
- color: #3b82f6;
- text-decoration: none;
- font-size: 13px;
- font-weight: 500;
- transition: color 0.15s;
- }
-
- .preview-link:hover {
- color: #2563eb;
- text-decoration: underline;
- }
-
- .preview-loading {
- padding: 40px 20px;
- text-align: center;
- color: #6b7280;
- font-size: 13px;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- }
-
- .loading-spinner {
- width: 20px;
- height: 20px;
- border: 2px solid #e5e7eb;
- border-top-color: #3b82f6;
- border-radius: 50%;
- animation: spin 0.6s linear infinite;
- }
-
- @keyframes spin {
- to { transform: rotate(360deg); }
- }
-
- .hidden {
- display: none !important;
- }
-
- 
- @media (prefers-color-scheme: dark) {
- .link-preview {
- background: #1f2937;
- border-color: #374151;
- }
-
- .preview-header,
- .preview-footer {
- background: #111827;
- border-color: #374151;
- }
-
- .preview-title {
- color: #f9fafb;
- }
-
- .preview-description {
- color: #d1d5db;
- }
-
- .preview-url {
- color: #6b7280;
- }
-
- .preview-close {
- color: #9ca3af;
- }
-
- .preview-close:hover {
- background: #374151;
- color: #f9fafb;
- }
-
- .preview-link {
- color: #60a5fa;
- }
-
- .preview-link:hover {
- color: #93c5fd;
- }
-
- .preview-image {
- background: #111827;
- }
-
- .loading-spinner {
- border-color: #374151;
- border-top-color: #60a5fa;
- }
- }
-&lt;/style&gt;
-
-&lt;script&gt;
-(function() {
- 'use strict';
-
- class LinkPreview {
- constructor() {
- this.preview = null;
- this.showTimer = null;
- this.hideTimer = null;
- this.currentUrl = null;
- this.cache = new Map();
- this.isOverLink = false;
- this.isOverPreview = false;
- this.init();
- }
-
- init() {
- 
- if (window.linkPreviewInitialized) return;
- window.linkPreviewInitialized = true;
-
- const template = document.getElementById('preview-template');
- if (!template) return;
-
- this.preview = template.content.cloneNode(true).firstElementChild;
- document.body.appendChild(this.preview);
-
- this.bindEvents();
- }
-
- bindEvents() {
- 
- document.addEventListener('mouseover', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkEnter(link);
- });
-
- document.addEventListener('mouseout', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkLeave();
- });
-
- 
- this.preview.addEventListener('mouseenter', () =&gt; {
- this.isOverPreview = true;
- clearTimeout(this.hideTimer);
- });
-
- this.preview.addEventListener('mouseleave', () =&gt; {
- this.isOverPreview = false;
- this.scheduleHide();
- });
-
- 
- this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
- this.hide();
- });
-
- 
- document.addEventListener('click', (e) =&gt; {
- if (!this.preview.contains(e.target)) {
- this.hide();
- }
- });
-
- 
- document.addEventListener('keydown', (e) =&gt; {
- if (e.key === 'Escape') this.hide();
- });
- }
-
- handleLinkEnter(link) {
- this.isOverLink = true;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
-
- this.showTimer = setTimeout(() =&gt; {
- if (this.isOverLink) {
- this.show(link);
- }
- }, 300);
- }
-
- handleLinkLeave() {
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- this.scheduleHide();
- }
-
- scheduleHide() {
- clearTimeout(this.hideTimer);
- this.hideTimer = setTimeout(() =&gt; {
- if (!this.isOverLink &amp;&amp; !this.isOverPreview) {
- this.hide();
- }
- }, 150);
- }
-
- async show(link) {
- const url = link.getAttribute('data-preview-url');
- const type = link.getAttribute('data-preview-type');
-
- if (!url) return;
-
- 
- if (url === this.currentUrl &amp;&amp; this.preview.classList.contains('visible')) {
- this.position(link);
- return;
- }
-
- this.currentUrl = url;
- this.position(link);
- this.showLoading();
-
- try {
- const data = type === 'internal'
- ? await this.loadInternal(url)
- : this.loadExternal(url);
-
- this.render(data);
- } catch (err) {
- console.error('Preview error:', err);
- this.hide();
- }
- }
-
- position(link) {
- const rect = link.getBoundingClientRect();
- const width = 340;
- const margin = 10;
-
- let top = rect.bottom + window.scrollY + margin;
- let left = rect.left + window.scrollX;
-
- 
- if (left + width &gt; window.innerWidth - margin) {
- left = window.innerWidth - width - margin;
- }
- if (left &lt; margin) {
- left = margin;
- }
-
- 
- if (rect.bottom + 300 &gt; window.innerHeight) {
- top = rect.top + window.scrollY - 300 - margin;
- }
-
- this.preview.style.top = `${top}px`;
- this.preview.style.left = `${left}px`;
- this.preview.classList.add('visible');
- }
-
- async loadInternal(url) {
- 
- if (this.cache.has(url)) {
- return this.cache.get(url);
- }
-
- try {
- const fullUrl = new URL(url, window.location.origin).href;
- const response = await fetch(fullUrl, {
- method: 'GET',
- headers: { 'Accept': 'text/html' }
- });
-
- if (!response.ok) throw new Error('Fetch failed');
-
- const html = await response.text();
- const parser = new DOMParser();
- const doc = parser.parseFromString(html, 'text/html');
-
- const data = {
- title: this.extractTitle(doc),
- description: this.extractDescription(doc),
- image: this.extractImage(doc, fullUrl),
- favicon: this.extractFavicon(doc, fullUrl),
- url: fullUrl
- };
-
- this.cache.set(url, data);
- return data;
- } catch (err) {
- throw err;
- }
- }
-
- loadExternal(url) {
- 
- try {
- const urlObj = new URL(url);
- const hostname = urlObj.hostname;
-
- return {
- title: hostname,
- description: url,
- image: '',
- favicon: `https://www.google.com/s2/favicons?domain=${hostname}&amp;sz=32`,
- url: url
- };
- } catch (err) {
- return {
- title: '外部链接',
- description: url,
- image: '',
- favicon: '',
- url: url
- };
- }
- }
-
- extractTitle(doc) {
- return doc.querySelector('h1')?.textContent?.trim() ||
- doc.querySelector('meta[property="og:title"]')?.content ||
- doc.querySelector('title')?.textContent?.trim() ||
- '无标题';
- }
-
- extractDescription(doc) {
- const ogDesc = doc.querySelector('meta[property="og:description"]')?.content;
- const metaDesc = doc.querySelector('meta[name="description"]')?.content;
- const firstP = doc.querySelector('article p, main p, p')?.textContent?.trim();
-
- return ogDesc || metaDesc || (firstP ? firstP.substring(0, 200) : '');
- }
-
- extractImage(doc, baseUrl) {
- const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
- const firstImg = doc.querySelector('article img, main img, img')?.src;
-
- const imgSrc = ogImage || firstImg;
- return imgSrc ? new URL(imgSrc, baseUrl).href : '';
- }
-
- extractFavicon(doc, baseUrl) {
- const iconLink = doc.querySelector('link[rel*="icon"]')?.href;
- return iconLink ? new URL(iconLink, baseUrl).href : '';
- }
-
- render(data) {
- this.preview.querySelector('.preview-loading').classList.add('hidden');
- const content = this.preview.querySelector('.preview-content');
- content.classList.remove('hidden');
-
- 
- const favicon = this.preview.querySelector('.preview-favicon');
- if (data.favicon) {
- favicon.src = data.favicon;
- favicon.onerror = () =&gt; favicon.style.display = 'none';
- }
-
- this.preview.querySelector('.preview-title').textContent = data.title;
- this.preview.querySelector('.preview-description').textContent = data.description;
- this.preview.querySelector('.preview-url').textContent = data.url;
-
- const link = this.preview.querySelector('.preview-link');
- link.href = data.url;
-
- 
- const imgContainer = this.preview.querySelector('.preview-image');
- if (data.image) {
- const img = document.createElement('img');
- img.src = data.image;
- img.alt = data.title;
- img.loading = 'lazy';
- img.onerror = () =&gt; imgContainer.classList.add('hidden');
- imgContainer.innerHTML = '';
- imgContainer.appendChild(img);
- imgContainer.classList.remove('hidden');
- } else {
- imgContainer.classList.add('hidden');
- }
- }
-
- showLoading() {
- this.preview.querySelector('.preview-content').classList.add('hidden');
- this.preview.querySelector('.preview-loading').classList.remove('hidden');
- }
-
- hide() {
- this.preview.classList.remove('visible');
- this.currentUrl = null;
- this.isOverPreview = false;
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
- }
- }
-
- 
- if (document.readyState === 'loading') {
- document.addEventListener('DOMContentLoaded', () =&gt; new LinkPreview());
- } else {
- new LinkPreview();
- }
-})();
-&lt;/script&gt;
-之战。&lt;/p&gt;</description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://simons.qzz.io/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略"&gt;领导者战略&lt;/h1&gt;
+&lt;p&gt;如果要让这个神话破灭，以下那个条件可以达成？&lt;/p&gt;</description></item><item><title>营销基础：市场领导者与市场追随者</title><link>https://simons.qzz.io/post/2025/02/strategy_and_marketing_management/</link><pubDate>Mon, 24 Feb 2025 08:43:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/strategy_and_marketing_management/</guid><description>&lt;h1 id="领导者战略"&gt;领导者战略&lt;/h1&gt;
 &lt;p&gt;市场领导者：占有最大市场份额，在价格变化、新产品开发、分销渠道，以及促销战略上对本行业其他公司起到领导作用的公司。例如苹果、谷歌这样的公司。&lt;/p&gt;
 &lt;p&gt;如何才能成为领导者呢？第一种方式是把蛋糕做大，第二种方式是把蛋糕做厚&lt;/p&gt;
 &lt;p&gt;市场总量 &lt;code&gt;Q = aq&lt;/code&gt;&lt;/p&gt;
@@ -74637,9 +73887,17 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;/td&gt;
  &lt;/tr&gt;
  &lt;/tbody&gt;
-&lt;/table&gt;</description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 使用笔记本电脑的人的照片 素材图片"&gt;&lt;/p&gt;
-&lt;p&gt;在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p&gt;
-&lt;p&gt;一方面，广告公司为了提升自身的竞争力和盈利能力，开始向咨询领域拓展。例如，奥美等 4A 公司纷纷设立了咨询部门，提供包括战略规划、品牌咨询等在内的服务。这种转型不仅帮助广告公司提升了在客户心目中的地位，还使其能够提供更全面的服务，满足客户多样化的需求。&lt;/p&gt;</description></item><item><title>不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？</title><link>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p&gt;台湾的广告设计与营销传播历史，是一部与时代脉搏紧密相连的发展史。从早期简单的广告代理到如今多元化的品牌设计与营销传播，这一过程不仅反映了台湾经济的发展轨迹，也展现了广告行业在不同历史阶段的机遇与挑战。而美可特品牌设计公司及其执行总监王盈发带领美可特的转型的故事，则是这一历史进程中的一个典型案例。&lt;/p&gt;</description></item><item><title>营销基础：营销的核心价值</title><link>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值"&gt;顾客让渡价值&lt;/h1&gt;
+&lt;/table&gt;</description></item><item><title>入侵咨询：为何广告公司纷纷转型咨询公司？</title><link>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</link><pubDate>Sun, 23 Feb 2025 13:29:44 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/invasion_consulting_why_advertising_companies_are_transforming_consulting_companies/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1"
+ alt="免费 使用笔记本电脑的人的照片 素材图片"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;免费 使用笔记本电脑的人的照片 素材图片&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在移动互联网时代到来之后，关于咨询公司和广告公司之间的边界就开始模糊。随着市场环境的变化和行业竞争的加剧，广告公司和咨询公司之间的界限确实变得越来越模糊。广告公司开始涉足咨询领域，而咨询公司也在不断拓展其服务范围，这种现象在近年来尤为明显。&lt;/p&gt;</description></item><item><title>不止设计：王盈发如何带领美可特从广告公司转型到品牌设计伙伴？</title><link>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</link><pubDate>Sun, 23 Feb 2025 13:21:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_did_wang_yingfa_lead_victad_to_transform_from_advertising_agency_to_brand_design_partner/</guid><description>&lt;p&gt;台湾的广告设计与营销传播历史，是一部与时代脉搏紧密相连的发展史。从早期简单的广告代理到如今多元化的品牌设计与营销传播，这一过程不仅反映了台湾经济的发展轨迹，也展现了广告行业在不同历史阶段的机遇与挑战。而美可特品牌设计公司及其执行总监王盈发带领美可特的转型的故事，则是这一历史进程中的一个典型案例。&lt;/p&gt;</description></item><item><title>营销基础：营销的核心价值</title><link>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</link><pubDate>Sat, 22 Feb 2025 22:42:54 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_core_values_of_marketing/</guid><description>&lt;h1 id="顾客让渡价值"&gt;顾客让渡价值&lt;/h1&gt;
 &lt;p&gt;顾客让渡价值 = 顾客价值 - 顾客成本&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;顾客价值：&lt;strong&gt;顾客从某个产品或服务获得的利益综合（功能、符号、利益等）&lt;/strong&gt;，比如一款手机，其具备高清拍照、快速运行软件、大容量存储等功能，这些功能满足了顾客在通讯、娱乐、工作等方面的需求。其次是符号价值，像一些奢侈品品牌，消费者购买它们不仅仅是为了产品的实际使用功能，更是因为品牌所代表的社会地位、身份象征等符号意义。还有服务价值，例如在购买汽车时，4S 店提供的免费保养、道路救援等售后服务，也构成了顾客价值的一部分，让顾客在使用产品的过程中享受到更全面的保障和便利。&lt;/li&gt;
@@ -74672,14 +73930,32 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;供不应求、垄断&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;福特通过标准化技术，实现规模化生产，在 1908 年福特成为美国乃至世界的汽车大王。&lt;/p&gt;
-&lt;p&gt;那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p&gt;</description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://simons.qzz.io/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p&gt;&lt;img src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt;那时候无论是平民百姓还是达官贵人，都开的是黑色的 T 型车，顾客这时候的需求是换一个颜色，但是福特义正严辞的说：“任何顾客都可以选择任何他所中意的汽车颜色，只要它是黑色的。” 这体现了福特生产本位的思想 —— 从生产出发，考虑标准化生产，降低生产成本，而不是从市场需求出发。&lt;/p&gt;</description></item><item><title>诱饵效应：如何让无人问津的产品销量翻倍？</title><link>https://simons.qzz.io/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</link><pubDate>Sat, 22 Feb 2025 13:25:48 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/bait_effect_how_to_double_sales_of_products_that_no_one_cares_about/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;丹·艾瑞里（英语：Dan Ariely，1968年4月29日至今）是一位拥有犹太人血统的美国心理学及行为经济学教授。[1] 他任教于杜克大学进阶后知之明中心（Center for Advanced Hindsight）。&lt;/p&gt;
 &lt;p&gt;—— 维基百科&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;在大学的时候，如果你是男生，你可能会有这样的经历：&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;你有个好兄弟非常喜欢一个女生，然后有一天，他实在按捺不住心中的激动，于是把女生约了出来吃饭，想创造一点机会。&lt;/p&gt;</description></item><item><title>营销基础：什么是营销？</title><link>https://simons.qzz.io/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p&gt;&lt;img src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1" alt="免费 木质表面上的文件 素材图片"&gt;&lt;/p&gt;
+&lt;p&gt;你有个好兄弟非常喜欢一个女生，然后有一天，他实在按捺不住心中的激动，于是把女生约了出来吃饭，想创造一点机会。&lt;/p&gt;</description></item><item><title>营销基础：什么是营销？</title><link>https://simons.qzz.io/post/2025/02/fundamentals_of_marketing_what_is_marketing/</link><pubDate>Fri, 21 Feb 2025 22:27:09 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/fundamentals_of_marketing_what_is_marketing/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&amp;amp;cs=tinysrgb&amp;amp;w=1260&amp;amp;h=750&amp;amp;dpr=1"
+ alt="免费 木质表面上的文件 素材图片"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;免费 木质表面上的文件 素材图片&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一行业定义"&gt;一、行业定义&lt;/h1&gt;
 &lt;h2 id="1-专家解释"&gt;1. 专家解释&lt;/h2&gt;
 &lt;p&gt;现代营销学之父菲利普·科特勒在不同的场景下分别解释了 “营销” 和与之相关的词。&lt;/p&gt;
@@ -74709,10 +73985,18 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;人们一旦进入认同分歧，情绪会被快速激活，对话的双方会迅速进入“眩晕”状态，在这种状态下，他们看不见别人，只能看见敌人，他们不认为对方提出了一个方案、想法的普通人，而是认为对方要摧毁自己。&lt;/p&gt;</description></item><item><title>解决冲突：饭里吃到苍蝇应该如何获得应有赔偿？</title><link>https://simons.qzz.io/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</link><pubDate>Thu, 20 Feb 2025 18:50:22 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/conflict_resolution_how_can_i_get_due_compensation_if_i_eat_flies_in_my_meal/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;本期主要描述了冲突场景下的解决方案，方法来自复旦大学的熊浩老师。下一期将讲述哈佛谈判的细节，或者评论你想了解的内容或事件！&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;在日常生活中，我们非常容易遇到冲突。比如在点餐判队的时候，遇到插队的，通常我们的解决方案是回避。有些时候我们很难回避，例如在餐厅中吃到异物。我们应该如何解决生活中的冲突？&lt;/p&gt;</description></item><item><title>无痛支付：如何从行为经济学视角优化支付体验？</title><link>https://simons.qzz.io/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</link><pubDate>Thu, 20 Feb 2025 14:49:59 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</guid><description>&lt;p&gt;&lt;img src="https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&amp;amp;riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&amp;amp;ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0&amp;amp;sres=1&amp;amp;sresct=1" alt="微信扫码二维码支付哪家强？"&gt;&lt;/p&gt;
+&lt;p&gt;在日常生活中，我们非常容易遇到冲突。比如在点餐判队的时候，遇到插队的，通常我们的解决方案是回避。有些时候我们很难回避，例如在餐厅中吃到异物。我们应该如何解决生活中的冲突？&lt;/p&gt;</description></item><item><title>无痛支付：如何从行为经济学视角优化支付体验？</title><link>https://simons.qzz.io/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</link><pubDate>Thu, 20 Feb 2025 14:49:59 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&amp;amp;riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&amp;amp;ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0&amp;amp;sres=1&amp;amp;sresct=1"
+ alt="微信扫码二维码支付哪家强？"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;微信扫码二维码支付哪家强？&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一痛苦的本质神经科学与行为经济学的双重证据"&gt;一、痛苦的本质：神经科学与行为经济学的双重证据&lt;/h1&gt;
-&lt;p&gt;结账时的痛苦不仅是心理感受，更是大脑的生理反应。神经科学研究表明，当消费者支付现金时，大脑岛叶皮层（与身体疼痛相关的区域）活动显著增强，这种神经层面的“损失感”被行为经济学称为“支付疼痛”（Payment Pain）。&lt;/p&gt;
-&lt;p&gt;一项经典研究发现，使用现金支付的消费者在购买高价商品时，决策时间比信用卡用户长 30%，且更容易放弃购买。这种差异源于心理账户（Mental Accounting）理论 —— 现金支付因“看得见的损失”而触发更强的痛苦感。例如，消费者在面对现金支付时，会更加感受到资金的减少，从而产生更强的支付疼痛感，导致他们在购买决策时更加谨慎，甚至放弃购买。而使用信用卡或电子支付方式时，由于支付过程相对抽象，消费者对资金减少的感受较弱，支付疼痛感也相对较轻，从而更容易完成购买行为。&lt;/p&gt;</description></item><item><title>分析的层次</title><link>https://simons.qzz.io/post/2025/02/hierarchy_of_analysis/</link><pubDate>Wed, 19 Feb 2025 19:12:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hierarchy_of_analysis/</guid><description>&lt;h1 id="分析的层次"&gt;分析的层次&lt;/h1&gt;
+&lt;p&gt;结账时的痛苦不仅是心理感受，更是大脑的生理反应。神经科学研究表明，当消费者支付现金时，大脑岛叶皮层（与身体疼痛相关的区域）活动显著增强，这种神经层面的“损失感”被行为经济学称为“支付疼痛”（Payment Pain）。&lt;/p&gt;</description></item><item><title>分析的层次</title><link>https://simons.qzz.io/post/2025/02/hierarchy_of_analysis/</link><pubDate>Wed, 19 Feb 2025 19:12:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hierarchy_of_analysis/</guid><description>&lt;h1 id="分析的层次"&gt;分析的层次&lt;/h1&gt;
 &lt;p&gt;注意，分析是一个复杂的过程，不可能通过几个标准化流程完成。这种简化的流程容易在其他方面形成误导，此文仅作参考。&lt;/p&gt;
 &lt;h2 id="宏观趋势分析pest"&gt;宏观趋势分析：PEST&lt;/h2&gt;
 &lt;p&gt;从宏观的层面分析社会发展的趋势，洞察到其中的商机，使用的方法就是 PEST 分析，了解政治、经济、社会和技术的趋势。&lt;/p&gt;
@@ -75955,7 +75239,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p&gt;&lt;img src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536" alt="img"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>价格歧视：为什么一个产品要细分多个定价？</title><link>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</link><pubDate>Tue, 18 Feb 2025 22:10:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/price_discrimination_why_should_a_product_be_segmented_into_multiple_pricing/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;价格弹性是指在其他因素不变的情况下，商品或服务的价格变动百分之一所引起的需求量变动的百分比。它反映了需求量对价格变动的反应程度。&lt;/p&gt;
 &lt;p&gt;消费者剩余是指消费者购买某种商品或服务时，愿意支付的最高价格与实际支付的市场价格之间的差额。简单来说，就是消费者在交易中 “赚到” 的部分。例如，消费者小张愿意为一本书支付最多 50 元，但实际上这本书的市场价格是 30 元，那么小张就获得了 20 元（50 - 30）的消费者剩余。&lt;/p&gt;</description></item><item><title>稀缺与歧视：为什么“难以获得”更有诱惑力？</title><link>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</link><pubDate>Sun, 16 Feb 2025 15:12:15 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_power_of_desire_why_is_hard_to_get_more_tempting/</guid><description>&lt;h1 id="参考"&gt;参考&lt;/h1&gt;
@@ -75975,7 +75268,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;这是个常规的思路。按照刚才的思路，一个标准的冲突解决应该是：&lt;/p&gt;</description></item><item><title>劣币驱逐良币与柠檬市场的关系</title><link>https://simons.qzz.io/post/2025/02/the_relationship_between_bad_money_driving_out_good_money_and_the_lemon_market/</link><pubDate>Sat, 15 Feb 2025 18:30:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/the_relationship_between_bad_money_driving_out_good_money_and_the_lemon_market/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;劣币驱逐良币主要是在货币流通中，当两种实际价值不同的货币被法定为同等价值时，人们会囤积良币而使用劣币，导致良币退出市场。而柠檬市场则是因为信息不对称，买方无法判断商品质量，导致高质量商品被低质量商品挤出市场。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;首先，我需要确认这两个概念各自的定义和背景。劣币驱逐良币是经济学里的格resham定律，讲的是当市场上存在两种实际价值不同的货币，但法定价值相同时，实际价值低的货币（劣币）会流通，而价值高的货币（良币）会被收藏，逐渐退出流通。这个现象由托马斯·格雷欣提出，所以叫格雷欣定律。&lt;/p&gt;</description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://simons.qzz.io/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p&gt;&lt;img src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641" alt="图片"&gt;&lt;/p&gt;
+&lt;p&gt;首先，我需要确认这两个概念各自的定义和背景。劣币驱逐良币是经济学里的格resham定律，讲的是当市场上存在两种实际价值不同的货币，但法定价值相同时，实际价值低的货币（劣币）会流通，而价值高的货币（良币）会被收藏，逐渐退出流通。这个现象由托马斯·格雷欣提出，所以叫格雷欣定律。&lt;/p&gt;</description></item><item><title>同一个世界：为什么拼多多的商业模式不能解决假货问题？</title><link>https://simons.qzz.io/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</link><pubDate>Sat, 15 Feb 2025 15:32:08 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/becoming_a_bad_coin_why_didnt_pinduoduo_solve_the_problem_of_counterfeit_goods/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641"
+ alt="图片"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;图片&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;拼多多，这家在争议中野蛮生长的电商巨头，自诞生之日起便凭借低价策略和社交电商模式迅速崛起，成为中国电商行业的一匹黑马。然而，假货问题如影随形，始终困扰着其发展。尽管拼多多多次承诺加强监管、打击假货，但效果并不理想。&lt;/p&gt;
 &lt;p&gt;这家曾被贴上“假货聚集地”“消费降级代表”标签的平台，一边承受着“砍一刀”的骂声，一边以火箭速度超越淘宝、京东，成为用户数第一的电商平台。拼多多的低价策略和社交电商模式，使其在下沉市场迅速崛起。2024年第三季度，拼多多总营收达到993.54亿元，同比增长44%。拼多多的净利润率高达24.24%，远超同期的好市多和阿里巴巴。这种高增长和高利润的背后，是拼多多对下沉市场的深度耕耘和对用户需求的精准把握，是一场关于中国商业底层逻辑的深刻博弈。本文将从拼多多的商业战略角度，深入分析其为何难以解决假货问题。&lt;/p&gt;</description></item><item><title>为什么高级餐厅味道并不一定好？</title><link>https://simons.qzz.io/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</link><pubDate>Sat, 15 Feb 2025 13:30:46 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/why_high-end_restaurants_dont_always_taste_good/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”&lt;/p&gt;
@@ -75988,14 +75290,41 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;1985 年，可口可乐公司经历了一次品牌历史上的至暗时刻，却也为我们呈现了一个关于消费者情感共鸣的深刻案例。面对百事可乐销量的快速增长，可口可乐的首位外籍 CEO 郭思达决定改变可口可乐原有配方，以面向更多用户群体。经过大规模的口味盲测，新配方以 61% 比 39% 的优势胜出，公司投入巨资进行研发和推广。然而，这一改变却引发了消费者的强烈不满，从抗议电话到示威游行，消费者们用行动表达了对新可乐的愤怒。百事可乐更是趁机火上浇油，将新可乐发布会当天定为 “百事可乐日”。最终，可口可乐不得不将配方改回来以平民愤。&lt;/p&gt;</description></item><item><title>如家酒店：以标准化为琴键，谱就中国连锁酒店业的交响华章</title><link>https://simons.qzz.io/post/2025/02/home_inn_the_marketing_legend_of_standardized_services_and_brand_building/</link><pubDate>Fri, 14 Feb 2025 18:24:59 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/home_inn_the_marketing_legend_of_standardized_services_and_brand_building/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;当商旅人士拖着行李箱穿过陌生的城市街道，总有一盏黄色笑脸灯牌在暮色中温暖等待——如家酒店如何用二十年时间，让这个充满人文关怀的符号成为中国经济型酒店的代名词？&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://res.klook.com/klook-hotel/image/upload/meituan_p1/tdchoteldark/d6d52024709b0d8460400b1606f4477c1565588.jpg" alt="images"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://res.klook.com/klook-hotel/image/upload/meituan_p1/tdchoteldark/d6d52024709b0d8460400b1606f4477c1565588.jpg"
+ alt="images"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;images&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一在红海中发现蓝海绿洲"&gt;一、在红海中发现&amp;quot;蓝海绿洲&amp;quot;&lt;/h1&gt;
-&lt;p&gt;2002 年的中国酒店市场，高端酒店如金字塔尖的明珠，招待所则似散落戈壁的砾石。如家创始人季琦敏锐捕捉到中端市场的真空地带，将定位精准锚定 &amp;ldquo;商务客的第二个家&amp;rdquo;。当时，国内五星级以下酒店大多处于亏损状态，尤其是三星级中等酒店，投入产出比低，客房空置率奇高。而旅社、招待所目标客户为收入层次较低人群，酒店设施和卫生条件差、服务质量难以令人满意。&lt;/p&gt;</description></item><item><title>香港“自由行”营销奇迹：化危机为转机，重振经济的策略解析</title><link>https://simons.qzz.io/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</link><pubDate>Fri, 14 Feb 2025 16:25:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</guid><description>&lt;p&gt;&lt;img src="https://ts1.cn.mm.bing.net/th/id/R-C.6f9c9c7354d6f512ff9eadcf9160e3ab?rik=iCCKcoQq%2f00t8A&amp;amp;riu=http%3a%2f%2fpic1.k1u.com%2fk1u%2fmb%2fd%2ffile%2f20170706%2f1499324500487138_836_10000.png&amp;amp;ehk=d4ShS5enGLb64enPf1GnER7yHOERowoJMN5ASC21Bc0%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0" alt="香港自由行攻略2017_旅泊网"&gt;&lt;/p&gt;
+&lt;p&gt;2002 年的中国酒店市场，高端酒店如金字塔尖的明珠，招待所则似散落戈壁的砾石。如家创始人季琦敏锐捕捉到中端市场的真空地带，将定位精准锚定 &amp;ldquo;商务客的第二个家&amp;rdquo;。当时，国内五星级以下酒店大多处于亏损状态，尤其是三星级中等酒店，投入产出比低，客房空置率奇高。而旅社、招待所目标客户为收入层次较低人群，酒店设施和卫生条件差、服务质量难以令人满意。&lt;/p&gt;</description></item><item><title>香港“自由行”营销奇迹：化危机为转机，重振经济的策略解析</title><link>https://simons.qzz.io/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</link><pubDate>Fri, 14 Feb 2025 16:25:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/hong_kong_free_travel_seizes_market_opportunities/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://ts1.cn.mm.bing.net/th/id/R-C.6f9c9c7354d6f512ff9eadcf9160e3ab?rik=iCCKcoQq%2f00t8A&amp;amp;riu=http%3a%2f%2fpic1.k1u.com%2fk1u%2fmb%2fd%2ffile%2f20170706%2f1499324500487138_836_10000.png&amp;amp;ehk=d4ShS5enGLb64enPf1GnER7yHOERowoJMN5ASC21Bc0%3d&amp;amp;risl=&amp;amp;pid=ImgRaw&amp;amp;r=0"
+ alt="香港自由行攻略2017_旅泊网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;香港自由行攻略2017_旅泊网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一危机中的机遇香港自由行政策的诞生"&gt;一、危机中的机遇：香港“自由行”政策的诞生&lt;/h1&gt;
 &lt;p&gt;1997年香港回归中国后，亚洲金融风暴及“非典”袭港，导致经济整体低迷，2003年香港的国内生产总值（GDP）仅为12340亿港元，是1997年回归以来最低的一年，香港旅游业更是受到重创。旅游业对香港经济影响巨大，不仅是香港四大支柱产业之一，而且是香港赚取外汇的第二大行业。2003年5月，赴港游客同比下降68%，仅旅游收入就减少123亿港元。这一损失很快波及零售业和消费业，导致失业率达到香港特别行政区政府成立以来的新高。&lt;/p&gt;</description></item><item><title>逆风翻盘：安利如何通过两次转型变危机为机遇实现业绩逆势增长？</title><link>https://simons.qzz.io/post/2025/02/amways_two_transformations_in_china/</link><pubDate>Fri, 14 Feb 2025 14:51:51 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/amways_two_transformations_in_china/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;在进入中国市场近30年后，跨国公司安利不仅在中国树立起广泛的品牌声誉，甚至连“安利”这个专有名词本身，也在国人日常用语中被引申出“强烈推荐”“真诚分享”的新义项。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/jpg/D669BBC214F5B93AC72800A80E86182A.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://jg-app.obs.cn-north-4.myhuaweicloud.com/prod/upload/jpg/D669BBC214F5B93AC72800A80E86182A.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="安利中国两次转型从危机到机遇的营销变革之路"&gt;安利中国两次转型：从危机到机遇的营销变革之路&lt;/h1&gt;
 &lt;h2 id="引言"&gt;引言&lt;/h2&gt;
 &lt;p&gt;在全球经济一体化的浪潮中，跨国企业在中国市场的表现一直是商业领域的焦点。安利公司，作为世界知名的日用消费品生产商和销售商，自 1992 年进入中国市场以来，历经风雨，却总能在困境中寻得转机。从 1998 年因传销禁令而被迫转型，到 2005 年依据新条例再次调整营销模式，每一次变革都彰显了安利对中国市场的深刻洞察与坚定决心。本文将深入剖析安利在中国的两次转型，揭示其如何在复杂多变的市场环境中，通过创新营销策略，实现业绩的逆势增长，为企业发展注入新活力，同时也为其他跨国企业在中国的本土化运营提供宝贵经验。&lt;/p&gt;</description></item><item><title>营销经典案例</title><link>https://simons.qzz.io/post/2025/02/classic_marketing_cases/</link><pubDate>Fri, 14 Feb 2025 14:47:23 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/classic_marketing_cases/</guid><description>&lt;p&gt;
@@ -76615,15 +75944,31 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;二、案例分析&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>好彩头：为什么随机投喂会让鸽子产生迷信行为？</title><link>https://simons.qzz.io/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</link><pubDate>Fri, 14 Feb 2025 12:58:34 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/good_luck_why_does_random_feeding_cause_superstitious_behavior_among_pigeons/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;迷信行为不仅在人类中存在，动物也会表现出类似的 “迷信”。心理学家伯尔赫斯・弗雷德里克・斯金纳（B.F. Skinner）通过实验揭示了这一现象背后的心理学原理。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShlMz4vLZIpqZ1Pv6CmLOoukU-yD8YjTl2g&amp;amp;s" alt="斯金纳_心理学家_心理图库_心理学图_525心理网"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQShlMz4vLZIpqZ1Pv6CmLOoukU-yD8YjTl2g&amp;amp;s"
+ alt="斯金纳_心理学家_心理图库_心理学图_525心理网"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;斯金纳_心理学家_心理图库_心理学图_525心理网&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="一生活中的迷信行为"&gt;一、生活中的“迷信”行为&lt;/h1&gt;
 &lt;p&gt;在我们的生活中，处处充满“迷信”的东西，在大多数时候我们都把它当做讨彩头的方式，作为一种积极暗示。比如考试前吃一根火腿肠和两个鸡蛋，又或是新买的东西主人先用。这样的事情我们屡见不鲜。&lt;/p&gt;</description></item><item><title>东方表达：同样是中国文化《哪吒》和《功夫熊猫》的不同之处是什么？</title><link>https://simons.qzz.io/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</link><pubDate>Fri, 14 Feb 2025 00:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/oriental_expression_what_is_the_difference_between_nezha_and_kung_fu_panda_which_are_also_china_cultures/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;在《哪吒》之前，四二（笔者）最喜欢的是《功夫熊猫》，那还是我在小学的时候看的。&lt;/p&gt;
 &lt;p&gt;《哪吒》系列与《功夫熊猫》系列可谓是中美两国动画电影的代表，两者不仅在票房和口碑上取得了巨大成功，更在视觉符号、角色塑造、叙事风格等方面展现了相似类型动画中，两国文化的底层差异。&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/Users/simons/Desktop/%E6%AF%94%E8%BE%83.png" alt="比较"&gt;&lt;/p&gt;
-&lt;h1 id="一视觉符号"&gt;一、视觉符号&lt;/h1&gt;
-&lt;p&gt;首先是《哪吒》中的文化东方，根植于中国传统文化，以中国古代神话故事《封神演义》为蓝本，对哪吒这一经典神话人物及其相关故事进行了改编与延续，其中融入了大量中国传统文化元素，如结界兽的造型灵感来源于三星堆青铜面具，展现了中国文化的深厚底蕴。&lt;/p&gt;</description></item><item><title>营销公式那些事</title><link>https://simons.qzz.io/post/2025/02/how_to_design_your_own_marketing_formula/</link><pubDate>Fri, 14 Feb 2025 00:11:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_design_your_own_marketing_formula/</guid><description>&lt;h1 id="市场营销的基本公式"&gt;市场营销的基本公式&lt;/h1&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/Users/simons/Desktop/%e6%af%94%e8%be%83.png"
+ alt="比较"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;比较&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;</description></item><item><title>营销公式那些事</title><link>https://simons.qzz.io/post/2025/02/how_to_design_your_own_marketing_formula/</link><pubDate>Fri, 14 Feb 2025 00:11:47 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_design_your_own_marketing_formula/</guid><description>&lt;h1 id="市场营销的基本公式"&gt;市场营销的基本公式&lt;/h1&gt;
 &lt;h2 id="stp--4p"&gt;STP + 4P&lt;/h2&gt;
 &lt;p&gt;其中，**STP代表市场战略，分别指代 Segment 市场细分、Target 目标人群、Position 产品定位。**企业在开展市场经营之前首先要确定 STP，然后再据此设计 &lt;strong&gt;4P 营销组合，包括Product产品、Price定价、Place渠道、Promotion推广，4P 是市场战术。&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>营销人必看网站</title><link>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</link><pubDate>Thu, 13 Feb 2025 23:37:42 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/marketing_must-see_website/</guid><description>&lt;h1 id="营销人必备网站6大类41个网站"&gt;营销人必备网站：6大类，41个网站&lt;/h1&gt;
 &lt;p&gt;从去年到现在，很多小伙伴会问到宿言如何才能提升自己的营销能力。其实提升营销能力主要分为两部分，那就是“不停学习+各种实践”。&lt;/p&gt;
@@ -77885,7 +77230,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;strong&gt;说服一个人很难，说服一群人很容易。要敦促个体改变行为，就把它扔到一群人中。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;爱德华·伯尼斯&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://pica.zhimg.com/v2-33d3f26ec1c8bf628a8f5972e98c5ce6_1440w.jpg"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;**爱德华·伯尼斯（Edward L.Bernays）**被称为公关之父（美国一共有三个人得到这个称号，其他两个是巴纳姆、艾维·李）。出身维也纳，著名心理学家佛洛伊德的外甥，是公共关系学科化的先驱者，纽约大学教授。&lt;/p&gt;</description></item><item><title>快乐为何转瞬即逝？多学科视角下的短暂性解析与营销启示</title><link>https://simons.qzz.io/post/2025/02/why_does_happiness_pass_so_quickly/</link><pubDate>Tue, 11 Feb 2025 02:42:59 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/why_does_happiness_pass_so_quickly/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;我的一个朋友在做蛋糕，口味非常好，我每次去玩总会吃到免费的蛋糕，但是每只最多只能吃两个，但那远远还未到饱腹感，为什么？&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -77905,7 +77259,16 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;想象一个场景：你的朋友正在给你讲一个故事，但还没讲完就匆匆离开。你会有什么感受？大多数人会感到焦虑和好奇，迫切想知道故事的结局。在不知道结局之前，你很难专注于其他事情。这种对未完成事情的执着，正是心理学中的&lt;strong&gt;蔡格尼克效应&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>自媒体平台封面图片尺寸合集</title><link>https://simons.qzz.io/post/2025/02/images_size/</link><pubDate>Sun, 09 Feb 2025 18:42:13 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/images_size/</guid><description>&lt;h1 id="2024最全自媒体平台封面图片尺寸合集"&gt;2024最全自媒体平台封面图片尺寸合集&lt;/h1&gt;
 &lt;h2 id="01-小红书图片尺寸"&gt;01 小红书图片尺寸&lt;/h2&gt;
 &lt;p&gt;小红书以生活分享和种草内容著称，是年轻人寻求时尚、美妆、旅行等资讯的首选平台。&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://www.ubrand.com/_next/image?url=%2Foss%2Farticles%2F2024%2F08%2F20%2F%25E7%2594%25BB%25E6%259D%25BF%25207.png&amp;amp;w=3840&amp;amp;q=75" alt="img"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.ubrand.com/_next/image?url=%2Foss%2Farticles%2F2024%2F08%2F20%2F%25E7%2594%25BB%25E6%259D%25BF%25207.png&amp;amp;w=3840&amp;amp;q=75"
+ alt="img"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;img&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;●小红书头像：&lt;code&gt;400 * 400 PX&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;●小红书个人背景图：&lt;code&gt;1000 * 800 PX&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;●小红书圈文封面（坚版）：&lt;code&gt;1242 * 1660 PX （3：4）&lt;/code&gt;&lt;/p&gt;
@@ -97264,7 +96627,16 @@ Done. Now run:
  }
 })();
 &lt;/script&gt;
-&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/design/</guid><description>&lt;p&gt;&lt;img src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png" alt="样机"&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>设计资料：样机</title><link>https://simons.qzz.io/post/2024/04/design/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/design/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://www.caoyang2002.top/usr/uploads/2024/04/2720746638.png"
+ alt="样机"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;样机&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="样机"&gt;样机&lt;/h1&gt;
 &lt;p&gt;
 
@@ -97849,7 +97221,16 @@ Done. Now run:
 &lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://simons.qzz.io/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
 &lt;p&gt;SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p&gt;
 &lt;p&gt;对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
-比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/jwt/</guid><description>&lt;p&gt;&lt;img src="" alt="JWT"&gt;&lt;/p&gt;
+比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>JWT 解析</title><link>https://simons.qzz.io/post/2024/04/jwt/</link><pubDate>Fri, 12 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/jwt/</guid><description>&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src=""
+ alt="JWT"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;JWT&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;
 
 

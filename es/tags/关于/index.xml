@@ -1,8 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>关于 on cyrus reggie</title><link>https://simons.qzz.io/es/tags/%E5%85%B3%E4%BA%8E/</link><description>Recent content in 关于 on cyrus reggie</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Tue, 27 Jan 2026 16:09:08 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/es/tags/%E5%85%B3%E4%BA%8E/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/es/about/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/es/about/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/about/simons.jpg"
+ alt="me"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;me&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
 &lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/first_h5.jpg" alt="first_h5"&gt;&lt;/p&gt;
-&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;
-&lt;p&gt;&lt;img src="https://simons.qzz.io/about/history/chyraw_food.jpg" alt="chyraw_food"&gt;&lt;/p&gt;
-&lt;p&gt;关于这个项目还要从 2023 年说起，当时我和大学 3 个室友（wjq，cxy，hsf）一起创业做一个食品公司，然后失败了，在 2024 年注销了这家公司。解散后，我去了 web3 做开发，wjq 做起了提拉米苏，cxy 出国留学，hsf 进了室内设计公司。&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt; 
+&lt;figure class="my-8 text-center"&gt;
+ &lt;img
+ src="https://simons.qzz.io/about/history/first_h5.jpg"
+ alt="first_h5"
+ class="mx-auto max-w-full h-auto"loading="lazy"
+ /&gt;
+
+ &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;first_h5&lt;/figcaption&gt;
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;下图是我 2024 年给创业项目做的网站：&lt;/p&gt;</description></item></channel></rss>
