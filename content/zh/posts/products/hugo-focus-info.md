@@ -56,9 +56,10 @@ func main(){
 Lisp
 
 ```lisp
-progn
 (format t "Hello from Lisp!")
 "Hello from Lisp!")
+(+ 1 2)
+
 ```
 
 Python
