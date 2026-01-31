@@ -59,7 +59,7 @@ details = [
 
 [[experiences]]
 title = "个人项目 - 极简博客系统"
-period = "2022.03 - 2022.06"
+period = "2025.01 - 2026.01"
 details = [
     "基于Hugo+TailwindCSS构建静态博客，支持文章分类、标签、搜索",
     "自定义主题样式，实现响应式布局，适配电脑、平板、手机等设备",
