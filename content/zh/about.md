@@ -1,14 +1,14 @@
 +++
-title = "关于我"
+title = "Simons"
 layout = "about"
 date = 2026-01-30T10:00:00+08:00
 draft = false
 
 # 个人简介
-bio = "一名热爱技术与生活的开发者/设计师，专注于前端开发、用户体验设计，擅长用简洁的方式解决复杂问题。始终保持学习的热情，追求技术与美学的平衡，乐于分享和交流。"
+bio = "一名热爱技术与生活的开发者/设计师，专注于前端开发、用户体验设计。"
 
 # 个人头像（支持本地静态文件或网络链接，本地文件放 static/imgs/ 下）
-avatar = "imgs/avatar.jpg"
+avatar = "/about/avatar.jpg"
 
 # 技能列表（icon为font-awesome4图标，可自行替换）
 [[skills]]
@@ -117,24 +117,24 @@ svg = '''<svg viewBox="0 0 100 100" fill="currentColor">
 [[contacts]]
 name = "邮箱"
 icon = "fa-envelope"
-value = "your-email@example.com"
-url = "mailto:your-email@example.com"
+value = "reggiesimons2cy@gmail.com"
+url = "mailto:reggiesimons2cy@gmail.com"
 
 [[contacts]]
 name = "GitHub"
 icon = "fa-github"
-value = "your-github-name"
-url = "https://github.com/your-github-name"
+value = "caoyang2002"
+url = "https://github.com/caoyang2002"
 
 [[contacts]]
 name = "微信"
 icon = "fa-weixin"
-value = "your-wechat-id"
+value = "thomelgo"
 url = "javascript:;"
 
 [[contacts]]
 name = "电话"
 icon = "fa-phone"
-value = "138-0000-0000"
-url = "tel:13800000000"
+value = "186-8324-1961"
+url = "tel:18683241961"
 +++
