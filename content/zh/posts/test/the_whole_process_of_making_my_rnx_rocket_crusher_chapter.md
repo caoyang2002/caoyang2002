@@ -14,93 +14,40 @@ cover = "https://img.kechuang.org:81/r/123903?c=resource"
 2012年献礼：我的RNX火箭制作全过程之粉碎机篇。
 
 前言： 
+
 发表这些东西之前，先感谢乖氏家族的大力支持，特别是老汉同志提供的一系列技术上的帮助。 
 这些东西其实是去年年底做好的，由于老家没电脑，所以一直没有上传论坛，今天刚到宁波出差，元宵节闲来无事，所以找了家网吧，把这些东西放上来，也好让大家参考借鉴。这是我第一次做火箭，肯定有很多不到之处，同时也希望能得到大家的指导。 
 
-粉碎机篇： 
+# 粉碎机篇
+
 我做的这个粉碎机借鉴了乖老大同志（也就是E局）的制作方法，有些细小的改进，其主要目的既是想让粉碎机以极低的成本普及。好了，话不多说，上图。 
 
 1：淘宝上购买的德昌970巨无霸直流电机，最快能达到13000多转，扭力很大，价格20元，性价比也很不错。 
 ![1.jpg](https://img.kechuang.org:81/r/123897?c=resource)
 
 2：不锈钢口杯，底部打了三个孔，由于比较薄，放在台钻上打孔不好固定，因此孔打得有点扁，但不影响正常使用。此杯价格9元，有比这更贵的，也有比这便宜的，大家各取所好即可。 
-![2.jpg]()
+![2.jpg](https://img.kechuang.org:81/r/123898?c=resource)
 
 3：M4螺丝两个，粉碎刀片一片。刀片用废锯片放在切割机上磨的，强度不错，最后使用效果也行。 
-![3.jpg]()
+![3.jpg](https://img.kechuang.org:81/r/123899?c=resource)
 
 4：PVC固定板，采用8MM厚的PVC板做的，主要用处是隔在电机与口杯之间，固定口杯。当然这个板不一定要圆形，也不一定非得采用PVC材质，大家如果要做的话可以采用你所能想到的任何适用材料。 
-![4.jpg]()
+![4.jpg](https://img.kechuang.org:81/r/123900?c=resource)
 
 5：PVC固定板与电机连接结构图。在中心孔里滴了几滴502固定，注意别滴到轴心上了，否则你的电机想转动可能有点困难。 
-![5.jpg]()
+![5.jpg](https://img.kechuang.org:81/r/123901?c=resource)
 
 6：在PVC板的中心孔内涂上黄油润滑。 
-![6.jpg]()
+![6.jpg](https://img.kechuang.org:81/r/123902?c=resource)
 
 7：再把不锈钢口杯放上去，用M4螺丝固定，然后焊好刀片。由于电机轴是没有螺纹的，因此刀片只能焊上去，这个焊得比较无爱，大家忽视。图片中的电源适配器是花了20元买的，12V3A，到底便宜没好货，买回来就得用黄胶带固定，还好没其它毛病。 
-![7.jpg]()
+![6.jpg](https://img.kechuang.org:81/r/123903?c=resource)
 
 8：粉碎KN时的样子。粉碎效果还行，5分钟能过100目，可能是KN的干燥程度不够，粉起来还是有点点小麻烦，KN爱沾杯底。毕竟前后才花了50元不到，能有这效果我也满意了。 
-![8.jpg]()
+![6.jpg](https://img.kechuang.org:81/r/123904?c=resource)
 
-+45  科创币  [![img](https://img.kechuang.org:81/a/60aa2bd57c46791366b93b9e?c=userAvatar) 麒麟  ](https://www.kechuang.org/u/18478) 2012/02/06 旗舰。。赞啊。。我早想一台粉碎机了。。这个俺个人d起来难度不小、主要工具不全。
+---
 
-+100  科创币  [![img](https://img.kechuang.org:81/a/5f0d6561351a5f1468796036?c=userAvatar) 拔刀斋  ](https://www.kechuang.org/u/1959) 2012/02/09 高质量发帖
-
-+1  科创币  [![img](https://img.kechuang.org:81/a/22038?c=userAvatar) lincel  ](https://www.kechuang.org/u/22038) 2012/02/20 粉碎机不错
-
-来自：[航空航天](https://www.kechuang.org/f/74) / [喷气推进](https://www.kechuang.org/f/89)
-
-34
-
- 
-
- 
-
-1
-
- 
-
- 
-
- 鼓励 
-
- 
-
- 分享
-
- 
-
-![img](https://img.kechuang.org:81/a/5f0d6573351a5f14687964f9?c=userAvatar)
-
-[旗舰](https://www.kechuang.org/u/25202) ![百炼成钢](https://www.kechuang.org/statics/grade_icon/v4l.png)作者
-
-14年2个月前 IP:未同步
-
-363719
-
- 
-
-[1楼](https://www.kechuang.org/p/363719) 
-
-收了很久，终于有机会把这些东西全部发上来了。
-
-引用
-
- 
-
-评论
-
- 
-
- 
-
- 
-
- 
-
- 
 
 ![img](https://img.kechuang.org:81/a/5f0d6573351a5f14687964f9?c=userAvatar)
 
