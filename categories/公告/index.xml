@@ -1,134 +1,83 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 22:59:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;reggiesimons2cy@gmail.com&lt;/code&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on 短松江月</title><link>https://simons.qzz.io/categories/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 23:51:19 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
+&lt;p&gt;请发送邮件至：
 
-&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
 
-&lt;style&gt;
- .notice {
- color: red;
- }
-&lt;/style&gt;
-
+&lt;a href="mailto:reggiesimons2cy@gmail.com"
  
-
- 文章来源说明
-
-
-
-
-
-
-
-
-&lt;div class="crypto-content"&gt;
  
- &lt;div class="crypto-form"&gt;
- &lt;input
- type="password"
- placeholder="输入密码"
- class="crypto-input"
- id="crypto-password"
- /&gt;
- &lt;button onclick="decrypt()" class="crypto-btn"&gt;解密&lt;/button&gt;
- &lt;/div&gt;
- 
- &lt;div
- class="encrypted-content"
- id="crypto-output"
- data-content="CuaOqeiAs&amp;#43;ebl&amp;#43;mTgwo="
+ class="internal-link"
  &gt;
- 已加密，请输入密码
- &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;script&gt;
+ reggiesimons2cy@gmail.com
  
- async function decrypt() {
- try {
- const input = document.getElementById('crypto-password');
- const output = document.getElementById('crypto-output');
- const form = document.querySelector('.crypto-form');
-
- 
- if(!input?.value) {
- showError('请输入密码');
- return;
- }
-
- const password = input.value;
- const publishDate = "3131540131";
- const hash = await sha256(password + publishDate);
- const targetHash = await sha256( "文章来源说明" + publishDate);
-
- if(hash !== targetHash) {
- throw new Error('密码错误');
- }
-
- const base64 = output.getAttribute('data-content');
- const decoder = new TextDecoder();
- const decoded = decoder.decode(Uint8Array.from(atob(base64), c =&gt; c.charCodeAt(0)));
- output.innerHTML = decoded;
- console.log(decoded);
- form.style.display = 'none';
- } catch(e) {
- console.log(e)
- showError('密码错误，请重试');
- }
- }
-
- 
- async function sha256(text) {
- const encoder = new TextEncoder();
- const data = encoder.encode(text);
- const hash = await crypto.subtle.digest('SHA-256', data);
- return Array.from(new Uint8Array(hash))
- .map(b =&gt; b.toString(16).padStart(2, '0'))
- .join('');
- }
-
- 
- function showError(message) {
- const output = document.getElementById('crypto-output');
- output.textContent = message;
- output.className = 'encrypted-content error-msg';
- }
-&lt;/script&gt;
+&lt;/a&gt;
 
 &lt;style&gt;
- .crypto-content {
- margin: 0;
- padding: 0;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-form {
- display: flex;
- gap: 0;
- }
- .crypto-input {
- flex: 1;
- padding: 0;
- margin: 1rem 1rem 0 1rem;
- border: 1px solid #ddd;
- border-radius: 4px;
- }
- .crypto-btn {
- padding: 0.25rem;
- margin: 1rem 1rem 0 1rem;
- background: #4a4a4a;
- color: white;
- border: none;
- border-radius: 4px;
- cursor: pointer;
- }
- .error-msg {
- color: #ff4444;
- }
- .encrypted-content {
- margin: 0 1rem 1rem 1rem;
  
- word-break: break-all;
+ .external-link {
+ color: #3b82f6;
+ text-decoration: underline;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ transition: text-decoration-color 0.2s, color 0.2s;
+ }
+
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: rgba(59, 130, 246, 0.8);
+ }
+
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration: underline;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ transition: text-decoration-color 0.2s, color 0.2s;
+ }
+
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: rgba(139, 92, 246, 0.8);
+ }
+
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 3px;
+ opacity: 0.7;
+ vertical-align: middle;
+ transition: opacity 0.2s;
+ }
+
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+
+ .external-icon svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ display: inline-block;
+ }
+
+ 
+ @media (prefers-color-scheme: dark) {
+ .external-link {
+ color: #60a5fa;
+ text-decoration-color: rgba(96, 165, 250, 0.4);
+ }
+
+ .external-link:hover {
+ color: #93c5fd;
+ text-decoration-color: rgba(147, 197, 253, 0.8);
+ }
+
+ .internal-link {
+ color: #a78bfa;
+ text-decoration-color: rgba(167, 139, 250, 0.4);
+ }
+
+ .internal-link:hover {
+ color: #c4b5fd;
+ text-decoration-color: rgba(196, 181, 253, 0.8);
+ }
  }
 &lt;/style&gt;
-
-&lt;p&gt;123&lt;/p&gt;</description></item></channel></rss>
+&lt;/p&gt;</description></item></channel></rss>

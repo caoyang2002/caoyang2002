@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hexo on cyrus reggie</title><link>https://simons.qzz.io/es/tags/hexo/</link><description>Recent content in Hexo on cyrus reggie</description><generator>Hugo</generator><language>es-ES</language><lastBuildDate>Thu, 23 Jan 2025 01:00:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/es/tags/hexo/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://simons.qzz.io/es/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用
 
 
-
 &lt;a href="https://hexo.io/"
  
  
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
- data-preview-url="https://hexo.io/"
- data-preview-type="external"
  &gt;
  Hexo
  
@@ -18,14 +15,12 @@
  
  
  
+ 
  &lt;svg style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt;
  
  &lt;/span&gt;
  
 &lt;/a&gt;
-
-
-
 
 &lt;style&gt;
  
@@ -33,553 +28,70 @@
  color: #3b82f6;
  text-decoration: underline;
  text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .external-link:hover {
- text-decoration-color: rgba(59, 130, 246, 0.6);
+ color: #2563eb;
+ text-decoration-color: rgba(59, 130, 246, 0.8);
  }
 
  .internal-link {
  color: #8b5cf6;
  text-decoration: underline;
  text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .internal-link:hover {
- text-decoration-color: rgba(139, 92, 246, 0.6);
+ color: #7c3aed;
+ text-decoration-color: rgba(139, 92, 246, 0.8);
  }
 
  .external-icon {
- display: inline-block;
- margin-left: 2px;
- opacity: 0.6;
- font-size: 0.9em;
+ display: inline-flex;
+ align-items: center;
+ margin-left: 3px;
+ opacity: 0.7;
+ vertical-align: middle;
+ transition: opacity 0.2s;
  }
 
- 
- .link-preview {
- position: fixed;
- z-index: 9999;
- width: 340px;
- max-width: calc(100vw - 32px);
- background: white;
- border-radius: 10px;
- box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
- border: 1px solid #e5e7eb;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
- opacity: 0;
- transform: translateY(8px);
- transition: opacity 0.2s, transform 0.2s;
- pointer-events: none;
- overflow: hidden;
- }
-
- .link-preview.visible {
+ .external-link:hover .external-icon {
  opacity: 1;
- transform: translateY(0);
- pointer-events: auto;
  }
 
- .preview-header {
- display: flex;
- align-items: center;
- padding: 12px 14px;
- background: #f9fafb;
- border-bottom: 1px solid #e5e7eb;
- gap: 10px;
- }
-
- .preview-favicon {
- width: 16px;
- height: 16px;
- flex-shrink: 0;
- display: none;
- }
-
- .preview-favicon[src]:not([src=""]) {
- display: block;
- }
-
- .preview-title {
- flex: 1;
- font-weight: 600;
- font-size: 14px;
- color: #111827;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-close {
- background: transparent;
- border: none;
- font-size: 20px;
- cursor: pointer;
- color: #6b7280;
- line-height: 1;
- padding: 2px;
- width: 24px;
- height: 24px;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 4px;
- flex-shrink: 0;
- transition: all 0.15s;
- }
-
- .preview-close:hover {
- background: #e5e7eb;
- color: #111827;
- }
-
- .preview-body {
- max-height: 350px;
- overflow: hidden;
- }
-
- .preview-image {
- width: 100%;
- height: 180px;
- overflow: hidden;
- background: #f3f4f6;
- }
-
- .preview-image img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- }
-
- .preview-image.hidden {
- display: none;
- }
-
- .preview-description {
- padding: 14px;
- font-size: 13px;
- line-height: 1.5;
- color: #4b5563;
- overflow: hidden;
- display: -webkit-box;
- -webkit-line-clamp: 4;
- -webkit-box-orient: vertical;
- }
-
- .preview-description:empty {
- display: none;
- }
-
- .preview-url {
- padding: 0 14px 10px;
- font-size: 12px;
- color: #9ca3af;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-footer {
- padding: 10px 14px;
- background: #f9fafb;
- border-top: 1px solid #e5e7eb;
- }
-
- .preview-link {
+ .external-icon svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
  display: inline-block;
- color: #3b82f6;
- text-decoration: none;
- font-size: 13px;
- font-weight: 500;
- transition: color 0.15s;
- }
-
- .preview-link:hover {
- color: #2563eb;
- text-decoration: underline;
- }
-
- .preview-loading {
- padding: 40px 20px;
- text-align: center;
- color: #6b7280;
- font-size: 13px;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- }
-
- .loading-spinner {
- width: 20px;
- height: 20px;
- border: 2px solid #e5e7eb;
- border-top-color: #3b82f6;
- border-radius: 50%;
- animation: spin 0.6s linear infinite;
- }
-
- @keyframes spin {
- to { transform: rotate(360deg); }
- }
-
- .hidden {
- display: none !important;
  }
 
  
  @media (prefers-color-scheme: dark) {
- .link-preview {
- background: #1f2937;
- border-color: #374151;
- }
-
- .preview-header,
- .preview-footer {
- background: #111827;
- border-color: #374151;
- }
-
- .preview-title {
- color: #f9fafb;
- }
-
- .preview-description {
- color: #d1d5db;
- }
-
- .preview-url {
- color: #6b7280;
- }
-
- .preview-close {
- color: #9ca3af;
- }
-
- .preview-close:hover {
- background: #374151;
- color: #f9fafb;
- }
-
- .preview-link {
+ .external-link {
  color: #60a5fa;
+ text-decoration-color: rgba(96, 165, 250, 0.4);
  }
 
- .preview-link:hover {
+ .external-link:hover {
  color: #93c5fd;
+ text-decoration-color: rgba(147, 197, 253, 0.8);
  }
 
- .preview-image {
- background: #111827;
+ .internal-link {
+ color: #a78bfa;
+ text-decoration-color: rgba(167, 139, 250, 0.4);
  }
 
- .loading-spinner {
- border-color: #374151;
- border-top-color: #60a5fa;
+ .internal-link:hover {
+ color: #c4b5fd;
+ text-decoration-color: rgba(196, 181, 253, 0.8);
  }
  }
 &lt;/style&gt;
-
-&lt;script&gt;
-(function() {
- 'use strict';
-
- class LinkPreview {
- constructor() {
- this.preview = null;
- this.showTimer = null;
- this.hideTimer = null;
- this.currentUrl = null;
- this.cache = new Map();
- this.isOverLink = false;
- this.isOverPreview = false;
- this.init();
- }
-
- init() {
- 
- if (window.linkPreviewInitialized) return;
- window.linkPreviewInitialized = true;
-
- const template = document.getElementById('preview-template');
- if (!template) return;
-
- this.preview = template.content.cloneNode(true).firstElementChild;
- document.body.appendChild(this.preview);
-
- this.bindEvents();
- }
-
- bindEvents() {
- 
- document.addEventListener('mouseover', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkEnter(link);
- });
-
- document.addEventListener('mouseout', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkLeave();
- });
-
- 
- this.preview.addEventListener('mouseenter', () =&gt; {
- this.isOverPreview = true;
- clearTimeout(this.hideTimer);
- });
-
- this.preview.addEventListener('mouseleave', () =&gt; {
- this.isOverPreview = false;
- this.scheduleHide();
- });
-
- 
- this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
- this.hide();
- });
-
- 
- document.addEventListener('click', (e) =&gt; {
- if (!this.preview.contains(e.target)) {
- this.hide();
- }
- });
-
- 
- document.addEventListener('keydown', (e) =&gt; {
- if (e.key === 'Escape') this.hide();
- });
- }
-
- handleLinkEnter(link) {
- this.isOverLink = true;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
-
- this.showTimer = setTimeout(() =&gt; {
- if (this.isOverLink) {
- this.show(link);
- }
- }, 300);
- }
-
- handleLinkLeave() {
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- this.scheduleHide();
- }
-
- scheduleHide() {
- clearTimeout(this.hideTimer);
- this.hideTimer = setTimeout(() =&gt; {
- if (!this.isOverLink &amp;&amp; !this.isOverPreview) {
- this.hide();
- }
- }, 150);
- }
-
- async show(link) {
- const url = link.getAttribute('data-preview-url');
- const type = link.getAttribute('data-preview-type');
-
- if (!url) return;
-
- 
- if (url === this.currentUrl &amp;&amp; this.preview.classList.contains('visible')) {
- this.position(link);
- return;
- }
-
- this.currentUrl = url;
- this.position(link);
- this.showLoading();
-
- try {
- const data = type === 'internal'
- ? await this.loadInternal(url)
- : this.loadExternal(url);
-
- this.render(data);
- } catch (err) {
- console.error('Preview error:', err);
- this.hide();
- }
- }
-
- position(link) {
- const rect = link.getBoundingClientRect();
- const width = 340;
- const margin = 10;
-
- let top = rect.bottom + window.scrollY + margin;
- let left = rect.left + window.scrollX;
-
- 
- if (left + width &gt; window.innerWidth - margin) {
- left = window.innerWidth - width - margin;
- }
- if (left &lt; margin) {
- left = margin;
- }
-
- 
- if (rect.bottom + 300 &gt; window.innerHeight) {
- top = rect.top + window.scrollY - 300 - margin;
- }
-
- this.preview.style.top = `${top}px`;
- this.preview.style.left = `${left}px`;
- this.preview.classList.add('visible');
- }
-
- async loadInternal(url) {
- 
- if (this.cache.has(url)) {
- return this.cache.get(url);
- }
-
- try {
- const fullUrl = new URL(url, window.location.origin).href;
- const response = await fetch(fullUrl, {
- method: 'GET',
- headers: { 'Accept': 'text/html' }
- });
-
- if (!response.ok) throw new Error('Fetch failed');
-
- const html = await response.text();
- const parser = new DOMParser();
- const doc = parser.parseFromString(html, 'text/html');
-
- const data = {
- title: this.extractTitle(doc),
- description: this.extractDescription(doc),
- image: this.extractImage(doc, fullUrl),
- favicon: this.extractFavicon(doc, fullUrl),
- url: fullUrl
- };
-
- this.cache.set(url, data);
- return data;
- } catch (err) {
- throw err;
- }
- }
-
- loadExternal(url) {
- 
- try {
- const urlObj = new URL(url);
- const hostname = urlObj.hostname;
-
- return {
- title: hostname,
- description: url,
- image: '',
- favicon: `https://www.google.com/s2/favicons?domain=${hostname}&amp;sz=32`,
- url: url
- };
- } catch (err) {
- return {
- title: '外部链接',
- description: url,
- image: '',
- favicon: '',
- url: url
- };
- }
- }
-
- extractTitle(doc) {
- return doc.querySelector('h1')?.textContent?.trim() ||
- doc.querySelector('meta[property="og:title"]')?.content ||
- doc.querySelector('title')?.textContent?.trim() ||
- '无标题';
- }
-
- extractDescription(doc) {
- const ogDesc = doc.querySelector('meta[property="og:description"]')?.content;
- const metaDesc = doc.querySelector('meta[name="description"]')?.content;
- const firstP = doc.querySelector('article p, main p, p')?.textContent?.trim();
-
- return ogDesc || metaDesc || (firstP ? firstP.substring(0, 200) : '');
- }
-
- extractImage(doc, baseUrl) {
- const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
- const firstImg = doc.querySelector('article img, main img, img')?.src;
-
- const imgSrc = ogImage || firstImg;
- return imgSrc ? new URL(imgSrc, baseUrl).href : '';
- }
-
- extractFavicon(doc, baseUrl) {
- const iconLink = doc.querySelector('link[rel*="icon"]')?.href;
- return iconLink ? new URL(iconLink, baseUrl).href : '';
- }
-
- render(data) {
- this.preview.querySelector('.preview-loading').classList.add('hidden');
- const content = this.preview.querySelector('.preview-content');
- content.classList.remove('hidden');
-
- 
- const favicon = this.preview.querySelector('.preview-favicon');
- if (data.favicon) {
- favicon.src = data.favicon;
- favicon.onerror = () =&gt; favicon.style.display = 'none';
- }
-
- this.preview.querySelector('.preview-title').textContent = data.title;
- this.preview.querySelector('.preview-description').textContent = data.description;
- this.preview.querySelector('.preview-url').textContent = data.url;
-
- const link = this.preview.querySelector('.preview-link');
- link.href = data.url;
-
- 
- const imgContainer = this.preview.querySelector('.preview-image');
- if (data.image) {
- const img = document.createElement('img');
- img.src = data.image;
- img.alt = data.title;
- img.loading = 'lazy';
- img.onerror = () =&gt; imgContainer.classList.add('hidden');
- imgContainer.innerHTML = '';
- imgContainer.appendChild(img);
- imgContainer.classList.remove('hidden');
- } else {
- imgContainer.classList.add('hidden');
- }
- }
-
- showLoading() {
- this.preview.querySelector('.preview-content').classList.add('hidden');
- this.preview.querySelector('.preview-loading').classList.remove('hidden');
- }
-
- hide() {
- this.preview.classList.remove('visible');
- this.currentUrl = null;
- this.isOverPreview = false;
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
- }
- }
-
- 
- if (document.readyState === 'loading') {
- document.addEventListener('DOMContentLoaded', () =&gt; new LinkPreview());
- } else {
- new LinkPreview();
- }
-})();
-&lt;/script&gt;
 以及主题
-
 
 
 &lt;a href="https://theme-next.js.org/"
@@ -588,8 +100,6 @@
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
- data-preview-url="https://theme-next.js.org/"
- data-preview-type="external"
  &gt;
  Theme NexT
  
@@ -598,14 +108,12 @@
  
  
  
+ 
  &lt;svg style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt;
  
  &lt;/span&gt;
  
 &lt;/a&gt;
-
-
-
 
 &lt;style&gt;
  
@@ -613,554 +121,71 @@
  color: #3b82f6;
  text-decoration: underline;
  text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .external-link:hover {
- text-decoration-color: rgba(59, 130, 246, 0.6);
+ color: #2563eb;
+ text-decoration-color: rgba(59, 130, 246, 0.8);
  }
 
  .internal-link {
  color: #8b5cf6;
  text-decoration: underline;
  text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .internal-link:hover {
- text-decoration-color: rgba(139, 92, 246, 0.6);
+ color: #7c3aed;
+ text-decoration-color: rgba(139, 92, 246, 0.8);
  }
 
  .external-icon {
- display: inline-block;
- margin-left: 2px;
- opacity: 0.6;
- font-size: 0.9em;
+ display: inline-flex;
+ align-items: center;
+ margin-left: 3px;
+ opacity: 0.7;
+ vertical-align: middle;
+ transition: opacity 0.2s;
  }
 
- 
- .link-preview {
- position: fixed;
- z-index: 9999;
- width: 340px;
- max-width: calc(100vw - 32px);
- background: white;
- border-radius: 10px;
- box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
- border: 1px solid #e5e7eb;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
- opacity: 0;
- transform: translateY(8px);
- transition: opacity 0.2s, transform 0.2s;
- pointer-events: none;
- overflow: hidden;
- }
-
- .link-preview.visible {
+ .external-link:hover .external-icon {
  opacity: 1;
- transform: translateY(0);
- pointer-events: auto;
  }
 
- .preview-header {
- display: flex;
- align-items: center;
- padding: 12px 14px;
- background: #f9fafb;
- border-bottom: 1px solid #e5e7eb;
- gap: 10px;
- }
-
- .preview-favicon {
- width: 16px;
- height: 16px;
- flex-shrink: 0;
- display: none;
- }
-
- .preview-favicon[src]:not([src=""]) {
- display: block;
- }
-
- .preview-title {
- flex: 1;
- font-weight: 600;
- font-size: 14px;
- color: #111827;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-close {
- background: transparent;
- border: none;
- font-size: 20px;
- cursor: pointer;
- color: #6b7280;
- line-height: 1;
- padding: 2px;
- width: 24px;
- height: 24px;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 4px;
- flex-shrink: 0;
- transition: all 0.15s;
- }
-
- .preview-close:hover {
- background: #e5e7eb;
- color: #111827;
- }
-
- .preview-body {
- max-height: 350px;
- overflow: hidden;
- }
-
- .preview-image {
- width: 100%;
- height: 180px;
- overflow: hidden;
- background: #f3f4f6;
- }
-
- .preview-image img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- }
-
- .preview-image.hidden {
- display: none;
- }
-
- .preview-description {
- padding: 14px;
- font-size: 13px;
- line-height: 1.5;
- color: #4b5563;
- overflow: hidden;
- display: -webkit-box;
- -webkit-line-clamp: 4;
- -webkit-box-orient: vertical;
- }
-
- .preview-description:empty {
- display: none;
- }
-
- .preview-url {
- padding: 0 14px 10px;
- font-size: 12px;
- color: #9ca3af;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-footer {
- padding: 10px 14px;
- background: #f9fafb;
- border-top: 1px solid #e5e7eb;
- }
-
- .preview-link {
+ .external-icon svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
  display: inline-block;
- color: #3b82f6;
- text-decoration: none;
- font-size: 13px;
- font-weight: 500;
- transition: color 0.15s;
- }
-
- .preview-link:hover {
- color: #2563eb;
- text-decoration: underline;
- }
-
- .preview-loading {
- padding: 40px 20px;
- text-align: center;
- color: #6b7280;
- font-size: 13px;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- }
-
- .loading-spinner {
- width: 20px;
- height: 20px;
- border: 2px solid #e5e7eb;
- border-top-color: #3b82f6;
- border-radius: 50%;
- animation: spin 0.6s linear infinite;
- }
-
- @keyframes spin {
- to { transform: rotate(360deg); }
- }
-
- .hidden {
- display: none !important;
  }
 
  
  @media (prefers-color-scheme: dark) {
- .link-preview {
- background: #1f2937;
- border-color: #374151;
- }
-
- .preview-header,
- .preview-footer {
- background: #111827;
- border-color: #374151;
- }
-
- .preview-title {
- color: #f9fafb;
- }
-
- .preview-description {
- color: #d1d5db;
- }
-
- .preview-url {
- color: #6b7280;
- }
-
- .preview-close {
- color: #9ca3af;
- }
-
- .preview-close:hover {
- background: #374151;
- color: #f9fafb;
- }
-
- .preview-link {
+ .external-link {
  color: #60a5fa;
+ text-decoration-color: rgba(96, 165, 250, 0.4);
  }
 
- .preview-link:hover {
+ .external-link:hover {
  color: #93c5fd;
+ text-decoration-color: rgba(147, 197, 253, 0.8);
  }
 
- .preview-image {
- background: #111827;
+ .internal-link {
+ color: #a78bfa;
+ text-decoration-color: rgba(167, 139, 250, 0.4);
  }
 
- .loading-spinner {
- border-color: #374151;
- border-top-color: #60a5fa;
+ .internal-link:hover {
+ color: #c4b5fd;
+ text-decoration-color: rgba(196, 181, 253, 0.8);
  }
  }
 &lt;/style&gt;
-
-&lt;script&gt;
-(function() {
- 'use strict';
-
- class LinkPreview {
- constructor() {
- this.preview = null;
- this.showTimer = null;
- this.hideTimer = null;
- this.currentUrl = null;
- this.cache = new Map();
- this.isOverLink = false;
- this.isOverPreview = false;
- this.init();
- }
-
- init() {
- 
- if (window.linkPreviewInitialized) return;
- window.linkPreviewInitialized = true;
-
- const template = document.getElementById('preview-template');
- if (!template) return;
-
- this.preview = template.content.cloneNode(true).firstElementChild;
- document.body.appendChild(this.preview);
-
- this.bindEvents();
- }
-
- bindEvents() {
- 
- document.addEventListener('mouseover', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkEnter(link);
- });
-
- document.addEventListener('mouseout', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkLeave();
- });
-
- 
- this.preview.addEventListener('mouseenter', () =&gt; {
- this.isOverPreview = true;
- clearTimeout(this.hideTimer);
- });
-
- this.preview.addEventListener('mouseleave', () =&gt; {
- this.isOverPreview = false;
- this.scheduleHide();
- });
-
- 
- this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
- this.hide();
- });
-
- 
- document.addEventListener('click', (e) =&gt; {
- if (!this.preview.contains(e.target)) {
- this.hide();
- }
- });
-
- 
- document.addEventListener('keydown', (e) =&gt; {
- if (e.key === 'Escape') this.hide();
- });
- }
-
- handleLinkEnter(link) {
- this.isOverLink = true;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
-
- this.showTimer = setTimeout(() =&gt; {
- if (this.isOverLink) {
- this.show(link);
- }
- }, 300);
- }
-
- handleLinkLeave() {
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- this.scheduleHide();
- }
-
- scheduleHide() {
- clearTimeout(this.hideTimer);
- this.hideTimer = setTimeout(() =&gt; {
- if (!this.isOverLink &amp;&amp; !this.isOverPreview) {
- this.hide();
- }
- }, 150);
- }
-
- async show(link) {
- const url = link.getAttribute('data-preview-url');
- const type = link.getAttribute('data-preview-type');
-
- if (!url) return;
-
- 
- if (url === this.currentUrl &amp;&amp; this.preview.classList.contains('visible')) {
- this.position(link);
- return;
- }
-
- this.currentUrl = url;
- this.position(link);
- this.showLoading();
-
- try {
- const data = type === 'internal'
- ? await this.loadInternal(url)
- : this.loadExternal(url);
-
- this.render(data);
- } catch (err) {
- console.error('Preview error:', err);
- this.hide();
- }
- }
-
- position(link) {
- const rect = link.getBoundingClientRect();
- const width = 340;
- const margin = 10;
-
- let top = rect.bottom + window.scrollY + margin;
- let left = rect.left + window.scrollX;
-
- 
- if (left + width &gt; window.innerWidth - margin) {
- left = window.innerWidth - width - margin;
- }
- if (left &lt; margin) {
- left = margin;
- }
-
- 
- if (rect.bottom + 300 &gt; window.innerHeight) {
- top = rect.top + window.scrollY - 300 - margin;
- }
-
- this.preview.style.top = `${top}px`;
- this.preview.style.left = `${left}px`;
- this.preview.classList.add('visible');
- }
-
- async loadInternal(url) {
- 
- if (this.cache.has(url)) {
- return this.cache.get(url);
- }
-
- try {
- const fullUrl = new URL(url, window.location.origin).href;
- const response = await fetch(fullUrl, {
- method: 'GET',
- headers: { 'Accept': 'text/html' }
- });
-
- if (!response.ok) throw new Error('Fetch failed');
-
- const html = await response.text();
- const parser = new DOMParser();
- const doc = parser.parseFromString(html, 'text/html');
-
- const data = {
- title: this.extractTitle(doc),
- description: this.extractDescription(doc),
- image: this.extractImage(doc, fullUrl),
- favicon: this.extractFavicon(doc, fullUrl),
- url: fullUrl
- };
-
- this.cache.set(url, data);
- return data;
- } catch (err) {
- throw err;
- }
- }
-
- loadExternal(url) {
- 
- try {
- const urlObj = new URL(url);
- const hostname = urlObj.hostname;
-
- return {
- title: hostname,
- description: url,
- image: '',
- favicon: `https://www.google.com/s2/favicons?domain=${hostname}&amp;sz=32`,
- url: url
- };
- } catch (err) {
- return {
- title: '外部链接',
- description: url,
- image: '',
- favicon: '',
- url: url
- };
- }
- }
-
- extractTitle(doc) {
- return doc.querySelector('h1')?.textContent?.trim() ||
- doc.querySelector('meta[property="og:title"]')?.content ||
- doc.querySelector('title')?.textContent?.trim() ||
- '无标题';
- }
-
- extractDescription(doc) {
- const ogDesc = doc.querySelector('meta[property="og:description"]')?.content;
- const metaDesc = doc.querySelector('meta[name="description"]')?.content;
- const firstP = doc.querySelector('article p, main p, p')?.textContent?.trim();
-
- return ogDesc || metaDesc || (firstP ? firstP.substring(0, 200) : '');
- }
-
- extractImage(doc, baseUrl) {
- const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
- const firstImg = doc.querySelector('article img, main img, img')?.src;
-
- const imgSrc = ogImage || firstImg;
- return imgSrc ? new URL(imgSrc, baseUrl).href : '';
- }
-
- extractFavicon(doc, baseUrl) {
- const iconLink = doc.querySelector('link[rel*="icon"]')?.href;
- return iconLink ? new URL(iconLink, baseUrl).href : '';
- }
-
- render(data) {
- this.preview.querySelector('.preview-loading').classList.add('hidden');
- const content = this.preview.querySelector('.preview-content');
- content.classList.remove('hidden');
-
- 
- const favicon = this.preview.querySelector('.preview-favicon');
- if (data.favicon) {
- favicon.src = data.favicon;
- favicon.onerror = () =&gt; favicon.style.display = 'none';
- }
-
- this.preview.querySelector('.preview-title').textContent = data.title;
- this.preview.querySelector('.preview-description').textContent = data.description;
- this.preview.querySelector('.preview-url').textContent = data.url;
-
- const link = this.preview.querySelector('.preview-link');
- link.href = data.url;
-
- 
- const imgContainer = this.preview.querySelector('.preview-image');
- if (data.image) {
- const img = document.createElement('img');
- img.src = data.image;
- img.alt = data.title;
- img.loading = 'lazy';
- img.onerror = () =&gt; imgContainer.classList.add('hidden');
- imgContainer.innerHTML = '';
- imgContainer.appendChild(img);
- imgContainer.classList.remove('hidden');
- } else {
- imgContainer.classList.add('hidden');
- }
- }
-
- showLoading() {
- this.preview.querySelector('.preview-content').classList.add('hidden');
- this.preview.querySelector('.preview-loading').classList.remove('hidden');
- }
-
- hide() {
- this.preview.classList.remove('visible');
- this.currentUrl = null;
- this.isOverPreview = false;
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
- }
- }
-
- 
- if (document.readyState === 'loading') {
- document.addEventListener('DOMContentLoaded', () =&gt; new LinkPreview());
- } else {
- new LinkPreview();
- }
-})();
-&lt;/script&gt;
 ，
 在源码仓库通过hexo会生成静态html文件，通过github action部署到网站仓库。网站仓库自动部署到
-
 
 
 &lt;a href="https://vercel.com/"
@@ -1169,12 +194,11 @@
  target="_blank"
  rel="noopener noreferrer"
  class="external-link"
- data-preview-url="https://vercel.com/"
- data-preview-type="external"
  &gt;
  vercel
  
  &lt;span class="external-icon"&gt;
+ 
  
  
  
@@ -1185,558 +209,73 @@
  
 &lt;/a&gt;
 
-
-
-
 &lt;style&gt;
  
  .external-link {
  color: #3b82f6;
  text-decoration: underline;
  text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .external-link:hover {
- text-decoration-color: rgba(59, 130, 246, 0.6);
+ color: #2563eb;
+ text-decoration-color: rgba(59, 130, 246, 0.8);
  }
 
  .internal-link {
  color: #8b5cf6;
  text-decoration: underline;
  text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s;
+ transition: text-decoration-color 0.2s, color 0.2s;
  }
 
  .internal-link:hover {
- text-decoration-color: rgba(139, 92, 246, 0.6);
+ color: #7c3aed;
+ text-decoration-color: rgba(139, 92, 246, 0.8);
  }
 
  .external-icon {
- display: inline-block;
- margin-left: 2px;
- opacity: 0.6;
- font-size: 0.9em;
+ display: inline-flex;
+ align-items: center;
+ margin-left: 3px;
+ opacity: 0.7;
+ vertical-align: middle;
+ transition: opacity 0.2s;
  }
 
- 
- .link-preview {
- position: fixed;
- z-index: 9999;
- width: 340px;
- max-width: calc(100vw - 32px);
- background: white;
- border-radius: 10px;
- box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12), 0 0 1px rgba(0, 0, 0, 0.1);
- border: 1px solid #e5e7eb;
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
- opacity: 0;
- transform: translateY(8px);
- transition: opacity 0.2s, transform 0.2s;
- pointer-events: none;
- overflow: hidden;
- }
-
- .link-preview.visible {
+ .external-link:hover .external-icon {
  opacity: 1;
- transform: translateY(0);
- pointer-events: auto;
  }
 
- .preview-header {
- display: flex;
- align-items: center;
- padding: 12px 14px;
- background: #f9fafb;
- border-bottom: 1px solid #e5e7eb;
- gap: 10px;
- }
-
- .preview-favicon {
- width: 16px;
- height: 16px;
- flex-shrink: 0;
- display: none;
- }
-
- .preview-favicon[src]:not([src=""]) {
- display: block;
- }
-
- .preview-title {
- flex: 1;
- font-weight: 600;
- font-size: 14px;
- color: #111827;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-close {
- background: transparent;
- border: none;
- font-size: 20px;
- cursor: pointer;
- color: #6b7280;
- line-height: 1;
- padding: 2px;
- width: 24px;
- height: 24px;
- display: flex;
- align-items: center;
- justify-content: center;
- border-radius: 4px;
- flex-shrink: 0;
- transition: all 0.15s;
- }
-
- .preview-close:hover {
- background: #e5e7eb;
- color: #111827;
- }
-
- .preview-body {
- max-height: 350px;
- overflow: hidden;
- }
-
- .preview-image {
- width: 100%;
- height: 180px;
- overflow: hidden;
- background: #f3f4f6;
- }
-
- .preview-image img {
- width: 100%;
- height: 100%;
- object-fit: cover;
- }
-
- .preview-image.hidden {
- display: none;
- }
-
- .preview-description {
- padding: 14px;
- font-size: 13px;
- line-height: 1.5;
- color: #4b5563;
- overflow: hidden;
- display: -webkit-box;
- -webkit-line-clamp: 4;
- -webkit-box-orient: vertical;
- }
-
- .preview-description:empty {
- display: none;
- }
-
- .preview-url {
- padding: 0 14px 10px;
- font-size: 12px;
- color: #9ca3af;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
- }
-
- .preview-footer {
- padding: 10px 14px;
- background: #f9fafb;
- border-top: 1px solid #e5e7eb;
- }
-
- .preview-link {
+ .external-icon svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
  display: inline-block;
- color: #3b82f6;
- text-decoration: none;
- font-size: 13px;
- font-weight: 500;
- transition: color 0.15s;
- }
-
- .preview-link:hover {
- color: #2563eb;
- text-decoration: underline;
- }
-
- .preview-loading {
- padding: 40px 20px;
- text-align: center;
- color: #6b7280;
- font-size: 13px;
- display: flex;
- flex-direction: column;
- align-items: center;
- gap: 10px;
- }
-
- .loading-spinner {
- width: 20px;
- height: 20px;
- border: 2px solid #e5e7eb;
- border-top-color: #3b82f6;
- border-radius: 50%;
- animation: spin 0.6s linear infinite;
- }
-
- @keyframes spin {
- to { transform: rotate(360deg); }
- }
-
- .hidden {
- display: none !important;
  }
 
  
  @media (prefers-color-scheme: dark) {
- .link-preview {
- background: #1f2937;
- border-color: #374151;
- }
-
- .preview-header,
- .preview-footer {
- background: #111827;
- border-color: #374151;
- }
-
- .preview-title {
- color: #f9fafb;
- }
-
- .preview-description {
- color: #d1d5db;
- }
-
- .preview-url {
- color: #6b7280;
- }
-
- .preview-close {
- color: #9ca3af;
- }
-
- .preview-close:hover {
- background: #374151;
- color: #f9fafb;
- }
-
- .preview-link {
+ .external-link {
  color: #60a5fa;
+ text-decoration-color: rgba(96, 165, 250, 0.4);
  }
 
- .preview-link:hover {
+ .external-link:hover {
  color: #93c5fd;
+ text-decoration-color: rgba(147, 197, 253, 0.8);
  }
 
- .preview-image {
- background: #111827;
+ .internal-link {
+ color: #a78bfa;
+ text-decoration-color: rgba(167, 139, 250, 0.4);
  }
 
- .loading-spinner {
- border-color: #374151;
- border-top-color: #60a5fa;
+ .internal-link:hover {
+ color: #c4b5fd;
+ text-decoration-color: rgba(196, 181, 253, 0.8);
  }
  }
 &lt;/style&gt;
-
-&lt;script&gt;
-(function() {
- 'use strict';
-
- class LinkPreview {
- constructor() {
- this.preview = null;
- this.showTimer = null;
- this.hideTimer = null;
- this.currentUrl = null;
- this.cache = new Map();
- this.isOverLink = false;
- this.isOverPreview = false;
- this.init();
- }
-
- init() {
- 
- if (window.linkPreviewInitialized) return;
- window.linkPreviewInitialized = true;
-
- const template = document.getElementById('preview-template');
- if (!template) return;
-
- this.preview = template.content.cloneNode(true).firstElementChild;
- document.body.appendChild(this.preview);
-
- this.bindEvents();
- }
-
- bindEvents() {
- 
- document.addEventListener('mouseover', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkEnter(link);
- });
-
- document.addEventListener('mouseout', (e) =&gt; {
- const link = e.target.closest('a[data-preview-url]');
- if (link) this.handleLinkLeave();
- });
-
- 
- this.preview.addEventListener('mouseenter', () =&gt; {
- this.isOverPreview = true;
- clearTimeout(this.hideTimer);
- });
-
- this.preview.addEventListener('mouseleave', () =&gt; {
- this.isOverPreview = false;
- this.scheduleHide();
- });
-
- 
- this.preview.querySelector('.preview-close').addEventListener('click', () =&gt; {
- this.hide();
- });
-
- 
- document.addEventListener('click', (e) =&gt; {
- if (!this.preview.contains(e.target)) {
- this.hide();
- }
- });
-
- 
- document.addEventListener('keydown', (e) =&gt; {
- if (e.key === 'Escape') this.hide();
- });
- }
-
- handleLinkEnter(link) {
- this.isOverLink = true;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
-
- this.showTimer = setTimeout(() =&gt; {
- if (this.isOverLink) {
- this.show(link);
- }
- }, 300);
- }
-
- handleLinkLeave() {
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- this.scheduleHide();
- }
-
- scheduleHide() {
- clearTimeout(this.hideTimer);
- this.hideTimer = setTimeout(() =&gt; {
- if (!this.isOverLink &amp;&amp; !this.isOverPreview) {
- this.hide();
- }
- }, 150);
- }
-
- async show(link) {
- const url = link.getAttribute('data-preview-url');
- const type = link.getAttribute('data-preview-type');
-
- if (!url) return;
-
- 
- if (url === this.currentUrl &amp;&amp; this.preview.classList.contains('visible')) {
- this.position(link);
- return;
- }
-
- this.currentUrl = url;
- this.position(link);
- this.showLoading();
-
- try {
- const data = type === 'internal'
- ? await this.loadInternal(url)
- : this.loadExternal(url);
-
- this.render(data);
- } catch (err) {
- console.error('Preview error:', err);
- this.hide();
- }
- }
-
- position(link) {
- const rect = link.getBoundingClientRect();
- const width = 340;
- const margin = 10;
-
- let top = rect.bottom + window.scrollY + margin;
- let left = rect.left + window.scrollX;
-
- 
- if (left + width &gt; window.innerWidth - margin) {
- left = window.innerWidth - width - margin;
- }
- if (left &lt; margin) {
- left = margin;
- }
-
- 
- if (rect.bottom + 300 &gt; window.innerHeight) {
- top = rect.top + window.scrollY - 300 - margin;
- }
-
- this.preview.style.top = `${top}px`;
- this.preview.style.left = `${left}px`;
- this.preview.classList.add('visible');
- }
-
- async loadInternal(url) {
- 
- if (this.cache.has(url)) {
- return this.cache.get(url);
- }
-
- try {
- const fullUrl = new URL(url, window.location.origin).href;
- const response = await fetch(fullUrl, {
- method: 'GET',
- headers: { 'Accept': 'text/html' }
- });
-
- if (!response.ok) throw new Error('Fetch failed');
-
- const html = await response.text();
- const parser = new DOMParser();
- const doc = parser.parseFromString(html, 'text/html');
-
- const data = {
- title: this.extractTitle(doc),
- description: this.extractDescription(doc),
- image: this.extractImage(doc, fullUrl),
- favicon: this.extractFavicon(doc, fullUrl),
- url: fullUrl
- };
-
- this.cache.set(url, data);
- return data;
- } catch (err) {
- throw err;
- }
- }
-
- loadExternal(url) {
- 
- try {
- const urlObj = new URL(url);
- const hostname = urlObj.hostname;
-
- return {
- title: hostname,
- description: url,
- image: '',
- favicon: `https://www.google.com/s2/favicons?domain=${hostname}&amp;sz=32`,
- url: url
- };
- } catch (err) {
- return {
- title: '外部链接',
- description: url,
- image: '',
- favicon: '',
- url: url
- };
- }
- }
-
- extractTitle(doc) {
- return doc.querySelector('h1')?.textContent?.trim() ||
- doc.querySelector('meta[property="og:title"]')?.content ||
- doc.querySelector('title')?.textContent?.trim() ||
- '无标题';
- }
-
- extractDescription(doc) {
- const ogDesc = doc.querySelector('meta[property="og:description"]')?.content;
- const metaDesc = doc.querySelector('meta[name="description"]')?.content;
- const firstP = doc.querySelector('article p, main p, p')?.textContent?.trim();
-
- return ogDesc || metaDesc || (firstP ? firstP.substring(0, 200) : '');
- }
-
- extractImage(doc, baseUrl) {
- const ogImage = doc.querySelector('meta[property="og:image"]')?.content;
- const firstImg = doc.querySelector('article img, main img, img')?.src;
-
- const imgSrc = ogImage || firstImg;
- return imgSrc ? new URL(imgSrc, baseUrl).href : '';
- }
-
- extractFavicon(doc, baseUrl) {
- const iconLink = doc.querySelector('link[rel*="icon"]')?.href;
- return iconLink ? new URL(iconLink, baseUrl).href : '';
- }
-
- render(data) {
- this.preview.querySelector('.preview-loading').classList.add('hidden');
- const content = this.preview.querySelector('.preview-content');
- content.classList.remove('hidden');
-
- 
- const favicon = this.preview.querySelector('.preview-favicon');
- if (data.favicon) {
- favicon.src = data.favicon;
- favicon.onerror = () =&gt; favicon.style.display = 'none';
- }
-
- this.preview.querySelector('.preview-title').textContent = data.title;
- this.preview.querySelector('.preview-description').textContent = data.description;
- this.preview.querySelector('.preview-url').textContent = data.url;
-
- const link = this.preview.querySelector('.preview-link');
- link.href = data.url;
-
- 
- const imgContainer = this.preview.querySelector('.preview-image');
- if (data.image) {
- const img = document.createElement('img');
- img.src = data.image;
- img.alt = data.title;
- img.loading = 'lazy';
- img.onerror = () =&gt; imgContainer.classList.add('hidden');
- imgContainer.innerHTML = '';
- imgContainer.appendChild(img);
- imgContainer.classList.remove('hidden');
- } else {
- imgContainer.classList.add('hidden');
- }
- }
-
- showLoading() {
- this.preview.querySelector('.preview-content').classList.add('hidden');
- this.preview.querySelector('.preview-loading').classList.remove('hidden');
- }
-
- hide() {
- this.preview.classList.remove('visible');
- this.currentUrl = null;
- this.isOverPreview = false;
- this.isOverLink = false;
- clearTimeout(this.showTimer);
- clearTimeout(this.hideTimer);
- }
- }
-
- 
- if (document.readyState === 'loading') {
- document.addEventListener('DOMContentLoaded', () =&gt; new LinkPreview());
- } else {
- new LinkPreview();
- }
-})();
-&lt;/script&gt;
 &lt;/p&gt;</description></item></channel></rss>
