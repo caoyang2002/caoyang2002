@@ -1,83 +1,117 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 23:51:19 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：&lt;/p&gt;
-&lt;p&gt;请发送邮件至：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>公告 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%85%AC%E5%91%8A/</link><description>Recent content in 公告 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 23:52:49 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%85%AC%E5%91%8A/index.xml" rel="self" type="application/rss+xml"/><item><title>文章来源说明</title><link>https://simons.qzz.io/post/2024/03/notice/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/notice/</guid><description>&lt;p&gt;本站有一部分内容来源于网络，正在补充来源，如若侵权，请联系删除：
 
 
-&lt;a href="mailto:reggiesimons2cy@gmail.com"
- 
- 
- class="internal-link"
- &gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="mailto:reggiesimons2cy@gmail.com" class="mailto-link"&gt;
  reggiesimons2cy@gmail.com
- 
 &lt;/a&gt;
+
 
 &lt;style&gt;
  
- .external-link {
- color: #3b82f6;
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
  text-decoration: underline;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s, color 0.2s;
- }
-
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: rgba(59, 130, 246, 0.8);
- }
-
- .internal-link {
- color: #8b5cf6;
- text-decoration: underline;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s, color 0.2s;
- }
-
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: rgba(139, 92, 246, 0.8);
- }
-
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 3px;
- opacity: 0.7;
- vertical-align: middle;
- transition: opacity 0.2s;
- }
-
- .external-link:hover .external-icon {
- opacity: 1;
- }
-
- .external-icon svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- display: inline-block;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
  }
 
  
- @media (prefers-color-scheme: dark) {
  .external-link {
- color: #60a5fa;
- text-decoration-color: rgba(96, 165, 250, 0.4);
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
  }
-
  .external-link:hover {
- color: #93c5fd;
- text-decoration-color: rgba(147, 197, 253, 0.8);
+ color: #2563eb;
+ text-decoration-color: currentColor;
  }
 
+ 
  .internal-link {
- color: #a78bfa;
- text-decoration-color: rgba(167, 139, 250, 0.4);
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
  }
 
- .internal-link:hover {
- color: #c4b5fd;
- text-decoration-color: rgba(196, 181, 253, 0.8);
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
  }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item></channel></rss>

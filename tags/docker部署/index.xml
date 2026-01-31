@@ -1,94 +1,129 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker部署 on 短松江月</title><link>https://simons.qzz.io/tags/docker%E9%83%A8%E7%BD%B2/</link><description>Recent content in Docker部署 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/docker%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>思通舆情安装和配置</title><link>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</link><pubDate>Tue, 27 Jan 2026 18:51:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/stonedt_yuqing/</guid><description>&lt;p&gt;
 
 
-&lt;a href="https://github.com/stonedtman/stonedt-yuqing"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
  
  
- target="_blank"
- rel="noopener noreferrer"
- class="external-link"
- &gt;
- Github
  
- &lt;span class="external-icon"&gt;
- 
- 
- 
- 
- 
- &lt;svg style="display:inline-block;width:0.85em;height:0.85em;vertical-align:middle;fill:currentColor" t="1769752196949" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2655" width="200" height="200"&gt;&lt;path d="M775.364451 0c94.991953 5.563939 180.631008 52.428422 224.93552 156.704272 45.055503 105.948832 24.985725 204.456746-52.700419 288.662818-54.989394 59.493344-114.038743 115.266729-171.791106 172.200101-25.087723 24.780727-65.229281 25.565718-86.971041 2.73097-21.981758-23.073746-19.592784-54.817396 6.825925-81.339103 56.661375-56.865373 114.140742-112.979754 170.188124-170.358122 84.479069-86.492046 46.966482-223.979531-69.734232-254.972189-48.571464-12.902858-95.162951-3.993956-132.094543 30.378665-59.391345 55.29539-115.266729 114.139742-174.419077 169.504131-12.526862 11.706871-33.279633 21.844759-49.527454 20.820771-43.51952-2.661971-65.501278-55.397389-35.39561-86.766044 64.716286-67.412257 130.728559-133.801525 200.223793-196.195836C647.160865 13.379852 702.285257 0.339996 775.364451 0zM0 760.891611c0.443995-72.703198 25.769716-135.575505 76.731154-187.389934 56.21638-57.274369 113.320751-113.662747 170.358122-170.187124 27.100701-26.896703 60.414334-28.909681 83.352081-5.801936 23.824737 24.029735 21.503763 54.373401-6.723926 82.738088-54.271402 54.476399-109.464793 108.235807-163.224201 163.326199-66.491267 67.924251-69.289236 159.708239-8.020911 221.31756 58.606354 58.94835 155.543285 59.221347 216.812609-0.442995 55.704386-54.271402 109.907788-110.181785 165.442176-164.555186 33.347632-32.63064 84.035073-20.991769 92.840977 22.902748 3.208965 15.769826-3.173965 39.594563-14.096845 51.131436-60.415334 63.624299-120.693669 127.793591-186.467944 185.512955-80.519112 70.689221-174.863072 82.431091-273.233987 39.594563C58.708353 957.599442 0.272997 864.246471 0 760.891611z m736.588879-414.715428c-3.514961 6.621927-7.576916 20.923769-16.724816 30.241667a52102.42255 52102.42255 0 0 1-333.820319 335.800298c-23.756738 23.722738-57.548366 22.118756-79.87112-0.443996-22.527752-22.731749-21.913758-53.929405 3.173965-79.119127C419.085379 522.644238 529.164166 412.905448 639.139953 303.270656c17.850803-17.783804 38.774572-25.258722 63.145304-14.711837 21.709761 9.420896 32.767639 26.691706 34.337621 57.650364z" p-id="2656"&gt;&lt;/path&gt;&lt;/svg&gt;
- 
- &lt;/span&gt;
- 
+
+
+
+&lt;a href="https://github.com/stonedtman/stonedt-yuqing" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ Github&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
 &lt;/a&gt;
+
 
 &lt;style&gt;
  
- .external-link {
- color: #3b82f6;
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
  text-decoration: underline;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- transition: text-decoration-color 0.2s, color 0.2s;
- }
-
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: rgba(59, 130, 246, 0.8);
- }
-
- .internal-link {
- color: #8b5cf6;
- text-decoration: underline;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- transition: text-decoration-color 0.2s, color 0.2s;
- }
-
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: rgba(139, 92, 246, 0.8);
- }
-
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 3px;
- opacity: 0.7;
- vertical-align: middle;
- transition: opacity 0.2s;
- }
-
- .external-link:hover .external-icon {
- opacity: 1;
- }
-
- .external-icon svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- display: inline-block;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
  }
 
  
- @media (prefers-color-scheme: dark) {
  .external-link {
- color: #60a5fa;
- text-decoration-color: rgba(96, 165, 250, 0.4);
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
  }
-
  .external-link:hover {
- color: #93c5fd;
- text-decoration-color: rgba(147, 197, 253, 0.8);
+ color: #2563eb;
+ text-decoration-color: currentColor;
  }
 
+ 
  .internal-link {
- color: #a78bfa;
- text-decoration-color: rgba(167, 139, 250, 0.4);
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
  }
 
- .internal-link:hover {
- color: #c4b5fd;
- text-decoration-color: rgba(196, 181, 253, 0.8);
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
  }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item></channel></rss>
