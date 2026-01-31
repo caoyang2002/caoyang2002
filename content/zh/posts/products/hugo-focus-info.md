@@ -29,60 +29,499 @@ weight = 2
 
 ### 代码运行示例
 
-### Rust
 
-```rust
-fn main() {
-  println!("Hello from Rust!");
+#### 1. JavaScript 相关
+
+```javascript
+// 基础功能测试
+console.log("=== 基础功能测试 ===");
+console.log("Hello, JavaScript!");
+const num = 10 + 20;
+console.log("计算结果:", num);
+
+// 完备性测试用例
+function testBasicOperations() {
+    console.log("\n=== 算术运算测试 ===");
+    
+    // 加法测试
+    const addResult = 10 + 20;
+    console.log(`加法测试: 10 + 20 = ${addResult}`);
+    
+    // 减法测试
+    const subtractResult = 30 - 10;
+    console.log(`减法测试: 30 - 10 = ${subtractResult}`);
+    
+    // 乘法测试
+    const multiplyResult = 10 * 3;
+    console.log(`乘法测试: 10 * 3 = ${multiplyResult}`);
+    
+    // 除法测试
+    const divideResult = 30 / 2;
+    console.log(`除法测试: 30 / 2 = ${divideResult}`);
+    
+    // 求余测试
+    const modulusResult = 15 % 4;
+    console.log(`求余测试: 15 % 4 = ${modulusResult}`);
 }
-```
 
-#### javascript
-
-```js
-console.log("hello")
-````
-
-#### Go
-
-```go
-package
-import "fmt"
-func main(){
-	fmt.print("hello")
+function testDataType() {
+    console.log("\n=== 数据类型测试 ===");
+    
+    // 数字类型
+    const integer = 42;
+    const float = 3.14;
+    console.log(`整数: ${integer}, 类型: ${typeof integer}`);
+    console.log(`浮点数: ${float}, 类型: ${typeof float}`);
+    
+    // 字符串类型
+    const str = "测试字符串";
+    console.log(`字符串: "${str}", 类型: ${typeof str}`);
+    
+    // 布尔类型
+    const bool = true;
+    console.log(`布尔值: ${bool}, 类型: ${typeof bool}`);
+    
+    // 未定义类型
+    let undefinedVar;
+    console.log(`未定义变量: ${undefinedVar}, 类型: ${typeof undefinedVar}`);
+    
+    // null类型
+    const nullVar = null;
+    console.log(`null值: ${nullVar}, 类型: ${typeof nullVar}`);
 }
+
+function testControlStructures() {
+    console.log("\n=== 控制结构测试 ===");
+    
+    // 条件语句测试
+    const testValue = 25;
+    console.log(`测试值: ${testValue}`);
+    
+    if (testValue > 20) {
+        console.log("条件测试: 值大于20");
+    } else if (testValue > 10) {
+        console.log("条件测试: 值大于10但小于等于20");
+    } else {
+        console.log("条件测试: 值小于等于10");
+    }
+    
+    // 循环测试
+    console.log("\n循环测试 - 输出1-5:");
+    for (let i = 1; i <= 5; i++) {
+        console.log(`  当前值: ${i}`);
+    }
+}
+
+function testFunctions() {
+    console.log("\n=== 函数测试 ===");
+    
+    // 函数定义和调用
+    function greet(name) {
+        return `你好, ${name}!`;
+    }
+    
+    const greeting = greet("JavaScript");
+    console.log(`函数调用结果: ${greeting}`);
+    
+    // 箭头函数测试
+    const multiply = (a, b) => a * b;
+    console.log(`箭头函数结果: 7 * 6 = ${multiply(7, 6)}`);
+}
+
+// 异常处理测试
+function testErrorHandling() {
+    console.log("\n=== 异常处理测试 ===");
+    
+    try {
+        // 故意创建错误
+        const result = 10 / 0;
+        console.log(`除以零测试: 10 / 0 = ${result}`);
+        
+        // 访问不存在的属性
+        const obj = { name: "测试对象" };
+        console.log(`安全属性访问: ${obj.name}`);
+        console.log(`不存在属性访问: ${obj.age}`); // 返回undefined，不会报错
+        
+        // JSON解析测试
+        const validJSON = '{"key": "value"}';
+        const parsed = JSON.parse(validJSON);
+        console.log(`JSON解析测试: ${JSON.stringify(parsed)}`);
+        
+    } catch (error) {
+        console.log(`捕获到错误: ${error.message}`);
+    }
+}
+
+// 运行所有测试
+function runAllTests() {
+    console.log("开始程序完备性测试...");
+    console.log("=".repeat(50));
+    
+    testBasicOperations();
+    testDataType();
+    testControlStructures();
+    testFunctions();
+    testErrorHandling();
+    
+    console.log("\n" + "=".repeat(50));
+    console.log("程序完备性测试完成！");
+}
+
+// 执行测试
+runAllTests();
 ```
 
-Lisp
+#### 2. TypeScript 相关
+```typescript
+console.log("Hello, TypeScript!");
 
-```lisp
-(format t "Hello from Lisp!")
-"Hello from Lisp!")
-(+ 1 2)
-
+const num = 10 + 20;
+console.log(num);
 ```
 
-Python
-
+## 3. Python 相关
 ```python
-print("test")
+print("Hello, Python!")
 ```
 
-TypeScript
-
-```ts
-console.log("hello")
-```
-
-C++
-
+## 4. C++ 相关
 ```cpp
 #include <iostream>
-int main(){
-    std::cout << "Hello World!";
+using namespace std;
+
+int main() {
+    cout << "Hello, C++!" << endl;
     return 0;
 }
 ```
+
+## 5. C 语言
+```c
+#include <stdio.h>
+
+int main() {
+    printf("Hello, C!\n");
+    return 0;
+}
+```
+
+## 6. C# 相关
+```csharp
+using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Hello, C#!");
+    }
+}
+```
+
+## 7. Java 相关
+```java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, Java!");
+    }
+}
+```
+
+## 8. HTML 相关
+```html
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Hello, HTML!</h1>
+</body>
+</html>
+```
+
+## 9. CSS 相关
+```css
+body::before {
+    content: "Hello, CSS!";
+    display: block;
+    font-size: 24px;
+    color: blue;
+}
+```
+
+## 10. PHP 相关
+```php
+<?php
+echo "Hello, PHP!";
+?>
+```
+
+## 11. Ruby 相关
+```ruby
+puts "Hello, Ruby!"
+```
+
+## 12. Go 相关
+```go
+package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Hello, Go!")
+}
+```
+
+## 13. Rust 相关
+```rust
+fn main() {
+    println!("Hello, Rust!");
+}
+```
+
+## 14. Swift 相关
+```swift
+print("Hello, Swift!")
+```
+
+## 15. Kotlin 相关
+```kotlin
+fun main() {
+    println("Hello, Kotlin!")
+}
+```
+
+## 16. SQL 相关
+```sql
+SELECT 'Hello, SQL!' AS greeting;
+```
+
+## 17. Shell/Bash 相关
+```bash
+echo "Hello, Bash!"
+```
+
+## 18. Markdown
+```markdown
+# Hello, Markdown!
+
+This is a markdown document.
+```
+
+## 19. Docker
+```dockerfile
+FROM alpine
+CMD echo "Hello, Docker!"
+```
+
+## 20. Git
+```git
+# Git commit message
+git commit -m "Hello, Git!"
+```
+
+## 21. Lua
+```lua
+print("Hello, Lua!")
+```
+
+## 22. Perl
+```perl
+print "Hello, Perl!\n";
+```
+
+## 23. R
+```r
+# 测试1: 简单的 print
+print("Hello, R!")
+
+# 测试2: 使用 cat (直接输出)
+cat("Hello from cat\n")
+
+# 测试3: 计算表达式
+1 + 2 * 3
+
+# 测试4: 赋值和打印
+x <- "Test"
+print(x)
+```
+
+## 24. Lisp
+```lisp
+(format t "Hello, Lisp!")
+```
+
+## 25. Scala
+```scala
+object HelloWorld {
+  def main(args: Array[String]): Unit = {
+    println("Hello, Scala!")
+  }
+}
+```
+
+## 26. Dart
+```dart
+void main() {
+  print('Hello, Dart!');
+}
+```
+
+## 27. Elixir
+```elixir
+IO.puts "Hello, Elixir!"
+```
+
+## 28. Haskell
+```haskell
+main = putStrLn "Hello, Haskell!"
+```
+
+## 29. OCaml
+```ocaml
+print_endline "Hello, OCaml!"
+```
+
+## 30. Clojure
+```clojure
+(println "Hello, Clojure!")
+```
+
+## 31. Erlang
+```erlang
+-module(hello).
+-export([start/0]).
+
+start() ->
+    io:format("Hello, Erlang!~n").
+```
+
+## 32. MATLAB
+```matlab
+disp('Hello, MATLAB!')
+```
+
+## 33. JSON
+```json
+{
+  "message": "Hello, JSON!"
+}
+```
+
+## 34. YAML
+```yaml
+message: Hello, YAML!
+```
+
+## 35. XML
+```xml
+<?xml version="1.0"?>
+<message>Hello, XML!</message>
+```
+
+## 36. TOML
+```toml
+message = "Hello, TOML!"
+```
+
+## 37. INI/CONF
+```ini
+[section]
+message = Hello, INI!
+```
+
+## 38. CSV
+```csv
+message
+Hello, CSV!
+```
+
+## 39. TXT/TEXT
+```txt
+Hello, Text File!
+```
+
+## 40. LOG
+```log
+[INFO] Hello, Log File!
+```
+
+## 其他框架/扩展示例：
+
+### React (JSX)
+```jsx
+function App() {
+  return <h1>Hello, React!</h1>;
+}
+```
+
+### Vue
+```vue
+<template>
+  <h1>{{ message }}</h1>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      message: 'Hello, Vue!'
+    }
+  }
+}
+</script>
+```
+
+### Svelte
+```svelte
+<h1>Hello, Svelte!</h1>
+```
+
+### Next.js
+```jsx
+// pages/index.js
+export default function Home() {
+  return <h1>Hello, Next.js!</h1>;
+}
+```
+
+### Angular (TypeScript)
+```typescript
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  template: '<h1>Hello, Angular!</h1>'
+})
+export class AppComponent {}
+```
+
+### SCSS/SASS
+```scss
+.hello {
+  content: "Hello, SCSS!";
+}
+```
+
+### Less
+```less
+.hello {
+  content: "Hello, Less!";
+}
+```
+
+### Stylus
+```stylus
+.hello
+  content "Hello, Stylus!"
+```
+
+### PostgreSQL (扩展 SQL)
+```sql
+SELECT 'Hello, PostgreSQL!'::text;
+```
+
+### PowerShell
+```powershell
+Write-Host "Hello, PowerShell!"
+```
+
 
 ## 2. mermaid 图表
 
