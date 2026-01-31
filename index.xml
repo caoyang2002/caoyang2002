@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 23:52:49 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 23:54:25 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -841,7 +841,7 @@
  }
 
  const password = input.value;
- const publishDate = "3131180131";
+ const publishDate = "3131510131";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
