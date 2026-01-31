@@ -3,9 +3,6 @@ baseURL = "localhost"
 languageCode = 'zh-CN'
 title = '短松江月'
 theme = 'hugo-focus'
-
-author = "Simons"
-
 ignoreLogs = ['warning-goldmark-raw-html']
 
 # 设置默认语言
@@ -13,8 +10,6 @@ defaultContentLanguage = "zh"
 # 将内容放在语言子目录下
 # defaultContentLanguageInSubdir = false
 defaultContentLanguageInSubdir = true  # 重要：默认语言也在子目录中
-
-
 
 # 基础优化配置
 enableGitInfo = true
@@ -102,23 +97,25 @@ unsafe = true
 color = 'linen'
 subtitle = 'The Best Widgets on Earth'
 toc = true
+
+# 个人信息配置
+avatar = '/about/avatar.jpg'
+bio = '难事必作于易，天下大事必作于细。'
+author = "Simons"
+logo = "/about/site_info/logo-sg.svg"
 # 全局启用目录
-#
 # 分页
 paginationSize = 10
 paginatePath = "page"
 
-author = "Simons"
+
 
 # 社交媒体链接
 twitter = 'caoyang2002'
 github = 'caoyang2002'
 instagram = 'caoyang2002'
 
-# 个人信息配置
-avatar = '/about/avatar.jpg'
-name = 'simons'
-bio = '难事必作于易，天下大事必作于细。'
+
 
 disablePostNavigation = false # 禁用文章导航
 
@@ -126,7 +123,6 @@ disablePostNavigation = false # 禁用文章导航
 disableHLJS = false # 禁用 highlight.js 代码高亮
 # disablePostNavigation = true             # 禁用文章导航
 monoDarkIcon = false # 使用单色暗模式图标
-# gravatarCdn = 'GRAVATAR_CDN_LINK'        # Gravatar CDN 链接，例如 'https://cdn.v2ex.com/gravatar/'
 math = true        # 全局启用 KaTeX 数学公式排版
 localKatex = false # 使用本地 KaTeX js/css 而不是 CDN
 # graphCommentId = "YOUR_GRAPH_COMMENT_ID" # 使用 Graph Comment（Disqus 替代品）
