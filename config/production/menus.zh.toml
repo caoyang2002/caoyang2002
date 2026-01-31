@@ -1,61 +1,97 @@
-# 导航菜单配置
 [[main]]
 name = '首页'
 pageRef = '/'
+weight = 1
+icon = 'home'
+
+[[main]]
+name = '文章随笔'
+pageRef = '/posts/'
+weight = 2
+icon = 'pen'
+
+[[main]]
+name = '技术资源'
+pageRef = '/resources/'
+weight = 3
+icon = 'download'
+
+[[main]]
+name = '航天航空'
+pageRef = '/aerospace/'
+weight = 4
+icon = 'rocket'
+
+[[main]]
+name = '软件工程'
+pageRef = '/software/'
+weight = 5
+icon = 'code'
+
+[[main]]
+name = '硬件嵌入式'
+pageRef = '/hardware/'
+weight = 6
+icon = 'chip'
+
+[[main]]
+name = '视觉创意'
+pageRef = '/creative/'
+weight = 7
+icon = 'palette'
+
+[[main]]
+name = '广告营销'
+pageRef = '/marketing/'
+weight = 8
+icon = 'megaphone'  # 📢 更符合营销
+
+[[main]]
+name = '传统文化'
+pageRef = '/culture/'
+weight = 9
+icon = 'book-open'
+
+
+[[main]]
+name = '关于我'
+pageRef = '/about/'
 weight = 10
+icon = 'user'
 
 [[main]]
-name = '火箭'
-pageRef = '/rocket/'
+name = '站内搜索'
+pageRef = '/search/'
 weight = 11
-
-[[main]]
-name = '编程'
-pageRef = '/programming/'
-weight = 11
+icon = 'search'
 
 
 # [[main]]
-# name = '日程'
-# pageRef = '/schedule/'
-# weight = 11
+# name = "作品集"
+# pageRef = "/protfolio/"
+# weight = 12
 
-[[main]]
-name = "作品集"
-pageRef = "/protfolio/"
-weight = 12
+# [[main]]
+# name = "联系"
+# pageRef = "/contact/"
+# weight = 30
 
-[[main]]
-name = "关于"
-pageRef = "/about/"
-weight = 20
+# [[main]]
+# name = "留言"
+# pageRef = "/guestbook/"
+# weight = 40
 
-[[main]]
-name = "联系"
-pageRef = "/contact/"
-weight = 30
+# [[main]]
+# name = '资源'
+# pageRef = '/resources/'
+# weight = 41
 
-[[main]]
-name = "留言"
-pageRef = "/guestbook/"
-weight = 40
+# [[main]]
+# name = '书单'
+# pageRef = '/booklist/'
+# weight = 42
 
-[[main]]
-name = '资源'
-pageRef = '/resources/'
-weight = 41
-
-[[main]]
-name = '书单'
-pageRef = '/booklist/'
-weight = 42
-
-[[main]]
-name = '热搜'
-pageRef = '/hotlist/'
-weight = 43
-
-[[main]]
-name = "搜索"
-pageRef = "/search/"
-weight = 50
+# [[main]]
+# name = '热搜'
+# pageRef = '/hotlist/'
+# weight = 43
