@@ -117,44 +117,10 @@
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="sql"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-sql"&gt;CREATE TABLE 表名(
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
  列名1 类型[长度] [DEFAULT 默认值] [约束条件]
  列名2 类型
  ……
@@ -167,10 +133,6 @@ CREATE TABLE userinfo(
  nickname VARCHAR(32)
  age INT(3)
 );&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表

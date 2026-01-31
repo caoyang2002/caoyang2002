@@ -33,26 +33,6 @@ Hooks强化了函数式概念
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -62,6 +42,10 @@ Hooks强化了函数式概念
 
 
  
+
+
+
+     
 
 
 
@@ -74,10 +58,6 @@ Hooks强化了函数式概念
 
 
  
-
-
-
-     
 
 
 
@@ -121,18 +101,6 @@ Hooks强化了函数式概念
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -144,19 +112,13 @@ Hooks强化了函数式概念
 
 
 
-    
-    
-        // React函数式组件
+    // React函数式组件
 const Component = ({ data }) => {
   const [state, setState] = useState(initialState);
   const derivedValue = useMemo(() => compute(data), [data]);
   
   return <div>{derivedValue}</div>;
 };
-    
-
-    
-    
 
 
 Vue：响应式编程 + 面向对象
@@ -191,26 +153,6 @@ Vue：响应式编程 + 面向对象
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -220,6 +162,10 @@ Vue：响应式编程 + 面向对象
 
 
  
+
+
+
+     
 
 
 
@@ -232,10 +178,6 @@ Vue：响应式编程 + 面向对象
 
 
  
-
-
-
-     
 
 
 
@@ -279,18 +221,6 @@ Vue：响应式编程 + 面向对象
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -302,19 +232,13 @@ Vue：响应式编程 + 面向对象
 
 
 
-    
-    
-        <!-- Vue组合式API -->
+    <!-- Vue组合式API -->
 <script setup>
 import { ref, computed } from 'vue'
 
 const data = ref(initialData)
 const derivedValue = computed(() => compute(data.value))
 </script>
-    
-
-    
-    
 
 
 1.2 架构理念
@@ -340,19 +264,19 @@ React：最小化API，一切靠JavaScript"><meta name=author content="simons"><
 </a><a href=https://simons.qzz.io/tags/%E8%99%9A%E6%8B%9Fdom class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">虚拟DOM
 </a><a href=https://simons.qzz.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">性能优化
 </a><a href=https://simons.qzz.io/tags/typescript class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">TypeScript
-</a><a href=https://simons.qzz.io/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">技术选型</a></span></div><section><h1 id=react-vs-vue深度技术分析与对比>React vs Vue：深度技术分析与对比</h1><h2 id=一核心设计哲学差异>一、核心设计哲学差异</h2><h3 id=11-编程范式>1.1 编程范式</h3><p><strong>React</strong>：函数式编程优先</p><ul><li>强调不可变性和纯函数</li><li>组件本质是函数（props in, JSX out）</li><li>Hooks强化了函数式概念</li></ul><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// React函数式组件
+</a><a href=https://simons.qzz.io/tags/%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">技术选型</a></span></div><section><h1 id=react-vs-vue深度技术分析与对比>React vs Vue：深度技术分析与对比</h1><h2 id=一核心设计哲学差异>一、核心设计哲学差异</h2><h3 id=11-编程范式>1.1 编程范式</h3><p><strong>React</strong>：函数式编程优先</p><ul><li>强调不可变性和纯函数</li><li>组件本质是函数（props in, JSX out）</li><li>Hooks强化了函数式概念</li></ul><div><pre><code class=language-jsx data-lang=jsx>// React函数式组件
 const Component = ({ data }) =&gt; {
   const [state, setState] = useState(initialState);
   const derivedValue = useMemo(() =&gt; compute(data), [data]);
   
   return &lt;div&gt;{derivedValue}&lt;/div&gt;;
-};</code></pre></div></div><p><strong>Vue</strong>：响应式编程 + 面向对象</p><ul><li>基于可变状态的响应式系统</li><li>组合式API提供函数式能力</li><li>传统选项式API符合OOP思维</li></ul><div class=code-playground data-language=vue><div><pre><code class=language-vue>&lt;!-- Vue组合式API --&gt;
+};</code></pre></div><p><strong>Vue</strong>：响应式编程 + 面向对象</p><ul><li>基于可变状态的响应式系统</li><li>组合式API提供函数式能力</li><li>传统选项式API符合OOP思维</li></ul><div><pre><code class=language-vue data-lang=vue>&lt;!-- Vue组合式API --&gt;
 &lt;script setup&gt;
 import { ref, computed } from &#39;vue&#39;
 
 const data = ref(initialData)
 const derivedValue = computed(() =&gt; compute(data.value))
-&lt;/script&gt;</code></pre></div></div><h3 id=12-架构理念>1.2 架构理念</h3><p><strong>React</strong>：最小化API，一切靠JavaScript</p><ul><li>&ldquo;Learn Once, Write Anywhere&rdquo;</li><li>只提供核心渲染抽象</li><li>状态管理、路由等由社区解决</li></ul><p><strong>Vue</strong>：渐进式框架</p><ul><li>核心库 + 官方路由/状态管理</li><li>从轻量视图层到完整框架</li><li>更强的开箱即用体验</li></ul><h2 id=二核心机制实现对比>二、核心机制实现对比</h2><h3 id=21-响应式系统实现>2.1 响应式系统实现</h3><p><strong>React的实现</strong>：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 基于引用的不可变性检测
+&lt;/script&gt;</code></pre></div><h3 id=12-架构理念>1.2 架构理念</h3><p><strong>React</strong>：最小化API，一切靠JavaScript</p><ul><li>&ldquo;Learn Once, Write Anywhere&rdquo;</li><li>只提供核心渲染抽象</li><li>状态管理、路由等由社区解决</li></ul><p><strong>Vue</strong>：渐进式框架</p><ul><li>核心库 + 官方路由/状态管理</li><li>从轻量视图层到完整框架</li><li>更强的开箱即用体验</li></ul><h2 id=二核心机制实现对比>二、核心机制实现对比</h2><h3 id=21-响应式系统实现>2.1 响应式系统实现</h3><p><strong>React的实现</strong>：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 基于引用的不可变性检测
 const [state, setState] = useState({ count: 0 });
 
 // 触发重新渲染的条件：

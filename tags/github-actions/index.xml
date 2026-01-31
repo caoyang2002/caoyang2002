@@ -104,44 +104,10 @@
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="yaml"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-yaml"&gt;# 这是最基础的工作流
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
 name: CI
 on: [push] # 事件触发器
 jobs:
@@ -150,10 +116,6 @@ jobs:
  steps: # 执行步骤
  - uses: actions/checkout@v2
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践</title><link>https://simons.qzz.io/post/2024/12/hexo/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/hexo/</guid><description>&lt;p&gt;我的博客之前是在云服务器上部署的java服务，现在把博客迁移到了github托管，使用

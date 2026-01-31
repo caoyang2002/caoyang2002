@@ -96,7 +96,7 @@ sudo chown -R 1000:1000 /opt/gitea</code></pre></div></div><h3 id=2-运行gitea�
 docker ps -a
 
 # 查看日志
-docker logs gitea</code></pre></div></div><p>访问：<code>http://your-server-ip:3000</code> 进行初始设置。</p><h1 id=方法二使用docker-compose安装更规范>方法二：使用Docker Compose安装（更规范）</h1><h2 id=1-创建docker-composeyml文件>1. 创建docker-compose.yml文件</h2><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>version: &#34;3&#34;
+docker logs gitea</code></pre></div></div><p>访问：<code>http://your-server-ip:3000</code> 进行初始设置。</p><h1 id=方法二使用docker-compose安装更规范>方法二：使用Docker Compose安装（更规范）</h1><h2 id=1-创建docker-composeyml文件>1. 创建docker-compose.yml文件</h2><div><pre><code class=language-yaml data-lang=yaml>version: &#34;3&#34;
 
 services:
   gitea:
@@ -125,7 +125,7 @@ services:
 
 networks:
   gitea-network:
-    driver: bridge</code></pre></div></div><h2 id=2-启动服务>2. 启动服务</h2><div class=code-playground data-language=bash><div><pre><code class=language-bash># 创建目录
+    driver: bridge</code></pre></div><h2 id=2-启动服务>2. 启动服务</h2><div class=code-playground data-language=bash><div><pre><code class=language-bash># 创建目录
 mkdir gitea &amp;&amp; cd gitea
 
 # 创建数据目录
@@ -135,7 +135,7 @@ mkdir -p data config
 chown -R 1000:1000 data
 
 # 启动服务
-docker-compose up -d</code></pre></div></div><h1 id=方法三使用mysql数据库>方法三：使用MySQL数据库</h1><p>如果需要使用MySQL而非SQLite：</p><h2 id=docker-composeyml带mysql>docker-compose.yml（带MySQL）</h2><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>version: &#34;3&#34;
+docker-compose up -d</code></pre></div></div><h1 id=方法三使用mysql数据库>方法三：使用MySQL数据库</h1><p>如果需要使用MySQL而非SQLite：</p><h2 id=docker-composeyml带mysql>docker-compose.yml（带MySQL）</h2><div><pre><code class=language-yaml data-lang=yaml>version: &#34;3&#34;
 
 services:
   db:
@@ -179,7 +179,7 @@ services:
 
 networks:
   gitea-network:
-    driver: bridge</code></pre></div></div><h1 id=初始配置步骤>初始配置步骤</h1><ol><li><p><strong>访问Web界面</strong>：</p><ul><li>打开浏览器访问：<code>http://your-server-ip:3000</code></li></ul></li><li><p><strong>数据库配置</strong>：</p><ul><li>如果是Docker单容器：选择SQLite3</li><li>如果使用MySQL：填写MySQL连接信息</li></ul><div><pre><code class=language- data-lang>主机：db:3306
+    driver: bridge</code></pre></div><h1 id=初始配置步骤>初始配置步骤</h1><ol><li><p><strong>访问Web界面</strong>：</p><ul><li>打开浏览器访问：<code>http://your-server-ip:3000</code></li></ul></li><li><p><strong>数据库配置</strong>：</p><ul><li>如果是Docker单容器：选择SQLite3</li><li>如果使用MySQL：填写MySQL连接信息</li></ul><div><pre><code class=language- data-lang>主机：db:3306
 用户名：gitea
 密码：giteapassword
 数据库名：gitea</code></pre></div></li><li><p><strong>常规设置</strong>：</p><ul><li>站点名称</li><li>仓库根目录：<code>/data/git/repositories</code></li><li>LFS根目录：<code>/data/git/lfs</code></li><li>运行用户名：<code>git</code></li><li>SSH服务端口：<code>2222</code></li></ul></li><li><p><strong>管理员账户</strong>：</p><ul><li>设置第一个管理员账户</li></ul></li></ol><h1 id=常用管理命令>常用管理命令</h1><div class=code-playground data-language=bash><div><pre><code class=language-bash># 停止Gitea

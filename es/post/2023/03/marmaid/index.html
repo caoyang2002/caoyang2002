@@ -30,26 +30,6 @@
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -59,6 +39,10 @@
 
 
  
+
+
+
+     
 
 
 
@@ -71,10 +55,6 @@
 
 
  
-
-
-
-     
 
 
 
@@ -111,18 +91,6 @@
 
 
          
-
-
-
- 
-
-
-
- 
-
-
-
-     
 
 
 
@@ -196,26 +164,6 @@ mindmap
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -225,6 +173,10 @@ mindmap
 
 
  
+
+
+
+     
 
 
 
@@ -237,10 +189,6 @@ mindmap
 
 
  
-
-
-
-     
 
 
 
@@ -277,18 +225,6 @@ mindmap
 
 
          
-
-
-
- 
-
-
-
- 
-
-
-
-     
 
 
 
@@ -386,7 +322,7 @@ actor 李四
 participant Z as 张三
 participant L as 李四
 Z->>L: 你好，李四！
-L->>Z: 你好!</div></li><li><p>使用盒子分组</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown>box 组名
+L->>Z: 你好!</div></li><li><p>使用盒子分组</p><div><pre><code class=language-markdown data-lang=markdown>box 组名
 
 box 颜色 组名
 participant 马克
@@ -404,7 +340,7 @@ end
 box 指定透明
 box transparent Aqua
 ... actors ...
-end</code></pre></div></div><ul><li><p>盒子（分组）</p><div class=mermaid>sequenceDiagram
+end</code></pre></div><ul><li><p>盒子（分组）</p><div class=mermaid>sequenceDiagram
 box rgb(255,34,67) 场景组
 participant A as 马克
 participant B as 杰森
@@ -449,7 +385,7 @@ Note right of 李四: 这是注释</div><ul><li><p>跨对象注释</p><div class
 张三->>李四: 你好，李四
 Note over 张三,李四: 这是注释</div></li><li><p>注释使用换行符</p><div class=mermaid>sequenceDiagram
 张三->>李四: 你好
-Note over 张三,李四: 尖括号内使用br斜杠<br>换行</div></li></ul></li><li><p>循环</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>loop 循环说明
+Note over 张三,李四: 尖括号内使用br斜杠<br>换行</div></li></ul></li><li><p>循环</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>loop 循环说明
 循环内容
 end</p><div><pre><code class=language- data-lang>
 
@@ -459,7 +395,7 @@ sequenceDiagram
     张三-&gt;李四: 接下来是一个循环
     loop 循环的说明
         李四--&gt;张三: 循环的内容
-    end</code></pre></div><ul><li><p>替换和选择</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>可以在序列图中表达替代路径。</p><p>alt 描述信息
+    end</code></pre></div><ul><li><p>替换和选择</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>可以在序列图中表达替代路径。</p><p>alt 描述信息
 &mldr; statements &mldr;
 else
 &mldr; statements &mldr;
@@ -478,7 +414,7 @@ sequenceDiagram
     end
     opt 额外的
         李四-&gt;&gt;张三: 谢谢关心
-    end</code></pre></div><ul><li><p>并行发生</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>可以显示并行发生的行为。</p><p>par [Action 1]
+    end</code></pre></div><ul><li><p>并行发生</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>可以显示并行发生的行为。</p><p>par [Action 1]
 &mldr; statements &mldr;
 and [Action 2]
 &mldr; statements &mldr;
@@ -505,7 +441,7 @@ par 王五 to 赵六
 and 王五 to 小明
 王五->>小明: Can you help us today?
 end
-end</div></li><li><p>条件触发</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>可以显示必须通过有条件处理情况自动发生的操作。
+end</div></li><li><p>条件触发</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>可以显示必须通过有条件处理情况自动发生的操作。
 critical [Action that must be performed]
 &mldr; statements &mldr;
 option [Circumstance A]
@@ -524,7 +460,7 @@ sequenceDiagram
     end</code></pre></div><div class=mermaid>sequenceDiagram
 critical 张三打电话给李四
 张三-->李四: 成功
-end</div><ul><li><p>中断</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>可以指示流中序列的停止（通常用于模拟异常）。</p><p>break [something happened]
+end</div><ul><li><p>中断</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>可以指示流中序列的停止（通常用于模拟异常）。</p><p>break [something happened]
 &mldr; statements &mldr;
 end</p><div><pre><code class=language- data-lang>
 ```mermaid
@@ -534,7 +470,7 @@ sequenceDiagram
     break 无库存
         商家--&gt;消费者: 提示无库存
     end
-    商家--&gt;财务系统: 财务登记</code></pre></div><ul><li><p>背景高亮显示</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown></code></pre></div></div></li></ul><p>可以通过提供彩色背景来突出显示流。
+    商家--&gt;财务系统: 财务登记</code></pre></div><ul><li><p>背景高亮显示</p><div><pre><code class=language-markdown data-lang=markdown></code></pre></div></li></ul><p>可以通过提供彩色背景来突出显示流。
 颜色是使用rgb和rgba语法定义的。</p><p>rect rgb(0, 255, 0)
 &mldr; content &mldr;
 end
@@ -565,7 +501,7 @@ J&ndash;&#187;A: Great!</p><div><pre><code class=language- data-lang>
 ```mermaid
 sequenceDiagram
     A-&gt;&gt;B: I #9829; you!
-    B-&gt;&gt;A: I #9829; you #infin; times more!</code></pre></div><ul><li><p>翻动分</p></li><li><p>赛</p></li><li><p>翻动</p></li></ul></li><li><p>语法</p></li></ul></li><li><p>扽色</p></li><li><p>冬粉</p><ul><li>使用<code>end</code>时，建议用<code>[] 或 {} 或 ()</code>括起来</li></ul></li></ul><h4 id=3-流程图flowchart>3. 流程图<code>flowchart</code></h4><ul><li><p>使用<code>graph</code>也可以</p></li><li><p>基础：</p><ul><li>节点：箭头（连接线）指向的图形</li><li>内容：节点上的文字</li><li>对空格不敏感</li><li><code>---</code>三个减号表示线，最后一个减号改为<code>></code>可带箭头，增加<code>-</code>可增加长度</li></ul></li></ul><div class=code-playground data-language=markdown><div><pre><code class=language-markdown>	```mermaid
+    B-&gt;&gt;A: I #9829; you #infin; times more!</code></pre></div><ul><li><p>翻动分</p></li><li><p>赛</p></li><li><p>翻动</p></li></ul></li><li><p>语法</p></li></ul></li><li><p>扽色</p></li><li><p>冬粉</p><ul><li>使用<code>end</code>时，建议用<code>[] 或 {} 或 ()</code>括起来</li></ul></li></ul><h4 id=3-流程图flowchart>3. 流程图<code>flowchart</code></h4><ul><li><p>使用<code>graph</code>也可以</p></li><li><p>基础：</p><ul><li>节点：箭头（连接线）指向的图形</li><li>内容：节点上的文字</li><li>对空格不敏感</li><li><code>---</code>三个减号表示线，最后一个减号改为<code>></code>可带箭头，增加<code>-</code>可增加长度</li></ul></li></ul><div><pre><code class=language-markdown data-lang=markdown>	```mermaid
 	graph LR
 	思维导图--&gt; 第一部分
 	第一部分--&gt;1.1小节
@@ -577,7 +513,7 @@ sequenceDiagram
 	思维导图--&gt; 第三部分
 	第三部分--&gt; 3.1小节
 	思维导图--&gt; 若干
-```</code></pre></div></div><div class=mermaid>graph LR
+```</code></pre></div><div class=mermaid>graph LR
 思维导图--> 第一部分
 第一部分-->1.1小节
 第一部分-->1.2小节
@@ -618,12 +554,12 @@ A(圆角矩形)</div></li><li><p>A[矩形]</p><div class=mermaid>graph RL
 A[矩形]</div></li><li><p>A((圆形))</p><div class=mermaid>graph RL
 A((圆形))</div></li><li><p>A>非对称形状]</p><div class=mermaid>graph RL
 A>非对称形状]</div></li><li><p>A{菱形}</p><div class=mermaid>graph RL
-A{菱形}</div></li></ul></li><li><p>文字（别名）</p><ul><li><code>start[开始]</code>start将作为节点，显示的字符为开始</li></ul></li><li><p>子图</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown>	subgraph 图像块标题1
+A{菱形}</div></li></ul></li><li><p>文字（别名）</p><ul><li><code>start[开始]</code>start将作为节点，显示的字符为开始</li></ul></li><li><p>子图</p><div><pre><code class=language-markdown data-lang=markdown>	subgraph 图像块标题1
 	图像快中的连接
 	subgraph 图像块标题2
 	图像快中的连接
 	......
-  end</code></pre></div></div><div class=mermaid>graph TB
+  end</code></pre></div><div class=mermaid>graph TB
 c1-->a2
 subgraph one
 a1-->a2

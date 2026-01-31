@@ -1302,38 +1302,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -1376,38 +1344,6 @@ let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1638,38 +1574,6 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -1704,38 +1608,6 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1867,38 +1739,6 @@ for order in orders {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2126,38 +1966,6 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2196,38 +2004,6 @@ fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2459,38 +2235,6 @@ struct Person {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2538,38 +2282,6 @@ fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: 
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2824,38 +2536,6 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2892,38 +2572,6 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3137,38 +2785,6 @@ let s2 = s1; // 所有权从s1转移到s2
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -3198,38 +2814,6 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3455,38 +3039,6 @@ impl Closure {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -3516,38 +3068,6 @@ impl Closure {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3761,38 +3281,6 @@ impl Closure {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -3825,38 +3313,6 @@ match find_user(1) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -4080,38 +3536,6 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -4156,38 +3580,6 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -4431,38 +3823,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div&gt;
@@ -4489,38 +3849,6 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -4648,38 +3976,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -4916,38 +4212,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -4983,38 +4247,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -5260,38 +4492,6 @@ $ cat .vimrc
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -5312,38 +4512,6 @@ $ cat .vimrc
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -5710,38 +4878,6 @@ export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -5787,38 +4923,6 @@ cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -6619,38 +5723,6 @@ buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -6778,38 +5850,6 @@ type UserService interface {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -6837,38 +5877,6 @@ repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -7105,38 +6113,6 @@ type User struct {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -7181,38 +6157,6 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -7436,38 +6380,6 @@ project/
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -7496,38 +6408,6 @@ var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -7757,38 +6637,6 @@ type UserService interface {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -7917,38 +6765,6 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -7980,38 +6796,6 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -13635,38 +12419,6 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="c"&gt;
@@ -13699,38 +12451,6 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -13974,38 +12694,6 @@ int main() {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="c"&gt;
@@ -14142,38 +12830,6 @@ int main() {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="cpp"&gt;
@@ -14215,38 +12871,6 @@ namespace fs = std::filesystem;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -15688,44 +14312,10 @@ namespace fs = std::filesystem;
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="sql"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-sql"&gt;CREATE TABLE 表名(
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
  列名1 类型[长度] [DEFAULT 默认值] [约束条件]
  列名2 类型
  ……
@@ -15738,10 +14328,6 @@ CREATE TABLE userinfo(
  nickname VARCHAR(32)
  age INT(3)
 );&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表
@@ -15768,38 +14354,6 @@ CREATE TABLE userinfo(
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -16013,38 +14567,6 @@ CREATE TABLE userinfo(
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div&gt;
@@ -16072,38 +14594,6 @@ Done. Now run:
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -22520,38 +21010,6 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="c"&gt;
@@ -22610,38 +21068,6 @@ int main(){
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -23488,38 +21914,6 @@ int main(){
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="mermaid"&gt;mindmap
@@ -23559,38 +21953,6 @@ int main(){
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

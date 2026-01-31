@@ -102,38 +102,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -154,38 +122,6 @@
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -457,38 +393,6 @@ export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

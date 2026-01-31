@@ -102,38 +102,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -258,38 +226,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -313,38 +249,6 @@
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -567,38 +471,6 @@ match find_user(1) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -632,38 +504,6 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

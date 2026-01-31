@@ -101,38 +101,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -175,38 +143,6 @@ let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -438,38 +374,6 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -599,38 +503,6 @@ for order in orders {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -660,38 +532,6 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

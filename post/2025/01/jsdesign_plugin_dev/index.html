@@ -90,7 +90,7 @@ npm install --save-dev typescript ts-loader</code></pre></div></div><h3 id=开�
 ├── package-lock.json
 ├── webpack.config.js
 ├── tsconfig.json
-└── ui.html</code></pre></div></div><h2 id=处理插件逻辑>处理插件逻辑</h2><h3 id=项目依赖文件>项目依赖文件：</h3><div class=code-playground data-language=json><div><pre><code class=language-json>{
+└── ui.html</code></pre></div></div><h2 id=处理插件逻辑>处理插件逻辑</h2><h3 id=项目依赖文件>项目依赖文件：</h3><div><pre><code class=language-json data-lang=json>{
 	&#34;version&#34;: &#34;1.0.0&#34;,
 	&#34;description&#34;: &#34;&#34;,
 	&#34;main&#34;: &#34;code.js&#34;,
@@ -118,7 +118,7 @@ npm install --save-dev typescript ts-loader</code></pre></div></div><h3 id=开�
 		&#34;react-dev-utils&#34;: &#34;^12.0.1&#34;,
 		&#34;react-dom&#34;: &#34;^19.0.0&#34;
 	}
-}</code></pre></div></div><h3 id=ts-配置文件>TS 配置文件</h3><p>在 <code>tsconfig.json</code> 输入</p><div class=code-playground data-language=json><div><pre><code class=language-json>{
+}</code></pre></div><h3 id=ts-配置文件>TS 配置文件</h3><p>在 <code>tsconfig.json</code> 输入</p><div><pre><code class=language-json data-lang=json>{
   &#34;compilerOptions&#34;: {
     &#34;target&#34;: &#34;es6&#34;, // 编译后的代码将符合 ES6 (ES2015) 标准。
     &#34;jsx&#34;: &#34;react&#34;, // 将 JSX 转换为 React.createElement 调用。
@@ -129,7 +129,7 @@ npm install --save-dev typescript ts-loader</code></pre></div></div><h3 id=开�
     ]
   },
   &#34;include&#34;: [&#34;src/**/*.ts&#34;, &#34;src/**/*.tsx&#34;] // 需要编译的文件或目录。
-}</code></pre></div></div><h3 id=webpack-配置文件>webpack 配置文件</h3><p>在 <code>webpack.config.js</code> 输入</p><div class=code-playground data-language=js><div><pre><code class=language-js>const InlineChunkHtmlPlugin = require(&#39;react-dev-utils/InlineChunkHtmlPlugin&#39;); // 用于将 JavaScript 代码内联到 HTML 文件中。
+}</code></pre></div><h3 id=webpack-配置文件>webpack 配置文件</h3><p>在 <code>webpack.config.js</code> 输入</p><div class=code-playground data-language=js><div><pre><code class=language-js>const InlineChunkHtmlPlugin = require(&#39;react-dev-utils/InlineChunkHtmlPlugin&#39;); // 用于将 JavaScript 代码内联到 HTML 文件中。
 const HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;) //用于生成 HTML 文件，并自动注入打包后的 JavaScript 文件。
 const path = require(&#39;path&#39;) // Node.js 的内置模块，用于处理文件路径。
 const webpack = require(&#39;webpack&#39;) // Webpack 的核心模块。
@@ -254,13 +254,13 @@ ReactDOM.render(&lt;App /&gt;, document.getElementById(&#39;react-page&#39;)) //
 // function createRoot(element: HTMLElement) {
 //   return createReactRoot(element);
 // }
-// root.render(&lt;App /&gt;)</code></pre></div><h3 id=插件模板>插件模板</h3><blockquote><p>webpack 会自动注入 js</p></blockquote><p><code>src/ui.html</code></p><div class=code-playground data-language=html><div><pre><code class=language-html>&lt;div id=&#34;react-page&#34;&gt;&lt;/div&gt;</code></pre></div></div><h3 id=mainfestjson--jsd-插件识别文件><code>mainfest.json</code> jsd 插件识别文件</h3><p><code>manifest.json</code> 是 ssd 读取插件的配置文件，只改 <code>main</code> 和 <code>ui</code></p><div class=code-playground data-language=json><div><pre><code class=language-json>{
+// root.render(&lt;App /&gt;)</code></pre></div><h3 id=插件模板>插件模板</h3><blockquote><p>webpack 会自动注入 js</p></blockquote><p><code>src/ui.html</code></p><div><pre><code class=language-html data-lang=html>&lt;div id=&#34;react-page&#34;&gt;&lt;/div&gt;</code></pre></div><h3 id=mainfestjson--jsd-插件识别文件><code>mainfest.json</code> jsd 插件识别文件</h3><p><code>manifest.json</code> 是 ssd 读取插件的配置文件，只改 <code>main</code> 和 <code>ui</code></p><div><pre><code class=language-json data-lang=json>{
   &#34;name&#34;: &#34;your_plugin_name&#34;,
   &#34;id&#34;: &#34;your_plugin_id&#34;,
   &#34;api&#34;: &#34;1.0.0&#34;,
   &#34;main&#34;: &#34;dist/code.js&#34;, // code.js 的位置
   &#34;ui&#34;: &#34;dist/ui.html&#34; // ui.js 的位置
-}</code></pre></div></div><h2 id=三构建插件>三、构建插件</h2><div class=code-playground data-language=bash><div><pre><code class=language-bash>pnpm run build</code></pre></div></div><h2 id=四在-jsd-中运行插件>四、在 jsd 中运行插件</h2><p>在菜单中，选择<kbd>插件</kbd> ><kbd>插件开发</kbd> 顶部会出现你创建的插件，如果没有，就在 <kbd>通过 manifest 导入插件</kbd>（通过即时设计创建的插件，会自动生成这个文件）</p><p>现在插件的开发就结束了</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code></pre></div><h2 id=三构建插件>三、构建插件</h2><div class=code-playground data-language=bash><div><pre><code class=language-bash>pnpm run build</code></pre></div></div><h2 id=四在-jsd-中运行插件>四、在 jsd 中运行插件</h2><p>在菜单中，选择<kbd>插件</kbd> ><kbd>插件开发</kbd> 顶部会出现你创建的插件，如果没有，就在 <kbd>通过 manifest 导入插件</kbd>（通过即时设计创建的插件，会自动生成这个文件）</p><p>现在插件的开发就结束了</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Webpack：前端项目的"搬运工"</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/do_you_really_need_a_designer/><span>作为独立开发者，你真的需要设计师吗？</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

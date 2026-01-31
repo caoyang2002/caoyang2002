@@ -104,38 +104,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -189,38 +157,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -437,38 +373,6 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -501,38 +405,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -769,38 +641,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -836,38 +676,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

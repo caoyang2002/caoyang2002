@@ -109,38 +109,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -177,38 +145,6 @@ for order in orders {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -436,38 +372,6 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -506,38 +410,6 @@ fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -769,38 +641,6 @@ struct Person {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -848,38 +688,6 @@ fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: 
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1134,38 +942,6 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -1202,38 +978,6 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1372,38 +1116,6 @@ let s2 = s1; // 所有权从s1转移到s2
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1647,38 +1359,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div&gt;
@@ -1705,38 +1385,6 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1864,38 +1512,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2132,38 +1748,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2199,38 +1783,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2474,38 +2026,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -2529,38 +2049,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2683,38 +2171,6 @@ Done. Now run:
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

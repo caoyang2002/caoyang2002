@@ -104,38 +104,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="python"&gt;
@@ -267,38 +235,6 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="javascript"&gt;
@@ -328,38 +264,6 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -592,54 +496,16 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="jsx"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-jsx"&gt;// React函数式组件
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
 const Component = ({ data }) =&amp;gt; {
  const [state, setState] = useState(initialState);
  const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
  
  return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
 };&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
@@ -750,54 +616,16 @@ const Component = ({ data }) =&amp;gt; {
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="vue"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
 &amp;lt;script setup&amp;gt;
 import { ref, computed } from &amp;#39;vue&amp;#39;
 
 const data = ref(initialData)
 const derivedValue = computed(() =&amp;gt; compute(data.value))
 &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
@@ -811,38 +639,6 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1086,38 +882,6 @@ function toggleUserStatus(status) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -1147,38 +911,6 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1311,38 +1043,6 @@ impl Closure {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1586,38 +1286,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div&gt;
@@ -1644,38 +1312,6 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1803,38 +1439,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2071,38 +1675,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2138,38 +1710,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2412,38 +1952,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="cpp"&gt;
@@ -2469,38 +1977,6 @@ buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2723,38 +2199,6 @@ type UserService interface {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -2782,38 +2226,6 @@ repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3050,38 +2462,6 @@ type User struct {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -3126,38 +2506,6 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3381,38 +2729,6 @@ project/
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -3441,38 +2757,6 @@ var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3702,38 +2986,6 @@ type UserService interface {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -3862,38 +3114,6 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="go"&gt;
@@ -3925,38 +3145,6 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

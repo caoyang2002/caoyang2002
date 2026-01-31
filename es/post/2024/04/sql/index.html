@@ -41,26 +41,6 @@ DDL语句	 数据定义语言
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -70,6 +50,10 @@ DDL语句	 数据定义语言
 
 
  
+
+
+
+     
 
 
 
@@ -82,10 +66,6 @@ DDL语句	 数据定义语言
 
 
  
-
-
-
-     
 
 
 
@@ -129,18 +109,6 @@ DDL语句	 数据定义语言
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -152,9 +120,7 @@ DDL语句	 数据定义语言
 
 
 
-    
-    
-        CREATE TABLE 表名(
+    CREATE TABLE 表名(
    列名1 类型[长度] [DEFAULT 默认值] [约束条件]
    列名2 类型
    ……
@@ -167,10 +133,6 @@ CREATE TABLE userinfo(
    nickname VARCHAR(32)
    age INT(3)
 );
-    
-
-    
-    
 
 
 查看当前数据库创建的所有表
@@ -211,7 +173,7 @@ CREATE TABLE 表名( 列名1 类型[长度] [DEFAULT 默认值] [约束条件] �
 <code>DROP DATABASE 数据库名</code>
 <code>DROP DATABASE mydatabase</code></p><p>使用数据库
 <code>USE 数据库名</code>
-<code>USE mydatabase</code></p><h1 id=ddl语句-数据定义语言>DDL语句 数据定义语言</h1><p>创建表</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE TABLE 表名(
+<code>USE mydatabase</code></p><h1 id=ddl语句-数据定义语言>DDL语句 数据定义语言</h1><p>创建表</p><div><pre><code class=language-sql data-lang=sql>CREATE TABLE 表名(
    列名1 类型[长度] [DEFAULT 默认值] [约束条件]
    列名2 类型
    ……
@@ -223,7 +185,7 @@ CREATE TABLE userinfo(
    password VARCHAR(32)
    nickname VARCHAR(32)
    age INT(3)
-);</code></pre></div></div><p>查看当前数据库创建的所有表
+);</code></pre></div><p>查看当前数据库创建的所有表
 <code>SHOW TABLES;</code></p><p>查看表的详细信息
 <code>SHOW CREATE TABLE 表名</code>
 <code>SHOW CREATE TABLE table;</code></p><p>查看表结构
@@ -257,9 +219,9 @@ CREATE TABLE userinfo(
 <code>SHOW DATABASE mydb</code></p><p>查询表的部分所有字段
 <code>SELECT 字段名1[字段名2，字段名3，... 或 *] FROM 表名</code>
 <code>SELECT * FROM user</code></p><p>查看emp表的特定的字段
-<code>SELECT name,job FROM emp</code></p><ul><li>WHERE字句（添加过滤条件，查询满足条件的）<div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,job,sal
+<code>SELECT name,job FROM emp</code></p><ul><li>WHERE字句（添加过滤条件，查询满足条件的）<div><pre><code class=language-sql data-lang=sql>SELECT name,job,sal
 FROM emp
-WHERE sal&gt;1000;</code></pre></div></div>连接多个条件
+WHERE sal&gt;1000;</code></pre></div>连接多个条件
 <code>AND、OR</code></li></ul><p>值在列表中
 <code>IN(列表) IN(emp)</code></p><p>区间
 <code>BETWWEEN 2000 AND 3000</code></p><p>去重
@@ -290,7 +252,7 @@ WHERE sal&gt;1000;</code></pre></div></div>连接多个条件
 <code>DROP DATABASE db2;</code></p><p>使用数据库
 <code>USE 数据库名字</code>
 <code>USE mydb;</code></p><h1 id=表相关的操作>表相关的操作</h1><blockquote><p>（列：字段，是一组数据中各属性信息）
-（行：记录，一条记录保存一组数据）</p></blockquote><h1 id=ddl语句>DDL语句</h1><blockquote><p>（数据定义语言：用来操作数据库对象的）（数据库对象：表、视图、索引都属于数据库对象）</p></blockquote><p>创建表</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE TABLE 表名(
+（行：记录，一条记录保存一组数据）</p></blockquote><h1 id=ddl语句>DDL语句</h1><blockquote><p>（数据定义语言：用来操作数据库对象的）（数据库对象：表、视图、索引都属于数据库对象）</p></blockquote><p>创建表</p><div><pre><code class=language-sql data-lang=sql>CREATE TABLE 表名(
   列名1 类型[(长度)] [DEFAULT 默认值] [约束条件],
 	列名2 类型...
 )[CHARSET=UTF8/GBK]
@@ -301,11 +263,11 @@ CREATE TABLE userinfo(
     password VARCHAR(32),
     nickname VARCHAR(32),
     age INT(3)
-);</code></pre></div></div><blockquote><p>数字的长度表示位数，VACHAR的长度表示最多占用的字节数</p></blockquote><hr><hr><h1 id=插入数据>插入数据</h1><p><code>INSERT INTO 表名[(字段1,字段2...)] VALUES (字段1的值,字段2的值...)</code></p><p><code>INSERT INTO person(name,age) VALUES ('张三',22);</code>
+);</code></pre></div><blockquote><p>数字的长度表示位数，VACHAR的长度表示最多占用的字节数</p></blockquote><hr><hr><h1 id=插入数据>插入数据</h1><p><code>INSERT INTO 表名[(字段1,字段2...)] VALUES (字段1的值,字段2的值...)</code></p><p><code>INSERT INTO person(name,age) VALUES ('张三',22);</code>
 <code>INSERT INTO person(age,name) VALUES (27,'赵六'); # 对应即可</code></p><p>未指定的列插入都是列的默认值，当创建表时没有为列声明特定的默认值时，列的默认值为null</p><p><code>INSERT INTO person(name) VALUES ('李四');</code></p><p>字段名可以忽略不写，此时为全列插入，即：VALUES需要指定每一列的值，且顺序、个数、类型必须与表相同</p><p><code>INSERT INTO person VALUES ('王五',24);</code></p><p>查看person表中的所有数据</p><p><code>SELECT * FROM person;</code></p><p>修改表数据操作: UPDATE语句</p><p><code>UPDATE 表名 STE 字段名1=新值1[字段2=新值2...][WHERE 过滤条件]</code></p><p><code>UPDATE person SET age=23 WHERE name='李四';</code></p><p>WHERE 中常用的条件: =,>,&lt;,>=,&lt;=,&lt;>不等于（!= 不是所有数据库都支持）</p><p><code>UPDATE person SET age=25 WHERE age>50;</code></p><p><code>UPDATE person SET age=age+1 ;</code></p><p><code>UPDATE person</code>
 <code>SET name='李老四',age=55</code>
 <code>WHERE age=24;</code></p><p>通常修改语句要添加WHERE子句，用于添加过滤条件来定位要修改的记录，不添加WHERE子句则是全表所有记录都修改</p><p><code>UPDATE person SET age=55;</code></p><h1 id=删除数据>删除数据</h1><p><code>DELETE FROM 表名 [WHERE 过滤条件]</code></p><p>注意！！！不添加WHERE条件则是全发表删除！！！</p><p><code>DELETE FROM person WHERE name='李老四';</code></p><p><code>UPDATE person SET age=20 WHERE name='张三';</code>
-<code>DELETE FROM person WHERE age>25; #删除年龄大于25岁的人</code></p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE DATABASE day1db CHARSET=UTF8;
+<code>DELETE FROM person WHERE age>25; #删除年龄大于25岁的人</code></p><div><pre><code class=language-sql data-lang=sql>CREATE DATABASE day1db CHARSET=UTF8;
 USE day1db;
 CREATE TABLE t_hero(
     name VARCHAR(32)
@@ -330,9 +292,9 @@ DROP TABLE hero;
 DROP DATABASE  day1db;
 USE empdb;
 SELECT * FROM emp;
-USE mydb;</code></pre></div></div><h1 id=数据类型>数据类型</h1><h1 id=数字类型>数字类型</h1><ul><li>整数: INT(m)和BIGINT(m) m表示的是长度 例如:m=5,存数字18,实际存储00018</li><li>浮点数:DOUBLE(m,n) m表示整体数字长度,n表示小数位 例如:DOUBLE(5,3) 99.999 （实际插入数据时，当精度超过可保存范围时，会四舍五入）</li></ul><h1 id=字符类型>字符类型</h1><ul><li>CHAR(n):定长字符串，每条记录实际占用的字节空间是定长的，不足的部分补充空字符来满足长度要求
+USE mydb;</code></pre></div><h1 id=数据类型>数据类型</h1><h1 id=数字类型>数字类型</h1><ul><li>整数: INT(m)和BIGINT(m) m表示的是长度 例如:m=5,存数字18,实际存储00018</li><li>浮点数:DOUBLE(m,n) m表示整体数字长度,n表示小数位 例如:DOUBLE(5,3) 99.999 （实际插入数据时，当精度超过可保存范围时，会四舍五入）</li></ul><h1 id=字符类型>字符类型</h1><ul><li>CHAR(n):定长字符串，每条记录实际占用的字节空间是定长的，不足的部分补充空字符来满足长度要求
 优点:查询速度快 缺点:浪费磁盘空间</li><li>VARCHAR(n):变长字符串，最多存n指定的字节数对应的字符，实际保存时，用多少占多少 （推荐）
-优点:节省磁盘空间 缺点:查询速度慢</li><li>TEXT(n):可变长字符串，最大65535</li></ul><p>日期时间类型</p><ul><li>DATE:保存年月日</li><li>TIME:保存十分秒</li><li>DATETIME:保存年月日时分秒</li><li>TIMESTAMP:时间戳，记录UTC时间，从1970-01-01 00:00:00到表示的时间之间经过的毫秒</li></ul><div class=code-playground data-language=sql><div><pre><code class=language-sql>DROP TABLE userinfo;
+优点:节省磁盘空间 缺点:查询速度慢</li><li>TEXT(n):可变长字符串，最大65535</li></ul><p>日期时间类型</p><ul><li>DATE:保存年月日</li><li>TIME:保存十分秒</li><li>DATETIME:保存年月日时分秒</li><li>TIMESTAMP:时间戳，记录UTC时间，从1970-01-01 00:00:00到表示的时间之间经过的毫秒</li></ul><div><pre><code class=language-sql data-lang=sql>DROP TABLE userinfo;
 CREATE TABLE userinfo(
     id INT,
     name VARCHAR(30),
@@ -345,10 +307,10 @@ INSERT INTO userinfo VALUES (2,&#39;李四&#39;,&#39;1999-05-16&#39;,6500.23);
 INSERT INTO userinfo VALUES (3,&#39;王五&#39;,&#39;06:12:45&#39;,9700.342);
 DELETE FROM userinfo;
 SELECT * FROM userinfo;
-DELETE FROM userinfo WHERE name=&#39;王五&#39;;</code></pre></div></div><p>约束:约束是为表中某个字段添加特定的限制条件，只有符合条件的记录才可以保存
+DELETE FROM userinfo WHERE name=&#39;王五&#39;;</code></pre></div><p>约束:约束是为表中某个字段添加特定的限制条件，只有符合条件的记录才可以保存
 主键约束:该字段非空且唯一，用该字段的值唯一表示一条记录
 非空约束:该字段的值不允许为空
-外键约束:实际开发中几乎不用</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE TABLE student(
+外键约束:实际开发中几乎不用</p><div><pre><code class=language-sql data-lang=sql>CREATE TABLE student(
     id INT AUTO_INCREMENT PRIMARY KEY ,# AUTO_INCREMENT 自增
     name VARCHAR(30) NOT NULL ,
     age INT(3),
@@ -359,7 +321,7 @@ SELECT * FROM student;
 
 INSERT INTO student VALUES (NULL,NULL,55,&#39;m&#39;);
 INSERT INTO student VALUES (NULL,&#39;刘桑&#39;,55,&#39;m&#39;);
-INSERT INTO student(name,age,gender) VALUES (&#39;克晶&#39;,18,&#39;f&#39;);</code></pre></div></div><p>不允许</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>INSERT INTO student(age,gender) VALUES (18,&#39;f&#39;);
+INSERT INTO student(name,age,gender) VALUES (&#39;克晶&#39;,18,&#39;f&#39;);</code></pre></div><p>不允许</p><div><pre><code class=language-sql data-lang=sql>INSERT INTO student(age,gender) VALUES (18,&#39;f&#39;);
 
 INSERT INTO student(name,age,gender) VALUES (&#39;传奇&#39;,22,NULL);
 INSERT INTO student(name,age) VALUES (&#39;国斌&#39;,33);
@@ -377,10 +339,10 @@ CREATE TABLE teacher(
 INSERT INTO teacher VALUES (1,&#39;张三&#39;,22,&#39;F&#39;);
 INSERT INTO teacher VALUES (1,&#39;李四&#39;,23,&#39;M&#39;);# 不可重复
 INSERT INTO teacher VALUES (NULL,&#39;李四&#39;,23,&#39;M&#39;);
-SELECT * FROM teacher;</code></pre></div></div><h1 id=null-要作为条件要使用is-null-或-is-not-null>NULL 要作为条件，要使用IS NULL 或 IS NOT NULL</h1><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT * FROM student WHERE gender IS NULL;
-SELECT * FROM student WHERE gender IS NOT NULL;</code></pre></div></div><h1 id=dql语句--数据查询语句>DQL语句 数据查询语句</h1><h2 id=基本语法>基本语法:</h2><p><code>SELECT 字段名1[字段名2，字段名2，...或 * ] FROM 表名</code></p><p><code>USE empdb;</code></p><p>查看emp表的所有字段</p><p><code>SELECT * FROM emp;</code>
+SELECT * FROM teacher;</code></pre></div><h1 id=null-要作为条件要使用is-null-或-is-not-null>NULL 要作为条件，要使用IS NULL 或 IS NOT NULL</h1><div><pre><code class=language-sql data-lang=sql>SELECT * FROM student WHERE gender IS NULL;
+SELECT * FROM student WHERE gender IS NOT NULL;</code></pre></div><h1 id=dql语句--数据查询语句>DQL语句 数据查询语句</h1><h2 id=基本语法>基本语法:</h2><p><code>SELECT 字段名1[字段名2，字段名2，...或 * ] FROM 表名</code></p><p><code>USE empdb;</code></p><p>查看emp表的所有字段</p><p><code>SELECT * FROM emp;</code>
 查看特定的字段
-<code>SELECT name,job,hiredate FROM emp;</code></p><h2 id=where子句用来添加过滤条件此时可以仅将满足条件的记录查询出来>WHERE子句，用来添加过滤条件，此时可以仅将满足条件的记录查询出来</h2><p>比较运算符:=,&lt;,>,>=,&lt;=,&lt;></p><p>查看工资大于1000的员工的名字，职位，工资</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,job,sal
+<code>SELECT name,job,hiredate FROM emp;</code></p><h2 id=where子句用来添加过滤条件此时可以仅将满足条件的记录查询出来>WHERE子句，用来添加过滤条件，此时可以仅将满足条件的记录查询出来</h2><p>比较运算符:=,&lt;,>,>=,&lt;=,&lt;></p><p>查看工资大于1000的员工的名字，职位，工资</p><div><pre><code class=language-sql data-lang=sql>SELECT name,job,sal
 FROM emp
 WHERE sal&gt;1000;
 
@@ -390,7 +352,7 @@ WHERE job&lt;&gt;&#39;人事&#39;;
 
 SELECT name,job,sal,dept_id
 FROM emp
-WHERE dept_id=2;</code></pre></div></div><h2 id=使用and和or来连接多个条件>使用AND和OR来连接多个条件</h2><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal,job,dept_id
+WHERE dept_id=2;</code></pre></div><h2 id=使用and和or来连接多个条件>使用AND和OR来连接多个条件</h2><div><pre><code class=language-sql data-lang=sql>SELECT name,sal,job,dept_id
 FROM emp
 WHERE dept_id=2 AND sal&gt;1000;
 
@@ -404,15 +366,15 @@ WHERE job=&#39;人事&#39; OR sal&gt;1000 AND job=&#39;销售&#39;;
 
 SELECT name,sal,job
 FROM emp
-WHERE (job=&#39;人事&#39; OR job=&#39;销售&#39;) AND sal&gt;1000; # and优先级大于or,可以通过（）提高优先级</code></pre></div></div><h2 id=in列表-值在列表中等于列表中的其中之一>IN(列表) 值在列表中（等于列表中的其中之一）</h2><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal,job,dept_id
+WHERE (job=&#39;人事&#39; OR job=&#39;销售&#39;) AND sal&gt;1000; # and优先级大于or,可以通过（）提高优先级</code></pre></div><h2 id=in列表-值在列表中等于列表中的其中之一>IN(列表) 值在列表中（等于列表中的其中之一）</h2><div><pre><code class=language-sql data-lang=sql>SELECT name,sal,job,dept_id
 FROM emp
 WHERE job IN (&#39;人事&#39;,&#39;销售&#39;);
 
 SELECT name,sal,job,dept_id
 FROM emp
-WHERE job NOT IN (&#39;人事&#39;,&#39;销售&#39;);</code></pre></div></div><h2 id=区间>区间</h2><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal,job
+WHERE job NOT IN (&#39;人事&#39;,&#39;销售&#39;);</code></pre></div><h2 id=区间>区间</h2><div><pre><code class=language-sql data-lang=sql>SELECT name,sal,job
 FROM emp
-WHERE sal BETWEEN 2000 AND 3000;</code></pre></div></div><h2 id=去重>去重</h2><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT DISTINCT job FROM emp;</code></pre></div></div><p>多列去重时，就是去除指定这些列的值的组合有重复的行</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT DISTINCT job,dept_id FROM emp;
+WHERE sal BETWEEN 2000 AND 3000;</code></pre></div><h2 id=去重>去重</h2><div><pre><code class=language-sql data-lang=sql>SELECT DISTINCT job FROM emp;</code></pre></div><p>多列去重时，就是去除指定这些列的值的组合有重复的行</p><div><pre><code class=language-sql data-lang=sql>SELECT DISTINCT job,dept_id FROM emp;
 
 
 SELECT *
@@ -433,7 +395,7 @@ WHERE sal NOT IN (2000,5000);
 
 SELECT DISTINCT job
 FROM emp
-WHERE dept_id=1;</code></pre></div></div><h2 id=模糊查询-like>模糊查询: LIKE</h2><h3 id=like-中两个通配符_和>LIKE 中两个通配符:_和%</h3><ul><li>%:表示任意的一个字符(0-多个)</li><li>_:表示一个字符</li></ul><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal,job
+WHERE dept_id=1;</code></pre></div><h2 id=模糊查询-like>模糊查询: LIKE</h2><h3 id=like-中两个通配符_和>LIKE 中两个通配符:_和%</h3><ul><li>%:表示任意的一个字符(0-多个)</li><li>_:表示一个字符</li></ul><div><pre><code class=language-sql data-lang=sql>SELECT name,sal,job
 FROM emp
 WHERE name LIKE &#39;孙%&#39;;
 
@@ -447,7 +409,7 @@ WHERE name LIKE &#39;__精&#39;;
 
 SELECT name,sal,job
 FROM emp
-WHERE name LIKE &#39;_骨%&#39;;</code></pre></div></div><p>总结:</p><ul><li>%X%:字符串中包含&rsquo;X'</li><li>%X:字符串以X结尾</li><li>X%:字符串以X开头</li><li>_X%:字符串第二个字符是X</li><li><em>%X</em>:倒数第二个字符是X</li><li>X%Y:字符串以X开头Y结尾</li><li>X_Y:字符串只有三个字，第一个是X，第三个是Y</li></ul><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name
+WHERE name LIKE &#39;_骨%&#39;;</code></pre></div><p>总结:</p><ul><li>%X%:字符串中包含&rsquo;X'</li><li>%X:字符串以X结尾</li><li>X%:字符串以X开头</li><li>_X%:字符串第二个字符是X</li><li><em>%X</em>:倒数第二个字符是X</li><li>X%Y:字符串以X开头Y结尾</li><li>X_Y:字符串只有三个字，第一个是X，第三个是Y</li></ul><div><pre><code class=language-sql data-lang=sql>SELECT name
 FROM emp
 WHERE name LIKE &#39;猪%&#39;;
 
@@ -469,7 +431,7 @@ WHERE job LIKE &#39;_售%&#39;;
 
 SELECT *
 FROM emp
-WHERE dept_id IN (1,2) AND job LIKE &#39;市%&#39;;</code></pre></div></div><h3 id=order-by-子句根据指定的字段排序查询结果集该子句只能放在查询语句的最后一个子句上>ORDER BY 子句，根据指定的字段排序查询结果集，该子句只能放在查询语句的最后一个子句上</h3><p>默认升序 DESC降序</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal
+WHERE dept_id IN (1,2) AND job LIKE &#39;市%&#39;;</code></pre></div><h3 id=order-by-子句根据指定的字段排序查询结果集该子句只能放在查询语句的最后一个子句上>ORDER BY 子句，根据指定的字段排序查询结果集，该子句只能放在查询语句的最后一个子句上</h3><p>默认升序 DESC降序</p><div><pre><code class=language-sql data-lang=sql>SELECT name,sal
 FROM emp
 ORDER BY sal;
 
@@ -479,7 +441,7 @@ ORDER BY hiredate;
 
 SELECT name,sal
 FROM emp
-ORDER BY sal DESC;</code></pre></div></div><p>按照多字段排序，在前的优先，可以单独设置升序和降序</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,dept_id,sal
+ORDER BY sal DESC;</code></pre></div><p>按照多字段排序，在前的优先，可以单独设置升序和降序</p><div><pre><code class=language-sql data-lang=sql>SELECT name,dept_id,sal
 FROM emp
 ORDER BY dept_id,sal DESC;
 
@@ -504,11 +466,11 @@ WHERE job IN (&#39;人事&#39;,&#39;程序员&#39;) AND sal&gt;2500;
 SELECT name,job,sal
 FROM emp
 WHERE job NOT IN (&#39;CEO&#39;) AND sal&gt;2000
-ORDER BY sal DESC ;</code></pre></div></div><h1 id=分页查询>分页查询</h1><p>将满足查询条件的数据分段分批查询出来。这可以减少不必要的系统开销。</p><p>LIMITE 跳过的记录数，显示的记录数</p><p>LIMITE (页数-1)*美页显示的记录数，每页显示的记录数</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal
+ORDER BY sal DESC ;</code></pre></div><h1 id=分页查询>分页查询</h1><p>将满足查询条件的数据分段分批查询出来。这可以减少不必要的系统开销。</p><p>LIMITE 跳过的记录数，显示的记录数</p><p>LIMITE (页数-1)*美页显示的记录数，每页显示的记录数</p><div><pre><code class=language-sql data-lang=sql>SELECT name,sal
 FROM emp
-ORDER BY sal LIMIT 3,3;</code></pre></div></div><h2 id=查询的字段可以使用表达式>查询的字段可以使用表达式</h2><p><code>SELECT name,sal,sal*12 FROM emp;</code></p><h2 id=查询时也可以使用函数的结果作为字段>查询时也可以使用函数的结果作为字段</h2><p><code>SELECT CONCAT(name,'的职位是',job) FROM emp;</code></p><p><code>SELECT CONCAT(name,'的奖金是',comm) FROM emp;</code></p><p>数字与NULL运算，结果就是NULL</p><p><code>SELECT sal,comm,sal+comm</code>
+ORDER BY sal LIMIT 3,3;</code></pre></div><h2 id=查询的字段可以使用表达式>查询的字段可以使用表达式</h2><p><code>SELECT name,sal,sal*12 FROM emp;</code></p><h2 id=查询时也可以使用函数的结果作为字段>查询时也可以使用函数的结果作为字段</h2><p><code>SELECT CONCAT(name,'的职位是',job) FROM emp;</code></p><p><code>SELECT CONCAT(name,'的奖金是',comm) FROM emp;</code></p><p>数字与NULL运算，结果就是NULL</p><p><code>SELECT sal,comm,sal+comm</code>
 <code>FROM emp;</code></p><p>NVL函数 用来替换NULL值</p><p>NVL(arg1,arg2) 当arg1不为NULL时，则函数返回arg1的值，如果arg1为NULL在返回arg2的值</p><p><code>SELECT name,sal,NVL(comm,0) FROM emp;</code></p><h2 id=别名字段和表>别名（字段和表）</h2><p>为字段定义别名:</p><p>1.隐藏实际表字段名</p><p>2.为计算表达式或函数的结果值作为字段时定义可读性更好的字段名</p><p><code>SELECT name ename,sal salary FROM emp;</code>
-<code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=支持的语法>支持的语法</h2><p>字段名 别名</p><p><code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=字段名-as-别名>字段名 as 别名</h2><p><code>SELECT name,sal*12 as salary FROM emp;</code></p><h2 id=字段名-as-别名-1>字段名 as &lsquo;别名&rsquo;</h2><p><code>SELECT name,sal*12 as 'salary' FROM emp;</code></p><h2 id=字段名-as-别名-2>字段名 as &ldquo;别名&rdquo;</h2><p><code>SELECT name,sal*12 as "salary" FROM emp;</code></p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT *
+<code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=支持的语法>支持的语法</h2><p>字段名 别名</p><p><code>SELECT name,sal*12 salary FROM emp;</code></p><h2 id=字段名-as-别名>字段名 as 别名</h2><p><code>SELECT name,sal*12 as salary FROM emp;</code></p><h2 id=字段名-as-别名-1>字段名 as &lsquo;别名&rsquo;</h2><p><code>SELECT name,sal*12 as 'salary' FROM emp;</code></p><h2 id=字段名-as-别名-2>字段名 as &ldquo;别名&rdquo;</h2><p><code>SELECT name,sal*12 as "salary" FROM emp;</code></p><div><pre><code class=language-sql data-lang=sql>SELECT *
 FROM emp
 WHERE dept_id=3 AND sal&gt;1500;
 
@@ -536,7 +498,7 @@ WHERE sal&gt;2000;
 
 SELECT sal
 FROM emp
-ORDER BY sal LIMIT 6,2;</code></pre></div></div><p>聚合函数（多行函数）: 用来将多条记录统计为一条记录 (忽略NULL值)</p><p>MIN():求最小值</p><p>MAX():求最大值</p><p>COUNT():统计记录数</p><p>AVG():求平均值</p><p>SUM():求和</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT MIN(sal) 最低工资,MAX(sal) 最高工资,AVG(sal) 平均工资,SUM(sal) 工资总和 FROM emp;
+ORDER BY sal LIMIT 6,2;</code></pre></div><p>聚合函数（多行函数）: 用来将多条记录统计为一条记录 (忽略NULL值)</p><p>MIN():求最小值</p><p>MAX():求最大值</p><p>COUNT():统计记录数</p><p>AVG():求平均值</p><p>SUM():求和</p><div><pre><code class=language-sql data-lang=sql>SELECT MIN(sal) 最低工资,MAX(sal) 最高工资,AVG(sal) 平均工资,SUM(sal) 工资总和 FROM emp;
 
 
 SELECT AVG(sal)
@@ -558,8 +520,8 @@ WHERE job LIKE &#39;%销售%&#39;;
 
 SELECT MAX(sal) 最高工资, MIN(sal) 最低工资
 FROM emp
-WHERE dept_id=2;</code></pre></div></div><p>GROUP BY子句，分组
-GROUP BY 也是为统计服务的，所以是搭配在聚合函数上使用的</p><p>SELECT子句中不在聚合函数中的其他字段必须出现GROUP BY子句中</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT AVG(sal),dept_id FROM emp GROUP BY dept_id;
+WHERE dept_id=2;</code></pre></div><p>GROUP BY子句，分组
+GROUP BY 也是为统计服务的，所以是搭配在聚合函数上使用的</p><p>SELECT子句中不在聚合函数中的其他字段必须出现GROUP BY子句中</p><div><pre><code class=language-sql data-lang=sql>SELECT AVG(sal),dept_id FROM emp GROUP BY dept_id;
 
 SELECT MAX(sal),job FROM emp GROUP BY job;
 
@@ -581,10 +543,10 @@ SELECT AVG(sal) avg,dept_id
 FROM emp
 GROUP BY dept_id
 ORDER BY avg DESC
-LIMIT 0,1;</code></pre></div></div><p>聚合函数不能写在WHERE子句中</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT AVG(sal) avg,dept_id
+LIMIT 0,1;</code></pre></div><p>聚合函数不能写在WHERE子句中</p><div><pre><code class=language-sql data-lang=sql>SELECT AVG(sal) avg,dept_id
 FROM emp
 WHERE AVG(sal)&gt;2000
-ORDER BY dept_id;</code></pre></div></div><p>HAVING子句 HAVING子句是跟在GROUP BY子句之后，对分组统计出的结果再进行过滤的</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT AVG(sal),dept_id
+ORDER BY dept_id;</code></pre></div><p>HAVING子句 HAVING子句是跟在GROUP BY子句之后，对分组统计出的结果再进行过滤的</p><div><pre><code class=language-sql data-lang=sql>SELECT AVG(sal),dept_id
 FROM emp
 GROUP BY dept_id
 HAVING AVG(sal)&gt;2000;
@@ -599,7 +561,7 @@ SELECT SUM(sal) sal,dept_id
 FROM emp
 WHERE manager IS NOT NULL
 GROUP BY dept_id
-HAVING SUM(sal)&gt;5400;</code></pre></div></div><h3 id=嵌套在其他sql语句中的查询语句被称作子查询>嵌套在其他SQl语句中的查询语句被称作“子查询”</h3><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT name,sal
+HAVING SUM(sal)&gt;5400;</code></pre></div><h3 id=嵌套在其他sql语句中的查询语句被称作子查询>嵌套在其他SQl语句中的查询语句被称作“子查询”</h3><div><pre><code class=language-sql data-lang=sql>SELECT name,sal
 FROM emp
 HAVING sal&gt; (SELECT AVG(sal) FROM emp);
 
@@ -626,7 +588,7 @@ WHERE sal&gt;ALL(SELECT sal FROM emp WHERE dept_id IN (2,3));
 
 SELECT *
 FROM emp
-WHERE sal&gt;ANY(SELECT sal FROM emp WHERE dept_id IN (2,3));</code></pre></div></div><h3 id=子查询分类按查询结果集分类>子查询分类（按查询结果集分类）:</h3><p>单行单列查询（结果集只有一个值）
+WHERE sal&gt;ANY(SELECT sal FROM emp WHERE dept_id IN (2,3));</code></pre></div><h3 id=子查询分类按查询结果集分类>子查询分类（按查询结果集分类）:</h3><p>单行单列查询（结果集只有一个值）
 多行单列子查询（结果集有多个值）
 多行多列子查询（结果集是一个表）</p><p>单行单列查询通常在过滤条件中使用
 单行单列可以配合>,>=,=,&lt;,&lt;=使用
@@ -635,7 +597,7 @@ WHERE sal&gt;ANY(SELECT sal FROM emp WHERE dept_id IN (2,3));</code></pre></div>
 &lt;ALL(子查询)
 ANY(子查询)
 &lt;ANY(子查询)：
-IN(子查询)：等于子查询结果集中的任意一个值</p></blockquote><p>多行多列子查询（结果通常是一个表），通常就当做一个表，可以跟在FROM子句中，或者跟在DDl语句中，可以基于一个查询结果集创建表。</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE  TABLE emp_dept1
+IN(子查询)：等于子查询结果集中的任意一个值</p></blockquote><p>多行多列子查询（结果通常是一个表），通常就当做一个表，可以跟在FROM子句中，或者跟在DDl语句中，可以基于一个查询结果集创建表。</p><div><pre><code class=language-sql data-lang=sql>CREATE  TABLE emp_dept1
 AS
 SELECT * FROM emp WHERE dept_id=1;
 SELECT * FROM emp_dept1;
@@ -663,13 +625,13 @@ FROM emp_annual_salary
 WHERE aneme LIKE &#39;%精%&#39;;
 
 
-SELECT * FROM dept;</code></pre></div></div><h3 id=关联查询>关联查询</h3><p>查询结果集中的数据来自多张表，而表中的数据之间的对应关系就是关联关系</p><p>两张表就可以产生关联关系了，关联关系分为三类:
+SELECT * FROM dept;</code></pre></div><h3 id=关联查询>关联查询</h3><p>查询结果集中的数据来自多张表，而表中的数据之间的对应关系就是关联关系</p><p>两张表就可以产生关联关系了，关联关系分为三类:
 1:一对一 A表中的1条记录只唯一对应B表中的1条记录
 2:一对多 A表中的1条记录可以对应B表中的多条记录
 3:多对多 A表与B表双向都是一对多时，就是多对多关系。</p><p>关联查询就是基于多张表联合查询数据而形成一个结果集的过程，在关联查询中一个至关重要的点就是关联条件
 原则:N张表关联查询至少要有N-1个连接条件。
 缺失连接条件会产生笛卡尔积，该查询结果集的记录数是关联表中所有记录数乘积的结果，它通常是一个无意义的结果集，要
-尽量避免产生</p><p>关联查询语法:</p><p>SELECT 字段</p><p>FROM 表A，表B[，表C，表D&mldr;]</p><p>WHERE 过滤条件</p><p>AND 连接条件</p><p>注意:连接条件必须与过滤条件同时成立!!</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT *
+尽量避免产生</p><p>关联查询语法:</p><p>SELECT 字段</p><p>FROM 表A，表B[，表C，表D&mldr;]</p><p>WHERE 过滤条件</p><p>AND 连接条件</p><p>注意:连接条件必须与过滤条件同时成立!!</p><div><pre><code class=language-sql data-lang=sql>SELECT *
 FROM emp,dept;
 
 当表中的字段名相同时，我们可以通过给表取别名用&#34;别名.字段名&#34;
@@ -701,7 +663,7 @@ GROUP BY d.loc;
 
 SELECT sal,name
 FROM emp
-WHERE sal&gt;3000;</code></pre></div></div><p>内连接JOIN子句</p><p>SELECT 字段</p><p>FROM A表 a</p><p>JOIN B表</p><p>ON a.xx=b.xx(连接条件)</p><p>JOIN C表 c</p><p>ON c.xxx=b.xxx或c.xxx=a.xxx;</p><p>JOIN&mldr;ON&mldr;</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+WHERE sal&gt;3000;</code></pre></div><p>内连接JOIN子句</p><p>SELECT 字段</p><p>FROM A表 a</p><p>JOIN B表</p><p>ON a.xx=b.xx(连接条件)</p><p>JOIN C表 c</p><p>ON c.xxx=b.xxx或c.xxx=a.xxx;</p><p>JOIN&mldr;ON&mldr;</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
 FROM emp e
 JOIN dept d
 on e.dept_id=d.id;
@@ -720,10 +682,10 @@ INSERT INTO emp(name,dept_id) VALUES (&#39;灭霸&#39;,5);
 SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
 FROM emp e
 JOIN dept d
-ON e.dept_id = d.id</code></pre></div></div><p>如果需要在结果集中列出不满足连接条件的记录时我们需要使用外连接
+ON e.dept_id = d.id</code></pre></div><p>如果需要在结果集中列出不满足连接条件的记录时我们需要使用外连接
 外连接:
 左外连接: 以LEFT JOIN左侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL
-右外连接: 以RIGHT JOIN右侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+右外连接: 以RIGHT JOIN右侧表为主表，其中的记录都要展示，不满足连接条件时来自左侧记录的字段值全部为NULL</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
 FROM emp e
 LEFT JOIN dept d  #此为主表，展示所有，不满足的为NULL
 ON e.dept_id = d.id;
@@ -731,7 +693,7 @@ ON e.dept_id = d.id;
 SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
 FROM dept d
 RIGHT JOIN emp e
-ON d.id = e.dept_id</code></pre></div></div><p>全连接效果，结果集包含满足连接条件的左连接和有连接的所有数据</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
+ON d.id = e.dept_id</code></pre></div><p>全连接效果，结果集包含满足连接条件的左连接和有连接的所有数据</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,e.job,e.manager,e.sal,d.name,d.loc
 FROM emp e
 LEFT JOIN dept d  #此为主表，展示所有，不满足的为NULL
 ON e.dept_id = d.id;
@@ -744,13 +706,13 @@ ON d.id = e.dept_id;
 SELECT e.*,d.*
 FROM emp e
 JOIN dept d on d.id = e.dept_id
-WHERE sal&gt;(SELECT AVG(sal) FROM emp WHERE e.dept_id);</code></pre></div></div><p>查看比本部门平均工资高的员工工资
-1.查看每个部门的平均工资</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>avg_sal
-SELECT AVG(sal) avg_sal,dept_id FROM emp GROUP BY dept_id;</code></pre></div></div><p>2.将子查询结果当做表进行关联</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,e.sal,e.dept_id,a.avg_sal
+WHERE sal&gt;(SELECT AVG(sal) FROM emp WHERE e.dept_id);</code></pre></div><p>查看比本部门平均工资高的员工工资
+1.查看每个部门的平均工资</p><div><pre><code class=language-sql data-lang=sql>avg_sal
+SELECT AVG(sal) avg_sal,dept_id FROM emp GROUP BY dept_id;</code></pre></div><p>2.将子查询结果当做表进行关联</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,e.sal,e.dept_id,a.avg_sal
 FROM emp e,(SELECT AVG(sal) avg_sal,dept_id FROM emp GROUP BY dept_id) a
 WHERE e.dept_id=a.dept_id
 AND e.sal&gt;a.avg_sal;
-SELECT * FROM dept d,emp e WHERE d.id=e.dept_id;</code></pre></div></div><p>1.查看每个地区的平均工资</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT AVG(e.sal) avg_sal,d.loc
+SELECT * FROM dept d,emp e WHERE d.id=e.dept_id;</code></pre></div><p>1.查看每个地区的平均工资</p><div><pre><code class=language-sql data-lang=sql>SELECT AVG(e.sal) avg_sal,d.loc
 FROM emp e
 JOIN dept d
 ON d.id = e.dept_id
@@ -765,12 +727,12 @@ FROM emp e,
             ON d.id = e.dept_id
             GROUP BY d.loc) a,dept d
 WHERE a.loc=d.loc AND d.id=e.dept_id
-AND e.sal&gt;a.avg_sal;</code></pre></div></div><p>1.查看每个员工的工资及其所在的地区</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.sal,d.loc
+AND e.sal&gt;a.avg_sal;</code></pre></div><p>1.查看每个员工的工资及其所在的地区</p><div><pre><code class=language-sql data-lang=sql>SELECT e.sal,d.loc
 FROM emp e,dept d
-WHERE e.dept_id=d.id;</code></pre></div></div><p>2.每个地区平均工资（按照loc字段分组）</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT AVG(e.sal) avg_sal,d.loc
+WHERE e.dept_id=d.id;</code></pre></div><p>2.每个地区平均工资（按照loc字段分组）</p><div><pre><code class=language-sql data-lang=sql>SELECT AVG(e.sal) avg_sal,d.loc
 FROM emp e,dept d
 WHERE e.dept_id=d.id
-GROUP BY d.loc;</code></pre></div></div><p>3.关联三张表查询:员工表-部门表-（第二步子查询的结果作为表）</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>
+GROUP BY d.loc;</code></pre></div><p>3.关联三张表查询:员工表-部门表-（第二步子查询的结果作为表）</p><div><pre><code class=language-sql data-lang=sql>
 SELECT e.name,e.sal,a.avg_sal,d.loc
 FROM emp e,dept d,(SELECT  AVG(e.sal) avg_sal,d.loc
                    FROM emp e,dept d
@@ -778,7 +740,7 @@ FROM emp e,dept d,(SELECT  AVG(e.sal) avg_sal,d.loc
                    GROUP BY d.loc) a
 WHERE e.dept_id=d.id
 AND d.loc=a.loc
-AND e.sal&gt;a.avg_sal;</code></pre></div></div><p>内连接写法</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,e.sal,a.avg_sal,d.loc
+AND e.sal&gt;a.avg_sal;</code></pre></div><p>内连接写法</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,e.sal,a.avg_sal,d.loc
 FROM emp e
 JOIN dept d
 ON e.dept_id=d.id
@@ -787,27 +749,27 @@ JOIN (SELECT  AVG(e.sal) avg_sal,d.loc
                    WHERE e.dept_id=d.id
                    GROUP BY d.loc) a
 ON d.loc=a.loc
-WHERE e.sal&gt;a.avg_sal;</code></pre></div></div><p>查看每个地区的最高工资是谁</p><p>查看最高工资</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT MAX(sal)
+WHERE e.sal&gt;a.avg_sal;</code></pre></div><p>查看每个地区的最高工资是谁</p><p>查看最高工资</p><div><pre><code class=language-sql data-lang=sql>SELECT MAX(sal)
 FROM emp
 
 SELECT MAX(sal),loc,e.name
 FROM emp e
 JOIN dept d
 ON e.dept_id = d.id  # 将部门关联起来
-GROUP BY loc; # 按地区分组</code></pre></div></div><p>内连接
-自连接的设计是为了保存同样的一组数字卡的数据，之间又存在上下级关系时（树状结构数据）</p><p>查看每个员工和他的领导是谁</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name,m.name
+GROUP BY loc; # 按地区分组</code></pre></div><p>内连接
+自连接的设计是为了保存同样的一组数字卡的数据，之间又存在上下级关系时（树状结构数据）</p><p>查看每个员工和他的领导是谁</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name,m.name
 FROM emp e,emp m
 WHERE e.manager=m.id
 
 SELECT e.name,m.name
 FROM emp e
 JOIN emp m
-ON e.manager=m.id;</code></pre></div></div><p>查看刘备的手下</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT * FROM emp;
+ON e.manager=m.id;</code></pre></div><p>查看刘备的手下</p><div><pre><code class=language-sql data-lang=sql>SELECT * FROM emp;
 SELECT e.name name,m.name manager
 FROM emp e
 JOIN emp m
 ON e.manager=m.id
-WHERE m.name=&#39;刘备&#39;;</code></pre></div></div><p>查看孙悟空的领导</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>SELECT e.name name,m.name manager,m.sal
+WHERE m.name=&#39;刘备&#39;;</code></pre></div><p>查看孙悟空的领导</p><div><pre><code class=language-sql data-lang=sql>SELECT e.name name,m.name manager,m.sal
 FROM emp e
 JOIN emp m
 ON e.manager=m.id
@@ -848,7 +810,7 @@ DESC class;
 
 DROP TABLE student;
 DROP TABLE class;
-SELECT * FROM class;</code></pre></div></div><hr><p>练习</p><ol><li><p>查询工资大于等于3000的员工姓名和工资
+SELECT * FROM class;</code></pre></div><hr><p>练习</p><ol><li><p>查询工资大于等于3000的员工姓名和工资
 SELECT name,sal
 FROM emp
 WHERE sal>=3000;</p></li><li><p>查询1号部门的员工姓名和工作

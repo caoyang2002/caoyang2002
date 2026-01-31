@@ -27,26 +27,6 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 
 
 
- 
-
-
-
-     
-
-
-
- 
-
-
-
-     
-
-
-
- 
-
-
-
      
 
 
@@ -56,6 +36,10 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 
 
  
+
+
+
+     
 
 
 
@@ -68,10 +52,6 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 
 
  
-
-
-
-     
 
 
 
@@ -108,18 +88,6 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 
 
          
-
-
-
- 
-
-
-
- 
-
-
-
-     
 
 
 
@@ -209,10 +177,10 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 {{ $message := .Get 1 }}
 &lt;div class=&#34;notice {{ $type }}&#34;&gt;
     {{ $message | markdownify }}
-&lt;/div&gt;</code></pre></div></div><p>用法：</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown>{{ % notice &#34;warning&#34; &#34;这是一个**警告**&#34; % }}</code></pre></div></div><p>看到<code>markdownify</code>了吗？它能把Markdown转HTML。结合短代码，威力无穷。</p><h2 id=4-数据模板黑科技>4. 数据模板黑科技</h2><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># data/prices.yaml
+&lt;/div&gt;</code></pre></div></div><p>用法：</p><div><pre><code class=language-markdown data-lang=markdown>{{ % notice &#34;warning&#34; &#34;这是一个**警告**&#34; % }}</code></pre></div><p>看到<code>markdownify</code>了吗？它能把Markdown转HTML。结合短代码，威力无穷。</p><h2 id=4-数据模板黑科技>4. 数据模板黑科技</h2><div><pre><code class=language-yaml data-lang=yaml># data/prices.yaml
 basic:
   monthly: 9.99
-  yearly: 99.99</code></pre></div></div><div class=code-playground data-language=go><div><pre><code class=language-go>{{ $yearly := index .Site.Data.prices.basic &#34;yearly&#34; }}
+  yearly: 99.99</code></pre></div><div class=code-playground data-language=go><div><pre><code class=language-go>{{ $yearly := index .Site.Data.prices.basic &#34;yearly&#34; }}
 {{ $monthly := index .Site.Data.prices.basic &#34;monthly&#34; }}
 {{ $savings := sub (mul $monthly 12) $yearly }}
 

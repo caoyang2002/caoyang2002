@@ -104,38 +104,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -173,38 +141,6 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -338,38 +274,6 @@ fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -601,38 +505,6 @@ struct Person {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -680,38 +552,6 @@ fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: 
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -966,38 +806,6 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -1034,38 +842,6 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

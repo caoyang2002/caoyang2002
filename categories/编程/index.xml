@@ -687,38 +687,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -841,38 +809,6 @@
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="bash"&gt;
@@ -898,38 +834,6 @@ go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1151,44 +1055,10 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="yaml"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-yaml"&gt;# 这是最基础的工作流
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
 name: CI
 on: [push] # 事件触发器
 jobs:
@@ -1197,10 +1067,6 @@ jobs:
  steps: # 执行步骤
  - uses: actions/checkout@v2
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>TypeScript: 静态</title><link>https://simons.qzz.io/post/2025/01/typescript_static_types/</link><pubDate>Fri, 24 Jan 2025 13:46:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/typescript_static_types/</guid><description>&lt;h1 id="typescript-静态"&gt;TypeScript: 静态&lt;/h1&gt;
@@ -1212,38 +1078,6 @@ jobs:
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -1368,38 +1202,6 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2236,38 +2038,6 @@ interface User {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2321,38 +2091,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2569,38 +2307,6 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2633,38 +2339,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -2901,38 +2575,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="rust"&gt;
@@ -2968,38 +2610,6 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3227,38 +2837,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
 
 
 &lt;div class="code-playground" data-language="c"&gt;
@@ -3291,38 +2869,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -3471,38 +3017,6 @@ int main() {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 
@@ -4295,38 +3809,6 @@ int main() {
 
 
 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
 
 
 

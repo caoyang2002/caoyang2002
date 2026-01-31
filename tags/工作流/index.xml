@@ -113,44 +113,10 @@ github：readme.md(md=markdown)
 
 
 
- 
 
 
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="yaml"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-yaml"&gt;# 这是最基础的工作流
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
 name: CI
 on: [push] # 事件触发器
 jobs:
@@ -159,10 +125,6 @@ jobs:
  steps: # 执行步骤
  - uses: actions/checkout@v2
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
 &lt;/div&gt;
 
 &lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item></channel></rss>
