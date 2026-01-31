@@ -12,11 +12,143 @@ Git本质上是个内容寻址的文件系统。它把你的代码转成一棵�
 
 
 
+ 
 
-    # 看看Git的底层对象
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        # 看看Git的底层对象
 echo 'test' > test.txt
 git add test.txt
 git cat-file -p HEAD
+    
+
+    
+    
 
 
 核心概念就三个：
@@ -47,48 +179,48 @@ Repository：仓库区
 </a><a href=https://simons.qzz.io/tags/%E5%88%86%E6%94%AF%E7%AE%A1%E7%90%86 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">分支管理
 </a><a href=https://simons.qzz.io/tags/%E5%90%88%E5%B9%B6%E5%86%B2%E7%AA%81 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">合并冲突
 </a><a href=https://simons.qzz.io/tags/rebase class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">Rebase
-</a><a href=https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">实战技巧</a></span></div><section><h1 id=git-从入门到精通>Git: 从入门到精通</h1><p>很多人用 Git 只会 <code>add/commit/push</code> 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。</p><h2 id=git的本质>Git的本质</h2><p>Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：</p><div><pre><code class=language-bash data-lang=bash># 看看Git的底层对象
+</a><a href=https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%8A%80%E5%B7%A7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">实战技巧</a></span></div><section><h1 id=git-从入门到精通>Git: 从入门到精通</h1><p>很多人用 Git 只会 <code>add/commit/push</code> 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。</p><h2 id=git的本质>Git的本质</h2><p>Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 看看Git的底层对象
 echo &#39;test&#39; &gt; test.txt
 git add test.txt
-git cat-file -p HEAD</code></pre></div><p>核心概念就三个：</p><ol><li>Workspace：工作区</li><li>Index/Stage：暂存区</li><li>Repository：仓库区</li></ol><h2 id=为什么用git>为什么用Git？</h2><p>对比一下传统SVN：</p><ul><li>SVN是集中式，Git是分布式</li><li>SVN每次提交都需要网络，Git可以本地提交</li><li>SVN分支是复制，Git分支是指针</li></ul><div><pre><code class=language-bash data-lang=bash># SVN的分支
+git cat-file -p HEAD</code></pre></div></div><p>核心概念就三个：</p><ol><li>Workspace：工作区</li><li>Index/Stage：暂存区</li><li>Repository：仓库区</li></ol><h2 id=为什么用git>为什么用Git？</h2><p>对比一下传统SVN：</p><ul><li>SVN是集中式，Git是分布式</li><li>SVN每次提交都需要网络，Git可以本地提交</li><li>SVN分支是复制，Git分支是指针</li></ul><div class=code-playground data-language=bash><div><pre><code class=language-bash># SVN的分支
 svn copy trunk branches/feature
 
 # Git的分支
-git branch feature  # 只是创建一个指针</code></pre></div><h2 id=深入原理>深入原理</h2><p>Git的分支模型：</p><div><pre><code class=language-bash data-lang=bash># master分支
+git branch feature  # 只是创建一个指针</code></pre></div></div><h2 id=深入原理>深入原理</h2><p>Git的分支模型：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># master分支
 A -&gt; B -&gt; C
            \
-            D -&gt; E  # feature分支</code></pre></div><p>每个 commit 都是一个节点，分支只是指向节点的指针。这就是为什么 Git 分支如此轻量。</p><h2 id=实战经验>实战经验</h2><ol><li>分支管理</li></ol><div><pre><code class=language-bash data-lang=bash># 创建开发分支
+            D -&gt; E  # feature分支</code></pre></div></div><p>每个 commit 都是一个节点，分支只是指向节点的指针。这就是为什么 Git 分支如此轻量。</p><h2 id=实战经验>实战经验</h2><ol><li>分支管理</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 创建开发分支
 git checkout -b dev
 # 提交代码
 git add .
 git commit -m &#34;feat: new feature&#34;
 # 合并到主分支
 git checkout main
-git merge dev</code></pre></div><ol start=2><li>解决冲突</li></ol><div><pre><code class=language-bash data-lang=bash># 发生冲突时
+git merge dev</code></pre></div></div><ol start=2><li>解决冲突</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 发生冲突时
 git status  # 看看冲突文件
 vim conflict.txt  # 手动解决冲突
 git add .
-git commit -m &#34;fix: resolve conflict&#34;</code></pre></div><ol start=3><li>撤销操作</li></ol><div><pre><code class=language-bash data-lang=bash># 撤销工作区修改
+git commit -m &#34;fix: resolve conflict&#34;</code></pre></div></div><ol start=3><li>撤销操作</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 撤销工作区修改
 git checkout -- file
 
 # 撤销暂存区
 git reset HEAD file
 
 # 撤销提交
-git reset --hard HEAD^</code></pre></div><h2 id=高级技巧>高级技巧</h2><ol><li>交互式 rebase</li></ol><div><pre><code class=language-bash data-lang=bash># 合并最近3个提交
-git rebase -i HEAD~3</code></pre></div><ol start=2><li>cherry-pick</li></ol><div><pre><code class=language-bash data-lang=bash># 把某个提交应用到当前分支
-git cherry-pick commit_id</code></pre></div><ol start=3><li>stash</li></ol><div><pre><code class=language-bash data-lang=bash># 临时保存工作区
+git reset --hard HEAD^</code></pre></div></div><h2 id=高级技巧>高级技巧</h2><ol><li>交互式 rebase</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 合并最近3个提交
+git rebase -i HEAD~3</code></pre></div></div><ol start=2><li>cherry-pick</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 把某个提交应用到当前分支
+git cherry-pick commit_id</code></pre></div></div><ol start=3><li>stash</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 临时保存工作区
 git stash
 # 切换分支处理紧急bug
 git checkout hotfix
 # 回来继续工作
-git stash pop</code></pre></div><h2 id=工作流最佳实践>工作流最佳实践</h2><ol><li>分支策略</li></ol><ul><li><code>master</code> ：稳定版本</li><li><code>develop</code> ：开发主线</li><li><code>feature/*</code> ：新功能</li><li><code>hotfix/*</code> ：紧急修复</li></ul><ol start=2><li>提交规范</li></ol><div><pre><code class=language-bash data-lang=bash>feat: 新功能
+git stash pop</code></pre></div></div><h2 id=工作流最佳实践>工作流最佳实践</h2><ol><li>分支策略</li></ol><ul><li><code>master</code> ：稳定版本</li><li><code>develop</code> ：开发主线</li><li><code>feature/*</code> ：新功能</li><li><code>hotfix/*</code> ：紧急修复</li></ul><ol start=2><li>提交规范</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash>feat: 新功能
 fix: 修复bug
 docs: 文档更新
 style: 格式调整
 refactor: 重构
 test: 测试代码
-chore: 其他修改</code></pre></div><p>记住几个原则：</p><ol><li>commit 要原子化，一个提交做一件事</li><li>分支要及时清理，不要留太多</li><li>冲突要谨慎解决，不要盲目覆盖</li></ol><h2 id=总结>总结</h2><p>Git 不难，难的是理解它的思维方式：</p><ul><li>分支是指针，创建分支不会复制代码</li><li>commit 是不可变的，reset只是移动指针</li><li>冲突不可怕，理解原理就简单了</li></ul><p>工具用不好不是工具的问题，而是你对它理解不够深入。理解了原理，Git就是一个很好用的时光机。</p><p>别再停留在 <code>add/commit/push</code> 的层面了，Git能做的远比你想象的多。</p><h1 id=用了很长时间-git但不敢操作-git-命令>用了很长时间 Git，但不敢操作 git 命令？</h1><p>Git 本质就是个典型的分布式版本控制系统。但很多人用了这么多年Git，还是停留在<code>add/commit/push</code>的层面，这就好比开着兰博基尼却只把它当电动车来用。今天就来扒一扒Git的内部机制和那些你应该知道但可能不知道的骚操作。</p><p>先说Git的本质 - 它就是个内容寻址文件系统，用一个巨大的key-value存储来管理你的代码。每次commit，Git都会给你的代码生成一个SHA-1哈希值作为索引。</p><div><pre><code class=language-bash data-lang=bash># 看看Git的本质
+chore: 其他修改</code></pre></div></div><p>记住几个原则：</p><ol><li>commit 要原子化，一个提交做一件事</li><li>分支要及时清理，不要留太多</li><li>冲突要谨慎解决，不要盲目覆盖</li></ol><h2 id=总结>总结</h2><p>Git 不难，难的是理解它的思维方式：</p><ul><li>分支是指针，创建分支不会复制代码</li><li>commit 是不可变的，reset只是移动指针</li><li>冲突不可怕，理解原理就简单了</li></ul><p>工具用不好不是工具的问题，而是你对它理解不够深入。理解了原理，Git就是一个很好用的时光机。</p><p>别再停留在 <code>add/commit/push</code> 的层面了，Git能做的远比你想象的多。</p><h1 id=用了很长时间-git但不敢操作-git-命令>用了很长时间 Git，但不敢操作 git 命令？</h1><p>Git 本质就是个典型的分布式版本控制系统。但很多人用了这么多年Git，还是停留在<code>add/commit/push</code>的层面，这就好比开着兰博基尼却只把它当电动车来用。今天就来扒一扒Git的内部机制和那些你应该知道但可能不知道的骚操作。</p><p>先说Git的本质 - 它就是个内容寻址文件系统，用一个巨大的key-value存储来管理你的代码。每次commit，Git都会给你的代码生成一个SHA-1哈希值作为索引。</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 看看Git的本质
 $ git init
 $ echo &#39;hello&#39; &gt; test.txt
 $ git add test.txt
@@ -98,7 +230,7 @@ tree 517d952c5850bc2fccc48ef8eb2f80372d760ac0
 author caoyang2002 &lt;cy12968@163.com&gt; 1738337558 &#43;0800
 committer caoyang2002 &lt;cy12968@163.com&gt; 1738337558 &#43;0800
 
-first commit</code></pre></div><p>重点来了，Git 有三个核心概念:</p><ol><li>Working Directory (工作目录)</li><li>Staging Area (暂存区)</li><li>Repository (仓库)</li></ol><p>这就像三个不同的空间。你写代码在工作目录，<code>git add</code>后代码进暂存区，<code>git commit</code>后代码才进仓库。这不是重点，重点是下面这些实战技巧:</p><div><pre><code class=language-bash data-lang=bash># 1. 后悔药 - 撤销修改
+first commit</code></pre></div></div><p>重点来了，Git 有三个核心概念:</p><ol><li>Working Directory (工作目录)</li><li>Staging Area (暂存区)</li><li>Repository (仓库)</li></ol><p>这就像三个不同的空间。你写代码在工作目录，<code>git add</code>后代码进暂存区，<code>git commit</code>后代码才进仓库。这不是重点，重点是下面这些实战技巧:</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 1. 后悔药 - 撤销修改
 git checkout -- file    # 撤销工作区修改
 git reset HEAD file    # 撤销暂存区修改
 git reset --hard HEAD^ # 撤销最近一次提交
@@ -109,11 +241,11 @@ git checkout -b fix   # 创建并切换分支
 git merge feature     # 合并分支
 
 # 3. 黑科技 - 交互式rebase
-git rebase -i HEAD~3  # 重写最近3次提交历史</code></pre></div><p>说到分支，很多人都怕merge冲突。其实冲突不可怕，可怕的是不懂原理。Git merge有三种策略:</p><ol><li>Fast-forward：最简单，直接把指针移动</li><li>Recursive：最常用，自动合并</li><li>Octopus：多分支合并，不常用</li></ol><p>合并冲突时，把文件内容改成这样:</p><div><pre><code class=language- data-lang>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+git rebase -i HEAD~3  # 重写最近3次提交历史</code></pre></div></div><p>说到分支，很多人都怕merge冲突。其实冲突不可怕，可怕的是不懂原理。Git merge有三种策略:</p><ol><li>Fast-forward：最简单，直接把指针移动</li><li>Recursive：最常用，自动合并</li><li>Octopus：多分支合并，不常用</li></ol><p>合并冲突时，把文件内容改成这样:</p><div><pre><code class=language- data-lang>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 你的修改
 =======
 别人的修改
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</code></pre></div><p>解决冲突就是要决定保留谁的修改。不要怕弄乱，因为还有后悔药:</p><div><pre><code class=language-bash data-lang=bash>git merge --abort  # 中断合并，回到合并前状态</code></pre></div><p>还有一些高级玩法:</p><div><pre><code class=language-bash data-lang=bash># 1. 储藏修改
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; feature</code></pre></div><p>解决冲突就是要决定保留谁的修改。不要怕弄乱，因为还有后悔药:</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>git merge --abort  # 中断合并，回到合并前状态</code></pre></div></div><p>还有一些高级玩法:</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 1. 储藏修改
 git stash
 git stash pop
 
@@ -121,7 +253,7 @@ git stash pop
 git cherry-pick commit-id
 
 # 3. 重写历史
-git filter-branch --tree-filter &#39;rm -f password.txt&#39; HEAD</code></pre></div><p>最后说点Git的设计思想 - 不可变性。一旦commit，内容就被永久保存。就算你用<code>reset</code>删除了commit，内容还在，只是找不到了。用<code>git reflog</code>可以找回"删除"的commit。</p><p>记住，Git就是个点对点的分布式系统，每个仓库都是平等的，都包含完整的历史记录。这也是为什么它比SVN强大 - 你可以在本地进行所有操作，不依赖中央服务器。</p><p>Git常用操作其实就那么几个，但要真正用好，还得理解背后的原理。</p><ol><li>分支管理（最常用）</li></ol><div><pre><code class=language-bash data-lang=bash># 创建分支 - 就是创建一个指针指向当前commit
+git filter-branch --tree-filter &#39;rm -f password.txt&#39; HEAD</code></pre></div></div><p>最后说点Git的设计思想 - 不可变性。一旦commit，内容就被永久保存。就算你用<code>reset</code>删除了commit，内容还在，只是找不到了。用<code>git reflog</code>可以找回"删除"的commit。</p><p>记住，Git就是个点对点的分布式系统，每个仓库都是平等的，都包含完整的历史记录。这也是为什么它比SVN强大 - 你可以在本地进行所有操作，不依赖中央服务器。</p><p>Git常用操作其实就那么几个，但要真正用好，还得理解背后的原理。</p><ol><li>分支管理（最常用）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 创建分支 - 就是创建一个指针指向当前commit
 git branch feature
 
 # 切换分支 - 移动HEAD指针，更新工作区
@@ -130,46 +262,46 @@ git checkout feature
 git checkout -b feature
 
 # 删除分支 - 删除指针而已，commit还在
-git branch -d feature</code></pre></div><ol start=2><li>状态查看（必备技能）</li></ol><div><pre><code class=language-bash data-lang=bash># 当前状态
+git branch -d feature</code></pre></div></div><ol start=2><li>状态查看（必备技能）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 当前状态
 git status
 
 # 查看历史 - 加点料
-git log --graph --pretty=format:&#39;%h -%d %s (%cr) &lt;%an&gt;&#39;</code></pre></div><ol start=3><li>撤销修改（救命三招）</li></ol><div><pre><code class=language-bash data-lang=bash># 工作区撤销
+git log --graph --pretty=format:&#39;%h -%d %s (%cr) &lt;%an&gt;&#39;</code></pre></div></div><ol start=3><li>撤销修改（救命三招）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 工作区撤销
 git checkout -- file
 
 # 暂存区撤销
 git reset HEAD file
 
 # 提交后撤销
-git reset --hard HEAD^</code></pre></div><ol start=4><li>远程协作（团队必备）</li></ol><div><pre><code class=language-bash data-lang=bash># 添加远程
+git reset --hard HEAD^</code></pre></div></div><ol start=4><li>远程协作（团队必备）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 添加远程
 git remote add origin git@github.com:xxx.git
 
 # 推送分支 - 记住远程分支也是指针
 git push origin master
 
 # 拉取更新 - fetch&#43;merge的简写
-git pull origin master</code></pre></div><ol start=5><li>解决冲突（不要怕）</li></ol><div><pre><code class=language-bash data-lang=bash># 手动解决冲突后
+git pull origin master</code></pre></div></div><ol start=5><li>解决冲突（不要怕）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># 手动解决冲突后
 git add .
-git commit -m &#34;fix conflict&#34;</code></pre></div><p>最骚的操作 - rebase。很多人不敢用，其实很简单：</p><div><pre><code class=language-bash data-lang=bash># 变基 - 本质就是重新设置基线
+git commit -m &#34;fix conflict&#34;</code></pre></div></div><p>最骚的操作 - rebase。很多人不敢用，其实很简单：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 变基 - 本质就是重新设置基线
 git rebase master
 
 # 交互式rebase - 可以修改历史
-git rebase -i HEAD~3</code></pre></div><p>记住几个原则：</p><ol><li>分支操作随意，因为分支就是指针</li><li>本地修改随意，因为都是本地的</li><li>远程分支要谨慎，因为涉及团队协作</li></ol><p>不要死记命令，理解原理。Git的设计很优雅，每个命令都在操作这些基本要素：</p><ul><li>对象（blob/tree/commit）</li><li>引用（分支/HEAD）</li><li>索引（暂存区）</li></ul><p>来看几个实际工作中的场景。</p><p>场景1：改了一堆代码突然后悔了</p><div><pre><code class=language-bash data-lang=bash># 完蛋，刚改了20个文件，现在想全部恢复
+git rebase -i HEAD~3</code></pre></div></div><p>记住几个原则：</p><ol><li>分支操作随意，因为分支就是指针</li><li>本地修改随意，因为都是本地的</li><li>远程分支要谨慎，因为涉及团队协作</li></ol><p>不要死记命令，理解原理。Git的设计很优雅，每个命令都在操作这些基本要素：</p><ul><li>对象（blob/tree/commit）</li><li>引用（分支/HEAD）</li><li>索引（暂存区）</li></ul><p>来看几个实际工作中的场景。</p><p>场景1：改了一堆代码突然后悔了</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 完蛋，刚改了20个文件，现在想全部恢复
 git status   # 先看看现在的惨状
-git reset --hard HEAD  # 一键还原，爽！</code></pre></div><p>场景2：糟糕，提交信息写错了</p><div><pre><code class=language-bash data-lang=bash>git commit --amend -m &#34;fix: 正确的提交信息&#34;</code></pre></div><p>场景3：老板说要紧急修复线上bug</p><div><pre><code class=language-bash data-lang=bash># 当前在开发新功能，代码写到一半
+git reset --hard HEAD  # 一键还原，爽！</code></pre></div></div><p>场景2：糟糕，提交信息写错了</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>git commit --amend -m &#34;fix: 正确的提交信息&#34;</code></pre></div></div><p>场景3：老板说要紧急修复线上bug</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 当前在开发新功能，代码写到一半
 git stash  # 先存起来
 git checkout master  # 切到主分支
 git checkout -b hotfix  # 新建修复分支
 # 修复bug
 git commit -m &#34;fix: 紧急修复&#34;
 git checkout feature  # 切回去
-git stash pop  # 继续之前的开发</code></pre></div><p>场景4：代码写烂了，想回到三天前</p><div><pre><code class=language-bash data-lang=bash># 看看三天前的commit
+git stash pop  # 继续之前的开发</code></pre></div></div><p>场景4：代码写烂了，想回到三天前</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 看看三天前的commit
 git log --since=&#34;3 days ago&#34;
 # 找到想回到的版本，强制回归
-git reset --hard commit_id</code></pre></div><p>场景5：需求改了，要把A分支的某个提交应用到B分支</p><div><pre><code class=language-bash data-lang=bash># 在A分支上找到那个提交
+git reset --hard commit_id</code></pre></div></div><p>场景5：需求改了，要把A分支的某个提交应用到B分支</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 在A分支上找到那个提交
 git log --oneline
 # 切到B分支，应用那个提交
-git cherry-pick commit_id</code></pre></div><p>场景6：合并代码时冲突了</p><div><pre><code class=language-bash data-lang=bash>git merge feature
+git cherry-pick commit_id</code></pre></div></div><p>场景6：合并代码时冲突了</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>git merge feature
 # 出现冲突，打开文件
 # &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
 # 你的代码
@@ -178,10 +310,10 @@ git cherry-pick commit_id</code></pre></div><p>场景6：合并代码时冲突�
 # &gt;&gt;&gt;&gt;&gt;&gt;&gt; feature
 # 解决冲突，保存
 git add .
-git commit -m &#34;解决冲突&#34;</code></pre></div><p>场景7：线上代码出bug了，需要紧急回滚</p><div><pre><code class=language-bash data-lang=bash># 找到上一个稳定版本
+git commit -m &#34;解决冲突&#34;</code></pre></div></div><p>场景7：线上代码出bug了，需要紧急回滚</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 找到上一个稳定版本
 git reset --hard HEAD^
 # 强制推送到远程
-git push -f origin master  # 慎用，先和同事沟通</code></pre></div><p>记住，Git就是个时光机。只要提交过的代码就永远不会丢，不要怕搞砸。即使删错了分支、reset错了版本，用<code>git reflog</code>都能找回来。</p><p>关键是要理解Git的思维方式：</p><ul><li>分支就是指针，创建删除都很轻松</li><li>commit是永久的，reset只是移动指针</li><li>本地仓库是完整的，想怎么折腾都行</li></ul><p>这些都是实战中经常遇到的场景。理解了这些，基本就能应付 80% 的情况了。剩下的 20% 都是这些基本操作的组合。</p><p>最后说一句：多用<code>git status</code>和<code>git log</code>看看当前状态，不要盲目操作。工具不会坑你，坑你的是自己的无知。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+git push -f origin master  # 慎用，先和同事沟通</code></pre></div></div><p>记住，Git就是个时光机。只要提交过的代码就永远不会丢，不要怕搞砸。即使删错了分支、reset错了版本，用<code>git reflog</code>都能找回来。</p><p>关键是要理解Git的思维方式：</p><ul><li>分支就是指针，创建删除都很轻松</li><li>commit是永久的，reset只是移动指针</li><li>本地仓库是完整的，想怎么折腾都行</li></ul><p>这些都是实战中经常遇到的场景。理解了这些，基本就能应付 80% 的情况了。剩下的 20% 都是这些基本操作的组合。</p><p>最后说一句：多用<code>git status</code>和<code>git log</code>看看当前状态，不要盲目操作。工具不会坑你，坑你的是自己的无知。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/node.js_methods/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Node.js 的方法</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/><span>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

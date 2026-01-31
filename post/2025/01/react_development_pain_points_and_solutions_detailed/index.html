@@ -11,10 +11,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 更新用户信息
+        // 更新用户信息
 $('#userName').text(user.name);
 $('#userRole').text(user.role);
 $('#department').text(user.department);
@@ -35,10 +161,9 @@ function toggleUserStatus(status) {
     $('#userStatus').addClass('inactive').removeClass('active');
   }
 }
-        
-    
     
 
+    
     
 
 
@@ -75,8 +200,7 @@ DOM 操作散布在各个函数中
 </a><a href=https://simons.qzz.io/tags/%E7%8A%B6%E6%80%81%E7%AE%A1%E7%90%86 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">状态管理
 </a><a href=https://simons.qzz.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">性能优化
 </a><a href=https://simons.qzz.io/tags/%E8%99%9A%E6%8B%9Fdom class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">虚拟DOM
-</a><a href=https://simons.qzz.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">前端工程化</a></span></div><section><h1 id=react-开发痛点与解决方案详解>React 开发痛点与解决方案详解</h1><h2 id=1-dom-操作的深层困境>1. DOM 操作的深层困境</h2><h3 id=传统方式的问题>传统方式的问题</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 更新用户信息
+</a><a href=https://simons.qzz.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">前端工程化</a></span></div><section><h1 id=react-开发痛点与解决方案详解>React 开发痛点与解决方案详解</h1><h2 id=1-dom-操作的深层困境>1. DOM 操作的深层困境</h2><h3 id=传统方式的问题>传统方式的问题</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 更新用户信息
 $(&#39;#userName&#39;).text(user.name);
 $(&#39;#userRole&#39;).text(user.role);
 $(&#39;#department&#39;).text(user.department);
@@ -96,9 +220,7 @@ function toggleUserStatus(status) {
   } else {
     $(&#39;#userStatus&#39;).addClass(&#39;inactive&#39;).removeClass(&#39;active&#39;);
   }
-}</code>
-        </pre></div></div><p>这种操作方式存在严重问题：</p><ol><li><p><strong>代码分散导致的维护噩梦</strong></p><ul><li>DOM 操作散布在各个函数中</li><li>状态变化需要手动同步多处DOM</li><li>代码修改容易遗漏关联更新</li><li>难以追踪数据流向</li></ul></li><li><p><strong>性能瓶颈</strong></p><ul><li>每次更新都直接操作真实DOM</li><li>无法批量更新优化</li><li>频繁的重排重绘</li><li>大量DOM操作导致页面卡顿</li></ul></li><li><p><strong>内存泄露风险</strong></p></li></ol><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>class UserManager {
+}</code></pre></div></div><p>这种操作方式存在严重问题：</p><ol><li><p><strong>代码分散导致的维护噩梦</strong></p><ul><li>DOM 操作散布在各个函数中</li><li>状态变化需要手动同步多处DOM</li><li>代码修改容易遗漏关联更新</li><li>难以追踪数据流向</li></ul></li><li><p><strong>性能瓶颈</strong></p><ul><li>每次更新都直接操作真实DOM</li><li>无法批量更新优化</li><li>频繁的重排重绘</li><li>大量DOM操作导致页面卡顿</li></ul></li><li><p><strong>内存泄露风险</strong></p></li></ol><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>class UserManager {
   constructor() {
     this.bindEvents();
   }
@@ -113,8 +235,7 @@ function toggleUserStatus(status) {
     // 应该但经常忘记清理
     // $(window).off(&#39;resize&#39;, this.adjustLayout);
   }
-}</code>
-        </pre></div></div><h2 id=2-react-的解决之道>2. React 的解决之道</h2><h3 id=组件化封装>组件化封装</h3><div><pre><code class=language-jsx data-lang=jsx>// 用户信息组件
+}</code></pre></div></div><h2 id=2-react-的解决之道>2. React 的解决之道</h2><h3 id=组件化封装>组件化封装</h3><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 用户信息组件
 function UserProfile({ user }) {
   return (
     &lt;div className=&#34;user-profile&#34;&gt;
@@ -150,7 +271,7 @@ function PermissionList({ permissions, onPermissionChange }) {
       ))}
     &lt;/ul&gt;
   );
-}</code></pre></div><p>组件化的优势：</p><ol><li><p><strong>封装性</strong></p><ul><li>相关的UI、数据、行为封装在一起</li><li>组件内部实现细节对外部隐藏</li><li>提供清晰的Props接口</li><li>降低系统复杂度</li></ul></li><li><p><strong>可复用性</strong></p><ul><li>组件可在不同场景重复使用</li><li>通过Props调整组件行为</li><li>支持组合模式构建复杂UI</li><li>提高开发效率</li></ul></li><li><p><strong>可维护性</strong></p><ul><li>组件职责单一清晰</li><li>修改影响范围可控</li><li>方便单元测试</li><li>易于重构和优化</li></ul></li></ol><h3 id=状态管理革新>状态管理革新</h3><div><pre><code class=language-jsx data-lang=jsx>// 用户管理容器组件
+}</code></pre></div></div><p>组件化的优势：</p><ol><li><p><strong>封装性</strong></p><ul><li>相关的UI、数据、行为封装在一起</li><li>组件内部实现细节对外部隐藏</li><li>提供清晰的Props接口</li><li>降低系统复杂度</li></ul></li><li><p><strong>可复用性</strong></p><ul><li>组件可在不同场景重复使用</li><li>通过Props调整组件行为</li><li>支持组合模式构建复杂UI</li><li>提高开发效率</li></ul></li><li><p><strong>可维护性</strong></p><ul><li>组件职责单一清晰</li><li>修改影响范围可控</li><li>方便单元测试</li><li>易于重构和优化</li></ul></li></ol><h3 id=状态管理革新>状态管理革新</h3><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 用户管理容器组件
 function UserContainer() {
   // 统一状态管理
   const [user, setUser] = useState(null);
@@ -196,7 +317,7 @@ function UserContainer() {
       onUpdate={handleUserUpdate}
     /&gt;
   );
-}</code></pre></div><p>状态管理优势：</p><ol><li><p><strong>集中管理</strong></p><ul><li>状态在顶层组件统一管理</li><li>数据流向清晰可追踪</li><li>避免状态不同步</li><li>简化状态更新逻辑</li></ul></li><li><p><strong>可预测性</strong></p><ul><li>状态变化有迹可循</li><li>便于调试和测试</li><li>减少副作用</li><li>提高代码可靠性</li></ul></li></ol><h3 id=性能优化>性能优化</h3><div><pre><code class=language-jsx data-lang=jsx>// 1. 使用 memo 避免不必要渲染
+}</code></pre></div></div><p>状态管理优势：</p><ol><li><p><strong>集中管理</strong></p><ul><li>状态在顶层组件统一管理</li><li>数据流向清晰可追踪</li><li>避免状态不同步</li><li>简化状态更新逻辑</li></ul></li><li><p><strong>可预测性</strong></p><ul><li>状态变化有迹可循</li><li>便于调试和测试</li><li>减少副作用</li><li>提高代码可靠性</li></ul></li></ol><h3 id=性能优化>性能优化</h3><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 1. 使用 memo 避免不必要渲染
 const UserCard = React.memo(function UserCard({ user }) {
   return (
     &lt;div className=&#34;user-card&#34;&gt;
@@ -260,7 +381,7 @@ function UserActions({ user }) {
       /&gt;
     &lt;/div&gt;
   );
-}</code></pre></div><p>性能优化的价值：</p><ol><li><p><strong>渲染性能</strong></p><ul><li>避免不必要的重渲染</li><li>减少计算开销</li><li>提升用户体验</li><li>降低资源消耗</li></ul></li><li><p><strong>运行时性能</strong></p><ul><li>合理使用缓存</li><li>避免重复计算</li><li>控制内存使用</li><li>优化函数调用</li></ul></li><li><p><strong>首屏加载性能</strong></p></li></ol><div><pre><code class=language-jsx data-lang=jsx>// 路由级代码分割
+}</code></pre></div></div><p>性能优化的价值：</p><ol><li><p><strong>渲染性能</strong></p><ul><li>避免不必要的重渲染</li><li>减少计算开销</li><li>提升用户体验</li><li>降低资源消耗</li></ul></li><li><p><strong>运行时性能</strong></p><ul><li>合理使用缓存</li><li>避免重复计算</li><li>控制内存使用</li><li>优化函数调用</li></ul></li><li><p><strong>首屏加载性能</strong></p></li></ol><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 路由级代码分割
 const UserManagement = React.lazy(() =&gt;
   import(&#39;./pages/UserManagement&#39;)
 );
@@ -278,11 +399,9 @@ function App() {
       &lt;/Switch&gt;
     &lt;/Suspense&gt;
   );
-}</code></pre></div><p>这样的代码分割可以：</p><ul><li>减少主包体积</li><li>按需加载组件</li><li>优化首屏时间</li><li>提升用户体验</li></ul><h1 id=react的本质问题ui如何与状态同步>React的本质问题：UI如何与状态同步？</h1><p>让我们从一个具体场景说起：一个购物车界面需要：</p><ul><li>显示商品列表</li><li>更新商品数量</li><li>计算总价</li><li>响应用户操作</li></ul><h2 id=传统方案的痛点>传统方案的痛点</h2><p>DOM操作方式：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 直接操作DOM
+}</code></pre></div></div><p>这样的代码分割可以：</p><ul><li>减少主包体积</li><li>按需加载组件</li><li>优化首屏时间</li><li>提升用户体验</li></ul><h1 id=react的本质问题ui如何与状态同步>React的本质问题：UI如何与状态同步？</h1><p>让我们从一个具体场景说起：一个购物车界面需要：</p><ul><li>显示商品列表</li><li>更新商品数量</li><li>计算总价</li><li>响应用户操作</li></ul><h2 id=传统方案的痛点>传统方案的痛点</h2><p>DOM操作方式：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 直接操作DOM
 document.getElementById(&#39;price&#39;).innerHTML = &#39;$&#39; &#43; total;
-document.getElementById(&#39;count&#39;).innerHTML = count;</code>
-        </pre></div></div><p>问题：</p><ul><li>代码分散，难以维护</li><li>容易出现状态不一致</li><li>性能差(频繁DOM操作)</li></ul><h2 id=react的解决方案>React的解决方案</h2><p>核心理念：声明式UI</p><div><pre><code class=language-jsx data-lang=jsx>function ShoppingCart({ items }) {
+document.getElementById(&#39;count&#39;).innerHTML = count;</code></pre></div></div><p>问题：</p><ul><li>代码分散，难以维护</li><li>容易出现状态不一致</li><li>性能差(频繁DOM操作)</li></ul><h2 id=react的解决方案>React的解决方案</h2><p>核心理念：声明式UI</p><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>function ShoppingCart({ items }) {
   const total = items.reduce((sum, item) =&gt; sum &#43; item.price, 0);
 
   return (
@@ -291,12 +410,10 @@ document.getElementById(&#39;count&#39;).innerHTML = count;</code>
       &lt;div&gt;Total: ${total}&lt;/div&gt;
     &lt;/div&gt;
   );
-}</code></pre></div><p>优势：</p><ol><li>数据驱动视图</li><li>组件化开发</li><li>虚拟DOM优化性能</li></ol><h2 id=不同方案对比>不同方案对比</h2><ol><li>jQuery方案：</li></ol><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>$(&#39;#btn&#39;).click(function() {
+}</code></pre></div></div><p>优势：</p><ol><li>数据驱动视图</li><li>组件化开发</li><li>虚拟DOM优化性能</li></ol><h2 id=不同方案对比>不同方案对比</h2><ol><li>jQuery方案：</li></ol><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>$(&#39;#btn&#39;).click(function() {
   $(&#39;#count&#39;).text(count &#43; 1);
   $(&#39;#price&#39;).text(getTotal());
-});</code>
-        </pre></div></div><ol start=2><li>Vue方案：</li></ol><div><pre><code class=language-vue data-lang=vue>&lt;template&gt;
+});</code></pre></div></div><ol start=2><li>Vue方案：</li></ol><div class=code-playground data-language=vue><div><pre><code class=language-vue>&lt;template&gt;
   &lt;div&gt;{{ count }}&lt;/div&gt;
 &lt;/template&gt;
 &lt;script&gt;
@@ -305,14 +422,14 @@ export default {
     return { count: 0 }
   }
 }
-&lt;/script&gt;</code></pre></div><ol start=3><li>React方案：</li></ol><div><pre><code class=language-jsx data-lang=jsx>function Counter() {
+&lt;/script&gt;</code></pre></div></div><ol start=3><li>React方案：</li></ol><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>function Counter() {
   const [count, setCount] = useState(0);
   return &lt;div&gt;{count}&lt;/div&gt;;
-}</code></pre></div><h2 id=最佳实践>最佳实践</h2><ol><li>状态管理</li></ol><div><pre><code class=language-jsx data-lang=jsx>// 局部状态
+}</code></pre></div></div><h2 id=最佳实践>最佳实践</h2><ol><li>状态管理</li></ol><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 局部状态
 const [count, setCount] = useState(0);
 
 // 全局状态
-const store = createStore(reducer);</code></pre></div><ol start=2><li>组件设计</li></ol><div><pre><code class=language-jsx data-lang=jsx>// 容器组件
+const store = createStore(reducer);</code></pre></div></div><ol start=2><li>组件设计</li></ol><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 容器组件
 function UserContainer() {
   const user = useSelector(state =&gt; state.user);
   return &lt;UserInfo user={user} /&gt;;
@@ -321,10 +438,10 @@ function UserContainer() {
 // 展示组件
 function UserInfo({ user }) {
   return &lt;div&gt;{user.name}&lt;/div&gt;;
-}</code></pre></div><ol start=3><li>性能优化</li></ol><div><pre><code class=language-jsx data-lang=jsx>// 避免不必要渲染
+}</code></pre></div></div><ol start=3><li>性能优化</li></ol><div class=code-playground data-language=jsx><div><pre><code class=language-jsx>// 避免不必要渲染
 const MemoComponent = React.memo(({ data }) =&gt; {
   return &lt;div&gt;{data}&lt;/div&gt;;
-});</code></pre></div><h2 id=方法论总结>方法论总结</h2><ol><li>数据流：单向数据流更容易理解和维护</li><li>组件化：按功能和职责划分组件</li><li>状态管理：根据状态范围选择管理方案</li><li>性能优化：合理使用缓存和优化策略</li></ol><p>这样的React技术栈不仅解释了是什么，更说明了为什么，以及如何更好地使用它。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+});</code></pre></div></div><h2 id=方法论总结>方法论总结</h2><ol><li>数据流：单向数据流更容易理解和维护</li><li>组件化：按功能和职责划分组件</li><li>状态管理：根据状态范围选择管理方案</li><li>性能优化：合理使用缓存和优化策略</li></ol><p>这样的React技术栈不仅解释了是什么，更说明了为什么，以及如何更好地使用它。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/typescript_static_types/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>TypeScript: 静态</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/webpack_frontend_project_carrier/><span>Webpack：前端项目的"搬运工"</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

@@ -17,17 +17,142 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            class WorkingMemory:
+        class WorkingMemory:
     MIN_CAPACITY = 5  # 最小容量
     MAX_CAPACITY = 9  # 最大容量
     OPTIMAL_CHUNKS = 7  # 最佳组块数
-        
-    
     
 
+    
     
 
 
@@ -63,21 +188,17 @@
 </a><a href=https://simons.qzz.io/tags/72%E6%B3%95%E5%88%99 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">7±2法则
 </a><a href=https://simons.qzz.io/tags/%E4%BF%A1%E6%81%AF%E7%BB%84%E5%9D%97 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">信息组块
 </a><a href=https://simons.qzz.io/tags/%E8%AE%A4%E7%9F%A5%E8%B4%9F%E8%8D%B7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">认知负荷
-</a><a href=https://simons.qzz.io/tags/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">界面设计</a></span></div><section><h1 id=millers-law-工作记忆的神奇数字-72>Miller&rsquo;s Law: 工作记忆的神奇数字 7±2</h1><h2 id=核心原理>核心原理</h2><h3 id=理论基础>理论基础</h3><ul><li>提出时间：1956年</li><li>作者：George Miller</li><li>发表：《The Magical Number Seven, Plus or Minus Two》</li><li>核心观点：人类短期记忆容量为7±2个组块</li></ul><div class=code-playground data-language=python><div><pre>
-            <code class=language-python>class WorkingMemory:
+</a><a href=https://simons.qzz.io/tags/%E7%95%8C%E9%9D%A2%E8%AE%BE%E8%AE%A1 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">界面设计</a></span></div><section><h1 id=millers-law-工作记忆的神奇数字-72>Miller&rsquo;s Law: 工作记忆的神奇数字 7±2</h1><h2 id=核心原理>核心原理</h2><h3 id=理论基础>理论基础</h3><ul><li>提出时间：1956年</li><li>作者：George Miller</li><li>发表：《The Magical Number Seven, Plus or Minus Two》</li><li>核心观点：人类短期记忆容量为7±2个组块</li></ul><div class=code-playground data-language=python><div><pre><code class=language-python>class WorkingMemory:
     MIN_CAPACITY = 5  # 最小容量
     MAX_CAPACITY = 9  # 最大容量
-    OPTIMAL_CHUNKS = 7  # 最佳组块数</code>
-        </pre></div></div><h3 id=信息组块化>信息组块化</h3><ol><li><p><strong>组块策略</strong></p><ul><li>电话号码：138-8888-9999</li><li>信用卡：5432-1234-5678</li><li>身份证：110101-199001-011234</li></ul></li><li><p><strong>记忆效率</strong></p></li></ol><div class=mermaid>graph LR
+    OPTIMAL_CHUNKS = 7  # 最佳组块数</code></pre></div></div><h3 id=信息组块化>信息组块化</h3><ol><li><p><strong>组块策略</strong></p><ul><li>电话号码：138-8888-9999</li><li>信用卡：5432-1234-5678</li><li>身份证：110101-199001-011234</li></ul></li><li><p><strong>记忆效率</strong></p></li></ol><div class=mermaid>graph LR
 A[原始信息] --> B[分组组块]
 B --> C[短期记忆]
-C --> D[工作记忆]</div><h2 id=实践应用>实践应用</h2><h3 id=界面设计>界面设计</h3><ol><li><p><strong>导航菜单</strong></p><ul><li>主菜单项：5-9个</li><li>子菜单分组</li><li>视觉层级区分</li></ul></li><li><p><strong>信息展示</strong></p></li></ol><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>const UXGuidelines = {
+C --> D[工作记忆]</div><h2 id=实践应用>实践应用</h2><h3 id=界面设计>界面设计</h3><ol><li><p><strong>导航菜单</strong></p><ul><li>主菜单项：5-9个</li><li>子菜单分组</li><li>视觉层级区分</li></ul></li><li><p><strong>信息展示</strong></p></li></ol><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>const UXGuidelines = {
     menuItems: 7,
     subGroups: 5,
     maxChoices: 9
-};</code>
-        </pre></div></div><h3 id=教学应用>教学应用</h3><ol><li><p><strong>课程设计</strong></p><ul><li>知识点分组</li><li>每组5-9项</li><li>循环复习</li></ul></li><li><p><strong>记忆方法</strong></p><ul><li>电话号码分段</li><li>列表项分组</li><li>密码设计</li></ul></li></ol><h2 id=实验验证>实验验证</h2><h3 id=miller实验设计>Miller实验设计</h3><ol><li><p><strong>听觉判断</strong></p><ul><li>声调识别</li><li>音量区分</li><li>准确率测量</li></ul></li><li><p><strong>视觉识别</strong></p><ul><li>线条长度</li><li>颜色差异</li><li>形状分类</li></ul></li></ol><h3 id=关键发现>关键发现</h3><ol><li><p><strong>判断极限</strong></p><ul><li>绝对判断：7±2</li><li>即时记忆：7±2</li><li>注意范围：7±2</li></ul></li><li><p><strong>认知负荷</strong></p><ul><li>超出容量效率下降</li><li>需要组块化策略</li><li>影响决策质量</li></ul></li></ol></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+};</code></pre></div></div><h3 id=教学应用>教学应用</h3><ol><li><p><strong>课程设计</strong></p><ul><li>知识点分组</li><li>每组5-9项</li><li>循环复习</li></ul></li><li><p><strong>记忆方法</strong></p><ul><li>电话号码分段</li><li>列表项分组</li><li>密码设计</li></ul></li></ol><h2 id=实验验证>实验验证</h2><h3 id=miller实验设计>Miller实验设计</h3><ol><li><p><strong>听觉判断</strong></p><ul><li>声调识别</li><li>音量区分</li><li>准确率测量</li></ul></li><li><p><strong>视觉识别</strong></p><ul><li>线条长度</li><li>颜色差异</li><li>形状分类</li></ul></li></ol><h3 id=关键发现>关键发现</h3><ol><li><p><strong>判断极限</strong></p><ul><li>绝对判断：7±2</li><li>即时记忆：7±2</li><li>注意范围：7±2</li></ul></li><li><p><strong>认知负荷</strong></p><ul><li>超出容量效率下降</li><li>需要组块化策略</li><li>影响决策质量</li></ul></li></ol></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/ui_design_related_psychology_principles/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>UI 设计相关心理学原理</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/kaufman_experiment_visual_instantaneous_cognitive_limit_pioneering_research/><span>Kaufman实验：视觉瞬时认知极限的开创性研究</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

@@ -11,22 +11,147 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
 const fs = require(&amp;#39;fs&amp;#39;);
 
 fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
  if (err) throw err;
  console.log(data);
 });
-console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
- &lt;/pre&gt;
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -41,18 +166,143 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 改个文本要改三个地方
 document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
 document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
-document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;
- &lt;/pre&gt;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -69,8 +319,136 @@ document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#3
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;template&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="vue"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue"&gt;&amp;lt;template&amp;gt;
  &amp;lt;div&amp;gt;
  &amp;lt;!-- 数据自动同步到视图 --&amp;gt;
  &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;
@@ -93,6 +471,10 @@ export default {
  }
 }
 &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h2 id="为什么选vue"&gt;为什么选Vue?&lt;/h2&gt;
@@ -109,22 +491,147 @@ export default {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 调用一个不存在的方法
 obj.nonexistMethod()
 
 // 传错参数类型
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -140,11 +647,137 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="typescript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-typescript"&gt;// 变量类型
+ &lt;pre&gt;&lt;code class="language-typescript"&gt;// 变量类型
 let name: string = &amp;#34;老陈&amp;#34;
 
 // 函数类型
@@ -157,11 +790,10 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -179,11 +811,137 @@ interface User {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 项目目录
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 项目目录
 src/
  ├── js/
  │ ├── user.js
@@ -193,11 +951,10 @@ src/
  │ ├── main.css
  │ └── theme.css
  └── images/
- └── logo.png&lt;/code&gt;
- &lt;/pre&gt;
+ └── logo.png&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -218,8 +975,14 @@ src/
 &lt;li&gt;JS (家具电器)&lt;/li&gt;
 &lt;li&gt;图片等资源 (装饰品)&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;每多一个文件就多一次 HTTP 请求，网页加载越慢。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;每多一个文件就多一次 HTTP 请求，网页加载越慢。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
@@ -237,17 +1000,142 @@ src/
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="cpp"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+ &lt;pre&gt;&lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;
- &lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

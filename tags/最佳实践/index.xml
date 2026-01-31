@@ -1238,21 +1238,146 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
  s.len()
 }
 
 let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
-println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;
- &lt;/pre&gt;
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1274,20 +1399,145 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let mut total = 0;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let mut total = 0;
 for order in orders {
  if order.amount &amp;gt; 100 {
  total &amp;#43;= order.amount * 0.9;
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1312,11 +1562,137 @@ for order in orders {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -1347,11 +1723,10 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1363,6 +1738,132 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -1394,11 +1895,137 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::console;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -1408,11 +2035,10 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1428,11 +2054,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -1456,11 +2208,10 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1476,11 +2227,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  // 使用 ? 运算符处理错误
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
  let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
@@ -1493,11 +2370,10 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1513,11 +2389,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::Storage;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::Storage;
 
 pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
@@ -1534,11 +2536,10 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1555,11 +2556,137 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
 package handler
 type UserService interface {
  Create(ctx context.Context, user *User) error
@@ -1569,11 +2696,10 @@ type UserService interface {
 package service
 type UserService interface {
  Create(ctx context.Context, user *User) error
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1589,20 +2715,145 @@ type UserService interface {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确的依赖方向
 handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 
 // ❌ 错误：不应该出现反向依赖
 service -&amp;gt; handler
-repository -&amp;gt; service&lt;/code&gt;
- &lt;/pre&gt;
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1618,11 +2869,137 @@ repository -&amp;gt; service&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
 package handler
 type CreateUserRequest struct { // API层模型
  Username string `json:&amp;#34;username&amp;#34;`
@@ -1646,11 +3023,10 @@ type User struct {
  ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
  Username string `json:&amp;#34;username&amp;#34;`
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1666,11 +3042,137 @@ type User struct {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
 package repository
 func (r *UserRepo) Create(user *UserDO) error {
  return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
@@ -1692,11 +3194,10 @@ func (h *UserHandler) Create(c *gin.Context) {
 // ❌ 错误：直接暴露底层错误
 if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1708,6 +3209,132 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -1746,21 +3373,146 @@ project/
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
 func NewUserHandler(service UserService) *UserHandler {
  return &amp;amp;UserHandler{service: service}
 }
 
 // ❌ 错误：全局变量或直接初始化
-var userService = &amp;amp;UserService{}&lt;/code&gt;
- &lt;/pre&gt;
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1776,11 +3528,137 @@ var userService = &amp;amp;UserService{}&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
 type UserReader interface {
  GetUser(id uint64) (*User, error)
 }
@@ -1797,11 +3675,10 @@ type UserService interface {
  DeleteUser(id uint64) error
  ListUsers() ([]*User, error)
  SearchUsers(query string) ([]*User, error)
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1817,11 +3694,137 @@ type UserService interface {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
 package config
 
 type Config struct {
@@ -1832,11 +3835,10 @@ type Config struct {
 
 // ❌ 错误：分散的配置或硬编码
 var serverPort = 8080
-var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1852,11 +3854,137 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
 func (h *Handler) Create(c *gin.Context) {
  ctx := c.Request.Context()
  err := h.service.Create(ctx, req)
@@ -1865,11 +3993,10 @@ func (h *Handler) Create(c *gin.Context) {
 // ❌ 错误：不传递上下文或使用不一致的上下文
 func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1885,11 +4012,137 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
 package handler
 
 func TestUserHandler_Create(t *testing.T) {
@@ -1899,11 +4152,10 @@ func TestUserHandler_Create(t *testing.T) {
 // ❌ 错误：测试代码与源码混合或测试覆盖不全
 func TestAll(t *testing.T) {
  // 混合测试多个功能
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

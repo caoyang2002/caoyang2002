@@ -591,8 +591,140 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;配置 &lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
@@ -606,8 +738,136 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -763,6 +1023,10 @@ export PATH=&amp;#34;$HOME/.local/bin:$PATH&amp;#34;
 
 # go
 export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="配置-github"&gt;配置 Github&lt;/h1&gt;
@@ -777,8 +1041,136 @@ export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 生成一对 SSH 密钥
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;# 生成一对 SSH 密钥
 ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; # 输入邮箱
 # 启动 SSH 代理，用于管理 SSH 密钥
 eval &amp;#34;$(ssh-agent -s)&amp;#34;
@@ -786,6 +1178,10 @@ eval &amp;#34;$(ssh-agent -s)&amp;#34;
 ssh-add ~/.ssh/id_ed25519
 # 显示公钥内容
 cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h2 id="配置-ssh-密钥"&gt;配置 SSH 密钥：&lt;/h2&gt;

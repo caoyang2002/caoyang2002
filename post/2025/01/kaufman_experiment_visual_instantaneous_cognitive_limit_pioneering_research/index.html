@@ -31,10 +31,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            class KaufmanExperiment:
+        class KaufmanExperiment:
     def __init__(self):
         self.exposure_time = 50  # 毫秒
         self.dot_ranges = range(1, 201)
@@ -46,10 +172,9 @@
             accuracy = self.test_recognition(dots)
             if accuracy < self.accuracy_threshold:
                 return dots - 1
-        
-    
     
 
+    
     
 
 
@@ -78,8 +203,7 @@
 </a><a href=https://simons.qzz.io/tags/%E7%9E%AC%E6%97%B6%E8%AE%A1%E6%95%B0 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">瞬时计数
 </a><a href=https://simons.qzz.io/tags/%E8%AE%A4%E7%9F%A5%E6%9E%81%E9%99%90 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">认知极限
 </a><a href=https://simons.qzz.io/tags/%E5%AE%9E%E9%AA%8C%E5%BF%83%E7%90%86%E5%AD%A6 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">实验心理学
-</a><a href=https://simons.qzz.io/tags/%E8%AE%A4%E7%9F%A5%E8%B4%9F%E8%8D%B7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">认知负荷</a></span></div><section><h1 id=kaufman实验视觉瞬时认知极限的开创性研究>Kaufman实验：视觉瞬时认知极限的开创性研究</h1><h2 id=实验设计>实验设计</h2><h3 id=核心设置>核心设置</h3><ul><li>年份：1949年</li><li>研究者：Kaufman et al.</li><li>发表：《The Discrimination of Visual Number》</li></ul><h3 id=实验流程>实验流程</h3><ol><li><p><strong>刺激呈现</strong></p><ul><li>随机点阵图案</li><li>呈现时间：50毫秒（大约1/20秒）</li><li>点数范围：1-200个</li><li>位置：随机分布</li></ul></li><li><p><strong>测量指标</strong></p></li></ol><div class=code-playground data-language=python><div><pre>
-            <code class=language-python>class KaufmanExperiment:
+</a><a href=https://simons.qzz.io/tags/%E8%AE%A4%E7%9F%A5%E8%B4%9F%E8%8D%B7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">认知负荷</a></span></div><section><h1 id=kaufman实验视觉瞬时认知极限的开创性研究>Kaufman实验：视觉瞬时认知极限的开创性研究</h1><h2 id=实验设计>实验设计</h2><h3 id=核心设置>核心设置</h3><ul><li>年份：1949年</li><li>研究者：Kaufman et al.</li><li>发表：《The Discrimination of Visual Number》</li></ul><h3 id=实验流程>实验流程</h3><ol><li><p><strong>刺激呈现</strong></p><ul><li>随机点阵图案</li><li>呈现时间：50毫秒（大约1/20秒）</li><li>点数范围：1-200个</li><li>位置：随机分布</li></ul></li><li><p><strong>测量指标</strong></p></li></ol><div class=code-playground data-language=python><div><pre><code class=language-python>class KaufmanExperiment:
     def __init__(self):
         self.exposure_time = 50  # 毫秒
         self.dot_ranges = range(1, 201)
@@ -90,8 +214,7 @@
         for dots in self.dot_ranges:
             accuracy = self.test_recognition(dots)
             if accuracy &lt; self.accuracy_threshold:
-                return dots - 1</code>
-        </pre></div></div><h2 id=关键发现>关键发现</h2><h3 id=认知阈值>认知阈值</h3><ol><li><p><strong>瞬时计数(Subitizing)</strong></p><ul><li>1-5个点：准确率>95%</li><li>反应时间：250-350毫秒</li><li>无需意识计数</li></ul></li><li><p><strong>估算计数</strong></p><ul><li>6-7个点：准确率下降</li><li>反应时间显著增加</li><li>需要意识计数</li></ul></li></ol><h3 id=神经机制>神经机制</h3><div class=mermaid>graph TD
+                return dots - 1</code></pre></div></div><h2 id=关键发现>关键发现</h2><h3 id=认知阈值>认知阈值</h3><ol><li><p><strong>瞬时计数(Subitizing)</strong></p><ul><li>1-5个点：准确率>95%</li><li>反应时间：250-350毫秒</li><li>无需意识计数</li></ul></li><li><p><strong>估算计数</strong></p><ul><li>6-7个点：准确率下降</li><li>反应时间显著增加</li><li>需要意识计数</li></ul></li></ol><h3 id=神经机制>神经机制</h3><div class=mermaid>graph TD
 A[视觉输入] --> B[颞叶皮层]
 B --> C[并行处理]
 C --> D[数量表征]

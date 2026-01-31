@@ -10,11 +10,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 更新用户信息
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 更新用户信息
 $(&amp;#39;#userName&amp;#39;).text(user.name);
 $(&amp;#39;#userRole&amp;#39;).text(user.role);
 $(&amp;#39;#department&amp;#39;).text(user.department);
@@ -34,11 +160,10 @@ function toggleUserStatus(status) {
  } else {
  $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -65,11 +190,137 @@ function toggleUserStatus(status) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 项目目录
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 项目目录
 src/
  ├── js/
  │ ├── user.js
@@ -79,11 +330,10 @@ src/
  │ ├── main.css
  │ └── theme.css
  └── images/
- └── logo.png&lt;/code&gt;
- &lt;/pre&gt;
+ └── logo.png&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

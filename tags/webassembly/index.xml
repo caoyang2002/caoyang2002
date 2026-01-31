@@ -11,11 +11,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -46,11 +172,10 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -62,6 +187,132 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -93,11 +344,137 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::console;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -107,11 +484,10 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -127,11 +503,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -155,11 +657,10 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -175,11 +676,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  // 使用 ? 运算符处理错误
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
  let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
@@ -192,11 +819,10 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -212,11 +838,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::Storage;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::Storage;
 
 pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
@@ -233,16 +985,21 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
-&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;记住在使用任何 web-sys 功能时，需要在 Cargo.toml 中启用相应的 feature。例如，如果要使用 localStorage，需要添加 &amp;ldquo;Storage&amp;rdquo; feature：&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
@@ -260,17 +1017,142 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="cpp"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+ &lt;pre&gt;&lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;
- &lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

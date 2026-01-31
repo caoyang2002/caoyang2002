@@ -10,10 +10,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 项目目录
+        // 项目目录
 src/
   ├── js/
   │   ├── user.js
@@ -24,10 +150,9 @@ src/
   │   └── theme.css
   └── images/
       └── logo.png
-        
-    
     
 
+    
     
 
 
@@ -69,8 +194,7 @@ JS (家具电器)
 </a><a href=https://simons.qzz.io/tags/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">前端工程化
 </a><a href=https://simons.qzz.io/tags/%E6%9E%84%E5%BB%BA%E4%BC%98%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">构建优化
 </a><a href=https://simons.qzz.io/tags/javascript class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">JavaScript
-</a><a href=https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">配置教程</a></span></div><section><h1 id=webpack前端项目的搬运工>Webpack：前端项目的"搬运工"</h1><h2 id=你遇到过这样的问题吗>你遇到过这样的问题吗？</h2><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 项目目录
+</a><a href=https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">配置教程</a></span></div><section><h1 id=webpack前端项目的搬运工>Webpack：前端项目的"搬运工"</h1><h2 id=你遇到过这样的问题吗>你遇到过这样的问题吗？</h2><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 项目目录
 src/
   ├── js/
   │   ├── user.js
@@ -80,32 +204,24 @@ src/
   │   ├── main.css
   │   └── theme.css
   └── images/
-      └── logo.png</code>
-        </pre></div></div><p>每次部署都要手动:</p><ul><li>合并 JS 文件</li><li>压缩 CSS</li><li>处理图片</li><li>更新版本号&mldr;</li></ul><p>这让我想起小时候帮妈妈打扫房间 - 东西太多，到处都是，不知从何下手。</p><h2 id=为什么会有这些问题>为什么会有这些问题？</h2><h3 id=前端的特殊性>前端的特殊性</h3><p>浏览器需要加载:</p><ol><li>HTML (建筑框架)</li><li>CSS (装修风格)</li><li>JS (家具电器)</li><li>图片等资源 (装饰品)</li></ol><p>每多一个文件就多一次 HTTP 请求，网页加载越慢。</p><h3 id=开发与部署的矛盾>开发与部署的矛盾</h3><ul><li>开发时：希望文件分散,便于维护</li><li>部署时：希望文件合并,优化加载</li></ul><p>就像在家装修:</p><ul><li>装修时各种材料分开放,找起来方便</li><li>入住时需要收拾整齐,住着舒适</li></ul><h2 id=已有方案的问题>已有方案的问题</h2><h3 id=1-手动处理>1. 手动处理</h3><div><pre><code class=language-bash data-lang=bash># 原始方式
+      └── logo.png</code></pre></div></div><p>每次部署都要手动:</p><ul><li>合并 JS 文件</li><li>压缩 CSS</li><li>处理图片</li><li>更新版本号&mldr;</li></ul><p>这让我想起小时候帮妈妈打扫房间 - 东西太多，到处都是，不知从何下手。</p><h2 id=为什么会有这些问题>为什么会有这些问题？</h2><h3 id=前端的特殊性>前端的特殊性</h3><p>浏览器需要加载:</p><ol><li>HTML (建筑框架)</li><li>CSS (装修风格)</li><li>JS (家具电器)</li><li>图片等资源 (装饰品)</li></ol><p>每多一个文件就多一次 HTTP 请求，网页加载越慢。</p><h3 id=开发与部署的矛盾>开发与部署的矛盾</h3><ul><li>开发时：希望文件分散,便于维护</li><li>部署时：希望文件合并,优化加载</li></ul><p>就像在家装修:</p><ul><li>装修时各种材料分开放,找起来方便</li><li>入住时需要收拾整齐,住着舒适</li></ul><h2 id=已有方案的问题>已有方案的问题</h2><h3 id=1-手动处理>1. 手动处理</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash># 原始方式
 cat js/*.js &gt; dist/bundle.js
-cat css/*.css &gt; dist/style.css</code></pre></div><p>问题:</p><ul><li>容易出错</li><li>无法处理依赖</li><li>没有优化机制</li></ul><h3 id=2-构建工具gruntgulp>2. 构建工具(Grunt/Gulp)</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// Gulp示例
+cat css/*.css &gt; dist/style.css</code></pre></div></div><p>问题:</p><ul><li>容易出错</li><li>无法处理依赖</li><li>没有优化机制</li></ul><h3 id=2-构建工具gruntgulp>2. 构建工具(Grunt/Gulp)</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// Gulp示例
 gulp.task(&#39;scripts&#39;, function() {
   return gulp.src(&#39;src/js/*.js&#39;)
     .pipe(concat(&#39;bundle.js&#39;))
     .pipe(gulp.dest(&#39;dist&#39;));
-});</code>
-        </pre></div></div><p>问题:</p><ul><li>不懂依赖关系</li><li>配置繁琐</li><li>无法做静态分析</li></ul><h2 id=webpack-的解决方案>Webpack 的解决方案</h2><h3 id=1-一切皆模块>1. 一切皆模块</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// JS模块
+});</code></pre></div></div><p>问题:</p><ul><li>不懂依赖关系</li><li>配置繁琐</li><li>无法做静态分析</li></ul><h2 id=webpack-的解决方案>Webpack 的解决方案</h2><h3 id=1-一切皆模块>1. 一切皆模块</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// JS模块
 import { login } from &#39;./user.js&#39;;
 
 // CSS模块
 import styles from &#39;./style.css&#39;;
 
 // 图片模块
-import logo from &#39;./logo.png&#39;;</code>
-        </pre></div></div><p>就像乐高积木:</p><ul><li>每个文件是一个模块</li><li>模块之间可以互相依赖</li><li>最终组装成完整作品</li></ul><h3 id=2-智能依赖管理>2. 智能依赖管理</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 入口文件 main.js
+import logo from &#39;./logo.png&#39;;</code></pre></div></div><p>就像乐高积木:</p><ul><li>每个文件是一个模块</li><li>模块之间可以互相依赖</li><li>最终组装成完整作品</li></ul><h3 id=2-智能依赖管理>2. 智能依赖管理</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 入口文件 main.js
 import(&#39;./user.js&#39;).then(module =&gt; {
   // 按需加载
-});</code>
-        </pre></div></div><p>像快递物流:</p><ul><li>知道每个包裹的来源和目的地</li><li>自动规划最优配送路线</li><li>可以分批发货(代码分割)</li></ul><h3 id=3-强大的转换能力>3. 强大的转换能力</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// webpack.config.js
+});</code></pre></div></div><p>像快递物流:</p><ul><li>知道每个包裹的来源和目的地</li><li>自动规划最优配送路线</li><li>可以分批发货(代码分割)</li></ul><h3 id=3-强大的转换能力>3. 强大的转换能力</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// webpack.config.js
 module.exports = {
   module: {
     rules: [
@@ -119,17 +235,13 @@ module.exports = {
       }
     ]
   }
-}</code>
-        </pre></div></div><p>像个万能翻译器:</p><ul><li>ES6 → ES5</li><li>SCSS → CSS</li><li>图片 → Base64</li><li>&mldr;</li></ul><h2 id=最佳实践>最佳实践</h2><h3 id=1-开发环境配置>1. 开发环境配置</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>module.exports = {
+}</code></pre></div></div><p>像个万能翻译器:</p><ul><li>ES6 → ES5</li><li>SCSS → CSS</li><li>图片 → Base64</li><li>&mldr;</li></ul><h2 id=最佳实践>最佳实践</h2><h3 id=1-开发环境配置>1. 开发环境配置</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>module.exports = {
   mode: &#39;development&#39;,
   devtool: &#39;source-map&#39;,
   devServer: {
     hot: true // 热更新
   }
-}</code>
-        </pre></div></div><h3 id=2-生产环境优化>2. 生产环境优化</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>module.exports = {
+}</code></pre></div></div><h3 id=2-生产环境优化>2. 生产环境优化</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>module.exports = {
   mode: &#39;production&#39;,
   optimization: {
     splitChunks: {
@@ -137,8 +249,7 @@ module.exports = {
     },
     minimize: true // 压缩代码
   }
-}</code>
-        </pre></div></div><h3 id=3-常见陷阱避坑>3. 常见陷阱避坑</h3><ul><li>配置越简单越好</li><li>避免重复打包</li><li>及时清理缓存</li></ul><h2 id=方法论总结>方法论总结</h2><ol><li><p>模块化思维</p><ul><li>单一职责</li><li>显式依赖</li><li>关注分离</li></ul></li><li><p>优化原则</p><ul><li>按需加载</li><li>缓存优化</li><li>体积控制</li></ul></li><li><p>工程化思维</p><ul><li>开发效率优先</li><li>生产性能至上</li><li>持续集成部署</li></ul></li></ol><p>记住：工具是为了解决问题,而不是制造问题。选择合适的配置,才能让 Webpack 真正发挥价值。</p><p>每个成功项目的背后,都需要一个称职的"搬运工"。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code></pre></div></div><h3 id=3-常见陷阱避坑>3. 常见陷阱避坑</h3><ul><li>配置越简单越好</li><li>避免重复打包</li><li>及时清理缓存</li></ul><h2 id=方法论总结>方法论总结</h2><ol><li><p>模块化思维</p><ul><li>单一职责</li><li>显式依赖</li><li>关注分离</li></ul></li><li><p>优化原则</p><ul><li>按需加载</li><li>缓存优化</li><li>体积控制</li></ul></li><li><p>工程化思维</p><ul><li>开发效率优先</li><li>生产性能至上</li><li>持续集成部署</li></ul></li></ol><p>记住：工具是为了解决问题,而不是制造问题。选择合适的配置,才能让 Webpack 真正发挥价值。</p><p>每个成功项目的背后,都需要一个称职的"搬运工"。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/react_development_pain_points_and_solutions_detailed/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>React 开发痛点与解决方案详解</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/><span>即时设计插件开发</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

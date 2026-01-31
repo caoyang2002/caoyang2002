@@ -21,10 +21,9 @@
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/aptos class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">aptos
 </a><a href=https://simons.qzz.io/tags/wasm class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">wasm</a></span></div><section><h1 id=起因>起因</h1><p>最近有一个项目需要使用到 Apots 的 Move 开发环境，但是官方并没有提供 Move-2 的 Wasm，出于对技术的“狂热”，决定自己学一下这个技术的实现。</p><p>对于我来说，可以了解到 Rust 和 Move 的编译原理，这是一个很好的机会，虽然我从来没正式写过 Rust 和 Move。</p><h1 id=开始>开始</h1><p>我看不懂 <code>aptos-core</code> 从的功能，但我没有一开始就尝试编译这整个项目，而是在 <code>aptos-core/third_party</code> 看到了 <code>move</code> 编译器相关的东西，所以我就从这里开始。</p><p>把目录结构扔给 <code>claude</code> 后，解析出来的正是 <code>move</code> 编译器的实现，根据 <code>move/move-compiler/README.md</code> 的描述，可以发现有两个二进制文件 <code>move-check</code> 和 <code>move-build</code> 所以，我通过 <code>cargo build -p move-compiler</code> 命令进行编译，在 <code>aptos-core/target/debug</code> 中找到了这两个编译的二进制文件。</p><p>在 <code>debug</code> 目录下，写一个简单的 move 代码测试是否可以直接运行：</p><p><code>test.move</code></p><div><pre><code class=language-move data-lang=move>module 0x42::test {
     use 0x42::aptos;
-}</code></pre></div><p>运行 <code>./move-build --flavor dev --compiler_v2 test.move</code> （<code>--flavor</code> 是一个必要的参数，但是我并不清楚为什么需要这个参数）</p><p>随后发现 <code>build</code> 二进制无法解析 <code>Move.toml</code> 文件，在源代码中添加了 <code>println</code>，尝试通过调试的方式，理解编译过程。在 <code>move-build.rs</code> 中添加输出后，始终无法输出内容，猜测有其他的前置工具。</p><p>在 <code>tools</code> 中有一份 README，提到 <code>move-cli</code> 的命令，所以猜测 <code>move-cli</code> 是一个完备的 move 工具，在 <code>move-cli</code> 下运行：</p><div><pre><code class=language-bash data-lang=bash>cargo build</code></pre></div><p>在 <code>target/</code> 中找到 <code>move</code> 二进制文件，运行 <code>./move</code> 会输出这个二进制的使用方式。</p><p>在当前目录创建一个 move 包</p><div><pre><code class=language-bash data-lang=bash>./move new demo</code></pre></div><p>成功创建了 demo 目录，并且包含了 <code>Move.toml</code> 和 <code>sources</code> 目录，写一个 move 测试代码</p><p><code>sources/main.move</code></p><div><pre><code class=language-move data-lang=move>module 0x42::test{
+}</code></pre></div><p>运行 <code>./move-build --flavor dev --compiler_v2 test.move</code> （<code>--flavor</code> 是一个必要的参数，但是我并不清楚为什么需要这个参数）</p><p>随后发现 <code>build</code> 二进制无法解析 <code>Move.toml</code> 文件，在源代码中添加了 <code>println</code>，尝试通过调试的方式，理解编译过程。在 <code>move-build.rs</code> 中添加输出后，始终无法输出内容，猜测有其他的前置工具。</p><p>在 <code>tools</code> 中有一份 README，提到 <code>move-cli</code> 的命令，所以猜测 <code>move-cli</code> 是一个完备的 move 工具，在 <code>move-cli</code> 下运行：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>cargo build</code></pre></div></div><p>在 <code>target/</code> 中找到 <code>move</code> 二进制文件，运行 <code>./move</code> 会输出这个二进制的使用方式。</p><p>在当前目录创建一个 move 包</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>./move new demo</code></pre></div></div><p>成功创建了 demo 目录，并且包含了 <code>Move.toml</code> 和 <code>sources</code> 目录，写一个 move 测试代码</p><p><code>sources/main.move</code></p><div><pre><code class=language-move data-lang=move>module 0x42::test{
 	use 0x42::aptos;
-}</code></pre></div><p>在 demo 目录下 运行 <code>./move build</code> 成功编译，并生成了 <code>build</code> 目录。</p><p>在 <code>move-cli/lib.rs</code> 中有 <code>run_cli()</code>，这是命令行的首次调用的方式，注意到下方这段代码，这能直接匹配命令行的参数：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>match cmd {
+}</code></pre></div><p>在 demo 目录下 运行 <code>./move build</code> 成功编译，并生成了 <code>build</code> 目录。</p><p>在 <code>move-cli/lib.rs</code> 中有 <code>run_cli()</code>，这是命令行的首次调用的方式，注意到下方这段代码，这能直接匹配命令行的参数：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>match cmd {
     Command::Build(c) =&gt; c.execute(move_args.package_path, move_args.build_config),
     Command::Coverage(c) =&gt; c.execute(move_args.package_path, move_args.build_config),
     Command::Disassemble(c) =&gt; c.execute(move_args.package_path, move_args.build_config),
@@ -39,21 +38,19 @@
         genesis,
         Some(cost_table.clone()),
     ),
-}</code>
-        </pre></div></div><p><code>Command::Build(c)</code> 是模式匹配的一部分：</p><p><code>Command</code> 是一个枚举（enum）
+}</code></pre></div></div><p><code>Command::Build(c)</code> 是模式匹配的一部分：</p><p><code>Command</code> 是一个枚举（enum）
 Build 是枚举的一个变体（variant）
 <code>(c)</code> 表示从这个变体中解构出一个值，并将它绑定到变量 <code>c</code></p><p><code>=></code> 是匹配臂（match arm）的语法，表示"如果匹配成功，就执行后面的代码"
 <code>c.execute(...)</code> 是匹配成功后执行的代码：</p><p><code>c</code> 是从 Build 变体中解构出来的值
 <code>execute</code> 是对这个值调用的方法
-括号中是传递给 execute 的参数</p><p>编译：</p><div><pre><code class=language-bash data-lang=bash>../move test --compiler-version=2 --language-version=1</code></pre></div><p>在使用了其他的 move 库的情况下，会编译失败，找不到 native，目前我不清楚原因，只好另寻出路。</p><p>在 <code>aptos-core/cargo.toml</code> 中有这样一行代码：</p><div><pre><code class=language-toml data-lang=toml>default-members = [
+括号中是传递给 execute 的参数</p><p>编译：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>../move test --compiler-version=2 --language-version=1</code></pre></div></div><p>在使用了其他的 move 库的情况下，会编译失败，找不到 native，目前我不清楚原因，只好另寻出路。</p><p>在 <code>aptos-core/cargo.toml</code> 中有这样一行代码：</p><div><pre><code class=language-toml data-lang=toml>default-members = [
     ...
     &#34;crates/aptos&#34;,
     ...
 ]</code></pre></div><p>有限的 rust 编程经验告诉我，<code>crates</code> 是 rust 的程序，为了确认它是不是一个二进制程序，需要看有没有 <code>cates/aptos/main.rs</code>。（其实可以看 README）</p><p>toml 中也有特征：</p><ol><li>从 package 描述可以看出:</li></ol><div><pre><code class=language-toml data-lang=toml>name = &#34;aptos&#34;
 description = &#34;Aptos tool for management of nodes and interacting with the blockchain&#34;</code></pre></div><p>这明确说明了这是一个工具(tool),也就是二进制程序。</p><ol start=2><li>依赖关系显示这是一个完整的命令行工具:</li></ol><ul><li>使用了 clap (命令行参数解析库)</li><li>包含了 clap_complete (命令行补全功能)</li><li>依赖了大量的功能模块,如节点管理、区块链交互等</li></ul><ol start=3><li>需要特定的内存分配器,这通常用于可执行程序而不是库。</li></ol><div><pre><code class=language-toml data-lang=toml>[target.&#39;cfg(unix)&#39;.dependencies]
 jemallocator = { workspace = true }</code></pre></div><ol start=4><li>shadow-rs 通常用于在编译时注入版本信息等。</li></ol><div><pre><code class=language-toml data-lang=toml>[build-dependencies]
-shadow-rs = { workspace = true }</code></pre></div><p>我尝试从 <code>crates/aptos</code> 进行编译，运行 <code>cargo build</code>。编译时间很长，但是终究是编译出了二进制文件 <code>aptos</code></p><p>在 <code>target/debug</code> 下，运行编译的二进制文件 <code>./aptos move init --name test</code> 初始化 move 项目，然后创建 move 项目并调用其他的 move 库，然后运行 <code>./aptos move test</code> 可以将 move 代码编译成功。</p><p>检查源码 <code>aptos/src/main.rs</code> 这里以追踪 <code>move test</code> 命令为目的</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>//...
+shadow-rs = { workspace = true }</code></pre></div><p>我尝试从 <code>crates/aptos</code> 进行编译，运行 <code>cargo build</code>。编译时间很长，但是终究是编译出了二进制文件 <code>aptos</code></p><p>在 <code>target/debug</code> 下，运行编译的二进制文件 <code>./aptos move init --name test</code> 初始化 move 项目，然后创建 move 项目并调用其他的 move 库，然后运行 <code>./aptos move test</code> 可以将 move 代码编译成功。</p><p>检查源码 <code>aptos/src/main.rs</code> 这里以追踪 <code>move test</code> 命令为目的</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>//...
 use aptos::{move_tool, Tool};
 //...
 fn main() {
@@ -64,9 +61,7 @@ fn main() {
     let result = runtime.block_on(Tool::parse().execute()); // 执行细节，在 Tool 实现中查看 execute
     // ...
 }
-// ...</code>
-        </pre></div></div><p><code>Tool</code> 实现的 <code>execute</code> 在源码 <code>src/lib.rs</code> 中：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// ...
+// ...</code></pre></div></div><p><code>Tool</code> 实现的 <code>execute</code> 在源码 <code>src/lib.rs</code> 中：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// ...
 pub mod move_tool; // MoveTool 的定义应该在  move_tool/mod.rs 文件中。
 //...
 
@@ -89,9 +84,7 @@ impl Tool {
         }
     }
 }
-// ...</code>
-        </pre></div></div><h1 id=执行过程>执行过程</h1><p>在 <code>move_tool/mod.rs</code> 中</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// ...
+// ...</code></pre></div></div><h1 id=执行过程>执行过程</h1><p>在 <code>move_tool/mod.rs</code> 中</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// ...
 //move 命令的匹配
 #[derive(Subcommand)]
 pub enum MoveTool {
@@ -239,9 +232,7 @@ impl CliCommand&lt;&amp;&#39;static str&gt; for TestPackage {
             UnitTestResult::Failure =&gt; Err(CliError::MoveTestError),
         }
     }
-}</code>
-        </pre></div></div><p>在这里的实现中，实际上已经可以在代码 <code>move_cli::base::test::run_move_unit_tests()</code> 这里看到执行时的调用细节了，这里不过多赘述。</p><h1 id=类型定义>类型定义</h1><p>在 <code>common/types.rs</code> 中找到类型定义：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// ...
+}</code></pre></div></div><p>在这里的实现中，实际上已经可以在代码 <code>move_cli::base::test::run_move_unit_tests()</code> 这里看到执行时的调用细节了，这里不过多赘述。</p><h1 id=类型定义>类型定义</h1><p>在 <code>common/types.rs</code> 中找到类型定义：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// ...
 /// A common trait for all CLI commands to have consistent outputs
 #[async_trait]
 pub trait CliCommand&lt;T: Serialize &#43; Send&gt;: Sized &#43; Send {
@@ -254,9 +245,7 @@ pub trait CliCommand&lt;T: Serialize &#43; Send&gt;: Sized &#43; Send {
     /// Execute the command with customized logging level
     // ...
 }
-...</code>
-        </pre></div></div><p>继续找命令类型定义的细节</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>use crate::{
+...</code></pre></div></div><p>继续找命令类型定义的细节</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>use crate::{
     common::{
         init::Network,
         local_simulation,
@@ -290,9 +279,7 @@ pub trait CliCommand&lt;T: Serialize &#43; Send&gt;: Sized &#43; Send {
             jsonify_error_output,
         )
         .await
-    }</code>
-        </pre></div></div><p>在 <code>common/utils</code> 中：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// ...
+    }</code></pre></div></div><p>在 <code>common/utils</code> 中：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// ...
 // 美化输出
 
 /// For pretty printing outputs in JSON. You can opt out of printing the error as
@@ -339,10 +326,9 @@ pub async fn to_common_result&lt;T: Serialize&gt;(
         Ok(string)
     }
 }
-...</code>
-        </pre></div></div><p>至此，<code>aptos move</code> 是如何完成执行的已经可以告一个段落了。</p><p>现在考虑如何将 move 编译器如何打包为 wasm</p><p>目前考虑的方向是将</p><h1 id=wasm-基础>wasm 基础</h1><p>回忆一下 wasm 的开发过程，先是使用 <code>extern crate wasm_bindgen;</code> 和 <code>use wasm_bindgen::prelude::*;</code> 导入了 <code>wasm_bindgen</code> 库，</p><p>外部函数声明，即这个函数的实现在其他地方</p><div><pre><code class=language-bash data-lang=bash>extern &#34;C&#34; {
+...</code></pre></div></div><p>至此，<code>aptos move</code> 是如何完成执行的已经可以告一个段落了。</p><p>现在考虑如何将 move 编译器如何打包为 wasm</p><p>目前考虑的方向是将</p><h1 id=wasm-基础>wasm 基础</h1><p>回忆一下 wasm 的开发过程，先是使用 <code>extern crate wasm_bindgen;</code> 和 <code>use wasm_bindgen::prelude::*;</code> 导入了 <code>wasm_bindgen</code> 库，</p><p>外部函数声明，即这个函数的实现在其他地方</p><div class=code-playground data-language=bash><div><pre><code class=language-bash>extern &#34;C&#34; {
     fn alert(s: &amp;str);
-}</code></pre></div><p>这段代码实际上是在告诉 Rust 编译器：</p><p>&ldquo;有一个名为 alert 的外部函数，它接受一个字符串引用作为参数。这个函数的实现不在这里，它在别处（在这个场景中，是在 JavaScript 的 window.alert 中）。&rdquo;</p><p>目前已经了解了 wasm 的实现</p><p>使用命令 <code>wasm-pack build --target web</code> 打包 wasm 并生成 ts 包装。</p><h2 id=在控制台输出>在控制台输出</h2></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code></pre></div></div><p>这段代码实际上是在告诉 Rust 编译器：</p><p>&ldquo;有一个名为 alert 的外部函数，它接受一个字符串引用作为参数。这个函数的实现不在这里，它在别处（在这个场景中，是在 JavaScript 的 window.alert 中）。&rdquo;</p><p>目前已经了解了 wasm 的实现</p><p>使用命令 <code>wasm-pack build --target web</code> 打包 wasm 并生成 ts 包装。</p><h2 id=在控制台输出>在控制台输出</h2></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/es/post/2025/01/wasm/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Wasm</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/es/post/2025/01/create_hugo_theme/><span>Hugo 主题创建方法及简单说明</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

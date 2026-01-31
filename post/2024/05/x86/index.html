@@ -90,7 +90,7 @@
 
 int main() {
    return add_a_and_b(2, 3);
-}</code></pre></div></blockquote><p>gcc 将这个程序转成汇编语言。</p><blockquote><div><pre><code class=language-bash data-lang=bash>$ gcc -S example.c</code></pre></div></blockquote><p>上面的命令执行以后，会生成一个文本文件<code>example.s</code>，里面就是汇编语言，包含了几十行指令。这么说吧，一个高级语言的简单操作，底层可能由几个，甚至几十个 CPU 指令构成。CPU 依次执行这些指令，完成这一步操作。</p><p><code>example.s</code>经过简化以后，大概是下面的样子。</p><blockquote><div><pre><code class=language-clike data-lang=clike>_add_a_and_b:
+}</code></pre></div></blockquote><p>gcc 将这个程序转成汇编语言。</p><blockquote><div class=code-playground data-language=bash><div><pre><code class=language-bash>$ gcc -S example.c</code></pre></div></div></blockquote><p>上面的命令执行以后，会生成一个文本文件<code>example.s</code>，里面就是汇编语言，包含了几十行指令。这么说吧，一个高级语言的简单操作，底层可能由几个，甚至几十个 CPU 指令构成。CPU 依次执行这些指令，完成这一步操作。</p><p><code>example.s</code>经过简化以后，大概是下面的样子。</p><blockquote><div><pre><code class=language-clike data-lang=clike>_add_a_and_b:
    push   %ebx
    mov    %eax, [%esp&#43;8]
    mov    %ebx, [%esp&#43;12]

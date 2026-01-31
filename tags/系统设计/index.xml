@@ -9,11 +9,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn main() {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn main() {
  let data = vec![1, 2, 3];
  process_data(data);
  println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
@@ -21,11 +147,10 @@
 
 fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  println!(&amp;#34;Processing: {:?}&amp;#34;, v);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -47,17 +172,142 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
 let s2 = s1; // 所有权从s1转移到s2
-// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;
- &lt;/pre&gt;
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

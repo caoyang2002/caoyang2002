@@ -187,18 +187,143 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class WorkingMemory:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class WorkingMemory:
  MIN_CAPACITY = 5 # 最小容量
  MAX_CAPACITY = 9 # 最大容量
- OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;
- &lt;/pre&gt;
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

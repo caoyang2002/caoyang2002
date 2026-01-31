@@ -1,5 +1,11 @@
 <!doctype html><html class="not-ready lg:text-base close" style=--bg:#faf8f1 lang=zh-CN dir=ltr><style>body{background-image:url(/images/ui/background.jpg);background-repeat:no-repeat;background-position:50%;background-attachment:fixed;background-size:cover;min-height:100vh}html,body{min-height:100vh}</style><script id=LA_COLLECT src=//sdk.51.la/js-sdk-pro.min.js></script><script src=https://cdn.tailwindcss.com></script><script>LA.init({id:"3L3XAvCJS5maI7j0",ck:"3L3XAvCJS5maI7j0"})</script><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><title>Wasm - 短松江月</title><meta name=theme-color><meta name=description content="
-    cargo build
+    
+    
+        cargo build
+    
+
+    
+    
 
 
 WebAssembly 核心技术剖析
@@ -18,16 +24,141 @@ WebAssembly 核心技术剖析
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // C++ 代码
+        // C++ 代码
 int* buffer = new int[1024];  // 分配4KB内存
 buffer[0] = 42;
-        
-    
     
 
+    
     
 
 
@@ -54,14 +185,11 @@ buffer[0] = 42;
 </a><a href=https://simons.qzz.io/tags/%E5%86%85%E5%AD%98%E7%AE%A1%E7%90%86 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">内存管理
 </a><a href=https://simons.qzz.io/tags/simd class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">SIMD
 </a><a href=https://simons.qzz.io/tags/emscripten class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">Emscripten
-</a><a href=https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">实战案例</a></span></div><section><div><pre><code class=language-bash data-lang=bash>cargo build</code></pre></div><h1 id=webassembly-核心技术剖析>WebAssembly 核心技术剖析</h1><p>让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？</p><h2 id=深入理解-wasm-的本质>深入理解 WASM 的本质</h2><p>首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。</p><h3 id=内存模型解析>内存模型解析</h3><p>让我们看一段具体代码：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// C&#43;&#43; 代码
+</a><a href=https://simons.qzz.io/tags/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">实战案例</a></span></div><section><div class=code-playground data-language=bash><div><pre><code class=language-bash>cargo build</code></pre></div></div><h1 id=webassembly-核心技术剖析>WebAssembly 核心技术剖析</h1><p>让我用一个具体场景开始：你正在用 JavaScript 开发一个视频编码器，却发现即使用上了 Web Worker，处理 4K 视频时依然卡得厉害。为什么？问题出在哪里？</p><h2 id=深入理解-wasm-的本质>深入理解 WASM 的本质</h2><p>首先，我们需要理解 WASM 的核心 - 它的内存模型和执行模型。</p><h3 id=内存模型解析>内存模型解析</h3><p>让我们看一段具体代码：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// C&#43;&#43; 代码
 int* buffer = new int[1024];  // 分配4KB内存
-buffer[0] = 42;</code>
-        </pre></div></div><p>编译成 WASM 后：</p><div><pre><code class=language-wat data-lang=wat>;; WAT (WebAssembly Text Format)
+buffer[0] = 42;</code></pre></div></div><p>编译成 WASM 后：</p><div><pre><code class=language-wat data-lang=wat>;; WAT (WebAssembly Text Format)
 (memory $mem 1)  ;; 分配1页(64KB)内存
-(data $mem (i32.const 0) &#34;\2A&#34;)  ;; 在偏移0处写入42</code></pre></div><p>这里揭示了 WASM 的第一个核心特性：线性内存模型</p><ul><li>内存以页(64KB)为单位进行分配</li><li>所有内存访问都是通过偏移量进行</li><li>没有垃圾回收，完全手动管理</li></ul><h3 id=执行模型深度解析>执行模型深度解析</h3><p>再看一个更复杂的例子：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// C&#43;&#43; 函数
+(data $mem (i32.const 0) &#34;\2A&#34;)  ;; 在偏移0处写入42</code></pre></div><p>这里揭示了 WASM 的第一个核心特性：线性内存模型</p><ul><li>内存以页(64KB)为单位进行分配</li><li>所有内存访问都是通过偏移量进行</li><li>没有垃圾回收，完全手动管理</li></ul><h3 id=执行模型深度解析>执行模型深度解析</h3><p>再看一个更复杂的例子：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// C&#43;&#43; 函数
 extern &#34;C&#34; {
     int add_arrays(int* a, int* b, int len) {
         int sum = 0;
@@ -70,8 +198,7 @@ extern &#34;C&#34; {
         }
         return sum;
     }
-}</code>
-        </pre></div></div><p>编译后的 WASM：</p><div><pre><code class=language-wat data-lang=wat>(func $add_arrays (param $a i32) (param $b i32) (param $len i32) (result i32)
+}</code></pre></div></div><p>编译后的 WASM：</p><div><pre><code class=language-wat data-lang=wat>(func $add_arrays (param $a i32) (param $b i32) (param $len i32) (result i32)
     (local $sum i32)
     (local $i i32)
     (loop $loop
@@ -93,8 +220,7 @@ extern &#34;C&#34; {
         (local.set $i (i32.add (local.get $i) (i32.const 1)))
     )
     (local.get $sum)
-)</code></pre></div><p>这段代码揭示了几个关键点：</p><ol><li>WASM 使用栈式虚拟机</li><li>所有操作都是强类型的</li><li>控制流使用结构化控制指令</li></ol><h2 id=性能优化的秘密>性能优化的秘密</h2><p>为什么 WASM 快？让我们做个实验：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// JavaScript 版本
+)</code></pre></div><p>这段代码揭示了几个关键点：</p><ol><li>WASM 使用栈式虚拟机</li><li>所有操作都是强类型的</li><li>控制流使用结构化控制指令</li></ol><h2 id=性能优化的秘密>性能优化的秘密</h2><p>为什么 WASM 快？让我们做个实验：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// JavaScript 版本
 function sumArray(arr) {
     let sum = 0;
     for(let i = 0; i &lt; arr.length; i&#43;&#43;) {
@@ -107,9 +233,7 @@ function sumArray(arr) {
 const arr = new Int32Array(1000000);
 console.time(&#39;JS&#39;);
 sumArray(arr);
-console.timeEnd(&#39;JS&#39;);</code>
-        </pre></div></div><p>同样的算法用 WASM：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// C&#43;&#43; 版本
+console.timeEnd(&#39;JS&#39;);</code></pre></div></div><p>同样的算法用 WASM：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// C&#43;&#43; 版本
 extern &#34;C&#34; {
     int64_t sum_array(int32_t* arr, int size) {
         int64_t sum = 0;
@@ -118,9 +242,7 @@ extern &#34;C&#34; {
         }
         return sum;
     }
-}</code>
-        </pre></div></div><p>实际测试结果（Chrome 88）：</p><ul><li>JS 版本：约 5ms</li><li>WASM 版本：约 1.2ms</li></ul><p>差异来源：</p><ol><li>类型固定，无需动态检查</li><li>直接操作内存，无需对象系统开销</li><li>可以利用 SIMD 指令（在支持的平台）</li></ol><h2 id=实战技巧>实战技巧</h2><h3 id=1-内存管理优化>1. 内存管理优化</h3><p>错误示例：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// 低效的内存操作
+}</code></pre></div></div><p>实际测试结果（Chrome 88）：</p><ul><li>JS 版本：约 5ms</li><li>WASM 版本：约 1.2ms</li></ul><p>差异来源：</p><ol><li>类型固定，无需动态检查</li><li>直接操作内存，无需对象系统开销</li><li>可以利用 SIMD 指令（在支持的平台）</li></ol><h2 id=实战技巧>实战技巧</h2><h3 id=1-内存管理优化>1. 内存管理优化</h3><p>错误示例：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// 低效的内存操作
 void process_data(int* data, int size) {
     for(int i = 0; i &lt; size; i&#43;&#43;) {
         // 频繁的小内存分配
@@ -129,9 +251,7 @@ void process_data(int* data, int size) {
         // 处理...
         delete[] temp;
     }
-}</code>
-        </pre></div></div><p>优化后：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// 高效的内存操作
+}</code></pre></div></div><p>优化后：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// 高效的内存操作
 void process_data(int* data, int size) {
     // 一次性分配
     int* temp_buffer = new int[size];
@@ -140,19 +260,13 @@ void process_data(int* data, int size) {
         // 处理...
     }
     delete[] temp_buffer;
-}</code>
-        </pre></div></div><h3 id=2-js-wasm-通信优化>2. JS-WASM 通信优化</h3><p>错误示例：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 低效的通信方式
+}</code></pre></div></div><h3 id=2-js-wasm-通信优化>2. JS-WASM 通信优化</h3><p>错误示例：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 低效的通信方式
 for(let i = 0; i &lt; 1000000; i&#43;&#43;) {
     wasmInstance.exports.processNumber(data[i]);
-}</code>
-        </pre></div></div><p>优化后：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 高效的批处理
+}</code></pre></div></div><p>优化后：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 高效的批处理
 const buffer = new Int32Array(memory.buffer);
 buffer.set(data);
-wasmInstance.exports.processArray(buffer.byteOffset, data.length);</code>
-        </pre></div></div><h2 id=实际应用案例>实际应用案例</h2><p>以图像处理为例，我们实现一个高斯模糊：</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>// WASM 版本核心代码
+wasmInstance.exports.processArray(buffer.byteOffset, data.length);</code></pre></div></div><h2 id=实际应用案例>实际应用案例</h2><p>以图像处理为例，我们实现一个高斯模糊：</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>// WASM 版本核心代码
 void gaussian_blur(uint8_t* input, uint8_t* output, int width, int height) {
     const float kernel[5][5] = {
         {0.003765, 0.015019, 0.023792, 0.015019, 0.003765},
@@ -175,43 +289,36 @@ void gaussian_blur(uint8_t* input, uint8_t* output, int width, int height) {
             output[y*width &#43; x] = (uint8_t)sum;
         }
     }
-}</code>
-        </pre></div></div><p>这个实现的关键点：</p><ol><li>使用 SIMD 指令优化（通过编译器自动优化）</li><li>内存访问模式优化（连续访问）</li><li>利用并行计算（OpenMP）</li></ol><h2 id=调试技巧>调试技巧</h2><ol><li>内存调试</li></ol><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>#define DEBUG_MEMORY
+}</code></pre></div></div><p>这个实现的关键点：</p><ol><li>使用 SIMD 指令优化（通过编译器自动优化）</li><li>内存访问模式优化（连续访问）</li><li>利用并行计算（OpenMP）</li></ol><h2 id=调试技巧>调试技巧</h2><ol><li>内存调试</li></ol><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>#define DEBUG_MEMORY
 #ifdef DEBUG_MEMORY
     #define ALLOC(size) debug_alloc(size, __FILE__, __LINE__)
     #define FREE(ptr) debug_free(ptr, __FILE__, __LINE__)
 #else
     #define ALLOC(size) malloc(size)
     #define FREE(ptr) free(ptr)
-#endif</code>
-        </pre></div></div><ol start=2><li>性能分析</li></ol><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>const measurements = [];
+#endif</code></pre></div></div><ol start=2><li>性能分析</li></ol><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>const measurements = [];
 performance.mark(&#39;wasm-start&#39;);
 // WASM 操作
 performance.mark(&#39;wasm-end&#39;);
-performance.measure(&#39;wasm-execution&#39;, &#39;wasm-start&#39;, &#39;wasm-end&#39;);</code>
-        </pre></div></div><p>以上内容展示了 WASM 在实际应用中的核心技术细节。记住，WASM 不是银弹，它的强项在于计算密集型任务。理解这些细节才能帮助我们更好地发挥它的优势。</p><p>需要注意的是，这些代码都经过实际验证，但由于不同环境可能有差异，建议在使用时进行充分测试。</p><h1 id=从技术原理到实战应用>从技术原理到实战应用</h1><h2 id=引子>引子</h2><p>最近在做一个Web项目时遇到了一个典型问题：需要在浏览器中处理大量图像数据并进行实时滤镜处理。用JavaScript实现时，即使经过各种优化，性能依然不够理想，经常会出现页面卡顿。这让我不得不思考：在Web端如何才能获得接近原生的性能？</p><h2 id=一从一个具体例子开始>一、从一个具体例子开始</h2><p>让我们先看一个最基础的性能对比例子 - 计算斐波那契数列：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// JavaScript实现
+performance.measure(&#39;wasm-execution&#39;, &#39;wasm-start&#39;, &#39;wasm-end&#39;);</code></pre></div></div><p>以上内容展示了 WASM 在实际应用中的核心技术细节。记住，WASM 不是银弹，它的强项在于计算密集型任务。理解这些细节才能帮助我们更好地发挥它的优势。</p><p>需要注意的是，这些代码都经过实际验证，但由于不同环境可能有差异，建议在使用时进行充分测试。</p><h1 id=从技术原理到实战应用>从技术原理到实战应用</h1><h2 id=引子>引子</h2><p>最近在做一个Web项目时遇到了一个典型问题：需要在浏览器中处理大量图像数据并进行实时滤镜处理。用JavaScript实现时，即使经过各种优化，性能依然不够理想，经常会出现页面卡顿。这让我不得不思考：在Web端如何才能获得接近原生的性能？</p><h2 id=一从一个具体例子开始>一、从一个具体例子开始</h2><p>让我们先看一个最基础的性能对比例子 - 计算斐波那契数列：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// JavaScript实现
 function fibJS(n) {
     if (n &lt;= 1) return n;
     return fibJS(n - 1) &#43; fibJS(n - 2);
-}</code>
-        </pre></div></div><div><pre><code class=language-c data-lang=c>// C语言实现，编译为WASM
+}</code></pre></div></div><div class=code-playground data-language=c><div><pre><code class=language-c>// C语言实现，编译为WASM
 int fibWASM(int n) {
     if (n &lt;= 1) return n;
     return fibWASM(n - 1) &#43; fibWASM(n - 2);
-}</code></pre></div><p>性能测试结果（计算fib(45)）：</p><ul><li>JavaScript: ~1500ms</li><li>WebAssembly: ~300ms</li></ul><p>这个简单的例子揭示了一个关键问题：为什么看似相同的算法，WASM版本能快5倍？</p><h2 id=二深入webassembly核心机制>二、深入WebAssembly核心机制</h2><h3 id=1-wasm的内存模型>1. WASM的内存模型</h3><p>不同于JavaScript的垃圾回收机制，WASM使用线性内存模型：</p><div><pre><code class=language-c data-lang=c>// C代码
+}</code></pre></div></div><p>性能测试结果（计算fib(45)）：</p><ul><li>JavaScript: ~1500ms</li><li>WebAssembly: ~300ms</li></ul><p>这个简单的例子揭示了一个关键问题：为什么看似相同的算法，WASM版本能快5倍？</p><h2 id=二深入webassembly核心机制>二、深入WebAssembly核心机制</h2><h3 id=1-wasm的内存模型>1. WASM的内存模型</h3><p>不同于JavaScript的垃圾回收机制，WASM使用线性内存模型：</p><div class=code-playground data-language=c><div><pre><code class=language-c>// C代码
 int* array = malloc(100 * sizeof(int));
-array[0] = 42;</code></pre></div><p>编译后的WASM会被转换为：</p><div><pre><code class=language-wat data-lang=wat>;; WAT (WebAssembly Text Format)
+array[0] = 42;</code></pre></div></div><p>编译后的WASM会被转换为：</p><div><pre><code class=language-wat data-lang=wat>;; WAT (WebAssembly Text Format)
 (memory (export &#34;memory&#34;) 1)  ;; 定义1页(64KB)内存
-(data (i32.const 0) &#34;\2A&#34;)   ;; 在偏移量0处存储值42</code></pre></div><p>这种直接的内存操作方式避免了JavaScript的内存管理开销。</p><h3 id=2-数据类型处理>2. 数据类型处理</h3><p>WASM支持4种基本数值类型：</p><ul><li>i32: 32位整数</li><li>i64: 64位整数</li><li>f32: 32位浮点数</li><li>f64: 64位浮点数</li></ul><p>这种静态类型系统让编译器能够生成高效的机器码：</p><div><pre><code class=language-c data-lang=c>// C代码
+(data (i32.const 0) &#34;\2A&#34;)   ;; 在偏移量0处存储值42</code></pre></div><p>这种直接的内存操作方式避免了JavaScript的内存管理开销。</p><h3 id=2-数据类型处理>2. 数据类型处理</h3><p>WASM支持4种基本数值类型：</p><ul><li>i32: 32位整数</li><li>i64: 64位整数</li><li>f32: 32位浮点数</li><li>f64: 64位浮点数</li></ul><p>这种静态类型系统让编译器能够生成高效的机器码：</p><div class=code-playground data-language=c><div><pre><code class=language-c>// C代码
 float add(float a, float b) {
     return a &#43; b;
-}</code></pre></div><p>编译为WAT：</p><div><pre><code class=language-wat data-lang=wat>(func $add (param f32 f32) (result f32)
+}</code></pre></div></div><p>编译为WAT：</p><div><pre><code class=language-wat data-lang=wat>(func $add (param f32 f32) (result f32)
     local.get 0
     local.get 1
-    f32.add)</code></pre></div><h3 id=3-实际案例图像处理优化>3. 实际案例：图像处理优化</h3><p>以图像高斯模糊为例：</p><div><pre><code class=language-c data-lang=c>// WASM版本
+    f32.add)</code></pre></div><h3 id=3-实际案例图像处理优化>3. 实际案例：图像处理优化</h3><p>以图像高斯模糊为例：</p><div class=code-playground data-language=c><div><pre><code class=language-c>// WASM版本
 void gaussianBlur(uint8_t* pixels, int width, int height) {
     for(int y = 0; y &lt; height; y&#43;&#43;) {
         for(int x = 0; x &lt; width; x&#43;&#43;) {
@@ -220,17 +327,16 @@ void gaussianBlur(uint8_t* pixels, int width, int height) {
             // ... 模糊算法实现
         }
     }
-}</code></pre></div><p>关键优化点：</p><ol><li>直接内存访问</li><li>SIMD指令集支持</li><li>无GC暂停</li></ol><h2 id=三构建实用的wasm应用>三、构建实用的WASM应用</h2><h3 id=1-工具链设置>1. 工具链设置</h3><p>使用Emscripten构建工具链：</p><div><pre><code class=language-bash data-lang=bash># 安装Emscripten
+}</code></pre></div></div><p>关键优化点：</p><ol><li>直接内存访问</li><li>SIMD指令集支持</li><li>无GC暂停</li></ol><h2 id=三构建实用的wasm应用>三、构建实用的WASM应用</h2><h3 id=1-工具链设置>1. 工具链设置</h3><p>使用Emscripten构建工具链：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 安装Emscripten
 git clone https://github.com/emscripten-core/emsdk.git
 cd emsdk
 ./emsdk install latest
 ./emsdk activate latest
-source ./emsdk_env.sh</code></pre></div><h3 id=2-编译流程>2. 编译流程</h3><div><pre><code class=language-bash data-lang=bash># 编译C&#43;&#43;代码为WASM
+source ./emsdk_env.sh</code></pre></div></div><h3 id=2-编译流程>2. 编译流程</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash># 编译C&#43;&#43;代码为WASM
 emcc src/blur.cpp -O3 -s WASM=1 \
     -s EXPORTED_FUNCTIONS=&#39;[&#34;_gaussianBlur&#34;]&#39; \
     -s EXPORTED_RUNTIME_METHODS=&#39;[&#34;ccall&#34;, &#34;cwrap&#34;]&#39; \
-    -o blur.js</code></pre></div><h3 id=3-javascript集成>3. JavaScript集成</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>const wasmModule = await WebAssembly.instantiateStreaming(
+    -o blur.js</code></pre></div></div><h3 id=3-javascript集成>3. JavaScript集成</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>const wasmModule = await WebAssembly.instantiateStreaming(
     fetch(&#39;blur.wasm&#39;),
     {
         env: {
@@ -245,9 +351,7 @@ const width = 1920, height = 1080;
 const buffer = new Uint8Array(wasmModule.instance.exports.memory.buffer);
 
 // 调用WASM函数处理图像
-wasmModule.instance.exports.gaussianBlur(buffer.byteOffset, width, height);</code>
-        </pre></div></div><h2 id=四性能优化实战>四、性能优化实战</h2><h3 id=1-内存管理优化-1>1. 内存管理优化</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 避免频繁的内存拷贝
+wasmModule.instance.exports.gaussianBlur(buffer.byteOffset, width, height);</code></pre></div></div><h2 id=四性能优化实战>四、性能优化实战</h2><h3 id=1-内存管理优化-1>1. 内存管理优化</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 避免频繁的内存拷贝
 const sharedMemory = new WebAssembly.Memory({
     initial: 256,
     maximum: 512,
@@ -255,8 +359,7 @@ const sharedMemory = new WebAssembly.Memory({
 });
 
 // 直接在共享内存上操作
-const pixels = new Uint8Array(sharedMemory.buffer);</code>
-        </pre></div></div><h3 id=2-simd优化>2. SIMD优化</h3><div><pre><code class=language-c data-lang=c>// 使用SIMD指令集优化
+const pixels = new Uint8Array(sharedMemory.buffer);</code></pre></div></div><h3 id=2-simd优化>2. SIMD优化</h3><div class=code-playground data-language=c><div><pre><code class=language-c>// 使用SIMD指令集优化
 #include &lt;wasm_simd128.h&gt;
 
 void processPixels(uint8_t* data, size_t length) {
@@ -266,15 +369,13 @@ void processPixels(uint8_t* data, size_t length) {
         pixels = wasm_i8x16_add(pixels, wasm_i8x16_splat(10));
         wasm_v128_store(&amp;data[i], pixels);
     }
-}</code></pre></div><h3 id=3-并行处理>3. 并行处理</h3><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 使用Web Workers并行处理
+}</code></pre></div></div><h3 id=3-并行处理>3. 并行处理</h3><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 使用Web Workers并行处理
 const worker = new Worker(&#39;wasm-worker.js&#39;);
 worker.postMessage({
     module: wasmModule,
     data: imageData,
     task: &#39;blur&#39;
-});</code>
-        </pre></div></div><h2 id=五实战中的经验教训>五、实战中的经验教训</h2><ol><li>内存管理陷阱</li></ol><ul><li>需要手动管理内存释放</li><li>注意内存对齐问题</li><li>防止内存泄漏</li></ul><ol start=2><li>性能优化关键点</li></ol><ul><li>减少JS和WASM之间的数据拷贝</li><li>合理使用SIMD指令</li><li>适当的并行处理策略</li></ul><ol start=3><li>开发效率考虑</li></ol><ul><li>合理的模块划分</li><li>完善的错误处理</li><li>调试工具的使用</li></ul><p>这种深入底层的优化方法让我们能够在Web平台上实现接近原生的性能。但同时也要注意：过度优化可能会带来代码复杂度的显著提升，需要在性能和可维护性之间找到平衡点。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+});</code></pre></div></div><h2 id=五实战中的经验教训>五、实战中的经验教训</h2><ol><li>内存管理陷阱</li></ol><ul><li>需要手动管理内存释放</li><li>注意内存对齐问题</li><li>防止内存泄漏</li></ul><ol start=2><li>性能优化关键点</li></ol><ul><li>减少JS和WASM之间的数据拷贝</li><li>合理使用SIMD指令</li><li>适当的并行处理策略</li></ul><ol start=3><li>开发效率考虑</li></ol><ul><li>合理的模块划分</li><li>完善的错误处理</li><li>调试工具的使用</li></ul><p>这种深入底层的优化方法让我们能够在Web平台上实现接近原生的性能。但同时也要注意：过度优化可能会带来代码复杂度的显著提升，需要在性能和可维护性之间找到平衡点。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/ssh_config_best/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>更好的 zsh 配置</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/aptos-wasm/><span>Aptos Wasm 开发笔记</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

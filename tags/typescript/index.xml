@@ -17,14 +17,146 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="jsx"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx"&gt;// React函数式组件
 const Component = ({ data }) =&amp;gt; {
  const [state, setState] = useState(initialState);
  const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
  
  return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
 };&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
@@ -43,14 +175,146 @@ const Component = ({ data }) =&amp;gt; {
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="vue"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
 &amp;lt;script setup&amp;gt;
 import { ref, computed } from &amp;#39;vue&amp;#39;
 
 const data = ref(initialData)
 const derivedValue = computed(() =&amp;gt; compute(data.value))
 &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
@@ -65,22 +329,147 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 调用一个不存在的方法
 obj.nonexistMethod()
 
 // 传错参数类型
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -96,11 +485,137 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="typescript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-typescript"&gt;// 变量类型
+ &lt;pre&gt;&lt;code class="language-typescript"&gt;// 变量类型
 let name: string = &amp;#34;老陈&amp;#34;
 
 // 函数类型
@@ -113,11 +628,10 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

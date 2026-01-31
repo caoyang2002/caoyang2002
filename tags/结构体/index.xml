@@ -9,8 +9,136 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 struct S1{
  char c1;//1
  int i;//4
@@ -27,6 +155,10 @@ int main(){
  printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;对齐规则：&lt;/p&gt;

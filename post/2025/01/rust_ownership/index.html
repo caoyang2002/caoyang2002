@@ -10,10 +10,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            fn main() {
+        fn main() {
     let data = vec![1, 2, 3];
     process_data(data);
     println!("{:?}", data);  // 编译错误！
@@ -22,10 +148,9 @@
 fn process_data(v: Vec<i32>) {
     println!("Processing: {:?}", v);
 }
-        
-    
     
 
+    
     
 
 
@@ -48,16 +173,141 @@ fn process_data(v: Vec<i32>) {
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            let s1 = String::from("hello");
+        let s1 = String::from("hello");
 let s2 = s1;  // 所有权从s1转移到s2
 // println!("{}", s1);  // 编译错误：s1已经失效
-        
-    
     
 
+    
     
 
 
@@ -82,8 +332,7 @@ let s2 = s1;  // 所有权从s1转移到s2
 </a><a href=https://simons.qzz.io/tags/%E5%80%9F%E7%94%A8%E6%A3%80%E6%9F%A5 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">借用检查
 </a><a href=https://simons.qzz.io/tags/%E5%86%85%E5%AD%98%E5%AE%89%E5%85%A8 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">内存安全
 </a><a href=https://simons.qzz.io/tags/%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">系统设计
-</a><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程范式</a></span></div><section><h1 id=从一个常见问题说起>从一个常见问题说起</h1><p>看这段在其他语言中很普通的代码：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+</a><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程范式</a></span></div><section><h1 id=从一个常见问题说起>从一个常见问题说起</h1><p>看这段在其他语言中很普通的代码：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     let data = vec![1, 2, 3];
     process_data(data);
     println!(&#34;{:?}&#34;, data);  // 编译错误！
@@ -91,44 +340,32 @@ let s2 = s1;  // 所有权从s1转移到s2
 
 fn process_data(v: Vec&lt;i32&gt;) {
     println!(&#34;Processing: {:?}&#34;, v);
-}</code>
-        </pre></div></div><p>为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。</p><h2 id=所有权的三条核心规则>所有权的三条核心规则</h2><ol><li><strong>每个值只能有一个所有者</strong></li><li><strong>所有者离开作用域，值将被丢弃</strong></li><li><strong>一个值同一时刻只能有一个所有者</strong></li></ol><p>让我们通过代码详细理解这些规则：</p><h3 id=规则1单一所有权>规则1：单一所有权</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let s1 = String::from(&#34;hello&#34;);
+}</code></pre></div></div><p>为什么这段代码在Rust中会报错？这就涉及到 Rust 最独特的特性：所有权系统。</p><h2 id=所有权的三条核心规则>所有权的三条核心规则</h2><ol><li><strong>每个值只能有一个所有者</strong></li><li><strong>所有者离开作用域，值将被丢弃</strong></li><li><strong>一个值同一时刻只能有一个所有者</strong></li></ol><p>让我们通过代码详细理解这些规则：</p><h3 id=规则1单一所有权>规则1：单一所有权</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let s1 = String::from(&#34;hello&#34;);
 let s2 = s1;  // 所有权从s1转移到s2
-// println!(&#34;{}&#34;, s1);  // 编译错误：s1已经失效</code>
-        </pre></div></div><p>内存布局变化：</p><div><pre><code class=language- data-lang>s1              s2
+// println!(&#34;{}&#34;, s1);  // 编译错误：s1已经失效</code></pre></div></div><p>内存布局变化：</p><div><pre><code class=language- data-lang>s1              s2
 ptr ----------&gt; &#34;hello&#34;    // 移动前
 
 s2
-ptr ----------&gt; &#34;hello&#34;    // 移动后，s1不再有效</code></pre></div><h3 id=规则2作用域规则>规则2：作用域规则</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>{
+ptr ----------&gt; &#34;hello&#34;    // 移动后，s1不再有效</code></pre></div><h3 id=规则2作用域规则>规则2：作用域规则</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>{
     let s = String::from(&#34;hello&#34;);  // s获得所有权
     // 使用 s
-}  // s 离开作用域，内存被释放</code>
-        </pre></div></div><h3 id=规则3独占访问>规则3：独占访问</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut v = vec![1, 2, 3];
+}  // s 离开作用域，内存被释放</code></pre></div></div><h3 id=规则3独占访问>规则3：独占访问</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut v = vec![1, 2, 3];
 let r1 = &amp;mut v;  // 可以获取可变引用
 // let r2 = &amp;mut v;  // 错误：不能同时有两个可变引用
-r1.push(4);</code>
-        </pre></div></div><h2 id=引用与借用共享但不转移所有权>引用与借用：共享但不转移所有权</h2><h3 id=借用规则>借用规则</h3><ol><li><strong>同一时刻，要么有一个可变引用，要么有任意多个不可变引用</strong></li><li><strong>引用必须始终有效</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn calculate_length(s: &amp;String) -&gt; usize {  // 借用 String
+r1.push(4);</code></pre></div></div><h2 id=引用与借用共享但不转移所有权>引用与借用：共享但不转移所有权</h2><h3 id=借用规则>借用规则</h3><ol><li><strong>同一时刻，要么有一个可变引用，要么有任意多个不可变引用</strong></li><li><strong>引用必须始终有效</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn calculate_length(s: &amp;String) -&gt; usize {  // 借用 String
     s.len()
 }  // 这里不会释放 String，因为只是借用
 
 let s1 = String::from(&#34;hello&#34;);
 let len = calculate_length(&amp;s1);  // 传递引用
-println!(&#34;Length of &#39;{}&#39; is {}&#34;, s1, len);  // s1 仍然可用</code>
-        </pre></div></div><h3 id=可变引用的限制>可变引用的限制</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut s = String::from(&#34;hello&#34;);
+println!(&#34;Length of &#39;{}&#39; is {}&#34;, s1, len);  // s1 仍然可用</code></pre></div></div><h3 id=可变引用的限制>可变引用的限制</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut s = String::from(&#34;hello&#34;);
 
 let r1 = &amp;s;     // 没问题
 let r2 = &amp;s;     // 没问题
 // let r3 = &amp;mut s;  // 错误：已经有了不可变引用
 println!(&#34;{} and {}&#34;, r1, r2);
 
-let r3 = &amp;mut s;  // 现在可以了，因为 r1 和 r2 不再使用</code>
-        </pre></div></div><h2 id=深入理解所有权转移>深入理解所有权转移</h2><h3 id=在函数调用中>在函数调用中</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn take_ownership(s: String) {
+let r3 = &amp;mut s;  // 现在可以了，因为 r1 和 r2 不再使用</code></pre></div></div><h2 id=深入理解所有权转移>深入理解所有权转移</h2><h3 id=在函数调用中>在函数调用中</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn take_ownership(s: String) {
     println!(&#34;{}&#34;, s);
 }  // s被释放
 
@@ -137,13 +374,9 @@ fn give_ownership() -&gt; String {
 }  // 返回值的所有权转移给调用者
 
 let s1 = give_ownership();  // s1获得所有权
-take_ownership(s1);         // s1的所有权转移入函数</code>
-        </pre></div></div><h3 id=在赋值中>在赋值中</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let v1 = vec![1, 2, 3];
+take_ownership(s1);         // s1的所有权转移入函数</code></pre></div></div><h3 id=在赋值中>在赋值中</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let v1 = vec![1, 2, 3];
 let v2 = v1.clone();  // 深拷贝，v1和v2都有效
-let v3 = v1;          // 移动，v1不再有效</code>
-        </pre></div></div><h2 id=实际应用中的最佳实践>实际应用中的最佳实践</h2><h3 id=1-使用引用来避免所有权转移>1. 使用引用来避免所有权转移</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 不好的做法
+let v3 = v1;          // 移动，v1不再有效</code></pre></div></div><h2 id=实际应用中的最佳实践>实际应用中的最佳实践</h2><h3 id=1-使用引用来避免所有权转移>1. 使用引用来避免所有权转移</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 不好的做法
 fn process(s: String) {
     println!(&#34;{}&#34;, s);
 }
@@ -151,9 +384,7 @@ fn process(s: String) {
 // 好的做法
 fn process(s: &amp;String) {
     println!(&#34;{}&#34;, s);
-}</code>
-        </pre></div></div><h3 id=2-合理使用生命周期标注>2. 合理使用生命周期标注</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct Cache&lt;&#39;a&gt; {
+}</code></pre></div></div><h3 id=2-合理使用生命周期标注>2. 合理使用生命周期标注</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct Cache&lt;&#39;a&gt; {
     data: &amp;&#39;a [u8],
 }
 
@@ -161,18 +392,14 @@ impl&lt;&#39;a&gt; Cache&lt;&#39;a&gt; {
     fn new(data: &amp;&#39;a [u8]) -&gt; Self {
         Cache { data }
     }
-}</code>
-        </pre></div></div><h3 id=3-使用克隆的时机>3. 使用克隆的时机</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 需要克隆的情况
+}</code></pre></div></div><h3 id=3-使用克隆的时机>3. 使用克隆的时机</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 需要克隆的情况
 let original = String::from(&#34;hello&#34;);
 let backup = original.clone();  // 确实需要两份数据
 
 // 不需要克隆的情况
 fn print_string(s: &amp;String) {  // 使用引用代替克隆
     println!(&#34;{}&#34;, s);
-}</code>
-        </pre></div></div><h2 id=常见陷阱和解决方案>常见陷阱和解决方案</h2><h3 id=1-循环引用问题>1. 循环引用问题</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>use std::rc::Rc;
+}</code></pre></div></div><h2 id=常见陷阱和解决方案>常见陷阱和解决方案</h2><h3 id=1-循环引用问题>1. 循环引用问题</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>use std::rc::Rc;
 use std::cell::RefCell;
 
 // 可能导致内存泄露的代码
@@ -184,14 +411,10 @@ struct Node {
 use std::rc::Weak;
 struct BetterNode {
     next: Option&lt;Weak&lt;RefCell&lt;BetterNode&gt;&gt;&gt;,
-}</code>
-        </pre></div></div><h3 id=2-可变性与借用冲突>2. 可变性与借用冲突</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut v = vec![1, 2, 3];
+}</code></pre></div></div><h3 id=2-可变性与借用冲突>2. 可变性与借用冲突</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut v = vec![1, 2, 3];
 let first = &amp;v[0];  // 不可变借用
 v.push(4);          // 错误：不能同时有可变和不可变借用
-println!(&#34;{}&#34;, first);</code>
-        </pre></div></div><h3 id=3-生命周期约束>3. 生命周期约束</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct StrHolder&lt;&#39;a&gt; {
+println!(&#34;{}&#34;, first);</code></pre></div></div><h3 id=3-生命周期约束>3. 生命周期约束</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct StrHolder&lt;&#39;a&gt; {
     s: &amp;&#39;a str,
 }
 
@@ -199,15 +422,11 @@ impl&lt;&#39;a&gt; StrHolder&lt;&#39;a&gt; {
     fn get_str(&amp;self) -&gt; &amp;str {
         self.s
     }
-}</code>
-        </pre></div></div><h2 id=性能影响>性能影响</h2><p>所有权系统的设计带来了：</p><ol><li>零开销抽象</li><li>编译时内存管理</li><li>无需垃圾回收</li><li>可预测的资源释放</li></ol><h1 id=深入理解>深入理解</h1><p>一个常见的内存问题：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+}</code></pre></div></div><h2 id=性能影响>性能影响</h2><p>所有权系统的设计带来了：</p><ol><li>零开销抽象</li><li>编译时内存管理</li><li>无需垃圾回收</li><li>可预测的资源释放</li></ol><h1 id=深入理解>深入理解</h1><p>一个常见的内存问题：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     let v = vec![1, 2, 3];  // v 拥有这个 vector
     let v2 = v;             // 所有权转移到 v2
     println!(&#34;{:?}&#34;, v);    // 编译错误！v 已经不再有效
-}</code>
-        </pre></div></div><p>这个简单的例子揭示了Rust所有权系统的核心。让我们深入分析为什么会这样。</p><ol><li><p>内存安全问题：</p><ul><li><p>如果两个变量同时拥有堆内存的所有权，谁负责释放？</p></li><li><p>如果重复释放会怎样？</p></li><li><p>如果忘记释放会怎样？</p></li></ul></li><li><p>系统设计权衡：</p></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 选择 1: 深拷贝（像 Python）
+}</code></pre></div></div><p>这个简单的例子揭示了Rust所有权系统的核心。让我们深入分析为什么会这样。</p><ol><li><p>内存安全问题：</p><ul><li><p>如果两个变量同时拥有堆内存的所有权，谁负责释放？</p></li><li><p>如果重复释放会怎样？</p></li><li><p>如果忘记释放会怎样？</p></li></ul></li><li><p>系统设计权衡：</p></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 选择 1: 深拷贝（像 Python）
 let s2 = s1.clone(); // 性能开销大
 
 // 选择 2: 引用计数（像 Python 的内部实现）
@@ -215,9 +434,7 @@ use std::rc::Rc;
 let s2 = Rc::clone(&amp;s1); // 运行时开销
 
 // 选择 3: 所有权系统（Rust 的选择）
-let s2 = s1; // 零开销抽象</code>
-        </pre></div></div><ol start=3><li>试错</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 尝试 1：直接使用
+let s2 = s1; // 零开销抽象</code></pre></div></div><ol start=3><li>试错</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 尝试 1：直接使用
 let s1 = String::from(&#34;hello&#34;);
 let s2 = s1;
 println!(&#34;{}&#34;, s1); // 错误：s1已被移动
@@ -236,9 +453,7 @@ println!(&#34;{}&#34;, s1); // 成功！
 {
     let s1 = String::from(&#34;hello&#34;);
     let s2 = s1;
-} // s2 离开作用域，内存被释放</code>
-        </pre></div></div><ol start=4><li>结论</li></ol><p>主要规则：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 每个值只能有一个所有者
+} // s2 离开作用域，内存被释放</code></pre></div></div><ol start=4><li>结论</li></ol><p>主要规则：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 每个值只能有一个所有者
 let s1 = String::from(&#34;hello&#34;);
 let s2 = s1;  // s1 的所有权移动到 s2
 
@@ -253,9 +468,7 @@ let s2 = &amp;s1;  // s2 借用 s1
 
 // 4. Copy 类型例外（栈上的值）
 let x = 5;
-let y = x; // x 仍然可用，因为 i32 是 Copy 类型</code>
-        </pre></div></div><h2 id=所有权的三个核心规则>所有权的三个核心规则</h2><ol><li>每个值在Rust中只有一个所有者</li><li>当所有者离开作用域，值会被丢弃</li><li>一个值可以被借用，但借用必须遵循特定规则</li></ol><p>让我们通过实际案例来理解这些规则：</p><h3 id=1-单一所有权原则>1. 单一所有权原则</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 栈上数据的Copy语义
+let y = x; // x 仍然可用，因为 i32 是 Copy 类型</code></pre></div></div><h2 id=所有权的三个核心规则>所有权的三个核心规则</h2><ol><li>每个值在Rust中只有一个所有者</li><li>当所有者离开作用域，值会被丢弃</li><li>一个值可以被借用，但借用必须遵循特定规则</li></ol><p>让我们通过实际案例来理解这些规则：</p><h3 id=1-单一所有权原则>1. 单一所有权原则</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 栈上数据的Copy语义
 let x = 5;
 let y = x;     // x的值被复制到y
 println!(&#34;x: {}, y: {}&#34;, x, y);  // 正常工作
@@ -263,23 +476,19 @@ println!(&#34;x: {}, y: {}&#34;, x, y);  // 正常工作
 // 堆上数据的Move语义
 let s1 = String::from(&#34;hello&#34;);
 let s2 = s1;   // s1的所有权移动到s2
-// println!(&#34;{}&#34;, s1);  // 编译错误！s1已失效</code>
-        </pre></div></div><p>为什么会这样？让我们看看内存布局：</p><div><pre><code class=language-text data-lang=text>栈数据(x = 5):    堆数据(s1 = &#34;hello&#34;):
+// println!(&#34;{}&#34;, s1);  // 编译错误！s1已失效</code></pre></div></div><p>为什么会这样？让我们看看内存布局：</p><div><pre><code class=language-text data-lang=text>栈数据(x = 5):    堆数据(s1 = &#34;hello&#34;):
 &#43;---&#43;             &#43;----------&#43;
 | 5 |             | ptr      |---&gt; &#43;---&#43;---&#43;---&#43;---&#43;---&#43;
 &#43;---&#43;             | len      |     | h | e | l | l | o |
                   | capacity |     &#43;---&#43;---&#43;---&#43;---&#43;---&#43;
-                  &#43;----------&#43;</code></pre></div><h3 id=2-作用域规则>2. 作用域规则</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+                  &#43;----------&#43;</code></pre></div><h3 id=2-作用域规则>2. 作用域规则</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     {
         let s = String::from(&#34;hello&#34;);  // s 进入作用域
         // 使用 s
     }  // s 离开作用域，String 被清理
 
     // println!(&#34;{}&#34;, s);  // 错误：s 已经不存在
-}</code>
-        </pre></div></div><h3 id=3-借用规则>3. 借用规则</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+}</code></pre></div></div><h3 id=3-借用规则>3. 借用规则</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     let mut s = String::from(&#34;hello&#34;);
 
     // 不可变借用
@@ -292,9 +501,7 @@ let s2 = s1;   // s1的所有权移动到s2
     r3.push_str(&#34; world&#34;);
 
     // println!(&#34;{}&#34;, r1);  // 错误：不能同时存在可变和不可变借用
-}</code>
-        </pre></div></div><h2 id=深入理解借用检查器>深入理解借用检查器</h2><p>借用检查器是编译器的一个组件，它确保所有的借用都遵循以下规则：</p><ol><li><p>同一时间，你只能有：</p><ul><li>一个可变引用，或者</li><li>任意数量的不可变引用</li></ul></li><li><p>引用必须总是有效的</p></li></ol><p>示例：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+}</code></pre></div></div><h2 id=深入理解借用检查器>深入理解借用检查器</h2><p>借用检查器是编译器的一个组件，它确保所有的借用都遵循以下规则：</p><ol><li><p>同一时间，你只能有：</p><ul><li>一个可变引用，或者</li><li>任意数量的不可变引用</li></ul></li><li><p>引用必须总是有效的</p></li></ol><p>示例：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     let mut data = vec![1, 2, 3];
 
     // 错误案例
@@ -308,9 +515,7 @@ let s2 = s1;   // s1的所有权移动到s2
         println!(&#34;{:?}&#34;, ref2);
     }  // ref2 的借用在这里结束
     data.push(4);  // 现在可以修改了
-}</code>
-        </pre></div></div><h2 id=所有权在函数中的应用>所有权在函数中的应用</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn process_string(s: String) {  // s 获得所有权
+}</code></pre></div></div><h2 id=所有权在函数中的应用>所有权在函数中的应用</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn process_string(s: String) {  // s 获得所有权
     println!(&#34;{}&#34;, s);
 }  // s 被释放
 
@@ -326,26 +531,18 @@ fn main() {
 
     process_string(s);  // s 的所有权被移动
     // println!(&#34;{}&#34;, s);  // 错误：s 已经无效
-}</code>
-        </pre></div></div><h2 id=常见的所有权模式>常见的所有权模式</h2><h3 id=1-返回所有权>1. 返回所有权</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn create_and_process() -&gt; String {
+}</code></pre></div></div><h2 id=常见的所有权模式>常见的所有权模式</h2><h3 id=1-返回所有权>1. 返回所有权</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn create_and_process() -&gt; String {
     let s = String::from(&#34;hello&#34;);
     // 处理 s
     s  // 返回所有权
-}</code>
-        </pre></div></div><h3 id=2-多个返回值>2. 多个返回值</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn split_at_char(s: &amp;str, c: char) -&gt; (&amp;str, &amp;str) {
+}</code></pre></div></div><h3 id=2-多个返回值>2. 多个返回值</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn split_at_char(s: &amp;str, c: char) -&gt; (&amp;str, &amp;str) {
     match s.find(c) {
         Some(i) =&gt; (&amp;s[..i], &amp;s[i&#43;1..]),
         None =&gt; (s, &#34;&#34;),
     }
-}</code>
-        </pre></div></div><h3 id=3-使用clone避免移动>3. 使用Clone避免移动</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let s1 = String::from(&#34;hello&#34;);
+}</code></pre></div></div><h3 id=3-使用clone避免移动>3. 使用Clone避免移动</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>let s1 = String::from(&#34;hello&#34;);
 let s2 = s1.clone();  // 创建深拷贝
-println!(&#34;s1 = {}, s2 = {}&#34;, s1, s2);  // 两者都可用</code>
-        </pre></div></div><h2 id=高级所有权概念>高级所有权概念</h2><h3 id=1-生命周期>1. 生命周期</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct Excerpt&lt;&#39;a&gt; {
+println!(&#34;s1 = {}, s2 = {}&#34;, s1, s2);  // 两者都可用</code></pre></div></div><h2 id=高级所有权概念>高级所有权概念</h2><h3 id=1-生命周期>1. 生命周期</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct Excerpt&lt;&#39;a&gt; {
     part: &amp;&#39;a str,
 }
 
@@ -354,27 +551,17 @@ fn main() {
     let excerpt = Excerpt {
         part: &amp;novel[..],
     };
-}</code>
-        </pre></div></div><h3 id=2-智能指针>2. 智能指针</h3><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>use std::rc::Rc;
+}</code></pre></div></div><h3 id=2-智能指针>2. 智能指针</h3><div class=code-playground data-language=rust><div><pre><code class=language-rust>use std::rc::Rc;
 
 let data = Rc::new(vec![1, 2, 3]);
-let data2 = data.clone();  // 增加引用计数，不是深拷贝</code>
-        </pre></div></div><h2 id=常见陷阱和解决方案-1>常见陷阱和解决方案</h2><ol><li>可变借用与迭代</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut vec = vec![1, 2, 3];
+let data2 = data.clone();  // 增加引用计数，不是深拷贝</code></pre></div></div><h2 id=常见陷阱和解决方案-1>常见陷阱和解决方案</h2><ol><li>可变借用与迭代</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut vec = vec![1, 2, 3];
 for i in &amp;vec {
     vec.push(*i);  // 错误：不能在迭代时修改
-}</code>
-        </pre></div></div><ol start=2><li>自引用结构</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct SelfRef {
+}</code></pre></div></div><ol start=2><li>自引用结构</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct SelfRef {
     value: String,
     pointer: *const String,  // 需要特殊处理
-}</code>
-        </pre></div></div><ol start=3><li>闭包捕获</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let value = String::from(&#34;hello&#34;);
-let closure = || println!(&#34;{}&#34;, value);  // 闭包捕获value的引用</code>
-        </pre></div></div><p>Rust的所有权系统是其最独特的特性之一，虽然初学时可能觉得受限，但它确保了内存安全和线程安全，同时避免了运行时开销。掌握所有权，就掌握了Rust编程的核心。</p><p>你在使用其他语言时是否遇到过内存相关的问题？Rust的所有权系统是否能帮助解决这些问题？</p><h2 id=最佳实践>最佳实践</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 优先使用引用，除非需要所有权
+}</code></pre></div></div><ol start=3><li>闭包捕获</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let value = String::from(&#34;hello&#34;);
+let closure = || println!(&#34;{}&#34;, value);  // 闭包捕获value的引用</code></pre></div></div><p>Rust的所有权系统是其最独特的特性之一，虽然初学时可能觉得受限，但它确保了内存安全和线程安全，同时避免了运行时开销。掌握所有权，就掌握了Rust编程的核心。</p><p>你在使用其他语言时是否遇到过内存相关的问题？Rust的所有权系统是否能帮助解决这些问题？</p><h2 id=最佳实践>最佳实践</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 优先使用引用，除非需要所有权
 fn process(s: &amp;String) { /* ... */ }
 
 // 2. 需要修改时使用可变引用
@@ -389,8 +576,7 @@ impl Drop for MyResource {
     fn drop(&amp;mut self) {
         // 清理代码
     }
-}</code>
-        </pre></div></div><p>这个系统虽然初看很严格，但它实现了：</p><ul><li>零成本抽象的内存安全</li><li>无需垃圾回收的自动内存管理</li><li>并发安全的保证</li><li>高效的资源管理</li></ul><p>这就是为什么 Rust 能在保证内存安全的同时达到接近 C++ 的性能。</p><h2 id=思考题>思考题</h2><ol><li>为什么 Rust 选择所有权而不是垃圾回收？</li><li>所有权系统如何影响并发编程？</li><li>如何在复杂系统中管理所有权关系？</li></ol><p>这些概念可能初看较难，但掌握后会极大提升代码质量和系统可靠性。你觉得相比其他语言的内存管理方式，Rust 的所有权系统有什么优势和挑战？</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code></pre></div></div><p>这个系统虽然初看很严格，但它实现了：</p><ul><li>零成本抽象的内存安全</li><li>无需垃圾回收的自动内存管理</li><li>并发安全的保证</li><li>高效的资源管理</li></ul><p>这就是为什么 Rust 能在保证内存安全的同时达到接近 C++ 的性能。</p><h2 id=思考题>思考题</h2><ol><li>为什么 Rust 选择所有权而不是垃圾回收？</li><li>所有权系统如何影响并发编程？</li><li>如何在复杂系统中管理所有权关系？</li></ol><p>这些概念可能初看较难，但掌握后会极大提升代码质量和系统可靠性。你觉得相比其他语言的内存管理方式，Rust 的所有权系统有什么优势和挑战？</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/rust_cyc/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Rust 生命周期</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/rust_closure/><span>rust 闭包</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

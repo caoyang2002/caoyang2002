@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 13:12:16 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sat, 31 Jan 2026 14:55:22 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt;&lt;img src="https://simons.qzz.io/about/simons.jpg" alt="me"&gt;&lt;/p&gt;
 &lt;p&gt;你好，我是simons。从 2021 年第一次接触 web 开发，直到 2022 年我开始从 Java 正式入门开发领域，并在年底退出了成都大运会的一个设计团队，随后我几乎将所有时间都投入到了开发领域。&lt;/p&gt;
 &lt;p&gt;下图是 2021 年我第一次跟着教程做的 H5 网站，也是第一次尝到编程的乐趣（笑）：&lt;/p&gt;
@@ -5404,6 +5404,132 @@
 
 
 
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div&gt;
  &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
 你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
@@ -5422,8 +5548,140 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</guid><description>&lt;p&gt;
@@ -6018,8 +6276,136 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;git config --global alias.sync &amp;#39;!f() { 
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;git config --global alias.sync &amp;#39;!f() { 
  echo &amp;#34;Pushing to origin...&amp;#34;;
  git push origin main || echo &amp;#34;Failed to push to origin&amp;#34;;
  
@@ -6036,6 +6422,10 @@
  echo &amp;#34;&amp;#34;;
  echo &amp;#34;✨ Sync completed!&amp;#34;;
 }; f&amp;#39;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h2 id="整体功能"&gt;整体功能&lt;/h2&gt;
@@ -15464,9 +15854,141 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;. # 小数点，即重复（Dot）命令，重复执行上一次命令
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;. # 小数点，即重复（Dot）命令，重复执行上一次命令
 N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;Tips: 善用宏和正则表达式，同样可以达到减少重复操作的目的。&lt;/p&gt;</description></item><item><title>Jupyter 快捷键</title><link>https://simons.qzz.io/post/2026/01/jupyter_key/</link><pubDate>Mon, 26 Jan 2026 13:34:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/jupyter_key/</guid><description>&lt;h3 id="jupyter-notebook-的快捷键"&gt;Jupyter Notebook 的快捷键&lt;/h3&gt;
@@ -15513,6 +16035,132 @@ github：readme.md(md=markdown)
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -16763,8 +17411,140 @@ github：readme.md(md=markdown)
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -16785,13 +17565,145 @@ github：readme.md(md=markdown)
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd /tmp &amp;amp;&amp;amp; \
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;cd /tmp &amp;amp;&amp;amp; \
 wget -q https://go.dev/dl/go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
 sudo rm -rf /usr/local/go &amp;amp;&amp;amp; \
 sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
 export PATH=/usr/local/go/bin:$PATH &amp;amp;&amp;amp; \
 go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="安装到-jupyter"&gt;安装到 jupyter&lt;/h1&gt;
@@ -16805,8 +17717,136 @@ go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
 cd ~/go-module/gophernotes &amp;amp;&amp;amp; \
 rm -f ~/go/bin/gophernotes &amp;amp;&amp;amp; \
 GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o ~/go/bin/gophernotes &amp;amp;&amp;amp; \
@@ -16814,6 +17854,10 @@ chmod &amp;#43;x ~/go/bin/gophernotes &amp;amp;&amp;amp; \
 ~/go/bin/gophernotes install &amp;amp;&amp;amp; \
 echo &amp;#34;✅ 安装完成！&amp;#34; &amp;amp;&amp;amp; \
 jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;</description></item><item><title>营销的产品思维</title><link>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</link><pubDate>Tue, 10 Jun 2025 08:53:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</guid><description>&lt;p&gt;知名产品经理俞军在他的书《俞军产品方法论》中说：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“产品经理只要学会用四个概念分析产品和用户就算及格了：效用、成本、边际、供需定律。”&lt;/p&gt;
@@ -20761,6 +21805,133 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="mermaid"&gt;mindmap
  root((思维导图))
  节点一
@@ -20795,6 +21966,133 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -21436,8 +22734,140 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE USER &amp;#39;username&amp;#39;@&amp;#39;host&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;;&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="sql"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql"&gt;CREATE USER &amp;#39;username&amp;#39;@&amp;#39;host&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;ul&gt;
@@ -77489,6 +78919,132 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div&gt;
  &lt;pre&gt;&lt;code class="language-error" data-lang="error"&gt;Multiple packages (libgcc1 and libgcc1) providing same name marked HOLD or
 PREFER. Using latest.
@@ -77523,11 +79079,137 @@ Collected errors:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;# 一个简单的例子
+ &lt;pre&gt;&lt;code class="language-python"&gt;# 一个简单的例子
 text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # 普通编码：每个字符占8位
 # A: 01000001 (8位) × 5 = 40位
@@ -77539,11 +79221,10 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # A: 0 (1位) × 5 = 5位
 # B: 10 (2位) × 3 = 6位
 # C: 11 (2位) × 2 = 4位
-# 总共：15位&lt;/code&gt;
- &lt;/pre&gt;
+# 总共：15位&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -77561,22 +79242,147 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// Node.js 的核心就是事件循环
 const fs = require(&amp;#39;fs&amp;#39;);
 
 fs.readFile(&amp;#39;test.txt&amp;#39;, (err, data) =&amp;gt; {
  if (err) throw err;
  console.log(data);
 });
-console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
- &lt;/pre&gt;
+console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -77594,11 +79400,143 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 看看Git的底层对象
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;# 看看Git的底层对象
 echo &amp;#39;test&amp;#39; &amp;gt; test.txt
 git add test.txt
 git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;核心概念就三个：&lt;/p&gt;
@@ -77625,8 +79563,136 @@ git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="yaml"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml"&gt;# 这是最基础的工作流
 name: CI
 on: [push] # 事件触发器
 jobs:
@@ -77635,6 +79701,10 @@ jobs:
  steps: # 执行步骤
  - uses: actions/checkout@v2
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
@@ -77649,11 +79719,137 @@ jobs:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
+ &lt;pre&gt;&lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
  &amp;lt;head&amp;gt;
@@ -77667,11 +79863,10 @@ jobs:
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;
- &lt;/pre&gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -78693,18 +80888,143 @@ jobs:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class WorkingMemory:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class WorkingMemory:
  MIN_CAPACITY = 5 # 最小容量
  MAX_CAPACITY = 9 # 最大容量
- OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;
- &lt;/pre&gt;
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -78751,11 +81071,137 @@ jobs:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class KaufmanExperiment:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class KaufmanExperiment:
  def __init__(self):
  self.exposure_time = 50 # 毫秒
  self.dot_ranges = range(1, 201)
@@ -78766,11 +81212,10 @@ jobs:
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;
- &lt;/pre&gt;
+ return dots - 1&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -78790,17 +81235,142 @@ jobs:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class VisualCognition:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class VisualCognition:
  MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
- PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;
- &lt;/pre&gt;
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -79450,14 +82020,146 @@ jobs:
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-jsx" data-lang="jsx"&gt;// React函数式组件
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="jsx"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jsx"&gt;// React函数式组件
 const Component = ({ data }) =&amp;gt; {
  const [state, setState] = useState(initialState);
  const derivedValue = useMemo(() =&amp;gt; compute(data), [data]);
  
  return &amp;lt;div&amp;gt;{derivedValue}&amp;lt;/div&amp;gt;;
 };&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Vue&lt;/strong&gt;：响应式编程 + 面向对象&lt;/p&gt;
@@ -79476,14 +82178,146 @@ const Component = ({ data }) =&amp;gt; {
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="vue"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue"&gt;&amp;lt;!-- Vue组合式API --&amp;gt;
 &amp;lt;script setup&amp;gt;
 import { ref, computed } from &amp;#39;vue&amp;#39;
 
 const data = ref(initialData)
 const derivedValue = computed(() =&amp;gt; compute(data.value))
 &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h3 id="12-架构理念"&gt;1.2 架构理念&lt;/h3&gt;
@@ -79498,18 +82332,143 @@ const derivedValue = computed(() =&amp;gt; compute(data.value))
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 改个文本要改三个地方
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 改个文本要改三个地方
 document.getElementById(&amp;#34;title&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
 document.querySelector(&amp;#34;.header h1&amp;#34;).innerText = &amp;#34;新标题&amp;#34;;
-document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;
- &lt;/pre&gt;
+document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#34;新标题&amp;#34;;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -79526,8 +82485,136 @@ document.getElementsByClassName(&amp;#34;footer&amp;#34;)[0].innerText = &amp;#3
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-vue" data-lang="vue"&gt;&amp;lt;template&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="vue"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vue"&gt;&amp;lt;template&amp;gt;
  &amp;lt;div&amp;gt;
  &amp;lt;!-- 数据自动同步到视图 --&amp;gt;
  &amp;lt;h1&amp;gt;{{title}}&amp;lt;/h1&amp;gt;
@@ -79550,6 +82637,10 @@ export default {
  }
 }
 &amp;lt;/script&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h2 id="为什么选vue"&gt;为什么选Vue?&lt;/h2&gt;
@@ -79566,22 +82657,147 @@ export default {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 调用一个不存在的方法
 obj.nonexistMethod()
 
 // 传错参数类型
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -79597,11 +82813,137 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="typescript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-typescript"&gt;// 变量类型
+ &lt;pre&gt;&lt;code class="language-typescript"&gt;// 变量类型
 let name: string = &amp;#34;老陈&amp;#34;
 
 // 函数类型
@@ -79614,11 +82956,10 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -79637,11 +82978,137 @@ interface User {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 更新用户信息
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 更新用户信息
 $(&amp;#39;#userName&amp;#39;).text(user.name);
 $(&amp;#39;#userRole&amp;#39;).text(user.role);
 $(&amp;#39;#department&amp;#39;).text(user.department);
@@ -79661,11 +83128,10 @@ function toggleUserStatus(status) {
  } else {
  $(&amp;#39;#userStatus&amp;#39;).addClass(&amp;#39;inactive&amp;#39;).removeClass(&amp;#39;active&amp;#39;);
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -79692,11 +83158,137 @@ function toggleUserStatus(status) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 项目目录
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 项目目录
 src/
  ├── js/
  │ ├── user.js
@@ -79706,11 +83298,10 @@ src/
  │ ├── main.css
  │ └── theme.css
  └── images/
- └── logo.png&lt;/code&gt;
- &lt;/pre&gt;
+ └── logo.png&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -80934,11 +84525,137 @@ src/
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 问题1：函数复用
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 问题1：函数复用
 // 没有闭包时，需要传入所有参数
 fn add(x: i32, base: i32) -&amp;gt; i32 { x &amp;#43; base }
 
@@ -80954,11 +84671,10 @@ vec![1, 2, 3].iter().map(multiply); // 需要单独定义函数
 // 没有闭包时很难处理
 struct Context { value: i32 }
 let ctx = Context { value: 42 };
-let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;
- &lt;/pre&gt;
+let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -80978,11 +84694,137 @@ let use_context = || println!(&amp;#34;{}&amp;#34;, ctx.value);&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 1. 简洁的语法
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 1. 简洁的语法
 let add = |a, b| a &amp;#43; b; // vs fn add(a: i32, b: i32) -&amp;gt; i32
 
 // 2. 灵活的环境捕获
@@ -80994,11 +84836,10 @@ let numbers: Vec&amp;lt;i32&amp;gt; = vec![1, 2, 3, 4, 5];
 let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
  .into_iter()
  .filter(|x| x % 2 == 0)
- .collect();&lt;/code&gt;
- &lt;/pre&gt;
+ .collect();&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81020,21 +84861,146 @@ let even_numbers: Vec&amp;lt;i32&amp;gt; = numbers
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn calculate_length(s: String) -&amp;gt; usize {
  s.len()
 }
 
 let s = String::from(&amp;#34;hello&amp;#34;);
 let len = calculate_length(s);
-println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;
- &lt;/pre&gt;
+println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有权&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81056,20 +85022,145 @@ println!(&amp;#34;{}&amp;#34;, s); // 编译错误！s 已经被转移了所有�
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let mut total = 0;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let mut total = 0;
 for order in orders {
  if order.amount &amp;gt; 100 {
  total &amp;#43;= order.amount * 0.9;
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81094,11 +85185,137 @@ for order in orders {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 考虑这个场景：我们需要返回一个引用
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 考虑这个场景：我们需要返回一个引用
 fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
  if x.len() &amp;gt; y.len() {
  x
@@ -81106,11 +85323,10 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
  y
  }
 }
-// 编译错误：missing lifetime specifier&lt;/code&gt;
- &lt;/pre&gt;
+// 编译错误：missing lifetime specifier&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81133,11 +85349,137 @@ fn longest(x: &amp;amp;str, y: &amp;amp;str) -&amp;gt; &amp;amp;str {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 问题1：悬垂引用
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 问题1：悬垂引用
 let r;
 {
  let x = 5;
@@ -81153,11 +85495,10 @@ struct Person&amp;lt;&amp;#39;a&amp;gt; {
 // 问题3：函数返回引用时的所有权问题
 fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需要明确它的有效期
  data
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81173,11 +85514,137 @@ fn return_ref(data: &amp;amp;str) -&amp;gt; &amp;amp;str { // 返回引用时需
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 方案1：完全避免使用引用，使用所有权
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 方案1：完全避免使用引用，使用所有权
 struct Person {
  name: String // 而不是 &amp;amp;str
 }
@@ -81196,11 +85663,10 @@ struct Person {
  name: Rc&amp;lt;String&amp;gt;
 }
 // 优点：灵活性高
-// 缺点：运行时开销&lt;/code&gt;
- &lt;/pre&gt;
+// 缺点：运行时开销&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81216,11 +85682,137 @@ struct Person {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 1. 函数中的生命周期标注
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 1. 函数中的生命周期标注
 fn longest&amp;lt;&amp;#39;a&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;a str) -&amp;gt; &amp;amp;&amp;#39;a str {
  if x.len() &amp;gt; y.len() {
  x
@@ -81245,11 +85837,10 @@ impl&amp;lt;&amp;#39;a&amp;gt; Book&amp;lt;&amp;#39;a&amp;gt; {
 // 4. 多个生命周期参数
 fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: &amp;amp;&amp;#39;b str) -&amp;gt; &amp;amp;&amp;#39;a str {
  x
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81265,11 +85856,137 @@ fn complex&amp;lt;&amp;#39;a, &amp;#39;b&amp;gt;(x: &amp;amp;&amp;#39;a str, y: 
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 1. 生命周期省略规则
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 1. 生命周期省略规则
 fn first_word(s: &amp;amp;str) -&amp;gt; &amp;amp;str { // 隐含 &amp;lt;&amp;#39;a&amp;gt;
  // ...
 }
@@ -81290,11 +86007,10 @@ const HELLO: &amp;amp;&amp;#39;static str = &amp;#34;Hello, world!&amp;#34;;
 // 不好的做法
 fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;static str {
  data
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81331,11 +86047,137 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn main() {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn main() {
  let data = vec![1, 2, 3];
  process_data(data);
  println!(&amp;#34;{:?}&amp;#34;, data); // 编译错误！
@@ -81343,11 +86185,10 @@ fn bad_practice(data: &amp;amp;&amp;#39;static str) -&amp;gt; &amp;amp;&amp;#39;
 
 fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
  println!(&amp;#34;Processing: {:?}&amp;#34;, v);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81369,17 +86210,142 @@ fn process_data(v: Vec&amp;lt;i32&amp;gt;) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let s1 = String::from(&amp;#34;hello&amp;#34;);
 let s2 = s1; // 所有权从s1转移到s2
-// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;
- &lt;/pre&gt;
+// println!(&amp;#34;{}&amp;#34;, s1); // 编译错误：s1已经失效&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81394,18 +86360,143 @@ let s2 = s1; // 所有权从s1转移到s2
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;
- &lt;/pre&gt;
+let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81425,11 +86516,137 @@ let multiplied_numbers = ??? // 这里怎么写&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;// 表面上的闭包
+ &lt;pre&gt;&lt;code class="language-rust"&gt;// 表面上的闭包
 let multiplier = 2;
 let closure = |x| x * multiplier;
 
@@ -81442,11 +86659,10 @@ impl Closure {
  fn call(&amp;amp;self, x: i32) -&amp;gt; i32 {
  x * self.multiplier
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81462,17 +86678,142 @@ impl Closure {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn read_config_file(path: &amp;amp;str) -&amp;gt; String {
  std::fs::read_to_string(path) // 这里会返回什么？
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81493,18 +86834,143 @@ impl Closure {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;enum Option&amp;lt;T&amp;gt; {
  Some(T), // 有值
  None, // 没有值
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81518,11 +86984,137 @@ impl Closure {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;fn find_user(id: u32) -&amp;gt; Option&amp;lt;User&amp;gt; {
  if id == 0 {
  None // 用户不存在
  } else {
@@ -81534,11 +87126,10 @@ impl Closure {
 match find_user(1) {
  Some(user) =&amp;gt; println!(&amp;#34;Found user: {}&amp;#34;, user.name),
  None =&amp;gt; println!(&amp;#34;User not found&amp;#34;),
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81552,11 +87143,137 @@ match find_user(1) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);
+ &lt;pre&gt;&lt;code class="language-rust"&gt;let x: Option&amp;lt;i32&amp;gt; = Some(5);
 
 // 方法1：unwrap - 危险操作
 let value1 = x.unwrap(); // 如果是 None 会 panic
@@ -81568,11 +87285,10 @@ let value2 = x.unwrap_or(0); // None 时返回0
 let value3 = x.map(|n| n * 2); // Some(5) -&amp;gt; Some(10)
 
 // 方法4：and_then - 链式操作
-let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;
- &lt;/pre&gt;
+let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81587,18 +87303,143 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;enum Result&amp;lt;T, E&amp;gt; {
  Ok(T), // 成功，包含值 T
  Err(E), // 错误，包含错误 E
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81633,11 +87474,137 @@ let value4 = x.and_then(|n| if n &amp;gt; 0 { Some(n) } else { None });&lt;/code
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -81668,11 +87635,10 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81684,6 +87650,132 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -81715,11 +87807,137 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::console;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -81729,11 +87947,10 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81749,11 +87966,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -81777,11 +88120,10 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81797,11 +88139,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  // 使用 ? 运算符处理错误
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
  let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
@@ -81814,11 +88282,10 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81834,11 +88301,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::Storage;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::Storage;
 
 pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
@@ -81855,11 +88448,10 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -81892,8 +88484,140 @@ $ cat .vimrc
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;sh -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;配置 &lt;code&gt;.zshrc&lt;/code&gt;&lt;/p&gt;
@@ -81907,8 +88631,136 @@ $ cat .vimrc
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -82064,6 +88916,10 @@ export PATH=&amp;#34;$HOME/.local/bin:$PATH&amp;#34;
 
 # go
 export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="配置-github"&gt;配置 Github&lt;/h1&gt;
@@ -82078,8 +88934,136 @@ export PATH=&amp;#34;$PATH:$GOPATH/bin&amp;#34;&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;# 生成一对 SSH 密钥
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;# 生成一对 SSH 密钥
 ssh-keygen -t ed25519 -C &amp;#34;your_email@example.com&amp;#34; # 输入邮箱
 # 启动 SSH 代理，用于管理 SSH 密钥
 eval &amp;#34;$(ssh-agent -s)&amp;#34;
@@ -82087,13 +89071,23 @@ eval &amp;#34;$(ssh-agent -s)&amp;#34;
 ssh-add ~/.ssh/id_ed25519
 # 显示公钥内容
 cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h2 id="配置-ssh-密钥"&gt;配置 SSH 密钥：&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;将公钥内容复制并添加到 GitHub 的 SSH 密钥设置中。&lt;/p&gt;</description></item><item><title>Wasm</title><link>https://simons.qzz.io/post/2025/01/wasm/</link><pubDate>Sun, 05 Jan 2025 12:41:17 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/wasm/</guid><description>&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;cargo build&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="webassembly-核心技术剖析"&gt;WebAssembly 核心技术剖析&lt;/h1&gt;
@@ -82111,17 +89105,142 @@ cat ~/.ssh/id_ed25519.pub&lt;/code&gt;&lt;/pre&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="cpp"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
+ &lt;pre&gt;&lt;code class="language-cpp"&gt;// C&amp;#43;&amp;#43; 代码
 int* buffer = new int[1024]; // 分配4KB内存
-buffer[0] = 42;&lt;/code&gt;
- &lt;/pre&gt;
+buffer[0] = 42;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82142,11 +89261,137 @@ buffer[0] = 42;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：接口定义在使用方(调用方)包中
 package handler
 type UserService interface {
  Create(ctx context.Context, user *User) error
@@ -82156,11 +89401,10 @@ type UserService interface {
 package service
 type UserService interface {
  Create(ctx context.Context, user *User) error
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82176,20 +89420,145 @@ type UserService interface {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确的依赖方向
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确的依赖方向
 handler -&amp;gt; service -&amp;gt; repository -&amp;gt; database
 
 // ❌ 错误：不应该出现反向依赖
 service -&amp;gt; handler
-repository -&amp;gt; service&lt;/code&gt;
- &lt;/pre&gt;
+repository -&amp;gt; service&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82205,11 +89574,137 @@ repository -&amp;gt; service&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：每层使用自己的数据模型
 package handler
 type CreateUserRequest struct { // API层模型
  Username string `json:&amp;#34;username&amp;#34;`
@@ -82233,11 +89728,10 @@ type User struct {
  ID uint64 `json:&amp;#34;id&amp;#34; gorm:&amp;#34;primaryKey&amp;#34;`
  Username string `json:&amp;#34;username&amp;#34;`
  CreatedAt time.Time `json:&amp;#34;created_at&amp;#34;`
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82253,11 +89747,137 @@ type User struct {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：每层对错误进行适当包装
 package repository
 func (r *UserRepo) Create(user *UserDO) error {
  return fmt.Errorf(&amp;#34;database error: %w&amp;#34;, err)
@@ -82279,11 +89899,10 @@ func (h *UserHandler) Create(c *gin.Context) {
 // ❌ 错误：直接暴露底层错误
 if err := db.Create(&amp;amp;user).Error; err != nil {
  c.JSON(500, err.Error())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82295,6 +89914,132 @@ if err := db.Create(&amp;amp;user).Error; err != nil {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -82333,21 +90078,146 @@ project/
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：通过构造函数注入依赖
 func NewUserHandler(service UserService) *UserHandler {
  return &amp;amp;UserHandler{service: service}
 }
 
 // ❌ 错误：全局变量或直接初始化
-var userService = &amp;amp;UserService{}&lt;/code&gt;
- &lt;/pre&gt;
+var userService = &amp;amp;UserService{}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82363,11 +90233,137 @@ var userService = &amp;amp;UserService{}&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：小接口，职责单一
 type UserReader interface {
  GetUser(id uint64) (*User, error)
 }
@@ -82384,11 +90380,10 @@ type UserService interface {
  DeleteUser(id uint64) error
  ListUsers() ([]*User, error)
  SearchUsers(query string) ([]*User, error)
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82404,11 +90399,137 @@ type UserService interface {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：集中管理配置
 package config
 
 type Config struct {
@@ -82419,11 +90540,10 @@ type Config struct {
 
 // ❌ 错误：分散的配置或硬编码
 var serverPort = 8080
-var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82439,11 +90559,137 @@ var dbConnection = &amp;#34;root:password@tcp(localhost:3306)/db&amp;#34;&lt;/co
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：统一使用 context 传递请求上下文
 func (h *Handler) Create(c *gin.Context) {
  ctx := c.Request.Context()
  err := h.service.Create(ctx, req)
@@ -82452,11 +90698,10 @@ func (h *Handler) Create(c *gin.Context) {
 // ❌ 错误：不传递上下文或使用不一致的上下文
 func (h *Handler) Create(c *gin.Context) {
  err := h.service.Create(req)
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82472,11 +90717,137 @@ func (h *Handler) Create(c *gin.Context) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
+ &lt;pre&gt;&lt;code class="language-go"&gt;// ✅ 正确：测试文件与源文件对应
 package handler
 
 func TestUserHandler_Create(t *testing.T) {
@@ -82486,11 +90857,10 @@ func TestUserHandler_Create(t *testing.T) {
 // ❌ 错误：测试代码与源码混合或测试覆盖不全
 func TestAll(t *testing.T) {
  // 混合测试多个功能
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -82529,6 +90899,133 @@ func TestAll(t *testing.T) {
 
 
 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -87955,8 +96452,136 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;3
 * * *
 * *
 * * *
@@ -87966,6 +96591,10 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 * *
 * *
 * * * *&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;/blockquote&gt;
@@ -87982,8 +96611,136 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 //行定位
 int main() {
  int n = 0;
@@ -88014,6 +96771,10 @@ int main() {
 // 思路：
 // 使用for 和 if
 // 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -88030,8 +96791,136 @@ int main() {
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 //行和列定位
 int main() {
  int n = 0;
@@ -88048,6 +96937,10 @@ int main() {
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;</description></item><item><title>如何生成 dll 文件</title><link>https://simons.qzz.io/post/2024/06/dll/</link><pubDate>Sat, 29 Jun 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/06/dll/</guid><description>&lt;h1 id="如何生成-dll文件"&gt;如何生成 .dll文件&lt;/h1&gt;
 &lt;p&gt;生成dll文件同时会生成lib文件&lt;/p&gt;
 &lt;ol&gt;
@@ -88065,11 +96958,137 @@ int main() {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="cpp"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
+ &lt;pre&gt;&lt;code class="language-cpp"&gt;#include &amp;#34;pch.h&amp;#34;
 #include &amp;#34;check_repository.h&amp;#34;
 namespace fs = std::filesystem;
  int Check::CheckRepository() {
@@ -88086,11 +97105,10 @@ namespace fs = std::filesystem;
  std::cout &amp;lt;&amp;lt; &amp;#34;点击任意按键退出...&amp;#34; &amp;lt;&amp;lt; std::endl;
  _getch();
  return 0;
-};&lt;/code&gt;
- &lt;/pre&gt;
+};&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -88109,8 +97127,140 @@ namespace fs = std::filesystem;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-sh" data-lang="sh"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="sh"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sh"&gt;git rm --cached &amp;lt;file&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;这里 &lt;code&gt;&amp;lt;file&amp;gt;&lt;/code&gt; 是你想要从仓库中删除的文件名。&lt;code&gt;--cached&lt;/code&gt; 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。&lt;/p&gt;</description></item><item><title>TG 下载器</title><link>https://simons.qzz.io/post/2024/05/download_telegram/</link><pubDate>Wed, 29 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/download_telegram/</guid><description>&lt;h1 id="软件"&gt;软件&lt;/h1&gt;
@@ -89355,8 +98505,136 @@ namespace fs = std::filesystem;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-sql" data-lang="sql"&gt;CREATE TABLE 表名(
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="sql"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-sql"&gt;CREATE TABLE 表名(
  列名1 类型[长度] [DEFAULT 默认值] [约束条件]
  列名2 类型
  ……
@@ -89369,6 +98647,10 @@ CREATE TABLE userinfo(
  nickname VARCHAR(32)
  age INT(3)
 );&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表
@@ -89395,8 +98677,140 @@ CREATE TABLE userinfo(
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;npm init vite&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -89408,6 +98822,132 @@ CREATE TABLE userinfo(
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -89441,8 +98981,140 @@ Done. Now run:
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;npm init vite playground -- --template react-ts&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;或者&lt;/p&gt;</description></item><item><title>记录一下报税记账</title><link>https://simons.qzz.io/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/compent/</guid><description>&lt;blockquote&gt;
@@ -95739,8 +105411,136 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 #include &amp;lt;malloc/_malloc.h&amp;gt;
 #include &amp;lt;string.h&amp;gt;
 #include &amp;lt;errno.h&amp;gt;
@@ -95774,6 +105574,10 @@ int main(){
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -95792,8 +105596,136 @@ int main(){
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 struct S1{
  char c1;//1
  int i;//4
@@ -95810,6 +105742,10 @@ int main(){
  printf(&amp;#34;%d\n&amp;#34;,sizeof(struct S2));//8
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;对齐规则：&lt;/p&gt;
@@ -96442,6 +106378,133 @@ int main(){
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="mermaid"&gt;mindmap
  root((思维导图))
  节点一
@@ -96476,6 +106539,133 @@ int main(){
 
 
 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 

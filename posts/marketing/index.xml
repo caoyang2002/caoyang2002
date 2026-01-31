@@ -57746,18 +57746,143 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class WorkingMemory:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class WorkingMemory:
  MIN_CAPACITY = 5 # 最小容量
  MAX_CAPACITY = 9 # 最大容量
- OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;
- &lt;/pre&gt;
+ OPTIMAL_CHUNKS = 7 # 最佳组块数&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -57804,11 +57929,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class KaufmanExperiment:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class KaufmanExperiment:
  def __init__(self):
  self.exposure_time = 50 # 毫秒
  self.dot_ranges = range(1, 201)
@@ -57819,11 +58070,10 @@
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;
- &lt;/pre&gt;
+ return dots - 1&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -57843,17 +58093,142 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class VisualCognition:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class VisualCognition:
  MAX_INSTANT_RECOGNITION = 5 # 最大瞬时识别数量
- PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;
- &lt;/pre&gt;
+ PROCESSING_TIME_MS = 200 # 大脑处理时间(毫秒)&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -58519,6 +58894,133 @@
 
 
 
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 

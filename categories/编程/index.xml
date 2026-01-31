@@ -595,8 +595,140 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;uname -a&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;blockquote&gt;
@@ -617,13 +749,145 @@
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;cd /tmp &amp;amp;&amp;amp; \
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;cd /tmp &amp;amp;&amp;amp; \
 wget -q https://go.dev/dl/go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
 sudo rm -rf /usr/local/go &amp;amp;&amp;amp; \
 sudo tar -C /usr/local -xzf go1.22.10.linux-amd64.tar.gz &amp;amp;&amp;amp; \
 export PATH=/usr/local/go/bin:$PATH &amp;amp;&amp;amp; \
 go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;h1 id="安装到-jupyter"&gt;安装到 jupyter&lt;/h1&gt;
@@ -637,8 +901,136 @@ go version &amp;amp;&amp;amp; \&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash" data-lang="bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;go clean -cache -modcache &amp;amp;&amp;amp; \
 cd ~/go-module/gophernotes &amp;amp;&amp;amp; \
 rm -f ~/go/bin/gophernotes &amp;amp;&amp;amp; \
 GOOS=linux GOARCH=amd64 CGO_ENABLED=0 go build -v -o ~/go/bin/gophernotes &amp;amp;&amp;amp; \
@@ -646,6 +1038,10 @@ chmod &amp;#43;x ~/go/bin/gophernotes &amp;amp;&amp;amp; \
 ~/go/bin/gophernotes install &amp;amp;&amp;amp; \
 echo &amp;#34;✅ 安装完成！&amp;#34; &amp;amp;&amp;amp; \
 jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
 &lt;p&gt;先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。&lt;/p&gt;
 &lt;h2 id="本质分析"&gt;本质分析&lt;/h2&gt;
@@ -663,8 +1059,136 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;# 这是最基础的工作流
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="yaml"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-yaml"&gt;# 这是最基础的工作流
 name: CI
 on: [push] # 事件触发器
 jobs:
@@ -673,6 +1197,10 @@ jobs:
  steps: # 执行步骤
  - uses: actions/checkout@v2
  - run: npm test&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;p&gt;但这只是表象，让我们深入看看它的架构：&lt;/p&gt;</description></item><item><title>TypeScript: 静态</title><link>https://simons.qzz.io/post/2025/01/typescript_static_types/</link><pubDate>Fri, 24 Jan 2025 13:46:32 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/typescript_static_types/</guid><description>&lt;h1 id="typescript-静态"&gt;TypeScript: 静态&lt;/h1&gt;
@@ -686,22 +1214,147 @@ jobs:
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 调用一个不存在的方法
 obj.nonexistMethod()
 
 // 传错参数类型
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -717,11 +1370,137 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="typescript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-typescript"&gt;// 变量类型
+ &lt;pre&gt;&lt;code class="language-typescript"&gt;// 变量类型
 let name: string = &amp;#34;老陈&amp;#34;
 
 // 函数类型
@@ -734,11 +1513,10 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1365,11 +2143,137 @@ interface User {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{console, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -1400,11 +2304,10 @@ pub fn move_test(name: &amp;amp;str) {
  console::log_1(&amp;amp;JsValue::from_str(&amp;#34;User clicked Cancel&amp;#34;));
  }
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1416,6 +2319,132 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
 
 
 
@@ -1447,11 +2476,137 @@ web-sys = { version = &amp;#34;0.3&amp;#34;, features = [
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::console;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::console;
 
 // 需要引入宏
 #[macro_export]
@@ -1461,11 +2616,10 @@ macro_rules! console_log {
 
 pub fn move_test(name: &amp;amp;str) {
  console_log!(&amp;#34;Testing move with name: {}&amp;#34;, name);
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1481,11 +2635,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use wasm_bindgen::prelude::*;
 use web_sys::{Document, Element, HtmlElement, window};
 
 pub fn move_test(name: &amp;amp;str) {
@@ -1509,11 +2789,10 @@ pub fn move_test(name: &amp;amp;str) {
  if let Some(body) = document.body() {
  body.append_child(&amp;amp;new_div).unwrap();
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1529,11 +2808,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
+ &lt;pre&gt;&lt;code class="language-rust"&gt;pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  // 使用 ? 运算符处理错误
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
  let document = window.document().ok_or(&amp;#34;no document exists&amp;#34;)?;
@@ -1546,11 +2951,10 @@ pub fn move_test(name: &amp;amp;str) {
  },
  None =&amp;gt; Err(JsValue::from_str(&amp;#34;Element not found&amp;#34;))
  }
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1566,11 +2970,137 @@ pub fn move_test(name: &amp;amp;str) {
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="rust"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-rust"&gt;use web_sys::Storage;
+ &lt;pre&gt;&lt;code class="language-rust"&gt;use web_sys::Storage;
 
 pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt; {
  let window = window().ok_or(&amp;#34;no global window exists&amp;#34;)?;
@@ -1587,11 +3117,10 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  }
 
  Ok(())
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -1606,8 +3135,136 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;3
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;3
 * * *
 * *
 * * *
@@ -1617,6 +3274,10 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 * *
 * *
 * * * *&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;/blockquote&gt;
@@ -1633,8 +3294,136 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 //行定位
 int main() {
  int n = 0;
@@ -1665,6 +3454,10 @@ int main() {
 // 思路：
 // 使用for 和 if
 // 判断是不吃首尾行 是则输出一行* 不是则输出首尾*&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;hr&gt;
@@ -1681,8 +3474,136 @@ int main() {
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 //行和列定位
 int main() {
  int n = 0;
@@ -1699,6 +3620,10 @@ int main() {
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;</description></item><item><title>x86 教程</title><link>https://simons.qzz.io/post/2024/05/x86/</link><pubDate>Thu, 02 May 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/05/x86/</guid><description>&lt;p&gt;作者： 
 
 
@@ -2373,8 +4298,136 @@ int main() {
 
 
 
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-c" data-lang="c"&gt;#include &amp;lt;stdio.h&amp;gt;
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="c"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-c"&gt;#include &amp;lt;stdio.h&amp;gt;
 #include &amp;lt;malloc/_malloc.h&amp;gt;
 #include &amp;lt;string.h&amp;gt;
 #include &amp;lt;errno.h&amp;gt;
@@ -2408,6 +4461,10 @@ int main(){
  }
  return 0;
 }&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
 &lt;/div&gt;
 
 &lt;hr&gt;

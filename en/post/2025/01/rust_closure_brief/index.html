@@ -9,10 +9,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 问题1：函数复用
+        // 问题1：函数复用
 // 没有闭包时，需要传入所有参数
 fn add(x: i32, base: i32) -> i32 { x + base }
 
@@ -29,10 +155,9 @@ vec![1, 2, 3].iter().map(multiply);    // 需要单独定义函数
 struct Context { value: i32 }
 let ctx = Context { value: 42 };
 let use_context = || println!("{}", ctx.value);
-        
-    
     
 
+    
     
 
 
@@ -53,10 +178,136 @@ let use_context = || println!("{}", ctx.value);
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 1. 简洁的语法
+        // 1. 简洁的语法
 let add = |a, b| a + b;  // vs fn add(a: i32, b: i32) -> i32
 
 // 2. 灵活的环境捕获
@@ -69,10 +320,9 @@ let even_numbers: Vec<i32> = numbers
     .into_iter()
     .filter(|x| x % 2 == 0)
     .collect();
-        
-    
     
 
+    
     
 
 
@@ -93,8 +343,7 @@ let even_numbers: Vec<i32> = numbers
 <span class=post-date>本文共 1144
 个字 ， 预计需要阅读 3
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
-</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><h1 id=为什么需要闭包>为什么需要闭包？</h1><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 问题1：函数复用
+</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><h1 id=为什么需要闭包>为什么需要闭包？</h1><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 问题1：函数复用
 // 没有闭包时，需要传入所有参数
 fn add(x: i32, base: i32) -&gt; i32 { x &#43; base }
 
@@ -110,9 +359,7 @@ vec![1, 2, 3].iter().map(multiply);    // 需要单独定义函数
 // 没有闭包时很难处理
 struct Context { value: i32 }
 let ctx = Context { value: 42 };
-let use_context = || println!(&#34;{}&#34;, ctx.value);</code>
-        </pre></div></div><h1 id=闭包是什么>闭包是什么？</h1><ul><li>闭包是可以捕获其环境的匿名函数</li><li>它"封闭"了其定义时的环境，故称"闭包"</li><li>闭包 = 函数 + 环境</li></ul><h1 id=闭包的优势>闭包的优势</h1><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 简洁的语法
+let use_context = || println!(&#34;{}&#34;, ctx.value);</code></pre></div></div><h1 id=闭包是什么>闭包是什么？</h1><ul><li>闭包是可以捕获其环境的匿名函数</li><li>它"封闭"了其定义时的环境，故称"闭包"</li><li>闭包 = 函数 + 环境</li></ul><h1 id=闭包的优势>闭包的优势</h1><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 简洁的语法
 let add = |a, b| a &#43; b;  // vs fn add(a: i32, b: i32) -&gt; i32
 
 // 2. 灵活的环境捕获
@@ -124,9 +371,7 @@ let numbers: Vec&lt;i32&gt; = vec![1, 2, 3, 4, 5];
 let even_numbers: Vec&lt;i32&gt; = numbers
     .into_iter()
     .filter(|x| x % 2 == 0)
-    .collect();</code>
-        </pre></div></div><h1 id=理解闭包>理解闭包</h1><p>我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：</p><h2 id=python-风格理解>Python 风格理解：</h2><div class=code-playground data-language=python><div><pre>
-            <code class=language-python># Python 的 lambda
+    .collect();</code></pre></div></div><h1 id=理解闭包>理解闭包</h1><p>我用 Python 和 TypeScript 的概念来解释 Rust 的闭包：</p><h2 id=python-风格理解>Python 风格理解：</h2><div class=code-playground data-language=python><div><pre><code class=language-python># Python 的 lambda
 lambda x: x &#43; 1
 
 # Python 的闭包
@@ -134,15 +379,11 @@ def outer(a):
     # 捕获外部变量 a
     def inner(x):
         return x &#43; a
-    return inner</code>
-        </pre></div></div><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust># 对应的 Rust 代码
+    return inner</code></pre></div></div><div class=code-playground data-language=rust><div><pre><code class=language-rust># 对应的 Rust 代码
 |x| x &#43; 1
 
 let a = 1;
-let closure = |x| x &#43; a;</code>
-        </pre></div></div><h2 id=typescript-风格理解>TypeScript 风格理解：</h2><div class=code-playground data-language=typescript><div><pre>
-            <code class=language-typescript>// TypeScript 的箭头函数
+let closure = |x| x &#43; a;</code></pre></div></div><h2 id=typescript-风格理解>TypeScript 风格理解：</h2><div class=code-playground data-language=typescript><div><pre><code class=language-typescript>// TypeScript 的箭头函数
 const add = (x: number) =&gt; x &#43; 1;
 
 // 带类型标注的闭包
@@ -150,9 +391,7 @@ const multiply: (x: number) =&gt; number = (x) =&gt; x * 2;
 
 // 对应的 Rust 代码
 let add = |x: i32| x &#43; 1;
-let multiply: fn(i32) -&gt; i32 = |x| x * 2;</code>
-        </pre></div></div><h2 id=rust-闭包的特殊之处>Rust 闭包的特殊之处：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. Rust 闭包有三种类型
+let multiply: fn(i32) -&gt; i32 = |x| x * 2;</code></pre></div></div><h2 id=rust-闭包的特殊之处>Rust 闭包的特殊之处：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. Rust 闭包有三种类型
 // FnOnce - 获取所有权
 let owns = |x| takes_ownership(x);
 
@@ -167,9 +406,7 @@ let mut val = 5;
 let mut closure = || {
     val &#43;= 1;    // 自动推断需要可变借用
     println!(&#34;{}&#34;, val);
-};</code>
-        </pre></div></div><p>主要区别：</p><ol><li>Rust 的闭包更关注内存安全和所有权</li><li>Python/TS 的闭包主要关注词法作用域</li><li>Rust 的闭包语法更简洁（使用 <code>||</code> 而不是 <code>()=></code>）</li><li>Rust 的闭包有更严格的类型系统和借用规则</li></ol><p>人们常说：&ldquo;如果你理解 JavaScript/TypeScript 的箭头函数，就很容易理解 Rust 的闭包语法；如果你理解 Python 的 lambda 和闭包概念，就很容易理解 Rust 闭包的用途。&rdquo;</p><h1 id=如何使用闭包>如何使用闭包</h1><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 基本语法
+};</code></pre></div></div><p>主要区别：</p><ol><li>Rust 的闭包更关注内存安全和所有权</li><li>Python/TS 的闭包主要关注词法作用域</li><li>Rust 的闭包语法更简洁（使用 <code>||</code> 而不是 <code>()=></code>）</li><li>Rust 的闭包有更严格的类型系统和借用规则</li></ol><p>人们常说：&ldquo;如果你理解 JavaScript/TypeScript 的箭头函数，就很容易理解 Rust 的闭包语法；如果你理解 Python 的 lambda 和闭包概念，就很容易理解 Rust 闭包的用途。&rdquo;</p><h1 id=如何使用闭包>如何使用闭包</h1><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 基本语法
 let closure = |params| body;
 
 // 2. 带类型标注
@@ -182,9 +419,7 @@ fn apply&lt;F&gt;(f: F, x: i32) where F: Fn(i32) -&gt; i32 {
 
 // 4. 在迭代器中使用
 let v = vec![1, 2, 3];
-v.iter().map(|x| x * 2).collect::&lt;Vec&lt;_&gt;&gt;();</code>
-        </pre></div></div><h1 id=最佳实践>最佳实践</h1><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 选择合适的特征界定
+v.iter().map(|x| x * 2).collect::&lt;Vec&lt;_&gt;&gt;();</code></pre></div></div><h1 id=最佳实践>最佳实践</h1><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 选择合适的特征界定
 // Fn - 不可变借用
 fn call_closure&lt;F&gt;(closure: F) where F: Fn(i32) -&gt; i32 {
     closure(1);
@@ -233,9 +468,7 @@ let safe_divide = |x, y| {
 
 // 5. 文档和类型标注
 /// 计算一个数的平方
-let square: fn(i32) -&gt; i32 = |x| x * x;</code>
-        </pre></div></div><h1 id=常见用例>常见用例</h1><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. 回调函数
+let square: fn(i32) -&gt; i32 = |x| x * x;</code></pre></div></div><h1 id=常见用例>常见用例</h1><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. 回调函数
 button.on_click(|| println!(&#34;Clicked!&#34;));
 
 // 2. 自定义排序
@@ -251,8 +484,7 @@ let expensive_closure = || {
 // 4. 配置和构建模式
 let config = Config::new()
     .with_timeout(|c| c.timeout(Duration::from_secs(5)))
-    .with_retry(|c| c.max_retries(3));</code>
-        </pre></div></div><p>掌握闭包可以让代码更简洁、更灵活，同时提高代码的可维护性和重用性。但要注意在使用时遵循最佳实践，以确保代码的清晰性和性能。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+    .with_retry(|c| c.max_retries(3));</code></pre></div></div><p>掌握闭包可以让代码更简洁、更灵活，同时提高代码的可维护性和重用性。但要注意在使用时遵循最佳实践，以确保代码的清晰性和性能。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/en/post/2025/01/mac_assembly/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>mac 汇编笔记</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/en/post/2025/01/rust_ref/><span>Rust 中的引用</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

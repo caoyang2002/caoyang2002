@@ -10,17 +10,142 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 改个文本要改三个地方
+        // 改个文本要改三个地方
 document.getElementById("title").innerText = "新标题";
 document.querySelector(".header h1").innerText = "新标题";
 document.getElementsByClassName("footer")[0].innerText = "新标题";
-        
-    
     
 
+    
     
 
 
@@ -37,8 +162,136 @@ Vue是啥?
 
 
 
+ 
 
-    <template>
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        <template>
   <div>
     <!-- 数据自动同步到视图 -->
     <h1>{{title}}</h1>
@@ -61,6 +314,10 @@ export default {
   }
 }
 </script>
+    
+
+    
+    
 
 
 为什么选Vue?
@@ -87,12 +344,10 @@ export default {
 </a><a href=https://simons.qzz.io/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">响应式编程
 </a><a href=https://simons.qzz.io/tags/%E7%BB%84%E4%BB%B6%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">组件化
 </a><a href=https://simons.qzz.io/tags/javascript class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">JavaScript
-</a><a href=https://simons.qzz.io/tags/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">入门指南</a></span></div><section><h1 id=vue-一个让前端开发不再痛苦的框架>Vue: 一个让前端开发不再痛苦的框架</h1><h2 id=老板又改需求了>老板又改需求了?</h2><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 改个文本要改三个地方
+</a><a href=https://simons.qzz.io/tags/%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">入门指南</a></span></div><section><h1 id=vue-一个让前端开发不再痛苦的框架>Vue: 一个让前端开发不再痛苦的框架</h1><h2 id=老板又改需求了>老板又改需求了?</h2><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 改个文本要改三个地方
 document.getElementById(&#34;title&#34;).innerText = &#34;新标题&#34;;
 document.querySelector(&#34;.header h1&#34;).innerText = &#34;新标题&#34;;
-document.getElementsByClassName(&#34;footer&#34;)[0].innerText = &#34;新标题&#34;;</code>
-        </pre></div></div><p>这就是没用Vue的下场。数据和视图分离,改一个要改几个地方,还容易改出bug。</p><h2 id=vue是啥>Vue是啥?</h2><p>简单说: Vue = 数据驱动视图 + 组件化开发</p><div><pre><code class=language-vue data-lang=vue>&lt;template&gt;
+document.getElementsByClassName(&#34;footer&#34;)[0].innerText = &#34;新标题&#34;;</code></pre></div></div><p>这就是没用Vue的下场。数据和视图分离,改一个要改几个地方,还容易改出bug。</p><h2 id=vue是啥>Vue是啥?</h2><p>简单说: Vue = 数据驱动视图 + 组件化开发</p><div class=code-playground data-language=vue><div><pre><code class=language-vue>&lt;template&gt;
   &lt;div&gt;
     &lt;!-- 数据自动同步到视图 --&gt;
     &lt;h1&gt;{{title}}&lt;/h1&gt;
@@ -114,7 +369,7 @@ export default {
     }
   }
 }
-&lt;/script&gt;</code></pre></div><h2 id=为什么选vue>为什么选Vue?</h2><ol><li><p><strong>上手容易</strong></p><ul><li>模板语法接近原生HTML</li><li>不用学JSX那套</li><li>中文文档无障碍</li></ul></li><li><p><strong>性能够用</strong></p><ul><li>虚拟DOM精确更新</li><li>自动依赖收集</li><li>按需渲染</li></ul></li><li><p><strong>生态完整</strong></p><ul><li>Vuex状态管理</li><li>Vue Router路由</li><li>Vite/Vue CLI脚手架</li></ul></li></ol><h2 id=跟其他框架比>跟其他框架比?</h2><ul><li><strong>React</strong>: JSX太魔性,状态管理复杂</li><li><strong>Angular</strong>: 太重,学习曲线陡峭</li><li><strong>jQuery</strong>: 还在用?准备养老了?</li></ul><h2 id=实战例子>实战例子</h2><p>需求:写个Todo List</p><div><pre><code class=language-vue data-lang=vue>&lt;template&gt;
+&lt;/script&gt;</code></pre></div></div><h2 id=为什么选vue>为什么选Vue?</h2><ol><li><p><strong>上手容易</strong></p><ul><li>模板语法接近原生HTML</li><li>不用学JSX那套</li><li>中文文档无障碍</li></ul></li><li><p><strong>性能够用</strong></p><ul><li>虚拟DOM精确更新</li><li>自动依赖收集</li><li>按需渲染</li></ul></li><li><p><strong>生态完整</strong></p><ul><li>Vuex状态管理</li><li>Vue Router路由</li><li>Vite/Vue CLI脚手架</li></ul></li></ol><h2 id=跟其他框架比>跟其他框架比?</h2><ul><li><strong>React</strong>: JSX太魔性,状态管理复杂</li><li><strong>Angular</strong>: 太重,学习曲线陡峭</li><li><strong>jQuery</strong>: 还在用?准备养老了?</li></ul><h2 id=实战例子>实战例子</h2><p>需求:写个Todo List</p><div class=code-playground data-language=vue><div><pre><code class=language-vue>&lt;template&gt;
   &lt;div&gt;
     &lt;input v-model=&#34;newTodo&#34; @keyup.enter=&#34;addTodo&#34;&gt;
     &lt;ul&gt;
@@ -148,7 +403,7 @@ export default {
     }
   }
 }
-&lt;/script&gt;</code></pre></div><h2 id=坑和经验>坑和经验</h2><ol><li><p><strong>响应式陷阱</strong></p><ul><li>数组索引修改不会触发更新</li><li>对象新增属性要用Vue.set()</li><li>computed vs watch分清楚</li></ul></li><li><p><strong>生命周期要弄懂</strong></p><ul><li>created不要操作DOM</li><li>mounted才是干活的时候</li><li>destroyed记得清理副作用</li></ul></li><li><p><strong>组件通信</strong></p><ul><li>props向下传</li><li>emit向上传</li><li>vuex管全局</li></ul></li></ol><p>记住: Vue不是完美的,但它让前端开发不再是噩梦。</p><h2 id=思考题>思考题</h2><ol><li>Vue3为什么要用Proxy代替Object.defineProperty?</li><li>Vue的响应式系统是如何工作的?</li><li>如何处理Vue项目的性能优化?</li></ol><p>共勉。</p><p>P.S. 想吐槽Vue的,建议先看看jQuery时代的代码。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+&lt;/script&gt;</code></pre></div></div><h2 id=坑和经验>坑和经验</h2><ol><li><p><strong>响应式陷阱</strong></p><ul><li>数组索引修改不会触发更新</li><li>对象新增属性要用Vue.set()</li><li>computed vs watch分清楚</li></ul></li><li><p><strong>生命周期要弄懂</strong></p><ul><li>created不要操作DOM</li><li>mounted才是干活的时候</li><li>destroyed记得清理副作用</li></ul></li><li><p><strong>组件通信</strong></p><ul><li>props向下传</li><li>emit向上传</li><li>vuex管全局</li></ul></li></ol><p>记住: Vue不是完美的,但它让前端开发不再是噩梦。</p><h2 id=思考题>思考题</h2><ol><li>Vue3为什么要用Proxy代替Object.defineProperty?</li><li>Vue的响应式系统是如何工作的?</li><li>如何处理Vue项目的性能优化?</li></ol><p>共勉。</p><p>P.S. 想吐槽Vue的,建议先看看jQuery时代的代码。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/react_vue_framework_debate/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>React vs Vue: 框架之争的深层思考</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/typescript_static_types/><span>TypeScript: 静态</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

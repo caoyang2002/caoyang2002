@@ -591,11 +591,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="go"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
+ &lt;pre&gt;&lt;code class="language-go"&gt;{{/* 基础模板: baseof.html */}}
 &amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;html&amp;gt;
  &amp;lt;head&amp;gt;
@@ -609,11 +735,10 @@
 {{/* 子模板 */}}
 {{ define &amp;#34;main&amp;#34; }}
  &amp;lt;div&amp;gt;这里是实际内容&amp;lt;/div&amp;gt;
-{{ end }}&lt;/code&gt;
- &lt;/pre&gt;
+{{ end }}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

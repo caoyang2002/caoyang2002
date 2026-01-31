@@ -13,8 +13,140 @@
 
 
 
+ 
 
-    git rm --cached <file>
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        git rm --cached <file>
+    
+
+    
+    
 
 
 这里 <file> 是你想要从仓库中删除的文件名。--cached 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。"><meta name=author content="simons"><script src=/js/code-flag-handler.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.66b2dab2c6bacce8963b2d2af9ecbb257a82f2249ddd6035c697d7658f3c988c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1,errorCallback:(e)=>{console.warn("KaTeX 渲染错误:",e)}}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.1"><meta itemprop=name content="删除错误提交到GitHub仓库中的文件"><meta itemprop=description content="如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：
@@ -40,9 +172,9 @@ git rm --cached <file> 这里 <file> 是你想要从仓库中删除的文件名�
 个字 ， 预计需要阅读 2
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
 </a><a href=https://simons.qzz.io/tags/git class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">git</a></span></div><section><p>如果你需要删除错误提交到GitHub仓库中的文件，你可以通过以下步骤来创建一个新的提交来撤销之前的更改：</p><ol><li><p><strong>在本地仓库中删除文件</strong>：
-首先，在你的本地仓库中删除该文件：</p><div><pre><code class=language-sh data-lang=sh>git rm --cached &lt;file&gt;</code></pre></div><p>这里 <code>&lt;file></code> 是你想要从仓库中删除的文件名。<code>--cached</code> 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。</p></li><li><p><strong>提交这个更改</strong>：
-然后，提交这个更改到你的本地仓库：</p><div><pre><code class=language-sh data-lang=sh>git commit -m &#34;Remove mistakenly added file&#34;</code></pre></div></li><li><p><strong>推送到远程仓库</strong>：
-最后，将这个更改推送到GitHub上的远程仓库：</p><div><pre><code class=language-sh data-lang=sh>git push origin &lt;branch&gt;</code></pre></div><p>其中 <code>&lt;branch></code> 是你想要推送更改的分支名，比如 <code>main</code> 或 <code>master</code>。</p></li></ol><p>这样，你就创建了一个新的提交，它撤销了错误提交的文件。这个文件将从GitHub仓库中删除。</p><p>如果你想要完全从仓库的提交历史中删除该文件（而不是仅仅创建一个新的提交来删除它），你可以使用 <code>git filter-branch</code> 或 BFG Repo-Cleaner 等工具来重写历史。但请注意，这些方法会改变仓库的历史，如果你已经推送了原始提交，这可能会给其他协作者带来问题。在这种情况下，最好的做法是联系仓库管理员来帮助解决。</p><p><strong>警告</strong>：使用 <code>git filter-branch</code> 或其他历史修改工具应该非常小心，因为它们可能会破坏公共仓库的历史，使得其他人难以与你的仓库同步。在尝试这些高级操作之前，请确保你完全理解它们的后果，并且已经备份了你的仓库。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+首先，在你的本地仓库中删除该文件：</p><div class=code-playground data-language=sh><div><pre><code class=language-sh>git rm --cached &lt;file&gt;</code></pre></div></div><p>这里 <code>&lt;file></code> 是你想要从仓库中删除的文件名。<code>--cached</code> 参数意味着仅从Git的跟踪中删除文件，而不删除工作目录中的文件。</p></li><li><p><strong>提交这个更改</strong>：
+然后，提交这个更改到你的本地仓库：</p><div class=code-playground data-language=sh><div><pre><code class=language-sh>git commit -m &#34;Remove mistakenly added file&#34;</code></pre></div></div></li><li><p><strong>推送到远程仓库</strong>：
+最后，将这个更改推送到GitHub上的远程仓库：</p><div class=code-playground data-language=sh><div><pre><code class=language-sh>git push origin &lt;branch&gt;</code></pre></div></div><p>其中 <code>&lt;branch></code> 是你想要推送更改的分支名，比如 <code>main</code> 或 <code>master</code>。</p></li></ol><p>这样，你就创建了一个新的提交，它撤销了错误提交的文件。这个文件将从GitHub仓库中删除。</p><p>如果你想要完全从仓库的提交历史中删除该文件（而不是仅仅创建一个新的提交来删除它），你可以使用 <code>git filter-branch</code> 或 BFG Repo-Cleaner 等工具来重写历史。但请注意，这些方法会改变仓库的历史，如果你已经推送了原始提交，这可能会给其他协作者带来问题。在这种情况下，最好的做法是联系仓库管理员来帮助解决。</p><p><strong>警告</strong>：使用 <code>git filter-branch</code> 或其他历史修改工具应该非常小心，因为它们可能会破坏公共仓库的历史，使得其他人难以与你的仓库同步。在尝试这些高级操作之前，请确保你完全理解它们的后果，并且已经备份了你的仓库。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/en/post/2024/06/dl/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>如何生成 dll 文件</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/en/post/2024/05/download_telegram/><span>TG 下载器</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

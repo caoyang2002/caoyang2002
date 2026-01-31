@@ -10,8 +10,140 @@
 
 
 
+ 
 
-    CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        CREATE USER 'username'@'host' IDENTIFIED BY 'password';
+    
+
+    
+    
 
 
 
@@ -46,15 +178,15 @@ password：用户的密码。
 </a><a href=https://simons.qzz.io/tags/%E5%88%9B%E5%BB%BA%E7%94%A8%E6%88%B7 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">创建用户
 </a><a href=https://simons.qzz.io/tags/grant class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">GRANT
 </a><a href=https://simons.qzz.io/tags/alter-user class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">ALTER USER
-</a><a href=https://simons.qzz.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E5%85%A8 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">数据库安全</a></span></div><section><h3 id=1-创建用户>1. <strong>创建用户</strong></h3><p>使用 <code>CREATE USER</code> 语句创建新用户。语法如下：</p><div><pre><code class=language-sql data-lang=sql>CREATE USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;password&#39;;</code></pre></div><ul><li><strong><code>username</code></strong>：新用户的用户名。</li><li><strong><code>host</code></strong>：指定用户可以从哪个主机连接到数据库。常见的值包括：<ul><li><code>localhost</code>：仅允许从本地主机连接。</li><li><code>%</code>：允许从任何主机连接。</li></ul></li><li><strong><code>password</code></strong>：用户的密码。</li></ul><h4 id=示例>示例：</h4><p>创建一个名为 <code>testuser</code> 的用户，密码为 <code>testpass</code>，允许从任何主机连接：</p><div><pre><code class=language-sql data-lang=sql>CREATE USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div><hr><h3 id=2-为用户设置密码>2. <strong>为用户设置密码</strong></h3><p>如果你需要为已创建的用户设置或更改密码，可以使用 <code>ALTER USER</code> 语句：</p><div><pre><code class=language-sql data-lang=sql>ALTER USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;new_password&#39;;</code></pre></div><h4 id=示例-1>示例：</h4><p>为用户 <code>testuser</code> 更改密码为 <code>newpassword</code>：</p><div><pre><code class=language-sql data-lang=sql>ALTER USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;newpassword&#39;;</code></pre></div><hr><h3 id=3-授予用户权限>3. <strong>授予用户权限</strong></h3><p>创建用户后，需要为其授予相应的权限。使用 <code>GRANT</code> 语句：</p><div><pre><code class=language-sql data-lang=sql>GRANT privileges ON database_name.table_name TO &#39;username&#39;@&#39;host&#39;;</code></pre></div><ul><li><strong><code>privileges</code></strong>：可以是 <code>SELECT</code>、<code>INSERT</code>、<code>UPDATE</code>、<code>DELETE</code>、<code>ALL PRIVILEGES</code> 等。</li><li><strong><code>database_name.table_name</code></strong>：指定数据库和表。使用 <code>*.*</code> 表示所有数据库和表。</li></ul><h4 id=示例-2>示例：</h4><p>授予用户 <code>testuser</code> 在数据库 <code>testdb</code> 上的所有权限：</p><div><pre><code class=language-sql data-lang=sql>GRANT ALL PRIVILEGES ON testdb.* TO &#39;testuser&#39;@&#39;%&#39;;</code></pre></div><hr><h3 id=4-刷新权限>4. <strong>刷新权限</strong></h3><p>更改用户权限后，需要刷新权限以使更改生效：</p><div><pre><code class=language-sql data-lang=sql>FLUSH PRIVILEGES;</code></pre></div><hr><h3 id=5-完整的创建和授权流程>5. <strong>完整的创建和授权流程</strong></h3><p>以下是一个完整的示例，创建用户并授予权限：</p><div><pre><code class=language-sql data-lang=sql>-- 创建用户
+</a><a href=https://simons.qzz.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E5%AE%89%E5%85%A8 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">数据库安全</a></span></div><section><h3 id=1-创建用户>1. <strong>创建用户</strong></h3><p>使用 <code>CREATE USER</code> 语句创建新用户。语法如下：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;password&#39;;</code></pre></div></div><ul><li><strong><code>username</code></strong>：新用户的用户名。</li><li><strong><code>host</code></strong>：指定用户可以从哪个主机连接到数据库。常见的值包括：<ul><li><code>localhost</code>：仅允许从本地主机连接。</li><li><code>%</code>：允许从任何主机连接。</li></ul></li><li><strong><code>password</code></strong>：用户的密码。</li></ul><h4 id=示例>示例：</h4><p>创建一个名为 <code>testuser</code> 的用户，密码为 <code>testpass</code>，允许从任何主机连接：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div></div><hr><h3 id=2-为用户设置密码>2. <strong>为用户设置密码</strong></h3><p>如果你需要为已创建的用户设置或更改密码，可以使用 <code>ALTER USER</code> 语句：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>ALTER USER &#39;username&#39;@&#39;host&#39; IDENTIFIED BY &#39;new_password&#39;;</code></pre></div></div><h4 id=示例-1>示例：</h4><p>为用户 <code>testuser</code> 更改密码为 <code>newpassword</code>：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>ALTER USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;newpassword&#39;;</code></pre></div></div><hr><h3 id=3-授予用户权限>3. <strong>授予用户权限</strong></h3><p>创建用户后，需要为其授予相应的权限。使用 <code>GRANT</code> 语句：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>GRANT privileges ON database_name.table_name TO &#39;username&#39;@&#39;host&#39;;</code></pre></div></div><ul><li><strong><code>privileges</code></strong>：可以是 <code>SELECT</code>、<code>INSERT</code>、<code>UPDATE</code>、<code>DELETE</code>、<code>ALL PRIVILEGES</code> 等。</li><li><strong><code>database_name.table_name</code></strong>：指定数据库和表。使用 <code>*.*</code> 表示所有数据库和表。</li></ul><h4 id=示例-2>示例：</h4><p>授予用户 <code>testuser</code> 在数据库 <code>testdb</code> 上的所有权限：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>GRANT ALL PRIVILEGES ON testdb.* TO &#39;testuser&#39;@&#39;%&#39;;</code></pre></div></div><hr><h3 id=4-刷新权限>4. <strong>刷新权限</strong></h3><p>更改用户权限后，需要刷新权限以使更改生效：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>FLUSH PRIVILEGES;</code></pre></div></div><hr><h3 id=5-完整的创建和授权流程>5. <strong>完整的创建和授权流程</strong></h3><p>以下是一个完整的示例，创建用户并授予权限：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>-- 创建用户
 CREATE USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;
 
 -- 授予权限
 GRANT ALL PRIVILEGES ON testdb.* TO &#39;testuser&#39;@&#39;%&#39;;
 
 -- 刷新权限
-FLUSH PRIVILEGES;</code></pre></div><hr><h3 id=6-删除用户>6. <strong>删除用户</strong></h3><p>如果需要删除用户，可以使用 <code>DROP USER</code> 语句：</p><div><pre><code class=language-sql data-lang=sql>DROP USER &#39;username&#39;@&#39;host&#39;;</code></pre></div><h4 id=示例-3>示例：</h4><p>删除用户 <code>testuser</code>：</p><div><pre><code class=language-sql data-lang=sql>DROP USER &#39;testuser&#39;@&#39;%&#39;;</code></pre></div><hr><h3 id=注意事项>注意事项：</h3><ol><li><p><strong>安全性</strong>：</p><ul><li>尽量避免使用 <code>%</code> 允许用户从任何主机连接，除非确实需要。</li><li>确保密码足够复杂，以提高安全性。</li></ul></li><li><p><strong>权限管理</strong>：</p><ul><li>根据用户的需求授予最小必要的权限，避免使用 <code>ALL PRIVILEGES</code>，除非确实需要。</li></ul></li><li><p><strong>MySQL 版本差异</strong>：</p><ul><li>在 MySQL 5.7 及之前的版本中，创建用户和设置密码可以合并为一条语句：<div><pre><code class=language-sql data-lang=sql>CREATE USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div></li><li>在 MySQL 5.7.6 及更高版本中，建议分开执行 <code>CREATE USER</code> 和 <code>ALTER USER</code>：<div><pre><code class=language-sql data-lang=sql>CREATE USER &#39;testuser&#39;@&#39;%&#39;;
-ALTER USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div></li></ul></li></ol></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+FLUSH PRIVILEGES;</code></pre></div></div><hr><h3 id=6-删除用户>6. <strong>删除用户</strong></h3><p>如果需要删除用户，可以使用 <code>DROP USER</code> 语句：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>DROP USER &#39;username&#39;@&#39;host&#39;;</code></pre></div></div><h4 id=示例-3>示例：</h4><p>删除用户 <code>testuser</code>：</p><div class=code-playground data-language=sql><div><pre><code class=language-sql>DROP USER &#39;testuser&#39;@&#39;%&#39;;</code></pre></div></div><hr><h3 id=注意事项>注意事项：</h3><ol><li><p><strong>安全性</strong>：</p><ul><li>尽量避免使用 <code>%</code> 允许用户从任何主机连接，除非确实需要。</li><li>确保密码足够复杂，以提高安全性。</li></ul></li><li><p><strong>权限管理</strong>：</p><ul><li>根据用户的需求授予最小必要的权限，避免使用 <code>ALL PRIVILEGES</code>，除非确实需要。</li></ul></li><li><p><strong>MySQL 版本差异</strong>：</p><ul><li>在 MySQL 5.7 及之前的版本中，创建用户和设置密码可以合并为一条语句：<div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div></div></li><li>在 MySQL 5.7.6 及更高版本中，建议分开执行 <code>CREATE USER</code> 和 <code>ALTER USER</code>：<div class=code-playground data-language=sql><div><pre><code class=language-sql>CREATE USER &#39;testuser&#39;@&#39;%&#39;;
+ALTER USER &#39;testuser&#39;@&#39;%&#39; IDENTIFIED BY &#39;testpass&#39;;</code></pre></div></div></li></ul></li></ol></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/03/modernity_holocaust_and_moral_reflection/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/03/a_tough_life_requires_no_explanation/><span>【人物】罗永浩：彪悍的人生不需要解释</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

@@ -9,22 +9,147 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="javascript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-javascript"&gt;// 调用一个不存在的方法
+ &lt;pre&gt;&lt;code class="language-javascript"&gt;// 调用一个不存在的方法
 obj.nonexistMethod()
 
 // 传错参数类型
 calculateArea(&amp;#34;5&amp;#34;, &amp;#34;10&amp;#34;)
 
 // 对象属性拼写错误
-user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
- &lt;/pre&gt;
+user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 
@@ -40,11 +165,137 @@ user.namee = &amp;#34;Bob&amp;#34;&lt;/code&gt;
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="typescript"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-typescript"&gt;// 变量类型
+ &lt;pre&gt;&lt;code class="language-typescript"&gt;// 变量类型
 let name: string = &amp;#34;老陈&amp;#34;
 
 // 函数类型
@@ -57,11 +308,10 @@ interface User {
  id: number
  name: string
  age?: number // 可选属性
-}&lt;/code&gt;
- &lt;/pre&gt;
+}&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

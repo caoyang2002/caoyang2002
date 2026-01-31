@@ -22,7 +22,7 @@ GitHub Projects不是简单的任务管理工具，而是一个完整的工程�
 </a><a href=https://simons.qzz.io/tags/%E5%BC%80%E5%8F%91%E6%B5%81%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">开发流程
 </a><a href=https://simons.qzz.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">自动化
 </a><a href=https://simons.qzz.io/tags/%E5%B7%A5%E7%A8%8B%E6%95%88%E7%8E%87 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">工程效率
-</a><a href=https://simons.qzz.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">最佳实践</a></span></div><section><h1 id=github-projects深入剖析不只是看板是工程管理的操作系统>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</h1><p>先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。</p><h2 id=本质分析>本质分析</h2><p>GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。</p><p>核心概念：</p><div><pre><code class=language- data-lang>Projects(项目) -&gt; Items(条目) -&gt; Fields(字段) -&gt; Views(视图)</code></pre></div><h2 id=深入原理>深入原理</h2><ol><li>数据模型</li></ol><div><pre><code class=language-yaml data-lang=yaml>Project:
+</a><a href=https://simons.qzz.io/tags/%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">最佳实践</a></span></div><section><h1 id=github-projects深入剖析不只是看板是工程管理的操作系统>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</h1><p>先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。</p><h2 id=本质分析>本质分析</h2><p>GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。</p><p>核心概念：</p><div><pre><code class=language- data-lang>Projects(项目) -&gt; Items(条目) -&gt; Fields(字段) -&gt; Views(视图)</code></pre></div><h2 id=深入原理>深入原理</h2><ol><li>数据模型</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>Project:
   items:
     - type: Issue/PR/Draft
       fields:
@@ -32,15 +32,14 @@ GitHub Projects不是简单的任务管理工具，而是一个完整的工程�
   views:
     - type: Board/Table/Timeline
       filters: ...
-      groupBy: status</code></pre></div><ol start=2><li>自动化工作流</li></ol><div><pre><code class=language-yaml data-lang=yaml># 自动化规则示例
+      groupBy: status</code></pre></div></div><ol start=2><li>自动化工作流</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 自动化规则示例
 when:
   issue:
     labeled: &#39;bug&#39;
 then:
   setField:
     status: &#39;In Progress&#39;
-    priority: &#39;High&#39;</code></pre></div><h2 id=实战案例>实战案例</h2><p>看个真实项目是如何用Projects的：</p><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>// 1. 项目初始化
+    priority: &#39;High&#39;</code></pre></div></div><h2 id=实战案例>实战案例</h2><p>看个真实项目是如何用Projects的：</p><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>// 1. 项目初始化
 创建Project模板
 ↓
 设置自定义字段
@@ -54,8 +53,7 @@ then:
 ↓
 状态自动流转
 ↓
-完成后自动关联</code>
-        </pre></div></div><p>项目配置示例：</p><div><pre><code class=language-json data-lang=json>{
+完成后自动关联</code></pre></div></div><p>项目配置示例：</p><div class=code-playground data-language=json><div><pre><code class=language-json>{
   &#34;name&#34;: &#34;产品开发&#34;,
   &#34;fields&#34;: [
     {
@@ -69,15 +67,15 @@ then:
       &#34;range&#34;: [1, 5]
     }
   ]
-}</code></pre></div><h2 id=最佳实践>最佳实践</h2><ol><li>视图设计</li></ol><ul><li>Board视图用于日常任务</li><li>Table视图用于全局统计</li><li>Timeline视图用于里程碑</li></ul><ol start=2><li>自动化配置</li></ol><ul><li>PR合并自动关闭Issue</li><li>打标签自动分类</li><li>定期同步状态</li></ul><ol start=3><li>报表统计</li></ol><div><pre><code class=language-sql data-lang=sql>-- 项目进度SQL示例
+}</code></pre></div></div><h2 id=最佳实践>最佳实践</h2><ol><li>视图设计</li></ol><ul><li>Board视图用于日常任务</li><li>Table视图用于全局统计</li><li>Timeline视图用于里程碑</li></ul><ol start=2><li>自动化配置</li></ol><ul><li>PR合并自动关闭Issue</li><li>打标签自动分类</li><li>定期同步状态</li></ul><ol start=3><li>报表统计</li></ol><div class=code-playground data-language=sql><div><pre><code class=language-sql>-- 项目进度SQL示例
 SELECT status, COUNT(*) as count
 FROM project_items
-GROUP BY status;</code></pre></div><h2 id=坑点总结>坑点总结</h2><ol><li>权限问题</li></ol><ul><li>组织级Projects权限和仓库权限是分开的</li><li>需要单独配置协作者权限</li></ul><ol start=2><li>自动化限制</li></ol><ul><li>某些自动化规则只支持组织级项目</li><li>API调用有频率限制</li></ul><ol start=3><li>数据同步</li></ol><ul><li>跨仓库数据同步可能延迟</li><li>批量操作要注意API限制</li></ul><h2 id=思考>思考</h2><ol><li>工具选择</li></ol><ul><li>小团队: Projects + Actions够用</li><li>大团队: 考虑Jira等专业工具</li></ul><ol start=2><li>流程设计</li></ol><ul><li>工具服务于流程，而不是相反</li><li>简单可行比完美更重要</li></ul><p>记住：项目管理工具不是万能药，但没有工具是万万不能的。理解了Projects的本质，你的工程管理就有了抓手。</p><p>这就是GitHub Projects的内核。它不复杂，但需要你真正理解它的设计思想。正如Unix的哲学：简单的工具，组合出强大的功能。</p><p>GitHub Project - 真正的项目管理工具还是玩具？</p><p>写这篇文章的起因是看到很多团队盲目跟风使用 GitHub Project，却没搞明白它的本质。今天，让我们剖析一下这个号称能提升研发效率的工具。</p><p>先说结论：GitHub Project 确实能帮你管理项目，但前提是你得先把脑子管理好。</p><h1 id=核心概念>核心概念</h1><ol><li>Project Board</li></ol><div><pre><code class=language- data-lang>这不就是看板吗？只是换了个花哨的名字。但重点在于你怎么用它：
+GROUP BY status;</code></pre></div></div><h2 id=坑点总结>坑点总结</h2><ol><li>权限问题</li></ol><ul><li>组织级Projects权限和仓库权限是分开的</li><li>需要单独配置协作者权限</li></ul><ol start=2><li>自动化限制</li></ol><ul><li>某些自动化规则只支持组织级项目</li><li>API调用有频率限制</li></ul><ol start=3><li>数据同步</li></ol><ul><li>跨仓库数据同步可能延迟</li><li>批量操作要注意API限制</li></ul><h2 id=思考>思考</h2><ol><li>工具选择</li></ol><ul><li>小团队: Projects + Actions够用</li><li>大团队: 考虑Jira等专业工具</li></ul><ol start=2><li>流程设计</li></ol><ul><li>工具服务于流程，而不是相反</li><li>简单可行比完美更重要</li></ul><p>记住：项目管理工具不是万能药，但没有工具是万万不能的。理解了Projects的本质，你的工程管理就有了抓手。</p><p>这就是GitHub Projects的内核。它不复杂，但需要你真正理解它的设计思想。正如Unix的哲学：简单的工具，组合出强大的功能。</p><p>GitHub Project - 真正的项目管理工具还是玩具？</p><p>写这篇文章的起因是看到很多团队盲目跟风使用 GitHub Project，却没搞明白它的本质。今天，让我们剖析一下这个号称能提升研发效率的工具。</p><p>先说结论：GitHub Project 确实能帮你管理项目，但前提是你得先把脑子管理好。</p><h1 id=核心概念>核心概念</h1><ol><li>Project Board</li></ol><div><pre><code class=language- data-lang>这不就是看板吗？只是换了个花哨的名字。但重点在于你怎么用它：
 - Classic Project: 老项目管理方式，简单但死板
-- Project(Beta): 新玩法，本质是个数据库，更灵活</code></pre></div><ol start=2><li>Issue 和 PR 的关联</li></ol><div><pre><code class=language-yaml data-lang=yaml># 这才是关键
+- Project(Beta): 新玩法，本质是个数据库，更灵活</code></pre></div><ol start=2><li>Issue 和 PR 的关联</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 这才是关键
 - Issue: 任务追踪
 - PR: 代码关联
-- Milestone: 项目里程碑</code></pre></div><h1 id=实战配置>实战配置</h1><p>看这段代码:</p><div><pre><code class=language-yaml data-lang=yaml># .github/project-config.yml
+- Milestone: 项目里程碑</code></pre></div></div><h1 id=实战配置>实战配置</h1><p>看这段代码:</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># .github/project-config.yml
 project:
   name: &#34;Team Backlog&#34;
   columns:
@@ -86,8 +84,8 @@ project:
     - name: &#34;In Progress&#34;
       type: &#34;in_progress&#34;
     - name: &#34;Done&#34;
-      type: &#34;done&#34;</code></pre></div><p>但这只是表面配置，真正的价值在于workflow:</p><ol><li>Issue 创建 -> 自动进入 Backlog</li><li>PR 关联 -> 状态自动同步</li><li>PR 合并 -> Issue 自动关闭</li></ol><h1 id=玩转-views>玩转 Views</h1><div><pre><code class=language-sql data-lang=sql># 这不就是SQL吗？
-status:&#34;In Progress&#34; assignee:@me</code></pre></div><p>Views 本质就是数据过滤器。但很多人只会用默认视图，这就跟开着法拉利遛弯没什么区别。</p><h1 id=项目管理的本质>项目管理的本质</h1><p>记住：</p><ul><li>工具永远是工具</li><li>把规范先定好</li><li>别被花哨的功能迷惑</li></ul><p>最后说点扎心的：如果你连基本的任务追踪都做不好，再好的工具也救不了你。</p><p>对了，如果你觉得这些还不够，建议看看:</p><ol><li>GitHub Actions 自动化</li><li>Project API 集成</li><li>自定义字段扩展</li></ol><p>但是，在你往下钻之前，先问问自己：真的需要这么复杂吗？</p><p>Remember: KISS (Keep It Simple, Stupid)</p><p>PS: 有人说我对工具太苛刻。但我觉得，正是这种不假思索的工具崇拜，才是很多项目失败的根源。</p><p>文末放个彩蛋：你知道 GitHub Project 的前身是什么吗？想想 Trello。</p><p>以上。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+      type: &#34;done&#34;</code></pre></div></div><p>但这只是表面配置，真正的价值在于workflow:</p><ol><li>Issue 创建 -> 自动进入 Backlog</li><li>PR 关联 -> 状态自动同步</li><li>PR 合并 -> Issue 自动关闭</li></ol><h1 id=玩转-views>玩转 Views</h1><div class=code-playground data-language=sql><div><pre><code class=language-sql># 这不就是SQL吗？
+status:&#34;In Progress&#34; assignee:@me</code></pre></div></div><p>Views 本质就是数据过滤器。但很多人只会用默认视图，这就跟开着法拉利遛弯没什么区别。</p><h1 id=项目管理的本质>项目管理的本质</h1><p>记住：</p><ul><li>工具永远是工具</li><li>把规范先定好</li><li>别被花哨的功能迷惑</li></ul><p>最后说点扎心的：如果你连基本的任务追踪都做不好，再好的工具也救不了你。</p><p>对了，如果你觉得这些还不够，建议看看:</p><ol><li>GitHub Actions 自动化</li><li>Project API 集成</li><li>自定义字段扩展</li></ol><p>但是，在你往下钻之前，先问问自己：真的需要这么复杂吗？</p><p>Remember: KISS (Keep It Simple, Stupid)</p><p>PS: 有人说我对工具太苛刻。但我觉得，正是这种不假思索的工具崇拜，才是很多项目失败的根源。</p><p>文末放个彩蛋：你知道 GitHub Project 的前身是什么吗？想想 Trello。</p><p>以上。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Git: 从入门到精通</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/><span>GitHub Actions 深入剖析：从原理到实践</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

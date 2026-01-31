@@ -17,6 +17,132 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
 
     出版社底稿：第一章 → 第二章 → 第三章
 你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
@@ -35,8 +161,140 @@
 
 
 
+ 
 
-    git pull --no-rebase  # 或 git pull（默认可能是merge）
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        git pull --no-rebase  # 或 git pull（默认可能是merge）
+    
+
+    
+    
 
 
 比喻："><meta name=author content="simons"><script src=/js/code-flag-handler.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.66b2dab2c6bacce8963b2d2af9ecbb257a82f2249ddd6035c697d7658f3c988c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1,errorCallback:(e)=>{console.warn("KaTeX 渲染错误:",e)}}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.1"><meta itemprop=name content="Git 分支分叉的解决方案简介"><meta itemprop=description content="糟糕，写文章的时候忘记添加描述了！！！"><meta itemprop=datePublished content="2026-01-29T12:08:51+08:00"><meta itemprop=dateModified content="2026-01-30T02:17:53+08:00"><meta itemprop=wordCount content="1488"><meta itemprop=keywords content="暂无"><meta property="og:url" content="https://simons.qzz.io/post/2026/01/git_divergent_branches/"><meta property="og:site_name" content="短松江月"><meta property="og:title" content="Git 分支分叉的解决方案简介"><meta property="og:description" content="糟糕，写文章的时候忘记添加描述了！！！"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2026-01-29T12:08:51+08:00"><meta property="article:modified_time" content="2026-01-30T02:17:53+08:00"><meta property="article:tag" content="暂无"><meta name=twitter:card content="summary"><meta name=twitter:title content="Git 分支分叉的解决方案简介"><meta name=twitter:description content="糟糕，写文章的时候忘记添加描述了！！！"><link rel=canonical href=https://simons.qzz.io/post/2026/01/git_divergent_branches/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-12 px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://simons.qzz.io/>短松江月</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/>首页
@@ -57,11 +315,11 @@
 个字 ， 预计需要阅读 3
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">暂无</a></span></div><section><p>让我用几个生活中的比喻来解释不同的分支分叉解决方案：</p><h2 id=-场景设定>📚 场景设定</h2><p>想象你在写一本小说：</p><ul><li><strong>远程仓库</strong> = 出版社的底稿</li><li><strong>你的本地</strong> = 你手里的稿子</li><li><strong>其他作者</strong> = 同事也在修改</li></ul><p>现在情况是：</p><div><pre><code class=language- data-lang>出版社底稿：第一章 → 第二章 → 第三章
 你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
-出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]</code></pre></div><h2 id=-三种解决方案详解>🎯 三种解决方案详解</h2><h3 id=1-merge合并---拼图游戏法>1. <strong>Merge（合并）</strong> - &ldquo;拼图游戏法&rdquo;</h3><div><pre><code class=language-bash data-lang=bash>git pull --no-rebase  # 或 git pull（默认可能是merge）</code></pre></div><p><strong>比喻</strong>：</p><blockquote><p>你和同事各写了一段剧情，编辑把两段剧情<strong>拼在一起</strong>，中间加个说明：
+出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]</code></pre></div><h2 id=-三种解决方案详解>🎯 三种解决方案详解</h2><h3 id=1-merge合并---拼图游戏法>1. <strong>Merge（合并）</strong> - &ldquo;拼图游戏法&rdquo;</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash>git pull --no-rebase  # 或 git pull（默认可能是merge）</code></pre></div></div><p><strong>比喻</strong>：</p><blockquote><p>你和同事各写了一段剧情，编辑把两段剧情<strong>拼在一起</strong>，中间加个说明：
 &ldquo;此处有两个版本，都保留了&rdquo;</p></blockquote><p><strong>实际效果</strong>：</p><div><pre><code class=language- data-lang>第一章 → 第二章 → 第三章 → [你的第四章]
                        ↘
-                        [同事的第三章结尾] → (合并提交)</code></pre></div><p><strong>特点</strong>：</p><ul><li>✅ 保留所有历史，像完整的日记</li><li>✅ 不会改变已有的提交</li><li>❌ 会产生额外的"合并提交"</li><li>❌ 历史看起来像树枝分叉</li></ul><p><strong>适合</strong>：</p><ul><li>团队合作的大型功能</li><li>需要保留完整合并记录的情况</li></ul><h3 id=2-rebase变基---时间旅行法>2. <strong>Rebase（变基）</strong> - &ldquo;时间旅行法&rdquo;</h3><div><pre><code class=language-bash data-lang=bash>git pull --rebase</code></pre></div><p><strong>比喻</strong>：</p><blockquote><p>你"穿越"到同事修改之后的时间点，<strong>重新写下</strong>你的第四章
-好像你一开始就是在最新版本上写的一样</p></blockquote><p><strong>实际效果</strong>：</p><div><pre><code class=language- data-lang>第一章 → 第二章 → 第三章 → [同事的第三章结尾] → [你的第四章]</code></pre></div><p><strong>特点</strong>：</p><ul><li>✅ 历史是干净的直线</li><li>✅ 看起来像顺序发生</li><li>❌ 会"重写"你的提交历史</li><li>❌ 如果已经推送到远程，需要强制推送</li></ul><p><strong>适合</strong>：</p><ul><li>个人开发的小修改</li><li>想要整洁历史的情况</li><li>还没推送到远程的提交</li></ul><h3 id=3-fast-forward-only仅快进---严格排队法>3. <strong>Fast-Forward Only（仅快进）</strong> - &ldquo;严格排队法&rdquo;</h3><div><pre><code class=language-bash data-lang=bash>git pull --ff-only</code></pre></div><p><strong>比喻</strong>：</p><blockquote><p>编辑说：&ldquo;如果你的稿子只是单纯追加，没有分叉，我就直接接上&rdquo;
+                        [同事的第三章结尾] → (合并提交)</code></pre></div><p><strong>特点</strong>：</p><ul><li>✅ 保留所有历史，像完整的日记</li><li>✅ 不会改变已有的提交</li><li>❌ 会产生额外的"合并提交"</li><li>❌ 历史看起来像树枝分叉</li></ul><p><strong>适合</strong>：</p><ul><li>团队合作的大型功能</li><li>需要保留完整合并记录的情况</li></ul><h3 id=2-rebase变基---时间旅行法>2. <strong>Rebase（变基）</strong> - &ldquo;时间旅行法&rdquo;</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash>git pull --rebase</code></pre></div></div><p><strong>比喻</strong>：</p><blockquote><p>你"穿越"到同事修改之后的时间点，<strong>重新写下</strong>你的第四章
+好像你一开始就是在最新版本上写的一样</p></blockquote><p><strong>实际效果</strong>：</p><div><pre><code class=language- data-lang>第一章 → 第二章 → 第三章 → [同事的第三章结尾] → [你的第四章]</code></pre></div><p><strong>特点</strong>：</p><ul><li>✅ 历史是干净的直线</li><li>✅ 看起来像顺序发生</li><li>❌ 会"重写"你的提交历史</li><li>❌ 如果已经推送到远程，需要强制推送</li></ul><p><strong>适合</strong>：</p><ul><li>个人开发的小修改</li><li>想要整洁历史的情况</li><li>还没推送到远程的提交</li></ul><h3 id=3-fast-forward-only仅快进---严格排队法>3. <strong>Fast-Forward Only（仅快进）</strong> - &ldquo;严格排队法&rdquo;</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash>git pull --ff-only</code></pre></div></div><p><strong>比喻</strong>：</p><blockquote><p>编辑说：&ldquo;如果你的稿子只是单纯追加，没有分叉，我就直接接上&rdquo;
 &ldquo;如果有分叉，我不做任何操作，你自己决定&rdquo;</p></blockquote><p><strong>实际效果</strong>：</p><ul><li>如果可以直线连接：直接合并</li><li>如果有分叉：<strong>直接失败</strong>，让你手动处理</li></ul><p><strong>特点</strong>：</p><ul><li>✅ 最安全，不会自动合并</li><li>✅ 保持最简单的历史</li><li>❌ 经常需要手动介入</li><li>❌ 不适合频繁协作的场景</li></ul><p><strong>适合</strong>：</p><ul><li>非常严格的项目</li><li>你想要完全控制合并过程</li></ul><h2 id=-更形象的比喻>🎮 更形象的比喻</h2><h3 id=merge-像做三明治><strong>Merge 像做三明治</strong></h3><div><pre><code class=language- data-lang>面包（原始代码）
 ↓
 你加火腿   同事加芝士
@@ -75,26 +333,26 @@
 你想站在C后面
 ↓
 如果C确实是最后一个：✅ 直接排上
-如果C后面已经有人：   ❌ 请重新排队</code></pre></div><h2 id=-对比表格>📊 对比表格</h2><table><thead><tr><th>方案</th><th>比喻</th><th>历史形状</th><th>是否改历史</th><th>适合场景</th></tr></thead><tbody><tr><td><strong>Merge</strong></td><td>拼图/三明治</td><td>树枝状 🌳</td><td>不改</td><td>团队协作、大功能</td></tr><tr><td><strong>Rebase</strong></td><td>时间旅行/续集</td><td>直线状 🚀</td><td>改</td><td>个人开发、小修改</td></tr><tr><td><strong>FF-Only</strong></td><td>严格排队</td><td>直线或拒绝</td><td>不改</td><td>严格项目、谨慎合并</td></tr></tbody></table><h2 id=-实战建议>💡 实战建议</h2><h3 id=新手选择><strong>新手选择</strong>：</h3><div><pre><code class=language-bash data-lang=bash># 先用这个看看情况
+如果C后面已经有人：   ❌ 请重新排队</code></pre></div><h2 id=-对比表格>📊 对比表格</h2><table><thead><tr><th>方案</th><th>比喻</th><th>历史形状</th><th>是否改历史</th><th>适合场景</th></tr></thead><tbody><tr><td><strong>Merge</strong></td><td>拼图/三明治</td><td>树枝状 🌳</td><td>不改</td><td>团队协作、大功能</td></tr><tr><td><strong>Rebase</strong></td><td>时间旅行/续集</td><td>直线状 🚀</td><td>改</td><td>个人开发、小修改</td></tr><tr><td><strong>FF-Only</strong></td><td>严格排队</td><td>直线或拒绝</td><td>不改</td><td>严格项目、谨慎合并</td></tr></tbody></table><h2 id=-实战建议>💡 实战建议</h2><h3 id=新手选择><strong>新手选择</strong>：</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash># 先用这个看看情况
 git pull --ff-only
 
 # 如果失败，再用这个
-git pull --no-rebase</code></pre></div><h3 id=进阶选择><strong>进阶选择</strong>：</h3><div><pre><code class=language-bash data-lang=bash># 设置默认用 rebase（很多人这样设置）
+git pull --no-rebase</code></pre></div></div><h3 id=进阶选择><strong>进阶选择</strong>：</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash># 设置默认用 rebase（很多人这样设置）
 git config --global pull.rebase true
 
 # 需要时强制用 merge
-git pull --no-rebase</code></pre></div><h3 id=查看当前设置><strong>查看当前设置</strong>：</h3><div><pre><code class=language-bash data-lang=bash>git config pull.rebase  # 查看你的设置
-# 返回 true/false 或空（使用默认）</code></pre></div><h2 id=-重要警告>🚨 重要警告</h2><p><strong>Rebase 的危险性</strong>（特别是已推送时）：</p><div><pre><code class=language-bash data-lang=bash># 如果你已经 push 到远程，然后本地 rebase
+git pull --no-rebase</code></pre></div></div><h3 id=查看当前设置><strong>查看当前设置</strong>：</h3><div class=code-playground data-language=bash><div><pre><code class=language-bash>git config pull.rebase  # 查看你的设置
+# 返回 true/false 或空（使用默认）</code></pre></div></div><h2 id=-重要警告>🚨 重要警告</h2><p><strong>Rebase 的危险性</strong>（特别是已推送时）：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 如果你已经 push 到远程，然后本地 rebase
 git push origin main
 # 会提示你需要强制推送
 
 # 强制推送（小心！会影响其他人）
-git push --force-with-lease origin main</code></pre></div><p><strong>推荐</strong>：</p><div><pre><code class=language-bash data-lang=bash># 1. 先用 rebase 保持历史整洁
+git push --force-with-lease origin main</code></pre></div></div><p><strong>推荐</strong>：</p><div class=code-playground data-language=bash><div><pre><code class=language-bash># 1. 先用 rebase 保持历史整洁
 git pull --rebase origin main
 
 # 2. 如果有冲突（别人也改了CSS），解决冲突
 # 3. 然后推送
-git push origin main</code></pre></div><h2 id=-简单决策树>🤔 简单决策树</h2><div><pre><code class=language- data-lang>开始拉取代码
+git push origin main</code></pre></div></div><h2 id=-简单决策树>🤔 简单决策树</h2><div><pre><code class=language- data-lang>开始拉取代码
     ↓
 问自己：我的修改重要吗？
     ↓

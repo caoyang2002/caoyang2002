@@ -30,11 +30,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;class KaufmanExperiment:
+ &lt;pre&gt;&lt;code class="language-python"&gt;class KaufmanExperiment:
  def __init__(self):
  self.exposure_time = 50 # 毫秒
  self.dot_ranges = range(1, 201)
@@ -45,11 +171,10 @@
  for dots in self.dot_ranges:
  accuracy = self.test_recognition(dots)
  if accuracy &amp;lt; self.accuracy_threshold:
- return dots - 1&lt;/code&gt;
- &lt;/pre&gt;
+ return dots - 1&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

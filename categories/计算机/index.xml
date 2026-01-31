@@ -31,11 +31,137 @@
 
 
 
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
 &lt;div class="code-playground" data-language="python"&gt;
  
  &lt;div&gt;
- &lt;pre&gt;
- &lt;code class="language-python"&gt;# 一个简单的例子
+ &lt;pre&gt;&lt;code class="language-python"&gt;# 一个简单的例子
 text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # 普通编码：每个字符占8位
 # A: 01000001 (8位) × 5 = 40位
@@ -47,11 +173,10 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 # A: 0 (1位) × 5 = 5位
 # B: 10 (2位) × 3 = 6位
 # C: 11 (2位) × 2 = 4位
-# 总共：15位&lt;/code&gt;
- &lt;/pre&gt;
+# 总共：15位&lt;/code&gt;&lt;/pre&gt;
  &lt;/div&gt;
- 
 
+ 
  
 &lt;/div&gt;
 

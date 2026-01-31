@@ -14,8 +14,136 @@
 
 
 
+ 
 
-    #include <stdio.h>
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        #include <stdio.h>
 #include <malloc/_malloc.h>
 #include <string.h>
 #include <errno.h>
@@ -49,6 +177,10 @@ int main(){
     }
     return 0;
 }
+    
+
+    
+    
 
 
 
@@ -74,7 +206,7 @@ int main(){
 </span><span class=mx-1>&#183;</span>
 <span class=post-date>本文共 405
 个字 ， 预计需要阅读 1
-分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程</a></span></div><section><ul><li>暴力算法</li></ul><blockquote><p>时间复杂度过大</p></blockquote><div><pre><code class=language-c data-lang=c>#include &lt;stdio.h&gt;
+分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程</a></span></div><section><ul><li>暴力算法</li></ul><blockquote><p>时间复杂度过大</p></blockquote><div class=code-playground data-language=c><div><pre><code class=language-c>#include &lt;stdio.h&gt;
 #include &lt;malloc/_malloc.h&gt;
 #include &lt;string.h&gt;
 #include &lt;errno.h&gt;
@@ -107,14 +239,14 @@ int main(){
         printf(&#34;最大公倍数 %d &#43; 最小公约数 %d = %d\n&#34;,j,i,j&#43;i);
     }
     return 0;
-}</code></pre></div><hr><ul><li>辗转相除法</li></ul><blockquote><p>两个数的<em><strong>最大公约数</strong></em>等于其中较小的数字和二者之间余数的最大公约数</p></blockquote><p>``c
+}</code></pre></div></div><hr><ul><li>辗转相除法</li></ul><blockquote><p>两个数的<em><strong>最大公约数</strong></em>等于其中较小的数字和二者之间余数的最大公约数</p></blockquote><p>``c
 24 18 &mdash;- 计算最大公约数
 24%18 = 6 &mdash;- 获取余数
 18%6 = 0 &mdash;- 较小数字于余数的模为0，这个余数就是最大公约数</p><div><pre><code class=language- data-lang>
 &gt; 最大公倍数就是两个数字的积除以最大公约数
 
 ```c
-24 * 18 / 6</code></pre></div><p>最终：</p><div><pre><code class=language-c data-lang=c> #include &lt;stdio.h&gt;
+24 * 18 / 6</code></pre></div><p>最终：</p><div class=code-playground data-language=c><div><pre><code class=language-c> #include &lt;stdio.h&gt;
 // 最大公约数
 // 最小公倍数
 //计算最小公倍数和最大公约数的和
@@ -134,7 +266,7 @@ int main(){
         printf(&#34;%ld\n&#34;,m*n/j&#43;j);
     }
     return 0;
-}</code></pre></div></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+}</code></pre></div></div></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/en/post/2023/07/function_stack/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>函数栈帧的创建和销毁</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/en/post/2023/06/c_struct/><span>C 语言结构体</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

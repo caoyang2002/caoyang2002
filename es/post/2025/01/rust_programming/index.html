@@ -17,19 +17,144 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            let mut total = 0;
+        let mut total = 0;
 for order in orders {
     if order.amount > 100 {
         total += order.amount * 0.9;
     }
 }
-        
-    
     
 
+    
     
 
 
@@ -64,15 +189,12 @@ let mut total = 0; for order in orders { if order.amount > 100 { total += order.
 <span class=post-date>本文共 948
 个字 ， 预计需要阅读 2
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
-</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><p>让我用这种方式来讲解 Rust 的函数式编程概念：</p><h1 id=引入问题>引入问题</h1><p>想象这样一个场景：你需要处理一个电商系统的订单数据。要求：</p><ol><li>过滤出金额大于 100 的订单</li><li>计算这些订单的总金额</li><li>给每个订单加上 10% 的折扣</li></ol><p>传统的命令式编程可能是这样：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut total = 0;
+</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><p>让我用这种方式来讲解 Rust 的函数式编程概念：</p><h1 id=引入问题>引入问题</h1><p>想象这样一个场景：你需要处理一个电商系统的订单数据。要求：</p><ol><li>过滤出金额大于 100 的订单</li><li>计算这些订单的总金额</li><li>给每个订单加上 10% 的折扣</li></ol><p>传统的命令式编程可能是这样：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut total = 0;
 for order in orders {
     if order.amount &gt; 100 {
         total &#43;= order.amount * 0.9;
     }
-}</code>
-        </pre></div></div><p>这段代码有什么问题？</p><ul><li>可读性不高：逻辑分散在循环中</li><li>难以修改：如果要改变处理逻辑，需要修改循环内部</li><li>难以复用：这段逻辑很难在其他地方重用</li><li>易出错：可变状态(total)增加了出错风险</li></ul><h1 id=问题模型>问题模型</h1><p>我们需要一种方式能够：</p><ol><li>将数据转换表达为清晰的步骤</li><li>避免可变状态</li><li>提高代码复用性</li><li>增强代码可读性</li></ol><p>这就引出了函数式编程的核心概念：<strong>将计算表达为数据转换的管道</strong>。</p><h1 id=不同的解决方案>不同的解决方案</h1><h2 id=方案1传统命令式>方案1：传统命令式</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 命令式方式
+}</code></pre></div></div><p>这段代码有什么问题？</p><ul><li>可读性不高：逻辑分散在循环中</li><li>难以修改：如果要改变处理逻辑，需要修改循环内部</li><li>难以复用：这段逻辑很难在其他地方重用</li><li>易出错：可变状态(total)增加了出错风险</li></ul><h1 id=问题模型>问题模型</h1><p>我们需要一种方式能够：</p><ol><li>将数据转换表达为清晰的步骤</li><li>避免可变状态</li><li>提高代码复用性</li><li>增强代码可读性</li></ol><p>这就引出了函数式编程的核心概念：<strong>将计算表达为数据转换的管道</strong>。</p><h1 id=不同的解决方案>不同的解决方案</h1><h2 id=方案1传统命令式>方案1：传统命令式</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 命令式方式
 let mut filtered_orders = Vec::new();
 for order in orders {
     if order.amount &gt; 100 {
@@ -88,22 +210,16 @@ for order in filtered_orders {
 let mut total = 0;
 for amount in discounted_orders {
     total &#43;= amount;
-}</code>
-        </pre></div></div><p>优点：</p><ul><li>直观，容易理解</li><li>控制流清晰</li></ul><p>缺点：</p><ul><li>代码冗长</li><li>大量可变状态</li><li>难以复用</li></ul><h2 id=方案2函数式方案>方案2：函数式方案</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let total = orders
+}</code></pre></div></div><p>优点：</p><ul><li>直观，容易理解</li><li>控制流清晰</li></ul><p>缺点：</p><ul><li>代码冗长</li><li>大量可变状态</li><li>难以复用</li></ul><h2 id=方案2函数式方案>方案2：函数式方案</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>let total = orders
     .iter()
     .filter(|order| order.amount &gt; 100)
     .map(|order| order.amount * 0.9)
-    .sum();</code>
-        </pre></div></div><p>优点：</p><ul><li>代码简洁</li><li>无可变状态</li><li>易于理解和修改</li><li>每个步骤都可复用</li></ul><p>缺点：</p><ul><li>需要学习新的概念</li><li>对性能有轻微影响</li></ul><h1 id=核心概念解析>核心概念解析</h1><ol><li>Iterator（迭代器）：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 创建迭代器
+    .sum();</code></pre></div></div><p>优点：</p><ul><li>代码简洁</li><li>无可变状态</li><li>易于理解和修改</li><li>每个步骤都可复用</li></ul><p>缺点：</p><ul><li>需要学习新的概念</li><li>对性能有轻微影响</li></ul><h1 id=核心概念解析>核心概念解析</h1><ol><li>Iterator（迭代器）：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 创建迭代器
 let numbers = vec![1, 2, 3];
 let iter = numbers.iter();
 
 // 迭代器转换
-let doubled: Vec&lt;i32&gt; = iter.map(|x| x * 2).collect();</code>
-        </pre></div></div><ol start=2><li>高阶函数：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// map: 转换每个元素
+let doubled: Vec&lt;i32&gt; = iter.map(|x| x * 2).collect();</code></pre></div></div><ol start=2><li>高阶函数：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// map: 转换每个元素
 let squares: Vec&lt;i32&gt; = vec![1, 2, 3].iter()
     .map(|x| x * x)
     .collect();
@@ -115,12 +231,8 @@ let evens: Vec&lt;i32&gt; = vec![1, 2, 3, 4].iter()
 
 // fold: 累积操作
 let sum = vec![1, 2, 3].iter()
-    .fold(0, |acc, x| acc &#43; x);</code>
-        </pre></div></div><ol start=3><li>闭包：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let multiplier = 2;
-let double = |x| x * multiplier;  // 捕获外部变量</code>
-        </pre></div></div><h1 id=最佳实践>最佳实践</h1><ol><li>使用链式调用提高可读性：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 好的实践
+    .fold(0, |acc, x| acc &#43; x);</code></pre></div></div><ol start=3><li>闭包：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let multiplier = 2;
+let double = |x| x * multiplier;  // 捕获外部变量</code></pre></div></div><h1 id=最佳实践>最佳实践</h1><ol><li>使用链式调用提高可读性：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 好的实践
 let result = data
     .iter()
     .filter(|x| x.is_valid())
@@ -130,20 +242,14 @@ let result = data
 // 避免
 let filtered = data.iter().filter(|x| x.is_valid());
 let processed = filtered.map(|x| x.process());
-let result = processed.collect();</code>
-        </pre></div></div><ol start=2><li>适当使用类型标注：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let numbers: Vec&lt;i32&gt; = vec![1, 2, 3]
+let result = processed.collect();</code></pre></div></div><ol start=2><li>适当使用类型标注：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let numbers: Vec&lt;i32&gt; = vec![1, 2, 3]
     .iter()
     .map(|x| x * 2)
-    .collect();</code>
-        </pre></div></div><ol start=3><li>使用合适的组合子：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 使用 find 代替 filter().next()
+    .collect();</code></pre></div></div><ol start=3><li>使用合适的组合子：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 使用 find 代替 filter().next()
 let first_even = numbers.iter().find(|x| *x % 2 == 0);
 
 // 使用 any 代替 filter().count() &gt; 0
-let has_even = numbers.iter().any(|x| *x % 2 == 0);</code>
-        </pre></div></div><ol start=4><li>注意性能：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 好的实践：及早过滤
+let has_even = numbers.iter().any(|x| *x % 2 == 0);</code></pre></div></div><ol start=4><li>注意性能：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 好的实践：及早过滤
 let result = data
     .iter()
     .filter(|x| x.is_valid())  // 先过滤
@@ -152,8 +258,7 @@ let result = data
 
 // 避免：不必要的中间集合
 let temp: Vec&lt;_&gt; = data.iter().map(expensive_operation).collect();
-let result: Vec&lt;_&gt; = temp.iter().filter(|x| x.is_valid()).collect();</code>
-        </pre></div></div><h1 id=方法论总结>方法论总结</h1><ol><li><p>思考管道：</p><ul><li>将复杂操作分解为简单的转换步骤</li><li>每个步骤都应该是单一职责</li></ul></li><li><p>保持不可变性：</p><ul><li>优先使用不可变数据结构</li><li>通过转换而不是修改来改变数据</li></ul></li><li><p>组合优于继承：</p><ul><li>使用小的、可组合的函数</li><li>通过组合创建复杂行为</li></ul></li><li><p>类型驱动开发：</p><ul><li>让编译器帮助你保证代码正确性</li><li>使用强类型系统来表达意图</li></ul></li></ol><p>通过这种函数式的思维方式，我们能够写出更加清晰、可维护、可靠的代码。这不仅仅是一种编程范式，更是一种解决问题的思维方式。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+let result: Vec&lt;_&gt; = temp.iter().filter(|x| x.is_valid()).collect();</code></pre></div></div><h1 id=方法论总结>方法论总结</h1><ol><li><p>思考管道：</p><ul><li>将复杂操作分解为简单的转换步骤</li><li>每个步骤都应该是单一职责</li></ul></li><li><p>保持不可变性：</p><ul><li>优先使用不可变数据结构</li><li>通过转换而不是修改来改变数据</li></ul></li><li><p>组合优于继承：</p><ul><li>使用小的、可组合的函数</li><li>通过组合创建复杂行为</li></ul></li><li><p>类型驱动开发：</p><ul><li>让编译器帮助你保证代码正确性</li><li>使用强类型系统来表达意图</li></ul></li></ol><p>通过这种函数式的思维方式，我们能够写出更加清晰、可维护、可靠的代码。这不仅仅是一种编程范式，更是一种解决问题的思维方式。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/es/post/2025/01/rust_ref/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>Rust 中的引用</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/es/post/2025/01/rust_cyc/><span>Rust 生命周期</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

@@ -11,10 +11,136 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            {{/* 基础模板: baseof.html */}}
+        {{/* 基础模板: baseof.html */}}
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,10 +155,9 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 {{ define "main" }}
   <div>这里是实际内容</div>
 {{ end }}
-        
-    
     
 
+    
     
 
 
@@ -58,8 +183,7 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 </a><a href=https://simons.qzz.io/tags/%E9%A1%B5%E9%9D%A2%E6%8D%86%E7%BB%91 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">页面捆绑
 </a><a href=https://simons.qzz.io/tags/%E7%9F%AD%E4%BB%A3%E7%A0%81 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">短代码
 </a><a href=https://simons.qzz.io/tags/%E6%A8%A1%E6%9D%BF%E7%BB%A7%E6%89%BF class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">模板继承
-</a><a href=https://simons.qzz.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">性能优化</a></span></div><section><h1 id=hugo-不为人知的强大特性>Hugo 不为人知的强大特性</h1><p>Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。</p><h2 id=1-模板继承的黑魔法>1. 模板继承的黑魔法</h2><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{/* 基础模板: baseof.html */}}
+</a><a href=https://simons.qzz.io/tags/%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">性能优化</a></span></div><section><h1 id=hugo-不为人知的强大特性>Hugo 不为人知的强大特性</h1><p>Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。</p><h2 id=1-模板继承的黑魔法>1. 模板继承的黑魔法</h2><div class=code-playground data-language=go><div><pre><code class=language-go>{{/* 基础模板: baseof.html */}}
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
   &lt;head&gt;
@@ -73,43 +197,30 @@ Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它
 {{/* 子模板 */}}
 {{ define &#34;main&#34; }}
   &lt;div&gt;这里是实际内容&lt;/div&gt;
-{{ end }}</code>
-        </pre></div></div><p>看到这个<code>.</code>了吗？这是Hugo的上下文传递，相当于其他语言的<code>this</code>。很多人不知道，它可以这样玩：</p><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{ with .Site.Params }}
+{{ end }}</code></pre></div></div><p>看到这个<code>.</code>了吗？这是Hugo的上下文传递，相当于其他语言的<code>this</code>。很多人不知道，它可以这样玩：</p><div class=code-playground data-language=go><div><pre><code class=language-go>{{ with .Site.Params }}
   {{ .author }} // 直接用点号访问，清爽多了
-{{ end }}</code>
-        </pre></div></div><h2 id=2-页面捆绑的秘密>2. 页面捆绑的秘密</h2><div><pre><code class=language- data-lang>content/
+{{ end }}</code></pre></div></div><h2 id=2-页面捆绑的秘密>2. 页面捆绑的秘密</h2><div><pre><code class=language- data-lang>content/
   └── posts/
       └── tech/
           ├── index.md      # 主文章
           ├── image1.jpg    # 相关资源
-          └── data.json     # 数据文件</code></pre></div><p>很多人还在用静态目录放图片，太傻了。用页面捆绑，迁移文章时图片跟着走，多爽！</p><h2 id=3-自定义短代码进阶>3. 自定义短代码进阶</h2><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{/* shortcodes/notice.html */}}
+          └── data.json     # 数据文件</code></pre></div><p>很多人还在用静态目录放图片，太傻了。用页面捆绑，迁移文章时图片跟着走，多爽！</p><h2 id=3-自定义短代码进阶>3. 自定义短代码进阶</h2><div class=code-playground data-language=go><div><pre><code class=language-go>{{/* shortcodes/notice.html */}}
 {{ $type := .Get 0 }}
 {{ $message := .Get 1 }}
 &lt;div class=&#34;notice {{ $type }}&#34;&gt;
     {{ $message | markdownify }}
-&lt;/div&gt;</code>
-        </pre></div></div><p>用法：</p><div><pre><code class=language-markdown data-lang=markdown>{{ % notice &#34;warning&#34; &#34;这是一个**警告**&#34; % }}</code></pre></div><p>看到<code>markdownify</code>了吗？它能把Markdown转HTML。结合短代码，威力无穷。</p><h2 id=4-数据模板黑科技>4. 数据模板黑科技</h2><div><pre><code class=language-yaml data-lang=yaml># data/prices.yaml
+&lt;/div&gt;</code></pre></div></div><p>用法：</p><div class=code-playground data-language=markdown><div><pre><code class=language-markdown>{{ % notice &#34;warning&#34; &#34;这是一个**警告**&#34; % }}</code></pre></div></div><p>看到<code>markdownify</code>了吗？它能把Markdown转HTML。结合短代码，威力无穷。</p><h2 id=4-数据模板黑科技>4. 数据模板黑科技</h2><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># data/prices.yaml
 basic:
   monthly: 9.99
-  yearly: 99.99</code></pre></div><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{ $yearly := index .Site.Data.prices.basic &#34;yearly&#34; }}
+  yearly: 99.99</code></pre></div></div><div class=code-playground data-language=go><div><pre><code class=language-go>{{ $yearly := index .Site.Data.prices.basic &#34;yearly&#34; }}
 {{ $monthly := index .Site.Data.prices.basic &#34;monthly&#34; }}
 {{ $savings := sub (mul $monthly 12) $yearly }}
 
-节省: {{ $savings }}</code>
-        </pre></div></div><p>Hugo的数学计算被严重低估了。价格计算、数据统计，它都能搞。</p><h2 id=5-输出格式耍花活>5. 输出格式耍花活</h2><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{ $data := getJSON &#34;api.json&#34; }}
-{{ $data | jsonify (dict &#34;indent&#34; &#34;  &#34;) }}</code>
-        </pre></div></div><p>格式化JSON、压缩HTML、自动生成RSS&mldr;Hugo都能处理。你的CI/CD流程可以更清爽了。</p><h2 id=踩坑提醒>踩坑提醒</h2><ol><li><p><code>.Params</code>和<code>.Site.Params</code>是不同的：</p><ul><li><code>.Params</code>：页面级参数</li><li><code>.Site.Params</code>：全站参数
-别混用，否则Debug能让你怀疑人生。</li></ul></li><li><p>记住：Hugo的模板是强类型的。你可能会看到这样的错误：</p></li></ol><div><pre><code class=language- data-lang>error: wrong type for value; expected string; got int</code></pre></div><p>用<code>printf "%v"</code>调试类型，能省很多事。</p><ol start=3><li>性能陷阱：</li></ol><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{ range .Pages }}
+节省: {{ $savings }}</code></pre></div></div><p>Hugo的数学计算被严重低估了。价格计算、数据统计，它都能搞。</p><h2 id=5-输出格式耍花活>5. 输出格式耍花活</h2><div class=code-playground data-language=go><div><pre><code class=language-go>{{ $data := getJSON &#34;api.json&#34; }}
+{{ $data | jsonify (dict &#34;indent&#34; &#34;  &#34;) }}</code></pre></div></div><p>格式化JSON、压缩HTML、自动生成RSS&mldr;Hugo都能处理。你的CI/CD流程可以更清爽了。</p><h2 id=踩坑提醒>踩坑提醒</h2><ol><li><p><code>.Params</code>和<code>.Site.Params</code>是不同的：</p><ul><li><code>.Params</code>：页面级参数</li><li><code>.Site.Params</code>：全站参数
+别混用，否则Debug能让你怀疑人生。</li></ul></li><li><p>记住：Hugo的模板是强类型的。你可能会看到这样的错误：</p></li></ol><div><pre><code class=language- data-lang>error: wrong type for value; expected string; got int</code></pre></div><p>用<code>printf "%v"</code>调试类型，能省很多事。</p><ol start=3><li>性能陷阱：</li></ol><div class=code-playground data-language=go><div><pre><code class=language-go>{{ range .Pages }}
   {{ .Content }} // 全文遍历，性能杀手
-{{ end }}</code>
-        </pre></div></div><p>用<code>.Summary</code>或<code>.Plain</code>代替，除非真需要全文。</p><h2 id=实战经验>实战经验</h2><ol><li>开发环境配置：</li></ol><div><pre><code class=language-bash data-lang=bash>hugo server --disableFastRender --navigateToChanged</code></pre></div><p>修改即时生效，爽到飞起。</p><ol start=2><li>用<code>resource.ExecuteAsTemplate</code>处理JS/CSS：</li></ol><div class=code-playground data-language=go><div><pre>
-            <code class=language-go>{{ $js := resources.Get &#34;js/main.js&#34; | resources.ExecuteAsTemplate &#34;js/main.js&#34; . }}</code>
-        </pre></div></div><p>配置信息直接注入前端，优雅！</p><p>代码写得再花哨，不解决实际问题都是扯淡。我的建议是：先搞清楚你要解决什么问题，再来看这些技巧。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+{{ end }}</code></pre></div></div><p>用<code>.Summary</code>或<code>.Plain</code>代替，除非真需要全文。</p><h2 id=实战经验>实战经验</h2><ol><li>开发环境配置：</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash>hugo server --disableFastRender --navigateToChanged</code></pre></div></div><p>修改即时生效，爽到飞起。</p><ol start=2><li>用<code>resource.ExecuteAsTemplate</code>处理JS/CSS：</li></ol><div class=code-playground data-language=go><div><pre><code class=language-go>{{ $js := resources.Get &#34;js/main.js&#34; | resources.ExecuteAsTemplate &#34;js/main.js&#34; . }}</code></pre></div></div><p>配置信息直接注入前端，优雅！</p><p>代码写得再花哨，不解决实际问题都是扯淡。我的建议是：先搞清楚你要解决什么问题，再来看这些技巧。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>GitHub Actions 深入剖析：从原理到实践</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/my_projects/><span>我的项目</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

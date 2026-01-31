@@ -10,17 +10,142 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            let numbers = vec![1, 2, 3, 4, 5];
+        let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
 let multiplied_numbers = ??? // 这里怎么写
-        
-    
     
 
+    
     
 
 
@@ -41,10 +166,136 @@ Rust 的闭包本质上是一种特殊的数据结构，它包含：
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            // 表面上的闭包
+        // 表面上的闭包
 let multiplier = 2;
 let closure = |x| x * multiplier;
 
@@ -58,10 +309,9 @@ impl Closure {
         x * self.multiplier
     }
 }
-        
-    
     
 
+    
     
 
 
@@ -86,13 +336,10 @@ let numbers = vec![1, 2, 3, 4, 5]; // 如何优雅地复用过滤逻辑？ let e
 <span class=post-date>本文共 2071
 个字 ， 预计需要阅读 5
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程
-</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><h2 id=从一个常见问题说起>从一个常见问题说起</h2><p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let numbers = vec![1, 2, 3, 4, 5];
+</a><a href=https://simons.qzz.io/tags/rust class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">rust</a></span></div><section><h2 id=从一个常见问题说起>从一个常见问题说起</h2><p>假设你正在开发一个数据处理系统，需要对集合中的数据进行灵活的过滤和转换：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>let numbers = vec![1, 2, 3, 4, 5];
 // 如何优雅地复用过滤逻辑？
 let even_numbers = ??? // 这里怎么写
-let multiplied_numbers = ??? // 这里怎么写</code>
-        </pre></div></div><h2 id=闭包的本质>闭包的本质</h2><p>Rust 的闭包本质上是一种特殊的数据结构，它包含：</p><ol><li>函数逻辑</li><li>捕获的环境变量</li></ol><p>让我们通过反编译来看闭包的真实面目：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 表面上的闭包
+let multiplied_numbers = ??? // 这里怎么写</code></pre></div></div><h2 id=闭包的本质>闭包的本质</h2><p>Rust 的闭包本质上是一种特殊的数据结构，它包含：</p><ol><li>函数逻辑</li><li>捕获的环境变量</li></ol><p>让我们通过反编译来看闭包的真实面目：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 表面上的闭包
 let multiplier = 2;
 let closure = |x| x * multiplier;
 
@@ -105,9 +352,7 @@ impl Closure {
     fn call(&amp;self, x: i32) -&gt; i32 {
         x * self.multiplier
     }
-}</code>
-        </pre></div></div><h2 id=闭包的三种类型>闭包的三种类型</h2><p>通过具体案例来理解三种闭包 trait：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. FnOnce - 获取所有权
+}</code></pre></div></div><h2 id=闭包的三种类型>闭包的三种类型</h2><p>通过具体案例来理解三种闭包 trait：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. FnOnce - 获取所有权
 let vec = vec![1, 2, 3];
 let consume = move || { // 使用 move 语义
     // vec在这里被消费
@@ -127,9 +372,7 @@ increment(); // 可以多次调用
 let factor = 2;
 let multiply = |x| x * factor; // 仅读取 factor
 println!(&#34;Result: {}&#34;, multiply(5));
-// factor 仍然可以在这里使用</code>
-        </pre></div></div><h1 id=理解闭包>理解闭包</h1><p>假设你正在开发一个文件处理系统，需要对不同类型的文件执行不同的操作。你可能会写出这样的代码：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn process_files(files: Vec&lt;String&gt;) {
+// factor 仍然可以在这里使用</code></pre></div></div><h1 id=理解闭包>理解闭包</h1><p>假设你正在开发一个文件处理系统，需要对不同类型的文件执行不同的操作。你可能会写出这样的代码：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn process_files(files: Vec&lt;String&gt;) {
     for file in files {
         if file.ends_with(&#34;.txt&#34;) {
             process_text_file(file);
@@ -137,28 +380,20 @@ println!(&#34;Result: {}&#34;, multiply(5));
             process_json_file(file);
         }
     }
-}</code>
-        </pre></div></div><p>这段代码虽然能工作，但如果要增加新的文件类型支持，就需要修改这个函数。如何让这个处理逻辑更灵活？这就是闭包可以发挥作用的地方。</p><h1 id=一闭包的本质>一、闭包的本质</h1><h2 id=11-从函数到闭包>1.1 从函数到闭包</h2><p>先看一个基础示例：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 传统函数
+}</code></pre></div></div><p>这段代码虽然能工作，但如果要增加新的文件类型支持，就需要修改这个函数。如何让这个处理逻辑更灵活？这就是闭包可以发挥作用的地方。</p><h1 id=一闭包的本质>一、闭包的本质</h1><h2 id=11-从函数到闭包>1.1 从函数到闭包</h2><p>先看一个基础示例：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 传统函数
 fn add_one(x: i32) -&gt; i32 {
     x &#43; 1
 }
 
 // 等价的闭包
-let add_one = |x: i32| -&gt; i32 { x &#43; 1 };</code>
-        </pre></div></div><p>闭包实际上是一个可以捕获其环境的匿名函数。关键在于"捕获环境"这四个字：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let multiplier = 10;
+let add_one = |x: i32| -&gt; i32 { x &#43; 1 };</code></pre></div></div><p>闭包实际上是一个可以捕获其环境的匿名函数。关键在于"捕获环境"这四个字：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>let multiplier = 10;
 let multiply = |x| x * multiplier;  // 捕获了外部变量multiplier
 
-println!(&#34;Result: {}&#34;, multiply(5)); // 输出：50</code>
-        </pre></div></div><h2 id=12-深入闭包特性>1.2 深入闭包特性</h2><p>Rust的闭包有三个关键特征：</p><ol><li><strong>类型推导</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 完整语法
+println!(&#34;Result: {}&#34;, multiply(5)); // 输出：50</code></pre></div></div><h2 id=12-深入闭包特性>1.2 深入闭包特性</h2><p>Rust的闭包有三个关键特征：</p><ol><li><strong>类型推导</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 完整语法
 let add_verbose = |x: i32| -&gt; i32 { x &#43; 1 };
 
 // 简化语法（类型推导）
-let add_simple = |x| x &#43; 1;</code>
-        </pre></div></div><ol start=2><li><strong>环境捕获</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>#[derive(Debug)]
+let add_simple = |x| x &#43; 1;</code></pre></div></div><ol start=2><li><strong>环境捕获</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>#[derive(Debug)]
 struct Counter {
     count: i32,
 }
@@ -170,33 +405,23 @@ fn main() {
     let print_count = || println!(&#34;Count: {}&#34;, counter.count);
 
     print_count(); // 可以访问counter
-}</code>
-        </pre></div></div><ol start=3><li><strong>所有权语义</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut vector = vec![1, 2, 3];
+}</code></pre></div></div><ol start=3><li><strong>所有权语义</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut vector = vec![1, 2, 3];
 
 // 通过可变引用捕获
 let mut mutate_vec = || vector.push(4);
 
 mutate_vec();
-println!(&#34;Vector: {:?}&#34;, vector); // [1, 2, 3, 4]</code>
-        </pre></div></div><h2 id=13-深入理解闭包捕获规则>1.3 深入理解闭包捕获规则</h2><p>闭包捕获变量遵循几个关键原则：</p><ol><li>最小权限原则：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let name = String::from(&#34;Alice&#34;);
+println!(&#34;Vector: {:?}&#34;, vector); // [1, 2, 3, 4]</code></pre></div></div><h2 id=13-深入理解闭包捕获规则>1.3 深入理解闭包捕获规则</h2><p>闭包捕获变量遵循几个关键原则：</p><ol><li>最小权限原则：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let name = String::from(&#34;Alice&#34;);
 let printer = || println!(&#34;Name: {}&#34;, name);  // 只需不可变借用
-let consumer = || name;  // 需要所有权，编译器会报错</code>
-        </pre></div></div><ol start=2><li>移动语义：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let data = vec![1, 2, 3];
+let consumer = || name;  // 需要所有权，编译器会报错</code></pre></div></div><ol start=2><li>移动语义：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let data = vec![1, 2, 3];
 let closure = move || {
     // data 的所有权移入闭包
     println!(&#34;{:?}&#34;, data);
 };
-// 这里不能再使用 data</code>
-        </pre></div></div><ol start=3><li>生命周期约束：</li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let result: Option&lt;Vec&lt;i32&gt;&gt; = None;
+// 这里不能再使用 data</code></pre></div></div><ol start=3><li>生命周期约束：</li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>let result: Option&lt;Vec&lt;i32&gt;&gt; = None;
 let mut processor = || {
     result.as_ref().map(|v| v.len())
-};</code>
-        </pre></div></div><h1 id=二闭包的实现机制>二、闭包的实现机制</h1><h2 id=21-rust-中的闭包特征>2.1 Rust 中的闭包特征</h2><p>Rust使用三个特征来实现闭包功能：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 1. FnOnce - 获取所有权并消费
+};</code></pre></div></div><h1 id=二闭包的实现机制>二、闭包的实现机制</h1><h2 id=21-rust-中的闭包特征>2.1 Rust 中的闭包特征</h2><p>Rust使用三个特征来实现闭包功能：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 1. FnOnce - 获取所有权并消费
 let consume = || vector;
 consume(); // vector的所有权被转移
 
@@ -208,9 +433,7 @@ add_to_counter(); // counter被可变借用
 // 3. Fn - 不可变借用
 let value = String::from(&#34;hello&#34;);
 let print_value = || println!(&#34;{}&#34;, value);
-print_value(); // value被不可变借用</code>
-        </pre></div></div><h2 id=22-内存实现分析>2.2 内存实现分析</h2><p>看一个具体例子：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn main() {
+print_value(); // value被不可变借用</code></pre></div></div><h2 id=22-内存实现分析>2.2 内存实现分析</h2><p>看一个具体例子：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn main() {
     let external = String::from(&#34;external data&#34;);
 
     let closure = || {
@@ -218,9 +441,7 @@ print_value(); // value被不可变借用</code>
     };
 
     closure();
-}</code>
-        </pre></div></div><p>这个闭包在编译时会被转换为类似这样的结构：</p><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 编译器生成的等效代码
+}</code></pre></div></div><p>这个闭包在编译时会被转换为类似这样的结构：</p><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 编译器生成的等效代码
 struct ClosureEnvironment {
     external: String,
 }
@@ -229,15 +450,11 @@ impl Fn() for ClosureEnvironment {
     fn call(&amp;self) {
         println!(&#34;Using: {}&#34;, self.external);
     }
-}</code>
-        </pre></div></div><h1 id=三闭包示例>三、闭包示例</h1><h2 id=1-自定义排序>1. 自定义排序：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut users = vec![
+}</code></pre></div></div><h1 id=三闭包示例>三、闭包示例</h1><h2 id=1-自定义排序>1. 自定义排序：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut users = vec![
     User { name: &#34;Alice&#34;, age: 30 },
     User { name: &#34;Bob&#34;, age: 25 },
 ];
-users.sort_by_key(|u| u.age);  // 按年龄排序</code>
-        </pre></div></div><h2 id=2-惰性求值>2. 惰性求值：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct Cached&lt;T&gt;
+users.sort_by_key(|u| u.age);  // 按年龄排序</code></pre></div></div><h2 id=2-惰性求值>2. 惰性求值：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct Cached&lt;T&gt;
 where
     T: Fn(u32) -&gt; u32,
 {
@@ -266,42 +483,30 @@ where
             }
         }
     }
-}</code>
-        </pre></div></div><h2 id=3-错误处理模式>3. 错误处理模式：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let error_handler = |err| {
+}</code></pre></div></div><h2 id=3-错误处理模式>3. 错误处理模式：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>let error_handler = |err| {
     log::error!(&#34;Operation failed: {}&#34;, err);
     // 返回默认值
     Vec::new()
 };
 
-let result = operation().unwrap_or_else(error_handler);</code>
-        </pre></div></div><h1 id=四性能考虑>四、性能考虑</h1><h2 id=41-大小优化>4.1 大小优化：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 编译器优化前
+let result = operation().unwrap_or_else(error_handler);</code></pre></div></div><h1 id=四性能考虑>四、性能考虑</h1><h2 id=41-大小优化>4.1 大小优化：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 编译器优化前
 let large_data = vec![1; 1000];
 let closure = move || large_data[0];  // 整个vec被移动
 
 // 优化后
 let large_data = vec![1; 1000];
-let closure = move || &amp;large_data[0];  // 只捕获引用</code>
-        </pre></div></div><h2 id=42-内联优化>4.2 内联优化：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 通常会被内联优化
+let closure = move || &amp;large_data[0];  // 只捕获引用</code></pre></div></div><h2 id=42-内联优化>4.2 内联优化：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 通常会被内联优化
 let multiply = |x| x * 2;
-let result = multiply(4);  // 直接优化为 let result = 4 * 2;</code>
-        </pre></div></div><h1 id=五常见陷阱>五、常见陷阱</h1><h2 id=51-生命周期问题>5.1 生命周期问题：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>fn create_closure() -&gt; impl Fn(i32) -&gt; i32 {
+let result = multiply(4);  // 直接优化为 let result = 4 * 2;</code></pre></div></div><h1 id=五常见陷阱>五、常见陷阱</h1><h2 id=51-生命周期问题>5.1 生命周期问题：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>fn create_closure() -&gt; impl Fn(i32) -&gt; i32 {
     let factor = 2;
     // 错误：factor的生命周期不够长
     |x| x * factor
-}</code>
-        </pre></div></div><h2 id=52-可变性冲突>5.2 可变性冲突：</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let mut data = vec![1, 2, 3];
+}</code></pre></div></div><h2 id=52-可变性冲突>5.2 可变性冲突：</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>let mut data = vec![1, 2, 3];
 let closure = || {
     // 错误：不能同时有可变和不可变借用
     data.push(4);
     println!(&#34;{:?}&#34;, data);
-};</code>
-        </pre></div></div><p>通过这些具体的示例和分析，我们可以看到Rust闭包不仅是一个语法糖，更是一个强大的工具，它能够帮助我们写出更加灵活和高效的代码。理解其内部机制和使用规则，对于编写高质量的Rust程序至关重要。</p><p>你可以从这个分析中看到，闭包的每个特性都有其实际的应用场景和性能影响。这不仅帮助我们理解"是什么"，更重要的是理解"为什么"和"怎么用"。</p><h1 id=六实战应用>六、实战应用</h1><h2 id=61-函数式迭代器>6.1 函数式迭代器</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>let numbers = vec![1, 2, 3, 4, 5];
+};</code></pre></div></div><p>通过这些具体的示例和分析，我们可以看到Rust闭包不仅是一个语法糖，更是一个强大的工具，它能够帮助我们写出更加灵活和高效的代码。理解其内部机制和使用规则，对于编写高质量的Rust程序至关重要。</p><p>你可以从这个分析中看到，闭包的每个特性都有其实际的应用场景和性能影响。这不仅帮助我们理解"是什么"，更重要的是理解"为什么"和"怎么用"。</p><h1 id=六实战应用>六、实战应用</h1><h2 id=61-函数式迭代器>6.1 函数式迭代器</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>let numbers = vec![1, 2, 3, 4, 5];
 
 // 链式调用示例
 let sum: i32 = numbers.iter()
@@ -309,9 +514,7 @@ let sum: i32 = numbers.iter()
     .map(|&amp;x| x * x)          // 平方
     .sum();                   // 求和
 
-println!(&#34;Sum of squares of even numbers: {}&#34;, sum);</code>
-        </pre></div></div><h2 id=62-自定义排序>6.2 自定义排序</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>#[derive(Debug)]
+println!(&#34;Sum of squares of even numbers: {}&#34;, sum);</code></pre></div></div><h2 id=62-自定义排序>6.2 自定义排序</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>#[derive(Debug)]
 struct Person {
     name: String,
     age: u32,
@@ -327,9 +530,7 @@ fn main() {
     people.sort_by_key(|p| p.age);
 
     println!(&#34;Sorted by age: {:?}&#34;, people);
-}</code>
-        </pre></div></div><h2 id=63-资源管理>6.3 资源管理</h2><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>struct Connection {
+}</code></pre></div></div><h2 id=63-资源管理>6.3 资源管理</h2><div class=code-playground data-language=rust><div><pre><code class=language-rust>struct Connection {
     port: u32,
 }
 
@@ -359,19 +560,14 @@ fn main() {
     with_connection(8080, |conn| {
         println!(&#34;Using connection on port {}&#34;, conn.port);
     });
-}</code>
-        </pre></div></div><h1 id=七性能和调试技巧>七、性能和调试技巧</h1><ol><li><strong>内联优化</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>#[inline]
+}</code></pre></div></div><h1 id=七性能和调试技巧>七、性能和调试技巧</h1><ol><li><strong>内联优化</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>#[inline]
 fn regular_function(x: i32) -&gt; i32 {
     x &#43; 1
 }
 
-let closure = |x| x &#43; 1;  // 编译器通常会自动内联</code>
-        </pre></div></div><ol start=2><li><strong>大小优化</strong></li></ol><div class=code-playground data-language=rust><div><pre>
-            <code class=language-rust>// 移动捕获而不是引用可能更高效
+let closure = |x| x &#43; 1;  // 编译器通常会自动内联</code></pre></div></div><ol start=2><li><strong>大小优化</strong></li></ol><div class=code-playground data-language=rust><div><pre><code class=language-rust>// 移动捕获而不是引用可能更高效
 let value = String::from(&#34;hello&#34;);
-let closure = move || println!(&#34;{}&#34;, value);</code>
-        </pre></div></div><p>通过这些实例和分析，我们可以看到Rust闭包不仅仅是一个语法特性，更是一套完整的系统设计。它结合了函数式编程的灵活性和Rust的安全性保证，为我们提供了强大的编程工具。</p><p>这种设计告诉我们：语言特性的设计不是随意的，而是要考虑实用性、性能和安全性的平衡。Rust的闭包实现就很好地体现了这一点。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+let closure = move || println!(&#34;{}&#34;, value);</code></pre></div></div><p>通过这些实例和分析，我们可以看到Rust闭包不仅仅是一个语法特性，更是一套完整的系统设计。它结合了函数式编程的灵活性和Rust的安全性保证，为我们提供了强大的编程工具。</p><p>这种设计告诉我们：语言特性的设计不是随意的，而是要考虑实用性、性能和安全性的平衡。Rust的闭包实现就很好地体现了这一点。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/es/post/2025/01/rust_ownership/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>深入理解 Rust 所有权机制</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/es/post/2025/01/rust_result_option/><span>深入解释 Rust 中的 Result 和 Option 这两个核心类型</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

@@ -16,10 +16,136 @@
 
 
 
+ 
+
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
     
     
-        
-            #include "pch.h"
+        #include "pch.h"
 #include "check_repository.h"
 namespace fs = std::filesystem;
     int Check::CheckRepository() {
@@ -37,10 +163,9 @@ namespace fs = std::filesystem;
         _getch();
         return 0;
 };
-        
-    
     
 
+    
     
 
 
@@ -59,8 +184,7 @@ namespace fs = std::filesystem;
 个字 ， 预计需要阅读 1
 分钟</span></div><span class="text-md antialiased opacity-60"><a href=https://simons.qzz.io/tags/%E7%BC%96%E7%A8%8B class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">编程</a></span></div><section><h1 id=如何生成-dll文件>如何生成 .dll文件</h1><p>生成dll文件同时会生成lib文件</p><ol><li>在VS开始界面，搜索dll，创建dll动态链接库</li><li>创建一个类（右键创建类，会自动包含需要的文件） 以查询目录下的文件为例
 创建的文件可以不用管
-<code>.cpp</code>文件 输入自己的代码</li></ol><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>#include &#34;pch.h&#34;
+<code>.cpp</code>文件 输入自己的代码</li></ol><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>#include &#34;pch.h&#34;
 #include &#34;check_repository.h&#34;
 namespace fs = std::filesystem;
     int Check::CheckRepository() {
@@ -77,9 +201,7 @@ namespace fs = std::filesystem;
         std::cout &lt;&lt; &#34;点击任意按键退出...&#34; &lt;&lt; std::endl;
         _getch();
         return 0;
-};</code>
-        </pre></div></div><p><code>.h</code>文件</p><div class=code-playground data-language=cpp><div><pre>
-            <code class=language-cpp>#pragma once
+};</code></pre></div></div><p><code>.h</code>文件</p><div class=code-playground data-language=cpp><div><pre><code class=language-cpp>#pragma once
 #include &lt;iostream&gt;
 #include &lt;filesystem&gt;
 #include &lt;conio.h&gt;
@@ -87,8 +209,7 @@ namespace fs = std::filesystem;
 class __declspec(dllexport) Check{
 public:
     int CheckRepository();//检查是否有存储库
-};</code>
-        </pre></div></div><p>为了让生成的文件尽量小，可以使用release模式，以及MT运行库MT生成</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+};</code></pre></div></div><p>为了让生成的文件尽量小，可以使用release模式，以及MT运行库MT生成</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/es/post/2024/06/c_shar/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>C 语言字符画</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/es/post/2024/06/git_delete_file/><span>删除错误提交到GitHub仓库中的文件</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>

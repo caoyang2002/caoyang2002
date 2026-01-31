@@ -12,8 +12,136 @@ GitHub Actions 的本质
 
 
 
+ 
 
-    # 这是最基础的工作流
+
+
+         
+
+
+
+       
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+       
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+     
+
+
+
+ 
+
+
+
+         
+
+
+
+ 
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+     
+
+
+
+ 
+
+
+
+
+
+
+    
+    
+        # 这是最基础的工作流
 name: CI
 on: [push]  # 事件触发器
 jobs:
@@ -22,6 +150,10 @@ jobs:
     steps:   # 执行步骤
     - uses: actions/checkout@v2
     - run: npm test
+    
+
+    
+    
 
 
 但这只是表象，让我们深入看看它的架构："><meta name=author content="simons"><script src=/js/code-flag-handler.js defer></script><link rel="preload stylesheet" as=style href=/bundle.min.66b2dab2c6bacce8963b2d2af9ecbb257a82f2249ddd6035c697d7658f3c988c.css><link rel=preload as=image href=/theme.png><link rel=preload as=image href=/about/avatar.jpg><link rel=preload as=image href=/twitter.svg><link rel=preload as=image href=/github.svg><link rel=preload as=image href=/instagram.svg><link rel=preload as=image href=/rss.svg><link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/monokai.min.css><script defer src=https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js onload=hljs.highlightAll()></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/lisp.min.js></script><script defer src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/sql.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css integrity=sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js integrity=sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js integrity=sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05 crossorigin=anonymous></script><script>document.addEventListener("DOMContentLoaded",()=>renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}],throwOnError:!1,errorCallback:(e)=>{console.warn("KaTeX 渲染错误:",e)}}))</script><link rel=icon href=/favicon.ico><link rel=apple-touch-icon href=/apple-touch-icon.png><meta name=generator content="Hugo 0.155.1"><meta itemprop=name content="GitHub Actions 深入剖析：从原理到实践"><meta itemprop=description content="本文深度解析 GitHub Actions 的底层架构与工作原理，从事件触发、工作流编排到容器化执行的完整流程。通过实战案例讲解缓存优化、矩阵构建、密钥管理等进阶技巧，并提供完整的 CI/CD 流水线配置示例，帮助开发者彻底掌握这一自动化工具。"><meta itemprop=datePublished content="2025-01-26T10:47:26+08:00"><meta itemprop=dateModified content="2026-01-30T01:57:46+08:00"><meta itemprop=wordCount content="1621"><meta itemprop=keywords content="GitHub Actions,自动化,持续集成,工作流,YAML,Docker,GitHub,部署"><meta property="og:url" content="https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/"><meta property="og:site_name" content="短松江月"><meta property="og:title" content="GitHub Actions 深入剖析：从原理到实践"><meta property="og:description" content="本文深度解析 GitHub Actions 的底层架构与工作原理，从事件触发、工作流编排到容器化执行的完整流程。通过实战案例讲解缓存优化、矩阵构建、密钥管理等进阶技巧，并提供完整的 CI/CD 流水线配置示例，帮助开发者彻底掌握这一自动化工具。"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-01-26T10:47:26+08:00"><meta property="article:modified_time" content="2026-01-30T01:57:46+08:00"><meta property="article:tag" content="GitHub Actions"><meta property="article:tag" content="自动化"><meta property="article:tag" content="持续集成"><meta property="article:tag" content="工作流"><meta property="article:tag" content="YAML"><meta property="article:tag" content="Docker"><meta name=twitter:card content="summary"><meta name=twitter:title content="GitHub Actions 深入剖析：从原理到实践"><meta name=twitter:description content="本文深度解析 GitHub Actions 的底层架构与工作原理，从事件触发、工作流编排到容器化执行的完整流程。通过实战案例讲解缓存优化、矩阵构建、密钥管理等进阶技巧，并提供完整的 CI/CD 流水线配置示例，帮助开发者彻底掌握这一自动化工具。"><link rel=canonical href=https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/></head><body class="text-black duration-200 ease-out dark:text-white"><header class="mx-auto flex h-12 px-8 lg:justify-center"><div class="relative z-50 ltr:mr-auto rtl:ml-auto flex items-center max-w-[--w]"><a class="-translate-y-[1px] text-2xl font-medium" href=https://simons.qzz.io/>短松江月</a><div class="btn-dark text-[0] ltr:ml-4 rtl:mr-4 h-6 w-6 shrink-0 cursor-pointer [background:url(./theme.png)_left_center/_auto_theme('spacing.6')_no-repeat] [transition:_background-position_0.4s_steps(5)] dark:[background-position:right]" role=button aria-label=Dark></div></div><div class="btn-menu relative z-50 ltr:-mr-8 rtl:-ml-8 flex h-[3rem] w-[5rem] shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden" role=button aria-label=Menu></div><script>const htmlClass=document.documentElement.classList;setTimeout(()=>{htmlClass.remove("not-ready")},10);const btnMenu=document.querySelector(".btn-menu");btnMenu.addEventListener("click",()=>{htmlClass.contains("open")?(htmlClass.remove("open"),htmlClass.add("close")):(htmlClass.remove("close"),htmlClass.add("open"))});const metaTheme=document.querySelector('meta[name="theme-color"]'),lightBg="#faf8f1".replace(/"/g,""),setDark=e=>{metaTheme.setAttribute("content",e?"#000":lightBg),htmlClass[e?"add":"remove"]("dark"),localStorage.setItem("dark",e)},darkScheme=window.matchMedia("(prefers-color-scheme: dark)");if(htmlClass.contains("dark"))setDark(!0);else{const e=localStorage.getItem("dark");setDark(e?e==="true":darkScheme.matches)}darkScheme.addEventListener("change",e=>{setDark(e.matches)});const btnDark=document.querySelector(".btn-dark");btnDark.addEventListener("click",()=>{setDark(localStorage.getItem("dark")!=="true")})</script><div class="nav-wrapper fixed inset-x-0 top-full z-40 flex h-full select-none flex-col justify-center pb-16 duration-200 dark:bg-black lg:static lg:h-auto lg:flex-row lg:!bg-transparent lg:pb-0 lg:transition-none"><nav class="lg:ml-0 lg:flex lg:flex-row lg:items-center lg:space-x-10 rtl:space-x-reverse"><a class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal header-menu" href=/>首页
@@ -47,7 +179,7 @@ jobs:
 </a><a href=https://simons.qzz.io/tags/yaml class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">YAML
 </a><a href=https://simons.qzz.io/tags/docker class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">Docker
 </a><a href=https://simons.qzz.io/tags/github class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">GitHub
-</a><a href=https://simons.qzz.io/tags/%E9%83%A8%E7%BD%B2 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">部署</a></span></div><section><h1 id=github-actions-深入剖析从原理到实践>GitHub Actions 深入剖析：从原理到实践</h1><p>最近收到一个问题：&ldquo;为什么我的 CI/CD 流水线总是莫名其妙失败？&ldquo;这让我想起了 GitHub Actions 的一些有趣特性。今天就来扒一扒它的底层原理。</p><h2 id=github-actions-的本质>GitHub Actions 的本质</h2><p>本质上，GitHub Actions 就是一个事件驱动的工作流自动化引擎。它监听 GitHub 事件，然后执行预定义的动作。</p><div><pre><code class=language-yaml data-lang=yaml># 这是最基础的工作流
+</a><a href=https://simons.qzz.io/tags/%E9%83%A8%E7%BD%B2 class="mb-2 ltr:mr-1.5 rtl:ml-1.5 px-3 py-1 rounded-lg no-underline bg-black/[3%] hover:bg-black/[6%] dark:bg-white/[8%] dark:hover:bg-white/[12%]">部署</a></span></div><section><h1 id=github-actions-深入剖析从原理到实践>GitHub Actions 深入剖析：从原理到实践</h1><p>最近收到一个问题：&ldquo;为什么我的 CI/CD 流水线总是莫名其妙失败？&ldquo;这让我想起了 GitHub Actions 的一些有趣特性。今天就来扒一扒它的底层原理。</p><h2 id=github-actions-的本质>GitHub Actions 的本质</h2><p>本质上，GitHub Actions 就是一个事件驱动的工作流自动化引擎。它监听 GitHub 事件，然后执行预定义的动作。</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 这是最基础的工作流
 name: CI
 on: [push]  # 事件触发器
 jobs:
@@ -55,10 +187,10 @@ jobs:
     runs-on: ubuntu-latest  # 运行环境
     steps:   # 执行步骤
     - uses: actions/checkout@v2
-    - run: npm test</code></pre></div><p>但这只是表象，让我们深入看看它的架构：</p><h2 id=核心概念解析>核心概念解析</h2><ol><li>Runner（执行器）</li></ol><div><pre><code class=language-bash data-lang=bash># Runner 其实就是一个 Docker 容器
+    - run: npm test</code></pre></div></div><p>但这只是表象，让我们深入看看它的架构：</p><h2 id=核心概念解析>核心概念解析</h2><ol><li>Runner（执行器）</li></ol><div class=code-playground data-language=bash><div><pre><code class=language-bash># Runner 其实就是一个 Docker 容器
 docker run --rm -v $PWD:/workspace \
   -e GITHUB_TOKEN=$token \
-  myrunner:latest</code></pre></div><ol start=2><li>Workflow（工作流）</li></ol><div><pre><code class=language-yaml data-lang=yaml># 这才是真正的工作流定义
+  myrunner:latest</code></pre></div></div><ol start=2><li>Workflow（工作流）</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 这才是真正的工作流定义
 name: Complex Flow
 on:
   push:
@@ -72,38 +204,38 @@ jobs:
     steps:
       - uses: actions/setup-node@v2
         with:
-          node-version: ${{ matrix.node }}</code></pre></div><h2 id=深入原理>深入原理</h2><p>GitHub Actions 的执行过程：</p><ol><li>事件触发</li><li>工作流匹配</li><li>Runner 分配</li><li>容器初始化</li><li>步骤执行</li></ol><p>关键在于它的上下文传递：</p><div><pre><code class=language-yaml data-lang=yaml># 上下文是如何传递的？
+          node-version: ${{ matrix.node }}</code></pre></div></div><h2 id=深入原理>深入原理</h2><p>GitHub Actions 的执行过程：</p><ol><li>事件触发</li><li>工作流匹配</li><li>Runner 分配</li><li>容器初始化</li><li>步骤执行</li></ol><p>关键在于它的上下文传递：</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 上下文是如何传递的？
 steps:
   - id: step1
     run: echo &#34;::set-output name=foo::bar&#34;
-  - run: echo ${{ steps.step1.outputs.foo }}</code></pre></div><p>这里涉及到环境变量、文件系统和网络隔离。</p><h2 id=实战技巧>实战技巧</h2><ol><li>缓存优化</li></ol><div><pre><code class=language-yaml data-lang=yaml>- uses: actions/cache@v2
+  - run: echo ${{ steps.step1.outputs.foo }}</code></pre></div></div><p>这里涉及到环境变量、文件系统和网络隔离。</p><h2 id=实战技巧>实战技巧</h2><ol><li>缓存优化</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>- uses: actions/cache@v2
   with:
     path: ~/.npm
-    key: ${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</code></pre></div><ol start=2><li>矩阵构建</li></ol><div><pre><code class=language-yaml data-lang=yaml>strategy:
+    key: ${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}</code></pre></div></div><ol start=2><li>矩阵构建</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>strategy:
   matrix:
     os: [ubuntu-latest, windows-latest]
     node: [12, 14, 16]
     exclude:
       - os: windows-latest
-        node: 12</code></pre></div><ol start=3><li>条件执行</li></ol><div><pre><code class=language-yaml data-lang=yaml>if: github.event_name == &#39;push&#39; &amp;&amp; github.ref == &#39;refs/heads/main&#39;</code></pre></div><h2 id=常见坑点>常见坑点</h2><ol><li>权限问题</li></ol><div><pre><code class=language-yaml data-lang=yaml># 这样写才能访问其他仓库
+        node: 12</code></pre></div></div><ol start=3><li>条件执行</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>if: github.event_name == &#39;push&#39; &amp;&amp; github.ref == &#39;refs/heads/main&#39;</code></pre></div></div><h2 id=常见坑点>常见坑点</h2><ol><li>权限问题</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 这样写才能访问其他仓库
 jobs:
   build:
     permissions:
       contents: read
-      packages: write</code></pre></div><ol start=2><li>环境变量作用域</li></ol><div><pre><code class=language-yaml data-lang=yaml>env:
+      packages: write</code></pre></div></div><ol start=2><li>环境变量作用域</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>env:
   GLOBAL_VAR: value  # 全局
 jobs:
   build:
     env:
-      JOB_VAR: value  # 作业级别</code></pre></div><ol start=3><li>Runner 选择</li></ol><div><pre><code class=language-yaml data-lang=yaml># 自托管 runner 要考虑并发
-runs-on: [self-hosted, linux]</code></pre></div><h2 id=架构设计思考>架构设计思考</h2><ol><li><p>为什么用 YAML？</p><ul><li>人类可读</li><li>版本控制友好</li><li>但是逻辑复杂时很痛苦</li></ul></li><li><p>事件驱动的优缺点</p><ul><li>优点：解耦、灵活</li><li>缺点：调试困难</li></ul></li><li><p>Runner 的设计</p><ul><li>容器隔离</li><li>资源限制</li><li>安全考虑</li></ul></li></ol><p>记住：</p><ol><li>Actions 不是万能的，某些场景还是本地构建更合适</li><li>理解原理比记忆语法更重要</li><li>安全永远是第一位的</li></ol><p>最后说一句：工具用对了是银弹，用错了是手雷。关键是理解它的设计思想和实现原理。</p><p>真受不了那些表面的介绍，今天我们扒开 GitHub Actions 的底裤，看看它到底是个啥玩意。</p><h2 id=event事件---一切的起点>Event（事件） - 一切的起点</h2><p>事件就是触发器，就这么简单。但关键是要理解事件的类型和它们的上下文数据。</p><div><pre><code class=language-yaml data-lang=yaml># 最常见的事件触发
+      JOB_VAR: value  # 作业级别</code></pre></div></div><ol start=3><li>Runner 选择</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 自托管 runner 要考虑并发
+runs-on: [self-hosted, linux]</code></pre></div></div><h2 id=架构设计思考>架构设计思考</h2><ol><li><p>为什么用 YAML？</p><ul><li>人类可读</li><li>版本控制友好</li><li>但是逻辑复杂时很痛苦</li></ul></li><li><p>事件驱动的优缺点</p><ul><li>优点：解耦、灵活</li><li>缺点：调试困难</li></ul></li><li><p>Runner 的设计</p><ul><li>容器隔离</li><li>资源限制</li><li>安全考虑</li></ul></li></ol><p>记住：</p><ol><li>Actions 不是万能的，某些场景还是本地构建更合适</li><li>理解原理比记忆语法更重要</li><li>安全永远是第一位的</li></ol><p>最后说一句：工具用对了是银弹，用错了是手雷。关键是理解它的设计思想和实现原理。</p><p>真受不了那些表面的介绍，今天我们扒开 GitHub Actions 的底裤，看看它到底是个啥玩意。</p><h2 id=event事件---一切的起点>Event（事件） - 一切的起点</h2><p>事件就是触发器，就这么简单。但关键是要理解事件的类型和它们的上下文数据。</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml># 最常见的事件触发
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: &#39;0 0 * * *&#39;  # 每天零点触发</code></pre></div><p>妈的，光写这些配置有啥用？重点是要理解每个事件会带来什么上下文：</p><div><pre><code class=language-yaml data-lang=yaml>jobs:
+    - cron: &#39;0 0 * * *&#39;  # 每天零点触发</code></pre></div></div><p>妈的，光写这些配置有啥用？重点是要理解每个事件会带来什么上下文：</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>jobs:
   print-context:
     runs-on: ubuntu-latest
     steps:
@@ -112,7 +244,7 @@ on:
         run: |
           echo &#34;提交人: ${{ github.actor }}&#34;
           echo &#34;提交SHA: ${{ github.sha }}&#34;
-          echo &#34;修改的文件: ${{ join(github.event.commits.*.modified, &#39;, &#39;) }}&#34;</code></pre></div><h2 id=workflow工作流--编排你的自动化过程>Workflow（工作流）- 编排你的自动化过程</h2><p>工作流说白了就是一个YAML文件，放在 <code>.github/workflows</code> 目录下。但关键是要搞清楚这个文件的结构：</p><div><pre><code class=language-yaml data-lang=yaml>name: 构建测试部署一条龙
+          echo &#34;修改的文件: ${{ join(github.event.commits.*.modified, &#39;, &#39;) }}&#34;</code></pre></div></div><h2 id=workflow工作流--编排你的自动化过程>Workflow（工作流）- 编排你的自动化过程</h2><p>工作流说白了就是一个YAML文件，放在 <code>.github/workflows</code> 目录下。但关键是要搞清楚这个文件的结构：</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>name: 构建测试部署一条龙
 on: [push]
 env:
   GLOBAL_VAR: &#34;全局变量老子想用就用&#34;
@@ -130,7 +262,7 @@ jobs:
     needs: job1  # 依赖关系，老子等job1完事才开始
     runs-on: ubuntu-latest
     steps:
-      - run: echo ${{ needs.job1.outputs.output1 }}</code></pre></div><h2 id=job作业--实际干活的地方>Job（作业）- 实际干活的地方</h2><p>Job 是最小的执行单元，但它里面的水太深了：</p><div><pre><code class=language-yaml data-lang=yaml>jobs:
+      - run: echo ${{ needs.job1.outputs.output1 }}</code></pre></div></div><h2 id=job作业--实际干活的地方>Job（作业）- 实际干活的地方</h2><p>Job 是最小的执行单元，但它里面的水太深了：</p><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>jobs:
   build:
     runs-on: ubuntu-latest  # 这他妈才是关键，选错环境分分钟给你玩死
     container:
@@ -143,8 +275,7 @@ jobs:
         node: [12, 14, 16]
         os: [ubuntu-latest, windows-latest]
       fail-fast: false  # 一个失败其他继续跑
-    steps: ...</code></pre></div><h2 id=action动作--组件化的精髓>Action（动作）- 组件化的精髓</h2><p>Action 就是一个可重用的组件，但是它也分三种：</p><ol><li>JavaScript Action</li></ol><div class=code-playground data-language=javascript><div><pre>
-            <code class=language-javascript>const core = require(&#39;@actions/core&#39;);
+    steps: ...</code></pre></div></div><h2 id=action动作--组件化的精髓>Action（动作）- 组件化的精髓</h2><p>Action 就是一个可重用的组件，但是它也分三种：</p><ol><li>JavaScript Action</li></ol><div class=code-playground data-language=javascript><div><pre><code class=language-javascript>const core = require(&#39;@actions/core&#39;);
 const github = require(&#39;@actions/github&#39;);
 
 try {
@@ -152,33 +283,32 @@ try {
   console.log(`Hello ${nameToGreet}!`);
 } catch (error) {
   core.setFailed(error.message);
-}</code>
-        </pre></div></div><ol start=2><li>Docker Container Action</li></ol><div><pre><code class=language-dockerfile data-lang=dockerfile>FROM alpine:3.10
+}</code></pre></div></div><ol start=2><li>Docker Container Action</li></ol><div><pre><code class=language-dockerfile data-lang=dockerfile>FROM alpine:3.10
 COPY entrypoint.sh /entrypoint.sh
-ENTRYPOINT [&#34;/entrypoint.sh&#34;]</code></pre></div><ol start=3><li>Composite Action</li></ol><div><pre><code class=language-yaml data-lang=yaml>runs:
+ENTRYPOINT [&#34;/entrypoint.sh&#34;]</code></pre></div><ol start=3><li>Composite Action</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>runs:
   using: &#34;composite&#34;
   steps:
     - run: echo &#34;这他妈就是个组合动作&#34;
-      shell: bash</code></pre></div><h2 id=实战技巧-1>实战技巧</h2><ol><li>Secrets管理</li></ol><div><pre><code class=language-yaml data-lang=yaml>steps:
+      shell: bash</code></pre></div></div><h2 id=实战技巧-1>实战技巧</h2><ol><li>Secrets管理</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>steps:
   - name: 配置密钥
     env:
       SSH_KEY: ${{ secrets.SSH_KEY }}
     run: |
       mkdir -p ~/.ssh
       echo &#34;$SSH_KEY&#34; &gt; ~/.ssh/id_rsa
-      chmod 600 ~/.ssh/id_rsa</code></pre></div><ol start=2><li>缓存依赖</li></ol><div><pre><code class=language-yaml data-lang=yaml>- uses: actions/cache@v3
+      chmod 600 ~/.ssh/id_rsa</code></pre></div></div><ol start=2><li>缓存依赖</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>- uses: actions/cache@v3
   with:
     path: |
       ~/.npm
       node_modules
     key: ${{ runner.os }}-node-${{ hashFiles(&#39;**/package-lock.json&#39;) }}
     restore-keys: |
-      ${{ runner.os }}-node-</code></pre></div><ol start=3><li>条件执行和错误处理</li></ol><div><pre><code class=language-yaml data-lang=yaml>steps:
+      ${{ runner.os }}-node-</code></pre></div></div><ol start=3><li>条件执行和错误处理</li></ol><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>steps:
   - name: 部署到生产环境
     if: github.ref == &#39;refs/heads/main&#39; &amp;&amp; github.event_name == &#39;push&#39;
     continue-on-error: true  # 出错了也别停
     run: |
-      curl ${{ secrets.DEPLOY_HOOK }}</code></pre></div><h2 id=实战案例完整cicd流程>实战案例：完整CI/CD流程</h2><div><pre><code class=language-yaml data-lang=yaml>name: 完整流程
+      curl ${{ secrets.DEPLOY_HOOK }}</code></pre></div></div><h2 id=实战案例完整cicd流程>实战案例：完整CI/CD流程</h2><div class=code-playground data-language=yaml><div><pre><code class=language-yaml>name: 完整流程
 on:
   push:
     branches: [ main ]
@@ -216,7 +346,7 @@ jobs:
         run: |
           echo &#34;$DEPLOY_KEY&#34; &gt; deploy_key
           chmod 600 deploy_key
-          rsync -e &#34;ssh -i deploy_key&#34; ./dist/ user@server:/var/www/</code></pre></div><p>最后说点实在的：</p><ol><li>runner要选对，别tm用windows跑linux命令</li><li>cache一定要用，不然慢死你</li><li>secrets别写错，不然调试死你</li><li>报错信息好好看，别瞎改配置</li></ol><p>要是你能把这些都整明白了，那就算入门了。想要进阶？自己写个Action练练手，看看GitHub官方的Action源码。记住：source code is your best teacher。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
+          rsync -e &#34;ssh -i deploy_key&#34; ./dist/ user@server:/var/www/</code></pre></div></div><p>最后说点实在的：</p><ol><li>runner要选对，别tm用windows跑linux命令</li><li>cache一定要用，不然慢死你</li><li>secrets别写错，不然调试死你</li><li>报错信息好好看，别瞎改配置</li></ol><p>要是你能把这些都整明白了，那就算入门了。想要进阶？自己写个Action练练手，看看GitHub官方的Action源码。记住：source code is your best teacher。</p></section><div class=reward-container><button class=reward-button aria-expanded=false aria-controls=reward-pop>
 支持作者</button><div id=reward-pop class="reward-popup hidden"><p class=reward-text>感谢支持！🍻</p><div class=qr-container><div class=reward-qr><img src=/images/payment/wechat.jpg alt=微信支付二维码 loading=lazy><p>微信</p></div><div class=reward-qr><img src=/images/payment/alipay.jpg alt=支付宝二维码 loading=lazy><p>支付宝</p></div></div></div></div><style>.reward-container{text-align:center;margin:2rem 0}.reward-button{padding:.5rem 1.25rem;background-color:#f44336;color:#fff;border:none;border-radius:1rem;cursor:pointer;transition:all .2s ease;font-size:1rem}.reward-button:hover{background-color:red;font-size:1rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-button:active{background-color:red;font-weight:700;font-size:.9rem;transform:translateY(-1px);box-shadow:0 2px 4px rgba(0,0,0,.2)}.reward-popup{margin-top:1.5rem;opacity:0;transform:translateY(-10px);transition:all .3s ease}.reward-popup.visible{opacity:1;transform:translateY(0)}.reward-text{margin-bottom:1rem;color:#333;font-size:1.1rem}.reward-text:is(.dark *){margin-bottom:1rem;color:#fff;font-size:1.1rem}.qr-container{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}.reward-qr{text-align:center}.reward-qr img{width:200px;padding:1rem;background-color:#fff;border-radius:.5rem;box-shadow:0 2px 8px rgba(0,0,0,.1);transition:transform .2s ease}.reward-qr img:hover{transform:scale(1.02)}.reward-qr p{margin:.5rem 0 0;color:#666;font-size:.95rem}.reward-qr p:is(.dark *){margin:.5rem 0 0;color:#fff;font-size:.95rem}.hidden{display:none}</style><script>const button=document.querySelector(".reward-button"),popup=document.getElementById("reward-pop");button.addEventListener("click",()=>{const e=button.getAttribute("aria-expanded")==="true";button.setAttribute("aria-expanded",!e),popup.classList.toggle("hidden"),setTimeout(()=>{popup.classList.toggle("visible")},10)})</script><nav class="mt-24 flex overflow-hidden rounded-xl bg-black/[3%] text-lg !leading-[1.2] *:flex *:w-1/2 *:items-center *:p-5 *:font-medium *:no-underline dark:bg-white/[8%] [&>*:hover]:bg-black/[2%] dark:[&>*:hover]:bg-white/[3%]"><a class="ltr:pr-3 rtl:pl-3" href=https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/><span class="ltr:mr-1.5 rtl:ml-1.5">←</span><span>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</span></a>
 <a class="ltr:ml-auto rtl:mr-auto justify-end pl-3" href=https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/><span>Hugo 不为人知的强大特性</span><span class="ltr:ml-1.5 rtl:mr-1.5">→</span></a></nav><div class="mt-12 rounded-xl" style=text-align:center><button class=feedback-trigger onclick=toggleFeedback()>建议 / 反馈</button><div class="feedback-form hidden"><p>感谢你的提议，我将会尽快使用回复您！（此反馈将使用您的邮箱发送）</p><form id=feedback-form onsubmit=sendFeedback(event)><input type=text name=name placeholder=怎么称呼？ required>
 <textarea name=message placeholder=请输入您的建议或意见... required></textarea>
