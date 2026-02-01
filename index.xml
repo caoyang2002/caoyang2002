@@ -1932,7 +1932,7 @@
  }
 
  const password = input.value;
- const publishDate = "101260201";
+ const publishDate = "101170201";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
