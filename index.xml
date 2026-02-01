@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:33:21 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 11:15:39 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -311,6 +311,849 @@
 
 &lt;a href="https://hugo.opendocs.io/getting-started/quick-start/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
  中文文档&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>发动机系统设计与仿真</title><link>https://simons.qzz.io/post/2026/02/engine_system_design_and_simulation/</link><pubDate>Sun, 01 Feb 2026 11:01:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/engine_system_design_and_simulation/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.kechuang.org/t/88458" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>极简 RP2040 推力采集系统</title><link>https://simons.qzz.io/post/2026/02/rp2040_thrust_acquisition_system_design/</link><pubDate>Sun, 01 Feb 2026 10:14:17 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/rp2040_thrust_acquisition_system_design/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.kechuang.org/t/91248" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>在 Vim 中给文本添加序号</title><link>https://simons.qzz.io/post/2026/02/add_line_numbers_in_vim/</link><pubDate>Sun, 01 Feb 2026 09:37:04 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/add_line_numbers_in_vim/</guid><description>&lt;p&gt;在 Vim 中有多种给文本添加序号的方法，以下是最常用的几种：&lt;/p&gt;
+&lt;h2 id="方法一使用-s-替换命令配合表达式推荐"&gt;方法一：使用 &lt;code&gt;:s&lt;/code&gt; 替换命令配合表达式（推荐）&lt;/h2&gt;
+&lt;h3 id="1-基础数字序号"&gt;1. 基础数字序号&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vim" data-lang="vim"&gt;:%s/^/\=line(&amp;#39;.&amp;#39;).&amp;#39;. &amp;#39;/ &amp;#34; 给所有行添加 &amp;#39;1. &amp;#39; &amp;#39;2. &amp;#39; 格式序号
+:1,10s/^/\=line(&amp;#39;.&amp;#39;).&amp;#39;. &amp;#39;/ &amp;#34; 给第1-10行添加序号
+:.,.&amp;#43;39s/^/\=(line(&amp;#39;.&amp;#39;)-line(&amp;#39;.&amp;#39;)).&amp;#39; &amp;#39;/g &amp;#34; 从当前光标开始&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h3 id="2-自定义格式的序号"&gt;2. 自定义格式的序号&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vim" data-lang="vim"&gt;&amp;#34; 添加带括号的序号：(1)、(2)...
+:%s/^/\=&amp;#39;(&amp;#39;.line(&amp;#39;.&amp;#39;).&amp;#39;) &amp;#39;/
+
+&amp;#34; 添加两位数字序号：01、02...
+:%s/^/\=printf(&amp;#39;%02d. &amp;#39;, line(&amp;#39;.&amp;#39;)-line(&amp;#34;&amp;#39;&amp;lt;&amp;#34;)&amp;#43;1)/&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="方法二使用宏录制适用于复杂情况"&gt;方法二：使用宏录制（适用于复杂情况）&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;在第一行按 &lt;code&gt;qq&lt;/code&gt; 开始录制到寄存器 q&lt;/li&gt;
+&lt;li&gt;按 &lt;code&gt;I1. &lt;/code&gt; 添加序号（注意有空格）&lt;/li&gt;
+&lt;li&gt;按 &lt;code&gt;&amp;lt;Esc&amp;gt;&lt;/code&gt; 然后 &lt;code&gt;j&lt;/code&gt; 到下一行&lt;/li&gt;
+&lt;li&gt;按 &lt;code&gt;q&lt;/code&gt; 结束录制&lt;/li&gt;
+&lt;li&gt;执行 &lt;code&gt;10@q&lt;/code&gt; 给后续10行添加递增序号&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="方法三使用-g-全局命令"&gt;方法三：使用 &lt;code&gt;:g&lt;/code&gt; 全局命令&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vim" data-lang="vim"&gt;&amp;#34; 给所有非空行添加序号
+:let i=1 | g/^/s/^/\=printf(&amp;#39;%d. &amp;#39;, i)/ | let i=i&amp;#43;1&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="方法四使用外部命令linuxmacos"&gt;方法四：使用外部命令（Linux/macOS）&lt;/h2&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-vim" data-lang="vim"&gt;&amp;#34; 使用 nl 命令
+:%!nl -ba -w2 -s&amp;#39;. &amp;#39; &amp;#34; -ba 所有行编号，-w2 宽度2，-s&amp;#39;. &amp;#39; 分隔符
+
+&amp;#34; 使用 cat 命令
+:%!cat -n &amp;#34; 简单添加行号
+:%!cat -n | sed &amp;#39;s/^ */&amp;amp; /&amp;#39; &amp;#34; 调整格式&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="方法五使用插件"&gt;方法五：使用插件&lt;/h2&gt;
+&lt;p&gt;如果经常需要编号，可以安装插件：&lt;/p&gt;</description></item><item><title>火箭研究相关资源</title><link>https://simons.qzz.io/post/2026/02/rocket_resources/</link><pubDate>Sun, 01 Feb 2026 09:12:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/rocket_resources/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.kechuang.org/t/8786?page=0&amp;highlight=341371#highlight" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
  class="external-icon-svg"
  viewBox="0 0 24 24"
  aria-hidden="true"&gt;
@@ -1089,7 +1932,7 @@
  }
 
  const password = input.value;
- const publishDate = "101490201";
+ const publishDate = "10160201";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
@@ -39337,8 +40180,6 @@ int main(){
  
  { text: '7±2法则', size: 1 , weight: 1 },
  
- { text: 'advertising', size: 1 , weight: 1 },
- 
  { text: 'aigc', size: 1 , weight: 1 },
  
  { text: 'ai应用', size: 1 , weight: 1 },
@@ -39360,8 +40201,6 @@ int main(){
  { text: 'bc卖场', size: 1 , weight: 1 },
  
  { text: 'bitwarden', size: 1 , weight: 1 },
- 
- { text: 'branding', size: 1 , weight: 1 },
  
  { text: 'breed', size: 2 , weight: 2 },
  
@@ -39396,8 +40235,6 @@ int main(){
  { text: 'ddl', size: 1 , weight: 1 },
  
  { text: 'deepseek', size: 1 , weight: 1 },
- 
- { text: 'digital', size: 1 , weight: 1 },
  
  { text: 'digitalplat', size: 1 , weight: 1 },
  
@@ -39475,7 +40312,7 @@ int main(){
  
  { text: 'http协议', size: 1 , weight: 1 },
  
- { text: 'hugo', size: 5 , weight: 5 },
+ { text: 'hugo', size: 6 , weight: 6 },
  
  { text: 'i\/o多路复用', size: 1 , weight: 1 },
  
@@ -39524,8 +40361,6 @@ int main(){
  { text: 'markdown', size: 1 , weight: 1 },
  
  { text: 'marker折叠', size: 1 , weight: 1 },
- 
- { text: 'marketing', size: 1 , weight: 1 },
  
  { text: 'mermaid', size: 1 , weight: 1 },
  
@@ -39635,8 +40470,6 @@ int main(){
  
  { text: 'stp战略', size: 1 , weight: 1 },
  
- { text: 'strategy', size: 1 , weight: 1 },
- 
  { text: 'swot分析', size: 2 , weight: 2 },
  
  { text: 'synology', size: 1 , weight: 1 },
@@ -39663,7 +40496,7 @@ int main(){
  
  { text: 'vercel', size: 1 , weight: 1 },
  
- { text: 'vim', size: 2 , weight: 2 },
+ { text: 'vim', size: 3 , weight: 3 },
  
  { text: 'vim配置', size: 1 , weight: 1 },
  
@@ -40645,7 +41478,7 @@ int main(){
  
  { text: '智谱ai', size: 1 , weight: 1 },
  
- { text: '暂无', size: 25 , weight: 25 },
+ { text: '暂无', size: 28 , weight: 28 },
  
  { text: '最佳实践', size: 7 , weight: 7 },
  
@@ -41265,7 +42098,7 @@ int main(){
  
  { text: '配称', size: 1 , weight: 1 },
  
- { text: '配置', size: 2 , weight: 2 },
+ { text: '配置', size: 3 , weight: 3 },
  
  { text: '配置指南', size: 3 , weight: 3 },
  

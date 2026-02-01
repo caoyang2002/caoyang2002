@@ -1,4 +1,134 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>配置 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE/</link><description>Recent content in 配置 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:33:21 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2026/02/hugo_special_directories/</link><pubDate>Sun, 01 Feb 2026 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>配置 on 短松江月</title><link>https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE/</link><description>Recent content in 配置 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 11:15:39 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo-Focus 主题介绍</title><link>https://simons.qzz.io/post/2025/01/hugo-focus-info/</link><pubDate>Tue, 21 Jan 2025 01:53:21 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo-focus-info/</guid><description>&lt;h1 id="一简述"&gt;一、简述&lt;/h1&gt;
+&lt;p&gt;这是一个专注于编程的 Hugo 博客主题。&lt;/p&gt;
+&lt;p&gt;参考了我此前为 &lt;code&gt;Typora&lt;/code&gt; 开发的 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://github.com/caoyang2002/Typora-Themes-Thompsgo" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ &lt;code&gt;Thompsgo&lt;/code&gt; 主题&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2026/02/hugo_special_directories/</link><pubDate>Sun, 01 Feb 2026 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
 &lt;h1 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h1&gt;
 
 
