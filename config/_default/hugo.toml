@@ -102,7 +102,7 @@ toc = true
 avatar = '/about/avatar.jpg'
 bio = '难事必作于易，天下大事必作于细。'
 author = "Simons"
-logo = "/about/site_info/logo-sg.svg"
+logo = "/site/logo/logo.jpg"
 # 全局启用目录
 # 分页
 paginationSize = 10
