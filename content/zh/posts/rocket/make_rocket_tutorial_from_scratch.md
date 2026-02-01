@@ -1,12 +1,16 @@
 +++
-title = '火箭从0开始超详细教程'
+title = '火箭从零开始超详细教程'
 date = 2026-01-31T01:50:44+08:00
 draft = false
 author = "simons"
+cover = "https://img.kechuang.org:81/r/200446?c=resource"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
+
 +++
+
+[查看原文](https://www.kechuang.org/t/60119)
 
 **本帖分N楼： 1楼-废话篇 2楼-RNX燃料的制作 3楼30MM金属发动机 4楼-回收系统（第二大降落伞） 5楼-航电部分 6楼-高压电弧点火 6楼-箭体设计及安装 7楼-各种补充**
 

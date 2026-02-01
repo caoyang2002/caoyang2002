@@ -1,11 +1,12 @@
 +++
 title = 'Hugo 的特殊目录'
-date = 2025-08-12T08:11:52+08:00
+date = 2026-02-01T08:11:52+08:00
 draft = false
 author = "simons"
 categories = ["博客"]
 tags = ["hugo","配置"]
 description = "hugo 的特殊目录介绍"
+cover = "https://jianzhnie.github.io/post/hugo_site/featured_huf952fbe354b461286e119fed8b89ee02_4417_1200x2500_fit_q75_h2_lanczos_3.webp"
 +++
 
 Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：
