@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 短松江月</title><link>https://simons.qzz.io/tags/hugo/</link><description>Recent content in Hugo on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:18:05 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 短松江月</title><link>https://simons.qzz.io/tags/hugo/</link><description>Recent content in Hugo on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:33:21 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
 &lt;p&gt;
 
 
@@ -127,7 +127,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2025/08/hugo_special_directories/</link><pubDate>Tue, 12 Aug 2025 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/08/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2026/02/hugo_special_directories/</link><pubDate>Sun, 01 Feb 2026 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
 &lt;h1 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h1&gt;
 
 
