@@ -95,7 +95,11 @@ https://www.kechuang.org/article/47xz8o
 40. [教程]燃料比冲由什么决定 https://kechuang.org/t/12389
 41. 对于KNDX产物的小小研究. https://kechuang.org/t/12233
 42. 重结晶制造KNDX的完整方法 https://kechuang.org/t/12138
-43. 压铸KNSU发动机整体成型技术完全教程+1个精美的火箭制作流程 https://kechuang.org/t/12280
+43. 压铸KNSU发动机整体成型技术完全教程+1个精美的火箭制作流程（2009/02/06） https://kechuang.org/t/12280
+44. 【喷管设计教程】【面向新手】面向萌新的喷管型面设计教程（2009/02/06） https://www.kechuang.org/t/88489
+45. 简单的分析一下业余火箭发动机的技术路线（2019/05/13） https://www.kechuang.org/t/83973
+46. 液机混合比那些事儿（已完结）（2019/02/22）https://www.kechuang.org/t/83639
+
 
 # 作品展示及相关介绍：
 1. 复合碳纤维喷口&陶瓷喷口制作 https://kechuang.org/t/8649
@@ -131,6 +135,7 @@ https://www.kechuang.org/article/47xz8o
 31. 一个第一次接触火箭的人的作品 https://kechuang.org/t/12177
 32. 做了几个喷管 https://kechuang.org/t/12372
 33. 重发的第一次 https://kechuang.org/t/12295
+
 
 # 火箭发射及相关试验：
 1. 我的小小火箭 https://kechuang.org/t/6628
@@ -183,7 +188,6 @@ https://www.kechuang.org/article/47xz8o
 6. [分享]编程天才+业余液体火箭制造者——John Carmack  https://kechuang.org/t/4892
 7. [贴图]卡桑火箭弹发动机 https://kechuang.org/t/4998
 8. 固体火箭性能计算流程 https://kechuang.org/t/960
-
 9. 翻了很多老帖总结的一些发动机设计 https://kechuang.org/t/19128
 
 
