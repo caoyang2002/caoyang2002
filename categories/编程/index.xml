@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 12:22:37 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
 &lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;参考：
 
@@ -494,7 +494,135 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 
  
  
-&lt;/div&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
+&lt;/div&gt;</description></item><item><title>用汇编中编写Python扩展</title><link>https://simons.qzz.io/post/2025/12/extending_python_with_assembly/</link><pubDate>Mon, 01 Dec 2025 12:12:13 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/extending_python_with_assembly/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://tonybaloney.github.io/posts/extending-python-with-assembly.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
 &lt;p&gt;先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。&lt;/p&gt;
 &lt;h2 id="本质分析"&gt;本质分析&lt;/h2&gt;
 &lt;p&gt;GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。&lt;/p&gt;</description></item><item><title>GitHub Actions 深入剖析：从原理到实践</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</link><pubDate>Sun, 26 Jan 2025 10:47:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</guid><description>&lt;h1 id="github-actions-深入剖析从原理到实践"&gt;GitHub Actions 深入剖析：从原理到实践&lt;/h1&gt;
