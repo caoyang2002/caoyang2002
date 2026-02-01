@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:13:27 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:18:05 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -841,7 +841,7 @@
  }
 
  const password = input.value;
- const publishDate = "101530201";
+ const publishDate = "101290201";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
@@ -4791,7 +4791,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
  
  
 &lt;/div&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2025/08/hugo_special_directories/</link><pubDate>Tue, 12 Aug 2025 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/08/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
-&lt;h2 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h2&gt;
+&lt;h1 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h1&gt;
 
 
 
@@ -4912,8 +4912,8 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 └── hugo.toml # 配置文件（可选位置）&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h2&gt;
-&lt;h3 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h3&gt;
+&lt;h1 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h1&gt;
+&lt;h2 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：定义新内容页面的初始 Front Matter 模板&lt;/p&gt;</description></item><item><title>营销的产品思维</title><link>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</link><pubDate>Tue, 10 Jun 2025 08:53:50 +0800</pubDate><guid>https://simons.qzz.io/post/2025/06/%E8%90%A5%E9%94%80%E7%9A%84%E4%BA%A7%E5%93%81%E6%80%9D%E7%BB%B4/</guid><description>&lt;p&gt;知名产品经理俞军在他的书《俞军产品方法论》中说：&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;“产品经理只要学会用四个概念分析产品和用户就算及格了：效用、成本、边际、供需定律。”&lt;/p&gt;

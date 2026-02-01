@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 短松江月</title><link>https://simons.qzz.io/tags/hugo/</link><description>Recent content in Hugo on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:13:27 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 短松江月</title><link>https://simons.qzz.io/tags/hugo/</link><description>Recent content in Hugo on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Sun, 01 Feb 2026 08:18:05 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
 &lt;p&gt;
 
 
@@ -128,7 +128,7 @@
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2025/08/hugo_special_directories/</link><pubDate>Tue, 12 Aug 2025 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/08/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
-&lt;h2 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h2&gt;
+&lt;h1 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h1&gt;
 
 
 
@@ -249,8 +249,8 @@
 └── hugo.toml # 配置文件（可选位置）&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 
-&lt;h2 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h2&gt;
-&lt;h3 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h3&gt;
+&lt;h1 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h1&gt;
+&lt;h2 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：定义新内容页面的初始 Front Matter 模板&lt;/p&gt;</description></item><item><title>Hugo 不为人知的强大特性</title><link>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</link><pubDate>Sun, 26 Jan 2025 01:44:00 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/hugo_lesser_known_powerful_features/</guid><description>&lt;h1 id="hugo-不为人知的强大特性"&gt;Hugo 不为人知的强大特性&lt;/h1&gt;
 &lt;p&gt;Hugo 被称为世界上最快的静态网站生成器，但大多数人只用它来写写博客。这太浪费了，其实它还有很多好玩的地方，我目前的博客主题就是靠的 Hugo，可以说是非常强大了。今天我们来挖掘一下它的进阶特性。&lt;/p&gt;
 &lt;h2 id="1-模板继承的黑魔法"&gt;1. 模板继承的黑魔法&lt;/h2&gt;

@@ -128,4 +128,128 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item></channel></rss>
+&lt;/p&gt;</description></item><item><title>Hugo 的特殊目录</title><link>https://simons.qzz.io/post/2025/08/hugo_special_directories/</link><pubDate>Tue, 12 Aug 2025 08:11:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/08/hugo_special_directories/</guid><description>&lt;p&gt;Hugo 的特殊目录遵循“约定优于配置”原则，每个目录都有特定用途。以下是所有特殊目录的详细说明：&lt;/p&gt;
+&lt;h1 id="-核心目录结构"&gt;📁 核心目录结构&lt;/h1&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;your-site/
+├── archetypes/ # 内容模板
+├── assets/ # 资源文件（预处理器处理）
+├── config/ # 配置文件
+├── content/ # 网站内容（核心）
+├── data/ # 数据文件
+├── layouts/ # 布局模板
+├── static/ # 静态文件（直接复制）
+├── themes/ # 主题目录
+├── i18n/ # 国际化翻译文件
+├── resources/ # 缓存资源（Hugo生成）
+├── public/ # 最终输出（构建后生成）
+└── hugo.toml # 配置文件（可选位置）&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h1 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h1&gt;
+&lt;h2 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：定义新内容页面的初始 Front Matter 模板&lt;/p&gt;</description></item></channel></rss>
