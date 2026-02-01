@@ -6,6 +6,7 @@ author = "simons"
 categories = ["工具"]
 tags = ["vim"]
 description = "通过命命令在 vim 中给文本添加序号的方法"
+cover = "https://molodost.bz/upload/photos/2024/09/Gg4rL47UJmXYXgsp7vhR_02_d0f4680c87a24bca9aa0dadf160840fc_image.png"
 +++
 
 在 Vim 中有多种给文本添加序号的方法，以下是最常用的几种：

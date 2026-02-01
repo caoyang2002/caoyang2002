@@ -6,6 +6,7 @@ author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
+cover = "https://circuitstate.com/wp-content/uploads/2021/05/Raspberry-Pi-Pico-RP2040-Microcontroller-Development-Board-Vishnu-Mohanan-2500px-1.jpg"
 +++
 
 [查看原文](https://www.kechuang.org/t/91248)
