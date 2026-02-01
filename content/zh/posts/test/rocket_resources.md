@@ -316,3 +316,83 @@ dr-sama
 
 1. 与航天有关的基础理论资料 https://www.kechuang.org/t/33672
    包括《气体动力学》、《火箭气体动力学》等。
+
+
+
+# 国外的火箭论坛
+
+## tripoli.org
+
+![Screenshot_2018-08-16-22-07-59.png](https://img.kechuang.org:81/r/288108?c=resource)
+
+tripoli是一个大型火箭的论坛，会员来自22个国家，值得一提的是其中包含了一部分的火箭科学家。
+
+然而非常不走运，这个网站的学术内容是不公开的，需要成为他们的会员才可以浏览，即便这样，还是当上几张截图吧
+
+## Nar.org
+
+全国火箭协会
+
+时间最早可以追溯到1957年，从头发花白的老人到小学的孩子都囊括其中。经常举办全国性的火箭活动，从小型火箭到大型均有涉及。旗下有杂志sport rockrt magazine
+
+与NASA合作的一本书Adventures in rocket science.（火箭教育的指南与冒险）书内从火箭的性能，工作原理，设计，制作等等均有讲述，很适合于火箭爱好者学习和参考。
+
+很幸运，这本书在网站的 教育资源 中有PDF格式，同时也很不幸，内容是英文的(ಡωಡ) ……有能力的同学可以自行翻译，或者借助chrome翻译来解决
+
+![Screenshot_2018-08-16-09-45-45.png](https://img.kechuang.org:81/r/288092?c=resource)
+
+![Screenshot_2018-08-16-22-27-22.png](https://img.kechuang.org:81/r/288093?c=resource)
+
+![Screenshot_2018-08-16-22-25-46.png](https://img.kechuang.org:81/r/288094?c=resource)
+
+![Screenshot_2018-08-16-22-25-53.png](https://img.kechuang.org:81/r/288095?c=resource)
+
+关于火箭结构，制作，组装等等的视屏连接
+
+[https://m.youtube.com/watch?v=NQFx1qe6zww](https://www.kechuang.org/l?t=aHR0cDovL20ueW91dHViZS5jb20vd2F0Y2g%2Fdj1OUUZ4MXFlNnp3dw%3D%3D)
+
+[https://m.youtube.com/watch?v=E4GLuSSyBWo](https://www.kechuang.org/l?t=aHR0cDovL20ueW91dHViZS5jb20vd2F0Y2g%2Fdj1FNEdMdVNTeUJXbw%3D%3D)
+
+[https://m.youtube.com/watch?v=7kAkitKKKlA](https://www.kechuang.org/l?t=aHR0cDovL20ueW91dHViZS5jb20vd2F0Y2g%2Fdj03a0FraXRLS0tsQQ%3D%3D)
+
+[https://m.youtube.com/watch?v=sxQ7vGgXx5Y](https://www.kechuang.org/l?t=aHR0cDovL20ueW91dHViZS5jb20vd2F0Y2g%2Fdj1zeFE3dkdnWHg1WQ%3D%3D)
+
+[https://m.youtube.com/watch?v=gYh1pWHoQXE](https://www.kechuang.org/l?t=aHR0cDovL20ueW91dHViZS5jb20vd2F0Y2g%2Fdj1nWWgxcFdIb1FYRQ%3D%3D)
+
+想要获得更多资源和有用的工具，请进入Nar.org以下的的连接
+
+[https://www.nar.org/educational-resources/](https://www.kechuang.org/l?t=aHR0cDovL3d3dy5uYXIub3JnL2VkdWNhdGlvbmFsLXJlc291cmNlcy8%3D)
+
+[https://spaceflightsystems.grc.nasa.gov/education/rocket/shortr.html](https://www.kechuang.org/l?t=aHR0cDovL3NwYWNlZmxpZ2h0c3lzdGVtcy5ncmMubmFzYS5nb3YvZWR1Y2F0aW9uL3JvY2tldC9zaG9ydHIuaHRtbA%3D%3D)
+
+还是要说一下，这个网站的部分学术内容是需要购买的
+
+![Screenshot_2018-08-16-09-53-31.png](https://img.kechuang.org:81/r/288096?c=resource)
+
+# Nakka-rocket.net
+
+好像在论坛的火箭版中有介绍。
+
+个人觉得这个网站非常赞，PVC 铝 钢材材料的发动机均有讲述，KN系列的推进剂的性能数据均有测量，包括了硝酸铵基推进剂的制作，如何从油漆中获得铝粉，推进剂的储存，试车台的搭建 火箭喷口的设计制造…….网站涵盖了火箭爱好者几乎所有的问题，真的很赞。
+
+![Screenshot_2018-08-16-22-29-18.png](https://img.kechuang.org:81/r/288097?c=resource)
+
+![Screenshot_2018-08-16-22-29-26.png](https://img.kechuang.org:81/r/288098?c=resource)
+
+![Screenshot_2018-08-16-22-29-38.png](https://img.kechuang.org:81/r/288099?c=resource)
+
+![Screenshot_2018-08-16-22-29-45.png](https://img.kechuang.org:81/r/288100?c=resource)
+
+![Screenshot_2018-08-16-22-30-02.png](https://simons.qzz.io/post/2026/02/rocket_resources/)
+
+![Screenshot_2018-08-16-22-31-14.png](https://simons.qzz.io/post/2026/02/rocket_resources/)
+
+更令人振奋的是，该网站学术内容和PDF格式的文件均是开放的。戳下网址去访问吧
+
+[http://www.nakka-rocketry.net](https://www.kechuang.org/l?t=aHR0cDovL3d3dy5uYWtrYS1yb2NrZXRyeS5uZXQ%3D)
+
+# neorockets.org
+
+荷兰火箭爱好者的一个论坛，和第一个网站一样，同样是研究高功率火箭的一个网站。不同的是相关的信息可以直接浏览。下面放上几个图片。
+
+![nxp-h11a-intoren.jpg](https://img.kechuang.org:81/r/288111?c=resource)
