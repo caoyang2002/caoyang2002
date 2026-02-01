@@ -3,6 +3,7 @@ title = 'RNX（KN+环氧树脂）全教程'
 date = 2026-01-30T14:57:42+08:00
 draft = false
 author = "simons"
+cover = "https://img5.jc001.cn/img/709/1543709/5c4fd86614a2f.jpg"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"

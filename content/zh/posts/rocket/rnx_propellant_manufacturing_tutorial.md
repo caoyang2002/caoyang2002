@@ -8,42 +8,7 @@ tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
-加载中
-
-加载中
-
-[科创网](https://www.kechuang.org/)
-
-- [电波](https://www.kechuang.org/z)
-- [论坛](https://www.kechuang.org/c)
-- [专栏](https://www.kechuang.org/m)
-- [资源](https://www.kechuang.org/apps)
-
-- [创作中心](https://www.kechuang.org/creation)
-
-- 消息
-
-  2
-
-- 
-
-[论坛](https://www.kechuang.org/c)>[航空航天](https://www.kechuang.org/f/74)>[火箭燃料](https://www.kechuang.org/f/368)
-
-文号t39442
-
- 
-
-8161
-
- 
-
-47
-
- 
-
-收藏(105)
-
-所有教程由网友发布，仅供参考，请谨慎采纳。科创不对教程的科学性、准确性、可靠性负责。
+[查看原文](https://www.kechuang.org/t/39442)
 
 RNX药柱制作教程
 

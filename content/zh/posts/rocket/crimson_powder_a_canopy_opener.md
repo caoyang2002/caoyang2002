@@ -3,6 +3,7 @@ title = '绯红之粉（一种开伞剂）'
 date = 2026-01-28T19:19:34+08:00
 draft = false
 author = "simons"
+cover = "https://img.kechuang.org:81/r/329829?c=resource"
 categories = ["火箭"]
 tags = ["制作"]
 description = "制作火箭降落伞的弹射装置"
