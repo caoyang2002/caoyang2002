@@ -2,7 +2,7 @@
 title = "开发者资源"
 description = "精选实用的开发工具和资源集合"
 layout = "resources"
-
+########################################## 航空航天 ##########################################
 [[resources]]
 name = "天弓动力"
 url = "https://www.srmcad.com/"
@@ -30,7 +30,7 @@ subcategory = "教育与社区"
 tags = ["学生组织", "包容性", "STEM教育", "社区"] 
 icon = "fas fa-hands-helping"
 
-# 计算机
+########################################### 计算机 ##########################################
 [[resources]]
 
 name = "计算机图形学"
@@ -42,7 +42,7 @@ tags = ["版本控制", "协作", "开源", "CI/CD"]
 icon = "fab fa-github"
 
 
-# 开发工具
+########################################### 开发工具 ##########################################
 
 [[resources]]
 name = "GitHub"
@@ -107,6 +107,7 @@ subcategory = "React框架"
 tags = ["React", "SSR", "静态生成", "全栈"]
 icon = "fas fa-arrow-right"
 
+########################################### 设计工具 ##########################################
 [[resources]]
 name = "Figma"
 url = "https://figma.com"
@@ -125,6 +126,7 @@ subcategory = "CSS框架"
 tags = ["CSS", "工具类", "响应式", "设计系统"]
 icon = "fas fa-palette"
 
+########################################### 学习资源 ##########################################
 [[resources]]
 name = "MDN Web Docs"
 url = "https://developer.mozilla.org"
@@ -160,6 +162,7 @@ category = "学习资源"
 subcategory = "在线文档"
 tags = ["学习", "教程", "文档", "免费"]
 icon = "fas fa-graduation-cap"
+
 [[resources]]
 name = "极客时间文档"
 url = "https://uaxe.github.io/geektime-docs"
@@ -169,6 +172,7 @@ subcategory = "在线文档"
 tags = ["学习", "教程", "文档", "免费"]
 icon = "fas fa-graduation-cap"
 
+########################################### 嵌入式 ##########################################
 [[resources]]
 name = "ESP32-Guide"
 url = "https://duruofu.github.io/ESP32-Guide"
@@ -245,7 +249,7 @@ icon = "fas fa-tablet-alt"
 name = "宅学部落"
 url = "http://www.zhaixue.cc/"
 description = "Linux、编程语言、内核、驱动开发学习网站"
-category = "Linux"
+category = "嵌入式"
 subcategory = "学习网站"
 tags = ["Linux", "驱动开发", "内核", "编程"]
 icon = "fas fa-laptop-code"
@@ -259,15 +263,7 @@ subcategory = "学习网站"
 tags = ["单片机", "51", "基础教程", "实例"]
 icon = "fas fa-book"
 
-[[resources]]
-name = "ChinaUnix"
-url = "http://www.chinaunix.net/"
-description = "Linux/Unix相关技术社区"
-category = "Linux"
-subcategory = "论坛社区"
-tags = ["Linux", "Unix", "服务器", "运维"]
-icon = "fas fa-server"
-
+########################################## 电子 ##########################################
 [[resources]]
 name = "电子世家"
 url = "http://www.dianzishijia.com/"
@@ -290,11 +286,12 @@ icon = "fas fa-newspaper"
 name = "芯路恒电子"
 url = "http://www.corecourse.cn/forum.php"
 description = "小梅哥博客、FPGA论坛"
-category = "FPGA"
+category = "电子"
 subcategory = "学习网站"
 tags = ["FPGA", "Verilog", "教程", "小梅哥"]
 icon = "fas fa-project-diagram"
 
+########################################### 编程 ##########################################
 [[resources]]
 name = "Shell编程范例"
 url = "https://tinylab-1.gitbook.io/shellbook/"
@@ -313,6 +310,7 @@ subcategory = "电子书"
 tags = ["单元测试", "软件测试", "PDF", "教程"]
 icon = "fas fa-file-pdf"
 
+########################################## Linux ##########################################
 [[resources]]
 name = "Linux内核之旅"
 url = "http://www.kerneltravel.net/"
