@@ -87,6 +87,7 @@ startLevel = 1
 ordered = false
 # startLevel = 2
 
+# 重要：确保 HTML 不被转义
 [markup.goldmark.renderer]
 unsafe = true
 
@@ -232,3 +233,9 @@ taskList = true
 typographer = true
 highlight = true
 mark = true    # 支持 ==标记== 语法
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']] # 块级公式，用 `$$` 包裹
+inline = [['\(', '\)']] # 行内公式，用 `\( \)` 包裹
