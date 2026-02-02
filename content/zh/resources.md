@@ -152,15 +152,328 @@ subcategory = "在线课程"
 tags = ["学习", "教程", "项目", "免费"]
 icon = "fas fa-graduation-cap"
 
-
 [[resources]]
 name = "KA 产品知识库"
 url = "https://geekdaxue.co"
-description = "免费学习编程的平台，包含丰富的课程和项目"
+description = "免费文档资料"
 category = "学习资源"
 subcategory = "在线文档"
 tags = ["学习", "教程", "文档", "免费"]
 icon = "fas fa-graduation-cap"
+[[resources]]
+name = "极客时间文档"
+url = "https://uaxe.github.io/geektime-docs"
+description = "免费文档资料"
+category = "学习资源"
+subcategory = "在线文档"
+tags = ["学习", "教程", "文档", "免费"]
+icon = "fas fa-graduation-cap"
+
+[[resources]]
+name = "ESP32-Guide"
+url = "https://duruofu.github.io/ESP32-Guide"
+description = "ESP32 资料"
+category = "嵌入式"
+subcategory = "在线文档"
+tags = ["学习", "教程", "文档", "免费"]
+icon = "fas fa-graduation-cap"
+
+[[resources]]
+name = "硬汉嵌入式论坛"
+url = "http://www.armbbs.cn/forum.php"
+description = "安富莱/硬汉嵌入式论坛"
+category = "嵌入式"
+subcategory = "论坛社区"
+tags = ["STM32", "教程", "资料", "安富莱"]
+icon = "fas fa-comments"
+
+[[resources]]
+name = "野火论坛"
+url = "https://www.firebbs.cn/forum.php"
+description = "野火电子论坛"
+category = "嵌入式"
+subcategory = "论坛社区"
+tags = ["STM32", "教程", "开发板", "野火"]
+icon = "fas fa-comments"
+
+[[resources]]
+name = "正点原子论坛"
+url = "http://www.openedv.com/forum.php"
+description = "正点原子论坛"
+category = "嵌入式"
+subcategory = "论坛社区"
+tags = ["STM32", "教程", "开发板", "正点原子"]
+icon = "fas fa-comments"
+
+[[resources]]
+name = "ST中文社区"
+url = "https://www.stmcu.org.cn/module/forum/forum.php"
+description = "ST中文社区"
+category = "嵌入式"
+subcategory = "官方社区"
+tags = ["ST", "STM32", "官方", "技术支持"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "NXP社区"
+url = "https://www.nxpic.org.cn/"
+description = "恩智浦论坛"
+category = "嵌入式"
+subcategory = "官方社区"
+tags = ["NXP", "i.MX", "LPC", "官方"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "荔枝派指南"
+url = "https://www.kancloud.cn/lichee/lpi0/317714"
+description = "荔枝派开发指南"
+category = "嵌入式"
+subcategory = "开发板"
+tags = ["全志", "RISC-V", "开发板", "Linux"]
+icon = "fas fa-tablet-alt"
+
+[[resources]]
+name = "小熊派"
+url = "https://gitee.com/morixinguan/bear-pi"
+description = "小熊派开发板Demo"
+category = "嵌入式"
+subcategory = "开发板"
+tags = ["HarmonyOS", "物联网", "开发板", "LiteOS"]
+icon = "fas fa-tablet-alt"
+
+[[resources]]
+name = "宅学部落"
+url = "http://www.zhaixue.cc/"
+description = "Linux、编程语言、内核、驱动开发学习网站"
+category = "Linux"
+subcategory = "学习网站"
+tags = ["Linux", "驱动开发", "内核", "编程"]
+icon = "fas fa-laptop-code"
+
+[[resources]]
+name = "单片机教程网"
+url = "http://www.51hei.com/"
+description = "单片机基础、设计实例、论坛"
+category = "嵌入式"
+subcategory = "学习网站"
+tags = ["单片机", "51", "基础教程", "实例"]
+icon = "fas fa-book"
+
+[[resources]]
+name = "ChinaUnix"
+url = "http://www.chinaunix.net/"
+description = "Linux/Unix相关技术社区"
+category = "Linux"
+subcategory = "论坛社区"
+tags = ["Linux", "Unix", "服务器", "运维"]
+icon = "fas fa-server"
+
+[[resources]]
+name = "电子世家"
+url = "http://www.dianzishijia.com/"
+description = "电子类导航网站"
+category = "电子"
+subcategory = "导航网站"
+tags = ["导航", "资源聚合", "电子工程"]
+icon = "fas fa-link"
+
+[[resources]]
+name = "21IC中国电子网"
+url = "https://www.21ic.com/"
+description = "21IC中国电子网"
+category = "电子"
+subcategory = "行业网站"
+tags = ["电子", "资讯", "论坛", "行业"]
+icon = "fas fa-newspaper"
+
+[[resources]]
+name = "芯路恒电子"
+url = "http://www.corecourse.cn/forum.php"
+description = "小梅哥博客、FPGA论坛"
+category = "FPGA"
+subcategory = "学习网站"
+tags = ["FPGA", "Verilog", "教程", "小梅哥"]
+icon = "fas fa-project-diagram"
+
+[[resources]]
+name = "Shell编程范例"
+url = "https://tinylab-1.gitbook.io/shellbook/"
+description = "《Shell 编程范例》在线书籍"
+category = "编程"
+subcategory = "在线书籍"
+tags = ["Shell", "Linux", "编程", "教程"]
+icon = "fas fa-book-open"
+
+[[resources]]
+name = "软件单元测试入门与实践"
+url = "https://www.zlg.cn/foxmail/weixinpdf/software_unit_test.pdf"
+description = "软件单元测试PDF教程"
+category = "编程"
+subcategory = "电子书"
+tags = ["单元测试", "软件测试", "PDF", "教程"]
+icon = "fas fa-file-pdf"
+
+[[resources]]
+name = "Linux内核之旅"
+url = "http://www.kerneltravel.net/"
+description = "Linux内核学习网站"
+category = "Linux"
+subcategory = "内核学习"
+tags = ["Linux内核", "源码分析", "学习笔记"]
+icon = "fas fa-code-branch"
+
+[[resources]]
+name = "蜗窝科技"
+url = "http://www.wowotech.net/"
+description = "Linux内核技术博客"
+category = "Linux"
+subcategory = "技术博客"
+tags = ["Linux内核", "驱动开发", "技术分析"]
+icon = "fas fa-blog"
+
+[[resources]]
+name = "书栈网"
+url = "https://www.bookstack.cn/"
+description = "IT技术文档与电子书分享平台"
+category = "学习资源"
+subcategory = "文档平台"
+tags = ["电子书", "文档", "IT技术", "分享"]
+icon = "fas fa-books"
+
+[[resources]]
+name = "嵌入式知识库文档集"
+url = "https://rui-docs.readthedocs.io/zh-cn/latest/"
+description = "嵌入式文档集"
+category = "嵌入式"
+subcategory = "在线文档"
+tags = ["学习", "教程", "文档", "免费"]
+icon = "fas fa-graduation-cap"
+
+[[resources]]
+name = "硬汉嵌入式论坛"
+url = "https://forum.anfulai.cn/forum.php"
+description = "嵌入式论坛"
+category = "嵌入式"
+subcategory = "论坛"
+tags = ["学习", "教程", "文档", "免费"]
+icon = "fas fa-graduation-cap"
+
+[[resources]]
+name = "鸿蒙OS"
+url = "https://openharmony.gitee.com/openharmony"
+description = "一款面向全场景的开源分布式操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["开源", "分布式", "华为", "鸿蒙"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "RT-Thread"
+url = "https://github.com/RT-Thread"
+description = "一款小而美的物联网操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["物联网", "开源", "国产", "轻量级"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "TencentOS tiny"
+url = "https://github.com/Tencent/TencentOS-tiny"
+description = "一款面向物联网领域开发的实时操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["腾讯", "物联网", "实时系统", "开源"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "FreeRTOS"
+url = "https://www.freertos.org/"
+description = "一个轻量级的操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["轻量级", "实时", "开源", "广泛使用"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "µC/OS"
+url = "https://www.micrium.com/rtos/"
+description = "一个功能齐全的嵌入式操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["功能齐全", "商业", "稳定"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "mbed OS"
+url = "https://github.com/ARMmbed/mbed-os"
+description = "ARM自己打造、主打IoT的一整套软件解决方案"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["ARM", "IoT", "全套方案", "开源"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "BabyOS"
+url = "https://gitee.com/notrynohigh/BabyOS"
+description = "专为MCU项目开发提速的代码框架"
+category = "嵌入式"
+subcategory = "框架"
+tags = ["MCU", "开发加速", "国产", "轻量级"]
+icon = "fas fa-code"
+
+[[resources]]
+name = "LuatOS"
+url = "https://gitee.com/openLuat/LuatOS"
+description = "Lua编写的嵌入式实时操作系统，占用资源少，适合快速开发"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["Lua", "实时系统", "轻量级", "脚本语言"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "Contiki-OS"
+url = "https://github.com/contiki-os/contiki"
+description = "一个小型的，开源的，极易移植的多任务操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["小型", "开源", "易移植", "多任务"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "DJYOS"
+url = "http://www.djyos.com/"
+description = "都江堰操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["国产", "实时系统", "嵌入式"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "klite"
+url = "https://gitee.com/kerndev/klite"
+description = "简洁易用的嵌入式操作系统内核"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["简洁", "易用", "内核", "轻量级"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "lmosem"
+url = "https://gitee.com/lmnos/lmosem"
+description = "基于ARM平台，从零编写的全32位操作系统内核"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["ARM", "多进程", "内存管理", "文件系统"]
+icon = "fas fa-microchip"
+
+[[resources]]
+name = "FreeNOS"
+url = "http://www.freenos.org/"
+description = "FreeNOS微内核操作系统"
+category = "嵌入式"
+subcategory = "操作系统"
+tags = ["微内核", "教育", "研究", "开源"]
+icon = "fas fa-microchip"
 
 [[resources]]
 name = "Can I Use"
