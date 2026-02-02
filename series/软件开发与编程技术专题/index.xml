@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件开发与编程技术专题 on 短松江月</title><link>https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/</link><description>Recent content in 软件开发与编程技术专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 08:49:01 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件开发与编程技术专题 on 短松江月</title><link>https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/</link><description>Recent content in 软件开发与编程技术专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 10:21:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
 &lt;p&gt;
 
 
@@ -659,7 +659,135 @@
 
  &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;http 访问&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>用汇编中编写Python扩展</title><link>https://simons.qzz.io/post/2025/12/extending_python_with_assembly/</link><pubDate>Mon, 01 Dec 2025 12:12:13 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/extending_python_with_assembly/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://tonybaloney.github.io/posts/extending-python-with-assembly.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>即时设计插件开发</title><link>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</link><pubDate>Fri, 24 Jan 2025 12:56:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/jsdesign_plugin_dev/</guid><description>&lt;h1 id="简述"&gt;简述&lt;/h1&gt;
 &lt;p&gt;这是一款即时设计的插件，使用 ts/react 开发，代码是官方的，这里只是解析，
 
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 08:54:47 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 10:21:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -1622,7 +1622,7 @@
 
 &lt;h1 id="-详细目录解析"&gt;🔧 详细目录解析&lt;/h1&gt;
 &lt;h2 id="1-archetypes"&gt;1. &lt;strong&gt;&lt;code&gt;archetypes/&lt;/code&gt; - 内容模板&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：定义新内容页面的初始 Front Matter 模板&lt;/p&gt;</description></item><item><title>2021: RNX火箭制作全过程之粉碎机篇</title><link>https://simons.qzz.io/post/2026/01/the_whole_process_of_making_my_rnx_rocket_crusher_chapter/</link><pubDate>Sat, 31 Jan 2026 01:55:02 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/the_whole_process_of_making_my_rnx_rocket_crusher_chapter/</guid><description>&lt;p&gt;
+&lt;p&gt;&lt;strong&gt;作用&lt;/strong&gt;：定义新内容页面的初始 Front Matter 模板&lt;/p&gt;</description></item><item><title>2021: RNX火箭制作全过程</title><link>https://simons.qzz.io/post/2026/01/the_whole_process_of_making_my_rnx_rocket_crusher_chapter/</link><pubDate>Sat, 31 Jan 2026 01:55:02 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/the_whole_process_of_making_my_rnx_rocket_crusher_chapter/</guid><description>&lt;p&gt;
 
 
 
@@ -2006,8 +2006,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>星云科技矢量火箭制作流程</title><link>https://simons.qzz.io/post/2026/01/reaction_control_system/</link><pubDate>Sat, 31 Jan 2026 01:04:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/reaction_control_system/</guid><description>&lt;p&gt;今天，我们实现了一个来自2021年的梦想——星云科技矢量火箭制作流程及开源计划&lt;/p&gt;
-&lt;p&gt;
+&lt;/p&gt;</description></item><item><title>星云科技矢量火箭制作流程</title><link>https://simons.qzz.io/post/2026/01/reaction_control_system/</link><pubDate>Sat, 31 Jan 2026 01:04:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/reaction_control_system/</guid><description>&lt;p&gt;
 
 
 
@@ -2191,7 +2190,7 @@
  }
 
  const password = input.value;
- const publishDate = "202130202";
+ const publishDate = "202440202";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
@@ -29764,138 +29763,7 @@ func TestAll(t *testing.T) {
 &lt;h3 id="神经科学解释"&gt;神经科学解释&lt;/h3&gt;
 &lt;ol&gt;
 &lt;li&gt;
-&lt;p&gt;工作记忆负荷&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源"&gt;如何找资源&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;下载
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
-&lt;a href="https://www.pansou.vip/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
- 盘搜&lt;span class="external-icon"&gt;&lt;svg
- class="external-icon-svg"
- viewBox="0 0 24 24"
- aria-hidden="true"&gt;
- &lt;path
- d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
- &lt;/svg&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-
-&lt;style&gt;
- 
- .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
- text-decoration: underline;
- text-decoration-thickness: 2px;
- text-underline-offset: 3px;
- transition: all 0.2s ease;
- }
-
- 
- .external-link {
- color: #3b82f6;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- }
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: currentColor;
- }
-
- 
- .internal-link {
- color: #8b5cf6;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- }
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: currentColor;
- }
-
- 
- .mailto-link {
- color: #10b981;
- text-decoration-color: rgba(16, 185, 129, 0.3);
- }
- .mailto-link:hover {
- color: #059669;
- text-decoration-color: currentColor;
- }
-
- 
- .tel-link {
- color: #f59e0b;
- text-decoration-color: rgba(245, 158, 11, 0.3);
- }
- .tel-link:hover {
- color: #d97706;
- text-decoration-color: currentColor;
- }
-
- 
- .anchor-link {
- color: #ec4899;
- text-decoration-color: rgba(236, 72, 153, 0.3);
- }
- .anchor-link:hover {
- color: #db2777;
- text-decoration-color: currentColor;
- }
-
- 
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 2px;
- opacity: 0.7;
- transition: opacity 0.2s;
- }
- .external-link:hover .external-icon {
- opacity: 1;
- }
- .external-icon-svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- }
-&lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
+&lt;p&gt;工作记忆负荷&lt;/p&gt;</description></item><item><title>hugo 配置</title><link>https://simons.qzz.io/post/2024/12/about_hugo_config/</link><pubDate>Sun, 22 Dec 2024 18:12:52 +0800</pubDate><guid>https://simons.qzz.io/post/2024/12/about_hugo_config/</guid><description>&lt;div&gt;
  &lt;pre&gt;&lt;code class="language-toml" data-lang="toml"&gt;# 基础优化配置
 enableGitInfo = true # 启用 Git 信息,可以显示文章的最后修改时间
 hasCJKLanguage = true # 启用中日韩文字支持,能准确统计字数
@@ -42628,7 +42496,7 @@ int main(){
  
  { text: '购买决策', size: 2 , weight: 2 },
  
- { text: '资源', size: 2 , weight: 2 },
+ { text: '资源', size: 1 , weight: 1 },
  
  { text: '资讯平台', size: 1 , weight: 1 },
  
