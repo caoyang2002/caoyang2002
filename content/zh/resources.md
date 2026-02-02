@@ -152,6 +152,16 @@ subcategory = "在线课程"
 tags = ["学习", "教程", "项目", "免费"]
 icon = "fas fa-graduation-cap"
 
+
+[[resources]]
+name = "KA 产品知识库"
+url = "https://geekdaxue.co"
+description = "免费学习编程的平台，包含丰富的课程和项目"
+category = "学习资源"
+subcategory = "在线文档"
+tags = ["学习", "教程", "文档", "免费"]
+icon = "fas fa-graduation-cap"
+
 [[resources]]
 name = "Can I Use"
 url = "https://caniuse.com"
