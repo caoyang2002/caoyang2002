@@ -68,6 +68,6 @@ description = "制作火箭降落伞的弹射装置"
 
 正在燃烧的深红色粉末样品
 
-下载视频:http://www.nakka-rocketry.net/video/crimson_powder.mpg
+下载视频: http://www.nakka-rocketry.net/video/crimson_powder.mpg
 
 原网站:https://www.nakka-rocketry.net/articles/Crimson_powder_rev.1.4.pdf
