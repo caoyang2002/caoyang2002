@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数学 on 短松江月</title><link>https://simons.qzz.io/posts/math/</link><description>Recent content in 数学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/math/index.xml" rel="self" type="application/rss+xml"/><item><title>人工智能中的数学基础</title><link>https://simons.qzz.io/post/2026/02/basic_concepts/</link><pubDate>Mon, 02 Feb 2026 14:33:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/basic_concepts/</guid><description>&lt;h2 id="1-向量空间-vector-space"&gt;1. 向量空间 (Vector Space)&lt;/h2&gt;
+&lt;h3 id="数学概念"&gt;数学概念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;向量空间&lt;/strong&gt;是线性代数的核心概念，它是一个满足特定运算规则的集合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义要素&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;域 F&lt;/strong&gt;：通常是实数域 ℝ 或复数域 ℂ&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;向量集合 V&lt;/strong&gt;：非空集合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;两种运算&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;加法：V × V → V&lt;/li&gt;
+&lt;li&gt;数乘：F × V → V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;八条公理详解&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;加法交换律&lt;/strong&gt;：u + v = v + u&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法结合律&lt;/strong&gt;：(u+v)+w = u+(v+w)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法单位元&lt;/strong&gt;：存在零向量 0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法逆元&lt;/strong&gt;：每个向量都有相反向量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘结合律&lt;/strong&gt;：a(bv) = (ab)v&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘单位元&lt;/strong&gt;：1·v = v&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘对向量加法的分配律&lt;/strong&gt;：a(u+v) = au + av&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘对域加法的分配律&lt;/strong&gt;：(a+b)v = av + bv&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="在机器学习中的应用"&gt;在机器学习中的应用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;特征向量&lt;/strong&gt;：每个数据样本可以表示为向量空间中的一个点&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;权重向量&lt;/strong&gt;：神经网络的权重形成向量空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;梯度下降&lt;/strong&gt;：在参数空间中进行优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="python实现"&gt;Python实现&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-python"&gt;import numpy as np
+from typing import List, Union
+
+class VectorSpace:
+ &amp;#34;&amp;#34;&amp;#34;
+ 向量空间的实现
+ 这里我们实现 R^n 上的向量空间
+ &amp;#34;&amp;#34;&amp;#34;
+ 
+ def __init__(self, dimension: int):
+ &amp;#34;&amp;#34;&amp;#34;
+ 初始化向量空间
+ 
+ 参数:
+ dimension: 向量空间的维数
+ &amp;#34;&amp;#34;&amp;#34;
+ self.dimension = dimension
+ self.zero_vector = np.zeros(dimension)
+ 
+ def add(self, u: np.ndarray, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 向量加法
+ 验证加法交换律: u &amp;#43; v = v &amp;#43; u
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(u)
+ self._check_dimension(v)
+ return u &amp;#43; v
+ 
+ def scalar_multiply(self, scalar: float, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 数乘运算
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(v)
+ return scalar * v
+ 
+ def additive_inverse(self, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 加法逆元（相反向量）
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(v)
+ return -v
+ 
+ def _check_dimension(self, v: np.ndarray):
+ &amp;#34;&amp;#34;&amp;#34;检查向量维度是否匹配&amp;#34;&amp;#34;&amp;#34;
+ if len(v) != self.dimension:
+ raise ValueError(f&amp;#34;向量维度应为 {self.dimension}, 但得到 {len(v)}&amp;#34;)
+ 
+ def verify_axioms(self, u: np.ndarray, v: np.ndarray, w: np.ndarray, 
+ a: float, b: float) -&amp;gt; dict:
+ &amp;#34;&amp;#34;&amp;#34;
+ 验证向量空间的八条公理
+ 
+ 返回:
+ 包含每条公理验证结果的字典
+ &amp;#34;&amp;#34;&amp;#34;
+ results = {}
+ 
+ # 公理1: 加法交换律
+ results[&amp;#39;commutative&amp;#39;] = np.allclose(
+ self.add(u, v), 
+ self.add(v, u)
+ )
+ 
+ # 公理2: 加法结合律
+ results[&amp;#39;associative_add&amp;#39;] = np.allclose(
+ self.add(self.add(u, v), w),
+ self.add(u, self.add(v, w))
+ )
+ 
+ # 公理3: 加法单位元
+ results[&amp;#39;additive_identity&amp;#39;] = np.allclose(
+ self.add(v, self.zero_vector),
+ v
+ )
+ 
+ # 公理4: 加法逆元
+ results[&amp;#39;additive_inverse&amp;#39;] = np.allclose(
+ self.add(v, self.additive_inverse(v)),
+ self.zero_vector
+ )
+ 
+ # 公理5: 数乘结合律
+ results[&amp;#39;associative_scalar&amp;#39;] = np.allclose(
+ self.scalar_multiply(a, self.scalar_multiply(b, v)),
+ self.scalar_multiply(a * b, v)
+ )
+ 
+ # 公理6: 数乘单位元
+ results[&amp;#39;scalar_identity&amp;#39;] = np.allclose(
+ self.scalar_multiply(1, v),
+ v
+ )
+ 
+ # 公理7: 数乘对向量加法的分配律
+ results[&amp;#39;distributive_vector&amp;#39;] = np.allclose(
+ self.scalar_multiply(a, self.add(u, v)),
+ self.add(self.scalar_multiply(a, u), self.scalar_multiply(a, v))
+ )
+ 
+ # 公理8: 数乘对域加法的分配律
+ results[&amp;#39;distributive_scalar&amp;#39;] = np.allclose(
+ self.scalar_multiply(a &amp;#43; b, v),
+ self.add(self.scalar_multiply(a, v), self.scalar_multiply(b, v))
+ )
+ 
+ return results
+
+
+# 示例使用
+if __name__ == &amp;#34;__main__&amp;#34;:
+ # 创建3维向量空间
+ V = VectorSpace(dimension=3)
+ 
+ # 创建测试向量
+ u = np.array([1.0, 2.0, 3.0])
+ v = np.array([4.0, 5.0, 6.0])
+ w = np.array([7.0, 8.0, 9.0])
+ 
+ # 测试标量
+ a, b = 2.0, 3.0
+ 
+ print(&amp;#34;=&amp;#34; * 50)
+ print(&amp;#34;向量空间公理验证&amp;#34;)
+ print(&amp;#34;=&amp;#34; * 50)
+ 
+ # 验证所有公理
+ results = V.verify_axioms(u, v, w, a, b)
+ 
+ for axiom, is_valid in results.items():
+ print(f&amp;#34;{axiom:25s}: {&amp;#39;✓ 通过&amp;#39; if is_valid else &amp;#39;✗ 失败&amp;#39;}&amp;#34;)
+ 
+ print(&amp;#34;\n&amp;#34; &amp;#43; &amp;#34;=&amp;#34; * 50)
+ print(&amp;#34;基本运算示例&amp;#34;)
+ print(&amp;#34;=&amp;#34; * 50)
+ 
+ print(f&amp;#34;u = {u}&amp;#34;)
+ print(f&amp;#34;v = {v}&amp;#34;)
+ print(f&amp;#34;u &amp;#43; v = {V.add(u, v)}&amp;#34;)
+ print(f&amp;#34;2 * u = {V.scalar_multiply(2, u)}&amp;#34;)
+ print(f&amp;#34;-v = {V.additive_inverse(v)}&amp;#34;)&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"&gt;
+ 运行
+ &lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id="2-线性组合-linear-combination"&gt;2. 线性组合 (Linear Combination)&lt;/h2&gt;
+&lt;h3 id="数学概念-1"&gt;数学概念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;线性组合&lt;/strong&gt;是向量空间中最基本的运算之一。&lt;/p&gt;</description></item></channel></rss>

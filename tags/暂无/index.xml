@@ -1,4 +1,1540 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 10:21:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>自动做市商是什么？</title><link>https://simons.qzz.io/post/2026/02/what_is_amm/</link><pubDate>Mon, 02 Feb 2026 08:52:17 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/what_is_amm/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 17:36:04 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>MATLAB 实践机器学习</title><link>https://simons.qzz.io/post/2026/02/matlab_on_machine_learning/</link><pubDate>Mon, 02 Feb 2026 16:48:39 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_on_machine_learning/</guid><description>&lt;h2 id="-matlab-机器学习ml简明教程"&gt;🧠 MATLAB 机器学习（ML）简明教程&lt;/h2&gt;
+&lt;p&gt;从通用编程到机器学习，你需要关注的核心变化是 &lt;strong&gt;从“如何计算”转向“如何让机器从数据中学习”&lt;/strong&gt;。在MATLAB中，这得益于其强大的工具箱和矩阵运算能力，使得实现机器学习算法变得直观高效。&lt;/p&gt;
+&lt;p&gt;本教程将带你了解MATLAB进行机器学习的关键路径和核心操作。&lt;/p&gt;
+&lt;h3 id="一--核心工具箱与准备工作"&gt;一、 🛠️ 核心工具箱与准备工作&lt;/h3&gt;
+&lt;p&gt;进行机器学习前，你首先需要了解和准备相应的工具箱。&lt;/p&gt;</description></item><item><title>MATLAB 简明教程</title><link>https://simons.qzz.io/post/2026/02/basic_math/</link><pubDate>Mon, 02 Feb 2026 16:39:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/basic_math/</guid><description>&lt;p&gt;&lt;strong&gt;官方资源&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://ww2.mathworks.cn/help/matlab/index.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ MATLAB官方文档&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://ww2.mathworks.cn/help/matlab/examples.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ MATLAB示例库&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://ww2.mathworks.cn/matlabcentral/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ MATLAB论坛&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="matlab-简明教程"&gt;MATLAB 简明教程&lt;/h1&gt;
+&lt;h2 id="目录"&gt;目录&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#简介" class="anchor-link"&gt;
+ MATLAB 简介
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#基础语法" class="anchor-link"&gt;
+ 基础语法与操作
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#矩阵操作" class="anchor-link"&gt;
+ 矩阵与数组操作
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#控制流" class="anchor-link"&gt;
+ 控制流与函数
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#数据可视化" class="anchor-link"&gt;
+ 数据可视化
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#文件操作" class="anchor-link"&gt;
+ 文件操作
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;a href="#实用技巧" class="anchor-link"&gt;
+ 实用技巧
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="1-matlab-简介"&gt;1. MATLAB 简介 &lt;a name="简介"&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;MATLAB（Matrix Laboratory）是一种用于数值计算、可视化和编程的高级语言和交互式环境。&lt;/p&gt;</description></item><item><title>人工智能中的数学基础</title><link>https://simons.qzz.io/post/2026/02/basic_concepts/</link><pubDate>Mon, 02 Feb 2026 14:33:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/basic_concepts/</guid><description>&lt;h2 id="1-向量空间-vector-space"&gt;1. 向量空间 (Vector Space)&lt;/h2&gt;
+&lt;h3 id="数学概念"&gt;数学概念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;向量空间&lt;/strong&gt;是线性代数的核心概念，它是一个满足特定运算规则的集合。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;定义要素&lt;/strong&gt;：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;域 F&lt;/strong&gt;：通常是实数域 ℝ 或复数域 ℂ&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;向量集合 V&lt;/strong&gt;：非空集合&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;两种运算&lt;/strong&gt;：
+&lt;ul&gt;
+&lt;li&gt;加法：V × V → V&lt;/li&gt;
+&lt;li&gt;数乘：F × V → V&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;八条公理详解&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;加法交换律&lt;/strong&gt;：u + v = v + u&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法结合律&lt;/strong&gt;：(u+v)+w = u+(v+w)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法单位元&lt;/strong&gt;：存在零向量 0&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;加法逆元&lt;/strong&gt;：每个向量都有相反向量&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘结合律&lt;/strong&gt;：a(bv) = (ab)v&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘单位元&lt;/strong&gt;：1·v = v&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘对向量加法的分配律&lt;/strong&gt;：a(u+v) = au + av&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数乘对域加法的分配律&lt;/strong&gt;：(a+b)v = av + bv&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="在机器学习中的应用"&gt;在机器学习中的应用&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;特征向量&lt;/strong&gt;：每个数据样本可以表示为向量空间中的一个点&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;权重向量&lt;/strong&gt;：神经网络的权重形成向量空间&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;梯度下降&lt;/strong&gt;：在参数空间中进行优化&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="python实现"&gt;Python实现&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-python"&gt;import numpy as np
+from typing import List, Union
+
+class VectorSpace:
+ &amp;#34;&amp;#34;&amp;#34;
+ 向量空间的实现
+ 这里我们实现 R^n 上的向量空间
+ &amp;#34;&amp;#34;&amp;#34;
+ 
+ def __init__(self, dimension: int):
+ &amp;#34;&amp;#34;&amp;#34;
+ 初始化向量空间
+ 
+ 参数:
+ dimension: 向量空间的维数
+ &amp;#34;&amp;#34;&amp;#34;
+ self.dimension = dimension
+ self.zero_vector = np.zeros(dimension)
+ 
+ def add(self, u: np.ndarray, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 向量加法
+ 验证加法交换律: u &amp;#43; v = v &amp;#43; u
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(u)
+ self._check_dimension(v)
+ return u &amp;#43; v
+ 
+ def scalar_multiply(self, scalar: float, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 数乘运算
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(v)
+ return scalar * v
+ 
+ def additive_inverse(self, v: np.ndarray) -&amp;gt; np.ndarray:
+ &amp;#34;&amp;#34;&amp;#34;
+ 加法逆元（相反向量）
+ &amp;#34;&amp;#34;&amp;#34;
+ self._check_dimension(v)
+ return -v
+ 
+ def _check_dimension(self, v: np.ndarray):
+ &amp;#34;&amp;#34;&amp;#34;检查向量维度是否匹配&amp;#34;&amp;#34;&amp;#34;
+ if len(v) != self.dimension:
+ raise ValueError(f&amp;#34;向量维度应为 {self.dimension}, 但得到 {len(v)}&amp;#34;)
+ 
+ def verify_axioms(self, u: np.ndarray, v: np.ndarray, w: np.ndarray, 
+ a: float, b: float) -&amp;gt; dict:
+ &amp;#34;&amp;#34;&amp;#34;
+ 验证向量空间的八条公理
+ 
+ 返回:
+ 包含每条公理验证结果的字典
+ &amp;#34;&amp;#34;&amp;#34;
+ results = {}
+ 
+ # 公理1: 加法交换律
+ results[&amp;#39;commutative&amp;#39;] = np.allclose(
+ self.add(u, v), 
+ self.add(v, u)
+ )
+ 
+ # 公理2: 加法结合律
+ results[&amp;#39;associative_add&amp;#39;] = np.allclose(
+ self.add(self.add(u, v), w),
+ self.add(u, self.add(v, w))
+ )
+ 
+ # 公理3: 加法单位元
+ results[&amp;#39;additive_identity&amp;#39;] = np.allclose(
+ self.add(v, self.zero_vector),
+ v
+ )
+ 
+ # 公理4: 加法逆元
+ results[&amp;#39;additive_inverse&amp;#39;] = np.allclose(
+ self.add(v, self.additive_inverse(v)),
+ self.zero_vector
+ )
+ 
+ # 公理5: 数乘结合律
+ results[&amp;#39;associative_scalar&amp;#39;] = np.allclose(
+ self.scalar_multiply(a, self.scalar_multiply(b, v)),
+ self.scalar_multiply(a * b, v)
+ )
+ 
+ # 公理6: 数乘单位元
+ results[&amp;#39;scalar_identity&amp;#39;] = np.allclose(
+ self.scalar_multiply(1, v),
+ v
+ )
+ 
+ # 公理7: 数乘对向量加法的分配律
+ results[&amp;#39;distributive_vector&amp;#39;] = np.allclose(
+ self.scalar_multiply(a, self.add(u, v)),
+ self.add(self.scalar_multiply(a, u), self.scalar_multiply(a, v))
+ )
+ 
+ # 公理8: 数乘对域加法的分配律
+ results[&amp;#39;distributive_scalar&amp;#39;] = np.allclose(
+ self.scalar_multiply(a &amp;#43; b, v),
+ self.add(self.scalar_multiply(a, v), self.scalar_multiply(b, v))
+ )
+ 
+ return results
+
+
+# 示例使用
+if __name__ == &amp;#34;__main__&amp;#34;:
+ # 创建3维向量空间
+ V = VectorSpace(dimension=3)
+ 
+ # 创建测试向量
+ u = np.array([1.0, 2.0, 3.0])
+ v = np.array([4.0, 5.0, 6.0])
+ w = np.array([7.0, 8.0, 9.0])
+ 
+ # 测试标量
+ a, b = 2.0, 3.0
+ 
+ print(&amp;#34;=&amp;#34; * 50)
+ print(&amp;#34;向量空间公理验证&amp;#34;)
+ print(&amp;#34;=&amp;#34; * 50)
+ 
+ # 验证所有公理
+ results = V.verify_axioms(u, v, w, a, b)
+ 
+ for axiom, is_valid in results.items():
+ print(f&amp;#34;{axiom:25s}: {&amp;#39;✓ 通过&amp;#39; if is_valid else &amp;#39;✗ 失败&amp;#39;}&amp;#34;)
+ 
+ print(&amp;#34;\n&amp;#34; &amp;#43; &amp;#34;=&amp;#34; * 50)
+ print(&amp;#34;基本运算示例&amp;#34;)
+ print(&amp;#34;=&amp;#34; * 50)
+ 
+ print(f&amp;#34;u = {u}&amp;#34;)
+ print(f&amp;#34;v = {v}&amp;#34;)
+ print(f&amp;#34;u &amp;#43; v = {V.add(u, v)}&amp;#34;)
+ print(f&amp;#34;2 * u = {V.scalar_multiply(2, u)}&amp;#34;)
+ print(f&amp;#34;-v = {V.additive_inverse(v)}&amp;#34;)&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
+ &lt;div class="controls"&gt;
+ &lt;button class="run-button"&gt;
+ &lt;span style="display: flex; align-items: center; gap: 4px"&gt;
+ 运行
+ &lt;svg
+ t="1737473351499"
+ class="icon"
+ viewBox="0 0 1024 1024"
+ version="1.1"
+ xmlns="http://www.w3.org/2000/svg"
+ p-id="11262"
+ width="16"
+ height="16"
+ &gt;
+ &lt;path
+ d="M512 96C282.624 96 96 282.624 96 512s186.624 416 416 416 416-186.624 416-416S741.376 96 512 96z m0 768C317.92 864 160 706.08 160 512S317.92 160 512 160s352 157.92 352 352-157.92 352-352 352z"
+ p-id="11263"
+ &gt;&lt;/path&gt;
+ &lt;path
+ d="M466.816 324.96a32 32 0 0 0-50.816 25.888v339.776a32 32 0 0 0 50.816 25.856l233.6-169.888a32 32 0 0 0 0-51.776l-233.6-169.856z"
+ p-id="11264"
+ &gt;&lt;/path&gt;
+ &lt;/svg&gt;
+ &lt;/span&gt;
+ &lt;/button&gt;
+ &lt;/div&gt;
+ &lt;div class="output" style="display: none"&gt;
+ &lt;pre class="output-content"&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+ 
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id="2-线性组合-linear-combination"&gt;2. 线性组合 (Linear Combination)&lt;/h2&gt;
+&lt;h3 id="数学概念-1"&gt;数学概念&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;线性组合&lt;/strong&gt;是向量空间中最基本的运算之一。&lt;/p&gt;</description></item><item><title>自动做市商是什么？</title><link>https://simons.qzz.io/post/2026/02/what_is_amm/</link><pubDate>Mon, 02 Feb 2026 08:52:17 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/what_is_amm/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;想象一下，你生活在一个岛上，你生活的那个区域只能靠打渔为生。&lt;/p&gt;
 &lt;p&gt;有一天，你再也忍受不了每天吃鱼了，你决定换点水果吃。不久后，一个远洋捕捞的渔夫说在东边的一座岛上有很多果农，他们想换一些鱼吃。&lt;/p&gt;
 &lt;p&gt;他们希望用 $1,000$ 个苹果换 $1,000$ 条鱼，你很爽快地答应了。但鱼的价格会根据供求关系而波动，而你们现在不清楚价格，为了维持这个交易比例，你们决定将这两个数量相乘 $1,000 \times 1,000 = 1,000,000$，将这个数作为一个不变的值。&lt;/p&gt;</description></item><item><title>一个图形爱好者的书架</title><link>https://simons.qzz.io/post/2026/02/a_graphics_enthusiasts_bookshelf/</link><pubDate>Mon, 02 Feb 2026 07:37:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/a_graphics_enthusiasts_bookshelf/</guid><description>&lt;p&gt;
