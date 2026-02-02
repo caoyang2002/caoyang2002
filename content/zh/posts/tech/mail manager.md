@@ -1,11 +1,12 @@
 +++
-title = 'Mail 管理'
+title = '用群晖 MailPlus 管理多个邮箱'
 date = 2026-01-26T14:09:44+08:00
 draft = false
 author = "simons"
 categories = ["效率工具", "系统配置", "邮件管理"]
 tags = ["群晖", "Synology", "MailPlus", "邮件服务器", "邮件聚合", "多邮箱管理", "配置指南", "问题排查"]
 description = "本文详细介绍在群晖 NAS 上使用 MailPlus Server 和 MailPlus 套件进行多邮箱（QQ、163、Gmail等）聚合管理的配置步骤，包含 POP3 设置、授权码使用以及通过 Cloudflare 和 resend.com 实现邮件发送的初步思路，并记录了 Outlook 邮箱配置目前存在的问题。"
+cover = "https://shoplineimg.com/59c87e98d4e395c686000d2a/5ee981517f4cac0045186508/800x.png?"
 +++
 
 注意目前管理 outlook 邮箱存在问题。

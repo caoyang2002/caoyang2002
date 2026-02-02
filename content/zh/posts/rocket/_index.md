@@ -1,32 +1,49 @@
----
-title: "火箭爱好者"
-description: "火箭制作技术与航天发展信息专题"
++++
+# 页面基础配置
 
-cascade:
-  tags: ["rocket", "space", "aerospace", "engineering"]
-  categories: ["technology", "science", "engineering"]
-  # 设置该页面及其子页面都使用docs布局
-  _target:
-    kind: page
-    path: "**"
+title = "航空航天技术"
+description = "涵盖飞行器设计、空气动力学、推进技术、航天工程等航空航天核心领域的系统性知识"
 
-params:
-  # 使用文档布局（通常用于技术文档、教程系列）
-  listStyle: "docs"
-  # 在列表页面显示摘要（提升可读性）
-  showSummary: true
-  # 按权重排序，适用于有顺序要求的教程系列
-  orderBy: "weight"
-  # 可选的附加参数
-  showToc: true  # 显示目录（如果docs布局支持）
-  # 侧边栏设置
-  sidebar:
-    enabled: true
-    sticky: true
-  # 阅读进度指示器
-  progress: true
----
+# 页面参数
+[params]
+  listStyle = "docs"
+  showSummary = true
+  orderBy = "weight"
+  showToc = true
 
-# 火箭
+  
+  # 侧边栏配置
+  [params.sidebar]
+    enabled = true
+    sticky = true
+  
+  # 阅读进度条
+  progress = true
 
-欢迎来到火箭技术专题页面！
+# 级联配置
+[cascade]
+  tags = [
+    "飞行器总体设计",
+    "空气动力学",
+    "推进技术",
+    "结构设计与材料",
+    "制导导航控制",
+    "航空电子系统",
+    "航天工程",
+    "临近空间飞行器",
+    "空天一体化",
+    "绿色航空"
+  ]
+  
+  categories = [
+    "基础科学与设计",
+    "关键子系统技术",
+    "航天与空间技术",
+    "前沿交叉与新兴领域"
+  ]
+  
+  # 布局配置
+  [cascade._target]
+    kind = "page"
+    path = "**"
++++

@@ -1,5 +1,5 @@
 +++
-title = 'mysql'
+title = 'mysql 创建用户的方法'
 date = 2025-03-06T08:42:26+08:00
 draft = false
 author = "simons"

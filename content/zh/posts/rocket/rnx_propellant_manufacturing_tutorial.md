@@ -6,6 +6,7 @@ author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
+cover = "https://www.nakka-rocketry.net/rnx/grains6.jpg"
 +++
 
 [查看原文](https://www.kechuang.org/t/39442)
