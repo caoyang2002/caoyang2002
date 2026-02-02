@@ -1,239 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>技术 on 短松江月</title><link>https://simons.qzz.io/posts/tech/</link><description>Recent content in 技术 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
-&lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
-&lt;p&gt;想象你在写一本小说：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;远程仓库&lt;/strong&gt; = 出版社的底稿&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;你的本地&lt;/strong&gt; = 你手里的稿子&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;其他作者&lt;/strong&gt; = 同事也在修改&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;现在情况是：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
-你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
-出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;h2 id="-三种解决方案详解"&gt;🎯 三种解决方案详解&lt;/h2&gt;
-&lt;h3 id="1-merge合并---拼图游戏法"&gt;1. &lt;strong&gt;Merge（合并）&lt;/strong&gt; - &amp;ldquo;拼图游戏法&amp;rdquo;&lt;/h3&gt;
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="bash"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
-&lt;/div&gt;
-
-&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件工具教程 on 短松江月</title><link>https://simons.qzz.io/posts/tech/</link><description>Recent content in 软件工具教程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 08:49:01 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/posts/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>TCP/IP 协议</title><link>https://simons.qzz.io/post/2026/01/tcp_ip/</link><pubDate>Wed, 28 Jan 2026 12:14:55 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/tcp_ip/</guid><description>&lt;p&gt;
 
 
 
@@ -617,146 +382,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>您需要了解的 14 个最重要的元和 HTML 标签</title><link>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</link><pubDate>Mon, 26 Jan 2026 14:19:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/14_mos_-important_meta_and_html_tags_you_need_to_know_for_seo/</guid><description>&lt;p&gt;使用有效的 Meta 和 HTML 标签提升您的 SEO。了解如何使用元标记优化您的网站以提高搜索引擎排名。&lt;/p&gt;
-&lt;p&gt; 
-&lt;figure class="my-8 text-center"&gt;
- &lt;img
- src="https://www.searchenginejournal.com/wp-content/uploads/2020/07/important-meta-tags-5f203655f1aa8.jpg"
- alt="14 Most Important Meta And HTML Tags You Need To Know For SEO"
- class="mx-auto max-w-full h-auto"loading="lazy"
- /&gt;
-
- &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;14 Most Important Meta And HTML Tags You Need To Know For SEO&lt;/figcaption&gt;
-&lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;很长一段时间以来，HTML 元标记一直被称为 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
-&lt;a href="https://www.searchenginejournal.com/seo/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
- SEO&lt;span class="external-icon"&gt;&lt;svg
- class="external-icon-svg"
- viewBox="0 0 24 24"
- aria-hidden="true"&gt;
- &lt;path
- d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
- &lt;/svg&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-
-&lt;style&gt;
- 
- .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
- text-decoration: underline;
- text-decoration-thickness: 2px;
- text-underline-offset: 3px;
- transition: all 0.2s ease;
- }
-
- 
- .external-link {
- color: #3b82f6;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- }
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: currentColor;
- }
-
- 
- .internal-link {
- color: #8b5cf6;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- }
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: currentColor;
- }
-
- 
- .mailto-link {
- color: #10b981;
- text-decoration-color: rgba(16, 185, 129, 0.3);
- }
- .mailto-link:hover {
- color: #059669;
- text-decoration-color: currentColor;
- }
-
- 
- .tel-link {
- color: #f59e0b;
- text-decoration-color: rgba(245, 158, 11, 0.3);
- }
- .tel-link:hover {
- color: #d97706;
- text-decoration-color: currentColor;
- }
-
- 
- .anchor-link {
- color: #ec4899;
- text-decoration-color: rgba(236, 72, 153, 0.3);
- }
- .anchor-link:hover {
- color: #db2777;
- text-decoration-color: currentColor;
- }
-
- 
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 2px;
- opacity: 0.7;
- transition: opacity 0.2s;
- }
- .external-link:hover .external-icon {
- opacity: 1;
- }
- .external-icon-svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- }
-&lt;/style&gt;
- 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>用群晖 MailPlus 管理多个邮箱</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
 &lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
 &lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
 &lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
@@ -774,135 +400,7 @@
 &lt;/figure&gt;&lt;/p&gt;
 &lt;h1 id="配置-mailplus"&gt;配置 MailPlus&lt;/h1&gt;
 &lt;h2 id="打开-设置"&gt;打开 &lt;code&gt;设置&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>C10k 问题</title><link>https://simons.qzz.io/post/2026/01/c10k/</link><pubDate>Mon, 26 Jan 2026 13:56:41 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/c10k/</guid><description>&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
-&lt;a href="https://www.kegel.com/c10k.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
- 查看原文&lt;span class="external-icon"&gt;&lt;svg
- class="external-icon-svg"
- viewBox="0 0 24 24"
- aria-hidden="true"&gt;
- &lt;path
- d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
- &lt;/svg&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-
-&lt;style&gt;
- 
- .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
- text-decoration: underline;
- text-decoration-thickness: 2px;
- text-underline-offset: 3px;
- transition: all 0.2s ease;
- }
-
- 
- .external-link {
- color: #3b82f6;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- }
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: currentColor;
- }
-
- 
- .internal-link {
- color: #8b5cf6;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- }
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: currentColor;
- }
-
- 
- .mailto-link {
- color: #10b981;
- text-decoration-color: rgba(16, 185, 129, 0.3);
- }
- .mailto-link:hover {
- color: #059669;
- text-decoration-color: currentColor;
- }
-
- 
- .tel-link {
- color: #f59e0b;
- text-decoration-color: rgba(245, 158, 11, 0.3);
- }
- .tel-link:hover {
- color: #d97706;
- text-decoration-color: currentColor;
- }
-
- 
- .anchor-link {
- color: #ec4899;
- text-decoration-color: rgba(236, 72, 153, 0.3);
- }
- .anchor-link:hover {
- color: #db2777;
- text-decoration-color: currentColor;
- }
-
- 
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 2px;
- opacity: 0.7;
- transition: opacity 0.2s;
- }
- .external-link:hover .external-icon {
- opacity: 1;
- }
- .external-icon-svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- }
-&lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>零复制技术</title><link>https://simons.qzz.io/post/2026/01/zero_copy/</link><pubDate>Mon, 26 Jan 2026 13:45:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zero_copy/</guid><description>&lt;p&gt;
+&lt;p&gt;点击右上角的用户名，打开 MailPlus 的 &lt;code&gt;设置&lt;/code&gt;，然后找到 &lt;code&gt;POP3 收取&lt;/code&gt;，然后点击 &lt;code&gt;新增&lt;/code&gt;。根据自己的情况添加就可以了。&lt;/p&gt;</description></item><item><title>零复制技术</title><link>https://simons.qzz.io/post/2026/01/zero_copy/</link><pubDate>Mon, 26 Jan 2026 13:45:11 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zero_copy/</guid><description>&lt;p&gt;
 
 
 
@@ -1030,9 +528,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>Http 协议</title><link>https://simons.qzz.io/post/2026/01/http_protcal/</link><pubDate>Mon, 26 Jan 2026 13:44:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/http_protcal/</guid><description>&lt;h1 id="建议精读http灵魂之问巩固你的-http-知识体系"&gt;（建议精读）HTTP灵魂之问，巩固你的 HTTP 知识体系&lt;/h1&gt;
-&lt;p&gt;上回就已经承诺过大家，一定会出 HTTP 的系列文章，今天终于整理完成了。作为一个 web 开发，HTTP 几乎是天天要打交道的东西，但我发现大部分人对 HTTP 只是浅尝辄止，对更多的细节及原理就了解不深了，在面试的时候感觉非常吃力。这篇文章就是为了帮助大家树立完整的 HTTP 知识体系，并达到一定的深度，从容地应对各种灵魂之问，也同时提升自己作为一个 web 开发的专业素养吧。这是本文的思维导图:&lt;/p&gt;</description></item><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
-&lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>Vim 折叠代码块</title><link>https://simons.qzz.io/post/2026/01/vim_code_block/</link><pubDate>Mon, 26 Jan 2026 13:36:45 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_code_block/</guid><description>&lt;p&gt;在查看代码的时候，如果代码十分冗长，尤其是 c/c++ 系列的时候，代码结构比较让人难以理清，主要是各种注释、括号的匹配问题。&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>Vim 折叠代码块</title><link>https://simons.qzz.io/post/2026/01/vim_code_block/</link><pubDate>Mon, 26 Jan 2026 13:36:45 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_code_block/</guid><description>&lt;p&gt;在查看代码的时候，如果代码十分冗长，尤其是 c/c++ 系列的时候，代码结构比较让人难以理清，主要是各种注释、括号的匹配问题。&lt;/p&gt;
 &lt;p&gt;虽然可以用&lt;code&gt;%&lt;/code&gt;来查看匹配的另外一半符号在哪里，但是如果这一对符号之间的代码超过了一页，甚至好几页的话，那么也是比较难以理解的。&lt;/p&gt;
 &lt;p&gt;于是可以使用这个vim所提供的折叠功能来简化这些分析。&lt;/p&gt;</description></item><item><title>Vim 命令速查</title><link>https://simons.qzz.io/post/2026/01/vim_refrence/</link><pubDate>Mon, 26 Jan 2026 13:35:50 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/vim_refrence/</guid><description>&lt;ul&gt;
 &lt;li&gt;
@@ -2045,16 +1541,135 @@ N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/c
 &lt;p&gt;&lt;code&gt;Y&lt;/code&gt; : 单元转入代码状态&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;h1 id="一软件篇"&gt;一、软件篇&lt;/h1&gt;
-&lt;h2 id="1-创意收集整理"&gt;1. 创意收集整理：&lt;/h2&gt;
-&lt;p&gt;1、&lt;code&gt;XMind ZEN&lt;/code&gt; (思维导图，zen版本更为简洁)
-2、&lt;code&gt;Typora&lt;/code&gt;(写markdown的编辑器)
-3、有道云笔记(推荐)、印象笔记、为知笔记、OneNote&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;关于markdown：
-github：readme.md(md=markdown)
-建议从事技术的同行都掌握的一种文本语言
-可以在多平台自由遨游，到处分享而无须担心格式&lt;/p&gt;</description></item><item><title>注册一个免费的域名</title><link>https://simons.qzz.io/post/2026/01/register_a_free_domian/</link><pubDate>Mon, 05 Jan 2026 12:28:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/register_a_free_domian/</guid><description>&lt;p&gt;大家好，欢迎来到AI解码师的频道。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://zhihui.lingjun.life" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 个人网站&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>注册一个免费的域名</title><link>https://simons.qzz.io/post/2026/01/register_a_free_domian/</link><pubDate>Mon, 05 Jan 2026 12:28:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/register_a_free_domian/</guid><description>&lt;p&gt;大家好，欢迎来到AI解码师的频道。&lt;/p&gt;
 &lt;p&gt;之前我们曾发布过一期关于如何利用 DigitalPlat 注册永久免费域名的内容。然而，很可惜，在那个内容上线后不久，us.kg 域名的注册系统就出现了故障，相关的注册服务被迫暂停了一段时间。&lt;/p&gt;
 &lt;p&gt;现在，好消息终于来了！经过这段时间的系统升级和维护，DigitalPlat 现已重新开放注册。更令人惊喜的是，本次升级不仅让注册流程变得更加简单便捷，还额外增加了一个免费域名额度的福利。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;参考：
@@ -2315,8 +1930,7 @@ github：readme.md(md=markdown)
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试</title><link>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</link><pubDate>Sun, 06 Apr 2025 17:09:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</guid><description>&lt;h3 id="引言"&gt;引言&lt;/h3&gt;
-&lt;p&gt;在物联网（IoT）领域，ESP32因其强大的功能和灵活性而广受欢迎。无论是智能家居、工业自动化还是个人项目，ESP32都能提供可靠的解决方案。然而，要充分利用这一强大的微控制器，首先需要搭建一个稳定的开发环境。本文将详细介绍如何在Ubuntu系统下搭建ESP32开发环境，帮助新手和有一定经验的开发者顺利入门。&lt;/p&gt;</description></item><item><title>mysql</title><link>https://simons.qzz.io/post/2025/03/mysql_creates_user/</link><pubDate>Thu, 06 Mar 2025 08:42:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mysql_creates_user/</guid><description>&lt;h3 id="1-创建用户"&gt;1. &lt;strong&gt;创建用户&lt;/strong&gt;&lt;/h3&gt;
+&lt;/p&gt;</description></item><item><title>mysql 创建用户的方法</title><link>https://simons.qzz.io/post/2025/03/mysql_creates_user/</link><pubDate>Thu, 06 Mar 2025 08:42:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mysql_creates_user/</guid><description>&lt;h3 id="1-创建用户"&gt;1. &lt;strong&gt;创建用户&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;使用 &lt;code&gt;CREATE USER&lt;/code&gt; 语句创建新用户。语法如下：&lt;/p&gt;
 
 
@@ -2437,139 +2051,7 @@ github：readme.md(md=markdown)
 &lt;li&gt;&lt;strong&gt;&lt;code&gt;password&lt;/code&gt;&lt;/strong&gt;：用户的密码。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id="示例"&gt;示例：&lt;/h4&gt;
-&lt;p&gt;创建一个名为 &lt;code&gt;testuser&lt;/code&gt; 的用户，密码为 &lt;code&gt;testpass&lt;/code&gt;，允许从任何主机连接：&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
-文章作者：左耳朵耗子
-出处：
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
- 
- 
- 
-
-
-
-&lt;a href="https://coolshell.cn/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
- 酷 壳 – CoolShell&lt;span class="external-icon"&gt;&lt;svg
- class="external-icon-svg"
- viewBox="0 0 24 24"
- aria-hidden="true"&gt;
- &lt;path
- d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
- &lt;/svg&gt;&lt;/span&gt;
-&lt;/a&gt;
-
-
-&lt;style&gt;
- 
- .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
- text-decoration: underline;
- text-decoration-thickness: 2px;
- text-underline-offset: 3px;
- transition: all 0.2s ease;
- }
-
- 
- .external-link {
- color: #3b82f6;
- text-decoration-color: rgba(59, 130, 246, 0.3);
- }
- .external-link:hover {
- color: #2563eb;
- text-decoration-color: currentColor;
- }
-
- 
- .internal-link {
- color: #8b5cf6;
- text-decoration-color: rgba(139, 92, 246, 0.3);
- }
- .internal-link:hover {
- color: #7c3aed;
- text-decoration-color: currentColor;
- }
-
- 
- .mailto-link {
- color: #10b981;
- text-decoration-color: rgba(16, 185, 129, 0.3);
- }
- .mailto-link:hover {
- color: #059669;
- text-decoration-color: currentColor;
- }
-
- 
- .tel-link {
- color: #f59e0b;
- text-decoration-color: rgba(245, 158, 11, 0.3);
- }
- .tel-link:hover {
- color: #d97706;
- text-decoration-color: currentColor;
- }
-
- 
- .anchor-link {
- color: #ec4899;
- text-decoration-color: rgba(236, 72, 153, 0.3);
- }
- .anchor-link:hover {
- color: #db2777;
- text-decoration-color: currentColor;
- }
-
- 
- .external-icon {
- display: inline-flex;
- align-items: center;
- margin-left: 2px;
- opacity: 0.7;
- transition: opacity 0.2s;
- }
- .external-link:hover .external-icon {
- opacity: 1;
- }
- .external-icon-svg {
- width: 0.85em;
- height: 0.85em;
- fill: currentColor;
- }
-&lt;/style&gt;
-
-非商用&lt;/p&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
+&lt;p&gt;创建一个名为 &lt;code&gt;testuser&lt;/code&gt; 的用户，密码为 &lt;code&gt;testpass&lt;/code&gt;，允许从任何主机连接：&lt;/p&gt;</description></item><item><title>解决在 openwrt 中自动安装 1panel 失败的问题</title><link>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</link><pubDate>Wed, 29 Jan 2025 08:28:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/openwrt_failed_to_install_1panel/</guid><description>&lt;p&gt;解决在 openwrt 中自动安装 1panel 失败的问题：&lt;/p&gt;
 
 
 
@@ -2695,138 +2177,7 @@ Collected errors:
 &lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
 &lt;/ol&gt;
 &lt;blockquote&gt;
-&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>哈夫曼编码：数据压缩的经典算法</title><link>https://simons.qzz.io/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</link><pubDate>Sun, 26 Jan 2025 11:08:57 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</guid><description>&lt;h1 id="哈夫曼编码数据压缩的经典算法"&gt;哈夫曼编码：数据压缩的经典算法&lt;/h1&gt;
-&lt;p&gt;今天遇到一个有趣的问题：一个100MB的日志文件，需要实时传输，但带宽只有 10MB。很多人二话不说就上 gzip，但你真的理解压缩算法的原理吗？&lt;/p&gt;
-&lt;h2 id="什么是哈夫曼编码"&gt;什么是哈夫曼编码？&lt;/h2&gt;
-&lt;p&gt;本质上，哈夫曼编码是一种变长编码方案。它的核心思想是：出现频率高的字符用短编码，频率低的用长编码。&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="python"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-python"&gt;# 一个简单的例子
-text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
-# 普通编码：每个字符占8位
-# A: 01000001 (8位) × 5 = 40位
-# B: 01000010 (8位) × 3 = 24位
-# C: 01000011 (8位) × 2 = 16位
-# 总共：80位
-
-# 哈夫曼编码
-# A: 0 (1位) × 5 = 5位
-# B: 10 (2位) × 3 = 6位
-# C: 11 (2位) × 2 = 4位
-# 总共：15位&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
-&lt;/div&gt;
-
-&lt;h2 id="为什么需要哈夫曼编码"&gt;为什么需要哈夫曼编码？&lt;/h2&gt;
-&lt;p&gt;看看其他编码方案的问题：&lt;/p&gt;</description></item><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/node.js_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/node.js_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
+&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/nodejs_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/nodejs_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
 &lt;p&gt;不知道你是否思考过，为什么 Node.js 选择了 JavaScript 作为语言？为什么它能在后端站稳脚跟？今天我们就来扒一扒 Node.js 的底层原理和设计思想。&lt;/p&gt;
 &lt;h2 id="什么是-nodejs"&gt;什么是 Node.js?&lt;/h2&gt;
 &lt;p&gt;本质上，Node.js 就是一个基于 Chrome V8 引擎的 JavaScript 运行时。但这样说太简单了，让我们来看看它的架构：&lt;/p&gt;
@@ -2951,135 +2302,7 @@ console.log(&amp;#39;这行先执行&amp;#39;);&lt;/code&gt;&lt;/pre&gt;
  
 &lt;/div&gt;
 
-&lt;p&gt;这段代码揭示了 Node.js 最核心的特性：非阻塞I/O和事件驱动。&lt;/p&gt;</description></item><item><title>Git: 从入门到精通</title><link>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</link><pubDate>Sun, 26 Jan 2025 10:50:22 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</guid><description>&lt;h1 id="git-从入门到精通"&gt;Git: 从入门到精通&lt;/h1&gt;
-&lt;p&gt;很多人用 Git 只会 &lt;code&gt;add/commit/push&lt;/code&gt; 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。&lt;/p&gt;
-&lt;h2 id="git的本质"&gt;Git的本质&lt;/h2&gt;
-&lt;p&gt;Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：&lt;/p&gt;
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div class="code-playground" data-language="bash"&gt;
- 
- &lt;div&gt;
- &lt;pre&gt;&lt;code class="language-bash"&gt;# 看看Git的底层对象
-echo &amp;#39;test&amp;#39; &amp;gt; test.txt
-git add test.txt
-git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
- &lt;/div&gt;
-
- 
- 
-&lt;/div&gt;
-
-&lt;p&gt;核心概念就三个：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;Workspace：工作区&lt;/li&gt;
-&lt;li&gt;Index/Stage：暂存区&lt;/li&gt;
-&lt;li&gt;Repository：仓库区&lt;/li&gt;
-&lt;/ol&gt;
-&lt;h2 id="为什么用git"&gt;为什么用Git？&lt;/h2&gt;
-&lt;p&gt;对比一下传统SVN：&lt;/p&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
+&lt;p&gt;这段代码揭示了 Node.js 最核心的特性：非阻塞I/O和事件驱动。&lt;/p&gt;</description></item><item><title>GitHub Projects深入剖析：不只是看板，是工程管理的操作系统</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</link><pubDate>Sun, 26 Jan 2025 10:48:35 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_projects_its_not_just_kanban_its_the_operating_system_for_project_management/</guid><description>&lt;h1 id="github-projects深入剖析不只是看板是工程管理的操作系统"&gt;GitHub Projects深入剖析：不只是看板，是工程管理的操作系统&lt;/h1&gt;
 &lt;p&gt;先说个真实场景：一个十几人的团队，用GitHub管理代码，但项目进度全靠口头同步。最后结果可想而知: 一团糟。&lt;/p&gt;
 &lt;h2 id="本质分析"&gt;本质分析&lt;/h2&gt;
 &lt;p&gt;GitHub Projects不是简单的任务管理工具，而是一个完整的工程管理系统。它把Issues、PR、代码、里程碑等所有开发要素关联起来。&lt;/p&gt;</description></item><item><title>GitHub Actions 深入剖析：从原理到实践</title><link>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</link><pubDate>Sun, 26 Jan 2025 10:47:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/in-depth_analysis_of_github_actions_from_principle_to_practice/</guid><description>&lt;h1 id="github-actions-深入剖析从原理到实践"&gt;GitHub Actions 深入剖析：从原理到实践&lt;/h1&gt;

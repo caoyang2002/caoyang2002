@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 00:09:55 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 08:49:01 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -311,6 +311,262 @@
 
 &lt;a href="https://hugo.opendocs.io/getting-started/quick-start/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
  中文文档&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>一个图形爱好者的书架</title><link>https://simons.qzz.io/post/2026/02/a_graphics_enthusiasts_bookshelf/</link><pubDate>Mon, 02 Feb 2026 07:37:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/a_graphics_enthusiasts_bookshelf/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.cnblogs.com/lancidie/archive/2010/12/12/1903611.html" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>计算机图形学书单</title><link>https://simons.qzz.io/post/2026/02/book-recommendation-computer-graphics/</link><pubDate>Mon, 02 Feb 2026 06:05:16 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/book-recommendation-computer-graphics/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.microsoft.com/en-us/research/articles/book-recommendation-computer-graphics/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
  class="external-icon-svg"
  viewBox="0 0 24 24"
  aria-hidden="true"&gt;
@@ -1932,7 +2188,7 @@
  }
 
  const password = input.value;
- const publishDate = "101220201";
+ const publishDate = "202320202";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
@@ -3795,7 +4051,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
- 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>Mail 管理</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
+ 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>用群晖 MailPlus 管理多个邮箱</title><link>https://simons.qzz.io/post/2026/01/mail-manager/</link><pubDate>Mon, 26 Jan 2026 14:09:44 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/mail-manager/</guid><description>&lt;p&gt;注意目前管理 outlook 邮箱存在问题。&lt;/p&gt;
 &lt;h1 id="下载套件"&gt;下载套件&lt;/h1&gt;
 &lt;p&gt;下载 MailPlus 和 MailPlus Server 套件。&lt;/p&gt;
 &lt;h1 id="配置-mailplus-server"&gt;配置 MailPlus Server&lt;/h1&gt;
@@ -5084,16 +5340,135 @@ N{command} # 重复某个命令 N 次，例如：10k，光标上移 10 行&lt;/c
 &lt;p&gt;&lt;code&gt;Y&lt;/code&gt; : 单元转入代码状态&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;h1 id="一软件篇"&gt;一、软件篇&lt;/h1&gt;
-&lt;h2 id="1-创意收集整理"&gt;1. 创意收集整理：&lt;/h2&gt;
-&lt;p&gt;1、&lt;code&gt;XMind ZEN&lt;/code&gt; (思维导图，zen版本更为简洁)
-2、&lt;code&gt;Typora&lt;/code&gt;(写markdown的编辑器)
-3、有道云笔记(推荐)、印象笔记、为知笔记、OneNote&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;关于markdown：
-github：readme.md(md=markdown)
-建议从事技术的同行都掌握的一种文本语言
-可以在多平台自由遨游，到处分享而无须担心格式&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://zhihui.lingjun.life" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 个人网站&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;前提条件：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
@@ -7628,7 +8003,7 @@ jupyter kernelspec list&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;说到运气，我相信很多人的第一反应很可能是什么？买彩票中奖，对吧？前天我刚跟一席节目组谈完话，回去打了个出租，不知道运气好还是不好，那个的士司机在上海S4高速上，以80码到100码的速度跑的时候，他打瞌睡了。我一抬头发现车子往边上撞，还没来得及喊就已经撞上去了。&lt;/p&gt;</description></item><item><title>现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心</title><link>https://simons.qzz.io/post/2025/03/modernity_holocaust_and_moral_reflection/</link><pubDate>Mon, 10 Mar 2025 18:57:52 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/modernity_holocaust_and_moral_reflection/</guid><description>&lt;h1 id="现代性大屠杀与道德反思-以齐格蒙特鲍曼的现代性与大屠杀为核心"&gt;现代性、大屠杀与道德反思 ——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心&lt;/h1&gt;
 &lt;h2 id="现代性大屠杀与道德反思"&gt;&lt;strong&gt;现代性、大屠杀与道德反思&lt;/strong&gt;&lt;/h2&gt;
 &lt;h2 id="以齐格蒙特鲍曼的现代性与大屠杀为核心"&gt;&lt;strong&gt;——以齐格蒙特·鲍曼的《现代性与大屠杀》为核心&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;摘要:《现代性与大屠杀》是鲍曼反思现代性的代表作。本文以《现代性与大屠杀》作为核心文本，梳理鲍曼对于大屠杀的现代性解释以及对于现代性弊端的反思。首先，鲍曼反驳了已有的两种主流的对大屠杀的解释，提出大屠杀的现代性解释。其次，鲍曼通过观念与现实操作两个层面分析大屠杀的现代性因素。最后，鲍曼通过大屠杀对现代性进行反思，提出一种新的道德社会学。&lt;/p&gt;</description></item><item><title>mysql</title><link>https://simons.qzz.io/post/2025/03/mysql_creates_user/</link><pubDate>Thu, 06 Mar 2025 08:42:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mysql_creates_user/</guid><description>&lt;h3 id="1-创建用户"&gt;1. &lt;strong&gt;创建用户&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;摘要:《现代性与大屠杀》是鲍曼反思现代性的代表作。本文以《现代性与大屠杀》作为核心文本，梳理鲍曼对于大屠杀的现代性解释以及对于现代性弊端的反思。首先，鲍曼反驳了已有的两种主流的对大屠杀的解释，提出大屠杀的现代性解释。其次，鲍曼通过观念与现实操作两个层面分析大屠杀的现代性因素。最后，鲍曼通过大屠杀对现代性进行反思，提出一种新的道德社会学。&lt;/p&gt;</description></item><item><title>mysql 创建用户的方法</title><link>https://simons.qzz.io/post/2025/03/mysql_creates_user/</link><pubDate>Thu, 06 Mar 2025 08:42:26 +0800</pubDate><guid>https://simons.qzz.io/post/2025/03/mysql_creates_user/</guid><description>&lt;h3 id="1-创建用户"&gt;1. &lt;strong&gt;创建用户&lt;/strong&gt;&lt;/h3&gt;
 &lt;p&gt;使用 &lt;code&gt;CREATE USER&lt;/code&gt; 语句创建新用户。语法如下：&lt;/p&gt;
 
 
@@ -21216,7 +21591,7 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 &lt;/div&gt;
 
 &lt;h2 id="为什么需要哈夫曼编码"&gt;为什么需要哈夫曼编码？&lt;/h2&gt;
-&lt;p&gt;看看其他编码方案的问题：&lt;/p&gt;</description></item><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/node.js_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/node.js_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
+&lt;p&gt;看看其他编码方案的问题：&lt;/p&gt;</description></item><item><title>Node.js 的方法</title><link>https://simons.qzz.io/post/2025/01/nodejs_methods/</link><pubDate>Sun, 26 Jan 2025 11:03:43 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/nodejs_methods/</guid><description>&lt;h1 id="nodejs-的方法"&gt;Node.js 的方法&lt;/h1&gt;
 &lt;p&gt;不知道你是否思考过，为什么 Node.js 选择了 JavaScript 作为语言？为什么它能在后端站稳脚跟？今天我们就来扒一扒 Node.js 的底层原理和设计思想。&lt;/p&gt;
 &lt;h2 id="什么是-nodejs"&gt;什么是 Node.js?&lt;/h2&gt;
 &lt;p&gt;本质上，Node.js 就是一个基于 Chrome V8 引擎的 JavaScript 运行时。但这样说太简单了，让我们来看看它的架构：&lt;/p&gt;
@@ -40308,6 +40683,8 @@ int main(){
  
  { text: '7±2法则', size: 1 , weight: 1 },
  
+ { text: 'ai4se', size: 1 , weight: 1 },
+ 
  { text: 'aigc', size: 1 , weight: 1 },
  
  { text: 'ai应用', size: 1 , weight: 1 },
@@ -40340,8 +40717,6 @@ int main(){
  
  { text: 'cloudflare', size: 1 , weight: 1 },
  
- { text: 'code', size: 1 , weight: 1 },
- 
  { text: 'conda', size: 1 , weight: 1 },
  
  { text: 'cookie', size: 1 , weight: 1 },
@@ -40363,6 +40738,8 @@ int main(){
  { text: 'ddl', size: 1 , weight: 1 },
  
  { text: 'deepseek', size: 1 , weight: 1 },
+ 
+ { text: 'devops', size: 1 , weight: 1 },
  
  { text: 'digitalplat', size: 1 , weight: 1 },
  
@@ -40534,8 +40911,6 @@ int main(){
  
  { text: 'pieter levels', size: 1 , weight: 1 },
  
- { text: 'programming', size: 1 , weight: 1 },
- 
  { text: 'python', size: 3 , weight: 3 },
  
  { text: 'python实现', size: 1 , weight: 1 },
@@ -40616,6 +40991,8 @@ int main(){
  
  { text: 'ubuntu 22.04', size: 1 , weight: 1 },
  
+ { text: 'ui\/ux设计', size: 1 , weight: 1 },
+ 
  { text: 'usp', size: 1 , weight: 1 },
  
  { text: 'v8引擎', size: 1 , weight: 1 },
@@ -40661,6 +41038,8 @@ int main(){
  { text: '七喜', size: 1 , weight: 1 },
  
  { text: '三次握手', size: 1 , weight: 1 },
+ 
+ { text: '三维建模', size: 1 , weight: 1 },
  
  { text: '上瘾', size: 1 , weight: 1 },
  
@@ -40710,6 +41089,8 @@ int main(){
  
  { text: '于东来', size: 1 , weight: 1 },
  
+ { text: '云存储', size: 1 , weight: 1 },
+ 
  { text: '互动广告', size: 1 , weight: 1 },
  
  { text: '五力模型', size: 1 , weight: 1 },
@@ -40721,6 +41102,8 @@ int main(){
  { text: '交易结构', size: 2 , weight: 2 },
  
  { text: '交易费用', size: 1 , weight: 1 },
+ 
+ { text: '产业组织', size: 1 , weight: 1 },
  
  { text: '产业链', size: 1 , weight: 1 },
  
@@ -40772,7 +41155,7 @@ int main(){
  
  { text: '价格歧视', size: 2 , weight: 2 },
  
- { text: '企业创新', size: 1 , weight: 1 },
+ { text: '企业创新', size: 2 , weight: 2 },
  
  { text: '企业合规', size: 2 , weight: 2 },
  
@@ -40791,6 +41174,8 @@ int main(){
  { text: '传播学', size: 1 , weight: 1 },
  
  { text: '伦理学', size: 1 , weight: 1 },
+ 
+ { text: '低代码', size: 1 , weight: 1 },
  
  { text: '作品集', size: 1 , weight: 1 },
  
@@ -40852,11 +41237,15 @@ int main(){
  
  { text: '全球化战略', size: 1 , weight: 1 },
  
+ { text: '全球化研究', size: 1 , weight: 1 },
+ 
  { text: '全面性', size: 1 , weight: 1 },
  
  { text: '公众号运营', size: 1 , weight: 1 },
  
  { text: '公共事件', size: 1 , weight: 1 },
+ 
+ { text: '公共经济学', size: 1 , weight: 1 },
  
  { text: '公关', size: 1 , weight: 1 },
  
@@ -40978,6 +41367,8 @@ int main(){
  
  { text: '动物决策', size: 1 , weight: 1 },
  
+ { text: '劳动经济学', size: 1 , weight: 1 },
+ 
  { text: '包装设计', size: 2 , weight: 2 },
  
  { text: '区块链', size: 1 , weight: 1 },
@@ -41012,11 +41403,15 @@ int main(){
  
  { text: '发动机', size: 1 , weight: 1 },
  
+ { text: '发展经济学', size: 1 , weight: 1 },
+ 
  { text: '发布会营销', size: 1 , weight: 1 },
  
  { text: '发疯文学', size: 1 , weight: 1 },
  
  { text: '取名', size: 1 , weight: 1 },
+ 
+ { text: '古典社会学理论', size: 1 , weight: 1 },
  
  { text: '古茗', size: 1 , weight: 1 },
  
@@ -41076,7 +41471,7 @@ int main(){
  
  { text: '品牌延伸', size: 2 , weight: 2 },
  
- { text: '品牌建设', size: 2 , weight: 2 },
+ { text: '品牌建设', size: 3 , weight: 3 },
  
  { text: '品牌形象', size: 1 , weight: 1 },
  
@@ -41138,6 +41533,8 @@ int main(){
  
  { text: '商业', size: 1 , weight: 1 },
  
+ { text: '商业分析', size: 1 , weight: 1 },
+ 
  { text: '商业判断', size: 1 , weight: 1 },
  
  { text: '商业史', size: 1 , weight: 1 },
@@ -41160,6 +41557,8 @@ int main(){
  
  { text: '团购', size: 1 , weight: 1 },
  
+ { text: '团队协作', size: 1 , weight: 1 },
+ 
  { text: '固件备份', size: 1 , weight: 1 },
  
  { text: '固件降级', size: 1 , weight: 1 },
@@ -41169,6 +41568,8 @@ int main(){
  { text: '固体燃料', size: 1 , weight: 1 },
  
  { text: '国际化', size: 1 , weight: 1 },
+ 
+ { text: '国际经济学', size: 1 , weight: 1 },
  
  { text: '图片', size: 1 , weight: 1 },
  
@@ -41182,11 +41583,15 @@ int main(){
  
  { text: '场景营销', size: 1 , weight: 1 },
  
+ { text: '城市社会学', size: 1 , weight: 1 },
+ 
  { text: '域名托管', size: 1 , weight: 1 },
  
  { text: '基础', size: 2 , weight: 2 },
  
  { text: '增长假设', size: 1 , weight: 1 },
+ 
+ { text: '增长战略', size: 1 , weight: 1 },
  
  { text: '处理器架构', size: 1 , weight: 1 },
  
@@ -41240,6 +41645,10 @@ int main(){
  
  { text: '学习资源', size: 1 , weight: 1 },
  
+ { text: '学术绘图', size: 1 , weight: 1 },
+ 
+ { text: '安全加密', size: 1 , weight: 1 },
+ 
  { text: '安全指南', size: 1 , weight: 1 },
  
  { text: '安装指南', size: 1 , weight: 1 },
@@ -41251,6 +41660,8 @@ int main(){
  { text: '安飞士', size: 1 , weight: 1 },
  
  { text: '宏编程', size: 1 , weight: 1 },
+ 
+ { text: '宏观经济学', size: 1 , weight: 1 },
  
  { text: '官僚制', size: 1 , weight: 1 },
  
@@ -41336,6 +41747,8 @@ int main(){
  
  { text: '市场细分', size: 1 , weight: 1 },
  
+ { text: '市场细分与定位', size: 1 , weight: 1 },
+ 
  { text: '市场营销', size: 3 , weight: 3 },
  
  { text: '希克定律', size: 2 , weight: 2 },
@@ -41343,6 +41756,8 @@ int main(){
  { text: '平台生态', size: 1 , weight: 1 },
  
  { text: '平庸之恶', size: 1 , weight: 1 },
+ 
+ { text: '平面设计', size: 1 , weight: 1 },
  
  { text: '幸福', size: 1 , weight: 1 },
  
@@ -41367,6 +41782,8 @@ int main(){
  { text: '开发流程', size: 1 , weight: 1 },
  
  { text: '开发环境', size: 3 , weight: 3 },
+ 
+ { text: '开发者体验', size: 1 , weight: 1 },
  
  { text: '开发资源', size: 1 , weight: 1 },
  
@@ -41416,6 +41833,8 @@ int main(){
  
  { text: '微盟集团', size: 1 , weight: 1 },
  
+ { text: '微观经济学', size: 1 , weight: 1 },
+ 
  { text: '德鲁克', size: 1 , weight: 1 },
  
  { text: '心智争夺', size: 1 , weight: 1 },
@@ -41448,6 +41867,8 @@ int main(){
  
  { text: '思通舆情', size: 1 , weight: 1 },
  
+ { text: '性别研究', size: 1 , weight: 1 },
+ 
  { text: '性能优化', size: 10 , weight: 10 },
  
  { text: '性能调优', size: 1 , weight: 1 },
@@ -41476,7 +41897,7 @@ int main(){
  
  { text: '战略思维', size: 1 , weight: 1 },
  
- { text: '战略执行', size: 1 , weight: 1 },
+ { text: '战略执行', size: 2 , weight: 2 },
  
  { text: '战略管理', size: 1 , weight: 1 },
  
@@ -41542,6 +41963,8 @@ int main(){
  
  { text: '政治哲学', size: 1 , weight: 1 },
  
+ { text: '政治社会学', size: 1 , weight: 1 },
+ 
  { text: '政策建议', size: 1 , weight: 1 },
  
  { text: '故事经济学', size: 1 , weight: 1 },
@@ -41560,15 +41983,19 @@ int main(){
  
  { text: '教程', size: 2 , weight: 2 },
  
+ { text: '数字化营销', size: 1 , weight: 1 },
+ 
  { text: '数字游民', size: 1 , weight: 1 },
  
  { text: '数学', size: 1 , weight: 1 },
  
- { text: '数据分析', size: 2 , weight: 2 },
+ { text: '数据分析', size: 3 , weight: 3 },
  
  { text: '数据压缩', size: 1 , weight: 1 },
  
  { text: '数据封装', size: 1 , weight: 1 },
+ 
+ { text: '数据库', size: 1 , weight: 1 },
  
  { text: '数据库基础', size: 1 , weight: 1 },
  
@@ -41582,11 +42009,17 @@ int main(){
  
  { text: '文化差异', size: 1 , weight: 1 },
  
+ { text: '文化社会学', size: 1 , weight: 1 },
+ 
  { text: '文本操作', size: 1 , weight: 1 },
  
  { text: '文本相似度', size: 1 , weight: 1 },
  
  { text: '文本编辑', size: 2 , weight: 2 },
+ 
+ { text: '文档处理', size: 1 , weight: 1 },
+ 
+ { text: '文献管理', size: 1 , weight: 1 },
  
  { text: '斯金纳', size: 1 , weight: 1 },
  
@@ -41606,7 +42039,7 @@ int main(){
  
  { text: '智谱ai', size: 1 , weight: 1 },
  
- { text: '暂无', size: 28 , weight: 28 },
+ { text: '暂无', size: 30 , weight: 30 },
  
  { text: '最佳实践', size: 7 , weight: 7 },
  
@@ -41738,6 +42171,8 @@ int main(){
  
  { text: '满减', size: 1 , weight: 1 },
  
+ { text: '演示文稿', size: 1 , weight: 1 },
+ 
  { text: '演讲技巧', size: 1 , weight: 1 },
  
  { text: '潜意识营销', size: 1 , weight: 1 },
@@ -41776,7 +42211,11 @@ int main(){
  
  { text: '环境搭建', size: 1 , weight: 1 },
  
+ { text: '环境经济学', size: 1 , weight: 1 },
+ 
  { text: '现代性', size: 1 , weight: 1 },
+ 
+ { text: '现代社会学理论', size: 1 , weight: 1 },
  
  { text: '珀莱雅', size: 1 , weight: 1 },
  
@@ -41806,6 +42245,8 @@ int main(){
  
  { text: '电子签', size: 1 , weight: 1 },
  
+ { text: '电子表格', size: 1 , weight: 1 },
+ 
  { text: '界面设计', size: 3 , weight: 3 },
  
  { text: '病毒传播', size: 1 , weight: 1 },
@@ -41819,6 +42260,8 @@ int main(){
  { text: '盈利模式', size: 2 , weight: 2 },
  
  { text: '瞬时计数', size: 1 , weight: 1 },
+ 
+ { text: '知识库', size: 1 , weight: 1 },
  
  { text: '知识输出', size: 1 , weight: 1 },
  
@@ -41840,11 +42283,21 @@ int main(){
  
  { text: '社会公平', size: 1 , weight: 1 },
  
+ { text: '社会分层与流动', size: 1 , weight: 1 },
+ 
  { text: '社会协作', size: 1 , weight: 1 },
+ 
+ { text: '社会学定性研究', size: 1 , weight: 1 },
+ 
+ { text: '社会学定量分析', size: 1 , weight: 1 },
  
  { text: '社会影响', size: 1 , weight: 1 },
  
  { text: '社会心理学', size: 1 , weight: 1 },
+ 
+ { text: '社会研究方法论', size: 1 , weight: 1 },
+ 
+ { text: '社会网络分析', size: 1 , weight: 1 },
  
  { text: '神经营销学', size: 1 , weight: 1 },
  
@@ -41852,9 +42305,13 @@ int main(){
  
  { text: '科学营销', size: 1 , weight: 1 },
  
+ { text: '科学计算', size: 1 , weight: 1 },
+ 
  { text: '秒杀', size: 1 , weight: 1 },
  
  { text: '稀缺性', size: 1 , weight: 1 },
+ 
+ { text: '程序分析与验证', size: 1 , weight: 1 },
  
  { text: '程序员', size: 1 , weight: 1 },
  
@@ -41874,11 +42331,13 @@ int main(){
  
  { text: '竞争性广告', size: 1 , weight: 1 },
  
- { text: '竞争战略', size: 2 , weight: 2 },
+ { text: '竞争战略', size: 3 , weight: 3 },
  
  { text: '竞争策略', size: 3 , weight: 3 },
  
  { text: '竞品分析', size: 1 , weight: 1 },
+ 
+ { text: '笔记管理', size: 1 , weight: 1 },
  
  { text: '第三方证明', size: 1 , weight: 1 },
  
@@ -41898,6 +42357,8 @@ int main(){
  
  { text: '系统安装', size: 1 , weight: 1 },
  
+ { text: '系统管理', size: 1 , weight: 1 },
+ 
  { text: '系统设计', size: 1 , weight: 1 },
  
  { text: '系统调用', size: 2 , weight: 2 },
@@ -41910,7 +42371,11 @@ int main(){
  
  { text: '经典案例', size: 5 , weight: 5 },
  
+ { text: '经济史与思想史', size: 1 , weight: 1 },
+ 
  { text: '经济增长', size: 1 , weight: 1 },
+ 
+ { text: '经济社会学', size: 1 , weight: 1 },
  
  { text: '经验分享', size: 1 , weight: 1 },
  
@@ -41930,11 +42395,15 @@ int main(){
  
  { text: '编程工具', size: 1 , weight: 1 },
  
+ { text: '编程开发', size: 1 , weight: 1 },
+ 
  { text: '编程概念', size: 2 , weight: 2 },
  
  { text: '编程练习', size: 1 , weight: 1 },
  
  { text: '编程范式', size: 1 , weight: 1 },
+ 
+ { text: '编程语言', size: 1 , weight: 1 },
  
  { text: '编译原理', size: 1 , weight: 1 },
  
@@ -41955,6 +42424,8 @@ int main(){
  { text: '网络协议', size: 1 , weight: 1 },
  
  { text: '网络基础', size: 1 , weight: 1 },
+ 
+ { text: '网络工具', size: 1 , weight: 1 },
  
  { text: '网络模型', size: 1 , weight: 1 },
  
@@ -41998,7 +42469,7 @@ int main(){
  
  { text: '腾讯', size: 1 , weight: 1 },
  
- { text: '自动化', size: 3 , weight: 3 },
+ { text: '自动化', size: 4 , weight: 4 },
  
  { text: '自媒体', size: 1 , weight: 1 },
  
@@ -42088,6 +42559,8 @@ int main(){
  
  { text: '行业趋势', size: 1 , weight: 1 },
  
+ { text: '行为与实验经济学', size: 1 , weight: 1 },
+ 
  { text: '行为经济学', size: 7 , weight: 7 },
  
  { text: '补贴', size: 1 , weight: 1 },
@@ -42102,7 +42575,11 @@ int main(){
  
  { text: '视觉识别系统', size: 1 , weight: 1 },
  
+ { text: '视频剪辑', size: 1 , weight: 1 },
+ 
  { text: '计算机基础', size: 1 , weight: 1 },
+ 
+ { text: '计量经济学', size: 1 , weight: 1 },
  
  { text: '认知心理学', size: 1 , weight: 1 },
  
@@ -42172,9 +42649,13 @@ int main(){
  
  { text: '转型', size: 1 , weight: 1 },
  
+ { text: '软件安全', size: 1 , weight: 1 },
+ 
  { text: '软件工具', size: 1 , weight: 1 },
  
  { text: '软件开发', size: 1 , weight: 1 },
+ 
+ { text: '软件架构', size: 1 , weight: 1 },
  
  { text: '软路由', size: 1 , weight: 1 },
  
@@ -42240,6 +42721,8 @@ int main(){
  
  { text: '金融监管', size: 1 , weight: 1 },
  
+ { text: '金融经济学', size: 1 , weight: 1 },
+ 
  { text: '销售用语', size: 1 , weight: 1 },
  
  { text: '错误修复', size: 1 , weight: 1 },
@@ -42294,11 +42777,13 @@ int main(){
  
  { text: '非阻塞io', size: 1 , weight: 1 },
  
+ { text: '音频处理', size: 1 , weight: 1 },
+ 
  { text: '页面元素', size: 1 , weight: 1 },
  
  { text: '页面捆绑', size: 1 , weight: 1 },
  
- { text: '项目管理', size: 1 , weight: 1 },
+ { text: '项目管理', size: 2 , weight: 2 },
  
  { text: '顺序图', size: 1 , weight: 1 },
  

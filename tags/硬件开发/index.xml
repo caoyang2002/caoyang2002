@@ -1,10 +1,129 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件开发 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/</link><description>Recent content in 硬件开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;h1 id="一软件篇"&gt;一、软件篇&lt;/h1&gt;
-&lt;h2 id="1-创意收集整理"&gt;1. 创意收集整理：&lt;/h2&gt;
-&lt;p&gt;1、&lt;code&gt;XMind ZEN&lt;/code&gt; (思维导图，zen版本更为简洁)
-2、&lt;code&gt;Typora&lt;/code&gt;(写markdown的编辑器)
-3、有道云笔记(推荐)、印象笔记、为知笔记、OneNote&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;关于markdown：
-github：readme.md(md=markdown)
-建议从事技术的同行都掌握的一种文本语言
-可以在多平台自由遨游，到处分享而无须担心格式&lt;/p&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>硬件开发 on 短松江月</title><link>https://simons.qzz.io/tags/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/</link><description>Recent content in 硬件开发 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 08:49:01 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E7%A1%AC%E4%BB%B6%E5%BC%80%E5%8F%91/index.xml" rel="self" type="application/rss+xml"/><item><title>稚晖君的工作流</title><link>https://simons.qzz.io/post/2026/01/zhihuijun_create/</link><pubDate>Mon, 26 Jan 2026 13:32:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/zhihuijun_create/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://zhihui.lingjun.life" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 个人网站&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item></channel></rss>

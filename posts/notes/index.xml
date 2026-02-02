@@ -457,7 +457,242 @@
 &lt;/div&gt;
 
 &lt;h2 id="方法五使用插件"&gt;方法五：使用插件&lt;/h2&gt;
-&lt;p&gt;如果经常需要编号，可以安装插件：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</guid><description>&lt;p&gt;
+&lt;p&gt;如果经常需要编号，可以安装插件：&lt;/p&gt;</description></item><item><title>Git 分支分叉的解决方案简介</title><link>https://simons.qzz.io/post/2026/01/git_divergent_branches/</link><pubDate>Thu, 29 Jan 2026 12:08:51 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_divergent_branches/</guid><description>&lt;p&gt;让我用几个生活中的比喻来解释不同的分支分叉解决方案：&lt;/p&gt;
+&lt;h2 id="-场景设定"&gt;📚 场景设定&lt;/h2&gt;
+&lt;p&gt;想象你在写一本小说：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;远程仓库&lt;/strong&gt; = 出版社的底稿&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;你的本地&lt;/strong&gt; = 你手里的稿子&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;其他作者&lt;/strong&gt; = 同事也在修改&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;现在情况是：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-" data-lang=""&gt;出版社底稿：第一章 → 第二章 → 第三章
+你的稿子： 第一章 → 第二章 → 第三章 → [你新增的第四章]
+出版社最新：第一章 → 第二章 → 第三章 → [同事修改的第三章结尾]&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id="-三种解决方案详解"&gt;🎯 三种解决方案详解&lt;/h2&gt;
+&lt;h3 id="1-merge合并---拼图游戏法"&gt;1. &lt;strong&gt;Merge（合并）&lt;/strong&gt; - &amp;ldquo;拼图游戏法&amp;rdquo;&lt;/h3&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;git pull --no-rebase # 或 git pull（默认可能是merge）&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
+&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;比喻&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>文章去 AI 味的 SKILL</title><link>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</link><pubDate>Thu, 29 Jan 2026 07:29:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/remove_ai_taste_skills/</guid><description>&lt;p&gt;
 
 
 
@@ -585,11 +820,404 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>社会传播与营销公众号文章选题方向</title><link>https://simons.qzz.io/post/2025/02/social_communication_and_marketing_public_account_article_selection_direction/</link><pubDate>Fri, 14 Feb 2025 14:44:38 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/social_communication_and_marketing_public_account_article_selection_direction/</guid><description>&lt;h2 id="社会传播与营销公众号文章选题"&gt;社会传播与营销公众号文章选题：&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
+&lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与测试</title><link>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</link><pubDate>Sun, 06 Apr 2025 17:09:20 +0800</pubDate><guid>https://simons.qzz.io/post/2025/04/how_to_build_an_esp32_development_environment_under_ubuntu/</guid><description>&lt;h3 id="引言"&gt;引言&lt;/h3&gt;
+&lt;p&gt;在物联网（IoT）领域，ESP32因其强大的功能和灵活性而广受欢迎。无论是智能家居、工业自动化还是个人项目，ESP32都能提供可靠的解决方案。然而，要充分利用这一强大的微控制器，首先需要搭建一个稳定的开发环境。本文将详细介绍如何在Ubuntu系统下搭建ESP32开发环境，帮助新手和有一定经验的开发者顺利入门。&lt;/p&gt;</description></item><item><title>社会传播与营销公众号文章选题方向</title><link>https://simons.qzz.io/post/2025/02/social_communication_and_marketing_public_account_article_selection_direction/</link><pubDate>Fri, 14 Feb 2025 14:44:38 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/social_communication_and_marketing_public_account_article_selection_direction/</guid><description>&lt;h2 id="社会传播与营销公众号文章选题"&gt;社会传播与营销公众号文章选题：&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;一、热点话题与趋势&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;紧跟时事热点：&lt;/strong&gt; 结合近期社会热点、节日、流行文化等，分析其传播规律和营销价值。例如：冬奥会期间的品牌营销、元宇宙概念下的营销新趋势等。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;解读行业报告：&lt;/strong&gt; 发布并解读最新行业报告，分析数据背后的趋势和洞察，为读者提供决策参考。例如：《2023年社交媒体营销趋势报告》、《Z世代消费行为洞察》等。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;预测未来趋势：&lt;/strong&gt; 结合自身经验和行业观察，预测未来社会传播和营销领域的发展趋势，例如：人工智能对营销的影响、短视频营销的未来走向等。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;二、案例分析&lt;/strong&gt;&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;&lt;strong&gt;二、案例分析&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
+文章作者：左耳朵耗子
+出处：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://coolshell.cn/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 酷 壳 – CoolShell&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+
+非商用&lt;/p&gt;</description></item><item><title>哈夫曼编码：数据压缩的经典算法</title><link>https://simons.qzz.io/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</link><pubDate>Sun, 26 Jan 2025 11:08:57 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/huffman_coding_a_classic_algorithm_for_data_compression/</guid><description>&lt;h1 id="哈夫曼编码数据压缩的经典算法"&gt;哈夫曼编码：数据压缩的经典算法&lt;/h1&gt;
+&lt;p&gt;今天遇到一个有趣的问题：一个100MB的日志文件，需要实时传输，但带宽只有 10MB。很多人二话不说就上 gzip，但你真的理解压缩算法的原理吗？&lt;/p&gt;
+&lt;h2 id="什么是哈夫曼编码"&gt;什么是哈夫曼编码？&lt;/h2&gt;
+&lt;p&gt;本质上，哈夫曼编码是一种变长编码方案。它的核心思想是：出现频率高的字符用短编码，频率低的用长编码。&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="python"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-python"&gt;# 一个简单的例子
+text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
+# 普通编码：每个字符占8位
+# A: 01000001 (8位) × 5 = 40位
+# B: 01000010 (8位) × 3 = 24位
+# C: 01000011 (8位) × 2 = 16位
+# 总共：80位
+
+# 哈夫曼编码
+# A: 0 (1位) × 5 = 5位
+# B: 10 (2位) × 3 = 6位
+# C: 11 (2位) × 2 = 4位
+# 总共：15位&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
+&lt;/div&gt;
+
+&lt;h2 id="为什么需要哈夫曼编码"&gt;为什么需要哈夫曼编码？&lt;/h2&gt;
+&lt;p&gt;看看其他编码方案的问题：&lt;/p&gt;</description></item><item><title>Git: 从入门到精通</title><link>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</link><pubDate>Sun, 26 Jan 2025 10:50:22 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/git_from_entry_to_mastery/</guid><description>&lt;h1 id="git-从入门到精通"&gt;Git: 从入门到精通&lt;/h1&gt;
+&lt;p&gt;很多人用 Git 只会 &lt;code&gt;add/commit/push&lt;/code&gt; 三板斧，遇到冲突就抓瞎。今天我们从原理到实战，彻底搞懂Git。&lt;/p&gt;
+&lt;h2 id="git的本质"&gt;Git的本质&lt;/h2&gt;
+&lt;p&gt;Git本质上是个内容寻址的文件系统。它把你的代码转成一棵对象树：&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div class="code-playground" data-language="bash"&gt;
+ 
+ &lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-bash"&gt;# 看看Git的底层对象
+echo &amp;#39;test&amp;#39; &amp;gt; test.txt
+git add test.txt
+git cat-file -p HEAD&lt;/code&gt;&lt;/pre&gt;
+ &lt;/div&gt;
+
+ 
+ 
+&lt;/div&gt;
+
+&lt;p&gt;核心概念就三个：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Workspace：工作区&lt;/li&gt;
+&lt;li&gt;Index/Stage：暂存区&lt;/li&gt;
+&lt;li&gt;Repository：仓库区&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="为什么用git"&gt;为什么用Git？&lt;/h2&gt;
+&lt;p&gt;对比一下传统SVN：&lt;/p&gt;</description></item></channel></rss>
