@@ -1,58 +1,80 @@
----
++++
 # 专题基本信息
-title: "编程专题"
-slug: "programming"
-description: "计算机组成、计算机网络、操作系统等内容"
-weight: 10
+title = "软件开发与编程技术"
+slug = "software-programming"
+description = "涵盖智能化软件开发、程序分析、软件架构、DevOps、编程语言与安全等核心研究方向"
+weight = 10
 
 # SEO 优化
-keywords: ["Programming", "编程"]
-author: "Simons"
-date: 2026-01-15
+keywords = ["Software Engineering", "Programming", "软件开发", "编程", "AI4SE", "DevOps"]
+author = "Simons"
+date = 2026-01-15
 
 # 专题封面（可选）
-image: "/images/socket-cover.png"
+image = "/images/programming-cover.png"
 
 # 专题级联设置 - 这些设置会影响所有子页面
-cascade:
+[cascade]
   # 自动为所有子页面添加标签和分类
-  tags: ["programming", "code"]
-  categories: ["programming"]
+  tags = [
+    "AI4SE",
+    "程序分析与验证",
+    "软件架构",
+    "DevOps",
+    "编程语言",
+    "软件安全",
+    "低代码",
+    "开发者体验"
+  ]
+  
+  categories = ["Software Engineering", "Programming"]
   
   # 页面参数
-  params:
+  [cascade.params]
     # 系列名称
-    series: "编程专题"
+    series = "软件开发与编程技术专题"
     
     # 子页面默认布局设置
-    showToc: true
-    showAuthor: false
-    showReadingTime: true
-    layout: "doc"
+    showToc = true
+    showAuthor = false
+    showReadingTime = true
+    layout = "doc"
     
     # 评论设置
-    comments: true
+    comments = true
 
 # 列表页面参数
-params:
+[params]
   # 列表样式：docs | default | grid | compact
-  listStyle: "docs"
+  listStyle = "docs"
   
   # 是否显示文章摘要
-  showSummary: true
+  showSummary = true
   
   # 排序方式：weight | date | title
-  orderBy: "weight"
+  orderBy = "weight"
   
   # 文档图标（可选）
-  icon: "🌐"
+  icon = "💻"
   
   # 相关链接（可选）
-  links:
-    - name: "官方文档"
-      url: "https://example.com/docs"
-      icon: "📚"
-    - name: "示例代码"
-      url: "https://github.com/example/socket"
-      icon: "💻"
----
+  [[params.links]]
+    name = "智能化软件开发 (AI4SE) 资源"
+    url = "https://github.com/microsoft/Codex"
+    icon = "🤖"
+  
+  [[params.links]]
+    name = "程序分析工具集合"
+    url = "https://github.com/facebook/infer"
+    icon = "🔍"
+  
+  [[params.links]]
+    name = "现代软件架构模式"
+    url = "https://github.com/ddd-crew"
+    icon = "🏗️"
+  
+  [[params.links]]
+    name = "DevOps 实践指南"
+    url = "https://github.com/cncf/toc"
+    icon = "🚀"
++++

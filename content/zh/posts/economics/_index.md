@@ -1,28 +1,84 @@
----
-title: "经济学"
-description: "营销理论与实战技巧专题"
++++
+# 专题基本信息
+title = "经济学研究"
+slug = "economics"
+description = "涵盖微观经济学、宏观经济学、计量经济学、行为经济学及前沿交叉领域的系统性知识体系"
+weight = 10
 
-cascade:
-  tags: ["marketing", "strategy", "digital", "branding", "advertising"]
-  categories: ["business", "marketing", "economics"]
-  # 设置该页面及其子页面都使用docs布局
-  _target:
-    kind: page
-    path: "**"
+# SEO 优化
+keywords = ["Economics", "Microeconomics", "Macroeconomics", "Econometrics", "经济学", "微观经济学", "宏观经济学", "计量经济学"]
+author = "Simons"
+date = 2026-01-15
 
-params:
-  # 使用文档布局（通常用于技术文档、教程系列）
-  listStyle: "docs"
-  # 在列表页面显示摘要（提升可读性）
-  showSummary: true
-  # 按权重排序，适用于有顺序要求的教程系列
-  orderBy: "weight"
-  # 可选的附加参数
-  showToc: true  # 显示目录（如果docs布局支持）
-  # 侧边栏设置
-  sidebar:
-    enabled: true
-    sticky: true
-  # 阅读进度指示器
-  progress: true
----
+# 专题封面（可选）
+image = "/images/economics-cover.png"
+
+# 专题级联设置 - 这些设置会影响所有子页面
+[cascade]
+  # 自动为所有子页面添加标签和分类
+  tags = [
+    "微观经济学",
+    "宏观经济学", 
+    "计量经济学",
+    "行为与实验经济学",
+    "发展经济学",
+    "国际经济学",
+    "劳动经济学",
+    "公共经济学",
+    "产业组织",
+    "金融经济学",
+    "环境经济学",
+    "经济史与思想史"
+  ]
+  
+  categories = ["理论经济学", "应用经济学", "交叉与前沿领域"]
+  
+  # 页面参数
+  [cascade.params]
+    # 系列名称
+    series = "经济学研究核心领域专题"
+    
+    # 子页面默认布局设置
+    showToc = true
+    showAuthor = false
+    showReadingTime = true
+    layout = "doc"
+    
+    # 评论设置
+    comments = true
+
+# 列表页面参数
+[params]
+  # 列表样式：docs | default | grid | compact
+  listStyle = "docs"
+  
+  # 是否显示文章摘要
+  showSummary = true
+  
+  # 排序方式：weight | date | title
+  orderBy = "weight"
+  
+  # 文档图标（可选）
+  icon = "📈"
+  
+  # 相关链接（可选）
+  [[params.links]]
+    name = "美国国家经济研究局 (NBER)"
+    url = "https://www.nber.org"
+    icon = "🏛️"
+  
+  [[params.links]]
+    name = "世界银行公开数据"
+    url = "https://data.worldbank.org"
+    icon = "🌍"
+  
+  [[params.links]]
+    name = "经济学预印本库 (RePEc)"
+    url = "https://ideas.repec.org"
+    icon = "📚"
+  
+  [[params.links]]
+    name = "国际货币基金组织 (IMF) 研究"
+    url = "https://www.imf.org/en/Research"
+    icon = "💱"
++++

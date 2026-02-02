@@ -6,6 +6,7 @@ author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
+cover = "https://i0.wp.com/spacenews.com/wp-content/uploads/2014/11/JohnCarmack_NASA4X3.jpg?w=1421&ssl=1"
 +++
 
 [查看原文](https://www.kechuang.org/t/8786?page=0&highlight=341371#highlight)
