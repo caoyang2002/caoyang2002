@@ -6,6 +6,7 @@ author = "simons"
 categories = ["前端开发", "数据可视化"]
 tags = ["Echarts", "JavaScript", "图表", "数据可视化", "教程"]
 description = "详细的 Echarts 数据可视化库使用教程，涵盖基本概念、环境搭建、常用图表类型、进阶配置和最佳实践。"
+cover = "https://img2018.cnblogs.com/blog/1244398/201901/1244398-20190106180725704-699206000.png"
 +++
 
 {{< echarts width="100%" height="500px" >}}
