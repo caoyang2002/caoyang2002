@@ -1,4 +1,399 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Tue, 03 Feb 2026 01:36:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>数字电路公式介绍</title><link>https://simons.qzz.io/post/2026/02/digital_circuit_formula/</link><pubDate>Tue, 03 Feb 2026 01:35:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/digital_circuit_formula/</guid><description>&lt;p&gt;数字电路的核心计算公式主要集中在&lt;strong&gt;布尔代数&lt;/strong&gt;、&lt;strong&gt;逻辑门运算&lt;/strong&gt;和&lt;strong&gt;触发器时序&lt;/strong&gt;等方面。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 05 Feb 2026 22:38:25 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>使用 Blender 创建详细且准确的生产图纸</title><link>https://simons.qzz.io/post/2026/02/create_detailed_and_accurate_production_drawings_with_blender/</link><pubDate>Thu, 05 Feb 2026 14:34:53 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/create_detailed_and_accurate_production_drawings_with_blender/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://cn.windows.day/?p=115726" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>LaTeX 数学公式完整指南</title><link>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</link><pubDate>Wed, 04 Feb 2026 22:10:12 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;注意，本站使用 Hugo 构建，在页面上大多数外部工具库都不可用，进而无法渲染出对应的公式。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;参考链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Symbols" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ LaTeX: Symbols&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;li&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://artofproblemsolving.com/wiki/index.php/LaTeX:Commands" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ LaTeX: Commands&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="基本语法"&gt;基本语法&lt;/h2&gt;
+&lt;h3 id="行内公式与行间公式"&gt;行内公式与行间公式&lt;/h3&gt;
+&lt;h4 id="行内公式"&gt;行内公式&lt;/h4&gt;
+&lt;p&gt;方法1：使用 &lt;code&gt;$ ... $&lt;/code&gt;&lt;/p&gt;</description></item><item><title>向量基础</title><link>https://simons.qzz.io/post/2026/02/vector/</link><pubDate>Wed, 04 Feb 2026 21:44:49 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/vector/</guid><description>&lt;p&gt;在高中的时候我们学过向量，课本中是这样描述的：向量是有大小、有方向的量。当两个向量的长度和方向相同时，我们可以说这两个向量相等。&lt;/p&gt;</description></item><item><title>数字电路公式介绍</title><link>https://simons.qzz.io/post/2026/02/digital_circuit_formula/</link><pubDate>Tue, 03 Feb 2026 01:35:10 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/digital_circuit_formula/</guid><description>&lt;p&gt;数字电路的核心计算公式主要集中在&lt;strong&gt;布尔代数&lt;/strong&gt;、&lt;strong&gt;逻辑门运算&lt;/strong&gt;和&lt;strong&gt;触发器时序&lt;/strong&gt;等方面。&lt;/p&gt;
 &lt;h2 id="一布尔代数基本公式"&gt;一、&lt;strong&gt;布尔代数基本公式&lt;/strong&gt;&lt;/h2&gt;
 &lt;h3 id="1-基本运算"&gt;1. 基本运算&lt;/h3&gt;
 &lt;ul&gt;
@@ -122,11 +517,11 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;功率计算&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>MATLAB 实践机器学习</title><link>https://simons.qzz.io/post/2026/02/matlab_on_machine_learning/</link><pubDate>Mon, 02 Feb 2026 16:48:39 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_on_machine_learning/</guid><description>&lt;h2 id="-matlab-机器学习ml简明教程"&gt;🧠 MATLAB 机器学习（ML）简明教程&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;功率计算&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>MATLAB 实践机器学习</title><link>https://simons.qzz.io/post/2026/02/matlab_practical_machine_learning/</link><pubDate>Mon, 02 Feb 2026 16:48:39 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_practical_machine_learning/</guid><description>&lt;h2 id="-matlab-机器学习ml简明教程"&gt;🧠 MATLAB 机器学习（ML）简明教程&lt;/h2&gt;
 &lt;p&gt;从通用编程到机器学习，你需要关注的核心变化是 &lt;strong&gt;从“如何计算”转向“如何让机器从数据中学习”&lt;/strong&gt;。在MATLAB中，这得益于其强大的工具箱和矩阵运算能力，使得实现机器学习算法变得直观高效。&lt;/p&gt;
 &lt;p&gt;本教程将带你了解MATLAB进行机器学习的关键路径和核心操作。&lt;/p&gt;
 &lt;h3 id="一--核心工具箱与准备工作"&gt;一、 🛠️ 核心工具箱与准备工作&lt;/h3&gt;
-&lt;p&gt;进行机器学习前，你首先需要了解和准备相应的工具箱。&lt;/p&gt;</description></item><item><title>MATLAB 简明教程</title><link>https://simons.qzz.io/post/2026/02/basic_math/</link><pubDate>Mon, 02 Feb 2026 16:39:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/basic_math/</guid><description>&lt;p&gt;&lt;strong&gt;官方资源&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;进行机器学习前，你首先需要了解和准备相应的工具箱。&lt;/p&gt;</description></item><item><title>MATLAB 简明教程</title><link>https://simons.qzz.io/post/2026/02/matlab_concise_tutorial/</link><pubDate>Mon, 02 Feb 2026 16:39:29 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_concise_tutorial/</guid><description>&lt;p&gt;&lt;strong&gt;官方资源&lt;/strong&gt;：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 
