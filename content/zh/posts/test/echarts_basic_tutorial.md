@@ -9,6 +9,8 @@ description = "详细的 Echarts 数据可视化库使用教程，涵盖基本�
 cover = "https://img2018.cnblogs.com/blog/1244398/201901/1244398-20190106180725704-699206000.png"
 +++
 
+# 示例
+
 {{< echarts width="100%" height="500px" >}}
 {
     title: {
