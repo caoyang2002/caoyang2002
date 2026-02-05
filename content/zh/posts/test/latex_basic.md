@@ -87,194 +87,215 @@ E = mc^2
 | `\bullet` | $\bullet$ | 实心圆点 | Bullet |
 | `\diamond` | $\diamond$ | 菱形 | Diamond |
 
-```latex
-% 算术运算
-+               % 加号
--               % 减号
-\pm             % 正负号 ±
-\mp             % 负正号 ∓
-\times          % 乘号 ×
-\div            % 除号 ÷
-\cdot           % 中心点 ·
-\ast            % 星号 *
-\star           % 五角星 ⋆
-\circ           % 圆圈 ∘
-\bullet         % 实心圆点 •
-\diamond        % 菱形 ◊
-```
-
 ### 关系符号
 
-```latex
-% 等式和不等式
-=               % 等于
-\neq            % 不等于 ≠
-<               % 小于
->               % 大于
-\leq            % 小于等于 ≤
-\geq            % 大于等于 ≥
-\ll             % 远小于 ≪
-\gg             % 远大于 ≫
-\lll            % 超小于 ⋘
-\ggg            % 超大于 ⋙
+比较
 
-% 近似和相似
-\approx         % 约等于 ≈
-\sim            % 相似 ∼
-\simeq          % 相似等于 ≃
-\cong           % 全等 ≅
-\equiv          % 恒等 ≡
-\propto         % 正比 ∝
-\parallel       % 平行 ∥
-\perp           % 垂直 ⊥
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `=` | $=$ | 等于 | Equals |
+| `\neq` | $\neq$ | 不等于 | Not equal |
+| `<` | $<$ | 小于 | Less than |
+| `>` | $>$ | 大于 | Greater than |
+| `\leq` | $\leq$ | 小于等于 | Less than or equal to |
+| `\geq` | $\geq$ | 大于等于 | Greater than or equal to |
+| `\ll` | $\ll$ | 远小于 | Much less than |
+| `\gg` | $\gg$ | 远大于 | Much greater than |
+| `\lll` | $\lll$ | 超小于 | Very much less than |
+| `\ggg` | $\ggg$ | 超大于 | Very much greater than |
+
+近似和相似
+
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\approx` | $\approx$ | 约等于 | Approximately equal to |
+| `\sim` | $\sim$ | 相似 | Similar to |
+| `\simeq` | $\simeq$ | 相似等于 | Asymptotically equal to |
+| `\cong` | $\cong$ | 全等 | Congruent to |
+| `\equiv` | $\equiv$ | 恒等 | Equivalent to |
+| `\propto` | $\propto$ | 正比 | Proportional to |
+| `\parallel` | $\parallel$ | 平行 | Parallel to |
+| `\perp` | $\perp$ | 垂直 | Perpendicular to |
+
 
 ### 集合论符号
 
-```latex
-% 包含关系
-\in             % 属于 ∈
-\notin          % 不属于 ∉
-\ni             % 包含（反向） ∋
-\subset         % 子集 ⊂
-\supset         % 超集 ⊃
-\subseteq       % 子集等于 ⊆
-\supseteq       % 超集等于 ⊇
-\subsetneq      % 真子集 ⊊
-\supsetneq      % 真超集 ⊋
+包含关系
 
-% 集合运算
-\cup            % 并集 ∪
-\cap            % 交集 ∩
-\setminus       % 差集 ∖
-\emptyset       % 空集 ∅
-\varnothing     % 空集（另一种形式） ⌀
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\in` | $\in$ | 属于 | Element of |
+| `\notin` | $\notin$ | 不属于 | Not an element of |
+| `\ni` | $\ni$ | 包含（反向属于） | Contains as member |
+| `\subset` | $\subset$ | 子集 | Subset |
+| `\supset` | $\supset$ | 超集 | Superset |
+| `\subseteq` | $\subseteq$ | 子集或等于 | Subset or equal |
+| `\supseteq` | $\supseteq$ | 超集或等于 | Superset or equal |
+| `\subsetneq` | $\subsetneq$ | 真子集 | Proper subset |
+| `\supsetneq` | $\supsetneq$ | 真超集 | Proper superset |
+
+集合运算
+
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\cup` | $\cup$ | 并集 | Union |
+| `\cap` | $\cap$ | 交集 | Intersection |
+| `\setminus` | $\setminus$ | 差集 | Set minus |
+| `\emptyset` | $\emptyset$ | 空集 | Empty set |
+| `\varnothing` | $\varnothing$ | 空集（另一种形式） | Empty set (variant) |
 
 ### 逻辑符号
 
-```latex
-% 逻辑运算
-\land           % 逻辑与 ∧
-\lor            % 逻辑或 ∨
-\lnot           % 逻辑非 ¬
-\neg            % 逻辑非 ¬
-\implies        % 蕴含 ⟹
-\impliedby      % 被蕴含 ⟸
-\iff            % 当且仅当 ⟺
-\Leftrightarrow % 等价 ⇔
-\Rightarrow     % 推出 ⇒
-\Leftarrow      % 被推出 ⇐
+逻辑运算
 
-% 量词
-\forall         % 全称量词 ∀
-\exists         % 存在量词 ∃
-\nexists        % 不存在 ∄
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\land` | $\land$ | 逻辑与 | Logical AND |
+| `\lor` | $\lor$ | 逻辑或 | Logical OR |
+| `\lnot` | $\lnot$ | 逻辑非 | Logical NOT |
+| `\neg` | $\neg$ | 逻辑非（同\lnot） | Logical NOT |
+| `\implies` | $\implies$ | 蕴含 | Implies |
+| `\impliedby` | $\impliedby$ | 被蕴含 | Implied by |
+| `\iff` | $\iff$ | 当且仅当 | If and only if |
+| `\Leftrightarrow` | $\Leftrightarrow$ | 等价 | Equivalent to |
+| `\Rightarrow` | $\Rightarrow$ | 推出 | Right arrow |
+| `\Leftarrow` | $\Leftarrow$ | 被推出 | Left arrow |
+
+量词
+
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\forall` | $\forall$ | 全称量词 | For all |
+| `\exists` | $\exists$ | 存在量词 | There exists |
+| `\nexists` | $\nexists$ | 不存在 | There does not exist |
+
+、
 
 ### 箭头符号
 
-```latex
-% 基本箭头
-\leftarrow      % ←
-\rightarrow     % →
-\uparrow        % ↑
-\downarrow      % ↓
-\leftrightarrow % ↔
-\updownarrow    % ↕
+基本箭头
 
-% 长箭头
-\longleftarrow      % ⟵
-\longrightarrow     % ⟶
-\longleftrightarrow % ⟷
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\leftarrow` | $\leftarrow$ | 左箭头 | Left arrow |
+| `\rightarrow` | $\rightarrow$ | 右箭头 | Right arrow |
+| `\uparrow` | $\uparrow$ | 上箭头 | Up arrow |
+| `\downarrow` | $\downarrow$ | 下箭头 | Down arrow |
+| `\leftrightarrow` | $\leftrightarrow$ | 左右箭头 | Left-right arrow |
+| `\updownarrow` | $\updownarrow$ | 上下箭头 | Up-down arrow |
 
-% 双线箭头
-\Leftarrow      % ⇐
-\Rightarrow     % ⇒
-\Updownarrow    % ⇕
-\Leftrightarrow % ⇔
+长箭头
 
-% 映射箭头
-\mapsto         % ↦
-\longmapsto     % ⟼
-\hookrightarrow % ↪
-\hookleftarrow  % ↩
-\rightharpoonup % ⇀
-\leftharpoonup  % ↼
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\longleftarrow` | $\longleftarrow$ | 长左箭头 | Long left arrow |
+| `\longrightarrow` | $\longrightarrow$ | 长右箭头 | Long right arrow |
+| `\longleftrightarrow` | $\longleftrightarrow$ | 长左右箭头 | Long left-right arrow |
+
+双线箭头
+
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\Leftarrow` | $\Leftarrow$ | 双线左箭头 | Double left arrow |
+| `\Rightarrow` | $\Rightarrow$ | 双线右箭头 | Double right arrow |
+| `\Updownarrow` | $\Updownarrow$ | 双线上下箭头 | Double up-down arrow |
+| `\Leftrightarrow` | $\Leftrightarrow$ | 双线左右箭头 | Double left-right arrow |
+
+映射箭头
+
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\mapsto` | $\mapsto$ | 映射到 | Maps to |
+| `\longmapsto` | $\longmapsto$ | 长映射到 | Long maps to |
+| `\hookrightarrow` | $\hookrightarrow$ | 带钩右箭头 | Rightwards arrow with hook |
+| `\hookleftarrow` | $\hookleftarrow$ | 带钩左箭头 | Leftwards arrow with hook |
+| `\rightharpoonup` | $\rightharpoonup$ | 右半箭头 | Right harpoon |
+| `\leftharpoonup` | $\leftharpoonup$ | 左半箭头 | Left harpoon |
 
 ## 希腊字母表
 
 ### 小写希腊字母
 
-```latex
-\alpha          % α
-\beta           % β
-\gamma          % γ
-\delta          % δ
-\epsilon        % ε
-\varepsilon     % ε（另一种形式）
-\zeta           % ζ
-\eta            % η
-\theta          % θ
-\vartheta       % θ（另一种形式）
-\iota           % ι
-\kappa          % κ
-\lambda         % λ
-\mu             % μ
-\nu             % ν
-\xi             % ξ
-\pi             % π
-\varpi          % π（另一种形式）
-\rho            % ρ
-\varrho         % ρ（另一种形式）
-\sigma          % σ
-\varsigma       % ς（词尾形式）
-\tau            % τ
-\upsilon        % υ
-\phi            % φ
-\varphi         % φ（另一种形式）
-\chi            % χ
-\psi            % ψ
-\omega          % ω
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\alpha` | $\alpha$ | 阿尔法 | alpha |
+| `\beta` | $\beta$ | 贝塔 | beta |
+| `\gamma` | $\gamma$ | 伽马 | gamma |
+| `\delta` | $\delta$ | 德尔塔 | delta |
+| `\epsilon` | $\epsilon$ | 艾普西隆 | epsilon |
+| `\varepsilon` | $\varepsilon$ | 艾普西隆（变体） | epsilon variant |
+| `\zeta` | $\zeta$ | 泽塔 | zeta |
+| `\eta` | $\eta$ | 伊塔 | eta |
+| `\theta` | $\theta$ | 西塔 | theta |
+| `\vartheta` | $\vartheta$ | 西塔（变体） | theta variant |
+| `\iota` | $\iota$ | 约塔 | iota |
+| `\kappa` | $\kappa$ | 卡帕 | kappa |
+| `\lambda` | $\lambda$ | 拉姆达 | lambda |
+| `\mu` | $\mu$ | 缪 | mu |
+| `\nu` | $\nu$ | 纽 | nu |
+| `\xi` | $\xi$ | 克西 | xi |
+| `\pi` | $\pi$ | 派 | pi |
+| `\varpi` | $\varpi$ | 派（变体） | pi variant |
+| `\rho` | $\rho$ | 柔 | rho |
+| `\varrho` | $\varrho$ | 柔（变体） | rho variant |
+| `\sigma` | $\sigma$ | 西格玛 | sigma |
+| `\varsigma` | $\varsigma$ | 西格玛（词尾形式） | sigma final |
+| `\tau` | $\tau$ | 陶 | tau |
+| `\upsilon` | $\upsilon$ | 宇普西隆 | upsilon |
+| `\phi` | $\phi$ | 斐 | phi |
+| `\varphi` | $\varphi$ | 斐（变体） | phi variant |
+| `\chi` | $\chi$ | 希 | chi |
+| `\psi` | $\psi$ | 普西 | psi |
+| `\omega` | $\omega$ | 欧米伽 | omega |
+
+
 
 ### 大写希腊字母
 
-```latex
-\Gamma          % Γ
-\Delta          % Δ
-\Theta          % Θ
-\Lambda         % Λ
-\Xi             % Ξ
-\Pi             % Π
-\Sigma          % Σ
-\Upsilon        % Υ
-\Phi            % Φ
-\Psi            % Ψ
-\Omega          % Ω
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 英文名称 |
+|------------|----------|------|----------|
+| `\Gamma` | $\Gamma$ | 大写伽马 | Gamma |
+| `\Delta` | $\Delta$ | 大写德尔塔 | Delta |
+| `\Theta` | $\Theta$ | 大写西塔 | Theta |
+| `\Lambda` | $\Lambda$ | 大写拉姆达 | Lambda |
+| `\Xi` | $\Xi$ | 大写克西 | Xi |
+| `\Pi` | $\Pi$ | 大写派 | Pi |
+| `\Sigma` | $\Sigma$ | 大写西格玛 | Sigma |
+| `\Upsilon` | $\Upsilon$ | 大写宇普西隆 | Upsilon |
+| `\Phi` | $\Phi$ | 大写斐 | Phi |
+| `\Psi` | $\Psi$ | 大写普西 | Psi |
+| `\Omega` | $\Omega$ | 大写欧米伽 | Omega |
+
+
 
 ## 上标与下标
 
 ### 基本用法
 
-```latex
-% 上标
-x^2             % x²
-x^{10}          % x¹⁰
-x^{2n+1}        % x^(2n+1)
+上标
 
-% 下标
-x_1             % x₁
-x_{10}          % x₁₀
-x_{i,j}         % x_{i,j}
 
-% 上下标同时使用
-x_1^2           % x₁²
-x^2_1           % x₁²（推荐先写下标）
-x_{i}^{(n)}     % x_i^(n)
-```
+| LaTeX 命令 | 渲染结果 | 说明 | 示例 |
+|------------|----------|------|------|
+| `x^2` | $x^2$ | 上标 | $x^2$ |
+| `x^{10}` | $x^{10}$ | 多位数字上标 | $x^{10}$ |
+| `x^{2n+1}` | $x^{2n+1}$ | 复杂表达式上标 | $x^{2n+1}$ |
+
+下标
+
+| LaTeX 命令 | 渲染结果 | 说明 | 示例 |
+|------------|----------|------|------|
+| `x_1` | $x_1$ | 下标 | $x_1$ |
+| `x_{10}` | $x_{10}$ | 多位数字下标 | $x_{10}$ |
+| `x_{i,j}` | $x_{i,j}$ | 多字符下标 | $x_{i,j}$ |
+
+上下标同时使用
+| LaTeX 命令 | 渲染结果 | 说明 | 示例 |
+|------------|----------|------|------|
+| `x_1^2` | $x_1^2$ | 同时上下标（推荐） | $x_1^2$ |
+| `x^2_1` | $x^2_1$ | 同时上下标（先上标） | $x^2_1$ |
+| `x_{i}^{(n)}` | $x_{i}^{(n)}$ | 复杂上下标组合 | $x_{i}^{(n)}$ |
+
 
 ### 复杂上下标
 

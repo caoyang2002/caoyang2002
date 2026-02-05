@@ -29,24 +29,54 @@ description = "本文整理了稚晖君公开分享的软硬件开发工作流�
 
 ## 电路设计
 
-1、`AltiumDesigner(AD)`：用于绘制电路板
-2、`eagle`：开源硬件界电路设计，偏简单，可以转化文件格式
-3、`fritzing`：面包板电路示意图绘制等，文章配图)  
-4、`allegro`、`pads`：大公司会用的软件(显卡、主板)
+### 1. AltiumDesigner(AD)
+用于绘制电路板
+
+### 2. eagle 
+开源硬件界电路设计，偏简单，可以转化文件格式
+
+### 3. fritzing
+面包板电路示意图绘制等，文章配图)  
+
+### 4. allegro
+大公司会用的软件
+
+### 5. pads
+大公司会用的软件(显卡、主板)
 
 > 个人补充：绘制简单电路示意图图也可以可以选择网页版TinkerCAD，画电路板这几年有风向kiCAD，也可以试试。
 
 
 ## 3D 设计
 
-1、`Rhinocores`：俗称 犀牛
-2、`Fusion360`：良心软件，建议学习
-3、`Cinema4D`：电商常用 3D 软件
-4、`solidworks`：机械相关专业必备
-5、`UG`
-6、`proE`
+### 1. Rhinocores (犀牛)
+一款专注于复杂曲面和自由造型的专业3D建模软件。
+
+### 2. Fusion360
+一款将设计、工程、电子和制造功能统一到一个基于云端的协作平台上的软件。它融合了CAD（计算机辅助设计）、CAM（计算机辅助制造）、CAE（计算机辅助工程）和PCB（印制电路板）设计，旨在支持产品从概念到制造的全流程开发。
+
+### 3. Cinema4 电商常用 3D 软件
+
+### 4. solidworks 机械相关专业必备
+一款面向机械工程与产品制造的主流三维计算机辅助设计（CAD）软件，
+
+### 5. UG
+一款在高端制造领域应用广泛的集成化产品工程软件
+
+## 6. proE
+机械产品设计、模具开发、加工制
+
+当前状态：ProE已停止独立更新，其所有功能与技术已融入Creo系列。Creo不仅完全继承了ProE的参数化核心优势，还增强了易用性、互操作性和对新兴技术的支持。因此，如果你是新学者或企业规划新软件选型，Creo是明确的现代选择。但在制造业，尤其是涉及大量历史图纸和成熟流程的企业，ProE（特别是野火5.0版本）依然在生产线上稳定运行。
+
+| 特性 | ProE (WildFire) | Creo (现代版本) |
+| :--- | :--- | :--- |
+| **技术定位** | 经典、成熟 | 现代、持续发展 |
+| **学习资源** | 大量经典中文教程、社区资源 | 官方新教程为主，资源逐渐迁移 |
+| **适用场景** | **维护历史项目**、遵循特定老流程 | **全新项目**、追求更高效率与集成 |
+| **交互体验** | 菜单逻辑相对传统 | 界面更现代化，操作更直观 |
 
 ## 渲染
+
 1. `KeyShot`
 
 ## 矢量图编辑
@@ -66,61 +96,75 @@ description = "本文整理了稚晖君公开分享的软硬件开发工作流�
 
 ## 软件开发
 
-1、`VisualStudio`(C++、openCV)：宇宙第一IDE ：
-2、`ardroidStudio`：开发安卓APP
-3、`jetbrain` 全家桶：JAVA 开发
-4、`PyCharm`：人生苦短  我用 python
-5、`rider`：c# 开发
-6、`clion`：C、C++
+1. `VisualStudio`(C++、openCV)：宇宙第一IDE ：
+2. `ardroidStudio`：开发安卓APP
+3. `jetbrain` 全家桶：JAVA 开发
+4. `PyCharm`：人生苦短  我用 python
+5. `rider`：c# 开发
+6. `clion`：C、C++
 
 ## 硬件开发
 
-1、`keil`、`cubeMX`(51单片机、STM32等)
-2、`arduino IDE`(开源硬件扛把子) 
-3、`KendrytelIDE`(开发K210)
+1. `keil`、`cubeMX`(51单片机、STM32等)
+2. `arduino IDE`(开源硬件扛把子) 
+3. `KendrytelIDE`(开发K210)
 
 ## 软件交互
 
 一个画画的编程语言：
 
-`processing`
+1. `processing`
 
 ## 数学仿真
 
-`Matlab`
+1. `Matlab`
 
 # 小工具类
 
-linux服务器：`XShell`、`XFtp`
+linux服务器：
+1. `XShell`
+2. `XFtp`
+
 串口、网络调试助手
 
-`cmake`：跨平台安装编译工具
+1. `cmake`：跨平台安装编译工具
 
-`GitGUI`：代码版本控制
+2. `GitGUI`：代码版本控制
 
-`coolformat`：代码批量格式化工具
+3. `coolformat`：代码批量格式化工具
 
-`ida`：反编译
+4. `ida`：反编译
 
-`WireShark`：网络协议分析
+5. `WireShark`：网络协议分析
 
-`SerialChart`：串口绘图
+6. `SerialChart`：串口绘图
 
-`Netron`：图形化查看神经网络
+7. `Netron`：图形化查看神经网络
 
-`beyonCompare`：代码修改对比
+8. `beyonCompare`：代码修改对比
 
 # 工具
 
 书桌：TB搜 转角桌
+
 键盘：iQunix X86
+
 鼠标：罗技Anywhere 2S
+
 台灯：宜家长臂台灯
+
 电烙铁：白光T12
+
 热风枪：金卡思 858
+
 数控电源：10MHz数控电源
+
 万用表：优利德 UT120C卡片式万用表
+
 示波器：DS203袖珍示波器
+
 3D打印机：Tevo 3D打印机
+
 路由器：小米路由器4 Pro
+
 其余很多：自己造的
