@@ -6,7 +6,7 @@ author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
-cover = "https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/production-drawing.avif)](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/production-drawing.avif"
+cover = "https://www.sogaworks.cn/image/editor/2023/09/459916788040261.png"
 +++
 
 [查看原文](https://cn.windows.day/?p=115726)

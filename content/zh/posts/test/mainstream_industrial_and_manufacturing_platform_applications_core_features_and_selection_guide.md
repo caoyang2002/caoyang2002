@@ -6,6 +6,7 @@ author = "simons"
 categories = ["制造业", "数字化", "供应链"]
 tags = ["工业互联网", "非标制造", "MRO采购", "供应链平台", "智能制造"]
 description = "本文深度解析速加网、怡合达、震坤行等20余个主流工业与制造平台的核心定位、应用场景与特点，为工程师、采购及管理者提供精准的选型与决策参考。"
+cover = "https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/production-drawing.avif)](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/production-drawing.avif"
 +++
 
 ## 一、非标零部件制造平台
