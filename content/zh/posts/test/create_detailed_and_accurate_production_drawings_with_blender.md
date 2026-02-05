@@ -30,37 +30,41 @@ cover = "https://cn.windows.day/common-images/using-blender-create-detailed-accu
 | MeasureIt | 进行精确测量和标注 | 1. 测量长度：点对点、物体间距、到原点的距离等。<br>2. 标注尺寸：将测量值以尺寸线形式显示在3D视图或渲染图上。<br>3. 添加标签和注释。<br>4. 其高级分支 **MeasureIt_ARCH** 则能创建更专业的建筑或机械图纸，并支持导出为SVG或DXF格式。 |
 
 ## 步骤 1：安装 Blender 插件
-
-### MeasureIt
-![img](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-add-measureit.avif)
+![安装插件](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-add-measureit.avif)
 
 Blender 有一个方便的内置插件库，使第一步非常简单。
 
+### MeasureIt
+
 前往 **编辑** > **首选项** > **插件**，然后搜索 **MeasureIt**。你应该会看到同名的插件出现，然后可以点击左上角的复选框来激活它。
 
-![安装blender插件](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-install-techdraw.avif)
+![安装 MeasureIt 插件](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-install-techdraw.avif)
 
 ### TechDraw
 
-在安装之前，您需要从 GitHub 下载 **TechDraw** 插件。完成后，返回 Blender 的 **插件** 菜单，并在窗口顶部选择 **安装**。然后，选择随插件提供的 zip 文件并打开它以进行安装。安装完成后，您会在菜单中看到该插件，但需要在左上角勾选复选框以启用它。
+在安装之前，您需要从 GitHub 下载 [**TechDraw**](https://github.com/Laurent26/techdraw) 插件。
+
+完成后，返回 Blender 的 **插件** 菜单，并在窗口顶部选择 **安装**。然后，选择随插件提供的 zip 文件并打开它以进行安装。安装完成后，您会在菜单中看到该插件，但需要在左上角勾选复选框以启用它。
 
 ## 步骤 2：导入/打开您的 3D 文件
 
-[img](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/importing-an-stl-in-blender.avif)
+![导入](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/importing-an-stl-in-blender.avif)
 
 安装完插件后，是时候在 Blender 中打开您的 3D 模型文件了。打开文件的方式取决于您可以访问的文件类型。BLEND 文件可以通过进入 **文件** > **打开** 然后选择您想要操作的文件来打开。其他文件类型可以通过进入 **文件** > **导入** > **以…导入**（选择您的文件类型），然后从打开的窗口中选择文件来导入。
 
-![img](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-change-dimensions.avif)
+![导入模型](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-change-dimensions.avif)
 
 在继续之前，您需要检查您的尺寸。您可以通过转到屏幕右侧的**场景属性**菜单来查找并更改您正在使用的单位；我们为项目选择了毫米。通过转到屏幕右侧的**项目**选项卡并在列表底部更改尺寸来修改模型的尺寸。
 
 ## 步骤 3：添加背景/摄像头
 
-![img](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-add-sheet.avif)
+安装 TechDraw 后，它会在屏幕右侧添加一个选项卡。
 
-安装 TechDraw 后，它会在屏幕右侧添加一个选项卡。要添加背景，请选择 **TechDraw** 选项卡，并展开 **布局设置** 部分，以查看可用的 **图纸** 选项。我们选择了横向的 A4 格式，但你应该选择与正在处理的对象尺寸相匹配的纸张大小。在点击 **添加图纸** 后，可能需要编辑图纸的尺寸。
+![选项卡](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-add-sheet.avif)
 
-![img](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-camera-added.avif)
+要添加背景，请选择 **TechDraw** 选项卡，并展开 **布局设置** 部分，以查看可用的 **图纸** 选项。我们选择了横向的 A4 格式，但你应该选择与正在处理的对象尺寸相匹配的纸张大小。在点击 **添加图纸** 后，可能需要编辑图纸的尺寸。
+
+![添加图纸](https://cn.windows.day/common-images/using-blender-create-detailed-accurate-production-drawings/blender-camera-added.avif)
 
 在场景中你还需要一台相机来生成高质量的技术图纸渲染，而这是 TechDraw 可以为你完成的。在 **布局设置** 菜单的相机部分，为你的相机添加一个所属集合，然后点击 **添加相机**。
 
