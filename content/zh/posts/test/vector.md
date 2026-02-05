@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+description = "向量"
 +++
 
 在高中的时候我们学过向量，课本中是这样描述的：向量是有大小、有方向的量。当两个向量的长度和方向相同时，我们可以说这两个向量相等。
