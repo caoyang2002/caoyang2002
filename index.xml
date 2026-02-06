@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 06 Feb 2026 15:01:05 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>短松江月</title><link>https://simons.qzz.io/</link><description>Recent content on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 06 Feb 2026 17:08:26 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/index.xml" rel="self" type="application/rss+xml"/><item><title>关于</title><link>https://simons.qzz.io/about-dd/</link><pubDate>Thu, 21 Mar 2024 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/about-dd/</guid><description>&lt;h1 id="关于我"&gt;关于我&lt;/h1&gt;
 &lt;p&gt; 
 &lt;figure class="my-8 text-center"&gt;
  &lt;img
@@ -409,7 +409,7 @@
 &lt;/ul&gt;
 &lt;h2 id="二环境搭建与基本操作"&gt;二、环境搭建与基本操作&lt;/h2&gt;
 &lt;h3 id="安装julia"&gt;安装Julia&lt;/h3&gt;
-&lt;p&gt;从Julia官网下载对应版本，或使用包管理器安装：&lt;/p&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;从Julia官网下载对应版本，或使用包管理器安装：&lt;/p&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_open-sources/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_open-sources/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;
 
 
@@ -538,21 +538,12 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-最初发表于 2016 年 6 月，现已更新，提供了一些您可能希望考虑的其他选项。&lt;/p&gt;</description></item><item><title>最小二乘法</title><link>https://simons.qzz.io/post/2026/02/least_squares_method/</link><pubDate>Thu, 05 Feb 2026 23:09:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/least_squares_method/</guid><description>&lt;p&gt;我来帮你详细解读这份关于**最小二乘法（Least Squares）**的教材内容。这是机器学习/统计学习中最基础、最重要的方法之一。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id="一本章核心内容概述"&gt;一、本章核心内容概述&lt;/h2&gt;
-&lt;p&gt;本章讲的是&lt;strong&gt;回归分析&lt;/strong&gt;中最基础的方法——&lt;strong&gt;最小二乘法（Least Squares, LS）&lt;/strong&gt;。&lt;/p&gt;
-&lt;h3 id="11-问题设定"&gt;1.1 问题设定&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;输入&lt;/strong&gt;：d维实数向量 $x$（自变量/特征）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;输出&lt;/strong&gt;：实数值 $y$（因变量/目标值）&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;目标&lt;/strong&gt;：学习一个函数 $f_\theta(x)$ 来逼近真实的未知函数 $f$&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;数据&lt;/strong&gt;：训练样本 $\{(x_i, y_i)\}_{i=1}^n$，但 $y_i$ 包含噪声（观测误差）&lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-&lt;h2 id="二最小二乘学习法31节"&gt;二、最小二乘学习法（3.1节）&lt;/h2&gt;
-&lt;h3 id="21-核心思想"&gt;2.1 核心思想&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;最小化平方误差&lt;/strong&gt;：找到参数 $\theta$，使得模型预测值与真实值之间的&lt;strong&gt;平方误差之和最小&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>朴素贝叶斯</title><link>https://simons.qzz.io/post/2026/02/naive_bayes/</link><pubDate>Thu, 05 Feb 2026 23:01:16 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/naive_bayes/</guid><description>&lt;h2 id="一朴素贝叶斯是什么"&gt;一、朴素贝叶斯是什么？&lt;/h2&gt;
+最初发表于 2016 年 6 月，现已更新，提供了一些您可能希望考虑的其他选项。&lt;/p&gt;</description></item><item><title>最小二乘法</title><link>https://simons.qzz.io/post/2026/02/least_squares_method/</link><pubDate>Thu, 05 Feb 2026 23:09:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/least_squares_method/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;十年没碰数学了，重新捡起来时发现很多基础都模糊了。机器学习离不开数学，这篇算是给自己补课，尽量写得让普通人也能看懂。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id="一开篇我们要解决什么问题"&gt;一、开篇：我们要解决什么问题？&lt;/h1&gt;
+&lt;p&gt;想象你是一个健身房的教练，每天都有会员来问：&amp;ldquo;教练，我体脂率多少？&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;你手里有一把体脂秤，但这玩意儿不便宜，也不是每个会员都愿意测。但你发现一个规律：&lt;strong&gt;体脂率好像和身高、体重、年龄、性别有关系&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>朴素贝叶斯</title><link>https://simons.qzz.io/post/2026/02/naive_bayes/</link><pubDate>Thu, 05 Feb 2026 23:01:16 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/naive_bayes/</guid><description>&lt;h2 id="一朴素贝叶斯是什么"&gt;一、朴素贝叶斯是什么？&lt;/h2&gt;
 &lt;h3 id="一句话理解"&gt;一句话理解&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;朴素贝叶斯 = 贝叶斯定理 + &amp;ldquo;朴素&amp;quot;假设&lt;/strong&gt;&lt;/p&gt;
@@ -2212,14 +2203,14 @@
 
 
 
-&lt;div id="echarts-1770361303827395272" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
+&lt;div id="echarts-1770368945005187821" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
  window.addEventListener("load", function() {
  
- var chartDom = document.getElementById('echarts-1770361303827395272');
+ var chartDom = document.getElementById('echarts-1770368945005187821');
  if (!chartDom) {
- console.error('ECharts 容器不存在:', 'echarts-1770361303827395272');
+ console.error('ECharts 容器不存在:', 'echarts-1770368945005187821');
  return;
  }
 
@@ -5763,7 +5754,7 @@ if __name__ == &amp;#34;__main__&amp;#34;:
  }
 
  const password = input.value;
- const publishDate = "606350206";
+ const publishDate = "606570206";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
@@ -44756,6 +44747,8 @@ int main(){
  
  { text: '企业转型', size: 1 , weight: 1 },
  
+ { text: '优化算法', size: 1 , weight: 1 },
+ 
  { text: '传感器与接口', size: 1 , weight: 1 },
  
  { text: '传播力', size: 1 , weight: 1 },
@@ -44989,6 +44982,8 @@ int main(){
  { text: '原点期', size: 2 , weight: 2 },
  
  { text: '去重算法', size: 1 , weight: 1 },
+ 
+ { text: '参数估计', size: 1 , weight: 1 },
  
  { text: '反内卷', size: 1 , weight: 1 },
  
@@ -45602,6 +45597,8 @@ int main(){
  
  { text: '数学', size: 1 , weight: 1 },
  
+ { text: '数学建模', size: 1 , weight: 1 },
+ 
  { text: '数据分析', size: 3 , weight: 3 },
  
  { text: '数据压缩', size: 1 , weight: 1 },
@@ -45658,11 +45655,13 @@ int main(){
  
  { text: '智谱ai', size: 1 , weight: 1 },
  
- { text: '暂无', size: 44 , weight: 44 },
+ { text: '暂无', size: 43 , weight: 43 },
  
  { text: '最佳实践', size: 7 , weight: 7 },
  
  { text: '最大公约数', size: 1 , weight: 1 },
+ 
+ { text: '最小二乘法', size: 1 , weight: 1 },
  
  { text: '最小公倍数', size: 1 , weight: 1 },
  
@@ -46004,6 +46003,8 @@ int main(){
  
  { text: '系统调用', size: 2 , weight: 2 },
  
+ { text: '线性回归', size: 1 , weight: 1 },
+ 
  { text: '组件化', size: 2 , weight: 2 },
  
  { text: '终端优化', size: 1 , weight: 1 },
@@ -46023,6 +46024,8 @@ int main(){
  { text: '结构体', size: 1 , weight: 1 },
  
  { text: '结构化数据', size: 1 , weight: 1 },
+ 
+ { text: '统计学习', size: 1 , weight: 1 },
  
  { text: '缓存机制', size: 1 , weight: 1 },
  

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件开发与编程技术专题 on 短松江月</title><link>https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/</link><description>Recent content in 软件开发与编程技术专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 10:21:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件开发与编程技术专题 on 短松江月</title><link>https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/</link><description>Recent content in 软件开发与编程技术专题 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 06 Feb 2026 17:08:26 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/series/%E8%BD%AF%E4%BB%B6%E5%BC%80%E5%8F%91%E4%B8%8E%E7%BC%96%E7%A8%8B%E6%8A%80%E6%9C%AF%E4%B8%93%E9%A2%98/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo 主题创建方法及简单说明</title><link>https://simons.qzz.io/post/2025/01/create_hugo_theme/</link><pubDate>Fri, 03 Jan 2025 11:11:07 +0800</pubDate><guid>https://simons.qzz.io/post/2025/01/create_hugo_theme/</guid><description>&lt;h1 id="参考"&gt;参考：&lt;/h1&gt;
 &lt;p&gt;
 
 
@@ -127,7 +127,20 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>软件开发与编程技术</title><link>https://simons.qzz.io/posts/programming/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/posts/programming/</guid><description/></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>软件开发与编程技术</title><link>https://simons.qzz.io/posts/programming/</link><pubDate>Thu, 15 Jan 2026 00:00:00 +0000</pubDate><guid>https://simons.qzz.io/posts/programming/</guid><description/></item><item><title>Julia 基础</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;h1 id="julia基础入门高性能科学计算语言"&gt;Julia基础入门：高性能科学计算语言&lt;/h1&gt;
+&lt;h2 id="一julia语言简介"&gt;一、Julia语言简介&lt;/h2&gt;
+&lt;p&gt;Julia是一种新兴的高性能动态编程语言，专为科学计算、数值分析和数据科学而设计。它结合了Python的易用性、C的性能和Matlab的数学表达能力。&lt;/p&gt;
+&lt;h3 id="julia的主要特点"&gt;Julia的主要特点：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;高性能&lt;/strong&gt;：接近C语言的运行速度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态类型&lt;/strong&gt;：交互式使用方便&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多重派发&lt;/strong&gt;：强大的面向对象编程范式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富的数学语法&lt;/strong&gt;：适合数学和科学计算&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开源免费&lt;/strong&gt;：活跃的社区生态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二环境搭建与基本操作"&gt;二、环境搭建与基本操作&lt;/h2&gt;
+&lt;h3 id="安装julia"&gt;安装Julia&lt;/h3&gt;
+&lt;p&gt;从Julia官网下载对应版本，或使用包管理器安装：&lt;/p&gt;</description></item><item><title>Git 同步推送到外网和内网的方案</title><link>https://simons.qzz.io/post/2026/01/git_push_sync/</link><pubDate>Wed, 28 Jan 2026 21:26:35 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/git_push_sync/</guid><description>&lt;p&gt;这是一个 &lt;strong&gt;Git 别名定义&lt;/strong&gt;，它创建了一个名为 &lt;code&gt;sync&lt;/code&gt; 的自定义 Git 命令。让我详细解释每个部分：&lt;/p&gt;
 &lt;h1 id="基本使用"&gt;基本使用&lt;/h1&gt;
 
 
