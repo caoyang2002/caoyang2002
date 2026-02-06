@@ -114,7 +114,311 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>主流工业与制造平台的应用场景、核心特点与选择指南</title><link>https://simons.qzz.io/post/2026/02/mainstream_industrial_and_manufacturing_platform_applications_core_features_and_selection_guide/</link><pubDate>Thu, 05 Feb 2026 17:03:12 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/mainstream_industrial_and_manufacturing_platform_applications_core_features_and_selection_guide/</guid><description>&lt;h2 id="一非标零部件制造平台"&gt;一、非标零部件制造平台&lt;/h2&gt;
+&lt;/p&gt;</description></item><item><title>Julia_basic</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-jl" data-lang="jl"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+&lt;div&gt;
+ &lt;pre&gt;&lt;code class="language-julia" data-lang="julia"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://open-source.com.cn/alternatives/matlab" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 本文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+最初发表于 2016 年 6 月，现已更新，提供了一些您可能希望考虑的其他选项。&lt;/p&gt;</description></item><item><title>最小二乘法</title><link>https://simons.qzz.io/post/2026/02/least_squares_method/</link><pubDate>Thu, 05 Feb 2026 23:09:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/least_squares_method/</guid><description>&lt;p&gt;我来帮你详细解读这份关于**最小二乘法（Least Squares）**的教材内容。这是机器学习/统计学习中最基础、最重要的方法之一。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="一本章核心内容概述"&gt;一、本章核心内容概述&lt;/h2&gt;
+&lt;p&gt;本章讲的是&lt;strong&gt;回归分析&lt;/strong&gt;中最基础的方法——&lt;strong&gt;最小二乘法（Least Squares, LS）&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id="11-问题设定"&gt;1.1 问题设定&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;输入&lt;/strong&gt;：d维实数向量 $x$（自变量/特征）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;输出&lt;/strong&gt;：实数值 $y$（因变量/目标值）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;目标&lt;/strong&gt;：学习一个函数 $f_\theta(x)$ 来逼近真实的未知函数 $f$&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;数据&lt;/strong&gt;：训练样本 $\{(x_i, y_i)\}_{i=1}^n$，但 $y_i$ 包含噪声（观测误差）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id="二最小二乘学习法31节"&gt;二、最小二乘学习法（3.1节）&lt;/h2&gt;
+&lt;h3 id="21-核心思想"&gt;2.1 核心思想&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;最小化平方误差&lt;/strong&gt;：找到参数 $\theta$，使得模型预测值与真实值之间的&lt;strong&gt;平方误差之和最小&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>朴素贝叶斯</title><link>https://simons.qzz.io/post/2026/02/naive_bayes/</link><pubDate>Thu, 05 Feb 2026 23:01:16 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/naive_bayes/</guid><description>&lt;h2 id="一朴素贝叶斯是什么"&gt;一、朴素贝叶斯是什么？&lt;/h2&gt;
+&lt;h3 id="一句话理解"&gt;一句话理解&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;朴素贝叶斯 = 贝叶斯定理 + &amp;ldquo;朴素&amp;quot;假设&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;它用来解决这样一个问题：&lt;strong&gt;已知一些特征，判断这个东西属于哪个类别&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id="生活例子"&gt;生活例子&lt;/h3&gt;
+&lt;p&gt;假设你是水果店老板，顾客拿来一个水果，你根据&lt;strong&gt;颜色、大小、形状&lt;/strong&gt;判断它是&lt;strong&gt;苹果、香蕉还是橘子&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;朴素贝叶斯就是教电脑做这种判断的数学方法。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="二核心思想倒推概率"&gt;二、核心思想：倒推概率&lt;/h2&gt;
+&lt;h3 id="正向-vs-倒向思维"&gt;正向 vs 倒向思维&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;正向思维&lt;/th&gt;
+ &lt;th&gt;倒向思维（贝叶斯）&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;已知是苹果，它有多大概率是红色？&lt;/td&gt;
+ &lt;td&gt;已知是红色，它有多大概率是苹果？&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;朴素贝叶斯做的就是倒向思维&lt;/strong&gt;：看到证据（特征），反推原因（类别）。&lt;/p&gt;</description></item><item><title>统计概率</title><link>https://simons.qzz.io/post/2026/02/statistical_probability/</link><pubDate>Thu, 05 Feb 2026 22:55:26 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/statistical_probability/</guid><description>&lt;h2 id="一统计概率到底是研究什么的"&gt;一、统计概率到底是研究什么的？&lt;/h2&gt;
+&lt;h3 id="用一句话说"&gt;用一句话说&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;统计概率就是研究&amp;quot;不确定性&amp;quot;的学问&lt;/strong&gt;——当我们无法100%确定某件事时，如何用数字来描述它发生的可能性，以及如何从数据中发现规律。&lt;/p&gt;
+&lt;h3 id="两个亲兄弟统计-vs-概率"&gt;两个亲兄弟：统计 vs 概率&lt;/h3&gt;
+&lt;table&gt;
+ &lt;thead&gt;
+ &lt;tr&gt;
+ &lt;th&gt;兄弟&lt;/th&gt;
+ &lt;th&gt;通俗解释&lt;/th&gt;
+ &lt;th&gt;生活例子&lt;/th&gt;
+ &lt;/tr&gt;
+ &lt;/thead&gt;
+ &lt;tbody&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;概率&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;用理论预测未来&lt;/td&gt;
+ &lt;td&gt;&amp;ldquo;掷骰子出现6点的可能性有多大？&amp;rdquo;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;tr&gt;
+ &lt;td&gt;&lt;strong&gt;统计&lt;/strong&gt;&lt;/td&gt;
+ &lt;td&gt;用数据总结过去&lt;/td&gt;
+ &lt;td&gt;&amp;ldquo;我掷了100次骰子，6点出现了多少次？&amp;rdquo;&lt;/td&gt;
+ &lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;strong&gt;关键区别&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>主流工业与制造平台的应用场景、核心特点与选择指南</title><link>https://simons.qzz.io/post/2026/02/mainstream_industrial_and_manufacturing_platform_applications_core_features_and_selection_guide/</link><pubDate>Thu, 05 Feb 2026 17:03:12 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/mainstream_industrial_and_manufacturing_platform_applications_core_features_and_selection_guide/</guid><description>&lt;h2 id="一非标零部件制造平台"&gt;一、非标零部件制造平台&lt;/h2&gt;
 &lt;p&gt;此类平台主要解决小批量、多品种、定制化的金属/非金属零件采购难题，是产品研发与快速验证的关键。&lt;/p&gt;
 &lt;table&gt;
  &lt;thead&gt;
@@ -1723,14 +2027,14 @@
 
 
 
-&lt;div id="echarts-1770302344679829893" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
+&lt;div id="echarts-1770356850531243183" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
  window.addEventListener("load", function() {
  
- var chartDom = document.getElementById('echarts-1770302344679829893');
+ var chartDom = document.getElementById('echarts-1770356850531243183');
  if (!chartDom) {
- console.error('ECharts 容器不存在:', 'echarts-1770302344679829893');
+ console.error('ECharts 容器不存在:', 'echarts-1770356850531243183');
  return;
  }
 
@@ -3212,7 +3516,7 @@
  }
 
  const password = input.value;
- const publishDate = "505560205";
+ const publishDate = "606220206";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
