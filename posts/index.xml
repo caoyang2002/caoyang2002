@@ -114,117 +114,20 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>Julia_basic</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-jl" data-lang="jl"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-julia" data-lang="julia"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
+&lt;/p&gt;</description></item><item><title>Julia 基础</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;h1 id="julia基础入门高性能科学计算语言"&gt;Julia基础入门：高性能科学计算语言&lt;/h1&gt;
+&lt;h2 id="一julia语言简介"&gt;一、Julia语言简介&lt;/h2&gt;
+&lt;p&gt;Julia是一种新兴的高性能动态编程语言，专为科学计算、数值分析和数据科学而设计。它结合了Python的易用性、C的性能和Matlab的数学表达能力。&lt;/p&gt;
+&lt;h3 id="julia的主要特点"&gt;Julia的主要特点：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;高性能&lt;/strong&gt;：接近C语言的运行速度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态类型&lt;/strong&gt;：交互式使用方便&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多重派发&lt;/strong&gt;：强大的面向对象编程范式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富的数学语法&lt;/strong&gt;：适合数学和科学计算&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开源免费&lt;/strong&gt;：活跃的社区生态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二环境搭建与基本操作"&gt;二、环境搭建与基本操作&lt;/h2&gt;
+&lt;h3 id="安装julia"&gt;安装Julia&lt;/h3&gt;
+&lt;p&gt;从Julia官网下载对应版本，或使用包管理器安装：&lt;/p&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;
 
 
@@ -2027,14 +1930,14 @@
 
 
 
-&lt;div id="echarts-1770356867302473155" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
+&lt;div id="echarts-1770361303827395272" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
  window.addEventListener("load", function() {
  
- var chartDom = document.getElementById('echarts-1770356867302473155');
+ var chartDom = document.getElementById('echarts-1770361303827395272');
  if (!chartDom) {
- console.error('ECharts 容器不存在:', 'echarts-1770356867302473155');
+ console.error('ECharts 容器不存在:', 'echarts-1770361303827395272');
  return;
  }
 
@@ -3516,7 +3419,7 @@
  }
 
  const password = input.value;
- const publishDate = "606390206";
+ const publishDate = "606350206";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 

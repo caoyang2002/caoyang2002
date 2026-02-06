@@ -135,14 +135,14 @@
 
 
 
-&lt;div id="echarts-1770356867302473155" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
+&lt;div id="echarts-1770361303827395272" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
  window.addEventListener("load", function() {
  
- var chartDom = document.getElementById('echarts-1770356867302473155');
+ var chartDom = document.getElementById('echarts-1770361303827395272');
  if (!chartDom) {
- console.error('ECharts 容器不存在:', 'echarts-1770356867302473155');
+ console.error('ECharts 容器不存在:', 'echarts-1770361303827395272');
  return;
  }
 

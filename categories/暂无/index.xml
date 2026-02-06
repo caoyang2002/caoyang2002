@@ -1,114 +1,17 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 06 Feb 2026 13:47:07 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>Julia_basic</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-jl" data-lang="jl"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
- 
-
-
-
-
-
-&lt;div&gt;
- &lt;pre&gt;&lt;code class="language-julia" data-lang="julia"&gt;1 &amp;#43; 2&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>暂无 on 短松江月</title><link>https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/</link><description>Recent content in 暂无 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 06 Feb 2026 15:01:05 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E6%9A%82%E6%97%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>Julia 基础</title><link>https://simons.qzz.io/post/2026/02/julia_basic/</link><pubDate>Fri, 06 Feb 2026 11:56:54 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/julia_basic/</guid><description>&lt;h1 id="julia基础入门高性能科学计算语言"&gt;Julia基础入门：高性能科学计算语言&lt;/h1&gt;
+&lt;h2 id="一julia语言简介"&gt;一、Julia语言简介&lt;/h2&gt;
+&lt;p&gt;Julia是一种新兴的高性能动态编程语言，专为科学计算、数值分析和数据科学而设计。它结合了Python的易用性、C的性能和Matlab的数学表达能力。&lt;/p&gt;
+&lt;h3 id="julia的主要特点"&gt;Julia的主要特点：&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;高性能&lt;/strong&gt;：接近C语言的运行速度&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;动态类型&lt;/strong&gt;：交互式使用方便&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;多重派发&lt;/strong&gt;：强大的面向对象编程范式&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;丰富的数学语法&lt;/strong&gt;：适合数学和科学计算&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;开源免费&lt;/strong&gt;：活跃的社区生态&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="二环境搭建与基本操作"&gt;二、环境搭建与基本操作&lt;/h2&gt;
+&lt;h3 id="安装julia"&gt;安装Julia&lt;/h3&gt;
+&lt;p&gt;从Julia官网下载对应版本，或使用包管理器安装：&lt;/p&gt;</description></item><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_a/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_a/</guid><description>&lt;blockquote&gt;
 &lt;p&gt;
 
 
