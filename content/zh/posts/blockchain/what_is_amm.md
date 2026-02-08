@@ -111,7 +111,7 @@ cover = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5oC3RN8LWdValJ1
 
 请注意，Uniswap 的 $$x \times y=k$$只是当今 AMM 使用的数学公式之一。例如，[Balancer](https://coindesk.com/business/2021/02/02/one-big-pool-balancers-new-version-cuts-down-transactions-and-gas-fees/) 使用一种更复杂的数学关系形式，允许用户将多达 8 种数字资产组合在一个流动性池中。另一方面，[Curve](https://coindesk.com/tech/2021/06/09/defis-curve-eyes-more-tokens-with-white-paper-for-version-2/) 采用适合配对[稳定币](https://coindesk.com/markets/2020/12/29/what-is-a-stablecoin/)或类似资产的数学公式。
 
-**请注意，虽然 $x \times y = k$ 是标准公式，但不同的 AMM 具有不同的版本来证明池运行状况的合理性。** 例如，余额遵循 $k = (余额 1 / 权重 1) \times (余额 2 / 权重 2)...... \times (余额 n / 权重 n)$ 的加权方法
+**请注意，虽然 $x \times y = k$ 是标准公式，但不同的 AMM 具有不同的版本来证明池运行状况的合理性。** 例如，余额遵循 $k = (余额 1 / 权重 1) \times (余额 2 / 权重 2)...... \times (余额 n / 权重 n)$ 的加权方法
 
 [curve](https://beincrypto.com/learn/curve-crv/)遵循 $D = A \times S + S^N / N^N$ 作为首选公式，其中 D 是常数，S 是所有储备金的总和，A 是用于放大的特殊系数，N 是池特定资产的数量。
 
