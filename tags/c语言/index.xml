@@ -8,7 +8,6 @@
 
 
 
-
  
 
 
@@ -122,8 +121,7 @@
  
 &lt;/div&gt;
 
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;非多组输入&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -438,8 +436,10 @@ int main() {
 &lt;ol&gt;
 &lt;li&gt;《剑指offer》&lt;/li&gt;
 &lt;/ol&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
@@ -448,8 +448,7 @@ int main() {
 &lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;举例：&lt;/p&gt;
 &lt;ul&gt;
@@ -460,10 +459,7 @@ int main() {
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
@@ -491,10 +487,11 @@ int main() {
 &lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间复杂度过大&lt;/p&gt;
-&lt;/blockquote&gt;
 
+
+
+&lt;blockquote&gt;&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
 
@@ -645,8 +642,10 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
 
 
 

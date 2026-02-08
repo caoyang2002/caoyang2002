@@ -160,8 +160,7 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>留言</title><link>https://simons.qzz.io/es/guestbook/</link><pubDate>Mon, 20 Jan 2025 16:13:41 +0800</pubDate><guid>https://simons.qzz.io/es/guestbook/</guid><description>&lt;h1 id="heading"&gt;🖊️&lt;/h1&gt;</description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://simons.qzz.io/es/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>留言</title><link>https://simons.qzz.io/es/guestbook/</link><pubDate>Mon, 20 Jan 2025 16:13:41 +0800</pubDate><guid>https://simons.qzz.io/es/guestbook/</guid><description>&lt;h1 id="heading"&gt;🖊️&lt;/h1&gt;</description></item><item><title>作为独立开发者，你真的需要设计师吗？</title><link>https://simons.qzz.io/es/post/2025/01/do_you_really_need_a_designer/</link><pubDate>Mon, 20 Jan 2025 01:09:21 +0800</pubDate><guid>https://simons.qzz.io/es/post/2025/01/do_you_really_need_a_designer/</guid><description>&lt;blockquote&gt;&lt;p&gt;有时候独立开发者想做一个产品，总觉得缺个 UI/UX 设计师，但囊中羞涩，想了想自己八字挺硬，于是做起了设计。&lt;/p&gt;
 &lt;p&gt;但是，你为什么觉得自己需要一个设计师？&lt;/p&gt;
 &lt;p&gt;我认为这是作为一个独立项目开发者需要想明白的问题。&lt;/p&gt;
 &lt;p&gt;有时候，甚至是大多数时候你都不需要设计师。&lt;/p&gt;
@@ -5558,8 +5557,10 @@ func TestAll(t *testing.T) {
 &lt;p&gt;遵循这些规则可以使代码：&lt;/p&gt;</description></item><item><title>营销</title><link>https://simons.qzz.io/es/post/2024/12/decision_paralysis/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/12/decision_paralysis/</guid><description>&lt;h1 id="决策瘫痪"&gt;决策瘫痪&lt;/h1&gt;
 &lt;p&gt;同行的朋友都觉得这样的菜单隐隐让自己很不舒服，不知道该选什么。但他们都让老板推荐了几个菜之后开始吃起来，忘记了刚刚“不舒服”的选择过程。而我却无法容忍这种模糊的感觉，希望探究一下背后的道理。然后想着想着，突然想到了很久之前看过的一个心理学实验：&lt;/p&gt;
 &lt;p&gt;研究人员随机找了 2 组消费者，在两组面前都呈现了一系列昂贵的果酱，并且给他们提供试吃机会和优惠券。不同的是A组消费者面前摆着 6 款不同的果酱，B 组消费者面前摆着 24 种不同的果酱。&lt;/p&gt;</description></item><item><title>资源</title><link>https://simons.qzz.io/es/post/2024/12/resource/</link><pubDate>Sun, 29 Dec 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/12/resource/</guid><description>&lt;h1 id="如何找资源"&gt;如何找资源&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;下载
+
+
+
+&lt;blockquote&gt;&lt;p&gt;下载
 
 
 
@@ -6819,7 +6820,6 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
-
  
 
 
@@ -6933,8 +6933,7 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
  
 &lt;/div&gt;
 
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;非多组输入&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -7869,19 +7868,19 @@ CREATE TABLE userinfo(
 &lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>什么是 SimHash</title><link>https://simons.qzz.io/es/post/2024/04/simhash/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/simhash/</guid><description>&lt;h1 id="一什么是simhash"&gt;一、什么是SimHash&lt;/h1&gt;
 &lt;p&gt;SimHash算法是Google在2007年发表的论文《Detecting Near-Duplicates for Web Crawling》中提到的一种指纹生成算法，被应用在Google搜索引擎网页去重的工作之中。&lt;/p&gt;
 &lt;p&gt;对于文本去重这个问题，常见的解决办法有余弦算法、欧式距离、Jaccard相似度、最长公共子串等方法。但是这些方法并不能对海量数据高效的处理。
-比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/es/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;前端配置：TypeScript、React
+比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/es/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;前端配置：TypeScript、React
 依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;任意选一个就行&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+&lt;/blockquote&gt;&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
 
 
 
@@ -7996,11 +7995,12 @@ CREATE TABLE userinfo(
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;可能需要先安装
+
+
+
+&lt;blockquote&gt;&lt;p&gt;可能需要先安装
 &lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-
 
 
 
@@ -8236,15 +8236,14 @@ Done. Now run:
  
 &lt;/div&gt;
 
-&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>报税记账</title><link>https://simons.qzz.io/es/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/compent/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="报税网址"&gt;报税网址&lt;/h1&gt;
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>报税记账</title><link>https://simons.qzz.io/es/post/2024/04/compent/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/04/compent/</guid><description>&lt;blockquote&gt;&lt;p&gt;以下是我回忆的, 所以没有截图教程&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="报税网址"&gt;报税网址&lt;/h1&gt;
 &lt;h2 id="四川省电子税务局"&gt;四川省电子税务局&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;这个主要是企业报税用的&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;
 
 
 
@@ -8649,8 +8648,7 @@ Done. Now run:
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/es/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/es/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 
@@ -9042,8 +9040,7 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;p&gt;twitter：caoyang2002&lt;/p&gt;
 &lt;p&gt;即刻：simons simons&lt;/p&gt;
 &lt;p&gt;小红书：simons simons&lt;/p&gt;
-&lt;p&gt;抖音：simons simons&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/es/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+&lt;p&gt;抖音：simons simons&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/es/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 
@@ -9645,8 +9642,10 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/es/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;V = (-1)^s^ * M * 2^E^&lt;/li&gt;
@@ -9655,8 +9654,7 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;li&gt;2^E^：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;举例：&lt;/p&gt;
 &lt;ul&gt;
@@ -9695,10 +9693,11 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言数学</title><link>https://simons.qzz.io/es/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间复杂度过大&lt;/p&gt;
-&lt;/blockquote&gt;
 
+
+
+&lt;blockquote&gt;&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
 
@@ -9849,8 +9848,10 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/es/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/es/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/es/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
 
 
 

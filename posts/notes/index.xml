@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔 on 短松江月</title><link>https://simons.qzz.io/posts/notes/</link><description>Recent content in 随笔 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_open-sources/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_open-sources/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>随笔 on 短松江月</title><link>https://simons.qzz.io/posts/notes/</link><description>Recent content in 随笔 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/notes/index.xml" rel="self" type="application/rss+xml"/><item><title>5 个 MATLAB 开源替代方案</title><link>https://simons.qzz.io/post/2026/02/matlab_open-sources/</link><pubDate>Fri, 06 Feb 2026 11:44:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/matlab_open-sources/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 
@@ -1461,10 +1460,8 @@
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>LaTeX 数学公式完整指南</title><link>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</link><pubDate>Wed, 04 Feb 2026 22:10:12 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;注意，本站使用 Hugo 构建，在页面上大多数外部工具库都不可用，进而无法渲染出对应的公式。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;参考链接：&lt;/strong&gt;&lt;/p&gt;
+&lt;/p&gt;</description></item><item><title>LaTeX 数学公式完整指南</title><link>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</link><pubDate>Wed, 04 Feb 2026 22:10:12 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/latex_mathematical_formula_complete_guide/</guid><description>&lt;blockquote&gt;&lt;p&gt;注意，本站使用 Hugo 构建，在页面上大多数外部工具库都不可用，进而无法渲染出对应的公式。&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;&lt;strong&gt;参考链接：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
 
@@ -1736,14 +1733,14 @@
 
 
 
-&lt;div id="echarts-1770370497744401202" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
+&lt;div id="echarts-1770528625901908455" style="width: 100%; height: 500px;"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
  window.addEventListener("load", function() {
  
- var chartDom = document.getElementById('echarts-1770370497744401202');
+ var chartDom = document.getElementById('echarts-1770528625901908455');
  if (!chartDom) {
- console.error('ECharts 容器不存在:', 'echarts-1770370497744401202');
+ console.error('ECharts 容器不存在:', 'echarts-1770528625901908455');
  return;
  }
 
@@ -3876,8 +3873,7 @@
 &lt;li&gt;&lt;strong&gt;解读行业报告：&lt;/strong&gt; 发布并解读最新行业报告，分析数据背后的趋势和洞察，为读者提供决策参考。例如：《2023年社交媒体营销趋势报告》、《Z世代消费行为洞察》等。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;预测未来趋势：&lt;/strong&gt; 结合自身经验和行业观察，预测未来社会传播和营销领域的发展趋势，例如：人工智能对营销的影响、短视频营销的未来走向等。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;二、案例分析&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
+&lt;p&gt;&lt;strong&gt;二、案例分析&lt;/strong&gt;&lt;/p&gt;</description></item><item><title>【转载】如何做一个有质量的技术分享</title><link>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</link><pubDate>Wed, 12 Feb 2025 09:28:36 +0800</pubDate><guid>https://simons.qzz.io/post/2025/02/how_to_make_a_quality_technology_sharing/</guid><description>&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;转载&lt;/strong&gt;
 文章作者：左耳朵耗子
 出处：
 

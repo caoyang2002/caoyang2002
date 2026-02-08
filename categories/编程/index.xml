@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编程 on 短松江月</title><link>https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/</link><description>Recent content in 编程 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Feb 2026 10:21:13 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml"/><item><title>Emacs 基础</title><link>https://simons.qzz.io/post/2026/01/emacs_basic/</link><pubDate>Mon, 26 Jan 2026 13:39:47 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/emacs_basic/</guid><description>&lt;p&gt;本篇介绍 GNU Emacs 的基础知识和操作。本文内容只是让读者初识 Emacs 操作，这些操作需要日积月累的练习才能掌握，本文的后半部分更偏向用于日后查阅；另一方面，很多操作有些繁琐难以记忆，笔者将会在后续介绍一些插件能够极大改善这些问题，因此读者如果遇到晦涩的地方不必过分担心，也不用死记硬背。&lt;/p&gt;
-&lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;参考：
+&lt;p&gt;文章的结尾附上了本文出现的快捷键及其命令名，供读者查阅。&lt;/p&gt;</description></item><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;&lt;p&gt;参考：
 
 
 
@@ -247,14 +246,16 @@
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
 
 
 
@@ -1941,7 +1942,6 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
 
 
 
-
  
 
 
@@ -2055,8 +2055,7 @@ pub fn move_test(name: &amp;amp;str) -&amp;gt; Result&amp;lt;(), JsValue&amp;gt;
  
 &lt;/div&gt;
 
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;非多组输入&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -2464,8 +2463,10 @@ int main() {
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
@@ -2474,8 +2475,7 @@ int main() {
 &lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;举例：&lt;/p&gt;
 &lt;ul&gt;
@@ -2486,10 +2486,7 @@ int main() {
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
@@ -2517,10 +2514,11 @@ int main() {
 &lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间复杂度过大&lt;/p&gt;
-&lt;/blockquote&gt;
 
+
+
+&lt;blockquote&gt;&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
 
@@ -2671,8 +2669,10 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C++ 命名规范</title><link>https://simons.qzz.io/post/2023/05/cpp_named/</link><pubDate>Mon, 29 May 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/05/cpp_named/</guid><description>&lt;p&gt;
 
 
 

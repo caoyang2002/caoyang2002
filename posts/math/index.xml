@@ -1,14 +1,13 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数学 on 短松江月</title><link>https://simons.qzz.io/posts/math/</link><description>Recent content in 数学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/math/index.xml" rel="self" type="application/rss+xml"/><item><title>最小二乘法</title><link>https://simons.qzz.io/post/2026/02/least_squares_method/</link><pubDate>Thu, 05 Feb 2026 23:09:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/least_squares_method/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;十年没碰数学了，重新捡起来时发现很多基础都模糊了。机器学习离不开数学，这篇算是给自己补课，尽量写得让普通人也能看懂。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="一开篇我们要解决什么问题"&gt;一、开篇：我们要解决什么问题？&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数学 on 短松江月</title><link>https://simons.qzz.io/posts/math/</link><description>Recent content in 数学 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><atom:link href="https://simons.qzz.io/posts/math/index.xml" rel="self" type="application/rss+xml"/><item><title>最小二乘法</title><link>https://simons.qzz.io/post/2026/02/least_squares_method/</link><pubDate>Thu, 05 Feb 2026 23:09:33 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/least_squares_method/</guid><description>&lt;blockquote&gt;&lt;p&gt;十年没碰数学了，重新捡起来时发现很多基础都模糊了。机器学习离不开数学，这篇算是给自己补课，尽量写得让普通人也能看懂。&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="一开篇我们要解决什么问题"&gt;一、开篇：我们要解决什么问题？&lt;/h1&gt;
 &lt;p&gt;想象你是一个健身房的教练，每天都有会员来问：&amp;ldquo;教练，我体脂率多少？&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;你手里有一把体脂秤，但这玩意儿不便宜，也不是每个会员都愿意测。但你发现一个规律：&lt;strong&gt;体脂率好像和身高、体重、年龄、性别有关系&lt;/strong&gt;。&lt;/p&gt;</description></item><item><title>朴素贝叶斯</title><link>https://simons.qzz.io/post/2026/02/naive_bayes/</link><pubDate>Thu, 05 Feb 2026 23:01:16 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/naive_bayes/</guid><description>&lt;h2 id="一朴素贝叶斯是什么"&gt;一、朴素贝叶斯是什么？&lt;/h2&gt;
 &lt;h3 id="一句话理解"&gt;一句话理解&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;朴素贝叶斯 = 贝叶斯定理 + &amp;ldquo;朴素&amp;quot;假设&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;它用来解决这样一个问题：&lt;strong&gt;已知一些特征，判断这个东西属于哪个类别&lt;/strong&gt;。&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;朴素贝叶斯 = 贝叶斯定理 + &amp;ldquo;朴素&amp;quot;假设&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;它用来解决这样一个问题：&lt;strong&gt;已知一些特征，判断这个东西属于哪个类别&lt;/strong&gt;。&lt;/p&gt;
 &lt;h3 id="生活例子"&gt;生活例子&lt;/h3&gt;
 &lt;p&gt;假设你是水果店老板，顾客拿来一个水果，你根据&lt;strong&gt;颜色、大小、形状&lt;/strong&gt;判断它是&lt;strong&gt;苹果、香蕉还是橘子&lt;/strong&gt;。&lt;/p&gt;
 &lt;p&gt;朴素贝叶斯就是教电脑做这种判断的数学方法。&lt;/p&gt;

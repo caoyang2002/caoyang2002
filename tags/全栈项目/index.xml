@@ -1,16 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>全栈项目 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE/</link><description>Recent content in 全栈项目 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;前端配置：TypeScript、React
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>全栈项目 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE/</link><description>Recent content in 全栈项目 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%85%A8%E6%A0%88%E9%A1%B9%E7%9B%AE/index.xml" rel="self" type="application/rss+xml"/><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;前端配置：TypeScript、React
 依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;任意选一个就行&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+&lt;/blockquote&gt;&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
 
 
 
@@ -125,11 +125,12 @@
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;可能需要先安装
+
+
+
+&lt;blockquote&gt;&lt;p&gt;可能需要先安装
 &lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-
 
 
 

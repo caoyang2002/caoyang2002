@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE 754 on 短松江月</title><link>https://simons.qzz.io/tags/ieee-754/</link><description>Recent content in IEEE 754 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/ieee-754/index.xml" rel="self" type="application/rss+xml"/><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
@@ -9,8 +11,7 @@
 &lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;举例：&lt;/p&gt;
 &lt;ul&gt;
@@ -21,7 +22,4 @@
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item></channel></rss>

@@ -135,10 +135,11 @@ text = &amp;#34;AAAAABBBCC&amp;#34; # 原始数据
 比如说，在搜索引擎中，会有很多相似的关键词，用户所需要获取的内容是相似的，但是搜索的关键词却是不同的，如“北京好吃的火锅“和”哪家北京的火锅好吃“，是两个可以等价的关键词，然而通过普通的hash计算，会产生两个相差甚远的hash串。而通过SimHash计算得到的Hash串会非常的相近，从而可以判断两个文本的相似程度。&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间复杂度过大&lt;/p&gt;
-&lt;/blockquote&gt;
 
+
+
+&lt;blockquote&gt;&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
 
@@ -289,5 +290,7 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item></channel></rss>
+
+
+
+&lt;blockquote&gt;&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item></channel></rss>

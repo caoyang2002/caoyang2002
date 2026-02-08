@@ -117,14 +117,16 @@
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;&lt;code&gt;Linux DS923plus 4.4.302+ #69057 SMP Mon Jul 21 23:26:13 CST 2025 x86_64 GNU/Linux synology_r1000_923+&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;&lt;p&gt;我的是 x86_64 也就是 amd64&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;这里简单说一下，&lt;code&gt;x86_64&lt;/code&gt; 和 &lt;code&gt;amd64&lt;/code&gt; 是同义词，指代由 AMD 创立、现由英特尔和 AMD 共同主导的 64 位 PC / 服务器架构。ARM 是另一个竞争架构。&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="安装-go"&gt;安装 go&lt;/h1&gt;
 
 
 

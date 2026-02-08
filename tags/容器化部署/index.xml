@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>容器化部署 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</link><description>Recent content in 容器化部署 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;参考：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>容器化部署 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</link><description>Recent content in 容器化部署 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%AE%B9%E5%99%A8%E5%8C%96%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>安装 Gitea</title><link>https://simons.qzz.io/post/2025/12/install_gitea/</link><pubDate>Sun, 28 Dec 2025 21:09:14 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_gitea/</guid><description>&lt;blockquote&gt;&lt;p&gt;参考：
 
 
 
@@ -252,5 +251,7 @@ Collected errors:
 &lt;li&gt;架构不兼容的问题&lt;/li&gt;
 &lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item></channel></rss>
+
+
+
+&lt;blockquote&gt;&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item></channel></rss>

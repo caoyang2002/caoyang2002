@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>反向代理 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link><description>Recent content in 反向代理 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;前提条件：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>反向代理 on 短松江月</title><link>https://simons.qzz.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link><description>Recent content in 反向代理 on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Thu, 29 Jan 2026 11:32:58 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;&lt;p&gt;前提条件：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
 &lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;/blockquote&gt;&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;添加&lt;/p&gt;
 
@@ -130,8 +128,7 @@
 
  &lt;figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400"&gt;http 访问&lt;/figcaption&gt;
 &lt;/figure&gt;&lt;/p&gt;
-&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+&lt;p&gt;这里默认打开的是 &lt;code&gt;http://192.168.5.151:8507&lt;/code&gt;，需要确保防火墙对 &lt;code&gt;8507&lt;/code&gt; 是放行的（我自己是关了防火墙了）。&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 

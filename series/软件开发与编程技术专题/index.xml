@@ -540,14 +540,12 @@
  fill: currentColor;
  }
 &lt;/style&gt;
- 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;前提条件：&lt;/p&gt;
+ 最重要的方面之一。你知道吗？这仍然是正确的。&lt;/p&gt;</description></item><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;&lt;p&gt;前提条件：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
 &lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;/blockquote&gt;&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;添加&lt;/p&gt;
 
@@ -7321,7 +7319,6 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
 
 
 
-
  
 
 
@@ -7435,8 +7432,7 @@ images = [&amp;#34;og-image.jpg&amp;#34;]
  
 &lt;/div&gt;
 
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;非多组输入&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -8368,19 +8364,19 @@ CREATE TABLE userinfo(
 &lt;/div&gt;
 
 &lt;p&gt;查看当前数据库创建的所有表
-&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;前端配置：TypeScript、React
+&lt;code&gt;SHOW TABLES;&lt;/code&gt;&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;前端配置：TypeScript、React
 依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;任意选一个就行&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+&lt;/blockquote&gt;&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
 
 
 
@@ -8495,11 +8491,12 @@ CREATE TABLE userinfo(
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;可能需要先安装
+
+
+
+&lt;blockquote&gt;&lt;p&gt;可能需要先安装
 &lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-
 
 
 
@@ -9015,8 +9012,7 @@ Done. Now run:
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+&lt;/p&gt;</description></item><item><title>搭建 NPS</title><link>https://simons.qzz.io/post/2024/03/docker_pns/</link><pubDate>Fri, 29 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/docker_pns/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 
@@ -9404,8 +9400,7 @@ Done. Now run:
 &lt;p&gt;现在你的路由器和小米已经没有任何关系了，恭喜你上了贼船！&lt;/p&gt;
 &lt;p&gt;基本介绍：
 OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由系统深受欢迎！
-几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+几乎所有的商业路由器品牌都是封闭的，可以操作的空间非常小，往往需要为一些小的功能，而增加几十几百甚至上千的费用。 OpenWrt很好地解决了这个问题。&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 
@@ -10007,8 +10002,10 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
  }
 &lt;/style&gt;
 &lt;/p&gt;</description></item><item><title>浮点数的存储</title><link>https://simons.qzz.io/post/2023/07/float_at_mem/</link><pubDate>Sat, 29 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/float_at_mem/</guid><description>&lt;h1 id="浮点数的存储"&gt;浮点数的存储&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;IEEE745 国际标准：&lt;/p&gt;
 &lt;p&gt;任意一个二进制的浮点数可以表示为下面的形式：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$V = (-1)^s^ * M * 2^E^$&lt;/li&gt;
@@ -10017,8 +10014,7 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;li&gt;$2^E^$：E表示指数位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;科学计数法：123.45 = 1.2345 * 10^2^&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
+&lt;/blockquote&gt;&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;举例：&lt;/p&gt;
 &lt;ul&gt;
@@ -10029,10 +10025,7 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;p&gt;二进制：101.0&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;iEEE：(-1)^0^ * 1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;科学计数法：1.01 * 2^2^&lt;/p&gt;</description></item><item><title>函数栈帧的创建和销毁</title><link>https://simons.qzz.io/post/2023/07/function_stack/</link><pubDate>Sat, 15 Jul 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/07/function_stack/</guid><description>&lt;p&gt;&lt;code&gt;C/C++&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;函数栈帧的创建和销毁&lt;/p&gt;
 &lt;p&gt;在学习最基础的C语言程序的语法与使用时，但你是否有疑问？&lt;/p&gt;
 &lt;p&gt;比如：&lt;/p&gt;
@@ -10060,10 +10053,11 @@ OpenWrt 是一个开源的路由系统，开放、自由的特性让这个路由
 &lt;p&gt;函数调用结束后是怎么返回的呢？&lt;/p&gt;</description></item><item><title>C 语言计算最大公约数</title><link>https://simons.qzz.io/post/2023/06/c_number/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_number/</guid><description>&lt;ul&gt;
 &lt;li&gt;暴力算法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;时间复杂度过大&lt;/p&gt;
-&lt;/blockquote&gt;
 
+
+
+&lt;blockquote&gt;&lt;p&gt;时间复杂度过大&lt;/p&gt;
+&lt;/blockquote&gt;
 
 
 
@@ -10214,8 +10208,10 @@ int main(){
 &lt;ul&gt;
 &lt;li&gt;辗转相除法&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;两个数的&lt;em&gt;&lt;strong&gt;最大公约数&lt;/strong&gt;&lt;/em&gt;等于其中较小的数字和二者之间余数的最大公约数&lt;/p&gt;</description></item><item><title>C 语言结构体</title><link>https://simons.qzz.io/post/2023/06/c_struct/</link><pubDate>Thu, 29 Jun 2023 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2023/06/c_struct/</guid><description>&lt;h1 id="结构体内存对齐"&gt;结构体内存对齐&lt;/h1&gt;
 
 
 

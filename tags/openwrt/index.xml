@@ -1,11 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenWRT on 短松江月</title><link>https://simons.qzz.io/tags/openwrt/</link><description>Recent content in OpenWRT on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;前提条件：&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OpenWRT on 短松江月</title><link>https://simons.qzz.io/tags/openwrt/</link><description>Recent content in OpenWRT on 短松江月</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 30 Jan 2026 01:57:46 +0800</lastBuildDate><atom:link href="https://simons.qzz.io/tags/openwrt/index.xml" rel="self" type="application/rss+xml"/><item><title>群晖安装 Vaultwarden 并配置 https</title><link>https://simons.qzz.io/post/2026/01/synology_https/</link><pubDate>Sun, 25 Jan 2026 11:33:19 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/synology_https/</guid><description>&lt;blockquote&gt;&lt;p&gt;前提条件：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;群晖 NAS（Vaultwarden + 反向代理）&lt;/li&gt;
 &lt;li&gt;OpenWrt 路由器（域名劫持）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
+&lt;/blockquote&gt;&lt;h1 id="1-在套件中心下载-vaultwarden"&gt;1. 在套件中心下载 Vaultwarden&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;套件中心&lt;/code&gt; -&amp;gt; &lt;code&gt;设置&lt;/code&gt; -&amp;gt; &lt;code&gt;套件来源&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;添加&lt;/p&gt;
 
@@ -255,8 +253,10 @@ Collected errors:
 &lt;li&gt;架构不兼容的问题&lt;/li&gt;
 &lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item><item><title>小米 4a 路由器刷机</title><link>https://simons.qzz.io/post/2024/03/xiaomi_4a/</link><pubDate>Sun, 24 Mar 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/03/xiaomi_4a/</guid><description>&lt;p&gt;
 
 
 

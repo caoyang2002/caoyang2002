@@ -19,8 +19,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考： 
+
+
+
+&lt;blockquote&gt;&lt;p&gt;参考： 
 
 
 

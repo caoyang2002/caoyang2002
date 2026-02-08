@@ -147,8 +147,10 @@
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;code&gt;M&lt;/code&gt; :单元转入markdown状态&lt;/p&gt;</description></item><item><title>安装 JupyterLab</title><link>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</link><pubDate>Sun, 28 Dec 2025 21:00:56 +0800</pubDate><guid>https://simons.qzz.io/post/2025/12/install_jupyter_lab/</guid><description>&lt;h1 id="使用-docker"&gt;使用 Docker&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;参考： 
+
+
+
+&lt;blockquote&gt;&lt;p&gt;参考： 
 
 
 
@@ -1321,19 +1323,19 @@ namespace fs = std::filesystem;
  fill: currentColor;
  }
 &lt;/style&gt;
-&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;前端配置：TypeScript、React
+&lt;/p&gt;</description></item><item><title>创建一个远程编译环境</title><link>https://simons.qzz.io/post/2024/04/a_code_env/</link><pubDate>Mon, 29 Apr 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/04/a_code_env/</guid><description>&lt;blockquote&gt;&lt;p&gt;我使用的是 Mac，所以以下都是 Mac 的说明&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h1 id="一前端tsreact"&gt;一、前端（ts、react）&lt;/h1&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;前端配置：TypeScript、React
 依赖项：axios、codemirror、react-codemirror2&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;任意选一个就行&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
+&lt;/blockquote&gt;&lt;h2 id="1-初始化模板"&gt;1. 初始化模板&lt;/h2&gt;
+
+
+
+&lt;blockquote&gt;&lt;p&gt;任意选一个就行&lt;/p&gt;
+&lt;/blockquote&gt;&lt;h3 id="11-交互式"&gt;1.1 交互式&lt;/h3&gt;
 
 
 
@@ -1448,11 +1450,12 @@ namespace fs = std::filesystem;
  
 &lt;/div&gt;
 
-&lt;blockquote&gt;
-&lt;p&gt;可能需要先安装
+
+
+
+&lt;blockquote&gt;&lt;p&gt;可能需要先安装
 &lt;code&gt;npm install vite --save-dev&lt;/code&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
-
 
 
 
@@ -1688,8 +1691,7 @@ Done. Now run:
  
 &lt;/div&gt;
 
-&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;
-&lt;p&gt;
+&lt;p&gt;或者&lt;/p&gt;</description></item><item><title>Quartz 教程</title><link>https://simons.qzz.io/post/2024/02/quartz/</link><pubDate>Thu, 29 Feb 2024 09:31:37 +0800</pubDate><guid>https://simons.qzz.io/post/2024/02/quartz/</guid><description>&lt;blockquote&gt;&lt;p&gt;
 
 
 

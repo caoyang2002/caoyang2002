@@ -123,5 +123,7 @@ Collected errors:
 &lt;li&gt;架构不兼容的问题&lt;/li&gt;
 &lt;li&gt;存在重复的 &lt;code&gt;libgcc1&lt;/code&gt; 包&lt;/li&gt;
 &lt;/ol&gt;
-&lt;blockquote&gt;
-&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item></channel></rss>
+
+
+
+&lt;blockquote&gt;&lt;p&gt;如果之前安装过 1panel 那么这个失败原因可能是因为之前安装的包没有被完全清理&lt;/p&gt;</description></item></channel></rss>
