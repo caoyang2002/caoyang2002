@@ -114,6 +114,413 @@
  fill: currentColor;
  }
 &lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>关于电脑风扇的一些知识</title><link>https://simons.qzz.io/post/2026/02/fan_basic/</link><pubDate>Mon, 16 Feb 2026 20:10:18 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/fan_basic/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://post.smzdm.com/p/a4xxlw4l/" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>FreeCAD 中的 FEM 工作台简介</title><link>https://simons.qzz.io/post/2026/02/freecad_fem/</link><pubDate>Wed, 11 Feb 2026 22:28:13 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/freecad_fem/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://www.ivnss.com/category/ivnss-techdoc.iwt#techdoc_20250708001" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
+&lt;/p&gt;</description></item><item><title>FreeCAD 基本流程</title><link>https://simons.qzz.io/post/2026/02/freecad_first/</link><pubDate>Sun, 08 Feb 2026 18:05:06 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/freecad_first/</guid><description>&lt;p&gt;新手第一次来到 FreeCAD 的时候往往-无从下手，这里就简单介绍一下使用方法。&lt;/p&gt;
+&lt;h1 id="创建文件"&gt;创建文件&lt;/h1&gt;
+&lt;p&gt;和其他的建模软件一样，新建文件后开始项目的编辑。&lt;/p&gt;
+&lt;h1 id="参数视图part-design"&gt;参数视图（Part Design）&lt;/h1&gt;
+&lt;p&gt;选择“参数视图”后，就会进入主界面。&lt;/p&gt;
+&lt;p&gt;应用程序的主窗口大致可以分为11个部分：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;主视图区域，包含以下的所有界面。可以包含不同的选项卡窗口。&lt;/li&gt;
+&lt;li&gt;界面最顶部，标准菜单。&lt;/li&gt;
+&lt;li&gt;界面顶部，工具栏区域，
+1. 文件
+2. 工作台选择器，它本身就是一个工具栏
+3. 视图
+4. 帮助&lt;/li&gt;
+&lt;li&gt;3D视图，通常嵌入主视图区域&lt;/li&gt;
+&lt;li&gt;组合视图
+1. 上部，包括树视图和任务面板
+2. 下部，包括属性编辑器
+3. 选择视图&lt;/li&gt;
+&lt;li&gt;报告视图&lt;/li&gt;
+&lt;li&gt;Python控制台&lt;/li&gt;
+&lt;li&gt;状态栏&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;以草图（Sketcher） 为例&lt;/p&gt;</description></item><item><title>FreeCAD 基本介绍</title><link>https://simons.qzz.io/post/2026/02/freecad_basic/</link><pubDate>Sun, 08 Feb 2026 17:15:05 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/freecad_basic/</guid><description>&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+&lt;a href="https://wiki.freecad.org/Manual:The_FreeCAD_Interface" target="_blank" rel="noopener noreferrer" class="external-link"&gt;
+ 查看原文&lt;span class="external-icon"&gt;&lt;svg
+ class="external-icon-svg"
+ viewBox="0 0 24 24"
+ aria-hidden="true"&gt;
+ &lt;path
+ d="M10 6v2H5v11h11v-5h2v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h6zm11-3v8h-2V6.413l-7.793 7.794-1.414-1.414L17.585 5H13V3h8z"/&gt;
+ &lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;
+
+
+&lt;style&gt;
+ 
+ .external-link, .internal-link, .mailto-link, .tel-link, .anchor-link {
+ text-decoration: underline;
+ text-decoration-thickness: 2px;
+ text-underline-offset: 3px;
+ transition: all 0.2s ease;
+ }
+
+ 
+ .external-link {
+ color: #3b82f6;
+ text-decoration-color: rgba(59, 130, 246, 0.3);
+ }
+ .external-link:hover {
+ color: #2563eb;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .internal-link {
+ color: #8b5cf6;
+ text-decoration-color: rgba(139, 92, 246, 0.3);
+ }
+ .internal-link:hover {
+ color: #7c3aed;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .mailto-link {
+ color: #10b981;
+ text-decoration-color: rgba(16, 185, 129, 0.3);
+ }
+ .mailto-link:hover {
+ color: #059669;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .tel-link {
+ color: #f59e0b;
+ text-decoration-color: rgba(245, 158, 11, 0.3);
+ }
+ .tel-link:hover {
+ color: #d97706;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .anchor-link {
+ color: #ec4899;
+ text-decoration-color: rgba(236, 72, 153, 0.3);
+ }
+ .anchor-link:hover {
+ color: #db2777;
+ text-decoration-color: currentColor;
+ }
+
+ 
+ .external-icon {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 2px;
+ opacity: 0.7;
+ transition: opacity 0.2s;
+ }
+ .external-link:hover .external-icon {
+ opacity: 1;
+ }
+ .external-icon-svg {
+ width: 0.85em;
+ height: 0.85em;
+ fill: currentColor;
+ }
+&lt;/style&gt;
 &lt;/p&gt;</description></item><item><title>向量基础</title><link>https://simons.qzz.io/post/2026/02/vector/</link><pubDate>Wed, 04 Feb 2026 21:44:49 +0800</pubDate><guid>https://simons.qzz.io/post/2026/02/vector/</guid><description>&lt;p&gt;在高中的时候我们学过向量，课本中是这样描述的：向量是有大小、有方向的量。当两个向量的长度和方向相同时，我们可以说这两个向量相等。&lt;/p&gt;</description></item><item><title>文章加密功能</title><link>https://simons.qzz.io/post/2026/01/crypto/</link><pubDate>Fri, 30 Jan 2026 15:04:05 +0800</pubDate><guid>https://simons.qzz.io/post/2026/01/crypto/</guid><description>&lt;div class="notice note"&gt;这是一个注意事项&lt;/div&gt;
 
 &lt;style&gt;
@@ -170,7 +577,7 @@
  }
 
  const password = input.value;
- const publishDate = "808180208";
+ const publishDate = "1616560216";
  const hash = await sha256(password + publishDate);
  const targetHash = await sha256( "文章加密功能" + publishDate);
 
