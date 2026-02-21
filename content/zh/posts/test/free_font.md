@@ -1,5 +1,5 @@
 +++
-title = 'Free_font'
+title = '免费字体'
 date = 2026-02-19T16:33:16+08:00
 draft = false
 author = "simons"
@@ -13,8 +13,6 @@ https://wordshub.github.io/free-font/font.html?SiYuanSongTi_Regular
 字体转换： https://formafont.com/zh
 
 前端 nodejs 使用 https://github.com/wc-ex/cn-fontsource
-
-
 
 # 几个技巧把字体文件压缩到十分之一的体积
 
