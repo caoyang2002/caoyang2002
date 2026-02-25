@@ -3,8 +3,8 @@ title = '《金瓶梅》鉴赏'
 date = 2026-02-25T07:42:07+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["金瓶梅"]
+tags = ["金瓶梅"]
 description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
