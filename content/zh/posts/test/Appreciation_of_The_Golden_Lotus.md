@@ -11,7 +11,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 [查看原文](https://zhuanlan.zhihu.com/p/687647936)
 
-[走进《金瓶梅》的艺术世界——黄霖(金瓶梅文学&人文&科研)_哔哩哔哩_bilibiliwww.bilibili.com/video/BV1Tg4y1x7qN/?vd_source=7ac24feb922f6c5050d393c4dcbb1334](https://link.zhihu.com/?target=https%3A//www.bilibili.com/video/BV1Tg4y1x7qN/%3Fvd_source%3D7ac24feb922f6c5050d393c4dcbb1334)
+<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=823735498&bvid=BV1Tg4y1x7qN&cid=1060284268&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
 ![img](https://pic2.zhimg.com/v2-28db326e48b52714cf1cb065ff6354e5_1440w.jpg)
 
