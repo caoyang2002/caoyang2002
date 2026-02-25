@@ -12,9 +12,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 
 <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=823735498&bvid=BV1Tg4y1x7qN&cid=1060284268&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
 
-![img](https://pic2.zhimg.com/v2-28db326e48b52714cf1cb065ff6354e5_1440w.jpg)
-
-《金瓶梅》人物关系简图（主要人物）
+![《金瓶梅》人物关系简图（主要人物）](https://pic2.zhimg.com/v2-28db326e48b52714cf1cb065ff6354e5_1440w.jpg)
 
 # 《金瓶梅》内容概要
 
