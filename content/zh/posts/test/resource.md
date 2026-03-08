@@ -16,6 +16,8 @@ toc = true
 - [TG机器人](https://t.me/jisou)
 - [阿里搜](https://aliso.cc/)
 
+- [产品沉思录](https://pmthinking.notion.site)
+
 
 # 一、我维护的其他站
 
