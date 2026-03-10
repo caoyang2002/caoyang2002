@@ -1,5 +1,5 @@
 +++
-title = '5f5f68c2'
+title = '魔方转动公式符号及示意图'
 date = 2026-03-03T21:31:34+08:00
 draft = false
 author = "simons"
