@@ -1,5 +1,5 @@
 +++
-title = 'Everything_must_be_paid_for_twice'
+title = '一切都必须支付两次'
 date = 2026-03-02T09:46:10+08:00
 draft = false
 author = "simons"
@@ -9,8 +9,6 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 [查看原文](https://www.raptitude.com/2022/01/everything-must-be-paid-for-twice/)
-
-# 一切都必须支付两次
 
 学校应该教的一堂理财课是：我们买的大多数东西都需要付两次钱。
 
