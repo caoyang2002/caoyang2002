@@ -1,7 +1,7 @@
 +++
 title = '发动机系统设计与仿真'
 date = 2026-02-01T11:01:18+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
