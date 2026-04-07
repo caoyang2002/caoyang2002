@@ -1,7 +1,7 @@
 +++
 title = 'ABC微型火箭技术－为初学者设计的快速制作技术'
 date = 2026-01-30T00:07:33+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["航空航天","DIY制作"]
 tags = ["火箭技术","微型火箭","初学者教程","DIY","喷气推进"]
