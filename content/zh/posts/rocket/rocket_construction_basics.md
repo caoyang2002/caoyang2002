@@ -1,7 +1,7 @@
 +++
 title = '火箭制作基础'
 date = 2026-01-29T14:24:21+08:00
-draft = false
+draft = true
 author = "simons"
 categories = ["航空航天", "DIY制作"]
 tags = ["火箭", "固体燃料", "发动机", "安全指南", "DIY教程"]
