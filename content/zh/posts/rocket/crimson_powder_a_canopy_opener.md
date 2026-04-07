@@ -1,7 +1,7 @@
 +++
 title = '绯红之粉（一种开伞剂）'
 date = 2026-01-28T19:19:34+08:00
-draft = false
+draft = true
 author = "simons"
 cover = "https://img.kechuang.org:81/r/329829?c=resource"
 categories = ["火箭"]
