@@ -1,7 +1,7 @@
 +++
 title = '高二学生自制火箭'
 date = 2026-01-28T18:50:09+08:00
-draft = false
+draft = true
 author = "simons"
 cover = "https://img.kechuang.org:81/r/344768?c=resource"
 categories = ["学生项目", "航空航天", "DIY制作"]
