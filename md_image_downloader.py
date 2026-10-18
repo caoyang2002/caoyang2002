@@ -210,7 +210,7 @@ class HugoImageProcessor:
                 return '.gif'
             elif 'webp' in content_type:
                 return '.webp'
-        except:
+        except Exception:
             pass
         
         # 默认
@@ -331,9 +331,11 @@ class HugoImageProcessor:
         
         print(f"找到 {len(images)} 个网络图片链接")
         
-        # 备份原始文件
+        # 备份原始文件（备份写入 backups/ 目录，避免被 Hugo 当作文章发布）
         if self.config['backup_original']:
-            backup_path = input_file_path.with_name(f"{input_file_path.stem}_backup{input_file_path.suffix}")
+            backup_dir = Path('backups') / 'md_images'
+            backup_dir.mkdir(parents=True, exist_ok=True)
+            backup_path = backup_dir / f"{input_file_path.stem}_backup{input_file_path.suffix}"
             with open(backup_path, 'w', encoding='utf-8') as f:
                 f.write(content)
             if self.config['verbose']:
@@ -500,7 +502,7 @@ def main():
             "naming_method": "sequential",
             "use_post_slug": True,
             "post_slug": "my-article",
-            "overwrite_existing": false,
+            "overwrite_existing": False,
             "download_timeout": 30,
             "delay_between_requests": 0.3,
             "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
@@ -513,7 +515,7 @@ def main():
             json.dump(config_template, f, indent=2, ensure_ascii=False)
         
         print(f"配置文件模板已生成: {args.init_config}")
-        print("请修改配置后使用: python md_image_downloader.py -c {args.init_config} article.md")
+        print(f"请修改配置后使用: python md_image_downloader.py -c {args.init_config} article.md")
         return
     
     # 准备配置参数

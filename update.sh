@@ -5,7 +5,7 @@ set -euo pipefail
 IFS=$'\n\t'
 
 # 版本和配置
-readonly VERSION="1.0.0"
+readonly VERSION="1.1.0"
 readonly HUGO_THEME_PATH="themes/hugo-focus"
 readonly HUGO_THEME_BRANCH="main"
 readonly HUGO_PUBLIC_DIR="public"
@@ -67,7 +67,7 @@ trap 'log "INFO" "收到中断信号，正在清理..."; cleanup; exit 1' INT TE
 # 检查系统要求
 check_requirements() {
   local missing_deps=()
-  local deps=("hugo" "vercel" "git")
+  local deps=("hugo" "git")
 
   for dep in "${deps[@]}"; do
     if ! command -v "$dep" &>/dev/null; then
@@ -85,23 +85,23 @@ check_requirements() {
 health_check() {
   log "INFO" "执行健康检查..."
 
-  # 检查配置文件
+  # 检查配置文件（必须存在且非空，空文件会遮蔽 config/ 目录）
   local config_found=false
   for config in "hugo.toml" "hugo.yaml" "hugo.json" "./config/_default/hugo.toml"; do
-    if [[ -f "$config" ]]; then
+    if [[ -s "$config" ]]; then
         config_found=true
       break
     fi
   done
 
   if ! $config_found; then
-    log "ERROR" "未找到 Hugo 配置文件"
+    log "ERROR" "未找到非空的 Hugo 配置文件"
     exit 1
   fi
 
-  # 检查主题目录
-  if [[ ! -d "$HUGO_THEME_PATH" ]]; then
-    log "ERROR" "主题目录不存在: $HUGO_THEME_PATH"
+  # 检查主题目录（submodule 需已初始化）
+  if [[ ! -f "$HUGO_THEME_PATH/theme.toml" && ! -f "$HUGO_THEME_PATH/hugo.toml" ]]; then
+    log "ERROR" "主题目录为空或不存在: $HUGO_THEME_PATH（请执行 git submodule update --init --recursive）"
     exit 1
   fi
 
@@ -118,11 +118,11 @@ health_check() {
 
 current_time=$(date +%Y-%m-%d_%H%M%S)
 
-# 备份
+# 备份（备份目录 backups/ 已被 gitignore，不会提交进仓库）
 backup() {
   local backup_dir="backups/$(date +%Y-%m-%d_%H%M%S)"
-  local -a default_dirs=("content" "static")
-  local -a config_files=("hugo.toml" "hugo.yaml" "hugo.json" "config/_default/hugo.toml")
+  local -a default_dirs=("content" "static" "config")
+  local -a config_files=("hugo.toml" "hugo.yaml" "hugo.json")
 
   log "INFO" "开始创建备份..."
 
@@ -156,7 +156,7 @@ backup() {
   done
 
   if ! $config_found; then
-    log "WARN" "未找到任何 Hugo 配置文件"
+    log "WARN" "未找到任何 Hugo 根配置文件（配置位于 config/ 目录属正常）"
   fi
 
   print_colored "$GREEN" "备份完成: $backup_dir"
@@ -198,8 +198,7 @@ cleanup() {
           done
       fi
 
-      popd > /dev/null || exit
-      if [ $? -eq 0 ]; then
+      if popd > /dev/null; then
           log "INFO" "清理成功 $dir"
       else
           log "ERROR" "清理失败 $dir"
@@ -221,19 +220,19 @@ update_theme(){
 
 # hugo 构建
 hugo_build(){
-    # Hugo 构建
+    # Hugo 构建（baseURL 使用 config/production 中的配置）
     log "INFO" "开始 Hugo 构建..."
-    if ! hugo --environment production --baseURL https://caoyang2002.vercel.app --minify; then
+    if ! hugo --environment production --minify; then
       log "ERROR" "Hugo 构建失败"
       return 1
     fi
 }
 
 git_push(){
-    # Git 操作
+    # Git 操作（.gitignore 已排除 backups/ logs/ public/ .env 等，git add -A 不会提交它们）
     log "INFO" "更新 Git 仓库..."
     git submodule update --init --recursive --remote
-    git add .
+    git add -A
     git commit -m "Deploy: $current_time" || true
     if ! git push; then
       log "ERROR" "Git 推送失败"
@@ -241,8 +240,7 @@ git_push(){
     fi
 }
 
-
-# 部署到 vervel
+# 构建并推送到 Git（站点由 GitHub Actions 自动部署到 GitHub Pages）
 deploy() {
   local deploy_time
   deploy_time=$(date +%Y-%m-%d_%H%M%S)
@@ -258,15 +256,14 @@ deploy() {
   log "INFO" "清理缓存..."
   rm -rf "$HUGO_PUBLIC_DIR" "$HUGO_RESOURCE_DIR" .hugo_build.lock
 
-  # Vercel 部署
-  log "INFO" "开始 Vercel 部署..."
-  if ! vercel --prod --archive=tgz; then
-    log "ERROR" "Vercel 部署失败"
-    return 1
-  fi
+  # 本地验证构建
+  hugo_build
+
+  # 推送内容，GitHub Actions 会自动部署
+  git_push
 
   cleanup
-  print_colored "$GREEN" "部署完成!"
+  print_colored "$GREEN" "部署完成! (推送到 main 分支后由 GitHub Actions 发布)"
   log "INFO" "部署成功完成"
 }
 
@@ -287,13 +284,14 @@ Hugo 站点部署脚本 v${VERSION}
 选项:
     -h, --help     显示帮助信息
     -d, --dev      启动开发服务器
+    -g, --git      仅提交并推送 Git（由 CI 完成部署）
     -b, --backup   仅创建备份
     -c, --clean    清理旧的备份和日志
     -v, --version  显示版本信息
     -t, --test     运行测试检查
 
 示例:
-    $(basename "$0")          # 部署到生产环境
+    $(basename "$0")          # 备份、构建验证并推送（CI 自动部署）
     $(basename "$0") --dev    # 启动开发服务器
     $(basename "$0") --backup # 创建备份
 EOF

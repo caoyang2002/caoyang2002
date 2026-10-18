@@ -46,6 +46,12 @@ find_prime_ge() {
         fi
     done
 
+    # 目标超出素数表范围时返回表中最大的素数
+    if [[ $left -ge ${#PRIME_CACHE[@]} ]]; then
+        echo "${PRIME_CACHE[-1]}"
+        return
+    fi
+
     echo "${PRIME_CACHE[left]}"
 }
 
@@ -74,18 +80,17 @@ generate_password() {
     fi
 
     local date_num=$((10#$month * 100 + 10#$day))
-    local modified_num=$((date_num & 9999))
 
     # 初始化素数缓存
     initialize_prime_cache
 
     # 高效查找目标素数
-    local target_prime=$(find_prime_ge $modified_num)
+    local target_prime=$(find_prime_ge $date_num)
 
     local publish_date=$((year * 10000 + 10#$month * 100 + 10#$day))
 
-    # 生成4位数密码
-    local password=$(((target_prime * publish_date) % 10000 + 1000))
+    # 生成4位数密码（% 9000 保证结果始终为 1000-9999）
+    local password=$(((target_prime * publish_date) % 9000 + 1000))
 
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] Generating password:"
     echo "  Target Prime: $target_prime"
@@ -107,11 +112,9 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     main "$@"
 fi
 
-# 脚本生成的密码是确定性的，基于输入的日期（2024年1月25日）。具体生成过程：
+# 脚本生成的密码是确定性的，基于输入的日期（示例：2024年1月25日）。具体生成过程：
 # 1. 月日数字：01 * 100 + 25 = 125
-# 2. 最小目标素数：13
-# 3. 密码计算：(13 * 20240125) % 10000 + 1000 = 2625
-# 密码算法保证：
-# - 总是生成4位数
-# - 对同一日期密码恒定
-# - 依赖素数和日期的乘积
+# 2. 最小目标素数：127
+# 3. 密码计算：(127 * 20240125) % 9000 + 1000（运行脚本查看结果）
+# 注意：密码完全由日期决定（4 位数字空间），仅适合低安全需求的访问屏障，
+# 不能用于保护真实敏感数据。

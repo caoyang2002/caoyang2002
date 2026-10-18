@@ -1,27 +1,16 @@
 #!/bin/bash
 
+set -euo pipefail
+
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 NC='\033[0m'
 
-
-
 create_post() {
-   local filename=${1:-$(date +%s | sha256sum | head -c 8)}
-   hugo new "posts/test/${filename}.md"
+   local filename=${1:-$(date +%s | shasum -a 256 | head -c 8)}
+   hugo new "content/zh/posts/tech/${filename}.md"
    printf "\n"
 }
 
-get_taxonomies() {
-   printf "${GREEN}Categories:${NC}\n"
-   find public/categories -type d -maxdepth 1 -mindepth 1 -exec basename {} \; | sort | column
-
-   printf "\n${RED}Tags:${NC}\n"
-   find public/tags -type d -maxdepth 1 -mindepth 1 -exec basename {} \; | sort | column
-}
-
 echo "创建"
-create_post "$1"
-
-# echo "分类"
-# get_taxonomies
+create_post "${1:-}"

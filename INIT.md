@@ -1,18 +1,26 @@
 # 初始化
 
 ```bash
-git submodule init
-git submodule update --recursive
+git submodule update --init --recursive
 ```
 
 # 启动
 ```bash
+./RUN.sh
+# 或
 hugo server -D
 ```
 
 # 部署
 
+推送到 main 分支后由 GitHub Actions 自动构建并部署到 GitHub Pages：
+
 ```bash
-hugo --environment production --baseURL https://caoyang2002.vercel.app --minify
-vercel --prod
+git push origin main
+```
+
+也可使用一键脚本（备份 + 构建验证 + 提交推送）：
+
+```bash
+./update.sh
 ```
