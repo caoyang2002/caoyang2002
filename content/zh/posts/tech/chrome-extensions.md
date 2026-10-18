@@ -1,5 +1,5 @@
 +++
-title = 'Chrome Extensions'
+title = 'Chrome 插件'
 date = 2026-03-27T13:46:03+08:00
 draft = false
 author = "simons"
@@ -9,7 +9,7 @@ description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 ```bash
-chrome://version/  查看chrome 资料存放地址
+chrome://version/  查看 chrome 资料存放地址
 ```
 
 主要查看：

@@ -77,6 +77,14 @@ svg = '''<svg viewBox="0 0 100 100" fill="currentColor">
   <line x1="30" y1="50" x2="80" y2="50" stroke="currentColor" stroke-width="1.5"/>
   <line x1="30" y1="70" x2="60" y2="70" stroke="currentColor" stroke-width="1.5"/>
 </svg>'''
+cover = "/images/project-1.png"          # 详情头图
+url = "https://github.com/xxx/yyy"       # 项目地址
+intro = "项目整体介绍，2~3 段……"           # 项目介绍
+[projects.star]                         
+situation = "背景 / 面临的问题"
+task = "我的任务 / 目标"
+action = "我做了什么（可多段）"
+result = "结果 / 数据 / 收获"
 
 [[projects]]
 name = "电商小程序"
@@ -90,6 +98,14 @@ svg = '''<svg viewBox="0 0 100 100" fill="currentColor">
   <circle cx="65" cy="30" r="2" fill="currentColor"/>
   <rect x="30" y="45" width="40" height="35" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
 </svg>'''
+cover = "/images/project-1.png"          # 详情头图
+url = "https://github.com/xxx/yyy"       # 项目地址
+intro = "项目整体介绍，2~3 段……"           # 项目介绍
+[projects.star]                         
+situation = "背景 / 面临的问题"
+task = "我的任务 / 目标"
+action = "我做了什么（可多段）"
+result = "结果 / 数据 / 收获"
 
 [[projects]]
 name = "数据可视化平台"
@@ -100,6 +116,14 @@ svg = '''<svg viewBox="0 0 100 100" fill="currentColor">
   <polyline points="20,70 30,50 40,60 50,30 60,45 70,20 80,35" stroke="currentColor" stroke-width="2" fill="none"/>
   <line x1="20" y1="80" x2="80" y2="80" stroke="currentColor" stroke-width="1.5"/>
 </svg>'''
+cover = "/images/project-1.png"          # 详情头图
+url = "https://github.com/xxx/yyy"       # 项目地址
+intro = "项目整体介绍，2~3 段……"           # 项目介绍
+[projects.star]                         
+situation = "背景 / 面临的问题"
+task = "我的任务 / 目标"
+action = "我做了什么（可多段）"
+result = "结果 / 数据 / 收获"
 
 [[projects]]
 name = "个人博客系统"
@@ -112,6 +136,14 @@ svg = '''<svg viewBox="0 0 100 100" fill="currentColor">
   <line x1="25" y1="50" x2="60" y2="50" stroke="currentColor" stroke-width="1.5"/>
   <line x1="25" y1="60" x2="70" y2="60" stroke="currentColor" stroke-width="1.5"/>
 </svg>'''
+cover = "/images/project-1.png"          # 详情头图
+url = "https://github.com/xxx/yyy"       # 项目地址
+intro = "项目整体介绍，2~3 段……"           # 项目介绍
+[projects.star]                         
+situation = "背景 / 面临的问题"
+task = "我的任务 / 目标"
+action = "我做了什么（可多段）"
+result = "结果 / 数据 / 收获"
 
 # 联系信息
 [[contacts]]
