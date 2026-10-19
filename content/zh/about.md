@@ -15,10 +15,9 @@ expected_salary = "面议"                    # 期望薪资（可选）
 birth = "2002.01"                           # 出生年月（可选）
 gender = "男"                               # 性别（可选）
 website = "https://simons.qzz.io"             # 个人网站/博客（mock）
-
-motto = "难事必作于易，天下大事必作于细。"
-address = "浙江省｜义乌市"
-avatar = "/about/avatar.jpg"
+motto = "难事必作于易，天下大事必作于细。" # 签名
+address = "浙江省｜义乌市" # 居住地址
+avatar = "/about/avatar.jpg" # 头像
 
 # ======================================================================== 自我评价
 [[self_eval]]
