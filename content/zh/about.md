@@ -1,84 +1,34 @@
 +++
-title = "Simons"
+title = "简介及作品集"
 layout = "about"
 date = 2026-01-30T10:00:00+08:00
 draft = false
 
 # ======================================================================== 个人简介
-name = "明明如月"                              # 真实姓名（mock）
+name = "明明如月"                               # 真实姓名（mock）
 nickname = "Simons"
-job_intent = "插话艺术家"               # 求职意向
-bio = "在每一个不该插话的时候，插每一句不该插的话。"
-job_status = "在职，一个月内可到岗"         # 求职状态
-expected_city = "成都 / 远程"               # 期望城市
+job_intent = "插话艺术家"                       # 求职意向
+bio = "在每一个不该插话的时候，插每一句不该插的话。"  
+job_status = "在职"               # 求职状态
+expected_city = "义乌 / 远程"                   # 期望城市
 expected_salary = "面议"                    # 期望薪资（可选）
-birth = "2001.03"                           # 出生年月（可选）
+birth = "2002.01"                           # 出生年月（可选）
 gender = "男"                               # 性别（可选）
-website = "https://example.com"             # 个人网站/博客（mock）
+website = "https://simons.qzz.io"             # 个人网站/博客（mock）
 
 motto = "难事必作于易，天下大事必作于细。"
-address = "四川省成都市"
+address = "浙江省｜义乌市"
 avatar = "/about/avatar.jpg"
 
 # ======================================================================== 自我评价
-[[summary]]
-text = "3 年前端开发经验，熟练 Vue3/React 技术栈，主导过单页应用性能优化，首屏加载提升 40%。"
+[[self_eval]]
+text = "3 年全栈开发经验，熟练 React/ 技术栈，主导过单页应用性能优化，首屏加载提升 40%。"
 
-[[summary]]
+[[self_eval]]
 text = "具备 UI/UX 设计意识，能与设计团队高效协作，注重细节与用户体验。"
 
-[[summary]]
+[[self_eval]]
 text = "熟悉前端工程化与 CI/CD，有组件库封装与团队效率提升经验。"
-
-# # ======================================================================== 教育经历
-[[education]]
-school = "示例大学"
-major = "计算机科学与技术"
-degree = "本科"
-period = "2019.09 - 2023.06"
-rank = "专业前 10%"  
-details = [
-    "主修课程：数据结构、算法设计、计算机网络、数据库原理、Web 开发",
-    "GPA 3.6/4.0，连续两年获校级奖学金",
-    "毕业设计：基于 Vue3 的可视化数据分析平台，获校级优秀毕业论文"
-]
- 
-
-[[education]]
-school = "示例交换学院（交换）"
-major = "软件工程"
-degree = "交换生"
-period = "2021.09 - 2022.01"
-rank = "专业前 10%"   
-details = [
-    "参与国际交换项目，学习人机交互与前端工程化课程",
-    "与团队合作完成移动端应用开发，获课程项目一等奖"
-]
-
-# # ======================================================================== 荣誉
-[[awards]]
-name = "校级一等奖学金"
-period = "2021 - 2022"
-
-[[awards]]
-name = "校级优秀毕业论文"
-period = "2023.06"
-
-[[awards]]
-name = "课程项目一等奖（移动端应用开发）"
-period = "2022.01"
-
-
-# # ======================================================================== 证书
-[[certificates]]
-name = "CET-6"
-score = "560"
-date = "2021.12"
-
-[[certificates]]
-name = "CET-4"
-score = "580"
-date = "2020.12"
 
 # # ======================================================================== 技能列表（icon为font-awesome4图标，可自行替换）
 [[skills]]
@@ -86,7 +36,7 @@ name = "前端开发"
 icon = "fa-code"
 description = "构建高性能、响应式的现代网页，兼顾体验与性能"
 tags = ["HTML/CSS", "JavaScript", "Vue", "React", "TailwindCSS"]
-level = 9
+level = 7
 
 [[skills]]
 name = "UI/UX 设计"
@@ -107,18 +57,57 @@ name = "工具与效率"
 icon = "fa-cogs"
 description = "熟练使用开发工具，提升工作效率，保障开发质量"
 tags = ["Git", "Docker", "CI/CD", "VS Code", "性能优化"]
-level = 1
+level = 5
 
-# ======================================================================== 经历/项目列表
+[[skills]]
+name = "平面设计"
+icon = "fa-picture-o"
+description = "具备视觉设计能力，能独立完成海报、品牌物料等平面设计工作"
+tags = ["Photoshop", "Illustrator", "版式设计", "品牌视觉", "色彩构成"]
+level = 6
+
+[[skills]]
+name = "版式设计"
+icon = "fa-align-left"
+description = "掌握栅格与排版原则，兼顾信息层级与阅读体验"
+tags = ["栅格系统", "字体排印", "信息层级", "视觉节奏"]
+level = 6
+
+[[skills]]
+name = "平面摄影"
+icon = "fa-camera"
+description = "熟悉摄影构图与布光，能完成产品与场景拍摄及后期"
+tags = ["构图", "布光", "Lightroom", "后期修图", "产品摄影"]
+level = 5
+
+[[skills]]
+name = "影视制作"
+icon = "fa-film"
+description = "掌握视频拍摄与剪辑流程，能独立完成短片制作"
+tags = ["达芬奇", "After Effects", "剪辑", "调色", "分镜"]
+level = 7
+
+[[skills]]
+name = "导演"
+icon = "fa-video-camera"
+description = "具备视听语言与叙事意识，能统筹拍摄现场与内容表达"
+tags = ["分镜脚本", "场面调度", "叙事结构", "团队协作"]
+level = 4
+
+# ======================================================================== 项目经历
 [[experiences]]
-title = "前端开发工程师"
-company = "示例科技有限公司"
-period = "2023.01 - 至今"
+title = "部署解决方案"
+company = "T**基金会"
+period = "2024.07 - 2024.08"
 details = [
-    "负责公司核心产品前端开发与维护，基于Vue3+Vite构建单页应用",
-    "优化页面加载性能，首屏加载速度提升40%，用户留存率提升15%",
-    "参与UI组件库封装，沉淀通用组件20+，提升团队开发效率30%",
-    "与产品、设计团队协作，完成多个版本的需求迭代与上线"
+    "解决基金会官网部署问题，优化桌面端和移动端适配"
+]
+[[experiences]]
+title = "前端解决方案"
+company = "吾乡（南塘DAO）"
+period = "2025.04 - 2025.05"
+details = [
+    "负责吾乡成都及雅安区域的乡村地图项目建设和部署"
 ]
 
 [[experiences]]
@@ -140,7 +129,7 @@ details = [
     "部署至GitHub Pages，配置自动化构建，实现提交代码自动更新"
 ]
 
-# # ======================================================================== 作品列表（视错觉空间展示）
+# ======================================================================== 作品列表
 [[projects]]
 name = "企业官网重构"
 desc = "基于React+Tailwind构建，响应式设计，首屏加载优化60%"
@@ -230,28 +219,78 @@ name = "技术博客"
 desc = "前端工程化与性能优化实践文章"
 url = "https://example.com/blog"
 
+# # ======================================================================== 教育经历
+[[education]]
+school = "成都大学"
+major = "艺术设计"
+degree = "专科"
+period = "2019.09 - 2023.06"
+rank = "专业前 30%"  
+details = [
+    "主修课程：平面设计、平面构成",
+    "GPA 3.6/4.0，连续两年获校级奖学金",
+    "毕业设计：“七巷子葛根酥”品牌广告设计"
+]
+ 
+
+[[education]]
+school = "示例交换学院（交换）"
+major = "软件工程"
+degree = "交换生"
+period = "2021.09 - 2022.01"
+rank = "专业前 10%"   
+details = [
+    "参与国际交换项目，学习人机交互与前端工程化课程",
+    "与团队合作完成移动端应用开发，获课程项目一等奖"
+]
+
+# ======================================================================== 荣誉
+[[awards]]
+name = "校级一等奖学金"
+period = "2021 - 2022"
+
+[[awards]]
+name = "校级优秀毕业论文"
+period = "2023.06"
+
+[[awards]]
+name = "课程项目一等奖（移动端应用开发）"
+period = "2022.01"
+
+
+# ======================================================================== 证书
+[[certificates]]
+name = "2022 未来设计师大赛"
+score = "全国二等奖"
+date = "2022.12"
+
+[[certificates]]
+name = "四川好创意大赛"
+score = "四川省三等奖"
+date = "2023.6"
+
 # ======================================================================== 联系信息
 [[contacts]]
 name = "邮箱"
 icon = "fa-envelope"
-value = "mock@example.com"
-url = "mailto:mock@example.com"
+value = "reggiesimons2cy@gmail.com"
+url = "mailto:reggiesimons2cy@gmail.com"
 
 [[contacts]]
 name = "GitHub"
 icon = "fa-github"
-value = "mock-user"
-url = "https://example.com/github"
+value = "caoyang2002"
+url = "https://github.com/caoyang2002"
 
 [[contacts]]
 name = "微信"
 icon = "fa-weixin"
-value = "mock_wechat"
+value = "simons1768"
 qr = "/images/contact/WeChatQR.JPG"
 
 [[contacts]]
 name = "电话"
 icon = "fa-phone"
-value = "138-0000-0000"
-url = "tel:13800000000"
+value = "176-2835-6759"
+url = "tel:17628356759"
 +++
