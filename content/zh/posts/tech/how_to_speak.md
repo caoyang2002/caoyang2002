@@ -1,7 +1,7 @@
 +++
 title = '公开演讲的窍门'
 date = 2026-10-19T14:25:43+08:00
-draft = true
+draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
