@@ -1,37 +1,26 @@
-name: Deploy
-# build on https://dash.cloudflare.com/
+name: Build Check
+
 on:
   push:
     branches:
       - main
 
-permissions:
-  contents: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: A job to deploy blog.
+    name: Build Hugo site to verify it compiles.
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
           submodules: recursive
-          fetch-depth: 0    # 获取所有历史记录和标签（enableGitInfo 需要）
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "0.168.0"
-          extended: true    # 主题需要 Hugo Extended 版本
+          extended: true
 
       - name: Build
-        run: hugo --minify
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./public
-          commit_message: ${{ github.event.head_commit.message }}
-          allow_empty_commit: true
+        run: hugo --configDir config --environment production --minify
