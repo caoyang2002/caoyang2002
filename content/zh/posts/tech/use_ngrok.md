@@ -289,11 +289,8 @@ ngrok 免费版有一个安全机制：**首次用浏览器访问公网地址时
 
 如果你是用代码/Postman 调用接口，可以在请求头里加：
 
-```sql
-sql
-
-代码解读
-复制代码ngrok-skip-browser-warning: true
+```bash
+ngrok-skip-browser-warning: true
 ```
 
 加了这个头就不会返回确认页了，直接返回你的接口数据。
@@ -308,11 +305,8 @@ ngrok 因为有"网络穿透"行为，经常被 Windows Defender（Windows 自�
 
 启动 ngrok 时报错：
 
-```arduino
-arduino
-
-代码解读
-复制代码程序"ngrok.exe"无法运行：无法成功完成操作，因为文件包含病毒或潜在的垃圾软件。
+```bash
+"ngrok.exe"无法运行：无法成功完成操作，因为文件包含病毒或潜在的垃圾软件。
 ```
 
 或者 Windows 安全中心弹出"发现威胁"的提示。
@@ -338,11 +332,8 @@ arduino
 
 如果还报错，可以再排除 ngrok 的配置目录：
 
-```makefile
-makefile
-
-代码解读
-复制代码C:\Users\你的用户名\AppData\Local\ngrok
+```bash
+C:\Users\你的用户名\AppData\Local\ngrok
 ```
 
 添加完排除项后，重新启动 ngrok 就正常了。
