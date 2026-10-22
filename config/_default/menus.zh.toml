@@ -1,98 +1,137 @@
-# 导航菜单配置 - 优化版
+# ===== 一级主按钮（6 个，只展开子项，不跳转）=====
+
 [[main]]
 name = '首页'
 pageRef = '/'
 weight = 1
+identifier = 'home'
 icon = 'home'
 
 [[main]]
-name = '文章随笔'
-pageRef = '/posts/'
+name = '文化'
+pageRef = '/culture/'
 weight = 2
-icon = 'pen'
+identifier = 'culture'
 
 [[main]]
-name = '技术资源'
+name = '技术'
 pageRef = '/resources/'
 weight = 3
-icon = 'download'
+identifier = 'tech'
 
 [[main]]
-name = '航天航空'
-pageRef = '/aerospace/'
+name = '视觉'
+# pageRef = '/creative/'
 weight = 4
-icon = 'rocket'
+identifier = 'creative'
 
 [[main]]
-name = '软件工程'
-pageRef = '/software/'
+name = '关于'
+# pageRef = '/about/'
 weight = 5
-icon = 'code'
+identifier = 'about'
 
 [[main]]
-name = '硬件嵌入式'
-pageRef = '/hardware/'
+name = '搜索'
+pageRef = '/search/'
 weight = 6
-icon = 'chip'
+identifier = 'search'
+icon = 'search'
 
-[[main]]
-name = '视觉创意'
-pageRef = '/creative/'
-weight = 7
-icon = 'palette'
+# ===== 子选项（与主按钮名不同名）=====
 
-[[main]]
-name = '广告营销'
-pageRef = '/marketing/'
-weight = 8
-icon = 'megaphone'  # 📢 更符合营销
+# [[main]]
+# name = '网站首页'
+# pageRef = '/'
+# parent = 'home'
+# weight = 1
+#
+# [[main]]
+# name = '文章随笔'
+# pageRef = '/posts/'
+# parent = 'home'
+# weight = 2
 
 [[main]]
 name = '传统文化'
 pageRef = '/culture/'
-weight = 9
-icon = 'book-open'
-
+parent = 'culture'
+weight = 1
 
 [[main]]
-name = '关于我'
+name = '航天航空'
+pageRef = '/aerospace/'
+parent = 'tech'
+weight = 2
+
+[[main]]
+name = '软件工程'
+pageRef = '/software/'
+parent = 'tech'
+weight = 3
+
+[[main]]
+name = '硬件嵌入式'
+pageRef = '/hardware/'
+parent = 'tech'
+weight = 4
+
+[[main]]
+name = '视觉创意'
+pageRef = '/creative/'
+parent = 'creative'
+weight = 1
+
+[[main]]
+name = '广告营销'
+pageRef = '/marketing/'
+parent = 'creative'
+weight = 2
+
+[[main]]
+name = '作品集'
+pageRef = '/protfolio/'
+parent = 'creative'
+weight = 3
+
+[[main]]
+name = '关于本站'
 pageRef = '/about/'
-weight = 10
-icon = 'user'
+parent = 'about'
+weight = 1
+
+[[main]]
+name = '联系我'
+pageRef = '/contact/'
+parent = 'about'
+weight = 2
+
+[[main]]
+name = '留言板'
+pageRef = '/guestbook/'
+parent = 'about'
+weight = 3
+
+[[main]]
+name = '书单推荐'
+pageRef = '/booklist/'
+parent = 'about'
+weight = 2
+
+[[main]]
+name = '热搜榜单'
+pageRef = '/hotlist/'
+parent = 'about'
+weight = 3
+
+[[main]]
+name = '资源下载'
+pageRef = '/resources/'
+parent = 'about'
+weight = 1
 
 [[main]]
 name = '站内搜索'
 pageRef = '/search/'
-weight = 11
-icon = 'search'
-
-
-# [[main]]
-# name = "作品集"
-# pageRef = "/protfolio/"
-# weight = 12
-
-# [[main]]
-# name = "联系"
-# pageRef = "/contact/"
-# weight = 30
-
-# [[main]]
-# name = "留言"
-# pageRef = "/guestbook/"
-# weight = 40
-
-# [[main]]
-# name = '资源'
-# pageRef = '/resources/'
-# weight = 41
-
-# [[main]]
-# name = '书单'
-# pageRef = '/booklist/'
-# weight = 42
-
-# [[main]]
-# name = '热搜'
-# pageRef = '/hotlist/'
-# weight = 43
+parent = 'search'
+weight = 1
