@@ -95,13 +95,13 @@ parent = 'creative'
 weight = 3
 
 [[main]]
-name = '关于本站'
+name = '关于我'
 pageRef = '/about/'
 parent = 'about'
 weight = 1
 
 [[main]]
-name = '联系我'
+name = '联系'
 pageRef = '/contact/'
 parent = 'about'
 weight = 2

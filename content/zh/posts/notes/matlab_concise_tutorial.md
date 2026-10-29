@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://www.wikihow.com/images/3/3f/Make-3D-Plots-Using-MATLAB-Step-10.jpg"
 +++
 

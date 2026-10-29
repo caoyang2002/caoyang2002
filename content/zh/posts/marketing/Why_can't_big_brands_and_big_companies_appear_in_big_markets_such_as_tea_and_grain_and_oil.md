@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["战略"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 ### 为什么在茶叶、粮油这些大市场中出现不了大品牌、大公司呢？

@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["营销基础"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 

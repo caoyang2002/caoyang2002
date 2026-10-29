@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 新手第一次来到 FreeCAD 的时候往往-无从下手，这里就简单介绍一下使用方法。

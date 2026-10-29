@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["编程"]
 tags = ["GO"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 查看架构

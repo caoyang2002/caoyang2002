@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 ## 刷屏的视频，真的只是运气吗？

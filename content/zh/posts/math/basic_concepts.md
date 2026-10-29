@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 codeRunners = true #启用运行代码
 cover = "https://cdn.pixabay.com/photo/2019/12/21/20/44/math-work-4711302_1280.jpg"
 

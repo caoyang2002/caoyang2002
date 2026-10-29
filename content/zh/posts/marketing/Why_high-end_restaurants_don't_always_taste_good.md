@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["营销"]
 tags = ["味觉"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 > 这篇文章主要解释了上一篇文章提到的 “可口可乐的快乐绑定”

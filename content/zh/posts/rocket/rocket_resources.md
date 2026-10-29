@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://i0.wp.com/spacenews.com/wp-content/uploads/2014/11/JohnCarmack_NASA4X3.jpg?w=1421&ssl=1"
 +++
 

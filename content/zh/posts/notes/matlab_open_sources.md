@@ -5,7 +5,7 @@ draft = false
 author = "simons"
 categories = ["暂无"]
 tags = ["暂无"]
-description = "糟糕，写文章的时候忘记添加描述了！！！"
+# description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 
 > [本文](https://open-source.com.cn/alternatives/matlab)最初发表于 2016 年 6 月，现已更新，提供了一些您可能希望考虑的其他选项。
