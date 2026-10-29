@@ -7,8 +7,11 @@ import os
 import subprocess
 import sys
 from datetime import datetime
+from pathlib import Path
 
 import requests
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 DEFAULT_AI_URL = os.environ.get(
     "AI_URL", "http://127.0.0.1:1234/v1/chat/completions"
@@ -147,6 +150,8 @@ class GitAIAutoCommit:
 
     def main(self):
         """主流程"""
+        os.chdir(PROJECT_ROOT)
+
         print("=" * 50)
         print("🤖 Git AI 自动提交推送工具")
         print("=" * 50)

@@ -13,7 +13,13 @@ readonly HUGO_RESOURCE_DIR="resources"
 readonly MAX_BACKUPS=5
 readonly MAX_LOGS=5
 readonly SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-readonly LOG_FILE="${SCRIPT_DIR}/logs/deploy-$(date +%Y-%m-%d).log"
+readonly PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+readonly LOG_DIR="${PROJECT_ROOT}/logs"
+readonly LOG_FILE="${LOG_DIR}/deploy-$(date +%Y-%m-%d).log"
+
+# 统一在仓库根目录执行，保证 content/、backups/、logs/ 等相对路径正确
+cd "$PROJECT_ROOT"
+mkdir -p "$LOG_DIR"
 
 # 导出 LANG 以确保正确的字符编码
 export LANG=en_US.UTF-8

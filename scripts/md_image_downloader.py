@@ -9,6 +9,8 @@ import time
 import hashlib
 import json
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 class HugoImageProcessor:
     def __init__(self, config_file: str = None, **kwargs):
         """
@@ -446,39 +448,39 @@ def main():
     parser.add_argument('md_file', nargs='?', help='Markdown文件路径')
     
     # 路径配置
-    parser.add_argument('-s', '--storage-dir', 
-                       default='static/assets/post_images',
-                       help='图片实际存储目录 (默认: static/assets/post_images)')
-    
-    parser.add_argument('-p', '--path-prefix', 
-                       default='/assets/post_images',
-                       help='Markdown中使用的路径前缀 (默认: /assets/post_images)')
-    
+    parser.add_argument('-s', '--storage-dir',
+                       default=None,
+                       help='图片实际存储目录 (默认: static/assets/post_images 或配置文件)')
+
+    parser.add_argument('-p', '--path-prefix',
+                       default=None,
+                       help='Markdown中使用的路径前缀 (默认: /assets/post_images 或配置文件)')
+
     # 文件命名
-    parser.add_argument('-n', '--naming', 
+    parser.add_argument('-n', '--naming',
                        choices=['original', 'hash', 'timestamp', 'sequential'],
-                       default='original',
-                       help='文件命名方法 (默认: original)')
-    
+                       default=None,
+                       help='文件命名方法 (默认: original 或配置文件)')
+
     parser.add_argument('--post-slug', help='文章slug，用于文件名前缀')
-    parser.add_argument('--no-post-slug', action='store_true', 
+    parser.add_argument('--no-post-slug', action='store_true',
                        help='不使用文章slug前缀')
-    
+
     # 下载选项
     parser.add_argument('--overwrite', action='store_true',
                        help='覆盖已存在的文件')
-    parser.add_argument('--timeout', type=int, default=30,
-                       help='下载超时时间(秒)')
-    parser.add_argument('--delay', type=float, default=0.3,
-                       help='请求间隔时间(秒)')
-    
+    parser.add_argument('--timeout', type=int, default=None,
+                       help='下载超时时间(秒，默认: 30 或配置文件)')
+    parser.add_argument('--delay', type=float, default=None,
+                       help='请求间隔时间(秒，默认: 0.3 或配置文件)')
+
     # 请求头配置
-    parser.add_argument('-r', '--referer', 
-                       default='https://www.cnblogs.com/',
-                       help='Referer请求头 (默认: https://www.cnblogs.com/)')
-    parser.add_argument('--user-agent', 
-                       default='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-                       help='User-Agent请求头')
+    parser.add_argument('-r', '--referer',
+                       default=None,
+                       help='Referer请求头 (默认: https://www.cnblogs.com/ 或配置文件)')
+    parser.add_argument('--user-agent',
+                       default=None,
+                       help='User-Agent请求头 (默认值见配置文件)')
     
     # 配置文件
     parser.add_argument('-c', '--config', help='配置文件路径')
@@ -492,7 +494,27 @@ def main():
                        help='详细输出模式')
     
     args = parser.parse_args()
-    
+
+    # 用户传入的相对路径以“调用脚本时的目录”为基准；
+    # 之后切换到仓库根目录，保证 storage_dir、backups 等相对路径正确。
+    invoke_dir = Path.cwd()
+
+    def resolve_input_path(value):
+        if not value:
+            return value
+        path = Path(value)
+        if not path.is_absolute():
+            path = invoke_dir / path
+        return str(path.resolve())
+
+    args.md_file = resolve_input_path(args.md_file)
+    args.config = resolve_input_path(args.config)
+    args.init_config = resolve_input_path(args.init_config)
+    if args.storage_dir:
+        args.storage_dir = resolve_input_path(args.storage_dir)
+
+    os.chdir(PROJECT_ROOT)
+
     # 生成配置文件模板
     if args.init_config:
         config_template = {
@@ -518,20 +540,20 @@ def main():
         print(f"请修改配置后使用: python md_image_downloader.py -c {args.init_config} article.md")
         return
     
-    # 准备配置参数
+    # 准备配置参数（未显式传入的项保持 None，避免覆盖配置文件）
     config_kwargs = {
         'storage_dir': args.storage_dir,
         'md_path_prefix': args.path_prefix,
         'naming_method': args.naming,
-        'use_post_slug': not args.no_post_slug,
+        'use_post_slug': False if args.no_post_slug else None,
         'post_slug': args.post_slug,
-        'overwrite_existing': args.overwrite,
+        'overwrite_existing': True if args.overwrite else None,
         'download_timeout': args.timeout,
         'delay_between_requests': args.delay,
         'referer': args.referer,
         'user_agent': args.user_agent,
-        'backup_original': not args.no_backup,
-        'verbose': args.verbose,
+        'backup_original': False if args.no_backup else None,
+        'verbose': True if args.verbose else None,
     }
     
     # 创建处理器
