@@ -1,2 +1,2 @@
 run:
-    hugo server -D
+	@hugo server -D
