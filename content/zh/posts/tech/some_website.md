@@ -1,5 +1,5 @@
 +++
-title = 'Some_website'
+title = '一些让人上瘾的网站'
 date = 2026-11-22T07:15:13+08:00
 draft = true
 author = "simons"
