@@ -3,8 +3,8 @@ title = '如何将系统从0万扩展到1000万以上用户'
 date = 2026-02-26T16:25:37+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["技术"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

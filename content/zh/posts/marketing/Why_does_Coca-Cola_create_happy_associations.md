@@ -3,7 +3,7 @@ title = '为什么可口可乐要创造快乐联想？'
 date = 2025-02-15T01:59:25+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["上瘾"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++

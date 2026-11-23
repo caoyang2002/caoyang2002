@@ -3,8 +3,8 @@ title = 'Julia 基础'
 date = 2026-02-06T11:56:54+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["编程"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://en.wikipedia.org/wiki/Julia_%28programming_language%29"
 +++

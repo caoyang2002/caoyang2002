@@ -3,8 +3,8 @@ title = '喜茶，不学霸王茶姬'
 date = 2025-03-01T12:47:47+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["人文"]
+tags = ["霸王茶姬", "喜茶", "新茶饮"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

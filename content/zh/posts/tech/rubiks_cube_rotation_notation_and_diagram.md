@@ -3,10 +3,9 @@ title = '魔方转动公式符号及示意图'
 date = 2026-03-03T21:31:34+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["魔方"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 ### **魔方转动公式符号及示意图** Notation

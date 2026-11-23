@@ -3,8 +3,8 @@ title = 'React 开发痛点与解决方案详解'
 date = '2025-01-24T13:44:21+08:00'
 draft = false
 toc = true
-categories = ["前端开发", "React"]
-tags = ["React框架", "组件化", "状态管理", "性能优化", "虚拟DOM", "前端工程化"]
+categories = ["技术"]
+tags = ["React框架", "组件化", "状态管理", "性能优化", "虚拟DOM"]
 description = "本文深入剖析React开发的核心价值与解决之道：通过组件化封装告别DOM操作噩梦，借助声明式UI与虚拟DOM实现高效渲染，并提供从状态管理、性能优化到代码分割的完整实践方案。对比传统jQuery方式，详解React如何解决UI与状态同步这一本质问题，提升应用的可维护性与性能。"
 +++
 

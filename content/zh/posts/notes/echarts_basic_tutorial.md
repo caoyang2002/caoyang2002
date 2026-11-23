@@ -3,8 +3,8 @@ title = 'Echarts 基本使用教程'
 date = 2026-02-03T10:19:15+08:00
 draft = false
 author = "simons"
-categories = ["前端开发", "数据可视化"]
-tags = ["Echarts", "JavaScript", "图表", "数据可视化", "教程"]
+categories = ["技术"]
+tags = ["ECharts", "JavaScript", "数据可视化", "教程"]
 description = "详细的 Echarts 数据可视化库使用教程，涵盖基本概念、环境搭建、常用图表类型、进阶配置和最佳实践。"
 cover = "https://img2018.cnblogs.com/blog/1244398/201901/1244398-20190106180725704-699206000.png"
 +++

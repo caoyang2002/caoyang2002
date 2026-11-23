@@ -3,10 +3,9 @@ title = '营销基础：营销导向'
 date = 2025-02-22T13:34:41+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["营销基础"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 # 产品导向

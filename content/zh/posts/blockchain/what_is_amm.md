@@ -3,8 +3,8 @@ title = '自动做市商是什么？'
 date = 2026-02-02T08:52:17+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["区块链"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ5oC3RN8LWdValJ1AZjvDvkPGuNMwEf0twg&s"
 +++

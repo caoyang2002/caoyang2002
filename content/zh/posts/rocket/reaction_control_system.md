@@ -4,8 +4,8 @@ date = 2026-01-31T01:04:19+08:00
 draft = false
 author = "simons"
 cover = "https://img.kechuang.org:81/r/350213?c=resource"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["火箭"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

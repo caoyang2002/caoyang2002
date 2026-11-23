@@ -3,10 +3,9 @@ title = '入侵咨询：为何广告公司纷纷转型咨询公司？'
 date = 2025-02-23T13:29:44+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["转型"]
 description = "广告公司如何成功转型？"
-
 +++
 
 ![免费 使用笔记本电脑的人的照片 素材图片](https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)

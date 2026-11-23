@@ -3,8 +3,8 @@ title = 'Chrome 插件'
 date = 2026-03-27T13:46:03+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["插件"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

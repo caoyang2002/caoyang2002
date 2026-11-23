@@ -3,8 +3,8 @@ title = '注册一个免费的域名'
 date = 2026-01-05T12:28:47+08:00
 draft = false
 author = "simons"
-categories = ["网络技术", "实用教程"]
-tags = ["免费域名", "DigitalPlat", "Cloudflare", "DNS配置", "GitHub", "KYC认证", "域名托管", "新手教程"]
+categories = ["技术"]
+tags = ["免费域名", "DigitalPlat", "Cloudflare", "DNS配置", "GitHub"]
 description = "本文是一份详细的图文教程，指导用户如何使用升级后的 DigitalPlat 平台，通过简化的 GitHub KYC 流程，免费注册 `.dpdns.org` 永久域名，并逐步完成将其绑定、托管至 Cloudflare，以及配置 Cloudflare Pages 和 Workers 自定义域的全过程。同时解释了免费域名的年度续期机制。"
 +++
 

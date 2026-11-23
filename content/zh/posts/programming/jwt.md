@@ -2,8 +2,8 @@
 date = '2024-04-12T09:31:37+08:00'
 draft = false
 title = 'JWT 解析'
-categories = ["Web开发", "身份认证"]
-tags = ["JWT", "Session", "Token", "单点登录", "CSRF", "CORS", "身份认证"]
+categories = ["技术"]
+tags = ["JWT", "Session", "Token", "单点登录", "CSRF"]
 description = "本文详细解析JWT（JSON Web Token）的工作原理、结构（Header/Payload/Signature）与核心应用场景，对比其与传统Session、Token在认证授权、单点登录、可扩展性与安全性方面的差异，并探讨JWS与JWE的实现区别，为现代Web应用选择合适的身份认证方案提供清晰指南。"
 toc = true
 +++

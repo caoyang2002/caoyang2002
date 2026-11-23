@@ -3,8 +3,8 @@ title = 'RSS 二十年'
 date = 2026-02-28T13:02:05+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["RSS"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

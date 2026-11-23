@@ -2,11 +2,10 @@
 title = '小米路由器'
 date = '2024-03-22T09:31:37+08:00'
 draft = false
-categories = ["硬件", "网络"]
+categories = ["技术"]
 tags = ["小米路由器", "OpenWrt", "刷机教程", "网络设置", "路由器配置"]
 description = "本文详细介绍了如何为小米路由器刷入OpenWrt系统并进行基础设置，包括管理后台登录、PPPoE宽带配置、Wi-Fi密码设定及其他核心功能说明，适合希望解锁更多路由器功能的用户参考。"
 toc = true
-
 +++
 
 {bs-font color="#FF0000"}刷机有风险，如果能用，请不要为了不一样而刷机，又不是不能用！{/bs-font}

@@ -3,8 +3,8 @@ title = '脸皮厚，心要黑，才能干大事？'
 date = 2026-02-25T09:47:42+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["技术"]
 description = "关于慈不掌兵、义不养财、善不为官、情不立事、仁不从政"
 +++
 

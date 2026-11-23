@@ -3,8 +3,8 @@ title = '纳粹如何塑造犹太人为全民公敌，又如何操纵舆论？'
 date = 2019-05-24T19:02:19+08:00
 draft = true
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["人文"]
+tags = ["舆论"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

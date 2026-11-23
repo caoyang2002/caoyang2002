@@ -3,8 +3,8 @@ title = '发动机系统设计与仿真'
 date = 2026-02-01T11:01:18+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["火箭发动机", "动机", "仿真"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://p.cgmol.com/20240813/b_689892_14615430252152303.png"
 +++

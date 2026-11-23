@@ -2,8 +2,8 @@
 date = '2024-03-24T09:31:37+08:00'
 draft = false
 title = '小米 4a 路由器刷机'
-categories = ["硬件改造", "网络设备"]
-tags = ["小米路由器", "刷机教程", "OpenWRT", "Breed", "路由器破解", "固件降级", "Padavan"]
+categories = ["技术"]
+tags = ["小米路由器", "刷机教程", "OpenWrt", "Breed", "路由器破解"]
 description = "本文详细介绍了小米路由器4A千兆版的刷机全过程，包括通过OpenWRTInvasion获取SSH权限、降级固件、刷入Breed不死引导，以及最终刷入OpenWRT或Padavan第三方固件的具体步骤与命令，旨在帮助用户解放路由器功能并避免变砖风险。"
 toc = true
 +++

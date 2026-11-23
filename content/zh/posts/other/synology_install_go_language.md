@@ -3,8 +3,8 @@ title = '群晖安装 GO 语言'
 date = 2025-12-24T11:04:31+08:00
 draft = false
 author = "simons"
-categories = ["编程"]
-tags = ["GO"]
+categories = ["技术"]
+tags = ["Go"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,8 +3,8 @@ title = 'MATLAB 简明教程'
 date = 2026-02-02T16:39:29+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["矩阵"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://www.wikihow.com/images/3/3f/Make-3D-Plots-Using-MATLAB-Step-10.jpg"
 +++

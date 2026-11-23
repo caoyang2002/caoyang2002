@@ -3,7 +3,7 @@ title = '熵增：一个概率问题'
 date = 2026-11-23T19:23:44+08:00
 draft = false
 author = "simons"
-categories = ["物理"]
+categories = ["技术"]
 tags = ["熵增"]
 description = "熵就是“有多少种内部摆法能实现同一个外部样子”。摆法越多，熵越大；高熵摆法远多于低熵摆法，所以大系统自然朝熵增方向走。"
 +++

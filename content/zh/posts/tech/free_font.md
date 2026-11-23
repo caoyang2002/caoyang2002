@@ -3,8 +3,8 @@ title = '免费字体'
 date = 2026-02-19T16:33:16+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["人文"]
+tags = ["字体设计"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

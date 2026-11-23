@@ -3,7 +3,7 @@ date = '2025-01-05T11:08:24+08:00'
 draft = false
 title = 'Aptos Wasm 开发笔记'
 categories = ["技术"]
-tags = ["Aptos", "Move", "Wasm", "Rust", "编译原理"]
+tags = ["Aptos", "Move", "WASM", "Rust", "编译原理"]
 description = "记录了将 Aptos Move 编译器编译为 Wasm 的探索过程，包括项目结构分析、命令行工具使用、代码执行流程追踪以及相关技术细节。"
 toc = true
 +++

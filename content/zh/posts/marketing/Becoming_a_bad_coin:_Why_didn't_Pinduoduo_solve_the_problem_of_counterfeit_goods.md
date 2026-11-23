@@ -3,10 +3,9 @@ title = '同一个世界：为什么拼多多的商业模式不能解决假货�
 date = 2025-02-15T15:32:08+08:00
 draft = false
 author = "simons"
-categories = ["分析"]
+categories = ["商业"]
 tags = ["商业"]
 description = "三大电商平台为何唯独拼多多假货泛滥？商业模式为何成为了假货泛滥的幕后推手？拼多多的模式在关注什么？"
-
 +++
 
 ![图片](https://inews.gtimg.com/news_bt/OWtembECqlowLh2W9GSLrzY8se34bFzodMnkH34ZKNVT4AA/641)

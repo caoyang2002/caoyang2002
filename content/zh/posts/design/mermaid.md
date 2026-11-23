@@ -3,8 +3,8 @@ title = 'mermaid？'
 date = 2025-03-14T14:51:51+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
-tags = ["经典案例"]
+categories = ["技术"]
+tags = ["案例分析"]
 description = "test"
 +++
 

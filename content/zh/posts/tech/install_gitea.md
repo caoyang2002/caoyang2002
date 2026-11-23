@@ -3,8 +3,8 @@ title = '安装 Gitea'
 date = 2025-12-28T21:09:14+08:00
 draft = false
 author = "simons"
-categories = ["编程", "运维", "开发工具"]
-tags = ["Gitea", "Docker", "Git服务器", "容器化部署", "开发环境", "MySQL"]
+categories = ["技术"]
+tags = ["Gitea", "Docker", "Git服务器", "容器", "开发环境"]
 description = "本文详细介绍了使用Docker部署Gitea自托管Git服务的三种方法：命令行安装、Docker Compose部署以及集成MySQL数据库的方案。包含完整的配置示例、初始设置步骤、常用管理命令及故障排查指南，适合快速搭建个人或团队的代码托管平台。"
 +++
 

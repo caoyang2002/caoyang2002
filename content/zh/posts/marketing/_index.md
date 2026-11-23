@@ -16,18 +16,7 @@ image = "/images/business-strategy-cover.png"
 # 专题级联设置 - 这些设置会影响所有子页面
 [cascade]
   # 自动为所有子页面添加标签和分类
-  tags = [
-    "市场细分与定位",
-    "竞争战略",
-    "数字化营销",
-    "品牌建设",
-    "增长战略",
-    "商业分析",
-    "战略执行",
-    "企业创新"
-  ]
   
-  categories = ["Marketing", "Strategy", "Business"]
   
   # 页面参数
   [cascade.params]

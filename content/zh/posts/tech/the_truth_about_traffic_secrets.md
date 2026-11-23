@@ -3,8 +3,8 @@ title = '流量密码的真相：争议、共鸣、有用，到底哪个更管�
 date = 2026-03-01T20:14:47+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["流量"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

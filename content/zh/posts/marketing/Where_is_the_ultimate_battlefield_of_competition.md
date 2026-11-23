@@ -3,10 +3,9 @@ title = '定位贡献一：竞争的终极战场在哪里？'
 date = 2025-03-25T08:24:56+08:00
 draft = false
 author = "simons"
-categories = ["市场营销", "品牌战略"]
-tags = ["定位理论", "心智战场", "品牌认知", "案例分析", "竞争策略", "特劳特", "冯卫东"]
+categories = ["商业"]
+tags = ["定位理论", "心智战场", "品牌认知", "案例分析", "竞争战略"]
 description = "本文深入解析定位理论的三大核心贡献：竞争的终极战场是用户心智、竞争的基本单位是品牌、品牌是品类及其特性的代表。通过徕卡、哇哈哈、特步、Supreme及小米等经典案例，生动阐述了企业如何通过产品、渠道、媒介三大物理战场影响用户认知，并揭示了“认知大于事实”的商业竞争本质，为品牌构建心智优势提供清晰指引。"
-
 +++
 
 ![“终极拆招”王老吉血战加多宝，定位理论落地中国的四场“定位遭遇战”_【品牌战略】_品牌总网](https://ts1.tc.mm.bing.net/th/id/R-C.c57a12461150e0245eeff8e2e9e02557?rik=pod42R02gzUpAw&riu=http%3a%2f%2fwww.ppzw.com%2fUploadFiles%2f201751162031145.jpg&ehk=sKsUK6uyU0a0oirJFsVRgegwUJNY0fS2S3jOVj4EJLc%3d&risl=&pid=ImgRaw&r=0)

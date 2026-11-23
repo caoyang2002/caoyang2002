@@ -1,8 +1,8 @@
 +++
 title = "使用 Hexo+GitHub+Vercel 搭建个人免费博客的最佳实践"
 date =  '2024-12-22T18:12:52+08:00'
-categories = ["技术教程", "建站指南"]
-tags = ["Hexo", "GitHub", "Vercel", "博客搭建", "NexT主题", "GitHub Actions", "静态网站"]
+categories = ["技术"]
+tags = ["Hexo", "GitHub", "Vercel", "博客搭建", "NexT主题"]
 description = "本文详细介绍了使用 Hexo + NexT 主题搭建博客，并通过 GitHub Actions 自动部署到 Vercel 的完整流程。涵盖环境配置、主题优化、评论系统选型、自动化部署等关键步骤，并提供了私有仓库保护敏感配置的最佳实践方案。"
 draft =  false
 +++

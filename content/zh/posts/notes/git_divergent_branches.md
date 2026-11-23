@@ -3,8 +3,8 @@ title = 'Git 分支分叉的解决方案简介'
 date = 2026-01-29T12:08:51+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["Git"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

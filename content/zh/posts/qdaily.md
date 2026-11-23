@@ -3,8 +3,8 @@ title = '国内最好自媒体好奇心日报要凉？'
 date = 2026-03-23T07:39:49+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["媒体"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

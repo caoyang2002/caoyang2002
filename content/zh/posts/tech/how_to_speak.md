@@ -3,8 +3,8 @@ title = '公开演讲的窍门'
 date = 2026-10-19T14:25:43+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["演讲"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

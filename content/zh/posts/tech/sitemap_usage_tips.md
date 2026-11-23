@@ -3,8 +3,8 @@ title = 'sitemap 使用小技巧'
 date = 2026-03-02T07:49:15+08:00
 draft = false
 author = "simons"
-categories = ["出海"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["站点图"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,8 +3,8 @@ title = '计算机图形学书单'
 date = 2026-02-02T06:05:16+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["图形", "书单"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX30tWAcrtGp4xUTreeI1sr35xhPDV8pEiFw&s"
 +++

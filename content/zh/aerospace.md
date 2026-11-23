@@ -1,7 +1,6 @@
 +++
 title = "航空航天好者"
 layout = "aerospace"
-categories = ["航天","航空", "火箭制作"]
 bio = "探索航空航天制造技术，连接全球航空航天爱好者社区"
 email = "reggiesimons2cy@gmail.com"
 wechat = "thomelgo"
@@ -203,5 +202,4 @@ icon = "🇨🇳"
 name = "中国火箭爱好者社区"
 description = "国内火箭爱好者交流平台，分享本土化的制作经验和资源"
 url = "#"
-
 +++

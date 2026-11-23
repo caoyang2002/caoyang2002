@@ -3,8 +3,8 @@ title = 'FreeCAD 中的 FEM 工作台简介'
 date = 2026-02-11T22:28:13+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["CAD"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

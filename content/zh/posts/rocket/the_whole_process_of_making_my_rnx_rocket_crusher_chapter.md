@@ -3,8 +3,8 @@ title = '2021: RNX火箭制作全过程'
 date = 2026-01-31T01:55:02+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["火箭"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://img.kechuang.org:81/r/123903?c=resource"
 +++

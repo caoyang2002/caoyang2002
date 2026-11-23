@@ -3,8 +3,8 @@ title = '向量基础'
 date = 2026-02-04T21:44:49+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["向量"]
 description = "向量"
 +++
 

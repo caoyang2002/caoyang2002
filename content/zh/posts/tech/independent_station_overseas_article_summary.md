@@ -3,8 +3,8 @@ title = '独立站出海文章归纳'
 date = 2026-03-01T11:47:51+08:00
 draft = false
 author = "simons"
-categories = ["出海"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["独立站", "出海"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

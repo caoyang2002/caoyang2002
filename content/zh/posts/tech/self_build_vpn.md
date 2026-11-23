@@ -3,9 +3,9 @@ title = 'VPN不求人！教你自搭建ClashVPN节点'
 date = 2026-11-22T06:31:05+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
-description = "<no value>"
+categories = ["技术"]
+tags = ["VPN"]
+description = "使用 VPS 自建多个协议节点教程很简单，整个教程分三步：第一步：购买VPS服务器第二步：一键部署VPS服务器第三步：一键加速VPS服务器 （五合一的TCP网络加速脚本）"
 +++
 
 查看原文: https://www.xianyuwang.top/archives/203

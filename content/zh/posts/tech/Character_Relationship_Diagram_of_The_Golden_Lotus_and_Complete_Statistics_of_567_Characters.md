@@ -3,8 +3,8 @@ title = '《金瓶梅》人物关系'
 date = 2026-02-25T07:35:53+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["技术"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

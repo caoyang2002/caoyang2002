@@ -3,8 +3,8 @@ title = '2025年国内十大自媒体平台排名：流量、成本与变现力�
 date = 2026-03-10T16:48:45+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["成本", "媒体", "流量"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

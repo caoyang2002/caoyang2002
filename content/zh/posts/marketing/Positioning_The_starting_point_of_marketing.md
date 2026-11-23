@@ -3,10 +3,9 @@ title = '定位：营销的起点'
 date = 2025-02-24T11:48:01+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
-tags = ["冯卫东","营销分享"]
+categories = ["商业"]
+tags = ["冯卫东", "营销分享"]
 description = "混沌学园课程笔记"
-
 +++
 
 ![杰克·特劳特_百度百科](https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70)

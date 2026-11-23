@@ -3,8 +3,8 @@ title = '《金瓶梅》中的时间和事件'
 date = 2026-02-27T21:41:18+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["时间管理"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

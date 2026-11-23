@@ -3,10 +3,9 @@ title = '品牌名的陷阱'
 date = 2025-05-04T08:52:45+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["品牌管理"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 # 发音

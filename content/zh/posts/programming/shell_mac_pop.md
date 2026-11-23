@@ -2,8 +2,8 @@
 date = '2024-11-09T09:31:37+08:00'
 draft = false
 title = 'shell mac 教程'
-categories = ["编程开发", "系统工具"]
-tags = ["Shell脚本", "macOS", "自动化", "弹窗交互", "通知中心", "osascript"]
+categories = ["技术"]
+tags = ["Shell", "macOS", "自动化", "弹窗交互", "通知中心"]
 description = "一篇实用的 macOS Shell 脚本教程，通过 osascript 实现系统通知、自定义弹窗（支持多按钮与输入框）等交互功能，并提供封装好的函数，方便在自动化脚本中直接调用，提升操作效率与用户体验。"
 toc = true
 +++

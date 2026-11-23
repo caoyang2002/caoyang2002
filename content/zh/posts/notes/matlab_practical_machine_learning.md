@@ -3,8 +3,8 @@ title = 'MATLAB 实践机器学习'
 date = 2026-02-02T16:48:39+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["矩阵", "机器学习", "最佳实践"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://logos-marcas.com/wp-content/uploads/2020/12/MATLAB-Emblema.png"
 +++

@@ -3,10 +3,9 @@ title = '价格歧视：为什么一个产品要细分多个定价？'
 date = 2025-02-18T22:10:20+08:00
 draft = false
 author = "simons"
-categories = ["经济学"]
+categories = ["商业"]
 tags = ["价格歧视"]
 description = "在日常生活中，我们常常会发现同一个产品针对不同消费者或不同情境有着多种定价，这背后涉及到价格歧视策略。那么，价格歧视背后的机制是什么呢？我们常见的价格歧视有哪些呢？"
-
 +++
 
 ![img](https://bkimg.cdn.bcebos.com/pic/6c224f4a20a44623dedacdee9f22720e0cf3d72e?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536)

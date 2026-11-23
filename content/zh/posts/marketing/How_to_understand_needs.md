@@ -3,10 +3,9 @@ title = '营销基础：如何理解需求？'
 date = 2025-02-22T21:51:52+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["基础"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 # 需要、欲望和需求的区别？

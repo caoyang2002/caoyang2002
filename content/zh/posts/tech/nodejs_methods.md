@@ -3,8 +3,8 @@ title = 'Node.js 的方法'
 date = 2025-01-26T11:03:43+08:00
 draft = false
 author = "simons"
-categories = ["后端开发", "Node.js"]
-tags = ["Node.js", "JavaScript", "事件循环", "异步编程", "性能优化", "内存管理", "V8引擎"]
+categories = ["技术"]
+tags = ["Node.js", "JavaScript", "事件循环", "异步编程", "性能优化"]
 description = "本文深入解析Node.js的核心原理与设计思想，从非阻塞I/O、事件循环机制入手，通过代码示例对比传统服务器模型，详细讲解事件循环六个阶段及执行顺序，并分享内存管理、性能优化等实战经验，帮助开发者真正理解Node.js的适用场景与最佳实践。"
 +++
 

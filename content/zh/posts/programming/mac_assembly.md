@@ -2,8 +2,8 @@
 date = '2025-01-18T11:35:14+08:00'
 draft = false
 title = 'mac 汇编笔记'
-categories = ["编程", "汇编语言"]
-tags = ["macOS", "ARM64", "汇编基础", "LLVM", "系统调用", "HelloWorld", "学习笔记"]
+categories = ["技术"]
+tags = ["macOS", "ARM64", "汇编基础", "LLVM", "系统调用"]
 description = "本文记录了在 Apple Silicon Mac 上学习 ARM64 汇编语言的入门笔记。从最简单的空程序开始，到编写并运行 Hello World，详细介绍了汇编、链接和调试的基本步骤与工具链使用，并提供了相关权威参考资料。"
 toc = true
 +++

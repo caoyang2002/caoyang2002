@@ -3,8 +3,8 @@ title = '用 Discord 挖掘需求'
 date = 2026-03-02T07:55:31+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["社区"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

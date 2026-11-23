@@ -3,8 +3,8 @@ title = '统计概率'
 date = 2026-02-05T22:55:26+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["概率论", "统计学"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

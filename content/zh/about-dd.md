@@ -4,8 +4,6 @@ date: 2024-03-21T15:04:05+08:00
 lastmod: 2024-03-21T15:04:05+08:00
 draft: true
 weight: 1
-categories: ["关于"]
-tags: ["关于"]
 aliases:  ["about-us", "about-hugo"]
 author: "simons"
 description: "关于我以及这个网站"

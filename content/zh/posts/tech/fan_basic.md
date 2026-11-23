@@ -3,8 +3,8 @@ title = '关于电脑风扇的一些知识'
 date = 2026-02-16T20:10:18+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["知识", "电脑"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,10 +3,9 @@ title = '感受价格：如何门店销售中让消费者有低价感？'
 date = 2025-03-01T12:35:36+08:00
 draft = false
 author = "simons"
-categories = ["营销", "零售", "消费心理学"]
-tags = ["门店销售", "定价策略", "价格感知", "促销技巧", "锚定效应", "消费者行为"]
+categories = ["商业"]
+tags = ["门店销售", "定价策略", "价格感知", "促销技巧", "锚定效应"]
 description = "本文系统梳理了在门店销售中让消费者产生“低价感”的20种实用策略，从单品打折、满减优惠到价格锚定、99定价等心理技巧，结合具体案例解析如何通过定价与促销设计，在不牺牲利润的前提下有效提升销量与顾客购买意愿。"
-
 +++
 
 ![超市打折抢购也辛苦，看这位大姐如何带走她的东西](https://ts1.cn.mm.bing.net/th/id/R-C.bcc277886802f7bff601f2b6d2bb444f?rik=wqGxss1LCh%2b3vA&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20180102%2fe94c3b4dbae24c8786a21f42e385c25f.jpeg&ehk=%2bT0XrY3raeCivuvlRFWbnWd0EJSZi8H%2blnLCNqgYlWo%3d&risl=&pid=ImgRaw&r=0)

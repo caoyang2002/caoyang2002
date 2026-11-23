@@ -2,7 +2,7 @@
 date = '2023-10-29T09:31:37+08:00'
 draft = false
 title = 'OpenWRT 教程'
-categories = ["网络运维", "OpenWRT"]
+categories = ["技术"]
 tags = ["软路由", "刷机教程", "系统安装", "IMG写盘", "PE工具"]
 description = "本文提供了一份详细的OpenWRT刷机安装指南，涵盖从镜像下载、制作启动盘、进入BIOS、使用Rufus或IMG写盘工具写入镜像到完成启动的全过程，适用于希望在x86等硬件设备上部署OpenWRT软路由的用户。"
 toc = true

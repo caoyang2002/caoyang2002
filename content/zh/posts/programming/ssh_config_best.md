@@ -2,8 +2,8 @@
 date = '2025-01-07T13:33:19+08:00'
 draft = false
 title = '更好的 zsh 配置'
-categories = ["开发环境", "生产力工具"]
-tags = ["zsh", "oh-my-zsh", "shell配置", "GitHub", "SSH", "MySQL", "终端优化"]
+categories = ["技术"]
+tags = ["Zsh", "oh-my-zsh", "shell配置", "GitHub", "SSH"]
 description = "本文详细介绍了如何配置现代化的 zsh 开发环境，包括安装 oh-my-zsh、设置主题与插件、配置 GitHub SSH 密钥、远程服务器免密登录以及 MySQL 的安装与用户管理，旨在提升终端工作效率与开发体验。"
 toc = true
 +++

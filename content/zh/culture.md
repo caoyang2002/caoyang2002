@@ -1,7 +1,6 @@
 +++
 title = "中华传统文化"
 layout = "culture"
-categories = ["传统文化", "中华礼仪", "传统技法", "历史溯源", "古典器乐", "传统工艺"]
 bio = "溯华夏文明之源，承中华礼仪之邦，传千年工艺之美，赏古典雅乐之韵——探寻中华优秀传统文化的传承与魅力"
 email = "reggiesimons2cy@gmail.com"
 wechat = "thomelgo"

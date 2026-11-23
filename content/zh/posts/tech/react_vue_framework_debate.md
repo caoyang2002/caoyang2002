@@ -3,8 +3,8 @@ title = 'React vs Vue: 框架之争的深层思考'
 date = '2025-01-24T13:57:50+08:00'
 draft = false
 toc = true
-categories = ["前端开发", "技术对比"]
-tags = ["React", "Vue", "前端框架", "虚拟DOM", "性能优化", "TypeScript", "技术选型"]
+categories = ["技术"]
+tags = ["React", "Vue", "前端框架", "虚拟DOM", "性能优化"]
 description = "本文对React与Vue两大主流前端框架进行深度技术对比，从设计哲学、响应式原理、状态管理、性能优化到生态系统全面剖析，结合代码示例分析各自的适用场景、优劣势及未来发展趋势，为团队技术选型提供详实参考。"
 +++
 

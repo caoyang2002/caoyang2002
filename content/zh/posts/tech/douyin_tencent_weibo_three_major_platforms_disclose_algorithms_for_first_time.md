@@ -3,8 +3,8 @@ title = '【干货】抖音、腾讯、微博三大平台首次公开算法'
 date = 2026-03-01T09:10:22+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["算法", "抖音"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

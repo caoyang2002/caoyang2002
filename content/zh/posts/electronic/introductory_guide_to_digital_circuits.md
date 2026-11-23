@@ -3,8 +3,8 @@ title = '数字电路入门指南：从逻辑门到CPU，掌握0与1的建构艺
 date = 2026-02-03T00:47:56+08:00
 draft = false
 author = "simons"
-categories = ["计算机科学", "电子工程", "硬件设计"]
-tags = ["数字电路", "逻辑门", "布尔代数", "触发器", "CPU设计", "硬件基础", "二进制", "FPGA", "Verilog", "计算机体系结构"]
+categories = ["技术"]
+tags = ["数字电路设计", "逻辑门", "布尔代数", "触发器", "CPU设计"]
 description = "一篇深入浅出的数字电路入门指南，系统讲解从二进制基础、逻辑门原理、布尔代数到时序逻辑的完整知识体系，揭示CPU等现代数字系统如何通过0与1的精准控制构建而成，适合电子、计算机及相关领域初学者建立完整的数字电路思维框架。"
 cover = "https://tse1.mm.bing.net/th/id/OIP.T10PO2CIF3gbumR9auQL9QHaDw?rs=1&pid=ImgDetMain&o=7&rm=3"
 +++

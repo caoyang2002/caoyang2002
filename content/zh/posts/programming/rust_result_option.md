@@ -2,7 +2,7 @@
 date = '2025-01-15T11:26:02+08:00'
 draft = false
 title = '深入解释 Rust 中的 Result 和 Option 这两个核心类型'
-categories = ["编程语言", "Rust"]
+categories = ["技术"]
 tags = ["错误处理", "Option类型", "Result类型", "Rust教程", "编程实践"]
 description = "本文深入解析Rust核心类型Result和Option的用法与设计哲学，从实际问题出发，通过丰富代码示例讲解错误处理、模式匹配、问号运算符及自定义错误类型等实践技巧，帮助开发者编写更健壮的Rust程序。"
 toc = true

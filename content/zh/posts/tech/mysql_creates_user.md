@@ -3,8 +3,8 @@ title = 'mysql 创建用户的方法'
 date = 2025-03-06T08:42:26+08:00
 draft = false
 author = "simons"
-categories = ["数据库", "MySQL"]
-tags = ["用户管理", "权限管理", "创建用户", "GRANT", "ALTER USER", "数据库安全"]
+categories = ["技术"]
+tags = ["用户管理", "权限管理", "创建用户", "GRANT", "ALTER USER"]
 description = "本文详细介绍MySQL用户管理与权限设置的完整流程，涵盖创建用户、设置密码、授予权限、刷新权限及删除用户等核心操作，并提供了各版本语法差异说明和安全性最佳实践建议。"
 +++
 

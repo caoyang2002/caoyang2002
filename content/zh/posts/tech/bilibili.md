@@ -3,8 +3,8 @@ title = '我，一个哔哩哔哩UP主，40天的运营精华总结'
 date = 2026-03-10T16:00:55+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["运营"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

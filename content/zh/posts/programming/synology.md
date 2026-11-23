@@ -2,8 +2,8 @@
 date = '2023-08-29T09:31:37+08:00'
 draft = false
 title = '群晖开发'
-categories = ["技术教程", "群晖NAS"]
-tags = ["群晖开发", "Optware", "GCC安装", "CPU架构", "Shell脚本", "ARM", "x86_64"]
+categories = ["技术"]
+tags = ["群晖开发", "Optware", "GCC安装", "CPU架构", "Shell"]
 description = "本文详细介绍了在群晖NAS不同CPU架构（x86_64与ARM）上安装Optware环境及GCC编译器的完整步骤，包括查看系统架构、下载执行引导脚本、更新软件源和安装开发工具，为在群晖上进行软件编译和开发提供基础环境配置指南。"
 toc = true
 +++

@@ -3,12 +3,11 @@ title = '人工智能中的数学基础'
 date = 2026-02-02T14:33:33+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["人工智能"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 codeRunners = true #启用运行代码
 cover = "https://cdn.pixabay.com/photo/2019/12/21/20/44/math-work-4711302_1280.jpg"
-
 +++
 
 ## 1. 向量空间 (Vector Space)

@@ -2,8 +2,8 @@
 date = '2024-12-22T18:12:52+08:00'
 draft = false
 title = '从 Hexo 迁移至 Hugo'
-categories = ["技术实践", "博客搭建"]
-tags = ["Hexo", "Hugo", "静态博客", "博客迁移", "主题定制", "前端技术"]
+categories = ["技术"]
+tags = ["Hexo", "Hugo", "静态网站生成器", "博客迁移", "主题定制"]
 description = "本文详细记录了作者从Hexo迁移至Hugo静态博客系统的完整过程，包括迁移原因分析、快速上手指南、永久链接兼容、主题深度定制（even主题）以及RSS、评论系统（utterances）、访问统计（umami）等功能的适配经验，为有类似需求的用户提供了一份全面的实战参考。"
 toc = true
 +++

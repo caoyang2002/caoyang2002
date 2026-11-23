@@ -3,8 +3,6 @@ title: "观点"
 description: "营销理论与实战技巧专题"
 
 cascade:
-  tags: ["marketing", "strategy", "digital", "branding", "advertising"]
-  categories: ["business", "marketing", "economics"]
   # 设置该页面及其子页面都使用docs布局
   _target:
     kind: page

@@ -3,8 +3,8 @@ title = '战略与战术'
 date = 2025-05-22T12:57:33+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["战术", "企业战略"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -2,8 +2,8 @@
 date = '2024-03-23T09:31:37+08:00'
 draft = false
 title = '小米 4c 路由器刷机'
-categories = ["硬件改造", "网络技术"]
-tags = ["小米路由器", "刷机教程", "Breed", "OpenWrt", "Telnet", "FTP", "固件备份"]
+categories = ["技术"]
+tags = ["小米路由器", "刷机教程", "Breed", "OpenWrt", "Telnet"]
 description = "本文是一篇详细的小米路由器4C刷机教程，涵盖从开启Telnet/FTP、连接路由器、备份原厂固件，到刷入Breed不死引导和OpenWrt固件的完整步骤。教程基于Windows操作环境，提供工具包下载，适合初学者跟随操作，旨在帮助用户解锁路由器功能、安装第三方固件。"
 toc = true
 +++

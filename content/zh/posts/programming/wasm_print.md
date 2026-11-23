@@ -2,8 +2,8 @@
 date = '2025-01-15T00:31:17+08:00'
 draft = false
 title = 'Wasm 打印输出和浏览器特性等最佳实践'
-categories = ["编程", "前端开发"]
-tags = ["WebAssembly", "Rust", "wasm-bindgen", "web-sys", "最佳实践", "性能优化"]
+categories = ["技术"]
+tags = ["WebAssembly", "Rust", "wasm-bindgen", "web-sys", "最佳实践"]
 description = "本文详细介绍了在 Rust WebAssembly 开发中实现控制台打印、DOM 操作、浏览器 API 调用等功能的完整方法，并提供了涵盖错误处理、性能优化、内存管理、异步操作等关键领域的最佳实践指南，帮助开发者构建高效、健壮的 Wasm 应用。"
 toc = true
 +++

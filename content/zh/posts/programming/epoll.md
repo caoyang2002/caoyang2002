@@ -3,8 +3,8 @@ title = 'Epoll'
 date = 2026-01-28T18:27:07+08:00
 draft = false
 author = "simons"
-categories = ["计算机科学", "操作系统", "网络编程"]
-tags = ["epoll", "I/O多路复用", "Linux内核", "网络模型", "socket编程", "select", "进程调度", "中断"]
+categories = ["技术"]
+tags = ["epoll", "I/O多路复用", "Linux内核", "网络模型", "socket编程"]
 description = "本文从计算机硬件接收网络数据开始，深入剖析了CPU中断、进程阻塞与调度原理，逐步讲解了从阻塞I/O到select/poll，最终演进到epoll的技术历程。详细图解了epoll的实现机制，包括就绪列表、红黑树索引等核心数据结构，揭示了epoll高效监视大量文件描述符的本质。"
 +++
 

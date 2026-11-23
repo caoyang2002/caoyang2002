@@ -3,8 +3,8 @@ title = 'HTTP 协议'
 date = 2026-01-26T13:44:19+08:00
 draft = false
 author = "simons"
-categories = ["计算机网络", "Web开发", "后端开发"]
-tags = ["HTTP协议", "网络基础", "前端面试", "HTTPS", "HTTP/2", "TLS", "缓存机制", "跨域", "Cookie"]
+categories = ["技术"]
+tags = ["HTTP协议", "网络基础", "前端面试", "HTTPS", "HTTP/2"]
 description = "本文系统梳理了HTTP协议的核心知识体系，涵盖HTTP报文结构、请求方法、状态码、缓存机制、Cookie、HTTPS加密、HTTP/2优化等关键主题，通过深入解析和实际案例，帮助开发者建立完整的HTTP知识框架，从容应对面试和技术挑战。"
 cover = "https://www.nginx.org.cn/uploads/article/20200919/20c7acc132f099a43d5cbe0a532cfef0.jpg"
 +++

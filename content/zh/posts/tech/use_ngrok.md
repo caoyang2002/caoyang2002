@@ -3,8 +3,8 @@ title = '使用 Ngrok 进行内网穿透'
 date = 2026-10-21T14:03:56+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["内网"]
 # # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

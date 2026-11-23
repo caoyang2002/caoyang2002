@@ -3,8 +3,8 @@ title = '一些让人上瘾的网站'
 date = 2026-11-22T07:15:13+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["技术"]
 description = "<no value>"
 +++
 

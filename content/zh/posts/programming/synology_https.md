@@ -3,8 +3,8 @@ title = "群晖安装 Vaultwarden 并配置 https"
 date = 2026-01-25T11:33:19+08:00
 draft = false
 author = "simons"
-categories = ["家庭实验室", "群晖NAS", "自托管服务"]
-tags = ["Vaultwarden", "Bitwarden", "OpenWrt", "反向代理", "HTTPS", "内网穿透", "密码管理", "DNS劫持"]
+categories = ["技术"]
+tags = ["Vaultwarden", "Bitwarden", "OpenWrt", "反向代理", "HTTPS"]
 description = "本文详细介绍了在群晖NAS上安装并配置Vaultwarden（Bitwarden兼容服务器）的全过程，重点讲解如何通过OpenWrt路由器的DNS劫持功能，结合群晖反向代理实现内网HTTPS安全访问，无需公网IP或申请SSL证书即可搭建私有密码管理服务。"
 +++
 

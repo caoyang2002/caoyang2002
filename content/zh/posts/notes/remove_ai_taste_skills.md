@@ -3,8 +3,8 @@ title = '文章去 AI 味的 SKILL'
 date = 2026-01-29T07:29:29+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["人工智能"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

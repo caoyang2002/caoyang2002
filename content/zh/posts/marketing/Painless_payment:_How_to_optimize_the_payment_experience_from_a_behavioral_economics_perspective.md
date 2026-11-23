@@ -3,10 +3,9 @@ title = '无痛支付：如何从行为经济学视角优化支付体验？'
 date = 2025-02-20T14:49:59+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["行为经济学", "优化", "行为", "支付"]
 description = "为何在电子支付的时代，你的控制不住自己的消费？抽象的支付方式如何让我们失去对金钱数额的感知？"
-
 +++
 
 ![微信扫码二维码支付哪家强？](https://th.bing.com/th/id/R.3ac723babcfb2f31258f0943eb098328?rik=4e9HX7tFHQ5sZQ&riu=http%3a%2f%2fwww.498.net%2fPublic%2fjs%2fueditor%2fphp%2fUploads%2fAdmin%2f1%2f20180409%2f15232600617610.jpg&ehk=Ra%2fcun3O0BA8B8RDnxuuLHgTQAinC8n7i1Pg4q%2bEtso%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1)

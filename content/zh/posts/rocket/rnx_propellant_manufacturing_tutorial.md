@@ -3,8 +3,8 @@ title = 'RNX药柱制作教程'
 date = 2026-01-31T01:52:09+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["药柱"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://www.nakka-rocketry.net/rnx/grains6.jpg"
 +++

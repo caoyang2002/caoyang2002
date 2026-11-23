@@ -3,10 +3,9 @@ title = '营销基础：什么是营销？'
 date = 2025-02-21T22:27:09+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["营销几何"]
 description = "多数人都可能认为营销就是推销或者打广告，这样说并不完全，营销包含了多个部分，本文从专家定义和权威解释，描述了 “营销” 的定义。"
-
 +++
 
 ![免费 木质表面上的文件 素材图片](https://images.pexels.com/photos/95916/pexels-photo-95916.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)

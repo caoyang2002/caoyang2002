@@ -3,8 +3,8 @@ title = 'FreeCAD 基本介绍'
 date = 2026-02-08T17:15:05+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["CAD"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

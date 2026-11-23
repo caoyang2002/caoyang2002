@@ -3,8 +3,8 @@ title = 'LaTeX 数学公式完整指南'
 date = 2026-02-04T22:10:12+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["排版设计"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 math = true
 +++

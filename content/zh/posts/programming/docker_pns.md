@@ -2,7 +2,7 @@
 date = '2024-03-29T09:31:37+08:00'
 draft = false
 title = '搭建 NPS'
-categories = ["运维", "DevOps"]
+categories = ["技术"]
 tags = ["NPS", "内网穿透", "Docker", "反向代理", "服务器部署"]
 description = "详细介绍使用Docker在服务器上部署NPS内网穿透服务，并配置客户端的完整流程，包含配置文件详解和常见问题处理。"
 toc = true

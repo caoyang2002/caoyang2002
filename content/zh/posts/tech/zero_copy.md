@@ -3,8 +3,8 @@ title = '零复制技术'
 date = 2026-01-26T13:45:11+08:00
 draft = false
 author = "simons"
-categories = ["操作系统", "性能优化", "系统编程"]
-tags = ["零复制", "系统调用", "mmap", "sendfile", "splice", "DMA", "内核空间", "网络传输", "性能调优"]
+categories = ["技术"]
+tags = ["零复制", "系统调用", "mmap", "sendfile", "splice"]
 description = "本文深入解析零复制(zero-copy)技术原理，详细对比mmap、sendfile、splice等系统调用的工作流程与适用场景，通过图解和代码示例说明如何减少数据在内核与用户空间之间的冗余拷贝，大幅提升网络传输和文件操作性能。"
 +++
 

@@ -3,8 +3,8 @@ title = '买空气验证需求'
 date = 2026-03-02T07:53:26+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["营销"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

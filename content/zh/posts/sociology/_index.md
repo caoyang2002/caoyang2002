@@ -16,23 +16,7 @@ image = "/images/sociology-cover.png"
 # 专题级联设置 - 这些设置会影响所有子页面
 [cascade]
   # 自动为所有子页面添加标签和分类
-  tags = [
-    "古典社会学理论",
-    "现代社会学理论",
-    "社会研究方法论",
-    "社会分层与流动",
-    "文化社会学",
-    "政治社会学",
-    "经济社会学",
-    "城市社会学",
-    "性别研究",
-    "社会学定量分析",
-    "社会学定性研究",
-    "社会网络分析",
-    "全球化研究"
-  ]
   
-  categories = ["Sociology Theory", "Research Methods", "Applied Sociology"]
   
   # 页面参数
   [cascade.params]

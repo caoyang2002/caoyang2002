@@ -4,7 +4,7 @@ draft = false
 title = '即时设计插件开发'
 author = "simons"
 toc = true
-categories= ["开发"]
+categories = ["技术"]
 tags = ["插件"]
 description = "关于即使设计开发中的项目结构和代码组织介绍"
 +++

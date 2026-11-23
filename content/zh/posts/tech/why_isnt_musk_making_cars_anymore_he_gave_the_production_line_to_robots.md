@@ -3,8 +3,8 @@ title = '马斯克为什么不造车了？他把生产线让给了机器人'
 date = 2026-02-26T21:25:06+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["机器人"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,8 +3,8 @@ title = '百视达之死与奈飞的三次重生：一场关于“自杀”的�
 date = 2026-02-27T16:11:44+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["企业战略"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

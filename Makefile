@@ -12,7 +12,7 @@ SHELL := /bin/bash
 SCRIPTS     := scripts
 UPDATE_SH   := $(SCRIPTS)/update.sh
 RUN_SH      := $(SCRIPTS)/RUN.sh
-CREATE_SH   := $(SCRIPTS)/create.sh
+NEW_PY      := $(SCRIPTS)/new_post.py
 GENKEY_SH   := $(SCRIPTS)/generate-key.sh
 TENCLOUD_PY := $(SCRIPTS)/tencloud.py
 TRANSFER_PY := $(SCRIPTS)/transfer.py
@@ -52,7 +52,8 @@ help:
 	@printf '  make check               依赖 + 健康检查\n'
 	@printf '  make version             显示 update.sh 版本\n'
 	@printf '\n'
-	@printf '  make new NAME=xxx        新建文章 content/zh/posts/tech/xxx.md\n'
+	@printf '  make new                 交互式新建文章（选分类/目录/标签）\n'
+	@printf '                          标签会用相似度匹配已有标签，避免重复\n'
 	@printf '\n'
 	@printf '  make key YEAR=2024 MONTH=01 DAY=25   生成 4 位密码\n'
 	@printf '\n'
@@ -103,8 +104,7 @@ version:
 # ==========================================================
 .PHONY: new
 new:
-	@test -n "$(NAME)" || { echo '用法: make new NAME=<filename>'; exit 1; }
-	@bash $(CREATE_SH) "$(NAME)"
+	@$(PYTHON) $(NEW_PY) $(if $(NAME),--name="$(NAME)",)
 
 # ==========================================================
 # 密码生成

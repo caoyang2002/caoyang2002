@@ -3,8 +3,8 @@ title = 'Jupyter 快捷键'
 date = 2026-01-26T13:34:04+08:00
 draft = false
 author = "simons"
-categories = ["技术教程", "编程工具"]
-tags = ["Jupyter Notebook", "Python", "数据分析", "快捷键", "生产力", "开发工具"]
+categories = ["技术"]
+tags = ["Jupyter Notebook", "Python", "数据分析", "快捷键", "生产力"]
 description = "本文详细整理了Jupyter Notebook的完整快捷键指南，涵盖命令模式与编辑模式下的所有操作，包括运行代码、切换单元格类型、插入/删除/合并单元格、文本编辑等常用功能，帮助数据分析师和开发者显著提升工作效率。"
 +++
 

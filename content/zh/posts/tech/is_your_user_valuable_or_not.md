@@ -3,8 +3,8 @@ title = '你的用户到底值不值钱'
 date = 2026-03-02T07:56:18+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["技术"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

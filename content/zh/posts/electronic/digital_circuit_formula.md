@@ -3,8 +3,8 @@ title = '数字电路公式介绍'
 date = 2026-02-03T01:35:10+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["数字电路设计", "电路设计"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

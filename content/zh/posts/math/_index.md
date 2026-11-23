@@ -7,8 +7,6 @@ description = "数学基础与理论"
 
 # 级联设置
 [cascade]
-tags = ["algebra", "calculus", "geometry", "analysis", "statistics"]
-categories = ["foundation", "advanced", "applied"]
 # 设置布局目标
 [cascade._target]
 kind = "page"
@@ -41,5 +39,4 @@ url = "https://datawhalechina.github.io/math-for-ai/"
 [[params.resources.links]]
 name = "MIT 18.06 线性代数笔记"
 url = "https://linalg.apachecn.org"
-
 +++

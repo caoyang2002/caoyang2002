@@ -3,8 +3,8 @@ title = '极简 RP2040 推力采集系统'
 date = 2026-02-01T10:14:17+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["推力", "采集"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://circuitstate.com/wp-content/uploads/2021/05/Raspberry-Pi-Pico-RP2040-Microcontroller-Development-Board-Vishnu-Mohanan-2500px-1.jpg"
 +++

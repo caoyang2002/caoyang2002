@@ -3,8 +3,8 @@ title = '为佩奇关闭Google Reader的魄力叫好！'
 date = 2026-02-28T12:58:44+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["谷歌"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

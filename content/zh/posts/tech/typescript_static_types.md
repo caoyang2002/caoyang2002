@@ -3,8 +3,8 @@ title = 'TypeScript: 静态'
 date = '2025-01-24T13:46:32+08:00'
 draft = false
 toc = true
-categories = ["编程", "前端开发"]
-tags = ["TypeScript", "静态类型", "JavaScript", "类型系统", "前端工具", "代码质量"]
+categories = ["技术"]
+tags = ["TypeScript", "静态类型", "JavaScript", "类型系统", "前端工具"]
 description = "本文介绍 TypeScript 的核心价值：通过静态类型系统，在编码阶段提前发现潜在错误，提升代码可维护性。文章对比了 Flow、JSDoc 等方案，提供了用户管理的实战案例，并分享了避免滥用 any、合理使用泛型等实用经验，帮助开发者更高效地从 JavaScript 迁移到 TypeScript。"
 +++
 

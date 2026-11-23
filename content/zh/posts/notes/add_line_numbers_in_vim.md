@@ -3,8 +3,8 @@ title = '在 Vim 中给文本添加序号'
 date = 2026-02-01T09:37:04+08:00
 draft = false
 author = "simons"
-categories = ["工具"]
-tags = ["vim"]
+categories = ["技术"]
+tags = ["Vim"]
 description = "通过命命令在 vim 中给文本添加序号的方法"
 cover = "https://molodost.bz/upload/photos/2024/09/Gg4rL47UJmXYXgsp7vhR_02_d0f4680c87a24bca9aa0dadf160840fc_image.png"
 +++

@@ -2,7 +2,7 @@
 date = '2024-06-29T09:31:37+08:00'
 draft = false
 title = 'C 语言字符画'
-categories = ["编程"]
+categories = ["技术"]
 tags = ["C语言", "字符画", "编程练习"]
 description = "使用C语言打印空心正方形字符画，包含单组输入和多组输入两种实现方法，通过行列控制逻辑输出指定边长的图形。"
 toc = true

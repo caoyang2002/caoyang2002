@@ -3,10 +3,9 @@ title = '起大早，赶晚集：美国无线电公司（RCA）是如何错失�
 date = 2025-04-29T14:31:25+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["显示"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 > RCA 曾拥有早期液晶显示专利，却未能实现液晶显示屏商用

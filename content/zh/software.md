@@ -1,7 +1,6 @@
 +++
 title = "软件工程探索者"
 layout = "software"
-categories = ["软件工程", "全栈开发", "技术分享"]
 bio = "探索软件工程的无限可能，连接全球开发者社区"
 email = "reggiesimons2cy@gmail.com"
 github = "github.com/caoyang2002"
@@ -307,5 +306,4 @@ icon = "🌏"
 name = "V2EX"
 description = "创意工作者的交流社区，讨论技术和创业"
 url = "https://www.v2ex.com"
-
 +++

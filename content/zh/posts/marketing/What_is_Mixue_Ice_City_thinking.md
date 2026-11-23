@@ -3,8 +3,8 @@ title = '开店不如开厂：蜜雪冰城在想什么？'
 date = 2025-03-01T12:46:31+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["蜜雪冰城", "开店"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

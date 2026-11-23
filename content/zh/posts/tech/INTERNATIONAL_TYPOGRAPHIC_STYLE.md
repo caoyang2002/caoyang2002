@@ -3,12 +3,11 @@ title = '瑞士国际主义设计'
 date = 2026-10-20T17:18:59+08:00
 draft = false
 author = "simons"
-categories = ["平面设计"]
-tags = ["平面与视觉传达风格","约1950–1960年代及其延续","欧洲"]
+categories = ["人文"]
+tags = ["平面与视觉传达风格", "约1950–1960年代及其延续", "欧洲"]
 description = "瑞士国际主义又称国际字体风格，约在1950年代由瑞士和德国的平面设计实践系统化，以非对称网格、无衬线字体、摄影和清晰信息层级追求可复制的视觉沟通。它不是只有左对齐、Helvetica和红黑白；不同设计师的网格、字体与综合色使用并不相同。"
 
 cover = "https://styleatlas.art/assets/artworks/optimized/swiss.webp"
-
 +++
 
 # 瑞士国际主义

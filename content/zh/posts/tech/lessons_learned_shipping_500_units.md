@@ -3,10 +3,9 @@ title = '运送我的第一个硬件产品500个的经验教训'
 date = 2026-02-26T16:29:42+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["硬件"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 [查看原文](https://www.simonberens.com/p/lessons-learned-shipping-500-units)

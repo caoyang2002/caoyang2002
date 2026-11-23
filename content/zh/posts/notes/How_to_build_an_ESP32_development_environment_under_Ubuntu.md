@@ -3,10 +3,9 @@ title = '如何在Ubuntu系统下搭建ESP32开发环境：从零开始配置与
 date = 2025-04-06T17:09:20+08:00
 draft = false
 author = "simons"
-categories = ["物联网", "嵌入式开发", "Ubuntu"]
-tags = ["ESP32", "ESP-IDF", "环境搭建", "Ubuntu 22.04", "物联网开发", "乐鑫", "烧录调试"]
+categories = ["技术"]
+tags = ["ESP32", "ESP-IDF", "环境搭建", "Ubuntu 22.04", "物联网开发"]
 description = "本文提供了一份详细的、从零开始的教程，指导开发者如何在Ubuntu 22.04系统上搭建完整的ESP32开发环境。内容涵盖安装依赖、配置ESP-IDF框架、设置工具链、编译烧写Hello World示例程序，并附带了CMake版本、编译器缺失等常见问题的解决方案，帮助物联网和嵌入式新手快速上手。"
-
 +++
 
 ### 引言

@@ -3,8 +3,8 @@ title = '5 个 MATLAB 开源替代方案'
 date = 2026-02-06T11:44:18+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["矩阵", "开源"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

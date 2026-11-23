@@ -3,8 +3,8 @@ title = 'AI 竞赛变得尴尬起来'
 date = 2026-09-29T11:55:52+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["人工智能"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -3,10 +3,9 @@ title = '低竞争小词的魅力，8条外链拿下41K的月访问量'
 date = 2026-03-02T07:58:07+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["竞争"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 早上好，朋友们！

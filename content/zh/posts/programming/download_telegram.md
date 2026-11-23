@@ -2,8 +2,8 @@
 date = '2024-05-29T09:31:37+08:00'
 draft = false
 title = 'TG 下载器'
-categories = ["技术教程"]
-tags = ["Telegram", "下载工具", "配置指南", "媒体下载"]
+categories = ["技术"]
+tags = ["Telegram", "下载工具", "配置", "媒体下载"]
 description = "本文详细介绍了 Telegram Media Downloader 的下载、配置与使用方法，包括如何获取 API 密钥、Chat ID、编写配置文件以及通过代理运行，帮助用户实现自动化下载 Telegram 频道中的媒体文件。"
 toc = true
 +++

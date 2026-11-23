@@ -3,8 +3,6 @@ title: "文章列表"
 description: "本站的所有文章"
 
 cascade:
-  tags: ["rocket", "space", "aerospace", "engineering"]
-  categories: ["technology", "science", "engineering"]
   # 设置该页面及其子页面都使用docs布局
   _target:
     kind: page

@@ -1,7 +1,6 @@
 +++
 title = "嵌入式系统开发者"
 layout = "hardware"
-categories = ["嵌入式", "硬件", "物联网"]
 bio = "探索嵌入式系统与硬件开发技术，连接全球物联网开发者社区"
 email = "reggiesimons2cy@gmail.com"
 wechat = "thomelgo"
@@ -314,5 +313,4 @@ icon = "📱"
 name = "ESP32 中文社区"
 description = "安信可/乐鑫官方技术支持论坛"
 url = "https://www.esp32.com/"
-
 +++

@@ -3,10 +3,9 @@ title = '定位的贡献：如果可口可乐失去配方会倒闭吗？'
 date = 2025-02-24T10:00:03+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["可口可乐", "品牌定位"]
 description = "可口可乐的大火没有发生，但是王老吉的 “大火” 却发生了。中国版本的真实 “可口可乐” 神话 —— 王老吉和加多宝之战"
-
 +++
 
 ![杰克·特劳特_百度百科](https://bkimg.cdn.bcebos.com/pic/738b4710b912c8fcc3cef20a83558545d688d53f8be4?x-bce-process=image/resize,m_lfit,w_536,limit_1/quality,Q_70)

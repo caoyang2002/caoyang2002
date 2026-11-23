@@ -1,7 +1,6 @@
 +++
 title = "日程表"
 layout = "schedule"
-categories = ["日程"]
 bio = "周六和周日在做开发和写营销文章，周五在拍片子，其他时间 17:30~22:00 可约"
 email = "rysigy@qq.com"
 wechat = "thomelgo"
@@ -201,5 +200,4 @@ progress = 100
 category = "全栈开发"
 dependencies = ["项目启动"]
 rate = "[0.3, 0.3]"
-
 +++

@@ -2,8 +2,8 @@
 date = '2025-01-05T12:41:17+08:00'
 draft = false
 title = 'Wasm'
-categories = ["前端开发", "Web技术"]
-tags = ["WebAssembly", "性能优化", "C++", "JavaScript", "内存管理", "SIMD", "Emscripten", "实战案例"]
+categories = ["技术"]
+tags = ["WebAssembly", "性能优化", "C++", "JavaScript", "内存管理"]
 description = "本文深度解析WebAssembly核心技术原理，通过斐波那契数列、图像高斯模糊等实战案例，对比JavaScript与WASM性能差异，详细讲解内存模型、SIMD优化、工具链配置及性能优化技巧，帮助开发者在Web端实现接近原生的高性能计算。"
 toc = true
 +++

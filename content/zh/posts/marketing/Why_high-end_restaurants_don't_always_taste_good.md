@@ -3,7 +3,7 @@ title = '为什么高级餐厅味道并不一定好？'
 date = 2025-02-15T13:30:46+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["味觉"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++

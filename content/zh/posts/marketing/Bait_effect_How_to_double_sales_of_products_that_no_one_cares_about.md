@@ -3,10 +3,9 @@ title = '诱饵效应：如何让无人问津的产品销量翻倍？'
 date = 2025-02-22T13:25:48+08:00
 draft = false
 author = "simons"
-categories = ["行为经济学"]
-tags = ["对比效应","诱饵效应"]
+categories = ["商业"]
+tags = ["对比效应", "诱饵效应"]
 description = "如何通过引入一个不太好的选项，反而能让原来的某个选项显得更好，影响人们的选择？"
-
 +++
 
 ![img](https://p2.itc.cn/q_70/images03/20220327/06f0e7aa60e746fc80e3a7f96be61c8d.jpeg)

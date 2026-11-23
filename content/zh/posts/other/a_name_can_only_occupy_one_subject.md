@@ -3,10 +3,9 @@ title = '一个名称只能占领一个标的'
 date = 2025-05-06T08:29:02+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["命名"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 有的企业只知生产一类产品，这样的企业，通常品牌名就是企业名。

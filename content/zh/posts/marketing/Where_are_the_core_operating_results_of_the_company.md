@@ -3,10 +3,9 @@ title = '企业的核心经营成果在哪里？'
 date = 2025-03-22T00:27:31+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["企业"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
-
 +++
 
 现代管理学之父彼得·德鲁克说：“企业的经营成果在企业外部，在企业内部的只有成本。”

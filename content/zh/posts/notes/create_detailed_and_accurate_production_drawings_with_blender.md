@@ -3,8 +3,8 @@ title = '使用 Blender 创建详细且准确的生产图纸'
 date = 2026-02-05T14:34:53+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["建模"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://www.sogaworks.cn/image/editor/2023/09/459916788040261.png"
 +++

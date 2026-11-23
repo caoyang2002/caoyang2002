@@ -3,10 +3,9 @@ title = '营销与竞选：奥巴马如何通过营销策略获得胜利？'
 date = 2025-02-19T17:16:37+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
-tags = ["战略"]
+categories = ["商业"]
+tags = ["企业战略"]
 description = "从营销角度来看，奥巴马面对强劲的对手，究竟是如何通过营销策略赢得美国总统大选？"
-
 +++
 
 > 原视频： https://youtu.be/Pf_8nZ3K3qU

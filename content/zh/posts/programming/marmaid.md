@@ -2,8 +2,8 @@
 date = '2023-03-19T09:31:37+08:00'
 draft = false
 title = 'mermaid 教程'
-categories = ["技术教程", "可视化工具"]
-tags = ["Mermaid", "Markdown", "图表绘制", "思维导图", "流程图", "甘特图", "饼图", "顺序图"]
+categories = ["技术"]
+tags = ["Mermaid", "Markdown", "图表绘制", "思维导图", "流程图"]
 description = "本文是一份详尽的Mermaid图表语言教程，涵盖思维导图、流程图、顺序图、甘特图和饼图五大核心图表类型。通过丰富的代码示例和可视化效果展示，系统讲解语法规则、高级功能及实用技巧，帮助读者掌握在Markdown中绘制专业级图表的技能。"
 toc = true
 +++

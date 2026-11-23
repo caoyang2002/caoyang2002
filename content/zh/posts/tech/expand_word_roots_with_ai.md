@@ -3,8 +3,8 @@ title = '用AI扩词根'
 date = 2026-03-02T07:47:50+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["人工智能", "词根"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

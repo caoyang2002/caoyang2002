@@ -1,7 +1,6 @@
 +++
 title = "视觉创意设计开发者"
 layout = "creative"
-categories = ["视觉创意", "UI/UX设计", "数据可视化", "创意编程"]
 bio = "探索视觉创意与软件工程的融合应用，连接设计与开发的跨界创作者社区"
 email = "reggiesimons2cy@gmail.com"
 wechat = "thomelgo"

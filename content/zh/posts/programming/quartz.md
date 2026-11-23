@@ -2,8 +2,8 @@
 date = '2024-02-29T09:31:37+08:00'
 draft = false
 title = 'Quartz 教程'
-categories = ["技术教程", "网站搭建"]
-tags = ["Quartz", "静态网站生成器", "Obsidian", "教程", "配置", "插件开发", "GitHub Pages", "SPA路由"]
+categories = ["技术"]
+tags = ["Quartz", "静态网站生成器", "Obsidian", "教程", "配置"]
 description = "一份详细的Quartz静态网站生成器使用教程，涵盖从环境配置、布局定制、组件开发到插件制作的全流程，帮助用户基于Obsidian笔记快速构建个性化网站并部署到GitHub Pages。"
 toc = true
 +++

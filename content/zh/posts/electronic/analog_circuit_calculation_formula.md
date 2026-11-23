@@ -3,8 +3,8 @@ title = '模拟电路公式简述'
 date = 2026-02-03T01:33:42+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["电路设计", "模拟电路设计"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

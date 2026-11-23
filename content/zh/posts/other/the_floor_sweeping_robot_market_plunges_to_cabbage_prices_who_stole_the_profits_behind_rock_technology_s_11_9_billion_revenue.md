@@ -3,8 +3,8 @@ title = '扫地机器人卷成白菜价：石头科技119亿营收背后，利�
 date = 2025-04-29T14:37:09+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["机器人"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

@@ -16,18 +16,7 @@ image = "/images/programming-cover.png"
 # 专题级联设置 - 这些设置会影响所有子页面
 [cascade]
   # 自动为所有子页面添加标签和分类
-  tags = [
-    "AI4SE",
-    "程序分析与验证",
-    "软件架构",
-    "DevOps",
-    "编程语言",
-    "软件安全",
-    "低代码",
-    "开发者体验"
-  ]
   
-  categories = ["Software Engineering", "Programming"]
   
   # 页面参数
   [cascade.params]

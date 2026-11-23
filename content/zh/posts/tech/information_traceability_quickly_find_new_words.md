@@ -3,8 +3,8 @@ title = '信息溯源，快速找到新词'
 date = 2026-03-02T07:49:57+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["溯源", "新词"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

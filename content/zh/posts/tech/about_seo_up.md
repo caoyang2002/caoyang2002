@@ -3,8 +3,8 @@ title = '2026 年 X 上最值得关注的网站出海与独立开发博主大合
 date = 2026-11-23T06:56:53+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["商业"]
+tags = ["SEO", "出海"]
 description = "想在中文 X 上找出海和独立开发的人，X对中文的搜索非常差，我只能通过通过某个出海人关注，一个个去查看，去寻找，一共找到93名。"
 +++
 

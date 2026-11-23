@@ -3,8 +3,8 @@ title = '火箭研究相关资源'
 date = 2026-02-01T09:12:11+08:00
 draft = false
 author = "simons"
-categories = ["暂无"]
-tags = ["暂无"]
+categories = ["技术"]
+tags = ["火箭"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 cover = "https://i0.wp.com/spacenews.com/wp-content/uploads/2014/11/JohnCarmack_NASA4X3.jpg?w=1421&ssl=1"
 +++

@@ -3,7 +3,7 @@ title = '营销基础：市场营销环境分析'
 date = 2025-02-27T09:20:12+08:00
 draft = false
 author = "simons"
-categories = ["营销"]
+categories = ["商业"]
 tags = ["基础"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++

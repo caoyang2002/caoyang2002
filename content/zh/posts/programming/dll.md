@@ -2,7 +2,7 @@
 date = '2024-06-29T09:31:37+08:00'
 draft = false
 title = '如何生成 dll 文件'
-categories = ["技术教程"]
+categories = ["技术"]
 tags = ["C++", "Visual Studio", "动态链接库", "DLL"]
 description = "本文详细介绍了在Visual Studio中创建C++动态链接库(DLL)的步骤，包括项目创建、代码编写、头文件配置以及生成优化设置。"
 toc = true

@@ -3,8 +3,8 @@ date = '2025-01-24T13:53:44+08:00'
 draft = false
 title = 'Vue: 一个让前端开发不再痛苦的框架'
 toc = true
-categories = ["前端开发", "技术框架"]
-tags = ["Vue.js", "前端框架", "响应式编程", "组件化", "JavaScript", "入门指南"]
+categories = ["技术"]
+tags = ["Vue.js", "前端框架", "响应式编程", "组件化", "JavaScript"]
 description = "本文介绍了Vue.js框架如何通过数据驱动视图和组件化开发，解决传统前端开发中数据和视图分离、代码难以维护的问题。通过对比jQuery、React和Angular，结合Todo List实战示例，分析Vue的上手优势、响应式原理及常见陷阱，为开发者提供从入门到实战的清晰指引。"
 +++
 

@@ -2,7 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = '设计资料：样机'
-categories = ["设计资源"]
+categories = ["技术"]
 tags = ["样机", "插画", "免费素材", "图片库"]
 description = "精选设计师必备的高质量样机、插画与免费可商用图片素材网站合集。"
 toc = true

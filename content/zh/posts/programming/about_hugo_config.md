@@ -2,8 +2,8 @@
 date = '2024-12-22T18:12:52+08:00'
 draft = false
 title = 'hugo 配置'
-categories = ["技术指南"]
-tags = ["Hugo", "静态网站", "博客配置", "性能优化", "SEO"]
+categories = ["技术"]
+tags = ["Hugo", "静态网站生成器", "博客配置", "性能优化", "SEO"]
 description = "一份全面的 Hugo 博客配置优化指南，涵盖站点配置、图片处理、安全策略、内容组织及性能与 SEO 优化的最佳实践。"
 toc = true
 +++

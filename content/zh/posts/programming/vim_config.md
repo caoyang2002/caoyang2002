@@ -2,8 +2,8 @@
 date = '2025-01-07T13:48:33+08:00'
 draft = false
 title = '更好的 vim 配置'
-categories = ["工具配置", "软件开发"]
-tags = ["vim", "编辑器配置", "效率工具", "开发环境", "配置文件"]
+categories = ["技术"]
+tags = ["Vim", "编辑器配置", "效率工具", "开发环境", "配置文件"]
 description = "一篇详尽的 Vim 配置文件 (.vimrc) 分享，包含了显示设置、代码高亮、文件头自动生成、快捷键映射、编译运行集成以及多种插件（如TagList、MiniBufExplorer）的配置，旨在提升文本编辑与代码开发的效率。"
 toc = true
 +++

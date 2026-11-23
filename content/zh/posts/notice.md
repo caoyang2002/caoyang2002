@@ -4,7 +4,7 @@ date: 2024-03-21T15:04:05+08:00
 lastmod: 2024-03-21T15:04:05+08:00
 draft: false
 weight: 1
-categories: ["公告"]
+categories: ["其他"]
 tags: ["公告"]
 author: "simons"
 description: "文章来源说明"
