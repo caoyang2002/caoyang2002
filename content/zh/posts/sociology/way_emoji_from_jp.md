@@ -34,7 +34,7 @@ console.log('😊'.length); // 2
 
 比如“😊”在UTF-16里占2个代码单元，因为它的码点U+1F60A位于补充平面，需要用代理对表示。家庭表情“👩‍👩‍👧‍👦”更极端，它不是一个码点，而是“女人+ZWJ+女人+ZWJ+女孩+ZWJ+男孩”的组合序列，我在 markdown 编辑器 Typora 里输入这个表情，它显示如下：
 
-![👩‍👩‍👧‍👦 符号的构成](/assets/post_images/emoji_char_count_3.png)
+![👩‍👩‍👧‍👦 符号的构成](/assets/post_images/emoji_char_count_s.png)
 
 四个表情码点加三个零宽连字符U+200D，共7个Unicode码点。其中四个表情码点各占2个UTF-16代码单元，三个ZWJ各占1个，于是`length`告诉你11。
 
