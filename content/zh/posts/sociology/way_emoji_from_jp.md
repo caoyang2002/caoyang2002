@@ -36,6 +36,8 @@ console.log('😊'.length); // 2
 
 ![👩‍👩‍👧‍👦 符号的构成](/assets/post_images/emoji_char_count_s.png)
 
+> ZWJ（Zero Width Joiner，零宽连字符U+200D）是Unicode里的一种控制字符，用于组合两个字符，使它们看起来像一个字符。
+
 四个表情码点加三个零宽连字符U+200D，共7个Unicode码点。其中四个表情码点各占2个UTF-16代码单元，三个ZWJ各占1个，于是`length`告诉你11。
 
 ```js
