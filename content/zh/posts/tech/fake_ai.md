@@ -23,11 +23,11 @@ description = "fake_ai"
 
 前几天，朋友给我看了一个视频，大致是一个人创建了 “剪辑 Agent”，实现了自动化剪辑。画面如下：
 
-![“剪映 AI Agent（1）”](/assets/post_images/cut_ai_cursor.png)
+![“剪映 AI Agent”](/assets/post_images/cut_ai_cursor.png)
 
 也有这样的：
 
-![“剪映 AI Agent（2）”](/assets/post_images/cut_ai_clip.png)
+![“剪辑 AI Agent”](/assets/post_images/cut_ai_clip.png)
 
 当时看这个视频的时候，总觉得很奇怪：为什么需要这么多鼠标，而去很多鼠标指针都是无意义的动作。于是当时就质疑了一下：每一个 Agent 的动作都意味着 Token 的消耗，如此巨量的鼠标指针无意义动作，是为什么？
 
@@ -47,7 +47,7 @@ description = "fake_ai"
 
 ![HID 介绍（维基百科）](/assets/post_images/hid_wiki.png)
 
-当然，人是无法直接和计算机交流的，所以需要通过外设来和计算机进行交流。
+诚然，人是无法直接和计算机交流的，所以需要通过外设来和计算机进行交流。
 
 AI 和计算机交流，本来就不需要经过“人类接口设备”。鼠标、键盘、显示器之所以存在，是因为人没法直接读写内存、调用函数、发送网络请求，所以需要一层翻译。
 
