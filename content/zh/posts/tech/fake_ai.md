@@ -23,7 +23,11 @@ description = "fake_ai"
 
 前几天，朋友给我看了一个视频，大致是一个人创建了 “剪辑 Agent”，实现了自动化剪辑。画面如下：
 
-![“剪映 AI Agent”](/assets/post_images/cut_ai_cursor.png)
+![“剪映 AI Agent（1）”](/assets/post_images/cut_ai_cursor.png)
+
+也有这样的：
+
+![“剪映 AI Agent（2）”](/assets/post_images/cut_ai_clip.png)
 
 当时看这个视频的时候，总觉得很奇怪：为什么需要这么多鼠标，而去很多鼠标指针都是无意义的动作。于是当时就质疑了一下：每一个 Agent 的动作都意味着 Token 的消耗，如此巨量的鼠标指针无意义动作，是为什么？
 
@@ -33,7 +37,7 @@ description = "fake_ai"
 
 我看到这个视频，评论区的一句话让我印象深刻：“所有高效率的操作都不会有视觉界面”。
 
-![X 评论](/assets/post_images/cut_ai_fake.png)
+![X 评论](/assets/post_images/cut_ai_fake.jpg)
 
 [查看原文](https://x.com/weiyux2021/status/2125434960832286955?a=VTpYB6OJTX4XkNBG1PA&s=61)
 
