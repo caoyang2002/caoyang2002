@@ -1,0 +1,87 @@
+{{- $raw := .Destination -}}
+{{- $dest := strings.TrimPrefix "/" $raw -}}
+{{- $dest = strings.TrimPrefix "./" $dest -}}
+{{- $img := false -}}
+{{- if not (or (hasPrefix $raw "http://") (hasPrefix $raw "https://") (hasPrefix $raw "data:") (hasPrefix $raw "//")) -}}
+  {{- $img = .Page.Resources.GetMatch $dest -}}
+  {{- if not $img -}}
+    {{- $img = resources.Get $dest -}}
+  {{- end -}}
+  {{- if not $img -}}
+    {{- if hasPrefix $dest "assets/" -}}
+      {{- $img = resources.Get (strings.TrimPrefix "assets/" $dest) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $alt := .PlainText | safeHTML -}}
+{{- $title := .Title | safeHTML -}}
+{{- $figureClass := "my-8 text-center" -}}
+{{- $imgClass := "mx-auto" -}}
+{{- $caption := $alt -}}
+{{- if not $caption -}}
+  {{- $caption = "图片无描述" -}}
+{{- end -}}
+{{- $isImage := false -}}
+{{- $processable := false -}}
+{{- with $img -}}
+  {{- if eq .ResourceType "image" -}}
+    {{- $isImage = true -}}
+    {{- if ne .MediaType.SubType "svg" -}}
+      {{- $processable = true -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if $processable -}}
+  {{- $small := $img.Resize "480x webp" -}}
+  {{- $medium := $img.Resize "768x webp" -}}
+  {{- $large := $img.Resize "1024x webp" -}}
+<figure class="{{ $figureClass }}">
+    <picture>
+        <source
+            type="image/webp"
+            srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $large.RelPermalink }} 1024w"
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 1024px"
+        />
+        <img
+            src="{{ $large.RelPermalink }}"
+            srcset="{{ $small.RelPermalink }} 480w, {{ $medium.RelPermalink }} 768w, {{ $large.RelPermalink }} 1024w"
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, 1024px"
+            alt="{{ $alt }}"
+            class="{{ $imgClass }}"
+            loading="lazy"
+            decoding="async"
+            {{- if $title }}title="{{ $title }}"{{ end -}}
+        />
+    </picture>
+    <figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+        {{- $caption -}}{{ if and $title (ne $title $alt) }}<span class="ml-2 text-gray-500">({{ $title }})</span>{{ end -}}
+    </figcaption>
+</figure>
+{{- else if $isImage -}}
+<figure class="{{ $figureClass }}">
+    <img
+        src="{{ $img.RelPermalink }}"
+        alt="{{ $alt }}"
+        class="{{ $imgClass }} max-w-full h-auto"
+        {{- if $title }}title="{{ $title }}"{{ end -}}
+        loading="lazy"
+        decoding="async"
+    />
+    <figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+        {{- $caption -}}{{ if and $title (ne $title $alt) }}<span class="ml-2 text-gray-500">({{ $title }})</span>{{ end -}}
+    </figcaption>
+</figure>
+{{- else -}}
+<figure class="{{ $figureClass }}">
+    <img
+        src="{{ .Destination | safeURL }}"
+        alt="{{ $alt }}"
+        class="{{ $imgClass }} max-w-full h-auto"
+        {{- if $title }}title="{{ $title }}"{{ end -}}
+        loading="lazy"
+    />
+    <figcaption class="mt-3 text-sm text-gray-600 dark:text-gray-400">
+        {{- $caption -}}{{ if and $title (ne $title $alt) }}<span class="ml-2 text-gray-500">({{ $title }})</span>{{ end -}}
+    </figcaption>
+</figure>
+{{- end -}}

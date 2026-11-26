@@ -48,13 +48,16 @@
 ### 1.1 路径与命名
 
 ```
-content/zh/posts/<板块>/<filename>.md
+content/zh/posts/<板块>/<slug>/index.md
+content/zh/posts/<板块>/<slug>/images/<filename>.png
 ```
 
+- 新文章统一使用 Page Bundle：文章目录名就是 URL 中的 `:filename`。
 - 板块目录示例：`tech`、`programming`、`computer`、`design`、`marketing`、`life`、`notes`、`math`、`electronic`、`rocket`、`sociology` 等。
-- 文件名使用英文、数字、连字符：`how-to-use-hugo.md`。
-- 避免空格、中文文件名、特殊符号。中文文件名会导致 URL 被百分号编码，影响传播与分享。
-- 文章 URL 由 `[permalinks] posts = "/post/:year/:month/:filename/"` 决定，**文件名就是 URL 的一部分**。发布后不要随意改文件名；必须改时用 `aliases` 保留旧链接。
+- 目录名使用英文、数字、连字符：`how-to-use-hugo`。
+- 避免空格、中文目录名、特殊符号。中文目录名会导致 URL 被百分号编码，影响传播与分享。
+- 文章 URL 由 `[permalinks] posts = "/post/:year/:month/:filename/"` 决定，**目录名就是 URL 的一部分**。发布后不要随意改目录名；必须改时用 `aliases` 保留旧链接。
+- 图片放文章目录的 `images/` 下，正文写 `![](images/foo.png)`；不要写 `./images/` 或 `/assets/...`。历史单文件 `<slug>.md` 仍可构建，但不要再新增。
 
 ### 1.2 新建流程
 
@@ -65,6 +68,7 @@ make new
 
 `make new` 会：
 
+- 在 `content/zh/posts/<板块>/<slug>/` 下生成 `index.md`（Page Bundle）；
 - 调用 Hugo archetype 生成 front matter；
 - 自动匹配已有标签，减少同义标签碎片；
 - 生成 `categories`、`tags`、`title`、`description`。
@@ -662,20 +666,31 @@ make img MD=content/zh/posts/tech/foo.md SLUG=my-article
 
 | 位置 | 用途 |
 | :--- | :--- |
-| `static/assets/post_images/` | 文章配图，按原样发布 |
+| Page bundle 的 `images/` | 新文章配图，推荐；自动压缩/响应式 |
+| `assets/` | 全站共享图片，需模板用 `resources.Get` 查找 |
+| `static/assets/post_images/` | 历史文章配图，按原样发布 |
 | `static/images/` | 站点级图片、支付码、封面 |
-| Page bundle 目录 | 需要 Hugo 自动压缩/响应式图片时使用 |
 
 Page bundle 示例：
 
 ```
 content/zh/posts/tech/my-article/
 ├── index.md
-├── cover.jpg
-└── diagram.png
+└── images/
+    └── diagram.png
 ```
 
-在 `index.md` 中写 `![图](diagram.png)`，主题会生成 480/768/1024 宽的 WebP 响应式图片。
+在 `index.md` 中写 `![图](images/diagram.png)`，主题会生成 480/768/1024 宽的 WebP 响应式图片。`./images/...` 与 `/assets/...` 也会被项目级 render hook 兼容，但新文章统一用 `images/...`。
+
+VS Code 用 Paste Image 时，项目已提供 `.vscode/settings.json`：截图后按快捷键，图片自动落到当前文章目录的 `images/`，并插入 `![](images/...)`。
+
+全站共享图片放 `assets/images/foo.png`，正文写 `![](/assets/images/foo.png)`。项目级 render hook 的顺序是：Page Resource → `resources.Get` → 原样输出，因此静态 `/assets/post_images/...` 仍然兼容。
+
+图片文件名统一为 `<文章目录名>-<原始文件名>`，例如 `web_design-2026-11-27-07-26-28.png`。Paste Image 默认只生成时间戳名，写作时用下列任一方式补齐前缀：
+
+- 常驻 `make watch-images`：粘贴后自动重命名并修复 Markdown 链接；
+- 批量执行 `make img-rename`；
+- 在 VS Code 任务面板运行 `Watch pasted images` 或 `Rename pasted images`。
 
 ### 9.3 规范
 

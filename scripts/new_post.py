@@ -606,9 +606,10 @@ def main():
             print(f"{RED}文件名不合法{NC}")
             name = slugify(title)
             continue
-        rel = f"content/zh/posts/{folder}/{name}.md"
-        if (ROOT / rel).exists():
-            print(f"{RED}{rel} 已存在，请换一个文件名{NC}")
+        rel = f"content/zh/posts/{folder}/{name}/index.md"
+        legacy = f"content/zh/posts/{folder}/{name}.md"
+        if (ROOT / rel).exists() or (ROOT / legacy).exists():
+            print(f"{RED}content/zh/posts/{folder}/{name}/ 已存在，请换一个文件名{NC}")
             name = ""
             continue
         break
@@ -622,7 +623,7 @@ def main():
     # 7. 确认
     print(f"\n{CYAN}确认信息{NC}")
     print(f"  标题：{title}")
-    print(f"  文件：content/zh/posts/{folder}/{name}.md")
+    print(f"  文件：content/zh/posts/{folder}/{name}/index.md")
     print(f"  分类：{cat}")
     print(f"  标签：{', '.join(tags)}")
     ans = ask("创建文章？[Y/n]: ", "y").lower()
@@ -631,7 +632,7 @@ def main():
         return 1
 
     # 8. 创建（使用 Hugo archetype 生成，再覆盖分类/标签/标题）
-    rel = f"content/zh/posts/{folder}/{name}.md"
+    rel = f"content/zh/posts/{folder}/{name}/index.md"
     try:
         res = subprocess.run(
             ["hugo", "new", rel],
@@ -667,6 +668,7 @@ def main():
     path.write_text(new_txt, encoding="utf-8")
 
     print(f"\n{GREEN}已创建：{rel}{NC}")
+    print(f"{DIM}截图后按 Paste Image 快捷键，图片会存到该目录的 images/ 并自动插入。{NC}")
     print(f"{DIM}接下来可以编辑正文，或运行 make run 预览。{NC}\n")
     return 0
 

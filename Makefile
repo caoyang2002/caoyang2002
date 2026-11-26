@@ -19,6 +19,7 @@ TRANSFER_PY := $(SCRIPTS)/transfer.py
 PUSH_PY     := $(SCRIPTS)/push_all.py
 MDIMG_PY    := $(SCRIPTS)/md_image_downloader.py
 IMG_CONFIG  := $(SCRIPTS)/hugo_image_config.json
+IMGRENAME_PY := $(SCRIPTS)/img_rename.py
 PYTHON      ?= $(if $(wildcard .venv/bin/python),.venv/bin/python,python3)
 
 # ---------- 可选参数（make VAR=value 传入） ----------
@@ -64,6 +65,8 @@ help:
 	@printf '  make img MD=path.md                下载 md 中的网络图片\n'
 	@printf '     可选: SLUG=xxx STORAGE=dir PREFIX=/path\n'
 	@printf '  make img-init FILE=cfg.json         生成图片下载器配置模板\n'
+	@printf '  make img-rename                     图片名加文章 slug 前缀并修复链接\n'
+	@printf '  make watch-images                   监听并自动重命名新粘贴的图片\n'
 	@printf '\n'
 	@printf '  make env-check           检查腾讯云密钥环境变量\n'
 	@printf '\n'
@@ -148,7 +151,7 @@ push:
 # ==========================================================
 # Markdown 图片下载
 # ==========================================================
-.PHONY: img img-init
+.PHONY: img img-init img-rename watch-images
 img:
 	@test -n "$(MD)" || { echo '用法: make img MD=<markdown-file>'; exit 1; }
 	@EXTRA=""; \
@@ -160,3 +163,9 @@ img:
 img-init:
 	@test -n "$(FILE)" || { echo '用法: make img-init FILE=cfg.json'; exit 1; }
 	@$(PYTHON) $(MDIMG_PY) --init-config "$(FILE)"
+
+img-rename:
+	@$(PYTHON) $(IMGRENAME_PY)
+
+watch-images:
+	@$(PYTHON) $(IMGRENAME_PY) --watch

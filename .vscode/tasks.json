@@ -1,0 +1,18 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Rename pasted images",
+      "type": "shell",
+      "command": "make img-rename",
+      "problemMatcher": []
+    },
+    {
+      "label": "Watch pasted images",
+      "type": "shell",
+      "command": "make watch-images",
+      "isBackground": true,
+      "problemMatcher": []
+    }
+  ]
+}
