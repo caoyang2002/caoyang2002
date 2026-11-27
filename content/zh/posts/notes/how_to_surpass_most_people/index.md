@@ -17,7 +17,7 @@ toc = true
 comments = true
 showShare = true
 codeRunners = false
-aliases = ["/post/2026/11/ffff/"]
+aliases = ["/post/2026/11/how_to_surpass_most_people/"]
 
 # 可选：有实质更新时再启用
 # lastmod = 2026-11-27T07:59:27+08:00
