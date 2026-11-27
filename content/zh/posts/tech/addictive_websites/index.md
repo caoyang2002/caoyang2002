@@ -4,7 +4,7 @@ date = 2026-11-22T07:15:13+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["技术"]
+tags = ["网站", "推荐", "技术"]
 description = "<no value>"
 aliases = ["/post/2026/11/some_website/"]
 +++

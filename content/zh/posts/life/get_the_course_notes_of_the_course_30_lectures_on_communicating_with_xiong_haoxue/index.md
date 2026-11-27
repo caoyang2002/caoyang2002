@@ -3,8 +3,8 @@ title = '得到课程《跟熊浩学沟通30讲》课程笔记'
 date = 2025-02-21T18:17:03+08:00
 draft = false
 author = "simons"
-categories = ["商业"]
-tags = ["冲突解决", "熊浩"]
+categories = ["生活"]
+tags = ["冲突解决", "熊浩", "笔记", "生活"]
 description = "熊浩冲突解决课程笔记！"
 +++
 

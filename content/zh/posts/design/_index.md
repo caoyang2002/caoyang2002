@@ -1,6 +1,6 @@
 ---
 title: "设计"
-description: "营销理论与实战技巧专题"
+description: "视觉、UI/UX、排版与设计心理"
 
 cascade:
   # 设置该页面及其子页面都使用docs布局
@@ -23,4 +23,5 @@ params:
     sticky: true
   # 阅读进度指示器
   progress: true
+aliases: ["/posts/point/"]
 ---

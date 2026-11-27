@@ -4,7 +4,7 @@ date = 2026-09-29T11:55:52+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["人工智能"]
+tags = ["人工智能", "技术", "工具"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/09/the-ai-race-just-got-awkward/"]
 +++

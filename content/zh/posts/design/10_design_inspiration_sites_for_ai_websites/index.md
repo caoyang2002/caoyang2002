@@ -3,8 +3,8 @@ title = "10 个设计灵感站，喂给 AI 做出不像模板的网站"
 date = 2026-11-27T06:28:57+08:00
 draft = false
 author = "simons"
-categories = ["技术"]
-tags = ["web", "design", "AI", "跨境电商", "独立站"]
+categories = ["设计"]
+tags = ["Web", "设计", "人工智能", "跨境电商", "独立站"]
 description = "10 个国外高质量设计灵感网站，覆盖落地页、定价页、广告素材、邮件营销等场景。附带一套把设计案例喂给 AI 编程工具的实操方法，告别千篇一律的模板感。"
 aliases = ["/post/2026/11/web_design/"]
 +++

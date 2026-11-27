@@ -4,7 +4,7 @@ date = 2025-02-24T11:48:01+08:00
 draft = false
 author = "simons"
 categories = ["商业"]
-tags = ["冯卫东", "营销分享"]
+tags = ["冯卫东", "营销分享", "品牌定位", "营销", "商业"]
 description = "混沌学园课程笔记"
 +++
 

@@ -1,8 +1,7 @@
 +++
 # 专题基本信息
-title = "软件开发与编程技术"
-slug = "software-programming"
-description = "涵盖智能化软件开发、程序分析、软件架构、DevOps、编程语言与安全等核心研究方向"
+title = "编程"
+description = "编程语言、开发、算法与计算机基础"
 weight = 10
 
 # SEO 优化
@@ -14,6 +13,7 @@ date = 2026-01-15
 image = "/images/programming-cover.png"
 
 # 专题级联设置 - 这些设置会影响所有子页面
+aliases = ["/posts/software-programming/", "/posts/computer/"]
 [cascade]
   # 自动为所有子页面添加标签和分类
   

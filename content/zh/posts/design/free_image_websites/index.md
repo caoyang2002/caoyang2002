@@ -3,8 +3,8 @@ title = '免费图片网站'
 date = 2025-02-09T18:32:46+08:00
 draft = false
 author = "simons"
-categories = ["人文"]
-tags = ["资源", "图片"]
+categories = ["设计"]
+tags = ["资源", "图片", "设计"]
 description = "免版权的图片网站分享，放心使用图片，避免版权诉讼"
 aliases = ["/post/2025/02/free_images_website/"]
 +++

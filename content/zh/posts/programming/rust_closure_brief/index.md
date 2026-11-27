@@ -2,7 +2,7 @@
 date = '2025-01-15T13:22:26+08:00'
 draft = false
 title = '简述 Rust 中的闭包'
-categories = ["技术"]
+categories = ["编程"]
 tags = ["闭包", "函数式编程", "所有权", "迭代器", "Rust语法"]
 description = "本文从需求出发，详细介绍了Rust闭包的概念、优势及与其他语言闭包的对比，通过大量代码示例展示了闭包的基本语法、三种特性（Fn/FnMut/FnOnce）、捕获机制及常见应用场景，并提供了最佳实践指南。"
 toc = true

@@ -2,7 +2,7 @@
 date = '2023-11-29T09:31:37+08:00'
 draft = false
 title = 'C 语言推荐书籍'
-categories = ["技术"]
+categories = ["编程"]
 tags = ["C语言", "C++", "Java", "计算机基础", "数据结构"]
 description = "一份涵盖了C语言、C++、Java、计算机系统、数据结构、内存管理及算法等核心主题的编程技术书籍推荐清单。"
 toc = true

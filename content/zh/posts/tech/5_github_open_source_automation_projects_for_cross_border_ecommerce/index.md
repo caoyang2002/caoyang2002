@@ -4,7 +4,7 @@ date = 2026-11-26T07:52:36+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["ecommerce"]
+tags = ["跨境电商", "GitHub", "自动化", "开源"]
 description = "做跨境电商必收藏的5个GitHub开源自动化项目"
 aliases = ["/post/2026/11/top_5_must_have_github_open_source_automation_projects_for_cross_border_ecommerce/"]
 +++

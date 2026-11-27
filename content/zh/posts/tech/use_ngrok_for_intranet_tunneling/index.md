@@ -4,7 +4,7 @@ date = 2026-10-21T14:03:56+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["内网"]
+tags = ["内网", "内网穿透", "技术"]
 # # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/10/use_ngrok/"]
 +++

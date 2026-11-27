@@ -3,8 +3,8 @@ title = "50 个工具网站"
 date = 2026-11-25T09:45:13+08:00
 draft = false
 author = "simons"
-categories = ["其他"]
-tags = ["tech"]
+categories = ["技术"]
+tags = ["技术", "工具", "教程"]
 description = "50 个工具网站"
 aliases = ["/post/2026/11/best_50_tools_sites/"]
 +++

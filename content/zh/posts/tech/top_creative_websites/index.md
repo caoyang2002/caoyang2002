@@ -3,8 +3,8 @@ title = '顶尖创意网站'
 date = 2026-11-22T06:59:57+08:00
 draft = false
 author = "simons"
-categories = ["人文"]
-tags = ["创意"]
+categories = ["技术"]
+tags = ["创意", "技术", "工具"]
 description = "<no value>"
 aliases = ["/post/2026/11/awwwards_create/"]
 +++

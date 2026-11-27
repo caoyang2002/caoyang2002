@@ -4,7 +4,7 @@ date = 2026-03-27T13:46:03+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["插件"]
+tags = ["插件", "技术", "工具"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/03/chrome-extensions/"]
 +++

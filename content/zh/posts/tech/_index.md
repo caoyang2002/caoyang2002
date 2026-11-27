@@ -1,8 +1,7 @@
 +++
 # 专题基本信息
-title = "软件工具教程"
-slug = "software-tools-guide"
-description = "涵盖科研、设计、办公、多媒体、开发等全领域的核心软件工具深度教程与行业最佳实践"
+title = "技术"
+description = "软件工具、系统、网络与效率工具"
 weight = 10
 
 # SEO 优化
@@ -14,6 +13,7 @@ date = 2026-01-15
 image = "/images/tools-cover.png"
 
 # 专题级联设置 - 这些设置会影响所有子页面
+aliases = ["/posts/software-tools-guide/", "/posts/blockchain/", "/posts/products/"]
 [cascade]
   # 自动为所有子页面添加标签和分类
   
@@ -66,6 +66,4 @@ image = "/images/tools-cover.png"
     name = "工具对比与选型指南"
     url = "https://example.com/tools-comparison"
     icon = "📊"
-
- 
 +++

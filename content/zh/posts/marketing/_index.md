@@ -1,8 +1,7 @@
 +++
 # 专题基本信息
-title = "企业战略与市场竞争"
-slug = "business-strategy"
-description = "涵盖市场营销战略、企业战略规划、竞争分析、品牌管理、数字化转型等核心商业课题"
+title = "商业"
+description = "营销、品牌、商业案例与经济"
 weight = 10
 
 # SEO 优化
@@ -14,6 +13,7 @@ date = 2026-01-15
 image = "/images/business-strategy-cover.png"
 
 # 专题级联设置 - 这些设置会影响所有子页面
+aliases = ["/posts/business-strategy/", "/posts/economics/"]
 [cascade]
   # 自动为所有子页面添加标签和分类
   

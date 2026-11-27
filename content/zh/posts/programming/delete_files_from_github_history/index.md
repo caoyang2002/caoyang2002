@@ -2,8 +2,8 @@
 date = '2024-06-19T09:31:37+08:00'
 draft = false
 title = '删除错误提交到GitHub仓库中的文件'
-categories = ["技术"]
-tags = ["GitHub", "Git操作", "错误修复", "仓库维护"]
+categories = ["编程"]
+tags = ["GitHub", "Git操作", "错误修复", "仓库维护", "编程"]
 description = "本文提供了从GitHub仓库中删除错误提交文件的两种方法：一种是创建新提交以撤销更改（推荐协作场景），另一种是使用git filter-branch等工具重写历史（需谨慎）。文章详细说明了操作步骤，并强调了重写历史的风险与注意事项。"
 toc = true
 aliases = ["/post/2024/06/git_delete_file/"]

@@ -2,7 +2,7 @@
 date = '2025-01-15T11:16:52+08:00'
 draft = false
 title = 'rust 中的属性宏'
-categories = ["技术"]
+categories = ["编程"]
 tags = ["Rust", "属性宏", "宏编程", "元编程", "编译器"]
 description = "本文深入解析Rust中属性宏的工作原理，特别是derive宏如何自动为数据结构实现Clone、Debug、Serialize等常用trait。通过代码示例详细展示宏在编译期的展开过程、两种主要类型（派生宏和自定义属性宏）的区别，以及在实际开发中的应用技巧。"
 toc = true

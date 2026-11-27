@@ -4,7 +4,7 @@ date = 2025-03-22T00:27:31+08:00
 draft = false
 author = "simons"
 categories = ["商业"]
-tags = ["企业"]
+tags = ["企业", "商业", "营销"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 +++
 

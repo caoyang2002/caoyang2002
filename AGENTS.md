@@ -54,7 +54,7 @@ content/zh/posts/<板块>/<slug>/images/<filename>.png
 ```
 
 - 新文章统一使用 Page Bundle：文章目录名就是 URL 中的 `:filename`。
-- 板块目录示例：`tech`、`programming`、`computer`、`design`、`marketing`、`life`、`notes`、`math`、`electronic`、`rocket`、`sociology` 等。
+- 板块目录固定为 10 类：`tech`（技术）、`programming`（编程）、`marketing`（商业）、`design`（设计）、`engineering`（工程）、`science`（科学）、`life`（生活）、`notes`（笔记）、`media`（媒体）、`other`（其他）。
 - 目录名使用英文、数字、连字符：`how-to-use-hugo`。
 - 避免空格、中文目录名、特殊符号。中文目录名会导致 URL 被百分号编码，影响传播与分享。
 - 文章 URL 由 `[permalinks] posts = "/post/:year/:month/:filename/"` 决定，**目录名就是 URL 的一部分**。发布后不要随意改目录名；必须改时用 `aliases` 保留旧链接。

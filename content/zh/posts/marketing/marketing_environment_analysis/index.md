@@ -4,7 +4,7 @@ date = 2025-02-27T09:20:12+08:00
 draft = false
 author = "simons"
 categories = ["商业"]
-tags = ["基础"]
+tags = ["基础", "营销基础", "营销", "商业"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2025/02/marketing_environment/"]
 +++

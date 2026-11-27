@@ -3,8 +3,8 @@ title = 'Git 同步推送到外网和内网的方案'
 date = 2026-01-28T21:26:35+08:00
 draft = false
 author = "simons"
-categories = ["技术"]
-tags = ["Git"]
+categories = ["编程"]
+tags = ["Git", "内网", "GitHub", "DigitalPlat", "GitHub Actions"]
 description = "一些时候，我们推送到外网的仓库后，还希望内网备份一次，本文提供了 git 的别名来同时推送的方案。"
 +++
 

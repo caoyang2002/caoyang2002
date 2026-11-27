@@ -1,6 +1,6 @@
 ---
-title: "随笔"
-description: "营销理论与实战技巧专题"
+title: "笔记"
+description: "阅读、随笔、资源与个人记录"
 
 cascade:
   # 设置该页面及其子页面都使用docs布局
@@ -23,4 +23,5 @@ params:
     sticky: true
   # 阅读进度指示器
   progress: true
+aliases: []
 ---

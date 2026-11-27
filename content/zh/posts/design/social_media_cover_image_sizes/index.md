@@ -3,8 +3,8 @@ title = '自媒体平台封面图片尺寸合集'
 date = 2025-02-09T18:42:13+08:00
 draft = false
 author = "simons"
-categories = ["人文"]
-tags = ["尺寸", "自媒体"]
+categories = ["设计"]
+tags = ["尺寸", "自媒体", "媒体", "图片", "设计"]
 description = "小红书、微信公众号等平台的图片尺寸信息"
 aliases = ["/post/2025/02/images_size/"]
 +++

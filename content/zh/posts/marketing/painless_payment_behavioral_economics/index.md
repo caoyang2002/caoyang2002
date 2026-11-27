@@ -4,7 +4,7 @@ date = 2025-02-20T14:49:59+08:00
 draft = false
 author = "simons"
 categories = ["商业"]
-tags = ["行为经济学", "优化", "行为", "支付"]
+tags = ["行为经济学", "优化", "行为", "支付", "商业"]
 description = "为何在电子支付的时代，你的控制不住自己的消费？抽象的支付方式如何让我们失去对金钱数额的感知？"
 aliases = ["/post/2025/02/painless_payment_how_to_optimize_the_payment_experience_from_a_behavioral_economics_perspective/"]
 +++

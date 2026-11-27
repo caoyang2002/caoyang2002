@@ -3,8 +3,8 @@ title = "49美元获取哈萨克斯坦永久税号和多币种 Visa 或万事达
 date = 2026-11-24T20:28:15+08:00
 draft = false
 author = "simons"
-categories = ["其他"]
-tags = ["ESP-IDF"]
+categories = ["生活"]
+tags = ["哈萨克斯坦", "签证", "数字游民", "生活"]
 aliases = ["/post/2026/11/kz/"]
 +++
 

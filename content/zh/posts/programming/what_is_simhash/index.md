@@ -2,7 +2,7 @@
 date = '2024-04-29T09:31:37+08:00'
 draft = false
 title = '什么是 SimHash'
-categories = ["技术"]
+categories = ["编程"]
 tags = ["SimHash", "局部敏感哈希", "文本相似度", "海量数据处理", "去重算法"]
 description = "本文深入解析SimHash算法原理，从分词、加权到生成局部敏感指纹，详细说明如何通过海明距离与抽屉原理实现海量文本的快速相似匹配与去重，并附有完整计算流程与优化方法。"
 toc = true

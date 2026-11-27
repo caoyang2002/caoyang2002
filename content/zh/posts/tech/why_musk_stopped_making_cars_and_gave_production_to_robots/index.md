@@ -4,7 +4,7 @@ date = 2026-02-26T21:25:06+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["机器人"]
+tags = ["机器人", "技术", "工具"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/02/why_isnt_musk_making_cars_anymore_he_gave_the_production_line_to_robots/"]
 +++

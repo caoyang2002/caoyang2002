@@ -4,8 +4,8 @@ draft = false
 title = '即时设计插件开发'
 author = "simons"
 toc = true
-categories = ["技术"]
-tags = ["插件"]
+categories = ["编程"]
+tags = ["插件", "设计", "开发", "编程"]
 description = "关于即使设计开发中的项目结构和代码组织介绍"
 aliases = ["/post/2025/01/jsdesign_plugin_dev/"]
 +++

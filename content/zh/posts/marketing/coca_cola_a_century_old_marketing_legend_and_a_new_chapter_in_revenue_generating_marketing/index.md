@@ -4,7 +4,7 @@ date = 2025-02-15T00:21:32+08:00
 draft = false
 author = "simons"
 categories = ["商业"]
-tags = ["案例分析"]
+tags = ["案例分析", "可口可乐", "营销", "商业"]
 description = "在商业的浩瀚星空中，可口可乐宛如一颗璀璨的恒星，以其独特的营销策略和品牌魅力，穿越了百年的时光长河，依然闪耀在全球消费者的生活之中。它的营销案例，犹如一座丰富的宝藏，蕴含着无数令人为之倾倒的商业智慧和创意火花，吸引着我们去探寻、去品味、去领悟。"
 aliases = ["/post/2025/02/coca-cola_a_century-old_marketing_legend_and_a_new_chapter_in_revenue-generating_marketing/"]
 +++

@@ -3,8 +3,8 @@ title = '文章去 AI 味的 SKILL'
 date = 2026-01-29T07:29:29+08:00
 draft = false
 author = "simons"
-categories = ["技术"]
-tags = ["人工智能"]
+categories = ["笔记"]
+tags = ["人工智能", "写作", "笔记"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/01/remove_ai_taste_skills/"]
 +++

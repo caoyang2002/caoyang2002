@@ -4,7 +4,7 @@ date = 2026-02-28T12:58:44+08:00
 draft = false
 author = "simons"
 categories = ["技术"]
-tags = ["谷歌"]
+tags = ["谷歌", "技术", "工具"]
 # description = "糟糕，写文章的时候忘记添加描述了！！！"
 aliases = ["/post/2026/02/applauding_page_for_her_courage_to_shut_down_google_reader/"]
 +++
