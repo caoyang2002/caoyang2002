@@ -8,38 +8,52 @@ Usage:
 
 Steps:
     1. title / description
-    2. category (4 simple buckets)
-    3. directory (defaults by category)
-    4. tags (live autocomplete against existing tags; user-entered tags
-       are NOT added to the comparison pool)
+    2. category (top 10 sections, auto-discovered directory list)
+    3. directory (scanned from content/zh/posts)
+    4. filename (Volcengine zh -> en translation, snake_case)
+    5. tags (title-based suggestions + existing-tag autocomplete + custom)
+    6. full front matter (cover, summary, keywords, series, weight,
+       toc, comments, showShare, codeRunners, aliases, draft)
+
+Optional environment variables for automatic English filenames:
+    VOLCENGINE_ACCESS_KEY_ID
+    VOLCENGINE_SECRET_ACCESS_KEY
+    VOLCENGINE_REGION (default cn-north-1)
 """
 
 import os
 import re
 import sys
 import json
-import select
 import subprocess
 import difflib
 import unicodedata
 from collections import Counter
-
-try:
-    import termios
-    HAS_LIVE = True
-except ImportError:
-    HAS_LIVE = False
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTS = ROOT / "content" / "zh" / "posts"
 
-CATEGORIES = [
-    ("技术", "tech"),
-    ("商业", "marketing"),
-    ("人文", "other"),
-    ("其他", "other"),
-]
+SECTION_LABELS = {
+    "tech": "技术",
+    "programming": "编程",
+    "computer": "计算机",
+    "design": "设计",
+    "marketing": "商业",
+    "economics": "经济",
+    "life": "生活",
+    "notes": "笔记",
+    "math": "数学",
+    "electronic": "电子",
+    "rocket": "火箭",
+    "sociology": "社会学",
+    "blockchain": "区块链",
+    "products": "项目",
+    "point": "观点",
+    "resource": "资源",
+    "startup": "创业",
+    "other": "其他",
+}
 
 # common abbreviations -> canonical existing tag
 ALIAS = {
@@ -186,6 +200,58 @@ def remove_scalar(block, key):
     return re.sub(r"(?m)^\s*" + key + r"\s*[:=].*\n?", "", block)
 
 
+def set_raw(block, key, value, yaml=False):
+    line = f"{key}: {value}" if yaml else f"{key} = {value}"
+    pat = re.compile(r"(?m)^\s*" + key + r"\s*[:=].*$")
+    if pat.search(block):
+        return pat.sub(line, block, count=1)
+    return line + "\n" + block
+
+
+def read_title(path):
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return ""
+    match = re.search(r'(?m)^\s*title\s*[:=]\s*["\']?(.+?)["\']?\s*$', text)
+    return match.group(1).strip() if match else ""
+
+
+def section_label(folder, title=""):
+    if folder in SECTION_LABELS:
+        return SECTION_LABELS[folder]
+    return title.strip() or folder
+
+
+def discover_sections():
+    sections = []
+    for directory in POSTS.iterdir():
+        if not directory.is_dir():
+            continue
+        index = directory / "_index.md"
+        if not index.exists():
+            continue
+        title = read_title(index)
+        count = len(list(directory.rglob("index.md")))
+        sections.append(
+            {
+                "folder": directory.name,
+                "label": section_label(directory.name, title),
+                "title": title,
+                "count": count,
+            }
+        )
+    sections.sort(key=lambda item: (-item["count"], item["folder"]))
+    return sections
+
+
+def label_for_folder(folder, sections, fallback):
+    for section in sections:
+        if section["folder"] == folder:
+            return section["label"]
+    return SECTION_LABELS.get(folder, fallback)
+
+
 def load_tags():
     counts = Counter()
     for dp, _, fs in os.walk(POSTS):
@@ -289,270 +355,129 @@ def resolve_tag(raw, counts):
     print(f"{DIM}保留新标签：{raw}{NC}")
     return raw
 
-
-# ------------------------------------------------------------------
-# 实时自动补全（TTY）：每输入一个字符就与「已有标签」比较并刷新候选
-# 注意：比较池只包含站点已有标签，不包含用户本次新输入的标签
-# ------------------------------------------------------------------
-LIVE_HINT = "↑↓ 选择 · Tab 补全 · Esc 保留新词 · Enter 确认"
-LIVE_HINT_EMPTY = "没有相似的已有标签 · Enter 创建新标签"
-
-
-def disp_width(text):
-    w = 0
-    for ch in text:
-        if unicodedata.combining(ch):
-            continue
-        w += 2 if unicodedata.east_asian_width(ch) in ("W", "F") else 1
-    return w
+def term_in_text(term, text):
+    term = term.lower()
+    if not term:
+        return False
+    if re.fullmatch(r"[a-z0-9+#.]+", term):
+        pattern = r"(?<![a-z0-9])" + re.escape(term) + r"(?![a-z0-9])"
+        return re.search(pattern, text) is not None
+    return term in text
 
 
-def live_suggestions(text, counts):
-    """Return [(tag, ratio, count, note)] against existing tags only."""
-    raw = (text or "").strip()
-    if not raw:
-        return []
-    lc = raw.lower()
-
-    # 别名 / 同义规范名（仅当规范名确实存在于已有标签中）
-    canon = ALIAS.get(lc)
-    note = "别名"
-    if not canon:
-        canon = SYNONYM.get(raw) or SYNONYM.get(lc)
-        note = "规范"
-    if canon and canon in counts:
-        return [(canon, 1.0, counts[canon], note)]
-
-    # 完全匹配（忽略大小写），复用已有写法
-    for t in counts:
-        if t.lower() == lc:
-            return [(t, 1.0, counts[t], "已有")]
-
-    if len(raw) < 2:
-        return []
-
-    scored = []
-    for t in counts:
-        r = similarity(raw, t)
-        if r >= 0.5:
-            scored.append((t, r, counts[t], "相似"))
-    scored.sort(key=lambda x: (-x[1], -x[2], x[0]))
-    return scored[:5]
+def suggest_tags_from_title(title, counts, limit=5):
+    raw = title.lower()
+    tokens = [t for t in re.split(r"[^\w\u4e00-\u9fff]+", raw) if len(t) >= 3]
+    scored = {}
+    for tag, count in counts.items():
+        low = tag.lower()
+        score = 0
+        if term_in_text(low, raw):
+            score = 100 + len(low) * 2
+        else:
+            for token in tokens:
+                if len(tag) < 3:
+                    continue
+                ratio = similarity(token, tag)
+                if ratio >= 0.85:
+                    score = max(score, int(ratio * 40))
+        if score:
+            scored[tag] = max(scored.get(tag, (0, 0)), (score, count))
+    for mapping, bonus in ((ALIAS, 20), (SYNONYM, 10)):
+        for key, canonical in mapping.items():
+            if term_in_text(key, raw) and canonical in counts:
+                scored[canonical] = max(
+                    scored.get(canonical, (0, 0)),
+                    (120 + len(key) + bonus, counts[canonical]),
+                )
+    ranked = sorted(
+        scored.items(), key=lambda item: (-item[1][0], -item[1][1], item[0])
+    )
+    return [tag for tag, _ in ranked[:limit]]
 
 
-def render_live(prompt, text, suggestions, sel, hint):
-    n = len(suggestions) + 1
-    sys.stdout.write("\r\033[J")
-    sys.stdout.write(prompt + text)
-    for i, (tag, ratio, count, note) in enumerate(suggestions):
-        marker = ">" if i == sel else " "
-        sys.stdout.write(
-            f"\n  {marker} {i + 1}) {tag}  {DIM}{ratio:.0%} · 已有 {count} 篇{NC}"
-        )
-    sys.stdout.write(f"\n  {DIM}{hint}{NC}")
-    sys.stdout.write(f"\033[{n}A\r")
-    sys.stdout.write("\033[" + str(disp_width(prompt + text)) + "C")
-    sys.stdout.flush()
+def add_tag(tags, seen, tag):
+    key = tag.lower()
+    if key in seen:
+        print(f"{DIM}已添加过：{tag}{NC}")
+        return
+    if len(tags) >= 5:
+        print(f"{YELLOW}最多 5 个标签{NC}")
+        return
+    tags.append(tag)
+    seen.add(key)
+    print(f"{GREEN}已添加：{tag}{NC}  {DIM}({len(tags)}/5){NC}")
 
 
-def _read_char(fd):
-    b = os.read(fd, 1)
-    if not b:
-        return ""
-    first = b[0]
-    if first < 0x80:
-        return chr(first)
-    if first >> 5 == 0b110:
-        need = 1
-    elif first >> 4 == 0b1110:
-        need = 2
-    elif first >> 3 == 0b11110:
-        need = 3
-    else:
-        return ""
-    data = b
-    for _ in range(need):
-        data += os.read(fd, 1)
-    return data.decode("utf-8", "replace")
-
-
-def read_key(fd):
-    ch = _read_char(fd)
-    if ch == "":
-        return "EOF"
-    if ch == "\x1b":
-        ready, _, _ = select.select([fd], [], [], 0.03)
-        if not ready:
-            return "ESC"
-        seq = _read_char(fd)
-        if seq == "[":
-            ready, _, _ = select.select([fd], [], [], 0.03)
-            if not ready:
-                return "ESC"
-            code = _read_char(fd)
-            return {"A": "UP", "B": "DOWN", "C": "RIGHT", "D": "LEFT"}.get(
-                code, "ESC"
-            )
-        return "ESC"
-    if ch in ("\r", "\n"):
-        return "ENTER"
-    if ch in ("\x7f", "\x08"):
-        return "BACKSPACE"
-    if ch == "\t":
-        return "TAB"
-    if ch == "\x03":
-        raise KeyboardInterrupt
-    if ch == "\x04":
-        return "EOF"
-    if ch == "\x15":
-        return "CLEAR"
-    return ch
-
-
-def live_input(prompt, counts):
-    fd = sys.stdin.fileno()
-    old = termios.tcgetattr(fd)
-    text = ""
-    sel = -1
-    deselected = False
-    try:
-        new = termios.tcgetattr(fd)
-        new[3] &= ~(termios.ECHO | termios.ICANON)
-        new[6][termios.VMIN] = 1
-        new[6][termios.VTIME] = 0
-        termios.tcsetattr(fd, termios.TCSADRAIN, new)
-        render_live(
-            prompt, text, live_suggestions(text, counts), sel, LIVE_HINT_EMPTY
-        )
-        while True:
-            key = read_key(fd)
-            if key == "EOF":
-                sys.stdout.write("\r\033[J")
-                sys.stdout.flush()
-                return None
-            if key == "ENTER":
-                sugg = live_suggestions(text, counts)
-                if sel >= 0 and sel < len(sugg):
-                    choice = sugg[sel][0]
-                else:
-                    choice = text.strip()
-                sys.stdout.write("\r\033[J")
-                sys.stdout.write(prompt + choice + "\n")
-                sys.stdout.flush()
-                return choice
-            if key == "BACKSPACE":
-                text = text[:-1]
-                sel = -1
-                deselected = False
-            elif key == "TAB":
-                sugg = live_suggestions(text, counts)
-                if sugg:
-                    idx = sel if 0 <= sel < len(sugg) else 0
-                    text = sugg[idx][0]
-                    sel = 0
-            elif key == "UP":
-                sugg = live_suggestions(text, counts)
-                if sugg:
-                    sel = len(sugg) - 1 if sel < 0 else (sel - 1) % len(sugg)
-                    deselected = False
-            elif key == "DOWN":
-                sugg = live_suggestions(text, counts)
-                if sugg:
-                    sel = 0 if sel < 0 else (sel + 1) % len(sugg)
-                    deselected = False
-            elif key == "ESC":
-                sel = -1
-                deselected = True
-            elif key == "CLEAR":
-                text = ""
-                sel = -1
-                deselected = False
-            elif key in ("LEFT", "RIGHT"):
-                pass
-            elif key and key.isprintable():
-                text += key
-                sel = -1
-                deselected = False
-
-            sugg = live_suggestions(text, counts)
-            if sel < 0 and sugg and not deselected:
-                sel = 0
-            if sel >= len(sugg):
-                sel = len(sugg) - 1 if sugg else -1
-            if sugg:
-                hint = LIVE_HINT
-            elif len(text.strip()) < 2 and text.strip():
-                hint = "继续输入以匹配已有标签"
-            else:
-                hint = LIVE_HINT_EMPTY
-            render_live(prompt, text, sugg, sel, hint)
-    finally:
-        termios.tcsetattr(fd, termios.TCSADRAIN, old)
-
-
-def prompt_tags_live(counts):
+def prompt_tags(counts, title):
+    print(f"\n{CYAN}标签{NC}  {DIM}（最多 5 个，回车结束）{NC}")
     tags = []
     seen = set()
-    print(f"\n{CYAN}输入标签（至少 1 个，最多 5 个）{NC}")
-    while len(tags) < 5:
-        tag = live_input("标签: ", counts)
-        if tag is None:
-            print(f"{DIM}已结束标签输入{NC}")
-            break
-        tag = tag.strip()
-        if not tag:
-            if not tags:
-                print(f"{RED}至少需要一个标签{NC}")
-                continue
-            break
-        key = tag.lower()
-        if key in seen:
-            print(f"{DIM}已添加过：{tag}{NC}")
-            continue
-        seen.add(key)
-        tags.append(tag)
-        print(f"{GREEN}已添加：{tag}{NC}  {DIM}({len(tags)}/5){NC}")
-    return tags
+    suggested = suggest_tags_from_title(title, counts, limit=5)
+    if suggested:
+        print(f"{CYAN}根据标题推荐：{NC}")
+        for i, tag in enumerate(suggested, 1):
+            print(f"  {i}) {tag}  {DIM}已有 {counts[tag]} 篇{NC}")
+        if ask("使用推荐标签？[Y/n]: ", "y").lower() in ("y", "yes", "是"):
+            for tag in suggested:
+                add_tag(tags, seen, tag)
 
-
-def prompt_tags_plain(counts):
-    print(f"\n{CYAN}输入标签（至少 1 个，最多 5 个，直接回车结束）{NC}")
-    tags = []
-    seen = set()
     while len(tags) < 5:
-        raw = ask("标签: ")
+        raw = ask("标签（回车结束）: ")
         if not raw:
             if not tags:
                 print(f"{RED}至少需要一个标签{NC}")
                 continue
             break
-        tag = resolve_tag(raw, counts)
-        key = tag.lower()
-        if key in seen:
-            print(f"{DIM}已添加过：{tag}{NC}")
-            continue
-        seen.add(key)
-        tags.append(tag)
-        print(f"{GREEN}已添加：{tag}{NC}  {DIM}({len(tags)}/5){NC}")
+        add_tag(tags, seen, resolve_tag(raw, counts))
     return tags
 
 
-def choose_category():
-    print(f"\n{CYAN}选择分类：{NC}")
-    for i, (name, folder) in enumerate(CATEGORIES, 1):
-        print(f"  {i}) {name}  {DIM}（默认目录 {folder}）{NC}")
+def choose_from_all(sections):
+    print(f"\n{CYAN}全部目录{NC}")
+    for i, section in enumerate(sections, 1):
+        print(
+            f"  {i}) {section['label']}  "
+            f"{DIM}（{section['folder']}，{section['count']} 篇）{NC}"
+        )
+    while True:
+        raw = ask("输入序号: ")
+        if raw.isdigit() and 1 <= int(raw) <= len(sections):
+            return sections[int(raw) - 1]
+        print(f"{RED}请输入 1-{len(sections)}{NC}")
+
+
+def choose_category(sections):
+    if not sections:
+        return {"folder": "tech", "label": "技术", "count": 0}
+
+    primary = sections[:10]
+    print(f"\n{CYAN}选择分类{NC}  {DIM}（目录自动识别）{NC}")
+    for i, section in enumerate(primary, 1):
+        print(
+            f"  {i}) {section['label']}  "
+            f"{DIM}（{section['folder']}，{section['count']} 篇）{NC}"
+        )
+
+    more = len(primary) + 1
+    has_more = len(sections) > len(primary)
+    if has_more:
+        print(f"  {more}) 更多目录...")
+
+    limit = more if has_more else len(primary)
     while True:
         raw = ask("输入序号 [1]: ", "1")
-        if raw.isdigit() and 1 <= int(raw) <= len(CATEGORIES):
-            return CATEGORIES[int(raw) - 1]
-        print(f"{RED}请输入 1-{len(CATEGORIES)}{NC}")
+        if raw.isdigit():
+            choice = int(raw)
+            if 1 <= choice <= len(primary):
+                return primary[choice - 1]
+            if has_more and choice == more:
+                return choose_from_all(sections)
+        print(f"{RED}请输入 1-{limit}{NC}")
 
 
-def choose_dir(default):
-    existing = sorted(
-        d for d in os.listdir(POSTS)
-        if os.path.isdir(os.path.join(POSTS, d)) and d not in ("_index",)
-    )
+def choose_dir(default, sections):
+    existing = sorted({section["folder"] for section in sections} | {default})
     print(f"\n{CYAN}选择目录（留空使用默认）{NC}")
     print(f"{DIM}可用：{', '.join(existing)}{NC}")
     while True:
@@ -560,6 +485,36 @@ def choose_dir(default):
         if re.match(r"^[A-Za-z0-9_-]+$", raw):
             return raw
         print(f"{RED}目录只能包含字母、数字、_、-{NC}")
+
+
+def ask_int(prompt, default=0):
+    while True:
+        raw = ask(prompt, str(default))
+        try:
+            value = int(raw)
+            if value < 0:
+                raise ValueError
+            return value
+        except ValueError:
+            print(f"{RED}请输入非负整数{NC}")
+
+
+def ask_bool(prompt, default):
+    hint = "Y/n" if default else "y/N"
+    while True:
+        raw = ask(f"{prompt} [{hint}]: ", "y" if default else "n").lower()
+        if raw in ("y", "yes", "是", "1"):
+            return True
+        if raw in ("n", "no", "否", "0"):
+            return False
+        print(f"{RED}请输入 y 或 n{NC}")
+
+
+def ask_list(prompt):
+    raw = ask(prompt)
+    if not raw:
+        return []
+    return [item.strip() for item in re.split(r"[,，、;；]", raw) if item.strip()]
 
 
 def slugify(title):
@@ -570,10 +525,37 @@ def slugify(title):
     return s or "post"
 
 
+def snake_case(text):
+    value = unicodedata.normalize("NFKD", text or "")
+    value = value.encode("ascii", "ignore").decode("ascii")
+    value = re.sub(r"[^a-zA-Z0-9]+", "_", value).strip("_").lower()
+    return re.sub(r"_+", "_", value)
+
+
+def auto_slug(title):
+    if re.fullmatch(r"[\x00-\x7f]+", title):
+        return snake_case(title) or "post", ""
+    try:
+        from volc_translate import translate_text
+    except Exception as exc:
+        print(f"{YELLOW}自动翻译不可用：{exc}{NC}")
+        return slugify(title), ""
+    try:
+        translated = translate_text(title, target="en", source="zh")
+    except Exception as exc:
+        print(f"{YELLOW}自动翻译失败：{exc}{NC}")
+        return slugify(title), ""
+    return snake_case(translated) or slugify(title), translated
+
+
 def main():
     os.chdir(ROOT)
     counts = load_tags()
-    print(f"\n{CYAN}新建文章{NC}  {DIM}（已有 {len(counts)} 个标签）{NC}\n")
+    sections = discover_sections()
+    print(
+        f"\n{CYAN}新建文章{NC}  "
+        f"{DIM}（已有 {len(counts)} 个标签，{len(sections)} 个目录）{NC}\n"
+    )
 
     # 1. 标题
     title = ""
@@ -583,28 +565,35 @@ def main():
             print(f"{RED}标题不能为空{NC}")
 
     # 2. 摘要
-    desc = ask("摘要（可选，回车跳过）: ")
+    desc = ask("摘要 description（列表卡片用，建议填写）: ")
 
-    # 3. 分类
-    cat, default_dir = choose_category()
+    # 3. 分类与目录（目录自动识别）
+    selected = choose_category(sections)
+    folder = choose_dir(selected["folder"], sections)
+    known_folders = {section["folder"] for section in sections}
+    if folder in known_folders:
+        category = label_for_folder(folder, sections, selected["label"])
+    else:
+        category = ask(f"分类名称 [{selected['label']}]: ", selected["label"])
 
-    # 4. 目录
-    folder = choose_dir(default_dir)
-
-    # 5. 文件名
+    # 4. 文件名：火山引擎翻译为英文后转蛇形命名
     name = ""
     for arg in sys.argv[1:]:
         if arg.startswith("--name="):
             name = arg.split("=", 1)[1].strip()
+    translated = ""
     if not name:
-        name = slugify(title)
+        print(f"{DIM}正在生成英文文件名...{NC}")
+        name, translated = auto_slug(title)
+        if translated:
+            print(f"{DIM}英文标题：{translated}{NC}")
     while True:
-        name = ask(f"文件名（不含 .md）[{name}]: ", name).strip()
+        name = ask(f"文件名（蛇形命名，不含 .md）[{name}]: ", name).strip()
         if name.endswith(".md"):
             name = name[:-3]
         if not name or "/" in name or "\\" in name:
             print(f"{RED}文件名不合法{NC}")
-            name = slugify(title)
+            name, translated = auto_slug(title)
             continue
         rel = f"content/zh/posts/{folder}/{name}/index.md"
         legacy = f"content/zh/posts/{folder}/{name}.md"
@@ -614,24 +603,56 @@ def main():
             continue
         break
 
-    # 6. 标签（实时自动补全，仅与已有标签比较）
-    if HAS_LIVE and sys.stdin.isatty() and sys.stdout.isatty():
-        tags = prompt_tags_live(counts)
-    else:
-        tags = prompt_tags_plain(counts)
+    # 5. 标签（根据标题推荐，可自定义）
+    tags = prompt_tags(counts, title)
+
+    # 6. 完整 front matter 配置
+    print(f"\n{CYAN}文章配置{NC}  {DIM}（直接回车使用默认值）{NC}")
+    weight = ask_int("权重 weight（>0 进首页精选）[0]: ", 0)
+    cover = ask("封面 cover（绝对 URL，可选）: ")
+    image = ask(
+        "精选大图 image（可选，默认同 cover）: ",
+        cover if weight > 0 else "",
+    )
+    series = ask("系列 series（可选）: ")
+    summary = ask("摘要 summary（可选，精确 meta description）: ")
+    keywords = ask_list("关键词 keywords（逗号分隔，可选）: ")
+    toc = ask_bool("显示目录 toc", True)
+    comments = ask_bool("启用评论 comments", True)
+    show_share = ask_bool("显示分享 showShare", True)
+    code_runners = ask_bool("代码运行按钮 codeRunners", False)
+    aliases = ask_list("旧链接 aliases（逗号分隔，可选）: ")
+    draft = ask_bool("保存为草稿 draft", False)
+
+    if not desc:
+        print(f"{YELLOW}建议补充 description，列表卡片和分享卡片会用到。{NC}")
+    images = [cover] if cover else ([image] if image else [])
 
     # 7. 确认
     print(f"\n{CYAN}确认信息{NC}")
     print(f"  标题：{title}")
     print(f"  文件：content/zh/posts/{folder}/{name}/index.md")
-    print(f"  分类：{cat}")
+    print(f"  分类：{category}")
+    print(f"  目录：{folder}")
     print(f"  标签：{', '.join(tags)}")
+    if weight:
+        print(f"  权重：{weight}")
+    if series:
+        print(f"  系列：{series}")
+    if cover:
+        print(f"  封面：{cover}")
+    print(
+        f"  开关：toc={toc} comments={comments} "
+        f"showShare={show_share} codeRunners={code_runners}"
+    )
+    if draft:
+        print(f"  {YELLOW}草稿：true{NC}")
     ans = ask("创建文章？[Y/n]: ", "y").lower()
-    if ans not in ("y", "yes"):
+    if ans not in ("y", "yes", "是"):
         print("已取消")
         return 1
 
-    # 8. 创建（使用 Hugo archetype 生成，再覆盖分类/标签/标题）
+    # 8. 创建（使用 Hugo archetype 生成，再写入完整配置）
     rel = f"content/zh/posts/{folder}/{name}/index.md"
     try:
         res = subprocess.run(
@@ -656,14 +677,22 @@ def main():
     delim, block, tail = parts
     yaml = delim == "---"
     block = set_scalar(block, "title", title, yaml)
-    if desc:
-        block = set_scalar(block, "description", desc, yaml)
-    else:
-        cur_desc = get_scalar(block, "description")
-        if cur_desc in (None, "", "<no value>"):
-            block = remove_scalar(block, "description")
-    block = set_arr(block, "categories", [cat], yaml)
+    block = set_scalar(block, "description", desc, yaml)
+    block = set_scalar(block, "summary", summary, yaml)
+    block = set_scalar(block, "series", series, yaml)
+    block = set_scalar(block, "cover", cover, yaml)
+    block = set_scalar(block, "image", image, yaml)
+    block = set_arr(block, "categories", [category], yaml)
     block = set_arr(block, "tags", tags, yaml)
+    block = set_arr(block, "keywords", keywords, yaml)
+    block = set_arr(block, "images", images, yaml)
+    block = set_arr(block, "aliases", aliases, yaml)
+    block = set_raw(block, "weight", weight, yaml)
+    block = set_raw(block, "toc", str(toc).lower(), yaml)
+    block = set_raw(block, "comments", str(comments).lower(), yaml)
+    block = set_raw(block, "showShare", str(show_share).lower(), yaml)
+    block = set_raw(block, "codeRunners", str(code_runners).lower(), yaml)
+    block = set_raw(block, "draft", str(draft).lower(), yaml)
     new_txt = delim + "\n" + block.strip("\n") + "\n" + delim + tail
     path.write_text(new_txt, encoding="utf-8")
 

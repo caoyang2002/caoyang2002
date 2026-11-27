@@ -11,7 +11,7 @@ NC='\033[0m'
 
 create_post() {
    local filename=${1:-$(date +%s | shasum -a 256 | head -c 8)}
-   hugo new "content/zh/posts/tech/${filename}.md"
+   hugo new "content/zh/posts/tech/${filename}/index.md"
    printf "\n"
 }
 

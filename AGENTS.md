@@ -21,13 +21,14 @@
 
 | 目的 | 命令 | 说明 |
 | :--- | :--- | :--- |
-| 新建文章 | `make new` | 交互式创建，自动复用已有标签，推荐优先使用 |
+| 新建文章 | `make new` | 交互式创建；自动识别目录、翻译文件名、推荐标签，推荐优先使用 |
 | 本地预览 | `make run` | 开发服务器（包含草稿） |
 | 开发预览 | `make dev` | 监听 `0.0.0.0:1313` |
 | 生产构建 | `make build` | 输出到 `public/` |
 | 安全校验构建 | `hugo --quiet -d /tmp/hugo-check` | 不污染 `public/`，交付前优先用它 |
-| 下载文章图片 | `make img MD=content/zh/posts/tech/foo.md` | 下载网络图片并替换为本地路径 |
+| 下载文章图片 | `make img MD=content/zh/posts/tech/foo/index.md` | 下载网络图片并替换为本地路径 |
 | 图片命名 | `make img MD=... SLUG=my-article` | 以文章 slug 作为文件名前缀 |
+| 火山翻译 | `make translate TXT="你好"` | zh -> en（火山引擎），用于文章英文文件名 |
 | 部署 | `make deploy` | 备份 + 构建 + 推送；不要擅自执行 |
 | 检查 | `make check` | 依赖与健康检查 |
 
@@ -37,7 +38,7 @@
 2. 交付前必须至少做一次构建校验：`hugo --quiet -d /tmp/hugo-check`（或 `make build`）。
 3. 不要修改 `public/`、`.venv/`、`resources/_gen/` 等生成物。
 4. 不要修改 `themes/hugo-focus/`，除非任务明确要求改主题；该目录是独立 submodule。
-5. 不要提交密钥、Cookie、Token；腾讯云密钥只通过环境变量使用。
+5. 不要提交密钥、Cookie、Token；腾讯云/火山引擎密钥只通过环境变量使用。
 6. 不要主动 `git commit` / `git push` / `make deploy`，除非用户明确要求。
 7. 正文允许原生 HTML（`unsafe = true`），但只用于本文件列出的必要效果，不要堆砌 `<style>`/`<script>`。
 
@@ -57,21 +58,33 @@ content/zh/posts/<板块>/<slug>/images/<filename>.png
 - 目录名使用英文、数字、连字符：`how-to-use-hugo`。
 - 避免空格、中文目录名、特殊符号。中文目录名会导致 URL 被百分号编码，影响传播与分享。
 - 文章 URL 由 `[permalinks] posts = "/post/:year/:month/:filename/"` 决定，**目录名就是 URL 的一部分**。发布后不要随意改目录名；必须改时用 `aliases` 保留旧链接。
-- 图片放文章目录的 `images/` 下，正文写 `![](images/foo.png)`；不要写 `./images/` 或 `/assets/...`。历史单文件 `<slug>.md` 仍可构建，但不要再新增。
+- 图片放文章目录的 `images/` 下，正文写 `![](images/foo.png)`；不要写 `./images/` 或 `/assets/...`。站点文章已全部迁移为 Page Bundle，不要再新增单文件 `<slug>.md`。
 
 ### 1.2 新建流程
 
 ```bash
 make new
-# 依次输入：标题 -> 摘要 -> 分类 -> 目录 -> 文件名 -> 标签
+# 依次输入：标题 -> 摘要 -> 分类 -> 目录 -> 文件名 -> 标签 -> 完整配置
 ```
 
 `make new` 会：
 
+- 扫描 `content/zh/posts/*/_index.md` 自动识别板块目录，分类展示使用文章数最多的 10 个，其他目录可从“更多目录”进入；
 - 在 `content/zh/posts/<板块>/<slug>/` 下生成 `index.md`（Page Bundle）；
-- 调用 Hugo archetype 生成 front matter；
-- 自动匹配已有标签，减少同义标签碎片；
-- 生成 `categories`、`tags`、`title`、`description`。
+- 调用 Hugo archetype 生成完整 front matter；
+- 使用火山引擎 `TranslateText` 把中文标题翻译成英文，并转为蛇形命名作为默认文件名；密钥缺失或翻译失败时回退为可手动修改的文件名；
+- 根据标题自动推荐已有标签，也可自行输入；
+- 写入 `categories`、`tags`、`series`、`weight`、`description`、`summary`、`keywords`、`cover`、`image`、`images`、`toc`、`comments`、`showShare`、`codeRunners`、`aliases`、`draft`。
+
+自动翻译需要环境变量：
+
+```bash
+export VOLCENGINE_ACCESS_KEY_ID="..."
+export VOLCENGINE_SECRET_ACCESS_KEY="..."
+# 可选：export VOLCENGINE_REGION="cn-north-1"
+```
+
+交互输入已改为标准 `input()`，支持正常退格、中文输入和粘贴；不再使用原始 TTY 模式。
 
 ---
 
@@ -194,7 +207,7 @@ aliases = ["/post/old-path/"]
 
 ### 3.4 图片
 
-- 图片 alt 必须有语义，例如 `![Hugo 首页截图](/assets/post_images/hugo-home.png)`。
+- 图片 alt 必须有语义，例如 `![Hugo 首页截图](images/hugo-home.png)`。
 - 需要特殊视觉效果时，alt 使用约定关键字（见 4.5）；此时 alt 会被当作图片说明显示。
 - 不希望显示说明文字时，用原生 `<img>` 代替 Markdown 图片。
 - 网络图片建议用 `make img` 下载到本地，避免外链失效、混合内容、隐私追踪。
@@ -647,7 +660,7 @@ icon = "tools"
 ### 9.1 下载网络图片
 
 ```bash
-make img MD=content/zh/posts/tech/foo.md
+make img MD=content/zh/posts/tech/foo/index.md
 ```
 
 默认行为：
@@ -659,7 +672,7 @@ make img MD=content/zh/posts/tech/foo.md
 指定前缀：
 
 ```bash
-make img MD=content/zh/posts/tech/foo.md SLUG=my-article
+make img MD=content/zh/posts/tech/foo/index.md SLUG=my-article
 ```
 
 ### 9.2 存储位置
@@ -680,7 +693,7 @@ content/zh/posts/tech/my-article/
     └── diagram.png
 ```
 
-在 `index.md` 中写 `![图](images/diagram.png)`，主题会生成 480/768/1024 宽的 WebP 响应式图片。`./images/...` 与 `/assets/...` 也会被项目级 render hook 兼容，但新文章统一用 `images/...`。
+在 `index.md` 中写 `![图](images/diagram.png)`，主题会生成 480/768/1024 宽的 WebP 响应式图片；GIF 与 SVG 保留原文件，不做 WebP 转换。`./images/...` 与 `/assets/...` 也会被项目级 render hook 兼容，但新文章统一用 `images/...`。
 
 VS Code 用 Paste Image 时，项目已提供 `.vscode/settings.json`：截图后按快捷键，图片自动落到当前文章目录的 `images/`，并插入 `![](images/...)`。
 

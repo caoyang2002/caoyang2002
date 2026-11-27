@@ -26,7 +26,7 @@
 {{- with $img -}}
   {{- if eq .ResourceType "image" -}}
     {{- $isImage = true -}}
-    {{- if ne .MediaType.SubType "svg" -}}
+    {{- if not (in (slice "svg" "gif") .MediaType.SubType) -}}
       {{- $processable = true -}}
     {{- end -}}
   {{- end -}}
