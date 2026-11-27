@@ -21,7 +21,8 @@
 
 | 目的 | 命令 | 说明 |
 | :--- | :--- | :--- |
-| 新建文章 | `make new` | 交互式创建；自动识别目录、翻译文件名、推荐标签，推荐优先使用 |
+| 新建文章 | `make new` | 交互式创建；自动识别目录、翻译文件名、推荐标签，创建后用 `open` 打开文件 |
+| 编辑文章 | `make edit Q="slug/标题片段"` | 按 slug、完整标题或部分标题匹配并打开 `index.md` |
 | 本地预览 | `make run` | 开发服务器（包含草稿） |
 | 开发预览 | `make dev` | 监听 `0.0.0.0:1313` |
 | 生产构建 | `make build` | 输出到 `public/` |
@@ -74,7 +75,16 @@ make new
 - 调用 Hugo archetype 生成完整 front matter；
 - 使用火山引擎 `TranslateText` 把中文标题翻译成英文，并转为蛇形命名作为默认文件名；密钥缺失或翻译失败时回退为可手动修改的文件名；
 - 根据标题自动推荐已有标签，也可自行输入；
-- 写入 `categories`、`tags`、`series`、`weight`、`description`、`summary`、`keywords`、`cover`、`image`、`images`、`toc`、`comments`、`showShare`、`codeRunners`、`aliases`、`draft`。
+- 写入 `categories`、`tags`、`series`、`weight`、`description`、`summary`、`keywords`、`cover`、`image`、`images`、`toc`、`comments`、`showShare`、`codeRunners`、`aliases`、`draft`；
+- 创建完成后用 `open` 自动打开文章文件（`NO_OPEN=1` 可关闭）。
+
+已有文章可直接按 slug 或标题片段打开：
+
+```bash
+make edit Q="tcp_ip"
+make edit Q="TCP/IP 协议"
+make edit Q="改变我人生"
+```
 
 自动翻译需要环境变量：
 

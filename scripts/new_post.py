@@ -26,6 +26,7 @@ import re
 import sys
 import json
 import subprocess
+import shutil
 import difflib
 import unicodedata
 from collections import Counter
@@ -689,6 +690,14 @@ def main():
     path.write_text(new_txt, encoding="utf-8")
 
     print(f"\n{GREEN}已创建：{rel}{NC}")
+    if sys.stdin.isatty() and os.environ.get("NO_OPEN") != "1":
+        opener = "open" if sys.platform == "darwin" else shutil.which("xdg-open")
+        if opener:
+            try:
+                subprocess.run([opener, str(path)], check=False)
+                print(f"{DIM}已打开文章文件。{NC}")
+            except OSError as exc:
+                print(f"{YELLOW}自动打开失败：{exc}{NC}")
     print(f"{DIM}截图后按 Paste Image 快捷键，图片会存到该目录的 images/ 并自动插入。{NC}")
     print(f"{DIM}接下来可以编辑正文，或运行 make run 预览。{NC}\n")
     return 0

@@ -13,6 +13,7 @@ SCRIPTS     := scripts
 UPDATE_SH   := $(SCRIPTS)/update.sh
 RUN_SH      := $(SCRIPTS)/RUN.sh
 NEW_PY      := $(SCRIPTS)/new_post.py
+EDIT_PY     := $(SCRIPTS)/edit_post.py
 GENKEY_SH   := $(SCRIPTS)/generate-key.sh
 TENCLOUD_PY := $(SCRIPTS)/tencloud.py
 TRANSFER_PY := $(SCRIPTS)/transfer.py
@@ -30,6 +31,7 @@ MONTH    ?=
 DAY      ?=
 MD       ?=
 TXT      ?=
+Q        ?=
 SLUG     ?=
 STORAGE  ?=
 PREFIX   ?=
@@ -56,6 +58,7 @@ help:
 	@printf '\n'
 	@printf '  make new                 交互式新建文章（目录识别/翻译文件名/推荐标签/完整配置）\n'
 	@printf '                          标签会用相似度匹配已有标签，避免重复\n'
+	@printf '  make edit Q="slug/标题"    按 slug 或标题（部分）打开文章\n'
 	@printf '\n'
 	@printf '  make key YEAR=2024 MONTH=01 DAY=25   生成 4 位密码\n'
 	@printf '\n'
@@ -108,9 +111,13 @@ version:
 # ==========================================================
 # 内容创作
 # ==========================================================
-.PHONY: new
+.PHONY: new edit
 new:
 	@$(PYTHON) $(NEW_PY) $(if $(NAME),--name="$(NAME)",)
+
+edit:
+	@test -n "$(if $(Q),$(Q),$(NAME))" || { echo '用法: make edit Q="slug 或标题片段"'; exit 1; }
+	@$(PYTHON) $(EDIT_PY) "$(if $(Q),$(Q),$(NAME))"
 
 # ==========================================================
 # 密码生成
